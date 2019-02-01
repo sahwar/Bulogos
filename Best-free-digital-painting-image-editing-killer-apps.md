@@ -1,4 +1,5 @@
 ### The Ultimate List of Digital Painting & Image Editing Apps ###
+
 Ultimate list of image editing, graphics editing, digital drawing&painting software (the focus is on open-source/FOSS and freeware apps)
 
 * [Adobe Photoshop](http://www.adobe.com/products/photoshop.html) (commercial, has a free trial version)
@@ -22,10 +23,10 @@ Ultimate list of image editing, graphics editing, digital drawing&painting softw
 * [Dia](?) (diagram-drawing app) OPEN-SOURCE _(RECOMMENDED)_
 * [Dibuja](https://launchpad.net/dibuja)
 * [Dotgrid](https://hundredrabbits.itch.io/dotgrid) [2 Online version of Dotgrid](https://hundredrabbits.github.io/Dotgrid/)
-* [dpixel](?) OPEN-SOURCE _(RECOMMENDED)_
+* [dpixel](https://marcoc2.itch.io/dpixel) ([GitHub](https://github.com/marcoc2/dpixel)) OPEN-SOURCE _(RECOMMENDED)_
 * [DragonBones Pro](?) (commercial)
 * [DrawPile](https://github.com/drawpile/Drawpile) [2](http://drawpile.net/) _(HIGHLY RECOMMENDED)_
-* [EasyPaintTool SAI (English warez)](http://detstwo.com/sai/) [2](https://www.systemax.jp/en/sai/) _(HIGHLY RECOMMENDED)_
+* [EasyPaintTool SAI (English warez)](http://detstwo.com/sai/) [2](https://www.systemax.jp/en/sai/) [3](https://www.paint-tool-sai.at/filebase/index.php?file-list/) [4 deviantART](https://www.deviantart.com/vilebile/journal/Have-My-Paint-Tool-Sai-545675976) [5 MediaFire](http://www.mediafire.com/file/h7bfcoht16ulzia/sai+n+sh%2At.zip)[dll](https://www.mediafire.com/file/cfu05u9u8g1yc11/sfl.dll/file) [6](https://www.deviantart.com/dokkoni/art/Free-Paint-tool-Sai-B-637433421) [7](https://www.deviantart.com/sagemint/art/Floating-panels-in-Sai-settings-356651107) _(HIGHLY RECOMMENDED)_
 * [EasyPaint](https://github.com/Gr1N/EasyPaint) [2](https://www.linux-apps.com/p/1131199/) _(RECOMMENDED)_
 * [ExPhoto (sister project to Pixia)](http://www.ne.jp/asahi/mighty/knight/exphoto.html) _(RECOMMENDED)_
 * [EZ Paint (freeware alternative to MS Paint for WinXP, for Windows7+)](http://ezpaintsoftware.com/EZdownloads.html) _(HIGHLY RECOMMENDED)_
@@ -40,6 +41,7 @@ Ultimate list of image editing, graphics editing, digital drawing&painting softw
 * [GraFX2](http://grafx2.chez.com/) [2](https://pulkomandy.tk/projects/GrafX2/downloads) _(HIGHLY RECOMMENDED)_
 * [GraphicsGale](https://graphicsgale.com/us/download.html) FREEWARE as of 2018! _(HIGHLY RECOMMENDED)_
 * [Harmony (by Ricardo Cabella)](http://mrdoob.com/projects/harmony/)
+* [HermiRES (Commodore64 painting app)](http://www.nightfallcrew.com/18/03/2014/hermires-v1-29-c64-hires-bitmap-editor/) [2](http://www.nightfallcrew.com/10/02/2013/hermires-v1-26-c64-hires-bitmap-editor/)
 * [Hornil StylePix Free](http://hornil.com/products/stylepix/) FREEWARE
 * [Hornil StylePix](?) FREEWARE _(RECOMMENDED)_
 * [iDraw3](http://www.rpgmaker.pl/?co=download&typ=programy&id=idraw) ([direct download](www.rpgmaker.pl/download/programy/idraw/idraw.zip)) [2](http://www.rpgmaker.org/downloads/view.asp?id=248) [3](https://www.purezc.net/forums/index.php?showtopic=56005) [4](https://www.deviantart.com/tag/idraw3) [4 (Wine)](https://appdb.winehq.org/objectManager.php?sClass=application&iId=3742) FREEWARE _(RECOMMENDED)_
@@ -77,7 +79,6 @@ Ultimate list of image editing, graphics editing, digital drawing&painting softw
 * [Pencil2D](?)
 * [Photivo](http://photivo.org/)
 * [Photo Flow](?) OPEN-SOURCE
-* [Photobie](?)
 * [Photobie](http://www.tucows.com/preview/500316)
 * [PhotoFlare](http://photoflare.io/contributing/translations/) [2](https://github.com/PhotoFlare/photoflare) _(RECOMMENDED)_
 * [PhotoScape](http://photoscape.org/ps/main/index.php) FREEWARE
@@ -96,6 +97,7 @@ Ultimate list of image editing, graphics editing, digital drawing&painting softw
 * [Pixelmator Pro (macOS)](?) (commercial?)
 * [Pixen (macOS)]() _(HIGHLY RECOMMENDED)_
 * [Pixen (macOS)](?) _(HIGHLY RECOMMENDED)_
+* [Pixen (macOS)](https://pixenapp.com/) formerly OPEN-SOURCE, now commercial) _(HIGHLY RECOMMENDED)_
 * [Pixia](http://www.ne.jp/asahi/mighty/knight/aboutpixia.html) FREEWARE [v6_32bit, v6_x64, v4_32bit] _(RECOMMENDED)_
 * [PixieEngine (online)](https://pixieengine.com/)
 * [Pixie](http://pixieengine.com/)
@@ -117,7 +119,9 @@ Ultimate list of image editing, graphics editing, digital drawing&painting softw
 * [SmoothDraw](http://www.smoothdraw.com/sd) FREEWARE - 3 versions (4.1.4 Beta-forWin7SP1-Win10, 4.0.5-for-WinXP-SP3-VistaSP1-Win7, and 3.2.11-for-2000/XP/Vista/Win7) _(RECOMMENDED)_
 * [SpeedyPainter (OpenGLv3-based)](http://speedypainter.altervista.org/) [2](http://speedypainter.altervista.org/download/) FREEWARE _(HIGHLY RECOMMENDED)_
 * [Spine](?), Creature, and Anima2D (all commercial)
+* [Sprite Pad](?)
 * [SpriteLand Spritemaker](http://www.spriteland.com/apps/spritemaker.html) FREEWARE
+* [SpriteMate.com (online, duh)](spritemate.com)
 * [Spriter Pro](https://steamcommunity.com/app/332360) (commercial)
 * [Spriter2Unity](deadlink?)
 * [Sprytile](https://github.com/Sprytile/Sprytile)
@@ -127,6 +131,7 @@ Ultimate list of image editing, graphics editing, digital drawing&painting softw
 * [Tupi](https://www.linux-apps.com/p/1131159/)
 * [TuxPaint (for kids/children)](http://www.tuxpaint.org/)
 * [TwistedBrush](?) (commercial)
+* [UberPaint 4P (4P), see GraFX2 for a more polished pixel-art editor) (alpha-version-quality pixel-art editor)](http://umlautllama.com/projects/4p/) [2](http://sourceforge.net/projects/uberpaint)
 * [Unity UPA Toolkit (pixel-art editor)](https://assetstore.unity.com/packages/tools/painting/upa-toolkit-pixel-art-editor-27680)
 * [Verve Painter (OpenGLv3.2+, by Taron (Timur Baysal), comparable to SpeedyPainter!)](https://www.taron.de/verve/verve_download.html) [2](http://www.taron.de/forum/viewtopic.php?f=4&t=4&sid=07a35f6881f428464a8cb44b300a8d81), look@taron.de _(HIGHLY RECOMMENDED)_
 * [Wacintaki Poteto (oekaki)](http://www.ninechime.com/products/) [2](http://ninechime.com/deep/faq.php)
@@ -136,6 +141,7 @@ Ultimate list of image editing, graphics editing, digital drawing&painting softw
 
 
 ###  TO DO ###
-* Sort the list = DONE
+* Sort the list = DONE?
 * Cleanup and maybe remove commericial apps from the list (?)
 * Add screenshots for each app = TEDIOUS, IT WILL TAKE A LOT OF TIME. For now just use the RECOMMENDED & HIGHLY RECOMMENDED apps in the list...
+* Maybe add FOSS 3D software, e.g. Blender 3D, and also FOSS pixel-art-like voxel editors?
