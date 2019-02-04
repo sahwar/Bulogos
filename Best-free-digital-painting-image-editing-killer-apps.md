@@ -1,6 +1,6 @@
 ### The Ultimate List of Digital Painting & Image Editing Apps ###
 
-Ultimate list of image editing, graphics editing, digital drawing&painting software (the focus is on open-source/FOSS and freeware apps)
+Ultimate list of image editing, graphics editing, digital drawing&painting software (the focus is on open-source/FOSS and freeware apps). These apps are for the modern desktop OS trinity: Microsoft Windows, GNU/Linux, Apple macOS. Most apps in the list are FOSS or freeware. The list aims at being highly inclusive while still focusing on recommending the best apps. Most of the digital painting apps in the list also support using a graphics tablet (e.g. Wacom tablets) aside from using a computer mouse and keyboard (check each app's features list or documentation for details).
 
 * [Adobe Photoshop](http://www.adobe.com/products/photoshop.html) (commercial, has a free trial version)
 * [Alchemy](http://al.chemy.org/)
@@ -65,9 +65,10 @@ Ultimate list of image editing, graphics editing, digital drawing&painting softw
 * [Milton (by Sergio Gonzalez, open-source=MIT license) (!), comparable to SpeedyPainter but infinite-canvas vector drawing](https://www.miltonpaint.com/) [2](https://github.com/serge-rgb/milton/releases) _(HIGHLY RECOMMENDED)_
 * [Mischief Free v2.1.6](https://www.madewithmischief.com/downloads/) _(RECOMMENDED)_
 * [MQSprite](https://github.com/eigenbom/MQ-Sprite) OPEN-SOURCE (Windows)
-* [MS Paint (for WinXP SP3)]() [Hidden advanced features of MS Paint for WinXP!!!]()
+* [MS Paint (for WinXP SP3)]() [Hidden advanced features of MS Paint for WinXP!!!(https://sahwar.wordpress.com/2014/09/20/the-secret-features-of-ms-paint/) (in Bulgarian and in English)
 * [MS Paint for WindowsXP](https://archive.org/details/MSPaintWinXP) + [tips&tricks for MS Paint for WindowsXP](https://sahwar.wordpress.com/)
 * [mtPaint](http://mtpaint.sourceforge.net/) [2](http://sourceforge.net/projects/mtpaint/files/mtpaint/) _(RECOMMENDED)_
+* [Moai (by Ken Thornton), pixel-art editor](http://members.allegro.cc/sirocco/nav_mo.htm) _FREEWARE_ _(RECOMMENDED)_
 * [MyBrushes (macOS)](?) (commercial)
 * [MyPaint](http://mypaint.org/) _(HIGHLY RECOMMENDED)_
 * [openCanvas](?) (commercial)
@@ -75,6 +76,7 @@ Ultimate list of image editing, graphics editing, digital drawing&painting softw
 * [paint.net (Windows7+ only)](https://www.getpaint.net/) FREEWARE (.NET - https://www.microsoft.com/en-us/download/details.aspx?id=36805 + https://www.microsoft.com/en-us/download/details.aspx?id=56115 ) _(HIGHLY RECOMMENDED)_
 * [Paintbrush (macOS)](https://sourceforge.net/projects/paintbrush/)
 * [PaintStar](https://sites.google.com/site/wangzhenzhou/home) FREEWARE _(RECOMMENDED)_
+* [Paint of Persia](https://dunin.itch.io/ptop) (a pixel-art rotoscoping tool useful for making pixel-art sprites&animations) _FREEWARE_ (Windows, macOS, Linux) _RECOMMENDED_
 * [Papagayo (lipsync)](https://en.wikipedia.org/wiki/Papagayo_(software)]
 * [Pencil2D](?)
 * [Photivo](http://photivo.org/)
@@ -127,6 +129,7 @@ Ultimate list of image editing, graphics editing, digital drawing&painting softw
 * [Sprytile](https://github.com/Sprytile/Sprytile)
 * [SwankyPaint](http://dime.lo4d.net/dl/swpaint) (Linux, Raspberry Pi, Android, Windows & Mac) [2](http://store.steampowered.com/app/432030/Swanky_Paint/) [3](http://paint.wetgenes.com/welcome) [4](https://github.com/xriss/swankypaint) [5](http://paint.wetgenes.com/dumid?continue=http://paint.wetgenes.com/paint/draw) [6](https://store.steampowered.com/app/432030/Swanky_Paint/) _(HIGHLY RECOMMENDED)_
 * [Synfig Studio](?) _(RECOMMENDED)_
+* [Tablet Pressure Curve Tool (for Wacom tablets, 3rd-party app](https://blackink.cz/tablet-pressure-curve-tool/) _NOT AN IMAGE EDITOR, FREEWARE_ (useful for fine-tuning the pressure sensitivity of Wacom Tablets if the Wacom tablet-settings apps aren't enough for your needs)
 * [Triangulart](https://maxwellito.github.io/triangulart/)
 * [Tupi](https://www.linux-apps.com/p/1131159/)
 * [TuxPaint (for kids/children)](http://www.tuxpaint.org/)
@@ -142,6 +145,14 @@ Ultimate list of image editing, graphics editing, digital drawing&painting softw
 
 ###  TO DO ###
 * Sort the list = DONE?
-* Cleanup and maybe remove commericial apps from the list (?)
+* Add more entries to the list, including those suggested by others (e.g. https://en.wikipedia.org/wiki/Comparison_of_raster_graphics_editors#List
+https://en.wikipedia.org/wiki/List_of_vector_graphics_editors
+https://amp.reddit.com/r/photography/comments/a6alpu/the_ultimate_list_of_photo_editing_tools_in_2018 )
+* Remove/Merge duplicate entries, fix typos&formatting, and add missing hyperlinks
+* Cleanup
+* Add a new category for Google Android & Apple iOS apps
+* Maybe add a category for apps for exotic and niche OSs
+* Separate commericial apps into a separate category
+* Maybe make the list into a Markdown table
 * Add screenshots for each app = TEDIOUS, IT WILL TAKE A LOT OF TIME. For now just use the RECOMMENDED & HIGHLY RECOMMENDED apps in the list...
-* Maybe add FOSS 3D software, e.g. Blender 3D, and also FOSS pixel-art-like voxel editors?
+* Maybe add FOSS 3D software as a separate category, e.g. Blender 3D, and also FOSS pixel-art-like voxel editors?
