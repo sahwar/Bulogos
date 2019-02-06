@@ -2,12 +2,18 @@
 
 0. App name
 
-**`$ GovoritelBG-ss**` (SS = SpeechSynthesis)
+**`$ GovoritelBG-ss`** (SS = SpeechSynthesis)
+
 **GlashatayBG-ss**, IzrechitelBG-ss, GlasitelkoBG, GlasnostBG-ss, GlasoveBG-ss, GlasilkaBG-ss, HortuvayBG-ss,  QSDIzrechilkaBG_SpeechSynth (QSD='quick, simple, and dirty), IzrechilkaBG, ProiznositelBGSpeechSynth, Govoritel(che)BGSpeechSynth, IzgovoritelBG, HortuvayNaBG_SpeechSynth, fossBGSpeechSynth, $ govoritelBG-ss
 
 1. General idea
-(**THE MOST IMPORTANT PART**)
-(to add from .txt files from my other PCs & my related tweets from my Twitter account)
+
+(c) 2018-2019 sahwar (github.com/sahwar/, twitter.com/ve4ernik, Ivan I. Kurdov) <ve4ernik@gmail.com>
+
+(**T
+HE MOST IMPORTANT PART**)
+
+(to add from my rough research-paper .txt files from my other PCs & my related tweets from my Twitter account)
 
 2. Features
 * CLI version: supply a text input file, add arguments/flags, output the result to an .mp3/.ogg/.flac/.wav file, play the generated audio-file result; built-in manual: `man govoritelbg-ss`, `govoritelbg-ss --help` (in English AND Bulgarian), `govoritelbg-ss --version (-v)` (version information), `govoritelbg-ss --update (-U)` (check for newer version and update the app if one is available).
@@ -18,11 +24,11 @@ take photo (or supply image from phone memory or URL address) and process with t
 visual&audio-recorded warning for when the Android device's battery level is running low; 
 option to import your own speaker-pronunciation dataset files;
 
-3. Target platforms:
-GNU/Linux (CLI&GUI), Windows (CLI&GUI), macOS (CLI&GUI), HTML5 Web-interface (web-browsers), Android (GUI)
+3. Target platforms
+* GNU/Linux (CLI&GUI), Windows (CLI&GUI), macOS (CLI&GUI), HTML5 Web-interface (web-browsers), Android (GUI)
 
 4. Target end-users
-Blind or sight-impaired Bulgarians, the general public, tests for writers, editors, proofreaders/spellcheckers/copywriters, and reseachers; also as a toy for demonstrating speech-synthesis to children and the general public.
+* Blind or sight-impaired Bulgarians, the general public, tests for writers, editors, proofreaders/spellcheckers/copywriters, and reseachers; also as a toy for demonstrating speech-synthesis to children and the general public.
 
 5. License
 * open-source: BSD-3 (modified) or MIT, commercial for a few bucks = additional speaker pronunciation packs (aside from the free&open-source bundled with the app)
