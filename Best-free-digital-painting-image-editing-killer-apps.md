@@ -68,7 +68,7 @@ Ultimate list of image editing, graphics editing, digital drawing&painting softw
 * [MS Paint (for WinXP SP3)]() [Hidden advanced features of MS Paint for WinXP!!!(https://sahwar.wordpress.com/2014/09/20/the-secret-features-of-ms-paint/) (in Bulgarian and in English)
 * [MS Paint for WindowsXP](https://archive.org/details/MSPaintWinXP) + [tips&tricks for MS Paint for WindowsXP](https://sahwar.wordpress.com/)
 * [mtPaint](http://mtpaint.sourceforge.net/) [2](http://sourceforge.net/projects/mtpaint/files/mtpaint/) _(RECOMMENDED)_
-* [Moai (by Ken Thornton), pixel-art editor](http://members.allegro.cc/sirocco/nav_mo.htm) _FREEWARE_ _(RECOMMENDED)_
+* [Moai (by Ken Thornton), pixel-art editor](http://members.allegro.cc/sirocco/nav_mo.htm) v1.7 (for Windows), _FREEWARE_ _(RECOMMENDED)_
 * [MyBrushes (macOS)](?) (commercial)
 * [MyPaint](http://mypaint.org/) _(HIGHLY RECOMMENDED)_
 * [openCanvas](?) (commercial)
