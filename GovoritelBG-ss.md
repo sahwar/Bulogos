@@ -12,7 +12,9 @@ _Third-party data to use in `GovoritelBG-ss`:_
 Using the new Bulgarian-language syllabification (syllable-separation) algorithm (better than the old one from TeX BG):
 http://mirror.ctan.org/language/hyph-utf8/tex/generic/hyph-utf8/patterns/tex/hyph-bg.tex
 https://t.co/m4rPDuWQVD?amp=1
-(and also the one one!)
+https://www.ctan.org/tex-archive/language/hyph-utf8
+https://github.com/hyphenation/tex-hyphen
+(and also the old TeX algorithm for Bulgarian-language syllabification!)
 and [syllable-patterns for the contemporary Bulgarian language taken from my General Linguistics class at university and generously supplied by my lecturer Assistant Boryan Yanev](https://twitter.com/ve4ernik/status/582996507776823296), etc.
 
 
