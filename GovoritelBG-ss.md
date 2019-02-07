@@ -6,7 +6,15 @@
 
 It is still rough round on the edges as an idea but the core app idea&data-structures are here in this document (while also being in revision, further tweaking/details-finetuning & development).
 
-**Tags:** <small>speech synthesis engine, Bulgarian-language speech synthesis engine and speech-synthesizer app, гласов синтезатор, речев синтезатор, преобразуване на писмен текст в компютърно произнесена (изговорена) реч, гласово възпроизвеждане на текст на български, "От текст към говор" (TTS), текст към реч чрез компютърна програма, computer text-to-speech synthesis, програма свободен софтуер с отворен код, посричково произнасяне, дифони, IPA, МФА, extIPA, X-SAMPA, Z-SAMPA, GitHub, espeak, MBROLA, original research, experimental application software, assistive software for blind and sight-impaired people, social-care software for disabled people</small>.
+**Tags:** <small>speech synthesis engine, Bulgarian-language speech synthesis engine and speech-synthesizer app, гласов синтезатор, речев синтезатор, преобразуване на писмен текст в компютърно произнесена (изговорена) реч, гласово възпроизвеждане на текст на български, "От текст към говор" (TTS), текст към реч чрез компютърна програма, computer text-to-speech synthesis, програма свободен софтуер с отворен код, посричково произнасяне, дифони, IPA, МФА, extIPA, X-SAMPA, Z-SAMPA, GitHub, espeak, MBROLA, original research, syllabification algorithms, contemporary Bulgarian syllable patterns, experimental application software, assistive software for blind and sight-impaired people, social-care software for disabled people</small>.
+
+_Third-party data to use in `GovoritelBG-ss`:_
+Using the new Bulgarian-language syllabification (syllable-separation) algorithm (better than the old one from TeX BG):
+http://mirror.ctan.org/language/hyph-utf8/tex/generic/hyph-utf8/patterns/tex/hyph-bg.tex
+https://t.co/m4rPDuWQVD?amp=1
+(and also the one one!)
+and [syllable-patterns for the contemporary Bulgarian language taken from my General Linguistics class at university and generously supplied by my lecturer Assistant Boryan Yanev](https://twitter.com/ve4ernik/status/582996507776823296), etc.
+
 
 ### 0. App name ###
 
@@ -31,7 +39,7 @@ I've now added a more thorough explanation below (**This _IS NOT_ the same as in
 
 **I. 7 core speech-synthesis subsystems/'engines' included with `govoritelbg-ss`:**
 
-**1)** An engine which parses input text, applies a syllable-separation algorithm (several flavors to select from via `--some-argument/flag-here` option, one of them is this great syllable-seperation [method]() ), then matches the separated syllables to a JSON-file linking to human-speaker-pronounced speech-segment-recordings of the most-common syllables of the contemporary Bulgarian language, then concatenates (merges) all the text's syllables' native-human-speaker-pronounced syllable-recordings pre-supplied-by-the-app audio-files via `ffmpeg`/`libav` and generates the output file with the pronunciation which is then played to speakers **(DEFAULT engine!)**.
+**1)** An engine which parses input text, applies a syllable-separation algorithm (several flavors to select from via `--some-argument/flag-here` option, one of them is this great syllable-seperation [method](http://mirror.ctan.org/language/hyph-utf8/tex/generic/hyph-utf8/patterns/tex/hyph-bg.tex) ), then matches the separated syllables to a JSON-file linking to human-speaker-pronounced speech-segment-recordings of the most-common syllables of the contemporary Bulgarian language, then concatenates (merges) all the text's syllables' native-human-speaker-pronounced syllable-recordings pre-supplied-by-the-app audio-files via `ffmpeg`/`libav` and generates the output file with the pronunciation which is then played to speakers **(DEFAULT engine!)**.
 
 **NOTE0:** To support multiple languages & speaker-voice datasets, there will be more `--arguments` to select language and speaker-voice dataset before generating&playing the output audio-file, but the Bulgarian language is the default one to be used for the app. Also note that there will be several configuration files (JSON/.config/.conf/.cfg/YAML/custom-txt-based formats) like those of the NVDA screen-reader app bundled with the app, and with a custom/user copy of those for the user to fine-tune the app before running it if the user doesn't like the default settings&configs of the app.
 
@@ -68,7 +76,7 @@ All audio-files of each dataset should be those of the voice/speech of a single 
 
 Characters-to-sounds per-language correspondence rulesets, NVDA/SpeechLab/etc.-like configs/settings, voice-qualities adjustable outputting audio settings, etc.
 
-_Syllables (syllable patterns (CVV, VCV, etc. (**[Bulgarian syllable patterns taken from my General Linguistics class at university and generously supplied by lecturer Assistant Boryan Yanev](https://twitter.com/ve4ernik/status/582996507776823296))** ) with all combinations of all corresponding language-specific phonemes - forming the syllable), diphones (~2 phones flowing together in connected speech), and (ext)IPA/X-SAMPA/Z-SAMPA phomenic/phonological phonemes (approximatly matched to lang-specific charset subset of Unicode UTF-8)_; plus whole-word and whole-phrase human pronunciation audio-files, and human pronunciation audio-files for punctuation characters (and their prosodic audio-filters effects?) and maybe the whole Unicode character set(?)...
+_Syllables (syllable patterns (CVV, VCV, etc. (**[Bulgarian syllable patterns taken from my General Linguistics class at university and generously supplied by my lecturer Assistant Boryan Yanev](https://twitter.com/ve4ernik/status/582996507776823296))** ) with all combinations of all corresponding language-specific phonemes - forming the syllable), diphones (~2 phones flowing together in connected speech), and (ext)IPA/X-SAMPA/Z-SAMPA phomenic/phonological phonemes (approximatly matched to lang-specific charset subset of Unicode UTF-8)_; plus whole-word and whole-phrase human pronunciation audio-files, and human pronunciation audio-files for punctuation characters (and their prosodic audio-filters effects?) and maybe the whole Unicode character set(?)...
 
 **AIMS/GOALS OF THIS APP:** This is all in order to produce SOMEWHAT better-sounding speech-synthesis results than those of entirely programmatically-generated speech-synthesis engines which sound too robotic. The whole app `$ govoritelbg-ss` is about SIMPLE, QUICK & DIRTY speech synthesis of texts (mostly in the contemporary Bulgarian language with with ~45 phonemes in its orthoepy standardized contemporary variant which is parallel to the standard contemporary (semi-)formal written Bulgarian).
 
