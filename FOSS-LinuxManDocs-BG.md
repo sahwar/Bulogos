@@ -4,11 +4,12 @@
 FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) на файлове с преводи на (ГПИ интерфейса на) софтуер на български език, част от подпроектите <abbr title="CBASTILS = Common Application-Software Translation (t9n), Localization (l10n), and Internationalization (i18n) Strings">CBASTILS</abbr>.Bulogos.info и <abbr title="HUTPIB-bg = Help Us Translate Programs Into Bulgarian - BigGame">HUTPIB-bg</abbr>.Bulogos.info, като доста от преводите са взети от другаде и са дело на много преводачи.
 
 ## Основни инструкции за превода на софтуер (програми за компютър, по-точно приложен софтуер) на български език плюс хранилища с файлове с български преводи на софтуер: ##
-* BGlocalize: https://sites.google.com/site/bglocalize/
-* KDE-BG: https://kde.lindeas.com/
-* GNOME-BG: http://fsa-bg.org/project/gtp
-* FOSS-BG-translators EMaillist: <dict@ludost.net> (абониране: http://ludost.net/cgi-bin/mailman/listinfo/dict)
-* [BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/), [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
+* **BGlocalize**: https://sites.google.com/site/bglocalize/
+* **KDE-BG**: https://kde.lindeas.com/
+* **GNOME-BG**: http://fsa-bg.org/project/gtp
+* **FOSS-BG-translators EMailList*: <dict@ludost.net> (за абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict)
+* **[BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/)**, [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
+(* стари безплатни версии на програмата за проверка на правописа на български текстове IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking; WinEst и др.)
 
 * Transifex.com (например https://www.transifex.com/mate/MATE/translate/#bg), [CrowdIn.com](https://crowdin.com/), [Mojito](http://www.mojito.global/), [TranslationExchange](https://translationexchange.com/), [Localize.co](https://lokalise.co/), [GetLocalization](https://www.getlocalization.com/), 
 и [други инструменти за превод (CAT, MT и т.н)](https://opensource.com/article/17/6/open-source-localization-tools)
@@ -27,25 +28,25 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 ## Основни програми, използвани в превода на софтуер на български език ##
 
 * Plaintext/програмистки текстов редактор по ваш избор (Notepad, Notepad++, Notepad2-mod, Vim (+VundleVim&Vim-Scripts&Vim plug-ins), Emacs (+Emacs plug-ins), Spacemacs, NeoVim, GitHub Atom, GeanyIDE и т.н.)
-* POEdit (GNU gettext, .po): https://poedit.net/, 
+* POEdit (GNU gettext, .po): https://poedit.net/
 * Qt Linguist (.ts): https://github.com/thurask/Qt-Linguist/releases, https://osdn.net/projects/sfnet_tht/downloads/Other/qt-linguist-setup-4.8.4.exe/, https://doc.qt.io/qt-5/qtlinguist-index.html, https://www.opendesktop.org/p/1131386, https://www.open-tx.org/2017/03/24/QtLinguist-download)
 * Примерни инструкции за преводни файлове за локализация PO и TS (???): http://wiki.pointlinux.org/index.php?title=Localization
 
 ### Безплатни шрифтове и свободни шрифтове ###
-В GitHub и SourceForge има няколко свободни програми с отворен код, които с годините разработка станаха готови за масова употреба и които служат за създаване и редактиране на дигитални (цифрови) шрифтове в популярните файлови формати .ttf (TrueType font), .otf (OpenType font), .woff (за уебстраници), .EOT, .SVG и други: [FontForge](ttps://fontforge.github.io/en-US/), [Birdfont](http://www.birdfont.org/), [Trufont](http://trufont.github.io/) ([2](https://github.com/trufont/trufont)), [gbdfed (bitmap-only font editor for Linux](http://sofia.nmsu.edu/~mleisher/Software/gbdfed/screenshots.html) и др.
+В GitHub и SourceForge има няколко свободни програми с отворен код, които с годините разработка станаха готови за масова употреба и които служат за създаване и редактиране на дигитални (цифрови) шрифтове в популярните файлови формати .ttf (TrueType font), .otf (OpenType font), .woff (за уебстраници), .EOT, .SVG и други: [FontForge](https://fontforge.github.io/en-US/), [Birdfont](http://www.birdfont.org/), [Trufont](http://trufont.github.io/) ([2](https://github.com/trufont/trufont)), [gbdfed (bitmap-only font editor for Linux](http://sofia.nmsu.edu/~mleisher/Software/gbdfed/screenshots.html) и др.
 
 По-долу са изброени хипервръзки (е-препратки) към хранилища с голям брой свободни шрифтове за изтегляне...
-* [Шрифтът Terminus Font (от Димитър Жеков), равноширок шрифт (monospace) за програмиране](http://terminus-font.sourceforge.net/), [Terminus font patched (с кръпки)](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) и [Terminus font TTF](https://files.ax86.net/terminus-ttf/)
-* [Google Noto fonts](https://www.google.com/get/noto/)
 * [Google Fonts (and Google WebFonts)](https://fonts.google.com/)
 * [FontLibrary.org](https://fontlibrary.org/)
 * [FontStruct fonts](https://fontstruct.com/) - безплатно създаване и изтегляне на опростени дигитални шрифтове (изисква безплатна регистрация).
 * [Pentacom BitFontMaker2](http://www.pentacom.jp/pentacom/bitfontmaker2/) - предтеч на FontStruct за създаване на bitmap .ttf font в стил pixel-art, версия 2.
+* [Google Noto fonts](https://www.google.com/get/noto/)
+* [Шрифтът Terminus Font (от Димитър Жеков), равноширок шрифт (monospace) за програмиране](http://terminus-font.sourceforge.net/), [Terminus font patched (с кръпки)](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) и [Terminus font TTF](https://files.ax86.net/terminus-ttf/)
 * и други (за допълване после...)
 
 ### Преводи на български език на компютърни игри и конзолни видео игри ###
 
-<small>Нужно е създаването на цяло хранилище само с преводните файлове, което да е към подпроекта HUTPIB-bg.Bulogos.info, но тъй като някои от преводите на компютърни и видео-игри включват и файлове от оригиналните комерсиални игри, въпросът е сложен от правна (юридическа) гледна точка, но едва ли е проблем използването на предимно текстови файлове-кръпки (patches) за лична употреба в домашна среда... Трябва да се съберат и разхвърляните по целия Интернет отделни преводни файлове на български език (langpacks) за доста компютърни и видео-игри...
+Нужно е създаването на цяло под-хранилище (repository) само с преводните файлове, което да е към подпроекта HUTPIB-bg.Bulogos.info, но тъй като някои от преводите на компютърни и видео-игри включват и файлове от оригиналните комерсиални игри, въпросът е сложен от правна (юридическа) гледна точка, но едва ли е проблем използването на предимно текстови файлове-кръпки (patches) за лична употреба в домашна среда... Трябва да се съберат и разхвърляните по целия Интернет отделни преводни файлове на български език (langpacks) за доста компютърни и видео-игри... Може би това е прекалено амбициозна и трудоемка задача, за да се изпълни успешно на практика, нужни са още сътрудници... (?)
 
 * **AdventurersBG.info PlayOnBG** - http://adventurersbg.info/catalog/play-on-bg.php и http://adventurersbg.info/translations/games/
 * **BGpatch.com** - https://www.bgpatch.com/
@@ -54,18 +55,17 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 http://evocore.io/viewtopic.php?t=6266&start=20
 * Теми за преводи на български на компютърни и видео игри в български уеб-форуми: http://forum.pulsar.bg/showthread.php?t=4503, https://www.kaldata.com/forums/topic/37629-rq%D0%BF%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8-%D0%BD%D0%B0-%D0%B8%D0%B3%D1%80%D0%B8/?page=2, https://www.kaldata.com/forums/topic/65059-link-the-half-life-2-bg-translation/,
 * Хвърчащи файлове с преводи на игри, които файлове са хостнати в лични сайтове, data.bg, zamunda, arena-bg и др.
-** Платформи за купуване на компютърни и видео-игри (вкл. римейкове на стари игри): [Valve Steam](https://steamcommunity.com/) ([2](https://store.steampowered.com/)), [GOG.com](https://www.gog.com) и други. (за допълване...)</small>
+* * Платформи за купуване на компютърни и видео-игри (вкл. римейкове на стари игри): [Valve Steam](https://steamcommunity.com/) ([2](https://store.steampowered.com/)), [GOG.com](https://www.gog.com) и други. (за допълване...)
 
-### За превода на български на субтитри за видеоклипове, филми и ТВ/уеб-сериали##
+### За превода на български на субтитри за видеоклипове, филми и ТВ/уеб-сериали ###
 
-* <small>Програмите [Aegisub](http://www.aegisub.org/), [Subtitle Workshop v6+](http://subworkshop.sourceforge.net/index.php) ([2](https://sourceforge.net/projects/subworkshop/)), [Jubler](http://www.jubler.org/), [gnome-subtitles](http://gnomesubtitles.org/), [2](https://github.com/GNOME/gnome-subtitles)) и др.
-
-* Бази от данни за изтегляне на готови (направени от хора) български преводи на субтитри за филми и ТВ сериали: https://www.opensubtitles.org/en/downloads, http://dl.opensubtitles.org/addons/export/, https://www.opensubtitles.org/addons/export_languages.php, https://www.opensubtitles.org/en/downloads, ZamundaSubs, Arena-BG Subs, https://subsunacs.net/, http://www.subtitri.net/, http://www.addic7ed.com/, https://zamunda.ch/forums.php?action=viewtopic&topicid=89748, http://napred.bg/%D1%81%D1%83%D0%B1%D1%82%D0%B8%D1%82%D1%80%D0%B8.html, http://subtitri.seeadd.net/, http://kolibka.com/smf/index.php?PHPSESSID=j0la8b419i59ncndfke8p27ls2&topic=2164.0, https://kodibg.org/forum/archive/index.php?thread-150.html). </small>
+* Програмите [Aegisub](http://www.aegisub.org/), [Subtitle Workshop v6+](http://subworkshop.sourceforge.net/index.php) ([2](https://sourceforge.net/projects/subworkshop/)), [Jubler](http://www.jubler.org/), [gnome-subtitles](http://gnomesubtitles.org/) ([2](https://github.com/GNOME/gnome-subtitles)) и др.
+* Бази от данни за изтегляне на готови (направени от хора) български преводи на субтитри за филми и ТВ сериали: https://www.opensubtitles.org/en/downloads, http://dl.opensubtitles.org/addons/export/, https://www.opensubtitles.org/addons/export_languages.php, https://www.opensubtitles.org/en/downloads, ZamundaSubs, Arena-BG Subs, https://subsunacs.net/, http://www.subtitri.net/, http://www.addic7ed.com/, https://zamunda.ch/forums.php?action=viewtopic&topicid=89748, http://napred.bg/%D1%81%D1%83%D0%B1%D1%82%D0%B8%D1%82%D1%80%D0%B8.html, http://subtitri.seeadd.net/, http://kolibka.com/smf/index.php?PHPSESSID=j0la8b419i59ncndfke8p27ls2&topic=2164.0, https://kodibg.org/forum/archive/index.php?thread-150.html). 
 
 ## `man` (manual = ръководство) страници за Linux програми ##
-(От тези уебстраници (и от `man` файловете, включени в най-новите издания на Линукс дистрибуциите) ще се вземат `man` файловете за превода им на български език. Навярно ще е най-удобно да четете българския превод в tiled terminal (успоредно да четете англоезичния оригинал и българоезичния превод) или като отворите 2 прозореца на terminal-ната ви програма (по 1 за английската версия и българската версия на man инструкциите за съответната програма).
+(От тези уебстраници (и от `man` файловете, включени в най-новите издания на Линукс дистрибуциите) ще се вземат `man` файловете за превода им на български език. Навярно ще е най-удобно да четете българския превод в tiled terminal (успоредно да четете англоезичния оригинал и българоезичния превод) или като отворите 2 прозореца на terminal-ната ви програма (по 1 за английската версия и българската версия на `man` инструкциите за съответната програма).
 
-Преводът на техническа литература и на англоезични текстове за софтуер е нелека задача и нерядко преводът е почти невъзможен заради идиосинкратичните сливания на англоезични неологизми и англоезични програмистки сленг (жаргон).
+Преводът на техническа литература и на англоезични текстове за софтуер е нелека задача и нерядко преводът е почти невъзможен заради [идиосинкратичните](https://bg.wikipedia.org/wiki/%D0%98%D0%B4%D0%B8%D0%BE%D1%81%D0%B8%D0%BD%D0%BA%D1%80%D0%B0%D0%B7%D0%B8%D1%8F) и идиолектни сливания на англоезични неологизми и англоезични програмистки сленг (жаргон), както и граматични проблеми при превода от английски на български език, плюс проблемната англицизация на съвременния български език...
 
 * https://en.wikipedia.org/wiki/Man_page
 * https://linux.die.net/man/
@@ -89,7 +89,7 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 * EuroDict (BG): https://eurodict.com/ (със стария, далеч по-удобен интерфейс: http://bulgariandictionary.com/ + [GitHub gist с написан от мой познат PHP скрипт за остъргване/webscraping на bulgariandictionary.com с Ubuntu/Linux Mint/Debian с цел лична офлайн употреба на 23-те речника](deadlink?TO ADD))
 * https://www.dicts.info/uddl.php (речници за генериране и изтегляне!), https://www.dicts.info, https://www.dicts.info/ud.phpq и https://www.dicts.info/dictionaries.php
 * https://freedict.org/
-* BG: https://slovored.com/, https://rechnik.chitanka.info/, https://www.t-rechnik.info/, https://www.bgjargon.com/
+* ОЩЕ: https://slovored.com/, https://rechnik.chitanka.info/, http://rechnik.info/, https://www.talkoven.com/, https://www.ezikov.com/, https://www.linguee.com/bulgarian-english/translation/, https://bg.glosbe.com/en/bg/, https://www.t-rechnik.info/, https://www.bgjargon.com/ и много други...
 * + хипервръзки за над 6000 други онлайн речника от колекцията с речникови бази от данни за Slovnik.Bulogos.info (ЗА ДОБАВЯНЕ, но изисква МНОГО усилия и време...)...
 
 **`DICT` протокола за опростени онлайн речници и сървър за тях**
