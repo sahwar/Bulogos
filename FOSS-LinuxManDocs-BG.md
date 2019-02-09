@@ -8,9 +8,23 @@ FOSS-LinuxManDocs-BG
 * KDE-BG: https://kde.lindeas.com/
 * GNOME-BG: http://fsa-bg.org/project/gtp
 * FOSS-BG-translators EMaillist: <dict@ludost.net> (абониране: http://ludost.net/cgi-bin/mailman/listinfo/dict)
+* [BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/), [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
 
 * Transifex.com, например https://www.transifex.com/mate/MATE/translate/#bg
 * Self-hosted **Weblate** хранилища, например https://weblate.lxqt.org/projects/lxqt/pcmanfm-qt/ и https://hosted.weblate.org/projects/tilix/translations/
+* ...
+
+* Linux-BG.org (уебсайт „Линукс за българи“): http://www.linux-bg.org/cgi-bin/y/index.pl, http://www.linux-bg.org/cgi-bin/y/index.pl?page=links, http://d.linux-bg.org/, 
+* 
+* Форуми, блогове и лични уебсайтове: например http://www.linux-bg.org/forum/index.php, http://hardwarebg.com/forum/, https://www.kaldata.com/forums/ и МНОГО други.
+
+## FOSS конференции и срещи от и за българи (конференции за свободен софтуер и софтуер с отворен код) ##
+* **[OpenFest](http://www.openfest.org/2018/bg/)**
+* * Hackerspaces: [initLab](https://initlab.org/) и др.
+* * [Шрифтът Terminus Font (от Димитър Жеков), равноширок шрифт (monospace) за програмиране](http://terminus-font.sourceforge.net/), [Terminus font patched (с кръпки)](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) и [Terminus font TTF](https://files.ax86.net/terminus-ttf/)
+* [**FOSDEM**](https://fosdem.org/2019/)
+* [Wikimedia Conferences (Конференции на Фондация „Уикимедиа“)](https://meta.wikimedia.org/wiki/Wikimedia_Conference) и [Wikipedia:Meetups](https://en.wikipedia.org/wiki/Wikipedia:Meetup)
+* и др. (за допълване...)
 
 ## Основни програми, използвани в превода на софтуер на български език ##
 * Plaintext/програмистки текстов редактор по ваш избор (Notepad, Notepad++, Notepad2-mod, Vim (+VundleVim&Vim-Scripts&Vim plug-ins), Emacs (+Emacs plug-ins), Spacemacs, NeoVim, GitHub Atom, GeanyIDE и т.н.)
@@ -64,6 +78,12 @@ FOSS-LinuxManDocs-BG
 * https://launchpad.net/~ubuntu-l10n-bg/+members
 * https://launchpad.net/~lp-l10n-bg
 * https://packages.ubuntu.com/bg/disco/language-pack-bg-base
+* **https://wiki.ubuntu.com/BulgarianTeam (Българската Убунту потребителска група)**
+* **[USU Linux (основана на Ubuntu дистрибуция на български език)](http://learnfree.eu/?lang=bg)** + [блога SKSS](http://skss.learnfree.eu/)
+* [StotinkaOS (BG)](deadlink?)
+* <ubuntu-bg@lists.ubuntu.com> (за абониране: https://lists.ubuntu.com/mailman/listinfo/ubuntu-bg)
+* https://groups.google.com/forum/#!forum/ubuntu-bg
+* IRC канал (IRC): #ubuntu-bg на сървъра irc.freenode.net
 
 ### Linux Mint (производна на Ubuntu) ###
 * https://launchpad.net/~linuxmint-translation-team-bulgarian
