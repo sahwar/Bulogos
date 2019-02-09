@@ -7,7 +7,7 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * **BGlocalize**: https://sites.google.com/site/bglocalize/
 * **KDE-BG**: https://kde.lindeas.com/
 * **GNOME-BG**: http://fsa-bg.org/project/gtp
-* **FOSS-BG-translators EMailList*: <dict@ludost.net> (за абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict)
+* **FOSS-BG-translators EMailList**: <dict@ludost.net> (за абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict)
 * **[BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/)**, [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
 (* стари безплатни версии на програмата за проверка на правописа на български текстове IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking; WinEst и др.)
 
@@ -159,7 +159,7 @@ https://ss64.com/ps/
 * и други (за допълване после...)
 
 ## Уебсайтове за преглед на свалени от Интернет уебстраници (deadlinks, 404 Not Found), съхранени от историческа гледна точка („Интернет археология“), защото са значими/полезни/културно интересни ##
-* Google Cache: google.com -> [cached/кеширана версия], [1](http://cachedview.com/), [2](https://www.searchcommander.com/seo-tools/google-cache-viewer/), [3 bulk-check](https://theseotools.net/google-cache-checker)
-* Archive.org (Internet Archive's WayBack Machine): https://web.archive.org/ 
-* archive.is: http://archive.is/, http://archive.today/ (поддържа и да пуснете заявка за съхранение на отделни уебстраници към архива им!!!)
+* _Google Cache_: google.com -> [cached/кеширана версия], [1](http://cachedview.com/), [2](https://www.searchcommander.com/seo-tools/google-cache-viewer/), [3 bulk-check](https://theseotools.net/google-cache-checker)
+* _Archive.org (Internet Archive's WayBack Machine)_: https://web.archive.org/ 
+* _archive.is_: http://archive.is/, http://archive.today/ (поддържа и да пуснете заявка за съхранение на отделни уебстраници към архива им!!!)
 * и други...
