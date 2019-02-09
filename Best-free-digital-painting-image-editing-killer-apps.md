@@ -2,6 +2,8 @@
 
 Ultimate list of image editing, graphics editing, digital drawing&painting software (the focus is on open-source/FOSS and freeware apps). These apps are for the modern desktop OS trinity: Microsoft Windows, GNU/Linux, Apple macOS. Most apps in the list are FOSS or freeware. The list aims at being highly inclusive while still focusing on recommending the best apps. Most of the digital painting apps in the list also support using a graphics tablet (e.g. Wacom tablets) aside from using a computer mouse and keyboard (check each app's features list or documentation for details).
 
+_THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE EVEN THOUGH IT **IS** AIMING AT BEING COMPREHENSIVE_
+
 * [Adobe Photoshop](http://www.adobe.com/products/photoshop.html) (commercial, has a free trial version)
 * [Alchemy](http://al.chemy.org/)
 * [AliveColors](?) (commercial)
