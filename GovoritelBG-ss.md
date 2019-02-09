@@ -1,4 +1,4 @@
-## Original idea for an open-source CLI/GUI/Web speech-synthesis app for computer pronunciation of texts in the contemporary Bulgarian language ##
+## :memo: -> :loudspeaker: :sound: &#x1F444; Original idea for an open-source CLI/GUI/Web speech-synthesis app for computer pronunciation of texts in the contemporary Bulgarian language ##
 
 Оригинална идея за програма от типа гласов/речев(и) синтезатор, за компютърно произношение на текстове, написани на съвременния български език, с лиценз на свободен софтуер с отворен код (и с платена версия с малко добавки).
 
