@@ -108,8 +108,9 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 * https://launchpad.net/~lp-l10n-bg
 * https://packages.ubuntu.com/bg/disco/language-pack-bg-base
 * **https://wiki.ubuntu.com/BulgarianTeam (Българската Убунту потребителска група)**
-* **[USU Linux (основана на Ubuntu дистрибуция на български език)](http://learnfree.eu/?lang=bg)** + [блога SKSS](http://skss.learnfree.eu/)
-* [StotinkaOS (BG)](deadlink?)
+* **[USU Linux (основана на Ubuntu дистрибуция на български език; BG Linux distro)](http://learnfree.eu/?lang=bg)** + [блога SKSS](http://skss.learnfree.eu/)
+* [StotinkaOS (BG Linux distro)](deadlink?)
+* [Minimal Linux Live (BG Linux distro)](https://github.com/ivandavidov/minimal)
 * <ubuntu-bg@lists.ubuntu.com> (за абониране: https://lists.ubuntu.com/mailman/listinfo/ubuntu-bg)
 * https://groups.google.com/forum/#!forum/ubuntu-bg
 * IRC канал (IRC): #ubuntu-bg на сървъра irc.freenode.net
