@@ -10,8 +10,9 @@ FOSS-LinuxManDocs-BG
 * FOSS-BG-translators EMaillist: <dict@ludost.net> (абониране: http://ludost.net/cgi-bin/mailman/listinfo/dict)
 * [BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/), [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
 
-* Transifex.com, например https://www.transifex.com/mate/MATE/translate/#bg
-* Self-hosted **Weblate** хранилища, например https://weblate.lxqt.org/projects/lxqt/pcmanfm-qt/ и https://hosted.weblate.org/projects/tilix/translations/
+* Transifex.com (например https://www.transifex.com/mate/MATE/translate/#bg), [CrowdIn.com](https://crowdin.com/), [Mojito](http://www.mojito.global/), [TranslationExchange](https://translationexchange.com/), [Localize.co](https://lokalise.co/), [GetLocalization](https://www.getlocalization.com/), 
+и [други инструменти за превод (CAT, MT и т.н)](https://opensource.com/article/17/6/open-source-localization-tools)
+* Self-hosted **Weblate**, [Mozilla Pontoon](https://pontoon.mozilla.org/) и т.н. хранилища с преводи на софтуер и др., например https://weblate.lxqt.org/projects/lxqt/pcmanfm-qt/ и https://hosted.weblate.org/projects/tilix/translations/
 * ...
 
 * Linux-BG.org (уебсайт „Линукс за българи“): http://www.linux-bg.org/cgi-bin/y/index.pl, http://www.linux-bg.org/cgi-bin/y/index.pl?page=links, http://d.linux-bg.org/, 
