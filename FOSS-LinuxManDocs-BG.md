@@ -1,7 +1,7 @@
-FOSS-LinuxManDocs-BG
+# FOSS-LinuxManDocs-BG #
 -----
 
-Това ще бъде сборно хранилище (repository) на файлове с преводи на (ГПИ интерфейса на) софтуер на български език, част от подпроектите <abbr title="CBASTILS = Common Application-Software Translation (t9n), Localization (l10n), and Internationalization (i18n) Strings">CBASTILS</abbr>.Bulogos.info и <abbr title="HUTPIB-bg = Help Us Translate Programs Into Bulgarian - BigGame">HUTPIB-bg</abbr>.Bulogos.info, като доста от преводите са взети от другаде и са дело на много преводачи.
+FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) на файлове с преводи на (ГПИ интерфейса на) софтуер на български език, част от подпроектите <abbr title="CBASTILS = Common Application-Software Translation (t9n), Localization (l10n), and Internationalization (i18n) Strings">CBASTILS</abbr>.Bulogos.info и <abbr title="HUTPIB-bg = Help Us Translate Programs Into Bulgarian - BigGame">HUTPIB-bg</abbr>.Bulogos.info, като доста от преводите са взети от другаде и са дело на много преводачи.
 
 ## Основни инструкции за превода на софтуер (програми за компютър, по-точно приложен софтуер) на български език плюс хранилища с файлове с български преводи на софтуер: ##
 * BGlocalize: https://sites.google.com/site/bglocalize/
@@ -20,8 +20,6 @@ FOSS-LinuxManDocs-BG
 ## FOSS конференции и срещи от и за българи (конференции за свободен софтуер и софтуер с отворен код) ##
 * **[OpenFest](http://www.openfest.org/2018/bg/)**
 * * **Hackerspaces:** [initLab](https://initlab.org/) и др.
-* * [Шрифтът Terminus Font (от Димитър Жеков), равноширок шрифт (monospace) за програмиране](http://terminus-font.sourceforge.net/), [Terminus font patched (с кръпки)](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) и [Terminus font TTF](https://files.ax86.net/terminus-ttf/)
-* * [Google Noto fonts](https://www.google.com/get/noto/), [Google Fonts (and Google WebFonts)](https://fonts.google.com/) и [FontLibrary.org](https://fontlibrary.org/)
 * [**FOSDEM**](https://fosdem.org/2019/)
 * **[Wikimedia Conferences (Конференции на Фондация „Уикимедиа“)](https://meta.wikimedia.org/wiki/Wikimedia_Conference)** и [Wikipedia:Meetups](https://en.wikipedia.org/wiki/Wikipedia:Meetup)
 * и др. (за допълване...)
@@ -32,6 +30,18 @@ FOSS-LinuxManDocs-BG
 * POEdit (GNU gettext, .po): https://poedit.net/, 
 * Qt Linguist (.ts): https://github.com/thurask/Qt-Linguist/releases, https://osdn.net/projects/sfnet_tht/downloads/Other/qt-linguist-setup-4.8.4.exe/, https://doc.qt.io/qt-5/qtlinguist-index.html, https://www.opendesktop.org/p/1131386, https://www.open-tx.org/2017/03/24/QtLinguist-download)
 * Примерни инструкции за преводни файлове за локализация PO и TS (???): http://wiki.pointlinux.org/index.php?title=Localization
+
+### Безплатни шрифтове и свободни шрифтове ###
+В GitHub и SourceForge има няколко свободни програми с отворен код, които с годините разработка станаха готови за масова употреба и които служат за създаване и редактиране на дигитални (цифрови) шрифтове в популярните файлови формати .ttf (TrueType font), .otf (OpenType font), .woff (за уебстраници), .EOT, .SVG и други: [FontForge](ttps://fontforge.github.io/en-US/), [Birdfont](http://www.birdfont.org/), [Trufont](http://trufont.github.io/) ([2](https://github.com/trufont/trufont)), [gbdfed (bitmap-only font editor for Linux](http://sofia.nmsu.edu/~mleisher/Software/gbdfed/screenshots.html) и др.
+
+По-долу са изброени хипервръзки (е-препратки) към хранилища с голям брой свободни шрифтове за изтегляне...
+* [Шрифтът Terminus Font (от Димитър Жеков), равноширок шрифт (monospace) за програмиране](http://terminus-font.sourceforge.net/), [Terminus font patched (с кръпки)](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) и [Terminus font TTF](https://files.ax86.net/terminus-ttf/)
+* [Google Noto fonts](https://www.google.com/get/noto/)
+* [Google Fonts (and Google WebFonts)](https://fonts.google.com/)
+* [FontLibrary.org](https://fontlibrary.org/)
+* [FontStruct fonts](https://fontstruct.com/) - безплатно създаване и изтегляне на опростени дигитални шрифтове (изисква безплатна регистрация).
+* [Pentacom BitFontMaker2](http://www.pentacom.jp/pentacom/bitfontmaker2/) - предтеч на FontStruct за създаване на bitmap .ttf font в стил pixel-art, версия 2.
+* и други (за допълване после...)
 
 ### Преводи на български език на компютърни игри и конзолни видео игри ###
 
