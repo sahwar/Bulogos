@@ -16,14 +16,15 @@ FOSS-LinuxManDocs-BG
 
 * Linux-BG.org (уебсайт „Линукс за българи“): http://www.linux-bg.org/cgi-bin/y/index.pl, http://www.linux-bg.org/cgi-bin/y/index.pl?page=links, http://d.linux-bg.org/, 
 * 
-* Форуми, блогове и лични уебсайтове: например http://www.linux-bg.org/forum/index.php, http://hardwarebg.com/forum/, https://www.kaldata.com/forums/ и МНОГО други.
+* Форуми, блогове, лични уебсайтове и лични/фирмени GitHub&GitLab&др. хранилища и проекти: например http://www.linux-bg.org/forum/index.php, http://hardwarebg.com/forum/, https://www.kaldata.com/forums/ и МНОГО други.
 
 ## FOSS конференции и срещи от и за българи (конференции за свободен софтуер и софтуер с отворен код) ##
 * **[OpenFest](http://www.openfest.org/2018/bg/)**
-* * Hackerspaces: [initLab](https://initlab.org/) и др.
+* * **Hackerspaces:** [initLab](https://initlab.org/) и др.
 * * [Шрифтът Terminus Font (от Димитър Жеков), равноширок шрифт (monospace) за програмиране](http://terminus-font.sourceforge.net/), [Terminus font patched (с кръпки)](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) и [Terminus font TTF](https://files.ax86.net/terminus-ttf/)
+* * [Google Noto fonts](https://www.google.com/get/noto/), [Google Fonts (and Google WebFonts)](https://fonts.google.com/) и [FontLibrary.org](https://fontlibrary.org/)
 * [**FOSDEM**](https://fosdem.org/2019/)
-* [Wikimedia Conferences (Конференции на Фондация „Уикимедиа“)](https://meta.wikimedia.org/wiki/Wikimedia_Conference) и [Wikipedia:Meetups](https://en.wikipedia.org/wiki/Wikipedia:Meetup)
+* **[Wikimedia Conferences (Конференции на Фондация „Уикимедиа“)](https://meta.wikimedia.org/wiki/Wikimedia_Conference)** и [Wikipedia:Meetups](https://en.wikipedia.org/wiki/Wikipedia:Meetup)
 * и др. (за допълване...)
 
 ## Основни програми, използвани в превода на софтуер на български език ##
