@@ -32,8 +32,21 @@ FOSS-LinuxManDocs-BG
 * Plaintext/програмистки текстов редактор по ваш избор (Notepad, Notepad++, Notepad2-mod, Vim (+VundleVim&Vim-Scripts&Vim plug-ins), Emacs (+Emacs plug-ins), Spacemacs, NeoVim, GitHub Atom, GeanyIDE и т.н.)
 * POEdit (GNU gettext, .po): https://poedit.net/, 
 * Qt Linguist (.ts): https://github.com/thurask/Qt-Linguist/releases, https://osdn.net/projects/sfnet_tht/downloads/Other/qt-linguist-setup-4.8.4.exe/, https://doc.qt.io/qt-5/qtlinguist-index.html, https://www.opendesktop.org/p/1131386, https://www.open-tx.org/2017/03/24/QtLinguist-download) 
-* За превода на български на субтитри за видеоклипове, филми и ТВ/уеб-сериали: програмите Aegisub, Subtitle Workshop v5+, Jubler и др. (https://www.opensubtitles.org/en/downloads, http://dl.opensubtitles.org/addons/export/, https://www.opensubtitles.org/addons/export_languages.php, https://www.opensubtitles.org/en/downloads, ZamundaSubs, Arena-BG Subs, https://subsunacs.net/, http://www.subtitri.net/, http://www.addic7ed.com/, https://zamunda.ch/forums.php?action=viewtopic&topicid=89748, http://napred.bg/%D1%81%D1%83%D0%B1%D1%82%D0%B8%D1%82%D1%80%D0%B8.html, http://subtitri.seeadd.net/, http://kolibka.com/smf/index.php?PHPSESSID=j0la8b419i59ncndfke8p27ls2&topic=2164.0, https://kodibg.org/forum/archive/index.php?thread-150.html)
+* За превода на български на субтитри за видеоклипове, филми и ТВ/уеб-сериали: програмите [Aegisub](http://www.aegisub.org/), [Subtitle Workshop v6+](http://subworkshop.sourceforge.net/index.php) ([2](https://sourceforge.net/projects/subworkshop/)), [Jubler](http://www.jubler.org/), [gnome-subtitles](http://gnomesubtitles.org/), [2](https://github.com/GNOME/gnome-subtitles)) и др. (Бази от данни за изтегляне на готови направени от хора български преводи на субтитри на филми и ТВ сериали: https://www.opensubtitles.org/en/downloads, http://dl.opensubtitles.org/addons/export/, https://www.opensubtitles.org/addons/export_languages.php, https://www.opensubtitles.org/en/downloads, ZamundaSubs, Arena-BG Subs, https://subsunacs.net/, http://www.subtitri.net/, http://www.addic7ed.com/, https://zamunda.ch/forums.php?action=viewtopic&topicid=89748, http://napred.bg/%D1%81%D1%83%D0%B1%D1%82%D0%B8%D1%82%D1%80%D0%B8.html, http://subtitri.seeadd.net/, http://kolibka.com/smf/index.php?PHPSESSID=j0la8b419i59ncndfke8p27ls2&topic=2164.0, https://kodibg.org/forum/archive/index.php?thread-150.html)
 * Примерни инструкции за преводни файлове за локализация PO и TS (?): http://wiki.pointlinux.org/index.php?title=Localization
+
+### Преводи на български език на компютърни игри и конзолни видео игри ###
+
+Нужно е създаването на цяло хранилище само с преводните файлове, което да е към подпроекта HUTPIB-bg.Bulogos.info, но тъй като някои от преводите на компютърни и видео-игри включват и файлове от оригиналните комерсиални игри, въпросът е сложен от правна (юридическа) гледна точка, но едва ли е проблем използването на предимно текстови файлове-кръпки (patches) за лична употреба в домашна среда... Трябва да се съберат и разхвърляните по целия Интернет отделни преводни файлове на български език (langpacks) за доста компютърни и видео-игри...
+
+* **AdventurersBG.info PlayOnBG** - http://adventurersbg.info/catalog/play-on-bg.php и http://adventurersbg.info/translations/games/
+* **BGpatch.com** - https://www.bgpatch.com/
+* [Как се превежда игра на български? (статия-урок от блога на Владислав Добрев, с Ascaron Sacred като пример)](https://vladislavdd.wordpress.com/category/%D0%BF%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BD%D0%B0-%D0%B8%D0%B3%D1%80%D0%B8-%D0%BD%D0%B0-%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8/)
+* [Проект за официален превод на компютърни игри на български език, започнат от WildBeast](http://hardwarebg.com/forum/showthread.php/276353-%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%B7%D0%B0-%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B5%D0%BD-%D0%BF%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8E%D1%82%D1%8A%D1%80%D0%BD%D0%B8-%D0%B8%D0%B3%D1%80%D0%B8-%D0%BD%D0%B0-%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8-%D0%B5%D0%B7%D0%B8%D0%BA) и [тук](http://www.xenbg.com/projects/translation/)
+http://evocore.io/viewtopic.php?t=6266&start=20
+* Теми за преводи на български на компютърни и видео игри в български уеб-форуми: http://forum.pulsar.bg/showthread.php?t=4503, https://www.kaldata.com/forums/topic/37629-rq%D0%BF%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8-%D0%BD%D0%B0-%D0%B8%D0%B3%D1%80%D0%B8/?page=2, https://www.kaldata.com/forums/topic/65059-link-the-half-life-2-bg-translation/,
+* Хвърчащи файлове с преводи на игри, които файлове са хостнати в лични сайтове, data.bg, zamunda, arena-bg и др.
+** Платформи за купуване на компютърни и видео-игри (вкл. римейкове на стари игри): [Valve Steam](https://steamcommunity.com/) ([2](https://store.steampowered.com/)), [GOG.com](https://www.gog.com) и други. (за допълване...)
 
 ## `man` (manual = ръководство) страници за Linux програми ##
 (От тези уебстраници (и от `man` файловете, включени в най-новите издания на Линукс дистрибуциите) ще се вземат `man` файловете за превода им на български език. Навярно ще е най-удобно да четете българския превод в tiled terminal (успоредно да четете англоезичния оригинал и българоезичния превод) или като отворите 2 прозореца на terminal-ната ви програма (по 1 за английската версия и българската версия на man инструкциите за съответната програма).
@@ -129,3 +142,9 @@ https://ss64.com/ps/
 * https://www.makeuseof.com/tag/windows-shortcuts-101-ultimate-keyboard-shortcut-guide/
 * https://lifehacker.com/the-master-list-of-new-windows-7-shortcuts-5390086
 * и други (за допълване после...)
+
+## Уебсайтове за преглед на свалени от Интернет уебстраници (deadlinks, 404 Not Found), съхранени от историческа гледна точка („Интернет археология“), защото са значими/полезни/културно интересни ##
+* Google Cache: google.com -> [cached/кеширана версия], [1](http://cachedview.com/), [2](https://www.searchcommander.com/seo-tools/google-cache-viewer/), [3 bulk-check](https://theseotools.net/google-cache-checker)
+* Archive.org (Internet Archive's WayBack Machine): https://web.archive.org/ 
+* archive.is: http://archive.is/, http://archive.today/ (поддържа и да пуснете заявка за съхранение на отделни уебстраници към архива им!!!)
+* и други...
