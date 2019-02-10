@@ -9,13 +9,13 @@ It is still rough round on the edges as an idea but the core app idea&data-struc
 **Tags:** <small>speech synthesis engine, Bulgarian-language speech synthesis engine and speech-synthesizer app, гласов синтезатор, речев синтезатор, преобразуване на писмен текст в компютърно произнесена (изговорена) реч, гласово възпроизвеждане на текст на български, "От текст към говор" (TTS), текст към реч чрез компютърна програма, computer text-to-speech synthesis, програма свободен софтуер с отворен код, посричково произнасяне, дифони, IPA, МФА, extIPA, X-SAMPA, Z-SAMPA, GitHub, espeak, MBROLA, original research, syllabification algorithms, contemporary Bulgarian syllable patterns, experimental application software, assistive software for blind and sight-impaired people, social-care software for disabled people</small>.
 
 _Third-party data to use in `GovoritelBG-ss`:_
-Using the new Bulgarian-language syllabification (syllable-separation) algorithm (better than the old one from TeX BG):
-http://mirror.ctan.org/language/hyph-utf8/tex/generic/hyph-utf8/patterns/tex/hyph-bg.tex
+Using **the new Bulgarian-language syllabification (syllable-separation) algorithm (better than the old one from TeX BG):
+http://mirror.ctan.org/language/hyph-utf8/tex/generic/hyph-utf8/patterns/tex/hyph-bg.tex**
 https://t.co/m4rPDuWQVD?amp=1
 https://www.ctan.org/tex-archive/language/hyph-utf8
 https://github.com/hyphenation/tex-hyphen
 (and also the old TeX algorithm for Bulgarian-language syllabification!)
-and [syllable-patterns for the contemporary Bulgarian language taken from my General Linguistics class at university and generously supplied by my lecturer Assistant Boryan Yanev](https://twitter.com/ve4ernik/status/582996507776823296) etc.
+and [syllable-patterns for the contemporary Bulgarian language taken from my General Linguistics class at university and generously supplied by my lecturer Assistant Boryan Yanev](https://twitter.com/ve4ernik/status/582996507776823296) (pasted below for convenience), etc.
 
 _Theoretical foundations of a Bulgarian-language TTS (text-to-speech) engine/app:_
 * A list of the Bulgarian alphabet as used in contemporary Bulgarian:
