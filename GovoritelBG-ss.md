@@ -15,7 +15,21 @@ https://t.co/m4rPDuWQVD?amp=1
 https://www.ctan.org/tex-archive/language/hyph-utf8
 https://github.com/hyphenation/tex-hyphen
 (and also the old TeX algorithm for Bulgarian-language syllabification!)
-and [syllable-patterns for the contemporary Bulgarian language taken from my General Linguistics class at university and generously supplied by my lecturer Assistant Boryan Yanev](https://twitter.com/ve4ernik/status/582996507776823296), etc.
+and [syllable-patterns for the contemporary Bulgarian language taken from my General Linguistics class at university and generously supplied by my lecturer Assistant Boryan Yanev](https://twitter.com/ve4ernik/status/582996507776823296) etc.
+
+_Theoretical foundations of a Bulgarian-language TTS (text-to-speech) engine/app:_
+* A list of the Bulgarian alphabet as used in contemporary Bulgarian:
+Аа Бб Вв Гг Дд Ее Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъъ Ьь Юю Яя (Ѝѝ) (obsolete letters found in older pre-1945 texts: Ѣѣ Ѫѫ)...
+* A list of all 45-48 IPA phonemes of the contemporary Bulgarian language (standard Bulgarian):
+https://en.wikipedia.org/w/index.php?title=Bulgarian_phonology&oldid=880623002, https://bg.wikipedia.org/w/index.php?title=%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8_%D0%B5%D0%B7%D0%B8%D0%BA&oldid=8897355#%D0%A4%D0%BE%D0%BD%D0%B5%D1%82%D0%B8%D1%87%D0%BD%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0.
+* 11-те вида срички в българския език според езиковедите:
+отворени: V, CV, CCV, CCCV затворени: VC, CVC, CCVC, CVCC, CCVCC, VCC, CCCVC #linguistics.
+(The same in English: The 11 types of syllables (syllable patterns) in the contemporary Bulgarian language according to linguists: open syllables: V, CV, CCV, CCCV, closed syllables: VC, CVC, CCVC, CVCC, CCVCC, VCC, CCCVC. NOTE: 'C' = consonant from the above list of IPA phonemes, 'V' = vocal/vowel from the above list of IPA phonemes, semivowels are considered 'consonants' for these patterns. There must be a permutation-combination list (as a JSON file and .txt table) of all the possible syllable variations following these patterns - to be utilized by this app.)
+* `--arguments` in the app for setting of word-stress(es), intonation, voice pitch, speech speed, suprasegmental speech changes, etc., with related JSON-config files and regex-matched strings that when inserted in a text file parsed by `GovoritelBG-ss`, aid in the proper pronunciation of words, phrases, and sentences, and/or change speech-synthesis options (including suprasegmental speech patterns, and the optional full-word/phrase pronunciation of punctuation marks&other Unicode characters, etc.).
+* Sample sentences to test with `GovoritelBG-ss` when it is enough functional:
+https://bg.wikiquote.org/wiki/%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8_%D0%BF%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%86%D0%B8_%D0%B8_%D0%BF%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BA%D0%B8, https://bg.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BD%D0%B3%D1%80%D0%B0%D0%BC%D0%B0.
+* Transliteration systems for Bulgarian:
+https://bg.wikipedia.org/w/index.php?title=%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D1%82%D0%B5_%D0%B1%D1%83%D0%BA%D0%B2%D0%B8_%D1%81_%D0%BB%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8&oldid=9053881
 
 
 ### 0. App name ###
