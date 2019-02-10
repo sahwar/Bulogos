@@ -17,7 +17,7 @@ https://github.com/hyphenation/tex-hyphen
 (and also the old TeX algorithm for Bulgarian-language syllabification!)
 and [syllable-patterns for the contemporary Bulgarian language taken from my General Linguistics class at university and generously supplied by my lecturer Assistant Boryan Yanev](https://twitter.com/ve4ernik/status/582996507776823296) (pasted below for convenience), etc.
 
-_Theoretical foundations of a Bulgarian-language TTS (text-to-speech) engine/app:_
+_Theoretical foundations of this Bulgarian-language TTS (text-to-speech) engine/app:_
 * A list of the Bulgarian alphabet as used in contemporary Bulgarian:
 Аа Бб Вв Гг Дд Ее Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъъ Ьь Юю Яя (Ѝѝ) (obsolete letters found in older pre-1945 texts: Ѣѣ Ѫѫ)...
 * A list of all 45-48 IPA phonemes of the contemporary Bulgarian language (standard Bulgarian):
