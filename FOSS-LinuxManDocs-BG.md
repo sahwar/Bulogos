@@ -33,7 +33,7 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * Примерни инструкции за преводни файлове за локализация PO и TS (???): http://wiki.pointlinux.org/index.php?title=Localization
 
 ### Безплатни шрифтове и свободни шрифтове ###
-В GitHub и SourceForge има няколко свободни програми с отворен код, които с годините разработка станаха готови за масова употреба и които служат за създаване и редактиране на дигитални (цифрови) шрифтове в популярните файлови формати .ttf (TrueType font), .otf (OpenType font), .woff (за уебстраници), .EOT, .SVG и други: [FontForge](https://fontforge.github.io/en-US/), [Birdfont](http://www.birdfont.org/), [Trufont](http://trufont.github.io/) ([2](https://github.com/trufont/trufont)), [gbdfed (bitmap-only font editor for Linux](http://sofia.nmsu.edu/~mleisher/Software/gbdfed/screenshots.html) и др.
+В GitHub и SourceForge има няколко свободни програми с отворен код, които с годините разработка станаха готови за масова употреба и които служат за създаване и редактиране на дигитални (цифрови) шрифтове в популярните файлови формати .ttf (TrueType font), .otf (OpenType font), .woff (за уебстраници), .EOT, .SVG и други: [FontForge](https://fontforge.github.io/en-US/), [Birdfont](http://www.birdfont.org/), [Trufont](http://trufont.github.io/) ([2](https://github.com/trufont/trufont)), [gbdfed (bitmap-only font editor for Linux)](http://sofia.nmsu.edu/~mleisher/Software/gbdfed/screenshots.html) и др.
 
 По-долу са изброени хипервръзки (е-препратки) към хранилища с голям брой свободни шрифтове за изтегляне...
 * [Google Fonts (and Google WebFonts)](https://fonts.google.com/)
