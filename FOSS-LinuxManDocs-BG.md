@@ -42,6 +42,14 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * [Pentacom BitFontMaker2](http://www.pentacom.jp/pentacom/bitfontmaker2/) - предтеч на FontStruct за създаване на bitmap .ttf font в стил pixel-art, версия 2.
 * [Google Noto fonts](https://www.google.com/get/noto/)
 * [Шрифтът Terminus Font (от Димитър Жеков), равноширок шрифт (monospace) за програмиране](http://terminus-font.sourceforge.net/), [Terminus font patched (с кръпки)](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) и [Terminus font TTF](https://files.ax86.net/terminus-ttf/)
+* Fonts in the Bulgarian Cyrillic font style(s): https://spisanie8.bg/рубрики/история/3435-за-българската-кирилица.html
+* Google web-search for "български шрифтове" and "кирилизирани шрифтове".
+* Search for 'Cyrillic', 'cyrillic', 't1' in the Ubuntu, Debian, Linux Mint package repositories: https://packages.ubuntu.com/search?keywords=t1&searchon=names
+https://packages.ubuntu.com/search?keywords=cyrillic&searchon=names
+* @sahwar's amateur PixelArt fonts (with basic support for Cyrillic): https://fontstruct.com/fontstructors/27969/sahwar
+
+
+
 * и други (за допълване после...)
 
 ### Преводи на български език на компютърни игри и конзолни видео игри ###
