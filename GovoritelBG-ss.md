@@ -22,6 +22,100 @@ _Theoretical foundations of this Bulgarian-language TTS (text-to-speech) engine/
 Аа Бб Вв Гг Дд Ее Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъъ Ьь Юю Яя (Ѝѝ) (obsolete letters found in older pre-1945 texts: Ѣѣ Ѫѫ)...
 * A list of all 45-48 IPA phonemes of the contemporary Bulgarian language (standard Bulgarian):
 https://en.wikipedia.org/w/index.php?title=Bulgarian_phonology&oldid=880623002, https://bg.wikipedia.org/w/index.php?title=%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8_%D0%B5%D0%B7%D0%B8%D0%BA&oldid=8897355#%D0%A4%D0%BE%D0%BD%D0%B5%D1%82%D0%B8%D1%87%D0%BD%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0.
+
+_**Approximate letter-to-IPA-phoneme correspondence table for the contemporary Bulgarian language (for Standard [literary] Bulgarian)**_
+(the total number of phonemes is considered to be 45–48):
+
+**Vowel phonemes** (theoretically considered to be 8 in total — /i/, /u/, /o/, /ɤ/, /ɛ/, /ɔ/, /ɐ/, /a/):
+
+(Letter—phoneme)
+и /i/, (/ɪ/)
+у 	/u /; /o/
+е /ɛ/
+ъ /ɤ̞/, /ɤ/; /ɐ/; ( (/ʌ/), (/ə/) )
+о /ɔ/, /o/
+а /a/, /ɐ/; /ɑ/, /ʌ/, /ɤ̞/; (/ʌ/), (/ə/)
+
+ю 	/ju/ (at syllable-start), /ʲu/; /jo/, /ʲo/
+я 	/ja/ (at syllable-start), /ʲa/; /jɐ/, /ʲɐ/; /jɤ̞/, /ʲɤ̞/
+
+( Ѫ (голям юс, голяма носовка) /о<sup>н</sup>/, /ъ<sup>н</sup> (Old Bulgarian); /ɤ/, /ɤ̞/ (as a now-obsolete letter found in pre-1945 Bulgarian orthography in Bulgarian writings) )
+
+**Consonant phonemes** (WARNING: depending on stress position and position within a word, the letters represent the _voiceless_ IPA phoneme of the voiced—voiceless pair, even though the orthographic letter is the same): 
+
+м /m/
+н /n/ 			
+м<sup>ь</sup> /mʲ/
+н<sup>ь</sup> /ɲ/ 	
+п /p/
+б /b/
+т /t/
+д /d/
+к /k/
+г /ɡ/
+п<sup>ь</sup> /pʲ/
+б<sup>ь</sup> /bʲ/
+т<sup>ь</sup> /tʲ/
+д<sup>ь</sup> /dʲ/
+к<sup>ь</sup> /kʲ/
+г<sup>ь</sup> /ɡʲ/
+ц /t͡s/
+дз /d͡z/
+ч /t͡ʃ/
+дж /d͡ʒ/ 		
+ц<sup>ь</sup> /t͡sʲ/ 			
+ф /f/ 
+в /v/
+с /s/
+з /z/
+ш /ʃ/
+ж /ʒ/
+х /x/ 	
+ф<sup>ь</sup> /fʲ/
+в<sup>ь</sup> /vʲ/
+с<sup>ь</sup> /sʲ/
+з<sup>ь</sup> /zʲ/ 		
+р /r/ 			
+р<sup>ь</sup>/rʲ/ 			
+й /j/ (semi-vowel, considered a 'consonant', e.g. C in CVC... syllable pattern/model notation)
+л, /l/, /ɫ/ 			
+л<sup>ь</sup> /ʎ/ 	
+
+**Example approximate IPA transcriptions of some Bulgarian words and multiword expressions (MWE, phrases):**
+
+жена̀ /ʒɛˈnɑ/
+вода̀ /voˈdɑ/
+ста̀вам /ˈstɑvʌm/
+бра̀ва /ˈbrɑvʌ/
+мъжа̀ /mɐˈʒɤ̞/
+чета̀ /ʧɛˈtɤ̞/
+зѐле /ˈzɛlɛ/
+пѐсен /ˈpɛsɛn/ 	
+син /ˈsin/
+ѝстина /ˈistinɐ/ 	
+ко̀тка /ˈkɔtkɐ/
+боза̀ /boˈza/ 	
+сту̀д /ˈstut/
+уста̀ /oˈsta/ 	
+ъ̀гъл /ˈɤ̞gɐl/
+ка̀мък /ˈkamɐk/ 	
+ю̀жен /ˈjuʒɛn/
+дю̀ля /dʲˈulʲa/
+ютѝя /joˈtija/
+кюфтѐ /kʲoftˈɛ/
+господа̀рю /gospoˈdarjo/
+я̀то /ˈjato/
+бя̀л /ˈbʲal/
+ярѐм /jɐrˈɛm/
+ба̀мя /ˈbamʲɐ/
+деня̀т /dɛˈnjɤ̞t/
+вървя̀ /vɐrˈvjɤ̞/
+_(To add more later...)_
+
+
+
+
+
 * 11-те вида срички в българския език според езиковедите:
 отворени: V, CV, CCV, CCCV затворени: VC, CVC, CCVC, CVCC, CCVCC, VCC, CCCVC #linguistics.
 (The same in English: The 11 types of syllables (syllable patterns) in the contemporary Bulgarian language according to linguists: open syllables: V, CV, CCV, CCCV, closed syllables: VC, CVC, CCVC, CVCC, CCVCC, VCC, CCCVC. NOTE: 'C' = consonant from the above list of IPA phonemes, 'V' = vocal/vowel from the above list of IPA phonemes, semivowels are considered 'consonants' for these patterns. There must be a permutation-combination list (as a JSON file and .txt table) of all the possible syllable variations following these patterns - to be utilized by this app.)
