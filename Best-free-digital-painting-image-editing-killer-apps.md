@@ -51,29 +51,27 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [GraphicsGale](https://graphicsgale.com/us/download.html) FREEWARE as of 2018! _(HIGHLY RECOMMENDED)_
 * [Harmony (by Ricardo Cabella)](http://mrdoob.com/projects/harmony/)
 * [HermiRES (Commodore64 painting app)](http://www.nightfallcrew.com/18/03/2014/hermires-v1-29-c64-hires-bitmap-editor/) [2](http://www.nightfallcrew.com/10/02/2013/hermires-v1-26-c64-hires-bitmap-editor/)
-* [Hornil StylePix Free](http://hornil.com/products/stylepix/) FREEWARE
-* [Hornil StylePix](?) FREEWARE _(RECOMMENDED)_
+* [Hornil StylePix Free](http://hornil.com/products/stylepix/) FREEWARE _(RECOMMENDED)_
 * [iDraw3](http://www.rpgmaker.pl/?co=download&typ=programy&id=idraw) ([direct download](www.rpgmaker.pl/download/programy/idraw/idraw.zip)) [2](http://www.rpgmaker.org/downloads/view.asp?id=248) [3](https://www.purezc.net/forums/index.php?showtopic=56005) [4](https://www.deviantart.com/tag/idraw3) [4 (Wine)](https://appdb.winehq.org/objectManager.php?sClass=application&iId=3742) FREEWARE _(RECOMMENDED)_
-* [ImagePlay](https://github.com/cpvrlab/ImagePlay)
+* [ImagePlay](https://github.com/cpvrlab/ImagePlay) OPEN-SOURCE
 * [Inkscape](https://inkscape.org/) _(HIGHLY RECOMMENDED)_
 * [iPaint (based on Paintbrush above, macOS)](https://sourceforge.net/projects/ipaint/) [2](http://ipaint.sourceforge.net/), [3](http://macfun.svn.beanstalkapp.com/ipaint/)
 * [JPixel (by emad.itch.io)](https://emad.itch.io/jpixel) _(HIGHLY RECOMMENDED)_
 * [JS Paint (MS Paint for Windows98/XP remade using JavaScript!)](https://github.com/1j01/jspaint/) ([online](http://jspaint.app/))
-* [JugiPaint](?) (commercial)
+* [JugiPaint](http://jugipaint.com/) (commercial) _(RECOMMENDED)_
 * [JumpPaint by MediBang, official ShonenJump manga-drawing app!](https://medibangpaint.com/en/jumppaint/) [2](https://medibangpaint.com/en/app-download/#medibangpaint) + BRUSHES = https://medibangpaint.com/en/brush/ + MATERIALS = https://medibangpaint.com/en/material/ _(HIGHLY RECOMMENDED)_
 * [KolourPaint](http://kolourpaint.sourceforge.net/) _(HIGHLY RECOMMENDED)_
 * [Krita](https://krita.org/en/) [2](https://github.com/KDE/krita) _(HIGHLY RECOMMENDED)_
-* [KXStitch](?) OPEN-SOURCE
+* [KXStitch](https://www.opendesktop.org/p/1126920/) (stitch-making sofware) OPEN-SOURCE
 * [LazPaint](https://sourceforge.net/projects/lazpaint/) [2](https://github.com/bgrabitmap/lazpaint) [3](https://code.launchpad.net/lazpaint) [4](http://wiki.freepascal.org/LazPaint) _(HIGHLY RECOMMENDED)_
 * [LightZone](http://lightzoneproject.org) [2](https://github.com/ktgw0316/LightZone)
 * [Linux Wacom Project, The](https://linuxwacom.github.io/) (NOT an image editor but FOSS Linux drivers for Wacom graphics-tablets) [2](https://github.com/linuxwacom)
 * [Livebrush AdobeAIR](deadlink?)
-* [LoSpec (online pixel-art editor)](https://lospec.com/pixel-editor/app) [https://lospec.com/pixel-art-software-list](Pixel-art software list) + [Pixel-art color palettes](https://lospec.com/palette-list)
+* [LoSpec (online pixel-art editor)](https://lospec.com/pixel-editor/app) [Pixel-art software list](https://lospec.com/pixel-art-software-list) + [Pixel-art color palettes](https://lospec.com/palette-list)
 * [Lunapic Editor (online)](https://www190.lunapic.com/editor/) (online pixel-art editor)
 * [MakePixelArt (online)](http://makepixelart.com/free/)
-* [Manga Studio](?) (commercial)
 * [MediBang Paint Pro](https://medibangpaint.com/en/pc/) FREEWARE _(HIGHLY RECOMMENDED)_
-* [Milton (by Sergio Gonzalez, open-source=MIT license) (!), comparable to SpeedyPainter but infinite-canvas vector drawing](https://www.miltonpaint.com/) [2](https://github.com/serge-rgb/milton/releases) _(HIGHLY RECOMMENDED)_
+* [Milton (by Sergio Gonzalez, open-source=MIT license) (!), comparable to SpeedyPainter but infinite-canvas VECTOR drawing](https://www.miltonpaint.com/) [2](https://github.com/serge-rgb/milton/releases) _(HIGHLY RECOMMENDED)_
 * [miniPaint (online HTML5-based image editor)](https://github.com/viliusle/miniPaint) ([online version (press F11 key for fullscreen view!)](http://viliusle.github.io/miniPaint/))
 * [Mischief Free v2.1.6](https://www.madewithmischief.com/downloads/) _(RECOMMENDED)_
 * [Moai (by Ken Thornton), pixel-art editor](http://members.allegro.cc/sirocco/nav_mo.htm) v1.7 (for Windows), _FREEWARE_ _(RECOMMENDED)_
