@@ -41,7 +41,7 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [Minimal Linux Live](http://minimal.linux-bg.org/#home)
 * [YoctoProject](https://www.yoctoproject.org/)
 * LMLE
-* etc.
+* etc. ([DistroWatch.com Linux-distro popularity 'rankings'](https://distrowatch.com/), [ibiblio Linux-distro mirrors](http://distro.ibiblio.org/), etc.
 
 ### Other notable UNIX-like OSs apart from (GNU/)Linux (primarily used for servers) ###
 **FreeBSD**, **OpenBSD**, NetBSD, DragonflyBSD, etc.
