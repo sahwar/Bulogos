@@ -1,7 +1,7 @@
 ### 🎨 The Ultimate List of Digital Painting & Image Editing Apps ###
 (Върховният списък със софтуер за дигитално рисуване и редактиране на изображения)
 
-Ultimate list of image editing, graphics editing, digital drawing&painting software (the focus is on open-source/FOSS and freeware apps). These apps are for the modern desktop OS trinity: Microsoft Windows, GNU/Linux, Apple macOS. Most apps in the list are FOSS or freeware. The list aims at being highly inclusive while still focusing on recommending the best apps. Most of the digital painting apps in the list also support using a graphics tablet (e.g. Wacom tablets) aside from using a computer mouse and keyboard (check each app's features list or documentation for details).
+Ultimate list of image editing, graphics editing, digital drawing&painting software (the focus is on open-source/FOSS and freeware apps). These apps are for the modern desktop OS trinity: Microsoft Windows, GNU/Linux, Apple macOS. Most apps in the list are FOSS or freeware. The list aims at being highly inclusive while still focusing on recommending the best apps. Most of the digital painting apps in the list also support using a graphics tablet (e.g. Wacom tablets) aside from using a computer mouse and keyboard (check each app's features list or documentation for details). This list is particularly suitable for people who add graphics-editing art-software to their Linux distro (&related repositories and binary/source packages) and for people who use computers mostly for digital/mixed-media art production/editing.
 
 _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE EVEN THOUGH IT **IS** AIMING AT BEING COMPREHENSIVE_
 
@@ -35,6 +35,7 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [dpixel](https://marcoc2.itch.io/dpixel) ([GitHub](https://github.com/marcoc2/dpixel)) OPEN-SOURCE _(RECOMMENDED)_
 * [DragonBones Pro](?) (commercial)
 * [DrawPile](https://github.com/drawpile/Drawpile) [2](http://drawpile.net/) _(HIGHLY RECOMMENDED)_
+* [Drawing (a drawing app for Linux GNOME DE](https://github.com/maoschanz/drawing)
 * [EasyPaintTool SAI (English warez)](http://detstwo.com/sai/) [official website 2](https://www.systemax.jp/en/sai/) [3](https://www.paint-tool-sai.at/filebase/index.php?file-list/) [4 deviantART](https://www.deviantart.com/vilebile/journal/Have-My-Paint-Tool-Sai-545675976) [5 MediaFire](http://www.mediafire.com/file/h7bfcoht16ulzia/sai+n+sh%2At.zip)[dll](https://www.mediafire.com/file/cfu05u9u8g1yc11/sfl.dll/file) [6](https://www.deviantart.com/dokkoni/art/Free-Paint-tool-Sai-B-637433421) [7](https://www.deviantart.com/sagemint/art/Floating-panels-in-Sai-settings-356651107) _(HIGHLY RECOMMENDED)_
 * [EasyPaint](https://github.com/Gr1N/EasyPaint) [2](https://www.linux-apps.com/p/1131199/) _(RECOMMENDED)_
 * [ExPhoto (sister project to Pixia)](http://www.ne.jp/asahi/mighty/knight/exphoto.html) _(RECOMMENDED)_
@@ -54,7 +55,7 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [Hornil StylePix Free](http://hornil.com/products/stylepix/) FREEWARE _(RECOMMENDED)_
 * [iDraw3](http://www.rpgmaker.pl/?co=download&typ=programy&id=idraw) ([direct download](www.rpgmaker.pl/download/programy/idraw/idraw.zip)) [2](http://www.rpgmaker.org/downloads/view.asp?id=248) [3](https://www.purezc.net/forums/index.php?showtopic=56005) [4](https://www.deviantart.com/tag/idraw3) [4 (Wine)](https://appdb.winehq.org/objectManager.php?sClass=application&iId=3742) FREEWARE _(RECOMMENDED)_
 * [ImagePlay](https://github.com/cpvrlab/ImagePlay) OPEN-SOURCE
-* [Inkscape](https://inkscape.org/) _(HIGHLY RECOMMENDED)_
+* [Inkscape](https://inkscape.org/) (vector-images editor) OPEN-SOURCE _(HIGHLY RECOMMENDED)_
 * [iPaint (based on Paintbrush above, macOS)](https://sourceforge.net/projects/ipaint/) [2](http://ipaint.sourceforge.net/), [3](http://macfun.svn.beanstalkapp.com/ipaint/)
 * [JPixel (by emad.itch.io)](https://emad.itch.io/jpixel) _(HIGHLY RECOMMENDED)_
 * [JS Paint (MS Paint for Windows98/XP remade using JavaScript!)](https://github.com/1j01/jspaint/) ([online](http://jspaint.app/))
@@ -77,8 +78,7 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [Moai (by Ken Thornton), pixel-art editor](http://members.allegro.cc/sirocco/nav_mo.htm) v1.7 (for Windows), _FREEWARE_ _(RECOMMENDED)_
 * [moPaint (by the same author as JS Paint](https://github.com/1j01/mopaint) ([online version](https://github.com/1j01/mopaint))
 * [MQSprite](https://github.com/eigenbom/MQ-Sprite) OPEN-SOURCE (Windows)
-* [MS Paint (for WinXP SP3)]() [Hidden advanced features of MS Paint for WinXP!!!(https://sahwar.wordpress.com/2014/09/20/the-secret-features-of-ms-paint/) (in Bulgarian and in English)
-* [MS Paint for WindowsXP](https://archive.org/details/MSPaintWinXP) + [tips&tricks for MS Paint for WindowsXP](https://sahwar.wordpress.com/)
+* [MS Paint (for WindowsXP SP3)](https://archive.org/details/MSPaintWinXP) [Hidden advanced features (tips&tricks) of MS Paint for WinXP!!!](https://sahwar.wordpress.com/2014/09/20/the-secret-features-of-ms-paint/) (in Bulgarian and in English)
 * [mtPaint](http://mtpaint.sourceforge.net/) [2](http://sourceforge.net/projects/mtpaint/files/mtpaint/) _(RECOMMENDED)_
 * [MyBrushes (macOS)](?) (commercial)
 * [MyPaint](http://mypaint.org/) OPEN-SOURCE _(HIGHLY RECOMMENDED)_
@@ -136,7 +136,7 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [Spriter2Unity](deadlink?)
 * [Sprytile](https://github.com/Sprytile/Sprytile)
 * [SwankyPaint](http://dime.lo4d.net/dl/swpaint) (Linux, Raspberry Pi, Android, Windows & Mac) [2](http://store.steampowered.com/app/432030/Swanky_Paint/) [3](http://paint.wetgenes.com/welcome) [4](https://github.com/xriss/swankypaint) [5](http://paint.wetgenes.com/dumid?continue=http://paint.wetgenes.com/paint/draw) [6](https://store.steampowered.com/app/432030/Swanky_Paint/) _(HIGHLY RECOMMENDED)_
-* [Synfig Studio](?) _(RECOMMENDED)_
+* [Synfig Studio](https://www.synfig.org/) _(RECOMMENDED)_
 * [Tablet Pressure Curve Tool (for Wacom tablets, 3rd-party app](https://blackink.cz/tablet-pressure-curve-tool/) _NOT AN IMAGE EDITOR, FREEWARE_ (useful for fine-tuning the pressure sensitivity of Wacom Tablets if the Wacom tablet-settings apps aren't enough for your needs)
 * [Triangulart](https://maxwellito.github.io/triangulart/)
 * [Tupi](https://www.linux-apps.com/p/1131159/)
@@ -148,7 +148,8 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [Wacintaki Poteto (oekaki)](http://www.ninechime.com/products/) [2](http://ninechime.com/deep/faq.php)
 * [WnSoft PixBuilder Studio](https://www.wnsoft.com/en/pixbuilder/) FREEWARE
 * [XPaint](http://sf-xpaint.sourceforge.net/)
-* [](?) (commercial)
+* [YellowBites WonderBrush (ONLY for BeOS and HaikuOS!](http://yellowbites.com/wonderbrush.html)
+* [](?) (?)
 
 ###  TO DO ###
 * Sort the list = DONE?
@@ -165,4 +166,4 @@ https://alternativeto.net/software/gimp/
 * Separate commericial apps into a separate category
 * Maybe make the list into a Markdown table
 * Add screenshots for each app = TEDIOUS, IT WILL TAKE A LOT OF TIME. For now just use the RECOMMENDED & HIGHLY RECOMMENDED apps in the list...
-* Maybe add FOSS 3D software as a separate category, e.g. Blender 3D, and also FOSS pixel-art-like voxel editors (e.g. [MagicaVoxel](https://ephtracy.github.io/) [2](http://www.voxelmade.com/magicavoxel/) [3](https://www.rollapp.com/app/magicavoxel) [4](https://sketchfab.com/tags/magicavoxel) (+[IsoVoxel](https://github.com/tommyettinger/IsoVoxel) 3D-voxel TO isometric pixel-art plug-in))?
+* Maybe add FOSS 3D software as a separate category, e.g. ]Blender 3D](https://www.blender.org/), and also FOSS pixel-art-like voxel editors (e.g. [MagicaVoxel](https://ephtracy.github.io/) [2](http://www.voxelmade.com/magicavoxel/) [3](https://www.rollapp.com/app/magicavoxel) [4](https://sketchfab.com/tags/magicavoxel) (+[IsoVoxel](https://github.com/tommyettinger/IsoVoxel) 3D-voxel TO isometric pixel-art plug-in))?
