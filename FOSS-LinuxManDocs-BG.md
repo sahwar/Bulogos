@@ -47,8 +47,8 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * Search for 'Cyrillic', 'cyrillic', 't1' in the Ubuntu, Debian, Linux Mint package repositories: https://packages.ubuntu.com/search?keywords=t1&searchon=names
 https://packages.ubuntu.com/search?keywords=cyrillic&searchon=names
 * @sahwar's amateur PixelArt fonts (with basic support for Cyrillic): https://fontstruct.com/fontstructors/27969/sahwar
-
-
+* The Sad State of Linux Fonts [Rendering] (and possible fixes): https://pandasauce.org/post/linux-fonts/
+* Antialiased and Microsoft ClearType-like typographical font rendering fixes for Linux: https://novelist.xyz/tech/improve-font-rendering-arch-linux-no-infinality/
 
 * и други (за допълване после...)
 
