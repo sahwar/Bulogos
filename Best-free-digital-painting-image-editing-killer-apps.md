@@ -147,8 +147,8 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [Verve Painter (OpenGLv3.2+, by Taron (Timur Baysal), comparable to SpeedyPainter!)](https://www.taron.de/verve/verve_download.html) [2](http://www.taron.de/forum/viewtopic.php?f=4&t=4&sid=07a35f6881f428464a8cb44b300a8d81), look@taron.de _(HIGHLY RECOMMENDED)_
 * [Wacintaki Poteto (oekaki)](http://www.ninechime.com/products/) [2](http://ninechime.com/deep/faq.php)
 * [WnSoft PixBuilder Studio](https://www.wnsoft.com/en/pixbuilder/) FREEWARE
-* [XPaint](http://sf-xpaint.sourceforge.net/)
-* [YellowBites WonderBrush (ONLY for BeOS and HaikuOS!](http://yellowbites.com/wonderbrush.html)
+* [XPaint](http://sf-xpaint.sourceforge.net/) [2](https://sourceforge.net/projects/sf-xpaint/) OPEN-SOURCE
+* [YellowBites WonderBrush (ONLY for BeOS and HaikuOS!)](http://yellowbites.com/wonderbrush.html)
 * [](?) (?)
 
 ###  TO DO ###
@@ -159,11 +159,10 @@ https://en.wikipedia.org/wiki/List_of_vector_graphics_editors
 https://amp.reddit.com/r/photography/comments/a6alpu/the_ultimate_list_of_photo_editing_tools_in_2018
 https://alternativeto.net/software/gimp/
 )
-* Remove/Merge duplicate entries, fix typos&formatting, and add missing hyperlinks
-* Cleanup
+* Cleanup, remove/Merge duplicate entries, fix typos&formatting, and add missing hyperlinks
 * Add a new category for Google Android & Apple iOS apps
 * Maybe add a category for apps for exotic and niche OSs
 * Separate commericial apps into a separate category
 * Maybe make the list into a Markdown table
 * Add screenshots for each app = TEDIOUS, IT WILL TAKE A LOT OF TIME. For now just use the RECOMMENDED & HIGHLY RECOMMENDED apps in the list...
-* Maybe add FOSS 3D software as a separate category, e.g. ]Blender 3D](https://www.blender.org/), and also FOSS pixel-art-like voxel editors (e.g. [MagicaVoxel](https://ephtracy.github.io/) [2](http://www.voxelmade.com/magicavoxel/) [3](https://www.rollapp.com/app/magicavoxel) [4](https://sketchfab.com/tags/magicavoxel) (+[IsoVoxel](https://github.com/tommyettinger/IsoVoxel) 3D-voxel TO isometric pixel-art plug-in))?
+* Maybe add FOSS 3D software as a separate category, e.g. [Blender 3D](https://www.blender.org/), and also FOSS pixel-art-like voxel editors (e.g. [MagicaVoxel](https://ephtracy.github.io/) [2](http://www.voxelmade.com/magicavoxel/) [3](https://www.rollapp.com/app/magicavoxel) [4](https://sketchfab.com/tags/magicavoxel) (+[IsoVoxel](https://github.com/tommyettinger/IsoVoxel) 3D-voxel TO isometric pixel-art plug-in))?
