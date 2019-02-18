@@ -15,6 +15,7 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [Devuan](https://devuan.org/) (Debian minus `systemd`) 9/10
 * [Linux Mint](http://linuxmint.com/) 10/10 (XFCE DE, MATE DE, Cinnamon DE, LMDE (Debian-based rolling Linux Mint))
 * [Ubuntu](http://ubuntu.com/) 9/10 ([Xubuntu](http://xubuntu.org/), [Lubuntu](https://lubuntu.net/), [Ubuntu MATE](http://ubuntu-mate.org/), [Kubuntu](http://kubuntu.org/), Ubunty Unity (~dead))
+* [USU](http://learnfree.eu/?lang=bg) (**Ubuntu-based Linux distro oriented towards Bulgarian users!!!**)
 * [Arch Linux](http://archlinux.org/) + [AUR](https://aur.archlinux.org/) 8/10
 * [Fedora](https://getfedora.org/)
 * [Gentoo](https://www.gentoo.org/)
@@ -40,7 +41,7 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [Slackware Linux](http://www.slackware.com/)
 * [Minimal Linux Live](http://minimal.linux-bg.org/#home)
 * [YoctoProject](https://www.yoctoproject.org/)
-* LMLE
+* [LXLE](http://www.lxle.net/)
 * etc. ([DistroWatch.com Linux-distro popularity 'rankings'](https://distrowatch.com/), [ibiblio Linux-distro mirrors](http://distro.ibiblio.org/), etc.
 
 ### Other notable UNIX-like OSs apart from (GNU/)Linux (primarily used for servers) ###
