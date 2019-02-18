@@ -3,6 +3,10 @@
 
 FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) на файлове с преводи на (ГПИ интерфейса на) софтуер на български език, част от подпроектите <abbr title="CBASTILS = Common Application-Software Translation (t9n), Localization (l10n), and Internationalization (i18n) Strings">CBASTILS</abbr>.Bulogos.info и <abbr title="HUTPIB-bg = Help Us Translate Programs Into Bulgarian - BigGame">HUTPIB-bg</abbr>.Bulogos.info, като доста от преводите са взети от другаде и са дело на много преводачи.
 
+Настоящият документ е опит за събиране на едно място на основните източници с полезна информация за свободен софтуер и софтуер с отворен код за българоезични ползватели. Включват се и много хипервръзки (е/URI/URL-препратки :P), които водят до помощна информация специално за българи, използващи всякакъв софтуер.
+
+
+
 ## Основни инструкции за превода на софтуер (програми за компютър, по-точно приложен софтуер) на български език плюс хранилища с файлове с български преводи на софтуер: ##
 * **BGlocalize**: https://sites.google.com/site/bglocalize/
 * **KDE-BG**: https://kde.lindeas.com/
@@ -98,6 +102,9 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 * https://www.dicts.info/uddl.php (речници за генериране и изтегляне!), https://www.dicts.info, https://www.dicts.info/ud.phpq и https://www.dicts.info/dictionaries.php
 * https://freedict.org/
 * ОЩЕ: https://slovored.com/, https://rechnik.chitanka.info/, http://rechnik.info/, https://www.talkoven.com/, https://www.ezikov.com/, https://www.linguee.com/bulgarian-english/translation/, https://bg.glosbe.com/en/bg/, https://www.t-rechnik.info/, https://www.bgjargon.com/ и много други...
+* [GoldenDict dictionary database files]()
+* [AEDictionaryXP dictionary](http://www.kamburov.net/aleksandar/projects/aedict/)
+* [Megadict-BG dictionary](http://www.megadict-bg.com/)
 * + хипервръзки за над 6000 други онлайн речника от колекцията с речникови бази от данни за Slovnik.Bulogos.info (ЗА ДОБАВЯНЕ, но изисква МНОГО усилия и време...)...
 
 **`DICT` протокола за опростени онлайн речници и сървър за тях**
@@ -163,12 +170,22 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 * https://commandwindows.com/command3.htm
 * https://fossbytes.com/complete-windows-cmd-commands-list-index/
 * https://www.makeuseof.com/tag/15-cmd-commands-every-windows-user-know/
+* https://developers.google.com/web/shows/ttt/series-2/windows-commandline
+* https://www.watchingthenet.com/top-10-windows-command-prompt.html
+* https://www.lifewire.com/list-of-command-prompt-commands-4092302
+* https://www.lifewire.com/command-prompt-tricks-and-hacks-2618104
+* https://www.nirsoft.net/utils/nircmd2.html & 
+* https://www.raymond.cc/blog/trigger-uac-elevation-from-command-line-with-elevate-utility/
+* etc.
 
 ### За `Start (бутона) -> Run...` ###
 * https://ss64.com/nt/run.html
 
 ### За PowerShell (наследник на `cmd.exe`) ###
 https://ss64.com/ps/
+
+#### Полезен софтуер за `cmd.exe`/PowerShell ####
+`cmd.exe`, PowerShell / PowerShell Core (open-source), [ConEmu](https://conemu.github.io/), [Clink](http://mridgers.github.io/clink), PSReadLine, PSGet, Chocolatey / NuGet / MS OneGet, Babun (optional), Process Hacker, [cmder](https://cmder.net/), [GitForWindows](https://gitforwindows.org/), [NirSoft apps](http://www.nirsoft.net/) (especially NirCmd), [Windows utilities by Code.Kliu.org](http://code.kliu.org/) (like [elevate](http://code.kliu.org/misc/elevate/)), [Babun](https://github.com/babun/babun), etc.
 
 ### Списък с клавишни комбинации („горещи клавиши“, HotKeys) за Microsoft Windows (List of keyboard shortcuts in Microsoft Windows) ###
 * Windows XP: https://support.microsoft.com/en-us/help/301583/list-of-the-keyboard-shortcuts-that-are-available-in-windows-xp
