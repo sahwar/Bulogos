@@ -5,7 +5,7 @@
 ## The Big Holy Trinity of Desktop OSs ##
 _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility with older apps&older video-games); **7 SP1 (Pro/Ultimate x64)**, (8.1), **10**) (important related FOSS projects: see below), _**(GNU/)Linux**_ (Linux distros recommended by @sahwar for use in 2019: see below), and _**macOS**_ (X+; [Homebrew](https://brew.sh/), [MacPorts](http://macports.org/), Wine for macOS, [KDE apps for macOS X](https://community.kde.org/Mac)).
 
-### Important MS Windows-related FOSS projects ###
+### Important MS Windows-related Microsoft & FOSS projects ###
 **[ReactOS](http://reactos.org/)**, **[Wine](https://www.winehq.org/)/PlayOnLinux**, [Cygwin](http://www.cygwin.com/), [MinGW](http://www.mingw.org/), [MinGW-w64](https://mingw-w64.org/doku.php/start), MSVC, Linux Subsystem for Windows10, [Chocolatey](http://chocolatey.org/), [NuGet](http://nuget.org/), `cmd.exe`&`PowerShell`, [Win-Builds](http://win-builds.org/doku.php), [KDE apps for MS Windows](https://community.kde.org/Windows) [2](https://techbase.kde.org/Getting_Started/Build/Historic/KDE4_Windows), [BusyBox](https://busybox.net/), etc.
 
 ### Viable Linux distros 2019 ###
