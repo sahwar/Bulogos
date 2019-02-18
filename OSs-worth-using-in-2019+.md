@@ -8,8 +8,8 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 ### Important MS Windows-related Microsoft & FOSS projects ###
 **[ReactOS](http://reactos.org/)**, **[Wine](https://www.winehq.org/)/PlayOnLinux**, [Cygwin](http://www.cygwin.com/), [MinGW](http://www.mingw.org/), [MinGW-w64](https://mingw-w64.org/doku.php/start), MSVC, Linux Subsystem for Windows10, [Chocolatey](http://chocolatey.org/), [NuGet](http://nuget.org/), OneGet (Windows10), `cmd.exe`&`PowerShell`, [Win-Builds](http://win-builds.org/doku.php), [KDE apps for MS Windows](https://community.kde.org/Windows) [2](https://techbase.kde.org/Getting_Started/Build/Historic/KDE4_Windows), [BusyBox](https://busybox.net/), etc.
 
-#### Полезен софтуер за `cmd.exe`/PowerShell ####
-`cmd.exe`, PowerShell / PowerShell Core (open-source), [ConEmu](https://conemu.github.io/), [Clink](http://mridgers.github.io/clink), PSReadLine, PSGet, Chocolatey / NuGet / MS OneGet, Babun (optional), Process Hacker, [cmder](https://cmder.net/), [GitForWindows](https://gitforwindows.org/), [NirSoft apps](http://www.nirsoft.net/) (especially NirCmd), [Windows utilities by Code.Kliu.org](http://code.kliu.org/) (like [elevate](http://code.kliu.org/misc/elevate/)), [Babun](https://github.com/babun/babun), etc.
+#### Полезен софтуер за `cmd.exe`/PowerShell & Windows Explorer ####
+`cmd.exe`, PowerShell / PowerShell Core (open-source), [ConEmu](https://conemu.github.io/), [Clink](http://mridgers.github.io/clink), [PSReadLine](https://github.com/lzybkr/PSReadLine), [PSGet](https://github.com/psget/psget), Chocolatey / NuGet / MS [OneGet](https://github.com/OneGet/oneget), [Process Hacker](http://processhacker.sourceforge.net/), [cmder](https://cmder.net/), [GitForWindows](https://gitforwindows.org/), [NirSoft apps](http://www.nirsoft.net/) (especially NirCmd), [Windows utilities by Code.Kliu.org](http://code.kliu.org/) (like [elevate](http://code.kliu.org/misc/elevate/)), [Babun](https://github.com/babun/babun), plus Windows (x64) builds of `curl`, `wget`, `ffmpeg`/`libav`, etc.
 
 ### Viable Linux distros 2019 ###
 * [MX Linux](http://mxlinux.org/) 10/10
