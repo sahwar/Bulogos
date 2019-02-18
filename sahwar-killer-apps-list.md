@@ -1,0 +1,23 @@
+# A list of my favorite killer-apps for daily use (Software Tools of the Trade) (2019) #
+> by https://github.com/sahwar 
+
+## Under `Microsoft Windows 7 Ultimate/Pro SP1 (x64) / Windows 8.1 / Windows 10` ##
+**Taskbar-pinned main apps:**
+`explorer.exe` (Windows Explorer file-manager), `taskmgr.exe` (Task Manager), `calc.exe` (Calculator), (`cmd.exe` / PowerShell), [Notepad2-mod](https://github.com/XhmikosR/notepad2-mod/releases/), [Notepad++](https://notepad-plus-plus.org/) (+add-ons, see below), [BabelMap](http://www.babelstone.co.uk/Software/BabelMap.html) (Unicode character map), [(VoidTools) Search Everything](https://www.voidtools.com/) (file-searching-by-filename&regex engine for Windows), `AEDict.exe` ([AEDictionary](http://www.kamburov.net/aleksandar/projects/aedict/), an old but FAST Bulgarian<->English dictionary), [Megadict-BG](http://www.megadict-bg.com/) dictionary, [GoldenDict](http://goldendict.org/), [IDI Spellchecker](http://www.freeplace.info/ididictionary/bulgarian_spell_checker/) (v2.44/v4.??, buy the latest best version from [here](http://www.freeplace.info/ididictionary/bulgarian_spell_checker/)!), [paint.net](https://www.getpaint.net/), [GifCam](http://blog.bahraniapps.com/gifcam/) (bahraniapps.net), [ShareX](https://getsharex.com/), [nomacs](http://nomacs.org/) (image viewer), [Imagine](http://www.nyam.pe.kr/dev/imagine/) (image viewer), [NexusFont](http://www.xiles.net/) (font-manager), [Audacity](https://www.audacityteam.org/), [Mozilla Firefox](https://www.mozilla.org/bg/firefox/new/) (v56+, x64 as of 2018), [Google Chrome](https://www.google.com/chrome/), [MPC-HC](https://mpc-hc.org/) (Media Player Classic - Home Cinema), [VLC](https://www.videolan.org/), [Baka MPlayer](http://bakamplayer.u8sand.net/) ([mpv](https://mpv.io/)-based), [SMPlayer](https://www.smplayer.info/), Oracle VM [VirtualBox](https://www.virtualbox.org/) (OS virtualization), [PidginIM](http://pidgin.im/) (XMPP/Jabber IM client), [Skype](https://www.skype.com/en/get-skype/), [Viber](https://www.viber.com/), [Facebook Messenger](https://www.messenger.com), [EiskaltDC++](https://sourceforge.net/projects/eiskaltdcpp/) ([2](https://github.com/eiskaltdcpp/eiskaltdcpp)), [qBitTorrent](https://www.qbittorrent.org/), [youtube-dl.exe](http://youtube-dl.org/), [wget64.exe](https://eternallybored.org/misc/wget/), [curl64.exe](https://curl.haxx.se/download.html), [ffmpeg.exe](https://ffmpeg.org/) ([Windows builds](https://ffmpeg.zeranoe.com/builds/)) / [libav](https://www.libav.org/)... [Krita](https://krita.org/en/), [MyPaint](http://mypaint.org/), [Medibang Paint Pro](https://medibangpaint.com/en/), [SpeedyPainter](http://speedypainter.altervista.org/), [JPixel](https://emad.itch.io/jpixel), etc.
+
+**Anti-virus:** Windows Firewall + Avast Free, AVG Free is also OK.
+
+**Full list of all apps I've ever used with Microsoft Windows XP/7/8.1/10:**
+* (TO ADD from my [CCleaner](https://www.ccleaner.com/) `install.txt` files & other files)
+
+## Under `(GNU/)Linux` ##
+Too many to list here... for now at least, that is.
+
+## Under `Apple macOS` ##
+_I don't use macOS..._ In my opinion, it's only good for art/designer/webdev professionals... I only like some MacBook Pro's and the newer pressure-sensitive iPad's.
+
+## Under `Google Android` ##
+* (TO ADD from apps-list-generating apps)
+
+## Under `Apple iOS` ##
+_I don't use iOS..._
