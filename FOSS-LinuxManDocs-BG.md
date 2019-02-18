@@ -153,6 +153,8 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 * (!) ` https://www.microsoft.com/en-us/download/details.aspx?id=2632 ` (Windows Server 2008 R2, Windows Server 2008, Windows Server 2003, Windows 7, and Windows Vista)
 * (!) https://www.microsoft.com/en-us/download/details.aspx?id=56846 (PDF, for Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016)
 * https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands (Windows 8.1/10/Windows Server (Semi-Annual Channel)/Server 2019/Windows Server 2008/Server 2008 R2/Server 2012/Server 2012 R2/Windows Server 2016)
+* https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754340(v=ws.11)
+* https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-xp/bb490890(v%3dtechnet.10) (WindowsXP)
 * https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-xp/bb490890(v=technet.10) (WindowsXP)
 * https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
 * https://www.windows-commandline.com/
