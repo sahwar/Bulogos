@@ -11,6 +11,6 @@
 
 <q>_The four principles of object-oriented programming (OOP) are encapsulation, abstraction, inheritance, and polymorphism._</q>
 
-P.S. It seems that my list above is sorta in line with the **TIOBE Index of Popular Programming Languages 2019** so you're good to go: :)
+**P.S.** It seems that my list above is sorta in line with the **TIOBE Index of Popular Programming Languages 2019** so you're good to go: :)
 
 ![TIOBE Index of Popular Programming Languages 2019](https://i.imgur.com/D9A7qJJ.png)
