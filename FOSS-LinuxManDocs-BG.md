@@ -36,6 +36,7 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * [The GNU Project](https://www.gnu.org/)
 * Linus Torvalds' Google+ blog: https://plus.google.com/+LinusTorvalds (Google+ is shutting down in April 2019, hurry & backup your data before that!)
 * RMS's (Richard M. Stallman) personal website: http://stallman.org/ ;)
+* 'GNU/Linux vs. Linux' debate: https://www.gnu.org/gnu/linux-and-gnu.html
 
 * и др. (за допълване...)
 
