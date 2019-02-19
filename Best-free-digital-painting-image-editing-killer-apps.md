@@ -1,7 +1,9 @@
 ### 🎨 The Ultimate List of Digital Painting & Image Editing Apps ###
 (Върховният списък със софтуер за дигитално рисуване и редактиране на изображения)
 
-Ultimate list of image editing, graphics editing, digital drawing&painting software (the focus is on open-source/FOSS and freeware apps). These apps are for the modern desktop OS trinity: Microsoft Windows, GNU/Linux, Apple macOS. Most apps in the list are FOSS or freeware. The list aims at being highly inclusive while still focusing on recommending the best apps. Most of the digital painting apps in the list also support using a graphics tablet (e.g. Wacom tablets) aside from using a computer mouse and keyboard (check each app's features list or documentation for details). This list is particularly suitable for people who add graphics-editing art-software to their Linux distro (&related repositories and binary/source packages) and for people who use computers mostly for digital/mixed-media art production/editing.
+Ultimate list of image editing, graphics editing, digital drawing&painting software (the focus is on open-source/FOSS and freeware apps). These apps are for the modern desktop OS trinity: Microsoft Windows, GNU/Linux, Apple macOS. Most apps in the list are FOSS or freeware. The list aims at being highly inclusive while still focusing on recommending the best apps. Most of the digital painting apps in the list also support using a graphics tablet (e.g. Wacom tablets) aside from using a computer mouse and keyboard (check each app's features list or documentation for details).
+
+This list is particularly suitable for people who add graphics-editing art-software to their Linux distro (or who package art software for related repositories , i.e. compiled binary-from-source packages) and for people who use computers mostly for digital/mixed-media art production/editing.
 
 _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE EVEN THOUGH IT **IS** AIMING AT BEING COMPREHENSIVE_
 
@@ -14,7 +16,7 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [Artweaver Plus (newer, commercial)](https://www.artweaver.de/en) (commercial)
 * [Aseprite](https://www.aseprite.org/) (the newer version is commercial, has a freeware trial version; has an on open-source fork of the last open-source version: [LibreSprite](https://github.com/LibreSprite/LibreSprite)) _(RECOMMENDED)_
 * [Autodesk SketchBook](https://sketchbook.com/) [2](https://www.autodesk.co.uk/products/sketchbook/subscribe) (commercial, has a free trial version and a get-it-for-free programme for students/educators)
-* [AzPainter](https://github.com/Symbian9/azpainter) [2](https://osdn.net/projects/azpainter/releases) [3](https://azworldweb.wordpress.com/), [3](https://azworldweb.wordpress.com/about/) (also by the same author, Azel: AzDrawing, AzPainterB) _(HIGHLY RECOMMENDED)_
+* [AzPainter](https://github.com/Symbian9/azpainter) [2](https://osdn.net/projects/azpainter/releases) [3](https://azworldweb.wordpress.com/), [3](https://azworldweb.wordpress.com/about/) (also by the same author, Azel: AzDrawing, AzPainterB; it's a lot like an open-source Paint Tool SAI but more lightweight and sorta different!) _(HIGHLY RECOMMENDED)_
 * [BrashMonkey Sprite (!)](https://brashmonkey.com/download-spriter-beta/)
 * [BrashMonkey Spriter](https://brashmonkey.com/download_spriter/?utm_campaign=free-traffic&utm_source=solutions-softonic-com&utm_medium=referral#) (Windows, Linux, macOS) _(RECOMMENDED)_
 * [Chasys Draw IES](http://www.jpchacha.com/chasysdraw/) FREEWARE _(HIGHLY RECOMMENDED)_
@@ -114,6 +116,7 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [Pixilart (online)](https://www.pixilart.com/)
 * [Pixlr (online)](https://pixlr.com/editor/)) (online pixel-art editor)
 * [Pixly (for Android)](http://pixly.meltinglogic.com/)
+* [Poxi (online flat pixel-art editor](https://github.com/maierfelix/poxi) _(RECOMMENDED)_
 * [Project Dogwaffle Free v1.2](?) {paid commercial Project Dogwaffle is now called [Howler11](https://www.thebest3d.com/howler/)} [3](https://www.thebest3d.com/dogwaffle/penny/index.html) _(RECOMMENDED)_
 * [PyxelEdit (commercial, has a freeweare beta version)](http://pyxeledit.com/about.php) _(RECOMMENDED)_
 * [PyxleOS (!)](https://github.com/Dakkra/PyxleOS)
