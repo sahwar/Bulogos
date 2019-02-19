@@ -35,7 +35,7 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [Slax](https://www.slax.org/)
 * [Solus Linux](https://getsol.us/home/)
 * [Bodhi Linux](https://www.bodhilinux.com/)
-* [Trisquel Linux](https://trisquel.info/)
+* [Trisquel Linux](https://trisquel.info/en)
 * [Manjaro Linux](https://manjaro.org/)
 * [Sabayon Linux](https://www.sabayon.org/)
 * [Mageia Linux](http://www.mageia.org/bg/)
@@ -45,6 +45,18 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [Minimal Linux Live](http://minimal.linux-bg.org/#home)
 * [YoctoProject](https://www.yoctoproject.org/)
 * [LXLE](http://www.lxle.net/)
+* [PureOS](https://www.pureos.net/) (from https://puri.sm/, powerful libre laptops!)
+...
+* [Parabola GNU/Linux](https://www.parabola.nu/)
+* [gNewSense GNU/Linux](http://www.gnewsense.org/)
+* [Dynebolic GNU/Linux](https://www.dyne.org/software/dynebolic/)
+* [Dragora GNU/Linux-libre](http://www.dragora.org/repo.fsl/doc/trunk/www/index.md)
+* [Blag GNU/Linux](http://www.blagblagblag.org/) (based on Fedora)
+* [Freed-ora GNU/Linux](http://www.fsfla.org/ikiwiki/selibre/linux-libre/freed-ora.en.html) (based on Fedora)
+* [GNU Linux-libre](http://linux-libre.fsfla.org/pub/linux-libre/) ([info](http://www.fsfla.org/ikiwiki/selibre/linux-libre/index.en.html))
+* [Ututo GNU/Linux](http://ututo.org/)
+* [libeRTy for Linux-libre](http://www.fsfla.org/ikiwiki/selibre/linux-libre/liberty.en.html)
+* [Ezix Linux](https://ezix.org/project/)
 * etc. ([DistroWatch.com Linux-distro popularity 'rankings'](https://distrowatch.com/), [ibiblio Linux-distro mirrors](http://distro.ibiblio.org/), etc.
 
 ### Other notable UNIX-like OSs apart from (GNU/)Linux (primarily used for servers) ###
@@ -61,3 +73,7 @@ SymbianOS 10, WinCEv5&v6 (Windows Embedded Compact) (all are obsolete except for
 
 ## EXTRA - Emulators for old and legacy video-game consoles & ancient PC hardware ##
 * There are too many (hundreds!) FOSS video-game-console emulators to list here, but [MAME](https://www.mamedev.org/) (especially MAMEUI64 and the older mame32.exe GUI: [1](https://github.com/mamedev/mame) [2](https://github.com/Robbbert/mameui) [3](https://www.afterdawn.com/software/system_tools/emulation/mame-for-windows.cfm) [4](http://www.emutopia.com/index.php/emulators/item/257-mame/157-mameui) [5](https://www.afterdawn.com/software/system_tools/emulation/mameui-64-bit.cfm) [6]() [MESSUI](https://github.com/Robbbert/messui) [2](http://mess.redump.net/start) [3](http://messui.1emulation.com/) [4](http://www.progettosnaps.net/mameui/) [5](http://www.progettoemma.net/mess/extra.html) [6](http://mrdo.mameworld.info/index.php), [IV/Play&MAMEUI64](http://www.mameui.info/)), [FreeDOS](https://www.freedos.org/), [DOXBox](https://www.dosbox.com/), [ScummVM](https://www.scummvm.org/) are among the most notable.
+
+## EXTRA2 - Good computers for FLOSS/FOSS users ##
+There appeared a number of new manufacturers&vendors of computers suitable for FLOSS users.
+Apart from using older laptops (IBM/Lenovo ThinkPad's, HP EliteBook, Fujitsu LifeBook, etc. brands), I find these 2 companies to be selling great laptops: https://puri.sm/ and https://system76.com/ (information accurate as of February 2019).
