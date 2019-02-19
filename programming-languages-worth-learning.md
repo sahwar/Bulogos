@@ -10,3 +10,7 @@
 <small>Emscripten, **[CoffeeScript](https://coffeescript.org/)**, **[Microsoft TypeScript](http://www.typescriptlang.org/) [2](https://github.com/Microsoft/TypeScript)**, Dart, Haxe, Clojure, Crystal, Nim, Boo, **Rebol**, Haskell, Scheme, Common Lisp, Smalltalk, Erlang, Swift (for macOS&iOS), **Objective-C**, **Lisp**, **Common Lisp**, Scheme, **Racket**, Eiffel, OCaml, Clojure, Erlang, Haskell, Smalltalk, Self, Hylang, Ada, Qore, JRuby, Jython, **LiveScript**, Kawa (Scheme implementation), [Rhine](https://github.com/artagnon/rhine-ml), **[ATS](http://www.ats-lang.org)**, F#, TurboPascal/Pascal & Object Pascal/Delphi (see FreePascal & Lazarus IDE above, also check Borland Pascal), Elm, F*, Dafny, Mathematica/Wolfram Language, Prolog, Mercury, ALGOL 60 (granddaddy), Nim, Modula-2, Modula-3, Io, Ioke, Factor, Agora98, Squeak, Logo, Scratch; Sketchpad (a.k.a. Robot Draftsman!; historical, by Ivan Sutherland et al.), etc.</small>
 
 <q>_The four principles of object-oriented programming (OOP) are encapsulation, abstraction, inheritance, and polymorphism._</q>
+
+P.S. It seems that my list above is sorta in line with the **TIOBE Index of Popular Programming Languages 2019** so you're good to go: :)
+
+![TIOBE Index of Popular Programming Languages 2019](https://i.imgur.com/D9A7qJJ.png)
