@@ -34,6 +34,7 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [Dibuja](https://launchpad.net/dibuja) [2](https://www.opendesktop.org/s/Apps/p/1129305/) OPEN-SOURCE
 * [DIGImend](http://digimend.github.io/) (NOT an image editor but FOSS Linux drivers for non-Wacom graphics-tablets) [2](https://github.com/DIGImend/digimend-kernel-drivers) [3](https://github.com/DIGImend)
 * [Dotgrid](https://hundredrabbits.itch.io/dotgrid) [2 Online version of Dotgrid](https://hundredrabbits.github.io/Dotgrid/)
+* [Dopey](https://github.com/dopeyanimation/dopey) (A 2D animation program based on MyPaint and an older fork of MyPaint)
 * [dpixel](https://marcoc2.itch.io/dpixel) ([GitHub](https://github.com/marcoc2/dpixel)) OPEN-SOURCE _(RECOMMENDED)_
 * [DragonBones Pro](?) (commercial)
 * [DrawPile](https://github.com/drawpile/Drawpile) [2](http://drawpile.net/) _(HIGHLY RECOMMENDED)_
@@ -106,6 +107,7 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [Pinta](https://pinta-project.com/pintaproject/pinta/) _(RECOMMENDED)_
 * [Piskel (online!)](https://www.piskelapp.com/) (online!!!) _(HIGHLY RECOMMENDED)_
 * [Pixarra Pro Studio](http://www.pixarra.com/pro_studio.html) [2](http://www.pixarra.com/download.html), [Pixarra PixelStudio](http://www.pixarra.com/pixel_studio.html), [Pixarra Pro Studio](http://www.pixarra.com/paint_studio.html) (commercial)
+* [pixeditor](https://github.com/z-uo/pixeditor) (alpha-version animated pixel-art editor)
 * [Pixel Studio](https://itunes.apple.com/us/app/pixel-studio/id1446750012?mt=12) (macOS, commercial)
 * [Pixel.Tools (open-source COLLABORATIVE online pixel-art editor)](https://prominentdetail.github.io/Pixel.Tools/) _(HIGHLY RECOMMENDED)_
 * [Pixelitor (Java-based)](http://pixelitor.sourceforge.net/) [2](https://github.com/lbalazscs/Pixelitor)
@@ -154,6 +156,58 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [XPaint](http://sf-xpaint.sourceforge.net/) [2](https://sourceforge.net/projects/sf-xpaint/) OPEN-SOURCE
 * [YellowBites WonderBrush (ONLY for BeOS and HaikuOS!)](http://yellowbites.com/wonderbrush.html)
 * [](?) (?)
+
+#### TO ADD TO THE ABOVE LIST & THEN SORT IT AGAIN ####
+
+* [Pixer (Qt-based pixel-art editor)](https://github.com/SilangQuan/Pixer) ([ipixer at SourceForge.net](https://sourceforge.net/projects/ipixer/))
+* [Pixel](https://github.com/tjhancocks/Pixel) (a basic pixel-art editor written in Swift)
+* [Pixel it](https://github.com/tavioalves/pixel-it) (a basic web-app to create, share or download pixel art around the web)
+* [PixelArtShader](https://github.com/kushi34123616bd/PixelArtShader) (Render like * PixelArts from 3D model!!! It can be used to make 2D animations from pixel-art frames after exporting from a rotated/slightly-changed 3D-model!!!)
+* [https://github.com/cwkx/godot-pixel-painter](https://github.com/cwkx/godot-pixel-painter)
+
+
+* [Pixavoxet](https://github.com/mishapsi/pixavoxet) (Voxel to Pixel Art Animator/Renderer inside Godot http://myskamyska.tumblr.com)
+
+https://github.com/Hopson97/Pixelator
+https://github.com/saint11/VectorChimera
+https://github.com/Broxxar/PaletteSwapping
+https://github.com/nathanharper/phixelgator
+
+https://github.com/Convicted202/PixelShape
+https://github.com/Soreine/pixel-art-maker (Generate palettes and dither any image with custom patterns)
+
+* [Pixelm](https://github.com/shuhei/pixelm) ([Pixelm app](https://shuheikagawa.com/pixelm/))
+
+https://github.com/sahwar/pixelRestorer
+https://github.com/sahwar/blender-addon-import-pixelart
+http://waifu2x.udp.jp/
+https://github.com/sean-codes/pixeling
+
+https://github.com/mananapr/pxlart
+https://github.com/dylanaraps/pxltrm
+https://github.com/alexpnt/pixel-art
+https://github.com/SorenSaket/Pixel-Colors
+
+[pyqx](https://github.com/MikiLoz92/pyqx) (a multiplatform graphics editor developed in Python and PyQt. It focuses in Pixel Art) OPEN-SOURCE _RECOMMENDED_
+
+https://github.com/foldi/Big-Block-Framework
+https://github.com/SorenSaket/Pixel-Colors (pixel-art color palettes)
+https://github.com/mitaki28/pixcaler
+
+https://github.com/59naga/jaggy
+https://github.com/michaelrbk/pixelart-vectorizer
+[Dithermark](https://github.com/allen-garvey/dithermark) (Transform your photos into pixel art https://app.dithermark.com)
+[pixiEditor](https://github.com/flabbet/PixiEditor) (a lightweighted pixel art creator.)
+
+https://github.com/g-whiz/pxSort
+[Markov chains](https://en.wikipedia.org/wiki/Markov_chain), [fast Fourier transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform), etc.
+https://github.com/joshavanier/poxel
+https://github.com/nikoferro/react-pixelify
+https://github.com/BrandonHilde/PixelArt
+[Pixelaria (written in .NET C# 4.5)](https://github.com/LuizZak/Pixelaria) (C# program for creating pixel art game sprites) OPEN-SOURCE _RECOMMENDED_
+https://github.com/guastallaigor/vue-pixel-art
+https://github.com/qbart/isometric-pixel-art
+MORE (research...): https://github.com/search?p=17&q=pixel+art&type=Repositories
 
 ###  TO DO ###
 * Sort the list = DONE?
