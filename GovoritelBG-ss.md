@@ -79,7 +79,539 @@ _**Approximate letter-to-IPA-phoneme correspondence table for the contemporary B
 р<sup>ь</sup>/rʲ/ 			
 й /j/ (semi-vowel, considered a 'consonant', e.g. C in CVC... syllable pattern/model notation)
 л, /l/, /ɫ/ 			
-л<sup>ь</sup> /ʎ/ 	
+л<sup>ь</sup> /ʎ/
+
+<!--
+Frequency list generated from text corpora:
+https://www.gstatic.com/i18n/corpora_wordcounts_bg.txt
+http://dcl.bas.bg/tchestotni-retchnitsi-na-balgarskiya-ezik-2/
+
+All BG IPA phonemes fulllist (several versions...):
+
+A LIST OF ALL BULGARIAN PHONEMES for SPEECH-SYNTHESIS apps
+====== ====== ====== ====== ======
+
+IPA-bg-list_v1
+
+и /i/, (/ɪ/)
+у /u/, /o/ !! [o]
+е /ɛ/
+ъ /ɤ̞/, /ɤ/; /ɐ/; ( (/ʌ/), (/ə/) )
+о /ɔ/, /o/ !! [o]
+а /a/, /ɐ/; /ɑ/, /ʌ/, /ɤ̞/; (/ʌ/), (/ə/)
+ю /ju/ (at syllable-start), /ʲu/; /jo/, /ʲo/
+я /ja/ (at syllable-start), /ʲa/; /jɐ/, /ʲɐ/; /jɤ̞/, /ʲɤ̞/
+м /m/
+мь /mʲ/
+н /n/
+нь /ɲ/
+п /p/
+б /b/
+т /t/
+д /d/
+к /k/
+г /ɡ/
+пь /pʲ/
+бь /bʲ/
+ть /tʲ/
+дь /dʲ/
+кь /kʲ/
+гь /ɡʲ/
+ц /t͡s/
+дз /d͡z/
+ч /t͡ʃ/
+дж /d͡ʒ/
+ць /t͡sʲ/
+ф /f/
+в /v/
+с /s/
+з /z/
+ш /ʃ/
+ж /ʒ/
+х /x/
+фь /fʲ/
+вь /vʲ/
+сь /sʲ/
+зь /zʲ/
+р /r/
+рь/rʲ/
+й /j/ (semi-vowel, considered a 'consonant', e.g. C in CVC... syllable pattern/model notation)
+л, /l/, /ɫ/
+ль /ʎ/
+
+---
+
+ipa-bg-list_v2
+
+/i/
+(/ɪ/)
+/u /
+/o/
+/ɛ/
+/ɤ̞/
+/ɤ/
+/ɐ/
+(/ʌ/)
+(/ə/)
+/ɔ/
+/o/
+/a/
+/ɐ/
+/ɑ/
+/ʌ/
+/ɤ̞/
+(/ʌ/)
+(/ə/)
+/ju/
+/ʲu/
+/jo/
+/ʲo/
+/ja/
+/ʲa/
+/jɐ/
+/ʲɐ/
+/jɤ̞/
+/ʲɤ̞/
+/m/
+/mʲ/
+/n/
+/ɲ/
+/p/
+/b/
+/t/
+/d/
+/k/
+/ɡ/
+/pʲ/
+/bʲ/
+/tʲ/
+/dʲ/
+/kʲ/
+/ɡʲ/
+/t͡s/
+/d͡z/
+/t͡ʃ/
+/d͡ʒ/
+/t͡sʲ/
+/f/
+/v/
+/s/
+/z/
+/ʃ/
+/ʒ/
+/x/
+/fʲ/
+/vʲ/
+/sʲ/
+/zʲ/
+/r/
+/rʲ/
+/j/
+/l/
+/ɫ/
+/ʎ/
+
+---
+
+ipa-bg-list_v3
+
+/i/
+(/ɪ/)
+/u /
+/o/
+/ɛ/
+/ɤ̞/
+/ɤ/
+/ɐ/
+(/ʌ/)
+(/ə/)
+/ɔ/
+/o/
+/a/
+/ɐ/
+/ɑ/
+/ʌ/
+/ɤ̞/
+(/ʌ/)
+(/ə/)
+/ju/
+/ʲu/
+/jo/
+/ʲo/
+/ja/
+/ʲa/
+/jɐ/
+/ʲɐ/
+/jɤ̞/
+/ʲɤ̞/
+/m/
+/mʲ/
+/n/
+/ɲ/
+/p/
+/b/
+/t/
+/d/
+/k/
+/ɡ/
+/pʲ/
+/bʲ/
+/tʲ/
+/dʲ/
+/kʲ/
+/ɡʲ/
+/t͡s/
+/d͡z/
+/t͡ʃ/
+/d͡ʒ/
+/t͡sʲ/
+/f/
+/v/
+/s/
+/z/
+/ʃ/
+/ʒ/
+/x/
+/fʲ/
+/vʲ/
+/sʲ/
+/zʲ/
+/r/
+/rʲ/
+/j/
+/l/
+/ɫ/
+/ʎ/
+[xʲ] {Хюстън /xʲustɤn/ ('Houston')}
+[d͡z] {Дзержински /d͡zɛrʒinski/ ('Dzerzhinsky')}
+[d͡zʲ] {Ядзя /jad͡zʲa/, ('Jadzia')}
+
+---
+
+ipa-bg-list_v4_alt
+C (25? or 21 'hard' (non-palatalized) phonemes?):
+p
+b
+t
+d
+k
+g
+m
+[ɱ]
+n
+[ŋ]
+f
+v
+s
+z
+ʃ
+ʒ
+x
+[ɣ]
+ʦ
+ʣ
+ʧ
+ʤ
+r
+j
+l
+...
+C + /j/ or /{consonant phoneme here}ʲ/ {{17 'soft' (palatalized or palatal) consonants}}: [pʲ, bʲ, tʲ, dʲ, c (=kʲ ), ɟ (=gʲ ), ʦʲ, ʣʲ, mʲ, ɲ (=nʲ ), rʲ, fʲ, vʲ, sʲ, zʲ, ç (=xʲ ), ʎ (=lʲ )].
+
+V (8?):
+i
+u
+[o]
+ɤ
+ɛ
+ɔ
+[ɐ]
+a
+{[ɜ], [ə], [o˔]} - [ə-ɐ-ˈa/ɤ-ə], [o˔ -o-ˈɔ/u-o˔]
+
+http://www.personal.rdg.ac.uk/~llsroach/phon2/b_phon/b_phon.htm
+https://en.wikipedia.org/w/index.php?title=Bulgarian_phonology&oldid=880623002
+
+---
+
+ipa-bg-list_v5_alt
+
+V-12:
+и /i/
+у /u/, [o]
+е /ɛ/
+ъ /ɤ/, [ɐ](/ə/)
+о /ɔ/, [o]
+а /a/, [ɐ]
+
+C-43:
+m
+(ɱ)
+n
+(ŋ)
+mʲ
+ɲ 	
+p (p b)
+b (p b)
+t (t d)
+d (t d)
+k (k ɡ)
+ɡ (k ɡ)
+pʲ
+bʲ
+tʲ
+dʲ
+c
+ɟ 	
+t͡s
+(d͡z)
+t͡ʃ
+d͡ʒ 		
+t͡sʲ
+(d͡zʲ) 		
+f
+v
+s
+z
+ʃ
+ʒ
+x, (ɣ)
+fʲ
+vʲ
+sʲ
+zʲ
+(xʲ)
+r 			
+rʲ 			
+(w) (a newer semivowel which appears primarily in foreign borrowings, e.g. from English)	
+j (the only native semivowel!)
+ɫ
+(l) 			
+ʎ
+
+https://en.wikipedia.org/w/index.php?title=Bulgarian_phonology&oldid=880623002
+
+---
+
+ipa-bg-list_v6_alt
+
+ Consonants IPA 	Examples 	Nearest English equivalent
+BG 	MK
+b 	баба 	box
+c 	кьопоолу,[1] ќар 	cute
+d 	дом 	dust
+d͡z 	дзифт, ѕвезда 	birds
+d͡ʒ 	джем, џем 	jab
+f 	филм 	fact
+ɡ 	гарван 	good
+ɟ 	гяур,[1] ѓавол 	argue
+j 	сойка, пајак 	yes
+k 	къща, куќа 	skill
+l 	лимон 	leap
+ɫ 	лош 	all
+ʎ 	любов, љубов 	million
+m 	море 	mocha
+n 	нос 	north
+ɲ 	баня, бања 	canyon
+ŋ 	банка 	sing
+p 	пет 	speak
+r 	работа 	trilled r, like in Spanish
+	r̩ 	прст 	US: verb (trilled)
+s 	стол 	salt, mask
+ʃ 	шума 	sugar
+t 	тайна, тајна 	style
+t͡s 	цар 	bats
+t͡ʃ 	чай, чај 	cheese
+v 	вода 	view
+x 	хартия, хартија 	loch (Scottish English)
+z 	зима 	zoo
+ʒ 	жълт, жолт 	pleasure
+Marginal consonants IPA 	Examples 	Nearest English equivalent
+BG 	MK
+	ɫ̩ 	Попокатепетл 	little
+	n̩ 	њутн 	button
+ɣ 		видях го 	between go and ahold
+ç 		Хюз 	huge
+w 		уиски 	water 
+
+
+ Vowels IPA 	Examples 	Nearest English equivalent
+BG 	MK
+a 	брат 	father
+ɤ 		кът 	plus (General American, Scottish English)
+ɛ 	цена 	edge
+i 	сив 	police
+ɔ 	слон 	off
+u 	хубав, убав 	pool
+Reduced vowels IPA 	Examples 	Nearest English equivalent
+BG 	MK
+ɐ 		щерка, камък 	sofa
+o 		нещо, уста 	thought (RP), coat (Scottish English)
+Marginal vowels IPA 	Examples 	Nearest English equivalent
+BG 	MK
+	ə 	к’смет 	sofa
+Other symbols IPA 	Explanation
+BG 	MK
+ˈ 	Denotes stress on the following syllable
+ˌ 		Denotes secondary stress on the following syllable
+◌ʲ 		Denotes palatalization of the preceding consonant 
+
+https://en.wikipedia.org/w/index.php?title=Help:IPA/Bulgarian_and_Macedonian&oldid=878565175
+
+---
+
+the 11 syllable patterns of standard contemporary Bulgarian (permutations with the above IPA phonemes/diphones/allophones//phones:
+
+The 11 types of syllables (syllable patterns) in the contemporary Bulgarian language according to linguists: open syllables: V, CV, CCV, CCCV, closed syllables: VC, CVC, CCVC, CVCC, CCVCC, VCC, CCCVC. NOTE: 'C' = consonant from the above list of IPA phonemes, 'V' = vocal/vowel from the above list of IPA phonemes, semivowels are considered 'consonants' for these patterns. There must be a permutation-combination list (as a JSON file and .txt table) of all the possible syllable variations following these patterns - to be utilized by this app.)
+
+======
+
++ Bulgarian-orthography-to-IPA examples from the 2008 (+online PDF version) and 2012 official dictionaries
+
+======
+
+(older SAMPA:
+archive.is/vpfjl
+https://www.phon.ucl.ac.uk/home/sampa/bul-uni.htm (http://archive.is/HKWaW)
+https://www.phon.ucl.ac.uk/home/sampa/bulgar.htm (http://archive.is/FFB9y)
+
+ Vowels
+
+The vowel system of Contemporary Standard Bulgarian comprises 6 phonemes, as follows.
+
+	SAMPA symbol	Gloss and... 	Transcription of keyword
+	i		peak		pik
+	e		heat		pek
+	a		again		pak
+	@		but		p@k
+	O		under		pOt
+	u		crack!		puk
+
+In unstressed positions there is considerable qualitative reduction of vowels.
+
+Consonants
+
+The consonant system comprises 21 'hard' (non-palatalized) phonemes, as follows.
+
+	p		again		pak		
+	b		ball		bal
+	t		there		tam
+	d		give		dam
+	k		how		kak
+	g		gas		gas
+	ts		tsar		tsar
+	dz		ting		dz@n
+	tS		pine		tSam
+	dZ		glass		dZam
+	f		foul		fal
+	v		bank		val
+	s		alone		sam
+	z		dice		zar
+	S		shawl		Sal
+	Z		pity		Zal
+	x		plight		xal
+	m		swing		max
+	n		us		nas
+	l		varnish		lak
+	r		once		ras
+
+plus the semivowel
+
+	j		eaten		jal
+
+There are also 17 'soft' (palatalized or palatal) consonants, which are shown by the symbol ' (ASCII 39) written after the consonant symbol. Before /i, e/ they do not contrast with the corresponding 'hard' consonants, but elsewhere they do.
+
+	p'		sung		p'al
+	b'		white		b'al
+	t'		them		t'ax
+	d'		share		d'al
+	k'		profit		k'ar
+	g'		rose		g'ul
+	ts'		whole		ts'al
+	dz'		waste		dz'an
+	f'		phew!		f'ut
+	v'		apathetic	v'al
+	s'		sown		s'al
+	z'		waste		z'an
+	x'		Hume (name)	x'um
+	m'		wineskin	m'ax
+	n'		dumb		n'am
+	l'		poured		l'ax
+	r'		cut		r'as
+
+---
+
+This version is for Unicode-compliant browsers that can handle the Cyrillic alphabet. Others should use the ASCII/ANSI version.
+
+Vowels
+
+The vowel system of Contemporary Standard Bulgarian comprises 6 phonemes, as follows.
+
+SAMPA symbol	Gloss  		Transcription 	Orthography
+i		peak		pik		пик
+e		heat		pek		пек
+a		again		pak		пак
+@		but		p@k		пък
+O		under		pOt		под
+u		crack!		puk		пук
+
+In unstressed positions there is considerable qualitative reduction of vowels.
+
+Consonants
+
+The consonant system comprises 21 'hard' (non-palatalized) phonemes, as follows.
+
+p		again		pak		пак
+b		ball		bal		бал
+t		there		tam		там
+d		give		dam		дам
+k		how		kak		как
+g		gas		gas		газ
+ts		tsar		tsar		цар
+dz		ting		dz@n		дзън
+tS		pine		tSam		чам
+dZ		glass		dZam		джам
+f		foul		fal		фал
+v		bank		val		вал
+s		alone		sam		сам
+z		dice		zar		зар
+S		shawl		Sal		шал
+Z		pity		Zal		жал
+x		plight		xal		хал
+m		swing		max		мах
+n		us		nas		нас
+l		varnish		lak		лак
+r		once		ras		раз
+
+plus the semivowel
+
+j		eaten		jal		ял
+
+There are also 17 'soft' (palatalized or palatal) consonants, which are shown by the symbol ' (ASCII 39) written after the consonant symbol. Before /i, e/ they do not contrast with the corresponding 'hard' consonants, but elsewhere they do.
+
+p'		sung		p'al		пял
+b'		white		b'al		бял
+t'		them		t'ax		тях
+d'		share		d'al		дял
+k'		profit		k'ar		кяр
+g'		rose		g'ul		гюл
+ts'		whole		ts'al		цял
+dz'		waste		dz'an		дзян
+f'		phew!		f'ut		фют
+v'		apathetic	v'al		вял
+s'		sown		s'al		сял
+z'		waste		z'an		зян
+x'		Hume (name)	x'um		хюм
+m'		wineskin	m'ax		мях
+n'		dumb		n'am		ням
+l'		poured		l'ax		лях
+r'		cut		r'as		ряз
+
+======
+
+
+
+-->
 
 **Example approximate IPA transcriptions of some Bulgarian words and multiword expressions (MWE, phrases):**
 
@@ -168,7 +700,7 @@ I've now added a more thorough explanation below (**This _IS NOT_ the same as in
 
 **NOTE1:** There will also be a `--argument` to use several dictionary datasets of pre-recorded human-speaker-voice-pronounced speech audio-file recordings of _whole-words & whole-phrases_ for even better-sounding output audio-file generated by this app (a user can also change (replace) those files OR supply a new, user-generated (manually recorded&edited) dictionary of such speaker-voice datasets.
 
-**NOTE2:** One of the config files will have NVDA-like JSON-based instructions on how to pronounce punctuation and basic post-generation speech-filters for e.g. speech-quality shifting for emphasis, questions, exclamations, quotations within the text, etc.).
+**NOTE2:** One of the config files will have NVDA-like JSON-based instructions on how to pronounce punctuation and basic post-generation speech-filters for e.g. speech-quality shifting for emphasis, questions, exclamations, quotations within the text, Markov-chain audio-filters, Fast Fourier Transform audio-filters, pitch filters, etc.).
 
 **NOTE3:** The end-user may produce his/her own language&specific human-speaker-voice audio-recodings speech-segments (&hundreds-of-files-or-more dictionary of whole-word&whole-phrase audio-file recordings) to use with the app via another `--argument` if they don't like the default&supplied human-speaker(s) dataset audio-files used in the concatenation for the generation of the final output speech-synthesis audio-file.
 
