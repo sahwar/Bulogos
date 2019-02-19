@@ -27,7 +27,18 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * * **Hackerspaces:** [initLab](https://initlab.org/) и др.
 * [**FOSDEM**](https://fosdem.org/2019/)
 * **[Wikimedia Conferences (Конференции на Фондация „Уикимедиа“)](https://meta.wikimedia.org/wiki/Wikimedia_Conference)** и [Wikipedia:Meetups](https://en.wikipedia.org/wiki/Wikipedia:Meetup)
+
+Организации за свободен софтуер и софтуер с отворен код и главни FOSS портали
+* **[FSFE (Free Software Foundation Europe](https://fsfe.org/index.bg.html)**
+* **[FSF (Free Software Foundation)](https://fsf.org)**
+* [Kernel.org, The Linux Kernel Archives, official downloads of the Linux kernel!!!](https://www.kernel.org/)
+* [The Linux Foundation](https://www.linuxfoundation.org/)
+* [The GNU Project](https://www.gnu.org/)
+* Linus Torvalds' Google+ blog: https://plus.google.com/+LinusTorvalds (Google+ is shutting down in April 2019, hurry & backup your data before that!)
+* RMS's (Richard M. Stallman) personal website: http://stallman.org/ ;)
+
 * и др. (за допълване...)
+
 
 ## Основни програми, използвани в превода на софтуер на български език ##
 
