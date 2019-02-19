@@ -49,6 +49,7 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [GIMPshop](https://www.gimpshop.com/)
 * [GIMP](https://www.gimp.org/) _(HIGHLY RECOMMENDED)_
 * [gnome-paint](https://launchpad.net/gnome-paint) [2](deadlink?)
+* [Goya (pixel-art editor)](https://github.com/jackschaedler/goya) ([online version](http://jackschaedler.github.io/goya/))
 * [gpaint](https://www.gnu.org/software/gpaint/)
 * [GraFX2](http://grafx2.chez.com/) [2](https://pulkomandy.tk/projects/GrafX2/downloads) _(HIGHLY RECOMMENDED)_
 * [GraphicsGale](https://graphicsgale.com/us/download.html) FREEWARE as of 2018! _(HIGHLY RECOMMENDED)_
