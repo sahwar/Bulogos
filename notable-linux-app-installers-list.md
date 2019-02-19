@@ -3,7 +3,7 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 
 ### Linux and other UNIX-like ###
 **App packaging/distribution/installation file-formats & app distribution-channels for (GNU/)Linux distros:**
-* .deb, .rpm, etc. binary formats & related CLI&GUI app package-managers (`app-get`, `Synaptic`, etc.)
+* .deb, .rpm, etc. binary formats & related CLI&GUI app package-managers (`apt`/`apt-get`, `Synaptic`, etc.)
 * AppImage's (AppImageKit)
 * flatpak's
 * Ubuntu snaps (snapcraft.io)
@@ -14,6 +14,8 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 * ...
 
 ### Windows ###
+* installing from .exe/.msi installers
+* directly executing the app's .exe binary from its downloaded archive (.zip, .7z, .tar.xz, .iso etc.) unpacked into a new folder
 **Package managers for Windows:**
 * Chocolatey
 * NuGet (.NET apps)
@@ -23,6 +25,7 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 * etc.
 
 ### macOS ###
-* homebrew
+* installing the macOS app from its macOS-centric .dmg binary/installer
+* homebrew (package manager for macOS)
 * macports
 * running Windows .exe/.msi files via Wine/PlayOnLinux for macOS
