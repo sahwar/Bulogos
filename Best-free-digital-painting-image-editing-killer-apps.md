@@ -159,6 +159,8 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 
 #### TO ADD TO THE ABOVE LIST & THEN SORT IT AGAIN ####
 
+<!--
+
 * [Pixer (Qt-based pixel-art editor)](https://github.com/SilangQuan/Pixer) ([ipixer at SourceForge.net](https://sourceforge.net/projects/ipixer/))
 * [Pixel](https://github.com/tjhancocks/Pixel) (a basic pixel-art editor written in Swift)
 * [Pixel it](https://github.com/tavioalves/pixel-it) (a basic web-app to create, share or download pixel art around the web)
@@ -208,6 +210,41 @@ https://github.com/BrandonHilde/PixelArt
 https://github.com/guastallaigor/vue-pixel-art
 https://github.com/qbart/isometric-pixel-art
 MORE (research...): https://github.com/search?p=17&q=pixel+art&type=Repositories
+
+https://www.techlinu.com/3-must-linux-apps/
+https://conceptartempire.com/photoshop-linux-alternatives/
+https://conceptartempire.com/pixel-art-software/
+https://conceptartempire.com/digital-painting-software/
+https://conceptartempire.com/storyboard-software/
+http://forum.tabletpcreview.com/threads/list-of-programs-for-the-artist.36406/
+https://forum.mxlinux.org/viewtopic.php?t=42013
+http://archive.is/WLFtm
+https://ja.osdn.net/projects/azpainter/#gallery
+
+---
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![alt text](http://url/to/img.png)  |  ![](https://...Dark.png)
+---
+<p float="left">
+  <img src="/img1.png" width="100" />
+  <img src="/img2.png" width="100" /> 
+  <img src="/img3.png" width="100" />
+</p>
+---
+<img src="https://openclipart.org/image/2400px/svg_to_png/28580/kablam-Number-Animals-1.png" width="200"/> <img src="https://openclipart.org/download/71101/two.svg" width="300"/>
+---
+# Title
+
+<img align="left" src="./documentation/images/A.jpg" alt="Made with Angular" title="Angular" hspace="20"/>
+<img align="left" src="./documentation/images/B.png" alt="Made with Bootstrap" title="Bootstrap" hspace="20"/>
+<img align="left" src="./documentation/images/C.png" alt="Developed using Browsersync" title="Browsersync" hspace="20"/>
+<br/><br/><br/><br/><br/>
+
+## Table of Contents... ##
+
+-->
 
 ###  TO DO ###
 * Sort the list = DONE?
