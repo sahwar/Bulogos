@@ -158,7 +158,7 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [](?) (?)
 
 #### TO ADD TO THE ABOVE LIST & THEN SORT IT AGAIN ####
-
+* see the invisible HTML-comment section hidden in the webpages' source-code below (e.g. just click the 'Raw' button on the GitHub page)...
 <!--
 
 * [Pixer (Qt-based pixel-art editor)](https://github.com/SilangQuan/Pixer) ([ipixer at SourceForge.net](https://sourceforge.net/projects/ipixer/))
@@ -167,6 +167,16 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [PixelArtShader](https://github.com/kushi34123616bd/PixelArtShader) (Render like * PixelArts from 3D model!!! It can be used to make 2D animations from pixel-art frames after exporting from a rotated/slightly-changed 3D-model!!!)
 * [https://github.com/cwkx/godot-pixel-painter](https://github.com/cwkx/godot-pixel-painter)
 
+EasyPaint (MS Paint-like, Qt/KDE-perfect)
+MQ Sprite
+mtPixy (by Mark Tyler, the author of mtPaint)
+Pixelaria
+lospec.com online pixel editor
+PixelMatorPro (commercial digital-painting app)
+PowerPaint
+pyqx
+qubicle (Voxel editor)
+Blit (by 16bpp)
 
 * [Pixavoxet](https://github.com/mishapsi/pixavoxet) (Voxel to Pixel Art Animator/Renderer inside Godot http://myskamyska.tumblr.com)
 
