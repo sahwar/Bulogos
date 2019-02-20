@@ -177,6 +177,7 @@ PowerPaint
 pyqx
 qubicle (Voxel editor)
 Blit (by 16bpp)
+[PaintstormStudio](http://paintstormstudio.com) (commercial)
 
 * [Pixavoxet](https://github.com/mishapsi/pixavoxet) (Voxel to Pixel Art Animator/Renderer inside Godot http://myskamyska.tumblr.com)
 
