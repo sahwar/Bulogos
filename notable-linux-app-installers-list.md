@@ -21,6 +21,9 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 * [XBPS](https://voidlinux.org/usage/xbps/) & etc. package systems (?)...
 * Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/)
 * installing by getting the package via a version-control-system's graphical-app (i.e. Git, GitLab, GitHub, CVS, etc.)...
+* `npm`
+* https://mesonbuild.com/
+* https://ninja-build.org/
 * running Windows .exe/.msi files via [Wine](https://www.winehq.org/)/PlayOnLinux (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html, [DxWnd](https://sourceforge.net/p/dxwnd/home/Home/), etc.)
 * ...
 
