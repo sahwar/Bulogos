@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<data name="&amp;About">
+		<value>&amp;За програмата</value>
+	</data>
+	<data name="&amp;Add File">
+		<value>&amp;Прибави файл</value>
+	</data>
+	<data name="&amp;Cancel">
+		<value>&amp;Отказ</value>
+	</data>
+	<data name="&amp;Close">
+		<value>&amp;Затваряне</value>
+	</data>
+	<data name="&amp;Convert">
+		<value>&amp;Преобразуване</value>
+	</data>
+	<data name="&amp;Default">
+		<value>&amp;По подразбиране</value>
+	</data>
+	<data name="&amp;Donate">
+		<value>&amp;Направете дарение</value>
+	</data>
+	<data name="&amp;File">
+		<value>&amp;Файл</value>
+	</data>
+	<data name="&amp;Full Screen">
+		<value>&amp;На цял екран</value>
+	</data>
+	<data name="&amp;Help">
+		<value>&amp;Помощ</value>
+	</data>
+	<data name="&amp;Load Image">
+		<value>&amp;Зареди изображение</value>
+	</data>
+	<data name="&amp;Ok">
+		<value>&amp;ОК</value>
+	</data>
+	<data name="&amp;Remove">
+		<value>&amp;Премахване</value>
+	</data>
+	<data name="&amp;Save">
+		<value>&amp;Запис</value>
+	</data>
+	<data name="&amp;Settings">
+		<value>&amp;Настройки</value>
+	</data>
+	<data name="&amp;View">
+		<value>&amp;Изглед</value>
+	</data>
+	<data name="{0:yyyyMMddHHmmss}">
+		<value>{0:ггггММддЧЧммсс}</value>
+	</data>
+	<data name="{0} file(s) converted, {1} error(s)">
+		<value>{0} файл(ове) преобразувани, {1} грешка(и)</value>
+	</data>
+	<data name="Add &amp;Directory">
+		<value>Прибавяне на &amp;директория</value>
+	</data>
+	<data name="Adjust Levels">
+		<value>Настройка на нивата</value>
+	</data>
+	<data name="All Files">
+		<value>Всички файлове</value>
+	</data>
+	<data name="already exists">
+		<value>вече съществува</value>
+	</data>
+	<data name="ASCII Ramp">
+		<value>ASCII набор</value>
+	</data>
+	<data name="Auto">
+		<value>Авто</value>
+	</data>
+	<data name="automatically calculated">
+		<value>автоматично пресметнато(изчислено)</value>
+	</data>
+	<data name="Basic">
+		<value>Основни</value>
+	</data>
+	<data name="Batch Conversion">
+		<value>Пакетно преобразуване</value>
+	</data>
+	<data name="Batch conversion cancelled">
+		<value>Отказ на пакетно преобразуване</value>
+	</data>
+	<data name="Batch conversion started, {0} file(s) to process">
+		<value>Пакетно преобразуване стартирано, {0} файл(ове) за обработка</value>
+	</data>
+	<data name="Batch finished">
+		<value>Пакетното преобразуване завършено</value>
+	</data>
+	<data name="Bitmap Images">
+		<value>Bitmap изображения</value>
+	</data>
+	<data name="Black and White">
+		<value>Чернобяло</value>
+	</data>
+	<data name="Black Text on White">
+		<value>Черен текст на бяло</value>
+	</data>
+	<data name="Black Text on White Background">
+		<value>Черен текст на бял фон</value>
+	</data>
+	<data name="bold">
+		<value>получер(удебелено)</value>
+	</data>
+	<data name="Brightness">
+		<value>Яркост</value>
+	</data>
+	<data name="British English">
+		<value>Български-БЕТА, by Sah War</value>
+	</data>
+	<data name="C&amp;lose">
+		<value>З&amp;атваряне</value>
+	</data>
+	<data name="Character Size">
+		<value>Големина на знаците</value>
+	</data>
+	<data name="Characters">
+		<value>Знаци</value>
+	</data>
+	<data name="Check for a New Version">
+		<value>Проверка за нова версия</value>
+	</data>
+	<data name="Choose the Font">
+		<value>Избор на шрифт</value>
+	</data>
+	<data name="Choose the Magnification Level">
+		<value>Изобор на ниво на увеличение(на мащаба)</value>
+	</data>
+	<data name="Clear">
+		<value>Изчистване</value>
+	</data>
+	<data name="Click and drag on an image to select an area">
+		<value>Кликнете и влачете върху изображение, за да маркирате област(селекция)</value>
+	</data>
+	<data name="Colour">
+		<value>Цветно</value>
+	</data>
+	<data name="Colour Preview">
+		<value>Цветно превю</value>
+	</data>
+	<data name="Colour Print Preview">
+		<value>Цветно превю при печат</value>
+	</data>
+	<data name="Confirm close if unsaved">
+		<value>Потвърждение за затваряне при незапазване</value>
+	</data>
+	<data name="Contrast">
+		<value>Контраст</value>
+	</data>
+	<data name="Controls">
+		<value>Контроли</value>
+	</data>
+	<data name="Converting">
+		<value>Преобразуване</value>
+	</data>
+	<data name="Copy">
+		<value>Копиране</value>
+	</data>
+	<data name="Copy Ramp to Clipboard">
+		<value>Копиране на набора в междинен буфер(Clipboard)</value>
+	</data>
+	<data name="Could not load translation file '{0}'">
+		<value>Преводният файл '{0}' не може да се зареди</value>
+	</data>
+	<data name="Date/Time">
+		<value>Дата/Час</value>
+	</data>
+	<data name="DefaultWidth and/or DefaultHeight must be > 0">
+		<value>Стандартна ширина и/или стандартна височина трябва да бъдат > 0</value>
+	</data>
+	<data name="Dither">
+		<value>Dither</value>
+	</data>
+	<data name="Dithering Amount">
+		<value>Количество Dithering</value>
+	</data>
+	<data name="Doubleclick to load an image, or drag and drop here.">
+		<value>Щракнете двукратно тук, за да заредите изображение или влачете и пуснете тук.</value>
+	</data>
+	<data name="E&amp;xit">
+		<value>И&amp;зход</value>
+	</data>
+	<data name="Edit">
+		<value>Редактиране</value>
+	</data>
+	<data name="Edit Settings">
+		<value>Редактиране на настройките</value>
+	</data>
+	<data name="Effects">
+		<value>Ефекти</value>
+	</data>
+	<data name="Enter the characters to be used for generating the ramp">
+		<value>Въведете знаците за ползване при генерирането на резултата</value>
+	</data>
+	<data name="Error">
+		<value>Грешка</value>
+	</data>
+	<data name="Error converting the image">
+		<value>Грешка при преобразуване на изображението</value>
+	</data>
+	<data name="Error saving to {0}">
+		<value>Грешка при записване в {0}</value>
+	</data>
+	<data name="Error with settings file '{0}'">
+		<value>Грешка при файл с настройки '{0}'</value>
+	</data>
+	<data name="Exchangeable Image Files">
+		<value>Заменяеми картинни файлове(EXIF)</value>
+	</data>
+	<data name="File Not Found">
+		<value>Файлът не бе открит</value>
+	</data>
+	<data name="Files to be converted">
+		<value>Файлове за преобразуване</value>
+	</data>
+	<data name="Fill Selected Area">
+		<value>Запълване на избраната област</value>
+	</data>
+	<data name="Flip Horizontally">
+		<value>Хоризонтално обръщане</value>
+	</data>
+	<data name="Flip Vertically">
+		<value>Вертикално обръщане</value>
+	</data>
+	<data name="Flipped Horizontally">
+		<value>Обърнато хоризонтално</value>
+	</data>
+	<data name="Flipped Vertically">
+		<value>Обърнато вертикално</value>
+	</data>
+	<data name="Font">
+		<value>Шрифт</value>
+	</data>
+	<data name="Fonts">
+		<value>Шрифтове</value>
+	</data>
+	<data name="For The Best Effect This Text Should Be Readable">
+		<value>За най-добър резултат този текст трябва да е четлив</value>
+	</data>
+	<data name="Full Screen">
+		<value>На цял екран</value>
+	</data>
+	<data name="Generated">
+		<value>Генерирано</value>
+	</data>
+	<data name="GIF Images">
+		<value>GIF изображения</value>
+	</data>
+	<data name="I&amp;mport from Clipboard">
+		<value>В&amp;насяне от междинен буфер(Clipboard)</value>
+	</data>
+	<data name="Image">
+		<value>Изображение</value>
+	</data>
+	<data name="Image Files">
+		<value>Картинни файлове</value>
+	</data>
+	<data name="Input">
+		<value>Въвеждане</value>
+	</data>
+	<data name="Input Directory">
+		<value>Входна директория</value>
+	</data>
+	<data name="Input Image">
+		<value>Входно изображение</value>
+	</data>
+	<data name="Input Image Position">
+		<value>Позиция на входното изображение</value>
+	</data>
+	<data name="Input Text Sample">
+		<value>Образец на входящ текст</value>
+	</data>
+	<data name="Invalid ASCII Ramp">
+		<value>Невалиден ASCII низ(набор от знаци)</value>
+	</data>
+	<data name="Invalid Directory">
+		<value>Невалидна директория</value>
+	</data>
+	<data name="Invalid or unsupported file">
+		<value>Невалиден или неподдържан файлов тип</value>
+	</data>
+	<data name="Invalid Output Directory">
+		<value>Невалидна изходна директория</value>
+	</data>
+	<data name="Invalid Output Size">
+		<value>Невалидна изходна големина</value>
+	</data>
+	<data name="Invalid settings file. Please delete it or save a new one">
+		<value>Невалиден файл с настройки. Моля, изтрийте го или запазете нов</value>
+	</data>
+	<data name="Invert Selection">
+		<value>Обръщане на селекцията(избраната област)</value>
+	</data>
+	<data name="Invert the Output">
+		<value>Обръщане на изходния резултат(ефект негатив)</value>
+	</data>
+	<data name="italic">
+		<value>курсив</value>
+	</data>
+	<data name="JPEG Images">
+		<value>JPEG изображения</value>
+	</data>
+	<data name="Language">
+		<value>Език</value>
+	</data>
+	<data name="Levels">
+		<value>Нива</value>
+	</data>
+	<data name="Levels Adjustment">
+		<value>Настройка на нивата</value>
+	</data>
+	<data name="Lock Selected Area">
+		<value>Заключване на маркираното</value>
+	</data>
+	<data name="Log">
+		<value>Ход на действията(log)</value>
+	</data>
+	<data name="Magnification">
+		<value>Приближение</value>
+	</data>
+	<data name="Max">
+		<value>Макс</value>
+	</data>
+	<data name="Maximum">
+		<value>Максимум</value>
+	</data>
+	<data name="Med">
+		<value>Средно</value>
+	</data>
+	<data name="Median">
+		<value>Средно</value>
+	</data>
+	<data name="Min">
+		<value>Мин</value>
+	</data>
+	<data name="Minimum">
+		<value>Минимум</value>
+	</data>
+	<data name="New version check">
+		<value>Проверка за нова версия</value>
+	</data>
+	<data name="None">
+		<value>Без</value>
+	</data>
+	<data name="Open the download page">
+		<value>Отваряне на страницата за изтегляне</value>
+	</data>
+	<data name="Out of Memory, Could not convert the image">
+		<value>Недостатъчна системна памет, изображението не бе преобразувано</value>
+	</data>
+	<data name="Output">
+		<value>Изходен резултат</value>
+	</data>
+	<data name="Output as">
+		<value>Изходен резултат като</value>
+	</data>
+	<data name="Output Directory">
+		<value>Изходна директория</value>
+	</data>
+	<data name="Output Filenames">
+		<value>Файлови имена на изходния резултат</value>
+	</data>
+	<data name="Output Image Sample">
+		<value>Картинен образец на изходния резултат</value>
+	</data>
+	<data name="Output Levels - Minimum: {0}, Median: {1}, Maximum: {2}">
+		<value>Изходни нива - Минимум: {0}, Средно: {1}, Максимум: {2}</value>
+	</data>
+	<data name="Output Size">
+		<value>Големина на изходния резултат</value>
+	</data>
+	<data name="Output Size: {0}x{1} characters">
+		<value>Големина на изходния резултат: {0}x{1} знаци</value>
+	</data>
+	<data name="Page Setup">
+		<value>Предпечатна настройка на страницата</value>
+	</data>
+	<data name="pixels">
+		<value>пиксела</value>
+	</data>
+	<data name="Plain Text">
+		<value>Plain Text(обикновен текст)</value>
+	</data>
+	<data name="Please enter an output directory">
+		<value>Моля, въведете изходна директория</value>
+	</data>
+	<data name="Portable Network Graphics Images">
+		<value>Portable Network Graphics изображения</value>
+	</data>
+	<data name="Prefix">
+		<value>Представка</value>
+	</data>
+	<data name="Print">
+		<value>Печат</value>
+	</data>
+	<data name="Print Colour">
+		<value>Цвят при печат</value>
+	</data>
+	<data name="Print Error">
+		<value>Грешка при отпечатването</value>
+	</data>
+	<data name="Print Preview">
+		<value>Превю при печат</value>
+	</data>
+	<data name="Ramp">
+		<value>Знаков низ(набор от знаци)</value>
+	</data>
+	<data name="Ramps">
+		<value>Знакови низове(набори от знаци)</value>
+	</data>
+	<data name="Random">
+		<value>Случайност</value>
+	</data>
+	<data name="Remove All">
+		<value>Изтриване на всичко</value>
+	</data>
+	<data name="Remove File After Conversion">
+		<value>Премахване на файл след преобразуване</value>
+	</data>
+	<data name="Remove Selection">
+		<value>Размаркиране</value>
+	</data>
+	<data name="Report a Bug">
+		<value>Докладвайте за грешки(bugs)</value>
+	</data>
+	<data name="Request a Feature">
+		<value>Предложете нова функция</value>
+	</data>
+	<data name="Reset">
+		<value>Установяване наново(Reset)</value>
+	</data>
+	<data name="Rich Text">
+		<value>Богат текст(Rich Text)</value>
+	</data>
+	<data name="Rotate">
+		<value>Завъртане</value>
+	</data>
+	<data name="Rotate Clockwise">
+		<value>Завъртане по часовниковата стрелка</value>
+	</data>
+	<data name="Rotate Anticlockwise">
+		<value>Завъртане обратно на часовниковата стрелка</value>
+	</data>
+	<data name="Save">
+		<value>Запис</value>
+	</data>
+	<data name="Save As">
+		<value>Запис като</value>
+	</data>
+	<data name="Save Log As">
+		<value>Запис на хода на действията като</value>
+	</data>
+	<data name="Save Settings as Default">
+		<value>Запис на настройките като стандартни</value>
+	</data>
+	<data name="Save the output before closing">
+		<value>Запис на изходния резултат преди затваряне</value>
+	</data>
+	<data name="Save to a Text File">
+		<value>Запис в текстови файл</value>
+	</data>
+	<data name="saved">
+		<value>записано</value>
+	</data>
+	<data name="Saving">
+		<value>Запис...</value>
+	</data>
+	<data name="Saving output as">
+		<value>Запис на изходния резултат като...</value>
+	</data>
+	<data name="Select a directory from which to import image files">
+		<value>Изберете директория, от която да се внесат картинни файлове</value>
+	</data>
+	<data name="Select All">
+		<value>Маркиране на всичко</value>
+	</data>
+	<data name="Select None">
+		<value>Демаркиране на всичко</value>
+	</data>
+	<data name="Select the directory in which to save the converted images">
+		<value>Изберете директория, в която да се запазят преобразуваните изображения</value>
+	</data>
+	<data name="Selection Area Border Colour">
+		<value>Цвят на границите на избраната област</value>
+	</data>
+	<data name="Selection Area Fill Colour">
+		<value>Цвят на фона(запълването) на избраната област</value>
+	</data>
+	<data name="Sharpen">
+		<value>Изостряне</value>
+	</data>
+	<data name="Sharpened">
+		<value>Изострено</value>
+	</data>
+	<data name="Sharpening Mask">
+		<value>Изостряща маска</value>
+	</data>
+	<data name="Sharpening Method">
+		<value>Метод на изостряне(за отчетливост)</value>
+	</data>
+	<data name="Show Extension">
+		<value>Показване на файловото разширение</value>
+	</data>
+	<data name="Show Full Path">
+		<value>Показване на пълната пътека до файла</value>
+	</data>
+	<data name="Show the Input Image">
+		<value>Показване на входното изображение</value>
+	</data>
+	<data name="shrunk to {0}%">
+		<value>смаляване до {0}%</value>
+	</data>
+	<data name="Size">
+		<value>Големина</value>
+	</data>
+	<data name="Some characters may not make it in to the ramp">
+		<value>Някои знаци могат да не се появят в изходния резултат</value>
+	</data>
+	<data name="Specify Character Size">
+		<value>Големина на знаците</value>
+	</data>
+	<data name="Stretch">
+		<value>Разтегляне</value>
+	</data>
+	<data name="Stretched">
+		<value>Разтеглено</value>
+	</data>
+	<data name="strikeout">
+		<value>зачеркване с линия по средата</value>
+	</data>
+	<data name="Suffix">
+		<value>Наставка</value>
+	</data>
+	<data name="Target Character Size: {0}x{1} pixels{2}">
+		<value>Големина на целевите знаци: {0}x{1} пиксела{2}</value>
+	</data>
+	<data name="Target Font: {0} {1}pt{2}{3}{4}{5}">
+		<value>Целеви шрифт: {0} {1}pt{2}{3}{4}{5}</value>
+	</data>
+	<data name="Text">
+		<value>Текст</value>
+	</data>
+	<data name="Text Brightness: {0}, Text Contrast: {1}">
+		<value>Яркост на текста: {0}, Контраст на Текста: {1}</value>
+	</data>
+	<data name="Text Settings">
+		<value>Настройки на текста</value>
+	</data>
+	<data name="This is the latest version">
+		<value>Разполагате с най-новата версия</value>
+	</data>
+	<data name="TIF Images">
+		<value>TIF изображения</value>
+	</data>
+	<data name="Tutorials">
+		<value>Уроци</value>
+	</data>
+	<data name="Unable to select this font">
+		<value>Този шрифт не може да бъде избран</value>
+	</data>
+	<data name="underline">
+		<value>подчертаване</value>
+	</data>
+	<data name="Unknown or Unsupported File">
+		<value>Непознат или неподдържан файлов тип</value>
+	</data>
+	<data name="Unsharp Mask">
+		<value>Антиизостряща маска</value>
+	</data>
+	<data name="Valid Characters">
+		<value>Валидни знаци</value>
+	</data>
+	<data name="Version">
+		<value>версия</value>
+	</data>
+	<data name="Version {0} is available">
+		<value>Налична е версия {0}</value>
+	</data>
+	<data name="Warning">
+		<value>Предупреждение</value>
+	</data>
+	<data name="White Text on Black Background">
+		<value>Бял текст на черен фон</value>
+	</data>
+	<data name="Windows Metafile Images">
+		<value>Windows Metafile изображения</value>
+	</data>
+	<data name="Zoom In">
+		<value>Приближаване(уголемяване на мащаба)</value>
+	</data>
+	<data name="Zoom Out">
+		<value>Отдалечаване(намаляване на мащаба)</value>
+	</data>
+</root>
