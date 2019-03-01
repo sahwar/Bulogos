@@ -19,9 +19,9 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 * openSUSE Build Service (https://build.opensuse.org/)
 * Fedora COPR AppImage's repos: https://copr.fedorainfracloud.org/coprs/
 * [XBPS](https://voidlinux.org/usage/xbps/) & etc. package systems (?)...
-* Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/)
+* Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/), [https://packagist.org](Packagist) (the PHP programming-language's package-repository of PHP packages installable via [Composer](https://getcomposer.org/))
 * installing by getting the package via a version-control-system's graphical-app (i.e. Git, GitLab, GitHub, CVS, etc.)...
-* `npm`
+* `[npm](https://www.npmjs.com/)`
 * https://mesonbuild.com/
 * https://ninja-build.org/
 * running Windows .exe/.msi files via [Wine](https://www.winehq.org/)/PlayOnLinux (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html, [DxWnd](https://sourceforge.net/p/dxwnd/home/Home/), etc.)
