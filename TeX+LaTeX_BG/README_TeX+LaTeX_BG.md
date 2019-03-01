@@ -15,7 +15,7 @@ TeX е система за произвеждане на красиви доку
 * https://en.wikipedia.org/wiki/Comparison_of_TeX_editors * https://www.ubuntupit.com/best-latex-editor-top-33-reviewed-for-linux-nerds/
 * https://www.ubuntupit.com/best-latex-editor-top-33-reviewed-for-linux-nerds/
 * https://www.sharelatex.com
-* TeXMaker (Linux, iOS, Windows)
+* [TeXMaker](http://www.xm1math.net/texmaker/) (Linux, iOS, Windows)
 * Kile (GNU/Linux)
 * [TeXStudio](https://www.texstudio.org/)
 * overleaf.com
