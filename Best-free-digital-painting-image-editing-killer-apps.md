@@ -159,7 +159,10 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 
 #### TO ADD TO THE ABOVE LIST & THEN SORT IT AGAIN ####
 * see the invisible HTML-comment section hidden in the webpages' source-code below (e.g. just click the 'Raw' button on the GitHub page)...
+
 <!--
+
+Skencil, Pinta, TuxPaint, Karbon, VIPS, Blender3D, Digikam, KolourPaint, Inkscape, sK1, GPaint, CinePaint, LazPaint, RawTherapee, Darktable, Pinta, [Vectr](https://vectr.com/downloads/), [Fotoxx](https://kornelix.net/downloads/downloads.html), Pixelitor, 
 
 * [Pixer (Qt-based pixel-art editor)](https://github.com/SilangQuan/Pixer) ([ipixer at SourceForge.net](https://sourceforge.net/projects/ipixer/))
 * [Pixel](https://github.com/tjhancocks/Pixel) (a basic pixel-art editor written in Swift)
