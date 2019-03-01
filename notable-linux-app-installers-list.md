@@ -21,22 +21,22 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 * [XBPS](https://voidlinux.org/usage/xbps/) & etc. package systems (?)...
 * Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/), [https://packagist.org](Packagist) (the PHP programming-language's package-repository of PHP packages installable via [Composer](https://getcomposer.org/))
 * installing by getting the package via a version-control-system's graphical-app (i.e. Git, GitLab, GitHub, CVS, etc.)...
-* `[npm](https://www.npmjs.com/)`
+* [npm](https://www.npmjs.com/) (JavaScript packages)
 * https://mesonbuild.com/
 * https://ninja-build.org/
 * running Windows .exe/.msi files via [Wine](https://www.winehq.org/)/PlayOnLinux (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html, [DxWnd](https://sourceforge.net/p/dxwnd/home/Home/), etc.)
-* ...
+* etc. ...
 
 ### Windows (Microsoft Windows, XP & 7+) ###
 * installing from physical-media .exe/.msi installers
 * directly executing the app's .exe binary from its physical-media-copied OR Internet-downloaded archive (.zip, .7z, .tar.xz, .iso etc.) unpacked into a new folder
 * Downloading .exe/.msi installers (or source-code for local compiling) from fosshub.com, https://sourceforge.net/, https://www.fosshub.com/, https://osdn.net, https://github.com, etc. ...
-**Package managers for Windows:**
-* [Chocolatey](https://chocolatey.org)
-* [NuGet](https://www.nuget.org) (.NET apps)
-* [PackageManagement/OneGet](https://github.com/OneGet/oneget) (Windows 10/Windows Server 2016's built-in package manager manager)
-* Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/)
-* other external/3rd-party Windows GUI apps/package-managers for installing 3rd-party apps (application software)
+* **Package managers for Windows:**
+  * * [Chocolatey](https://chocolatey.org)
+  * * [NuGet](https://www.nuget.org) (.NET apps)
+  * * [PackageManagement/OneGet](https://github.com/OneGet/oneget) (Windows 10/Windows Server 2016's built-in package manager manager)
+  * * Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/)
+  * * other external/3rd-party Windows GUI apps/package-managers for installing 3rd-party apps (application software)
 * etc.
 
 ### macOS (Apple macOS) ###
