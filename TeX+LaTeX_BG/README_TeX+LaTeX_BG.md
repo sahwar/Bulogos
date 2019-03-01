@@ -20,7 +20,6 @@ TeX е система за произвеждане на красиви доку
 * [TeXStudio](https://www.texstudio.org/)
 * overleaf.com
 * WinEdit
-* https://mintty.github.io/
 * https://miktex.org/
 * https://www.lyx.org/
 * https://beebom.com/best-latex-editors/
