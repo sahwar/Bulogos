@@ -1,7 +1,7 @@
 
 _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION. THANK YOU._
 
-### Linux and other UNIX-like ###
+### Linux (GNU/Linux) distros and other UNIX-like OSs ###
 **App packaging/distribution/installation file-formats & app distribution-channels for (GNU/)Linux distros:**
 * .deb, .rpm, etc. binary formats & related CLI&GUI app package-managers (`apt`/`apt-get`, `Synaptic`, etc.), downloaded from locally-installed package managers of your Linux distro OR downloaded from some obscure web-address...
 * **AppImage**'s ([AppImageKit](https://github.com/AppImage/AppImageKit), https://appimage.org, https://appimage.github.io/apps/)
@@ -27,7 +27,7 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 * running Windows .exe/.msi files via [Wine](https://www.winehq.org/)/PlayOnLinux (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html, [DxWnd](https://sourceforge.net/p/dxwnd/home/Home/), etc.)
 * ...
 
-### Windows ###
+### Windows (Microsoft Windows, XP & 7+) ###
 * installing from physical-media .exe/.msi installers
 * directly executing the app's .exe binary from its physical-media-copied OR Internet-downloaded archive (.zip, .7z, .tar.xz, .iso etc.) unpacked into a new folder
 * Downloading .exe/.msi installers (or source-code for local compiling) from fosshub.com, https://sourceforge.net/, https://www.fosshub.com/, https://osdn.net, https://github.com, etc. ...
@@ -39,7 +39,7 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 * other external/3rd-party Windows GUI apps/package-managers for installing 3rd-party apps (application software)
 * etc.
 
-### macOS ###
+### macOS (Apple macOS) ###
 * installing the macOS app from its macOS-centric .dmg binary/installer (from local physical-media or downloaded from Internet-sources)
 * [homebrew](https://brew.sh/) (package manager for macOS), [Homebrew Formulae](https://formulae.brew.sh/)
 * [macports](https://www.macports.org/)
