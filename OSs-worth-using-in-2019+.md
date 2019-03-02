@@ -23,8 +23,8 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [Fedora](https://getfedora.org/)
 * [Gentoo](https://www.gentoo.org/)
 * [OpenSUSE](https://www.opensuse.org/) (12.3 or later; OpenSUSE Tumbleweed)
-* RHEL (RedHat Enterprise Linux) & CentOS; Oracle Linux
-* [Void Linux](https://voidlinux.org/) 9/10
+* [RHEL (RedHat Enterprise Linux)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) & [CentOS](https://www.centos.org/) (suitable for servers, Debian, Ubuntu, Arch Linux, and Gentoo - are the other Linux distros popular for servers); Oracle Linux
+* [Void Linux](https://voidlinux.org/) 9/10 (with the XBPS package-system)
 * [Alpine Linux](https://www.alpinelinux.org/)
 * [GuixSD](https://www.gnu.org/software/guix/)
 * [NixOS](https://nixos.org/)
@@ -46,6 +46,37 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [YoctoProject](https://www.yoctoproject.org/)
 * [LXLE](http://www.lxle.net/)
 * [PureOS](https://www.pureos.net/) (from https://puri.sm/, powerful libre laptops!)
+* [ZorinOS](https://zorinos.com/)
+...
+[Linux Lite](https://www.linuxliteos.com/download.html)
+* [Lubuntu](http://lubuntu.net/)
+* [Trisquel Mini](https://trisquel.info/en/wiki/trisquel-mini)
+* [BodhiLinux](http://www.bodhilinux.com/)
+* [ChromiumOS/ChromeOS](https://www.chromium.org/chromium-os)
+* [SolusOS](https://solus-project.com/)
+* [DamnSmallLinux](https://distrowatch.com/table.php?distribution=damnsmall)
+* [Porteus Linux](http://www.porteus.org/)
+* [wattOS Linux](http://planetwatt.com/new/)
+* [4MLinux](http://4mlinux.com/)
+* [EasyOS](https://easyos.org/) (based on Puppy Linux)
+* [ToriOS](http://torios.top/)
+* [Linux From Scratch (LFS)](http://www.linuxfromscratch.org/)
+* [TinyCoreLinux](http://www.tinycorelinux.net/)
+* [deepin Linux](https://www.deepin.org/en/)
+* [Slackware Linux](http://www.slackware.com/)
+* [LXLE](http://lxle.net/)
+* [SteamOS](http://store.steampowered.com/steamos/)
+* [Trisquel Linux](https://trisquel.info)
+* [Sabayon](https://www.sabayon.org/)
+* [PeppermintOS](https://peppermintos.com/)
+* PCLinuxOS
+* Raspbian
+* Scientific Linux
+* Turbolinux
+* Mandriva
+* Asianux
+* CloudLinux
+* PLD Linux
 ...
 * [Parabola GNU/Linux](https://www.parabola.nu/)
 * [gNewSense GNU/Linux](http://www.gnewsense.org/)
@@ -57,7 +88,28 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [Ututo GNU/Linux](http://ututo.org/)
 * [libeRTy for Linux-libre](http://www.fsfla.org/ikiwiki/selibre/linux-libre/liberty.en.html)
 * [Ezix Linux](https://ezix.org/project/)
-* etc. ([DistroWatch.com Linux-distro popularity 'rankings'](https://distrowatch.com/), [ibiblio Linux-distro mirrors](http://distro.ibiblio.org/), etc.
+* For more Linux distros, check [DistroWatch.com (Linux-distro popularity 'rankings')](https://distrowatch.com/), ([ibiblio Linux-distro mirrors](http://distro.ibiblio.org/), or just do a web-search with your favorite web-search engine (e.g. google.com, [ixquick.com / startpage.com](https://www.startpage.com/), duckduckgo.com, yahoo.com, bing.com, etc.).
+
+Searching for **packages for (GNU/)Linux distros**:
+https://pkgs.org (!!!)
+https://packages.ubuntu.com/
+https://www.debian.org/distrib/packages
+https://www.archlinux.org/packages/
+https://aur.archlinux.org/
+http://packages.linuxmint.com/
+https://launchpad.net (Ubuntu-specific, Linux Mint-specific, and Debian-specific .deb/source PPAs, e.g. https://launchpad.net/lazpaint, https://launchpad.net/openshot, https://launchpad.net/gnome-paint)
+https://apps.fedoraproject.org/packages/
+https://copr.fedorainfracloud.org/ (!!! Includes distro-agnostic AppImage's for apps!)
+https://rpmfusion.org/
+https://src.fedoraproject.org/
+https://packages.gentoo.org/
+https://rpms.remirepo.net/rpmphp/
+https://getfedora.org/keys/
+...
+https://distrowatch.com/packages.php
+https://freshfoss.com/
+https://www.icewalkers.com/
+
 
 ### Other notable UNIX-like OSs apart from (GNU/)Linux (primarily used for servers) ###
 **FreeBSD**, **OpenBSD**, NetBSD, DragonflyBSD, etc.
