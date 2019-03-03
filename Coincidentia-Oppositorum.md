@@ -16,6 +16,7 @@ http://taoism.net/tao/tao-te-ching-online-translation/ (English translation by a
 achieves unity; thus two are but one....
 Invert nature and you will find that what you seek...
 Join the male and the female, and you will find what is sought...' --Maria the Jewess, 300 A.D.'
+
 > 'The alchemical operation consisted essentially in separating the prima
 materia, the so-called chaos, into the active principle, the soul, and the passive
 principle, the body, which were then reunited in personified form in the
