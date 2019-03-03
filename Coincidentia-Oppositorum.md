@@ -28,4 +28,4 @@ coniunctio or 'chymical marriage'... the ritual cohabitation of Sol and Luna.' -
 * https://en.wikipedia.org/wiki/The_All
 * https://www.alchemylab.com/what_is_alchemy.htm
 * https://www.awakeninthedream.com/articles/the-sacred-art-of-alchemy
-* Alan Watt's audio-lectures&books
+* Alan Watts' (NOT Alan Watt) audio-lectures&books
