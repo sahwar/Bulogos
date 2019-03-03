@@ -57,7 +57,7 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [Harmony (by Ricardo Cabella)](http://mrdoob.com/projects/harmony/)
 * [HermiRES (Commodore64 painting app)](http://www.nightfallcrew.com/18/03/2014/hermires-v1-29-c64-hires-bitmap-editor/) [2](http://www.nightfallcrew.com/10/02/2013/hermires-v1-26-c64-hires-bitmap-editor/)
 * [Hornil StylePix Free](http://hornil.com/products/stylepix/) FREEWARE _(RECOMMENDED)_
-* [iDraw3](http://www.rpgmaker.pl/?co=download&typ=programy&id=idraw) ([direct download](www.rpgmaker.pl/download/programy/idraw/idraw.zip)) [2](http://www.rpgmaker.org/downloads/view.asp?id=248) [3](https://www.purezc.net/forums/index.php?showtopic=56005) [4](https://www.deviantart.com/tag/idraw3) [4 (Wine)](https://appdb.winehq.org/objectManager.php?sClass=application&iId=3742) FREEWARE _(RECOMMENDED)_
+* [iDraw3](http://www.rpgmaker.pl/?co=download&typ=programy&id=idraw) ([direct download](www.rpgmaker.pl/download/programy/idraw/idraw.zip) and [link2](http://tsukuru.pl/index.php?link=programy/iDraw)) [2](http://www.rpgmaker.org/downloads/view.asp?id=248) [3](https://www.purezc.net/forums/index.php?showtopic=56005) [4](https://www.deviantart.com/tag/idraw3) [4 (Wine)](https://appdb.winehq.org/objectManager.php?sClass=application&iId=3742) FREEWARE _(RECOMMENDED)_
 * [ImagePlay](https://github.com/cpvrlab/ImagePlay) OPEN-SOURCE
 * [Inkscape](https://inkscape.org/) (vector-images editor) OPEN-SOURCE _(HIGHLY RECOMMENDED)_
 * [iPaint (based on Paintbrush above, macOS)](https://sourceforge.net/projects/ipaint/) [2](http://ipaint.sourceforge.net/), [3](http://macfun.svn.beanstalkapp.com/ipaint/)
