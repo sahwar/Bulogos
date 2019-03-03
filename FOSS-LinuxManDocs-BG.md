@@ -18,9 +18,30 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * Transifex.com (например https://www.transifex.com/mate/MATE/translate/#bg), [CrowdIn.com](https://crowdin.com/), [Mojito](http://www.mojito.global/), [TranslationExchange](https://translationexchange.com/), [Localize.co](https://lokalise.co/), [GetLocalization](https://www.getlocalization.com/), 
 и [други инструменти за превод (CAT, MT и т.н)](https://opensource.com/article/17/6/open-source-localization-tools)
 * Self-hosted **Weblate**, [Mozilla Pontoon](https://pontoon.mozilla.org/) и т.н. хранилища с преводи на софтуер и др., например https://weblate.lxqt.org/projects/lxqt/pcmanfm-qt/ и https://hosted.weblate.org/projects/tilix/translations/
-
-* Linux-BG.org (уебсайт „Линукс за българи“): http://www.linux-bg.org/cgi-bin/y/index.pl, http://www.linux-bg.org/cgi-bin/y/index.pl?page=links, http://d.linux-bg.org/, 
+* Linux-BG.org (уебсайт „Линукс за българи“): http://www.linux-bg.org/cgi-bin/y/index.pl, http://www.linux-bg.org/cgi-bin/y/index.pl?page=links, http://d.linux-bg.org/, https://LaunchPad.net, https://github.com, https://gitlab.org
+* LUG-BG (LUG-BG (Linux Users Group - Bulgaria) е неформална организация на потребителите на Linux в България) - http://www.linux-bulgaria.org/ + е-пощенски списък на LUG-BG http://linux-bulgaria.org/mailman/listinfo/lug-bg
 * Форуми, блогове, лични уебсайтове и лични/фирмени GitHub&GitLab&др. хранилища и проекти: например http://www.linux-bg.org/forum/index.php, http://hardwarebg.com/forum/, https://www.kaldata.com/forums/ и МНОГО други.
+
+`````
+Някои от долните хипервръзки вече на са налични, но са в този документ като исторически спомен...
+
+линукс за българи: http://linux-bg.org
+FSA-BG: http://fsa-bg.org
+OpenFest: http://openfest.org
+FreeBSD BG: http://bg-freebsd.org
+KDE-BG: http://kde.fsa-bg.org/ & kde.lindeas.net
+Gnome-BG: http://gnome.cult.bg/
+проект OpenFMI: http://openfmi.net
+NetField Forum: http://netField.ludost.net/forum/
+http://ludost.net/projects.html
+Anton Zinoviev anton(at)lml(dot)bas(dot)bg - BGLinux, BGtex, изобщо - кирилизация, както и доста статии
+http://www.lml.acad.bg/~anton/linux/index.html
+http://archive.is/LXWYN
+https://www.iro.umontreal.ca/contrib/po/HTML/team-bg.html
+https://debian.fmi.uni-sofia.bg/~ogi/bulgarian.el
+http://archive.is/UKrWk
+http://archive.is/LXWYN
+``````
 
 ## FOSS конференции и срещи от и за българи (конференции за свободен софтуер и софтуер с отворен код) ##
 * **[OpenFest](http://www.openfest.org/2018/bg/)**
@@ -29,7 +50,7 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * **[Wikimedia Conferences (Конференции на Фондация „Уикимедиа“)](https://meta.wikimedia.org/wiki/Wikimedia_Conference)** и [Wikipedia:Meetups](https://en.wikipedia.org/wiki/Wikipedia:Meetup)
 
 Организации за свободен софтуер и софтуер с отворен код и главни FOSS портали
-* **[FSFE (Free Software Foundation Europe](https://fsfe.org/index.bg.html)**
+* **[FSFE (Free Software Foundation Europe)](https://fsfe.org/index.bg.html)**
 * **[FSF (Free Software Foundation)](https://fsf.org)**
 * [Kernel.org, The Linux Kernel Archives, official downloads of the Linux kernel!!!](https://www.kernel.org/)
 * [The Linux Foundation](https://www.linuxfoundation.org/)
@@ -63,8 +84,18 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * Search for 'Cyrillic', 'cyrillic', 't1' in the Ubuntu, Debian, Linux Mint package repositories: https://packages.ubuntu.com/search?keywords=t1&searchon=names
 https://packages.ubuntu.com/search?keywords=cyrillic&searchon=names
 * @sahwar's amateur PixelArt fonts (with basic support for Cyrillic): https://fontstruct.com/fontstructors/27969/sahwar
+* [Some Cyrilic fonts from Valeri Dachev](http://ludost.net/xaddfnts-1.0.tgz)
 * The Sad State of Linux Fonts [Rendering] (and possible fixes): https://pandasauce.org/post/linux-fonts/
 * Antialiased and Microsoft ClearType-like typographical font rendering fixes for Linux: https://novelist.xyz/tech/improve-font-rendering-arch-linux-no-infinality/
+
+Spellchecking dictionaries / Речници за проверка на правописа (съдържат и грешки!):
+* https://bgoffice.sourceforge.net (BGoffice)
+* IDI Spellchecker + dictionary
+* https://addons.mozilla.org/en-US/firefox/language-tools
+* http://extensions.libreoffice.org/extension-center?getCategories=Dictionary&amp;getCompatibility=any&amp;sort_on=positive_ratings&amp;path=%2FLibreOffice-Extensions-and-Templates%2Fextension-center&amp;portal_type=PSCProject&amp;SearchableText=
+* http://extensions.services.openoffice.org/dictionary
+* http://wiki.openoffice.org/wiki/Dictionaries (outdated)
+* http://hunspell.sourceforge.net
 
 * и други (за допълване после...)
 
@@ -117,6 +148,7 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 * [GoldenDict dictionary database files]()
 * [AEDictionaryXP dictionary](http://www.kamburov.net/aleksandar/projects/aedict/)
 * [Megadict-BG dictionary](http://www.megadict-bg.com/)
+* https://sites.google.com/site/bglocalize/links
 * + хипервръзки за над 6000 други онлайн речника от колекцията с речникови бази от данни за Slovnik.Bulogos.info (ЗА ДОБАВЯНЕ, но изисква МНОГО усилия и време...)...
 
 **`DICT` протокола за опростени онлайн речници и сървър за тях**
