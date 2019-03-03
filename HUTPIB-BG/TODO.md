@@ -19,11 +19,11 @@ TODO.md
 * [Notepad3](https://www.rizonesoft.com/downloads/notepad3/), https://github.com/rizonesoft/Notepad3
 * [Xiles NexusFont font-manager](http://www.xiles.net/)
 * [ShareX](https://getsharex.com/)
-* iDraw3
+* [iDraw3](http://tsukuru.pl/index.php?link=programy/iDraw)
 * [InfraRecorder](http://infrarecorder.org/)
 * [CDBurnerXP](https://cdburnerxp.se/)
 * [Wox](http://www.wox.one/)
-* Greenfish Subtitle Player (plays-partially-transparent-SRT-subtitles-overlaid-on-webstreaming-video)
+* [Greenfish Subtitle Player](http://greenfishsoftware.org/gfsp.php#apage) (plays partially transparent .SRT-subtitles overlaid on webstreaming video, e.g. for watching films/TV-series 'illegally' via online sites that host the files...)
 * [MPC-HC](https://mpc-hc.org/)
 * [Aegisub](http://www.aegisub.org/)
 * [Subtitle Workshop 6+](http://subworkshop.sourceforge.net/download.php)
