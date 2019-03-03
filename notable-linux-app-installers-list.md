@@ -29,10 +29,10 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 
 ### Windows (Microsoft Windows, XP & 7+) ###
 * installing from physical-media `.exe`/`.msi` installers
-* directly executing the app's `.exe` binary from its physical-media-copied OR Internet-downloaded archive (.zip, .7z, .tar.xz, .iso etc.) unpacked into a new folder
-* Downloading .exe/.msi installers (or source-code for local compiling) from https://sourceforge.net/ (BEWARE if adware is bundled!), https://www.fosshub.com/, https://osdn.net, https://github.com, GitLab (e.g. https://gitlab.com/florian0)...
+* directly executing the app's `.exe` binary from its physical-media-copied OR Internet-downloaded archive (.zip, .7z, .tar.xz, .iso, etc.) unpacked into a new folder.
+* Downloading `.exe`/`.msi` installers (or source-code for local compiling) from https://sourceforge.net/ (BEWARE if adware is bundled!), https://www.fosshub.com/, https://osdn.net, https://github.com, GitLab (e.g. https://gitlab.com/florian0)...
 _Software download-portals to get ONLY FREEWARE and open-source apps from, NOT other apps:_
-http://brothersoft.com/, https://www.kaldata.com/ (Bulgarian IT website), https://www.softpedia.com/, https://www.techspot.com/downloads/, https://en.softonic.com/windows, https://filehippo.com/, http://www.oldapps.com/, https://www.old-games.com/, https://www.makeuseof.com/, https://www.howtogeek.com/, https://www.techspot.com/downloads/, http://www.tucows.com/downloads, https://download.cnet.com/windows/, https://www.techradar.com/, https://www.tomsguide.com/t/windows/... http://caiman.us/, http://homeoftheunderdogs.net/, etc.
+http://brothersoft.com/, https://www.kaldata.com/ (Bulgarian IT website), https://www.download.bg/ (Bulgarian IT website), https://www.softpedia.com/, https://www.techspot.com/downloads/, https://en.softonic.com/windows, https://filehippo.com/, http://www.oldapps.com/, https://www.old-games.com/, https://www.makeuseof.com/, https://www.howtogeek.com/, https://www.techspot.com/downloads/, http://www.tucows.com/downloads, https://download.cnet.com/windows/, https://www.techradar.com/, https://www.tomsguide.com/t/windows/... http://caiman.us/, http://homeoftheunderdogs.net/ (https://twitter.com/HotU_net), http://www.homeoftheunderdogs.net/company.php?name=Freeware, http://www.abandonwarering.com/, http://www.aplaces.net/, etc.
 * **Package managers for Windows:**
   * * [Chocolatey](https://chocolatey.org)
   * * [NuGet](https://www.nuget.org) (.NET apps)
