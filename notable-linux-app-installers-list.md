@@ -3,10 +3,10 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 
 ### Linux (GNU/Linux) distros and other UNIX-like OSs ###
 **App packaging/distribution/installation file-formats & app distribution-channels for (GNU/)Linux distros:**
-* .deb, .rpm, etc. binary formats & related CLI&GUI app package-managers (`apt`/`apt-get`, `Synaptic`, etc.), downloaded from locally-installed package managers of your Linux distro OR downloaded from some obscure web-address...
-* **AppImage**'s ([AppImageKit](https://github.com/AppImage/AppImageKit), https://appimage.org, https://appimage.github.io/apps/)
+* .deb, .rpm, etc. binary formats & related CLI&GUI app package-managers (`apt`/`apt-get`, `Synaptic`, `emerge (portage)`, etc.), downloaded from locally-installed package managers of your Linux distro OR downloaded from some obscure web-address...
+* **AppImage**'s ([AppImageKit](https://github.com/AppImage/AppImageKit), https://appimage.org, https://appimage.github.io/apps/, [AppImageHub](https://appimage.github.io/))
 * **flatpak**'s (https://flatpak.org/, https://flathub.org/home)
-* Ubuntu **snap**'s (https://snapcraft.io/)
+* Ubuntu **snap**'s (https://snapcraft.io/), [snapd](https://github.com/snapcore/snapd)
 * **source** .tar.gz, .tar.xz, .tar.7z files for compiling
 * searching through the Linux-distro repositories via locally-installed package managers or searching through online package-system search-engine/databases frontends or searching through the Linux-distro's online directory of repositories of available distro packages: **https://pkgs.org/** (& related: http://www.getdeb.net/, http://www.rpmseek.com/index.html, https://build.opensuse.org/, etc.)
 * [Linuxbrew](http://linuxbrew.sh) (Info: https://www.ostechnix.com/linuxbrew-common-package-manager-linux-mac-os-x/)
