@@ -11,10 +11,10 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 * searching through the Linux-distro repositories via locally-installed package managers or searching through online package-system search-engine/databases frontends or searching through the Linux-distro's online directory of repositories of available distro packages: **https://pkgs.org/** (& related: http://www.getdeb.net/, http://www.rpmseek.com/index.html, https://build.opensuse.org/, etc.)
 * [Linuxbrew](http://linuxbrew.sh) (Info: https://www.ostechnix.com/linuxbrew-common-package-manager-linux-mac-os-x/)
 * Braumeister (defunct?): http://braumeister.org/formulae/
-* Ubuntu LaunchPad.net PPAs (https://launchpad.net/)
-* BitBucket (https://bitbucket.org/)
-* GitLab (https://about.gitlab.com/), or your own (self-)hosted version of GitLab CE (Community Edition)...
-* BinTray (https://bintray.com)
+* Ubuntu LaunchPad.net **PPAs** (https://launchpad.net/)
+* **BitBucket** (https://bitbucket.org/)
+* **GitLab** (https://about.gitlab.com/), or your own (self-)hosted version of GitLab CE (Community Edition)...
+* **BinTray** (https://bintray.com)
 * JFrog BinTray (https://jfrog.com/bintray/)
 * openSUSE Build Service (https://build.opensuse.org/)
 * Fedora COPR AppImage's repos: https://copr.fedorainfracloud.org/coprs/
@@ -24,7 +24,7 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 * [npm](https://www.npmjs.com/) (JavaScript packages)
 * https://mesonbuild.com/
 * https://ninja-build.org/
-* running Windows .exe/.msi files via [Wine](https://www.winehq.org/)/PlayOnLinux (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html, [DxWnd](https://sourceforge.net/p/dxwnd/home/Home/), etc.)
+* running Windows `.exe`/`.msi` files via [Wine](https://www.winehq.org/)/PlayOnLinux (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html, [DxWnd](https://sourceforge.net/p/dxwnd/home/Home/), etc.)
 * etc. ...
 
 ### Windows (Microsoft Windows, XP & 7+) ###
