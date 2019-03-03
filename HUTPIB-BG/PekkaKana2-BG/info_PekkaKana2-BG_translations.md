@@ -32,5 +32,7 @@ My finished translation of [Pekka Kana 2](http://www.pistegamez.net/game_pk2.htm
 
 **Cheats и допълнителен софтуер:** вижте форума на PK2, както и https://github.com/topics/pk2 и https://github.com/search?q=Pekka+Kana+2
 
+---
+
 This URI:
 https://github.com/sahwar/Bulogos/HUTPIB-BG/PekkaKana2-BG/info_PekkaKana2-BG_translations.md
