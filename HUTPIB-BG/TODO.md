@@ -7,7 +7,7 @@ TODO.md
 * [GIMP](https://www.gimp.org/)
 * [MediBang Paint Pro](https://medibangpaint.com/en/pc/) (freeware)
 * [SpeedyPainter](http://speedypainter.altervista.org) (freeware)
-* JUMP PAINT (freeware)
+* [JUMP PAINT](https://medibangpaint.com/en/) (freeware, similar to MediBang Paint Pro)
 * [paint.net](http://getpaint.net) (freeware)
 * [AzPainter](https://osdn.net/projects/azpainter/), AppImage here? (FOSS)
 * [JPixel (emad.itch.io)](https://emad.itch.io/jpixel) (freeware)
