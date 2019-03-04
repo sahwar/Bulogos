@@ -16,7 +16,33 @@ _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE
 * [Artweaver Plus (newer, commercial)](https://www.artweaver.de/en) (commercial)
 * [Aseprite](https://www.aseprite.org/) (the newer version is commercial, has a freeware trial version; has an on open-source fork of the last open-source version: [LibreSprite](https://github.com/LibreSprite/LibreSprite)) _(RECOMMENDED)_
 * [Autodesk SketchBook](https://sketchbook.com/) [2](https://www.autodesk.co.uk/products/sketchbook/subscribe) (commercial, has a free trial version and a get-it-for-free programme for students/educators)
-* [AzPainter](https://github.com/Symbian9/azpainter) [2](https://osdn.net/projects/azpainter/releases) [3](https://azworldweb.wordpress.com/), [3](https://azworldweb.wordpress.com/about/) (also by the same author, Azel: AzDrawing, AzPainterB; it's a lot like an open-source Paint Tool SAI but more lightweight and sorta different!) (**[AzPainter AppImage for Linux!](https://bintray.com/probono/AppImages/AzPainter#files)** by the famous [probono](https://dl.bintray.com/probono/AppImages/)!) _(HIGHLY RECOMMENDED)_
+* [AzPainter](https://github.com/Symbian9/azpainter) [2](https://osdn.net/projects/azpainter/releases) [3](https://azworldweb.wordpress.com/), [4](https://azworldweb.wordpress.com/about/) (also by the same author, Azel: AzDrawing, AzPainterB; it's a lot like an open-source Paint Tool SAI but more lightweight and sorta different!) (**[AzPainter AppImage for Linux!](https://bintray.com/probono/AppImages/AzPainter#files)** by the famous [probono (5)](https://dl.bintray.com/probono/AppImages/)!), [(6)](https://www.opendesktop.org/p/1233213/), [(7) (Ubuntu PPA for AzPainter)](https://launchpad.net/~alex-p/+archive/ubuntu/azpainter), [8](https://appimage.github.io/AzPainter/), [(9)](https://askubuntu.com/questions/942802/how-do-i-install-azpainter-2-0-6), [(10)](https://www.deviantart.com/frankqbe/art/AzPainter-212-English-Version-Download-488404806), [(11)](https://www.deviantart.com/0xconfig/journal/AzPainter-Linux-2-x-painting-tutorial-727622415) (AzPaint art-drawing tutorial), [(12)](https://www.deviantart.com/tag/azpainterlinux), [(13)](http://cosbyart.blogspot.com/2018/04/art-review-azdrawing-and-azpainter.html) (reviews of AzDrawing and AzPainter), [(14)](http://cosbyart.blogspot.com/2018/04/art-review-azdrawing-and-azpainter.html), [(15)](https://hp.vector.co.jp/authors/VA033749/soft/azpainter2.html) (AzPainter for Windows98/XP/7_64-bit), [(16)](https://github.com/abcang/azpainter-mac) (AzPainter for macOS) _(HIGHLY RECOMMENDED)_
+<!--
+http://archive.is/2BxWj
+http://archive.is/FQES1
+https://translate.google.bg/translate?sl=auto&tl=en&u=http%3A%2F%2Farchive.is%2FFQES1
+https://www.youtube.com/watch?v=rwxCSGqJgQk
+https://www.deviantart.com/frankqbe/art/AzPainter-212-English-Version-Download-488404806
+http://azsky2.html.xdomain.jp/linux/azpainter.html
+http://alexdukal.blogspot.com/2011/11/azdrawing-2-en-espanol.html
+http://mundoazdrawing.blogspot.com/p/descarga.html
+http://alexdukal.blogspot.com/2011/11/azdrawing-2-en-espanol.html
+http://translate.google.com/translate?depth=2&hl=en&rurl=translate.google.com&sl=auto&sp=nmt4&tl=en&u=http://azsky2.html.xdomain.jp/linux/azdrawing.html
+https://drive.google.com/file/d/1QQCySRJhyJRV_p01q3VyVJnmaykin4a3/view
+https://www.dropbox.com/s/eon45dj3j92k6tj/AzDrawing_2.zip?dl=0
+https://www.dropbox.com/s/e554l207dfqa5rg/lang_es.txt?dl=0
+http://archive.is/vcB61
+http://azsky2.html.xdomain.jp/
+Azel: azelpg@gmail.com , azel@rinku.zaq.ne.jp
+http://sai.detstwo.com/forum/index.php/topic,597.0.html
+https://puppylinux.org/wikka/Azpainter
+http://hp.vector.co.jp/authors/VA033749/format.html
+http://hp.vector.co.jp/authors/VA033749/faq/azdw2.html
+http://hp.vector.co.jp/authors/VA033749/faq/azpainter.html
+http://hp.vector.co.jp/authors/VA033749/tips_azpt/index.html
+http://hp.vector.co.jp/authors/VA033749/tips_azdw2/index.html
+http://hp.vector.co.jp/authors/VA033749/tips_azdw2/anim.html
+-->
 * [BrashMonkey Sprite (!)](https://brashmonkey.com/download-spriter-beta/)
 * [BrashMonkey Spriter](https://brashmonkey.com/download_spriter/?utm_campaign=free-traffic&utm_source=solutions-softonic-com&utm_medium=referral#) (Windows, Linux, macOS) _(RECOMMENDED)_
 * [Chasys Draw IES](http://www.jpchacha.com/chasysdraw/) FREEWARE _(HIGHLY RECOMMENDED)_
@@ -369,6 +395,123 @@ https://forum.mxlinux.org/viewtopic.php?t=42013
 http://waifu2x.udp.jp/
 http://archive.is/WLFtm
 https://ja.osdn.net/projects/azpainter/#gallery
+
+------
+
+* [Skencil]()
+* [Pinta]()
+* [TuxPaint]()
+* [Karbon]()
+* [VIPS]()
+* [Blender3D]()
+* [Digikam]()
+* [KolourPaint]()
+* [Inkscape]()
+* [sK1]() (vector graphics editor) OPEN-SOURCE _RECOMMENDED_
+* [GPaint]()
+* [CinePaint]()
+* [LazPaint]()
+* [RawTherapee]()
+* [Darktable]()
+* [Pinta]()
+* [Vectr](https://vectr.com/downloads/)
+* [Fotoxx](https://kornelix.net/downloads/downloads.html)
+* Pixelitor
+* [Pixelator](https://github.com/Hopson97/Pixelator)
+* [Pixer (Qt-based pixel-art editor)](https://github.com/SilangQuan/Pixer) ([ipixer at SourceForge.net](https://sourceforge.net/projects/ipixer/))
+* [Pixel](https://github.com/tjhancocks/Pixel) (a basic pixel-art editor written in Swift)
+* [Pixel it](https://github.com/tavioalves/pixel-it) (a basic web-app to create, share or download pixel art around the web)
+* [PixelArtShader](https://github.com/kushi34123616bd/PixelArtShader) (Render like * PixelArts from 3D model!!! It can be used to make 2D animations from pixel-art frames after exporting from a rotated/slightly-changed 3D-model!!!)
+* [godot-pixel-painter](https://github.com/cwkx/godot-pixel-painter)
+* [Pixelaria (written in .NET C# 4.5)](https://github.com/LuizZak/Pixelaria) (C# program for creating pixel art game sprites) OPEN-SOURCE _RECOMMENDED_
+* [EasyPaint]() (MS Paint-like, Qt/KDE-perfect)
+* [MQ Sprite]()
+* [mtPixy]() (by Mark Tyler, the original author of mtPaint)
+* [Pixelaria]()
+* [lospec.com online pixel editor]()
+* [PixelMatorPro]() (commercial digital-painting app)
+* [PowerPaint]()
+* [pyqx](https://github.com/MikiLoz92/pyqx) (a multiplatform graphics editor developed in Python and PyQt. It focuses in Pixel Art) OPEN-SOURCE _RECOMMENDED_
+* [qubicle]() (Voxel editor)
+* [Blit (by 16bpp)]()
+* [PaintstormStudio](http://paintstormstudio.com) (commercial digital-painting app)
+* [Pixavoxet](https://github.com/mishapsi/pixavoxet) (Voxel to Pixel Art Animator/Renderer inside Godot),http://myskamyska.tumblr.com)
+* [pixiEditor](https://github.com/flabbet/PixiEditor) (a lightweighted pixel art creator) OPEN-SOURCE
+* [pxlart](https://github.com/mananapr/pxlart)
+* [pxltrm](https://github.com/dylanaraps/pxltrm)
+* [pixel-art](https://github.com/alexpnt/pixel-art)
+* [Pixel-Colors](https://github.com/SorenSaket/Pixel-Colors)
+
+
+* https://github.com/sean-codes/pixeling
+
+
+
+
+
+* [VectorChimera](https://github.com/saint11/VectorChimera) (a palette swapper software for pixel art)
+* [PaletteSwapping](https://github.com/Broxxar/PaletteSwapping)
+* [phixelgator](https://github.com/nathanharper/phixelgator) (convert photos to pixel art at the command line.)
+
+* [PixelShape](https://github.com/Convicted202/PixelShape) (a web-based pixel editor that comes in handy when creating pixel art images and animations)
+* [pixel-art-maker](https://github.com/Soreine/pixel-art-maker) (Generate palettes and dither any image with custom patterns)
+* [Pixelm](https://github.com/shuhei/pixelm) ([Pixelm app](https://shuheikagawa.com/pixelm/))
+
+* [pixelRestorer](https://github.com/sahwar/pixelRestorer) (Using statistics to restore pixel art images)
+* [Blender-addon-import-pixelart](https://github.com/sahwar/blender-addon-import-pixelart)
+
+
+
+* [Big-Block-Framework](https://github.com/foldi/Big-Block-Framework) (A JavaScript framework for rendering pixel art, pixel fonts and particles in a web browser - http://www.bigblockframework.com)
+* [Pixel-Colors](https://github.com/SorenSaket/Pixel-Colors) (pixel-art color palettes)
+* [pixcaler](https://github.com/mitaki28/pixcaler) (a pixel-art upscaler based on pix2pix network - demo: http://mitaki28.info/pixcaler/)
+* [jaggy](https://github.com/59naga/jaggy) (Keep the sharpness for Pixel-Art)
+* [pixelart-vectorizer](https://github.com/michaelrbk/pixelart-vectorizer) (Convert pixel art to SVG vector image)
+* [Dithermark](https://github.com/allen-garvey/dithermark) (Transform your photos into pixel art - https://app.dithermark.com)
+* [pxSort](https://github.com/g-whiz/pxSort) (A Google Android application for creating "pixel sorting" glitch art.)
+
+
+
+https://github.com/david95thinkcode/SimplePaintApp
+https://github.com/smay1613/Qt-Paint
+https://github.com/Abdelrhman-Yasser/Paint
+https://github.com/isac322/paint
+https://github.com/plumlike/Simple-Paint-Program
+https://github.com/DaniloNovakovic/WinFormsFun
+https://github.com/shad0w-13/MiniPaint
+https://github.com/TimmyRB/Paint
+https://github.com/Ankitzero/rabbitpaint
+https://github.com/shawsourav/Paint-JS
+https://github.com/nhnent/tui.image-editor
+https://github.com/dnchia/Ion3Paint
+https://github.com/zakee94/paintJOGL
+https://github.com/saifkhichi96/paint
+https://github.com/haxxorsid/swing-paint-application
+https://github.com/cojapacze/sketchpad
+https://github.com/shawsourav/Paint-JS
+
+
+
+https://github.com/joshavanier/poxel
+https://github.com/nikoferro/react-pixelify
+https://github.com/BrandonHilde/PixelArt
+
+https://github.com/guastallaigor/vue-pixel-art
+https://github.com/qbart/isometric-pixel-art
+MORE (research...): https://github.com/search?p=17&q=pixel+art&type=Repositories
+
+https://www.techlinu.com/3-must-linux-apps/
+https://conceptartempire.com/photoshop-linux-alternatives/
+https://conceptartempire.com/pixel-art-software/
+https://conceptartempire.com/digital-painting-software/
+https://conceptartempire.com/storyboard-software/
+http://forum.tabletpcreview.com/threads/list-of-programs-for-the-artist.36406/
+https://forum.mxlinux.org/viewtopic.php?t=42013
+http://waifu2x.udp.jp/
+http://archive.is/WLFtm
+https://ja.osdn.net/projects/azpainter/#gallery
+
+
 
 ------
 
