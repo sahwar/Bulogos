@@ -4,7 +4,7 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 ### Linux (GNU/Linux) distros and other UNIX-like OSs ###
 **App packaging/distribution/installation file-formats & app distribution-channels for (GNU/)Linux distros:**
 * .deb, .rpm, etc. binary formats & related CLI&GUI app package-managers (`apt`/`apt-get`, `Synaptic`, `emerge (portage)`, etc.), downloaded from locally-installed package managers of your Linux distro OR downloaded from some obscure web-address...
-* **AppImage**'s ([AppImageKit](https://github.com/AppImage/AppImageKit), https://appimage.org, https://appimage.github.io/apps/, [AppImageHub](https://appimage.github.io/))
+* **AppImage**'s ([AppImageKit](https://github.com/AppImage/AppImageKit), https://appimage.org, https://appimage.github.io/apps/, [AppImageHub](https://appimage.github.io/), [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) (https://www.opendesktop.org/p/1228228))
 * **flatpak**'s (https://flatpak.org/, https://flathub.org/home)
 * Ubuntu **snap**'s (https://snapcraft.io/), [snapd](https://github.com/snapcore/snapd)
 * **source** .tar.gz, .tar.xz, .tar.7z files for compiling
