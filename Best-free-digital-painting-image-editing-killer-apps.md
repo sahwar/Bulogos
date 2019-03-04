@@ -235,6 +235,28 @@ https://forum.mxlinux.org/viewtopic.php?t=42013
 http://archive.is/WLFtm
 https://ja.osdn.net/projects/azpainter/#gallery
 
+------
+
+https://github.com/david95thinkcode/SimplePaintApp
+https://github.com/smay1613/Qt-Paint
+https://github.com/Abdelrhman-Yasser/Paint
+https://github.com/isac322/paint
+https://github.com/plumlike/Simple-Paint-Program
+https://github.com/DaniloNovakovic/WinFormsFun
+https://github.com/shad0w-13/MiniPaint
+https://github.com/TimmyRB/Paint
+https://github.com/Ankitzero/rabbitpaint
+https://github.com/shawsourav/Paint-JS
+https://github.com/nhnent/tui.image-editor
+https://github.com/dnchia/Ion3Paint
+https://github.com/zakee94/paintJOGL
+https://github.com/saifkhichi96/paint
+https://github.com/haxxorsid/swing-paint-application
+https://github.com/cojapacze/sketchpad
+https://github.com/shawsourav/Paint-JS
+
+------
+
 ---
 
 Solarized dark             |  Solarized Ocean
