@@ -257,6 +257,121 @@ https://github.com/shawsourav/Paint-JS
 
 ------
 
+* [Skencil]()
+* [Pinta]()
+* [TuxPaint]()
+* [Karbon]()
+* [VIPS]()
+* [Blender3D]()
+* [Digikam]()
+* [KolourPaint]()
+* [Inkscape]()
+* [sK1]() (vector graphics editor) OPEN-SOURCE _RECOMMENDED_
+* [GPaint]()
+* [CinePaint]()
+* [LazPaint]()
+* [RawTherapee]()
+* [Darktable]()
+* [Pinta]()
+* [Vectr](https://vectr.com/downloads/)
+* [Fotoxx](https://kornelix.net/downloads/downloads.html)
+* Pixelitor
+* [Pixelator](https://github.com/Hopson97/Pixelator)
+* [Pixer (Qt-based pixel-art editor)](https://github.com/SilangQuan/Pixer) ([ipixer at SourceForge.net](https://sourceforge.net/projects/ipixer/))
+* [Pixel](https://github.com/tjhancocks/Pixel) (a basic pixel-art editor written in Swift)
+* [Pixel it](https://github.com/tavioalves/pixel-it) (a basic web-app to create, share or download pixel art around the web)
+* [PixelArtShader](https://github.com/kushi34123616bd/PixelArtShader) (Render like * PixelArts from 3D model!!! It can be used to make 2D animations from pixel-art frames after exporting from a rotated/slightly-changed 3D-model!!!)
+* [godot-pixel-painter](https://github.com/cwkx/godot-pixel-painter)
+* [Pixelaria (written in .NET C# 4.5)](https://github.com/LuizZak/Pixelaria) (C# program for creating pixel art game sprites) OPEN-SOURCE _RECOMMENDED_
+* [EasyPaint]() (MS Paint-like, Qt/KDE-perfect)
+* [MQ Sprite]()
+* [mtPixy]() (by Mark Tyler, the original author of mtPaint)
+* [Pixelaria]()
+* [lospec.com online pixel editor]()
+* [PixelMatorPro]() (commercial digital-painting app)
+* [PowerPaint]()
+* [pyqx](https://github.com/MikiLoz92/pyqx) (a multiplatform graphics editor developed in Python and PyQt. It focuses in Pixel Art) OPEN-SOURCE _RECOMMENDED_
+* [qubicle]() (Voxel editor)
+* [Blit (by 16bpp)]()
+* [PaintstormStudio](http://paintstormstudio.com) (commercial digital-painting app)
+* [Pixavoxet](https://github.com/mishapsi/pixavoxet) (Voxel to Pixel Art Animator/Renderer inside Godot),http://myskamyska.tumblr.com)
+* [pixiEditor](https://github.com/flabbet/PixiEditor) (a lightweighted pixel art creator) OPEN-SOURCE
+* [pxlart](https://github.com/mananapr/pxlart)
+* [pxltrm](https://github.com/dylanaraps/pxltrm)
+* [pixel-art](https://github.com/alexpnt/pixel-art)
+* [Pixel-Colors](https://github.com/SorenSaket/Pixel-Colors)
+
+
+* https://github.com/sean-codes/pixeling
+
+
+
+
+
+* [VectorChimera](https://github.com/saint11/VectorChimera) (a palette swapper software for pixel art)
+* [PaletteSwapping](https://github.com/Broxxar/PaletteSwapping)
+* [phixelgator](https://github.com/nathanharper/phixelgator) (convert photos to pixel art at the command line.)
+
+* [PixelShape](https://github.com/Convicted202/PixelShape) (a web-based pixel editor that comes in handy when creating pixel art images and animations)
+* [pixel-art-maker](https://github.com/Soreine/pixel-art-maker) (Generate palettes and dither any image with custom patterns)
+* [Pixelm](https://github.com/shuhei/pixelm) ([Pixelm app](https://shuheikagawa.com/pixelm/))
+
+* [pixelRestorer](https://github.com/sahwar/pixelRestorer) (Using statistics to restore pixel art images)
+* [Blender-addon-import-pixelart](https://github.com/sahwar/blender-addon-import-pixelart)
+
+
+
+* [Big-Block-Framework](https://github.com/foldi/Big-Block-Framework) (A JavaScript framework for rendering pixel art, pixel fonts and particles in a web browser - http://www.bigblockframework.com)
+* [Pixel-Colors](https://github.com/SorenSaket/Pixel-Colors) (pixel-art color palettes)
+* [pixcaler](https://github.com/mitaki28/pixcaler) (a pixel-art upscaler based on pix2pix network - demo: http://mitaki28.info/pixcaler/)
+* [jaggy](https://github.com/59naga/jaggy) (Keep the sharpness for Pixel-Art)
+* [pixelart-vectorizer](https://github.com/michaelrbk/pixelart-vectorizer) (Convert pixel art to SVG vector image)
+* [Dithermark](https://github.com/allen-garvey/dithermark) (Transform your photos into pixel art - https://app.dithermark.com)
+* [pxSort](https://github.com/g-whiz/pxSort) (A Google Android application for creating "pixel sorting" glitch art.)
+
+
+
+https://github.com/david95thinkcode/SimplePaintApp
+https://github.com/smay1613/Qt-Paint
+https://github.com/Abdelrhman-Yasser/Paint
+https://github.com/isac322/paint
+https://github.com/plumlike/Simple-Paint-Program
+https://github.com/DaniloNovakovic/WinFormsFun
+https://github.com/shad0w-13/MiniPaint
+https://github.com/TimmyRB/Paint
+https://github.com/Ankitzero/rabbitpaint
+https://github.com/shawsourav/Paint-JS
+https://github.com/nhnent/tui.image-editor
+https://github.com/dnchia/Ion3Paint
+https://github.com/zakee94/paintJOGL
+https://github.com/saifkhichi96/paint
+https://github.com/haxxorsid/swing-paint-application
+https://github.com/cojapacze/sketchpad
+https://github.com/shawsourav/Paint-JS
+
+
+
+https://github.com/joshavanier/poxel
+https://github.com/nikoferro/react-pixelify
+https://github.com/BrandonHilde/PixelArt
+
+https://github.com/guastallaigor/vue-pixel-art
+https://github.com/qbart/isometric-pixel-art
+MORE (research...): https://github.com/search?p=17&q=pixel+art&type=Repositories
+
+https://www.techlinu.com/3-must-linux-apps/
+https://conceptartempire.com/photoshop-linux-alternatives/
+https://conceptartempire.com/pixel-art-software/
+https://conceptartempire.com/digital-painting-software/
+https://conceptartempire.com/storyboard-software/
+http://forum.tabletpcreview.com/threads/list-of-programs-for-the-artist.36406/
+https://forum.mxlinux.org/viewtopic.php?t=42013
+http://waifu2x.udp.jp/
+http://archive.is/WLFtm
+https://ja.osdn.net/projects/azpainter/#gallery
+
+------
+
 ---
 
 Solarized dark             |  Solarized Ocean
