@@ -511,7 +511,9 @@ http://waifu2x.udp.jp/
 http://archive.is/WLFtm
 https://ja.osdn.net/projects/azpainter/#gallery
 
-
+https://osdn.net/projects/gimp-painter/releases/p6799
+https://github.com/seagetch/gimp-painter
+http://detstwo.com/sai/
 
 ------
 
