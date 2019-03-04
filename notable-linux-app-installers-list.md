@@ -19,7 +19,7 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 * openSUSE Build Service (https://build.opensuse.org/)
 * Fedora COPR AppImage's repos: https://copr.fedorainfracloud.org/coprs/
 * [XBPS](https://voidlinux.org/usage/xbps/) & etc. package systems (?)...
-* Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/), [https://packagist.org](Packagist) (the PHP programming-language's package-repository of PHP packages installable via [Composer](https://getcomposer.org/))
+* Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/), [https://packagist.org](Packagist) (the PHP programming-language's package-repository of PHP packages installable via [Composer](https://getcomposer.org/)), [crates.io (packages for the Rust programming language](https://crates.io/crates/smithay-clipboard), [YarnPKG](https://yarnpkg.com/lang/en/), TeX packages, etc.
 * installing by getting the package via a version-control-system's graphical-app (i.e. Git, GitLab, GitHub, CVS, etc.)...
 * [npm](https://www.npmjs.com/) (JavaScript packages)
 * https://mesonbuild.com/
