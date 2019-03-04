@@ -21,6 +21,7 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * Linux-BG.org (уебсайт „Линукс за българи“): http://www.linux-bg.org/cgi-bin/y/index.pl, http://www.linux-bg.org/cgi-bin/y/index.pl?page=links, http://d.linux-bg.org/, https://LaunchPad.net, https://github.com, https://gitlab.org
 * LUG-BG (LUG-BG (Linux Users Group - Bulgaria) е неформална организация на потребителите на Linux в България) - http://www.linux-bulgaria.org/ + е-пощенски списък на LUG-BG http://linux-bulgaria.org/mailman/listinfo/lug-bg
 * Форуми, блогове, лични уебсайтове и лични/фирмени GitHub&GitLab&др. хранилища и проекти: например http://www.linux-bg.org/forum/index.php, http://hardwarebg.com/forum/, https://www.kaldata.com/forums/ и МНОГО други.
+* https://github.com/sahwar/Best-websites-a-programmer-should-visit
 
 `````
 Някои от долните хипервръзки вече на са налични, но са в този документ като исторически спомен...
