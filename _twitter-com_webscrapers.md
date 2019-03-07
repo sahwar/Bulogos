@@ -15,3 +15,5 @@ Here are some 3rd-party software tools to do the same **or with more options**:
 * https://github.com/sebinsua/scrape-twitter
 * https://github.com/twintproject/twint
 * https://github.com/clayfish/twitter-scraper
+
+Also note this when webscraping ANY website(s): https://en.wikipedia.org/wiki/Web_crawler#Politeness_policy
