@@ -13,7 +13,7 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * **GNOME-BG**: http://fsa-bg.org/project/gtp
 * **FOSS-BG-translators EMailList**: <dict@ludost.net> (за абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict)
 * **[BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/)**, [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
-(* стари безплатни версии на програмата за проверка на правописа на български текстове IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking; WinEst и др.)
+(* стари безплатни версии на програмата за проверка на правописа на български текстове IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking [linkhttp://freeplace.info/ididictionary/bulgarian_spell_checker/ ), WinEst, др.)
 
 * Transifex.com (например https://www.transifex.com/mate/MATE/translate/#bg), [CrowdIn.com](https://crowdin.com/), [Mojito](http://www.mojito.global/), [TranslationExchange](https://translationexchange.com/), [Localize.co](https://lokalise.co/), [GetLocalization](https://www.getlocalization.com/), 
 и [други инструменти за превод (CAT, MT и т.н)](https://opensource.com/article/17/6/open-source-localization-tools)
