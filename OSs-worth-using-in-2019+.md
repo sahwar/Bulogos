@@ -14,23 +14,24 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 ### Viable Linux distros 2019 ###
 * [MX Linux](http://mxlinux.org/) 10/10
 * [AntiX](https://antixlinux.com/) 8/10
-* [Debian](http://debian.org/) (newest; +squeeze-backports and later) *****
+* [Debian](http://debian.org/) (newest; +squeeze-backports and later) 8/10
 * [Devuan](https://devuan.org/) (Debian minus `systemd`) 9/10
-* [Linux Mint](http://linuxmint.com/) 10/10 (XFCE DE, MATE DE, Cinnamon DE, LMDE (Debian-based rolling Linux Mint))
-* [Ubuntu](http://ubuntu.com/) 9/10 ([Xubuntu](http://xubuntu.org/), [Lubuntu](https://lubuntu.net/), [Ubuntu MATE](http://ubuntu-mate.org/), [Kubuntu](http://kubuntu.org/), Ubunty Unity (~dead))
-* [USU](http://learnfree.eu/?lang=bg) (**Ubuntu-based Linux distro oriented towards Bulgarian users!!!**)
+* [Linux Mint](http://linuxmint.com/) 10/10 (XFCE DE, MATE DE, Cinnamon DE, LMDE (Debian-based rolling Linux Mint)) 9/10
+* [Ubuntu](http://ubuntu.com/) 9/10 ([Xubuntu](http://xubuntu.org/), [Lubuntu](https://lubuntu.net/), [Ubuntu MATE](http://ubuntu-mate.org/), [Kubuntu](http://kubuntu.org/), Ubunty Unity (~dead)) 9/10
+* [USU](http://learnfree.eu/?lang=bg) (**Ubuntu-based Linux distro oriented towards Bulgarian users!!!**) 8/10
+* [FerenOS](https://ferenos.weebly.com/get-it.html) [(download)](https://ferenos.weebly.com/get-it.html), [FerenOS at SourceForge](https://sourceforge.net/projects/ferenoslinux/), [FerenOS Next at SourceForge.net](https://sourceforge.net/projects/feren-os-development-builds/), [FerenOS Transfer Tool](https://ferenos.weebly.com/feren-os-transfer-tool.html) 9/10
 * [Arch Linux](http://archlinux.org/) + [AUR](https://aur.archlinux.org/) 8/10
-* [Fedora](https://getfedora.org/)
+* [Fedora](https://getfedora.org/) 7.5/10
 * [Gentoo](https://www.gentoo.org/)
 * [OpenSUSE](https://www.opensuse.org/) (12.3 or later; OpenSUSE Tumbleweed)
-* [RHEL (RedHat Enterprise Linux)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) & [CentOS](https://www.centos.org/) (suitable for servers, Debian, Ubuntu, Arch Linux, and Gentoo - are the other Linux distros popular for servers); Oracle Linux
-* [Void Linux](https://voidlinux.org/) 9/10 (with the XBPS package-system)
+* [RHEL (RedHat Enterprise Linux)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) & [CentOS](https://www.centos.org/) (suitable for servers, Debian, Ubuntu, Arch Linux, and Gentoo - are the other Linux distros popular for servers); Oracle Linux... 10/10
+* [Void Linux](https://voidlinux.org/) 9/10 (with the XBPS package-system) 7.5/10
 * [Alpine Linux](https://www.alpinelinux.org/)
 * [GuixSD](https://www.gnu.org/software/guix/)
 * [NixOS](https://nixos.org/)
-* [Puppy Linux](http://puppylinux.org/main/Overview%20and%20Getting%20Started.htm) (especially the Ubuntu/Debian-based LTS builds!)
-* [ElementaryOS](https://elementary.io/bg/)
-* [SliTaz GNU/Linux](http://www.slitaz.org/en/)
+* [Puppy Linux](http://puppylinux.org/main/Overview%20and%20Getting%20Started.htm) (especially the Ubuntu/Debian-based LTS builds!) 9/10
+* [ElementaryOS](https://elementary.io/bg/) 8/10
+* [SliTaz GNU/Linux](http://www.slitaz.org/en/) 7.5/10
 * [CLIP OS](https://clip-os.org/en/) (by the ANSSI (National Cybersecurity Agency of France))
 * [Slax](https://www.slax.org/)
 * [Solus Linux](https://getsol.us/home/)
@@ -47,9 +48,11 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [LXLE](http://www.lxle.net/)
 * [PureOS](https://www.pureos.net/) (from https://puri.sm/, powerful libre laptops!)
 * [ZorinOS](https://zorinos.com/)
+
 ...
-[Linux Lite](https://www.linuxliteos.com/download.html)
-* [Lubuntu](http://lubuntu.net/)
+
+* [Linux Lite](https://www.linuxliteos.com/download.html)
+* [Lubuntu](http://lubuntu.net/) 9/10
 * [Trisquel Mini](https://trisquel.info/en/wiki/trisquel-mini)
 * [BodhiLinux](http://www.bodhilinux.com/)
 * [ChromiumOS/ChromeOS](https://www.chromium.org/chromium-os)
@@ -57,14 +60,14 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [DamnSmallLinux](https://distrowatch.com/table.php?distribution=damnsmall)
 * [Porteus Linux](http://www.porteus.org/)
 * [wattOS Linux](http://planetwatt.com/new/)
-* [4MLinux](http://4mlinux.com/)
+* [4MLinux](http://4mlinux.com/) 8/10
 * [EasyOS](https://easyos.org/) (based on Puppy Linux)
 * [ToriOS](http://torios.top/)
 * [Linux From Scratch (LFS)](http://www.linuxfromscratch.org/)
 * [TinyCoreLinux](http://www.tinycorelinux.net/)
-* [deepin Linux](https://www.deepin.org/en/)
+* [deepin Linux](https://www.deepin.org/en/) 8/10
 * [Slackware Linux](http://www.slackware.com/)
-* [LXLE](http://lxle.net/)
+* [LXLE](http://lxle.net/) 8/10
 * [SteamOS](http://store.steampowered.com/steamos/)
 * [Trisquel Linux](https://trisquel.info)
 * [Sabayon](https://www.sabayon.org/)
