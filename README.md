@@ -1,4 +1,5 @@
 # Bulogos
+([sync this GitHub repo with the GitLab mirror repo](https://moox.io/blog/keep-in-sync-git-repos-on-github-gitlab-bitbucket/))
 ### Bulogos /bɤlɔgɔs/, /bɤləgɔs/ (Бълогос / БълЪгос); The Bulogos Project; Project Bulogos
 :us: :gb: Useful information for Bulgarian-language users of Linux and FOSS/FLOSS (Free (, libre) and open-source software), among other things.
 
