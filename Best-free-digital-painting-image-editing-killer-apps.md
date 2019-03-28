@@ -187,6 +187,11 @@ http://hp.vector.co.jp/authors/VA033749/tips_azdw2/anim.html
 * see the invisible HTML-comment section hidden in the webpages' source-code below (e.g. just click the 'Raw' button on the GitHub page)...
 
 <!--
+Markdown table with screenshots placed like this one:
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+-->
+
+<!--
 
 Skencil, Pinta, TuxPaint, Karbon, VIPS, Blender3D, Digikam, KolourPaint, Inkscape, sK1, GPaint, CinePaint, LazPaint, RawTherapee, Darktable, Pinta, [Vectr](https://vectr.com/downloads/), [Fotoxx](https://kornelix.net/downloads/downloads.html), Pixelitor, 
 
