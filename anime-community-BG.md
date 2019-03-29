@@ -44,6 +44,36 @@
 * https://www.hentairules.net/
 * https://www.fakku.net/
 * https://www.simply-hentai.com/tags
+* https://pururin.io/
+* https://luscious.net/
+* https://hanime.tv/
+* https://hentaihaven.me/
+* https://muchohentai.com/latest-hentai-posts/
+* https://muchodoujins.com/
+* https://hentailove.tv/
+* https://www.load.la/
+* https://www.hentaitube.online/
+* http://hentai.animestigma.com/top-hentai/
+* http://hentaigasm.com
+* http://hentaipulse.com/
+* https://hentaila.com/estrenos/
+* https://www.underhentai.net/
+* http://hentaiplay.net/
+* https://www.hentaitube.online/
+* http://hentaimama.com/hentai-series/
+* http://www.xanimeporn.com/
+* https://www.hentai-foundry.com/?enterAgree=1&size=1550
+* http://nekopoi.care/
+* http://www.xanimeporn.com/hentai-series/
+* http://www.ver-hentai.com/
+* https://www.reddit.com/r/hentai/
+* https://doujins.com/hentai-manga-16
+* https://www.hentai-archive.com/
+* https://animeidhentai.com/genres/hentaihaven/
+* https://hentai.cafe/78-2/
+* https://hentai-paradise.com/
+* http://hentaicore.org/
+* https://www.sex.com/gifs/hentai/
 * too many to add... this section will be updated later if I'm still alive and in good health...
 
 **(САМО ЗА ЛИЦА НАД 18 г.!!!)** [JAV](https://en.wikipedia.org/wiki/Japanese_Adult_Video) - японска порнография
@@ -52,6 +82,8 @@
 * http://jav.watch/
 * https://vjav.com/
 * https://jav911.com/
+* https://jav-paradise.com/
+* http://javhd3x.com/
 * само за забавление на дамите почитателки на JAV: https://jav.guru/31561 ;P
 * ...
 * too many to add... this section will be updated later if I'm still alive and in good health...
