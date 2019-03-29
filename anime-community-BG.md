@@ -10,7 +10,8 @@
 - https://anime-planet.com
 - http://anidb.net
 - http://animenewsnetwork.com
-- https://crunchyroll.com
+- https://crunchyroll.com (законно гледане на анимета директно от Япония, с платен план за най-ранно гледане с английски субтитри)
+- http://greenfishsoftware.org/gfsp.php (примерна програма за наслагване на полупрозрачен текст (например субтитри от файл със субтитри) върху части от екрана, полезна за гледане на филми, сериали, анимета, хентай и всякакво видео - от онлайн уебсайтове за поточно видео (web-streaming) (не много легално...))
 
 Аниме и манга събирания в България:
 * [Aniventure](https://aniventure.net/bg/)
@@ -35,5 +36,22 @@
 * http://bg.wondershare.com/download-streaming-media/top-anime-sites.html
 * http://aniboxin.blogspot.com/
 
-Hentai links:
+**(САМО ЗА ЛИЦА НАД 18 г.!!!)** Хентай (hentai) манги и хентай анимета:
+* https://nhentai.net/
+* https://hentai2read.com/
+* https://hitomi.la/
+* https://hbrowse.com/
+* https://www.hentairules.net/
+* https://www.fakku.net/
+* https://www.simply-hentai.com/tags
+* too many to add... this section will be updated later if I'm still alive and in good health...
+
+**(САМО ЗА ЛИЦА НАД 18 г.!!!)** [JAV](https://en.wikipedia.org/wiki/Japanese_Adult_Video) - японска порнография
+* http://jav-720p.com
+* http://jav.guru/
+* http://jav.watch/
+* https://vjav.com/
+* https://jav911.com/
+* само за забавление на дамите почитателки на JAV: https://jav.guru/31561 ;P
+* ...
 * too many to add... this section will be updated later if I'm still alive and in good health...
