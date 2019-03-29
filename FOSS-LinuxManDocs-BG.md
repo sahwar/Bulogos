@@ -66,6 +66,15 @@ http://archive.is/LXWYN
 
 * и др. (за допълване...)
 
+## Свободно достъпни учебници по компютърно програмиране (на български език):
+
+http://nikolay.it/Pages/About-me
+* Introduction to programming with C# (English version) - http://www.introprogramming.info/english-intro-csharp-book/ - ISBN: 978-954-400-773-7
+* Introduction to programming with C# (Bulgarian version) - http://www.introprogramming.info/intro-csharp-book/ - ISBN: 978-619-00-0778-4
+* Programming Basics with JavaScript (Bulgarian version) - https://js-book.softuni.bg/ - ISBN: 978-619-00-0702-9
+* Programming Basics with Python (Bulgarian version) - https://python-book.softuni.bg/ - ISBN: 978-619-00-0806-4
+* Programming Basics with C++ (Bulgarian version) - https://cpp-book.softuni.bg/ - ISBN: TBA
+* и др. (за допълване...)
 
 ## Основни програми, използвани в превода на софтуер на български език ##
 
