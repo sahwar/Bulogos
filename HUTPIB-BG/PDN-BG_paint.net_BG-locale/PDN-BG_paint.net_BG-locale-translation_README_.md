@@ -3,10 +3,10 @@
 Translated by: _nikolaijelev_
 
 Download (Изтегляне от):
-http://nikolaijelev.data.bg/p/files/Paint.Net_BG_%20Lang%20file
-https://forums.getpaint.net/profile/45756-nikolaijelev/
-https://forums.getpaint.net/topic/1851-bulgarian-localization/
-https://www.download.bg/?cls=program&id=422120 (български интерфейс за Paint.NET 3.30)
+* http://nikolaijelev.data.bg/p/files/Paint.Net_BG_%20Lang%20file
+* https://forums.getpaint.net/profile/45756-nikolaijelev/
+* https://forums.getpaint.net/topic/1851-bulgarian-localization/
+* https://www.download.bg/?cls=program&id=422120 (български интерфейс за Paint.NET 3.30)
 
 > „При свалянето и инсталирването на Paint.NET, сте го разархивирали някъде > - Program Files или другаде, като инсталатора си е създал папка с име Paint.NET.
 > - Сваляте (премествате) БГ файла в папката с име Paint.NET.
@@ -18,7 +18,7 @@ https://www.download.bg/?cls=program&id=422120 (български интерф�
 
 **paint.net v4.1.6(+) Bulgarian locale (BG localization) - български преводен файл (локал) за paint.net (PDN) v4.1.6(+)**
 
-Translated by: _nikolaijelev_ and _ve4ernik (ve4ernik@gmail.com - github.com/sahwar/Bulogos)_
+Translated by: _nikolaijelev_ and _ve4ernik (ve4ernik@gmail.com - https://github.com/sahwar/Bulogos)_
 
 Download (Изтегляне от):
-_**(TO ADD WHEN IT IS TRANSLATED)**_
+* _**(TO ADD WHEN IT IS TRANSLATED)**_
