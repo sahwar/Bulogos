@@ -61,7 +61,7 @@ http://brothersoft.com/, https://www.kaldata.com/ (Bulgarian IT website), https:
 * http://zamunda.net/
 * http://zamunda.ch/
 * https://arenabg.com/
-* https://nyaa.si/ (includes anime, manga, hentai, JAV, etc.)
+* https://nyaa.si/ (includes anime, manga, hentai, JAV, etc.; [nyaa torrent web-tracker software engine](https://github.com/nyaadevs/nyaa/tree/db83989d5d370ea6314213e0b560fd9591370773))
 
 #### **Package managers for Windows:** ####
   * * [Chocolatey](https://chocolatey.org)
