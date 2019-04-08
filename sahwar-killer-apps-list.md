@@ -12,7 +12,7 @@ sudo apt-get install notepadqq
 -->
 <!-- sudo snap install --classic notepadqq -->
 
-**Anti-virus:** Windows Firewall (Defender in Windows10) + [Avast Free](https://www.avast.com/free-antivirus-download), AVG Free is/was also OK.
+**Anti-virus:** Windows Firewall (Defender in Windows10) + [Avast Free](https://www.avast.com/free-antivirus-download), [AVG Free](https://www.avg.com/en-eu/free-antivirus-download) is/was also OK.
 
 **Full list of all apps I've ever used with Microsoft Windows XP/7/8.1/10:**
 * (TO ADD from my [CCleaner](https://www.ccleaner.com/) `install.txt` files & other files)
