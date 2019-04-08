@@ -36,6 +36,12 @@
 * http://bg.wondershare.com/download-streaming-media/top-anime-sites.html
 * http://aniboxin.blogspot.com/
 
+Торент тракери, включващи анимета (.torrent&magnetlink тракери (съдържат warez&не-много-законни файлове... за изтегляне на преведени на английски или на български анимета и хентай, си изтеглете и инсталирайте торент програма, например [qBittorrent](), Deluge Torrent, uTorrent (freeware) и др.):
+* http://zamunda.net/ (известен български торент тракер)
+* http://zamunda.ch/ (огледало/mirror на горния български торент тракер)
+* https://arenabg.com/ (друг известен български торент тракер)
+* https://nyaa.si/ (съдържа анимета, манги, hentai, (хентай), JAV (японско порно), J-pop, K-pop, манга илюстрации и др.)
+
 **(САМО ЗА ЛИЦА НАД 18 г.!!!)** Хентай (hentai) манги и хентай анимета:
 * https://nhentai.net/
 * https://hentai2read.com/
