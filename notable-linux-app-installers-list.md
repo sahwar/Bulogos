@@ -27,12 +27,34 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 * running Windows `.exe`/`.msi` files via [Wine](https://www.winehq.org/)/PlayOnLinux (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html, [DxWnd](https://sourceforge.net/p/dxwnd/home/Home/), etc.)
 * etc. ...
 
+#### Freeware and FOSS/FLOSS/open-source/(GNU/)Linux video-gaming (Linux gaming) ####
+* https://www.old-games.com/
+* http://gamepressure.com/
+* ROMs for MAME (to play video-games for old arcade video-game consoles): https://emulator.games/roms/mame/
+* https://www.makeuseof.com/tag/open-source-video-games/
+* https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/List_of_open-source_video_games.html
+* https://en.wikipedia.org/wiki/List_of_open-source_video_games
+* https://osgameclones.com/
+* https://libregamewiki.org//Complete_open_source_games?pagename=wiki/Complete_open_source_games
+* https://www.slant.co/topics/1933/~best-open-source-games
+* https://itsfoss.com/free-linux-games/
+* SteamOS: https://store.steampowered.com/steamos/buildyourown
+* http://www.makeuseof.com/tag/not-steamos-great-linux-distros-gamers/
+* Xonotic - http://www.xonotic.org/
+* Alien Arena - http://red.planetarena.org/
+* Warsow - 
+* Urban Terror - 
+* OpenArena - 
+* Tremulous - 
+* Nexiuz - http://www.nexuiz.com/ ; Nexiuz Classic - http://www.alientrap.com/games/nexuiz/ ( https://sourceforge.net/projects/nexuiz/ ; https://www.gamepressure.com/download.asp?ID=23030 )
+* https://sourceforge.net/directory/games/games/os:windows/os:modern_oses/os:mac/os:linux/os:os_emu_api/os:bsd/
+
 ### Windows (Microsoft Windows, XP & 7+) ###
 * installing from physical-media `.exe`/`.msi` installers
 * directly executing the app's `.exe` binary from its physical-media-copied OR Internet-downloaded archive (.zip, .7z, .tar.xz, .iso, etc.) unpacked into a new folder.
 * Downloading `.exe`/`.msi` installers (or source-code for local compiling) from https://sourceforge.net/ (BEWARE if adware is bundled!), https://www.fosshub.com/, https://osdn.net, https://github.com, GitLab (e.g. https://gitlab.com/florian0)...
 _Software download-portals to get ONLY FREEWARE and open-source apps from, NOT other apps:_
-http://brothersoft.com/, https://www.kaldata.com/ (Bulgarian IT website), https://www.download.bg/ (Bulgarian IT website), https://www.softpedia.com/, https://www.techspot.com/downloads/, https://en.softonic.com/windows, https://filehippo.com/, http://www.oldapps.com/, https://www.old-games.com/, https://www.makeuseof.com/, https://www.howtogeek.com/, https://www.techspot.com/downloads/, http://www.tucows.com/downloads, https://download.cnet.com/windows/, https://www.techradar.com/, https://www.tomsguide.com/t/windows/... http://caiman.us/, http://homeoftheunderdogs.net/ (https://twitter.com/HotU_net), http://www.homeoftheunderdogs.net/company.php?name=Freeware, http://www.abandonwarering.com/, http://www.aplaces.net/, etc.
+http://brothersoft.com/, https://www.kaldata.com/ (Bulgarian IT website), https://www.download.bg/ (Bulgarian IT website), https://www.softpedia.com/, https://bg.vessoft.com/ (IT downloads + some warez), https://www.techspot.com/downloads/, https://en.softonic.com/windows, https://filehippo.com/, http://www.oldapps.com/, https://www.old-games.com/, https://www.makeuseof.com/, https://www.howtogeek.com/, https://www.techspot.com/downloads/, http://www.tucows.com/downloads, https://download.cnet.com/windows/, https://www.techradar.com/, https://www.tomsguide.com/t/windows/... http://caiman.us/, http://homeoftheunderdogs.net/ (https://twitter.com/HotU_net), http://www.homeoftheunderdogs.net/company.php?name=Freeware, http://www.abandonwarering.com/, http://www.aplaces.net/, etc.
 * **Package managers for Windows:**
   * * [Chocolatey](https://chocolatey.org)
   * * [NuGet](https://www.nuget.org) (.NET apps)
