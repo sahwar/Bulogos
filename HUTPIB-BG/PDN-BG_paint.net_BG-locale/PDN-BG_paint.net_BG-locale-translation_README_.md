@@ -22,3 +22,5 @@ Translated by: _nikolaijelev_ and _ve4ernik (ve4ernik@gmail.com - https://github
 
 Download (Изтегляне от):
 * _**(TO ADD WHEN IT IS TRANSLATED)**_
+pdn_BG_paint.net_v5_BG-locale.resx?
+Инструкции за правене на българоезичен преводен файл за paint.net v4.1.6+: https://www.getpaint.net/doc/latest/Translations.html
