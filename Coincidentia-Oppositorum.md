@@ -20,7 +20,7 @@ Join the male and the female, and you will find what is sought...' --Maria the J
 > 'The alchemical operation consisted essentially in separating the prima
 materia, the so-called chaos, into the active principle, the soul, and the passive
 principle, the body, which were then reunited in personified form in the
-coniunctio or 'chymical marriage'... the ritual cohabitation of Sol and Luna.' --C.G. Jung Mysterium Coniunctionis 
+coniunctio or 'chymical marriage'... the ritual cohabitation of Sol and Luna.' --C.G. Jung, Mysterium Coniunctionis 
 
 * https://www.alchemywebsite.com/quotes.html (целия уебсайт)
 * Tao Te Ching (Dao De Jing) - http://www.taiji-bg.com/articles/daoism/d20.htm
