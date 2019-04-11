@@ -44,10 +44,19 @@
 * https://www.teanglann.ie/en
 * https://www.vocabulary.com/dictionary/
 * https://www.macmillandictionary.com/
-* https://www.spanishdict.com/dictionary
+* https://www.duden.de/ (немски речник)
+* https://www.spanishdict.com/dictionary (испанско-английски речник)
+* (... за допълване...)
 
 * https://www.mdbg.net/chinese/dictionary (китайско-английски онлайн речник)
+* http://nihongo.monash.edu/cgi-bin/wwwjdic?1C (японско-английски онлайн речник; WWWJDIC: Online Japanese Dictionary Service)
+* http://www.edrdg.org/wwwjdic/wwwjdicinf.html#dicfil_tag
+* http://www.edrdg.org/ (Electronic Dictionary Research and Development Group; coordinates WWWJDIC)
 * http://www.sacred-texts.com/
+* http://virgo.unive.it/itadict/?&l=eng (японско-италиански речник)
+* https://a4edu.unive.it/ita/aboutus (нова версия на същия японско-италиански речник)
 * http://www.onmarkproductions.com/html/buddhism.shtml (BUDDHISM & SHINTŌISM IN JAPAN -- A-TO-Z PHOTO DICTIONARY OF JAPANESE RELIGIOUS SCULPTURE & ART)
-http://hindi-english.org/
-http://www.cfilt.iitb.ac.in/~hdict/webinterface_user/index.php
+* http://hindi-english.org/
+* http://www.cfilt.iitb.ac.in/~hdict/webinterface_user/index.php
+
+* (... за допълване...)
