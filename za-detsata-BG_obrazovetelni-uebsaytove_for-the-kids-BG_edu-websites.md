@@ -5,6 +5,10 @@
 * https://abv.selo.bg/za-nas
 
 * https://chitanka.info
+* https://yasen.lindeas.com/wiki/OldBooks
+* http://www.kultura.bg/bg/home
+* http://kweekly.bg/
+* https://pravatami.bg/ (правата ни като граждани; човешки права и граждански права)
 * https://rechnik.chitanka.info/
 * http://rechnik.info
 * https://slovored.com/
