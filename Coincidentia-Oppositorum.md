@@ -24,8 +24,10 @@ coniunctio or 'chymical marriage'... the ritual cohabitation of Sol and Luna.' -
 
 * https://www.alchemywebsite.com/quotes.html (целия уебсайт)
 * Tao Te Ching (Dao De Jing) - http://www.taiji-bg.com/articles/daoism/d20.htm
-* http://www.rexresearch.com/caro/caro.htm (https://docdro.id/ANS246g)
+* http://www.rexresearch.com/caro/caro.htm (https://docdro.id/ANS246g) - the real philosophers' stone of alchemy - книгата за реалния философски камък на/от алхимията
+* 
 * https://en.wikipedia.org/wiki/The_All
 * https://www.alchemylab.com/what_is_alchemy.htm
 * https://www.awakeninthedream.com/articles/the-sacred-art-of-alchemy
 * Alan Watts' (NOT Alan Watt) audio-lectures&books
+* http://archive.is/LrNj9
