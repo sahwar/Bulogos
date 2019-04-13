@@ -11,20 +11,22 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * **BGlocalize**: https://sites.google.com/site/bglocalize/
 * **KDE-BG**: https://kde.lindeas.com/
 * **GNOME-BG**: http://fsa-bg.org/project/gtp
-* **FOSS-BG-translators EMailList**: <dict@ludost.net> (за абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict)
+* **FOSS-BG-translators EMailList (Пощенският списък за преводи и локализация на български на Linux, познат и като „Пощенският списък за преводи и локализация на KDE“)**: <dict@ludost.net> (за записване/абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict)
 * **[BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/)**, [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
 (* стари безплатни версии на програмата за проверка на правописа на български текстове IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking [linkhttp://freeplace.info/ididictionary/bulgarian_spell_checker/ ), WinEst, др.)
 
-* Transifex.com (например https://www.transifex.com/mate/MATE/translate/#bg), [CrowdIn.com](https://crowdin.com/), [Mojito](http://www.mojito.global/), [TranslationExchange](https://translationexchange.com/), [Localize.co](https://lokalise.co/), [GetLocalization](https://www.getlocalization.com/), 
+* _**Transifex.com**_ (например https://www.transifex.com/mate/MATE/translate/#bg), _**[CrowdIn.com](https://crowdin.com/)**_, [Mojito](http://www.mojito.global/), [TranslationExchange](https://translationexchange.com/), [Localize.co](https://lokalise.co/), [GetLocalization](https://www.getlocalization.com/), 
 и [други инструменти за превод (CAT, MT и т.н)](https://opensource.com/article/17/6/open-source-localization-tools)
 * Self-hosted **Weblate**, [Mozilla Pontoon](https://pontoon.mozilla.org/) и т.н. хранилища с преводи на софтуер и др., например https://weblate.lxqt.org/projects/lxqt/pcmanfm-qt/ и https://hosted.weblate.org/projects/tilix/translations/
-* Linux-BG.org (уебсайт „Линукс за българи“): http://www.linux-bg.org/cgi-bin/y/index.pl, http://www.linux-bg.org/cgi-bin/y/index.pl?page=links, http://d.linux-bg.org/, https://LaunchPad.net, https://github.com, https://gitlab.org
-* LUG-BG (LUG-BG (Linux Users Group - Bulgaria) е неформална организация на потребителите на Linux в България) - http://www.linux-bulgaria.org/ + е-пощенски списък на LUG-BG http://linux-bulgaria.org/mailman/listinfo/lug-bg
-* Форуми, блогове, лични уебсайтове и лични/фирмени GitHub&GitLab&др. хранилища и проекти: например http://www.linux-bg.org/forum/index.php, http://hardwarebg.com/forum/, https://www.kaldata.com/forums/ и МНОГО други.
+* **Linux-BG.org (уебсайт „Линукс за българи“):** http://www.linux-bg.org/cgi-bin/y/index.pl, http://www.linux-bg.org/cgi-bin/y/index.pl?page=links, http://d.linux-bg.org/, https://LaunchPad.net, https://github.com, https://gitlab.org
+* **LUG-BG** (_LUG-BG (Linux Users Group - Bulgaria)_ е неформална организация на потребителите на Linux в България) - http://www.linux-bulgaria.org/ + **е-пощенски списък на LUG-BG** http://linux-bulgaria.org/mailman/listinfo/lug-bg
+lug-bg@linux-bulgaria.org ; за абониране: http://linux-bulgaria.org/mailman/listinfo/lug-bg или изпратете email със Subject:/Тема: "help" (без скобите) до lug-bg-request@linux-bulgaria.org (за контакти с администратора на пощенския списък: lug-bg-owner@linux-bulgaria.org)
+* Форуми, блогове, лични уебсайтове и лични/фирмени GitHub & GitLab & др. хранилища и проекти: например http://www.linux-bg.org/forum/index.php, http://hardwarebg.com/forum/, https://www.kaldata.com/forums/ и МНОГО други.
 * https://github.com/sahwar/Best-websites-a-programmer-should-visit
-* Self-hosted Pootle / Translate Toolkit installations: 
-https://pootle.translatehouse.org
+* Self-hosted Pootle / [Translate Toolkit](https://toolkit.translatehouse.org/) (https://github.com/translate/translate) installations (https://translate-toolkit.readthedocs.io/en/latest/): https://pootle.translatehouse.org
 * OmegaT+
+* https://lokalise.co/
+* https://www.localize.io/
 * ...
 
 `````
@@ -66,6 +68,35 @@ http://archive.is/LXWYN
 
 * и др. (за допълване...)
 
+## Termbanks и превод на не-свободен софтуер на Microsoft и Apple, Inc. (бази от данни с преведени термини и текстови низове за софтуер и т.н.)
+````
+* I18n (internationalization), l10n (localization) и t9n (translation; превод) за продукти на Apple, Inc. (Apple macOS + Apple iOS) - превод на софтуер за Apple macOS и Apple iOS:
+https://developer.apple.com/internationalization/
+https://developer.apple.com/download/more/?=Glossaries
+https://developer.apple.com/videos/play/insights/102/
+
+* Примерни указания за превод на софтуер за Google Android (превод на програми/приложения/apps за Android):
+https://www.oneskyapp.com/academy/android-app-localization-tutorial-basics/
+
+* I18n, l10n и t9n за продукти на Microsoft. (Microsoft Windows + Windows10 Windows-Store apps):
+
+https://docs.microsoft.com/en-us/windows/desktop/uxguide/glossary
+файловият формат .tbx (TermBank eXchange)
+https://www.microsoft.com/en-us/download/details.aspx?id=22339
+
+Microsoft Terminology Collection (base IT translation glossary):
+https://www.microsoft.com/en-us/Language/Terminology (указания за превод на софтуер за Microsoft Windows и база от данни с преведени IT термини и текстови низове, които се използват в приложения (програми) за Microsoft Windows)
+https://www.microsoft.com/en-us/language
+https://www.microsoft.com/en-us/language/StyleGuides?rtc=1 (ръководство за стила (style guide) при превод на програми за Microsoft Windows)
+https://www.microsoft.com/en-us/language/toolbox
+https://hub.microsofttranslator.com/SignIn?returnURL=%2FHome%2FIndex
+https://www.microsoft.com/en-us/download/details.aspx?id=41158
+https://www.microsoft.com/en-us/language/Translations?rtc=1
+
+* Templates for Microsoft Office and Microsoft Office365 (шаблони за документи в Microsoft Office (MS Word) и Microsoft Office365):
+https://templates.office.com/?legRedir=true&qu=books&CorrelationId=99a64b77-15a6-4299-be0b-5dbafa63771b#ai:TC101919240|
+````
+
 ## Свободно достъпни учебници по компютърно програмиране (на български език):
 
 http://nikolay.it/Pages/About-me
@@ -76,14 +107,41 @@ http://nikolay.it/Pages/About-me
 * Programming Basics with C++ (Bulgarian version) - https://cpp-book.softuni.bg/ - ISBN: TBA
 * и др. (за допълване...)
 
-## Основни програми, използвани в превода на софтуер на български език ##
+## Основни програми, използвани при превода на софтуер на български език ##
 
 * Plaintext/програмистки текстов редактор по ваш избор (Notepad, Notepad++, Notepad2-mod, Vim (+VundleVim&Vim-Scripts&Vim plug-ins), Emacs (+Emacs plug-ins), Spacemacs, NeoVim, GitHub Atom, GeanyIDE и т.н.)
-* POEdit (GNU gettext, .po): https://poedit.net/
+* POEdit (GNU gettext, .po): https://poedit.net/ ([Урок „Превод на програми на български език с POedit“](http://skss.learnfree.eu/archives/301) ([архивно копие на урока](http://archive.is/pRgL0)))
 * Qt Linguist (.ts): https://github.com/thurask/Qt-Linguist/releases, https://osdn.net/projects/sfnet_tht/downloads/Other/qt-linguist-setup-4.8.4.exe/, https://doc.qt.io/qt-5/qtlinguist-index.html, https://www.opendesktop.org/p/1131386, https://www.open-tx.org/2017/03/24/QtLinguist-download)
+* Lokalize:
+https://github.com/KDE/lokalize
+https://wiki.mageia.org/en/Translating_with_Lokalize
+https://kde.org/applications/development/lokalize/
+https://userbase.kde.org/Lokalize
+https://translate-toolkit.readthedocs.io/en/latest/
+https://binary-factory.kde.org/job/Lokalize_Release_win32/
+* Лично хоствани екземпляри на системата за уеб-преводи Weblate
 * Примерни инструкции за преводни файлове за локализация PO и TS (???): http://wiki.pointlinux.org/index.php?title=Localization
+* Основни формати за превод на софтуер: .po (GNU gettext), .pot (.po Template), .mo (compiled binary .po), .ts, .qm; .lng, .lang; .txt, .conf, .cfg; .json, .xaml, .haml, .config; .tmx (Google Translate), .tbx (Microsoft Terminology), .xliff и др. ...
+* http://localizejs.com/
 
-### Безплатни шрифтове и свободни шрифтове ###
+````
+Google Translate (machine translation - машинни преводи (с termbanks, user-submitted&checked translations & artificial A.I. neural-networks) с Google Translate (Гугъл Превод(ач))): https://translate.google.com
+
+Google Translate Toolkit & Google Translator Toolkit
+https://support.google.com/translatortoolkit/answer/6306366?hl=en
+https://translate.google.com/toolkit/list?hl=en&ut=e#translations/active
+https://support.google.com/translatortoolkit/answer/6306375?hl=en
+https://support.google.com/translatortoolkit/answer/6306366?hl=en
+https://support.google.com/translatortoolkit/answer/6306380
+https://support.google.com/translatortoolkit/answer/6306383
+https://support.google.com/translatortoolkit/answer/6306366?hl=en
+Translation Memory eXchange (.TMX) file-format (<50 MB)
+https://www.dummies.com/education/internet-basics/how-to-get-started-with-google-translator-toolkit/
+
+Python Sphinx documentation&translation engine: http://www.sphinx-doc.org/en/master/
+````
+
+### Безплатни шрифтове (freeware fonts) и свободни шрифтове (free/libre/open-source fonts) ###
 В GitHub и SourceForge има няколко свободни програми с отворен код, които с годините разработка станаха готови за масова употреба и които служат за създаване и редактиране на дигитални (цифрови) шрифтове в популярните файлови формати .ttf (TrueType font), .otf (OpenType font), .woff (за уебстраници), .EOT, .SVG и други: [FontForge](https://fontforge.github.io/en-US/), [Birdfont](http://www.birdfont.org/), [Trufont](http://trufont.github.io/) ([2](https://github.com/trufont/trufont)), [gbdfed (bitmap-only font editor for Linux)](http://sofia.nmsu.edu/~mleisher/Software/gbdfed/screenshots.html) и др.
 
 По-долу са изброени хипервръзки (е-препратки) към хранилища с голям брой свободни шрифтове за изтегляне...
@@ -129,7 +187,8 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 ### За превода на български на субтитри за видеоклипове, филми и ТВ/уеб-сериали ###
 
 * Програмите [Aegisub](http://www.aegisub.org/), [Subtitle Workshop v6+](http://subworkshop.sourceforge.net/index.php) ([2](https://sourceforge.net/projects/subworkshop/)), [Jubler](http://www.jubler.org/), [gnome-subtitles](http://gnomesubtitles.org/) ([2](https://github.com/GNOME/gnome-subtitles)) и др.
-* Бази от данни за изтегляне на готови (направени от хора) български преводи на субтитри за филми и ТВ сериали: https://www.opensubtitles.org/en/downloads, http://dl.opensubtitles.org/addons/export/, https://www.opensubtitles.org/addons/export_languages.php, https://www.opensubtitles.org/en/downloads, ZamundaSubs, Arena-BG Subs, https://subsunacs.net/, http://www.subtitri.net/, http://www.addic7ed.com/, https://zamunda.ch/forums.php?action=viewtopic&topicid=89748, http://napred.bg/%D1%81%D1%83%D0%B1%D1%82%D0%B8%D1%82%D1%80%D0%B8.html, http://subtitri.seeadd.net/, http://kolibka.com/smf/index.php?PHPSESSID=j0la8b419i59ncndfke8p27ls2&topic=2164.0, https://kodibg.org/forum/archive/index.php?thread-150.html). 
+* Бази от данни за изтегляне на готови (направени от хора) български преводи на субтитри за филми и ТВ сериали: https://www.opensubtitles.org/en/downloads, http://dl.opensubtitles.org/addons/export/, https://www.opensubtitles.org/addons/export_languages.php, https://www.opensubtitles.org/en/downloads, ZamundaSubs, Arena-BG Subs, https://subsunacs.net/, http://www.subtitri.net/, http://www.addic7ed.com/, https://zamunda.ch/forums.php?action=viewtopic&topicid=89748, http://napred.bg/%D1%81%D1%83%D0%B1%D1%82%D0%B8%D1%82%D1%80%D0%B8.html, http://subtitri.seeadd.net/, http://kolibka.com/smf/index.php?PHPSESSID=j0la8b419i59ncndfke8p27ls2&topic=2164.0, https://kodibg.org/forum/archive/index.php?thread-150.html).
+* Най-често използвани файлови формати за субтитри: .srt (SubRip; Subtitle Workshop, Aegisub, всякакъв читав текстов редактор), .ssa (SubStation Alpha; Aegisub), .ass (Advanced SubStation Alpha; Aegisub), .vtt ([WebVTT](https://en.wikipedia.org/wiki/WebVTT)), .sub, .usf и други... (https://en.wikipedia.org/wiki/Category:Subtitle_file_formats; https://en.wikipedia.org/wiki/DirectVobSub)
 
 ## `man` (manual = ръководство) страници за Linux програми ##
 (От тези уебстраници (и от `man` файловете, включени в най-новите издания на Линукс дистрибуциите) ще се вземат `man` файловете за превода им на български език. Навярно ще е най-удобно да четете българския превод в tiled terminal (успоредно да четете англоезичния оригинал и българоезичния превод) или като отворите 2 прозореца на terminal-ната ви програма (по 1 за английската версия и българската версия на `man` инструкциите за съответната програма).
