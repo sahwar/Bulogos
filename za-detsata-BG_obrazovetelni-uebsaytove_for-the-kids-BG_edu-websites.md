@@ -65,3 +65,8 @@
 * http://www.cfilt.iitb.ac.in/~hdict/webinterface_user/index.php
 
 * (... за допълване...)
+
+* https://openlibrary.org/
+* https://www.thefreelibrary.com/
+* http://web.archive.org
+* https://archive.is - https://archive.today
