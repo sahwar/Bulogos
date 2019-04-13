@@ -138,6 +138,10 @@ https://support.google.com/translatortoolkit/answer/6306366?hl=en
 Translation Memory eXchange (.TMX) file-format (<50 MB)
 https://www.dummies.com/education/internet-basics/how-to-get-started-with-google-translator-toolkit/
 
+Google Translate Community
+https://translate.google.com/community?source=web
+https://translate.google.com/community?source=web#en/bg
+
 Python Sphinx documentation&translation engine: http://www.sphinx-doc.org/en/master/
 ````
 
@@ -146,7 +150,7 @@ Python Sphinx documentation&translation engine: http://www.sphinx-doc.org/en/mas
 
 По-долу са изброени хипервръзки (е-препратки) към хранилища с голям брой свободни шрифтове за изтегляне...
 * [Google Fonts (and Google WebFonts)](https://fonts.google.com/)
-* [FontLibrary.org](https://fontlibrary.org/)
+* [FontLibrary.org](https://fontlibrary.org/) - https://fontlibrary.org/ (хранилище за изтегляне на свободни цифрови (дигитални) шрифтове и инструкции за създаване на свободни шрифтове с FontForge и публикуването им под SIL Open Font License)
 * [FontStruct fonts](https://fontstruct.com/) - безплатно създаване и изтегляне на опростени дигитални шрифтове (изисква безплатна регистрация).
 * [Pentacom BitFontMaker2](http://www.pentacom.jp/pentacom/bitfontmaker2/) - предтеч на FontStruct за създаване на bitmap .ttf font в стил pixel-art, версия 2.
 * [Google Noto fonts](https://www.google.com/get/noto/)
@@ -317,4 +321,17 @@ https://ss64.com/ps/
 * _Google Cache_: google.com -> [cached/кеширана версия], [1](http://cachedview.com/), [2](https://www.searchcommander.com/seo-tools/google-cache-viewer/), [3 bulk-check](https://theseotools.net/google-cache-checker)
 * _Archive.org (Internet Archive's WayBack Machine)_: https://web.archive.org/ 
 * _archive.is_: http://archive.is/, http://archive.today/ (поддържа и да пуснете заявка за съхранение на отделни уебстраници към архива им!!!)
+* Wikimedia Downloads - изтегляне на копия на Уикипедия и на копия на други уебсайтове от групата на Wikimedia
+https://dumps.wikimedia.org/ и https://en.wikipedia.org/wiki/Wikipedia:Database_download
+* https://openlibrary.org/
+* Wayback Machine Downloader:
+https://github.com/hartator/wayback-machine-downloader
+https://github.com/jsvine/waybackpack
+https://websitedownloader.io/wayback-machine-downloader/ ($)
+https://archive.org/details/webarchive_downloader
+https://en.archivarix.com/
+http://www.waybackmachinedownloads.com/en/
+https://www.ghacks.net/2017/04/04/website-downloader-download-entire-wayback-machine-site-archives/
+https://www.reddit.com/r/thepiratebay/comments/7l5kro/the_wayback_machine_and_the_pirate_bay/
+
 * и други...
