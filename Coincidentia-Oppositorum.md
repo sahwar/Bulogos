@@ -1,4 +1,4 @@
-https://en.wikipedia.org/wiki/Unity_of_opposites (coincidentia oppositorum, YinYang THE ALL of Hermetism/Hermeticism...)
+the bookhttpshttps://en.wikipedia.org/wiki/Unity_of_opposites (coincidentia oppositorum, YinYang THE ALL of Hermetism/Hermeticism...)
 http://faculty.washington.edu/smcohen/320/heracli.htm
 
 https://www.youtube.com/watch?v=o_BRTkPl0no (The Tao of Philosophy - Alan Watts - audio-lecture... 'All sense experiences are vibrations of the Self... it is THE ALL pretending to be all of us and everything else...')
@@ -24,7 +24,7 @@ coniunctio or 'chymical marriage'... the ritual cohabitation of Sol and Luna.' -
 
 * https://www.alchemywebsite.com/quotes.html (целия уебсайт)
 * Tao Te Ching (Dao De Jing) - http://www.taiji-bg.com/articles/daoism/d20.htm
-* http://www.rexresearch.com/caro/caro.htm (https://docdro.id/ANS246g) - the real philosophers' stone of alchemy - книгата за реалния философски камък на/от алхимията
+* http://www.rexresearch.com/caro/caro.htm (https://docdro.id/ANS246g) - the book on the real philosophers' stone of alchemy - книгата за реалния философски камък на/от алхимията
 * 
 * https://en.wikipedia.org/wiki/The_All
 * https://www.alchemylab.com/what_is_alchemy.htm
