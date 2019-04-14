@@ -119,6 +119,7 @@ https://kde.org/applications/development/lokalize/
 https://userbase.kde.org/Lokalize
 https://translate-toolkit.readthedocs.io/en/latest/
 https://binary-factory.kde.org/job/Lokalize_Release_win32/
+https://binary-factory.kde.org/job/Lokalize_Nightly_win32/
 * Лично хоствани екземпляри на системата за уеб-преводи Weblate
 * Примерни инструкции за преводни файлове за локализация PO и TS (???): http://wiki.pointlinux.org/index.php?title=Localization
 * Основни формати за превод на софтуер: .po (GNU gettext), .pot (.po Template), .mo (compiled binary .po), .ts, .qm; .lng, .lang; .txt, .conf, .cfg; .json, .xaml, .haml, .config; .tmx (Google Translate), .tbx (Microsoft Terminology), .xliff и др. ...
