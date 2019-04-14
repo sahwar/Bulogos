@@ -82,6 +82,9 @@
 * https://hentai-paradise.com/
 * http://hentaicore.org/
 * https://www.sex.com/gifs/hentai/
+* http://hentai2watch.com
+* https://doujins.com/hentai-manga/
+* https://www.simply-hentai.com/
 * too many to add... this section will be updated later if I'm still alive and in good health...
 
 **(САМО ЗА ЛИЦА НАД 18 г.!!!)** [JAV](https://en.wikipedia.org/wiki/Japanese_Adult_Video) - японска порнография
@@ -92,6 +95,7 @@
 * https://jav911.com/
 * https://jav-paradise.com/
 * http://javhd3x.com/
+* https://jav18.org/
 * само за забавление на дамите почитателки на JAV: https://jav.guru/31561 ;P
 * ...
 * too many to add... this section will be updated later if I'm still alive and in good health...
