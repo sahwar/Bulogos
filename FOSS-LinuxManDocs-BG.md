@@ -122,8 +122,8 @@ https://binary-factory.kde.org/job/Lokalize_Release_win32/
 https://binary-factory.kde.org/job/Lokalize_Nightly_win32/
 * Лично хоствани екземпляри на системата за уеб-преводи Weblate
 * Примерни инструкции за преводни файлове за локализация PO и TS (???): http://wiki.pointlinux.org/index.php?title=Localization
-* Основни формати за превод на софтуер: .po (GNU gettext), .pot (.po Template), .mo (compiled binary .po), .ts, .qm; .lng, .lang; .txt, .conf, .cfg; .json, .xaml, .haml, .config; .tmx (Google Translate), .tbx (Microsoft Terminology), .xliff и др. ...
-* http://localizejs.com/
+* Основни формати за превод на софтуер: .po (GNU gettext), .pot (.po Template), .mo (compiled binary .po); Qt Linguist: .ts (compiled: .qm); .lng, .lang; .txt, .conf, .config, .cfg; .json, .xaml, .haml; .tmx (Google Translate), .tbx (Microsoft Terminology), .xliff и др. ...; XLIFF (.xlf, .xliff), ...
+* http://localizejs.com/;
 
 ````
 Google Translate (machine translation - машинни преводи (с termbanks, user-submitted&checked translations & artificial A.I. neural-networks) с Google Translate (Гугъл Превод(ач))): https://translate.google.com
