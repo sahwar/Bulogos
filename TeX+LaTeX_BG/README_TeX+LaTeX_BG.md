@@ -7,7 +7,7 @@ TeX е система за произвеждане на красиви доку
 С подходящи допълнителни пакети, описани в изходния .tex файл, можете да добавите и поддръжка на кирилица, на български език, както и други допълнителни екстри.
 
 **Вижте също:**
-* _TUG-BG (TeX User Group for Bulgarians)_ в Google Groups.
+* _TUG-BG (TeX User Group for Bulgarians)_ в Google Groups. - http://www.ntg.nl/lug/bg.html - https://tug.org/usergroups.html
 * https://www.ctan.org/tex-archive/language/hyph-utf8
 * https://tug.org/applications/pdftex/
 * https://ctan.org/pkg/hyperref
