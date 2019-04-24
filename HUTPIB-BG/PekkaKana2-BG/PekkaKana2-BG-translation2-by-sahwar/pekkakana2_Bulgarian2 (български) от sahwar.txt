@@ -1,0 +1,183 @@
+Setup 
+------------------------------------------------------------------------------------
+*setup options:				Íacòpoéêè
+*setup video modes:			Ğeçoëşöèÿ
+*setup music & sounds:			Ìyçèêa è çâyêoâè eôeêòè
+*setup music:				Ìyçèêa
+*setup sounds:				Çâyêoâè åôåêòè
+*setup language:			Èçáepeòe åçèê:
+*setup play:				Ñòapò
+*setup exit:				Èçxoä
+
+Intro
+------------------------------------------------------------------------------------
+*intro presents:			ïpeäctabÿ ïpeç 2003 ãoäèha
+*intro a game by:			eäha èãpa ha/ot:
+*intro original character design:	opèãèhaëeh äèçaéh ha ãepoÿ:
+*intro tested by:			tectbaha ot:
+*intro thanks to:			cïeöèaëhè áëaãoäaphoctè ha:
+*intro translation:			áúëãapckè ïpeboä ot:
+*intro translator:			iv4n è sahwar (ve4ernik_gmail_com)
+
+Main Menu
+------------------------------------------------------------------------------------
+*main menu new game:			çaïo÷hè hoba èãpa
+*main menu continue:			ïpoäúëæè
+*main menu load game:			çapeäè çaïaçeha èãpa
+*main menu save game:			çaïaçè èãpa
+*main menu controls:			këabèøhè kohtpoëè
+*main menu graphics:			ãpaôèka
+*main menu sounds:			çbyk
+*main menu exit game:			èçxoä
+
+*back to main menu:			oápatho kúm ãëabhoto mehş
+
+Load Game
+------------------------------------------------------------------------------------
+*load menu title:			çapeäè çaïaçeha èãpa
+*load menu info:			këèkhè búpxy çaïaçehata èãpa, koÿto èckaø äa çapeäèø
+*load menu episode:			eïèçoä: 
+*load menu level:			hèbo: 
+
+Save Game
+------------------------------------------------------------------------------------
+*save menu title:			çaïaçè èãpa
+*save menu info:			këèkhè ïoçèöèÿta, kúäeto èckaø äa çaïaçèø
+*save menu episode:			eïèçoä: 
+*save menu level:			hèbo: 
+
+Game Controls
+------------------------------------------------------------------------------------
+*controls menu title:			këabèøhè kohtpoëè
+*controls menu move left:		haëÿbo
+*controls menu move right:		haäÿcho
+*controls menu jump:			cka÷ahe
+*controls menu duck:			këÿkahe
+*controls menu walk slow:		áabho xoäehe
+*controls menu egg attack:		ataka c ÿéöa
+*controls menu doodle attack:		ataka meãaôoh
+*controls menu use item:		ïoëçb. ïpeämet
+*controls menu edit:			peäaktèpahe
+*controls menu keyboard def:		këabèøhè kohtpoëè ïo ïoäpaçáèpahe
+*controls menu gamepad4:		ãeémïaä ïo ïoäpaçáèpahe c 4 áytoha 
+*controls menu gamepad6:		ãeémïaä ïo ïoäpaçáèpahe c 6 áytoha
+
+Sounds
+------------------------------------------------------------------------------------
+*sounds menu title:			çbyöè è myçèka
+*sounds menu sfx volume:		cèëa ha çbykobète eôektè
+*sounds menu music volume:		cèëa ha myçèkata
+*sounds menu more:			bècoka
+*sounds menu less:			hècka
+
+Graphics
+------------------------------------------------------------------------------------
+*graphics menu title:				ãpaôèka
+*graphics menu transparency fx on:		eôekt ïpoçpa÷hoct bkëş÷eh
+*graphics menu transparency fx off:		eôekt ïpoçpa÷hoct èçkëş÷eh
+*graphics menu menus are transparent:		ïpoçpa÷eh tekct ha mehştata bkëş÷eh
+*graphics menu menus are not transparent:	ïpoçpa÷eh tekct ha mehştata èçkëş÷eh
+*graphics menu item bar is visible:		ëehtata c ïpeämetè e bèäèma
+*graphics menu item bar is not visible:		ëehtata c ïpeämetè e hebèäèma
+*graphics menu weather fx on:			meteopoëoãè÷hè eôektè bkëş÷ehè
+*graphics menu weather fx off:			meteopoëoãè÷hè eôektè èçkëş÷ehè
+*graphics menu bg sprites on:			ôohobè tekctypè bkëş÷ehè
+*graphics menu bg sprites off:			ôohobè tekctypè èçkëş÷ehè
+*graphics menu game speed normal:		hopmaëha ckopoct ha èãpa
+*graphics menu game speed double:		yäboeha ckopoct ha èãpa
+
+Player's name
+------------------------------------------------------------------------------------
+*player screen type your name:		haïèøè cboeto ème èëè ïcebäohèm
+*player screen continue:		ãotobo
+*player screen clear:			èç÷èctè
+*player default name:			pekka
+
+Episodes
+------------------------------------------------------------------------------------
+*episode menu choose episode:		èçáepè eïèçoä
+*episode menu get more episodes at:	cbaëè ïobe÷e eïèçoäè ot http://pistegamez.net/game_pk2.html - Links: Map Store
+*episode menu no maps:			eïèçoäút hÿma hèba!?
+
+Map
+------------------------------------------------------------------------------------
+*map screen total score:		peçyëtat:
+*map screen next level:			cëeäbaùo hèbo:
+*episode best player:			øamïèoh ha eïèçoäa:
+*episode hiscore:			toï peçyëtat:
+*level best player:			haé-äoáúp èãpa÷:
+*level hiscore:				peçyëtat:
+*level fastest player:			haé-áúpç èãpa÷:
+*level best time:			bpeme:
+
+Scores
+------------------------------------------------------------------------------------
+*score screen title:			oáùo to÷kè
+*score screen level score:		to÷kè ot hèboto
+*score screen bonus score:		áohyc peçyëtat
+*score screen time score:		áohyc ot bpeme
+*score screen energy score:		áohyc ot ehepãèÿ
+*score screen item score:		áohyc ot ïpeämetè
+*score screen continue:			kapta
+*score screen total score:		oáù peçyëtat
+*score screen new level hiscore:	tè ïoáeäè haé-bècokèÿ peçyëtat!
+*score screen new level best time:	tè cè haé-áúpçèÿt èãpa÷!
+*score screen new episode hiscore:	tè cè øamïèohút ha eïèçoäa!
+
+Game
+------------------------------------------------------------------------------------
+*score:					to÷kè:
+*game time:				bpeme:
+*energy:				ehepãèÿ:
+*items:					ïpeämetè:
+*attack 1:				meãaôoh:
+*attack 2:				ÿéöa:
+*keys:					këş÷obe:
+*level clear:				hèboto e mèhato!
+*time bonus:			
+*game paused:				ïayça...
+*knocked out:				hokaytèpah cè!
+*time out:				bpemeto èçte÷e!
+*try again:				ïpoábaé ïak!
+*locks open:				bcè÷kè bpatè ca otbopehè!
+*new doodle attack:			hob meãaôoh!
+*new egg attack:			hobo ÿéöe!
+*new item:				hob ïpeämet!
+
+*loading:				çapeæäahe...
+
+The End
+------------------------------------------------------------------------------------
+*end congratulations:			ïoçäpabëehèÿ!
+*end chickens saved:			tè cïacè ïèëetata!
+*end the end:				kpaé
+
+Info Signs
+------------------------------------------------------------------------------------
+*info01:			èçïoëçbaé meãaôoha (ha ahãë. "doodle") cpeùy bpaãobete cè!
+*info02:			áomáapäèpaé bpaãobete cè c ÿéöa!
+*info03:			hamepè çhaka "èçxoä" (ha ahãë. "exit")!
+*info04:			ctehète c këş÷aëkè ùe ce otbopÿt, ako cúáepeø bcè÷kè këş÷obe.
+*info05:			hatèckaé ïpebkëş÷bateëè kato cka÷aø búpxy tÿx.
+*info06:			çeëehète ïpebkëş÷bateëè çaäbèæbat ctehè cúc çeëehè ctpeëkè.
+*info07:			cèhète ïpebkëş÷bateëè çaäbèæbat ctehè cúc cèhè ctpeëkè.
+*info08:			opahæebète ïpebkëş÷bateëè cïèpat oãúhÿ.
+*info09:			moæeø äa èçïoëçbaø ïpeämetè, koãato ïoèckaø.
+*info10:			ïepata búçbpúùat ehepãèÿta tè.
+*info11:			teëeïoptète ca kobaphè! bhèmabaé äa he ce èçãyáèø!
+*info12:			hokaytèpahèÿta è áohycète ybeëè÷abat tboÿ peçyëtat.
+*info13:			bèhaãè ce oãëeæäaé ça ckpètè áohycè!
+*info14:			cteha c këş÷aëka ce otbapÿ, ako këş÷ ÿ äokoche.
+*info15:			bhèmabaé ça kaïahè! xè-xè...
+*info16:			ïoáúpçaé! bpemeto èçtè÷a!
+*info17:			bhèmabaé ça ÿäocahè æèbothè!
+*info18:			bhèmabaé ça cèëeh bÿtúp!
+*info19:			cïacè ïèëetata!
+		
+Font Information
+------------------------------------------------------------------------------------
+*font small font:		cyrillicssmall.txt
+*font big font normal:		cyrillicsbig1.txt
+*font big font hilite:		cyrillicsbig2.txt
+*font big font shadow:		cyrillicsbig3.txt
+*font path:			language\\fonts\\		
