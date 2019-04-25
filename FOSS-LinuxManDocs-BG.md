@@ -107,6 +107,64 @@ http://nikolay.it/Pages/About-me
 * Programming Basics with C++ (Bulgarian version) - https://cpp-book.softuni.bg/ - ISBN: TBA
 * и др. (за допълване...)
 
+### Още полезни информационни ресурси за учене на компютърно програмиране + списъци с качествен (безплатен (freeware) и свободен (F(L)OSS)) софтуер
+
+* https://github.com/13542/Awesome-Linux-Software
+* https://github.com/13542/the-book-of-secret-knowledge
+* https://github.com/13542/awesome-linux
+* https://github.com/13542/awesome
+* https://github.com/13542/awesome-compilers
+
+* https://github.com/13542/awesome-for-beginners
+* https://github.com/13542/free-programming-books
+* https://github.com/13542/Programming-Fundamentals
+* https://github.com/13542/professional-programming
+* https://github.com/13542/how-to-read-code
+* https://github.com/13542/books
+
+* https://github.com/13542/every-programmer-should-know
+* https://github.com/sahwar/Best-websites-a-programmer-should-visit
+* ( https://github.com/vkandola/Best-websites-a-programmer-should-visit )
+* https://github.com/13542/coding-interview-university
+
+* https://github.com/13542/htmlpreview.github.com (view GitHub-hosted .html rendered as HTML, NOT as 'view-source:' source-code!
+
+__[SoftUni](https://softuni.bg)__
+* https://github.com/13542/SoftUni-1
+* https://github.com/13542/SoftUni-2
+* https://github.com/13542/SoftUni-3
+* https://github.com/13542/SoftUniJavaBasics
+* https://github.com/13542/SoftUni
+* https://github.com/13542/Software-Technologies
+* https://github.com/13542/Java-Fundamentals-SoftUni
+* https://github.com/13542/Java-Advanced
+* https://github.com/13542/Java-Collection-Homework
+* https://github.com/13542/Java-OOP
+* https://github.com/13542/OOP-Principles-SoftUni
+* https://github.com/13542/go-for-javascript-developers
+* https://github.com/13542/You-Dont-Need-JavaScript
+
+* https://github.com/13542/vscodium (Microsoft VSCode code/text-editor without the extra crap...)
+* https://github.com/sahwar/LightTable (another code-/text-editor)
+
+* https://github.com/13542/badges (code for GitHub badges
+* https://github.com/13542/all-contributors (code for listing ALL contributors on a GitHub project!)
+* https://github.com/13542/github-issue-templates
+
+* https://github.com/13542/lljvm
+* https://github.com/13542/cookieconsent (EU GDPR cookie-consent)
+* https://github.com/13542/Stani-Bogat
+* https://github.com/13542/atlg
+* https://github.com/13542/the-super-tiny-compiler
+* https://github.com/13542/LConsole
+* https://github.com/13542/javaAdvanced
+* https://github.com/13542/JavaCore
+* https://github.com/13542/mo-lottery
+* https://github.com/13542/drivesync (Google Drive for Linux)
+* https://github.com/13542/jsJVM
+* https://github.com/13542/minify (minify HTML, CSS, JavaScript)
+* https://github.com/13542/go-github-subot
+
 ## Основни програми, използвани при превода на софтуер на български език ##
 
 * Plaintext/програмистки текстов редактор по ваш избор (Notepad, Notepad++, Notepad2-mod, Vim (+VundleVim&Vim-Scripts&Vim plug-ins), Emacs (+Emacs plug-ins), Spacemacs, NeoVim, GitHub Atom, GeanyIDE и т.н.)
