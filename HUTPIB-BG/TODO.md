@@ -1,6 +1,26 @@
 TODO.md
 
 ### Make first new Bulgarian-language translation of OR make own custom Bulgarian-language translations of these apps: ###
+
+**VERY IMPORTANT A.S.A.P.**
+* MediBang PaintPro (FREEWARE)
+* Krita (F(L)OSS)
+https://docs.krita.org/en/
+https://krita.org/en/get-involved/overview/
+https://l10n.kde.org/
+https://l10n.kde.org/team-infos.php?teamcode=bg
+* MyPaint (F(L)OSS)
+* LazPaint (F(L)OSS)
+* AzPainter (F(L)OSS)
+* mtPaint (F(L)OSS)
+* GIMP (F(L)OSS)
+* SpeedyPainter (FREEWARE)
+
+* Imagine image-viewer (FREEWARE)
+* nomacs image-viewer (F(L)OSS)
+* viewnior image-viewer (F(L)OSS) - already translated into Bulgarian?!?
+
+**FULL LIST FOR TRANSLATION INTO BULGARIAN**
 * [GraphicsGale](https://graphicsgale.com/us/download.html) (freeware as of 2018!)
 * [Krita](http://krita.org) (FOSS)
 * [MyPaint](http://mypaint.org/) (FOSS)
