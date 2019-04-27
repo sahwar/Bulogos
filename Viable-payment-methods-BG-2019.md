@@ -15,8 +15,8 @@
 * **[LiberaPay.com](LiberaPay.com)**
 * **[Flattr.com](https://flattr.com/)**
 * https://salt.bountysource.com/ (for open-source software projects, etc.)
-* Western Union (? Sorta reliable, mixed reviews.) - https://www.westernunion.com/bg/en/terms-conditions-bg.html
-* MoneyGram (? Sorta reliable, mixed reviews.) - http://moneygram.bg/
+* **Western Union (? Sorta reliable, mixed reviews.)** - https://www.westernunion.com/bg/en/terms-conditions-bg.html
+* **MoneyGram (? Sorta reliable, mixed reviews.)** - http://moneygram.bg/
 * bitcoin (BTC) & other cryptocurrencies (???) (e.g. Etherium ETH, Litecoin, etc.) [I PERSONALLY **DO NOT** RECOMMEND CRYPTOCURRENCIES AS A VIABLE ALTERNATIVE TO REGULAR CURRENCIES DUE TO Ponzi-scheme-like CONCERNS OVER THE NATURE&AIMS OF CRYPTOCURRENCIES, but if you can buy physical goods&services with cryptocurrencies, then go for it!]
 http://cryptocompare.com/
 https://99bitcoins.com/ethereum/ethereum-mining/
@@ -29,8 +29,9 @@ https://www.blockchain.com/btc/address/
 * Bidding in auctions or at physical bazaars/market-places (payment with money)
 * Money payment in advance (per agreement via written legal contract)
 * Some Bulgarian ISPs offer a [grace period](https://en.wikipedia.org/wiki/Grace_period) of several days to pay your ISP fee AFTER your last day of ISP service ends.
-* [Bulgarian Post](http://bgpost.bg/bg/109) payment (Bulgaria-centric)
+* [Bulgarian Posts (National Postal Service)](http://bgpost.bg/bg/109) payment (Bulgaria-centric)
 * [ePay.bg](https://www.epay.bg/v3main/front?p=mrcs) (Bulgaria-centric)
+* food vouchers for Kaufland, LIDL, Bulgarian Posts, etc. ...
 
 ### Etc. ###
 * Consignation
