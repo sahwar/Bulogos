@@ -13,9 +13,8 @@ Distribute your desktop Linux application in the AppImage format and win users r
 
 <img src="https://appimage.org/images/distributions/arch.svg" alt="Arch Linux" save_image_to_download="true" width="48" height="48"> <img src="https://appimage.org/images/distributions/centos.svg" alt="CentOS" save_image_to_download="true" width="48" height="48"> <img src="https://appimage.org/images/distributions/debian.svg" alt="Debian" save_image_to_download="true" width="48" height="48"> <img src="https://appimage.org/images/distributions/fedora.svg" alt="Fedora" save_image_to_download="true" width="48" height="48"> <img src="https://appimage.org/images/distributions/opensuse.svg" alt="OpenSUSE" save_image_to_download="true" width="48" height="48"> <img src="https://appimage.org/images/distributions/ubuntu.svg" alt="Ubuntu" save_image_to_download="true" width="48" height="48">
 
-* <img src="https://flatpak.org/img/logo.svgz" width="60" height="60" />
+* **flatpak**'s (https://flatpak.org/, https://flathub.org/home, https://flatpak.org/setup/) - Flatpak supports the following (GNU/)Linux OS distros: **Ubuntu, Fedora, Endless OS, Chrome OS, Red Hat Enterprise Linux (RHEL), Linux Mint, openSUSE, Arch, Debian, CentOS, Gentoo, Kubuntu, Solus, Alpine, Mageia, [Pop!_OS](https://system76.com/pop), elementary OS, Raspbian, Clear Linux, Void Linux, NixOS** <img src="https://flatpak.org/img/logo.svgz" width="60" height="60" />
 <!-- [![](https://flatpak.org/img/logo.svgz "Flatpak")](https://flatpak.org/setup/#page-top) -->
-**flatpak**'s (https://flatpak.org/, https://flathub.org/home, https://flatpak.org/setup/) - Flatpak supports the following (GNU/)Linux OS distros: **Ubuntu, Fedora, Endless OS, Chrome OS, Red Hat Enterprise Linux (RHEL), Linux Mint, openSUSE, Arch, Debian, CentOS, Gentoo, Kubuntu, Solus, Alpine, Mageia, [Pop!_OS](https://system76.com/pop), elementary OS, Raspbian, Clear Linux, Void Linux, NixOS**
 
 </br>
 
