@@ -18,10 +18,13 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * _**Transifex.com**_ (например https://www.transifex.com/mate/MATE/translate/#bg), _**[CrowdIn.com](https://crowdin.com/)**_, [Mojito](http://www.mojito.global/), [TranslationExchange](https://translationexchange.com/), [Localize.co](https://lokalise.co/), [GetLocalization](https://www.getlocalization.com/), 
 и [други инструменти за превод (CAT, MT и т.н)](https://opensource.com/article/17/6/open-source-localization-tools)
 * Self-hosted **Weblate**, [Mozilla Pontoon](https://pontoon.mozilla.org/) и т.н. хранилища с преводи на софтуер и др., например https://weblate.lxqt.org/projects/lxqt/pcmanfm-qt/ и https://hosted.weblate.org/projects/tilix/translations/
+
 * **Linux-BG.org (уебсайт „Линукс за българи“):** http://www.linux-bg.org/cgi-bin/y/index.pl, http://www.linux-bg.org/cgi-bin/y/index.pl?page=links, http://d.linux-bg.org/, https://LaunchPad.net, https://github.com, https://gitlab.org
 * **LUG-BG** (_LUG-BG (Linux Users Group - Bulgaria)_ е неформална организация на потребителите на Linux в България) - http://www.linux-bulgaria.org/ + **е-пощенски списък на LUG-BG** http://linux-bulgaria.org/mailman/listinfo/lug-bg
 lug-bg@linux-bulgaria.org ; за абониране: http://linux-bulgaria.org/mailman/listinfo/lug-bg или изпратете email със Subject:/Тема: "help" (без скобите) до lug-bg-request@linux-bulgaria.org (за контакти с администратора на пощенския списък: lug-bg-owner@linux-bulgaria.org)
 * Форуми, блогове, лични уебсайтове и лични/фирмени GitHub & GitLab & др. хранилища и проекти: например http://www.linux-bg.org/forum/index.php, http://hardwarebg.com/forum/, https://www.kaldata.com/forums/ и МНОГО други.
+* [Учи Свободен (свободен софтуер за българските училища) - http://cd.svoboden.net/bg/index.html](http://cd.svoboden.net/bg/index.html) - ***Учи Свободен*** е диск с *безплатни за ползване* и *свободни за разпространение* програми за българските училища. Всички тези програми са свободен софтуер, така че можете [да изтеглите диска](http://cd.svoboden.net/bg/status.html)напълно безплатно \- с това не нарушавате закона. ([УРОК И ПОВЕЧЕ ИНФОРМАЦИЯ ЗА „Учи Свободен“](http://skss.learnfree.eu/archives/619))
+* [Made in BG @ linux-bg.org (новини на български език и статии за софтуер (включително свободен софтуер и софтуер с отворен код), направен от българи или направен в България, плюс безплатно изтегляне и дискусии на такъв софтуер)](http://www.linux-bg.org/cgi-bin/y/index.pl?page=repository)
 * https://github.com/sahwar/Best-websites-a-programmer-should-visit
 * Self-hosted Pootle / [Translate Toolkit](https://toolkit.translatehouse.org/) (https://github.com/translate/translate) installations (https://translate-toolkit.readthedocs.io/en/latest/): https://pootle.translatehouse.org
 * OmegaT+
@@ -54,6 +57,9 @@ http://archive.is/LXWYN
 * **[OpenFest](http://www.openfest.org/2018/bg/)**
 * * **Hackerspaces:** [initLab](https://initlab.org/) и др.
 * [**FOSDEM**](https://fosdem.org/2019/)
+* **TuxCon BG 2019** - 
+* 
+* initLab.bg
 * **[Wikimedia Conferences (Конференции на Фондация „Уикимедиа“)](https://meta.wikimedia.org/wiki/Wikimedia_Conference)** и [Wikipedia:Meetups](https://en.wikipedia.org/wiki/Wikipedia:Meetup)
 
 Организации за свободен софтуер и софтуер с отворен код и главни FOSS портали
@@ -169,7 +175,8 @@ __[SoftUni](https://softuni.bg)__
 
 * Plaintext/програмистки текстов редактор по ваш избор (Notepad, Notepad++, Notepad2-mod, Vim (+VundleVim&Vim-Scripts&Vim plug-ins), Emacs (+Emacs plug-ins), Spacemacs, NeoVim, GitHub Atom, GeanyIDE и т.н.)
 * POEdit (GNU gettext, .po): https://poedit.net/ ([Урок „Превод на програми на български език с POedit“](http://skss.learnfree.eu/archives/301) ([архивно копие на урока](http://archive.is/pRgL0)))
-* Qt Linguist (.ts): https://github.com/thurask/Qt-Linguist/releases, https://osdn.net/projects/sfnet_tht/downloads/Other/qt-linguist-setup-4.8.4.exe/, https://doc.qt.io/qt-5/qtlinguist-index.html, https://www.opendesktop.org/p/1131386, https://www.open-tx.org/2017/03/24/QtLinguist-download)
+* Qt Linguist (.ts): https://github.com/thurask/Qt-Linguist/releases, https://osdn.net/projects/sfnet_tht/downloads/Other/qt-linguist-setup-4.8.4.exe/, https://doc.qt.io/qt-5/qtlinguist-index.html, https://www.opendesktop.org/p/1131386, https://www.open-tx.org/2017/03/24/QtLinguist-download )
+
 * Lokalize:
 https://github.com/KDE/lokalize
 https://wiki.mageia.org/en/Translating_with_Lokalize
@@ -180,7 +187,7 @@ https://binary-factory.kde.org/job/Lokalize_Release_win32/
 https://binary-factory.kde.org/job/Lokalize_Nightly_win32/
 * Лично хоствани екземпляри на системата за уеб-преводи Weblate
 * Примерни инструкции за преводни файлове за локализация PO и TS (???): http://wiki.pointlinux.org/index.php?title=Localization
-* Основни формати за превод на софтуер: .po (GNU gettext), .pot (.po Template), .mo (compiled binary .po); Qt Linguist: .ts (compiled: .qm); .lng, .lang; .txt, .conf, .config, .cfg; .json, .xaml, .haml; .tmx (Google Translate), .tbx (Microsoft Terminology), .xliff и др. ...; XLIFF (.xlf, .xliff), ...
+* Основни формати за превод на софтуер: .po (GNU gettext), .pot (.po Template), .mo (compiled binary .po); Qt Linguist: .ts (compiled: .qm); .lng, .lang; .txt, .conf, .config, .cfg; .json, .xaml, .haml; .tmx (Google Translate), .tbx (Microsoft Terminology), .xliff и др. ...; XLIFF (.xlf, .xliff), (.spec?)...
 * http://localizejs.com/;
 
 ````
@@ -213,7 +220,7 @@ Python Sphinx documentation&translation engine: http://www.sphinx-doc.org/en/mas
 * [FontStruct fonts](https://fontstruct.com/) - безплатно създаване и изтегляне на опростени дигитални шрифтове (изисква безплатна регистрация).
 * [Pentacom BitFontMaker2](http://www.pentacom.jp/pentacom/bitfontmaker2/) - предтеч на FontStruct за създаване на bitmap .ttf font в стил pixel-art, версия 2.
 * [Google Noto fonts](https://www.google.com/get/noto/)
-* [Шрифтът Terminus Font (от Димитър Жеков), равноширок шрифт (monospace) за програмиране](http://terminus-font.sourceforge.net/), [Terminus font patched (с кръпки)](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) и [Terminus font TTF](https://files.ax86.net/terminus-ttf/)
+* [Шрифтът Terminus Font (от Димитър Жеков), равноширок шрифт (monospace) за програмиране](http://terminus-font.sourceforge.net/), [Terminus font patched (с кръпки)](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) и [Terminus font TTF](https://files.ax86.net/terminus-ttf/) --- ([статия за свободния безплатен цифров шрифт Terminus font (направен от Димитър Жеков)](http://www.linux-bg.org/cgi-bin/y/index.pl?page=repository&key=466466108#other_comments)) (http://archive.is/fF8E2)
 * Fonts in the Bulgarian Cyrillic font style(s): https://spisanie8.bg/рубрики/история/3435-за-българската-кирилица.html
 * Google web-search for "български шрифтове" and "кирилизирани шрифтове".
 * Search for 'Cyrillic', 'cyrillic', 't1' in the Ubuntu, Debian, Linux Mint package repositories: https://packages.ubuntu.com/search?keywords=t1&searchon=names
@@ -292,6 +299,13 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 * https://dikt.tv/servers
 * https://github.com/freedict/fd-dictionaries/wiki/DICT-servers
 
+## Правни въпроси
+* [Electronic Frontiers Foundation (EFF) (eff.org)](https://www.eff.org)
+* [Заобикаляне на DMCA (Digital Millenium Copyright Act) и DRM (Digital Rights/Restrictions Management)](https://www.eff.org/deeplinks/2018/10/new-exemptions-dmca-section-1201-are-welcome-dont-go-far-enough) ([статия](http://www.linux-bg.org/cgi-bin/y/index.pl?page=news&key=513599340))
+* [USA court approves right-to-fix/DIY [bought hardware&software], win against DRM](https://www.theregister.co.uk/2018/10/26/right_to_repair/)
+* http://fsf.org (Free Software Foundation)
+* 
+* ...
 
 ## Български преводи на Debian, Ubuntu, Linux Mint и други ##
 
@@ -304,9 +318,9 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 * https://packages.ubuntu.com/bg/disco/language-pack-bg-base
 * **https://wiki.ubuntu.com/BulgarianTeam (Българската Убунту потребителска група)**
 * **[USU Linux (основана на Ubuntu дистрибуция на български език; BG Linux distro)](http://learnfree.eu/?lang=bg)** + [блога SKSS](http://skss.learnfree.eu/)
-* [StotinkaOS (BG Linux distro)](deadlink?)
-* [Minimal Linux Live (BG Linux distro)](https://github.com/ivandavidov/minimal)
-* <ubuntu-bg@lists.ubuntu.com> (за абониране: https://lists.ubuntu.com/mailman/listinfo/ubuntu-bg)
+* [StotinkaOS (BG Linux distro)](deadlink?) - [Край на проекта StotinkaOS](http://www.linux-bg.org/cgi-bin/y/index.pl?page=news&key=514896121) ;(
+* **[Minimal Linux Live (BG Linux distro)](https://github.com/ivandavidov/minimal)**
+* <ubuntu-bg@lists.ubuntu.com> (за абониране: https://lists.ubuntu.com/mailman/listinfo/ubuntu-bg) - [Minimal Linux Live](http://minimal.linux-bg.org/#home) ([backup at archive.today / archive.is](http://archive.is/zmd4A)) ([статия за Minimal Linux Live](http://www.linux-bg.org/cgi-bin/y/index.pl?page=repository&key=468913069#other_comments))
 * https://groups.google.com/forum/#!forum/ubuntu-bg
 * IRC канал (IRC): #ubuntu-bg на сървъра irc.freenode.net
 
