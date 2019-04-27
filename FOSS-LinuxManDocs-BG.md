@@ -9,9 +9,9 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 
 ## Основни инструкции за превода на софтуер (програми за компютър, по-точно приложен софтуер) на български език плюс хранилища с файлове с български преводи на софтуер: ##
 * **BGlocalize**: https://sites.google.com/site/bglocalize/
-* **KDE-BG**: https://kde.lindeas.com/
+* **KDE-BG**: https://kde.lindeas.com/ (KNOWN AS [KDE in Bulgarian home page](http://kde.lindeas.com)) & https://l10n.kde.org/team-infos.php?teamcode=bg
 * **GNOME-BG**: http://fsa-bg.org/project/gtp
-* **FOSS-BG-translators EMailList (Пощенският списък за преводи и локализация на български на Linux, познат и като „Пощенският списък за преводи и локализация на KDE“)**: <dict@ludost.net> (за записване/абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict)
+* **FOSS-BG-translators EMailList (Пощенският списък за преводи и локализация на български на Linux, познат и като „Пощенският списък за преводи и локализация на KDE“)**: <dict@ludost.net> (за записване/абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict) (KNOWN AS ["Dict" Bulgarian free software translators mailing list](http://ludost.net/cgi-bin/mailman/listinfo/dict))
 * **[BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/)**, [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
 (* стари безплатни версии на програмата за проверка на правописа на български текстове IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking [linkhttp://freeplace.info/ididictionary/bulgarian_spell_checker/ ), WinEst, др.)
 
