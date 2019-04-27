@@ -6,7 +6,8 @@
 * Bidding in auctions or at local physical bazaars/market-places (for physical goods)
 
 ### Classic (e-)banking ###
-* In-country & International bank transfer (IBAN & SWIFT) (check bank tariffs/costs/charges)
+* банков превод --- In-country & International bank transfer (IBAN & SWIFT) (check bank tariffs/costs/charges)
+* банков чек (bank cheque)
 
 ### Online ###
 * **[PayPal.com](https://www.paypal.com/)** (works with linked debit cards and credit cards)
@@ -17,7 +18,7 @@
 * https://salt.bountysource.com/ (for open-source software projects, etc.)
 * **Western Union (? Sorta reliable, mixed reviews.)** - https://www.westernunion.com/bg/en/terms-conditions-bg.html
 * **MoneyGram (? Sorta reliable, mixed reviews.)** - http://moneygram.bg/
-* bitcoin (BTC) & other cryptocurrencies (???) (e.g. Etherium ETH, Litecoin, etc.) [I PERSONALLY **DO NOT** RECOMMEND CRYPTOCURRENCIES AS A VIABLE ALTERNATIVE TO REGULAR CURRENCIES DUE TO Ponzi-scheme-like CONCERNS OVER THE NATURE&AIMS OF CRYPTOCURRENCIES, but if you can buy physical goods&services with cryptocurrencies, then go for it!]
+* bitcoin (BTC) & other cryptocurrencies (???) (e.g. Etherium ETH, Litecoin LTC, etc.) [I PERSONALLY **DO NOT** RECOMMEND CRYPTOCURRENCIES AS A VIABLE ALTERNATIVE TO REGULAR CURRENCIES DUE TO Ponzi-scheme-like CONCERNS OVER THE NATURE&AIMS OF CRYPTOCURRENCIES, but if you can buy physical goods&services with cryptocurrencies, then go for it!]
 http://cryptocompare.com/
 https://99bitcoins.com/ethereum/ethereum-mining/
 https://www.blockchain.com/btc/address/
@@ -31,7 +32,8 @@ https://www.blockchain.com/btc/address/
 * Some Bulgarian ISPs offer a [grace period](https://en.wikipedia.org/wiki/Grace_period) of several days to pay your ISP fee AFTER your last day of ISP service ends.
 * [Bulgarian Posts (National Postal Service)](http://bgpost.bg/bg/109) payment (Bulgaria-centric)
 * [ePay.bg](https://www.epay.bg/v3main/front?p=mrcs) (Bulgaria-centric)
-* food vouchers for Kaufland, LIDL, Bulgarian Posts, etc. ...
+* [EasyPay.bg](https://www.easypay.bg/site/) (Bulgaria-centric)
+* food vouchers for Kaufland, LIDL, Bulgarian Posts, etc. ... (Bulgaria-centric)
 
 ### Etc. ###
 * Consignation
