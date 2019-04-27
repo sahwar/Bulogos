@@ -14,6 +14,7 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * **FOSS-BG-translators EMailList (Пощенският списък за преводи и локализация на български на Linux, познат и като „Пощенският списък за преводи и локализация на KDE“)**: <dict@ludost.net> (за записване/абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict) (KNOWN AS ["Dict" Bulgarian free software translators mailing list](http://ludost.net/cgi-bin/mailman/listinfo/dict))
 * **[BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/)**, [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
 (* стари безплатни версии на програмата за проверка на правописа на български текстове IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking [linkhttp://freeplace.info/ididictionary/bulgarian_spell_checker/ ), WinEst, др.)
+* **[ludost.net](https://ludost.net/)** - https://ludost.net/projects.html - https://marla.ludost.net/hosted/ - Ако имате проект с не-стопанска цел и се чудите къде да го приютите, пратете ни e-mail на requests[at]ludost.net. Ние ще направим всичко, което е по силите ни, за да ви помогнем. (Включва и... :P "OpenDC - An OpenDC Hub for unlicensed (e.g. legal) anime content - maintained by Vasil Kolev" и https://anime.ludost.net/ - "български откачен аниме и манга портал")
 
 * _**Transifex.com**_ (например https://www.transifex.com/mate/MATE/translate/#bg), _**[CrowdIn.com](https://crowdin.com/)**_, [Mojito](http://www.mojito.global/), [TranslationExchange](https://translationexchange.com/), [Localize.co](https://lokalise.co/), [GetLocalization](https://www.getlocalization.com/), 
 и [други инструменти за превод (CAT, MT и т.н)](https://opensource.com/article/17/6/open-source-localization-tools)
@@ -57,9 +58,8 @@ http://archive.is/LXWYN
 * **[OpenFest](http://www.openfest.org/2018/bg/)**
 * * **Hackerspaces:** [initLab](https://initlab.org/) и др.
 * [**FOSDEM**](https://fosdem.org/2019/)
-* **TuxCon BG 2019** - 
-* 
-* initLab.bg
+* **[TuxCon](http://tuxcon.mobi/) (Търсят се лектори за TuxCon BG 2019!!! - info@tuxcon.mobi)** - 8-9 June 2019, Plovdiv, Bulgaria - Speakers wanted! Call for paper is open. We are looking for awesome topics related to open source software or open source hardware. Please submit your proposals to info@tuxcon.mobi. --- конференция: 8 June 2019 (25 Tsanko Diustabanov St, Plovdiv, Bulgaria), workshop (работилница, уъркшоп): 9 June 2019 (Olimex Training Building, 2 Pravda St., Plovdiv, Bulgaria)
+* **[initLab](https://initlab.org/)** - 'the hackerspace in Sofia, Bulgaria' = 1) среда с много различни и интересни индивиди; 2) сцена, на която всеки може да бъде както учител, така и ученик; 3) свободно достъпно физическо място; 4) пространство за спокойна и плодотворна работа без разсейващи фактори;
 * **[Wikimedia Conferences (Конференции на Фондация „Уикимедиа“)](https://meta.wikimedia.org/wiki/Wikimedia_Conference)** и [Wikipedia:Meetups](https://en.wikipedia.org/wiki/Wikipedia:Meetup)
 
 Организации за свободен софтуер и софтуер с отворен код и главни FOSS портали
