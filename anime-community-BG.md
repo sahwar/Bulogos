@@ -31,7 +31,7 @@
 * http://animerulezzz.org/
 * http://forum.animes-bg.com/ (https://www.facebook.com/animesbg)
 * https://anime.ludost.net/forum/
-* http://chise.ludost.net/ & https://anime.ludost.net/
+* http://chise.ludost.net/ & https://anime.ludost.net/ (http://archive.is/OA47M) - "български откачен аниме и манга портал" - [Форуми](https://anime.ludost.net/forum) | [Оекаки (oekaki - онлайн дъска за рисуване в аниме/манга стил)](https://anime.ludost.net/forum/oekaki) | [Chise](http://chise.ludost.net/); включва и "OpenDC - An OpenDC Hub for unlicensed (e.g. legal) anime content - maintained by Vasil Kolev"; http://phoebe.ludost.net - Phoebe.ludost.net, anime storage (bg IP space only); Ако имате проект с не-стопанска цел и се чудите къде да го приютите, пратете ни e-mail на <requests[at]ludost.net>. Ние ще направим всичко, което е по силите ни, за да ви помогнем; https://marla.ludost.net/hosted/ (http://archive.is/Pcxgu)
 * http://ww1.anibg.info/ (404 Not found... ;( )
 * https://www.vbox7.com/playlist:2245635
 * анимета в торент тракери - arenabg.com, zamunda.net, zamunda.ch & etc.
