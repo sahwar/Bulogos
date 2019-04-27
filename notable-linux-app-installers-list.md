@@ -31,12 +31,18 @@ Distribute your desktop Linux application in the AppImage format and win users r
 * **BitBucket** (https://bitbucket.org/)
 * **GitLab** (https://about.gitlab.com/), or your own (self-)hosted version of GitLab CE (Community Edition)...
 * **BinTray** (https://bintray.com)
+* [Repology.org](https://repology.org/) (example: https://repology.org/project/polybar/versions)
+* [SlackBuilds.org](https://slackbuilds.org/) - software packages for [Slackware Linux]()
+* http://slackpack.ludost.net/packages/ (Bulgarian repo/repository of Slackware Linux packages and .ISO images)
+* pkgbuild.com (example: http://pkgbuild.com/~alucryd/)
 * JFrog BinTray (https://jfrog.com/bintray/)
-* openSUSE Build Service (https://build.opensuse.org/)
+* [Arch Linux AUR](https://aur.archlinux.org/packages/) (example: https://aur.archlinux.org/packages/?SeB=m&K=alucryd)
+* openSUSE Build Service (https://build.opensuse.org/) (example: https://build.opensuse.org/package/show/X11:Utilities/polybar/)
 * Fedora COPR AppImage's repos: https://copr.fedorainfracloud.org/coprs/
 * [XBPS](https://voidlinux.org/usage/xbps/) & etc. package systems (?)...
+* **FreeBSD** ``pkg`` - https://www.freebsd.org/cgi/man.cgi?query=pkg&sektion=8&n=1 (FreeBSD-BG / FreeBSD Bulgaria: http://www.bg-freebsd.org/)
 * Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/), [https://packagist.org](Packagist) (the PHP programming-language's package-repository of PHP packages installable via [Composer](https://getcomposer.org/)), [crates.io (packages for the Rust programming language](https://crates.io/crates/smithay-clipboard), [YarnPKG](https://yarnpkg.com/lang/en/), TeX packages, etc.
-* installing by getting the package via a version-control-system's graphical-app (i.e. Git, GitLab, GitHub, CVS, etc.)...
+* installing by getting the package via a version-control-system's graphical-app (i.e. Git, GitLab, GitHub, CVS, SVN, LaunchPad.net/bazaar CVS, etc.)...
 * [npm](https://www.npmjs.com/) (JavaScript packages)
 * https://mesonbuild.com/
 * https://ninja-build.org/
@@ -80,15 +86,17 @@ http://brothersoft.com/, https://www.kaldata.com/ (Bulgarian IT website), https:
 * https://nyaa.si/ (includes anime, manga, hentai, JAV, etc.; [nyaa torrent web-tracker software engine](https://github.com/nyaadevs/nyaa/tree/db83989d5d370ea6314213e0b560fd9591370773))
 
 #### **Package managers for Windows:** ####
-  * * [Chocolatey](https://chocolatey.org)
+  * * [Chocolatey](https://chocolatey.org/) - CLI package manager for Windows; Chocolatey - Software Management Automation for MS Windows
   * * [NuGet](https://www.nuget.org) (.NET apps)
   * * [PackageManagement/OneGet](https://github.com/OneGet/oneget) (Windows 10/Windows Server 2016's built-in package manager manager)
+  * * [Scoop](https://scoop.sh/), A command-line installer (package manager) for Windows - https://github.com/lukesampson/scoop
   * * Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/)
   * * other external/3rd-party Windows GUI apps/package-managers for installing 3rd-party apps (application software)
 * etc.
 
 ### macOS (Apple macOS, previously known as MacOS X and MachintoshOS) ###
 * installing the macOS app from its macOS-centric .dmg binary/installer (from local physical-media or downloaded from Internet-sources)
-* [homebrew](https://brew.sh/) (package manager for macOS), [Homebrew Formulae](https://formulae.brew.sh/)
+* macOS [homebrew (macOS homebrew/Linuxbrew)](https://brew.sh/) (package manager for macOS) - https://docs.brew.sh/Installation - https://github.com/Homebrew/brew; [Homebrew Formulae](https://formulae.brew.sh/)
 * [macports](https://www.macports.org/)
+[Tigerbrew](https://github.com/mistydemeo/tigerbrew) - experimental fork of Homebrew that adds support for PowerPC (PPC) Macs, and Macs running Tiger (or Leopard)
 * running Windows .exe/.msi files via [Wine](https://www.winehq.org/)/PlayOnLinux for macOS
