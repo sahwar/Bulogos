@@ -16,7 +16,7 @@
 * https://crunchyroll.com
 
 Аниме и манга събирания в България:
-* [Aniventure](https://aniventure.net/bg/)
+* [Aniventure](https://aniventure.net/bg/) / Aniventure Comic Con / Comic Con Bulgaria 2019
 * AniFest (+ сезонни издания) ([пример с 2018](http://fest-bg.com/event/anifest-2018-%D0%B2%D0%B0%D1%80%D0%BD%D0%B0/))
 * AnimeS Expo
 * и други по-малки...
