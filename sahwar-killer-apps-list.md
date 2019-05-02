@@ -14,6 +14,74 @@ sudo apt-get install notepadqq
 
 **Anti-virus:** Windows Firewall (Defender in Windows10) + [Avast Free](https://www.avast.com/free-antivirus-download), [AVG Free](https://www.avg.com/en-eu/free-antivirus-download) is/was also OK.
 
+**File-recovery tools/software for Windows 7/8/8.1/10**
+* Apart from file-recovery apps (e.g. [Piriform Recuva](https://www.ccleaner.com/recuva), Revo Backup&Recovery, Clonezilla, DiskPart, GParted, file-recovery Linux-distros, etc.), Windows XP, Windows 7, and Windows 10 offer the following command-line options for checking the consistency of and potentially fixing HDD/SSDs:
+
+``chkdsk`` command (in ``cmd.exe`` or PowerShell)
+``sfc.exe`` (in ``cmd.exe`` or PowerShell)
+``recover.exe`` (in ``cmd.exe`` or PowerShell)
+``tree > dirlisting.txt`` (in ``cmd.exe`` or PowerShell) - for listing folder/directory structure/contents...
+
+* [ddrescue (GUI)](https://www.gnu.org/software/ddrescue/)
+* [SafeCopy (GUI)](https://safecopybackup.com/)
+* [TestDisk](https://www.cgsecurity.org/wiki/TestDisk) + [PhotoRec](https://www.cgsecurity.org/wiki/PhotoRec)
+* [Redo Backup and Recovery](http://redobackup.org/)
+* [Avira Rescue System](https://www.avira.com/en/support-download-avira-antivir-rescue-system%20)
+* [Trinity](http://trinityhome.org/Home/index.php?content=TRINITY_RESCUE_KIT____CPR_FOR_YOUR_COMPUTER&front_id=12&lang=en&locale=en)
+* [GParted Live (BETA)](https://gparted.org/livecd.php)
+* [Foremost Linux](http://foremost.sourceforge.net/)
+* [Scalpel](https://github.com/sleuthkit/scalpel)
+* [grep](https://www.gnu.org/software/grep/)
+* [Ultimate Boot CD](http://www.ultimatebootcd.com/)
+* [Mondo Rescue](http://www.mondorescue.org/)
+* [Recovery options in Windows 10](https://www.youtube.com/watch?v=RL9M7CsP4qo)
+* [Create a Windows 10 Repair Boot USB Recovery Drive](https://www.youtube.com/watch?v=3UzphLuk5II)
+* [Kyhi’s Recovery Drive](https://www.tenforums.com/software-apps/27180-windows-10-recovery-tools-bootable-rescue-disk.html) - 'Windows 10 Recovery Tools—Bootable PE Rescue Disk, is a custom Windows 10 PE environment. In this case, TenForum’s user, Kyhi, has developed a Windows 10 PE environment filled with system restore and recovery tools.'
+* [The Ultimate Boot CD](https://www.ultimatebootcd.com/index.html)
+* [Knoppix](http://www.knopper.net/knoppix-mirrors/index-en.html)
+* [Trinity Rescue Kit](http://trinityhome.org/)
+* [SystemRescueCD](http://www.sysresccd.org/SystemRescueCd_Homepage)
+http://www.system-rescue-cd.org/
+* [Hiren's BootCD PE (Preinstallation Environment)](https://www.hirensbootcd.org/)
+* [DriveDroid for Android](https://play.google.com/store/apps/details?id=com.softwarebakery.drivedroid&hl=en_GB)
+
+````
+https://itsfoss.com/recover-deleted-files-linux/
+https://www.maketecheasier.com/recover-data-linux-tools/
+http://www.linuxandubuntu.com/home/5-best-data-recovery-tools-for-linux-to-recover-data-or-deleted-partitions
+https://wiki.archlinux.org/index.php/File_recovery
+https://wiki.archlinux.org/index.php/File_recovery#Before_you_start
+https://www.tecmint.com/photorec-recover-deleted-lost-files-in-linux/
+https://www.r-studio.com/data_recovery_linux/
+https://www.r-studio.com/free-linux-recovery/
+
+https://www.youtube.com/watch?v=3UzphLuk5II
+https://home.bt.com/tech-gadgets/computing/windows-10/how-to-fix-windows-10-problems-with-system-restore-11364008291943
+https://www.pcmag.com/feature/362167/how-to-revive-windows-10-with-a-recovery-drive
+http://techgenix.com/windows-10-recovery-options/
+https://www.windowscentral.com/how-use-system-restore-windows-10
+https://www.laptopmag.com/articles/reset-windows-10-pc
+https://www.pcworld.com/article/3140449/everything-you-need-to-know-about-windows-10-recovery-drives.html
+https://www.pcworld.com/article/2984712/how-to-enter-windows-10s-safe-mode.html
+https://www.pcworld.com/article/3085034/how-to-get-out-of-windows-safe-mode.html
+https://www.makeuseof.com/tag/system-restore-factory-reset-work-windows-10/
+https://www.makeuseof.com/tag/5-best-rescue-disks-windows-system-restore/
+https://www.youtube.com/watch?v=3UzphLuk5II
+https://www.ubuntupit.com/top-15-linux-data-recovery-tools-the-professionals-choice/
+https://www.linux.com/learn/get-your-data-back-linux-based-data-recovery-tools
+https://www.maketecheasier.com/best-linux-distros/
+https://www.maketecheasier.com/best-linux-laptops/
+https://toolbox.iskysoft.com/data-recovery-tips/top-linux-data-recovery-software.html
+https://archive.fo/U1ths
+https://www.ubuntupit.com/the-50-best-linux-commands-to-run-in-the-terminal/
+https://www.makeuseof.com/tag/combine-multiple-iso-images-burn-single-bootable-iso-image-file/
+https://www.makeuseof.com/tag/create-windows-10-installation-media/
+https://www.makeuseof.com/tag/fix-mbr-windows-guide/
+https://www.makeuseof.com/tag/refresh-reset-restore-reinstall-windows/
+https://www.makeuseof.com/tag/3-check-system-restore-working/
+https://www.ubuntupit.com/top-15-best-embedded-systems-programming-languages/
+````
+
 **Full list of all apps I've ever used with Microsoft Windows XP/7/8.1/10:**
 * (TO ADD from my [CCleaner](https://www.ccleaner.com/) `install.txt` files & other files)
 * WinPcap, qTox IM, Ventrilo, TeamSpeak, [LogMeIn Hamachi](https://vpn.net) (VPN-like LAN-gaming over the Internet) (Hamachi-like virtual-LAN VPN tunnel software: https://beebom.com/hamachi-alternatives/, https://www.reddit.com/r/pcgaming/comments/6s1gsz/whats_a_good_2017_alternative_to_hamachi/, [ZeroTier](https://zerotier.com/) ([tutorial](https://www.reddit.com/r/pcgaming/comments/6s1gsz/whats_a_good_2017_alternative_to_hamachi/dm2mp76?utm_source=share&utm_medium=web2x)), [Tunngle](https://www.tunngle.net/en/), [Evolve](https://www.evolvehq.com/welcome), [Gameranger](https://gameranger.com), [LAN Bridger](http://lanbridger.com), http://www.radmin-vpn.com/, Microsoft Gaming Zone, Kali, Gamespy, Westwood Chat, https://www.techlila.com/hamachi-alternatives/, https://www.topbestalternatives.com/hamachi/, https://alternativeto.net/software/hamachi/?license=free, https://community.spiceworks.com/topic/1963329-seeking-alternatives-to-hamachi-vpn-with-similar-feature-set, https://alternative.me/hamachi, RadminVPN (Windows, freeware), Wippien (open-source, Windows, Linux; discontinued), DynVPN (open-source), Freelan, P2PVPN (open-source, but discontinued), Haguichi, Wirelends, VDE (Virtual Distributed Ethernet, open-source: Linux, BSD), IPOP (IP-over-P2P) (open-source, Linux), , **[SoftEther VPN](https://www.softether.org/) ([source-code at GitHub](https://github.com/SoftEtherVPN/SoftEtherVPN)) (open-source, Windows, Linux, Mac, FreeBSD, Android, iPhone, iPad and Windows Mobile !!!)**, Pertino/Cradlepoint, VPN L2TP/IPsec, etc.), https://www.winpcap.org/install/default.htm, https://nmap.org/npcap/, https://www.wireshark.org/, etc. ...
