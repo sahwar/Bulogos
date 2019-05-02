@@ -131,4 +131,4 @@ SymbianOS 10, WinCEv5&v6 (Windows Embedded Compact) (all are obsolete except for
 
 ## EXTRA2 - Good computers for FLOSS/FOSS users ##
 There appeared a number of new manufacturers&vendors of computers suitable for FLOSS users.
-Apart from buying&using older second-hand laptops (IBM/Lenovo ThinkPad's, HP EliteBook, Fujitsu LifeBook, etc. brands), I find these 2 companies to be selling great laptops: https://puri.sm/ and https://system76.com/ (information accurate as of February 2019).
+Apart from buying&using older second-hand laptops (IBM/Lenovo ThinkPad's, HP EliteBook, Fujitsu LifeBook, etc. brands), I find these 2 companies to be selling great laptops: https://puri.sm/, https://system76.com/, https://www.pine64.org/?page_id=3707 (https://archive.fo/U1ths), 2nd-hand IBM/Lenovo ThinkPad's, 2nd-hand HP laptops (e.g. HP EliteBook's), 2nd-hand/new Dell XPS 13,  (information accurate as of February 2019).
