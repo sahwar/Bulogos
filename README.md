@@ -1,7 +1,7 @@
 # Bulogos
-([sync this GitHub repo with the GitLab mirror repo](https://moox.io/blog/keep-in-sync-git-repos-on-github-gitlab-bitbucket/))
+([sync this GitHub repo with the GitLab mirror repo](https://moox.io/blog/keep-in-sync-git-repos-on-github-gitlab-bitbucket/)) (GitHub Desktop: https://itnext.io/how-to-use-github-desktop-with-gitlab-cd4d2de3d104 , https://community.reclaimhosting.com/t/using-github-desktop-with-gitlab/876 )
 
-**[GitLab mirror repo(sitory) (always slighty not so up-to-date)](https://gitlab.com/sahwar/Bulogos)**
+**[GitLab mirror repo(sitory) (always slighty not so up-to-date)](https://gitlab.com/sahwar/Bulogos) (https://gitlab.com/sahwar/Bulogos.git)**
 ### Bulogos /bɤlɔgɔs/, /bɤləgɔs/ (Бълогос / БълЪгос); The Bulogos Project; Project Bulogos
 :us: :gb: Useful information for Bulgarian-language users of Linux and FOSS/FLOSS (Free (, libre) and open-source software), among other things.
 
