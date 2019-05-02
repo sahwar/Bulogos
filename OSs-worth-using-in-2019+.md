@@ -92,6 +92,7 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [libeRTy for Linux-libre](http://www.fsfla.org/ikiwiki/selibre/linux-libre/liberty.en.html)
 * [Ezix Linux](https://ezix.org/project/)
 * For more Linux distros, check [DistroWatch.com (Linux-distro popularity 'rankings')](https://distrowatch.com/), ([ibiblio Linux-distro mirrors](http://distro.ibiblio.org/), or just do a web-search with your favorite web-search engine (e.g. google.com, [ixquick.com / startpage.com](https://www.startpage.com/), duckduckgo.com, yahoo.com, bing.com, etc.).
+* Pop!\\_OS
 
 Searching for **packages for (GNU/)Linux distros**:
 https://pkgs.org (!!!)
@@ -131,4 +132,44 @@ SymbianOS 10, WinCEv5&v6 (Windows Embedded Compact) (all are obsolete except for
 
 ## EXTRA2 - Good computers for FLOSS/FOSS users ##
 There appeared a number of new manufacturers&vendors of computers suitable for FLOSS users.
-Apart from buying&using older second-hand laptops (IBM/Lenovo ThinkPad's, HP EliteBook, Fujitsu LifeBook, etc. brands), I find these 2 companies to be selling great laptops: https://puri.sm/, https://system76.com/, https://www.pine64.org/?page_id=3707 (https://archive.fo/U1ths), 2nd-hand IBM/Lenovo ThinkPad's, 2nd-hand HP laptops (e.g. HP EliteBook's), 2nd-hand/new Dell XPS 13,  (information accurate as of February 2019).
+Apart from buying&using older second-hand laptops (IBM/Lenovo ThinkPad's, HP EliteBook, Fujitsu LifeBook, etc. brands), I find these 2 companies to be selling great laptops: https://puri.sm/, https://system76.com/, https://www.pine64.org/?page_id=3707 (https://archive.fo/U1ths), 2nd-hand IBM/Lenovo ThinkPad's, 2nd-hand HP laptops (e.g. HP EliteBook's), 2nd-hand/new Dell XPS 13, https://www.maketecheasier.com/best-linux-laptops/ (information accurate as of February 2019).
+
+If you want to go full-copyleft/free-software, see
+https://stallman.org/stallman-computing.html (https://archive.fo/aiMTs)
+https://libreplanet.org/wiki/Group:Hardware/Freest (https://archive.fo/B6obD)
+https://libreboot.org/docs/hardware/ (https://archive.fo/mDL52)
+http://www.gnewsense.org/Main/LaptopGuide
+
+* ThinkPad T400s + [libreboot]() + Trisquel GNU/Linux;
+* Lemote Yeeloong, [OLPC (One Laptop Per Child)](http://one.laptop.org/about/specs) (https://archive.fo/yHryi) + WiFi adaptor due to a nonfree firmware blob for the WiFi card.
+RMS (Richard M. Stallman) dislikes 'Windows on the Intel Classmate, or nowadays a Chromebook that sends the child's personal data to Google.'
+* [Hardware (laptops&desktop PCs) endorsed by the FSF (Free Software Foundation)](https://www.fsf.org/resources/hw/systems) (https://archive.fo/HFXfE)
+* Minifree Libreboot T400
+* Minifree Libreboot X200
+* Libiquity Taurinus X200
+* Technoethical X200 Laptop with Libreboot and GNU/Linux-libre
+(Technoethical TET-X200 is a refurbished 12.1″ fairly modular/customizable Lenovo ThinkPad X200 laptop preinstalled with Libreboot, the fully free BIOS replacement, and with a fully free GNU/Linux operating system Trisquel.)
+* Technoethical X200s Laptop with Libreboot and GNU/Linux-libre
+(The Technoethical TET-X200s is a refurbished 12.1″ fairly modular/customizable Lenovo ThinkPad X200s laptop preinstalled with Libreboot, the fully free BIOS replacement, and with a fully free GNU/Linux operating system Trisquel.)
+* Technoethical T400 Laptop with Libreboot and GNU/Linux-libre
+(The Technoethical TET-T400 is a refurbished 14.1″ fairly modular/customizable Lenovo ThinkPad T400 laptop preinstalled with Libreboot, the fully free BIOS replacement, and with a fully free GNU/Linux operating system Trisquel.)
+* Technoethical T400s Laptop with Libreboot and GNU/Linux-libre
+(The Technoethical T400s is a refurbished 14.1″ fairly modular/customizable Lenovo ThinkPad T400s laptop preinstalled with Libreboot, the fully free BIOS replacement, and with a fully free GNU/Linux operating system Trisquel.)
+* Technoethical T500 Laptop with Libreboot and GNU/Linux-libre
+(The Technoethical TET-T500 is a refurbished 15.4″ fairly modular/customizable Lenovo ThinkPad T500 laptop preinstalled with Libreboot, the fully free BIOS replacement, and with a fully free GNU/Linux operating system Trisquel.)
+* Vikings X200 ultraportable libre-friendly laptop - FSF RYF certified
+
+https://www.gnu.org/distros/
+https://www.gnu.org/distros/free-non-gnu-distros.html
+https://www.gnu.org/distros/common-distros.html
+https://www.gnu.org/distros/optionally-free-not-enough.html
+https://archive.fo/yHryi
+https://h-node.org/ - a database for open-hardware
+https://www.gnu.org/distros/free-system-distribution-guidelines.html
+
+Google Android-related projects: https://replicant.us/ & https://www.cyanogenmods.org/ & https://lineageos.org/
+
+_FSF-approved Desktops/Servers:_
+* Technoethical D16 Server Mainboard with Libreboot
+(The Tehnoethical TET-D16 is a dual-socket ASUS KGPE D16 server/workstation board preinstalled with Libreboot, the fully free BIOS replacement.)
+* Vikings ASUS KGPE D16 Mainboard - FSF RYF Certified
