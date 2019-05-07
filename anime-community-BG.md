@@ -821,11 +821,52 @@ https://www.reddit.com/r/omgbeckylookathiscock
 https://www.reddit.com/r/O_Faces
 https://www.reddit.com/r/porninfifteenseconds
 https://www.reddit.com/r/omgbeckylookathiscock
+***
+https://www.reddit.com/r/Amateur
+https://www.reddit.com/r/AsianHotties
+https://www.reddit.com/r/ass
+https://www.reddit.com/r/Asstastic
+https://www.reddit.com/r/BDSMGW
+https://www.reddit.com/r/BonerMaterial
+https://www.reddit.com/r/Boobies
+https://www.reddit.com/r/Bottomless_Vixens
+https://www.reddit.com/r/BurstingOut
+https://www.reddit.com/r/CollegeAmateurs
+https://www.reddit.com/r/cumsluts
+https://www.reddit.com/r/DatGap
+https://www.reddit.com/r/FaceDownAssUp
+https://www.reddit.com/r/Ginger
+https://www.reddit.com/r/GirlsFinishingTheJob
+https://www.reddit.com/r/girlsinyogapants
+https://www.reddit.com/r/GIRLSWITHNEONHAIR
+https://www.reddit.com/r/GoneWild
+https://www.reddit.com/r/gonewildaudio
+https://www.reddit.com/r/GoneWildTube
+https://www.reddit.com/r/Grool
+https://www.reddit.com/r/Jilling
+https://www.reddit.com/r/LegalTeens
+https://www.reddit.com/r/nsfw
+https://www.reddit.com/r/NSFW_GIF
+https://www.reddit.com/r/NSFW_Gifs
+https://www.reddit.com/r/NSFW_Wallpapers
+https://www.reddit.com/r/NSFW_WTF
+https://www.reddit.com/r/NSFWOutfits
+https://www.reddit.com/r/OnOff
+https://www.reddit.com/r/RealGirls
+https://www.reddit.com/r/Rule34
+https://www.reddit.com/r/TipOfMyPenis
+https://www.reddit.com/r/TittyDrop
+https://www.reddit.com/r/Voluptuous
+https://www.reddit.com/r/WomenOfColor
+https://www.reddit.com/r/WorkGoneWild
 
 ---
 
 **Joke:**
 Question: What do men really want from women?
+
 Answer: This thing - https://www.scrolller.com/media/293a9f.mp4 (https://scrolller.com/r/cumsluts) - or this thing: https://b.thumbs.redditmedia.com/6m642y5RSCSHkiu6yL7-p3UYrm3pdpzAUVsGXsYHgHU.png .
+
 Question: And what are the best women like?
-Answer: (THIS IS JUST ve4ernik's personal opinion!) The best woman is a mix of a sex-goddess (but with a fertility-goddess complex and sex-obsessed!), [Pythia](https://en.wikipedia.org/wiki/Pythia) (wise), and [Catherine of Siena (1347–1380)](http://en.wikipedia.org/wiki/Catherine_of_siena) (saintlihood undertones and adamant loyalty), is versed in modern&contemporary pop-culture&pop-culture references (including American&European&Asian cultural products), and, the most important, is also a great mother of several kids.
+
+Answer: (THIS IS JUST [ve4ernik](https://sites.google.com/view/ve4ernik/)'s personal opinion!) The best woman is a mix of a sex-goddess (but with a fertility-goddess complex and sex-obsessed!), [Pythia](https://en.wikipedia.org/wiki/Pythia) (wise), and [Catherine of Siena (1347–1380)](http://en.wikipedia.org/wiki/Catherine_of_siena) (saintlihood undertones and adamant loyalty), is versed in modern&contemporary pop-culture&pop-culture references (including American&European&Asian cultural products), and, the most important, is also a great mother of several kids.
