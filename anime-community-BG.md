@@ -865,7 +865,7 @@ https://www.reddit.com/r/WorkGoneWild
 **Joke:**
 Question: What do men really want from women?
 
-Answer: This thing - https://www.scrolller.com/media/293a9f.mp4 (https://scrolller.com/r/cumsluts) - or this thing: https://b.thumbs.redditmedia.com/6m642y5RSCSHkiu6yL7-p3UYrm3pdpzAUVsGXsYHgHU.png .
+Answer: This thing - https://www.scrolller.com/media/293a9f.mp4 (https://scrolller.com/r/cumsluts) - or this thing: https://b.thumbs.redditmedia.com/6m642y5RSCSHkiu6yL7-p3UYrm3pdpzAUVsGXsYHgHU.png - or this thing: becoming a strong and intelligent and fast-adapting man who has and supports his own harem of young women who are kept as breeding&inbreeding cumdumpster BDSM sex-slave housewives (but some of the women are dominatrices and are very skilled and very smart!).
 
 Question: And what are the best women like?
 
