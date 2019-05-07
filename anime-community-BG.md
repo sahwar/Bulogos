@@ -800,5 +800,32 @@ https://www.reddit.com/r/helgalovekaty
 https://www.reddit.com/r/BreedingMaterial/
 https://www.reddit.com/r/Ifyouhadtopickone/
 
+https://www.reddit.com/r/cumsluts/
+https://www.reddit.com/r/gwcumsluts/
+https://www.reddit.com/r/amateurcumsluts/
+https://www.reddit.com/r/CumHaters/
+https://www.reddit.com/r/GirlsFinishingTheJob/
+https://www.reddit.com/r/cumfetish
+https://scroller.com/r/cumsluts
+https://www.reddit.com/r/nsfwhardcore
+https://www.reddit.com/r/deepthroat
+https://www.reddit.com/cumcoveredfucking
+https://www.reddit.com/FacialFun
+https://www.reddit.com/thickloads
+https://www.reddit.com/r/creampie
+https://www.reddit.com/r/dirtysmall
+https://www.reddit.com/r/HugeDickTinyChick
+https://www.reddit.com/r/SheLikesItRough
+https://www.reddit.com/r/NSFW_HTML5
+https://www.reddit.com/r/omgbeckylookathiscock
+https://www.reddit.com/r/O_Faces
+https://www.reddit.com/r/porninfifteenseconds
+https://www.reddit.com/r/omgbeckylookathiscock
+
 ---
 
+**Joke:**
+Question: What do men really want from women?
+Answer: This thing - https://www.scrolller.com/media/293a9f.mp4 (https://scrolller.com/r/cumsluts) - or this thing: https://b.thumbs.redditmedia.com/6m642y5RSCSHkiu6yL7-p3UYrm3pdpzAUVsGXsYHgHU.png .
+Question: And what are the best women like?
+Answer: (THIS IS JUST ve4ernik's personal opinion!) The best woman is a mix of a sex-goddess (but with a fertility-goddess complex and sex-obsessed!), [Pythia](https://en.wikipedia.org/wiki/Pythia) (wise), and [Catherine of Siena (1347–1380)](http://en.wikipedia.org/wiki/Catherine_of_siena) (saintlihood undertones and adamant loyalty), is versed in modern&contemporary pop-culture&pop-culture references (including American&European&Asian cultural products), and, the most important, is also a great mother of several kids.
