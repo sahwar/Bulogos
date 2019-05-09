@@ -859,6 +859,8 @@ https://www.reddit.com/r/TittyDrop
 https://www.reddit.com/r/Voluptuous
 https://www.reddit.com/r/WomenOfColor
 https://www.reddit.com/r/WorkGoneWild
+https://www.reddit.com/r/strugglefucking
+https://www.reddit.com/r/DeadEyes
 
 ---
 
