@@ -7,9 +7,10 @@
 - https://en.wikipedia.org/wiki/Hentai
 - https://en.wikipedia.org/wiki/JAV
 - https://myanimelist.net
-- https://anime-planet.com
 - http://anidb.net
 - http://animenewsnetwork.com
+- https://www.animenfo.com
+- https://anime-planet.com
 - http://greenfishsoftware.org/gfsp.php (примерна програма за наслагване на полупрозрачен текст (например субтитри от файл със субтитри) върху части от екрана, полезна за гледане на филми, сериали, анимета, хентай и всякакво видео - от онлайн уебсайтове за поточно видео (web-streaming) (не много легално...))
 
 **Законно гледане на анимета директно от Япония**, с платен план за най-ранно **гледане с английски субтитри**:
@@ -23,6 +24,7 @@
 
 Българоезично списание за аниме/манга/косплей:
 * http://animeinn.net/
+* http://animemag.animerulezzz.org/ (defunct)
 
 Българоезични уебсайтове за анимета, манги, косплей, J-pop, K-pop, и съвременни азиатски култури:
 * http://animes.bg/
@@ -30,6 +32,11 @@
 * http://fridaychopsticks.reakcia.net/animes-bg.html (https://twitter.com/fridaychopstick)
 * http://animerulezzz.org/
 * http://forum.animes-bg.com/ (https://www.facebook.com/animesbg)
+* https://animes-portal.info/
+* https://www.facebook.com/nakamabg
+* https://www.utsukushii-bg.com/ (https://www.facebook.com/utsukushiiteam/?ref=hl (отбор за превод на манга))
+* http://sdc-bg.com/
+* http://cosplay-bg.com/
 * https://anime.ludost.net/forum/
 * http://chise.ludost.net/ & https://anime.ludost.net/ (http://archive.is/OA47M) - "български откачен аниме и манга портал" - [Форуми](https://anime.ludost.net/forum) | [Оекаки (oekaki - онлайн дъска за рисуване в аниме/манга стил)](https://anime.ludost.net/forum/oekaki) | [Chise](http://chise.ludost.net/); включва и "OpenDC - An OpenDC Hub for unlicensed (e.g. legal) anime content - maintained by Vasil Kolev"; http://phoebe.ludost.net - Phoebe.ludost.net, anime storage (bg IP space only); Ако имате проект с не-стопанска цел и се чудите къде да го приютите, пратете ни e-mail на <requests[at]ludost.net>. Ние ще направим всичко, което е по силите ни, за да ви помогнем; https://marla.ludost.net/hosted/ (http://archive.is/Pcxgu)
 * http://ww1.anibg.info/ (404 Not found... ;( )
@@ -37,9 +44,50 @@
 * анимета в торент тракери - arenabg.com, zamunda.net, zamunda.ch & etc.
 * http://bg.wondershare.com/download-streaming-media/top-anime-sites.html
 * http://aniboxin.blogspot.com/
+* https://www.anime-planet.com/
+
+RPG/РПГ, фентъзи литература и настолни ролеви игри, плюс литературни блогове
+* http://www.rpg.bg/
+* http://sivosten.com/
+* http://www.shadowdance.info/magazine/
+* http://www.sivosten.com/content.php?mode=article&id=41&ttl=slayers
+* https://scifi.bg/
+* https://scifi.bg/statii/nikolaj-tellalov-takmo-tarseneto-na-o/
+* https://www.shadowdance.info/magazine/?s=%D0%B0%D0%BD%D0%B8%D0%BC%D0%B5
+* http://www.shadowdance.info/800Broeve/Br14/Br14Anime/Slayers.htm (http://archive.is/x47iG)
+* http://www.inverse.org/ (http://archive.is/U1FxW)
+* https://slayers.fandom.com/wiki/Lina_Inverse
+* https://kanzaka.fandom.com/wiki/Hajime_Kanzaka
+* https://www.shadowdance.info/forum/viewtopic.php?t=3170
+* https://www.shadowdance.info/forum/viewtopic.php?f=13&t=4079
+* http://king-cr.jp/special/slayers_revolution/
+* 
+
+PC/video/console gaming (гейминг; компютърни и видео игри) и merchandising (свързани артикули за продажба):
+* http://pcmania.bg/
+* https://www.pulsar.bg/
+* https://www.ozone.bg/
+* https://www.natamno.com/
+* https://pcworld.bg/
+* https://www.download.bg/
+* https://www.gog.com/
+* https://steamcommunity.com/
+* https://store.steampowered.com/
+* https://itch.io/ (пример с pixel-art editor app - https://emad.itch.io/jpixel)
+* https://gamicus.gamepedia.com/Codex_Gamicus
+* https://pcgamingwiki.com/wiki/Home
+
+Gamedev, game-art, open typography, and open-fonts making:
+* https://opengameart.org/
+* https://fontlibrary.org/
+* https://fontstruct.com/
+* http://www.pentacom.jp/pentacom/bitfontmaker2/
+* http://www.birdfont.org/
+* https://fontforge.github.io/en-US/
+
 
 Торент тракери, включващи анимета (.torrent&magnetlink тракери (съдържат warez&не-много-законни файлове... за изтегляне на преведени на английски или на български анимета и хентай, си изтеглете и инсталирайте торент програма, например [qBittorrent](), Deluge Torrent, uTorrent (freeware) и др.):
-* http://zamunda.net/ (известен български торент тракер)
+* http://zamunda.net/ (известен български торент тракер) - http://zelka.org/
 * http://zamunda.ch/ (огледало/mirror на горния български торент тракер)
 * https://arenabg.com/ (друг известен български торент тракер)
 * 🔞 https://nyaa.si/ (съдържа анимета, манги, hentai, (хентай), JAV (японско порно), J-pop, K-pop, манга илюстрации и др.)
