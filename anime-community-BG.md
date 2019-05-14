@@ -16,8 +16,12 @@
 **Законно гледане на анимета директно от Япония**, с платен план за най-ранно **гледане с английски субтитри**:
 * https://crunchyroll.com
 
+Не много законно:
+* https://www1.9anime.nl/
+* https://kissanime.ru/
+
 Аниме и манга събирания в България:
-* [Aniventure](https://aniventure.net/bg/) / Aniventure Comic Con / Comic Con Bulgaria 2019
+* [Aniventure](https://aniventure.net/bg/) / Aniventure Comic Con / Comic Con Bulgaria 2019 (https://aniventure.net/bg/contests/cosplay)
 * AniFest (+ сезонни издания) ([пример с 2018](http://fest-bg.com/event/anifest-2018-%D0%B2%D0%B0%D1%80%D0%BD%D0%B0/))
 * AnimeS Expo
 * и други по-малки...
@@ -95,7 +99,7 @@ Gamedev, game-art, open typography, and open-fonts making:
 🔞 ***ВНИМАНИЕ: Сексът е само по ВЗАИМНО СЪГЛАСИЕ (след флиртуване) между 2-ма или повече души. НЕ подкрепяме изнасилвания и сме ТВЪРДО ПРОТИВ педофили (хора, правещи секс с лица под 16 г. По закон в България брак може да сключват само лица, навършили 16 г. със съгласието на родител/настойник; При навършени поне 18 г. включително, сами си решавате, но и сами си поемате евентуални последствия - т.е. гледането на и грижата за децата)!***
 
 🔞 **(САМО ЗА ЛИЦА НАД 18 г.!!!)** Хентай (hentai) манги и хентай анимета:
-* https://nhentai.net/
+* https://nhentai.net/ (top-secret: https://nhentai.net/users/1548271/breeder117 )
 * https://hentai2read.com/
 * https://hitomi.la/
 * https://hbrowse.com/
@@ -105,7 +109,7 @@ Gamedev, game-art, open typography, and open-fonts making:
 * https://pururin.io/
 * https://luscious.net/
 * https://hanime.tv/
-* https://hentaihaven.me/
+* https://hentaihaven.me/ / https://hentaihaven.org/ (!!!)
 * https://muchohentai.com/latest-hentai-posts/
 * https://muchodoujins.com/
 * https://hentailove.tv/
@@ -909,6 +913,18 @@ https://www.reddit.com/r/WomenOfColor
 https://www.reddit.com/r/WorkGoneWild
 https://www.reddit.com/r/strugglefucking
 https://www.reddit.com/r/DeadEyes
+
+---
+
+List of definitions for sexual fetishes & kinks:
+* https://en.wikipedia.org/wiki/List_of_paraphilias
+* https://en.wikipedia.org/wiki/Category:Sexual_fetishism
+* https://badgirlsbible.com/list-of-kinks-and-fetishes (Enkuopoiphilia is a festish for the act of impregnation, as opposed to maiesiophilia which is a fetish for pregnant women.) (The Complete List of 239 Sexual Fetishes and Kinks - http://archive.is/9V13G)
+* https://imgur.com/gallery/AErVX (A "Comprehensive" List of Paraphilias [=sexual fetishes]. 547 Entries. Just pick a letter and run with it.)
+* https://www.huffpost.com/entry/sexual-fetish_n_4144418?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAH4gNZwCyXwR9ZDn5fE2HhmHDnwQtaiSuqC1m48fqlgIT1VZIRofx1leSV0NGteIGpNdwN2RAJA18-_hnB-4PC5Lx8wMXQc5OdGzbPVWmDlpwpQlbs4UzkuZVz6rbLTl0McfFYjfI77sdt3YEUK7MB4rPWSS1_E4nyOO08rTBpAf
+* https://www.askmen.com/dating/vanessa/25_love_secrets.html (sexual fetish about 'water, thunder, lightning') (http://archive.is/oxido)
+* https://rekink.com/guides/kinks/ (http://archive.is/xCwfh)
+* https://ru.lovense.com/bdsm-blog/list-of-kinks (http://archive.is/H28md)
 
 ---
 
