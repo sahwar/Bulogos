@@ -59,6 +59,7 @@ http://archive.is/LXWYN
 * * **Hackerspaces:** [initLab](https://initlab.org/) и др.
 * [**FOSDEM**](https://fosdem.org/2019/)
 * **[TuxCon](http://tuxcon.mobi/) (Търсят се лектори за TuxCon BG 2019!!! - info@tuxcon.mobi)** - 8-9 June 2019, Plovdiv, Bulgaria - Speakers wanted! Call for paper is open. We are looking for awesome topics related to open source software or open source hardware. Please submit your proposals to info@tuxcon.mobi. --- конференция: 8 June 2019 (25 Tsanko Diustabanov St, Plovdiv, Bulgaria), workshop (работилница, уъркшоп): 9 June 2019 (Olimex Training Building, 2 Pravda St., Plovdiv, Bulgaria)
+* [PlovdivConf](http://plovdivconf.com/#schedule) (18 май 2019 @ 9:30 - SiteGroundHQ Plovdiv
 * **[initLab](https://initlab.org/)** - 'the hackerspace in Sofia, Bulgaria' = 1) среда с много различни и интересни индивиди; 2) сцена, на която всеки може да бъде както учител, така и ученик; 3) свободно достъпно физическо място; 4) пространство за спокойна и плодотворна работа без разсейващи фактори;
 * **[Wikimedia Conferences (Конференции на Фондация „Уикимедиа“)](https://meta.wikimedia.org/wiki/Wikimedia_Conference)** и [Wikipedia:Meetups](https://en.wikipedia.org/wiki/Wikipedia:Meetup)
 
