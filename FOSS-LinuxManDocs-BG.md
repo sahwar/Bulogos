@@ -223,8 +223,9 @@ Python Sphinx documentation&translation engine: http://www.sphinx-doc.org/en/mas
 * [Google Noto fonts](https://www.google.com/get/noto/)
 * [Шрифтът Terminus Font (от Димитър Жеков), равноширок шрифт (monospace) за програмиране](http://terminus-font.sourceforge.net/), [Terminus font patched (с кръпки)](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) и [Terminus font TTF](https://files.ax86.net/terminus-ttf/) --- ([статия за свободния безплатен цифров шрифт Terminus font (направен от Димитър Жеков)](http://www.linux-bg.org/cgi-bin/y/index.pl?page=repository&key=466466108#other_comments)) (http://archive.is/fF8E2)
 * Fonts in the Bulgarian Cyrillic font style(s): https://spisanie8.bg/рубрики/история/3435-за-българската-кирилица.html
-* Google web-search for "български шрифтове" and "кирилизирани шрифтове".
-* Search for 'Cyrillic', 'cyrillic', 't1' in the Ubuntu, Debian, Linux Mint package repositories: https://packages.ubuntu.com/search?keywords=t1&searchon=names
+* Инициатива за българската кирилица - http://cyrillic.bg/manifest/ ( https://archive.fo/CpMNk )
+* Google web-search for "български шрифтове" and "кирилизирани шрифтове" and "шрифтове с поддръжка на кирилица" and "шрифтове с поддръжка на български".
+* Search for 'Cyrillic', 'cyrillic', 't1', 'Bulgarian' in the Ubuntu, Debian, Linux Mint, Arch Linux, MX Linux, etc. package-repositories: https://packages.ubuntu.com/search?keywords=t1&searchon=names
 https://packages.ubuntu.com/search?keywords=cyrillic&searchon=names
 * @sahwar's amateur PixelArt fonts (with basic support for Cyrillic): https://fontstruct.com/fontstructors/27969/sahwar
 * [Some Cyrilic fonts from Valeri Dachev](http://ludost.net/xaddfnts-1.0.tgz)
