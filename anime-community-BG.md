@@ -25,6 +25,14 @@
 * AniFest (+ сезонни издания) ([пример с 2018](http://fest-bg.com/event/anifest-2018-%D0%B2%D0%B0%D1%80%D0%BD%D0%B0/))
 * AnimeS Expo
 * и други по-малки...
+ПРИМЕРИ ЗА 2019 г.:
+* https://bg-bg.facebook.com/events/367648800540421/ - Anime & Gaming Festival (Организирано от NAKAMA.bg) - събота, 22 юни 2019 г. от 10:00 ч. до 20:00 ч. UTC+03, Международен Панаир Пловдив - International Fair Plovdiv
+* https://www.facebook.com/events/animes-expo/animes-expo-2019/271631027020553/ - AnimeS Expo 2019 (Hosted by AnimeS Expo and 3 others) - Apr 6 at 10:00 AM – Apr 7 at 7:00 PM UTC+03 - AnimeS Expo - бул. Шипченски проход 2, 1113 Sofia, Bulgaria
+* Aniplay 2019 (Организирано от NAKAMA.bg) - събота, 9 март 2019 г. от 11:00 ч. до 20:00 ч. UTC+02 - Sofia Event Center - бул. Черни връх 100, 1407 Sofia, Bulgaria
+
+https://bg-bg.facebook.com/HonestCosplay/
+https://bg-bg.facebook.com/pg/AnimeMagazin/posts/
+https://www.natamno.com/
 
 Българоезично списание за аниме/манга/косплей:
 * http://animeinn.net/
@@ -164,6 +172,8 @@ Gamedev, game-art, open typography, and open-fonts making:
 * http://javhd3x.com/
 * https://jav18.org/
 * https://fbjav.com
+* https://cosplayporn.me/category/jav/ (!)
+* https://javfull.net/
 * само за забавление на дамите почитателки на JAV: https://jav.guru/31561 ;P
 * https://spankbang.com
 * https://youporn.com
