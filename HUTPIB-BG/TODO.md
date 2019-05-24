@@ -1,4 +1,4 @@
-TODO.md
+https://github.com/sahwar/Bulogos/edit/master/HUTPIB-BG/TODO.md
 
 ### Make first new Bulgarian-language translation of OR make own custom Bulgarian-language translations of these apps: ###
 
@@ -67,3 +67,11 @@ https://l10n.kde.org/team-infos.php?teamcode=bg
 * [Notepad++ (npp, n++)](https://notepad-plus-plus.org/) (FOSS)
 * (to add more later on...)
 * etc.
+
+### Video-games to translate into Bulgarian ###
+* HerculeanEffortProduction's Apprentice & Apprentice II (including the Walkthrough cheatsheets)
+* Wormux - a Team17-Worms-like video-game BUT open-source (FOSS)
+* maybe Laxius Power I, II, III (this will take years!!! :( )
+* Diable II (there already is a Bulgarian translation BUT it is NOT semi-perfect due to English&ASCII&programming-limits in the source-code of Diablo II, e.g. item-name-generating algorithms use the almost full lack of grammatical agreement of the English language to construct adjective+adjective+...+noun sequences for items in your inventory whereas Bulgarian has strict grammatical agreement between adjective and nouns EXCEPT for cases where words are directly borrowed from English and thus carboncopy-follow English word-order!)
+* something else?
+* ... etc.?
