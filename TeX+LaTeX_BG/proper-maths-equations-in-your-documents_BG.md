@@ -7,3 +7,15 @@
 * онлайн конвертори от TeX/LaTeX -> PNG / JPEG/JPG / BMP // SVG.
 
 А за слагане на лесни преводни файлове в HTML уебсайтове, потърсете с търсачката на GitHub и GitLab за "JavaScript localize localization": има вече няколко такива системи.
+
+### Best software localization platforms ###
+
+* self-hosted [Weblate](https://weblate.org/bg/) installations
+* https://github.com/kjk/apptranslator
+* Mozilla Pontoon - https://pontoon.mozilla.org/
+* transifex.com
+* crowdin.com
+* LaunchPad.net Rosetta - https://dev.launchpad.net/Translations/Reports/ThreeWishes4.0
+* https://github.com/box/mojito
+* some system hosted on GitHub which could pull source-strings & translated-strings from LaunchPad.net translations (I forgot the name...)
+* ...
