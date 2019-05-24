@@ -5,3 +5,5 @@
 * MathML (за HTMLv5+CSSv2.1/CSSv3)
 * MathJax (за HTMLv5+CSSv2.1/CSSv3)
 * онлайн конвертори от TeX/LaTeX -> PNG / JPEG/JPG / BMP // SVG.
+
+А за слагане на лесни преводни файлове в HTML уебсайтове, потърсете с търсачката на GitHub и GitLab за "JavaScript localize localization": има вече няколко такива системи.
