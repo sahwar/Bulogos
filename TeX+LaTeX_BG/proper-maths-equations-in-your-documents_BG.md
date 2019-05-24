@@ -17,5 +17,6 @@
 * crowdin.com
 * LaunchPad.net Rosetta - https://dev.launchpad.net/Translations/Reports/ThreeWishes4.0
 * https://github.com/box/mojito
+* http://www.apptranslator.org/
 * some system hosted on GitHub which could pull source-strings & translated-strings from LaunchPad.net translations (I forgot the name...)
 * ...
