@@ -93,6 +93,25 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [Ezix Linux](https://ezix.org/project/)
 * For more Linux distros, check [DistroWatch.com (Linux-distro popularity 'rankings')](https://distrowatch.com/), ([ibiblio Linux-distro mirrors](http://distro.ibiblio.org/), or just do a web-search with your favorite web-search engine (e.g. google.com, [ixquick.com / startpage.com](https://www.startpage.com/), duckduckgo.com, yahoo.com, bing.com, etc.).
 * Pop!\\_OS
+Etc.:
+* Devuan (uses sysvinit, offers openrc, runit, sinit)
+* Dragora (uses sysvinit + perp)
+* Gentoo (uses openrc (see Gentoo without systemd)
+* Obarun (uses s6 supervision suite)
+* PCLinuxOS
+* Refracta
+* Slackware (uses sysvinit)
+* Stali (the static Linux, uses sinit)
+* Void Linux (uses runit)
+* Hyperbola (uses openrc)
+* Artix (offers OpenRC and runit)
+* Parabola GNU/Linux (uses systemd by default, also offers openrc as an alternative init)
+* https://www.dyne.org/software/dynebolic/
+* https://devuan.org/os/init-freedom/
+* https://devuan.org/os/partners/devuan-distros
+* http://suckless.org/sucks/systemd/
+* https://web.obarun.org/
+* http://sta.li/ (a static linux distribution based on the original pre-2010 plans of the suckless.org project, however since 2018 it became independent from suckless.org)
 
 Searching for **packages for (GNU/)Linux distros**:
 https://pkgs.org (!!!)
