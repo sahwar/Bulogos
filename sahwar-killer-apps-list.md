@@ -80,6 +80,36 @@ https://www.makeuseof.com/tag/fix-mbr-windows-guide/
 https://www.makeuseof.com/tag/refresh-reset-restore-reinstall-windows/
 https://www.makeuseof.com/tag/3-check-system-restore-working/
 https://www.ubuntupit.com/top-15-best-embedded-systems-programming-languages/
+
+...
+
+https://www.ghacks.net/
+
+ScanTailor, [OCRFeeder](https://gitlab.gnome.org/GNOME/ocrfeeder), YAGF, OctoOCR, http://ciir.cs.umass.edu/downloads/octo/, ABBYY FineReader (commercial but is the best desktop-app OCR), Google Translate OCR&handwriting-recognition
+
+https://www.ghacks.net/
+https://www.geckoandfly.com/4043/free-ocr-handwriting-fax-document-and-imaging-scanning-software/
+https://www.geckoandfly.com/3993/damaged-dropped-and-corrupted-hard-drive-disk-data-recovery-free-software-and-service/
+https://www.geckoandfly.com/4997/disk-to-disk-clone-software-for-sata-and-laptop-hard-drive/
+https://www.ghacks.net/2015/03/17/whats-the-best-free-file-synchronization-software-for-windows/
+https://www.geckoandfly.com/21418/file-synchronization-backup/
+https://xyne.archlinux.ca/projects/synclinks/
+https://xyne.archlinux.ca/projects/facadefs/
+https://xyne.archlinux.ca/projects/hexgrep/
+https://xyne.archlinux.ca/projects/mimeo/ (open files by MIME type - for Linux)
+https://xyne.archlinux.ca/projects/moz2fs/
+https://xyne.archlinux.ca/projects/obfilebrowser/
+https://xyne.archlinux.ca/projects/recollect/
+https://xyne.archlinux.ca/projects/tex2png/
+https://xyne.archlinux.ca/projects/timedatectl-restorer/
+https://xyne.archlinux.ca/projects/tiv/
+https://xyne.archlinux.ca/projects/unibrow/ (Unicode browser for Linux)
+https://xyne.archlinux.ca/projects/xac/
+https://xyne.archlinux.ca/projects/xrandr-mgr/
+https://xyne.archlinux.ca/repos/
+
+FreeFileSync, SyncThing
+
 ````
 
 **Full list of all apps I've ever used with Microsoft Windows XP/7/8.1/10:**
