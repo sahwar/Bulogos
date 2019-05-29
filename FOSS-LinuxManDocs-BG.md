@@ -59,6 +59,7 @@ http://archive.is/LXWYN
 * * **Hackerspaces:** [initLab](https://initlab.org/) и др.
 * [**FOSDEM**](https://fosdem.org/2019/)
 * **[TuxCon](http://tuxcon.mobi/) (Търсят се лектори за TuxCon BG 2019!!! - info@tuxcon.mobi)** - 8-9 June 2019, Plovdiv, Bulgaria - Speakers wanted! Call for paper is open. We are looking for awesome topics related to open source software or open source hardware. Please submit your proposals to info@tuxcon.mobi. --- конференция: 8 June 2019 (25 Tsanko Diustabanov St, Plovdiv, Bulgaria), workshop (работилница, уъркшоп): 9 June 2019 (Olimex Training Building, 2 Pravda St., Plovdiv, Bulgaria)
+* [PlovdivConf](http://plovdivconf.com/#schedule) (18 май 2019 @ 9:30 - SiteGroundHQ Plovdiv
 * **[initLab](https://initlab.org/)** - 'the hackerspace in Sofia, Bulgaria' = 1) среда с много различни и интересни индивиди; 2) сцена, на която всеки може да бъде както учител, така и ученик; 3) свободно достъпно физическо място; 4) пространство за спокойна и плодотворна работа без разсейващи фактори;
 * **[Wikimedia Conferences (Конференции на Фондация „Уикимедиа“)](https://meta.wikimedia.org/wiki/Wikimedia_Conference)** и [Wikipedia:Meetups](https://en.wikipedia.org/wiki/Wikipedia:Meetup)
 
@@ -222,8 +223,9 @@ Python Sphinx documentation&translation engine: http://www.sphinx-doc.org/en/mas
 * [Google Noto fonts](https://www.google.com/get/noto/)
 * [Шрифтът Terminus Font (от Димитър Жеков), равноширок шрифт (monospace) за програмиране](http://terminus-font.sourceforge.net/), [Terminus font patched (с кръпки)](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) и [Terminus font TTF](https://files.ax86.net/terminus-ttf/) --- ([статия за свободния безплатен цифров шрифт Terminus font (направен от Димитър Жеков)](http://www.linux-bg.org/cgi-bin/y/index.pl?page=repository&key=466466108#other_comments)) (http://archive.is/fF8E2)
 * Fonts in the Bulgarian Cyrillic font style(s): https://spisanie8.bg/рубрики/история/3435-за-българската-кирилица.html
-* Google web-search for "български шрифтове" and "кирилизирани шрифтове".
-* Search for 'Cyrillic', 'cyrillic', 't1' in the Ubuntu, Debian, Linux Mint package repositories: https://packages.ubuntu.com/search?keywords=t1&searchon=names
+* Инициатива за българската кирилица - http://cyrillic.bg/manifest/ ( https://archive.fo/CpMNk )
+* Google web-search for "български шрифтове" and "кирилизирани шрифтове" and "шрифтове с поддръжка на кирилица" and "шрифтове с поддръжка на български".
+* Search for 'Cyrillic', 'cyrillic', 't1', 'Bulgarian' in the Ubuntu, Debian, Linux Mint, Arch Linux, MX Linux, etc. package-repositories: https://packages.ubuntu.com/search?keywords=t1&searchon=names
 https://packages.ubuntu.com/search?keywords=cyrillic&searchon=names
 * @sahwar's amateur PixelArt fonts (with basic support for Cyrillic): https://fontstruct.com/fontstructors/27969/sahwar
 * [Some Cyrilic fonts from Valeri Dachev](http://ludost.net/xaddfnts-1.0.tgz)

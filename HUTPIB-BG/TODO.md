@@ -1,24 +1,25 @@
-TODO.md
+https://github.com/sahwar/Bulogos/edit/master/HUTPIB-BG/TODO.md
 
 ### Make first new Bulgarian-language translation of OR make own custom Bulgarian-language translations of these apps: ###
 
 **VERY IMPORTANT A.S.A.P.**
+* [paint.net](http://getpaint.net) (freeware) - @sahwar IS ALREADY WORKING ON IT - 
 * MediBang PaintPro (FREEWARE)
 * Krita (F(L)OSS)
 https://docs.krita.org/en/
 https://krita.org/en/get-involved/overview/
 https://l10n.kde.org/
 https://l10n.kde.org/team-infos.php?teamcode=bg
-* MyPaint (F(L)OSS)
+* MyPaint (F(L)OSS) - @sahwar is ALREADY WORKING ON IT - https://github.com/mypaint/mypaint/wiki/Translating-MyPaint ; https://hosted.weblate.org/projects/mypaint/mypaint/bg/ ; https://hosted.weblate.org/projects/mypaint/libmypaint/bg/
 * LazPaint (F(L)OSS)
 * AzPainter (F(L)OSS)
 * mtPaint (F(L)OSS)
-* GIMP (F(L)OSS)
+* GIMP (F(L)OSS) - it is already PARTIALLY translated into Bulgarian BUT the translation is lacking...
 * SpeedyPainter (FREEWARE)
-
+* KolourPaint (KDE)
 * Imagine image-viewer (FREEWARE)
 * nomacs image-viewer (F(L)OSS)
-* viewnior image-viewer (F(L)OSS) - already translated into Bulgarian?!?
+* viewnior image-viewer (F(L)OSS) - already PARTIALLY translated into Bulgarian
 
 **FULL LIST FOR TRANSLATION INTO BULGARIAN**
 * [GraphicsGale](https://graphicsgale.com/us/download.html) (freeware as of 2018!)
@@ -67,3 +68,11 @@ https://l10n.kde.org/team-infos.php?teamcode=bg
 * [Notepad++ (npp, n++)](https://notepad-plus-plus.org/) (FOSS)
 * (to add more later on...)
 * etc.
+
+### Video-games to translate into Bulgarian ###
+* HerculeanEffortProduction's Apprentice & Apprentice II (including the Walkthrough cheatsheets)
+* Wormux - a Team17-Worms-like video-game BUT open-source (FOSS)
+* maybe Laxius Power I, II, III (this will take years!!! :( )
+* Diable II (there already is a Bulgarian translation BUT it is NOT semi-perfect due to English&ASCII&programming-limits in the source-code of Diablo II, e.g. item-name-generating algorithms use the almost full lack of grammatical agreement of the English language to construct adjective+adjective+...+noun sequences for items in your inventory whereas Bulgarian has strict grammatical agreement between adjective and nouns EXCEPT for cases where words are directly borrowed from English and thus carboncopy-follow English word-order!)
+* something else?
+* ... etc.?

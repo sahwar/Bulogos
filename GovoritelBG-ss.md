@@ -764,6 +764,28 @@ V. (...)
 
 SpeechLab2 (by BAS DCL (BACL)) [1](broken hyperlink) [2](https://play.google.com/store/apps/details?id=org.bacl.android.speechlab2g&hl=bg) [3](http://k-kolev1985.blogspot.com/2013/10/speechlab.html) [4](https://assistfoundation.eu/speechlab-2-0-%D0%B7%D0%B0-android/) **[5](https://bezmonitor.com/speechlab.htm)** **[6](https://web.archive.org/web/20160304103558/http://www.bacl.org/speechlabbg.html)** **[7](https://web.archive.org/web/20160407183942/http://bacl.org/specbg.html)** [8](https://groups.google.com/forum/#!topic/nalafche/ztjLn9CZTeI), NVDA (BG) [1](https://www.nvaccess.org/download/), espeak-bg [1](http://espeak.sourceforge.net/index.html) [2](https://github.com/rhdunn/espeak) [3](https://github.com/espeak-ng/espeak-ng) & gespeaker [1](http://www.muflone.com/gespeaker/english/) [2](https://github.com/muflone/gespeaker), Balabolka [1](http://www.cross-plus-a.com/bg/balabolka.htm), Govorilka [1](https://www.vector-ski.ru/vecs/govorilka/) [2](http://www.softportal.com/software-376-govorilka.html), FestivalTTS [1](http://www.cstr.ed.ac.uk/projects/festival/) [2](https://en.wikipedia.org/wiki/Festival_Speech_Synthesis_System), MBROLA project [1](http://tcts.fpms.ac.be/synthesis/mbrola.html) [2](https://en.wikipedia.org/wiki/MBROLA), [3](https://github.com/numediart/MBROLA) [4](https://github.com/espeak-ng/espeak-ng/blob/master/docs/mbrola.md) [5](http://espeak.sourceforge.net/mbrola.html), [Toshko2](http://twenkid.com/software/toshko2/), БЪРБОРИНО v3.0 [1](http://bivaood.com/) (програма за звуково управление (програма за звуков контрол) на компютъра чрез диктуване на български език с ключови думи; базирана на Google Translate Web-Speech API?) [2](https://www.download.bg/index.php?cls=forum&mtd=thread&t=294563&p=10), Google Web-Speech API Demo [1](https://www.google.com/intl/en/chrome/demos/speech.html), dictation.io Voice Recognition (Google Android app) [1](https://chrome.google.com/webstore/detail/voice-recognition/ikjmfindklfaonkodbnidahohdfbdhkn?hl=en) [2](https://dictation.io/) [3](https://dictation.io/languages/en), SpeechTexter (Диктуване на текст с помощта на функцията за разпознаване на говор, гласово разпознаване на български, преобразуване на речта в текст, онлайн многоезичен речник разпознавател) [1](https://www.speechtexter.com/help) [2](https://chrome.google.com/webstore/detail/voice-to-text/jdcdafhjjjfnkoeilnjmnadadaoehgdc?hl=bg), Диктуване на текст с помощта на функцията за разпознаване на говор (Windows 7 - Microsoft Help) [1](https://support.microsoft.com/bg-bg/help/14198/windows-7-dictate-text-using-speech-recognition) [2](httpsttps://support.office.com/bg-bg/article/%D0%94%D0%B8%D0%BA%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%82%D0%B0-%D0%BD%D0%B0-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F%D1%82%D0%B0-%D0%B7%D0%B0-%D1%80%D0%B0%D0%B7%D0%BF%D0%BE%D0%B7%D0%BD%D0%B0%D0%B2%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D0%B3%D0%BE%D0%B2%D0%BE%D1%80-05725ee2-ae2e-438f-847c-b80e754eb50b) [3](https://support.office.com/bg-bg/article/%D0%B8%D0%B7%D0%BF%D0%BE%D0%BB%D0%B7%D0%B2%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F%D1%82%D0%B0-%D0%B7%D0%B0-%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%83%D0%B2%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%B2-%D0%B3%D0%BE%D0%B2%D0%BE%D1%80-%D0%B8%D0%B7%D1%80%D0%B5%D1%87%D0%B8-%D0%B7%D0%B0-%D1%87%D0%B5%D1%82%D0%B5%D0%BD%D0%B5-%D0%BD%D0%B0-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%BD%D0%B0-%D0%B3%D0%BB%D0%B0%D1%81-459e7704-a76d-4fe2-ab48-189d6b83333c), [Gallaudet University - Voice and Speech Physiology Lab](https://www.gallaudet.edu/department-of-hearing-speech-and-language-sciences/research/voice-and-speech-physiology-lab), etc.
 
+### 7. (G)UI ideas from Librera Reader (for Google Android) ###
+
+````
+Some ideas borrowed from:...
+
+TTS Engine: 
+Language+Voice+male/female[+age+dialect/accent] pack:
+Speed:
+Pitch:
+Volume:
+Expressive breaks: ?? ms (e.g. 350)
+Reading ends in: xxx hh yyy min zzz sec
+[?] Resume from last punctuation mark: '[]()...'
+Read punctuation in full: '[]()...'
+Read unknown characters as their Unicode UTF-8 hexadecimal point number+title: yes/no (language for pronunciation = ?)
+Break at page turn / break after number of lines: ...
+Pause TTS-reading on incoming calls, messages, SMSs, etc.
+Pause TTS-reading on incoming new Android notifications (DANGEROUS!): ...
+Enable remote bookmarks (Start/Stop button): ...
+Record TTS from whole file: Start / Pause / Cancel
+````
+
 (**Other app names considered:**
 
 IzrechitelBG-ss, GlasitelkoBG, GlasnostBG-ss, GlasoveBG-ss, GlasilkaBG-ss, HortuvayBG-ss,  QSDIzrechilkaBG_SpeechSynth (QSD='quick, simple, and dirty), IzrechilkaBG, ProiznositelBGSpeechSynth, Govoritel(che)BGSpeechSynth, IzgovoritelBG, HortuvayNaBG_SpeechSynth, fossBGSpeechSynth, IzgovoriNaBG_SpechSynth, IzrechilkoBG, KazhiBG, ProiznositelBG_SpeechSynth, BGSpeechSynth, BulgSynth, etc.)
