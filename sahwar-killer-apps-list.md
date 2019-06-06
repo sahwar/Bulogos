@@ -130,7 +130,7 @@ Too many to list here... for now at least, that is.
 * 
 
 ## Under `Apple macOS` ##
-_I don't use macOS..._ In my opinion, it's only good for art/designer/webdev professionals... I only like some MacBook Pro's and the newer pressure-sensitive iPad's.
+_I don't use macOS..._ In my opinion, it's only good for art/designer/webdev professionals... I only like some MacBook Pro's and the newer pressure-sensitive iPad's with a Wacom-like graphics stylus.
 
 ## Under `Google Android` ##
 * (TO ADD from apps-list-generating apps)
