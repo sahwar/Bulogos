@@ -4,7 +4,7 @@
 
 Идея за `GovoritelBG-ss` (c) 2018-2019 sahwar (github.com/sahwar/, twitter.com/ve4ernik, Иван И. Курдов) <ve4ernik@gmail.com> и други.
 
-It is still rough round on the edges as an idea but the core app idea&data-structures are here in this document (while also being in revision, further tweaking/details-finetuning & development).
+It is still rough around the edges as an idea but the core app idea&data-structures are here in this document (while also being in continous revision, further tweaking/details-finetuning & development).
 
 **Tags:** <small>speech synthesis engine, Bulgarian-language speech synthesis engine and speech-synthesizer app, гласов синтезатор, речев синтезатор, преобразуване на писмен текст в компютърно произнесена (изговорена) реч, гласово възпроизвеждане на текст на български, "От текст към говор" (TTS), текст към реч чрез компютърна програма, computer text-to-speech synthesis, програма свободен софтуер с отворен код, посричково произнасяне, дифони, IPA, МФА, extIPA, X-SAMPA, Z-SAMPA, GitHub, espeak, MBROLA, original research, syllabification algorithms, contemporary Bulgarian syllable patterns, experimental application software, assistive software for blind and sight-impaired people, social-care software for disabled people</small>.
 
