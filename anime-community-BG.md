@@ -17,12 +17,17 @@
 * https://crunchyroll.com
 
 Не много законно:
-* https://www1.9anime.nl/
+* https://www1.9anime.nl/ & https://9anime.ru/
 * https://kissanime.ru/
+* и др.
+
+**Закупуване на анимета на DVD-та:**
+* Amazon.com, Amazon.co.uk, Amazon.de и др.
+* ebay.com, ebay.co.uk
 
 Аниме и манга събирания в България:
 * [Aniventure](https://aniventure.net/bg/) / Aniventure Comic Con / Comic Con Bulgaria 2019 (https://aniventure.net/bg/contests/cosplay)
-* AniFest (+ сезонни издания) ([пример с 2018](http://fest-bg.com/event/anifest-2018-%D0%B2%D0%B0%D1%80%D0%BD%D0%B0/))
+* AniFest (+ сезонни издания) ([пример с 2018](http://fest-bg.com/event/anifest-2018-%D0%B2%D0%B0%D1%80%D0%BD%D0%B0/)) [Клуб Shiokaze](https://bg-bg.facebook.com/Club.ShioKaze/) и i 2019 - [AniFest 2019](https://www.facebook.com/events/%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86-%D0%BD%D0%B0-%D0%BA%D1%83%D0%BB%D1%82%D1%83%D1%80%D0%B0%D1%82%D0%B0-%D0%B8-%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0-%D0%B2%D0%B0%D1%80%D0%BD%D0%B0-palace-of-culture-and-sports-varna/anifest-2019-24-25-%D0%B0%D0%B2%D0%B3%D1%83%D1%81%D1%82-%D0%B3%D1%80-%D0%B2%D0%B0%D1%80%D0%BD%D0%B0/2258700290819669/) (да НЕ се бърка с [чуждестранното AniFest](https://anifest.org/))
 * AnimeS Expo
 * и други по-малки...
 ПРИМЕРИ ЗА 2019 г.:
