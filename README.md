@@ -11,8 +11,8 @@
 
 * * *
 
-* [sync this GitHub repo with the GitLab mirror repo](https://moox.io/blog/keep-in-sync-git-repos-on-github-gitlab-bitbucket/)
+* [Help with using GIT commands](https://github.com/k88hudson/git-flight-rules)
+* [How to sync(hronize) this GitHub repo with the GitLab mirror repo](https://moox.io/blog/keep-in-sync-git-repos-on-github-gitlab-bitbucket/)
 * GitHub Desktop: https://itnext.io/how-to-use-github-desktop-with-gitlab-cd4d2de3d104 , https://community.reclaimhosting.com/t/using-github-desktop-with-gitlab/876
-* [Help about using GIT](https://github.com/k88hudson/git-flight-rules)
 
 This website is open-source. <a href="https://github.com/sahwar/Bulogos/edit/master/README.md">Improve this page</a>.
