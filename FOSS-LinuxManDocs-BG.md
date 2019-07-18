@@ -15,6 +15,17 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 * **[BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/)**, [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
 (* стари безплатни версии на програмата за проверка на правописа на български текстове IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking [linkhttp://freeplace.info/ididictionary/bulgarian_spell_checker/ ), WinEst, др.)
 * **[ludost.net](https://ludost.net/)** - https://ludost.net/projects.html - https://marla.ludost.net/hosted/ - Ако имате проект с не-стопанска цел и се чудите къде да го приютите, пратете ни e-mail на requests[at]ludost.net. Ние ще направим всичко, което е по силите ни, за да ви помогнем. (Включва и... :P "OpenDC - An OpenDC Hub for unlicensed (e.g. legal) anime content - maintained by Vasil Kolev" и https://anime.ludost.net/ - "български откачен аниме и манга портал")
+* `bglinux` — пакет за българизация и кирилизация на Linux (от Антон Кирилов Зиновиев и други); `bgtex` — пакет за българизация и кирилизация на TeX/LaTeX
+```
+http://lml.bas.bg/~anton/linux/bglinux.html
+http://lml.bas.bg/~anton/original/
+http://lml.bas.bg/~anton/original/BG_Linux.html
+http://lml.bas.bg/~anton/original/Bulgarization.html
+http://lml.bas.bg/~anton/original/Ontogenesis.html
+```
+* Учебник за Дебиан Линукс (Debian Linux): http://d.linux-bg.org/download/books/Debian-book/src/debian-book.html
+
+http://lml.bas.bg/~anton/original/bglinux.html (Антон Зиновиев и други)
 
 * _**Transifex.com**_ (например https://www.transifex.com/mate/MATE/translate/#bg), _**[CrowdIn.com](https://crowdin.com/)**_, [Mojito](http://www.mojito.global/), [TranslationExchange](https://translationexchange.com/), [Localize.co](https://lokalise.co/), [GetLocalization](https://www.getlocalization.com/), 
 и [други инструменти за превод (CAT, MT и т.н)](https://opensource.com/article/17/6/open-source-localization-tools)
