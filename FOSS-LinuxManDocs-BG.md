@@ -23,12 +23,12 @@ http://lml.bas.bg/~anton/original/BG_Linux.html
 http://lml.bas.bg/~anton/original/Bulgarization.html
 http://lml.bas.bg/~anton/original/Ontogenesis.html
 ```
-* Учебник за Дебиан Линукс (Debian Linux): http://d.linux-bg.org/download/books/Debian-book/src/debian-book.html
+* Учебник за Дебиан Линукс на български език (Debian Linux): http://d.linux-bg.org/download/books/Debian-book/src/debian-book.html (за малко по-стара версия на Debian, но много от информацията е все още напълно приложима)
 
 http://lml.bas.bg/~anton/original/bglinux.html (Антон Зиновиев и други)
 
-* _**Transifex.com**_ (например https://www.transifex.com/mate/MATE/translate/#bg), _**[CrowdIn.com](https://crowdin.com/)**_, [Mojito](http://www.mojito.global/), [TranslationExchange](https://translationexchange.com/), [Localize.co](https://lokalise.co/), [GetLocalization](https://www.getlocalization.com/), 
-и [други инструменти за превод (CAT, MT и т.н)](https://opensource.com/article/17/6/open-source-localization-tools)
+* _**Transifex.com**_ (например https://www.transifex.com/mate/MATE/translate/#bg), _**[CrowdIn.com](https://crowdin.com/)**_, _**[Zanata.org](http://zanata.org/)**_, [Mojito](http://www.mojito.global/), [TranslationExchange](https://translationexchange.com/), [Localize.co](https://lokalise.co/), [GetLocalization](https://www.getlocalization.com/), 
+и [други инструменти за превод (CAT, MT, TM и т.н)](https://opensource.com/article/17/6/open-source-localization-tools)
 * Self-hosted **Weblate**, [Mozilla Pontoon](https://pontoon.mozilla.org/) и т.н. хранилища с преводи на софтуер и др., например https://weblate.lxqt.org/projects/lxqt/pcmanfm-qt/ и https://hosted.weblate.org/projects/tilix/translations/
 
 * **Linux-BG.org (уебсайт „Линукс за българи“):** http://www.linux-bg.org/cgi-bin/y/index.pl, http://www.linux-bg.org/cgi-bin/y/index.pl?page=links, http://d.linux-bg.org/, https://LaunchPad.net, https://github.com, https://gitlab.org
@@ -199,7 +199,10 @@ https://binary-factory.kde.org/job/Lokalize_Release_win32/
 https://binary-factory.kde.org/job/Lokalize_Nightly_win32/
 * Лично хоствани екземпляри на системата за уеб-преводи Weblate
 * Примерни инструкции за преводни файлове за локализация PO и TS (???): http://wiki.pointlinux.org/index.php?title=Localization
-* Основни формати за превод на софтуер: .po (GNU gettext), .pot (.po Template), .mo (compiled binary .po); Qt Linguist: .ts (compiled: .qm); .lng, .lang; .txt, .conf, .config, .cfg; .json, .xaml, .haml; .tmx (Google Translate), .tbx (Microsoft Terminology), .xliff и др. ...; XLIFF (.xlf, .xliff), (.spec?)...
+* Основни формати за превод на софтуер: .po (GNU gettext), .pot (.po Template), .mo (compiled binary .po); Qt Linguist: .ts (compiled: .qm); .lng, .lang; .txt, .conf, .config, .cfg; .json, .xaml, .haml; .tmx (Google Translate), .tbx (Microsoft Terminology), .xliff и др. ...; XLIFF (.xlf, .xliff), (.spec?)... ... ... Translation-related formats:
+HTML, OpenOffice/LibreOffice .ODT, MS Office .DOC (MS Word 2003-2007) & .DOCX (MS Word 2007+), XML, RTF, Trados-Tagged RTF, DocBook, man-pages, .PO & .MO (GNU GeText's .PO format, encoded in UTF-8; and its binary .MO format), Qt Linguist .TS & .QM (Translation Source), XLIFF (XML Localisation Interchange File Format), OmegaT & OmegaT+, Properties, DTD, XLST, .csv/.tsv tables, Google Translate .TMX (the Translation Memory eXchange format), .TBX (TermBank eXchange - Microsoft Terminology), Trados .TTX, SRX (Segmentation Rules eXchange format) + Okapiframework SRX Extensions, Android resource files, iOS resource files, Java resource files, .RESX & .MUI (Windows Resource files), .lang, .lng, .ini, .conf, .config; [TBX (Term Base eXchange)](http://www.gala-global.org/oscarStandards/tbx/tbx_oscar.pdf) + TBX-Basic, [W3C ITS](https://www.w3.org/TR/its20/) (Internationalization Tag Set) + ITS XML Filter + HTML5-ITS Filter, GMX & GMX-V/GMX-C-GMX-Q (Global information management Metrics eXchange), OAXAL (Open Architecture for XML Authoring and Localization), .dic
+* MT & TM databases: Google (Google Translate) MT, Microsoft Translator, Open-Tran TM, MyMemory TM, Translate Toolkit TM, Apertium MT, TDA-Search, Babelfish MT, Microsoft Bing MT, Canonical (Ubuntu & Linux Mint & Debian & etc.) launchpad.net TM, transifex.com TM/crowdin.com TM/zonata.org TM, KDE-BG TM, GNOME-BG TM, XFCE-BG TM, LXDE/LXQT TM;
+* [Okapiframework Tikal](http://okapiframework.org/wiki/index.php/Tikal), [statMT Moses](http://www.statmt.org/moses/) (A decoder for phrase-based machine translation; statistical machine translation system that allows you to automatically train translation models for any language pair. All you need is a collection of translated texts (parallel corpus). Once you have a trained model, an efficient search algorithm quickly finds the highest probability translation among the exponential number of choices), [statMT Moses2 (similar to Google Translate for webpages)](http://www.statmt.org/moses/?n=Moses.WebTranslation)
 * http://localizejs.com/;
 
 ````
