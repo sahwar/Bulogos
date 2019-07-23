@@ -19,10 +19,12 @@ https://github.com/RedSilkSoftware/webtooth-extractor
 http://dcl.bas.bg/frequency.html
 http://dcl.bas.bg/Resources/Frequency/Frequency.zip
 http://dcl.bas.bg/interesting_bg.html
-http://dl.opensubtitles.org/addons/export/
+* * https://tatoeba.org/eng/downloads
+https://tatoeba.org/eng/ = отворена колекция от изречения и техните преводи на 348 езика ( https://tatoeba.org/eng/stats/sentences_by_language , https://tatoeba.org/eng/sentences/show_all_in/bul/none/none/indifferent , https://tatoeba.org/eng/downloads , https://tatoeba.org/eng/sentences_lists/index , https://github.com/Tatoeba/tatoeba2 , https://tatoeba.org/eng/audio/index )
+* http://dl.opensubtitles.org/addons/export/
 https://www.opensubtitles.org/addons/export_languages.php
-http://nikolay.it/Blog/2011/08/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7-%D0%BD%D0%B0-%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D1%8F-%D0%B5%D0%B7%D0%B8%D0%BA-%D1%87%D1%80%D0%B5%D0%B7-Wikipedia/3
-http://dumps.wikimedia.org/backup-index.html
+* http://nikolay.it/Blog/2011/08/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7-%D0%BD%D0%B0-%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D1%8F-%D0%B5%D0%B7%D0%B8%D0%BA-%D1%87%D1%80%D0%B5%D0%B7-Wikipedia/3
+* http://dumps.wikimedia.org/backup-index.html
 http://download.wikimedia.org/bgwiki/20110819/bgwiki-20110819-pages-articles.xml.bz2
 http://nikolay.it/content/files/2011-08/bg.wikipedia.org-words.rar
 https://archive.fo/NbDQz
