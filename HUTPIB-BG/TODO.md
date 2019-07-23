@@ -21,6 +21,9 @@ https://l10n.kde.org/team-infos.php?teamcode=bg
 * nomacs image-viewer (F(L)OSS)
 * viewnior image-viewer (F(L)OSS) - already PARTIALLY translated into Bulgarian
 
+* VLC v2.2.6_BG, VLC v3.0.1_BG
+* http://mx.j2inter.com/translation & https://crowdin.com/project/mx-video-player/bg#
+
 **FULL LIST FOR TRANSLATION INTO BULGARIAN**
 * [GraphicsGale](https://graphicsgale.com/us/download.html) (freeware as of 2018!)
 * [Krita](http://krita.org) (FOSS)
