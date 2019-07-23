@@ -40,6 +40,7 @@ http://lml.bas.bg/~anton/original/bglinux.html (Антон Зиновиев и �
 * _**Transifex.com**_ (например https://www.transifex.com/mate/MATE/translate/#bg), _**[CrowdIn.com](https://crowdin.com/)**_, _**[Zanata.org](http://zanata.org/)**_, [Mojito](http://www.mojito.global/), [TranslationExchange](https://translationexchange.com/), [Localize.co](https://lokalise.co/), [GetLocalization](https://www.getlocalization.com/), 
 и [други инструменти за превод (CAT, MT, TM и т.н)](https://opensource.com/article/17/6/open-source-localization-tools)
 * Self-hosted **Weblate**, [Mozilla Pontoon](https://pontoon.mozilla.org/) и т.н. хранилища с преводи на софтуер и др., например https://weblate.lxqt.org/projects/lxqt/pcmanfm-qt/ и https://hosted.weblate.org/projects/tilix/translations/
+* **Pylyglot** (a self-hosted web-based translation compendium = '') - https://github.com/omaciel/pylyglot
 
 * **Linux-BG.org (уебсайт „Линукс за българи“):** http://www.linux-bg.org/cgi-bin/y/index.pl, http://www.linux-bg.org/cgi-bin/y/index.pl?page=links, http://d.linux-bg.org/, https://LaunchPad.net, https://github.com, https://gitlab.org
 * **LUG-BG** (_LUG-BG (Linux Users Group - Bulgaria)_ е неформална организация на потребителите на Linux в България) - http://www.linux-bulgaria.org/ + **е-пощенски списък на LUG-BG** http://linux-bulgaria.org/mailman/listinfo/lug-bg
