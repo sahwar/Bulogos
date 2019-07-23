@@ -3,6 +3,8 @@ _THE LIST IS IN DEVELOPMENT, PLEASE CHECK BACK LATER FOR A MORE COMPLETE VERSION
 
 **Last modified:** 2019-04-27T19:38_UTC+3/EEST
 
+* https://en.wikipedia.org/wiki/List_of_software_package_management_systems
+
 ### Linux (GNU/Linux) distros and other UNIX-like OSs ###
 **App packaging/distribution/installation file-formats & app distribution-channels for (GNU/)Linux distros:**
 * .deb, .rpm, etc. binary formats & related CLI&GUI app package-managers (`apt`/`apt-get`, `Synaptic`, `emerge (portage)`, `pacman` (Arch Linux), `zypper` (OpenSUSE), `nix-env` (NixOS Linux), etc.), downloaded from locally-installed package managers of your Linux distro OR downloaded from some obscure web-address...
@@ -30,7 +32,12 @@ Distribute your desktop Linux application in the AppImage format and win users r
 * Ubuntu LaunchPad.net **PPAs** (https://launchpad.net/)
 * **BitBucket** (https://bitbucket.org/)
 * **GitLab** (https://about.gitlab.com/), or your own (self-)hosted version of GitLab CE (Community Edition)...
-* **BinTray** (https://bintray.com)
+* **BinTray** (https://bintray.com) - e.g.  https://bintray.com/okapi/Distribution
+* https://search.maven.org/search?q= (e.g. https://search.maven.org/search?q=net.sf.okapi )
+* https://en.wikipedia.org/wiki/Template:Linux_package_management_systems
+* [yum](http://yum.baseurl.org/) & `DNF` package managers for .RPM (Fedora Linux and forks&derivatives)
+* openSUSE `zypper` + [openSUSE Open Build Service - https://en.wikipedia.org/wiki/Open_Build_Service](https://openbuildservice.org/) ( https://en.wikipedia.org/wiki/Open_Build_Service ; https://openbuildservice.org/download/ ; https://openbuildservice.org/download/other/ )
+* https://build.opensuse.org - currently has almost 30.000 users that are building over 140.000 packages for 21 base Linux distributions on 6 architectures
 * [Repology.org](https://repology.org/) (example: https://repology.org/project/polybar/versions)
 * [SlackBuilds.org](https://slackbuilds.org/) - software packages for [Slackware Linux]()
 * http://slackpack.ludost.net/packages/ (Bulgarian repo/repository of Slackware Linux packages and .ISO images)
@@ -41,16 +48,26 @@ Distribute your desktop Linux application in the AppImage format and win users r
 * Fedora COPR AppImage's repos: https://copr.fedorainfracloud.org/coprs/
 * [XBPS](https://voidlinux.org/usage/xbps/) & etc. package systems (?)...
 * **FreeBSD** ``pkg`` - https://www.freebsd.org/cgi/man.cgi?query=pkg&sektion=8&n=1 (FreeBSD-BG / FreeBSD Bulgaria: http://www.bg-freebsd.org/)
-* Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/), [https://packagist.org](Packagist) (the PHP programming-language's package-repository of PHP packages installable via [Composer](https://getcomposer.org/)), [crates.io (packages for the Rust programming language](https://crates.io/crates/smithay-clipboard), [YarnPKG](https://yarnpkg.com/lang/en/), TeX packages, etc.
+* Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/), [https://packagist.org](Packagist)
+* the PHP programming-language's package-repository (&dependancy manager / package manager) of PHP packages installable via [Composer](https://getcomposer.org/))
+* [crates.io (packages for the Rust programming language](https://crates.io/crates/smithay-clipboard)
+* [YarnPKG](https://yarnpkg.com/lang/en/)
+* Modules (packages) for the Perl programming language: https://perldoc.perl.org/functions/package.html , https://perldoc.perl.org/5.30.0/index-modules-A.html 
+* Perl modules (packages & libraries) from CPAN (the Comprehensive Perl Archive Network) - https://www.cpan.org/ & https://perldoc.perl.org/5.30.0/App/Cpan.html
+* TeX/LaTeX packages from https://ctan.org/
+* , etc.
+
 * installing by getting the package via a version-control-system's graphical-app (i.e. Git, GitLab, GitHub, CVS, SVN, LaunchPad.net/bazaar CVS, etc.)...
 * [npm](https://www.npmjs.com/) (JavaScript packages)
 * https://mesonbuild.com/
 * https://ninja-build.org/
+* NPM (for JavaScript) & https://www.npmjs.com/package/pkg 
 * running Windows `.exe`/`.msi` files via [Wine](https://www.winehq.org/)/PlayOnLinux (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html, [DxWnd](https://sourceforge.net/p/dxwnd/home/Home/), etc.)
 * etc. ...
 
 #### Freeware and FOSS/FLOSS/open-source/(GNU/)Linux video-gaming (Linux gaming) ####
 * https://www.old-games.com/
+* http://www.oldapps.com (download older versions of apps for free!)
 * http://gamepressure.com/
 * ROMs for MAME (to play video-games for old arcade video-game consoles): https://emulator.games/roms/mame/
 * https://www.makeuseof.com/tag/open-source-video-games/
@@ -95,8 +112,9 @@ http://brothersoft.com/, https://www.kaldata.com/ (Bulgarian IT website), https:
 * etc.
 
 ### macOS (Apple macOS, previously known as MacOS X and MachintoshOS) ###
-* installing the macOS app from its macOS-centric .dmg binary/installer (from local physical-media or downloaded from Internet-sources)
+* installing the macOS app from its macOS-centric `.dmg` binary/installer (from local physical-media or downloaded from Internet-sources) or macOS `.pkg` app installer ( https://en.wikipedia.org/wiki/.pkg )
 * macOS [homebrew (macOS homebrew/Linuxbrew)](https://brew.sh/) (package manager for macOS) - https://docs.brew.sh/Installation - https://github.com/Homebrew/brew; [Homebrew Formulae](https://formulae.brew.sh/)
 * [macports](https://www.macports.org/)
 [Tigerbrew](https://github.com/mistydemeo/tigerbrew) - experimental fork of Homebrew that adds support for PowerPC (PPC) Macs, and Macs running Tiger (or Leopard)
+* [Fink (ported Linux apps for Mac OS X (macOS) and Darwin OS - http://www.finkproject.org/index.php?phpLang=en](http://www.finkproject.org/index.php?phpLang=en)
 * running Windows .exe/.msi files via [Wine](https://www.winehq.org/)/PlayOnLinux for macOS
