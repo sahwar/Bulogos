@@ -25,6 +25,7 @@ http://lml.bas.bg/~anton/original/Ontogenesis.html
 http://lml.bas.bg/~anton/original/bglinux.html (Антон Зиновиев и други)
 
 https://github.com/omaciel/EmblemDivide (an example of a ebook/e-book written in TeX/LaTeX, with full .tex source code!)
+https://github.com/omaciel/book-source = the source code of the boook The Joy of Clojure (изходния код на книгата „Радостта от езика за програмиране Clojure)
 
 https://github.com/omaciel/gnome-i18n-manage-vcs
 https://github.com/omaciel/python-postats
