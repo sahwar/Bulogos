@@ -202,9 +202,10 @@ https://binary-factory.kde.org/job/Lokalize_Nightly_win32/
 * Основни формати за превод на софтуер: .po (GNU gettext), .pot (.po Template), .mo (compiled binary .po); Qt Linguist: .ts (compiled: .qm); .lng, .lang; .txt, .conf, .config, .cfg; .json, .xaml, .haml; .tmx (Google Translate), .tbx (Microsoft Terminology), .xliff и др. ...; XLIFF (.xlf, .xliff), (.spec?)... ... ... Translation-related formats:
 HTML, OpenOffice/LibreOffice .ODT, MS Office .DOC (MS Word 2003-2007) & .DOCX (MS Word 2007+), XML, RTF, Trados-Tagged RTF, DocBook, man-pages, .PO & .MO (GNU GeText's .PO format, encoded in UTF-8; and its binary .MO format), Qt Linguist .TS & .QM (Translation Source), XLIFF (XML Localisation Interchange File Format), OmegaT & OmegaT+, Properties, DTD, XLST, .csv/.tsv tables, Google Translate .TMX (the Translation Memory eXchange format), .TBX (TermBank eXchange - Microsoft Terminology), Trados .TTX, SRX (Segmentation Rules eXchange format) + Okapiframework SRX Extensions, Android resource files, iOS resource files, Java resource files, .RESX & .MUI (Windows Resource files), .lang, .lng, .ini, .conf, .config; [TBX (Term Base eXchange)](http://www.gala-global.org/oscarStandards/tbx/tbx_oscar.pdf) + TBX-Basic, [W3C ITS](https://www.w3.org/TR/its20/) (Internationalization Tag Set) + ITS XML Filter + HTML5-ITS Filter, GMX & GMX-V/GMX-C-GMX-Q (Global information management Metrics eXchange), OAXAL (Open Architecture for XML Authoring and Localization), .dic
 * MT & TM databases: Google (Google Translate) MT, Microsoft Translator, Open-Tran TM, MyMemory TM, Translate Toolkit TM, Apertium MT, TDA-Search, Babelfish MT, Microsoft Bing MT, Canonical (Ubuntu & Linux Mint & Debian & etc.) launchpad.net TM, transifex.com TM/crowdin.com TM/zonata.org TM, KDE-BG TM, GNOME-BG TM, XFCE-BG TM, LXDE/LXQT TM;
-* [Okapiframework Tikal](http://okapiframework.org/wiki/index.php/Tikal), [statMT Moses](http://www.statmt.org/moses/) (A decoder for phrase-based machine translation; statistical machine translation system that allows you to automatically train translation models for any language pair. All you need is a collection of translated texts (parallel corpus). Once you have a trained model, an efficient search algorithm quickly finds the highest probability translation among the exponential number of choices), [statMT Moses2 (similar to Google Translate for webpages)](http://www.statmt.org/moses/?n=Moses.WebTranslation)
+* [Okapiframework Tikal](http://okapiframework.org/wiki/index.php/Tikal), [statMT Moses](http://www.statmt.org/moses/) (A decoder for phrase-based machine translation; statistical machine translation system that allows you to automatically train translation models for any language pair. All you need is a collection of translated texts (parallel corpus). Once you have a trained model, an efficient search algorithm quickly finds the highest probability translation among the exponential number of choices), [statMT Moses2 (similar to Google Translate for webpages)](http://www.statmt.org/moses/?n=Moses.WebTranslation), ...
+* Okapiframework Rainbow (a toolbox to launch a large variety of localization tasks), Okapiframework CheckMate (an application to perform quality checks on bilingual files), Okapiframework Tikal (a command-line tool for basic localization tasks), Okapiframework Ratel (a WYSIWYG editor to create, test and maintain SRX segmentation rules), Okapiframework Longhorn (a batch processing server), OkapiframeworkOcelot (a XLIFF translator/reviewer workbench)
 * http://localizejs.com/;
-
+—
 ````
 Google Translate (machine translation - машинни преводи (с termbanks, user-submitted&checked translations & artificial A.I. neural-networks) с Google Translate (Гугъл Превод(ач))): https://translate.google.com
 
@@ -224,6 +225,32 @@ https://translate.google.com/community?source=web
 https://translate.google.com/community?source=web#en/bg
 
 Python Sphinx documentation&translation engine: http://www.sphinx-doc.org/en/master/
+````
+
+````
+Terminology keywords: language: t9n (translation), localization (l10n), internationalization (i18n), globalization (g11n), continuous localization (cont-l10n), MT (machine translaton) & TM (translation memory), translation-tool, localization-tool, software translation management, online translation platform; [SMT Glossary v1.0](http://www.statmt.org/moses/glossary/SMT_glossary.html) (glossary includes common terms that are helpful for new users of statistical machine translation (SMT))
+
+An [online] automation platform that enables continuous localization
+````
+
+````
+GIZA++ (A tool for unsupervised word alignment)
+SRILM (A toolkit for building language models)
+KyTea (A word segmenter (tokenizer) for Japanese (v. 0.4.0+))
+lader (A pre-orderer that can help fix the reordering problems between English and Japanese)
+MT helper scripts (A variety of scripts that are useful for Machine translation)
+KFTT (The Kyoto Free Translation Task)
+````
+
+````
+(taken from Okapiframework Tikal, with modifications)
++Configuration: okf_openxml
+Source language: en(,bg; OR mixed:en,bg,fr;)
+Target language: fr
+Input encoding: windows-1252, utf-8
+Output encoding: utf-8
+Input document: Sample.docx
+Output document: <auto-defined>
 ````
 
 ### Безплатни шрифтове (freeware fonts) и свободни шрифтове (free/libre/open-source fonts) ###
