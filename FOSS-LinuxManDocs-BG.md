@@ -22,6 +22,15 @@ http://lml.bas.bg/~anton/original/
 http://lml.bas.bg/~anton/original/BG_Linux.html
 http://lml.bas.bg/~anton/original/Bulgarization.html
 http://lml.bas.bg/~anton/original/Ontogenesis.html
+http://lml.bas.bg/~anton/original/bglinux.html (Антон Зиновиев и други)
+
+https://github.com/omaciel/EmblemDivide (an example of a ebook/e-book written in TeX/LaTeX, with full .tex source code!)
+
+https://github.com/omaciel/gnome-i18n-manage-vcs
+https://github.com/omaciel/python-postats
+
+`pandoc`, `yelp` + `gnome-doc-util`, (GNU/)Linux `man`pages, http://projectmallard.org/ (a DocBook-like(?) Markdown-like(?) document lightweight markup language)
+
 ```
 * Учебник за Дебиан Линукс на български език (Debian Linux): http://d.linux-bg.org/download/books/Debian-book/src/debian-book.html (за малко по-стара версия на Debian, но много от информацията е все още напълно приложима)
 
@@ -242,13 +251,49 @@ MT helper scripts (A variety of scripts that are useful for Machine translation)
 KFTT (The Kyoto Free Translation Task)
 ````
 
+### Общи инструкции за преводите („алгоритъм от стъпки за изпълнение за превеждане на конкретен текст“) ###
+0. Какви са особеностите на текста за превод? Разберете translation volume/length, translation complexity, (оценете (полу-)субективно) translation quality (3 in GMX); translation cost, time taken for the completion of the translation, translation reception/feedback...
+1. (тук ще копирам препечатани основните техники за превода от английски на български, взети от записките ми от курса ми по Преводи в университета...)
+2. Консултирайте се с BGlocalize (и речника на BGlocalize),
+`https://sites.google.com/site/bglocalize/home`
+(БЕЛЕЖКА: Обърнете внимание на това коя версия на съответната страница и на речника използвате - т.е. час и дата на последна редакция на уебстраницата (version-control!))
+с речника на Антон Зиновиев
+(
+````
+http://lml.bas.bg/~anton/linux/rechnik.html ( архивно копие: http://archive.is/e7roC ) - има малко правописни грешки и някои неточности, но(,) като цяло(,) е чудесно допълнение към (или дори пряк предтеча(?) на) BGlocalize  
+Anton Zinoviev anton(at)lml(dot)bas(dot)bg - BGLinux, BGtex, изобщо - кирилизация, както и доста статии
+http://www.lml.acad.bg/~anton/linux/index.html
+http://lml.bas.bg/~anton/linux/bglinux.html
+http://lml.bas.bg/~anton/original/
+````
+)
+, 
+и с преводните текстови низове и TM (translation memory) DBs (бази от данни) на вече преведени програми (например KDE-BG, GNOME-BG, XFCE-BG, LXDE/LXQT-BG... Microsoft termbank database и на отделни програми и т.н.); консултирайте се с онлайн ръководства за стила (style guide) на превод на конкретен софтуер и онлайн двуезични корпуси (с превод от един език на други, например този с документите на Европейския съюз). 
+3. The three-step translation process (primary translation -> secondary translation to improve fluency -> final check for technical terms) has been clearly recorded.
+(Enables observation of how translations have been elaborated so it can be applied for uses such as research and development relevant to translation aids and error analysis of human translation.)
+4. Proofreading, copyediting, copywriter, copyreader (жур. стилов редактор), final editing... Обща и стилова редакция + корекция чрез IDI-spellchecker & ръчно-мисловно-субективна корекция...
+(http://okapiframework.org/wiki/index.php/CheckMate
+Some of the verifications performed are:
+Repeated words
+Corrupted characters
+Patterns in the source text that should correspond to a given pattern in the translation.
+Inline codes differences.
+Translation suspiciously longer or shorter than the source.
+Missing translation.
+Leading and trailing spaces.
+And more...)
+5. Краен резултат...
+6. Обратна връзка (feedback) за корекции, доуточнения, редакции и т.н. + НОВИ ВЕРСИИ (document version-control)
+7. Съхранение и архивиране на документа (онлайн на хардуерен сървър, физически копия на хартия, дърво, камък, стъкло, звукозапис, видеозапис и т.н.) - географско-пространствено местоположение на копието (за последващо намиране/information retrieval)...
+
 ````
 (taken from Okapiframework Tikal, with modifications)
 +Configuration: okf_openxml
 Source language: en(,bg; OR mixed:en,bg,fr;)
 Target language: fr
-Input encoding: windows-1252, utf-8
+Input encoding: windows-1252, utf-8 // 2cyr.com & iconv IF the input encoding is garbled/unreadable (mojibake)!
 Output encoding: utf-8
+[... translation, editing, proofreading...]
 Input document: Sample.docx
 Output document: <auto-defined>
 ````
