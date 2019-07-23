@@ -57,6 +57,7 @@
 * https://www.macmillandictionary.com/
 * https://www.duden.de/ (немски речник)
 * https://www.spanishdict.com/dictionary (испанско-английски речник)
+* https://www.languagetool.org/, https://grammarly.com , https://www.gala-global.org/translation-and-localization-industry-standards (Globalization and Localization Association (GALA))...
 * (... за допълване...)
 
 * https://www.mdbg.net/chinese/dictionary (китайско-английски онлайн речник)
