@@ -140,3 +140,37 @@ _I don't use macOS..._ In my opinion, it's only good for art/designer/webdev pro
 
 ## Under `Apple iOS` ##
 _I don't use iOS..._
+
+-----
+
+## Free resources & free gamedev (video-game development) files: ##
+
+http://americangirlscouts.org/agsresources/Programs.html
+
+https://opengameart.org/
+https://fontlibrary.org/
+https://openlibrary.org/
+http://openfontlibrary.fontly.org/
+https://freesound.org/
+
+http://openarts.info/
+
+https://forums.rpgmakerweb.com/index.php
+https://www.rpgmakercentral.com/
+https://rpgmaker.net/portal/community/ & https://rpgmaker.net/games/ & gamedev https://rpgmaker.net/utilities/ - 'it takes a tough man to make a tender review'
+
+https://www.scummvm.org/ & https://en.wikipedia.org/wiki/Template:LucasArts_adventure_games
+http://www.homeoftheunderdogs.net/
+
+https://www.dosbox.com/
+https://www.mamedev.org/
+https://www.adventuregamestudio.co.uk/
+https://www.adventuregamestudio.co.uk/site/ags/sci_fonts/
+http://americangirlscouts.org/agsresources/
+http://americangirlscouts.org/agsresources/Programs.html
+http://americangirlscouts.org/agsresources/fonts.html
+http://americangirlscouts.org/agsresources/Links.html
+
+http://www.abstractfonts.com/
+https://blambot.com/ = comic & webcomic fonts & comic lettering terminology (all by Nate Piekos)
+
