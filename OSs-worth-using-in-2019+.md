@@ -138,7 +138,7 @@ https://www.icewalkers.com/
 **FreeBSD**, **OpenBSD**, NetBSD, DragonflyBSD, etc.
 
 ## The mainstream OSs for mobile devices (smartphones, phablets, tablets) ##
-_**Google Android**_, _**Apple iOS**_, _**Windows10 mobile**_, _**Samsung Tizen**_, _**[SailfishOS](https://sailfishos.org/)**_ (by Jolla, with a heritage from Nokia and MeeGo), maruOS, BlissOS, Mer Project, Ubuntu Touch, KaiOS, KDE Plasma Mobile (Qt5-based?), postmarketOS, PureOS Librem, LineageOS, eelo, etc.
+_**Google Android**_, _**Apple iOS**_, _**Windows10 mobile**_, _**Samsung Tizen**_, _**[SailfishOS](https://sailfishos.org/)**_ (by Jolla, with a heritage from Nokia and **MeeGo**), maruOS, BlissOS, [**Mer Project**](http://merproject.org/), Ubuntu Touch, KaiOS, KDE Plasma Mobile (Qt5-based?), postmarketOS, PureOS Librem, LineageOS, eelo, etc.
 
 ## Older OSs for older mobile devices ##
 SymbianOS 10, WinCEv5&v6 (Windows Embedded Compact) (all are obsolete except for older mobile devices or for hobbyist projects involving them), JavaME-based old cell-phones' custom OSs, etc.
