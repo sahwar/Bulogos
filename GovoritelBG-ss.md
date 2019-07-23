@@ -778,6 +778,8 @@ https://bezmishka.org/taxonomy/term/2
 &*1
 ````
 
+* https://github.com/omaciel/Melissa-Core = виртуален асистент за Windows, Linux и macOS, който има възможности за гласов синтез (A lovely virtual assistant for OS X, Windows and Linux systems, it uses Google Chrome's speech-to-text engine, (macOS') Mac OS X's `say` command, Linux's `espeak` command or Ivona TTS.)
+
 ### 7. (G)UI ideas from Librera Reader (for Google Android) ###
 
 ````
