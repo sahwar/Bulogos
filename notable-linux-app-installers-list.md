@@ -77,7 +77,7 @@ Distribute your desktop Linux application in the AppImage format and win users r
 * https://libregamewiki.org//Complete_open_source_games?pagename=wiki/Complete_open_source_games
 * https://www.slant.co/topics/1933/~best-open-source-games
 * https://itsfoss.com/free-linux-games/
-* SteamOS: https://store.steampowered.com/steamos/buildyourown
+* SteamOS: https://store.steampowered.com/steamos/buildyourown + gog.com (Good Old Games)
 * http://www.makeuseof.com/tag/not-steamos-great-linux-distros-gamers/
 * Xonotic - http://www.xonotic.org/
 * Alien Arena - http://red.planetarena.org/
