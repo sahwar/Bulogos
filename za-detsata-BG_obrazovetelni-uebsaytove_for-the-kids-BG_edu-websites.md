@@ -17,6 +17,8 @@
 * http://ibl.bas.bg/rbe/
 * http://bulgariandictionary.com/ (по-старият и по-достъпен интерфейс на https://eurodict.com/)
 * https://eurodict.com/
+* http://www.onlinerechnik.com/ = онлайн речници (български универсален, тълковен, правописен и синонимен) и българско-английски речник
+* https://www.gigacalculator.com/ = онлайн калкулатор („Елка“, изчислител) и конвертор (преобразувател) между различни мерни единици
 * http://www.megadict-bg.com/
 * https://bg.wikipedia.org
 * https://bg.wiktionary.org
@@ -41,12 +43,13 @@
 * http://thefreedictionary.com/ (един от любимите ми онлайн речници на английския език)
 * https://www.dictionary.com/
 * https://www.thesaurus.com/browse/dictionary
+* https://tatoeba.org/eng/ = отворена колекция от изречения и техните преводи на 348 езика ( https://tatoeba.org/eng/stats/sentences_by_language , https://tatoeba.org/eng/sentences/show_all_in/bul/none/none/indifferent , https://tatoeba.org/eng/downloads , https://tatoeba.org/eng/sentences_lists/index , https://github.com/Tatoeba/tatoeba2 , https://tatoeba.org/eng/audio/index )
 * https://www.etymonline.com/
 * https://dictionary.cambridge.org/
 * https://en.oxforddictionaries.com/
 * https://www.merriam-webster.com/dictionary/dictionary
 * http://www.oed.com/
-* https://en.bab.la/dictionary/
+* https://en.bab.la/dictionary/ ( https://bab.la/ )
 * http://www.wordreference.com/
 * https://www.woxikon.bg/
 * https://www.teanglann.ie/en
