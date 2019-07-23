@@ -48,6 +48,12 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [LXLE](http://www.lxle.net/)
 * [PureOS](https://www.pureos.net/) (from https://puri.sm/, powerful libre laptops!)
 * [ZorinOS](https://zorinos.com/)
+* ...
+* https://www.scientificlinux.org/
+* https://archiveos.org/foresight/
+
+* **ArchiveOS**: https://archiveos.org/about-archiveos/ = Archive of Operating Systems mission is saving the great job of many great people whose created Open Source and/or Freeware distributions/operating systems.
+The systems we archive are based on Linux, BSD, DOS, Solaris, and other, independent technology.
 
 ...
 
