@@ -305,6 +305,7 @@ Output document: <auto-defined>
 
 По-долу са изброени хипервръзки (е-препратки) към хранилища с голям брой свободни шрифтове за изтегляне...
 * [Google Fonts (and Google WebFonts)](https://fonts.google.com/)
+* https://www.cssfontstack.com/Open-Sans
 * [FontLibrary.org](https://fontlibrary.org/) - https://fontlibrary.org/ (хранилище за изтегляне на свободни цифрови (дигитални) шрифтове и инструкции за създаване на свободни шрифтове с FontForge и публикуването им под SIL Open Font License)
 * [FontStruct fonts](https://fontstruct.com/) - безплатно създаване и изтегляне на опростени дигитални шрифтове (изисква безплатна регистрация).
 * [Pentacom BitFontMaker2](http://www.pentacom.jp/pentacom/bitfontmaker2/) - предтеч на FontStruct за създаване на bitmap .ttf font в стил pixel-art, версия 2.
@@ -319,6 +320,7 @@ https://packages.ubuntu.com/search?keywords=cyrillic&searchon=names
 * [Some Cyrilic fonts from Valeri Dachev](http://ludost.net/xaddfnts-1.0.tgz)
 * The Sad State of Linux Fonts [Rendering] (and possible fixes): https://pandasauce.org/post/linux-fonts/
 * Antialiased and Microsoft ClearType-like typographical font rendering fixes for Linux: https://novelist.xyz/tech/improve-font-rendering-arch-linux-no-infinality/
+* Font updates for Windows XP (including several new letters for Bulgarian/Cyriilic):  [European Union Expansion Font Update for Windows XP](https://sahwar.wordpress.com/2008/11/02/bulgarian-gui-for-windowsxp/)
 
 Spellchecking dictionaries / Речници за проверка на правописа (съдържат и грешки!):
 * https://bgoffice.sourceforge.net (BGoffice)
@@ -394,7 +396,7 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 * [Заобикаляне на DMCA (Digital Millenium Copyright Act) и DRM (Digital Rights/Restrictions Management)](https://www.eff.org/deeplinks/2018/10/new-exemptions-dmca-section-1201-are-welcome-dont-go-far-enough) ([статия](http://www.linux-bg.org/cgi-bin/y/index.pl?page=news&key=513599340))
 * [USA court approves right-to-fix/DIY [bought hardware&software], win against DRM](https://www.theregister.co.uk/2018/10/26/right_to_repair/)
 * http://fsf.org (Free Software Foundation)
-* 
+* Creative Commons - https://creativecommons.org
 * ...
 
 ## Български преводи на Debian, Ubuntu, Linux Mint и други ##
@@ -429,6 +431,62 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 Пример: https://gitlab.merchise.org/merchise/odoo/blob/790ec26efb1cfe273934c5bdfcddf223047059ff/debian/po/bg.po
 
 * **и други (за допълване после...)**
+
+## HTML, HTML5, CSS (CSSv2.1, CSSv3), JS (JavaScript) + `npm`
+
+* **The HTML5 Living Standard:** https://html.spec.whatwg.org/ + https://html.spec.whatwg.org/multipage/
+* **W3C**: https://www.w3.org/
+* http://caniuse.com
+* http://w3schools.com
+* 
+* http://stackoverflow.com
+* http://superuser.com
+* http://color-hex.com
+* http://colourlovers.com
+* https://snipplr.com/ + https://snipplr.com/all/language/bash
+* http://gist.github.com + https://gist.github.com/discover
+* http://commandlinefu.com + https://www.commandlinefu.com/commands/browse
+* 
+* https://www.cacher.io/
+* https://snipit.io/
+* https://github.com/alexanderepstein/Bash-Snippets
+* https://news.ycombinator.com/item?id=14769384
+* http://milianw.de/code-snippets
+* https://www.bbkane.com/2018/09/09/Short-BASH-Snippets.html
+* http://kedar.nitty-witty.com/blog/10-useful-shell-script-code-snippets-linux
+* https://formulae.brew.sh/formula/bash-snippets
+* https://www.ostechnix.com/collection-useful-bash-scripts-heavy-commandline-users/
+* https://stackoverflow.com/questions/965663/useful-bash-code-snippets
+* 
+* https://news.ycombinator.com
+* https://boingboing.net
+
+* http://html5shiv.googlecode.com/svn/trunk/html5.js
+* https://cdnjs.com/libraries/html5shiv
+* https://github.com/aFarkas/html5shiv
+
+Etc.:
+* waifu2x
+* https://boingboing.net/2019/07/17/this-ai-turns-your-headshot-in.html
+
+Scientific articles:
+* https://arxiv.org/abs/1610.04265
+* https://www.jstor.org/
+* https://www.sciencedaily.com/news/top/science/
+* https://www.livescience.com/ + https://www.livescience.com/news
+* https://www.sciencenews.org/
+* https://www.sciencenewsforstudents.org/
+* https://www.scientificamerican.com/
+* https://www.sciencemag.org/news/latest-news
+* https://www.newscientist.com/section/news/
+* http://www.sci-news.com/
+* https://www.independent.co.uk/news/science?CMP=ILC-refresh
+* https://nauka.bg/ + Европейска нощ на учените и науката („Нощ на учените“): https://nauka.bg/night/ (през 2019 г. в България ще се проведе на 27.09.2019 г.)
+* https://scholar.google.bg/
+* https://zajenitevnaukata.bg/
+* http://www.bas.bg/
+* https://www.mon.bg/
+* Нощ на музеите и галериите - НОЩ/Пловдив (2005-2017 & 2019-): https://www.night.bg/
 
 ## Помощна документация за командите в `cmd.exe` и PowerShell в _Microsoft Windows_ ##
 Съвет: можете да си изтеглите долните свръхполезни помощни инструкции с `wget`, `curl` или като `.txt` файл с вашия уеб-браузър, и после да ги сложите с поставяне (с админ. права) в User папката си или в `C:\Windows\System32` и после с името на файла да си ги отваряте в отделен прозорез на `cmd.exe`/PowerShell, когато ви трябват, за да се посъветвате с тях.
@@ -471,6 +529,15 @@ https://ss64.com/ps/
 #### Полезен софтуер за `cmd.exe`/PowerShell ####
 `cmd.exe`, PowerShell / PowerShell Core (open-source), [ConEmu](https://conemu.github.io/), [Clink](http://mridgers.github.io/clink), PSReadLine, PSGet, Chocolatey / NuGet / MS OneGet, Babun (optional), Process Hacker, [cmder](https://cmder.net/), [GitForWindows](https://gitforwindows.org/), [NirSoft apps](http://www.nirsoft.net/) (especially NirCmd), [Windows utilities by Code.Kliu.org](http://code.kliu.org/) (like [elevate](http://code.kliu.org/misc/elevate/)), [Babun](https://github.com/babun/babun), etc.
 
+### Книги за програмиране и алгоритми за програмиране ###
+
+* [https://github.com/omaciel/1001 - 1001 algorithms you must implement before you die http://nerdson.com/blog/1001-noites](https://github.com/omaciel/1001)
+* programming = algorithms + programming (design?) patterns
+
+### Български езиков пакет (langpack) за Windows XP, Windows 7, Windows 8/8.1, Windows 10, (GNU/)Linux, Google Android, macOS / Mac OS X, iOS, Symbian, Amazon Kindle
+
+* (за добавяне)...
+
 ### Списък с клавишни комбинации („горещи клавиши“, HotKeys) за Microsoft Windows (List of keyboard shortcuts in Microsoft Windows) ###
 * Windows XP: https://support.microsoft.com/en-us/help/301583/list-of-the-keyboard-shortcuts-that-are-available-in-windows-xp
 * Windows 7+: https://support.microsoft.com/kn-in/help/12445/windows-keyboard-shortcuts
@@ -478,6 +545,9 @@ https://ss64.com/ps/
 * https://en.wikipedia.org/wiki/Windows_key
 * https://www.makeuseof.com/tag/windows-shortcuts-101-ultimate-keyboard-shortcut-guide/
 * https://lifehacker.com/the-master-list-of-new-windows-7-shortcuts-5390086
+* Keyboard shortcuts in Microsoft Windows 7/8.1/10 - https://support.microsoft.com/en-au/help/12445/windows-keyboard-shortcuts
+* Windows keyboard shortcuts for accessibility (for Windows 7/8.1/10) - https://support.microsoft.com/en-au/help/13810/windows-keyboard-shortcuts-accessibility
+* https://support.microsoft.com/en-au/help/13805/windows-keyboard-shortcuts-in-apps (for Windows 8.1 and Windows 10)
 * и други (за допълване после...)
 
 ## Уебсайтове за преглед на свалени от Интернет уебстраници (deadlinks, 404 Not Found), съхранени от историческа гледна точка („Интернет археология“), защото са значими/полезни/културно интересни ##
