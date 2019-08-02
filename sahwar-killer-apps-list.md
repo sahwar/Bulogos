@@ -7,6 +7,8 @@
 
 * UnLocker v1.8 (можете да изтриете или преместите файлове, за които Windows отказва да изпълни съответната команда), Crystal Disk Info, [Melissa-Core](https://github.com/omaciel/Melissa-Core) (виртуален асистент за Windows, Linux и macOS, който има възможности за гласов синтез (A lovely virtual assistant for OS X, Windows and Linux systems, it uses Google Chrome's speech-to-text engine, (macOS') Mac OS X's `say` command, Linux's `espeak` command or Ivona TTS.))
 
+* [unpaper](https://www.flameeyes.com/projects/unpaper), [ScanTailor](https://scantailor.org/) (https://github.com/scantailor/scantailor), [paperless](https://github.com/the-paperless-project/paperless), 
+
 <!--
 sudo apt-add-repository ppa:notepadqq-team/notepadqq
 sudo apt-get update
