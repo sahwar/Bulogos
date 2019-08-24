@@ -27,7 +27,11 @@
 * https://biblioman.chitanka.info/
 * https://prevodi.chitanka.info/
 * https://wiki.workroom.chitanka.info
+
 * https://gcompris.net/index-bg.html
+* https://distro.ibiblio.org - Linux distros
+* https://ibiblio.org/software/
+* https://thefreelibrary.org
 * http://learnfree.eu/?lang=bg (българоезична Линукс (Linux) дистрибуция)
 * http://cd.svoboden.net/bg/index.html = Учи Свободен е диск с безплатни за ползване и свободни за разпространение програми за българските училища. Всички тези програми са свободен софтуер, така че можете да изтеглите диска напълно безплатно - с това не нарушавате закона
 * http://spiralata.net/ = интернет онлайн библиотека с голям брой книги по философски, езотерични, духовни и други теми (безплатни за изтегляне); много от книгите са на български и руски
