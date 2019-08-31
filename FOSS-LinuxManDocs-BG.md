@@ -10,6 +10,79 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 ## Основни инструкции за превода на софтуер (програми за компютър, по-точно приложен софтуер) на български език плюс хранилища с файлове с български преводи на софтуер: ##
 * **BGlocalize**: https://sites.google.com/site/bglocalize/
 * **KDE-BG**: https://kde.lindeas.com/ (KNOWN AS [KDE in Bulgarian home page](http://kde.lindeas.com)) & https://l10n.kde.org/team-infos.php?teamcode=bg
+
+````
+* ***KDE Internationalization***
+** Translatable code: http://techbase.kde.org/Development/Tutorials/Localization/i18n
+** Common mistakes:
+http://techbase.kde.org/Development/Tutorials/Localization/i18n_Mistakes
+** Semantic translation:
+http://techbase.kde.org/Development/Tutorials/Localization/i18n_Semantics
+** Build systems:
+http://techbase.kde.org/Development/Tutorials/Localization/i18n_Build_Systems
+** Krazy checking:
+http://techbase.kde.org/Development/Tutorials/Localization/i18n_Krazy
+** Writing documentation:
+https://l10n.kde.org/docs/
+
+* KDE Localization:
+https://l10n.kde.org/scripts/l10n-stats/documentation.php
+** Translation Howto:
+http://l10n.kde.org/docs/translation-howto
+** Localization Guide:
+http://techbase.kde.org/Localization
+** Building l10n Modules:
+http://techbase.kde.org/Development/Tutorials/Localization/Building_KDE%27s_l10n_Module
+** Localization Tools:
+https://l10n.kde.org/tools/
+** KDE Localize (edit .po, .pot (.mo), and .ts/.qm (?) software-localization files):
+http://userbase.kde.org/Lokalize
+
+* _*KDE Localization Dictionary*_ (речник с преведени текстови низове за KDE):
+** Search Translations: https://l10n.kde.org/dictionary/search-translations.php
+** Compare Translations: https://l10n.kde.org/dictionary/compare-translations.php
+https://l10n.kde.org/scripts/l10n-stats/documentation.php
+
+* KDE5 Localization Statistics (Stats):
+** https://l10n.kde.org/stats/gui/trunk-kf5/team/
+** https://l10n.kde.org/stats/gui/trunk-kf5/team/bg/
+** https://l10n.kde.org/stats/gui/stable-kf5/team/
+** https://l10n.kde.org/stats/gui/stable-kf5/team/bg/
+
+* KDE4 Localization Statistics (Stats):
+** https://l10n.kde.org/stats/gui/stable-kde4/team/
+** https://l10n.kde.org/stats/gui/stable-kde4/team/bg/
+
+======
+
+https://l10n.kde.org/teams-list.php
+https://l10n.kde.org/team-infos.php?teamcode=bg
+
+* _KDE in Bulgarian home page (Website):_
+http://kde.lindeas.com/
+
+* _"Dict" Bulgarian free software translators mailing list:_
+http://ludost.net/cgi-bin/mailman/listinfo/dict
+
+****A new HTML table to suggest for adding to https://sites.google.com/site/bglocalize/dict (with git diffs to the document OR to its HTML iframe table columns!!!):****
+
+* White = the official default English text string(s)/term/collocation
+* Light Blue = technical notes, context, hyperlinks about the technology and its English-language text string/term & translation problems (including images and linked videos)
+* Light Green = recommended translation(s) into Bulgarian
+* Light Yellow = permitted, okay-ish translations into Bulgarian
+* Light Red = translations into Bulgarian which are NOT recommended
+* Light Purple = contributors <theircontactemail@example.com>
+[git diffs of the table]
+* Light Pink/Light Grey = hyperlinks to the specific version of TITLED (named) apps which utilize this localized translation strings (these localized translation strings), including a hyperlink to the source-template and localized-language-translation-strings.[someformat] for the hyperlinked version...
+
+String Localization Statistics Coloring-Scheme (borrowed from https://l10n.kde.org/stats/gui/stable-kf5/team/ with slight modifications):
+
+[Dark] Green (recommended translated messages) = translated
+[Dark] Blue (fuzzy messages) = fuzzy translated
+[Dark] Red (untranslated messages) = untranslated
+[Dark] Purple (info not available) = no info (N/A, ???)
+````
+
 * **GNOME-BG**: http://fsa-bg.org/project/gtp
 * **FOSS-BG-translators EMailList (Пощенският списък за преводи и локализация на български на Linux, познат и като „Пощенският списък за преводи и локализация на KDE“)**: <dict@ludost.net> (за записване/абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict) (KNOWN AS ["Dict" Bulgarian free software translators mailing list](http://ludost.net/cgi-bin/mailman/listinfo/dict))
 * **[BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/)**, [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
