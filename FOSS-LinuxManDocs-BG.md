@@ -81,6 +81,23 @@ String Localization Statistics Coloring-Scheme (borrowed from https://l10n.kde.o
 [Dark] Blue (fuzzy messages) = fuzzy translated
 [Dark] Red (untranslated messages) = untranslated
 [Dark] Purple (info not available) = no info (N/A, ???)
+
+======
+
+_KDE DE (desktop environment) apps:_
+https://community.kde.org/Main_Page
+https://community.kde.org/Konqi
+
+_KDE apps for MS Windows:_
+https://community.kde.org/Windows
+https://chocolatey.org/profiles/KDE
+
+KDE Localization:
+https://community.kde.org/KDE_Localization
+https://community.kde.org/KDE_Localization/LTMT
+
+https://l10n.kde.org/scripts/l10n-stats/documentation.php
+
 ````
 
 * **GNOME-BG**: http://fsa-bg.org/project/gtp
@@ -505,10 +522,19 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 
 * **и други (за допълване после...)**
 
-## HTML, HTML5, CSS (CSSv2.1, CSSv3), JS (JavaScript) + `npm`
+## Международни IT стандарти, HTML, HTML5, CSS (CSSv2.1, CSSv3), JS (JavaScript) + `npm`
 
-* **The HTML5 Living Standard:** https://html.spec.whatwg.org/ + https://html.spec.whatwg.org/multipage/
+_Internet & Web/WWW standards:_
+
+* **The HTML5 Living Standard:**
+https://html.spec.whatwg.org/ 
+https://html.spec.whatwg.org/multipage/ (The HTML5 Standard - Living Document)
+https://whatwg.org/
+https://spec.whatwg.org/
+https://idea.whatwg.org/
+
 * **W3C**: https://www.w3.org/
+W3C All Standards and Drafts - https://www.w3.org/TR/
 * http://caniuse.com
 * http://w3schools.com
 * 
@@ -537,6 +563,125 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 * http://html5shiv.googlecode.com/svn/trunk/html5.js
 * https://cdnjs.com/libraries/html5shiv
 * https://github.com/aFarkas/html5shiv
+
+````
+http://www.compciv.org/unix-tools/ (backup: https://archive.is/OQs4L )
+http://www.compciv.org/bash-guide/ (backup: https://archive.fo/tnMIb )
+
+
+https://en.wikipedia.org/w/index.php?title=List_of_Unix_commands&oldid=913154746
+https://en.wikipedia.org/w/index.php?title=Template:Unix_commands&oldid=899945612
+https://en.wikipedia.org/w/index.php?title=List_of_GNU_Core_Utilities_commands&oldid=905360389
+https://en.wikipedia.org/w/index.php?title=Template:Core_Utilities_commands&oldid=888053126
+https://en.wikipedia.org/w/index.php?title=List_of_Unix_daemons&oldid=884762979
+https://en.wikipedia.org/w/index.php?title=Util-linux&oldid=903682516
+https://translationproject.org/domain/util-linux.html
+https://en.wikipedia.org/w/index.php?title=Template:GNU&oldid=902212889
+http://www.math.utk.edu/~vasili/refs/commands.html (backup: https://archive.is/TvQVI )
+https://www.guru99.com/must-know-linux-commands.html
+https://www.google.com/search?client=avast&q=list+of+unix+commands
+````
+
+## Други важни международни стандарти
+https://en.wikipedia.org/wiki/List_of_mobile_telephone_prefixes_by_country
+
+International standards:
+https://en.wikipedia.org/w/index.php?title=ISO_8601&oldid=913163505 (international datetime stamp)
+https://www.w3.org/TR/NOTE-datetime-970915 (datetime stamp standards)
+
+https://en.wikipedia.org/w/index.php?title=OSI_model&oldid=913136546
+
+ITU-T Recommendations (Standardization, international standards):
+https://www.itu.int/en/ITU-T/publications/Pages/recs.aspx
+
+### IEEE standards:
+* https://standards.ieee.org/
+* https://www.ieee.org/standards/index.html
+* https://standards.ieee.org/standard/index.html?utm_source=mm_link&utm_campaign=find&utm_medium=std&utm_term=find%20standards
+Examples:
+https://www.techstreet.com/ieee/standards/ieee-754-2019?utm_source=web&utm_medium=saprdpg&utm_campaign=product-q3&utm_term=754&utm_content=purchase&gateway_code=ieee&product_id=2033371 (IEEE 754-2019 - IEEE Standard for Floating-Point Arithmetic - STANDARD by IEEE, 07/22/2019)
+
+### IETF standards:
+
+* IETF documents:
+https://tools.ietf.org/html/
+* IETF **RFC (Request for Comments)** Index:
+https://tools.ietf.org/rfc/index
+* IETF RFC (Request for Comments) Index (alternative version):
+https://tools.ietf.org/rfc/mini-index
+https://tools.ietf.org/html/rfc70
+https://tools.ietf.org/tools/rfcindex/
+* IETF WGs (IETF Working Groups):
+https://tools.ietf.org/wg/
+Examples:
+https://www.ietf.org/rfc/rfc2119.txt
+https://tools.ietf.org/html/rfc3339
+
+
+https://wiki.archlinux.org/index.php/list_of_applications
+https://en.wikipedia.org/wiki/List_of_Latin_phrases_(full)
+
+~
+
+### **DIN** (German (Germany's) DIN national standards):
+https://www.din.de/en/about-standards/din-standards
+https://en.wikipedia.org/wiki/List_of_DIN_standards
+https://en.wikipedia.org/wiki/Template:Deutsches_Institut_f%C3%BCr_Normung
+
+### **ANSI** (the American National Standards Institute)
+* https://en.wikipedia.org/w/index.php?title=American_National_Standards_Institute&oldid=910232293 (ANSI = American National Standards Institute)
+* ANSI C (programming language): https://en.wikipedia.org/w/index.php?title=ANSI_C&oldid=901168093
+
+### ISO (International Organization for Standardization) standards
+* https://en.wikipedia.org/wiki/List_of_ISO_standards (International Organization for Standardization (ISO))
+* https://iso.org/ , https://www.iso.org
+* https://en.wikipedia.org/w/index.php?title=International_Organization_for_Standardization&oldid=912232123
+* https://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
+* https://www.iso.org/advanced-search/x/
+* https://www.iso.org/obp/ui/
+* https://en.wikipedia.org/wiki/Template:ISO_standards
+* Example: https://www.iso.org/member/2064.html , ISO 9000, ISO 14000, ISO 22000, ISO/IEC 20000, ISO/IEC 27000
+
+### British (UK, United Kingdom) Standards:
+* https://en.wikipedia.org/w/index.php?title=British_Standards&oldid=909897486
+* https://en.wikipedia.org/wiki/BSI_Group
+* https://www.bsigroup.com/
+* https://www.bsigroup.com/en-GB/
+* Examples: BS 25999, BS 65000
+
+### Bulgarian national standards
+* https://www.bds-bg.org/en (**The Bulgarian Institute for Standardization (BDS)** (_Българският институт за стандартизация (БДС или БИС)_) is the national executive body for standardization in the Republic of Bulgaria.
+* See also:
+* http://www.bas.bg/en = The Bulgarian Academy of Sciences (BAS) (_Българската академия на науките (БАН)_)
+
+### More national and international standards (standardization)
+* List of national standards institutions: https://en.wikipedia.org/w/index.php?title=Standards_organization&oldid=909918879
+* https://en.wikipedia.org/wiki/List_of_IEC_standards (International Electrotechnical Commission (IEC))
+* https://en.wikipedia.org/wiki/List_of_EN_standards
+* https://en.wikipedia.org/wiki/List_of_ASTM_standards
+* https://en.wikipedia.org/wiki/Category:Lists_of_standards
+* European Committee for Standardization (CEN)
+* European Committee for Electrotechnical Standardization (CENELEC)
+* European Telecommunications Standards Institute (ETSI)
+* International Telecommunication Union (ITU)
+* The International Customer Service Institute (TICSI)
+* Trading Standards Institute (TSI)
+* etc.
+* https://en.wikipedia.org/w/index.php?title=Category:Technical_specifications&oldid=532589764
+* https://en.wikipedia.org/w/index.php?title=Product_design_specification&oldid=845239869
+* https://en.wikipedia.org/w/index.php?title=Category:Product_development&oldid=824936923
+* https://en.wikipedia.org/w/index.php?title=Open_standard&oldid=913281998
+* https://en.wikipedia.org/w/index.php?title=Royalty-free&oldid=900980171
+Tags: Management system, Standardization, Standards organization
+
+### Stock icons, stock/production music & stock images:
+* Stock icons&logos:
+** The Noun Project = https://thenounproject.com/term/stock/161182/
+
+https://en.wikipedia.org/w/index.php?title=Production_music&oldid=911594326
+
+
+----
 
 Etc.:
 * waifu2x
@@ -639,5 +784,7 @@ https://en.archivarix.com/
 http://www.waybackmachinedownloads.com/en/
 https://www.ghacks.net/2017/04/04/website-downloader-download-entire-wayback-machine-site-archives/
 https://www.reddit.com/r/thepiratebay/comments/7l5kro/the_wayback_machine_and_the_pirate_bay/
+
+##
 
 * и други...
