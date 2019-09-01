@@ -9,6 +9,7 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 
 ## Основни инструкции за превода на софтуер (програми за компютър, по-точно приложен софтуер) на български език плюс хранилища с файлове с български преводи на софтуер: ##
 * **BGlocalize**: https://sites.google.com/site/bglocalize/
+* **FOSS-BG-translators EMailList (Пощенският списък за преводи и локализация на български на Linux, познат и като „Пощенският списък за преводи и локализация на KDE“)**: <dict@ludost.net> (за записване/абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict) (KNOWN AS ["Dict" Bulgarian free software translators mailing list](http://ludost.net/cgi-bin/mailman/listinfo/dict))
 * **KDE-BG**: https://kde.lindeas.com/ (KNOWN AS [KDE in Bulgarian home page](http://kde.lindeas.com)) & https://l10n.kde.org/team-infos.php?teamcode=bg
 
 ````
@@ -70,7 +71,7 @@ http://ludost.net/cgi-bin/mailman/listinfo/dict
 * Light Blue = technical notes, context, hyperlinks about the technology and its English-language text string/term & translation problems (including images and linked videos)
 * Light Green = recommended translation(s) into Bulgarian
 * Light Yellow = permitted, okay-ish translations into Bulgarian
-* Light Red = translations into Bulgarian which are NOT recommended
+* Light Red = translations into Bulgarian which are NOT recommended (including mixed stuff like "log-нете се" и „къмътва“ и „куплунг гаджет“ :P)
 * Light Purple = contributors <theircontactemail@example.com>
 [git diffs of the table]
 * Light Pink/Light Grey = hyperlinks to the specific version of TITLED (named) apps which utilize this localized translation strings (these localized translation strings), including a hyperlink to the source-template and localized-language-translation-strings.[someformat] for the hyperlinked version...
@@ -98,14 +99,50 @@ https://community.kde.org/KDE_Localization/LTMT
 
 https://l10n.kde.org/scripts/l10n-stats/documentation.php
 
+---
+
+Linux From Scratch (LFS) books:
+http://lfs.phayoune.org/lfs/
+http://lfs.phayoune.org/blfs/
+http://lfs.phayoune.org/alfs/
+https://trac.clfs.org/
+http://lfs.phayoune.org/blfs/downloads/stable/BLFS-BOOK-8.4-nochunks.html
+http://lfs.phayoune.org/blfs/downloads/stable-systemd/BLFS-BOOK-8.4-systemd-nochunks.html
+http://lfs.phayoune.org/blfs/view/8.1/lxqt/lxqt-session.html
+http://lfs.phayoune.org/blfs/view/8.1/index.html
+http://lfs.phayoune.org/blfs/
+http://lfs.phayoune.org/blfs/read.html
+http://lfs.phayoune.org/blfs/view/stable/
+
 ````
 
 * **GNOME-BG**: http://fsa-bg.org/project/gtp
-* **FOSS-BG-translators EMailList (Пощенският списък за преводи и локализация на български на Linux, познат и като „Пощенският списък за преводи и локализация на KDE“)**: <dict@ludost.net> (за записване/абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict) (KNOWN AS ["Dict" Bulgarian free software translators mailing list](http://ludost.net/cgi-bin/mailman/listinfo/dict))
+https://l10n.gnome.org/teams/bg/
+http://translatehouse.org/
+https://l10n.gnome.org/module/gnome-latex/
+http://docs.translatehouse.org/projects/translate-toolkit/en/latest/commands/pogrep.html?id=toolkit/pogrep
+* https://translatehouse.org/
+* https://translationproject.org/team/bg.html
+For backup purposes, each month a tarball containing all the above PO files is made: https://translationproject.org/backups/last/bg.tgz
+https://translationproject.org/team/index.html
+https://translationproject.org/html/welcome.html
+* **XFCE-BG:**
+https://www.transifex.com/xfce/public/
+https://wiki.xfce.org/translations
+https://wiki.xfce.org/translations/translation_guidance_in_xfce
+http://docs.translatehouse.org/projects/localization-guide/en/latest/guide/xfce.html
+* **MATE-BG:**
+https://www.transifex.com/mate/MATE/
+* **LXQT-BG:** https://weblate.lxqt.org/languages/bg/
+https://weblate.lxqt.org/languages/
+https://weblate.lxqt.org/
+https://lxqt.org/
+https://github.com/lxqt/lxqt-l10n
+https://pkgs.org/download/lxqt-l10n
 * **[BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/)**, [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
 (* стари безплатни версии на програмата за проверка на правописа на български текстове IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking [linkhttp://freeplace.info/ididictionary/bulgarian_spell_checker/ ), WinEst, др.)
 * **[ludost.net](https://ludost.net/)** - https://ludost.net/projects.html - https://marla.ludost.net/hosted/ - Ако имате проект с не-стопанска цел и се чудите къде да го приютите, пратете ни e-mail на requests[at]ludost.net. Ние ще направим всичко, което е по силите ни, за да ви помогнем. (Включва и... :P "OpenDC - An OpenDC Hub for unlicensed (e.g. legal) anime content - maintained by Vasil Kolev" и https://anime.ludost.net/ - "български откачен аниме и манга портал")
-* `bglinux` — пакет за българизация и кирилизация на Linux (от Антон Кирилов Зиновиев и други); `bgtex` — пакет за българизация и кирилизация на TeX/LaTeX
+* `bglinux` — пакет за българизация и кирилизация на Linux (от Антон Кирилов Зиновиев и други); `bgtex` — пакет за българизация и кирилизация на TeX/LaTeX - вижте още XeTeX (Tex with Unicode fonts!)
 ```
 http://lml.bas.bg/~anton/linux/bglinux.html
 http://lml.bas.bg/~anton/original/
