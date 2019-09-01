@@ -142,7 +142,25 @@ https://pkgs.org/download/lxqt-l10n
 * **[BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/)**, [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
 (* стари безплатни версии на програмата за проверка на правописа на български текстове IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking [linkhttp://freeplace.info/ididictionary/bulgarian_spell_checker/ ), WinEst, др.)
 * **[ludost.net](https://ludost.net/)** - https://ludost.net/projects.html - https://marla.ludost.net/hosted/ - Ако имате проект с не-стопанска цел и се чудите къде да го приютите, пратете ни e-mail на requests[at]ludost.net. Ние ще направим всичко, което е по силите ни, за да ви помогнем. (Включва и... :P "OpenDC - An OpenDC Hub for unlicensed (e.g. legal) anime content - maintained by Vasil Kolev" и https://anime.ludost.net/ - "български откачен аниме и манга портал")
-* `bglinux` — пакет за българизация и кирилизация на Linux (от Антон Кирилов Зиновиев и други); `bgtex` — пакет за българизация и кирилизация на TeX/LaTeX - вижте още XeTeX (Tex with Unicode fonts!)
+* `bglinux` — пакет за българизация и кирилизация на Linux (от Антон Кирилов Зиновиев и други); `bgtex` — пакет за българизация и кирилизация на TeX/LaTeX - вижте още XeTeX (Tex with Unicode fonts!):
+https://en.wikipedia.org/wiki/List_of_TeX_extensions
+https://en.wikipedia.org/wiki/Comparison_of_TeX_editors
+https://en.wikipedia.org/wiki/Template:TeX_editors
+http://xetex.sourceforge.net/
+https://tug.org/usergroups.html#bg
+https://www.ctan.org/lugs
+Local Bulgarian TeX User Group (UG):
+bgTEX
+Bul­gar­ian LATEX Users Group
+Dept. of Ap­plied Math­e­mat­ics and Statis­tics
+Univer­sity of Ruse
+8 Stu­dentska str.
+Ruse,7017
+Bul­garia
+Web: groups.google.com/fo­rum/?hl=bg&from­groups#!fo­rum/bul­gar­ian-la­tex-users-group
+Email: bul­gar­ian-la­tex-users-group@google­groups.com
+Lan­guages: Bul­gar­ian
+
 ```
 http://lml.bas.bg/~anton/linux/bglinux.html
 http://lml.bas.bg/~anton/original/
