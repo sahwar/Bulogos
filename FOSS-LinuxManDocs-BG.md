@@ -140,7 +140,7 @@ https://lxqt.org/
 https://github.com/lxqt/lxqt-l10n
 https://pkgs.org/download/lxqt-l10n
 * **[BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/)**, [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
-(* стари безплатни версии на програмата за проверка на правописа на български текстове IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking [linkhttp://freeplace.info/ididictionary/bulgarian_spell_checker/ ), WinEst, др.)
+(* стари безплатни версии на програмата за проверка на правописа на български текстове **IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking** [IDIdictionary & spellchecker (hyperlink)](http://freeplace.info/ididictionary/bulgarian_spell_checker/), WinEst, др.)
 * **[ludost.net](https://ludost.net/)** - https://ludost.net/projects.html - https://marla.ludost.net/hosted/ - Ако имате проект с не-стопанска цел и се чудите къде да го приютите, пратете ни e-mail на requests[at]ludost.net. Ние ще направим всичко, което е по силите ни, за да ви помогнем. (Включва и... :P "OpenDC - An OpenDC Hub for unlicensed (e.g. legal) anime content - maintained by Vasil Kolev" и https://anime.ludost.net/ - "български откачен аниме и манга портал")
 * `bglinux` — пакет за българизация и кирилизация на Linux (от Антон Кирилов Зиновиев и други); `bgtex` — пакет за българизация и кирилизация на TeX/LaTeX - вижте още XeTeX (Tex with Unicode fonts!):
 https://en.wikipedia.org/wiki/List_of_TeX_extensions
@@ -474,7 +474,7 @@ Spellchecking dictionaries / Речници за проверка на прав�
 * http://extensions.libreoffice.org/extension-center?getCategories=Dictionary&amp;getCompatibility=any&amp;sort_on=positive_ratings&amp;path=%2FLibreOffice-Extensions-and-Templates%2Fextension-center&amp;portal_type=PSCProject&amp;SearchableText=
 * http://extensions.services.openoffice.org/dictionary
 * http://wiki.openoffice.org/wiki/Dictionaries (outdated)
-* http://hunspell.sourceforge.net
+* http://hunspell.sourceforge.net ; aspell-bg; enchant spellchecker; https://wiki.gnome.org/Projects/gspell ; etc. (see **BGoffice** above)
 
 * и други (за допълване после...)
 
