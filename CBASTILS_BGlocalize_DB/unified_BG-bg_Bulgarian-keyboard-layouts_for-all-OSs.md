@@ -13,6 +13,7 @@
 
 * EN английски (Съединени [американски] щати, САЩ)
 * САЩ - международен
+* (клавиатурни подредби за други езици, които се използват от БГ потребителя...)
 
 **Клавиатурни подредби от Михаил Балабанов от BGlocalize:**
 * bg_bds_ex.zip = Стандартна подредба по БДС 5237:1978 (разширена)
@@ -26,6 +27,16 @@ Bulgarian keyboard layouts by Anton Zinoviev:
 * new phon
 * TOADD: bg_bds_ex
 * TOADD: bg_phon_ex
+~~~
+* Кирилица за френски клавиатури, за Windows 95, 98, ME - как се настройва френски Windows за работа на кирилица, всички букви отговарят фонетично на клавиатурата. =
+http://5ko.free.fr/bg/winfr.html
+* Клавиатура с кирилица в ГНУ/Линукс - фина фонетична настройка на международни клавиатури за GNU/Linux. = http://5ko.free.fr/bg/winfr.html
+
+Светкавични команди (shortcuts) за Mozilla Firefox:
+http://5ko.free.fr/bg/fox.html
+http://5ko.free.fr/dl/mozilla-keywords.html
+http://5ko.free.fr/dl/mozilla-keywords-28.html
+http://5ko.free.fr/bg/winamp.html
 
 ## Apple macOS 10.10+: ##
 * вградените клавиатурни подредби, предоставени от Apple, Inc. за macOS
@@ -33,10 +44,12 @@ Bulgarian keyboard layouts by Anton Zinoviev:
 
 ## Google Android ##
 * v4.4+ : ...
-* v8 / v9: GBoard - BDS, phon, new phon; handwriting-recognition..., ...
+* v8 / v9: GBoard - Bulgarian (български): BDS, phon, new phon; Bulgarian (OCR'd handwriting-recognition)...:
+[GIF скрийншот],
+* ...
 
 ## Apple iOS ##
-* вградените
+* вградените клавиатурни подредби за Bulgarian (български) и свалени други от магазина App Store (Apple iOS Store) - https://www.apple.com/bg/ios/app-store/
 ...
 
 ---
@@ -87,6 +100,11 @@ Bulgarian keyboard layouts by Anton Zinoviev:
 * https://docs.huihoo.com/symbian/s60-5th-edition-cpp-developers-library-v2.1/GUID-35228542-8C95-4849-A73F-2B4F082F0C44/sdk/doc_source/guide/System-Libraries-subsystem-guide/CharacterConversion/SMSEncodingConverters/SMSEncodingTypes.html
 * https://help.tithe.ly/tithe-ly-chms-how-to-s/email-letters-and-sms/sms-information-about-sms-character-encoding-language-support-and-message-lengths
 * https://docs.huihoo.com/symbian/s60-5th-edition-cpp-developers-library-v2.1/GUID-35228542-8C95-4849-A73F-2B4F082F0C44/sdk/doc_source/guide/System-Libraries-subsystem-guide/CharacterConversion/SMSEncodingConverters/SMSEncodingTypes.html
+
+## Оригинална идея на ve4ernik за усъвършенстване на GSM клавиатурните подредби за English&Bulgarian локали ##
+* добавяне на знак и функция за отваряне на [latest] Unicode character-map-app (Java ME (?) / Nokia Symbian OS) към един от бутоните:
+(GIF снимки или скрийншоти/скрийншотове от физическата клавиатурна подредба на такива мобифони (мобилни устройства, съвременните: смартфони)...) + знак&функция за пунктуация + програмируем бутон с UTF-8 regexp-enabled Search... и drop-down меню със скролване надолу-нагоре... (scrolling=провлачване...)...
+* ...
 
 ---
 
