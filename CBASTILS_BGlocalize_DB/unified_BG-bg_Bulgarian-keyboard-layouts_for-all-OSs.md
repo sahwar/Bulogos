@@ -27,7 +27,6 @@ Bulgarian keyboard layouts by Anton Zinoviev:
 * new phon
 * TOADD: bg_bds_ex
 * TOADD: bg_phon_ex
-~~~
 * Кирилица за френски клавиатури, за Windows 95, 98, ME - как се настройва френски Windows за работа на кирилица, всички букви отговарят фонетично на клавиатурата. =
 http://5ko.free.fr/bg/winfr.html
 * Клавиатура с кирилица в ГНУ/Линукс - фина фонетична настройка на международни клавиатури за GNU/Linux. = http://5ko.free.fr/bg/winfr.html
