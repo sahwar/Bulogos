@@ -4,11 +4,20 @@
 * https://gramofonche.chitanka.info/ (безплатен)
 * https://www.dechica.com/
 * https://abv.selo.bg/za-nas
-
 * https://chitanka.info (книги от учебните програми от 1. от 12. клас вкл.: https://m2.chitanka.info/collections/school ) ( https://m2.chitanka.info/text/2784-chetirite-sporazumenija )
 * https://yasen.lindeas.com/wiki/OldBooks
+
+* https://chitanka.info/ 
+* https://choveshkata.net/  + https://fs.choveshkata.net/ + https://choveshkata.net/blog/ 
+* http://www.slovo.bg/index.php3 
+* https://liternet.bg/ (например http://archive.is/Ol3vk )
+* http://www.myschoolbel.info/ 
+* https://www.booksbg.org/ 
+
 * http://www.kultura.bg/bg/home
 * http://kweekly.bg/
+* https://toest.bg & https://peio.org & https://gatchev.info/blog/
+* http://openarts.info & https://artnewscafe.com
 * https://pravatami.bg/ (правата ни като граждани (на/в България); човешки права и граждански права)
 * https://rechnik.chitanka.info/
 * http://rechnik.info
@@ -45,6 +54,7 @@
 * http://cd.svoboden.net/bg/index.html = Учи Свободен е диск с безплатни за ползване и свободни за разпространение програми за българските училища. Всички тези програми са свободен софтуер, така че можете да изтеглите диска напълно безплатно - с това не нарушавате закона
 * http://spiralata.net/ = интернет онлайн библиотека с голям брой книги по философски, езотерични, духовни и други теми (безплатни за изтегляне); много от книгите са на български и руски
 * https://www.biblegateway.com/passage/?search=%D0%9F%D1%81%D0%B0%D0%BB%D0%BC%D0%B8+91&version=CBT (българоезични издания на християнската Библия)
+* 
 * (... за допълване...)
 
 Други речници (предимно са на английски език...):
