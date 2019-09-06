@@ -27,6 +27,7 @@ http://5ko.free.fr/bg/#soft
 
 https://georgi.unixsol.org/programs/
 https://georgi.unixsol.org/programs/bg_names_stats/
+https://georgi.unixsol.org/programs/num2bgmoney.php/view/ (словообразувателните модели на българските числителни имена)
 https://georgi.unixsol.org/programs/X11/
 https://georgi.unixsol.org/programs/X11/xkb.sh = xkb = https://bg.wikipedia.org/wiki/Клавиатурна_подредба
 ````

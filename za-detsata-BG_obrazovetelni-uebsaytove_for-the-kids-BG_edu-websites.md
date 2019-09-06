@@ -39,6 +39,7 @@
 * https://conceptart.org
 * https://sketchfab.com
 * https://gutenberg.org
+* [Project Gutenberg Distributed Proofreaders (pgdp.net)](http://www.pgdp.net/) - proofread OCR'd text of public domain books a page at a time, when you have time. All books are distributed freely. Includes math books, which are done using TeX.
 * https://libraryofcongress.org
 * http://learnfree.eu/?lang=bg (българоезична Линукс (Linux) дистрибуция)
 * http://cd.svoboden.net/bg/index.html = Учи Свободен е диск с безплатни за ползване и свободни за разпространение програми за българските училища. Всички тези програми са свободен софтуер, така че можете да изтеглите диска напълно безплатно - с това не нарушавате закона
@@ -70,6 +71,8 @@
 * https://www.duden.de/ (немски речник)
 * https://www.spanishdict.com/dictionary (испанско-английски речник)
 * https://www.languagetool.org/, https://grammarly.com , https://www.gala-global.org/translation-and-localization-industry-standards (Globalization and Localization Association (GALA))...
+* http://parliament.bg
+* http://dv.government.bg
 * (... за допълване...)
 
 * https://www.mdbg.net/chinese/dictionary (китайско-английски онлайн речник)
@@ -90,3 +93,57 @@
 * https://www.thefreelibrary.com/
 * http://web.archive.org
 * https://archive.is - https://archive.today
+
+## Научни и други
+* http://sciencedaily.com
+* http://newscientist.com
+* https://popularmechanic.com
+* https://arxiv.org = [arXiv.org](https://arxiv.org/) (_Open access to 1,586,128 e-prints in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Submissions to arXiv should conform to Cornell University academic standards. arXiv is owned and operated by Cornell University, a private not-for-profit educational institution. arXiv is funded by Cornell University, the Simons Foundation and by the member institutions._) ( https://arxiv.org/help/hypertex )
+* [Glossary of typographic terms](https://designschool.canva.com/blog/typography-terms/), mostly in pictures, by Janie Kliever.
+
+http://nitens.org/taraborelli/research
+
+---
+
+http://altmetrics.org/manifesto/
+
+https://i4oc.org/
+http://opencitations.net/
+https://wikimediafoundation.org/
+https://www.plos.org/
+https://elifesciences.org/
+https://datacite.org/
+http://www.curtin.edu.au/research/ccat/
+https://www.crossref.org/members/prep/19683
+
+---
+
+
+
+http://xetex.sourceforge.net/
+
+---
+
+ftp://ftp.fernuni-hagen.de/pub/windows/win32/ProTeXt/
+https://wch.github.io/latexsheet/
+https://ctan.org/pkg/lshort
+https://latex.org/forum/
+http://www.knopper.net/knoppix/index-en.html
+https://texfaq.org/FAQ-enginedev
+https://www.tug.org/applications/pdftex/
+https://ctan.org/pkg/etex/
+http://www.pragma-ade.com/
+https://www.tug.org/tex4ht/
+http://para.inria.fr/~maranget/hevea/
+https://www.mathjax.org/
+http://www.winedt.com/
+http://www.micropress-inc.com/fonts.htm
+https://www.canva.com/learn/typography-terms/
+http://luc.devroye.org/about.html
+https://www.tug.org/docs/liang/
+https://www1.essex.ac.uk/linguistics/external/clmt/latex4ling/
+https://gaara42.github.io/LaTeX_Boilerplate/
+
+---
+
+ftp://ftp.fernuni-hagen.de/pub/windows/win32/ProTeXt/

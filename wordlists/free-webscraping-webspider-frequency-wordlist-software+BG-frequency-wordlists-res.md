@@ -28,6 +28,9 @@ https://www.opensubtitles.org/addons/export_languages.php
 http://download.wikimedia.org/bgwiki/20110819/bgwiki-20110819-pages-articles.xml.bz2
 http://nikolay.it/content/files/2011-08/bg.wikipedia.org-words.rar
 https://archive.fo/NbDQz
+https://georgi.unixsol.org/programs/bg_names_stats/
+https://georgi.unixsol.org/programs/num2bgmoney.php/view/ (словообразувателните модели на българските числителни имена)
+https://georgi.unixsol.org/programs/egn.php/view/
 Честотна статистика на глаголите в корпус от 342 642 думи download txt file. - http://dcl.bas.bg/PDF/freq_verbs.zip
 http://dcl.bas.bg/PDF/ts_stats.txt.zip
 http://dcl.bas.bg/PDF/zh_stats.txt.zip
