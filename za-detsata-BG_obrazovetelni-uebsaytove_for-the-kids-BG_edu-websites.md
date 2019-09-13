@@ -58,6 +58,60 @@
 * 
 * (... за допълване...)
 
+Световноизвестни списания за изкуство:
+http://www.artnews.com/
+https://www.artpress.com
+
+* Известни OPEN (отворени) проекти и инициативи:
+
+http://openartfiles.bg
+https://opengameart.org/
+( https://www.deviantart.com/
+https://cgsociety.org/
+https://cgsociety.org/
+https://shop.tate.org.uk/
+http://pixeljoint.com/
+http://pixeljam.com
+http://ind.ie
+http://etch.io
+https://ldjam.com/ )
+https://openfontlibrary.org/
+https://openlibrary.org/
+https://fontlibrary.org/
+https://fonts.google.com/
+https://www.opensubtitles.org/en/downloads
+http://dl.opensubtitles.org/addons/export/
+http://opencitations.net/
+https://en.wikipedia.org/wiki/Open_data
+https://en.wikipedia.org/wiki/Open_standard
+https://en.wikipedia.org/wiki/Open_source_software
+https://www.opendesktop.org
+https://www.opensubtitles.org/en/downloads
+http://dl.opensubtitles.org/addons/export/
+https://www.open-tx.org
+
+* Съвременна българска журналистика, култура, литература и култура:
+
+https://toest.bg/
+https://kweekly.bg/
+http://kultura.bg/home
+
+https://liternet.bg/
+http://slovo.bg/
+https://chitanka.info/
+http://knigite.net/store/index.php
+http://helikon.bg
+http://www.libsu.uni-sofia.bg/slavica/
+http://www.bacl.org/
+http://www.balgarskiezik.org/
+http://liternet.bg/publish/bel/index.html
+http://slavdial.slovo.uni-plovdiv.bg/
+http://www.uni-plovdiv.bg/site.jsp?ln=1&id=39
+http://www.slav.uni-sofia.bg/Pages/publ.html
+http://www.ibl.bas.bg/
+
+* * *
+
 Други речници (предимно са на английски език...):
 * https://www.dicts.info/
 * https://www.dict.cc/
