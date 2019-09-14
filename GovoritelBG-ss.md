@@ -786,6 +786,14 @@ https://bezmishka.org/taxonomy/term/2
 [Google Tacotron 2 TTS engine](https://www.kaldata.com/it-%d0%bd%d0%be%d0%b2%d0%b8%d0%bd%d0%b8/google-%d0%bf%d1%80%d0%b5%d0%b4%d1%81%d1%82%d0%b0%d0%b2%d0%b8-tacotron-2-%d0%bd%d0%be%d0%b2%d0%b0%d1%82%d0%b0-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b7%d0%b0-%d0%bf%d1%80%d0%b5%d0%be%d0%b1-269970.html)
 http://dimiodati.altervista.org/zip/dspeech.zip
 
+* https://www.slant.co/topics/4456/~open-source-text-to-speech-tts-engines
+
+TTS:
+MaryTTS, eSpeak, gESpeaker, FestivalTTS, Merlin, Mimic, BalabolkaTTS
+STT (speech-to-text):
+CMU Sphinx, Julius, HTK, Kaldi
+
+https://www.slant.co/topics/9395/~open-source-speech-to-text-stt-engines
 
 ### 7. (G)UI ideas from Librera Reader (for Google Android) ###
 
