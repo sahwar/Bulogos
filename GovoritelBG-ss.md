@@ -609,7 +609,7 @@ r'		cut		r'as		ряз
 
 ======
 
-
+2002bgdict.pdf --- IPA transcription examples
 
 -->
 
@@ -782,6 +782,10 @@ https://bezmishka.org/taxonomy/term/2
 ````
 
 * https://github.com/omaciel/Melissa-Core = виртуален асистент за Windows, Linux и macOS, който има възможности за гласов синтез (A lovely virtual assistant for OS X, Windows and Linux systems, it uses Google Chrome's speech-to-text engine, (macOS') Mac OS X's `say` command, Linux's `espeak` command or Ivona TTS.)
+* [DSpeech](https://www.kaldata.com/%d1%81%d0%be%d1%84%d1%82%d1%83%d0%b5%d1%80/dspeech-268550.html)
+[Google Tacotron 2 TTS engine](https://www.kaldata.com/it-%d0%bd%d0%be%d0%b2%d0%b8%d0%bd%d0%b8/google-%d0%bf%d1%80%d0%b5%d0%b4%d1%81%d1%82%d0%b0%d0%b2%d0%b8-tacotron-2-%d0%bd%d0%be%d0%b2%d0%b0%d1%82%d0%b0-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b7%d0%b0-%d0%bf%d1%80%d0%b5%d0%be%d0%b1-269970.html)
+http://dimiodati.altervista.org/zip/dspeech.zip
+
 
 ### 7. (G)UI ideas from Librera Reader (for Google Android) ###
 
