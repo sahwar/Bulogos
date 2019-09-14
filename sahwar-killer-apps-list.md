@@ -10,6 +10,8 @@ http://dimio.altervista.org/eng/ (backup HTML: http://archive.is/nM3aV )
 https://www.kaldata.com/%d1%81%d0%be%d1%84%d1%82%d1%83%d0%b5%d1%80/dspeech-268550.html
 * etc.
 
+* 
+
 ````
 https://gitlab.com/gnuwget/wget2
 https://translationproject.org/domain/wget2.html
@@ -39,6 +41,16 @@ https://georgi.unixsol.org/programs/X11/xkb.sh = xkb = https://bg.wikipedia.org/
 * UnLocker v1.8 (можете да изтриете или преместите файлове, за които Windows отказва да изпълни съответната команда), Crystal Disk Info, [Melissa-Core](https://github.com/omaciel/Melissa-Core) (виртуален асистент за Windows, Linux и macOS, който има възможности за гласов синтез (A lovely virtual assistant for OS X, Windows and Linux systems, it uses Google Chrome's speech-to-text engine, (macOS') Mac OS X's `say` command, Linux's `espeak` command or Ivona TTS.))
 
 * [unpaper](https://www.flameeyes.com/projects/unpaper), [ScanTailor](https://scantailor.org/) (https://github.com/scantailor/scantailor), [paperless](https://github.com/the-paperless-project/paperless), 
+
+* [...] NeoVim, Spacemacs, SpaceVim, Kakoune, KDE Kate, Notepad++ (MS Windows), Notepad2-mod, Notepad3, Notepadqq, Oni, CudaText, Howl, Eclipse Che, 
+ LightTable, qemacs, Femto Emacs, SynWrite, Emacs (>v23.2); Slap, Syntaxic, jEdit, SlickEdit (+its on-the-fly code beautifier), micro, nano, Yi (Haskell); GitHub Atom, Brackets, gEdit, gVim, 
+
+Spacemacs, NeoVim или Notepad3, Notepadqq, Notepad2-mod + awk & sed & ls & grep & pcre & iconv & wget & curl & lftp & aria2-cli, $pandoc, etc CLI commands, GitHub Atom, MS VSCode, Geany IDE, даже Notepad++ (Windows).
+
+Освен Spacemacs или NeoVim, друго няма читаво като GUI за emacs или vi(m), освен old-school GVim и GNU Emacs GUI, и разни експериментални нови разработки надстройки-mods на vim & emacs в GitHub и GitLab...
+https://github.com/myTerminal/super-emacs
+
+https://www.slant.co/topics/8142/~text-editors-for-opening-processing-large-text-files-4gb-on-windows
 
 <!--
 sudo apt-add-repository ppa:notepadqq-team/notepadqq
