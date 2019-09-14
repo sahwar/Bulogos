@@ -145,6 +145,8 @@ http://sofvisia.com
 http://softpedia.com
 http://alternative.to
 
+````
+
 ScanTailor, [OCRFeeder](https://gitlab.gnome.org/GNOME/ocrfeeder), YAGF, OctoOCR, http://ciir.cs.umass.edu/downloads/octo/, ABBYY FineReader (commercial but is the best desktop-app OCR), Google Translate OCR&handwriting-recognition
 
 https://www.ghacks.net/
