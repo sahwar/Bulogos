@@ -114,6 +114,49 @@ http://lfs.phayoune.org/blfs/
 http://lfs.phayoune.org/blfs/read.html
 http://lfs.phayoune.org/blfs/view/stable/
 
+---
+
+* Pootle localization servers, Weblate localization servers, Mozilla Pantoon/Pontoon localization servers & the Translate Toolkit
+
+* You can download the complete GNOME
+translation package:
+https://l10n.gnome.org/
+https://l10n.gnome.org/languages/bg/gnome-3-34/ui.tar.gz
+https://l10n.gnome.org/languages/en/gnome-3-34/ui.tar.gz
+https://l10n.gnome.org/languages/ru/gnome-3-34/ui.tar.gz
+
+* Amagama&Pootle:
+https://amagama-live.translatehouse.org/
+http://amagama.translatehouse.org/
+http://pootle.translatehouse.org/
+
+* LaunchPad BZR (Bazaar) translations & PPAs (Personal Package Archive with .deb's):
+https://translations.launchpad.net/
+
+* B-Translator by Dashamir Hoxha: http://bg.btranslator.org/
+Bulgarian:
+https://bg.btranslator.org/translations/bg/8f840b36f96c4fd4bc078607f6bf3c00b1e2bab2
+https://bg.btranslator.org/btr/project
+https://bg.btranslator.org/vocabulary/ICT_bg
+https://bg.btranslator.org/btr/project/ubuntu/gnome-shell/bg/dashboard
+https://bg.btranslator.org/btr/project/ubuntu/gnome-shell/bg/list?list_mode=untranslated
+https://bg.btranslator.org/btr/project/ubuntu/gnome-shell/bg/list?list_mode=untranslated
+https://bg.btranslator.org/translations/bg/2ced57f125910a9e8ab95deea86e4ad7be418b5a
+http://info.btranslator.org/
+https://l10n.org.al/translations
+http://info.btranslator.org/install.html
+https://bg.btranslator.org/
+https://l10n.org.al/
+<bg@l10n.org.al>
+.xbm file
+The scripts I use to download the translations are here:
+https://gitlab.com/b-translator/btr_server/tree/master/modules/custom/btrCore/data/get
+
+* Pylyglot:
+http://pylyglot.org/
+https://omaciel.github.io/translations/life/2014/07/12/end-of-pylyglot.html
+https://github.com/omaciel/pylyglot
+
 ````
 
 * **GNOME-BG**: http://fsa-bg.org/project/gtp
