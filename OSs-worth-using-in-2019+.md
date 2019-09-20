@@ -5,6 +5,8 @@
 ## The Big Holy Trinity of Desktop OSs ##
 _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility with older apps&older video-games); **7 SP1 (Pro/Ultimate x64)**, (8.1), **10**) (important related FOSS projects: see below), _**(GNU/)Linux**_ (Linux distros recommended by @sahwar for use in 2019: see below), and _**macOS**_ (X+; [Homebrew](https://brew.sh/), [MacPorts](http://macports.org/), Wine for macOS, [KDE apps for macOS X](https://community.kde.org/Mac)).
 
+**ve4ernik's pick:** _a hex-ple boot with: 1x Windows 7 (Professional or Ultimate)/8.1/10 (64-bit), 2x (GNU/)Linux distros, 1x macOS 10.10+, and latest 1x Google Android v9-v10+ (or CyanogenMod or PureOS), and 1x other OS (the Windows NTFS partitions and 2+ of the Linux XFS partitions are for data storage, the rest is for application-software usage, AAA-videogaming (Windows & Wine/PlayOnLinux+Valve SteamOS Linux), and general testing, programming, and tinkering, and R&D... (but this greatly depends on the specific types, models, and number of hardware PCs, smartphones, tablets, graphics tablets, etc. at your disposal/ownership/usage)... And a multi-monitor, keyboard+mouse+gamepads system setup config plus a home-owned setupbox entertainment box (x86 Windows, Linux, or XBMC/Kodi, or Android)_...
+
 ### Important MS Windows-related Microsoft & FOSS projects ###
 **[ReactOS](http://reactos.org/)**, **[Wine](https://www.winehq.org/)/PlayOnLinux**, [Cygwin](http://www.cygwin.com/), [MinGW](http://www.mingw.org/), [MinGW-w64](https://mingw-w64.org/doku.php/start), MSVC, Linux Subsystem for Windows10, [Chocolatey](http://chocolatey.org/), [NuGet](http://nuget.org/), OneGet (Windows10), `cmd.exe`&`PowerShell`, [Win-Builds](http://win-builds.org/doku.php), [KDE apps for MS Windows](https://community.kde.org/Windows) [2](https://techbase.kde.org/Getting_Started/Build/Historic/KDE4_Windows), [BusyBox](https://busybox.net/), etc.
 
@@ -108,7 +110,7 @@ Etc.:
 * Refracta
 * Slackware (uses sysvinit)
 * Stali (the static Linux, uses sinit)
-* Void Linux (uses runit)
+* **Void Linux** (uses runit)
 * Hyperbola (uses openrc)
 * Artix (offers OpenRC and runit)
 * Parabola GNU/Linux (uses systemd by default, also offers openrc as an alternative init)
@@ -192,7 +194,7 @@ https://archive.fo/yHryi
 https://h-node.org/ - a database for open-hardware
 https://www.gnu.org/distros/free-system-distribution-guidelines.html
 
-If you wish to go FULL F(L)OSS in terms of software AND hardware, see these:
+**_If you wish to go FULL F(L)OSS in terms of software AND hardware, see these:_**
 
 * **linux-libre**
 * https://librecmc.org/ (linux-libre for embedded devices)
@@ -201,6 +203,8 @@ Most F(L)OSS hardware sellers (many desktop PCs and hardware PCs come bundled wi
 * https://libreboot.org/suppliers.html
 * **https://tehnoetic.com/TET-X200T**
 * **https://www.thinkpenguin.com/**
+* https://system76.org
+* https://puri.sm
 * https://www.gnu.org/links/companies.html
 * https://www.gnu.org/links/non-ryf.html
 https://www.thinkpenguin.com/
@@ -230,3 +234,19 @@ _FSF-approved Desktops/Servers:_
 * Technoethical D16 Server Mainboard with Libreboot
 (The Tehnoethical TET-D16 is a dual-socket ASUS KGPE D16 server/workstation board preinstalled with Libreboot, the fully free BIOS replacement.)
 * Vikings ASUS KGPE D16 Mainboard - FSF RYF Certified
+
+## Version-control systems (e.g. GitHub alternatives):
+I personally like&use GitHub BUT I understand that many people dislike Microsoft buying GitHub and so they prefer self-hosted GitLab/etc. or hosting their website elsewhere with some free or paid hosting company...
+
+The cool alternatives are:
+self-hosted instance(s) of **GitLab** OR **Gitea** OR **[Gogs]()** (e.g. https://gogs.librecmc.org/libreCMC/libreCMC/src/v1.4/docs/Supported_Hardware.md ) - Git-scm; **Fossil** (https://fossil-scm.org/home/doc/trunk/www/index.wiki), **Bazaar**, **SVC**, **Mercurial**, etc.
+
+## F(L)OSS chemistry software:
+OpenBabel (opens-source chemistry software package): http://openbabel.org/wiki/Main_Page
+
+## FOSS CAD:
+* OpenCAD
+
+ETC. ...
+(to be continued... in some other lifetime, hehe... Maybe.
+SEE YOU, SPACE COWBOY... AND THANKS FOR ALL THE FISH. Nah, keep breathing, soldier of fortune...)
