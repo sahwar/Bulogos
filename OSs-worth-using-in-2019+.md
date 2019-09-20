@@ -165,7 +165,7 @@ https://libreplanet.org/wiki/Group:Hardware/Freest (https://archive.fo/B6obD)
 https://libreboot.org/docs/hardware/ (https://archive.fo/mDL52)
 http://www.gnewsense.org/Main/LaptopGuide
 
-* ThinkPad T400s + [libreboot]() + Trisquel GNU/Linux;
+* ThinkPad T400s + [libreboot](http://libreboot.org) + Trisquel GNU/Linux;
 * Lemote Yeeloong, [OLPC (One Laptop Per Child)](http://one.laptop.org/about/specs) (https://archive.fo/yHryi) + WiFi adaptor due to a nonfree firmware blob for the WiFi card.
 RMS (Richard M. Stallman) dislikes 'Windows on the Intel Classmate, or nowadays a Chromebook that sends the child's personal data to Google.'
 * [Hardware (laptops&desktop PCs) endorsed by the FSF (Free Software Foundation)](https://www.fsf.org/resources/hw/systems) (https://archive.fo/HFXfE)
@@ -191,6 +191,38 @@ https://www.gnu.org/distros/optionally-free-not-enough.html
 https://archive.fo/yHryi
 https://h-node.org/ - a database for open-hardware
 https://www.gnu.org/distros/free-system-distribution-guidelines.html
+
+If you wish to go FULL F(L)OSS in terms of software AND hardware, see these:
+
+* **linux-libre**
+* https://librecmc.org/ (linux-libre for embedded devices)
+* **Libreboot**: https://libreboot.org/ (instead of http://coreboot.org)
+Most F(L)OSS hardware sellers (many desktop PCs and hardware PCs come bundled with linux-libre kernel - GNU+Linux/(GNU/)Linux/LiGnux ):
+* https://libreboot.org/suppliers.html
+* **https://tehnoetic.com/TET-X200T**
+* **https://www.thinkpenguin.com/**
+* https://www.gnu.org/links/companies.html
+* https://www.gnu.org/links/non-ryf.html
+https://www.thinkpenguin.com/
+https://www.crowdsupply.com/eoma68
+* https://www.crowdsupply.com/
+https://www.thinkpenguin.com/gnu-linux/catalog
+https://www.thinkpenguin.com/catalog/notebook-computers-gnu-linux-2
+https://www.thinkpenguin.com/gnu-linux/penguin-t2-gnulinux-laptop
+https://www.thinkpenguin.com/gnu-linux/penguin-j2-gnulinux-laptop
+https://01.org/powertop/
+* **https://www.thinkpenguin.com/gnu-linux/catalog**
+https://www.thinkpenguin.com/catalog/desktop-computers-gnu-linux
+https://www.thinkpenguin.com/gnu-linux/penguin-pro-6-gnu-linux-desktop
+https://www.thinkpenguin.com/catalog/clearance-items
+https://www.thinkpenguin.com/catalog/cds-case-badges-gnu-linux
+https://www.fsf.org/resources/hw/endorsement/respects-your-freedom
+* https://h-node.org/
+* **https://minifree.org/product/libreboot-x200-tablet/**
+
+http://lilypond.org/ = GNU software for musical notation
+
+---
 
 Google Android-related projects: https://replicant.us/ & https://www.cyanogenmods.org/ & https://lineageos.org/
 
