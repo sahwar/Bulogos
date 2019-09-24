@@ -25,9 +25,11 @@ Distribute your desktop Linux application in the AppImage format and win users r
 [Home](https://flatpak.org/), [Get Setup](https://flatpak.org/setup/), [Browse Apps ↗](https://flathub.org/), [Developer guide ↗](http://docs.flatpak.org/), [Press](https://flatpak.org/press/), [FAQ](https://flatpak.org/faq/), [Presentations & Articles](https://flatpak.org/presentations/), [Blog Posts](https://flatpak.org/blog-posts/), [About Us & Contact](https://flatpak.org/about/), https://twitter.com/FlatpakApps
 
 * Ubuntu **snap**'s (https://snapcraft.io/), [snapd](https://github.com/snapcore/snapd)
-* **source** .tar.gz, .tar.xz, .tar.7z files for compiling
+* **source** .tar.gz, .tar.xz, .tar.7z files for (dynamic or static) compiling
+* **[static-get = http://s.minos.io/](http://s.minos.io/) (Linux static metabuilds --- Portable binaries for Linux. Easily download Linux binaries that work across multiple distributions and versions. There are more than 1000 packages available and the list keeps growing.)**
+https://raw.githubusercontent.com/minos-org/minos-static/de7ceb083fb1945c9861185e43cb869121c098e7/static-get ; http://s.minos.io/ ; https://github.com/minos-org/minos-static
 * searching through the Linux-distro repositories via locally-installed package managers or searching through online package-system search-engine/databases frontends or searching through the Linux-distro's online directory of repositories of available distro packages: **https://pkgs.org/** (& related: http://www.getdeb.net/, http://www.rpmseek.com/index.html, https://build.opensuse.org/, etc.)
-* [Linuxbrew](http://linuxbrew.sh) (Info: https://www.ostechnix.com/linuxbrew-common-package-manager-linux-mac-os-x/)
+* [Linuxbrew](http://linuxbrew.sh) (Info: https://www.ostechnix.com/linuxbrew-common-package-manager-linux-mac-os-x/) ; [homebrew (macOS homebrew/Linuxbrew)](https://brew.sh/) (package manager for macOS) - https://docs.brew.sh/Installation - https://github.com/Homebrew/brew; [Homebrew Formulae](https://formulae.brew.sh/)
 * Braumeister (defunct?): http://braumeister.org/formulae/
 * Ubuntu LaunchPad.net **PPAs** (https://launchpad.net/)
 * **BitBucket** (https://bitbucket.org/)
@@ -41,12 +43,12 @@ Distribute your desktop Linux application in the AppImage format and win users r
 * [Repology.org](https://repology.org/) (example: https://repology.org/project/polybar/versions)
 * [SlackBuilds.org](https://slackbuilds.org/) - software packages for [Slackware Linux]()
 * http://slackpack.ludost.net/packages/ (Bulgarian repo/repository of Slackware Linux packages and .ISO images)
-* pkgbuild.com (example: http://pkgbuild.com/~alucryd/)
-* JFrog BinTray (https://jfrog.com/bintray/)
+* pkgbuild.com (example: http://pkgbuild.com/~alucryd/ )
+* JFrog BinTray (https://jfrog.com/bintray/ )
 * [Arch Linux AUR](https://aur.archlinux.org/packages/) (example: https://aur.archlinux.org/packages/?SeB=m&K=alucryd)
 * openSUSE Build Service (https://build.opensuse.org/) (example: https://build.opensuse.org/package/show/X11:Utilities/polybar/)
-* Fedora COPR AppImage's repos: https://copr.fedorainfracloud.org/coprs/
-* [XBPS](https://voidlinux.org/usage/xbps/) & etc. package systems (?)...
+* **Fedora COPR AppImage's repos**: https://copr.fedorainfracloud.org/coprs/
+* **[XBPS](https://voidlinux.org/usage/xbps/)** & etc. package systems (?)...
 * **FreeBSD** ``pkg`` - https://www.freebsd.org/cgi/man.cgi?query=pkg&sektion=8&n=1 (FreeBSD-BG / FreeBSD Bulgaria: http://www.bg-freebsd.org/)
 * Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/), [https://packagist.org](Packagist)
 * the PHP programming-language's package-repository (&dependancy manager / package manager) of PHP packages installable via [Composer](https://getcomposer.org/))
@@ -55,14 +57,15 @@ Distribute your desktop Linux application in the AppImage format and win users r
 * Modules (packages) for the Perl programming language: https://perldoc.perl.org/functions/package.html , https://perldoc.perl.org/5.30.0/index-modules-A.html 
 * Perl modules (packages & libraries) from CPAN (the Comprehensive Perl Archive Network) - https://www.cpan.org/ & https://perldoc.perl.org/5.30.0/App/Cpan.html
 * TeX/LaTeX packages from https://ctan.org/
-* , etc.
+* The website where you can download `curl`, `wget`, `ffmpeg`, and `libav` static executable builds for MS Windows x64 & (GNU/)Linux x64 (with all extra features (bells&whistles) bundled)...! dlduplexul?
+* ..., etc.
 
 * installing by getting the package via a version-control-system's graphical-app (i.e. Git, GitLab, GitHub, CVS, SVN, LaunchPad.net/bazaar CVS, etc.)...
 * [npm](https://www.npmjs.com/) (JavaScript packages)
 * https://mesonbuild.com/
 * https://ninja-build.org/
 * NPM (for JavaScript) & https://www.npmjs.com/package/pkg 
-* running Windows `.exe`/`.msi` files via [Wine](https://www.winehq.org/)/PlayOnLinux (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html, [DxWnd](https://sourceforge.net/p/dxwnd/home/Home/), etc.)
+* running Windows `.exe`/`.msi` files via **_[Wine](https://www.winehq.org/)/Wine-staging/PlayOnLinux_** (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html , **[DxWnd](https://sourceforge.net/p/dxwnd/home/Home/)**, etc.)
 * etc. ...
 
 #### Freeware and FOSS/FLOSS/open-source/(GNU/)Linux video-gaming (Linux gaming) ####
@@ -108,13 +111,14 @@ http://brothersoft.com/, https://www.kaldata.com/ (Bulgarian IT website), https:
   * * [PackageManagement/OneGet](https://github.com/OneGet/oneget) (Windows 10/Windows Server 2016's built-in package manager manager)
   * * [Scoop](https://scoop.sh/), A command-line installer (package manager) for Windows - https://github.com/lukesampson/scoop
   * * Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/)
+  * * (putting statically-build CLI/GUI .exe's in the `cmd.exe` or `PowerShell` root directories - for easy running (with a warning label)...)
   * * other external/3rd-party Windows GUI apps/package-managers for installing 3rd-party apps (application software)
 * etc.
 
-### macOS (Apple macOS, previously known as MacOS X and MachintoshOS) ###
+### Package managers for macOS (Apple macOS, previously known as MacOS X and MachintoshOS) ###
 * installing the macOS app from its macOS-centric `.dmg` binary/installer (from local physical-media or downloaded from Internet-sources) or macOS `.pkg` app installer ( https://en.wikipedia.org/wiki/.pkg )
-* macOS [homebrew (macOS homebrew/Linuxbrew)](https://brew.sh/) (package manager for macOS) - https://docs.brew.sh/Installation - https://github.com/Homebrew/brew; [Homebrew Formulae](https://formulae.brew.sh/)
-* [macports](https://www.macports.org/)
-[Tigerbrew](https://github.com/mistydemeo/tigerbrew) - experimental fork of Homebrew that adds support for PowerPC (PPC) Macs, and Macs running Tiger (or Leopard)
-* [Fink (ported Linux apps for Mac OS X (macOS) and Darwin OS - http://www.finkproject.org/index.php?phpLang=en](http://www.finkproject.org/index.php?phpLang=en)
-* running Windows .exe/.msi files via [Wine](https://www.winehq.org/)/PlayOnLinux for macOS
+* macOS **[homebrew (macOS homebrew/Linuxbrew)](https://brew.sh/) (package manager for macOS)** - https://docs.brew.sh/Installation - https://github.com/Homebrew/brew; [Homebrew Formulae](https://formulae.brew.sh/)
+* **[macports](https://www.macports.org/)**
+* **[Tigerbrew](https://github.com/mistydemeo/tigerbrew) - experimental fork of Homebrew** that adds support for PowerPC (PPC) Macs, and Macs running Tiger (or Leopard)
+* **[Fink (ported Linux apps for Mac OS X (macOS) and Darwin OS - http://www.finkproject.org/index.php?phpLang=en](http://www.finkproject.org/index.php?phpLang=en)**
+* running Windows `.exe`/`.msi` executable apps/files via **_[Wine](https://www.winehq.org/)/Wine-staging/PlayOnLinux_ for macOS**
