@@ -17,3 +17,9 @@ Here are some 3rd-party software tools to do the same **or with more options**:
 * https://github.com/clayfish/twitter-scraper
 
 Also note this when webscraping ANY website(s): https://en.wikipedia.org/wiki/Web_crawler#Politeness_policy
+
+----
+
+# How to download ALL tweets (including tweet-replies, and even tweets with images, GIFs, and YouTube videos hyperlinks, and maybe even the username and account avatar image) posted by a Twitter account:
+
+* ...
