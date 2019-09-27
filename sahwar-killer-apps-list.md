@@ -178,18 +178,89 @@ https://xyne.archlinux.ca/projects/tex2png/
 https://xyne.archlinux.ca/projects/timedatectl-restorer/
 https://xyne.archlinux.ca/projects/tiv/
 https://xyne.archlinux.ca/projects/unibrow/ (Unicode browser for Linux)
-https://xyne.archlinux.ca/projects/xac/
-https://xyne.archlinux.ca/projects/xrandr-mgr/
+**https://xyne.archlinux.ca/projects/xac/**
+**https://xyne.archlinux.ca/projects/xrandr-mgr/**
 https://xyne.archlinux.ca/repos/
 
 FreeFileSync, SyncThing
 
-````
+
 http://copy.sh/lcd/
 https://bellard.org/jslinux/
 
+**http://copy.sh/**
+**https://bellard.org/** (amazing software projects and DIY ideas!!!)
+**https://www.splitbrain.org/projects/** (very cool software projects and scripts!!!:
+````
+# Projects
+
+In this section you can find my various software projects. If not otherwise stated all my software is released under terms of the GPL.
+
+**[DokuWiki](https://www.splitbrain.org/projects/dokuwiki "projects:dokuwiki")** – currently the most active and biggest one. It's a PHP based Wiki engine which needs no database. It also powers this website.
+
+**[Crocofile](https://www.splitbrain.org/projects/crocofile "projects:crocofile")** – a file upload manager to share files by sharing an account
+
+**[Giraffe](https://www.splitbrain.org/projects/giraffe "projects:giraffe")** – a personal conference schedule tool for Android
+
+**[MonsterID](https://www.splitbrain.org/projects/monsterid "projects:monsterid")** – Create little monsters for avatar images with this PHP script
+
+**[File Icons](https://www.splitbrain.org/projects/file_icons "projects:file_icons")** – Community created 16×16 file type icons
+
+**[VideoDB](https://www.splitbrain.org/projects/videodb "projects:videodb")** – a PHP application to manage your movie collection originally written by me. I do no longer maintain it myself but it has a very active developer community.
+
+**[pam\_require](https://www.splitbrain.org/projects/pam_require "projects:pam_require")** – an authentication module for PAM (Pluggable Authentication Modules). Allows you to restrict access for services to certain users or groups.
+
+**[Fortunes](https://www.splitbrain.org/projects/fortunes "projects:fortunes")** – a collection of data files for the UNIX tool *fortune*. Features quotes from the *Discworld Novels*, *Forrest Gump*, *The Hitchhikers Guide to the Galaxy*, *The Simpsons*, *Star Wars* and *The X\-Files*.
+
+**[navilink.pl](https://www.splitbrain.org/projects/navilink "projects:navilink")** – a Perl script to download and upload data from and to a NaviGPS device via USB
+
+**[sanity.pl](https://www.splitbrain.org/projects/sanity "projects:sanity")** – a Perl script to recursively rename files and directories to sane names.
+
+**[extm3u.pl](https://www.splitbrain.org/projects/extm3u "projects:extm3u")** – creates MP3 playlists in extended Format understood by Winamp and XMMS (Perl)
+
+Many more can be found in my [Github Account](https://github.com/splitbrain "https://github.com/splitbrain").
+
+## Old stuff
+
+These projects are no longer actively maintained, but their code may be of interest to you.
+
+*   [My Two Cents](https://www.splitbrain.org/projects/my_two_cents "projects:my_two_cents") – Simple comment/annotation system for PHP
+
+*   [My Pictures](https://www.splitbrain.org/projects/mypictures "projects:mypictures") – a personal photo gallery in PHP
+
+*   [foocache](https://www.splitbrain.org/projects/foocache "projects:foocache") – simple PHP caching system
+
+*   [IR File Chooser](https://www.splitbrain.org/projects/irfc "projects:irfc") – Perl/GTK LIRC menu system
+
+*   [SimPlEdi \- Simple Playlist Editor](https://www.splitbrain.org/projects/simpledi "projects:simpledi") – Web based MP3 Playlist Editor (Perl)
+
+*   [Yet Another Filter Proxy](https://www.splitbrain.org/projects/yafp "projects:yafp") – A filtering web proxy in Perl
+
+*   [foreach.pl](https://www.splitbrain.org/projects/foreach "projects:foreach") – a Perl script to run a command on multiple files
+
+*   [FTP Index](https://www.splitbrain.org/projects/ftpindex "projects:ftpindex") – a search engine for FTP Servers
+
+*   [makewordlist.pl](https://www.splitbrain.org/projects/makewordlist "projects:makewordlist") – creates a list of words from a directory of textfiles (Perl)
+
+*   [Drag'n'Keyword](https://www.splitbrain.org/projects/drag_n_keyword "projects:drag_n_keyword") – Delphi Tool to create keywords from a given HTML file
+
+*   [Picture Commenter](https://www.splitbrain.org/projects/piccom "projects:piccom") – Easy adding of JPEG comments (Delphi)
+
+*   [Popup Message](https://www.splitbrain.org/projects/popupmessage "projects:popupmessage") – display SMB messages on Windows 9x systems (like Windows Messaging Service in XP)
+
+*   [QLIFF](https://www.splitbrain.org/projects/qliff "projects:qliff") – Quake Level Informator for Free
+
+*   [Tasknote](https://www.splitbrain.org/projects/tasknote "projects:tasknote") – An autosaving sticky note for the Windows Taskbar (Delphi)
+
+*   [xinabse is not a big search engine](https://www.splitbrain.org/projects/xinabse "projects:xinabse") – A spidering search engine (Perl and PHP)
+
+*   [Java Study Projects](https://www.splitbrain.org/projects/java "projects:java") – Some Java assignments from my study
+````
+* **https://byuu.org/** (amazing C++&etc. software!) - **https://byuu.net/** - **https://bsnes.byuu.org/**
+* Linux and MS Windows software by http://5ko.free.fr: http://archive.is/SXMfq ; http://archive.is/2U3pA ; http://archive.is/3Ns9y
+
 http://copy.sh/v86/
-https://vfsync.org/
+**https://vfsync.org/**
 http://www.charlesrosenberg.com/
 http://www.chuckrosenberg.com/workpg/
 http://www.chuckrosenberg.com/resumepg/restext.txt
@@ -215,11 +286,8 @@ https://www.fltk.org/links.php?V198+Q
 
 http://www.marcellozaniboni.net/mzsplit/
 file-splitting apps
-````
 
-````
-
-**Full list of all apps I've ever used with Microsoft Windows XP/7/8.1/10:**
+## **Full list of all apps I've ever used with Microsoft Windows XP/7/8.1/10:**
 * (TO ADD from my [CCleaner](https://www.ccleaner.com/) `install.txt` files & other files)
 * WinPcap, qTox IM, Ventrilo, TeamSpeak, [LogMeIn Hamachi](https://vpn.net) (VPN-like LAN-gaming over the Internet) (Hamachi-like virtual-LAN VPN tunnel software: https://beebom.com/hamachi-alternatives/, https://www.reddit.com/r/pcgaming/comments/6s1gsz/whats_a_good_2017_alternative_to_hamachi/, [ZeroTier](https://zerotier.com/) ([tutorial](https://www.reddit.com/r/pcgaming/comments/6s1gsz/whats_a_good_2017_alternative_to_hamachi/dm2mp76?utm_source=share&utm_medium=web2x)), [Tunngle](https://www.tunngle.net/en/), [Evolve](https://www.evolvehq.com/welcome), [Gameranger](https://gameranger.com), [LAN Bridger](http://lanbridger.com), http://www.radmin-vpn.com/, Microsoft Gaming Zone, Kali, Gamespy, Westwood Chat, https://www.techlila.com/hamachi-alternatives/, https://www.topbestalternatives.com/hamachi/, https://alternativeto.net/software/hamachi/?license=free, https://community.spiceworks.com/topic/1963329-seeking-alternatives-to-hamachi-vpn-with-similar-feature-set, https://alternative.me/hamachi, RadminVPN (Windows, freeware), Wippien (open-source, Windows, Linux; discontinued), DynVPN (open-source), Freelan, P2PVPN (open-source, but discontinued), Haguichi, Wirelends, VDE (Virtual Distributed Ethernet, open-source: Linux, BSD), IPOP (IP-over-P2P) (open-source, Linux), , **[SoftEther VPN](https://www.softether.org/) ([source-code at GitHub](https://github.com/SoftEtherVPN/SoftEtherVPN)) (open-source, Windows, Linux, Mac, FreeBSD, Android, iPhone, iPad and Windows Mobile !!!)**, Pertino/Cradlepoint, VPN L2TP/IPsec, etc.), https://www.winpcap.org/install/default.htm, https://nmap.org/npcap/, https://www.wireshark.org/; ... [Brackets (by Adobe and open-source contributors](http://brackets.io/) (https://www.github.com/adobe/brackets), [VisualStudio Code (VS Code) (by Microsoft)](https://code.visualstudio.com/), https://codeshare.io/, etc. ...
 
