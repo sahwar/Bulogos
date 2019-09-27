@@ -1,0 +1,74 @@
+https://github.com/sahwar/Bulogos/blob/master/manpage-structure-in-Bulgarian.txt
+
+-----------------------------------------------------------------------
+| Syntax: ENGLISH-LANGUAGE SECTION NAME = ИМЕ НА РАЗДЕЛА НА БЪЛГАРСКИ |
+-----------------------------------------------------------------------
+
+NAME = ИМЕ/НАИМЕНОВАНИЕ
+SYNOPSIS = РЕЗЮМЕ (КРАТЪК ОБЗОР(ЕН ПРЕГЛЕД))
+OVERVIEW = ОБЩ ПРЕГЛЕД
+DESCRIPTION = ОПИСАНИЕ
+FILENAMES = ИМЕНА НА ФАЙЛОВЕТЕ
+OPTIONS = ОПЦИИ
+EXAMPLES = ПРИМЕРИ
+EFFECTS = ЕФЕКТИ
+DIAGNOSTICS = ДИАГНОСТИКИ
+EXIT STATUS = КОДОВЕ ЗА СТАТУСА ПРИ ИЗХОД ОТ ПРОГРАМАТА
+FILES = ФАЙЛОВЕ
+NOTES = БЕЛЕЖКИ
+RETURN VALUE = ВРЪЩАНИ СТОЙНОСТИ
+ATTRIBUTES = АТРИБУТИ [НА КОМАНДАТА ЗА КОМАНДНИЯ РЕД?]
+LIMITATIONS = [ТЕХНИЧЕСКИ] ОГРАНИЧЕНИЯ
+CAVEATS = ВЪЗМОЖНИ ПРОБЛЕМИ; ПРЕДУПРЕЖДЕНИЯ, РИСКОВЕ
+CONFORMING TO = ОТГОВАРЯ НА СТАНДАРТИТЕ (СЛЕДВА (ПОДЧИНЯВА СЕ НА) СТАНДАРТИТЕ)
+	POSIX.1-2001, POSIX.1-2008, C89, C99.
+STANDARDS CONFORMANCE = ОТГОВАРЯ НА СТАНДАРТИТЕ
+ENVIRONMENT = ПРОМЕНЛИВИ НА СРЕДАТА [НА ОПЕРАЦИОННАТА СИСТЕМА]
+SEE ALSO = ВИЖТЕ СЪЩО
+LICENSE = ЛИЦЕНЗ
+AUTHORS = АВТОРИ
+SUPPORT = ПОДДРЪЖКА
+COPYRIGHT = АВТОРСИ ПРАВА (COPYRIGHT) / АВТОРСКИ ПРАВА (АВТОРСКИ ПРАВА И ИНТЕЛЕКТУАЛНИ ПРАВА (COPYRIGHT))
+BUGS = БЪГОВЕ (ПРОГРАМНИ ГРЕШКИ)
+COLOPHON = КОЛОФОН (КРАЙ/ЗАВЪРШЕК НА КНИГАТА...)
+...
+
+-----------------------------------------------------------------------
+| РЕЧНИК - DICTIONARY:                                                |
+-----------------------------------------------------------------------
+
+* COLOPHON
+['kalafan]
+n печ. завършък на книга, библиографско каре, винетка/емблема и пр. на издателството/печатницата
+from title-page to COLOPHON от първата до последната страница, от началото до края
+
+* CONFORM
+[kən'fɔ:m]
+1. приспособявам (се)
+съобразявам (се), подчинявам (се), следвам, спазвам (to), пригаждам се към установения ред/норми, рел. признавам авторитета на англиканската църква
+2. отговарям, подхождам, в съгласие съм (with, to)
+
+-----------------------------------------------------------------------
+| BASIC STRUCTURE OF MANPAGES:                                        |
+-----------------------------------------------------------------------
+
+NAME | SYNOPSIS | DESCRIPTION | OPTIONS | EXAMPLES | EXIT STATUS | STANDARDS CONFORMANCE | SEE ALSO | COPYRIGHT | BUGS | COLOPHON
+
+NAME
+    The name of the command or function, followed by a one-line description of what it does.
+SYNOPSIS
+    In the case of a command, you get a formal description of how to run it and what command line options it takes.
+DESCRIPTION
+    A textual description of the functioning of the command or function.
+EXAMPLES
+    Some examples of common usage.
+SEE ALSO
+    A list of related commands or functions.
+BUGS
+    List known bugs.
+AUTHOR
+   Specify your contact information.
+COPYRIGHT
+    Specify your copyright information.
+
+...
