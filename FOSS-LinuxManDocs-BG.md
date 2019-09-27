@@ -545,13 +545,55 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 
 Преводът на техническа литература и на англоезични текстове за софтуер е нелека задача и нерядко преводът е почти невъзможен заради [идиосинкратичните](https://bg.wikipedia.org/wiki/%D0%98%D0%B4%D0%B8%D0%BE%D1%81%D0%B8%D0%BD%D0%BA%D1%80%D0%B0%D0%B7%D0%B8%D1%8F) и идиолектни сливания на англоезични неологизми и англоезични програмистки сленг (жаргон), както и граматични проблеми при превода от английски на български език, плюс проблемната англицизация на съвременния български език...
 
+* https://wiki.archlinux.org/index.php/Man_page
+* https://en.wikipedia.org/wiki/Manpage
+* http://man.he.net/
+* [man7.org](http://man7.org/linux/man-pages/index.html). Upstream for Arch Linux's [man\-pages](https://www.archlinux.org/packages/?name=man-pages).
+* [Arch Linux man pages](https://jlk.fjfi.cvut.cz/arch/manpages/). Used for links from the wiki.
+* [manned.org](https://manned.org/) — collection from various Linux distributions, BSD, etc., with multiple package versions
+* [linux.die.net](https://linux.die.net/man/)
+* [man.cx](https://man.cx/) (an online viewer for... a total of 207277 available manpages (including translations). The last update ran at September 2nd, 2019)
+* [Debian man pages](https://manpages.debian.org/)
+* [Ubuntu man pages](http://manpages.ubuntu.com/)
+* [DragonFlyBSD man pages](https://leaf.dragonflybsd.org/cgi/web-man)
+* [FreeBSD man pages](https://www.freebsd.org/cgi/man.cgi)
+* [NetBSD man pages](http://netbsd.gw.com/cgi-bin/man-cgi)
+* [OpenBSD man pages](https://man.openbsd.org)
+* [Mac OS X man pages](https://developer.apple.com/documentation/Darwin/Reference/ManPages/index.html)\[[dead link](https://en.wikipedia.org/wiki/Wikipedia:Link_rot "wikipedia:Wikipedia:Link rot") 2019\-01\-17\]
+* [Plan 9 Manual — Volume 1](http://man.cat-v.org/plan_9/)
+* [Inferno Manual — Volume 1](http://man.cat-v.org/inferno/)
+* [Storage Foundation man pages](http://sfdoccentral.symantec.com/sf/5.0MP3/linux/manpages/index.html)
+* [The UNIX and Linux forums man page repository](https://www.unix.com/man-page/OpenSolaris/1/man/)
+* http://man.linuxquestions.org/
+* >>> https://roperzh.github.io/grapse/ = Live online `manpage` editor!
+
+**Examples:**
+* http://man7.org/linux/man-pages/man1/apropos.1.html (apropos - search the manual page names and descriptions)
+* http://man7.org/linux/man-pages/man1/whereis.1.html (whereis - locate the binary, source, and manual page files for a command)
+* http://man7.org/linux/man-pages/man1/locate.1.html
+* https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/
+* https://jlk.fjfi.cvut.cz/arch/manpages/man/ascii.7
+* http://man7.org/linux/man-pages/man1/xargs.1.html
+* http://sox.sourceforge.net/sox.html (backup: http://archive.is/7Argx )
+---
 * https://en.wikipedia.org/wiki/Man_page
 * https://linux.die.net/man/
-* http://man7.org/linux/man-pages/index.html
+* http://man7.org/linux/man-pages/index.html (e.g. http://man7.org/linux/man-pages/man1/xargs.1.html , 
 * https://www.systutorials.com/docs/linux/man/
-* https://linux.die.net/
+* https://linux.die.net/ ( https://linux.die.net/man/1/man )
+* http://man.he.net/ (e.g. http://man.he.net/man1/detex )
+* https://man.cx/
 * https://ss64.com/bash/
 
+---
+* https://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/
+* https://serverfault.com/questions/109490/how-do-i-write-man-pages
+* https://txt2tags.org/manpage.html - https://txt2tags.org/ (`txt2tags` is similar but not as powerful as `pandoc` and is akin to `markdown`)
+* https://wiki.archlinux.org/index.php/Man_page
+* https://curl.haxx.se/docs/manpage.html
+* https://www.gnu.org/software/wget/manual/wget.html
+* https://www.google.com/search?client=firefox-b-d&q=man.die+manpages
+---
 * https://www.tldp.org/links/nenglish.html
 * https://www.tldp.org/links/nenglish.html#bulgarian
 * https://www.debian.org/doc/user-manuals
@@ -560,6 +602,7 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 * https://ubuntu-manual.org/
 * Командата `$ bg` в POSIX/Linux: http://man7.org/linux/man-pages/man1/bg.1p.html :smiley:
 * The Jargon File (The Hacker's Dictionary): http://catb.org/jargon/html/ (най-нова версия), https://www.dourish.com/goodies/jargon.html (оригиналът), http://www.eps.mcgill.ca/jargon/jargon.html (v4.2.0, 31 JAN 2000), https://www.netmeister.org/news/jargon.html (v4.2.3, 23 NOV 2000); https://en.wikipedia.org/wiki/Jargon_File.
+* _The Linux Shell Scripting Tutorial (LSST) v2.0 (free book for bash-schellscripting)_ = https://bash.cyberciti.biz/guide/Main_Page
 * статии за софтуер от Wikipedia/Уикипедия, свободната онлайн енциклопедия, редактирана от потребителите си
 * и други (за допълване после...)
 
@@ -782,7 +825,7 @@ https://en.wikipedia.org/w/index.php?title=Production_music&oldid=911594326
 ----
 
 Etc.:
-* waifu2x
+* `waifu2x`, etc.
 * https://boingboing.net/2019/07/17/this-ai-turns-your-headshot-in.html
 
 Scientific articles:
@@ -849,6 +892,7 @@ https://ss64.com/ps/
 
 * [https://github.com/omaciel/1001 - 1001 algorithms you must implement before you die http://nerdson.com/blog/1001-noites](https://github.com/omaciel/1001)
 * programming = algorithms + programming (design?) patterns
+* 
 
 ### Български езиков пакет (langpack) за Windows XP, Windows 7, Windows 8/8.1, Windows 10, (GNU/)Linux, Google Android, macOS / Mac OS X, iOS, Symbian, Amazon Kindle
 
@@ -878,10 +922,23 @@ https://github.com/hartator/wayback-machine-downloader
 https://github.com/jsvine/waybackpack
 https://websitedownloader.io/wayback-machine-downloader/ ($)
 https://archive.org/details/webarchive_downloader
+**https://archive.org/web**
 https://en.archivarix.com/
 http://www.waybackmachinedownloads.com/en/
 https://www.ghacks.net/2017/04/04/website-downloader-download-entire-wayback-machine-site-archives/
 https://www.reddit.com/r/thepiratebay/comments/7l5kro/the_wayback_machine_and_the_pirate_bay/
+
+## Полезни бази данни с кратки програми (скриптове, scripts) и примерен код
+
+* https://www.commandlinefu.com/commands/browse
+* https://snipplr.com/
+* http://windows-commandline.com/
+
+* https://serverfault.com/
+* https://superuser.com/
+* https://askubuntu.com/
+* https://unix.stackexchange.com/
+
 
 ##
 
