@@ -928,7 +928,7 @@ http://www.waybackmachinedownloads.com/en/
 https://www.ghacks.net/2017/04/04/website-downloader-download-entire-wayback-machine-site-archives/
 https://www.reddit.com/r/thepiratebay/comments/7l5kro/the_wayback_machine_and_the_pirate_bay/
 
-## Полезни бази данни с кратки програми (скриптове, scripts) и примерен код
+## Полезни _бази [от] данни_ с кратки програми (скриптове, scripts) и примерен код (за `CLI` програмиране)
 
 * https://www.commandlinefu.com/commands/browse
 * https://snipplr.com/
@@ -939,6 +939,10 @@ https://www.reddit.com/r/thepiratebay/comments/7l5kro/the_wayback_machine_and_th
 * https://askubuntu.com/
 * https://unix.stackexchange.com/
 
+## (GNU/)Linux `bash` fortunes (famous quotes)
+* https://www.splitbrain.org/projects/fortunes
+* https://man.cx/fortune
+* https://man.cx/strfile
 
 ##
 
