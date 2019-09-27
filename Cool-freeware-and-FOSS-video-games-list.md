@@ -57,7 +57,7 @@ http://archive.is/QE0u8 )
 (e.g. DOTA2 MOBA, Heroes of Newerth MOBA, Path of Exile MOBA, SMITE MOBA, Heroes of the Storm MOBA, Knight Online MMO, The Elder Scrolls II: Daggerfall, Quest for Glory 2 Remake, etc.)
 * https://www.freewarefiles.com/Bubble-Bobble-Legacy_program_104744.html
 
-(_pasted https://github.com/sahwar/Bulogos/blob/master/notable-linux-app-installers-list.md _)
+_(pasted https://github.com/sahwar/Bulogos/blob/master/notable-linux-app-installers-list.md )_:
 
 * https://www.old-games.com/
 * http://www.oldapps.com (download older versions of apps for free!)
