@@ -31,6 +31,7 @@
 * **[Flattr.com](https://flattr.com/)**
 * ***SALT.bountysource.com*** - httpshttps://salt.bountysource.com/ (for open-source software projects, etc.) = 
 https://salt.bountysource.com/ (SALT - A crowdfunding platform that helps developers earn a monthly salary from open-source software) (e.g. https://salt.bountysource.com/teams/neovim)
+* https://opencollective.com
 
 * **Western Union (? Sorta reliable, mixed reviews.)** - https://www.westernunion.com/bg/en/terms-conditions-bg.html
 * **MoneyGram (? Sorta reliable, mixed reviews. Seems a bit more reliable than Western Union (?))** - http://moneygram.bg/
@@ -46,11 +47,7 @@ https://www.blockchain.com/btc/address/
 * Bidding in auctions or at physical bazaars/market-places (payment with money)
 * Money payment in advance (per agreement via written legal contract)
 * Some Bulgarian ISPs offer a [grace period](https://en.wikipedia.org/wiki/Grace_period) of several days to pay your ISP fee AFTER your last day of ISP service ends.
-* [Bulgarian Posts (National Postal Service)](http://bgpost.bg/bg/109) payment - 
-
-пощенски запис чрез "Български пощи" (трите имена, адрес, п.к., до поискване; И после ме уведомете с email, за да знам да си потърся записа, и за да мога да ви благодаря ;-) )
-http://cd.svoboden.net/bg/donate.html#post
-(Bulgaria-centric)
+* [Bulgarian Posts (National Postal Service)](http://bgpost.bg/bg/109) payment - пощенски запис чрез "Български пощи" (трите имена, адрес, п.к., до поискване; И после ме уведомете с email, за да знам да си потърся записа, и за да мога да ви благодаря ;-) ) - http://cd.svoboden.net/bg/donate.html#post - (Bulgaria-centric)
 * [ePay.bg](https://www.epay.bg/v3main/front?p=mrcs) (Bulgaria-centric)
 * [EasyPay.bg](https://www.easypay.bg/site/) _(битови сметки и платежни услуги)_ (Bulgaria-centric)
 * food vouchers for Kaufland, LIDL, Bulgarian Posts, etc. ... (Bulgaria-centric)
@@ -69,7 +66,7 @@ http://cd.svoboden.net/bg/donate.html#post
 * **http://olx.bg**
 * http://bazar.bg
 
-### [Crowdfunding](https://www.crowdfunding.com/) (NOT so viable... Better for countries outside of Bulgaria...) ###
+### [Crowdfunding](https://www.crowdfunding.com/) (NOT so viable... Better for countries outside of Bulgaria... BUT community per-project crowdfunding campaigns ARE VIABLE in Bulgaria!!!) ###
 _([information in Bulgarian](https://www.crowdfunding.com/), [more information](https://www.fundable.com/learn/resources/guides/crowdfunding/what-is-crowdfunding))_
 * https://www.kickstarter.com/
 * https://www.indiegogo.com/
