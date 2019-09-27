@@ -82,7 +82,7 @@ https://www.tug.org/interest.html#free = https://archive.is/ydnNU
 
 ======
 
-~~~~~~
+````
 Atom, a cross-platform text editor and its LaTeXTools plugin.
 GNU Emacs and especially its AUC-TeX package.
 Kile for KDE/Linux.
@@ -98,6 +98,7 @@ TeXworks, a cross-platform front-end with an ease-of-use philosophy similar to T
 Vim with Vim-LaTeX, a comprehensive TeX suite.
 Winshell for Windows; this is a zero-cost but proprietary editor.
 MAPS 46 (2015) contains reviews of TeXShop, Textmate, TeXworks, TeXstudio, and SciTE.
+````
 
 ======
 
@@ -108,17 +109,13 @@ MAPS 46 (2015) contains reviews of TeXShop, Textmate, TeXworks, TeXstudio, and S
 ---
 
 
-https://www.tug.org/texshowcase/
-tabela_periodica.tex	A dynamic periodic table in Portuguese. Click an entry to get extra information. As with many dynamic examples, it depends on your viewer if this works (Safari does not work).
-Submitter Orlando C.Rodríguez writes:
-
-I'm sending you an interactive periodic table written in portuguese, using LaTeX with the color and hyperref packages.
-
+https://www.tug.org/texshowcase/tabela_periodica.tex = A dynamic periodic table in Portuguese. Click an entry to get extra information. As with many dynamic examples, it depends on your viewer if this works (Safari does not work).
+Submitter Orlando C.Rodríguez writes: I'm sending you an interactive periodic table written in portuguese, using LaTeX with the color and hyperref packages.
 https://archive.is/pc6Ds
 
 Theoretical-Computer-Science-Cheat-Sheet --- https-__www-tug-org_texshowcase_cheat.pdf
 ---
- [IN DEVELOPMENT/В ПРОЦЕС НА РАЗРАБОТКА]
+* [IN DEVELOPMENT/В ПРОЦЕС НА РАЗРАБОТКА]
 Theoretical-Computer-Science-Cheat-Sheet --- https-__www-tug-org_texshowcase_cheat.pdf
 https://www.tug.org/texshowcase/tabela_periodica.pdf
 https://www.tug.org/texshowcase/leaflet.pdf
@@ -252,5 +249,11 @@ http://www.linux-bg.org
 [Project Gutenberg Distributed Proofreaders (pgdp.net)](http://www.pgdp.net/) - proofread OCR'd text of public domain books a page at a time, when you have time. All books are distributed freely. Includes math books, which are done using TeX.
 
 ---
+
+======
+
+To add more...
+
+=======
 
 ...
