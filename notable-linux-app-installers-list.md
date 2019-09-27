@@ -96,7 +96,11 @@ https://raw.githubusercontent.com/minos-org/minos-static/de7ceb083fb1945c9861185
 * directly executing the app's `.exe` binary from its physical-media-copied OR Internet-downloaded archive (.zip, .7z, .tar.xz, .iso, etc.) unpacked into a new folder.
 * Downloading `.exe`/`.msi` installers (or source-code for local compiling) from https://sourceforge.net/ (BEWARE if adware is bundled!), https://www.fosshub.com/, https://osdn.net, https://github.com, GitLab (e.g. https://gitlab.com/florian0)...
 _Software download-portals to get ONLY FREEWARE and open-source apps from, NOT other apps:_
-http://brothersoft.com/, https://www.kaldata.com/ (Bulgarian IT website), https://www.download.bg/ (Bulgarian IT website), https://www.softpedia.com/, https://bg.vessoft.com/ (IT downloads + some warez), https://www.techspot.com/downloads/, https://en.softonic.com/windows, https://filehippo.com/, http://www.oldapps.com/, https://www.old-games.com/, https://www.makeuseof.com/, https://www.howtogeek.com/, https://www.techspot.com/downloads/, http://www.tucows.com/downloads, https://download.cnet.com/windows/, https://www.techradar.com/, https://www.tomsguide.com/t/windows/... http://caiman.us/, http://homeoftheunderdogs.net/ (https://twitter.com/HotU_net), http://www.homeoftheunderdogs.net/company.php?name=Freeware, http://www.abandonwarering.com/, http://www.aplaces.net/, etc.
+http://brothersoft.com/, https://www.kaldata.com/ (Bulgarian IT website), https://www.download.bg/ (Bulgarian IT website), https://www.softpedia.com/, https://bg.vessoft.com/ (IT downloads + some warez), https://www.techspot.com/downloads/, https://en.softonic.com/windows, https://filehippo.com/, http://www.oldapps.com/, https://www.old-games.com/, https://www.makeuseof.com/, https://www.howtogeek.com/, https://www.techspot.com/downloads/, http://www.tucows.com/downloads, https://download.cnet.com/windows/, https://www.techradar.com/, https://www.tomsguide.com/t/windows/... http://caiman.us/, http://homeoftheunderdogs.net/ (https://twitter.com/HotU_net), http://www.homeoftheunderdogs.net/company.php?name=Freeware, http://www.abandonwarering.com/, http://www.aplaces.net/,* https://www.freewarefiles.com/Essential-Free-Software.html
+* https://www.freewarefiles.com/Top-100-Free-Downloads/
+
+
+etc.
 
 #### **Torrent&magnet-link trackers:** ####
 (they contain some warez&not-so-legal files... to download, use a torrent app like qBittorrent, Deluge Torrent, uTorrent (freeware), etc.):
