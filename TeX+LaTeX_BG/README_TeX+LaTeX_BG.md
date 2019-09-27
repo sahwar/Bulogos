@@ -15,19 +15,16 @@ TeX е система за произвеждане на красиви доку
 * https://ctan.org/pkg/hyperref
 * https://www.tug.org/applications/hyperref/manual.html
 * https://en.wikipedia.org/wiki/Comparison_of_TeX_editors * https://www.ubuntupit.com/best-latex-editor-top-33-reviewed-for-linux-nerds/
-* **XeTeX (TeX/LaTeX + Unicode + Unicode fonts!!!)** = http://xetex.sourceforge.net/
-* 
-````
-https://www1.essex.ac.uk/linguistics/external/clmt/latex4ling/
-TeX/LaTeX за езиковеди (лингвисти) и използване на TeX/LaTeX за писане на документи на езици, различни от английския (ASCII) - Using TeX/LaTeX with _
-Languages Other than English: Using Babel_: https://www1.essex.ac.uk/linguistics/external/clmt/latex4ling/
-Използване на знаците от МФА (IPA) в TeX/LaTeX чрез пакета {TIPA} --- IPA phonetic/phonemic characters for TeX/LaTeX: Getting IPA Symbols: https://www1.essex.ac.uk/linguistics/external/clmt/latex4ling/
-https://wch.github.io/latexsheet/
-https://ctan.org/pkg/lshort
-https://latex.org/forum/
-ftp://ftp.fernuni-hagen.de/pub/windows/win32/ProTeXt/
-````
-* **TeX/LaTeX maths equations for the Web (HTML5): https://github.com/KaTeX/KaTeX , MathJax, W3C MathML
+* _XeTeX (TeX/LaTeX + Unicode + Unicode fonts!!!)_ = http://xetex.sourceforge.net/
+* https://www1.essex.ac.uk/linguistics/external/clmt/latex4ling/
+* _TeX/LaTeX за езиковеди (лингвисти) и използване на TeX/LaTeX за писане на документи на езици, различни от английския (ASCII)_ - Using TeX/LaTeX with Languages Other than English: Using Babel: https://www1.essex.ac.uk/linguistics/external/clmt/latex4ling/
+* ***_Използване на знаците от МФА (IPA) в TeX/LaTeX чрез пакета {TIPA} --- IPA phonetic/phonemic characters for TeX/LaTeX: Getting IPA Symbols:***_ https://www1.essex.ac.uk/linguistics/external/clmt/latex4ling/
+* https://wch.github.io/latexsheet/
+* https://ctan.org/pkg/lshort
+* https://latex.org/forum/
+* ftp://ftp.fernuni-hagen.de/pub/windows/win32/ProTeXt/
+
+* _TeX/LaTeX maths equations for the Web (HTML5):_ https://github.com/KaTeX/KaTeX , MathJax, W3C MathML
 * https://www.ubuntupit.com/best-latex-editor-top-33-reviewed-for-linux-nerds/
 * https://www.sharelatex.com
 * [TeXMaker](http://www.xm1math.net/texmaker/) (Linux, iOS, Windows)
@@ -256,3 +253,4 @@ http://www.linux-bg.org
 
 ---
 
+...
