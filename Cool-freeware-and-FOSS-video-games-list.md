@@ -57,8 +57,32 @@ http://archive.is/QE0u8 )
 (e.g. DOTA2 MOBA, Heroes of Newerth MOBA, Path of Exile MOBA, SMITE MOBA, Heroes of the Storm MOBA, Knight Online MMO, The Elder Scrolls II: Daggerfall, Quest for Glory 2 Remake, etc.)
 * https://www.freewarefiles.com/Bubble-Bobble-Legacy_program_104744.html
 
+(_pasted https://github.com/sahwar/Bulogos/blob/master/notable-linux-app-installers-list.md _)
+
+* https://www.old-games.com/
+* http://www.oldapps.com (download older versions of apps for free!)
+* http://gamepressure.com/
+* ROMs for MAME (to play video-games for old arcade video-game consoles): https://emulator.games/roms/mame/
+* https://www.makeuseof.com/tag/open-source-video-games/
+* https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/List_of_open-source_video_games.html
+* https://en.wikipedia.org/wiki/List_of_open-source_video_games
+* https://osgameclones.com/
+* https://libregamewiki.org//Complete_open_source_games?pagename=wiki/Complete_open_source_games
+* https://www.slant.co/topics/1933/~best-open-source-games
+* https://itsfoss.com/free-linux-games/
+* SteamOS: https://store.steampowered.com/steamos/buildyourown + gog.com (Good Old Games)
+* http://www.makeuseof.com/tag/not-steamos-great-linux-distros-gamers/
+* Xonotic - http://www.xonotic.org/
+* Alien Arena - http://red.planetarena.org/
+* Warsow - 
+* Urban Terror - 
+* OpenArena - 
+* Tremulous - 
+* Nexiuz - http://www.nexuiz.com/ ; Nexiuz Classic - http://www.alientrap.com/games/nexuiz/ ( https://sourceforge.net/projects/nexuiz/ ; https://www.gamepressure.com/download.asp?ID=23030 )
+* https://sourceforge.net/directory/games/games/os:windows/os:modern_oses/os:mac/os:linux/os:os_emu_api/os:bsd/
 
 
+## Etc.
 Apps:
 WifiInfoView 2.47
 https://www.freewarefiles.com/Exeinfo-PE-_program_113045.html
