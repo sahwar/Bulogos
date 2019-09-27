@@ -15,7 +15,7 @@ TeX е система за произвеждане на красиви доку
 * https://ctan.org/pkg/hyperref
 * https://www.tug.org/applications/hyperref/manual.html
 * https://en.wikipedia.org/wiki/Comparison_of_TeX_editors * https://www.ubuntupit.com/best-latex-editor-top-33-reviewed-for-linux-nerds/
-* XeTeX (TeX/LaTeX + Unicode + Unicode fonts!!!) = http://xetex.sourceforge.net/
+* **XeTeX (TeX/LaTeX + Unicode + Unicode fonts!!!)** = http://xetex.sourceforge.net/
 * 
 ````
 https://www1.essex.ac.uk/linguistics/external/clmt/latex4ling/
@@ -27,6 +27,7 @@ https://ctan.org/pkg/lshort
 https://latex.org/forum/
 ftp://ftp.fernuni-hagen.de/pub/windows/win32/ProTeXt/
 ````
+* **TeX/LaTeX maths equations for the Web (HTML5): https://github.com/KaTeX/KaTeX , MathJax, W3C MathML
 * https://www.ubuntupit.com/best-latex-editor-top-33-reviewed-for-linux-nerds/
 * https://www.sharelatex.com
 * [TeXMaker](http://www.xm1math.net/texmaker/) (Linux, iOS, Windows)
