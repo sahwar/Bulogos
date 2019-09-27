@@ -19,43 +19,43 @@ https://download.cnet.com/Laxius-Power-III/3000-7536_4-10800957.html
 * etc.
 
 More:
-caiman.us
-https://alternativeto.net//list/479/free-games
+* http://caiman.us
+* https://alternativeto.net//list/479/free-games
 https://alternativeto.net/software/caiman-us/
 (to add more hyperlinks to freeware&abandonware video games)
 
-http://homeoftheunderdogs.net/
-http://www.abandonwarering.com/
-http://www.aplaces.net/ (backup: http://archive.is/SkS7D )
+* http://homeoftheunderdogs.net/
+* http://www.abandonwarering.com/
+* http://www.aplaces.net/ (backup: http://archive.is/SkS7D )
 
-https://www.moddb.com/
-https://etch.io
+* https://www.moddb.com/
+* https://etch.io
 
 Tabletop gamebooks with dice-rolling (настолни книги-игри с хвърляне на зарове):
-http://www.rpg.bg/?p=1410
+* http://www.rpg.bg/?p=1410
 
-https://rpgmaker.net/
-https://www.aldorlea.org/ (more RPG video games from the creator of Laxius Power 1, 2, & III; e.g. https://www.aldorlea.org/3starsofdestiny.php )
+* https://rpgmaker.net/
+* https://www.aldorlea.org/ (more RPG video games from the creator of Laxius Power 1, 2, & III; e.g. https://www.aldorlea.org/3starsofdestiny.php )
 
-https://www.retrogames.cz (e.g.
+* https://www.retrogames.cz (e.g.
 https://www.retrogames.cz/play_216-NES.php ) (INFO: _'RetroGames.cz deals with archiving and on­line e­mu­la­tion of old games for o­pe­ra­ting system MS-DOS and popular ga­me consoles Atari 2600, Atari 7800, Nintento En­ter­tain­ment Sys­tem (NES), Su­per Nin­ten­do En­ ter­tain­ment System (SNES), Game Boy (GB), Game Gear (GG), Se­ga SG-1000, Sega Master Sys­tem (SMS), Sega Mega Drive (Genesis) and Nin­ten­do 64. To­day our database con­tains 1254 dif­fe­rent ga­mes from the eighties and ni­ne­ties. 303 of them are available in two or more versions. To­ge­ther we host 1780 on­li­ne games and we are still adding new ones. All games are e­mu­la­ted in Flash, in Java or by Java­Script and with a few ex­cep­ti­ons you probably do not distinguish them from the o­ri­gi­nal versions. As a bo­nus we offer download of 1064 original game manuals in pdf format.'_)
 
-https://www.classic-retro-games.com (e.g.
+* https://www.classic-retro-games.com (e.g.
 https://www.classic-retro-games.com/games/platform/bubble-bobble-174 )
 
-http://www.bestoldgames.net (e.g.
+* http://www.bestoldgames.net (e.g.
 http://www.bestoldgames.net/bubble-bobble ,
 http://www.bestoldgames.net/alien-incident ,
-http://www.bestoldgames.net/eng/archive.php - backup:
+* http://www.bestoldgames.net/eng/archive.php - backup:
 http://archive.is/QE0u8 )
 
-https://softfamous.com/mario-bubble-bobble/
-http://en.gameslol.net/bubble-bobble-961.html
+* https://softfamous.com/mario-bubble-bobble/
+* http://en.gameslol.net/bubble-bobble-961.html
 
-https://archive.org/details/Bubble_Bobble_1987_Firebird
-https://www.freewarefiles.com/category/Free-Games/
+* https://archive.org/details/Bubble_Bobble_1987_Firebird
+* https://www.freewarefiles.com/category/Free-Games/
 (e.g. DOTA2 MOBA, Heroes of Newerth MOBA, Path of Exile MOBA, SMITE MOBA, Heroes of the Storm MOBA, Knight Online MMO, The Elder Scrolls II: Daggerfall, Quest for Glory 2 Remake, etc.)
-https://www.freewarefiles.com/Bubble-Bobble-Legacy_program_104744.html
+* https://www.freewarefiles.com/Bubble-Bobble-Legacy_program_104744.html
 
 
 
@@ -71,14 +71,14 @@ https://www.freewarefiles.com/news/top-5-software/top-5-free-portable-text-edito
 https://www.freewarefiles.com/news/top-5-software/5-of-our-favorite-free-color-pickers-for-windows/
 https://www.freewarefiles.com/LicenseCrawler_program_44343.html
 https://www.freewarefiles.com/Microsoft-Games-For-Windows-LIVE_program_35222.html
-https://www.freewarefiles.com/Android-Sync-for-Windows_program_108358.html
+* https://www.freewarefiles.com/Android-Sync-for-Windows_program_108358.html
 https://www.freewarefiles.com/Microsoft-Security-Essentials_program_52172.html
 https://www.freewarefiles.com/Everyone-Piano_program_81529.html
 https://www.freewarefiles.com/Mixxx_program_35053.html
 https://www.freewarefiles.com/Express-Animate-_program_112456.html
 https://www.freewarefiles.com/Pencil-Vb_program_37110.html
 https://www.freewarefiles.com/Renegade-X-Black-Dawn_program_74644.html
-https://www.freewarefiles.com/Essential-Free-Software.html
-https://www.freewarefiles.com/Top-100-Free-Downloads/
+* https://www.freewarefiles.com/Essential-Free-Software.html
+* https://www.freewarefiles.com/Top-100-Free-Downloads/
 
 etc.
