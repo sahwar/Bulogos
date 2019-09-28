@@ -80,7 +80,7 @@ sudo apt-get install notepadqq
 ``sfc.exe`` (in ``cmd.exe`` or PowerShell)
 ``recover.exe`` (in ``cmd.exe`` or PowerShell)
 ``tree > dirlisting.txt`` (in ``cmd.exe`` or PowerShell) - for listing folder/directory structure/contents...
-``iconv``, 2cyr.com, 
+``iconv``, http://2cyr.com, 
 
 * [ddrescue (GUI)](https://www.gnu.org/software/ddrescue/)
 * [SafeCopy (GUI)](https://safecopybackup.com/)
@@ -182,15 +182,13 @@ https://xyne.archlinux.ca/projects/unibrow/ (Unicode browser for Linux)
 **https://xyne.archlinux.ca/projects/xrandr-mgr/**
 https://xyne.archlinux.ca/repos/
 
-FreeFileSync, SyncThing
+FreeFileSync, SyncThing, OwnCloud, http://linux-bg.com
 
 
-http://copy.sh/lcd/
-https://bellard.org/jslinux/
 
-**http://copy.sh/**
-**https://bellard.org/** (amazing software projects and DIY ideas!!!)
-**https://www.splitbrain.org/projects/** (very cool software projects and scripts!!!:
+* **http://copy.sh/** (e.g. http://copy.sh/lcd/ )
+* **https://bellard.org/** (absolutely amazing software projects and DIY ideas!!!) (e.g. https://bellard.org/jslinux/ )
+* **https://www.splitbrain.org/projects/** (very cool software projects and scripts!!!:
 ````
 # Projects
 
@@ -302,13 +300,13 @@ Too many to list here... for now at least, that is.
 * https://sourceforge.net/projects/readthebible/files/Version%206/Bible6.3.6.app.zip/download - [Компютърна Библия (на български език)](http://readthebible.sourceforge.net/) - https://sourceforge.net/projects/readthebible/files/
 * ``pstree`` (the MS Windows ``tree`` directory-listing command for ``cmd.exe``, but for Linux)
 * ``curl``, ``wget``, ``lftp``, ``aria2c``, PHP, MySQL (LAMP / WAMP), phpMyAdmin, Moodle, 
-* `locate`, ``friendly-find (ffind)`` & ``find``, catfish (all are file searchers!!!), ``ack`` & ``grep`` & ``awk``, `cron` (and other `cron`-like apps on GitHub...), `iconv`
+* `locate`, ``friendly-find (ffind)`` & ``find``, catfish (all are file searchers!!!), ``ack`` & ``grep`` & ``awk``, `cron` (and other `cron`-like apps on GitHub...), `iconv` & http://2cyr.com
 
 ## Under `Apple macOS` ##
 _I don't use macOS..._ In my opinion, it's only good for art/designer/webdev professionals... I only like some MacBook Pro's and the newer pressure-sensitive iPad's with a Wacom-like graphics stylus.
 
 ## Under `Google Android` ##
-* (TO ADD from apps-list-generating apps)
+* (TO ADD from apps-list-generating apps & my own Google Play Favorited apps)
 
 ## Under `Apple iOS` ##
 _I don't use iOS..._
