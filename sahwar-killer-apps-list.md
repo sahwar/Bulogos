@@ -14,7 +14,10 @@ https://www.kaldata.com/%d1%81%d0%be%d1%84%d1%82%d1%83%d0%b5%d1%80/dspeech-26855
 * GPU Caps Viewer, Process Hacker 2, Sysinternals Process Explorer, CPU-Z, GPU-Z, CPUCores, Greaphics Gale, KDE Lokalize, Qt Linguist, Weblate, Translate Toolkit, Mozilla Pantoon, WebRTC, https://mastodon.social/@ownclouders (Twitter clone), https://owncloud.com/ (DropBox clone), https://identi.ca/, http://pump.io/, SyncThing, FreeFileSync..., etc...
 * etc.
 
-* 
+* FilePizza,
+https://bg.wikipedia.org/w/index.php?title=%D0%9A%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0_%D0%BF%D0%BE%D0%B4%D1%80%D0%B5%D0%B4%D0%B1%D0%B0&oldid=9628002
+https://github.com/nwtgck/piping-server
+https://www.urbandictionary.com/define.php?term=Cancel%20Culture
 
 ````
 https://gitlab.com/gnuwget/wget2
