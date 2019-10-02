@@ -310,6 +310,8 @@ Too many to list here... for now at least, that is.
 * ``pstree`` (the MS Windows ``tree`` directory-listing command for ``cmd.exe``, but for Linux)
 * ``curl``, ``wget``, ``lftp``, ``aria2c``, PHP, MySQL (LAMP / WAMP), phpMyAdmin, Moodle, 
 * `locate`, ``friendly-find (ffind)`` & ``find``, catfish (all are file searchers!!!), ``ack`` & ``grep`` & ``awk``, `cron` (and other `cron`-like apps on GitHub...), `iconv` & http://2cyr.com
+* NTFS driver (for using MS Windows 7+ NTFS partitions as data storage partitions)
+* the new best file-system for (GNU/)Linux: https://zfsonlinux.org/
 
 ## Under `Apple macOS` ##
 _I don't use macOS..._ In my opinion, it's only good for art/designer/webdev professionals... I only like some MacBook Pro's and the newer pressure-sensitive iPad's with a Wacom-like graphics stylus.
