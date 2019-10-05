@@ -3,23 +3,63 @@
 #### All-time personal favorite free video-games ####
 
 Notable freeware indie video games for MS Windows:
-* [Pekka Kana 2](http://pistegamez.net/game_pk2.html) (side-scrolling 2D platformer, with a Level Editor to boost; I made the 2nd (fixed) Bulgarian translation of PK2) ([WEB-FORUM for PK2 fans](http://pistegamez.proboards18.com/))
+* [Pekka Kana 2](http://pistegamez.net/game_pk2.html) (side-scrolling 2D platformer, with a Level Editor to boost; I made the 2nd (fixed) Bulgarian translation of PK2) ([WEB-FORUM for PK2 fans](http://pistegamez.proboards18.com/));
+New map downloads: https://github.com/PK2Lib/pk2lib.github.io
+( https://pk2lib.github.io/
+https://github.com/PK2Lib )
+Old Map Store: http://mapstore.the.cz/
+https://pistegamez.net/game_pk2.html
+https://github.com/topics/pekkakana2
+https://pcgamingwiki.com/wiki/Pekka_Kana_2 (how to play Pekka Kana 2 on Windows 10, etc.)
+PK2 on Linux (Debian, Ubuntu, Arch Linux, etc.)
+https://packages.debian.org/sid/pekka-kana-2
+https://packages.debian.org/source/sid/pekka-kana-2
+https://www.dropbox.com/sh/x20mu4f9h01qtls/AACXTgeYi5uP4wNl_7X-kZ6sa?dl=0
+
 * Laxius Power 3 & II & I (hardcore plot-driven indie jRPG-style 2D RPG) (HELP: map1, map2, [[useful partial walkthrough by Grogor](http://grogor2.tripod.com/) ([archived backup copy](http://archive.is/7LEgq))
 Links:
 http://laxiuspower-shrine.goodforum.net/t462-laxius-power-iii-how-to-unlock
 http://laxiuspower-shrine.goodforum.net/t362-laxius-power-1-to-3-download-link
 https://download.cnet.com/Laxius-Power-III/3000-7536_4-10800957.html
 (TO DO: ADD MORE DOWNLOAD LINKS FOR Laxius Power 3)
-* [Apprentice I](http://www.herculeaneffort.com/index.php?page=apprentice1) & [Apprentice II](http://www.herculeaneffort.com/index.php?page=apprentice2) (2D point-and-click adventure/quest game)
+https://www.aldorlea.org/
+* [Apprentice I](http://www.herculeaneffort.com/index.php?page=apprentice1) & [Apprentice II](http://www.herculeaneffort.com/index.php?page=apprentice2) (freeware 2D point-and-click adventure/quest game)
 * [Cave Story](https://www.cavestory.org/) (legendary cult-classic 2D action side-scrolling platformer, hardcore to beat!) (**TO DO:** Translate Cave Story into Bulgarian!!!)
 * [Blobby Volley 2](https://sourceforge.net/projects/blobby/) (also available [online](http://blobby.sourceforge.net/data/bv2browser/index.html)!)
 * ? (RTS)
 * [Wormux](https://github.com/yeKcim/warmux) (Worms3-2D clone)
 * Zack McKraken (freeware) & [Zak McKraken BTaS](http://www.mckracken.net/cms/directorscut.html)
+* Little Fighter 2
+* Super Mario Bros 3: Mario Forever
+* Sauerbraten 2
+* 
 * etc.
 
-More:
+## Non-freeware (commercial) video games that @sahwar enjoyed:
+* Sacred (&Sacred Gold!) & Sacred 2 (by Ascaron)
+* Duke Nukem: Manhatten Project
+* Diablo II: Lord of Destruction & Diablo III & expansion pack
+* Worms World Party, Worms: Armageddon, Worms 3D, Worms 4
+* classic RPGs from https://gog.com
+* Serious Sam, Serious Sam 2, Serious Sam 3, etc.
+* Quake 3: Arena
+* CS (Counter-Strike) 1.5/1.6 & CS:G.O.
+* etc.
+
+## More FREEWARE games:
+* http://pcmania.bg (статиите за безплатни игри)
 * http://caiman.us
+* http://oldgames.com
+* https://en.wikipedia.org/wiki/List_of_subcultures
+* https://en.m.wikipedia.org/wiki/List_of_freeware_video_games
+* https://en.m.wikipedia.org/wiki/List_of_commercial_video_games_released_as_freeware
+* https://en.m.wikipedia.org/wiki/List_of_free_PC_games
+* https://pcgamingwiki.com/wiki/List_of_Freeware_Games
+* https://www.giantbomb.com/profile/lime/lists/freeware-games/71233/
+* https://www.techsupportalert.com/best-free-pc-games.htm
+* https://www.revolvy.com/page/List-of-commercial-video-games-released-as-freeware
+* https://www.lifewire.com/free-pc-games-a-to-z-812123
+* https://tvtropes.org/pmwiki/pmwiki.php/main/freewaregames
 * https://alternativeto.net//list/479/free-games
 https://alternativeto.net/software/caiman-us/
 (to add more hyperlinks to freeware&abandonware video games)
