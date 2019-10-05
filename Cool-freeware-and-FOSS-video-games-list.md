@@ -49,7 +49,8 @@ https://www.aldorlea.org/
 ## More FREEWARE games:
 * http://pcmania.bg (статиите за безплатни игри)
 * http://caiman.us
-* http://oldgames.com
+* http://old-games.com & http://oldapps.com
+* http://gog.com (cheap classic video games for modern PCs!)
 * https://en.wikipedia.org/wiki/List_of_subcultures
 * https://en.m.wikipedia.org/wiki/List_of_freeware_video_games
 * https://en.m.wikipedia.org/wiki/List_of_commercial_video_games_released_as_freeware
