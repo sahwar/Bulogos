@@ -108,7 +108,7 @@ http://hp.vector.co.jp/authors/VA033749/tips_azdw2/anim.html
 * [Moai (by Ken Thornton), pixel-art editor](http://members.allegro.cc/sirocco/nav_mo.htm) v1.7 (for Windows), _FREEWARE_ _(RECOMMENDED)_
 * [moPaint (by the same author as JS Paint](https://github.com/1j01/mopaint) ([online version](https://github.com/1j01/mopaint))
 * [MQSprite](https://github.com/eigenbom/MQ-Sprite) OPEN-SOURCE (Windows)
-* [MS Paint (for WindowsXP SP3)](https://archive.org/details/MSPaintWinXP) [Hidden advanced features (tips&tricks) of MS Paint for WinXP!!!](https://sahwar.wordpress.com/2014/09/20/the-secret-features-of-ms-paint/) (in Bulgarian and in English)
+* [MS Paint (for WindowsXP SP3)](https://archive.org/details/MSPaintWinXP) [Hidden advanced features (tips&tricks) of MS Paint for WinXP!!!](https://sahwar.wordpress.com/2014/09/20/the-secret-features-of-ms-paint/) (in Bulgarian and in English); Screenshot: https://ia800803.us.archive.org/14/items/MSPaintWinXP/paintXPprev.PNG ; FREE download: https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Microsoft-Paint.shtml or https://softfamous.com/paint-xp/
 * [mtPaint](http://mtpaint.sourceforge.net/) [2](http://sourceforge.net/projects/mtpaint/files/mtpaint/) _(RECOMMENDED)_
 * [MyBrushes (macOS)](?) (commercial)
 * [MyPaint](http://mypaint.org/) OPEN-SOURCE _(HIGHLY RECOMMENDED)_
@@ -185,6 +185,20 @@ http://hp.vector.co.jp/authors/VA033749/tips_azdw2/anim.html
 
 #### TO ADD TO THE ABOVE LIST & THEN SORT IT AGAIN ####
 * see the invisible HTML-comment section hidden in the webpages' source-code below (e.g. just click the 'Raw' button on the GitHub page)...
+
+* [PhotoScape](http://photoscape.org/ps/main/index.php) (a FREEWARE photo-editing tool for Microsoft Windows NT/2000/XP/Vista/7/8/10; it even has a Bulgarian language pack: http://download.photoscape.org/translate/bg/lang_3_6.txt ) - http://photoscape.org/ps/main/help.php?id=translate ; http://photoscape.org/ps/main/help.php?id=anigif ; http://photoscape.org/ps/main/help.php?id=paintbrush
+[Beneton Movie GIF](https://www.benetonsoftware.com/Beneton_Movie_GIF.php) (SLOW but nice GIF animator); alternatives: gifsicle, libgif, Beneton Movie GIF, GIMP + GIMP GAP plug-in, Microsoft GIF Animator, various other online tools
+
+Image viewers: there are too many, I recommend the following:
+* for MS Windows: IrfanView, XnView, XnViewMP, **nomacs_x64**, [Imagine Viewer_x64](http://www.nyam.pe.kr/dev/imagine/)
+* for (GNU/)Linux: GPicView, **[nomacs_x64](http://nomacs.org/)**, GPicView (https://wiki.lxde.org/en/GPicView https://pkgs.org/download/gpicview ), [Viewnior](https://github.com/hellosiyan/Viewnior) ( https://www.linux-apps.com/p/1129010/ ), **[Mirage](http://mirageiv.sourceforge.net/)** (+[commandline viewing](http://mirageiv.sourceforge.net/docs-advanced.html#cli)), [Ristretto](https://docs.xfce.org/apps/ristretto/start), [Geeqie](http://geeqie.org/), [Feh](https://feh.finalrewind.org/)
+
+( https://opensource.com/article/17/7/4-lightweight-image-viewers-linux-desktop )
+https://softfamous.com/freevimager/
+https://softfamous.com/uniconvertor/
+
+https://www.linux-apps.com/browse/cat/239/order/latest
+https://github.com/Artanidos/AnimationMaker
 
 <!--
 Markdown table with screenshots placed like this one:
