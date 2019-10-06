@@ -16,4 +16,20 @@
 * GitHub Desktop: https://itnext.io/how-to-use-github-desktop-with-gitlab-cd4d2de3d104 , https://community.reclaimhosting.com/t/using-github-desktop-with-gitlab/876
 * https://github.com/MoOx/git-init
 
-This website is open-source. <a href="https://github.com/sahwar/Bulogos/edit/master/README.md">Propose edits to this webpage</a>.
+## Contact / За контакти
+:us: :gb:  If you have any ideas, suggestions or `git merge` requests about this project, then just send me an email with your ideas to [ve4ernik@gmail.com](mailto:ve4ernik@gmail.com).
+
+🇧🇬 &#x1F1E7;&#x1F1EC;  Ако имате каквито и да е идеи, предложения или молби/заявки за `git merge` относно този проект, то тогава просто ми изпратете имейл с идеите си на [ve4ernik@gmail.com](mailto:ve4ernik@gmail.com).
+
+## Donations / Дарения
+:us: :gb:  If you like to support my work on Bulogos, you are invited to make a donation if you can afford it. Just click the button below.
+
+🇧🇬 &#x1F1E7;&#x1F1EC; Ако желаете да подкрепите работата ми по Bulogos, сте поканени да направите дарение, ако можете да си го позволите. Просто натиснете долния бутон.
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ve4ernik)
+
+----
+
+:us: :gb:  This website is open-source. <a href="https://github.com/sahwar/Bulogos/edit/master/README.md">Propose edits to this webpage</a>.
+
+🇧🇬 &#x1F1E7;&#x1F1EC; Този уебсайт е с отворен код. <a href="https://github.com/sahwar/Bulogos/edit/master/README.md">Предложете редакции на тази уебстраница</a>.
