@@ -268,6 +268,7 @@ These projects are no longer actively maintained, but their code may be of inter
 
 http://copy.sh/v86/
 **https://vfsync.org/**
+**http://roxlu.com/**
 http://www.charlesrosenberg.com/
 http://www.chuckrosenberg.com/workpg/
 http://www.chuckrosenberg.com/resumepg/restext.txt
@@ -293,6 +294,94 @@ https://www.fltk.org/links.php?V198+Q
 
 http://www.marcellozaniboni.net/mzsplit/
 file-splitting apps
+
+http://cheat.sh + `curl` (see below for examples...)
+https://github.com/ediardo/kmdr.sh
+https://commandlinefu.com
+https://ss64.com/
+https://windowscommandline.com
+https://snipplr.com
+http://regex101.com
+https://textmechanic.com/
+https://tools.chitanka.info/
+
+````
+https://twitter.com/_ashish_tiwari/status/1156834512275247104
+ 
+@_ashish_tiwari
+Следване Следване на @_ashish_tiwari
+Още
+http://cheat.sh  Interesting tool for #developers to get information about any command or functionality. e.g. To get information about  'ls' command execute this:
+
+"curl http://cheat.sh/ls "
+
+@nixcraft  @igor_chubin
+
+$ curl cht\.sh/lua/copy+file
+$ curl cht\.sh/go/parse+json+file
+$ curl cht\.sh/python/randomize+list
+
+explainshell.com
+
+It is much more then man. It takes data from multiple sources like github stackoverflow etc. Also you can search for any programming language or its core functions like /python/append
+
+Markus Ritzmann
+‏
+ 
+@RitzmannMarkus
+ 1.08
+Още
+В отговор до @_ashish_tiwari @nixcraft @igor_chubin
+And as zsh alias:
+c() { q="$1" ; curl https://cheat.sh/$q  }
+
+https://gitlab.com/dbeniamine/cheat.sh-vim/
+
+https://cht.sh
+
+https://twitter.com/ediardo/status/1156232086597955584
+
+Eddie Ramírez
+‏
+ 
+@ediardo
+Следване Следване на @ediardo
+Още
+🔥 @kmdr_sh now explains commands with input and output redirection :) 
+
+⬇️ Download the CLI tool for explaining shell commands at https://github.com/ediardo/kmdr.sh  
+
+#linux #cli #terminal #console #bash
+
+Alberto Murillo
+‏
+ 
+@powerbsd
+ 5.08
+Още
+В отговор до @ediardo @kmdr_sh
+Ya se sabe este?
+
+s="-<";while true;do echo -ne "$s\r";s=`sed 's/->$/-<-/;s/^</>/;s/-</<-/;s/>-/->/;'<<<$s`;sleep 0.1;done
+
+https://asciinema.org/a/259990
+
+https://matrix.to/#/#asciinema:matrix.org
+
+https://view.matrix.org/room/!SoJVNtyBpnhtUnCOgX:matrix.org/
+
+https://twitter.com/cesarlarag/status/1157491274133340160
+
+http://roxlu.com/2014/025/download-html-page-using-curl
+
+http://roxlu.com/2013/018/reverse-ssh
+
+http://roxlu.com/2015/053/handy-bash-commands
+
+http://roxlu.com/2014/030/open-source-libraries-for-creative-coding
+
+https://github.com/nanomsg/nng
+````
 
 ## **Full list of all apps I've ever used with Microsoft Windows XP/7/8.1/10:**
 * (TO ADD from my [CCleaner](https://www.ccleaner.com/) `install.txt` files & other files)
