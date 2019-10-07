@@ -199,6 +199,18 @@ FreeFileSync, SyncThing, OwnCloud, http://linux-bg.com
 * **https://bellard.org/** (absolutely amazing software projects and DIY ideas!!!) (e.g. https://bellard.org/jslinux/ )
 * **https://www.splitbrain.org/projects/** (very cool software projects and scripts!!!:
 ````
+https://www.splitbrain.org/
+https://www.splitbrain.org/services
+https://www.splitbrain.org/services/encode
+https://www.splitbrain.org/_static/ico/
+https://splitbrain.github.io/paypal-link-builder/
+https://www.splitbrain.org/projects
+https://www.splitbrain.org/projects/makewordlist
+https://man.cx/
+https://github.com/splitbrain/paypal-link-builder
+man.cx is a simple web interface to a huge amount of UNIX manpages extracted the packages available in the Debian project and some other UNIXes as well. There are currently about 62.000 pages available.
+---
+
 # Projects
 
 In this section you can find my various software projects. If not otherwise stated all my software is released under terms of the GPL.
