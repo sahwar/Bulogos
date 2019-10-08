@@ -52,8 +52,11 @@ https://www.microsoft.com/en-us/download/details.aspx?id=16083
 http://www.metodii.com/bg_bds3.html
 
 ======
-view-source:http://www.dobrev.com/AI/definition2.html = пример за типографско красиво форматиращо оформление на HTML абзаци (параграфи), да добавяне към Bulogos BLSG.
-десетична запетая, а НЕ десетична точка
+* view-source:http://www.dobrev.com/AI/definition2.html (резервно копие: http://archive.is/DyGHd ) = пример за типографско красиво форматиращо оформление на HTML абзаци (параграфи), за добавяне към Bulogos BLSG.
+* десетична запетая, а НЕ десетична точка
+* 10,<super>99</super> лв.
+* 10.10. , а не 10.10
+* 13:43 ч., а не 13.43 ч или 13,43 ч
 
 ---
 
