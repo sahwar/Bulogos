@@ -1,4 +1,5 @@
-https://bg.wikipedia.org/wiki/%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D1%82%D0%B5_%D0%B1%D1%83%D0%BA%D0%B2%D0%B8_%D1%81_%D0%BB%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8
+https://bg.wikipedia.org/w/index.php?title=%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D1%82%D0%B5_%D0%B1%D1%83%D0%BA%D0%B2%D0%B8_%D1%81_%D0%BB%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8&oldid=9634621
+
 http://2cyr.com
 http://www.kredor.com/products/transliteration/lat2bg.aspx
 http://forum.abv.bg/abv/lat2cyr.php
@@ -52,14 +53,130 @@ https://www.microsoft.com/en-us/download/details.aspx?id=16083
 http://www.metodii.com/bg_bds3.html
 
 ======
-* view-source:http://www.dobrev.com/AI/definition2.html (резервно копие: http://archive.is/DyGHd ) = пример за типографско красиво форматиращо оформление на HTML абзаци (параграфи), за добавяне към Bulogos BLSG.
+to add to Bulogos BLSG:
+* view-source:http://www.dobrev.com/AI/definition2.html (резервно копие: http://archive.is/DyGHd ) и http://maxima-library.org/knigi/knigi/b/454816?format=read = пример за типографско красиво форматиращо оформление на HTML абзаци (параграфи), за добавяне към Bulogos BLSG... Стилове за форматиране (оформяне, оформление) на абзаци (параграфи)...:
+xxx
+
+xxx
+...
+ xxx
+ xxx
+...
+ xxx
+
+ xxx
+...
+    xxx
+    xxx
+...
+    xxx
+
+    xxx
+...
+        xxx
+        xxx
+...
+        xxx
+
+        xxx
+...  
 * десетична запетая, а НЕ десетична точка
-* 10,<super>99</super> лв.
-* 10.10. , а не 10.10
-* 13:43 ч., а не 13.43 ч или 13,43 ч
+* 10,<super>99</super> лв. , а НЕ 10<sup>99</sup> лв
+* 10.10. (за дата), а не 10.10 (освен в заглавието на издания на Линукс дистрибуции, например: Ubuntu 10.10)!
+* 13:43 ч., а не 13.43 ч или 13,43 ч --- виж kaksepishe.com, ПРБЕ2002, ОПРБЕ2012 и „Написаното остава! Пиши грамотно!“ по въпроса...
+* @sahwar в tex.stackexchange.com --- българоезично форматиране на числителни редни в числови изброявания на раздели на статия или книга... (т.е. 1.1. вместо 1.1)
 
 ---
 
 * http://www.metodii.com/bg_phon2.html = `**Инсталация за Linux:**
-    Онези от вас, които използват X Window и искат да използват новите клавиатурни подредби за писане на български език, нека да изтеглят [този файл](http://lml.bas.bg/~anton/misc/bg) и да го сложат на мястото на /etc/X11/xkb/symbols/pc/bg`.
+    Онези от вас, които използват X Window и искат да използват новите клавиатурни подредби за писане на български език, нека да изтеглят [този файл](http://lml.bas.bg/~anton/misc/bg) и да го сложат на мястото на /etc/X11/xkb/symbols/pc/bg`.
 http://lml.bas.bg/~anton/misc/bg
+
+---
+
+http://goginahalnik.data.bg/p/files/TransLiterator
+http://www.isfdb.org/wiki/index.php?title=Rules_and_standards_discussions/Archive/Archive01
+http://www.isfdb.org/wiki/index.php/Main_Page
+https://archive.is/ldLp1
+
+http://bgoffice.sourceforge.net/assistant/online/index_en.html ( https://archive.is/Gv6O )
+ ( http://archive.is/UD1bu )
+
+http://www.6lyokavitza.org/ ( http://archive.is/PeHoc )
+http://www.6lyokavitza.org/faq/ ( http://archive.is/Cp2bw )
+https://mountwhite.net/en/cyrillic.html
+
+http://www.friends-partners.org/~isandler/cyrconv/cyrconv.html
+
+https://doncho.net/category/%D0%B7%D0%B0%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/
+
+
+======
+
+
+....
+
+http://www.isfdb.org/wiki/index.php/Main_Page
+
+https://crowdin.com/translate/paintdotnet/1/en-bg
+https://sites.google.com/site/bglocalize/dict
+https://www.i-ching.eu/love_oracle.htm
+https://unix.stackexchange.com/questions/243207/how-can-i-delete-everything-until-a-pattern-and-everything-after-another-pattern
+https://history.stackexchange.com/conduct
+http://www.grymoire.com/Unix/Sed.html
+http://www.grymoire.com/Unix/AwkRef.html
+http://www.grymoire.com/magic.html
+http://www.grymoire.com/Unix/SedChart.pdf
+http://www.grymoire.com/Privacy/BillOfRights.html
+http://www.grymoire.com/Deception/index.html
+http://www.grymoire.com/Unix/Regular.html
+http://www.grymoire.com/Unix/Quote.html
+https://www.computing.net/
+http://www.theunixschool.com/2014/08/sed-examples-remove-delete-chars-from-line-file.html
+http://www.theunixschool.com/2010/06/what-is-suid.html
+http://www.theunixschool.com/2010/11/5-important-things-to-follow-to-be-fast.html
+http://www.theunixschool.com/2012/06/sed-25-examples-to-delete-line-or.html
+https://serverfault.com/questions/398187/how-to-delete-all-characters-in-one-line-after-with-sed
+https://askubuntu.com/questions/736181/remove-everything-before-first-occurence-of-specified-word
+https://catonmat.net/sed-one-liners-explained-part-two
+https://catonmat.net/awk-one-liners-explained-part-one
+http://www.eriwen.com/tools/awk-is-a-beautiful-tool/
+https://github.com/sahwar/gradle
+http://www.eriwen.com/tools/grep-is-a-beautiful-tool/
+https://www.regular-expressions.info/reference.html
+http://www.eriwen.com/productivity/find-is-a-beautiful-tool/
+http://www.eriwen.com/opinion/what-i-wanted-to-know/
+https://www.eriwen.com/leadership/communication/
+https://catonmat.net/awk-nawk-and-gawk-cheat-sheet
+https://catonmat.net/vim-plugins-repeat-vim
+https://en.proft.me/2014/05/31/sed-examples/
+http://archive.is/kXIRa
+http://flatassembler.net/examples.php
+http://fresh.flatassembler.net/
+https://asm32.info/index.cgi?page=content/0_MiniMagAsm/docs/tfal.txt
+https://mail.google.com/mail/u/0/#inbox
+https://store.fmi.uni-sofia.bg/fmi/logic/skordev/c2l.htm
+https://www.lex.bg/bg/laws/ldoc/2135623667
+https://github.com/sahwar/win-iconv
+https://github.com/sahwar/Bulogos/edit/master/lat2cyr-bg+cyr-bg2lat_transliteration-history.txt
+https://github.com/sahwar/Bulogos
+http://web.archive.org/web/20170510101831/http://www.friends-partners.org:80/~isandler/cyrconv/cyrconv.html
+https://bg.wikipedia.org/w/index.php?title=%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D0%BD%D1%86%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%B7%D0%B0%D0%BF%D0%B0%D0%B4%D0%BD%D0%B8%D1%82%D0%B5_%D1%81%D0%BB%D0%B0%D0%B2%D0%B8%D1%81%D1%82%D0%B8&action=edit&section=7
+https://novini.bg/
+
+======
+
+escape characters
+
+======
+
+Perl scripts to backup to https://github.com/sahwar/Bulogos in _scripts-mirror-backups folder/directory:
+http://newyork.mashke.org/Conv/cyr-conv
+http://newyork.mashke.org/Conv/lat-koi
+http://newyork.mashke.org/Conv/lat-koi-ukr
+
+http://newyork.mashke.org/Conv/
+http://newyork.mashke.org/Conv/cyr-conv.html
+http://newyork.mashke.org/Conv/lat-koi.html
+http://newyork.mashke.org/Conv/cyr-conv.html#failure
+http://newyork.mashke.org/Conv/lat-koi.html
