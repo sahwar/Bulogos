@@ -197,6 +197,10 @@ FreeFileSync, SyncThing, OwnCloud, http://linux-bg.com
 
 * **http://copy.sh/** (e.g. http://copy.sh/lcd/ )
 * **https://bellard.org/** (absolutely amazing software projects and DIY ideas!!!) (e.g. https://bellard.org/jslinux/ )
+* https://invisible-island.net ( https://invisible-island.net/luit.html ) (amazing software!); `luit`, `iconv`, `libiconv`,
+* http://fex.rus.uni-stuttgart.de/ ( http://archive.fo/48UNY ) & **http://fex.belwue.de/fstools/** ( http://archive.is/OskCS ) = absolutely amazing software for UNIX/Linux written in Perl by Ulli Horlacher, especially F\*EX!!!
+* http://www.infodrom.org/projects/gerstensaft/ , http://www.infodrom.org/projects/manpages-de/ , http://www.infodrom.org/projects/cfingerd/ , http://www.infodrom.org/projects/sysklogd/ , http://www.infodrom.org/linx/ , http://www.infodrom.org/projects/webgraph/ , http://www.infodrom.org/projects/webtomail/ , http://www.infodrom.org/projects/uucpsend/ , http://www.infodrom.org/projects/calendar/ , http://www.infodrom.org/projects/sqllib/ , http://www.infodrom.org/projects/ticket/
+* http://newyork.mashke.org/Conv/lat-koi.html = nice examples of Perl scripts for transliteration!
 * **https://www.splitbrain.org/projects/** (very cool software projects and scripts!!!:
 ````
 https://www.splitbrain.org/
