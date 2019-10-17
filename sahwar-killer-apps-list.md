@@ -6,7 +6,7 @@
 ## Under `Microsoft Windows 7 Ultimate/Pro SP1 (x64) / Windows 8.1 / Windows 10` ##
 **Taskbar-pinned main apps:**
 [ClassicShell](http://www.classicshell.net/) ([ClassicShell at GitHub](https://github.com/coddec/Classic-Shell), [Open-Shell (Classic Shell reborn, for Windows 10, too](https://github.com/Open-Shell), [Spencer (WindowsXP-like menu for Windows7+](http://www.the-sz.com/products/spencer/)), `explorer.exe` (Windows Explorer file-manager), `taskmgr.exe` (Task Manager), `calc.exe` (Calculator), (`cmd.exe` / PowerShell), [Wox (speed-launcher)](https://github.com/Wox-launcher/Wox) (other [launchers](https://github.com/topics/launcher)), **[Notepad2-mod](https://github.com/XhmikosR/notepad2-mod/releases/)** / (**[Notepad3](https://github.com/rizonesoft/Notepad3/)** (_**[download](https://www.rizonesoft.com/downloads/notepad3/)**_) / **[Notepadqq](https://notepadqq.com/s/)** ([Notepadqq at GitHub](https://github.com/notepadqq/notepadqq)), **[notepad2e](https://github.com/ProgerXP/Notepad2e)**, [notepad2 mods by Code.Kliu.org](http://code.kliu.org/misc/notepad2/), [Notepad2, the original (by Florian Balmer)](http://www.flos-freeware.ch/notepad2.html)), **[Notepad++](https://notepad-plus-plus.org/) (_+add-ons, see below, e.g. DSpellCheck, TextFX Characters, MarkdownViewer++_)**, [spacemacs text editor](https://github.com/syl20bnr/spacemacs) (http://spacemacs.org/), [NeoVim text-editor](https://github.com/neovim/neovim) (https://neovim.io/), **[SpaceVim](https://spacevim.org)**, Emacsen, **[Cream Vim](http://cream.sourceforge.net/)**, medit+`sort | uniq`, Kakoune, KDE Kate, Oni, CudaText, Howl, Eclipse Che, LightTable, SynWrite; Slap, Syntaxic, **jEdit**, SlickEdit (+its on-the-fly code beautifier), `micro`, `nano`, Yi (Haskell); **GitHub Atom text editor**, Adobe Brackets, **gEdit** (+add-ons&snippets - e.g. snipplr.com & commandlinefu.com ), **gVim**, [qemacs](https://bellard.org/qemacs/), Femto Emacs, GNU Emacs GUI (>v23.2); GNU coreutils + awk & sed & ls & grep & pcre & iconv & wget & curl & lftp & aria2-cli, $pandoc, etc. GNU&bash/zsh CLI commands; **MS VSCode**, **Geany IDE**, [super-emacs](https://github.com/myTerminal/super-emacs), medit (Linux), FreeMind, LibreOffice, Scribus (alternative to Adobe InDesign), 
-[FocusWriter novel-writing app](https://gottcode.org/focuswriter/), [yWriter6 (novel-writing text editor app!](http://www.spacejock.com/yWriter6.html) & [other useful apps from Spacejock Software (Simon Haynes)](http://www.spacejock.com/Software.html) & http://www.spacejock.com/Utils.html , [TeXWorks](https://www.tug.org/texworks/) ([translate/localize TeXWorks!](https://github.com/TeXworks/texworks/wiki/Translating)); [BabelMap](http://www.babelstone.co.uk/Software/BabelMap.html) (Unicode character map), graphemica.co, [(VoidTools) Search Everything](https://www.voidtools.com/) (file-searching-by-filename&regex engine for Windows), `AEDict.exe` ([AEDictionary](http://www.kamburov.net/aleksandar/projects/aedict/), an old but FAST Bulgarian<->English dictionary), [Megadict-BG](http://www.megadict-bg.com/) dictionary, [GoldenDict](http://goldendict.org/), [bgEngDictionary](), [IDI Spellchecker&Dictionary](http://www.freeplace.info/ididictionary/bulgarian_spell_checker/) (v2.44/v4.??, buy the latest best version from [here](http://www.freeplace.info/ididictionary/bulgarian_spell_checker/)!), [paint.net](https://www.getpaint.net/), [GifCam](http://blog.bahraniapps.com/gifcam/) (bahraniapps.net), [ShareX](https://getsharex.com/), [nomacs](http://nomacs.org/) (image viewer), [Imagine](http://www.nyam.pe.kr/dev/imagine/) (image viewer), IrfanView, (GPicView&etc. for Linux), [NexusFont](http://www.xiles.net/) (font-manager), [Audacity](https://www.audacityteam.org/), [Mozilla Firefox](https://www.mozilla.org/bg/firefox/new/) (v56+, x64 as of 2018), [Google Chrome](https://www.google.com/chrome/), [MPC-HC](https://mpc-hc.org/) (Media Player Classic - Home Cinema), [VLC](https://www.videolan.org/), [Baka MPlayer](http://bakamplayer.u8sand.net/) ([mpv](https://mpv.io/)-based), [SMPlayer](https://www.smplayer.info/), Daum PotPlayer (freeware), The KMPlayer (freeware), Oracle VM [VirtualBox](https://www.virtualbox.org/) (OS virtualization), [PidginIM](http://pidgin.im/) (XMPP/Jabber IM client), [Skype](https://www.skype.com/en/get-skype/), [Viber](https://www.viber.com/), [Facebook Messenger](https://www.messenger.com), [EiskaltDC++](https://sourceforge.net/projects/eiskaltdcpp/) ([2](https://github.com/eiskaltdcpp/eiskaltdcpp))/[ApexDC](https://www.apexdc.net/)/[DC++](http://dcplusplus.sourceforge.net/index.html), [qBitTorrent](https://www.qbittorrent.org/), [youtube-dl.exe](http://youtube-dl.org/), [wget64.exe](https://eternallybored.org/misc/wget/), wget2 (https://gitlab.com/gnuwget/wget2), lftp, aria2c, ugetdm, [curl64.exe](https://curl.haxx.se/download.html) (**https://curl.haxx.se/docs/comparison-table.html**) (`-Z` & `libcurl` - https://curl.haxx.se/docs/manpage.html ), [snarf](https://www.xach.com/snarf/), [wget](https://www.gnu.org/software/wget/), [wget2](https://gitlab.com/gnuwget/wget2), [pavuk](http://www.pavuk.org/), [fget](https://www.fefe.de/fget/), [lftp](https://lftp.yar.ru/), [aria2](https://aria2.sourceforge.io/), [httrack](https://www.httrack.com/), [HTTPie](https://httpie.org/), [dl - 5ko.free.fr (dl : Сваляне на последователно номерирани файлове)](http://archive.is/2U3pA), `get_words_data_v5.php` (by [OmegaKO](http://animerulezzz.org)), [AWGG](https://github.com/Nenirey/AWGG), [ffmpeg.exe](https://ffmpeg.org/) ([Windows builds](https://ffmpeg.zeranoe.com/builds/)) / [libav](https://www.libav.org/)... [7-ZIP](https://www.7-zip.org/) / [PeaZip](http://www.peazip.org/), [Krita](https://krita.org/en/), [MyPaint](http://mypaint.org/), [Medibang Paint Pro](https://medibangpaint.com/en/), [SpeedyPainter](http://speedypainter.altervista.org/), [JPixel](https://emad.itch.io/jpixel), `pdf2htmlEX`, `img2pdf`, [Rufus (ISO-writing-to-USB-flashstick tool)](https://github.com/pbatard/rufus) / [Etcher](https://github.com/balena-io/etcher), [FilePizza](https://github.com/kern/filepizza), [waifu2x](http://waifu2x.udp.jp/index.html), ..., [Shortcut (video-editor)](https://shotcut.org/), [Open Shot (video-editor)](https://www.openshot.org/) ([(translations over at LaunchPad.net)](https://translations.launchpad.net/openshot/2.0/+translations)), [Kdenlive](https://kdenlive.org/en/), [OBS (Open Broadcaster Software) Studio](https://obsproject.com/) (Free and open source software for video recording and live streaming - for Windows, Linux, macOS), [LibreCAD](https://librecad.org/), [Blender3D](https://www.blender.org/), [Greenfish Subtitle Player](http://greenfishsoftware.org/gfsp.php#apage) (FREEWARE, Windows-only), [Aegieub](http://aegisub.org), http://subworkshop.sourceforge.net/ , Jubler, Open Subtitle Editor, Subtitle Creator, SubMagic, https://lintut.com/best-subtitle-editors-for-linux/ , (datetime-stamp еditing forensic software), etc.
+[FocusWriter novel-writing app](https://gottcode.org/focuswriter/), [yWriter6 (novel-writing text editor app!](http://www.spacejock.com/yWriter6.html) & [other useful apps from Spacejock Software (Simon Haynes)](http://www.spacejock.com/Software.html) & http://www.spacejock.com/Utils.html , [TeXWorks](https://www.tug.org/texworks/) ([translate/localize TeXWorks!](https://github.com/TeXworks/texworks/wiki/Translating)); [BabelMap](http://www.babelstone.co.uk/Software/BabelMap.html) (Unicode character map), graphemica.co, [(VoidTools) Search Everything](https://www.voidtools.com/) (file-searching-by-filename&regex engine for Windows), `AEDict.exe` ([AEDictionary](http://www.kamburov.net/aleksandar/projects/aedict/), an old but FAST Bulgarian<->English dictionary), [Megadict-BG](http://www.megadict-bg.com/) dictionary, [GoldenDict](http://goldendict.org/), [bgEngDictionary](), [IDI Spellchecker&Dictionary](http://www.freeplace.info/ididictionary/bulgarian_spell_checker/) (v2.44/v4.??, buy the latest best version from [here](http://www.freeplace.info/ididictionary/bulgarian_spell_checker/)!), [paint.net](https://www.getpaint.net/), [GifCam](http://blog.bahraniapps.com/gifcam/) (bahraniapps.net), [ShareX](https://getsharex.com/), [nomacs](http://nomacs.org/) (image viewer), [Imagine](http://www.nyam.pe.kr/dev/imagine/) (image viewer), IrfanView, (GPicView&etc. for Linux), [NexusFont](http://www.xiles.net/) (font-manager), [Audacity](https://www.audacityteam.org/), [Mozilla Firefox](https://www.mozilla.org/bg/firefox/new/) (v56+, x64 as of 2018), [Google Chrome](https://www.google.com/chrome/), [MPC-HC](https://mpc-hc.org/) (Media Player Classic - Home Cinema), [VLC](https://www.videolan.org/), [Baka MPlayer](http://bakamplayer.u8sand.net/) ([mpv](https://mpv.io/)-based), [SMPlayer](https://www.smplayer.info/), Daum PotPlayer (freeware), The KMPlayer (freeware), Oracle VM [VirtualBox](https://www.virtualbox.org/) (OS virtualization), [PidginIM](http://pidgin.im/) (XMPP/Jabber IM client), [Skype](https://www.skype.com/en/get-skype/), [Viber](https://www.viber.com/), [Facebook Messenger](https://www.messenger.com), [EiskaltDC++](https://sourceforge.net/projects/eiskaltdcpp/) ([2](https://github.com/eiskaltdcpp/eiskaltdcpp))/[ApexDC](https://www.apexdc.net/)/[DC++](http://dcplusplus.sourceforge.net/index.html), [qBitTorrent](https://www.qbittorrent.org/), [youtube-dl.exe](http://youtube-dl.org/), [wget64.exe](https://eternallybored.org/misc/wget/), wget2 (https://gitlab.com/gnuwget/wget2), lftp, aria2c, ugetdm, [curl64.exe](https://curl.haxx.se/download.html) (**https://curl.haxx.se/docs/comparison-table.html**) (`-Z` & `libcurl` - https://curl.haxx.se/docs/manpage.html ), [snarf](https://www.xach.com/snarf/), [wget](https://www.gnu.org/software/wget/), [wget2](https://gitlab.com/gnuwget/wget2), [pavuk](http://www.pavuk.org/), [fget](https://www.fefe.de/fget/), [lftp](https://lftp.yar.ru/), [aria2](https://aria2.sourceforge.io/), [httrack](https://www.httrack.com/), [HTTPie](https://httpie.org/), [dl - 5ko.free.fr (dl : Ñâàëÿíå íà ïîñëåäîâàòåëíî íîìåðèðàíè ôàéëîâå)](http://archive.is/2U3pA), `get_words_data_v5.php` (by [OmegaKO](http://animerulezzz.org)), [AWGG](https://github.com/Nenirey/AWGG), [ffmpeg.exe](https://ffmpeg.org/) ([Windows builds](https://ffmpeg.zeranoe.com/builds/)) / [libav](https://www.libav.org/)... [7-ZIP](https://www.7-zip.org/) / [PeaZip](http://www.peazip.org/), [Krita](https://krita.org/en/), [MyPaint](http://mypaint.org/), [Medibang Paint Pro](https://medibangpaint.com/en/), [SpeedyPainter](http://speedypainter.altervista.org/), [JPixel](https://emad.itch.io/jpixel), `pdf2htmlEX`, `img2pdf`, [Rufus (ISO-writing-to-USB-flashstick tool)](https://github.com/pbatard/rufus) / [Etcher](https://github.com/balena-io/etcher), [FilePizza](https://github.com/kern/filepizza), [waifu2x](http://waifu2x.udp.jp/index.html), ..., [Shortcut (video-editor)](https://shotcut.org/), [Open Shot (video-editor)](https://www.openshot.org/) ([(translations over at LaunchPad.net)](https://translations.launchpad.net/openshot/2.0/+translations)), [Kdenlive](https://kdenlive.org/en/), [OBS (Open Broadcaster Software) Studio](https://obsproject.com/) (Free and open source software for video recording and live streaming - for Windows, Linux, macOS), [LibreCAD](https://librecad.org/), [Blender3D](https://www.blender.org/), [Greenfish Subtitle Player](http://greenfishsoftware.org/gfsp.php#apage) (FREEWARE, Windows-only), [Aegieub](http://aegisub.org), http://subworkshop.sourceforge.net/ , Jubler, Open Subtitle Editor, Subtitle Creator, SubMagic, https://lintut.com/best-subtitle-editors-for-linux/ , (datetime-stamp åditing forensic software), etc.
 
 * [DSpeech TTS](http://dimiodati.altervista.org/zip/dspeech.zip), DTaskManager, Deep Explorer, DSynchronize (freeware MS Windows apps by Dimio Software / Dimitrios Coutsoumbas): 
 http://dimio.altervista.org/eng/ (backup HTML: http://archive.is/nM3aV )
@@ -24,6 +24,12 @@ https://www.pling.com/s/ALL/search/projectSearchText/keyboard%20layout%20editor
 https://sites.google.com/site/kdekorte2/gnomemplayer (its comprehensive Playlist window design is very much needed in MPC-HC, mpv & BakaMplayer)
 
 * https://www.groovypost.com/howto/bios-uefi-setup-guide-boot-from-cd-dvd-usb-drive-sd-card/
+---
+* https://github.com/basildane/WakeOnLAN ( https://wol.aquilatech.com/ )
+* https://nirsoft.net/utils/wake_on_lan.html , https://nirsoft.net/utils/product_cd_key_viewer.html
+* UltraVNC
+* for DirectX/Direct 3D video games: [DxWnd](https://sourceforge.net/projects/dxwnd/) ( https://sourceforge.net/p/dxwnd/home/Home/ , https://sourceforge.net/projects/dxwnd/files/ ) (  , https://www.play-old-pc-games.com/compatibility-tools/using-dxwnd/ , https://softradar.com/dxwnd/ , https://www.majorgeeks.com/files/details/dxwnd.html , https://browsehappy.com/ , https://downloads.tomsguide.com/DxWnd,0301-65235.html ; https://sourceforge.net/projects/dxglwrap/ ; https://sourceforge.net/projects/gldirect/ , https://sourceforge.net/projects/java-direct3d/ ; **[]()** ( https://sourceforge.net/projects/borderless-gaming.mirror/ , https://github.com/Codeusa/Borderless-Gaming , https://store.steampowered.com/app/388080/Borderless_Gaming/ , http://westechsolutions.net/sites/WindowedBorderlessGaming/ , https://github.com/Codeusa/Borderless-Gaming/releases/ , https://westechsolutions.net/sites/WindowedBorderlessGaming/download ), ...
+* https://browsehappy.com/ 
 
 ````
 https://gitlab.com/gnuwget/wget2
@@ -38,29 +44,29 @@ aria2c, [webui-aria2](https://github.com/ziahamza/webui-aria2)
 ````
 
 ````
-Софтуер за ГНУ/Линукс
+Ñîôòóåð çà ÃÍÓ/Ëèíóêñ
 
 AVG Antivirus
 http://5ko.free.fr/bg/#soft
-[AbiWord](http://www.abisource.com/), [CD Burner XP Pro](http://www.cdburnerxp.se/) (http://5ko.free.fr/bg/rip.html), [ (cdrtools)](), [CDex](http://cdexos.sf.net/), [GnuWin32](http://gnuwin32.sourceforge.net/), [Mozilla Thunderbird](http://mozilla.org/products/thunderbird/), [Evolution Mail](), [JWriter (specialized novel-writing app](), [7-ZIP](http://www.7-zip.org/), [PeaZip](https://www.peazip.org/), [IrfanView](http://www.irfanview.com/), [MPlayer classic](http://sourceforge.net/projects/guliverkli/), [BS Player](http://www.bsplayer.org/), [MPlayer](http://www.mplayerhq.hu/), [Kanotix Linux](http://kanotix.com/), KANOTIX Linux (Linux distro), icewm (върху 'kdm') (прочетете помощния файл относно файловете toolbar и startup), uxterm (CLI терминал; ако локалите са ви в Уникод (Unicode), можете всичко), KDE Kate (текстов редактор), SciTE (текстов редактор), KDE Krusader (файлов браузър за (GNU/)Linux), 2xExplorer (файлов браузър за MS Windows), TotalCommander (файлов браузър за MS Windows), [MultiCommander](http://multicommander.com/) (freeware (безплатен) файлов браузър за MS Windows), Mozilla Firefox (Интернет браузър, уеб-четец, уеб-браузър), Chromium/Google Chrome/Avast Browser, privoxy (филтриращо прокси), iptables (филтриращо прокси), KMail (е-поща), mplayer (видео плейър, „(мулти)медиен пускач“), ogle (media player за DVD), xmms (audio player), kaffeine (audio player за интернет-радиоканали), ChatZilla (IRC чат), XChat (IRC чат), KDE Kopete (чат програма), Skype, wget, KolourPaint (за KDE и MS Windows), MS Paint (версията за WindowsXP, не версията за Windows98 или версията за Windows Vista или версията за Windows7 или версията за Windows10), KDE Krusader (за разглеждане на директории), IrfanView през Wine, 7-zip (работи с Wine/PlayOnLinux), качете си пакета p7zip (същото, но по-бързо, обаче само с командния ред (CLI)), kkbswitch (джунджурийка, превключвател за клавиатурни подредби. Просто исках да ми се показва българското знаменце, като пиша на кирилица, след няколко опита таз най-много ми хареса и я преведох на български).
+[AbiWord](http://www.abisource.com/), [CD Burner XP Pro](http://www.cdburnerxp.se/) (http://5ko.free.fr/bg/rip.html), [ (cdrtools)](), [CDex](http://cdexos.sf.net/), [GnuWin32](http://gnuwin32.sourceforge.net/), [Mozilla Thunderbird](http://mozilla.org/products/thunderbird/), [Evolution Mail](), [JWriter (specialized novel-writing app](), [7-ZIP](http://www.7-zip.org/), [PeaZip](https://www.peazip.org/), [IrfanView](http://www.irfanview.com/), [MPlayer classic](http://sourceforge.net/projects/guliverkli/), [BS Player](http://www.bsplayer.org/), [MPlayer](http://www.mplayerhq.hu/), [Kanotix Linux](http://kanotix.com/), KANOTIX Linux (Linux distro), icewm (âúðõó 'kdm') (ïðî÷åòåòå ïîìîùíèÿ ôàéë îòíîñíî ôàéëîâåòå toolbar è startup), uxterm (CLI òåðìèíàë; àêî ëîêàëèòå ñà âè â Óíèêîä (Unicode), ìîæåòå âñè÷êî), KDE Kate (òåêñòîâ ðåäàêòîð), SciTE (òåêñòîâ ðåäàêòîð), KDE Krusader (ôàéëîâ áðàóçúð çà (GNU/)Linux), 2xExplorer (ôàéëîâ áðàóçúð çà MS Windows), TotalCommander (ôàéëîâ áðàóçúð çà MS Windows), [MultiCommander](http://multicommander.com/) (freeware (áåçïëàòåí) ôàéëîâ áðàóçúð çà MS Windows), Mozilla Firefox (Èíòåðíåò áðàóçúð, óåá-÷åòåö, óåá-áðàóçúð), Chromium/Google Chrome/Avast Browser, privoxy (ôèëòðèðàùî ïðîêñè), iptables (ôèëòðèðàùî ïðîêñè), KMail (å-ïîùà), mplayer (âèäåî ïëåéúð, „(ìóëòè)ìåäèåí ïóñêà÷“), ogle (media player çà DVD), xmms (audio player), kaffeine (audio player çà èíòåðíåò-ðàäèîêàíàëè), ChatZilla (IRC ÷àò), XChat (IRC ÷àò), KDE Kopete (÷àò ïðîãðàìà), Skype, wget, KolourPaint (çà KDE è MS Windows), MS Paint (âåðñèÿòà çà WindowsXP, íå âåðñèÿòà çà Windows98 èëè âåðñèÿòà çà Windows Vista èëè âåðñèÿòà çà Windows7 èëè âåðñèÿòà çà Windows10), KDE Krusader (çà ðàçãëåæäàíå íà äèðåêòîðèè), IrfanView ïðåç Wine, 7-zip (ðàáîòè ñ Wine/PlayOnLinux), êà÷åòå ñè ïàêåòà p7zip (ñúùîòî, íî ïî-áúðçî, îáà÷å ñàìî ñ êîìàíäíèÿ ðåä (CLI)), kkbswitch (äæóíäæóðèéêà, ïðåâêëþ÷âàòåë çà êëàâèàòóðíè ïîäðåäáè. Ïðîñòî èñêàõ äà ìè ñå ïîêàçâà áúëãàðñêîòî çíàìåíöå, êàòî ïèøà íà êèðèëèöà, ñëåä íÿêîëêî îïèòà òàç íàé-ìíîãî ìè õàðåñà è ÿ ïðåâåäîõ íà áúëãàðñêè).
 
 https://georgi.unixsol.org/programs/
 https://georgi.unixsol.org/programs/bg_names_stats/
-https://georgi.unixsol.org/programs/num2bgmoney.php/view/ (словообразувателните модели на българските числителни имена)
+https://georgi.unixsol.org/programs/num2bgmoney.php/view/ (ñëîâîîáðàçóâàòåëíèòå ìîäåëè íà áúëãàðñêèòå ÷èñëèòåëíè èìåíà)
 https://georgi.unixsol.org/programs/X11/
-https://georgi.unixsol.org/programs/X11/xkb.sh = xkb = https://bg.wikipedia.org/wiki/Клавиатурна_подредба
+https://georgi.unixsol.org/programs/X11/xkb.sh = xkb = https://bg.wikipedia.org/wiki/Êëàâèàòóðíà_ïîäðåäáà
 ````
 
-* UnLocker v1.8 (можете да изтриете или преместите файлове, за които Windows отказва да изпълни съответната команда), Crystal Disk Info, [Melissa-Core](https://github.com/omaciel/Melissa-Core) (виртуален асистент за Windows, Linux и macOS, който има възможности за гласов синтез (A lovely virtual assistant for OS X, Windows and Linux systems, it uses Google Chrome's speech-to-text engine, (macOS') Mac OS X's `say` command, Linux's `espeak` command or Ivona TTS.))
+* UnLocker v1.8 (ìîæåòå äà èçòðèåòå èëè ïðåìåñòèòå ôàéëîâå, çà êîèòî Windows îòêàçâà äà èçïúëíè ñúîòâåòíàòà êîìàíäà), Crystal Disk Info, [Melissa-Core](https://github.com/omaciel/Melissa-Core) (âèðòóàëåí àñèñòåíò çà Windows, Linux è macOS, êîéòî èìà âúçìîæíîñòè çà ãëàñîâ ñèíòåç (A lovely virtual assistant for OS X, Windows and Linux systems, it uses Google Chrome's speech-to-text engine, (macOS') Mac OS X's `say` command, Linux's `espeak` command or Ivona TTS.))
 
 * [unpaper](https://www.flameeyes.com/projects/unpaper), [ScanTailor](https://scantailor.org/) (https://github.com/scantailor/scantailor), [paperless](https://github.com/the-paperless-project/paperless), 
 
 * [...] NeoVim, Spacemacs, SpaceVim, Kakoune, KDE Kate, Notepad++ (MS Windows), Notepad2-mod, Notepad3, Notepadqq, Oni, CudaText, Howl, Eclipse Che, 
  LightTable, qemacs, Femto Emacs, SynWrite, Emacs (>v23.2); Slap, Syntaxic, jEdit, SlickEdit (+its on-the-fly code beautifier), micro, nano, Yi (Haskell); GitHub Atom, Brackets, gEdit, gVim, 
 
-Spacemacs, NeoVim или Notepad3, Notepadqq, Notepad2-mod + awk & sed & ls & grep & pcre & iconv & wget & curl & lftp & aria2-cli, $pandoc, etc CLI commands, GitHub Atom, MS VSCode, Geany IDE, даже Notepad++ (Windows).
+Spacemacs, NeoVim èëè Notepad3, Notepadqq, Notepad2-mod + awk & sed & ls & grep & pcre & iconv & wget & curl & lftp & aria2-cli, $pandoc, etc CLI commands, GitHub Atom, MS VSCode, Geany IDE, äàæå Notepad++ (Windows).
 
-Освен Spacemacs или NeoVim, друго няма читаво като GUI за emacs или vi(m), освен old-school GVim и GNU Emacs GUI, и разни експериментални нови разработки надстройки-mods на vim & emacs в GitHub и GitLab...
+Îñâåí Spacemacs èëè NeoVim, äðóãî íÿìà ÷èòàâî êàòî GUI çà emacs èëè vi(m), îñâåí old-school GVim è GNU Emacs GUI, è ðàçíè åêñïåðèìåíòàëíè íîâè ðàçðàáîòêè íàäñòðîéêè-mods íà vim & emacs â GitHub è GitLab...
 https://github.com/myTerminal/super-emacs
 
 https://www.slant.co/topics/8142/~text-editors-for-opening-processing-large-text-files-4gb-on-windows
@@ -227,7 +233,7 @@ In this section you can find my various software projects. If not otherwise stat
 
 **[MonsterID](https://www.splitbrain.org/projects/monsterid "projects:monsterid")** – Create little monsters for avatar images with this PHP script
 
-**[File Icons](https://www.splitbrain.org/projects/file_icons "projects:file_icons")** – Community created 16×16 file type icons
+**[File Icons](https://www.splitbrain.org/projects/file_icons "projects:file_icons")** – Community created 16?16 file type icons
 
 **[VideoDB](https://www.splitbrain.org/projects/videodb "projects:videodb")** – a PHP application to manage your movie collection originally written by me. I do no longer maintain it myself but it has a very active developer community.
 
@@ -325,8 +331,8 @@ https://tools.chitanka.info/
 https://twitter.com/_ashish_tiwari/status/1156834512275247104
  
 @_ashish_tiwari
-Следване Следване на @_ashish_tiwari
-Още
+Ñëåäâàíå Ñëåäâàíå íà @_ashish_tiwari
+Îùå
 http://cheat.sh  Interesting tool for #developers to get information about any command or functionality. e.g. To get information about  'ls' command execute this:
 
 "curl http://cheat.sh/ls "
@@ -342,12 +348,12 @@ explainshell.com
 It is much more then man. It takes data from multiple sources like github stackoverflow etc. Also you can search for any programming language or its core functions like /python/append
 
 Markus Ritzmann
-‏
+?
  
 @RitzmannMarkus
  1.08
-Още
-В отговор до @_ashish_tiwari @nixcraft @igor_chubin
+Îùå
+Â îòãîâîð äî @_ashish_tiwari @nixcraft @igor_chubin
 And as zsh alias:
 c() { q="$1" ; curl https://cheat.sh/$q  }
 
@@ -357,25 +363,25 @@ https://cht.sh
 
 https://twitter.com/ediardo/status/1156232086597955584
 
-Eddie Ramírez
-‏
+Eddie Ramirez
+?
  
 @ediardo
-Следване Следване на @ediardo
-Още
-🔥 @kmdr_sh now explains commands with input and output redirection :) 
+Ñëåäâàíå Ñëåäâàíå íà @ediardo
+Îùå
+?? @kmdr_sh now explains commands with input and output redirection :) 
 
-⬇️ Download the CLI tool for explaining shell commands at https://github.com/ediardo/kmdr.sh  
+?? Download the CLI tool for explaining shell commands at https://github.com/ediardo/kmdr.sh  
 
 #linux #cli #terminal #console #bash
 
 Alberto Murillo
-‏
+?
  
 @powerbsd
  5.08
-Още
-В отговор до @ediardo @kmdr_sh
+Îùå
+Â îòãîâîð äî @ediardo @kmdr_sh
 Ya se sabe este?
 
 s="-<";while true;do echo -ne "$s\r";s=`sed 's/->$/-<-/;s/^</>/;s/-</<-/;s/>-/->/;'<<<$s`;sleep 0.1;done
@@ -411,7 +417,7 @@ Too many to list here... for now at least, that is.
 
 * ``pandoc`` ([pandoc website](https://github.com/jgm/pandoc))
 * https://github.com/luong-komorebi/Awesome-Linux-Software
-* https://sourceforge.net/projects/readthebible/files/Version%206/Bible6.3.6.app.zip/download - [Компютърна Библия (на български език)](http://readthebible.sourceforge.net/) - https://sourceforge.net/projects/readthebible/files/
+* https://sourceforge.net/projects/readthebible/files/Version%206/Bible6.3.6.app.zip/download - [Êîìïþòúðíà Áèáëèÿ (íà áúëãàðñêè åçèê)](http://readthebible.sourceforge.net/) - https://sourceforge.net/projects/readthebible/files/
 * ``pstree`` (the MS Windows ``tree`` directory-listing command for ``cmd.exe``, but for Linux)
 * ``curl``, ``wget``, ``lftp``, ``aria2c``, PHP, MySQL (LAMP / WAMP), phpMyAdmin, Moodle, 
 * `locate`, ``friendly-find (ffind)`` & ``find``, catfish (all are file searchers!!!), ``ack`` & ``grep`` & ``awk``, `cron` (and other `cron`-like apps on GitHub...), `iconv` & http://2cyr.com
