@@ -32,18 +32,20 @@ https://www.aldorlea.org/
 * Little Fighter 2
 * Super Mario Bros 3: Mario Forever
 * Sauerbraten 2
-* 
+* Gun Girl
+* The Spirit Engine I (TSE1) & The Spirit Engine 2 (TSE2)
+* ...
 * etc.
 
 ## Non-freeware (commercial) video games that @sahwar enjoyed:
 * Sacred (&Sacred Gold!) & Sacred 2 (by Ascaron)
-* Duke Nukem: Manhatten Project
-* Diablo II: Lord of Destruction & Diablo III & expansion pack
+* Duke Nukem: Manhatten Project (2.5D perspective)
+* Diablo II: Lord of Destruction & Diablo III & D3 expansion pack
 * Worms World Party, Worms: Armageddon, Worms 3D, Worms 4
 * classic RPGs from https://gog.com
 * Serious Sam, Serious Sam 2, Serious Sam 3, etc.
 * Quake 3: Arena
-* CS (Counter-Strike) 1.5/1.6 & CS:G.O.
+* CS (Counter-Strike) v1.5/v1.6 & CS:G.O.
 * etc.
 
 ## More FREEWARE games:
