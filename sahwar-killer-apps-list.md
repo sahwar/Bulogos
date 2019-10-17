@@ -49,7 +49,7 @@ aria2c, [webui-aria2](https://github.com/ziahamza/webui-aria2)
 ````
 
 ````
-Софтуер за ГНУ/Линукс
+Софтуер за ГНУ/Линукс ((GNU/)Linux...)
 
 AVG Antivirus
 http://5ko.free.fr/bg/#soft
@@ -75,6 +75,8 @@ Spacemacs, NeoVim или Notepad3, Notepadqq, Notepad2-mod + awk & sed & ls & gr
 https://github.com/myTerminal/super-emacs
 
 https://www.slant.co/topics/8142/~text-editors-for-opening-processing-large-text-files-4gb-on-windows
+
+* **[OnionShare](https://onionshare.org/)** ( https://micahflee.com/2019/10/new-version-of-onionshare-makes-it-easy-for-anyone-to-publish-anonymous-uncensorable-websites/ ; https://onionshare.org/ ; https://twitter.com/newsycombinator/status/1184348824246128640 = 'OnionShare makes it easy to publish anonymous, uncensorable websites')
 
 ````
 various scripts for TeXWorks
