@@ -1,5 +1,6 @@
 CBASTILS_BGlocalize-DB.md
 
+## За името **_CBASTILS_**
 **CBASTILS (Common Bulgarian Application-Software Translation (t9n), Internationalization (i18n), and Localization (l10n) Strings - BGlocalize _extended_ DB (database)**... Част от проект Bulogos - bulogos.info (уебсайтът е 404 към 2019 г., засега е качен тук, в https://github.com/sahwar/Bulogos ).
 
 ## ЦЕЛИ
