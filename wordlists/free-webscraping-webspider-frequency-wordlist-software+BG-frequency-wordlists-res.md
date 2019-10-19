@@ -15,6 +15,35 @@ https://github.com/RedSilkSoftware/webtooth-extractor
 
 ## More web-resources on wordlists:
 
+### Bulgarian-language wordlists on GitHub.com // Списъци с думи на български език в GitHub.com
+* **https://github.com/stelf/en2bg4term** & **https://sites.google.com/site/bglocalize/dict**
+* https://github.com/miglen/bulgarian-wordlists
+* https://github.com/yradunchev/language
+* https://github.com/aquilax/bg-words-dict
+````
+bg-words-dict
+Списък с думи на български език.
+
+За генериране на списъка:
+
+wget https://github.com/chitanka/content-text/archive/master.zip
+unzip -p content-text-master.zip | sed "s/[^а-я^А-Я]/\n/g" | awk '{print tolower($0)}' | sort -u > dict.txt
+За генериране на списъка с валидните думи е използван aspell:
+
+python sift.py dict.txt > dict.spellchecked.txt
+Използван е корпус от https://github.com/chitanka/content-text.
+````
+* 
+* https://github.com/sahwar/Dictionaries/blob/master/Bulgarian.txt
+* https://github.com/sahwar/Dictionaries/blob/master/Bulgarian.aff & https://github.com/sahwar/Dictionaries/blob/master/Bulgarian.txt & https://github.com/sahwar/Dictionaries/blob/master/Bulgarian.dic
+* https://github.com/vanyog/grammar-bg
+* https://github.com/antouanbg/Bulgarian_Linguistic
+* https://github.com/imalchev/Slovom & https://bg.wikipedia.org/wiki/Имена_на_числата
+* http://bgoffice.sourceforge.net/ ; http://sourceforge.net/p/bgoffice/code/HEAD/tree/trunk/dictionaries/data/bg-en/ ; http://sourceforge.net/p/bgoffice/code/HEAD/tree/trunk/dictionaries/data/en-bg/ ;
+* https://github.com/rddim/OpenTTD-Bulgarian-Town-Names
+* https://github.com/quasoft/postgres-tsearch-bulgarian
+* https://github.com/yoandinkov/ranlp-2019
+* https://bg.wikipedia.org/wiki/Имена_на_числата `(k, K = „ка“; пример: 10k (10 ка) = 10 000)`
 * Честотни речници на българския език от Института за български език (ИБЕ) към Българската академия на науките (БАН) - по стилове: администр., научен, публицистичен, художествен, научно-популярен, разг./худ.
 http://dcl.bas.bg/frequency.html
 http://dcl.bas.bg/Resources/Frequency/Frequency.zip
