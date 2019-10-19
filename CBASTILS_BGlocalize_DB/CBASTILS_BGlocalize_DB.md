@@ -1,7 +1,7 @@
 CBASTILS_BGlocalize-DB.md
 
 ## За името **_CBASTILS_**
-**CBASTILS (Common Bulgarian(-language) Application-Software Translation (t9n), Internationalization (i18n), and Localization (l10n) Strings - BGlocalize _extended_ DB (database)**... Част от проект Bulogos - bulogos.info (уебсайтът е 404 към 2019 г., засега е качен тук, в https://github.com/sahwar/Bulogos ).
+**CBASTILS (Common Bulgarian(-language) Application-Software Translation (t9n), Internationalization (i18n), and Localization (l10n) Strings - BGlocalize _extended_ DB (database)**... Част от проект Bulogos - bulogos.info (уебсайтът е `Error 404: Not Found` към 2019 г., засега е качен тук, в https://github.com/sahwar/Bulogos ).
 
 ## ЦЕЛИ
 Целта на CBASTILS (произнася се „си-бастилс“) е да **обедини в една уебстраница (в един файл --- с цел по-лесно търсене: `Ctrl`+`F`) ВСИЧКИ онлайн, печатни и софтуерни речници с (най-често срещаните) английско-български и българо-английски преводи на термини от сферите на ИТ (информационните технологии), информатиката и технологиите като цяло**:
