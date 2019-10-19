@@ -1,4 +1,4 @@
-Това е копие на изключително полезния уебсайт https://sites.google.com/site/bglocalize/, конвертирано от HTML към Markdown чрез http://heckyesmarkdown.com/go/, https://jmalarcon.github.io/markdowntables/ и впоследствие ръчно доредактиране.
+Това е **(ВСЕ ОЩЕ НЕПЪЛНО/ЧАСТИЧНО)** копие на изключително полезния уебсайт https://sites.google.com/site/bglocalize/, конвертирано от HTML към Markdown чрез http://heckyesmarkdown.com/go/, https://jmalarcon.github.io/markdowntables/ и впоследствие ръчно доредактиране.
 
 **БЕЛЕЖКА:** Въпреки ръчната корекция, на някои места това издание все още съдържа дребни правописни грешки и грешки по текстовото форматиране поради автоматичното конвертиране (преобразуване) към Markdown. За лесно търсене из документа използвайте клавишната комбинация <kbd>Ctrl</kbd>+<kbd>F</kbd>.
 
