@@ -6,7 +6,7 @@ CBASTILS_BGlocalize-DB.md
 ## ЦЕЛИ
 Целта на CBASTILS (произнася се „си-бастилс“) е да **обедини в една уебстраница (в един файл --- с цел по-лесно търсене: `Ctrl`+`F`) ВСИЧКИ онлайн, печатни и софтуерни речници с (най-често срещаните) английско-български и българо-английски преводи на термини от сферите на ИТ (информационните технологии), информатиката и технологиите като цяло**:
 * **BGlocalize** - https://sites.google.com/site/bglocalize/dict
-* https://github.com/stelf/en2bg4term
+* **https://github.com/stelf/en2bg4term**
 * https://slovored.com/computer/ & https://slovored.com/polytechnical/
 * https://printguide.info/dictionary
 * сканирани и OCR-нати печатни речници
