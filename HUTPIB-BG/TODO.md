@@ -25,6 +25,7 @@ https://l10n.kde.org/team-infos.php?teamcode=bg
 * http://mx.j2inter.com/translation & https://crowdin.com/project/mx-video-player/bg#
 
 **FULL LIST FOR TRANSLATION INTO BULGARIAN**
+* `wget2.pot`, `wget`, `curl` (use the _ingenious new_ side-by-side on-the-same-line dual-language translation method/presentation, OR the original English-language text strings per 1-or-several lines, and then the Bulgarian-language translation (or vice versa)!!!)
 * [GraphicsGale](https://graphicsgale.com/us/download.html) (freeware as of 2018!)
 * [Krita](http://krita.org) (FOSS)
 * [MyPaint](http://mypaint.org/) (FOSS)
@@ -69,6 +70,20 @@ https://l10n.kde.org/team-infos.php?teamcode=bg
 * [IrfanView](https://www.irfanview.com/) (freeware)
 * [nomacs image-viewer](https://nomacs.org/) (FOSS)
 * [Notepad++ (npp, n++)](https://notepad-plus-plus.org/) (FOSS)
+* http://punbb.informer.com/downloads.php
+* _MyBB_ Bulgarian language pack
+* _phpBB_ Bulgarian language pack
+* _Magento/Magenta shopping cart_ Bulgarian translation pack
+* _YaBB_ Bulgarian translation pack
+* _WordPress_ Bulgarian translation pack
+* _Joomla!_ Bulgarian translation pack
+* _Moodle_ Bulgarian translation pack
+* _Drupal_ Bulgarian translation pack
+* Linux official Bulgarian langpacks & individual packages' Bulgarian locales...
+* Microsoft Windows XP SP3 official Bulgarian locale
+* Microsoft Windows 7 official Bulgarian locale
+* Microsoft Windows 8 & 8.1 official Bulgarian locale
+* Microsoft Windows 10 official Bulgarian locale
 * (to add more later on...)
 * etc.
 
