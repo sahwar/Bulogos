@@ -80,6 +80,7 @@ http://hp.vector.co.jp/authors/VA033749/tips_azdw2/anim.html
 * [gpaint](https://www.gnu.org/software/gpaint/)
 * [GraFX2](http://grafx2.chez.com/) [2](https://pulkomandy.tk/projects/GrafX2/downloads) _(HIGHLY RECOMMENDED)_
 * [GraphicsGale](https://graphicsgale.com/us/download.html) FREEWARE as of 2018! _(HIGHLY RECOMMENDED)_
+* [Greenfish Icon Editor](http://greenfishsoftware.org/gfie.php#apage) (FREEWARE) - https://greenfishsoftware.blogspot.com/2012/07/greenfish-icon-editor-pro.html - https://wiki.freepascal.org/File:GreenfishIconEditorProScreenshot.png)
 * [Harmony (by Ricardo Cabella)](http://mrdoob.com/projects/harmony/)
 * [HermiRES (Commodore64 painting app)](http://www.nightfallcrew.com/18/03/2014/hermires-v1-29-c64-hires-bitmap-editor/) [2](http://www.nightfallcrew.com/10/02/2013/hermires-v1-26-c64-hires-bitmap-editor/)
 * [Hornil StylePix Free](http://hornil.com/products/stylepix/) FREEWARE _(RECOMMENDED)_
