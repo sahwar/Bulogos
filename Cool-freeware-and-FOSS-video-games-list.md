@@ -27,14 +27,26 @@ https://www.aldorlea.org/
 * [Cave Story](https://www.cavestory.org/) (legendary cult-classic 2D action side-scrolling platformer, hardcore to beat!) (**TO DO:** Translate Cave Story into Bulgarian!!!)
 * [Blobby Volley 2](https://sourceforge.net/projects/blobby/) (also available [online](http://blobby.sourceforge.net/data/bv2browser/index.html)!)
 * ? (RTS)
-* [Wormux](https://github.com/yeKcim/warmux) (Worms3-2D clone)
-* Zack McKraken (freeware) & [Zak McKraken BTaS](http://www.mckracken.net/cms/directorscut.html)
-* Little Fighter 2
+* [Wormux](https://github.com/yeKcim/warmux) (a nice open-source 2D clone of [Team 17's _Worms_ 2D](https://en.wikipedia.org/wiki/Worms_(series)))
+* [Hedge Wars](https://www.hedgewars.org/download.html) (another cool open-source 2D clone of Team 17's Worms)
+* [Teeworlds](https://www.teeworlds.com/) (an online multiplayer deathmatch game similar to Team17's Worms2D games franchise: '_A retro multiplayer shooter: **Teeworlds** is a free online multiplayer game, available for all major operating systems. Battle with up to 16 (or 64!!!) players in a variety of game modes, including Team Deathmatch and Capture The Flag. You can even design your own maps!_')
+* [BlobWars](https://sourceforge.net/projects/blobwars/)
+* Zack McKraken (freeware), [The New Adventures of Zak McKraken](http://www.acid-play.com/download/the-new-adventures-of-zak-mckracken)
+& [Zak McKraken BTaS](http://www.mckracken.net/cms/directorscut.html), [Zak McKracken: Between Time and Space is an unofficial sequel of the adventure-classic Zak McKracken and the Alien Mindbenders which was released in 1988](http://www.cheatbook.de/download/zakmckrackenbetweentimeandspace.htm), http://www.mckracken.net/ , https://store.steampowered.com/app/559070/Zak_McKracken_and_the_Alien_Mindbenders/ , https://www.gog.com/game/zak_mckracken_and_the_alien_mindbenders 
+* [Little Fighter 2](http://www.lf2.net/)
 * Super Mario Bros 3: Mario Forever
 * Sauerbraten 2
-* Gun Girl
+* [Gun Girl](http://www.paulinthenet.de/) ( https://www.youtube.com/watch?v=k1ZVAi9BIMw ) & [Gun Girl 2](http://portablefreewaregames.com/game_pages/151-160/155_gun_girl_2.html) ( https://curlysworld.com/viewtopic.php?f=17&t=8664 , http://www.gungirl2.com/?page_id=31 , 
 * The Spirit Engine I (TSE1) & The Spirit Engine 2 (TSE2)
-* ...
+* [Beneath a Steel Sky](https://en.wikipedia.org/wiki/Beneath_a_Steel_Sky#Freeware_release_and_Remastered_edition)
+* Flight of the Amazon Queen - https://blends.debian.org/games/tasks/finest
+* Drascula
+* Out of Order (freeware, powered by the SLUDGE engine)
+* Lure-of-the-temptress
+* Black Mesa
+* CheatBook Database app - https://github.com/cheat-engine/cheat-engine
+* [Night of the Hermit](http://www.acid-play.com/download/night-hermit)
+* OpenArena (open-source clone of Quake3 Arena), Redeclipse, Nexiuz, supertux2 (sidescrolling 2D platformer), Battle of Wesnoth, Chromium B.S.U., Project Starfighter ( https://sourceforge.net/projects/pr-starfighter/ ), [PowerManga (shoot'em'up)](http://linux.tlk.fr/games/Powermanga/), https://blends.debian.org/games/tasks/shootemup), etc. ...
 * etc.
 
 ## Non-freeware (commercial) video games that @sahwar enjoyed:
