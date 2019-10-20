@@ -190,8 +190,8 @@ http://hp.vector.co.jp/authors/VA033749/tips_azdw2/anim.html
 [Beneton Movie GIF](https://www.benetonsoftware.com/Beneton_Movie_GIF.php) (SLOW but nice GIF animator); alternatives: gifsicle, libgif, Beneton Movie GIF, GIMP + GIMP GAP plug-in, Microsoft GIF Animator, various other online tools
 
 Image viewers: there are too many, I recommend the following:
-* for MS Windows: IrfanView, XnView, XnViewMP, **nomacs_x64**, [Imagine Viewer_x64](http://www.nyam.pe.kr/dev/imagine/)
-* for (GNU/)Linux: GPicView, **[nomacs_x64](http://nomacs.org/)**, GPicView (https://wiki.lxde.org/en/GPicView https://pkgs.org/download/gpicview ), [Viewnior](https://github.com/hellosiyan/Viewnior) ( https://www.linux-apps.com/p/1129010/ ), **[Mirage](http://mirageiv.sourceforge.net/)** (+[commandline viewing](http://mirageiv.sourceforge.net/docs-advanced.html#cli)), [Ristretto](https://docs.xfce.org/apps/ristretto/start), [Geeqie](http://geeqie.org/), [Feh](https://feh.finalrewind.org/)
+* for MS Windows: [IrfanView_x64](https://www.irfanview.com/), [XnView](https://www.xnview.com/en/) (minus the Unicode-in-filenames bug), [XnViewMP](https://www.xnview.com/en/xnviewmp/), **nomacs_x64**, [Imagine Viewer_x64](http://www.nyam.pe.kr/dev/imagine/)
+* for (GNU/)Linux: **[nomacs_x64](http://nomacs.org/)**, **_GPicView_** (https://wiki.lxde.org/en/GPicView https://pkgs.org/download/gpicview ), **[GThumb](https://github.com/GNOME/gthumb)** ( https://www.google.com/search?client=avast&q=linux+cli+image+viewer ), [Viewnior](https://github.com/hellosiyan/Viewnior) ( https://www.linux-apps.com/p/1129010/ ), **[Mirage](http://mirageiv.sourceforge.net/)** (+[commandline viewing](http://mirageiv.sourceforge.net/docs-advanced.html#cli)), [Ristretto](https://docs.xfce.org/apps/ristretto/start), [Geeqie](http://geeqie.org/), [Feh](https://feh.finalrewind.org/), Enlightenment DE (desktop environment)'s in-terminal image viewer - ..., `gv` CLI image viewer, [GV](https://gv30.net/) ; https://www.google.com/search?client=avast&q=linux+cli+image+viewer
 
 ( https://opensource.com/article/17/7/4-lightweight-image-viewers-linux-desktop )
 https://softfamous.com/freevimager/
