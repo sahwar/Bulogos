@@ -16,6 +16,18 @@
 * GitHub Desktop: https://itnext.io/how-to-use-github-desktop-with-gitlab-cd4d2de3d104 , https://community.reclaimhosting.com/t/using-github-desktop-with-gitlab/876
 * https://github.com/MoOx/git-init
 
+## DOWNLOAD the entire archive of files / ИЗТЕГЛЯНЕ на целия архив с файлове
+**https://github.com/sahwar/Bulogos/archive/master.zip** (Save link as... ; Запазване на връзката като... ; Запис на препратката като...)
+````
+wget https://github.com/sahwar/Bulogos/archive/master.zip
+````
+````
+curl https://github.com/sahwar/Bulogos/archive/master.zip
+````
+````
+git clone https://github.com/sahwar/Bulogos.git
+````
+
 ## Contact / За контакти
 :us: :gb:  If you have any ideas, suggestions or `git merge` requests about this project, then just send me an email with your ideas to [ve4ernik@gmail.com](mailto:ve4ernik@gmail.com).
 
