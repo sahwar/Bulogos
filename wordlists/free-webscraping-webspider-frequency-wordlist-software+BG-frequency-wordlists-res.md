@@ -11,7 +11,7 @@ https://sourceforge.net/projects/textstat/
 * https://sourceforge.net/projects/textfilestatist/
 * WebTooth-Extractor (webspider)
 https://github.com/RedSilkSoftware/webtooth-extractor
-
+* github.com - photon.py
 
 ## More web-resources on wordlists:
 
@@ -32,6 +32,14 @@ unzip -p content-text-master.zip | sed "s/[^а-я^А-Я]/\n/g" | awk '{print tol
 
 python sift.py dict.txt > dict.spellchecked.txt
 Използван е корпус от https://github.com/chitanka/content-text.
+````
+````
+https://fasttext.cc/docs/en/crawl-vectors.html
+https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.bg.300.bin.gz
+https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.bg.300.vec.gz
+http://nlp.ffzg.hr/resources/corpora/setimes/
+https://fasttext.cc/docs/en/language-identification.html
+https://fasttext.cc/docs/en/dataset.html
 ````
 * 
 * https://github.com/sahwar/Dictionaries/blob/master/Bulgarian.txt
