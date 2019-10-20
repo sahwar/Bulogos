@@ -74,7 +74,10 @@ http://5ko.free.fr/bg/#soft
 [AbiWord](http://www.abisource.com/), [CD Burner XP Pro](http://www.cdburnerxp.se/) (http://5ko.free.fr/bg/rip.html), [ (cdrtools)](), [CDex](http://cdexos.sf.net/), [GnuWin32](http://gnuwin32.sourceforge.net/), [Mozilla Thunderbird](http://mozilla.org/products/thunderbird/), [Evolution Mail](), [JWriter (specialized novel-writing app](), [7-ZIP](http://www.7-zip.org/), [PeaZip](https://www.peazip.org/), [IrfanView](http://www.irfanview.com/), [MPlayer classic](http://sourceforge.net/projects/guliverkli/), [BS Player](http://www.bsplayer.org/), [MPlayer](http://www.mplayerhq.hu/), [Kanotix Linux](http://kanotix.com/), KANOTIX Linux (Linux distro), icewm (върху 'kdm') (прочетете помощния файл относно файловете toolbar и startup), uxterm (CLI терминал; ако локалите са ви в Уникод (Unicode), можете всичко), KDE Kate (текстов редактор), SciTE (текстов редактор), KDE Krusader (файлов браузър за (GNU/)Linux), 2xExplorer (файлов браузър за MS Windows), TotalCommander (файлов браузър за MS Windows), [MultiCommander](http://multicommander.com/) (freeware (безплатен) файлов браузър за MS Windows), Mozilla Firefox (Интернет браузър, уеб-четец, уеб-браузър), Chromium/Google Chrome/Avast Browser, privoxy (филтриращо прокси), iptables (филтриращо прокси), KMail (е-поща), mplayer (видео плейър, „(мулти)медиен пускач“), ogle (media player за DVD), xmms (audio player), kaffeine (audio player за интернет-радиоканали), ChatZilla (IRC чат), XChat (IRC чат), KDE Kopete (чат програма), Skype, wget, KolourPaint (за KDE и MS Windows), MS Paint (версията за WindowsXP, не версията за Windows98 или версията за Windows Vista или версията за Windows7 или версията за Windows10), KDE Krusader (за разглеждане на директории), IrfanView през Wine, 7-zip (работи с Wine/PlayOnLinux), качете си пакета p7zip (същото, но по-бързо, обаче само с командния ред (CLI)), kkbswitch (джунджурийка, превключвател за клавиатурни подредби. Просто исках да ми се показва българското знаменце, като пиша на кирилица, след няколко опита таз най-много ми хареса и я преведох на български).
 
 ** https://georgi.unixsol.org/programs/ **
-https://georgi.unixsol.org/programs/bg_names_stats/
+https://georgi.unixsol.org/programs/bg_names_stats/ 
+>> for English-language baby names:
+>> https://www.ssa.gov/oact/babynames/limits.html
+>> https://www.ssa.gov/agency/plain-language/
 https://georgi.unixsol.org/programs/num2bgmoney.php/view/ (словообразувателните модели на българските числителни имена) - има и подобен друг проект в GitHub.com, както и копие на този!
 https://georgi.unixsol.org/programs/X11/
 https://georgi.unixsol.org/programs/X11/xkb.sh = xkb = https://bg.wikipedia.org/wiki/Клавиатурна_подредба
@@ -224,9 +227,13 @@ https://xyne.archlinux.ca/repos/
 
 **FreeFileSync, SyncThing, OwnCloud, _http://linux-bg.com_**
 
+* https://xyne.archlinux.ca/projects/
+* https://nirsoft.net/utils/
+* http://www.spacejock.com/Utils.html
+* https://www.voidtools.com/
 * **http://copy.sh/** (e.g. http://copy.sh/lcd/ )
 * **https://bellard.org/** (absolutely amazing software projects and DIY ideas!!!) (e.g. https://bellard.org/jslinux/ )
-* https://invisible-island.net ( https://invisible-island.net/luit.html ) (amazing software!); `luit`, `iconv`, `libiconv`,
+* **https://invisible-island.net** ( https://invisible-island.net/luit.html - `iconv` ) (amazing software!); `luit`, `iconv`, `libiconv`,
 * http://fex.rus.uni-stuttgart.de/ ( http://archive.fo/48UNY ) & **http://fex.belwue.de/fstools/** ( http://archive.is/OskCS ) = absolutely amazing software for UNIX/Linux written in Perl by Ulli Horlacher, especially F\*EX!!!
 * http://www.infodrom.org/projects/gerstensaft/ , http://www.infodrom.org/projects/manpages-de/ , http://www.infodrom.org/projects/cfingerd/ , http://www.infodrom.org/projects/sysklogd/ , http://www.infodrom.org/linx/ , http://www.infodrom.org/projects/webgraph/ , http://www.infodrom.org/projects/webtomail/ , http://www.infodrom.org/projects/uucpsend/ , http://www.infodrom.org/projects/calendar/ , http://www.infodrom.org/projects/sqllib/ , http://www.infodrom.org/projects/ticket/
 * http://newyork.mashke.org/Conv/lat-koi.html = nice examples of _Perl scripts_ for **Cyrillic transliteration**!
@@ -251,7 +258,7 @@ In this section you can find my various software projects. If not otherwise stat
 
 **[DokuWiki](https://www.splitbrain.org/projects/dokuwiki "projects:dokuwiki")** – currently the most active and biggest one. It's a PHP based Wiki engine which needs no database. It also powers this website.
 
-**[Crocofile](https://www.splitbrain.org/projects/crocofile "projects:crocofile")** – a file upload manager to share files by sharing an account
+**[Crocofile](https://www.splitbrain.org/projects/crocofile "projects:crocofile")** – a file upload manager to share files by sharing an account --- see also: FilePizza, F*EX, WebRTC-based file-sharers, ssh, OwnCloud, SyncThing, rsync, FreeFileSync - fosshub.com, SFTP, etc. ...
 
 **[Giraffe](https://www.splitbrain.org/projects/giraffe "projects:giraffe")** – a personal conference schedule tool for Android
 
@@ -312,10 +319,11 @@ These projects are no longer actively maintained, but their code may be of inter
 * **https://byuu.org/** (amazing C++&etc. software!) - **https://byuu.net/** - **https://bsnes.byuu.org/**
 * Linux and MS Windows software by http://5ko.free.fr: http://archive.is/SXMfq ; http://archive.is/2U3pA ; http://archive.is/3Ns9y
 
-http://copy.sh/v86/
+* http://copy.sh/v86/
 **https://vfsync.org/**
 **http://roxlu.com/**
-http://www.charlesrosenberg.com/
+
+* http://www.charlesrosenberg.com/
 http://www.chuckrosenberg.com/workpg/
 http://www.chuckrosenberg.com/resumepg/restext.txt
 http://www.chuckrosenberg.com/workpg/
@@ -447,6 +455,41 @@ Too many to list here... for now at least, that is.
 * `locate`, ``friendly-find (ffind)`` & ``find``, catfish (all are file searchers!!!), ``ack`` & ``grep`` & ``awk``, `cron` (and other `cron`-like apps on GitHub...), `iconv` & http://2cyr.com
 * NTFS driver (for using MS Windows 7+ NTFS partitions as data storage partitions)
 * the new best file-system for (GNU/)Linux: https://zfsonlinux.org/
+* GNU binutils, GNU coreutils, ...
+* https://en.wikipedia.org/wiki/Template:Unix_commands
+https://en.wikipedia.org/wiki/Category:Standard_Unix_programs
+https://en.wikipedia.org/wiki/Category:Unix_SUS2008_utilities
+ftp://sourceware.org/pub/binutils/snapshots
+ftp://sourceware.org/pub/
+https://en.wikipedia.org/wiki/GNU_Binutils
+https://en.wikipedia.org/wiki/GNU_Core_Utilities
+https://en.wikipedia.org/wiki/GNU_Find_Utilities
+https://en.wikipedia.org/wiki/List_of_Unix_commands
+https://en.wikipedia.org/wiki/Util-linux
+https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
+https://en.wikipedia.org/wiki/List_of_GNU_packages
+https://en.wikipedia.org/wiki/List_of_Unix_daemons
+* the Heirloom CLI binary utilities toolset: http://heirloom.sourceforge.net/tools.html , 
+````
+http://www.catb.org/esr/writings/taoup/html/ch01s05.html
+http://www.catb.org/esr/writings/taoup/html/ch01s04.html
+http://www.catb.org/esr/writings/taoup/html/futurechapter.html
+http://www.catb.org/esr/writings/taoup/html/apb.html#Gettys
+http://www.catb.org/esr/writings/taoup/html/ch01s06.html
+
+http://www.catb.org/esr/writings/taoup/html/ch01s06.html
+
+http://www.postel.org/postel.html
+
+https://software-carpentry.org/v5/novice/shell/index.html
+
+http://www.compciv.org/recipes/cli/downloading-with-curl/
+http://www.compciv.org/unix-tools/
+http://www.compciv.org/bash-guide/
+
+https://curl.haxx.se/docs/manpage.html
+https://curl.haxx.se/docs/
+````
 
 ## Under `Apple macOS` ##
 _I don't use macOS..._ In my opinion, it's only good for art/designer/webdev professionals... I only like some MacBook Pro's and the newer pressure-sensitive iPad's with a Wacom-like graphics stylus.
