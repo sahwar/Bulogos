@@ -31,22 +31,30 @@ https://www.aldorlea.org/
 * [Hedge Wars](https://www.hedgewars.org/download.html) (another cool open-source 2D clone of Team 17's Worms)
 * [Teeworlds](https://www.teeworlds.com/) (an online multiplayer deathmatch game similar to Team17's Worms2D games franchise: '_A retro multiplayer shooter: **Teeworlds** is a free online multiplayer game, available for all major operating systems. Battle with up to 16 (or 64!!!) players in a variety of game modes, including Team Deathmatch and Capture The Flag. You can even design your own maps!_')
 * [BlobWars](https://sourceforge.net/projects/blobwars/)
-* Zack McKraken (freeware), [The New Adventures of Zak McKraken](http://www.acid-play.com/download/the-new-adventures-of-zak-mckracken)
+* Zak McKraken (freeware), [The New Adventures of Zak McKracken](http://www.acid-play.com/download/the-new-adventures-of-zak-mckracken)
 & [Zak McKraken BTaS](http://www.mckracken.net/cms/directorscut.html), [Zak McKracken: Between Time and Space is an unofficial sequel of the adventure-classic Zak McKracken and the Alien Mindbenders which was released in 1988](http://www.cheatbook.de/download/zakmckrackenbetweentimeandspace.htm), http://www.mckracken.net/ , https://store.steampowered.com/app/559070/Zak_McKracken_and_the_Alien_Mindbenders/ , https://www.gog.com/game/zak_mckracken_and_the_alien_mindbenders 
+````
+http://www.zak-site.com/ (how to build an HTML5+CSS3+JavaScript ScummVM-like 2D-adventure-game-like web-browser webpage game...) [ https://archive.fo/GY5Lk ]
+http://www.zak-site.com/links.htm
+http://www.zak-site.com/whatis.htm#greatest
+````
 * [Little Fighter 2](http://www.lf2.net/)
+* M.U.G.E.N. fighting-game mods (it is a _Street Fighter_-like game engine)
 * Super Mario Bros 3: Mario Forever
 * Sauerbraten 2
 * [Gun Girl](http://www.paulinthenet.de/) ( https://www.youtube.com/watch?v=k1ZVAi9BIMw ) & [Gun Girl 2](http://portablefreewaregames.com/game_pages/151-160/155_gun_girl_2.html) ( https://curlysworld.com/viewtopic.php?f=17&t=8664 , http://www.gungirl2.com/?page_id=31 , 
-* The Spirit Engine I (TSE1) & The Spirit Engine 2 (TSE2)
+* [The Spirit Engine I (TSE1) & The Spirit Engine 2 (TSE2)](http://thespiritengine.com/): https://en.wikipedia.org/wiki/The_Spirit_Engine_2 , https://tcrf.net/The_Spirit_Engine
 * [Beneath a Steel Sky](https://en.wikipedia.org/wiki/Beneath_a_Steel_Sky#Freeware_release_and_Remastered_edition)
 * Flight of the Amazon Queen - https://blends.debian.org/games/tasks/finest
 * Drascula
-* Out of Order (freeware, powered by the SLUDGE engine)
+* Out of Order (freeware 2D advenure game, powered by the homebrewed SLUDGE engine)
 * Lure-of-the-temptress
 * Black Mesa
 * CheatBook Database app - https://github.com/cheat-engine/cheat-engine
 * [Night of the Hermit](http://www.acid-play.com/download/night-hermit)
 * OpenArena (open-source clone of Quake3 Arena), Redeclipse, Nexiuz, supertux2 (sidescrolling 2D platformer), Battle of Wesnoth, Chromium B.S.U., Project Starfighter ( https://sourceforge.net/projects/pr-starfighter/ ), [PowerManga (shoot'em'up)](http://linux.tlk.fr/games/Powermanga/), https://blends.debian.org/games/tasks/shootemup), etc. ...
+* https://en.wikipedia.org/wiki/DRL_(video_game)
+* ...
 * etc.
 
 ## Non-freeware (commercial) video games that @sahwar enjoyed:
@@ -57,7 +65,8 @@ https://www.aldorlea.org/
 * classic RPGs from https://gog.com
 * Serious Sam, Serious Sam 2, Serious Sam 3, etc.
 * Quake 3: Arena
-* CS (Counter-Strike) v1.5/v1.6 & CS:G.O.
+* CS (Counter-Strike) v1.5/v1.6 & CS:G.O. _and_ HL1 (Half-Life 1) Deathmatch multiplayer () & Half-Life 2 Deathmatch multiplayer
+* Tzar: The Burder of the Crown (by the Bulgarian game studio Haemimont Games)
 * etc.
 
 ## More FREEWARE games:
@@ -70,6 +79,9 @@ https://www.aldorlea.org/
 * https://en.m.wikipedia.org/wiki/List_of_commercial_video_games_released_as_freeware
 * https://en.m.wikipedia.org/wiki/List_of_free_PC_games
 * https://pcgamingwiki.com/wiki/List_of_Freeware_Games
+* https://en.wikipedia.org/wiki/Category:Freeware_games
+* https://en.wikipedia.org/wiki/Category:Open-source_video_games
+
 * https://www.giantbomb.com/profile/lime/lists/freeware-games/71233/
 * https://www.techsupportalert.com/best-free-pc-games.htm
 * https://www.revolvy.com/page/List-of-commercial-video-games-released-as-freeware
