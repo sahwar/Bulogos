@@ -3,8 +3,8 @@
 #### All-time personal favorite free video-games ####
 
 Notable freeware indie video games for MS Windows:
-* [Pekka Kana 2](http://pistegamez.net/game_pk2.html) (side-scrolling 2D platformer, with a Level Editor to boost; I made the 2nd (fixed) Bulgarian translation of PK2) ([WEB-FORUM for PK2 fans](http://pistegamez.proboards18.com/));
-New map downloads: https://github.com/PK2Lib/pk2lib.github.io
+* **[Pekka Kana 2](http://pistegamez.net/game_pk2.html)** (side-scrolling 2D platformer, with a Level Editor to boost; I made the 2nd (fixed) Bulgarian translation of PK2) ([WEB-FORUM for PK2 fans](http://pistegamez.proboards18.com/));
+New map downloads: https://github.com/PK2Lib/pk2lib.github.io (I, @sahwar, was one of the founders of The PK2LIB project!)
 ( https://pk2lib.github.io/
 https://github.com/PK2Lib )
 Old Map Store: http://mapstore.the.cz/
@@ -16,16 +16,16 @@ https://packages.debian.org/sid/pekka-kana-2
 https://packages.debian.org/source/sid/pekka-kana-2
 https://www.dropbox.com/sh/x20mu4f9h01qtls/AACXTgeYi5uP4wNl_7X-kZ6sa?dl=0
 
-* Laxius Power 3 & II & I (hardcore plot-driven indie jRPG-style 2D RPG) (HELP: map1, map2, [[useful partial walkthrough by Grogor](http://grogor2.tripod.com/) ([archived backup copy](http://archive.is/7LEgq))
+* **Laxius Power 3 & II & I (hardcore plot-driven indie jRPG-style 2D RPG)** (HELP: map1, map2, [[useful partial walkthrough by Grogor](http://grogor2.tripod.com/) ([archived backup copy](http://archive.is/7LEgq))
 Links:
 http://laxiuspower-shrine.goodforum.net/t462-laxius-power-iii-how-to-unlock
 http://laxiuspower-shrine.goodforum.net/t362-laxius-power-1-to-3-download-link
 https://download.cnet.com/Laxius-Power-III/3000-7536_4-10800957.html
 (TO DO: ADD MORE DOWNLOAD LINKS FOR Laxius Power 3)
 https://www.aldorlea.org/
-* [Apprentice I](http://www.herculeaneffort.com/index.php?page=apprentice1) & [Apprentice II](http://www.herculeaneffort.com/index.php?page=apprentice2) (freeware 2D point-and-click adventure/quest game)
-* [Cave Story](https://www.cavestory.org/) (legendary cult-classic 2D action side-scrolling platformer, hardcore to beat!) (**TO DO:** Translate Cave Story into Bulgarian!!!)
-* [Blobby Volley 2](https://sourceforge.net/projects/blobby/) (also available [online](http://blobby.sourceforge.net/data/bv2browser/index.html)!)
+* **[Apprentice I](http://www.herculeaneffort.com/index.php?page=apprentice1)** & **[Apprentice II](http://www.herculeaneffort.com/index.php?page=apprentice2) (freeware 2D point-and-click adventure/quest game)**
+* **[Cave Story](https://www.cavestory.org/) (legendary cult-classic 2D action side-scrolling platformer, hardcore to beat!)** (**TO DO:** Translate Cave Story into Bulgarian!!!)
+* **[Blobby Volley 2](https://sourceforge.net/projects/blobby/)** (also available [online](http://blobby.sourceforge.net/data/bv2browser/index.html)!) - my favorite _casual gaming_ addiction after chess
 * ? (RTS)
 * [Wormux](https://github.com/yeKcim/warmux) (a nice open-source 2D clone of [Team 17's _Worms_ 2D](https://en.wikipedia.org/wiki/Worms_(series)))
 * [Hedge Wars](https://www.hedgewars.org/download.html) (another cool open-source 2D clone of Team 17's Worms)
@@ -42,7 +42,7 @@ http://www.zak-site.com/whatis.htm#greatest
 * M.U.G.E.N. fighting-game mods (it is a _Street Fighter_-like game engine)
 * Super Mario Bros 3: Mario Forever
 * Sauerbraten 2
-* [Gun Girl](http://www.paulinthenet.de/) ( https://www.youtube.com/watch?v=k1ZVAi9BIMw ) & [Gun Girl 2](http://portablefreewaregames.com/game_pages/151-160/155_gun_girl_2.html) ( https://curlysworld.com/viewtopic.php?f=17&t=8664 , http://www.gungirl2.com/?page_id=31 , 
+* **[Gun Girl](http://www.paulinthenet.de/)** ( https://www.youtube.com/watch?v=k1ZVAi9BIMw ) & **[Gun Girl 2](http://portablefreewaregames.com/game_pages/151-160/155_gun_girl_2.html)** ( https://curlysworld.com/viewtopic.php?f=17&t=8664 , http://www.gungirl2.com/?page_id=31 , 
 * [The Spirit Engine I (TSE1) & The Spirit Engine 2 (TSE2)](http://thespiritengine.com/): https://en.wikipedia.org/wiki/The_Spirit_Engine_2 , https://tcrf.net/The_Spirit_Engine
 * [Beneath a Steel Sky](https://en.wikipedia.org/wiki/Beneath_a_Steel_Sky#Freeware_release_and_Remastered_edition)
 * Flight of the Amazon Queen - https://blends.debian.org/games/tasks/finest
@@ -65,7 +65,11 @@ http://www.zak-site.com/whatis.htm#greatest
 * classic RPGs from https://gog.com
 * Serious Sam, Serious Sam 2, Serious Sam 3, etc.
 * Quake 3: Arena
-* CS (Counter-Strike) v1.5/v1.6 & CS:G.O. _and_ HL1 (Half-Life 1) Deathmatch multiplayer () & Half-Life 2 Deathmatch multiplayer
+* CS (Counter-Strike) v1.5/v1.6 & CS:G.O.
+* HL1 (Half-Life 1) Deathmatch multiplayer
+
+[BG-HALF-LIFE - Българският Half Life портал (BG-SMURFA-VRATSA-2 & BG-SMURFA-VRATSA-Bat-Man Vs Iron-Man servers) on BG-HALF-LIFE](http://smurfa.bulgarianforum.net/) - Присъединете се към нас в [Discord](https://discord.gg/kawPFxe) или в групата ни във ФБ [HL-BG Community](https://www.facebook.com/groups/427538864719610/); Skype: admina-76 ; [smurfa_vr](http://smurfa.bulgarianforum.net/u1)
+* Half-Life 2 Deathmatch multiplayer
 * Tzar: The Burder of the Crown (by the Bulgarian game studio Haemimont Games)
 * etc.
 
