@@ -17,13 +17,18 @@
 * https://github.com/MoOx/git-init
 
 ## DOWNLOAD the entire archive of files / ИЗТЕГЛЯНЕ на целия архив с файлове
+Click on (щракнете, цъкнете, кликнете по-нагоре върху бутона) `Clone or download` -> `Download .ZIP` button above.
+~
 **https://github.com/sahwar/Bulogos/archive/master.zip** (Save link as... ; Запазване на връзката като... ; Запис на препратката като...)
+~
 ````
 wget https://github.com/sahwar/Bulogos/archive/master.zip
 ````
+~
 ````
 curl https://github.com/sahwar/Bulogos/archive/master.zip
 ````
+~
 ````
 git clone https://github.com/sahwar/Bulogos.git
 ````
