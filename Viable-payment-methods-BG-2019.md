@@ -32,6 +32,8 @@
 * ***SALT.bountysource.com*** - httpshttps://salt.bountysource.com/ (for open-source software projects, etc.) = 
 https://salt.bountysource.com/ (SALT - A crowdfunding platform that helps developers earn a monthly salary from open-source software) (e.g. https://salt.bountysource.com/teams/neovim)
 * https://opencollective.com
+* https://beerpay.io/ (e.g. https://beerpay.io/b3by/atom-clock?focus=wish )
+* https://www.fiverr.com/ , http://freelancer.com
 
 * **Western Union (? Sorta reliable, mixed reviews.)** - https://www.westernunion.com/bg/en/terms-conditions-bg.html
 * **MoneyGram (? Sorta reliable, mixed reviews. Seems a bit more reliable than Western Union (?))** - http://moneygram.bg/
