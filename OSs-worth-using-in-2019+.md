@@ -157,17 +157,36 @@ SymbianOS 10, WinCEv5&v6 (Windows Embedded Compact) (all are obsolete except for
 ## EXTRA - Emulators for old and legacy video-game consoles & ancient PC hardware ##
 * There are too many (hundreds!) FOSS video-game-console emulators to list here, but [MAME](https://www.mamedev.org/) (especially MAMEUI64 and the older mame32.exe GUI: [1](https://github.com/mamedev/mame) [2](https://github.com/Robbbert/mameui) [3](https://www.afterdawn.com/software/system_tools/emulation/mame-for-windows.cfm) [4](http://www.emutopia.com/index.php/emulators/item/257-mame/157-mameui) [5](https://www.afterdawn.com/software/system_tools/emulation/mameui-64-bit.cfm) [6]() [MESSUI](https://github.com/Robbbert/messui) [2](http://mess.redump.net/start) [3](http://messui.1emulation.com/) [4](http://www.progettosnaps.net/mameui/) [5](http://www.progettoemma.net/mess/extra.html) [6](http://mrdo.mameworld.info/index.php), [IV/Play&MAMEUI64](http://www.mameui.info/)), [FreeDOS](https://www.freedos.org/), [DOXBox](https://www.dosbox.com/), [ScummVM](https://www.scummvm.org/) are among the most notable.
 **NEW NOTABLE ADDITIONS:**
-https://www.libretro.com/
+* https://www.libretro.com/
 http://retroarch.com/?page=platforms
 http://www.lakka.tv
-https://bliss-box.net/
-https://www.winehq.org/ (Wine/Wine-staging/PlayOnLinux MS-Windows compatibility layer for GNU/Linux, macOS, etc.)
-https://screenshots.debian.net/package/wine
-http://old-games.com
+* https://bliss-box.net/
+* https://www.winehq.org/ (Wine/Wine-staging/PlayOnLinux MS-Windows compatibility layer for GNU/Linux, macOS, etc.)
+* https://screenshots.debian.net/package/wine
+* http://old-games.com
 https://oldapps.com
-http://reactos.org
-https://www.microsoft.com/en-us/download/details.aspx?id=8002 ('**Windows XP Mode for Windows 7** makes it easy to install and run many of your productivity programs that run on Windows XP directly from a computer that runs Windows 7.')
+* http://reactos.org
+* https://www.microsoft.com/en-us/download/details.aspx?id=8002 ('**Windows XP Mode for Windows 7** makes it easy to install and run many of your productivity programs that run on Windows XP directly from a computer that runs Windows 7.')
 _You can use Windows Virtual PC (OR Oracle VirtualBox VM + VirtualBox USB2.0 add-on?) to run Windows XP Mode on your computer. Windows Virtual PC requires processor capable of hardware virtualization, with AMD-V™, Intel® VT or VIA® VT turned on in the BIOS._
+### **for DirectX/Direct 3D video games compatibility:**
+**DxWnd** ( https://sourceforge.net/p/dxwnd/home/Home/ , https://sourceforge.net/projects/dxwnd/files/ ) ( , https://www.play-old-pc-games.com/compatibility-tools/using-dxwnd/ , https://softradar.com/dxwnd/ , https://www.majorgeeks.com/files/details/dxwnd.html , https://browsehappy.com/ , https://downloads.tomsguide.com/DxWnd,0301-65235.html ;  
+* **https://sourceforge.net/projects/dxglwrap/**; https://sourceforge.net/projects/gldirect/ , https://sourceforge.net/projects/java-direct3d/ ; 
+* ? ( https://sourceforge.net/projects/borderless-gaming.mirror/ , **https://github.com/Codeusa/Borderless-Gaming** , https://store.steampowered.com/app/388080/Borderless_Gaming/ , http://westechsolutions.net/sites/WindowedBorderlessGaming/ , https://github.com/Codeusa/Borderless-Gaming/releases/ , https://westechsolutions.net/sites/WindowedBorderlessGaming/download ),
+* Transparent Windows 2.2, ColorPix, magnifier, diablo2-widescreen, etc. ...
+* **Wine emulation layer, Wine-staging, PlayOnLinux GUI**...
+* CheatBook Database app ( http://cheatbook.de/cheatbook-database-2019.htm , https://www.freewarefiles.com/CheatBook-Issue-10-2019-\_program_113238.html )
+* ROMs for MAME (to play video-games for old arcade video-game consoles): https://emulator.games/roms/mame/
+running Windows .exe/.msi files via Wine/Wine-staging/PlayOnLinux (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html , DxWnd, etc.)
+* https://screenshots.debian.net/package/holotz-castle
+https://wiki.debian.org/Games/HolotzCastle
+https://blends.debian.org/games/tasks/finest
+https://screenshots.debian.net/package/0ad
+* https://play0ad.com/
+* https://www.moddb.com/games/0-ad
+* http://itch.io
+* https://store.steampowered.com/
+* Origin games client
+https://archive.is/fT0uf
 
 ## EXTRA2 - Good computers for FLOSS/FOSS users ##
 There appeared a number of new manufacturers&vendors of computers suitable for FLOSS users.
