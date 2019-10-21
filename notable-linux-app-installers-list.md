@@ -108,6 +108,10 @@ etc.
 * http://zamunda.ch/
 * https://arenabg.com/
 * https://nyaa.si/ (includes anime, manga, hentai, JAV, etc.; [nyaa torrent web-tracker software engine](https://github.com/nyaadevs/nyaa/tree/db83989d5d370ea6314213e0b560fd9591370773))
+* The Pirate Bay:
+https://piratebay.ink/
+https://proxybaylist.org/
+* 
 
 #### **Package managers for Windows:** ####
   * * [Chocolatey](https://chocolatey.org/) - CLI package manager for Windows; Chocolatey - Software Management Automation for MS Windows
