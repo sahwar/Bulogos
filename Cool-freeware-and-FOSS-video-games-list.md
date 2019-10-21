@@ -49,6 +49,7 @@ http://www.zak-site.com/whatis.htm#greatest
 * Drascula
 * Out of Order (freeware 2D advenure game, powered by the homebrewed SLUDGE engine)
 * Lure-of-the-temptress
+* [FlareRPG](http://flarerpg.org) = a nice Diablo1-alike cRPG/ARPG 'clone'
 * Black Mesa
 * CheatBook Database app - https://github.com/cheat-engine/cheat-engine
 * [Night of the Hermit](http://www.acid-play.com/download/night-hermit)
@@ -71,6 +72,17 @@ http://www.zak-site.com/whatis.htm#greatest
 [BG-HALF-LIFE - Българският Half Life портал (BG-SMURFA-VRATSA-2 & BG-SMURFA-VRATSA-Bat-Man Vs Iron-Man servers) on BG-HALF-LIFE](http://smurfa.bulgarianforum.net/) - Присъединете се към нас в [Discord](https://discord.gg/kawPFxe) или в групата ни във ФБ [HL-BG Community](https://www.facebook.com/groups/427538864719610/); Skype: admina-76 ; [smurfa_vr](http://smurfa.bulgarianforum.net/u1)
 * Half-Life 2 Deathmatch multiplayer
 * Tzar: The Burder of the Crown (by the Bulgarian game studio Haemimont Games)
+* Dungeon Siege II
+Heroes III (HoMM3/HoMaM3)
+Half-Life 2 & HL2: Episode 1 & Episode 2
+Star WarsL Knights of the Old Republic (SW: KotOR) I & II
+Icewind Dale 2
+Planescape Torment
+The Elder Scrolls (TES) franchise
+Dragon Age: Inquisition
+Grand Theft Auto (GTA) franchise
+Resident Evil franchise
+Devil May Cry 4
 * etc.
 
 ## More FREEWARE games:
