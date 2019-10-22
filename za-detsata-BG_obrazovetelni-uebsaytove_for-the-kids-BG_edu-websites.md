@@ -47,6 +47,72 @@ http://vanyog.com/_new/index.php?pid=9
 * https://prevodi.chitanka.info/
 * https://wiki.workroom.chitanka.info
 
+* * Български правописен речник (Bulgarian spelling dictionary...):
+http://vanyog.com/index.php?pid=8
+http://www.physics-bg.org/z/index.php?pid=2
+http://vanyog.com/_new/index.php?pid=9
+Речникът съдържа 73018 думи с 1011594 форми.
+
+А ав аз ал ана анц ар ау Бак бар безв безп безч биб бич бл Бой бох бр бу бъ Ва Вел вет Вик виш вн вп вс възв възр вър Га ге гл го гра гро гъ Да деб дел дес дж ди доб док дон дос Др ду дъ Ед ек ел Ен ет Же Жъ Зав зад зай зак зам зап зар зас зат заш зе зн Иг изв изд изк изм изо изп изр изт изц им ин ир Каб Кал кан кар кат киб ких кл кок ком конк конф кор Кра Кри кръ ку кю Ла Ле ли ло Лю Маз мам Мар мащ мер меч мин Мих мн мо му мъ Нав наг над нак нам нап нар нас нау ная нев нед нез нек Нен нео непо непр нер нес неу ни но Обв обз обо объ од ок ом опи Опъ оса ост отг отл отр отъ Пав Пан пар пек пес Пик пию пл поб пог подк подп подс поз пои пок пол пом пон поо Поп пор посв пост поу поя преб предв преду прек прео прес прет прив Прил прип прит пров прои проп прот прош пу пъ Рад разб разг разк разн разп разт разч рац рез рес ри ро ръ Само саму Сва свл сд се сиз сит ск сла сля см со сп ср Ста сти стр сту су съв сън със Та тек тер ти То тра три ту тъ Ув ук ун ус уч Фа фи фо Ха хв хи Хо Хъ Це Цъ Чер чет чо Ша ши шу Ю Я
+* 
+* BGoffice & gbgoffice dictionary for GNU/Linux
+http://gbgoffice.info/
+http://gbgoffice.info/?id=3
+https://archive.is/xuoK1
+http://kbedic.sourceforge.net/online/index.html
+http://kbedic.sourceforge.net/online/index_en.html
+Aspell bg, Ispell bg, Hunspell bg, Enchant spellchecking engine - bg_BG dictionary database, Mozilla Firefox Bulgarian spellchecking dictionaries, ItaEst / WinEst, IDI Spellchecker & English<->Bulgarian dictionary: 
+http://bgoffice.sourceforge.net/
+http://bgoffice.sourceforge.net/grammar/online/
+http://bgoffice.sourceforge.net/assistant/online/
+https://www.kaminata.net/forum/viewtopic.php?t=88017 = 
+https://my.pcloud.com/publink/show?code=XZjmS67ZLuhttE6pJ17rNYwqofU6OVimq6U7
+https://pkgs.org/download/bgoffice-dict-downloader
+https://community.linuxmint.com/software/view/bgoffice-dict-downloader
+BGoffice is a project aimed on creating a full-featured desktop environment, translated and localized for Bulgarian users.
+This package contains a helper scripts to automate downloading and installation of dictionaries for gbgoffice. These can't be distributed by Debian, due to licensing problems.
+https://launchpad.net/ubuntu/+source/bgoffice-dict-downloader
+https://pkgs.org/download/gbgoffice
+https://community.linuxmint.com/software/view/gbgoffice
+http://sourceforge.net/projects/bgoffice/files/Dual%20Bg%20En%20Dictionary/
+http://sourceforge.net/project/showfiles.php?group_id=52198&package_id=115756
+http://sourceforge.net/project/showfiles.php?group_id=52198&package_id=115759
+http://sourceforge.net/project/showfiles.php?group_id=52198&package_id=137477
+https://sourceforge.net/project/showfiles.php?group_id=52198&package_id=168625
+http://sourceforge.net/projects/bgoffice/files/Full%20Pack%20of%20Dictionaries/1.0/full-pack.tar.bz2/download
+* http://www.ectaco.co.uk/English-Bulgarian-Dictionary/
+* https://bg.glosbe.com/bg/en/
+https://bg.glosbe.com/en/bg/
+В момента имаме 81 131 преведени фрази.   В момента имаме 5729350 изречения преведени
+* **https://www.lexilogos.com/english/bulgarian_dictionary.htm** = http://archive.is/p0keu
+* https://archive.org/stream/blgarskinarodni03dozogoog = • Chansons populaires bulgares: Bulgarian folk songs, by Auguste Dozon (1875)
+* https://archive.org/stream/blgarskipoeti00tsan = • Бѫлгарски поети : anthology of Bulgarian poetry (1922)
+* https://www.lyrikline.org/en/authors?nav=1&lang%5B%5D=bg
+* http://cyrillic.bg/manifest/
+* Proggy fonts pixel fonts
+* http://www.iitk.ac.in/LDP/LDP/Linux-Dictionary/html/Linux-Dictionary.html = http://archive.is/wK16P
+* https://snapcraft.io/gnome-dictionary
+* https://www.tldp.org/LDP/Linux-Dictionary/Linux-Dictionary.pdf
+* https://www.linuxlinks.com/dictionarytools/ :
+GoldenDict, Artha, `$ dictd`, StarDict, JaLingo, enBgDictionary
+* www.rechnik-bg.com/index_fr.php
+* http://rechnik.info/
+* http://sa.dir.bg/transbig.htm
+* http://www.rechnik-bg.com/index_fr.php
+* https://iate.europa.eu/home = multilingual terminological dictionary (European Union)
+* https://www.re4nik.com/
+* https://www.linguee.com/english-bulgarian
+https://www.linguee.com/bulgarian-english
+* https://www.dict.com/bulgarian-english
+https://www.dict.com/english-bulgarian
+* **https://frazite.com/** = фразеологичен речник на българския език
+* SA Dictionary = http://www.thediction.com/ - thediction@gmail.com - http://www.saplatform.com/
+* **AEDictionary XP English<->Bulgarian Dictionary** =
+http://www.kamburov.net/aleksandar/projects/aedict/
+A good English<>Bulgarian dictionary with lots of useful features and a big dictionary database (has some spelling errors and ASCII-Latin-as-Cyrillic lookalike (alograph/same visual font grapheme but different text encoding code point!!!) letters&letter sequences/substrings and isn't fully Unicode UTF-8 BUT is VERY fast and can load custom user-made dictionary files!)
+http://www.kamburov.net/aleksandar/projects/index.html
+http://www.kamburov.net/aleksandar/articles/index.html
+aleksandar at kamburov dot net
 * https://gcompris.net/index-bg.html
 * https://distro.ibiblio.org - Linux distros
 * https://ibiblio.org/software/
