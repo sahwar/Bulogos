@@ -29,6 +29,7 @@
 * http://bulgariandictionary.com/ (по-старият и по-достъпен интерфейс на https://eurodict.com/)
 * https://eurodict.com/
 * http://www.onlinerechnik.com/ = онлайн речници (български универсален, тълковен, правописен и синонимен) и българско-английски речник
+* https://www.ezikov.com/translate/
 * Български правописен речник (Bulgarian spelling dictionary...):
 http://vanyog.com/index.php?pid=8
 http://www.physics-bg.org/z/index.php?pid=2
