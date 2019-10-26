@@ -73,12 +73,14 @@ Reported Speech (преизказно наклонение): had entered -> би
 |-> Past Simple
 |-> would
 
+------
 ## 3. TIPS FOR NON-TECHNICAL/NON-IT (LITERARY/FICTION & JOURNALISTIC/NON-FICTION) 
 TRANSLATION FROM ENGLISH INTO BULGARIAN (**_THE MOST IMPORTANT PART_**)
+------
 
 ### Tips for a better translation \#1
 
-I. Substitution (заместване) {to substitute with/for}
+**I. Substitution (заместване) {to substitute with/for}**
 
 Substitution is necessary when in Bulgarian (the TL (target language)) a 
 certain lexical unit (a word or a group of units) does not exist.
@@ -87,8 +89,9 @@ for another part - not the same part of speech (PoS, POS).
 
 SL (source language) (ENGLISH) ------> TL (target language) (BULGARIAN)
 
-A) n + n --> adj. + n (NOUN + NOUN --> ADJECTIVE + NOUN)
+A) **n + n --> adj. + n (NOUN + NOUN --> ADJECTIVE + NOUN)**
 
+_Examples:_
 a letter of introduction = препоръчително писмо
 a letter of reference (reference = препратка, отправка, деятел) = препоръчително
 писмо
@@ -96,18 +99,30 @@ a letter of recommendation = препоръчително писмо
 a letter of thanks = благодарствено писмо
 a letter of thankfulness = благодарствено писмо
 
-B) adj. + n --> n + n (ADJECTIVE + NOUN --> NOUN + NOUN)
+B) **adj. + n --> n + n (ADJECTIVE + NOUN --> NOUN + NOUN)**
 
+_Examples:_
+He looked at me with _grieved disapproval_.
+Той ме погледна със съжаление, но и с укор (неодобрение).
 
+(to grieve /gri:v/ - съжалявам, страдам, жалея, изпитвам мъка/покруса
+grief = мъка
+to approve of, approve of, to disapprove of; disapproval (n.))
 
-C) 
+C) **adj. + adj. --> adv. + adj. (ADJECTIVE + ADJECTIVE --> ADVERB + ADJECTIVE)**
 
+_Examples:_
+The day was _tedious and dull_.
+Денят бе мъчително скучен_.
 
-D) 
+D) **adv./adj. + adj. --> adv. + adv. (ADVERB/ADJECTIVE + ADJECTIVE --> ADVERB + ADVERB)**
 
-...
+_Examples:_
+She addressed me in a pleasant, puzzled _way._ (DELETE 'way' in the translation!)
+Тя ме погледна озадачено, но приятелски.
+Тя ме погледна приветливо, но и озадачено.
 
-### Tips for a better translation \#2
+### Practical Tips for a better translation \#2
 
 ...
 
@@ -118,6 +133,13 @@ D)
 ### Tips for a better translation \#4
 
 ...
+
+## TIPS FOR TRANSLATION FROM BULGARIAN INTO ENGLISH
+
+...
+(без съгласуване на времената по този начин в българския език...)
+
+
 
 ## FULL TABLE OF THE VERB TENSES IN CONTEMPORARY ENGLISH \#1
 
@@ -135,9 +157,11 @@ TO USE WHICH VERB TENSE (GRAMMATICAL TIME))
 IN CONTEMPORARY BULGARIAN (WITH EXPLANATION OF WHEN TO USE WHICH VERB TENSE (GRAMMATICAL TIME))
 
 (copy here from my notebook/exercise-book/copybok on 'Въведение в съвременния 
-български език' (Introduction to Contemporary Bulgarian)...)
+български език' (Introduction to Contemporary Bulgarian), from Тълковен речник на
+българския език на издателство Gaberoff и от интернет източници...)
 
-## A MORE OR LESS COMPREHENSIVE LIST OF MATHEMATICAL FORMULAE USED IN SCHOOL
+## A MORE OR LESS COMPREHENSIVE LIST OF MATHEMATICAL FORMULAE USED IN SCHOOL (
+NO 'HIGHER MATHS' (БЕЗ „ВИСША МАТЕМАТИКА“))!!!
 
 (copy&paste hyperlinks to the files of the English .pdf's and the .png photos of
  the pages of my maths textbook in Bulgarian...)
