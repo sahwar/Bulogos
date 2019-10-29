@@ -88,7 +88,8 @@ xxx
 * 10,<super>99</super> лв. , а НЕ 10<sup>99</sup> лв
 * 10.10. (за дата), а не 10.10 (освен в заглавието на издания на Линукс дистрибуции, например: Ubuntu 10.10)!
 * 13:43 ч., а не 13.43 ч или 13,43 ч --- виж kaksepishe.com, ПРБЕ2002, ОПРБЕ2012 и „Написаното остава! Пиши грамотно!“ по въпроса...
-* @sahwar в tex.stackexchange.com --- българоезично форматиране на числителни редни в числови изброявания на раздели на статия или книга... (т.е. 1.1. вместо 1.1)
+* @sahwar в tex.stackexchange.com --- българоезично форматиране на числителни редни в числови изброявания на раздели на статия или книга... (т.е. 1.1. вместо 1.1):
+https://superuser.com/questions/811779/how-to-add-a-dot-for-section-subsection-numbering-in-tex/1374933#1374933
 
 ---
 
@@ -170,7 +171,23 @@ https://novini.bg/
 
 ======
 
-escape characters
+* escape characters (most often that is '/' or '\')
+* wildcard characters
+* meta-characters
+* CLI-Terminal globbing
+* regex/regexp meta-characters vs. literals (literal characters...) (and the different types and versions of regex engines)
+* POSIX & extended POSIX characters
+* character substitution
+* whole-word searching vs. substring search & regex-pattern searching
+* wrap-around searching...
+* search & replace
+* Select All / selection / whole-document Search&Replace types:
+`$ sort | uniq` (but does it use the latest Unicode CLDR & Unicode Collation Algorithm collation/sorting mechanisms???)
+
+
+the `$ ascii` Linux commandline app should be updated with more character representations in different notations & encodings
+to do: `unicode` CLI app...
+
 
 ======
 
