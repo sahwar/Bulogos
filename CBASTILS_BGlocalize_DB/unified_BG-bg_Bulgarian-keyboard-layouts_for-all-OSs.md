@@ -7,43 +7,41 @@
 - Клавиатура
 * български - BG български (България)
 * български (латиница)
-* български (машинопис)
-* български (традиционна фонетична)
-* български ((нова) фонетична, по Димитър Скордев и сие)
-
+* **български (машинопис/БДС)**
+* **български (традиционна фонетична)**
+* **български ((нова) фонетична, по Димитър Скордев и сие)**
 * EN английски (Съединени [американски] щати, САЩ)
 * САЩ - международен
 * (клавиатурни подредби за други езици, които се използват от БГ потребителя...)
-
-**Клавиатурни подредби от Михаил Балабанов от https://sites.google.com/site/BGlocalize :**
-* bg_bds_ex.zip = Стандартна подредба по БДС 5237:1978 (разширена)
-* bg_phon_ex.zip = Традиционна фонетична подредба (разширена)
-* (keyboard_layouts.pdf)
+* **Клавиатурни подредби от Михаил Балабанов от https://sites.google.com/site/BGlocalize :**
+* * TO-ADD to MS Windows7/8/8.1/10: _bg_bds_ex.zip = Стандартна подредба по БДС 5237:1978 (разширена)_
+* * TO-ADD to MS Windows7/8/8.1/10: bg_phon_ex.zip = _Традиционна фонетична подредба (разширена)_
+* * (keyboard_layouts.pdf)
 
 ## (GNU/)Linux (all):##
 Bulgarian keyboard layouts by Anton Zinoviev:
-* BDS
-* phon
-* new phon (Skordev, et al.)
-* TOADD: bg_bds_ex
-* TOADD: bg_phon_ex
-* https://github.com/salifm/bg-colemak
-* https://github.com/house-owl/Bulgarian-Phonetic-Dvorak
-* https://github.com/dragunoff/keyboard-layouts
+* **BDS**
+* **phon**
+* **new phon (Skordev, et al.)**
+* TO-ADD to (GNU/)Linux: _bg_bds_ex_
+* TO-ADD to (GNU/)Linux: _bg_phon_ex_
+* TO-ADD to (GNU/)Linux: bg-Colemak - https://github.com/salifm/bg-colemak
+* TO-ADD to (GNU/)Linux: Bulgarian-Phonetic-Dvorak - https://github.com/house-owl/Bulgarian-Phonetic-Dvorak
+* TO-ADD to (GNU/)Linux: Custom Bulgarian-language keyboard layouts: https://github.com/dragunoff/keyboard-layouts
 * Etc.:
--- https://github.com/mw8/white_keyboard_layout
--- https://github.com/adunning/Mac-Keyboard-Layouts-for-Windows
--- https://github.com/algernon/ergodox-layout
--- **https://github.com/39aldo39/klfc**
--- https://github.com/qnikst/kbdd
-https://github.com/ijprest/keyboard-layout-editor ( http://www.keyboard-layout-editor.com/ )
-https://github.com/Kirpal/Keyboard-Layout-Editor-for-Blender
-https://github.com/atom/keyboard-layout
-https://github.com/ernesto-xload/DigisparkKeyboard
-https://github.com/hodgef/simple-keyboard-layouts
-https://github.com/kurumpa/dotSwitcher
-http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ukelele
-* Кирилица за френски клавиатури, за Windows 95, 98, ME - как се настройва френски Windows за работа на кирилица, всички букви отговарят фонетично на клавиатурата. =
+* * https://github.com/mw8/white_keyboard_layout
+* * https://github.com/adunning/Mac-Keyboard-Layouts-for-Windows
+* * https://github.com/algernon/ergodox-layout
+* * **https://github.com/39aldo39/klfc**
+* * https://github.com/qnikst/kbdd
+* * **https://github.com/ijprest/keyboard-layout-editor ( http://www.keyboard-layout-editor.com/ )**
+* * https://github.com/Kirpal/Keyboard-Layout-Editor-for-Blender
+* * https://github.com/atom/keyboard-layout
+* * https://github.com/ernesto-xload/DigisparkKeyboard
+* * https://github.com/hodgef/simple-keyboard-layouts
+* * https://github.com/kurumpa/dotSwitcher
+* * http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ukelele
+* Кирилица за френски клавиатури, за Windows 95/98/ME - как се настройва френски Windows за работа на кирилица, всички букви отговарят фонетично на клавиатурата. =
 http://5ko.free.fr/bg/winfr.html
 * Клавиатура с кирилица в ГНУ/Линукс - фина фонетична настройка на международни клавиатури за GNU/Linux. = http://5ko.free.fr/bg/winfr.html
 * Настройка на клавиатурата на международен GNU/Linux - http://archive.is/SXMfq = http://5ko.free.fr/bg/gnu.html
