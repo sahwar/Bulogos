@@ -27,6 +27,22 @@ Bulgarian keyboard layouts by Anton Zinoviev:
 * new phon (Skordev, et al.)
 * TOADD: bg_bds_ex
 * TOADD: bg_phon_ex
+* https://github.com/salifm/bg-colemak
+* https://github.com/house-owl/Bulgarian-Phonetic-Dvorak
+* https://github.com/dragunoff/keyboard-layouts
+* Etc.:
+-- https://github.com/mw8/white_keyboard_layout
+-- https://github.com/adunning/Mac-Keyboard-Layouts-for-Windows
+-- https://github.com/algernon/ergodox-layout
+-- **https://github.com/39aldo39/klfc**
+-- https://github.com/qnikst/kbdd
+https://github.com/ijprest/keyboard-layout-editor ( http://www.keyboard-layout-editor.com/ )
+https://github.com/Kirpal/Keyboard-Layout-Editor-for-Blender
+https://github.com/atom/keyboard-layout
+https://github.com/ernesto-xload/DigisparkKeyboard
+https://github.com/hodgef/simple-keyboard-layouts
+https://github.com/kurumpa/dotSwitcher
+http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ukelele
 * Кирилица за френски клавиатури, за Windows 95, 98, ME - как се настройва френски Windows за работа на кирилица, всички букви отговарят фонетично на клавиатурата. =
 http://5ko.free.fr/bg/winfr.html
 * Клавиатура с кирилица в ГНУ/Линукс - фина фонетична настройка на международни клавиатури за GNU/Linux. = http://5ko.free.fr/bg/winfr.html
