@@ -2,7 +2,7 @@
 
 **Уеднаквен набор от кирилски клавиатурни подредби за българския език (за Windows7 SP1+, Win8, Win8.1, Win10; Linux v(2.2+)/v3.4+/v4.2+/v5+; macOS 10.10+):**
 
-## Win7 SP1+, Win8.1 и Win10: ##
+## MS Windows - (WinXP SP3,) Win7 SP1+, Win8.1 и Win10: ##
 Български (България)
 - Клавиатура
 * български - BG български (България)
@@ -18,8 +18,8 @@
 * * TO-ADD to MS Windows7/8/8.1/10: bg_phon_ex.zip = _Традиционна фонетична подредба (разширена)_
 * * (keyboard_layouts.pdf)
 
-## (GNU/)Linux (all):##
-Bulgarian keyboard layouts by Anton Zinoviev:
+## (GNU/)Linux (all, v2.2+?):
+Bulgarian keyboard layouts for (GNU/)Linux by Anton Zinoviev:
 * **BDS**
 * **phon**
 * **new phon (Skordev, et al.)**
