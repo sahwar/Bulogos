@@ -5,18 +5,19 @@
 ## MS Windows (WinXP SP3,) Win7 SP1+, Win8/8.1 и Win10+:
 
 ---------------------------------------------------------
-Клавиатурни подредби за българския език
+[Клавиатурни подредби](https://bg.wikipedia.org/w/index.php?title=%D0%9A%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0_%D0%BF%D0%BE%D0%B4%D1%80%D0%B5%D0%B4%D0%B1%D0%B0&oldid=9628002) за българския език
 ---------------------------------------------------------
-| кратки кодове | название вътре в интерфейса на ОС | подробно описание | версии: | визуализация |
+| кратки кодове | название вътре в интерфейса на ОС | подробно описание | версии | визуализация |
 | --- | --- | --- | --- | --- |
-| bg-bds **?** | български <br>(`BG` български (България) - български) | БДС, т.е. БДС 5237:1978 **?** | ... |
-| bg-lat, <br>bg-latin | български (латиница) | ... | ... | ... |
-| bg-bds **???** | **български (машинопис)** | БДС, т.е. БДС 5237:1978 **???** | ... | ... |
-| bg-phon, <br>bg-old-phon, <br>bg-phon-old, <br>bg-phon-trad, <br>bg-phon-traditional | **български (традиционна фонетична)** | ... | ... | ... |
-| bg-new-phon, <br>bg-phon-new | **български (фонетична)** | нова фонетична, **(нова) фонетична**, **по Димитър Скордев и сие** | ... | ... |
-| ... | **Клавиатурни подредби от Михаил Балабанов от https://sites.google.com/site/BGlocalize :** | ... | ... |
-| bg-bds-ex | ? | _Стандартна подредба по БДС 5237:1978 (разширена)_ — TO-ADD to MS Windows7/8/8.1/10: _bg_bds_ex.zip_ | ... | keyboard_layouts.pdf |
-| bg-phon-ex | ? | _Традиционна фонетична подредба (разширена)_ — TO-ADD to MS Windows7/8/8.1/10: _bg_phon_ex.zip_ | ... | keyboard_layouts.pdf |
+| **bg-bds** **?** | български <br>(`BG` български (България) - български) | БДС, т.е. БДС 5237:1978, българската клавиатурна подредба по БДС 5237:1978 (класическа българска подредба по БДС) **?** | ... | [изображение1](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Bulgarian_BDS_layout.svg/300px-Bulgarian_BDS_layout.svg.png)
+| **bg-lat**, <br>bg-latin | български (латиница) | ... | ... | ... |
+| **bg-bds** ***ИЛИ***<br> *bg-new-bds*, **bg-bds-new** **???** | **български (машинопис)** | БДС, т.е. БДС 5237:1978, българската клавиатурна подредба по БДС 5237:1978 (класическа българска подредба по БДС) ***ИЛИ*** българската клавиатурна „БДС“ подредба по прБДС 5237:2006 (променена БДС 5237:1978), по Димитър Скордев и сие (т.е. „нова“ БДС) **???** | ... | [изображение1](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Bulgarian_BDS_layout.svg/300px-Bulgarian_BDS_layout.svg.png) ***ИЛИ*** [изображение2](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Bulgarian_new_BDS_layout.svg/300px-Bulgarian_new_BDS_layout.svg.png) |
+| **bg-phon** (bg-phonetic-kbdlt), <br>bg-old-phon (bg-old-phonetic-kbdlt), <br>bg-phon-old (bg-phonetic-old-kbdlt), bg-trad-phon (bg-traditional-phonetic-kbdlt), <br>bg-phon-trad (bg-phonetic-traditional-kbdlt), <br>*bg-phon-traditional* | **български (традиционна фонетична)** | българската традиционна фонетична клавиатурна подредба | ... | [изображение3](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Bulgarian_Phonetic_layout.svg/300px-Bulgarian_Phonetic_layout.svg.png) |
+| *bg-new-phon*, <br>**bg-phon-new** | **български (фонетична)** | нова фонетична, **(нова) фонетична**, **по Димитър Скордев и сие**, българската фонетична клавиатурна подредба по прБДС 5237:2006, „нова“ фонетична клавиатурна подредба) | ... | [изображение4](https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Bulgarian_new_Phonetic_layout.svg/300px-Bulgarian_new_Phonetic_layout.svg.png) |
+| ... | ... | **Клавиатурни подредби от Михаил Балабанов] от https://sites.google.com/site/BGlocalize/windows/keyboard_layouts :** | ... | ... |
+| **bg-bds-ex** (bg-bds-extended, bg-bds-ex-bglocalize, bg-bds-extended-bglocalize) | ? | _Стандартна подредба по БДС 5237:1978 (разширена)_ — TO-ADD to MS Windows7/8/8.1/10: _bg_bds_ex.zip_, 
+Подредба по БДС 5237:1978 (разширена) — БДС 5237:1978 (разширена), БДС 5237:1978 (разширена - BGlocalize),  БДС 5237:1978 (разширена - BGlocalize - от Михаил Балабанов) | v4 (8.01.2013 г., 1:00) | [keyboard_layouts.pdf (Описание на разположението на знаците в предлаганите подредби — v8 (7.09.2018 г., 2:49)](https://sites.google.com/site/bglocalize/windows/keyboard_layouts/keyboard_layouts.pdf?attredirects=0&d=1) |
+| **bg-phon-ex** | ? | _Традиционна фонетична подредба (разширена)_ — TO-ADD to MS Windows7/8/8.1/10: _bg_phon_ex.zip_, Традиционна фонетична подредба (разширена) — традиционна фонетична (разширена), традиционна фонетична (разширена - BGlocalize), традиционна фонетична (разширена - BGlocalize - от Михаил Балабанов) | v2 (7.09.2018 г., 2:49) | [keyboard_layouts.pdf (Описание на разположението на знаците в предлаганите подредби — v8 (7.09.2018 г., 2:49)](https://sites.google.com/site/bglocalize/windows/keyboard_layouts/keyboard_layouts.pdf?attredirects=0&d=1) |
 ---------------------------------------------------------
 Често срещани не-български клавиатурни подредби, използвани инсталирани/зададени заедно с българските клавиатурни подредби:
 * `EN` английски (Съединени [американски] щати\[, САЩ\])
