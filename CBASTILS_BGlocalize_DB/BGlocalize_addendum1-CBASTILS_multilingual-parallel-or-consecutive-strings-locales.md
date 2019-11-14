@@ -13,7 +13,7 @@
 точност спрямо оригинала и добро звучене на текста в целевия език (target language - TL),
 което изисква и добро познаване на характерни за целевия език синтактични структури,
 синонимни гнезда и идиоматични структури (например устойчиви словосъчетания - _collocations_), както
-и често непреводими (или не достатъчно добре преводими) социокултурни реалии (т.е. _cultural realia_ ).
+и често непреводими (или не достатъчно добре преводими) социокултурни реалии (т.е. _cultural realia_).
 
 **През последните 15 години хора от сферата на информационните технологии (IT, ИТ), основно
 полупрофесионални преводачи на книги и програмисти, успяха криво-ляво сравнително успешно
@@ -23,7 +23,7 @@
 преводи на термините бяха добре приети от широката българоезична общественост, но някои от тези
 преводи, за съжаление, не намериха радушен прием поради ширещата се употреба на идиосинкретични
 англо-български смесени професиолекти (професионални диалекти), при които са ежедневие изписвания
-и произношения в стил „Bulgarianish/Bulgarish шльокавица“ (побългарен английски) като „даунлоудвам“ или „download_-вам_“.**
+и произношения в стил „Bulgarianish/Bulgarish шльокавица“ (побългарен английски) като „даунлоудвам“ или „download-вам“.**
 
 Голям брой програми бяха преведени чрез онлайн платформите за отворени доброволчески преводи като
 тези на Ubuntu LaunchPad.net, transifex.com, crowdin.com, различни Weblate инсталации, 
@@ -48,8 +48,8 @@ translateproject.com, KDE.com, GNOME, XFCE, Mozilla Pantoon, GitHub.com, GitLab.
 
 ------
 
-## В това **Допълнение1 от CBASTILS за BGlocalize** се представят 13 начина, по които да се превежда софтуер
-на български език, които въвеждат някои полезни тънкости, които са натрупани от опита в такива преводи.
+## В това **Допълнение1 от CBASTILS за BGlocalize** се представят 14 начина, по които да се превежда софтуер на български език, 
+които въвеждат някои полезни тънкости, които са натрупани от опита с такива преводи.
 
 Пример за такава предложена тук новост в превода на техническа документация е наличието на оригиналния текст наред
 с българския превод (това е възможно благодарение на много по-големите към 2019 г. обеми на твърдите 
@@ -82,9 +82,10 @@ IV. 1. снабдявам с глоси/коментар/речник`).
 |          |          |
 \----------|----------/
 ````
+
 Възможно е дори с допълнително различно подравняване на текста на отделните колони да се коментира и синтактично оцветен програмен
 компютърен изходен код, например
-![example-image](https://pbs.twimg.com/media/BlrPp1gIgAA4zsd.png:large)
+![example-image](https://pbs.twimg.com/media/BlrPp1gIgAA4zsd.png)
 (Източник: https://dzone.com/articles/convert-ruby-scripts-html-and )
 
 ### ЗАЩО ВЪОБЩЕ ДА ИЗПОЛЗВАМЕ ТЕЗИ ТЕХНИКИ?
@@ -121,7 +122,9 @@ _двуезични успоредни (паралелни) текстове (т
 File | Файл
 ````
 `original English-language text strings | translated Bulgarian-language text strings`
+
 ИЛИ
+
 ````
 Файл | File
 ````
@@ -132,35 +135,54 @@ File | Файл
 File (Файл)
 ````
 `original English-language text strings (translated Bulgarian-language text strings)`
+
 ИЛИ
+
 ````
 Файл (File)
 ````
 `translated Bulgarian-language text strings (original English-language text strings)`
 
-3) Вариант/стил 3 (с квадратни скоби):
+3) Вариант/стил 2 (със forward-slash):
+````
+File / Файл
+````
+`original English-language text strings / translated Bulgarian-language text strings`
+
+ИЛИ
+
+````
+Файл / File
+````
+`translated Bulgarian-language text strings / original English-language text strings`
+
+4) Вариант/стил 3 (с квадратни скоби):
 ````
 File \[Файл\]
 ````
 `original English-language text strings (translated Bulgarian-language text strings)`
+
 ИЛИ
+
 ````
 Файл \[File\]
 ````
 `translated Bulgarian-language text strings (original English-language text strings)`
 
-4) Вариант/стил 4 (с фигурни скоби):
+5) Вариант/стил 4 (с фигурни скоби):
 ````
 File {Файл}
 ````
 `original English-language text strings (translated Bulgarian-language text strings)`
+
 ИЛИ
+
 ````
 Файл {File}
 ````
 `translated Bulgarian-language text strings (original English-language text strings)`
 
-5) Вариант/стил 5 (оригиналния текст на английски и българския му превод, сложени **един след друг вертикално**,
+6) Вариант/стил 5 (оригиналния текст на английски и българския му превод, сложени **един след друг вертикално**,
 с празен ред между тях, евентуално и с уточнения в скоби за езиците):
 При употреба на 
 `--help`, `-help`, `-h` (Linux CLI apps/commands style, `-?`, `/?` (MS Windows `cmd.exe` style)
@@ -171,7 +193,9 @@ File {Файл}
 /r/n (т.е. нов ред, например с <br> в HTML)
 [(in) English / на английски] ...
 ````
+
 ИЛИ
+
 ````
 [(in) English / на английски] ...
 \r\n (т.е. нов ред, например с <br> в HTML)
@@ -203,7 +227,7 @@ TREE [драйв:][път(ека)] [/F] [/A]
    /A   Използване на кодова таблица (кодировка) ASCII вместо на разширени знаци (т.е. Unicode).
 ````
 
-6) Вариант/стил 6 (оригиналния текст на английски и българския му превод, сложени **един до друг хоризонтално**,
+7) Вариант/стил 6 (оригиналния текст на английски и българския му превод, сложени **един до друг хоризонтално**,
 с ограничителни знаци-маркери между тях, евентуално в началото и с 1 или повече редове с хоризонтално подравнени
 в колонки уточнения в скоби за езиците):
 
@@ -212,11 +236,12 @@ TREE [драйв:][път(ека)] [/F] [/A]
 колонки _една до друга_ са версиите на 2-та езика (английския оригинал и 
 българския превод), по подобие на таблица, като двата текста са разделени с 
 последователност от знаци разделители/ограничители (delimiter characters),
-например 1-2 броя знак табулатор (TAB = `	`) или 4 или повече интервала
+например 1-2 броя знак табулатор (TAB = "	") или 4 или повече интервала
 (защото в англоезичните технически текстове често използва 2 интервала за 
 разделяне на изречения вместо 1 интервал, което много улеснява машинната 
 обработка на такива текстове и използването на регулярни изрази (regex, regexp)
 върху тях!!!).
+
 <!--
 delimiter = знак ограничител
 (substitution characters?) = заместващи знаци
@@ -224,6 +249,7 @@ wildcards (wildcard characters)
 regex/regexp characters
 meta-characters in regexp = мета-знаци в регулярни изрази
 -->
+
 `MAX TOTAL OF _80-characters-per-line (including whitespaces&tabs!) TAB-separated side-by-side different language versions_ in
 a table-like manner, separated by a delimiter char sequence/string, e.g. 1-2xTAB-char
 or 4-or-more whitespaces`
@@ -231,32 +257,32 @@ or 4-or-more whitespaces`
 multilingual line-by-line aligned column-/table-like parallel text layout; complex text layout
 for localization purposes...
 
-7) Използване на параметъра `LC=` за задаване на езиковия локал при пускането/стартирането на програма чрез терминала за команден ред (ред за изпълняване на (CLI/TUI-текстови или GUI-apps) команди)
+8) Използване на параметъра `LC=` за задаване на езиковия локал при пускането/стартирането на програма чрез терминала за команден ред (ред за изпълняване на (CLI/TUI-текстови или GUI-apps) команди)
 
 GNU GetText (UTF-8 plaintext `*.po, *.pot (.po template file)` -> binary `*.mo`) CLI `LC=` (locale) switches
 when running the app as a text command from the CLI Terminal emulator app (and/or as parameters in
 symbolic-links (symlinks) (in Linux) or shortcut files (in MS Windows)...
 
-8) Превключване между езиковите пакети на дадена програма с ГПИ (GUI) чрез опция в менютата и`, като превключването
+9) Превключване между езиковите пакети на дадена програма с ГПИ (GUI) чрез опция в менютата и\`, като превключването
 между езиците НЕ ИЗИСКВА рестартиране (подобно на KDE3+)
 
 KDE3+-like _restartless_ (no app restart requirement!) on-the-fly/-go locale (=interface language) switching via the KDE app's GUI menu item
 
-9) Превключване между езиковите пакети на дадена програма с ГПИ (GUI) чрез опция в менютата и`, като превключването
+10) Превключване между езиковите пакети на дадена програма с ГПИ (GUI) чрез опция в менютата и`, като превключването
 между езиците ИЗИСКВА рестартиране (подобно на `paint.net`)
 
 app restart-requiring locale (=interface language) switching (e.g. `paint.net`)
 
-10) Разни общи (за предлагане на версии на различни езици (вкл. и version-control на тези версии!) на дадена уебстраница от даден уебсайт)
+11) Разни общи (за предлагане на версии на различни езици (вкл. и version-control на тези версии!) на дадена уебстраница от даден уебсайт)
 
 Unicode's CLDR & Unicode \[complex\] collation (sorting) algorithm, IBM's ICU, `localize.js`, `time.js`,
 different URLs/URIs hyperlinks for the different language versions of a webpage in a website (& _clean URIs_ or not)
 OR client-side webpage-reloadless JavaScript GetText-based (i.e. `.po`) different-language-versions of a webpage swapping/switching
 
-11) side-by-side different language versions of a website in an oldschool HTML table or side-by-side CSSv3-based table-like
+12) side-by-side different language versions of a website in an oldschool HTML table or side-by-side CSSv3-based table-like
 grid layout with different language versions _simultaneously_ visualized (shown) in the HTML.
 
-12) `<Ruby></Ruby>` HTML codes for IPA (or custom) transcriptions & {some-specific-system(+its-specific-version)-for-transliteration}
+13) `<Ruby></Ruby>` HTML codes for IPA (or custom) transcriptions & {some-specific-system(+its-specific-version)-for-transliteration}
 Чрез HTML етикета `<ruby></ruby>` може да добавите надредова диакритична транскрипция или транслитерация (или дори gloss/бележка) на чуждоезиков или български текст.
 ````
 40..40
@@ -282,7 +308,7 @@ EN
 * mozdev, MDN
 * https://www.w3schools.com/tags/tag_ruby.asp
 
-13) qTip2 (qTooltip2) for complex AJAX&HTML5-based HTML onmouseover-or-onclick/ontap tooltips & `<abbr title="text explanation or expanded abbreviation">text</abbr>` and `<acronym title="...">...</acronym>`.
+14) qTip2 (qTooltip2) for complex AJAX&HTML5-based HTML onmouseover-or-onclick/ontap tooltips & `<abbr title="text explanation or expanded abbreviation">text</abbr>` and `<acronym title="...">...</acronym>`.
 
 * **БЕЛЕЖКА1:** Към 2019 г. дори най-новите версии на уеб-браузърите Mozilla Firefox и Google Chrome/Chromium НЕ разполагат с удобен графичен начин за визуализация на HTML `<abbr title="спомагателен текст тук">...</abbr>` и `<acronym title="спомагателно обяснение тук">...</acronym`!!!
 Това може да се реши чрез визуализация на пунктирана линия под текст с такава HTML маркировка плюс визуализация при единично ИЛИ тройно тупване/щракване върху този текст, като или за няколко секунди се появява soft-wrapped спомагателния текст, или се визуализира за постоянно като
@@ -506,7 +532,7 @@ Char	Dec	Hex	Entity	Name
 ⁭	8301	206D	 	ACTIVATE ARABIC FORM SHAPING
 ⁮	8302	206E	 	NATIONAL DIGIT SHAPES
 ⁯	8303	206F	 	NOMINAL DIGIT SHAPES
----
+
 Char	Dec	Hex	Entity	Name
 ò	768	0300	 	GRAVE ACCENT
 ó	769	0301	 	ACUTE ACCENT
@@ -620,7 +646,7 @@ oͬ	876	036C	 	LATIN SMALL LETTER R
 oͭ	877	036D	 	LATIN SMALL LETTER T
 oͮ	878	036E	 	LATIN SMALL LETTER V
 oͯ	879	036F	 	LATIN SMALL LETTER X
----
+
 Char	Dec	Hex	Entity	Name
 ✁	9985	2701	 	UPPER BLADE SCISSORS
 ✂	9986	2702	 	BLACK SCISSORS
@@ -815,13 +841,13 @@ Char	Dec	Hex	Entity	Name
 ➿	10175	27BF	 	DOUBLE CURLY LOOP
 https://www.w3schools.com/charsets/ref_html_entities_4.asp
 https://www.w3schools.com/charsets/ref_utf_math.asp
----
+
 
 -->
 
 
 
-<--
+<!--
 (to add to https://github.com/sahwar/Bulogos/BLSG )
 
 Useful HTML entities for manual HTML5 text formating:
@@ -963,17 +989,17 @@ https://www.w3schools.com/charsets/ref_utf_math.asp
 https://www.w3schools.com/tags/ref_httpmessages.asp
 505 HTTP Version Not Supported	The server does not support the HTTP protocol version used in the request
 511 Network Authentication Required	The client needs to authenticate to gain network access
----
+
 https://www.w3schools.com/tags/ref_httpmethods.asp
 Encoding type	application/x-www-form-urlencoded	application/x-www-form-urlencoded or multipart/form-data. Use multipart encoding for binary data
 History	Parameters remain in browser history	Parameters are not saved in browser history
 Restrictions on data length	Yes, when sending data, the GET method adds the data to the URL; and the length of a URL is limited (maximum URL length is 2048 characters)	No restrictions
 Restrictions on data type	Only ASCII characters allowed	No restrictions. Binary data is also allowed
----
+
 'DO NOT BE EVIL HTML MESSAGES:
 402 Payment Required	Reserved for future use
 https://www.w3schools.com/tags/ref_httpmessages.asp
----
+
 The Unicode Standard covers (almost) all the characters, punctuations, and symbols in the world.
 
 All HTML5 and XML processors support UTF-8, UTF-16, Windows-1252, and ISO-8859.
