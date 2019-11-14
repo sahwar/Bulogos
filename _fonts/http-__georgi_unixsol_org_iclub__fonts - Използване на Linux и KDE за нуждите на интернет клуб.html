@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0039)https://georgi.unixsol.org/iclub/#fonts -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Използване на Linux и KDE за нуждите на интернет клуб</title>
+	
+	<meta name="author" content="Georgi Chorbadzhiyski">
+	<meta name="generator" content="gf&#39;s hands">
+	<meta name="revisit-after" content="30 days">
+	<style type="text/css"><!--
+		#content { width: 780px; }
+		a { color:#2020E0; text-decoration:underline; }
+		a:hover { color:#2020E0; background-color:#cdcdff; text-decoration:underline; }
+		body,td { font-face: Verdana,Arial,Sans-Serif; }
+		h2,h3,h4,h5 { text-align: center; }
+		p { text-indent: 10px; text-align:justify; }
+		p.z { border:1px solid black; background-color:#ccbbff; padding:2px; }
+		pre { background:silver; padding:3px; }
+		pre.cmd { background:#111111; color:#00BB00; padding:5px;}
+		table { background-color: #f0f0f0; border:1px solid black; }
+		td,th { border-bottom:1px solid black; }
+		th { background-color: #c0c0c0; }
+		ul { margin-left: 10px; }
+	--></style>
+	<link rel="SHORTCUT ICON" href="https://georgi.unixsol.org/favicon.ico">
+</head>
+<body>
+
+<a name="top"> </a>
+<a href="https://georgi.unixsol.org/">&lt;- Страничката на Георги</a><br>
+
+<div id="content">
+<h2>Използване на Linux и KDE за нуждите на интернет клуб</h2>
+
+<h3>Версии</h3>
+<p>Следващите инструкции (освен тези които са конкретно за Slackware) би трябвало
+да работят на всяка дистрибуция, която ползва поне XFree 4.3 и KDE 3.1</p>
+
+<a name="install"> </a>
+<h3>Инсталация на Slackware Linux 9.0</h3>
+<p>Нека дискът, които използваме да бъде разделен на три части. Първата ще използваме
+за програмите и самата операционна система, втората част ще е за временни файлове,
+останалата ще е само за потребителски данни.</p>
+
+<table border="0" cellpadding="2" cellspacing="0">
+<tbody><tr>
+	<th>Partition</th>
+	<th>FSystem</th>
+	<th>Размер</th>
+</tr>
+<tr>
+	<td>/</td>
+	<td align="center">ext3</td>
+	<td>2 GB</td>
+</tr>
+<tr>
+	<td>/tmp</td>
+	<td align="center">ext3</td>
+	<td>1 GB</td>
+</tr>
+<tr>
+	<td>/home</td>
+	<td align="center">ext3</td>
+	<td>Останалото място</td>
+</tr>
+</tbody></table>
+
+<p>След като сте разделили диска и сте подготвили дяловете за инсталация може да започне
+и самата инсталация. Пакетите в Slackware са разделени в т.н. "серии". За целите, които
+сме си поставили е необходимо да инсталираме A, AP, D, KDE, KDEi, L, X и XAP сериите. От
+серията N (мрежови програми) е необходимо да бъдат инсталирани autofs, lynx, nfs-utils, openssh,
+portmap, samba и tcpip. Всички останали серии е необходимо да се инсталират напълно!
+За да можете да избирате пакетите в отделните серии изберете "expert installaion".</p>
+
+<p>След като завърши инсталацията, настройте своята времева зона, параметрите на вашата
+мрежа и lilo boot loader-а. След това рестартирайте машината.</p>
+
+<h3>Подсигуряване на сигурността</h3>
+<p>След инсталацията е необходимо да извършим следните действия за да подсигурим
+сигурността на машината.</p>
+
+<ol>
+	<li><p>Необходимо е да инсталираме последните пакети, които са излезли. Най-вероятно
+те оправят пропуски в сигурността и други грешки в програмите.
+Процедурата за обновление е следната - а) Сваляне на пакетите:</p>
+<p>От <a href="http://mirrors.unixsol.org/slackware/9.0/patches/packages/">mirrors.unixsol.org</a> или
+<a href="http://www.abnormalpenguin.com/slackware-mirrors.php">друг</a> огледален сайт,
+свалете всички пакети (*.tgz файловете), които са в директорията slackware-X.XX/patches/packages/. След
+като ги свалите - обновете пакетите, които са вече инсталирани</p>
+<p>Обновяването се извършва със следната команда изпълнена в директорията в която са свалените новите пакети</p>
+<pre class="cmd">upgradepkg *.tgz</pre></li>
+
+	<li><p>Правата на всички директории в <b>/</b> без <b>/home</b> ще трябва бъдат направени 751,
+така няма да могат да се разглеждат, но всичко ще работи без проблем. Командите, която трябва да
+се изпълнят са:</p>
+<pre class="cmd">chmod  751 /{bin,boot,dev,etc,lib,lost+found,opt,proc,sbin,usr,var}
+chmod 1777 /tmp
+chmod  700 /root
+</pre></li>
+
+	<li><p>Ако някой да успее да рестартира машината, трябва да бъде забранено подаването на параметри
+към Linux ядрото, тъй като могат да се заобиколят мерките за сигурност. Когато се използва Lilo boot loader
+(стандартно при Slackware), тази забрана се осъществява като във файлът <b>/etc/lilo.conf</b> се добавят
+следните редове:</p>
+<pre>restricted
+password=XXXXXXXX
+# (за парола си изберете нещо различно от XXXXXXX :)
+</pre>
+<p>След като запишете промените във файла, изпълнете следните команди</p>
+<pre class="cmd">chmod 600 /etc/lilo.conf
+lilo
+</pre>
+<p>Така настроено, Lilo ще изисква въвеждане на парола ако потребителят се опита да промени стандартните
+параметри подавани към Linux ядрото.</p></li>
+	<li><p>Искаме да забраним на всеки освен root потребителя, да има отдалечен
+достъп до машината през SSH. За целта във файла /etc/ssh/sshd_config се добавя
+следният ред:</p><pre>AllowUsers root</pre>
+<p>и след това се изпълнява командата:</p>
+<pre class="cmd">/etc/rc.d/rc.sshd restart</pre></li>
+	<li><p>Параметрите на партишъните (<b>/tmp</b> и <b>/home</b>), в които потребителите имат достъп за писане е
+нужно да бъдат променени с цел да се разбрани възможноста за изпълнение на програми записани върху тях.
+Във файлът <b>/etc/fstab</b> ще направим следната промяна. Сменете редът</p>
+<pre>/dev/hda2  /tmp   ext3  defaults  1  1
+/dev/hda3  /home  ext3  defaults  1  1
+</pre>
+<p>със</p>
+<pre>/dev/hda2  /tmp   ext3  nodev,nosuid,noexec  1  1
+/dev/hda3  /home  ext3  nodev,nosuid,noexec  1  1
+</pre>
+<p>Това не предовратява 100% изпълнението на програми, които се намират в <b>/tmp</b> или <b>/home</b>
+но засега ще ни свърши работа.
+</p></li>
+</ol>
+
+<h3>Добавяне на потребител</h3>
+<p>В ежедневната работа под Линукс <b>не се използва</b> root потребителя.
+Затова ще си добавим обикновен потребител с които ще се работи. Добавянето
+се прави с командата</p>
+<pre class="cmd">useradd -m -s /bin/bash user
+passwd user
+</pre>
+
+<p class="z">С извършването действията описани дотук, основните мерки за сигурността на машината са взети.</p>
+
+<a name="prginstall"> </a>
+<h3>Инсталация на необходими програми</h3>
+<p>В този момент ще трябва да инсталираме няколко програми, които ги няма в стандартната Slackware инсталация.
+Те са:</p>
+<ul>
+	<li><p><a href="http://www.mplayerhq.hu/">MPlayer</a> - Най-добрата програма за гледане на видео.
+Инструкции за инсталация можете да прочетете в
+<a href="http://linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=programs&amp;key=350369052">тази статия</a>
+публикувана на сайта <a href="http://linux-bg.org/">linux-bg.org</a></p></li>
+	<li><p><a href="http://sim-icq.sourceforge.net/download.shtml">Sim ICQ</a> - ICQ клиент, които лесно
+се използва от много хора на една машина.
+Инструкции за инсталация:</p>
+<pre class="cmd"># Разархивирайте архива със изходните кодове
+tar xzvf sim-X.X.X.tar.gz
+cd sim-X.X.X
+# Компилирайте програмата и я инсталирайте
+./configure &amp;&amp; make &amp;&amp; make install
+</pre></li>
+	<li><p><a href="http://www.kvirc.net/?id=releases&amp;platform=source">KVirc</a> - Приличащ на mIRC IRC клиент.
+Инструкции за инсталация:</p>
+<pre class="cmd"># Разархивирайте архива със изходните кодове
+bunzip2 -cd kvirc-X.X.X.tar.bz2 | tar xv
+cd kvirc-X.X.X
+# Компилирайте програмата и я инсталирайте
+./configure &amp;&amp; make &amp;&amp; make install
+</pre></li>
+</ul>
+
+<a name="bg"> </a>
+<h3>Настройки за българизация на Линукс системата</h3>
+<p>За да може да пишете на кирилица в новите графични среди (KDE, Gnome) трябва
+да е указано като променлива на средата, че сте в България. Това можете да направите,
+като във файловете <b>/home/user/.bashrc</b>, <b>/home/user/.bash_profile</b>,
+<b>/home/user/.bash_login</b> и <b>/home/user/.profile</b> имате следните редове:
+</p>
+<pre>export LANG=bg_BG
+export LANGUAGE=bg
+# Това ви трябва не искате съобщенията от програмите да са на български
+export LC_ALL=C
+</pre>
+
+<p>Тези файлове трябва да са собственост на потребителя в чиято домашна директория са.
+След като файловете са направени е необходимо да са излезе от системата (logout) и да
+се влезе пак (login) или просто да се изпълнят командите.</p>
+
+<a name="xconfig"> </a>
+<h3>Настройки на X сървъра</h3>
+<p>По конкретно за настройките на графичната среда можете да прочетете в
+<a href="http://slackware.com/book/index.php?source=c1364.html">документацията на Slackware</a>
+или в <a href="http://www.tldp.org/HOWTO/XFree86-HOWTO/">XFree86 HOWTO</a>. Следват няколко бързи
+инструкции за настройка:</p>
+<pre class="cmd">startx -- -configure
+cp /root/xorg.conf.new /etc/X11/xorg.conf
+startx
+</pre>
+<p>След това ако ползвате KDE от <b>Control Center / Peripherals / Display</b> си донастройвате графичната среда.</p>
+
+<a name="fonts"> </a>
+<h4>Шрифтове</h4>
+<p>За да няма никакви проблеми със шрифтовете под X е необходимо да се инсталират няколко
+допълнителни шрифта, които са качествени и добре поддържат кирилица.</p>
+<p>Ще използваме TrueType шрифтове (свободните шрифтове на Майкрософт), няколко свободни
+Type1 шрифта (изработени от TopTeam), а също и растерни шрифтове заради някой стари приложения,
+които ги изискват. Всеки един от използваните шрифтове можете да намерите и да си свалите от
+интернет, но за удобство съм ги събрал в един архив всички. <a href="https://georgi.unixsol.org/programs/X11/corefonts.tar.gz">Архивът
+със шрифтове можете да си свалите от тук</a>. Разархивирайте го в директорията
+<b>/usr/X11R6/lib/X11/fonts</b>, а в <b>/etc/X11/xorg.conf</b> трябва да има следните
+редове (<em>"Files" и "Module" секциите най-вероятно вече ги имате във
+файла, просто в тях добавете редовете, който са между точките</em>)</p>
+<pre>Section "Files"
+    ...
+    FontPath    "/usr/X11R6/lib/X11/fonts/corefonts/type1/"
+    FontPath    "/usr/X11R6/lib/X11/fonts/corefonts/truetype/"
+
+    FontPath    "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/cp1251/75dpi"
+    FontPath    "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/cp1251/misc"
+    FontPath    "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-10646-1/75dpi"
+    FontPath    "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-10646-1/misc"
+    FontPath    "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-8859-5/75dpi"
+    FontPath    "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-8859-5/misc"
+    FontPath    "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/koi8-r/75dpi"
+    FontPath    "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/koi8-r/misc"
+
+    FontPath    "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/cronyx/cp1251/100dpi"
+    FontPath    "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/cronyx/iso-10646-1/100dpi"
+
+    FontPath    "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/misc/"
+    ...
+EndSection
+
+Section "Module"
+    ...
+    Load "type1"
+    Load "freetype"
+    ...
+EndSection
+</pre>
+<p>За да довършите настройката на шрифтовете е необходимо пътищата на truetype и type1
+шрифтовете да бъдат описани и във font config. Файлът в който се описват тези пътища
+се нарича <b>/etc/fonts/local.conf</b> и изглежда по слдният начин</p>
+<pre>&lt;?xml version="1.0"?&gt;
+&lt;!DOCTYPE fontconfig SYSTEM "fonts.dtd"&gt;
+&lt;fontconfig&gt;
+    &lt;dir&gt;/usr/share/fonts&lt;/dir&gt;
+    &lt;dir&gt;/usr/X11R6/lib/X11/fonts/TTF&lt;/dir&gt;
+    &lt;dir&gt;/usr/X11R6/lib/X11/fonts/Type1&lt;/dir&gt;
+    &lt;dir&gt;/usr/X11R6/lib/X11/fonts/corefonts/truetype&lt;/dir&gt;
+    &lt;dir&gt;/usr/X11R6/lib/X11/fonts/corefonts/type1&lt;/dir&gt;
+    &lt;dir&gt;/usr/X11R6/lib/X11/fonts/vera&lt;/dir&gt;
+    &lt;dir&gt;~/.fonts&lt;/dir&gt;
+&lt;/fontconfig&gt;
+</pre>
+
+<p>След като направите тези настройки като root стартирайте <b><i>fc-cache -f -v</i></b></p>
+
+<a name="kbd"> </a>
+<h4>Клавиатура</h4>
+<p>Необходимо е да се настрои клавиатурата за да може да се пише на кирилица. В <b>/etc/X11/xorg.conf</b>
+е трябва да има следните редове</p>
+
+<pre>Section "InputDevice"
+    Driver	"Keyboard"
+    ...
+    Option  "XkbLayout"   "us,bg"
+    Option  "XkbVariant"  ",phonetic"
+    Option  "XKbOptions"  "grp:alt_shift_toggle,grp_led:scroll"
+    ....
+EndSection
+</pre>
+
+<p>Ако искате да превключвате между фонетична подредба и БДС подредба използвайте тези редове
+вместо горните</p>
+
+<pre>Section "InputDevice"
+    Driver	"Keyboard"
+    ...
+    Option  "XkbLayout"   "us,bg,bg"
+    Option  "XkbVariant"  ",phonetic,bds"
+    Option  "XKbOptions"  "grp:alt_shift_toggle,grp_led:scroll"
+    ....
+EndSection
+</pre>
+
+<a name="mouse"> </a>
+<h4>Мишка</h4>
+<p>За да ви работи "колелцето" на мишката е необходимо да имате следните настройки в <b>/etc/X11/xorg.conf</b></p>
+
+<pre>Section "InputDevice"
+    Driver "mouse"
+    ...
+    Option "Device"        "/dev/psaux"       # За PS/2 мишка
+#   Option "Device"        "/dev/input/mice"  # За USB мишка
+    Option "Protocol"      "imps/2"
+    Option "ZAxisMapping"  "4 5"
+EndSection
+</pre>
+
+<h4>Монитор</h4>
+<p>Ако искате мониторът ви да се гаси след определено време (в KDE времето може
+да се настройва от Control Center) ви трябва следният ред в <b>/etc/X11/xorg.conf</b></p>
+
+<pre>Section "Monitor"
+  ...
+  Option  "DPMS"
+  ...
+EndSection
+</pre>
+
+<a name="extra"> </a>
+<h4>Допълнителни настройки</h4>
+<ul>
+	<li><p>Изключване на възможността за "убиване" на X сървъра.</p></li>
+	<li><p>Изkлючване на възможността за превключване на виртуалните конзоли.</p></li>
+</ul>
+
+<p>Трябват ви следните редове в <b>/etc/X11/xorg.conf</b></p>
+
+<pre>Section "ServerFlags"
+   Option  "DontZap"       "true"
+   Option  "VTSysReq"      "false"
+   Option  "DontVTSwitch"  "true"
+EndSection
+</pre>
+
+<a name="xdm"> </a>
+<h3>Превключване на графичен логин</h3>
+<p>В /etc/inittab реда</p>
+<pre>id:3:initdefault:</pre>
+<p>се заменя с</p>
+<pre>id:4:initdefault:</pre>
+<p>След това изпълнете командата</p>
+<pre class="cmd">/sbin/telinit 4
+</pre>
+
+<h3>Настройка на kdm (графичен логин)</h3>
+<p>За да настройте kdm можете да използвате графичните инструменти, които
+ви предоставя KDE. Настройките се намират по следният начин:
+<b>Control Center -&gt; System Administration -&gt; Login Manager</b><br>
+Самият файл в които е конфигурацията се намира във файлът: <b>/opt/kde/share/config/kdm/kdmrc</b>
+</p>
+
+<p>Необходимо е да променим следните параметри:</p>
+
+<ul>
+	<li><p>Сесии (<a href="https://georgi.unixsol.org/iclub/kdm_setup0.png">картинка</a>)</p>
+	<ol>
+		<li>Само root потребител да може да гаси машината. Редове в конфигурационният файл</li>
+	</ol>
+<pre>[X-:*-Core]
+AllowShutdown=Root
+</pre>
+	</li>
+</ul>
+<ul>
+	<li><p>Потребители (<a href="https://georgi.unixsol.org/iclub/kdm_setup1.png">картинка</a>)</p>
+	<ol>
+		<li>Списък на потребителите не се показва в началото. Редове в конфигурационният файл</li>
+	</ol>
+<pre>[X-*-Greeter]
+FocusPasswd=true
+LogoArea=Clock
+PreselectUser=None
+SelectedUsers=
+SessionTypes=default,kde,failsafe,
+ShowUsers=None
+SortUsers=false
+</pre>
+	</li>
+</ul>
+<ul>
+	<li><p>Пароли, автоматично влизане (<a href="https://georgi.unixsol.org/iclub/kdm_setup2.png">картинка</a>)</p>
+	<ol>
+		<li>Потребителят "user" може да влиза без парола.</li>
+		<li>При първоначално зареждане "user" автоматично се логва.</li>
+		<li>Ако поради някакъв проблем X сървърът умре, всичко продължава автоматично.</li>
+	</ol>
+Редове в конфигурационният файл
+<pre>[X-:0-Core]
+AutoLoginEnable=true
+AutoLoginUser=user
+
+[X-:*-Core]
+AllowRootLogin=true
+NoPassEnable=true
+NoPassUsers=user
+</pre>
+	</li>
+</ul>
+
+<a name="kde"> </a>
+<h3>Настройки на KDE</h3>
+<ol>
+	<li>Показване на монтирани устройства на екрана. Виж <a href="https://georgi.unixsol.org/iclub/kdesktop_config.png">картинката</a>.
+Дясно копче на Desktop-а избира се "configure desktop".
+<p>За да работи автоматичното монтиране на CD-ROM-и и Floppy-та трябва да добавите
+няколко реда във файла <b>/etc/fstab</b>. Редовете са следните:</p>
+<pre># Ако вашият CD-ROM не е /dev/hdd използвайте друго устройство
+# /dev/hdb отговаря на Primary Slave
+# /dev/hdc отговаря на Secondary Master
+# /dev/hdd отговаря на Secondary Slave
+/dev/hdd        /mnt/cdrom      auto    ro,user,noauto          0       0
+/dev/fd0        /mnt/floppy     auto    rw,sync,user,noauto     0       0
+</pre>
+<p>Така настроена системата, когато в KDE изберете иконата на немонтираното
+устройство, която е на екрана, KDE автоматично ще монтира устройството.</p>
+</li>
+	<li>"Почистване" на K менюто. Дясно копче на "K" избира се "Menu editor"
+и се изтриват излишните програми, които няма да се ползват</li>
+	<li>Поставяне на необходимите програми на екрана</li>
+	<li>Асоцииране на MPlayer с видео файловете</li>
+</ol>
+
+<p class="z">Дотук всичко което направихме така или иначе е нужно за една работна
+станция. Сега обаче идва моментът в които ще ограничим потребителят
+използващ машината да не може да стартира програми които не желаем и
+изобщо да извършва действия, които не сме му разрешили.</p>
+
+<h3>Настройка на KDE KIOSK</h3>
+<p>Повече информация за KDE KIOSK framework можете да прочетете на следните адреси:
+<a href="http://webcvs.kde.org/cgi-bin/cvsweb.cgi/kdelibs/kdecore/README.kiosk?rev=1.23&amp;content-type=text/x-cvsweb-markup">Kde.Org</a> и
+<a href="http://www.linux-mag.com/2002-11/kde_01.html">Linux-Mag.com</a>.
+KDE KIOSK ни позволява да ограничаваме конкретни действия на потребителя. Например
+можем да забраним достъпа до shell командите, отварянето на properties панел или
+промени по иконите сложени на desktop-а.
+Настройките се правят по локалната конфигурация на потребителя "user".
+Тя се намира във /home/user/.kde/share/config или иначе казано, когато
+сте влезли с "user" ~/.kde/share/config</p>
+<p>Редактират се 3 файла:
+  - kdesktoprc - Настройки на Desktop<br>
+  - kickerrc   - Настройки на taskbar<br>
+  - kdeglobals - Глобални настройки на KDE средата<br>
+</p>
+
+<p>В kdestoprc искаме да забраним правенето на каквито и да е промени
+по Desktop-а. Това се прави като във ~/.kde/share/config/kdesktoprc
+най-отгоре се добавя следният ред:</p>
+<pre>[$i]
+</pre>
+
+<p>В kickerrc искаме да забраним правенето на каквито и да е промени
+по TaskBar-а. Това се прави като във ~/.kde/share/config/kickerrc
+най-отгоре се добавя следният ред:</p>
+<pre>[$i]
+</pre>
+
+<p>Тук вече стигаме до глобалните ограничения които искаме да наложим
+въху KDE средата и програмите използващи я. Във файлът
+~/.kde/share/config/kdeglobals добавяме следните редове.
+Редовете, който започват със action/ дефинират действия в програмите
+които не искаме да могат да се изпълняват. Останалите редове
+са глобални ограничения.</p>
+
+<pre>[KDE Action Restrictions][$i]
+#run_desktop_files=false
+
+custom_config=false
+lock_screen=false
+run_command=false
+shell_access=false
+editable_desktop_icons=false
+movable_toolbars=false
+lineedit_text_completion=false
+
+# Konquerer
+action/lock=false
+action/bookmarks=false
+action/show_menubar=false
+action/edit_bookmarks=false
+action/togglemenubar=false
+action/configdesktop=false
+action/exec=false
+#action/up=false
+action/konsolepart=false
+action/open_terminal=false
+action/editMimeType=false
+action/edit_mime_type=false
+action/editFileType=false
+action/edit_file_type=false
+action/editfiletype=false
+action/run=false
+action/rename=false
+action/file_rename=false
+action/options_show_toolbar=false
+action/options_configure=false
+action/options_configure_toolbars=false
+action/options_configure_shortcuts=false
+action/options_show_menu_bar=false
+action/fullscreen=false
+action/properties=false
+action/openwith=false
+</pre>
+
+<p>Оправяне на правата за достъп до файловете. Тъй като не искаме тези файлове да
+могат да бъдат променяни от потребителя е необходимо да направим няколко промени
+по правата за достъп до файловете. А именно:</p>
+
+<ol>
+	<li>Правим файловете четими за всички</li>
+	<li>Само собственика на файла може да променя неговото име (sticky bit)</li>
+	<li>Собственик на променените файлове е root</li>
+</ol>
+
+<pre class="cmd">chmod 644 ~/.kde/share/config/{kdeglobals,kickerrc,kdesktoprc}
+su -c "chmod 1700 /home/user/.kde/share/config/"
+su -c "chown 0.0 ~/.kde/share/config/{kdeglobals,kickerrc,kdesktoprc}"
+</pre>
+
+TODO:<br>
+<ul>
+	<li>Настройки на принтер</li>
+	<li>Инсталация на Open Office</li>
+	<li>samba и (или) nfs за мрежовите устройства</li>
+</ul>
+
+<h3>About</h3>
+<p>Този документ е написан от <a href="https://georgi.unixsol.org/">Георги Чорбаджийски</a>. Презентация, която демонстрира
+крайният резултат от описаното е правена на 10 Май 2003 в клуб "Матрицата-5" в гр. София. Повече
+информация за събитието можете да получите от
+<a href="http://linux-bg.org/cgi-bin/y/index.pl?page=hot_topic&amp;key=350766578">linux-bg.org</a>.
+Оригиналните бележки на автора се намират <a href="https://georgi.unixsol.org/texts/linux_demofest.txt">тук</a>. Документът
+се разпространява под GNU FDL лиценз. За корекции и допълнения пишете на следният емайл 
+<a href="mailto:georgi@unixsol.org">georgi@unixsol.org</a>.
+</p>
+
+<p><a href="https://georgi.unixsol.org/iclub/conf/">Списък на конфигурациите</a></p>
+</div>
+
+<div align="right">
+<a href="http://validator.w3.org/check/referer"><img border="0" src="./http-__georgi_unixsol_org_iclub__fonts - Използване на Linux и KDE за нуждите на интернет клуб_files/valid-xhtml10.png" alt="Valid XHTML 1.0!" height="31" width="88"></a>
+</div>
+
+<pre>$Id: index.html,v 1.11 2004/09/27 13:05:00 gf Exp $
+
+$Log: index.html,v $
+Revision 1.11  2004/09/27 13:05:00  gf
+Change CSS, email and homepage link
+
+Revision 1.10  2003/11/03 13:42:29  gf
+Fix font paths
+Add information about setting up font config
+
+Revision 1.9  2003/09/02 20:08:59  gf
+Updated font installing instructions
+Moved BG setup before X11 setup
+
+Revision 1.8  2003/07/12 12:25:16  gf
+Small html fixes
+Add info about floppy and cd-rom auto mounting
+
+Revision 1.7  2003/07/12 12:04:39  gf
+Add info about freetype module in XFree
+Add info about language environment variables
+
+Revision 1.6  2003/06/10 10:40:41  gf
+Add info about /tmp partition
+Add info on how to secure lilo
+Made KDE KIOSK description more clear
+ (10x to Hristo Erinin for the above)
+Fix some typos
+
+Revision 1.5  2003/06/07 20:43:55  gf
+Add info about required X and KDE versions
+
+Revision 1.4  2003/06/06 12:21:05  gf
+Add pre tags for CVS info
+
+Revision 1.3  2003/06/06 12:19:58  gf
+Fix "Fonts" sections they must be "Files". 10x to Stefan Dimitrov
+</pre>
+
+
+
+</body></html>

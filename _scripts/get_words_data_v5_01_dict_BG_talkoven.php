@@ -16,6 +16,27 @@
 	### HOW DID I USE THIS PHP SCRIPT
 	### On a (GNU/)Linux distro, I installed the following required packages:
 	###
+	### Dependencies:
+	### *
+	### *
+	### *
+	### ...
+	###
+	### I then ran the following command to download stuff
+	###
+	###
+	### 
+	### NOTE: The regex in this PHP scrape about removing some regex-matching text is due to the fact
+	### that http://eurodict.com had a weird text advertisements inserted between the important-info
+	### HTML contents, so that regex deletes those unneeded sections...
+	### Since eurodict.com changed its website UI, thus changing its HTML, this script is no longer
+	### usable with the new version of eurodict.com UNLESS you web-crawl eurodict.com's 23 dictionary-database
+	### URLs to get ONLY the list of URLs (the index/sitemap) for each dictionary entry, and THEN use this
+	### script, but with commenting-out the regex-match&delete portion of this PHP script!
+	###
+	### (TO PASTE HERE the .txt files which explains how I later edited the text file produced with this PHP script, all
+	### by using Notepad++ regex Search&Replace and by using the GNU/Linux CLI app `split` with some of its CLI arguments...)
+	###
 	### I then ran the script with a FILE_WITH_URLS input which was basically
 	### a text file of 1 URL per line, generated via https://textmechanic.com/text-tools/numeration-tools/generate-list-numbers/
 	### The final script ran for SEVERAL DAYS and I had 23 copies of it running PARALLEL...
@@ -33,12 +54,15 @@
 	### deride/hate this technique, which is known as 'regex-based HTML webscraping'.
 	### FAMOUS SARCASM on/about the topic of 'regex-based HTML webscraping': https://stackoverflow.com/a/1732454
 	###
-	### Examples of other HTML webscrapers
+	### Here's a compiled list of the URL numbers which was used to generated the input file with the 1-URL-per-line (these are ALL 23 dictionary databases used in eurodict.com... Sadly, the mirror website which hosted a copy of the
+	### old eurodict.com UI/HTML is now showing '404 Not Found' errors or some server misconfiguration errors...
 	### 
-	### cURL - 
-	### libcurl (this is what is most often used with PHP) - 
-	### wget - 
-	### wget2 -
+	### Examples of other software that can be used as regex-based HTML webscrapers:
+	### 
+	### cURL - http://curl.haxx.se
+	### libcurl (this is what is most often used with PHP) - https://curl.haxx.se/libcurl/
+	### wget - https://www.gnu.org/software/wget/
+	### wget2 - https://gitlab.com/gnuwget/wget2
 	### 
 	### https://python-forum.io/Thread-web-scraping-with-python-regular-expression
 	### https://www.codeproject.com/Tips/1237202/Webscraping-using-Regular-Expression-and-HtmlAgili
