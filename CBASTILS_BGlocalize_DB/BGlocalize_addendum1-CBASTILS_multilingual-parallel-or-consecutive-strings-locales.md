@@ -161,7 +161,7 @@ File (Файл)
 ````
 `translated Bulgarian-language text strings (original English-language text strings)`
 
-3) Вариант/стил 2 (със forward-slash):
+3) Вариант/стил 2 (с forward-slash):
 ````
 File / Файл
 ````
