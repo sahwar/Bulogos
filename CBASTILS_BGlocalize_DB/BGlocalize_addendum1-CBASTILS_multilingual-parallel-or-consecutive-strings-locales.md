@@ -286,7 +286,7 @@ symbolic-links (symlinks) (in Linux) or shortcut files (in MS Windows)...
 
 KDE3+-like _restartless_ (no app restart requirement!) on-the-fly/-go locale (=interface language) switching via the KDE app's GUI menu item
 
-10) Превключване между езиковите пакети на дадена програма с ГПИ (GUI) чрез опция в менютата и`, като превключването
+10) Превключване между езиковите пакети на дадена програма с ГПИ (GUI) чрез опция в менютата и\`, като превключването
 между езиците ИЗИСКВА рестартиране (подобно на `paint.net`)
 
 app restart-requiring locale (=interface language) switching (e.g. `paint.net`)
