@@ -6,6 +6,9 @@
 * Bidding in auctions or at local physical bazaars/market-places (for physical goods)
 * залепяне/очакване на надписи, че предлагате дадена платена услуга или че продавате дадени продукти, с вписан телефон, имейл, Viber, адрес, име/псевдоним/(реална/фалшива) фирма - като метод за контакти ((с)връзка); с опция да си откъснете част от хартията със съкратена тази информация
 * писане с перманентен маркер или графити боя на Интернет онлайн адрес, с който се саморекламирате и/или рекламирате продукта/услугата, който/която предлагате срещу парично заплащане и/или бартер(на размяна...).
+* Залепен голям надпис на блока (с данни за контакт), че събирате пари да си оправите сами дупките в асфалта пред блока, щото вече 5-та кола е отишла за ремонт за над 500 лв., както и че предлагаш секс услуги срещу заплащане, и че събирате пари да оправите счупените детски съоръжения до блока (на детската площадка)!!!
+
+Плюс смяна на дрехите и прическата и пускане като уличен артист с шапка за дарения и спамене на познати да те финансират за поредната врътка с обещание и те да намажат по някакъв начин от това!
 
 ### Classic (e-)banking ###
 * банков превод --- In-country & International bank transfer (IBAN & SWIFT/BIC) (check bank tariffs/costs/charges)
@@ -29,7 +32,7 @@
 * **[Patreon.com](https://www.patreon.com/)**
 * **[LiberaPay.com](LiberaPay.com)**
 * **[Flattr.com](https://flattr.com/)**
-* ***SALT.bountysource.com*** - httpshttps://salt.bountysource.com/ (for open-source software projects, etc.) = 
+* ***SALT.bountysource.com*** - https://salt.bountysource.com/ (for open-source software projects, etc.) = 
 https://salt.bountysource.com/ (SALT - A crowdfunding platform that helps developers earn a monthly salary from open-source software) (e.g. https://salt.bountysource.com/teams/neovim)
 * https://opencollective.com
 * https://beerpay.io/ (e.g. https://beerpay.io/b3by/atom-clock?focus=wish )
@@ -60,13 +63,17 @@ https://www.blockchain.com/btc/address/
 
 ### Etc. ###
 * Consignation
-* Re-selling of goods/services, or serving as proxy, or outsourcing (?)
+* Re-selling (with an overprice percentage profit) of goods/services, or serving as proxy, or outsourcing (?)
 * Rebranding & re-selling
 * Dropshipping (?)
 * Selling your items on Amazon.com sites, eBay.com sites (https://www.ebay.com/, https://www.ebay.co.uk/, https://www.ebay-kleinanzeigen.de/, https://www.ebaymainstreet.com/digital-density-europe/country.htm, https://www.amazon.co.uk/Ebay-Online-Shopping-Books/b?ie=UTF8&node=14288291, http://blog.linnworks.com/international-ebay-sites-list, https://tech-vise.com/how-to-easily-sell-on-ebay-usa-from-any-country-in-the-world/, https://www.ebaymainstreet.com/, https://www.ebay.com/gds/eu-european-country-list/10000000013891943/g.html, https://blog.edesk.com/resources/european-marketplaces-alternatives, **[ALL EBAY sites list](http://archive.is/5hZZi)**), Etsy.com ([alternatives](https://www.finder.com/sites-like-etsy), [alternatives2](https://www.shoplo.com/blog/sites-like-etsy/))
 * [Freelancing online](https://www.quora.com/Which-are-the-best-websites-to-hire-freelancers) - freelancer.com, upwork.com
+* Some Bulgarian ISPs employ this tactic:  https://en.m.wikipedia.org/wiki/Grace_period
+* увеличаваш с малко цената и после лъжеш, че е с намаление (на промоция) при покупка на няколко броя в комплект ;) 😁🤫🙄😂🤣
 * **http://olx.bg**
 * http://bazar.bg
+* Facebook.com групи за продажби, размяна, подаръци/дарения
+* кампания в стила "Капачки за бъдеще" (за рециклиране на пластмаса с цел купуване на кувьози за бебета и друга медицинска апаратура)
 
 ### [Crowdfunding](https://www.crowdfunding.com/) (NOT so viable... Better for countries outside of Bulgaria... BUT community per-project crowdfunding campaigns ARE VIABLE in Bulgaria!!!) ###
 _([information in Bulgarian](https://www.crowdfunding.com/), [more information](https://www.fundable.com/learn/resources/guides/crowdfunding/what-is-crowdfunding))_
