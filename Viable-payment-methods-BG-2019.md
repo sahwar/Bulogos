@@ -7,8 +7,8 @@
 * залепяне/очакване на надписи, че предлагате дадена платена услуга или че продавате дадени продукти, с вписан телефон, имейл, Viber, адрес, име/псевдоним/(реална/фалшива) фирма - като метод за контакти ((с)връзка); с опция да си откъснете част от хартията със съкратена тази информация
 * писане с перманентен маркер или графити боя на Интернет онлайн адрес, с който се саморекламирате и/или рекламирате продукта/услугата, който/която предлагате срещу парично заплащане и/или бартер(на размяна...).
 * Залепен голям надпис на блока (с данни за контакт), че събирате пари да си оправите сами дупките в асфалта пред блока, щото вече 5-та кола е отишла за ремонт за над 500 лв., както и че предлагаш секс услуги срещу заплащане, и че събирате пари да оправите счупените детски съоръжения до блока (на детската площадка)!!!
-
 Плюс смяна на дрехите и прическата и пускане като уличен артист с шапка за дарения и спамене на познати да те финансират за поредната врътка с обещание и те да намажат по някакъв начин от това!
+* on-the-spot crowdfunding for some cause / artistic act
 
 ### Classic (e-)banking ###
 * банков превод --- In-country & International bank transfer (IBAN & SWIFT/BIC) (check bank tariffs/costs/charges)
@@ -55,11 +55,11 @@ https://www.blockchain.com/btc/address/
 * [Bulgarian Posts (National Postal Service)](http://bgpost.bg/bg/109) payment - пощенски запис чрез "Български пощи" (трите имена, адрес, п.к., до поискване; И после ме уведомете с email, за да знам да си потърся записа, и за да мога да ви благодаря ;-) ) - http://cd.svoboden.net/bg/donate.html#post - (Bulgaria-centric)
 * [ePay.bg](https://www.epay.bg/v3main/front?p=mrcs) (Bulgaria-centric)
 * [EasyPay.bg](https://www.easypay.bg/site/) _(битови сметки и платежни услуги)_ (Bulgaria-centric)
-* food vouchers for Kaufland, LIDL, Bulgarian Posts, etc. ... (Bulgaria-centric)
-
-
-
-
+* food vouchers for Kaufland, LIDL, BILLA, Bulgarian Posts, etc. ... (Bulgaria-centric)
+* book&souvenir vouchers (Helikon.bg, etc.)
+* Пускане на https://www.peticiq.com/ + имейл за PayPal дарения / линк за дарения чрез PayPal на сума по избор
+* Молба за дарения чрез PayPal в уебсайтове за лично творчество като https://deviantart.com, http://etsy.com (+продажба на craft (занаятчийски) творби и принтове на картини), http://otkrovenia.com, http://spodeli.com, https://m.bg-mamma.com/, https://info.tellonym.me/ и т.н.
+* ...
 
 ### Etc. ###
 * Consignation
