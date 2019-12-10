@@ -24,17 +24,24 @@
 🇧🇬 &#x1F1E7;&#x1F1EC; Щракнете/цъкнете/кликнете по-нагоре върху бутона `Clone or download` -> `Download ZIP` ИЛИ натиснете хипервръзката по-надолу чрез уеб-браузъра си.
 
 **https://github.com/sahwar/Bulogos/archive/master.zip**
-(OR right-click & `Save link as...` (`Запазване на връзката като...` ; `Запис на препратката като...`, ...)
+(OR right-click & `Save link as...` / `Save Target As` (ИЛИ щракване с десния бутон на мишката и `Запазване на връзката като...` / `Запис на препратката като...`, ...)
 
-~
+Изтегляне чрез [`wget`](https://www.gnu.org/software/wget/):
 ````
-wget https://github.com/sahwar/Bulogos/archive/master.zip
-````
-~
-````
-curl https://github.com/sahwar/Bulogos/archive/master.zip
+wget -nc -O Bulogos_master.zip https://github.com/sahwar/Bulogos/archive/master.zip
 ````
 ~
+Изтегляне чрез [wget2](https://gitlab.com/gnuwget/wget2):
+````
+wget2 -nc -O Bulogos_master.zip https://github.com/sahwar/Bulogos/archive/master.zip
+````
+~
+Изтегляне чрез [curl](http://curl.haxx.se/):
+````
+curl -nc -LO https://github.com/sahwar/Bulogos/archive/master.zip
+````
+~
+Клониране на хранилището чрез `git` (https://git-scm.org):
 ````
 git clone https://github.com/sahwar/Bulogos.git
 ````
@@ -42,7 +49,7 @@ git clone https://github.com/sahwar/Bulogos.git
 ## Contact / За контакти
 :us: :gb:  If you have any ideas, suggestions or `git merge` requests about this project, then just send me an email with your ideas to [ve4ernik@gmail.com](mailto:ve4ernik@gmail.com).
 
-🇧🇬 &#x1F1E7;&#x1F1EC;  Ако имате каквито и да е идеи, предложения или молби/заявки за `git merge` относно този проект, то тогава просто ми изпратете имейл с идеите си на [ve4ernik@gmail.com](mailto:ve4ernik@gmail.com).
+🇧🇬 &#x1F1E7;&#x1F1EC;  Ако имате каквито и да е идеи, предложения или молби/заявки за сливане ( `git merge` ) относно този проект, то тогава просто ми изпратете имейл с идеите си на [ve4ernik@gmail.com](mailto:ve4ernik@gmail.com).
 
 ## Donations / Дарения
 :us: :gb:  If you like to support my work on Bulogos, you are invited to make a donation if you can afford it. Just click the button below.

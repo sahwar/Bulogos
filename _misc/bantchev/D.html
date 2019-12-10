@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div><head>
+<title>D</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="D_files/place-s.css" media="screen">
+<link rel="stylesheet" type="text/css" href="D_files/place-p.css" media="print">
+</head>
+
+<body>
+
+<table class="topbar"><tbody>
+<tr><td class="topbar"><a href="http://www.math.bas.bg/bantchev/place/" class="topbar">PLACE</a></td></tr>
+<tr><td class="topbar"><a href="http://www.math.bas.bg/bantchev/place/languages.html" class="topbar">languages</a></td></tr>
+<tr><td class="topbar"><a href="http://www.math.bas.bg/bantchev/place/rpn/rpn.d.html" class="topbar">RPN&nbsp;in&nbsp;D</a></td></tr>
+</tbody></table>
+
+<h1>D</h1>
+
+<p>The programming language D is a successor to <a href="http://www.math.bas.bg/bantchev/place/c.html">C</a> and <a href="http://www.math.bas.bg/bantchev/place/c%2b%2b.html">C++</a>.
+  It can be viewed as a more practical, modern, and safe C, retaining 
+the compactness and especially the performance of the latter.  It is 
+also an improvement on C++, redesigning many of its useful features, 
+replacing or removing those of questionable value, and adding some that 
+C++ lacks.  D combines its C and C++ heritage with features from modern 
+languages like <a href="http://www.math.bas.bg/bantchev/place/ruby.html"><span class="csc">Ruby</span></a>, <a href="http://www.math.bas.bg/bantchev/place/java.html"><span class="csc">Java</span></a> and <a href="http://www.math.bas.bg/bantchev/place/c%23.html"><span class="csc">C#</span></a>.</p>
+
+<p>Conceived in 1999, D was initially a creation of Walter Bright, who 
+was the main developer of the first native C++ compiler, 
+Zortech&nbsp;C++, which later became Symantec&nbsp;C++ and is now 
+Digital Mars&nbsp;C++ (Digital Mars is Walter Bright's own company).  
+The language is partly open source and still under development, 
+currently (2010) with a stable version called D1 and one evolving in 
+several new directions, named D2.  The evolution of D is actively 
+supported by suggestions and critique from its user community.  D 
+managed to attract a number of renowned and productive persons who 
+actively colaborate with D's principal developer.</p>
+
+<p>Although D's syntax is very much like C's, D does not aim at full 
+backward compatibility with C.  While this means that a C program is not
+ necessarily a correct D program, the innovations of the latter language
+ are well justified and make it more consistent and easy to use.</p>
+
+<p>A notable difference of D from C and C++ is the absence of a 
+preprocessor.  A number of features are introduced in its place to 
+provide the needed functionality in safer, more flexible and reliable 
+ways.</p>
+
+<p>Another difference is that D programs tend to make much less use of 
+explicit pointers.  The reasons for which pointers are needed in C, and 
+partly in C++, are mostly eliminated by introducing more useful arrays, 
+automatic memory management, output and input-output parameters and 
+other features.</p>
+
+<p>Also distinctive for D with respect to C/C++ is that it uses 
+exceptions to signal errors in function evaluation, instead of passing 
+error codes.</p>
+
+<p>It is a design policy of D to provide certain useful datatypes, data 
+structures, and operations directly into the language, instead of 
+relegating them to library modules.  This contributes to the practical 
+expressiveness of the language.</p>
+
+<p>Here are, in more detail, some of the important features that characterize D.</p>
+
+<ul>
+<li>Modular structure.  A module has its own namespace, from which 
+symbols can be imported.  Modules can be grouped together in 
+hierarchical packages.</li>
+
+<li>Module initializers.  This is code executed for a module before the main program receives control.</li>
+
+<li>Templates as means for generic programming.  D's templates are 
+simultaneously more powerful and have more convenient syntax than in 
+C++.  For example, function templatizing can take place in groups (while
+ in C++ it is one function at a time).  Template parameters of more 
+kinds (in fact, any non-local symbol, including templates, modules, 
+functions, typedefs, etc.) than in C++ are acceptable.</li>
+
+<li>Template mixins, used as ‘parametrized-code injectors’.  A mixin 
+refers to a template or a part of it, but, unlike template 
+instantiation, the mixin is evaluated within the scope where it appears,
+ not where the template is defined.  Also, a name in the surrounding 
+scope overrides the same name imported from a mixin.</li>
+
+<li>Class-based object-oriented programming with one root class, single 
+inheritance and interfaces.  Objects are instantiated by reference only,
+ and assignment always means copying a reference, not a value.</li>
+
+<li>Conditional compilation through <code>static&nbsp;if</code> statements executed at compile time.  Also versioning based on debug conditions or different OSs.</li>
+
+<li><code>static&nbsp;assert</code> statements, executed at compile 
+time, can be used to set conditions for statically correct composition 
+of code.  Violating a static assert aborts compilation.</li>
+
+<li>Function declaration order is insignificant.  No forward declarations are needed.</li>
+
+<li>Function parameters can have <code>in</code>, <code>out</code>, or <code>inout</code> attributes, to designate how a parameter links to a corresponding actual argument, as in <a href="http://www.math.bas.bg/bantchev/place/ada.html"><span class="csc">Ada</span></a> or in <a href="http://www.math.bas.bg/bantchev/place/c%23.html"><span class="csc">C#</span></a>.</li>
+
+<li>Delegates.  A delegate is a pointer to a function or a method combined with a context pointer – a stack frame pointer or a <code>this</code>-pointer, respectively.</li>
+
+<li>Nested functions, anonymous functions and anonymous delegates.</li>
+
+<li>Exception handling, similar to the one in C++, but also with an optional <code>finally</code> clause as in <a href="http://www.math.bas.bg/bantchev/place/java.html"><span class="csc">Java</span></a>.</li>
+
+<li>Scope guards.  These allow code to be executed on exiting a scope, 
+depending on whether the exit is normal or exceptional, or either way.</li>
+
+<li>A large set of numeric types.  Each type is named by a single mnemonic word, such as <code>byte</code>, <code>int</code>, <code>short</code> and <code>long</code> for signed integers, and <code>ubyte</code>, <code>uint</code>
+ etc. for their unsigned counterparts.  Notably, the set of basic types 
+includes complex numbers (instead of merely imitating such numbers 
+through library functions).  For example, since <code>double</code> is a floating-point type, <code>cdouble</code>
+ is a complex type with real and imaginary parts each representable as a
+ double.  Complex constants are written as in mathematics, e.g. <code>2+3i</code>.</li>
+
+<li>Unicode is supported both as data and as program source.</li>
+
+<li>Except ‘static’, there are also ‘dynamic’ arrays, i.e. ones with 
+dynamically changeable sizes.  These are functionally very close to 
+C++'s vectors, but since they are built into the language, they appear 
+to be syntactically and otherwise more convenient.  Subscripts are 
+checked against the respective array bounds at runtime.</li>
+
+<li>Array slices are a handy way to refer to subarrays for value setting and sharing purposes.</li>
+
+<li>There are also associative arrays, where any datatype can be 
+selected for the ‘index’ (i.e. key) type of a particular array.  Again, 
+there is similarity to C++'s maps, but associative arrays are built into
+ D, not a library feature, and thus more convenient in use.</li>
+
+<li>String manipulation facilities, including regular expressions.  As strings are arrays of type <code>char</code>, string handling in D is a direct consequence of improved array handling.</li>
+
+<li><code>foreach</code> loop statement for traversing collections: ordinary or associative arrays or user-defined class collections.</li>
+
+<li>Both basic and derived types (including classes) have properties 
+that can be queried, and some of them set.  Examples are size in bytes, 
+maximum and minimum values, initializer.  Arrays have length, a pointer 
+to contents, and some procedural properties: for copying, sorting and 
+reversing.  Class properties are member functions syntactically treated 
+as if they were fields.</li>
+
+<li>Uniform, right-to-left declaration syntax, ensuring readable declarations.  For example, <code>char&nbsp;*&nbsp;p,&nbsp;q</code> means (unlike C/C++) that both <code>p</code> and <code>q</code> are pointers to <code>char</code>, and <code>int&nbsp;[3]*[5]&nbsp;a</code> declares <code>a</code> as an array of five pointers to arrays of three <code>int</code>s each.  Other forms of declaration are also supported, though.</li>
+
+<li><code>typedef</code> is ‘strong’: the name it defines designates a new type.  By contrast, the <code>alias</code> declaration only introduces a new name for a type (and is thus equivalent to C's <code>typedef</code>).  <code>alias</code> is also used for symbol aliasing.</li>
+
+<li>Default initializers.  For each datatype (typedefs and classes 
+included) there is an initializing value that is used if a local 
+variable is not initialized explicitly.  The default values are 
+changeable.</li>
+
+<li>The <code>typeof</code> operator is used in declaration and type 
+casting expressions to specify a type as derived for an expression, and 
+thus to relate the type of one program object to that of another.  For 
+example, <code>typeof(a+b)[typeof(*c)]&nbsp;d</code> declares <code>d</code> as an associative array of type that of <code>a+b</code> and key type that of <code>*c</code>.  The expression that is the argument of <code>typeof</code> may be templated.</li>
+
+<li>D's primary memory management scheme makes use of garbage collection, but stack allocation and explicit heap allocation through <code>new</code> or <code>malloc</code> (and reclamation through <code>delete</code> or <code>free</code>) are also possible.  Garbage collecting can be switched off for all or some of the program objects.</li>
+
+<li>Operator overloading is based on the assumption that on new types 
+the operator definitions should retain the properties they have on the 
+built-in types.  For example, <code>+</code> is commutative and, once defined on types <code>A</code> and <code>B</code>, there is no need to define it on <code>B</code> and <code>A</code>, since <code>b+a</code> is treated the same as <code>a+b</code>; also, <code>==</code> is commutative and consistent with <code>!=</code>, <code>&lt;</code> is consistent with <code>&gt;=</code> etc.</li>
+
+<li>Support for design-by-contract programming.</li>
+
+<li>Support for unit tests.</li>
+
+<li>Message passing (no shared mutable data), as well as thread synchronization based concurrency, the first being the default.</li>
+
+<li>In-line assembler.</li>
+
+<li>Nested comments.  Documentation comments: from these, the compiler can generate documentation files.</li>
+</ul>
+
+<p>D programs can call compiled C code directly and thus the wealth of 
+existing C libraries is readily available to D.  Moreover, D's standard 
+runtime library <span class="csc">Phobos</span> implements, among all else, the C runtime library functions and OS API functions.</p>
+
+<h3>Links of Relevance:</h3>
+
+<p><a href="http://www.digitalmars.com/d">The home page of D</a>.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;<a href="https://dlang.org/spec/spec.html" save_image_to_download="true">D language specification</a>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;<a href="https://dlang.org/phobos">Phobos runtime library specification</a>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;<a href="http://www.digitalmars.com/d/overview.html">An overview of D</a>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;<a href="http://www.digitalmars.com/d/ctod.html">Programming in D for C Programmers</a>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;<a href="http://www.digitalmars.com/d/cpptod.html">Programming in D for C++ Programmers</a>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;<a href="http://www.digitalmars.com/d/comparison.html">D vs Other Languages – a comparison table</a>.</p>
+
+<p><a href="http://www.docwiki.net/">A wiki page for documenting D, Phobos and other libraries</a></p>
+
+<p><a href="http://www.prowiki.org/wiki4d/wiki.cgi">Wiki4D: a wiki page for D</a></p>
+<!--
+http://www.wikiservice.at/wiki4d/wiki.cgi
+-->
+
+<p><a href="http://ddili.org/ders/d.en"><em>Programming in D</em> : a book on programming with D</a></p>
+
+<p><a href="https://run.dlang.io/" save_image_to_download="true">Online-accessible compiler</a></p>
+
+<p style="font-family:monospace;text-align:right">boykobbatgmaildotcom</p>
+
+
+
+</body></html>

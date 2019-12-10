@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Installing Torchlight II under Linux - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="installing-torchlight-ii-on-linux-with-help-from-wine-and-playonlinux">Installing Torchlight II on Linux (with help from Wine and PlayOnLinux)<a class="headerlink" href="#installing-torchlight-ii-on-linux-with-help-from-wine-and-playonlinux" title="Permanent link">&para;</a></h1>
+<h2 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
+<p>Wine 1.7.1 makes pretty much everything Just Work.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>Many years ago, <a href="http://www.runicgames.com/">Runic Games</a> came out with an action-roguelike game called
+<a href="http://www.gog.com/game/torchlight">Torchlight</a>, which was fairly well-received. I didn&rsquo;t encounter it until
+a few years later when it was included in a Humble Indie Bundle, meaning I got
+a nice Linux-native, DRM-free version I could mess around with. It turned out
+this was a genre of game I greatly enjoyed, and when it turned out that the
+sequel was just about to release, I was really looking forward to it.</p>
+<p>Unfortunately, when <a href="http://www.torchlight2game.com/">Torchlight II</a> came out, it was both Windows-only and
+DRM-encumbered. Windows-only is not <em>that</em> much of a problem, since Wine&rsquo;s
+pretty good these days. DRM was something of a moral issue, but eventually when
+Runic made it clear that they were not going to budge I decided I should at
+least try it. However, it turned out that the DRM used was also a technical
+issue: for whatever reason, it caused Wine to crash at startup. If I obtained
+an applied a DRM-crack for the game it&rsquo;d work pretty well, but becoming
+dependent on software pirates is probably worse than becoming dependent on DRM.</p>
+<p>Anyway, this frustrating state of affairs seems to have been solved by Wine
+1.7.1, and in particular <a href="http://bugs.winehq.org/show_bug.cgi?id=29448">Wine bug 29448</a>, whose fix landed in that
+  version. With that change, Torchlight II works pretty well out of the box.</p>
+<p>However, Wine 1.7.1 is still pretty new and a lot of Linux distros probably
+don&rsquo;t have it yet (if you&rsquo;re reading this in the Glorious Future where
+everybody has Wine 1.7.1 or later in their distro&rsquo;s standard packages, you can
+probably safely ignore this entire document) so I thought I&rsquo;d put together
+a quick guide for people unfamiliar with PlayOnLinux to get them sorted.</p>
+<h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
+<p>To go through this guide, you&rsquo;ll need:</p>
+<ul>
+<li>
+<p><a href="http://www.playonlinux.com/en/">PlayOnLinux</a> installed. It might be available in your distro&rsquo;s
+  package-manager, you might have to download it and run it from a tarball,
+  whatever. Just have it installed and running.</p>
+</li>
+<li>
+<p>A copy of the Torchlight II installer. Whether it&rsquo;s the stub-installer you
+  get from clicking &ldquo;Download the Free Demo&rdquo; on the <a href="http://www.torchlight2game.com/">Torchlight II home
+  page</a>, or the full &ldquo;offline installer&rdquo;, it doesn&rsquo;t much
+  matter. You just need to have it handy.</p>
+</li>
+</ul>
+<h2 id="step-by-step">Step-by-step<a class="headerlink" href="#step-by-step" title="Permanent link">&para;</a></h2>
+<p>Start PlayOnLinux, however you have it installed. When it&rsquo;s up and running,
+assuming you haven&rsquo;t used it before, it&rsquo;ll start up with an empty list.</p>
+<figure><img
+    src="01-playonlinux.png"
+    alt="PlayOnLinux main window, no software shortcuts in the list"
+></figure>
+
+<p>From PlayOnLinux&rsquo;s Tools menu, pick &ldquo;Manage Wine versions&hellip;&rdquo;.</p>
+<figure><img
+    src="02-manage-wine-versions.png"
+    alt="PlayOnLinux main window, with Manage Wine Versions highlighted in the
+    Tools menu"
+></figure>
+
+<p>A new window should open listing the available versions of Wine that can be
+installed. In the list of available versions, pick &ldquo;1.7.1&rdquo; (or higher, if it&rsquo;s
+available).</p>
+<figure><img
+    src="03-available-versions.png"
+    alt="Manage Wine Versions window, showing no custom Wine versions installed"
+></figure>
+
+<p>Click the &ldquo;&gt;&rdquo; button in the middle, and PlayOnLinux will open a new dialog for
+downloading Wine and its various dependencies.</p>
+<figure><img
+    src="04-installing-wine.png"
+    alt="PlayOnLinux progress dialog, installing Wine 1.7.1"
+></figure>
+
+<p>When it&rsquo;s done, &ldquo;1.7.1&rdquo; should be listed under &ldquo;Installed Wine versions&rdquo; on the
+right.</p>
+<figure><img
+    src="05-installed-versions.png"
+    alt="Manage Wine Versions window, showing Wine 1.7.1 installed"
+></figure>
+
+<p>Close the Wine version manager window, returning to the main PlayOnLinux
+window. This time, on the right of the window, click &ldquo;Install a program&rdquo;. A new
+&ldquo;install menu&rdquo; dialog will open.</p>
+<figure><img
+    src="06-install-menu.png"
+    alt="PlayOnLinux installation menu, no categories selected"
+></figure>
+
+<p>Click &ldquo;Install a non-listed program&rdquo; in the bottom-left. A &ldquo;manual
+installation&rdquo; wizard will appear.</p>
+<figure><img
+    src="07-manual-install-01.png"
+    alt="PlayOnLinux manual installation wizard, page 1"
+></figure>
+
+<p>Click &ldquo;Next&rdquo;, then select &ldquo;Install a program in a new virtual drive.&rdquo;</p>
+<figure><img
+    src="08-manual-install-02.png"
+    alt="PlayOnLinux manual installation wizard, install new or edit existing?"
+></figure>
+
+<p>Click &ldquo;Next&rdquo;, then type a name for the new virtual drive - &ldquo;Torchlight2&rdquo; is
+a good choice.</p>
+<figure><img
+    src="09-manual-install-03.png"
+    alt="PlayOnLinux manual installation wizard, naming the new drive"
+></figure>
+
+<p>Click &ldquo;Next&rdquo;, then tick the box next to &ldquo;Use another version of Wine&rdquo;. Ignore
+the others.</p>
+<figure><img
+    src="10-manual-install-04.png"
+    alt="PlayOnLinux manual installation wizard, picking pre-install tweaks"
+></figure>
+
+<p>Click &ldquo;Next&rdquo;, then from the list of Wine versions, pick &ldquo;1.7.1&rdquo; that we
+installed earlier.</p>
+<figure><img
+    src="11-manual-install-05.png"
+    alt="PlayOnLinux manual installation wizard, picking a custom Wine version"
+></figure>
+
+<p>Click &ldquo;Next&rdquo;, then select &ldquo;32 bits windows installation&rdquo;.</p>
+<figure><img
+    src="12-manual-install-06.png"
+    alt="PlayOnLinux manual installation wizard, picking 32-bit Windows"
+></figure>
+
+<p>Click &ldquo;Next&rdquo;, wait for the virtual drive to be created, then (when it
+eventually appears) click the Browse button, and select the Torchlight
+2 installer you downloaded previously.</p>
+<figure><img
+    src="13-manual-install-07.png"
+    alt="PlayOnLinux manual installation wizard, picked the installer"
+></figure>
+
+<p>Click &ldquo;Next&rdquo;, and the Torchlight II installation wizard should appear.</p>
+<figure><img
+    src="14-torchlight2-installer.png"
+    alt="Torchlight II's installer, running under Wine"
+></figure>
+
+<p>I can&rsquo;t be bothered screenshotting all the pages of the Torchlight II
+installation wizard, but here&rsquo;s the options I picked:</p>
+<ul>
+<li>I agreed to the license agreement</li>
+<li>Standard setup</li>
+<li>I <strong>unticked</strong> &ldquo;Run Torchlight 2&rdquo;</li>
+</ul>
+<p>Eventually, click &ldquo;Finish&rdquo; to exit the Torchlight II installer, and you&rsquo;ll
+return to the PlayOnLinux manual installation wizard, giving you a list of
+installed programs to make shortcuts for. Select &ldquo;tl2.runic.launcher.exe&rdquo; at
+the bottom of the list.</p>
+<figure><img
+    src="15-manual-install-08.png"
+    alt="PlayOnLinux manual installation wizard, picked the launcher"
+></figure>
+
+<p>Click &ldquo;Next&rdquo;, and change the shortcut name to &ldquo;Torchlight II&rdquo;.</p>
+<figure><img
+    src="16-manual-install-09.png"
+    alt="PlayOnLinux manual installation wizard, naming the shortcut"
+></figure>
+
+<p>Click &ldquo;Next&rdquo;, and this time select &ldquo;I don&rsquo;t want to make another shortcut&rdquo;.</p>
+<figure><img
+    src="17-manual-install-10.png"
+    alt="PlayOnLinux manual installation wizard, we're done here"
+></figure>
+
+<p>Click &ldquo;Next&rdquo;, and now Torchlight II will be an option in the PlayOnLinux window.</p>
+<figure><img
+    src="18-installation-complete.png"
+    alt="PlayOnLinux main window, listing Torchlight II as an option"
+></figure>
+
+<p>Select it, then click &ldquo;Run&rdquo; in the toolbar to launch the Torchlight II
+launcher. It should appear and start downloading whatever updates are needed to
+take you to the latest version.</p>
+<figure><img
+    src="19-torchlight2-launcher.png"
+    alt="Torchlight 2's launcher, running under Wine"
+></figure>
+
+<p>From here, everything should be exactly the same as it is in the normal Windows
+version, including activation.</p>
+<h2 id="closing-comments">Closing comments<a class="headerlink" href="#closing-comments" title="Permanent link">&para;</a></h2>
+<p>On my machine (Intel HD4000 graphics, Mesa 9.1 drivers), when the &ldquo;Hardware
+skinning&rdquo; option is enabled (which it is by default) the game draws animated
+characters (such as the Estherians and a tree on the title-screen) as blank
+white shapes, instead of their proper textures. I&rsquo;m not sure if this is
+a driver issue or a Wine issue, but disabling &ldquo;Hardware skinning&rdquo; fixes it.</p>
+<p>Running GUTS requires .NET 3.5. Running it under Wine gives an error message
+about &lsquo;please install Mono for Windows&rsquo;; installing Mono 2.8 (the latest
+version in PlayOnLinux) doesn&rsquo;t make it work, and the official .NET installers
+don&rsquo;t seem to work properly under Wine either, so no GUTS for you.</p>    </body>
+</html>

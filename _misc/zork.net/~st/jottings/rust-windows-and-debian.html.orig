@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Building Rust programs for Windows on Debian Linux - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="building-rust-programs-for-windows-on-debian-linux">Building Rust programs for Windows on Debian Linux<a class="headerlink" href="#building-rust-programs-for-windows-on-debian-linux" title="Permanent link">&para;</a></h1>
+<p>I&rsquo;ve used Debian Linux
+(specifically Debian Testing,
+the rolling, regularly-updated version)
+as my standard desktop environment for years,
+I&rsquo;m very happy with it
+and comfortable developing software for it.
+But in the Rust community,
+it&rsquo;s considered polite
+to make sure your libraries and tools also support Windows:
+it&rsquo;s a <a href="https://forge.rust-lang.org/platform-support.html">tier-1</a> platform for the Rust compiler,
+anything that might wind up in Firefox needs Windows support,
+and so forth.
+Not least,
+<a href="https://github.com/retep998">retep998</a> has put a huge effort into
+making Rust work nicely on Windows,
+including patiently explaining Windows quirks
+to an often POSIX-centric audience,
+and it would be a shame to disappoint him.</p>
+<p>Therefore,
+when I set out to write a library that involved path handling,
+I decided to make sure it worked on Windows as well as Linux.
+The actual path-handling turned out to be rather knotty,
+as most cross-platform code tends to be,
+but cross-compiling was much easier than I expected.</p>
+<h1 id="building-an-executable">Building an executable<a class="headerlink" href="#building-an-executable" title="Permanent link">&para;</a></h1>
+<p>Unlike many other compilers
+(such as <code>gcc</code>),
+every copy of the Rust compiler can compile code
+for any supported target platform,
+so the actual &ldquo;compilation&rdquo; part is easy.
+Where normally you&rsquo;d run something like:</p>
+<div class="codehilite"><pre><span></span>cargo build
+</pre></div>
+
+
+<p>&hellip;instead you can run:</p>
+<div class="codehilite"><pre><span></span>cargo build --target x86_64-pc-windows-gnu
+</pre></div>
+
+
+<p>and you&rsquo;ll get a proper, working&hellip;</p>
+<div class="codehilite"><pre><span></span>error[E0463]: can&#39;t find crate for `std`
+  |
+  = note: the `x86_64-pc-windows-gnu` target may not be installed
+</pre></div>
+
+
+<p>&hellip;OK, it doesn&rsquo;t actually work.
+While Rust will happily compile your crate
+for whatever target you want,
+actually making a working program
+also requires a copy of the standard library
+built for that target.</p>
+<p>Since I&rsquo;m using my <a href="https://gitlab.com/Screwtapello/rustbud">rustbud</a> tool
+to manage my Rust toolchain,
+I just mention it in my <code>rustbud-spec.toml</code>:</p>
+<div class="codehilite"><pre><span></span><span class="k">[toolchain.optional]</span>
+<span class="na">rust-std</span> <span class="o">=</span> <span class="s">[&quot;x86_64-pc-windows-gnu&quot;]</span>
+</pre></div>
+
+
+<p>&hellip;and then every time I activate that environment,
+I&rsquo;ll have the Windows version of the stdlib available.
+If you&rsquo;re using <a href="https://rustup.rs/">rustup</a> instead
+(as most people probably are),
+this is the command you&rsquo;ll need:</p>
+<div class="codehilite"><pre><span></span>rustup target add x86_64-pc-windows-gnu
+</pre></div>
+
+
+<p>And now when we build our program&hellip;</p>
+<div class="codehilite"><pre><span></span><span class="n">error</span><span class="o">:</span> <span class="n">linking</span> <span class="k">with</span> <span class="err">`</span><span class="n">gcc</span><span class="err">`</span> <span class="n">failed</span><span class="o">:</span> <span class="n">exit</span> <span class="n">code</span><span class="o">:</span> <span class="mi">1</span>
+  <span class="o">|</span>
+  <span class="o">=</span> <span class="n">note</span><span class="o">:</span> <span class="s2">&quot;gcc&quot;</span> <span class="s2">&quot;-Wl,--enable-long-section-names&quot;</span> <span class="s2">&quot;-fno-use-linker-plugin&quot;</span> <span class="s2">&quot;-Wl,--nxcompat&quot;</span> <span class="s2">&quot;-nostdlib&quot;</span> <span class="s2">&quot;-m64&quot;</span> 
+  <span class="o">[...</span><span class="n">skip</span> <span class="n">lots</span> <span class="n">of</span> <span class="n">lines</span> <span class="o">...]</span>
+  <span class="o">=</span> <span class="n">note</span><span class="o">:</span> <span class="sr">/usr/bin/</span><span class="n">ld</span><span class="o">:</span> <span class="n">unrecognized</span> <span class="n">option</span> <span class="s1">&#39;--enable-long-section-names&#39;</span>
+          <span class="sr">/usr/bin/</span><span class="n">ld</span><span class="o">:</span> <span class="n">use</span> <span class="n">the</span> <span class="o">--</span><span class="n">help</span> <span class="n">option</span> <span class="k">for</span> <span class="n">usage</span> <span class="n">information</span>
+          <span class="n">collect2</span><span class="o">:</span> <span class="n">error</span><span class="o">:</span> <span class="n">ld</span> <span class="n">returned</span> <span class="mi">1</span> <span class="n">exit</span> <span class="n">status</span>
+</pre></div>
+
+
+<p>&hellip;it still doesn&rsquo;t work.</p>
+<p>When cross-compiling,
+the compiler is only part of the picture.
+The compiler takes your source code
+and turns it into machine-code
+that the target CPU can execute,
+but the linker takes all that machine-code
+and bundles it together into an executable
+that the target operating system can load and run.
+In order to produce Windows programs,
+we need a linker that understands the Windows <code>.exe</code> file format.</p>
+<p>Luckily,
+Debian provides packages for the whole <code>gcc</code> toolchain
+built to cross-compile Windows executables,
+including the linker we need.
+You can install it with:</p>
+<div class="codehilite"><pre><span></span>sudo apt install mingw-w64
+</pre></div>
+
+
+<p>&hellip;and then you&rsquo;ll have a program named <code>x86_64-w64-mingw32-gcc</code>
+which is exactly the one Rust wants.
+Unfortunately,
+as the previous error suggested,
+Rust tries to use <code>gcc</code> instead of this new name,
+so it&rsquo;s still going to break.
+To tell Rust which linker to use,
+add the following to <code>~/.cargo/config</code>:</p>
+<div class="codehilite"><pre><span></span><span class="k">[target.x86_64-pc-windows-gnu]</span>
+<span class="na">linker</span> <span class="o">=</span> <span class="s">&quot;/usr/bin/x86_64-w64-mingw32-gcc&quot;</span>
+</pre></div>
+
+
+<p>(If you set <code>$CARGO_HOME</code> to point at some other location,
+you can put this config file there instead,
+but if you put it in the default location
+it&rsquo;ll work regardless of what <code>$CARGO_HOME</code> is set to.)</p>
+<p>Now we can finally build an executable for Windows!</p>
+<div class="codehilite"><pre><span></span>$ cargo build --target x86_64-pc-windows-gnu
+   Compiling windows-demo v0.1.0 <span class="o">(</span>file:///home/st/windows-demo<span class="o">)</span>
+    Finished dev <span class="o">[</span>unoptimized + debuginfo<span class="o">]</span> target<span class="o">(</span>s<span class="o">)</span> in <span class="m">1</span>.36 secs
+$ ls target/x86_64-pc-windows-gnu/debug/*.exe
+target/x86_64-pc-windows-gnu/debug/windows-demo.exe
+</pre></div>
+
+
+<p>But&hellip; now that we&rsquo;ve built it,
+how do we even know it works?</p>
+<h1 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h1>
+<p>Testing Windows software ultimately requires
+a copy of Windows to test against,
+but running a full Windows VM
+can take a lot of CPU power and RAM,
+not to mention the awkwardness
+of getting your program into the VM
+and the test-results back out.</p>
+<p>Although it&rsquo;s not Real Windows,
+testing with <a href="https://www.winehq.org/">Wine</a>
+can be a fast and easy way
+to shake out the most glaring portability problems,
+and it&rsquo;s pretty easy to get it going:</p>
+<ol>
+<li>
+<p>Install Wine itself,
+   with support for 64-bit Windows
+   (since we&rsquo;re working with x86_64 here):</p>
+<div class="codehilite"><pre><span></span>sudo apt install wine wine64
+</pre></div>
+
+
+</li>
+<li>
+<p>Install the package that teaches Linux to use Wine when trying to run .exe:</p>
+<div class="codehilite"><pre><span></span>sudo apt install wine-binfmt
+</pre></div>
+
+
+</li>
+<li>
+<p>Make a temporary directory for Wine to keep its fake-Windows files in
+   (I usually put it in Cargo&rsquo;s <code>target/</code> directory,
+   so it will get cleaned up along with everything else):</p>
+<div class="codehilite"><pre><span></span>mkdir target/wineprefix
+export WINEPREFIX=$PWD/target/wineprefix
+</pre></div>
+
+
+</li>
+</ol>
+<p>Now I can run the executable I built earlier:</p>
+<div class="codehilite"><pre><span></span>$ cargo run --target x86_64-pc-windows-gnu
+    Finished dev <span class="o">[</span>unoptimized + debuginfo<span class="o">]</span> target<span class="o">(</span>s<span class="o">)</span> in <span class="m">0</span>.0 secs
+     Running <span class="sb">`</span>target/x86_64-pc-windows-gnu/debug/windows-demo.exe<span class="sb">`</span>
+Hello, world!
+</pre></div>
+
+
+<p>You can run tests the same way:</p>
+<div class="codehilite"><pre><span></span>$ cargo <span class="nb">test</span> --target x86_64-pc-windows-gnu
+    Finished dev <span class="o">[</span>unoptimized + debuginfo<span class="o">]</span> target<span class="o">(</span>s<span class="o">)</span> in <span class="m">0</span>.0 secs
+     Running target/x86_64-pc-windows-gnu/debug/deps/windows_demo-3e68a12a37931af9.exe
+
+running <span class="m">0</span> tests
+
+<span class="nb">test</span> result: ok. <span class="m">0</span> passed<span class="p">;</span> <span class="m">0</span> failed<span class="p">;</span> <span class="m">0</span> ignored<span class="p">;</span> <span class="m">0</span> measured<span class="p">;</span> <span class="m">0</span> filtered out
+</pre></div>
+
+
+<p>The first time you run a command like this,
+Wine may complain bitterly as it sets up the <code>$WINEPREFIX</code> directory,
+but after that it should be happy enough.</p>
+<h1 id="what-about-32-bit-binaries">What about 32-bit binaries?<a class="headerlink" href="#what-about-32-bit-binaries" title="Permanent link">&para;</a></h1>
+<p>So far,
+I&rsquo;ve always told Rust to use the target <code>x86_64-pc-windows-gnu</code>,
+which means 64-bit Windows.
+However,
+there&rsquo;s still a lot of 32-bit Windows installations
+out there in the world,
+so maybe you&rsquo;d like to produce 32-bit binaries.</p>
+<p>The &ldquo;32-bit Windows&rdquo; target
+is <code>i686-pc-windows-gnu</code>,
+but unfortunately it can&rsquo;t easily be used from Linux.
+<a href="https://github.com/rust-lang/rust/issues/32859">Issue 32859</a> has all the details
+but as I understand it,
+MinGW can be configured in different ways.
+While there&rsquo;s a single, obviously correct configuration
+for 64-bit Windows,
+there&rsquo;s two possible configurations with different trade-offs
+for 32-bit Windows,
+and Debian and Rust have different opinions about
+which one is &ldquo;best&rdquo;.
+My current recommendation is to ignore 32-bit Windows,
+or use a service like <a href="https://www.appveyor.com/">AppVeyor</a>
+that provides a Real Windows installation to build on.</p>
+<h1 id="what-about-the-msvc-toolchain">What about the MSVC toolchain?<a class="headerlink" href="#what-about-the-msvc-toolchain" title="Permanent link">&para;</a></h1>
+<p>This entire document has talked about MinGW,
+the Windows port of gcc,
+but among actual Windows developers
+Microsoft&rsquo;s own Visual C++ compiler is more popular,
+and of course it follows Windows&rsquo; platform conventions
+much more closely.</p>
+<p>Unfortunately,
+using MSVC from Linux is vastly more complicated
+than just <code>apt install</code>ing the right cross-compiler,
+and requires
+(among other things)
+installing Visual Studio on a Windows machine
+so you can copy the required files and directories
+across to Linux.</p>
+<p>Personally,
+since I&rsquo;ll eventually need a Windows VM anyway for testing,
+and I&rsquo;d need a Windows VM to install MSVC,
+I&rsquo;d rather compile my Rust program in the same VM.
+If you really want to try it yourself, though,
+there are <a href="https://forge.rust-lang.org/cross-compilation/to-windows.html">official instructions</a>.</p>    </body>
+</html>

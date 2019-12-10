@@ -1,0 +1,183 @@
+<title>Subpixel Sketch</title>
+<script type="text/javascript">
+    var IMAGE_WIDTH = 16;
+    var IMAGE_HEIGHT = 16;
+    var INPUT_ZOOM = 21; // should be a multiple of 3
+
+    function bindfunc(obj, fn) {
+        return function () {
+            fn.apply(obj, arguments);
+        };
+    }
+
+    function filteredCopyPixel(srcArray, dstArray, rowStart, rowEnd, index1,
+            index2, index3, index4, index5) {
+        var subpix1, subpix2, subpix3, subpix4, subpix5;
+
+        // We can always assume the middle subpixel is present.
+        subpix3 = srcArray[index3];
+
+        // Read the subpixel to the left and right if they exist, otherwise
+        // copy the middle subpixel.
+        if (index2 > rowStart)
+            subpix2 = srcArray[index2];
+        else
+            subpix2 = subpix3;
+
+        if (index4 < rowEnd)
+            subpix4 = srcArray[index4];
+        else
+            subpix4 = subpix3;
+
+        // Read the subpixel outside those, if they exist, otherwise copy the
+        // adjacent subpixel.
+        if (index1 > rowStart)
+            subpix1 = srcArray[index1];
+        else
+            subpix1 = subpix2;
+
+        if (index5 < rowEnd)
+            subpix5 = srcArray[index5];
+        else
+            subpix5 = subpix4;
+
+        // Write the weighted result to the output subpixel.
+        dstArray[index3] = Math.floor((
+                1 * subpix1 +
+                2 * subpix2 +
+                3 * subpix3 +
+                2 * subpix4 +
+                1 * subpix5)/9)
+    }
+
+    function SubpixelSketch(inputID, outputID, filteredID) {
+        this.propagate_image = function () {
+            var outputPixels = this.outputContext.getImageData(
+                    0,0, IMAGE_WIDTH, IMAGE_HEIGHT);
+            var filteredPixels = this.filteredContext.getImageData(
+                    0,0, IMAGE_WIDTH, IMAGE_HEIGHT)
+
+            this.inputContext.beginPath();
+            this.inputContext.strokeStyle = "#888";
+            // Copy the output data to the input grid.
+            for (var y = 0; y < IMAGE_HEIGHT; y++) {
+
+                var rowStartIndex = (y*IMAGE_HEIGHT) * 4;
+                var rowEndIndex = (y*IMAGE_HEIGHT + IMAGE_WIDTH)*4-1;
+
+                for (var x = 0; x < IMAGE_WIDTH; x++) {
+                    var currXIndex = rowStartIndex + (x*4);
+
+                    var r = outputPixels.data[currXIndex];
+                    var g = outputPixels.data[currXIndex + 1];
+                    var b = outputPixels.data[currXIndex + 2];
+
+                    // Draw the subpixels into the input canvas.
+                    this.inputContext.fillStyle = "rgb("+r+",0,0)";
+                    this.inputContext.fillRect(
+                            x*INPUT_ZOOM, y*INPUT_ZOOM,
+                            INPUT_ZOOM/3, INPUT_ZOOM);
+                    this.inputContext.fillStyle = "rgb(0,"+g+",0)";
+                    this.inputContext.fillRect(
+                            x*INPUT_ZOOM + (INPUT_ZOOM/3), y*INPUT_ZOOM,
+                            INPUT_ZOOM/3, INPUT_ZOOM);
+                    this.inputContext.fillStyle = "rgb(0,0,"+b+")";
+                    this.inputContext.fillRect(
+                            x*INPUT_ZOOM + 2*(INPUT_ZOOM/3), y*INPUT_ZOOM,
+                            INPUT_ZOOM/3, INPUT_ZOOM);
+
+                    // Draw the filtered pixels into the filtered canvas.
+                    filteredCopyPixel(outputPixels.data, filteredPixels.data,
+                            rowStartIndex, rowEndIndex,
+                            currXIndex - 3,
+                            currXIndex - 2,
+                            currXIndex,
+                            currXIndex + 1,
+                            currXIndex + 2);
+                    filteredCopyPixel(outputPixels.data, filteredPixels.data,
+                            rowStartIndex, rowEndIndex,
+                            currXIndex - 2,
+                            currXIndex,
+                            currXIndex + 1,
+                            currXIndex + 2,
+                            currXIndex + 4);
+                    filteredCopyPixel(outputPixels.data, filteredPixels.data,
+                            rowStartIndex, rowEndIndex,
+                            currXIndex,
+                            currXIndex + 1,
+                            currXIndex + 2,
+                            currXIndex + 4,
+                            currXIndex + 5);
+                }
+                // Draw a divider between this row of pixels and the next.
+                this.inputContext.moveTo(0, (y+1)*INPUT_ZOOM+0.5);
+                this.inputContext.lineTo(
+                        IMAGE_WIDTH*INPUT_ZOOM, (y+1)*INPUT_ZOOM+0.5);
+            }
+            this.inputContext.stroke();
+            this.filteredContext.putImageData(filteredPixels, 0,0);
+        }
+
+        this.input = document.getElementById(inputID);
+        this.output = document.getElementById(outputID);
+        this.filtered = document.getElementById(filteredID);
+
+        this.filtered.width = this.output.width = IMAGE_WIDTH;
+        this.filtered.height = this.output.height = IMAGE_HEIGHT;
+        this.input.width = IMAGE_WIDTH * INPUT_ZOOM;
+        this.input.height = IMAGE_HEIGHT * INPUT_ZOOM;
+
+        this.inputContext = this.input.getContext("2d");
+        this.outputContext = this.output.getContext("2d");
+        this.filteredContext = this.filtered.getContext("2d");
+
+        this.outputContext.fillStyle = this.filteredContext.fillStyle = "white";
+        this.outputContext.fillRect(0,0, IMAGE_WIDTH, IMAGE_HEIGHT);
+        this.filteredContext.fillRect(0,0, IMAGE_WIDTH, IMAGE_HEIGHT);
+        this.propagate_image();
+
+        this.input.addEventListener("click", bindfunc(this, function(ev) {
+                    var inputX = ev.clientX - ev.target.offsetLeft;
+                    var inputY = ev.clientY - ev.target.offsetTop;
+                    var outputX = Math.floor(inputX / INPUT_ZOOM);
+                    var outputY = Math.floor(inputY / INPUT_ZOOM);
+                    var subPixel = Math.floor(inputX / (INPUT_ZOOM/3)) % 3;
+
+                    var outputPixel = this.outputContext.getImageData(
+                        outputX, outputY, 1, 1);
+                    var value = outputPixel.data[subPixel];
+
+                    outputPixel.data[subPixel] = (value > 127) ? 0 : 255;
+                    this.outputContext.putImageData(outputPixel,
+                        outputX, outputY);
+
+                    this.propagate_image();
+
+                }), false);
+    }
+
+    var sketch;
+    function init() {
+        sketch = new SubpixelSketch("input", "output", "filtered");
+    }
+
+    window.onload = init;
+</script>
+<style type="text/css">
+    fieldset.big { float: left; }
+    fieldset.small { width: 4em; }
+    #input { cursor: crosshair; }
+</style>
+
+<fieldset class="big">
+    <legend>Input</legend>
+    <canvas id="input"></canvas>
+</fieldset>
+<fieldset class="small">
+    <legend>Subpixel</legend>
+    <canvas id="output"></canvas>
+</fieldset>
+<fieldset class="small">
+    <legend>Filtered</legend>
+    <canvas id="filtered"></canvas>
+</fieldset>

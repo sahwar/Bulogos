@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Typesetter Demo</title>
+
+        <link rel="stylesheet" href="typesetter.css">
+
+        <!-- Specifically for the demo, let's give ourself some grid-lines and
+        mess with the default font size to make sure the two stay in sync. -->
+        <style type="text/css">
+            /* <![CDATA[ */
+            html {
+                background-image: -webkit-linear-gradient(bottom,
+                    rgba(0,0,0, 0.2) 0px,
+                    rgba(0,0,0, 0.0) 1px
+                );
+                background-image: -moz-linear-gradient(bottom,
+                    rgba(0,0,0, 0.2) 0px,
+                    rgba(0,0,0, 0.0) 1px
+                );
+                background-size: 100px 1.2rem ;
+            }
+            /* ]]> */
+        </style>
+    </head>
+    <body>
+        <h1>Typesetter Demo</h1>
+
+        <p>This is a demonstration of the Typesetter stylesheet, which is
+        designed to take your ordinary HTML documents and make them more
+        visually appealing.</p>
+
+        <aside>
+            <h2>Here's some sidebar content!</h2>
+            <p>Proin vestibulum magna mi. Aenean tristique hendrerit magna,
+            ac facilisis nulla hendrerit ut. Sed non tortor sodales quam auctor
+            elementum. Donec hendrerit nunc eget elit pharetra pulvinar.
+            Suspendisse id tempus tortor.</p>
+            <p>Aenean luctus, elit commodo laoreet commodo, justo nisi
+            consequat massa, sed vulputate quam urna quis eros. Donec vel.</p>
+        </aside>
+
+        <h2>A sub-heading</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac
+        quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.</p>
+
+        <aside>
+            <h2>More sidebar content</h2>
+            <p>Let's see what happens when more sidebar content begins while
+            the old content is still running.</p>
+        </aside>
+
+        <ul>
+            <li>Praesent et diam eget libero egestas mattis sit amet vitae
+            augue.</li>
+            <li>Nam tincidunt congue enim, ut porta lorem lacinia
+            consectetur.</li>
+            <li>Donec ut libero sed arcu vehicula ultricies a non tortor.</li>
+        </ul>
+
+        <h3>Here's a deeper heading</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut
+        gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id
+        dolor. Donec sed odio eros.  Donec viverra mi quis quam pulvinar at
+        malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis
+        parturient montes, nascetur ridiculus mus.</p>
+
+        <table>
+            <caption>How about an example table in here.</caption>
+            <thead>
+                <td></td>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </thead>
+            <tfoot>
+                <td></td>
+                <td>6.00</td>
+                <td>9.00</td>
+                <td>12.00</td>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <th scope="row">Row 1</th>
+                    <td>1.00</td>
+                    <td>2.00</td>
+                    <td>3.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Row 2</th>
+                    <td>2.00</td>
+                    <td>3.00</td>
+                    <td>4.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Row 3</th>
+                    <td>3.00</td>
+                    <td>4.00</td>
+                    <td>5.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci.
+        Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et
+        vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus
+        gravida ornare.</p>
+
+        <pre>An example of fixed-width text. This could be code, or ASCII-art, or a "screenshot" of some text-mode software.</pre>
+
+        <p>Sed et erat faucibus nunc euismod ultricies ut id
+        justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec.
+        Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum.
+        Quisque bibendum purus convallis nulla ultrices ultricies.</p>
+
+        <p>A horizontal rule:</p>
+
+        <hr>
+
+        <p>Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor,
+        viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam
+        sagittis nisi dui.</p>
+
+        <h4>We're getting down to pretty minor headings here.</h4>
+
+        <p>Suspendisse lectus leo, consectetur in tempor sit amet, placerat
+        quis neque. Etiam luctus porttitor lorem, sed suscipit est rutrum non.
+        Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices
+        imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt.
+        Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis
+        lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit
+        lacus, vestibulum at malesuada et, ornare et est.</p>
+        
+        <blockquote>
+            <p>Behold, this is a block-quote</p>
+
+            <p>In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis
+            semper ac in est. Vivamus fermentum semper porta. Nunc diam velit,
+            adipiscing ut tristique vitae, sagittis vel odio. Maecenas
+            convallis ullamcorper ultricies.</p>
+            
+            <p>Curabitur ornare, ligula semper consectetur sagittis, nisi diam
+            iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec
+            pretium volutpat, arcu ante placerat erat, non tristique elit urna
+            et turpis.</p>
+        </blockquote>
+
+        <p>Ut augue nunc, sodales ut euismod non, adipiscing vitae orci. Mauris
+        ut placerat justo. Mauris in ultricies enim. Quisque nec est eleifend
+        nulla ultrices egestas quis ut quam. Donec sollicitudin lectus a mauris
+        pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum
+        mi. Phasellus non ullamcorper urna.</p>
+
+        <ol>
+            <li>Pellentesque auctor nisi id magna consequat sagittis.</li>
+            <li>Ut convallis libero in urna ultrices accumsan.</li>
+            <li>And let's have a list item with a bunch of paragraphs in,
+            too.</li>
+            <li>
+                <p>In euismod ultrices facilisis. Vestibulum porta sapien
+                adipiscing augue congue id pretium lectus molestie. Proin quis
+                dictum nisl.</p>
+                <p>Morbi id quam sapien, sed vestibulum sem. Duis elementum
+                rutrum mauris sed convallis. Proin vestibulum magna mi. Aenean
+                tristique hendrerit magna, ac facilisis nulla hendrerit ut.</p>
+                <p>Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet
+                tortor, viverra pretium nisi quam vitae mi.</p>
+            </li>
+            <li>Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat
+            nisl imperdiet.</li>
+        </ol>
+
+        <h5>OK, here's the rest of the headings</h5>
+
+        <h6>Last and least heading goes here</h6>
+
+        <p>That's right, both of them.</p>
+
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+        per inceptos himenaeos. In euismod ultrices facilisis. Vestibulum porta
+        sapien adipiscing augue congue id pretium lectus molestie. Proin quis
+        dictum nisl.</p>
+
+        <p>Let's get a definition list up in this joint.</p>
+
+        <dl>
+            <dt>A thing</dt>
+            <dd>This is an entity with the quality of existence, but not
+            necessarily with extent.</dd>
+            <dt>No thing</dt>
+            <dd>This is the lack of entities, the void of non-existence. Unlike
+            a thing, it is not-specific — there can never be a plurality of
+            no-things, just a larger void.</dd>
+            <dt>A duck</dt>
+            <dd>This is a duck.</dd>
+        </dl>
+        <p>Morbi id quam sapien, sed vestibulum sem. Duis elementum
+        rutrum mauris sed convallis. Proin vestibulum magna mi. Aenean
+        tristique hendrerit magna, ac facilisis nulla hendrerit ut. Sed non
+        tortor sodales quam auctor elementum. Donec hendrerit nunc eget elit
+        pharetra pulvinar.  Suspendisse id tempus tortor. Aenean luctus, elit
+        commodo laoreet commodo, justo nisi consequat massa, sed vulputate quam
+        urna quis eros.  Donec vel.</p>
+    </body>
+</html>

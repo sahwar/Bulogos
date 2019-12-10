@@ -58,14 +58,56 @@ https://raw.githubusercontent.com/minos-org/minos-static/de7ceb083fb1945c9861185
 * Perl modules (packages & libraries) from CPAN (the Comprehensive Perl Archive Network) - https://www.cpan.org/ & https://perldoc.perl.org/5.30.0/App/Cpan.html
 * TeX/LaTeX packages from https://ctan.org/
 * The website where you can download `curl`, `wget`, `ffmpeg`, and `libav` static executable builds for MS Windows x64 & (GNU/)Linux x64 (with all extra features (bells&whistles) bundled)...! dlduplexul?
+* Helm (package manager for Kubernetes) - Helm 3: The package manager for Kubernetes - Helm is the best way to find, share, and use software built for Kubernetes:
+https://helm.sh/docs/intro/install/
+https://helm.sh/
+https://cloud.google.com/sdk/
+https://kubernetes.io/docs/tasks/tools/install-kubectl/
+````
+* Install with Powershell from PSGallery
+If you are on MS Windows and using `Powershell Gallery` package manager, you can install and update `kubectl` with Powershell.
+    Run the installation commands (making sure to specify a `DownloadLocation`):
+`Install-Script -Name install-kubectl -Scope CurrentUser -Force`
+`install-kubectl.ps1 [-DownloadLocation <path>]`
+* If you are on Ubuntu or another Linux distribution that support [snap](https://snapcraft.io/docs/core/install) package manager, kubectl is available as a [snap](https://snapcraft.io/) application.
+`sudo snap install kubectl --classic`
+* Test to ensure the version you installed is up-to-date:
+`kubectl version`
+* `curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/windows/amd64/kubectl.exe`
+* Ubuntu/Linux Mint*, Debian/Devuan*, HypriotOS:
+	`sudo apt-get update && sudo apt-get install -y apt-transport-https
+	curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+	echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+	sudo apt-get update
+	sudo apt-get install -y kubectl`
+CentOS, RHEL, Fedora Linux:
+	`cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+	[kubernetes]
+	name=Kubernetes
+	baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+	enabled=1
+	gpgcheck=1
+	repo_gpgcheck=1
+	gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg 		https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+	EOF
+	yum install -y kubectl`
+ArchLinux: ...
+* https://kubernetes.io/docs/tasks/tools/install-kubectl/
+`curl -LO https://storage.googleapis.com/kubernetes-release/release/`
+`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt/bin/linux/amd64/kubectl`
+`curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/linux/amd64/kubectl
+chmod +x ./kubectl`
+
+````
+
 * ..., etc.
 
-* installing by getting the package via a version-control-system's graphical-app (i.e. Git, GitLab, GitHub, CVS, SVN, LaunchPad.net/bazaar CVS, etc.)...
+* installing by getting the package via a version-control-system's graphical-app (i.e. Git, GitLab, GitHub, CVS, SVN, LaunchPad.net/bazaar CVS, Mercurial, etc.)...
 * [npm](https://www.npmjs.com/) (JavaScript packages)
 * https://mesonbuild.com/
 * https://ninja-build.org/
 * NPM (for JavaScript) & https://www.npmjs.com/package/pkg 
-* running Windows `.exe`/`.msi` files via **_[Wine](https://www.winehq.org/)/Wine-staging/PlayOnLinux_** (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html , **[DxWnd](https://sourceforge.net/p/dxwnd/home/Home/)**, etc.)
+* running Windows `.exe`/`.msi` files via **_[Wine](https://www.winehq.org/)/Wine-staging/PlayOnLinux_** + http://reactos.org (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html , **[DxWnd](https://sourceforge.net/p/dxwnd/home/Home/)**, etc.)
 * etc. ...
 
 #### Freeware and FOSS/FLOSS/open-source/(GNU/)Linux video-gaming (Linux gaming) ####
@@ -105,7 +147,7 @@ etc.
 #### **Torrent&magnet-link trackers:** ####
 (they contain some warez&not-so-legal files... to download, use a torrent app like qBittorrent, Deluge Torrent, uTorrent (freeware), etc.):
 * http://zamunda.net/
-* http://zamunda.ch/
+* http://zamunda.ch/ ; http://zamunda.se
 * https://arenabg.com/
 * https://nyaa.si/ (includes anime, manga, hentai, JAV, etc.; [nyaa torrent web-tracker software engine](https://github.com/nyaadevs/nyaa/tree/db83989d5d370ea6314213e0b560fd9591370773))
 * The Pirate Bay:
@@ -114,19 +156,25 @@ https://proxybaylist.org/
 * 
 
 #### **Package managers for Windows:** ####
-  * * [Chocolatey](https://chocolatey.org/) - CLI package manager for Windows; Chocolatey - Software Management Automation for MS Windows
-  * * [NuGet](https://www.nuget.org) (.NET apps)
+  * * [Chocolatey](https://chocolatey.org/) - CLI package manager for MS Windows; Chocolatey - Software Management Automation for MS Windows
+  * * [NuGet](https://www.nuget.org) (package manager for .NET apps for MS Windows)
   * * [PackageManagement/OneGet](https://github.com/OneGet/oneget) (Windows 10/Windows Server 2016's built-in package manager manager)
-  * * [Scoop](https://scoop.sh/), A command-line installer (package manager) for Windows - https://github.com/lukesampson/scoop
+  * * [Scoop](https://scoop.sh/), A command\-line installer (package manager) for MS Windows - https://github.com/lukesampson/scoop
+  * * [PowerShellGallery](https://www.powershellgallery.com/)
+  * * ~~[Homebrew](https://brew.sh/) users can use `brew install helm`.~~
+  * * [GoFish](https://gofi.sh/) users can use `gofish install helm`.
+  * * [Chocolatey](https://chocolatey.org/) users can use `choco install kubernetes-helm`.
+  * * [Scoop](https://scoop.sh/) users can use `scoop install helm`.
   * * Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/)
   * * (putting statically-build CLI/GUI .exe's in the `cmd.exe` or `PowerShell` root directories - for easy running (with a warning label)...)
+  * * PowerShell cmdlets & `cmd.exe` `.bat` (.BAT) cmdlets (WARNING!!! Be extra careful with these as some of these are used for computer viruses, trojans, worms, rootkits, etc.!)
   * * other external/3rd-party Windows GUI apps/package-managers for installing 3rd-party apps (application software)
 * etc.
 
 ### Package managers for macOS (Apple macOS, previously known as MacOS X and MachintoshOS) ###
 * installing the macOS app from its macOS-centric `.dmg` binary/installer (from local physical-media or downloaded from Internet-sources) or macOS `.pkg` app installer ( https://en.wikipedia.org/wiki/.pkg )
 * macOS **[homebrew (macOS homebrew/Linuxbrew)](https://brew.sh/) (package manager for macOS)** - https://docs.brew.sh/Installation - https://github.com/Homebrew/brew; [Homebrew Formulae](https://formulae.brew.sh/)
-* **[macports](https://www.macports.org/)**
+* **[macports](https://www.macports.org/)** - https://www.macports.org/install.php
 * **[Tigerbrew](https://github.com/mistydemeo/tigerbrew) - experimental fork of Homebrew** that adds support for PowerPC (PPC) Macs, and Macs running Tiger (or Leopard)
 * **[Fink (ported Linux apps for Mac OS X (macOS) and Darwin OS - http://www.finkproject.org/index.php?phpLang=en](http://www.finkproject.org/index.php?phpLang=en)**
 * running Windows `.exe`/`.msi` executable apps/files via **_[Wine](https://www.winehq.org/)/Wine-staging/PlayOnLinux_ for macOS**

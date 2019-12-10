@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Stupid bash tricks - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="stupid-bash-tricks">Stupid bash tricks<a class="headerlink" href="#stupid-bash-tricks" title="Permanent link">&para;</a></h1>
+<p>A page to keep track of the shell-script snippets I&rsquo;ve put on here:</p>
+<ul>
+<li><a href="Automatic_$TERM_Selection.html">Automatic $TERM selection</a></li>
+<li><a class="wikilink" href="How_to_limit_the_length_of_your_bash_prompt.html">How to limit the length of your bash prompt</a></li>
+<li><a class="wikilink" href="Per-Host_Prompt_Colouring.html">Per-Host Prompt Colouring</a></li>
+</ul>    </body>
+</html>

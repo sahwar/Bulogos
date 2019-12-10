@@ -1,0 +1,94 @@
+I'm not sure you're the best person to address my comments too, and I'm
+sure you've heard people say things like this a number of times before,
+but I saw this in one of your Planet Mozilla posts recently, and I
+couldn't resist commenting:
+
+	"Discussion on Linux theme defaults:
+		Outcome: No matter what defaults we choose to ship,
+		we’ll need to be able to draw in the title bar. Faaborg
+		will follow up on this, and make sure bugs are filed."
+
+It would be a great step backward in desktop integration
+========================================================
+
+Since Firefox and Seamonkey before it have always been implemented in
+XUL instead of GTK+ (and Netscape 4 in Motif before that), they have
+always had difficulty in blending with the Linux desktop. Over the
+years, lots of people have put in lots of hard work to make Firefox for
+Linux look better and work more like an native application, with the
+result that Firefox 3.0 was the best-integrated, sexiest-looking
+Firefox ever (3.5 and 3.6 of course inherited 3.0's success).
+
+Currently, Firefox's interactions with the title-bar are exactly those
+of a native application, and any alternative system is doomed to be
+a backward step.
+
+It would be a waste of engineering resources
+============================================
+
+From screenshots I've seen, it seems that fitting into the native
+Windows Vista look and feel requires applications to decorate their
+titlebars with widgets, and Microsoft gives application authors the
+tools they need to do so. Fair enough! 
+
+I'm told that Mac OS X doesn't make it easy for applications to draw
+their own titlebars, but it doesn't make it particularly difficult
+either. The Mac appearance is so consistent that hard-coding the
+custom appearance is probably a reasonable engineering trade-off - only
+a little extra effort gains much flexibility. Fair enough!
+
+As I'm sure you're well aware, the Linux environment is totally
+designed around the notion that applications will stay nicely inside
+their windows, and the system will be responsible for drawing a
+title-bar (if any). You can create your own custom title-bar that is
+totally different from the system settings (as Chrome and XMMS do,
+sticking out like sore thumbs), or guess what the system settings might
+be and try and replicate them on your own (with all the false-positives
+that guessing implies, and the uncanny-valley frustration that comes
+from Firefox not implementing things quite the same way as the
+underlying OS does). If you had to choose between implementing a
+native-titlebar mode, versus implementing a native titlebar mode *and*
+implementing a custom titlebar mode that will take much effort and
+necessarily produce inferior results, adding a custom titlebar doesn't
+make any sense.
+
+(In particular, I'm worried that the engineering concerns will result
+in the two modes of Firefox.next being "custom titlebar with widget
+sprinkles" and "custom titlebar that awkwardly impersonates the native
+titlebar", in much the same way that Firefox can use custom-themed XUL
+widgets or GTK+-themed XUL widgets, but not native GTK+.)
+
+There is a precedent for usability over branding
+================================================
+
+When Firefox 3.0 came out, it featured a custom "keyhole" shape for the
+back and forward buttons on Windows (where there's little
+standardisation on application look and feel) and Mac (where there's
+rigid standardisation on application look and feel, but no general
+precedent for browser navigation buttons). However, Linux *does* have
+firm standards for how applications should present back and forward
+buttons, and Firefox wisely chose to conform to user expectations
+rather than be gratuitously different.
+
+Likewise, there's precedent or even expectation for apps on Windows and
+Mac OS to manipulate their titlebars, but not on Linux - for the same
+reasons that Firefox on Linux does not have keyhole back/forward
+buttons (not just a preference defaulting to off, it's not even
+implemented), Firefox on Linux should not waste effort on implementing
+custom titlebars.
+
+Conclusion
+==========
+
+I'd like to think I'm not against change, and many of the changes
+proposed for Firefox 3.7 and 4.0 I find promising, or at least
+interesting enough to try out before forming an opinion on them.
+However, I feel this widgets-on-the-titlebar thing is just a bad idea -
+breaking platform look-and-feel conventions, breaking my mental model
+as a user, and generally overly difficult considering the number of
+possible desktop environments, possible window managers per
+environment, and themes per window manager in the Linux platform. To
+misquote Arthur C. Clarke, from the novel 2001:
+
+	ALL THESE WIDGETS ARE YOURS EXCEPT THE TITLEBAR. ATTEMPT NO
+	RENDERING THERE.

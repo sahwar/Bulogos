@@ -1,0 +1,206 @@
+Comments on COWBELL themes for Metacity.
+
+Section 3:
+
+    "CSS has traditionally been used to style other documents. However, when
+    you use CSS to style window borders, you should forget the idea of
+    a document which you are styling. Instead, you are styling an abstract data
+    structure."
+
+Actually, CSS has always been used to style abstract data structures, it's just
+that traditionally those abstract data structures have been defined in HTML you
+could look at with View Source, while COWBELL uses CSS to style abstract data structures with no easily-visible serialisation.
+
+For people who want an XML-style document to refer to, there's nothing
+stopping you putting a mock-up in the documentation:
+
+    <frame>
+	<area class="titlebar">
+	    <button class="menu"/>
+	    <title>Happy Birthday!</title>
+	    <button class="minimize"/>
+	    <button class="maximize"/>
+	    <button class="close"/>
+	</area>
+	<area class="content">Content goes here</area>
+    </frame>
+
+...perhaps with the caveat that CSS isn't used for the *layout* of these things
+(there's no good way to specify that a titlebar pushes the buttons to the outer
+edges of the enclosing frame in raw CSS, for example). In particular, you
+probably want to define the "display", "float" and "clear" properties as
+off-limits.
+
+Since there's exactly one titlebar, and one content area, those elements might
+well have their roles in the id attribute, rather than the class attribute.
+
+Since themes often want to draw grouped buttons as actually grouped (for
+example, the Resilience theme in Ubuntu Karmic, it would be helpful to have an
+extra element around the buttons on each side:
+
+	<buttongroup id="left">
+	    <button class="menu"/>
+	</buttongroup>
+	<title>Happy Birthday!</title>
+	<buttongroup id="right">
+	    <button class="minimize"/>
+	    <button class="maximize"/>
+	    <button class="close"/>
+	</buttongroup>
+
+That would allow styling of the entire button group by styling the
+buttongroup element, styling the "end cap" buttons in a group differently by
+styling button:first-child, button:last-child and button:only-child, and not
+drawing an empty group if there's no buttons at that end of the title-bar
+(buttongroup:empty).
+
+Section 3.1:
+
+It would be good to know exactly which parts of which versions of CSS these
+themes support. Each new version of CSS adds a whole lot of very useful
+features. For example:
+
+    - CSS's pseudo-classes are terribly useful for styling UIs - things like
+      :disabled, :focus, :hover, :active
+    - CSS 3's more sophisticated psuedo-classes are useful for dealing with
+      documents that have arbitrarily-long lists of items (such as buttons in
+      a titlebar) - things like :first-child, :last-child, :only-child.
+    - CSS 3's Backgrounds and Borders module directly describes the sort of
+      things theme authors would want to do in themes, and makes lots more
+      things possible than the CSS 2 version.
+    
+Section 3.2:
+
+What happens to sections of the frame that are not painted? Are they left
+transparent, or will they have a default fill?
+
+Section 3.3:
+
+I think setting font-size is important - it's quite common for utility windows
+to be styled with smaller title-bar fonts than regular windows. You might want
+to clip values so people don't set the font-size to zero, although you might
+want to support "visibility: hidden"
+
+If the height of a button is always the height of the title, it seems silly to
+require people to set the height. Let people set the width of buttons, though.
+"width: 1em" (assuming the default size of the title-text is defined to be
+1em, which seems reasonable) should make buttons exactly square. I'm not sure
+what should happen if a button is set to "width: auto"; perhaps that should be
+disallowed. If the width is set to a percentage, I guess that would be
+a percentage of the area.titlebar width.
+
+I imagine min-width and max-width only apply to buttons if their width is set
+to be a percentage.
+
+Section 3.5:
+
+The "is-focused" attribute on the frame might more naturally be expressed with
+the CSS :focus pseudo-class. The contents of the "type" attribute might more
+naturally be expressed as classes (frame.dialog, frame.utility, etc.) Many of
+the Power attributes might more naturally be expressed as combinations of the
+:disabled pseudo-class and the corresponding button element (such as
+button.close:disabled).
+
+Exposing the Power attributes is more generic than using the :disabled state
+on buttons, but I suspect :disabled buttons is what people will try first (by
+analogy with :hover and :active). You might as well do both, I guess.
+
+Conventional HTML says that boolean attributes are present if the attribute is
+true, and absent if the attribute is false, like so:
+
+    <select name="version">
+	<option default>Metacity 1.x
+	<option>Metacity 2.x
+    </select>
+
+It would seem simplest to make the state attributes work likewise, and let
+people use the :not() pseudo-class instead of testing for attributes equal to
+"0":
+
+    frame:not([is-maximized]) { ... }
+
+
+Section 3.7:
+
+I hope eventually SVG images are supported, being rasterized at the output
+resolution rather than the input resolution.
+
+Section 3.8:
+
+In CSS 2.1, "px" is defined as a distance that subtends about 0.0213 degrees
+of the user's visual field from a comfortable viewing distance - usually
+rounded to device pixels.
+
+I think the most useful unit to have would be "em", so things could be sized
+relative to the title-bar text.
+
+Section 4:
+
+There is a need for metadata in themes, but sticking it into the CSS cascade
+feels like an abuse. Since a theme will likely need separate image files
+anyway, you might as well put the metadata in a separate file - RFC-822 style,
+or JSON or one of the presumably many XML serialisations.
+
+If a theme contains many variations, such a metadata file would also be a good
+place to describe the alternatives:
+
+    <link rel="alternate stylesheet"
+	href="orange.css" title="Orange Highlights"/>
+    <link rel="alternate stylesheet"
+	href="green.css" title="Green Highlights"/>
+
+Section 6.1:
+
+The "cascade" in CSS is the sequence of style sheets that override each other.
+The "default" appearance of items is just the appearance defined in the
+user-agent's built-in style sheet. The CSS spec includes a suggested default
+style sheet for HTML, it's only sensible that the Cowbell spec would include
+a default style sheet for its own appearance - and hopefully, a style sheet
+that includes lots of these "hooks" to make theme authorship easy.
+
+Section 6.2:
+
+Reading files from a zip or tar-ball is greatly useful.
+
+Storing images as data: URLs makes them a terrible pain to edit, and means
+having editable source-files and a build-process that creates a theme blob the
+WM can load. More pain than it's worth, IMHO.
+
+Section 6.5:
+
+Investigating the UI and capabilities of Firebug (a HTML/CSS/JS debugger
+add-on for Firefox) would be instructive.
+
+Section 6.10:
+
+You already have a theme identifier in the -dc-identifier property, it
+shouldn't be too hard to have a property in the metadata for theme X that says
+"depends on the contents of theme Y", and if there's no installed theme whose
+-dc-identifier is set to Y, then you refuse to load theme X.
+
+Section 6.11:
+
+The -cowbell-color filter needs to affect individual images, not elements.
+It's hard to imagine how this might be specified in CSS syntax, except perhaps
+as an alternative to the url() function in "background-image:" property
+- something like this:
+
+    background-image: -cowbell-replace-color(
+	#000, -cowbell-gtk("active", "text"), "menu.png");
+
+
+Section 6.13:
+
+A simpler alternative might be to make the title markup slightly more complex:
+
+    <title>
+	<titletext>Happy Birthday!</titletext>
+    </title>
+
+...where <title> is a display: block element, and <titletext> is a display:
+inline element.
+
+Then, you can add a background to the title element to draw the background on
+either side of the text, and add a background to the titletext element to
+cover it back up, no matter what the text-align property on the title element
+is.

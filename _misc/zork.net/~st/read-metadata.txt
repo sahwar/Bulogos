@@ -1,0 +1,37 @@
+#!/bin/sh
+set -e
+
+KEY="$1"
+
+while read line; do
+	# If we get a blank line, we're at the end of the metadata block and we
+	# haven't found the key we're loking for. Give up.
+	if [ "$line" = "" ]; then
+		break
+	fi
+
+	# If this line has ": " and the bit leading up to the colon matches the
+	# key we're looking for...
+	lineKey=${line%%: *}
+	if [ "$KEY" = "$lineKey" ]; then
+		# ...print the first line of the value...
+		echo "${line#*: }"
+
+		# ...and look for any continued lines.
+		while IFS="" read line; do
+			# If this line starts with 4 spaces..
+			if [ "${line#    }" != "$line" ]; then
+				# this is a continuation line. Print it (minus
+				# the spaces).
+				echo "${line#    }"
+			else
+				# No more continuation lines; we're done here.
+				break
+			fi
+		done
+
+		# We've got the key we're looking for, so stop looking.
+		break
+	fi
+done
+

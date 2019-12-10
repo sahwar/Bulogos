@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Per-host prompt colouring - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<p>Like many people, I have shell accounts on many machines, and it&rsquo;s often very helpful to have a subtle reminder of which machine I&rsquo;m on at any one time. I&rsquo;ve set up a system where my prompt automatically changes colour according to what system I&rsquo;m logged into, without my having to manually choose a colour for every system, and without the risk of it accidentally choosing some unreadable colour.</p>
+<p>Here&rsquo;s the current code, with comments:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># We get the first 7 digits of the md5sum; if we got 8 digits, the</span>
+<span class="c1"># hosthash might be negative on 32-bit machines, and that would mess</span>
+<span class="c1"># things up.</span>
+<span class="nv">HOSTHASH</span><span class="o">=</span><span class="k">$(</span>hostname <span class="p">|</span> md5sum<span class="k">)</span>
+<span class="nv">HOSTHASH</span><span class="o">=</span><span class="si">${</span><span class="nv">HOSTHASH</span><span class="p">:</span><span class="nv">0</span><span class="p">:</span><span class="nv">7</span><span class="si">}</span>
+
+<span class="c1"># Map into the range of available colours</span>
+<span class="k">if</span> <span class="o">[</span> <span class="k">$(</span>tput colors<span class="k">)</span> -ge <span class="m">256</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="c1"># All the colours with brightness &gt; 25% in the default xterm</span>
+    <span class="c1"># palette</span>
+    <span class="nv">BRIGHT_COLORS</span><span class="o">=(</span><span class="m">2</span> <span class="m">3</span> <span class="m">4</span> <span class="m">5</span> <span class="m">6</span> <span class="m">7</span> <span class="m">8</span> <span class="m">9</span> <span class="m">10</span> <span class="m">11</span> <span class="m">12</span> <span class="m">13</span> <span class="m">14</span> <span class="m">15</span> <span class="m">22</span> <span class="m">23</span> <span class="m">24</span> <span class="m">25</span> <span class="m">26</span> <span class="m">27</span>
+    <span class="m">28</span> <span class="m">29</span> <span class="m">30</span> <span class="m">31</span> <span class="m">32</span> <span class="m">33</span> <span class="m">34</span> <span class="m">35</span> <span class="m">36</span> <span class="m">37</span> <span class="m">38</span> <span class="m">39</span> <span class="m">40</span> <span class="m">41</span> <span class="m">42</span> <span class="m">43</span> <span class="m">44</span> <span class="m">45</span> <span class="m">46</span> <span class="m">47</span> <span class="m">48</span> <span class="m">49</span>
+    <span class="m">50</span> <span class="m">51</span> <span class="m">58</span> <span class="m">59</span> <span class="m">60</span> <span class="m">61</span> <span class="m">62</span> <span class="m">63</span> <span class="m">64</span> <span class="m">65</span> <span class="m">66</span> <span class="m">67</span> <span class="m">68</span> <span class="m">69</span> <span class="m">70</span> <span class="m">71</span> <span class="m">72</span> <span class="m">73</span> <span class="m">74</span> <span class="m">75</span> <span class="m">76</span> <span class="m">77</span>
+    <span class="m">78</span> <span class="m">79</span> <span class="m">80</span> <span class="m">81</span> <span class="m">82</span> <span class="m">83</span> <span class="m">84</span> <span class="m">85</span> <span class="m">86</span> <span class="m">87</span> <span class="m">94</span> <span class="m">95</span> <span class="m">96</span> <span class="m">97</span> <span class="m">98</span> <span class="m">99</span> <span class="m">100</span> <span class="m">101</span> <span class="m">102</span> <span class="m">103</span> <span class="m">104</span>
+    <span class="m">105</span> <span class="m">106</span> <span class="m">107</span> <span class="m">108</span> <span class="m">109</span> <span class="m">110</span> <span class="m">111</span> <span class="m">112</span> <span class="m">113</span> <span class="m">114</span> <span class="m">115</span> <span class="m">116</span> <span class="m">117</span> <span class="m">118</span> <span class="m">119</span> <span class="m">120</span> <span class="m">121</span>
+    <span class="m">122</span> <span class="m">123</span> <span class="m">130</span> <span class="m">131</span> <span class="m">132</span> <span class="m">133</span> <span class="m">134</span> <span class="m">135</span> <span class="m">136</span> <span class="m">137</span> <span class="m">138</span> <span class="m">139</span> <span class="m">140</span> <span class="m">141</span> <span class="m">142</span> <span class="m">143</span> <span class="m">144</span>
+    <span class="m">145</span> <span class="m">146</span> <span class="m">147</span> <span class="m">148</span> <span class="m">149</span> <span class="m">150</span> <span class="m">151</span> <span class="m">152</span> <span class="m">153</span> <span class="m">154</span> <span class="m">155</span> <span class="m">156</span> <span class="m">157</span> <span class="m">158</span> <span class="m">159</span> <span class="m">165</span> <span class="m">166</span>
+    <span class="m">167</span> <span class="m">168</span> <span class="m">169</span> <span class="m">170</span> <span class="m">171</span> <span class="m">172</span> <span class="m">173</span> <span class="m">174</span> <span class="m">175</span> <span class="m">176</span> <span class="m">177</span> <span class="m">178</span> <span class="m">179</span> <span class="m">180</span> <span class="m">181</span> <span class="m">182</span> <span class="m">183</span>
+    <span class="m">184</span> <span class="m">185</span> <span class="m">186</span> <span class="m">187</span> <span class="m">188</span> <span class="m">189</span> <span class="m">190</span> <span class="m">191</span> <span class="m">192</span> <span class="m">193</span> <span class="m">194</span> <span class="m">195</span> <span class="m">198</span> <span class="m">199</span> <span class="m">200</span> <span class="m">201</span> <span class="m">202</span>
+    <span class="m">203</span> <span class="m">204</span> <span class="m">205</span> <span class="m">206</span> <span class="m">207</span> <span class="m">208</span> <span class="m">209</span> <span class="m">210</span> <span class="m">211</span> <span class="m">212</span> <span class="m">213</span> <span class="m">214</span> <span class="m">215</span> <span class="m">216</span> <span class="m">217</span> <span class="m">218</span> <span class="m">219</span>
+    <span class="m">220</span> <span class="m">221</span> <span class="m">222</span> <span class="m">223</span> <span class="m">224</span> <span class="m">225</span> <span class="m">226</span> <span class="m">227</span> <span class="m">228</span> <span class="m">229</span> <span class="m">230</span> <span class="m">231</span> <span class="m">238</span> <span class="m">239</span> <span class="m">240</span> <span class="m">241</span> <span class="m">242</span>
+    <span class="m">243</span> <span class="m">244</span> <span class="m">245</span> <span class="m">246</span> <span class="m">247</span> <span class="m">248</span> <span class="m">249</span> <span class="m">250</span> <span class="m">251</span> <span class="m">252</span> <span class="m">253</span> <span class="m">254</span> <span class="m">255</span><span class="o">)</span>
+<span class="k">elif</span> <span class="o">[</span> <span class="k">$(</span>tput colors<span class="k">)</span> -ge <span class="m">16</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nv">BRIGHT_COLORS</span><span class="o">=(</span><span class="m">2</span> <span class="m">3</span> <span class="m">4</span> <span class="m">5</span> <span class="m">6</span> <span class="m">7</span> <span class="m">8</span> <span class="m">9</span> <span class="m">10</span> <span class="m">11</span> <span class="m">12</span> <span class="m">13</span> <span class="m">14</span> <span class="m">15</span><span class="o">)</span>
+<span class="k">else</span>
+    <span class="nv">BRIGHT_COLORS</span><span class="o">=(</span><span class="m">2</span> <span class="m">3</span> <span class="m">4</span> <span class="m">5</span> <span class="m">6</span> <span class="m">7</span><span class="o">)</span>
+<span class="k">fi</span>
+
+<span class="nv">COLOR</span><span class="o">=</span><span class="si">${</span><span class="nv">BRIGHT_COLORS</span><span class="p">[</span><span class="k">$((</span> <span class="m">0</span>x<span class="nv">$HOSTHASH</span> <span class="o">%</span> <span class="si">${#</span><span class="nv">BRIGHT_COLORS</span><span class="p">[@]</span><span class="si">}</span> <span class="k">))</span><span class="p">]</span><span class="si">}</span>
+
+<span class="nv">C</span><span class="o">=</span><span class="s2">&quot;\[</span><span class="k">$(</span>tput setaf <span class="nv">$COLOR</span><span class="k">)</span><span class="s2">\]&quot;</span> <span class="c1"># color</span>
+<span class="nv">B</span><span class="o">=</span><span class="s2">&quot;\[</span><span class="k">$(</span>tput bold<span class="k">)</span><span class="s2">\]&quot;</span> <span class="c1"># bold</span>
+<span class="nv">N</span><span class="o">=</span><span class="s2">&quot;\[</span><span class="k">$(</span>tput sgr0<span class="k">)</span><span class="s2">\]&quot;</span> <span class="c1"># normal</span>
+<span class="nv">PS1</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$C$B</span><span class="s2">[</span><span class="nv">$N$C</span><span class="s2">\\u@\\h</span><span class="nv">$B</span><span class="s2">\$TMP_DELIM</span><span class="nv">$N$C</span><span class="s2">\$TMP_PWD_VALUE</span><span class="nv">$B</span><span class="s2">]\\\$</span><span class="nv">$N</span><span class="s2"> &quot;</span>
+<span class="nb">unset</span> HOSTHASH BRIGHT_COLORS COLOR C B N          <span class="c1"># cleanup</span>
+</pre></div>
+</td></tr></table>
+
+<p>If you&rsquo;re wondering about <code>$TMP_DELIM</code> and <code>$TMP_PWD_VALUE</code>, see <a class="wikilink" href="How_to_limit_the_length_of_your_bash_prompt.html">How to limit the length of your bash prompt</a>. Feel free to replace those variables with the standard <code>\w</code> or <code>\W</code> if you want.</p>    </body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Using i3 with GNOME 3 - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="index.html">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="using-i3-with-gnome-3">Using i3 with GNOME 3<a class="headerlink" href="gnome-i3.html#using-i3-with-gnome-3" title="Permanent link">&para;</a></h1>
+<p>In the bad old days,
+every computer had a monitor,
+a keyboard,
+a mouse,
+and that was it.
+These days,
+computers have all kinds of extra peripherals,
+like screens that can dim,
+audio outputs that can change their volume,
+and keyboards with buttons to control all those things.
+On a modern Linux kernel,
+getting those things working can be a hassle,
+and if they need to work together
+(say, dimming the screen when battery gets low)
+it&rsquo;s even more complex.</p>
+<p>Luckily,
+modern desktop environments handle all this stuff out-of-the-box,
+and <a href="https://www.gnome.org/gnome-3/">GNOME 3</a> is one of the more widely-available
+and best-supported options.
+Its default configuration is simple
+and easy for new users to get started with,
+while its modularity and extensibility allow power-users
+quite a bit of customisation.</p>
+<p>Unluckily,
+as flexible and extensible as it is,
+GNOME 3&rsquo;s desktop environment is not quite as graceful
+at dealing with many windows
+as a good tiling window-manager like <a href="http://i3wm.org/">i3</a>.
+And the GNOME Shell front-end is fairly tightly linked
+with the hardware-management backend.
+It would be lovely if there were a GNOME component
+that allowed the hardware-management
+to run independently of GNOME Shell,
+so I could use it with a different window-manager.</p>
+<p>It turns out there is.
+There&rsquo;s a thing called <a href="https://wiki.gnome.org/Projects/GnomeFlashback">GNOME Flashback</a>,
+which makes the modern GNOME 3 infrastructure available
+without the GNOME 3 interface,
+so that people who preferred the old GNOME 2 interface
+can keep using it,
+or at least something resembling it.
+Because GNOME 2 allowed custom window-managers,
+so does GNOME Flashback,
+which means we can use it with i3.</p>
+<h1 id="instructions">Instructions<a class="headerlink" href="gnome-i3.html#instructions" title="Permanent link">&para;</a></h1>
+<p>I&rsquo;m using GNOME 3.22 on Debian 9 (&ldquo;stretch&rdquo;).
+Your mileage may vary with other versions and other distros.</p>
+<h2 id="1-install-dependencies">1. Install dependencies<a class="headerlink" href="gnome-i3.html#1-install-dependencies" title="Permanent link">&para;</a></h2>
+<p>We&rsquo;re going to need the GNOME Flashback package,
+and of course i3.</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> sudo apt-get install gnome-session-flashback i3
+</pre></div>
+
+
+<h2 id="2-teach-gnome-about-i3">2. Teach GNOME about i3<a class="headerlink" href="gnome-i3.html#2-teach-gnome-about-i3" title="Permanent link">&para;</a></h2>
+<p>To create a session with all the required GNOME background services,
+the easiest thing is to use <code>gnome-session</code>.
+We&rsquo;ll create a session that includes i3 and the GNOME Flashback goodies.</p>
+<p>Save this file as <code>~/.config/gnome-session/sessions/gnome-plus-i3.session</code>
+(you may need to create the intervening subdirectories yourself):</p>
+<div class="codehilite"><pre><span></span><span class="k">[GNOME Session]</span>
+<span class="na">Name</span><span class="o">=</span><span class="s">GNOME + i3</span>
+<span class="na">RequiredComponents</span><span class="o">=</span><span class="s">gnome-flashback-init;gnome-flashback;i3;gnome-settings-daemon;</span>
+</pre></div>
+
+
+<p>Other GNOME Flashback sessions include additional <code>RequiredComponents</code> like
+<code>gnome-panel</code>
+(for the traditional GNOME application menu and taskbar)
+and <code>nautilus-classic</code>
+(to draw desktop icons)
+but since those aren&rsquo;t related to hardware support,
+I&rsquo;ve left them out.</p>
+<p>Also note that <code>RequiredComponents</code> aren&rsquo;t executables,
+they&rsquo;re the names of <code>.desktop</code> files in <code>/usr/share/applications</code>
+(amongst other places).</p>
+<h2 id="3-launch-our-new-session-at-login">3. Launch our new session at login.<a class="headerlink" href="gnome-i3.html#3-launch-our-new-session-at-login" title="Permanent link">&para;</a></h2>
+<p>Adding a new session type to GDM&rsquo;s list of sessions
+would require editing system-wide files,
+but luckily we don&rsquo;t actually need to do that.
+If you have a file named <code>.xsession</code> in your home directory,
+GDM will include a session named &ldquo;System X11 Default&rdquo;
+that will execute that file as a shell script.</p>
+<p>So we just need to write a script that launches <code>gnome-session</code>
+and tells it to run our i3-based session instead.
+Save the following file as <code>.xsession</code> in your home directory:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># Menu tools use this value to decide which applications</span>
+<span class="c1"># are approriate for the current session.</span>
+<span class="k">if</span> <span class="o">[</span> -z <span class="nv">$XDG_CURRENT_DESKTOP</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nb">export</span> <span class="nv">XDG_CURRENT_DESKTOP</span><span class="o">=</span><span class="s2">&quot;GNOME-Flashback:GNOME&quot;</span>
+<span class="k">fi</span>
+
+<span class="c1"># Run gnome-session and tell it to use our i3 session.</span>
+<span class="nb">exec</span> gnome-session --session<span class="o">=</span>gnome-plus-i3 --disable-acceleration-check
+</pre></div>
+
+
+<h2 id="4-teach-i3-about-gnome">4. Teach i3 about GNOME<a class="headerlink" href="gnome-i3.html#4-teach-i3-about-gnome" title="Permanent link">&para;</a></h2>
+<p>When <code>gnome-session</code> starts a session component,
+it typically expects the the component to notify it via DBus
+that the the component has started correctly.
+i3 knows nothing of DBus,
+so <code>gnome-session</code> will launch i3
+and wait forever for something to happen.</p>
+<p>Instead,
+teach i3 to notify <code>gnome-session</code> that it has started
+by putting the following lines at the end of <code>~/.config/i3/config</code>:</p>
+<div class="codehilite"><pre><span></span><span class="nb">exec</span> --no-startup-id dbus-send <span class="se">\</span>
+    --session <span class="se">\</span>
+    --print-reply<span class="o">=</span>literal <span class="se">\</span>
+    --dest<span class="o">=</span>org.gnome.SessionManager <span class="se">\</span>
+    <span class="s2">&quot;/org/gnome/SessionManager&quot;</span> <span class="se">\</span>
+    org.gnome.SessionManager.RegisterClient <span class="se">\</span>
+    <span class="s2">&quot;string:i3&quot;</span> <span class="se">\</span>
+    <span class="s2">&quot;string:</span><span class="nv">$DESKTOP_AUTOSTART_ID</span><span class="s2">&quot;</span>
+</pre></div>
+
+
+<p>Also,
+to log out of an i3-based session,
+you run
+(directly, or via a keybinding)
+<code>i3-msg exit</code>
+to tell i3 to exit.
+However,
+under gnome-session,
+that doesn&rsquo;t actually log you out:
+gnome-session might restart i3,
+or it might just let it exit,
+leaving all your applications still running,
+with no way to manually exit them.</p>
+<p>Instead,
+you should bind your usual logout key to run <code>gnome-session-quit</code>,
+which will pop up the traditional GNOME log out dialog,
+and which works as you&rsquo;d expect.</p>
+<h2 id="4-try-it-out">4. Try it out!<a class="headerlink" href="gnome-i3.html#4-try-it-out" title="Permanent link">&para;</a></h2>
+<p>Log out,
+log back in
+(and make sure to pick &ldquo;System X11 Default&rdquo; as your session)
+and you should be in i3
+with all the GNOME services available.</p>
+<h2 id="update-2017-07-14">Update 2017-07-14<a class="headerlink" href="gnome-i3.html#update-2017-07-14" title="Permanent link">&para;</a></h2>
+<p>After following the above instructions,
+one difference I noticed between GNOME and i3
+was that under GNOME,
+the terminal bell was a pleasant, subtle sound,
+while under i3,
+I got the traditional machine beep.</p>
+<p>It turns out that something somewhere wasn&rsquo;t telling PulseAudio
+to replace the machine beep.
+Never mind,
+we can tell it ourselves.
+Add the following to <code>~/.xsession</code>,
+just before the <code>exec gnome-session ...</code> bit.</p>
+<div class="codehilite"><pre><span></span><span class="c1"># Redirect the X11 beep to PulseAudio</span>
+pactl upload-sample <span class="se">\</span>
+    /usr/share/sounds/freedesktop/stereo/dialog-information.oga <span class="se">\</span>
+    x11-bell
+pactl load-module <span class="se">\</span>
+    module-x11-bell <span class="se">\</span>
+    <span class="nv">display</span><span class="o">=</span><span class="nv">$DISPLAY</span> <span class="se">\</span>
+    <span class="nv">sample</span><span class="o">=</span>x11-bell
+</pre></div>
+
+
+<p>I happen to like <code>dialog-information.oga</code>
+because it matches what I remember from GNOME,
+but feel free to try different sounds.</p>
+<h2 id="update-2019-10-15">Update 2019-10-15<a class="headerlink" href="gnome-i3.html#update-2019-10-15" title="Permanent link">&para;</a></h2>
+<p>With the release of GNOME 3.34, the above instructions are out of date.</p>
+<p>For step 2, &ldquo;Teach GNOME about i3&rdquo;,
+<code>gnome-setting-daemon</code> has been deprecated
+in favour of a bunch of different DBus services.
+Compare your <code>gnome-plus-i3.session</code> file
+with GNOME Flashback&rsquo;s <code>gnome-flashback-metacity.desktop</code>,
+remove &ldquo;metacity&rdquo; and anything else you don&rsquo;t like
+from the &ldquo;RequiredComponents&rdquo; line,
+and add &ldquo;i3&rdquo; in its place.</p>
+<p>For step 3, &ldquo;Launch our new session at login&rdquo;,
+<code>gnome-session</code> now works via systemd
+instead of managing the session itself.
+Compare your &ldquo;exec gnome-session &hellip;&rdquo; command
+with the one in <code>/usr/lib/gnome-flashback/gnome-flashback-metacity</code>.
+You&rsquo;ll also need to copy
+<code>/usr/lib/systemd/user/gnome-session-x11@gnome-flashback-metacity.target</code>
+to
+<code>~/.config/systemd/user/gnome-session-x11@gnome-plus-i3.target</code>.</p>    </body>
+</html>

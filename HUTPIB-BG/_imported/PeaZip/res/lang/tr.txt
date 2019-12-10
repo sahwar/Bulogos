@@ -1,0 +1,1156 @@
+﻿=== PeaZip language file ===
+Turkish - Türkçe
+5.7
+Çeviren: Umut Öcal, Bekir Uçarcı
+Son güncelleyen: Yasin Özdemir - serenler07@gmail.com - Çevrinin büyük bir kısmını (yaklaşık %95) Umut Öcal yapmıştır, ben ise çevrilmemiş alanları ve yeni katılan metinleri çevirdim | Bekir Uçarcı - bekirucarci@gmail.com - 2012 yılından bu yana eklenen kelimelerin çevirisini ben yaptım.
+Son güncelleme: 14/07/2014
+
+=== PeaZip text group ===
+
+txt_5_7_pinstalled: INSTALLED
+txt_5_7_pmissing: MISSING
+txt_5_7_plugin: Plugin missing, can be installed from Help > Check for pulgin and addon
+txt_5_6_basic: Basic
+txt_5_6_exarc: Extract archive
+txt_5_6_tab: Open in new tab
+txt_5_6_rc: Right click for options
+txt_5_6_layouts: Saved layouts
+txt_5_6_upexisting: Update existing archive
+txt_5_6_verbose: Verbose
+txt_5_5_case: (case sensitive)
+txt_5_5_add: Add string at specified position
+txt_5_5_addsel: Add to current selection
+txt_5_5_ext: Change files extension
+txt_5_5_plugin: Check for plugin and addon
+txt_5_5_copypath: Copy path
+txt_5_5_delete: Delete characters at specified position
+txt_5_5_halt: Halt system when task completes
+txt_5_5_positionw: Hint: 1 add before first char, 2 second, etc... "z" for end of file name
+txt_5_5_positionwd: Hint: 1 delete from first char included, 2 second, ... "z" for end of file name
+txt_5_5_replaceneww: Hint: provide an empty new string to simply remove the old string
+txt_5_5_lower: Lowercase
+txt_5_5_replaceoldw: Modify all occurrences of this string or character in the file name
+txt_5_5_newext: New extension
+txt_5_5_new: New string
+txt_5_5_n: Number of characters to delete
+txt_5_5_old: Old string
+txt_5_5_position: Position (number or "z" for end)
+txt_5_5_intdir: Remove single intermediate directory on Extract to new folder operations
+txt_5_5_replacestr: Replace/remove string
+txt_5_5_datesameday: Same day of selected object
+txt_5_5_datesamehour: Same hour of selected object
+txt_5_5_datesamemonth: Same month of selected object
+txt_5_5_datesameweek: Same week of selected object
+txt_5_5_datesameyear: Same year of selected object
+txt_5_5_scan: Scan
+txt_5_5_select: Select
+txt_5_5_similar: Similar to selected object
+txt_5_5_starting: Starting with same character
+txt_5_5_string: String to add
+txt_5_5_subtractsel: Subtract from current selection
+txt_5_5_datehour: This hour
+txt_5_5_datemonth: This month
+txt_5_5_dateweek: This week
+txt_5_5_dateyear: This year
+txt_5_5_dateday: Today
+txt_5_5_upper: Uppercase
+txt_5_5_extw: Warning: changing file extension the file may become unusable
+txt_5_4_da: Tarih eklendi.
+txt_5_4_deletearchives: Çıkartma sonrası arşiv dosyasını sil
+txt_5_4_deletefiles: Sıkıştırma sonrası dosyaları sil
+txt_5_4_deleteoriginal: Silme prosedürü, ana ekranda belirtildiği gibi, komut dosyası eklenecektir.
+txt_5_4_lv: Son bakılan
+txt_5_4_deletearchivesconfirm: Orijinal arşivlerin silinmesini onaylıyor musun?
+txt_5_4_deletefilesconfirm: Orijinal dosyaların silinmesini onaylıyor musun?
+txt_5_4_used: kullanılmış
+txt_5_3_profilebest: En iyi sıkıştırma, 7Z formatı Ultra seviye
+txt_5_3_profileadvanced: Gelişmiş sıkıştırma, 7Z formatı
+txt_5_3_profilenormal: Normal ZIP sıkıştırma, çoğu çıkartıcılar ile uyumlu
+txt_5_3_profileveryfast: Çok hızlı ZIP sıkıştırma, büyük medya dosyaları için önerilir
+txt_5_3_profilepassword: Parola korumalı, 7Z formatı
+txt_5_3_profile10mb: 10MB altında çıktı tutun, sadece mail için kısıtlama
+txt_5_3_profilesfx: Otomatik çıkartma, Alıcının bir çıkarma programına ihtiyacı olmayacak
+txt_5_3_cml: Sağtık menü dili
+txt_5_3_cmlmessage: İstenilen bağlam menüsü dili için kayıt birleştirilmesi üzerine çift tıklayın. Bu ayar, uygulama / yüklü güncel sistem entegrasyon sihirbazını kullanılır ve sonra zaman zaman yeniden uygulanması gerekir.
+txt_5_3_exc: Hariç tutulan filtrelerde dahil filtreler için geçerli
+txt_5_3_ia: Dahil olanlarda
+txt_5_3_io: Dahiller sadece
+txt_5_3_rec: Recurse subdirs
+txt_5_3_resetsi: Sistem ilişkilendirmesini tekrarla (sağtık menüsü, Gönder, dosya ilişkilendirmeleri)?
+txt_5_2_oadd: Orijinal konumuna sıkıştır
+txt_5_2_zerodelete: Bu sürücüde tüm 0 boş alanları silmek ve üzerine yazmak istiyor musunuz? Bu işlem geri alınamaz ve dosyalar tekrar kurtarılamaz!
+txt_5_2_zfree: Bu sürücüde tüm 0 boş alanlar üzerine yazmak istiyor musunuz?
+txt_5_2_sdfree: Güvenli bir biçimde bu diskte boş alanı silmek istiyor musunuz?
+txt_5_2_oext: Orijinal konumuna çıkart
+txt_5_2_securedeletefree: Güvenli boş alan silme
+txt_5_2_free: Bu uygulama biraz zaman alabilir ve, sık yapılıyorsa, hızlı USB bellekler takabilirsiniz
+txt_5_2_zerofiles: Sıfır silme
+txt_5_2_zerofree: Boş alan silme
+txt_5_1_schedadd: Takvim ekle
+txt_5_1_schederr: Takvim oluşturulamıyor
+txt_5_1_daily: Günlük
+txt_5_1_day: Gün
+txt_5_1_days: Gün
+txt_5_1_enddate: EBitiş tarihi
+txt_5_1_every: Her
+txt_5_1_w6: Cuma
+txt_5_1_hourly: Saatlik
+txt_5_1_hours: Saat
+txt_5_1_last: En son
+txt_5_1_schedmanage: Görev Zamanlayıcı, PeaZip üzerinde kaydedilen görevleri yönetin
+txt_5_1_scriptmanage: Kaydedilmiş planlanan komutları düzenleyin
+txt_5_1_w2: Pazartesi
+txt_5_1_monthly: Aylık
+txt_5_1_months: Ay
+txt_5_1_onlogin: Girişte
+txt_5_1_onstart: Başlangıçta
+txt_5_1_once: Birkez
+txt_5_1_w7: Cumartesi
+txt_5_1_schedule: Takvim
+txt_5_1_schedexplain: GUI görev tanımından bir düz metin komut dosyası oluşturun ve bunu planlayın. Planlanmış görevlerin komut "Planlanmış komut" klasörüne kaydedilir. Eğer sistemin Görev Zamanlayıcısı kullanabilirsiniz zamanlanmış görevleri düzenlemek ya da silmek için, PeaZip tarafından oluşturulan tüm zamanlanmış görevler görevler kütüphanenin "PeaZip" dalında toplanır.
+txt_5_1_schedok: Takvim başarıyla oluşturuldu
+txt_5_1_schedscripts: Kayıtlı planlanan komutlar
+txt_5_1_startdate: Başlama tarihi
+txt_5_1_starttime: Başlama zamanı
+txt_5_1_w1: Pazar
+txt_5_1_schedname: Görev adı, planlanan ve sistem görevlenin ikisinide belirleyin
+txt_5_1_ts: Görev Zamanlayıcı
+txt_5_1_w5: Perşembe
+txt_5_1_w3: Salı
+txt_5_1_w4: Çarşamba
+txt_5_1_weekly: HAftalık
+txt_5_1_weeks: Hafta
+txt_5_0_bc: Kırıntı
+txt_5_0_resetpm: Parola yöneticisini sıfırlamayı kabul ediyor musunuz? PeaZip içerisinde depo edilmiş tüm parolalar onay sonrasında silinecektir.
+txt_5_0_enum: Dizin içeriği numaralandırma
+txt_5_0_music: Müzik
+txt_5_0_ps: Burada PowerShell aç
+txt_5_0_perf: Performans
+txt_5_0_pictures: Resimler
+txt_5_0_removeall: Tümünü sil
+txt_5_0_resetbookmarks: Varsayılan yerimlerini sıfırlansın mı? (Yerimleri buradan organize edilebilir Yerimleri > Organize et)
+txt_5_0_sh: Oturum Geçmişi
+txt_5_0_skip: Dizin içeriğini numaralandırmayı atla
+txt_5_0_videos: Videolar
+txt_4_9_frame: Çerçeve
+txt_4_9_listth: Liste ve küçük resimler
+txt_4_9_shadow: Gölge
+txt_4_9_style: Stil
+txt_4_8_attach25: 25 MB (ek limiti)
+txt_4_8_crop: Kes
+txt_4_8_detailsno: Hafif dosya tarayıcı
+txt_4_8_details: Küöük resimlerle dosya arama
+txt_4_8_fit: Şuna sığdır
+txt_4_8_fitl: En geniş hale sığdır
+txt_4_8_flip: Çevir
+txt_4_8_fullscreen: Tam ekran
+txt_4_8_fun: FFonksiyonlar
+txt_4_8_h: HYükseklik
+txt_4_8_keeparchive: Arşivi tut
+txt_4_8_noresize: Orijinal boyutu koru
+txt_4_8_iconl: LBüyük resimler
+txt_4_8_iconm: İkonar ve resimler
+txt_4_8_imagemanager: Resim yöneticisi
+txt_4_8_immersive: Sürükleyici
+txt_4_8_listno: Minimal liste
+txt_4_8_aspect: Boy oranını koru
+txt_4_8_mirror: Aynala
+txt_4_8_presets: Hafızadakiler
+txt_4_8_replace: Yeni resim(ler) yer değiştirsin mi? "Hayır" Seçeneği dosya (ları) yeni klasörde oluşturur
+txt_4_8_resize: RYeniden boyutlandır
+txt_4_8_rl: Sola döndür
+txt_4_8_rr: Sağa döndür
+txt_4_8_stop: Dur
+txt_4_8_t: Dönüştürme
+txt_4_8_w: Genişlik
+txt_4_7_pk: Rastgele parola / anahtar dosya oluştur
+txt_4_7_spchar: Karakterleri sayı ve harflerle sınırla
+txt_4_7_recycleask: Seçilen dosya(lar) Çöp Kutusuna taşınsın mı?
+txt_4_7_recycle: Çöp kutusuna taşı
+txt_4_7_pcomp: Potansiyel Sıkıştırma
+txt_4_6_am: Arşiv yöneticisi
+txt_4_6_fm: Dosya yöneticisi
+txt_4_6_users: Kullanıcılar
+txt_4_5_goupdate: Yeni sürüm mevcut. Güncellemeyi indirmek için PeaZip resmi sitesi açılsın mı?
+txt_4_5_b: Bottom
+txt_4_5_koupdate: Güncellemeler kontrol edilemiyor, güncelleme sağlayıcıyla bağlantı kurulamadı.
+txt_4_5_update: Güncellemeleri kontrol et.
+txt_4_5_dock: Dock
+txt_4_5_l: Sol
+txt_4_5_noupdate: PeaZip güncellendi.
+txt_4_5_properties: Özellikler
+txt_4_5_r: Sağ
+txt_4_5_pj: Saved job definition scripts
+txt_4_5_shaddress: Adres satırını göster
+txt_4_5_shnav: Gezgin satırını göster
+txt_4_5_shstatus: Durum çubuğunu göster
+txt_4_5_shtool: Araç kutusunu göster
+txt_4_5_upxpj: Sorry, cannot export job definition since this action or option requires performing multiple distinct commands
+txt_4_5_t: Üst
+txt_4_4_confremoveall: Tüm PeaZip özelleştirme dosyaları kaldırılsın mı? (Uygulamalar, Yerimleri, Parola yönetisi)?
+txt_4_4_confremove: PeaZip biçimlendirilmesi kaldırılsın mı?
+txt_4_3_pwmanhint: Parola listesindeki öğeleri düzenlemek için çift tıklayın, seçenekler için sağ tıklayın, parolayı kopyalamak için CTRL+C yi kullanın.
+txt_4_3_exppl: Parola listesini dışa aktar
+txt_4_3_expple: Encrypted (backup Password manager)
+txt_4_3_keeppw: Mevcut oturum için parolayı/şifre dosyasını sakla.
+txt_4_3_pwmanpwhint: Parola listesini şifrelemek için bir parola/anahtar belirlemeniz tavsiye edilir (isteğe bağlı). Böylece parola yöneticisine ulaşmak için yetkilendirme gerekecektir. Parola/anahtar bu şekilde, her zaman değiştilebilir.
+txt_4_3_pwmanmaster: Asıl parolayı ayarla/değiştir.
+txt_4_3_pwmanlist: Parola listesi
+txt_4_3_pwman: Parola yöneticisi
+txt_4_3_pwmancorr: Parola yöneticisi bozuk veya hasarlı gözüküyor. Parola yöneticisini aynen bırakın ve mevcut parola listesini kurtarmayı deneyin, eğer buna izin veriyorsanız. (Önerilir, parola yöneticisi sıfırlanmayacak).
+txt_4_3_expplp: Düz metin (tüm kullanımlar)
+txt_4_3_recsrc: Varsayılan kurtarma araması
+txt_4_3_resetpm: Parola yöneticisi sıfırlansın mı? Kayıtlı tüm parolalar silinecektir.
+txt_4_3_breadcrumb: Ayrılmış adresleri göster 
+txt_4_2_arcabspath: Doğrudan yolu göster
+txt_4_1_duplicateshint: "size"/"checksum" string is reported in CRC column for all duplicate candidates found in current directory or search filter
+txt_4_1_adminhint: (HINT: alternatively, you can request UAC elevation to work in protected paths, Alt+F10 or Options > Run as administrator)
+txt_4_1_selected: (seçili)
+txt_4_1_duplicatesfound: Tekrarlamalar bulundu
+txt_4_1_duplicatesfind: Tekrarlamaları bul
+txt_4_1_runasadmin: Yetkili olarak çalıştır
+txt_4_1_simplesearch: Basit arama
+txt_4_0_thim: Resim önizlemelerini göster
+txt_3_8_type_description_wim: WIM: Microsoft'un disk resim formatı
+txt_3_8_type_description_xz: XZ: LZMA2 tabanına güçlü sıkıştırma
+txt_3_7_donations: Bağış
+txt_3_7_nameasparent: Çoklu ekleme yapıldıysa, ebeveyn klasörde seçimli parçalar gibi arşiv adı
+txt_3_7_tracker: PeaZip takipçi: böcekler, özellik istekleri
+txt_3_7_sort: Sırala:
+txt_3_7_swapbars: Araç-çubuğu / Adres-çubuğu değişimi
+txt_3_7_themedbars: Tema çubuğu
+txt_3_6_ignoredd: Sürükle-ve-bırak çıkartmalar için dizinleri yoksay
+txt_3_6_close: Kapat
+txt_3_6_resetapps: Uygulamaları sıfırlamak istiyor musun? (Kişiselleştirilmiş uygulamala ve betikler gruplarını, atanmış uzantı entegrasyonu ile aç)?
+txt_3_6_ethemes: Bulunan Temalar
+txt_3_5_td: Tema İndir
+txt_3_5_managecustomthemes: Temaları Yönet
+txt_3_4_nopaths: Geçersiz yol
+txt_3_4_smallicons: Simgeler
+txt_3_3_skipunits: (Windows) Ağ birimleri için disk boyut bilgisini al, yavaş açılış
+txt_3_3_stralt: Alternatif komut, parametre geçme durumunda
+txt_3_3_apps: Uygulamalar
+txt_3_3_multi: Çoklu seçim
+txt_3_3_runexp: Bir uygulama, dosya, klasör ya da website aç
+txt_3_3_apppath: PeaZip'in klasörünü aç
+txt_3_3_run: Aç
+txt_3_2_7zutf8nonascii: 7z/p7zip -mcu .zip dosyalarının içindenki ASCII içermeyen dosya adları için UTF8 kullan
+txt_3_2_alltasks: Tüm görevler
+txt_3_2_conf: Seçenekler
+txt_3_2_donations: Hayırsever organizasyon bağışı
+txt_3_1_sccenc: 7z/p7zip -scc karakter kodlama
+txt_3_1_downloads: İndirmeler
+txt_3_1_lib: Kütüphaneler
+txt_3_1_more: Daha
+txt_3_1_openasarchive: Arşivmiş gibi aç
+txt_3_1_sendto: Oturum'un Gönder (SendTo) menü klasörünü aç
+txt_3_1_pathexc: Dizin aşımına üst-düzey boyutda izin ver
+txt_3_1_recent: Geçmiş
+txt_3_1_plsmartmin: Sistem çubuğunda çalıştır, Göster/koru açılımı, ihtiyaç duyulma halinde
+txt_3_1_src: Aramalar
+txt_3_1_systmp: Sistem önbellek (temp) klasörü
+txt_3_1_languagetools: Çevir!
+txt_3_1_workingdir: Çalışma Klasörü
+txt_3_0_nonreadableorpw: Arşiv okunabilir değil veya parola korumalı
+txt_3_0_readablepw: Arşiv parola korumalı
+txt_3_0_configure: İçerik menüsü ve Gönder menüsü dosya ilişkilerini yapılandır
+txt_3_0_resettmp: Sıfırla peazip-tmp
+txt_2_9_address: Adres çubuğu
+txt_2_9_adv: 7z veya FreeArc arabirimi aracılığı ile desteklenen herhangi bir dosya yönetildiğinde gelişmiş filtreler uygulanır. Belgelere bakın. Temel filtreleri geçersiz kılar. ( arama işleminde kullanılır ve yerimleri, geçmiş panellerinde gösterilir)
+txt_2_9_columns: Sütunlar
+txt_2_9_copyhere: Buraya kopyala
+txt_2_9_noscan: Göreve eklenmiş olan dosyaları tarama
+txt_2_9_extconsole: Çıkartma konsolu sadece arşive gözatma esnasında kullanılabilir.
+txt_2_9_thl: Tuşları belirginleştir
+txt_2_9_home: Başlangıç
+txt_2_9_lt: Büyük
+txt_2_9_mt: Orta
+txt_2_9_movehere: Buraya taşı
+txt_2_9_nav: Gezinme çubuğu
+txt_2_9_navbar: Gezinme çubuğu
+txt_2_9_none: Yok
+txt_2_9_organize: Görünüm
+txt_2_9_public: Genel
+txt_2_9_rec: Yinelemeli: Altdizinlerde ara, biraz zaman alabilir
+txt_2_9_selected: Seçilen
+txt_2_9_setapps: Tercih edilen uygulamaları ayarla
+txt_2_9_showmenu: Menü çubuğunu göster
+txt_2_9_st: Küçük
+txt_2_9_test_pw2G: <2GB arşivleri şifreleme için test et
+txt_2_9_vst: Sadece metin
+txt_2_9_toolbar: Araç çubuğu
+txt_2_9_tree: Ağaç
+txt_2_9_views: Görünümler
+txt_2_8_experimental: (deneysel)
+txt_2_8_zcopy: (Windows) Dosyaları tekrar başlatılabilir modda kopyala, çok yavaş
+txt_2_8_addvol: Tüm ciltleri arşive eklemek uzun zaman alabilir, devam edilsin mi?
+txt_2_8_uniterror: Birime erişilemiyor
+txt_2_8_cannotconvert: Seçilen arşiv değiştirilemiyor
+txt_2_8_convertbegin: Dönüşümü sonuçlandırmak için sıkıştırma aşamasıyla devam edilsin mi ?
+txt_2_8_convert: Dönüştür
+txt_2_8_convertexisting: Mevcut arşivi dönüştür
+txt_2_8_convertdelete: Dönüştürme işlemi için oluşturulmuş geçici dosya ve klasörler silinsin mi?
+txt_2_8_details: Ayrıntılar
+txt_2_8_parallel: Eğer mümkünse görevleri paralel çalıştır
+txt_2_8_convertnote: Orjinal arşiv hiçbir şekilde değiştirilmedi, geçici dosyaları saklamak veya kaldırmak için izin vermek kullanıcı kontrolünde
+txt_2_8_custom: PeaZip tarafından direkt olarak desteklenmiyor, fakat çıkartma düzeninde "Gelişmiş" sekmesinde PeaZip'i özel dosya türlerini işlemek için yapılandırabilirsiniz. Dosyayı açmaya devam edilsin mi?
+txt_2_8_unitrecommend: Çıkartmak için her ikisi de tavsiye edilir (sağtuş > seçilenleri çıkart) veya dosya sistemini bilgisayar kök dizininden açmak için (sistem araçları > Birimi arşiv olarak aç)
+txt_2_8_viewasarchive: Birimi arşiv olarak aç
+txt_2_8_nounit: Birim seçilmedi
+txt_2_8_rowselect: Satırı seçin
+txt_2_8_statusbar: Durum çubuğu
+txt_2_8_typeunit: Mantıksal veya fiziksel birim ismi girin
+txt_2_8_usedefaultoutpath: Varsayılan çıktı yolunu kullan
+txt_2_7_experimental: (deneysel, balgelere bakın)
+txt_2_7_optional: (isteğe bağlı)
+txt_2_7_list_tryflatorpw: , olası çözümler: Düz görünümü deneyin (F6), şifreleyin (F9), arşivin yeni bir kopyasını oluşturun
+txt_2_7_separate: Her dosyayı ayrı bir arşive ekle
+txt_2_7_pwsupported: parola ile arşivleme
+txt_2_7_cancel: İptal
+txt_2_7_encfn: Dosya isimlerini de şifrele (dosya türü destekliyorsa)
+txt_2_7_setpw: Gir parola/anahtar
+txt_2_7_ext: Çıkartılan:
+txt_2_7_extfrom: Arşivden çıkartılıyor:
+txt_2_7_es: Desteklenen arşiv olmayan dosya türlerini çıkart, i.e. çıkartılabilir, MS Office ve OpenOffice dosyaları
+txt_2_7_eu: Desteklenmeyen dosya türlerini çıkart, özel çıkartma aracı belirterek
+txt_2_7_clipboard: Pano
+txt_2_7_goarclayout: Arşiv düzeni
+txt_2_7_goextlayout: Çıkartma düzeni
+txt_2_7_ok: Tamam
+txt_2_7_drag_archive: dosyayı yeni bir arşiv olarak aç? ("Hayır" dosyayı geçerli arşiv görevine ekler)
+txt_2_7_oop: Görev tamamlandığında çıktı yolunu aç
+txt_2_7_validatefn: İşlem durduruldu, geçersiz dosya adına rastlandı:
+txt_2_7_validatecl: İşlem durduruldu, potansiyel tehlikeli komuta rastlandı (i.e. program kapsamında komut birleştirme kabul edilmez ):
+txt_2_7_output: Çıkış
+txt_2_7_pwnotset: Parola ayarlanmadı
+txt_2_7_pwarcset: Parola ayarlandı
+txt_2_7_pwextset: Parola ayarlandı. Şifrelenmiş arşivi çıkartmak/listelemek/test etmek mümkün
+txt_2_7_archivehint: Dosyaları arşive eklemek ve diğer kullanılabilir fonksiyonları görmek için sağ tıklayın, veya dosyaları eklemek için buraya sürükleyin
+txt_2_7_exthint: Sağ-tık ve dosyaları, çıkar ve diğer kullanılabilir metodları gör, ya da çıkartılan dosyaları buraya sürükle
+txt_2_7_setadvf: Gelişmiş filtre kur
+txt_2_7_selpath: Seçilmiş dosyanın dizini
+txt_2_7_separateerror: Üzgünüz, görev çoklu farklı komutlar olarak yapıldığından "Her dosyayı ayrı bir arşive ekle" düğmesi kullanımdayken görev tanımı komut satırı alınamıyor
+txt_2_7_noinput: Görev boş: Çıkartılacak arşiv listesini doldurmak için lütfen Dosya ekle veya Görev yükle kullanın
+txt_2_7_dirsize: The size of the content of folders is not checked for calculating the total size
+txt_2_7_un7z_browse_flat: Dizinsiz görünümü dene (F6)
+txt_2_7_updating: Güncelleniyor, varolan arşive ekleniyor:
+txt_2_6_folders: (klasörler)
+txt_2_6_advanced: Gelişmiş
+txt_2_6_plalways: Görev raporunu incelemek için daima açık tut
+txt_2_6_plsmart: Eğer gerekliyse açık tut (hata, liste veya test raporu)
+txt_2_5_sessionio: (bu oturum)
+txt_2_5_advanced: Gelişmiş düzenleme: eğer gerekirse parametre dizeleri ve dosya adları arasına boşluk koy
+txt_2_5_basic: Temel düzenleme: uygulama ve parametreler giriş isminden önce
+txt_2_5_cannotrun: Çalıştırılamıyor
+txt_2_5_custeditors: Özel düzenleyiciler, çalıcılar, antivirus tarayıcıları vb... (sistemin dosya ilişkilerini geçersiz kılar)
+txt_2_5_delete: Sil
+txt_2_5_delete_fromarchive: Arşivden sil
+txt_2_5_langflag: Arşivlenen dosya isimlerini UTF-8 olarak göster; genişletilmiş karakterleri "?" ile değiştirmek için işareti kaldır
+txt_2_5_encpj: Görev tanımını UTF-8 olarak kodla
+txt_2_5_execommand: Çalıştırılabilir veya komut
+txt_2_5_help: Yardım
+txt_2_5_langhint: İpucu: Eğer bu makinede arşivin karakter seti başarıyla dönüştürülemezse genişletilmiş karakterleri "?" jolly karakter ile değiştirmek sözdizimini geliştirebilir
+txt_2_5_mini_help: Küçük kılavuz
+txt_2_5_offline_help: PeaZip yardım
+txt_2_5_tray: Sistem tepsisine küçült
+txt_2_5_remove: Kaldır
+txt_2_5_hintpaths: Sistem ve kullanıcı dizinini açmak için sağtıkla
+txt_2_5_selectapp: Uygulama seç
+txt_2_5_strafter: String giriş isminden sonra
+txt_2_5_strbefore: String giriş isminden önce
+txt_2_5_encoding: Metin kodlama
+txt_2_5_nopw: bu arşiv türü şifrelemeyi desteklemiyor
+txt_2_4_draghint: [drag to Explorer with enabled Address bar]
+txt_2_4_tb: Araçbuğu düğmelerini uyarla (PeaZip'i sıfırla)
+txt_2_4_adding: Ekleniyor
+txt_2_4_advclip: Gelişmiş: Panoda birden çok seçim tut (aynı olmayan), yapıştırıldığında temizle
+txt_2_4_yanswers: Cevaplar
+txt_2_4_itemsheight: Öğelerin yüksekliğini otomatik boyutlandır
+txt_2_4_clearclipboard: Panoyu temizle (Esc)
+txt_2_4_wcommons: Ortak alanlar
+txt_2_4_copyfrom: Kopyala - bu klasörden=>
+txt_2_4_deletebookmarks: Yerimlerine alınmış dosya ve klasör listesini silmek istiyor musunuz?
+txt_2_4_documents: Belgelerim
+txt_2_4_wenc: Ansiklopedi
+txt_2_4_extractfrom: ..den çıkart
+txt_2_4_hexp: Hex önizleme
+txt_2_4_operation: İşlem
+txt_2_4_path: dizin yazılabilir değil (kayıp, veya sadece okunabilir), lütfen yazılabilir çıktı yolu seçin
+txt_2_4_removefromclipboard: Panodan kaldır
+txt_2_4_stdclip: Standart: panoda tek bir seçim tut, kesme işlemini yapıştırmada temizle
+txt_2_4_totalmem: toplam hafıza
+txt_2_4_gvideo: Görüntü (video)
+txt_2_4_wbook: Wikibook / Wikikitap
+txt_2_4_wnews: Wikinews / Wikihaber
+txt_2_4_wsrc: Wikisource / Wikikaynak
+txt_2_4_wdict: Wiktionary / Wikisözlük
+txt_2_3_pw_errorchar: Aktif sistemin altındaki şifre alanlarında alıntı (") karakteri PeaZip arabirimi ile kullanılamaz , lütfen şifreyi değiştirin ya da Seçenekler > Ayarlar'da Arka-taraf çalışabilir kullanıcı arabirimi kısmında Konsol kipini değiştirin
+txt_2_3_envstr: Ortam değişkenlerini göster
+txt_2_3_never_pw: Parola için sorma
+txt_2_3_home: Kullanıcı kök dizini
+txt_2_3_on_pw: Sistem menüsünden çıkartma/liste/test işlemlerinde
+txt_2_3_test_pw100: <100MB arşivleri şifreleme için test et
+txt_2_3_test_pw: Şifreleme için test et (yavaş olabilir)
+txt_exclude_recourse: Hariç tut "altklasörlere başvurur"
+txt_action_extopen: işlem "Çıkar ve ilişkilendirilmiş uygulamayla birlikte aç"
+txt_error_passwordnotmatch: "Parola" ve "Parola doğrulama" alanları uyumlu değil, lütfen düzeltin
+txt_action_preview: İşlem "İlişkilendirilmiş uygulamayla birlikte önizle"
+txt_preview_hint: "Önizleme" hareketi "Çıkar ve aç" performansı ile aynı gibi fakat çıktı klasöründeki ön-bellek dizinine, otomatik kaldırmada arşiv kapalı.
+txt_better: (daha iyi)
+txt_default2: (varsayılan)
+txt_faster: (daha hızlı)
+txt_fastermem: (daha hızlı, daha az hafıza)
+txt_tempdir: (PeaZip geçici çalışma klasörü)
+txt_stream: (tarafından belirlenen "Akış kontrolü")
+txt_slowermem: (çok yavaş, daha fazla hafıza)
+txt_store: (depola, en hızlı)
+txt_newfolder: (yeni klasöre)
+txt_7z_exitcodeunknown: : Görevde bilinmeyen hata
+txt_list_isfolder:  [klasör]
+txt_none: <yok>
+txt_fd: 1.44 MB Disket sürücü
+txt_7z_exitcode1: 1: Uyarı: ciddi olmayan hata; i.e. bazı dosyalar kayıp ya da kilitli
+txt_attach10: 10 MB (dosya ekleme limiti)
+txt_7z_exitcode2: 2: Ciddi hata oluştu
+txt_7z_exitcode255: 255: İşlem kullanıcı tarafından durduruldu
+txt_fat32: 4 GB (FAT32 dosya boyutu en fazla)
+txt_dvd: 4.7 GB DVD
+txt_attach5: 5 MB (dosya ekleme limiti)
+txt_cd650: 650 MB CD
+txt_7z_exitcode7: 7: Hata: yanlış komut satırı girişi
+txt_cd700: 700 MB CD
+txt_type_description_7z: 7Z: yüksek sıkıştırma oranı ile zengin özelliklere sahip arşiv biçimi
+txt_dvddl: 8.5 GB DVD DL
+txt_7z_exitcode8: 8: Hata: istenilen işlem için hafıza yetersiz
+txt_abort: Zamanlanmış kopyala/taşı işlemi iptal edilsin mi?
+txt_about: Hakkında
+txt_action: Hareket
+txt_action_hint: İlişkili uygulama ile açma veya önizleme açık
+txt_add: Ekle
+txt_add_existing_archive: ekle (arşiv mevcutsa)
+txt_add_archive: Arşiv ekle
+txt_add_files: Dosya ekle
+txt_add_folder: Klasör ekle
+txt_add_path: Yolu ekle
+txt_add_tolayout: Seçilen dosya ve klasörleri arşive ekle
+txt_add_toarchive: Arşive ekle
+txt_add_tobookmarks: Yer imlerine ekle
+txt_address_hint: Adres: karakterler için ? dizi (katar) ler için * joker karakterleri kabul edilir; " ve ' ayraçlarına gerek yok
+txt_adv_filters: Gelişmiş filtreler
+txt_algo: Algoritma
+txt_all: Tümü
+txt_all_default: Tümü (varsayılan)
+txt_all_type: Bu türdeki tüm dosyaları
+txt_all_date: Tüm dosyalar tarih ile...
+txt_all_psize: Tüm dosyalar paketlenmiş boyut ile...
+txt_all_attributes: Aynı öznitelikteki tüm dosyaları
+txt_all_size: Tüm dosyalar boyut ile
+txt_error_input_upx: girdi olarak tek bir çalıştırılabilir dosyaya izin verir
+txt_always_pw: Daima parola için sor
+txt_ignore_ext: Daima yolu gözardı et "Çıkar ve..." için
+txt_ignore_disp: Daima yolu gözardı et "Gösterileni çıkart..." için
+txt_ignore_sel: Daima yolu gözardı et "Seçileni çıkart..." için
+txt_key_hint: Anahtar hash larını parolaya ekle; arşiv PeaZip tarafından açılabilir ve diğer uygulamalar aynı standartı takip eder, veya hash parolanın bir parçası olarak girilir
+txt_timestamp: Zaman damgasını arşiv ismine ekle
+txt_appoptions: Uygulama seçenekleri
+txt_type_description_arc: ARC: deneysel arşivleyici, güçlü, verimli ve zengin özellikli
+txt_archive: Arşiv
+txt_un7z_browse_ok: arşive başarıyla gözatıldı
+txt_interface: Arşiv gezgini arayüzü
+txt_archivecreation: Arşiv oluşturma
+txt_tarbefore_hint: Belirtilen formattan önce arşiv verisi TAR formatı içine sıkıştırılır.
+txt_archive_hint: Arşivleme, sıkıştırma, bölme ve özel dosyaları tutma, klasör ve ciltler
+txt_compressionratio_hint: Arşiv sıkıştırma oranı
+txt_archiving: Arşivleme:
+txt_cl_long: Argümanlar PeaZip arayüzü tarafından kabul edilebilir maksimum boyutu aşmış görünüyor, lütfen daha az girdi dosyası seçiniz (i.e. tek dosya yerine dizinleri seç)
+txt_overwrite_askbefore: Üzerine yazmadan önce sor (konsolda)
+txt_associated: İlişkilendirilmiş uygulama
+txt_attributes: Öznitelikler
+txt_author: Hazırlayan
+txt_ren_existing: Varolan dosyayı otomatik adlandır
+txt_ren_extracted: Çıkartılan dosyayı otomatik adlandır
+txt_autofolder: Arşivi içine çıkartmak için otamatik olarak yeni arşiv oluştur
+txt_back: Geri
+txt_backend: Backend binaries kullanıcı arabirimi
+txt_backupexe: Çalıştırılabilir yedek (önerilen)
+txt_bettercompression: daha iyi sıkıştırma
+txt_blogs: Bloglar
+txt_blowfish: Blowfish448 (64 bit bloklar)
+txt_bookmarks: Yer imleri
+txt_browse: Gözat
+txt_browser: Gezgin
+txt_aborted_error: Arşiv gözatma durduruldu, çok fazla zaman alacaktı. Seçimi arama yaparak veya filtre fonksiyonuyla daraltabilirsiniz (veya "Dizinsiz görünüm" ü çalıştırarak); çıkart/liste/test işlemleri bu sorundan etkilenmez.
+txt_list_browsing: Gözatılıyor:
+txt_archive_root: Gözatılıyor: arşiv kökü
+txt_type_description_bzip2: BZip2: Oldukça güçlü sıkıştırma, ortalama hız
+txt_pw_empty: Boş parola kabul edilmiyor, lütfen bir şifre belirtin veya "Şifrele" seçeneğini kaldırın
+txt_add_error: dosyaları ekleme/güncelleme veya silme gerçekleştirilemiyor; muhtemelen bu arşiv türü sadece gözat/çıkart ı destekliyor, veya belirtilen işlemi desteklemiyor (i.e. çoklu-cilt veya katı), veya PeaZip arşiv adını tam olarak işleyemiyor
+txt_un7z_browse_failure: arşive gözatılamaz
+txt_list_error: Arşiv içeriği listelemiyor, eğer arşiv parola korumalı vaya bozulmuş ise lütfen kontrol edin.
+txt_conf_cannotsave: Yapılandırma dosyası kayıt edilemiyor, eğer yol (dizin) yazılabilirse ve yeterli boş alana sahipse kontrol edin
+txt_check_hint: Rastlantısal veri bozulmalarını denetleyin; hatta hash algoritmaları kötü niyetle verilerin değiştirilmesini algılamak için uygundur (belgelere bakın)
+txt_check: Dosya doğrulama (hash)
+txt_check_select: Doğrulama (hash) oluştur
+txt_clear: Temizle
+txt_clearlayout: Görevi kaldır
+txt_pj_hint: Görev eklemek, değişikleri sıfırlamak ve GUI'den tanımı güncellemek için tıklayın
+txt_autoclose: PeaLaunche'i görev tamamlandığında kapat
+txt_cl: komut satırı:
+txt_compare: Dosyaları karşılaştır
+txt_compress: Sıkıştır
+txt_compress_executable: Çalıştırılabilir sıkıştır
+txt_compress_openforwriting: Açılmış (kullanımdaki) dosyaları sıkıştır
+txt_compression: Sıkıştırma
+txt_compmanagement: Bilgisayat yönetimi
+txt_pw_confirm: Parolayı doğrula
+txt_console: Konsol
+txt_console_interface: Konsol: yerel arayüz
+txt_content: İçerik
+txt_controlpanel: Denetim masası
+txt_convert: Diski NTFS'ye dönüştür
+txt_copy: Kopyala
+txt_copyto: Klasöre kopyala
+txt_create: Arşiv oluştur
+txt_create_archive: Arşiv oluştur
+txt_title_create: Arşiv oluştur, sıkıştır, şifrele, böl...
+txt_create_keyfile: Parola anahtarı oluştur
+txt_create_folder: Yeni klasör oluştur
+txt_create_theme: Geçerli ayarlardan yeni tema oluştur:
+txt_rr: Kurtarma kaydı oluştur
+txt_create_sfx: Kendi açılan (SFX) arşiv oluştur
+txt_cr_current: Geçerli yol (dizin) veya filtre sıkıştırma oranı
+txt_custom: Özel
+txt_type_description_custom: Özel (Uzman kullanıcılar): çalıştırılabilir ad ve parametre girin
+txt_customapp: Özel uygulama
+txt_custom_parameters: Özel parametreler
+txt_customsize: Özel boyut
+txt_cut: Kes
+txt_datetime: Tarih/zaman
+txt_default: Varsayılan
+txt_default_compression: varsayılan sıkıştırma
+txt_default_format: Varsayılan format
+txt_theme_default: Varsayılan tema
+txt_hard_reset_hint: Yerimi dosyasını sil
+txt_desktop: Masaüstü
+txt_dictionary: Sözlük
+txt_dirs: dizin,
+txt_dis: Açıklama:
+txt_disk_cleanup: Disk temizleme
+txt_disk_defrag: Disk birleştiricisi
+txt_disk_management: Disk yönetimi
+txt_dispaly: Sonuçları ..olarak göster
+txt_displayedmnu_obj: gösterilen
+txt_displayedobjects: Gösterilen dosyalar
+txt_nocompress: sıkıştırma
+txt_delete: Seçilen dosyaları silmek istiyor musunuz? Bu işlem geri alınamaz ve dosyalar geri dönüşüm kutusundan kurtarılamaz
+txt_wipe: Seçili dosyaları güvenli olarak silmek istiyor musunuz? Bu işlem geri alınamaz dosyalar kurtarılamaz.
+txt_done: Tamam
+txt_edit: Seç
+txt_elapsed: geçen zaman:
+txt_error_emptycl: Boş komut satırı!
+txt_encrypt: Şifrele
+txt_encrypted: şifrelenmiş
+txt_encryption: Şifreleme
+txt_note: Not/açıklama ekle
+txt_random_keys: Rastgele anahtar gir
+txt_random_keys_hint: Rastgele anahtar gir (hatırlamanız gerekmez)
+txt_ent: Enthropy (ölçüm) değerlendirme
+txt_ent_tools: Enthropy örnekleme araçları
+txt_eqorlarger: eşit veya seçilen dosyadan daha büyük
+txt_eqorrecent: eşit veya seçilen dosyadan daha güncel
+txt_eqorolder: eşit veya seçilen dosyadan daha eski
+txt_eqorsmaller: eşit veya seçilen dosyadan daha küçük
+txt_equal: seçilen dosyaya eşit
+txt_erase_hint: Dosyaları sil: Üzerine rastgele veri ile yaz, boyutu gizle, yeniden adlandır, tamamen sil
+txt_extraction_error: Seçilen dosya çıkartma hatası. Arşiv şifre korumalıysa lütfen sağlayın
+txt_exclude_hint: Dosyaları dahil etme, her bir satırda; * ve ? sembollerini kullan; " ve ' sınırlayıcılar gerekli değil
+txt_exclusion_recourse: Hariç tutulan filtreler altklasörlere başvursun
+txt_exclusion: Hariç tut:
+txt_exe: Çalıştırılabilir
+txt_overwrite_qry: hedef klasörde var; kaynak dizin ile aynı isimdeki dosyaların üzerine yaz? (İptal: bu dosyayı kopyalamayı atla)
+txt_confirm_overwrite: exists; Üzerine yazmak ister misin? (Hayır geçiştir)
+txt_explore_outpath: Çıkış dizinini aç
+txt_explore_path: Dizine gözat
+txt_ext: Çkrt:
+txt_caption_extract: Çıkart
+txt_ext_nopath: Çıkart (dizinsiz)
+txt_ext_all: Tümünü çıkar
+txt_ext_allhere: Tümünü buraya çıkar
+txt_ext_allto: Tümünü çıkar
+txt_extopen_custom: Çıkar ve özel uygulamayla birlikte aç
+txt_extopen_with: Çıkar ve ...birlikte aç
+txt_ext_disp_here: Gösterilenleri buraya çıkart
+txt_ext_disp: Gösterilen dosyaları çıkart
+txt_ext_disp_to: Gösterilen dosyaları ..çıkart 
+txt_ext_here: Buraya çıkart
+txt_ext_sel_here: Seçilenleri buraya çıkart
+txt_ext_sel: Seçilmiş dosyaları çıkart
+txt_ext_sel_to: Seçilmiş dosyaları ..çıkart
+txt_extobj: Dosya çıkart
+txt_newfoldermenu: Yeni klasöre çıkart
+txt_extto: ..çıkart
+txt_level_fast: hızlı
+txt_fastcompr: hızlı sıkıştırma
+txt_fastopen:  Hızlı açma rutini, eğer liste aşılırsa gözatmayı durdur
+txt_level_fastest: en hızlı
+txt_favformats: Tercih edilen formatlar
+txt_file: Dosya
+txt_filebrowser: Dosya gezgini/arşiv gezgini
+txt_filetools: Dosya araçları
+txt_files: dosya,
+txt_nfiles: Dosya
+txt_fs: Dosya sistemi
+txt_filters_recourse: filtreler altklasörlere başvurur
+txt_filters: Filtreler
+txt_flat: Düz (tümünü göster)
+txt_list_flat: Düz görünüm:
+txt_unit_floppy: Disket sürücü
+txt_foldername: Klasör adı
+txt_nfolders: Klasör
+txt_error_input_multi: format giriş olarak tek dosya kabul ediyor; dosyaları önce tar arşivin içine koyarak kaydetmek için "Önce TAR" düğmesini kullanabilirsiniz, aksi taktirde başka bir format seçebilirsiniz. İPUCU: giriş verileri seçildikten sonra arşiv formatını seçin: "önce TAR" düğmesi otomatik olarak ayarlanacak
+txt_fwd: İleri
+txt_list_found: Bulunan:
+txt_free: Serbest
+txt_free2: boş
+txt_name_full: Tam ad
+txt_function: İşlem
+txt_general: Genel
+txt_multithreading: kapsamlı çoklu işlem
+txt_go_browser: Dosya gezgini
+txt_go_path: Gözat (PeaZip)
+txt_guicl: Grafik + konsol
+txt_guipealauncher: Grafik: PeaLauncher tarafından paketlendi
+txt_graphic: Grafik klasörü
+txt_gridaltcolor: Alternatif ızgara rengi
+txt_gridrowheight: Izgara çizgi yüksekliği
+txt_gui: GUB
+txt_type_description_gzip: GZip: Hızlı sıkıştırma
+txt_here: burada
+txt_list_history: Geçmiş
+txt_homeroot: Bilgisayar/arşiv kök düzeyi
+txt_quickbrowse_hint: Eğer gözatma durursa kullanıcı arama veya filtreleme fonksiyonlarını kullanarak seçimi daraltabilir; çıkart/liste/test fonksiyonları hiçbir şekilde etkilenmez.
+txt_backupexe_hint: eğer birşeyler yanlış giderse ve fonksiyonel olmayan bir sonuç sürerse (etkilerse), orjinal çalıştırılabiliri otomatik yedek kopyasından kurtarabilirsiniz
+txt_attach: Eğer e-posta sunucusu  bu komutu destekliyorsa arşiv yeni bir e-postaya eklenecek
+txt_images: Resimler
+txt_include_hint: Dosyaları dahil et, her bir satır; * ve ? sembollerini kullan; " ve ' ayraçları gerekli değil
+txt_filters_hint: Dahili ve Harici filtreler 7z binary içindir, lütfen filtreler nasıl çalışır anlamak için 7-Zip belgelerini dikkatli okuyun
+txt_inclusion_recourse: Dahil edilen filtereler altklasörlere başvursun
+txt_inclusion: Dahil et:
+txt_error_function: Yanlış fonksiyon çağrıldı
+txt_info: Bilgi
+txt_infoall: Tüm bilgi
+txt_infodisp: Gösterilen dosyanın bilgisi
+txt_infosel: Seçilen dosyanın bilgisi
+txt_inputinfo: Giriş bilgisi
+txt_input_list: Giriş listesi:
+txt_iop: giriş, çıkış, parametreler
+txt_ipo: giriş, parametreler, çıkış
+txt_input: giriş:
+txt_integrity: Bütünlük kontrolü
+txt_chunk_size: Geçersiz özel boyut, lütfen sayısal değerler ile düzeltin
+txt_invertsel: Seçimi ters çevir
+txt_type_exe: Windows çalıştırılabilir dosyası, çalıştırmak istiyor musunuz? (PeaZip arşiv gezginiyle açmak için "Hayır"; bu yolla sadece NSIS kurulum dosyaları, 7-Zip sfx ve .MSI kurulum dosyalarına gözatılabilir)
+txt_return_to_archive: şu anda açık; gözatmak istiyor musunuz?
+txt_not_accessible: Erişilebilir değil
+txt_type_unsupported: desteklenen arşiv formatı değil
+txt_checkname_failed: geçerli bir isim değil.
+txt_not_accessible_list: erişilebilir değil, lütfen dosya listesinin doğruluğunu veya güncelliğini kontrol edin
+txt_theme_create_error: Tema oluşturmak mümkün değildi, tema ismi olarak klasör için geçerli bir isim kullanmayı deneyin ve yazılabilir bir yol (dizin) seçin
+txt_theme_exists: şu anda var, lütfen farklı bir yol seçin
+txt_job_code: işlem kodu:
+txt_job_definition_saved: Görev tanımı kayıt edildi
+txt_job_success: Görev başarıyla tamamlandı!
+txt_join: Birleştir
+txt_joinfiles: Dosyaya birleştir
+txt_keyfile: Parola anahtarı
+txt_keyfile_not_found: Anahtar bulunamadı veya okunamadı. Lütfen yeni bir anahtar seçin.
+txt_keyfile_notcreated: Parola anahtarı oluşturulmadı
+txt_larger: seçilen dosyadan daha büyük
+txt_lastused: Son kullanılan
+txt_launch: Görev başlat
+txt_layout: Düzen
+txt_filelist_savedas: Görev ..olarak kaydedildi
+txt_level: Düzey
+txt_license: Lisans
+txt_caption_list: Liste
+txt_list_details: Liste (ayrıntılarla)
+txt_list_all: Tümünü listele
+txt_list_disp: Gösterilen dosyaları listele
+txt_list_sel: Seçilen dosyaları listele
+txt_toggle_warning: İçeriğin dizinsiz görünüm (düz) listelemesi uzun zaman alabilir. Devam edilsin mi?
+txt_loadfile: Dosya yükle
+txt_loadlayout: Görev yükle
+txt_unit_hd: Yerel disk
+txt_localization: Yerelleştirme
+txt_lpaqver: LPAQ sürümü
+txt_type_description_lpaq: LPAQ: PAQ'ın en hızlı sürümü, çok iyi sıkıştırma
+txt_maininterface: Ana arayüz
+txt_maxcomp: En yüksek sıkıştırma modu
+txt_level_maximum: en yüksek
+txt_restartrequired: Uygulamanın tamamlanması tekrar başlatma gerektirebilir
+txt_required_memory: MB bellek gerekli
+txt_method: Metod
+txt_misc: Çeşitli
+txt_modify: Dosya işlemleri
+txt_morecontrols: Daha fazla kontrol (tarih, yerimleri, ...)
+txt_morerecent: seçilen dosyadan daha güncel
+txt_ent_hint: Fareyi hareket ettirin, düzenleme alanına anahtarı girin, entropyleri sistemden almak için dosya yükleyin
+txt_moveto: Taşı
+txt_mypc: Bilgisayar kök dizini
+txt_list_na: belirsiz
+txt_name: Ad
+txt_naming: Adlandıma kuralı
+txt_unit_remote: Ağ sürücüsü
+txt_newarchive: yeni arşiv
+txt_cnewfolder: Yeni klasör
+txt_news: Haberler
+txt_no: Hayır
+txt_noinput: Erişilemez giriş
+txt_nocompress_hint: sıkıştırma yok (çok hızlı)
+txt_split_noinput: Hiçbir giriş seçilmedi; lütfen bölmek için bir dosya seçin
+txt_open_noinput: Hiçbir giriş seçilmedi; lütfen bir arşiv seçin (ilk arşivin cilti (değer) çok-ciltli arşivler için)
+txt_list_nomatch: eşleşme yok
+txt_singlethread: çoklu işlem yok
+txt_none2: yok
+txt_nonsolid: Katı değil
+txt_level_normal: normal
+txt_copy_error: kopyalama veya taşıma başarıyla gerçekleştirilemedi, hata kodu:
+txt_description: Not/açıklama
+txt_compare_second: Karşılaştırmak için dosya seçin
+txt_peaobj: dosya kontrol
+txt_displayed_obj: dosya
+txt_olderthan: seçilen dosyadan daha eski
+txt_on: açık
+txt_ondblclick: Çift tıklamada:
+txt_opacity: Saydamlık
+txt_open: Aç
+txt_openarchive: Arşiv aç
+txt_title_open: Arşiv aç, şifre çöz, birleştir...
+txt_open_bookmark: Yerimi aç
+txt_cphere: Komut istemi aç
+txt_open_file: Dosya aç
+txt_open_files: Dosya aç
+txt_open_path: Dizin aç
+txt_opensource: Açık kaynaklı taşınabilir arşivleyici
+txt_openwith: Birlikte aç
+txt_aborted: İşlem iptal edildi
+txt_unit_cd: Optik sürücü
+txt_options: Seçenekler
+txt_other: Diğer
+txt_otherparams: Diğer parametreler (serbest düzenleme)
+txt_oip: çıkış, giriş, parametreler
+txt_opi: çıkış, parametreler, giriş
+txt_output: çıkış:
+txt_overwrite: Varolan dosyanın üzerine yaz
+txt_compressed_size: Paketlenmiş
+txt_paqver: PAQ sürümü
+txt_type_description_paq: PAQ: yavaş fakat son derece güçlü sıkıştırıcı
+txt_pio: parametreler, giriş, çıkış
+txt_poi: parametreler, çıkış, giriş
+txt_parameters: Parametreler:
+txt_error_partial: Kısmi çıkartma geçerli arşiv türü için uygulanamaz
+txt_passes: Geçişler
+txt_pw: Parola
+txt_pwlength: Parola uzunluğu (4..64)
+txt_un7z_browse_pw: parola gerekebilir
+txt_un7z_browse_pw_other: parola yanlış olabilir
+txt_paste: Yapıştır
+txt_path: Dizin:
+txt_pea_appcolor: Pea uygulama rengi
+txt_pea_textcolor: Pea yazı rengi
+txt_type_description_pea: PEA: hızlı sıkıştırma ve güvenlik odaklı arşiv biçimi
+txt_peazip_new: PeaZip (yeni)
+txt_peazip_help: PeaZip yardım (çevrimiçi)
+txt_peazip_web: PeaZip website
+txt_performall: Tüm desteklenen altoritmaları uygula
+txt_name_provide: Yeni ad (lütfen \ / : * ? ' " < > | karakterlerinden kaçının)
+txt_upxorstrip: Lütfen Strip ve / veya UPX seçin binary üzerinden
+txt_not_removable_file: PeaZip'in kaldırması için lütfen kullanımdaki dosyaları kapatın
+txt_not_removable: PeaZip'in klasörü kaldırması için lütfen kullanımdaki dosyaları kapatın
+txt_custom_executable_missing: Lütfen çalıştırılabilir bir dosya adı girin
+txt_type_unsupported_select: Please select a supported archive type:
+txt_no_theme_name: Lütfen geçerli bir tema adı belirtin
+txt_please_wait: Lütfen bekleyin
+txt_copy_wait: Lütfen şu anda zamanlanmış dosya kopyala/yapıştır işlemini bekleyin önceden zamanlanmış diğer aynı türdeki  işlemleri tamamlamak için
+txt_previewwith: ile göster...
+txt_projectadmin: Proje yöneticisi:
+txt_type_description_quad: BALZ/QUAD: yüksek performans ROLZ-temel dosya sıkıştırıcıları
+txt_quickdelete: Hızlı sil
+txt_quit: Çıkış
+txt_unit_ram: RAM disk
+txt_read: Okuduğu formatlar:
+txt_recentarchives: Son kullanılan arşivler
+txt_rr_hint: Kurtarma kayıtları veri bozulması durumunda arşivleri düzeltmeyi denemeye imkan verir
+txt_search_refine: Arama filtresi belirle, ? ve * özel karakterleri kabul edilir
+txt_fefreshf5: Tazele (F5)
+txt_release: sürüm:
+txt_unit_removable: Kaldırılabilir birim
+txt_remove_bookmark: Yerimini kaldır
+txt_remove_external_unit: Donanımı güvenle kaldır (harici)
+txt_removeselected: Seçilen dosyayı kaldır
+txt_rename: Yeniden adlandır
+txt_caption_repair: Onar
+txt_restartrequired2: işlemin uygulanması yeniden başlatma gerektirir
+txt_reset: Sıfırla
+txt_reset_archivename: Arşiv adını sıfırla
+txt_hardreset: Yerimlerini sıfırla
+txt_reset_theme: Dahili temaya sıfırla
+txt_restore_att: orjinal özniteliklere ayarla
+txt_run_as: Farklı çalıştır (boş parola ile kullanıcı değiştirilemez)
+txt_run_as2: Farklı kullanıcı olarak çalıştır
+txt_sample: Örnek: 
+txt_saveas: Farklı kaydet
+txt_savehistory: Son kullanılan arşiv geçmişini kaydet
+txt_save_infolder: Klasöre kaydet (otomatik)
+txt_savejob: Görevi kaydet
+txt_savejobdefinition: Görev tanımını kaydet
+txt_savejobdefinition_hint: Görev tanımını düz yazı olarak kaydet; betiklerinizden (script) kullanıbilirsiniz
+txt_savelayout: Görevi kaydet
+txt_save_winstate: Ana pencere konumunu kaydet
+txt_search: Ara (yinelemeli, biraz zaman alabilir)
+txt_searchanddrag: Ara ve buraya sürükle
+txt_searchfor: Ara
+txt_nrsearch: Burada ara (yinelemeli değil)
+txt_search_hint: Filtre ile eşleşen bulmak için arşiv altklasörlerinde ara
+txt_search_web: Web'de ara
+txt_list_searching: Aranıyor...
+txt_securedelete: Güvenli sil
+txt_default_description: Bir işlev seçin veya dosyaları buraya taşıyın
+txt_selectall: Tümünü seç
+txt_selectdir: Dizin seç
+txt_selected_obj: Seçilen
+txt_selected_objects: Seçilen dosyalar
+txt_sfx: Kendini açabilen (SFX)
+txt_sendbymail: E-posta ile gönder (destekleniyorsa)
+txt_set_defaults: Uygulamanın varsayılan parametrelerini yapılandır
+txt_settings: Ayarlar
+txt_sfx_interface: SFX arayüzü
+txt_showhints: İpuçlarını göster
+txt_show_messages: Bilgi mesajlarını göster
+txt_showpw: Parola alanı içeriğini göster
+txt_singlevol: Tek parça
+txt_size: Boyut
+txt_sizeb: Boyut (B)
+txt_skip_existing: Varolan dosyaları atla
+txt_slowercomp: yavaş sıkıştırma fakat eşit olarak hızlı açma işlemi
+txt_smaller: seçilen dosyadan daha küçük
+txt_solid: Katı
+txt_solid_block: Katı blok
+txt_solid_auto: Katı, otomatik ayarlama
+txt_solid_extension: Katı, uzantısı ile grup
+txt_listtest: üzgünüz, liste/test işlemi bu format için henüz uygulanabilir değil
+txt_sortbysel: Seçim durumuna göre sırala
+txt_list_sorting: Sınıflandırma...
+txt_speed: hız
+txt_split: Böl
+txt_type_description_split: İsteğe bağlı bütünlük kontrolü ile bir dosyayı böl
+txt_split_file: Dosyayı böl
+txt_list_nostats: istatistik kullanılabilir değil
+txt_status: Durum
+txt_level_store: depola
+txt_stream_control: Akış kontrolü
+txt_strip: UPX öncesi çıkar (strip)(önerilen)
+txt_keyfile_created: Anahtar başarıyla oluşturuldu ..olarak:
+txt_suggestpw: Parola öner
+txt_noupx: Semboller kazındı (stripped), UPX sıkıştırma dışında tutuldu
+txt_syntax: Sözdizimi:
+txt_sysbenchmark: Sistem testi
+txt_benchmark: Sistem testi birkaç dakika alabilir ve varolan tüm CPU ve hafıza kaynaklarını kullanır. Sistem test sırasında yanıt vermeyebilir. Devam edilsin mi?
+txt_systools: Sistem araçları
+txt_tarbefore: Önce TAR
+txt_type_description_tar: TAR: UNIX sistemleri üzerinde anaakış arşivleme biçimi
+txt_taskman: Görev yöneticisi
+txt_caption_test: Test
+txt_testall: Tümünü test et
+txt_testdisp: Gösterilen dosyaları test et
+txt_testpw: parola/anahtar test et
+txt_testsel: Seçilen dosyaları test et
+txt_col_hint: ikon renkleri ve diğer GUI elemanları ile iyi entegrasyon için sırasıyla renk seçilmiş olmalıdır
+txt_bookmarks_hint: "geçmiş/yerimleri düğmesi" üstünde ve "Daha fazla kontrol" ikonuna tıklayarak, dosya gezgini arayüzünde yerimilerinin tam ve düzenlenebilir listesi kullanılabilir durumda
+txt_archive_noinput_tolist: Düzen boş: Lütfen arşiv düzenini doldurmak için Dosya ekle, Klasör ekle veya Düzen yükle kullanın
+txt_theme: Tema
+txt_icons_found: Tema başarıyla yüklendi.
+txt_themename: Tema adı
+txt_icons_not_found: Tema düzgün kurulamadı. Varsayılan temaya veya çalışan herhangi birine geçmeyi deneyin.
+txt_theme_create_success: tema başarıyla oluşturuldu
+txt_theming: Tema
+txt_extand_error: Bu fonksiyon aynı zamanda tek bir dosya üzerinde uygulanabilir
+txt_threads: İşlemler
+txt_titlescolor: Başlık rengi
+txt_to: ..e ..a
+txt_toggle_browseflat: Dizinsiz görünüm aç/kapat
+txt_toggle_historybookmarks: Tarih - yerimleri aç/kapat
+txt_toolbarscolor: Araç çubuğu rengi
+txt_tools: Araçlar
+txt_best: en iyi ayarları dene (yavaş)
+txt_type: Tür
+txt_level_ultra: aşırı (ultra)
+txt_error_openfile: Belirtilen dosya açılamıyor
+txt_cl_hint: UNACE ve UPX her zaman konsol mod kullanarak çalıştır; liste, test ve benchmark görevlerini her zaman GUI mod kullanarak çalıştır
+txt_ace_missing: UNACE eklentisi eksik; ACE arşivlerini kullanmak için PeaZip web sitesinden eklentiyi indirebilirsiniz (UNACE açık kaynak değil, eklenti temel paket özelliği değil)
+txt_units: units
+txt_unit_unknown: Bilinmeyen sürücü tipi
+txt_un7z_pw_untested: Test edilmedi
+txt_up: Yukarı
+txt_update: güncelle (arşiv mevcutsa)
+txt_type_description_upx: UPX: sadece çalıştırılabilir dosyaları sıkıştır
+txt_advfilters: Gelişmiş filtre kullan
+txt_openfiles_hint: Diğer uygulamalar tarafından yazmak için açılmış dosyaları (kullanımdaki) arşive eklemek için bu seçeneği kullanın (yedekleme görevi için kullanışlı)
+txt_usenet: Usenet
+txt_user_name: Kullanıcı adı; eğer gerekliyse kullanıcı@ALANADI veya ALANADI\kullanıcı şeklinde kullanın.
+txt_using: Kullanılanlar:
+txt_volumepea: Cilt kontrol
+txt_volume_size: Cilt boyutu
+txt_type_ext_uns: başarıyla çıkartıldı
+txt_websearch: Web araması
+txt_websites: Websiteleri
+txt_word: Sözcük
+txt_write: Oluşturduğu formatlar:
+txt_ramdompw_hint: Buradan rasgele oluşturulan şifre kopyalayabilirsiniz
+txt_exe_hint: Özel sıkıştırma için çalıştırılabilir isim ve parametreleri girebilir ve sözdizimi yapısını seçebilirsiniz. Unutmayın ki siz de manuel olarak "Konsol" sekmesinde komut sözdizimi değiştirebilirsiniz.
+txt_pj_hint2: GUI frontend (grafik arayüzü) not (memo) alanı altından görev tanımını alabilirsiniz. Ondan sonra GUI için tanımlanmış görevi değişiklik ve kayıp olmadan düzenleyebilir, başlatabilir, kaydedebilirsiniz.
+txt_type_description_zip: ZIP: hızlı arşivleme/sıkıştırma formatı, windows sistemlerinde anaakış (varsayılan format)
+txt_zipcrypto_hint: ZipKripto (kalıt)
+
+=== end PeaZip text group ===
+
+=== PeaLauncher text group ===
+
+txt_5_6_update: Check for updates
+txt_5_6_cml: System context menu language
+txt_5_6_donations: Donations
+txt_5_6_localization: Localization
+txt_5_6_runasadmin: Run as administrator
+txt_5_6_help: Support
+txt_5_5_cancelall: Cancel all
+txt_5_3_details: Details
+txt_5_3_files: files
+txt_5_3_folders: folders
+txt_5_3_info: Info
+txt_5_3_list: List
+txt_5_3_os: Original size
+txt_5_3_ps: Packed size
+txt_5_3_test: Test
+txt_5_0_extract: Extract
+txt_5_0_from: from
+txt_5_0_in: in
+txt_5_0_to: to
+txt_4_5_search: arama
+txt_4_0_drag: Arşivi çıkarmak için buraya sürükleyin, veya 
+txt_4_0_dragorselect: Buraya sürükleyin veya dosya seçin
+txt_4_0_select: dosya seç
+txt_3_6_selectdir: Klasör seç
+txt_3_5_close: Kapat
+txt_3_0_details: Mod ayrıntıları için, "Rapor" görev logunu içerir, ve "Konsol" görev tanımını komut satırı olarak içerir
+txt_3_0_hints: Hatalar hakkında ipuçları
+txt_3_0_arc: Bazı giriş dosyaları okunamıyor (kilitli olabilir, erişilebilir değil veya bozulmuş)
+txt_3_0_ext: Arşiv geçerli işlem için farklı bir şifre istiyor
+txt_2_8_oop: Görev tamamalanınca çıktı dizinini aç
+txt_2_7_validatefn: İşlem durduruldu, geçersiz dosya ismine rastlandı:
+txt_2_7_validatecl: İşlem durduruldu, potansiyel olarak tehlikeli komuta rastlandı (i.e. komut birleştirme program kapsamında kabul edilmiyor):
+txt_2_6_open: Arşiv aç
+txt_2_5_ace_missing: UNACE eklentisi kayıp; ACE arşivlerini taşımak için bu eklentiyi PeaZip websitesinden indirebilirsiniz (UNACE açık kaynak değil, bu eklenti temel paketin özelliği değil)
+txt_2_3_pw_errorchar_gwrap: tırnak karakteri PeaLauncher tarafından geçerli sistem altında şifreyle kullanılmaz, lütfen şifreyi değiştirin veya Seçenekler > Ayarlar da "Backend binaries kullanıcı arayüzü" bölümünde Konsol modunu seçin
+txt_2_3_renameexisting: Varolan dosyaları otomatik adlandır
+txt_2_3_renameextracted: Çıkartılan dosyaları otomatik adlandır
+txt_2_3_cancel: İptal
+txt_2_3_encryption: Şifreleme
+txt_2_3_extinnew: Yeni klasöre çıkart
+txt_2_3_keyfile: Parola anahtarı
+txt_2_3_kf_not_found_gwrap: Anahtar dosyası bulunamadı veya okunamıyor. Lütfen farklı bir anahtar dosyası seçin.
+txt_2_3_moreoptions: Daha çok seçenek...
+txt_2_3_nopaths: Geçersiz yol
+txt_2_3_options: Seçenekler
+txt_2_3_overexisting: Varolan dosyaların üzerine yaz
+txt_2_3_pw: Parola
+txt_2_3_skipexisting: Varolan dosyayı atla
+txt_job_unknown: : Bilinmeyen hata oluştu
+txt_stdjob: [animasyon iş tamamlanındığında duracak]
+txt_benchmarkjob: [sistem test sırasında yavaş yanıt verecek (birkaç dakika)]
+txt_defragjob: [birleştirme sırasında yanıt vermeyecek, arka planda çalıştırabilirsiniz]
+txt_consolejob: [görev geribildirim ve ayrıntılı ilerlemesi konsol penceresinde kullanılabilir]
+txt_job1: 1: Uyarı: ciddi olmayan hata; i.e. bazı dosyalar kayıp vaya kilitli
+txt_job127: 127: İstenilen işlem çalıştırılamaz
+txt_job2: 2: Ciddi hata oluştu
+txt_job255: 255: Görev kullanıcı tarafından durduruldu
+txt_job7: 7: Hata: yanlış komut satırı var
+txt_job8: 8: Error: istenilen işlem için yeterli hafıza yok
+txt_autoclose: Görev tamamlandığında bu pencereyi kapat
+txt_crscale: Sıkıştırma oranı (daha yavaş, daha iyi):
+txt_console: Konsol
+txt_benchscale: Core 2 Duo 6600 değerlendirmesi, eşdeğer MHz hızı.
+txt_create: Oluştur
+txt_done: Başarılı:
+txt_nocl: Boş komut satırı
+txt_error: Hata:
+txt_explore: Gözat
+txt_extto: 'a-e çıkart
+txt_halt: Görev tamamlanınca sistemi durdur
+txt_halted: Durduruldu:
+txt_hardware: donanım
+txt_high: Yüksek öncelik
+txt_idle: Düşük öncelik
+txt_input: Giriş:
+txt_jpaused: Görev duraklatıldı
+txt_jresumed: Görev devam ettiriliyor
+txt_job_started: Görev başlatıldı
+txt_jobstatus: Görev durumu:
+txt_jstopped: Kullanıcı tarafından görev durduruldu
+txt_jobstopped: Görev kullanıcı tarafından durduruldu; "Gözat" butonuna tıklayarak veya görev loglarını okuyarak görevin kısmi sonuçlarını inceleyebilirsiniz.
+txt_job_success: Görev başarıyla tamamlandı
+txt_lt: Arşiv listele/test et/onar
+txt_normal: Normal öncelik
+txt_ok: Tamam
+txt_output: Çıkış:
+txt_pause: Duraklat
+txt_paused: Duraklatıldı,
+txt_p_high: Yüksek öncelik ayarlandı
+txt_p_idle: Düşük öncelik ayarlandı
+txt_p_normal: Normal öncelik ayarlandı
+txt_p_realtime: Gerçek zamanlı öncelik ayarlandı
+txt_rating: Değerlendirme:
+txt_rt: Gerçek zamanlı öncelik
+txt_report: Rapor
+txt_resume: Devam
+txt_priority: Görev önceliğini ayarlamak için tıklayın
+txt_running: Çalışıyor,
+txt_isrunning: Çalışıyor...
+txt_saveas: Farklı kaydet
+txt_savejob: Görev tanımını kaydet (parola içerebilir!)
+txt_savelog: Görev loglarını kaydet
+txt_software: yazılım
+txt_speedscale: Hız, logaritmik skala (daha yüksek, daha iyi):
+txt_status: Durum
+txt_stop: Dur
+txt_bench: Sistem testi
+txt_threads: İşlem parçacıkları:
+txt_time: Zaman:
+
+=== end PeaLauncher text group ===
+
+=== about text group ===
+
+ARŞİV(LER)İ ÇIKART
+Sistemden
+- Arşiv(ler)e sağ-tık ve Sistem'in sağ-tık menüsünde, "Buraya çıkart" ya da "Buraya çıkart (Yeni klasörde)" seçeneklerine tıklayın! Böylece daha fazla işleme gerek kalmadan çıkartma başlayacaktır
+- başka şekilde ise, daha fazla seçenek için "Çıkart..." menü komutunu seçin: Çıktı dizini, şifre, dosyaları yeni klasöre çıkart, esgeç, yeniden adlandır ya da üzerine yaz vs..
+
+Arşivi PeaZip ile aç, yani arşive çift tıklama, ya da arşivi PeaZip penceresi veya simgesi üzerine sürükle
+- Araç çubuğunda ya da Sistemin sağ-tık menüsünde "Çıkart"a tıkla ve sadece seçilmiş nesneleri, (çıktı dizini, şifre, adlandırma politikası, yeni klasöre çıkart vs.) ayarları yapabileceğiniz, doğrulama penceresi ile çıkart
+- Dosyaları ya da klasörleri, hedef dizine sürükleyin, sadece seçilmiş içerik çıkartılacaktır (Daha fazla bilgi için, PeaZip'in Sürükle-ve-bırak başlığı altına bakınız)
+- Hızlı çıkartma için araç çubuğunun sağında bulunan, "Çıkartma" açılıp menüsüne tıklayın, arşiv direk sık kullanılan hedefe çıkartılacak (Doğrulama pencereleri geçiliyor) ve en önemli seçenekleri tanımlayın; klavye kısayolu: Ctrl+E (ya da F12) bütün arşivi çıkarır, çıktı klasörünü sorar; Ctrl+Alt+E arşivin bulunduğu klasöre çıkarır; Ctrl+Shift+E masaüstüne çıkarır; Ctrl+Alt+Shift+E belgelerime çıkarır; Ctrl+1..8 tanımlı 1..8 kısa yıllarına çıkarır (tanımlı olması halinde)
+
+PeaZip'i aç, bir ya da daha fazla arşivi seç ve “Çıkart” araç çubuğundaki y ada sistemin sağ-tık menüsündeki "Çıkart"a tıkla, ya da hızlı çıkartma hedeflerini kullanın, bir önceki yazıda anlatıldığı gibi.
+
+ARŞİVDEN SADECE SEÇİLMİŞ NESNELERİ ÇIKARMAK
+PeaZip içinde bir arşiv açın (çift tıklama ile) ya da bir arşiv dosyasını, PeaZip penceresine ya da simgesine sürükleyin
+- araç çubuğunda "Çıkart"a tıklayın: sadece seçilmiş nesneler çıkartılacaktır
+- dosya ve klasörleri, çıkarmak istediğiniz yere sürükleyin, sadece seçilmiş nesneler çıkartılacaktır
+- sağ-tık ve menü içindeki “Çıkart” grubunda bulunan "Seçilenleri çıkart" seçeneğine tıklayın (sadece seçilenleri çıkartır) ya da “Görüntülenleri çıkart” (Aktif klasörün içeriğini ya da aktf arama filtresini çıkartır)
+
+ARŞİV AÇMAK YA DA ÇIKARMAK İÇİN ŞİFRE GİRMEK
+Bir şifre ya da opsiyon olarak anahtar-dosya girmek için padlock simgesine tıklayın
+Bu simge, PeaZip'in dosya gezgin penceresi durum çubupunda ve arşiv çıkarma arabiriminde bulunmaktadır; bir kez şifre girdikten sonra, simge rengi değişecektir.
+
+ARŞİV OLUŞTURMAK
+Sistem'den
+- Arşivlenecek nesneler üzerinde sağ tıklayın ve sistem sağ-tık menüsünde "Arşive ekle" düğmesine tıklayın ya da Gönder seçeneğine. Bu işlem arşiv oluşturma doğrulama penceresini açacaktır! Daha fazla ayar "Gelişmiş" sekmesinde mevcuttur; arşivi oluşturmak için Tamam düğmesine tıklayın.
+- alternatively, drag files/folders to PeaZip’s window or shortcut; the same archive creation interface will be shown.
+
+PeaZip'den 
+- arşivlenecek nesneleri seçin ve "Ekle" düğmesine tıklayın; aynı arşiv oluşturma penceresi görünecektir.
+
+VAROLAN ARŞİVE DOSYA VE KLASÖR EKLEYEREK GÜNCELLEMEK
+PeaZip'de bir arşiv aç (Çift tıklayın, ya da arşivi PeaZip penceresi veya simgesine sürükleyin), dosya ve klasörleri eklenmesi istenen arşive sürükleyin (ya da "Ekle" düğmesine tıklayın ve uygulamanın sağ-tık menüsünü kullanarak nesneleri arşive ekleyin).
+Arşiv oluşturma doğrulaması penceresiyle açılacaktır, varolan arşivi güncellemek için Tamam'a tıklayın.
+
+KÜÇÜK DOSYA BOYUTLARINDA BÖLÜNMÜŞ ARŞİV OLUŞTURMAK
+Bir arşiv oluşturulma aşaması, bir önceki yazıda açıklanmışdı, “Tek hacim” açılır menüsüne tıkla ve çıktı dosyaları için boyut seç (hacim), arşiv bölünmüş olacaktır!
+Bir çok popüler arşiv türü bu özelliği desteklemektedir.
+
+ŞİFRELENMİŞ ARŞİV OLUŞTURMAK
+Padlock simgesine tıkla ve bir şifre gir ve opsiyonel olarak anahtar-dosyası; simge her iki durumda da, PeaZip'in dosya gezgini durum çubuğunda ve arşiv oluşturma penceresinde mevcuttur
+Dosya ve klasör adlarını gizlemek için “Ayrıca dosya adlarını şifrele”yi işaretleyin! bir not, bu işlev 7Z ve ARC gibi bu konuda destek sunan arşiv formatları tarafından uygulanabilir.
+Bir not, arşiv oluşturma penceresinde, yanısıra padlock simgesi, arşiv şifreleme konusunda destek sunuyorsa, bu konuda görsel olarak uyarı sunacaktır.
+
+BÖLÜNMÜŞ ARŞİVLER OLUŞTURMAK
+Nesneleri arşive ekle (PeaZip'in "Ekle" düğmesiyle, ya da sistemin sağ-tık menüsü veya Gönder ile) ve "Tamam" ile doğrulamadan önce, "Tüm nesneleri, bölünmüş arşive ekle" seçeneğini kontrol et
+
+ARŞİVLERİ ÇEVİR
+PeaZip'den, çevirili olacak arşivleri seç ve araç çubuğundaki ya da sistem sağ-tık menüsündeki "Çevir"e tıkla, arşiv olmayan dosya ve klasörlerde dahil edilmiş olacaktır, ilk olarak farklı olan arşivler, sıkıştırma aşamasında çıkartılacaktır.
+Using the “Convert existing archives” switch in conjunction with “Add each object to a separate archive" (default) it performs a mass conversion of listed archives, without that switch archive conversion is meant to consolidate input data in a single archive, improving compression efficiency because it allows recompression of the original data from its uncompressed form.
+
+SEÇİLMİŞ SIKIŞTIRMA SEVİYESİ İLE BELİRLİ BİR FORMATTA DİREK ARŞİV OLUŞTURMAK
+Seçenekler menüsündeki “Sistem entegrasyonu” prosedürünü kullan. Sistem sağ-tık menünü seçeneklerini düzenleme imkanı, seçili dosyaları/klasörleri, direk olarak bir ZIP, 7Z ya da kendi açılabilir arşiv dosyasına ekleyebilir
+Zip ve 7Z formatları için, ayrıca sistem sağ-tık menüsünü, çok-hızlı, normal veya ultra seviyede sıkıştır ya da varsayılan sıkıştırma seviyeside geç şeklinde düzenlemek mümkün
+
+UYGULAMA SEÇENEKLERİ
+Seçenekler > Yerelleştirme, (ve Seçenekler > Ayarlar'da, ilk sekme) dil seçim imkanı.
+Seçenekler > Seçenekler, uygulama seçeneklerini değiştirme imkanı
+Seçenekler > Tema, uygulama ikon ve görünümünü değiştirme imkanı
+Seçenekler > Sistem, entegrasyon, dosya uzantısı entegrasyonu prosedürünü başlatır, sistem sağ-tık menüsü ve Gönder menü seçenekleri (Windows'da)
+Organize menüsü, kişiselleştirme seçeneğine izin verir, araç çubuğu, adres çubuğu, navigasyon çubuğu gibi gezgin özelliklerini aktif ya da pasif eder
+
+F1 	yardım
+F2 	masaüstünü aç / Ctrl+F2 oturum ana dizini / Shift+F2 bilgisayar kök dizini / Ctrl+Shift+F2 arşiv kök dizini, arşiv içinde geziniliyorsa (aksihalde bilgisayar kök dizini)
+F3	ara (Rekürsif seçenek hatırlanmalı [İç içe]) / Ctrl+F3 rekürsif olmayan arama (burada ara) / Shift+F3 rekürsif
+F4 	üst dizine geç
+F5 	yenile
+F6 	gezinti/düz görünüm modları
+F7 	sık ziyaret edilen dizinleri aç (Ctrl, ikinci, Shift, üçüncü)
+F8 	Sık kullanılanlardaki ilk elemanı aç (Ctrl, ikinci, Shift, üçüncü)
+F9 	şifre/anahtar-dosya tanımla / Ctrl+F9 anahtar-dosya ya da rastgele şifre tanımla
+F10 	menü
+F11 	gelişmiş filtreleri tanımla
+F12 	hepsini şuraya çıkar...
+
+DİL DEĞİŞTİR
+
+Farklı dillerde kullanıcı arayüzü kullanılabilir: Seçenekler > Ayarlar > Yerelleştirme
+
+
+ARŞİV ÇIKARTMA
+
+Sistemden: Arşivin üstünde sağtuş ve "Extract here" tıklayın veya içerik menüsünden "Extract here (in new folder)", daha fazla seçenek için (çıkartma yolu, parola vb...) "Extract..." a tıklayın
+
+PeaZip'den (önerilen): Arşivi seçin ve "Dizine çıkart" tuşuna tıklayın, veya sağtuş "Dizine çıkart" veya içerik menüsünden "Çıkart (yeni klasöre)"
+
+
+DOSYALARI ARŞİVDEN ÇIKARTMA
+
+Arşivi PeaZip ile açmak için çift tıklayın, açmak ve sisteme taşımak için dosyaları ve klasörleri seçin, veya içerik menüsünden sağtuş ve "Extract selected" i seçin
+
+
+ARŞİV OLUŞTUR
+
+Sistemden: Arşivleme için dosyanın üstünde sağ tuşa tıklayın ve Gönder menüsünde "Arşive ekle" ye tıklayın 
+
+PeaZip'den (önerilen): Arşivlenecek dosyayı seçin ve "Ekle" tuşuna tıklayın
+
+
+BÖLÜNMÜŞ ARŞİV OLUŞTUR
+
+Sistemden: Ayrı arşivlenecek dosyanın üstüne sağ tuşla tıklayın ve içerik menüsünde "Ayrı arşive ekle" ye tıklayın
+
+PeaZip'den (önerilen): Arşivlenecek olan dosyaları seçin ve "Ekle" tuşuna tıklayın; "Tamam" ile onaylamadan önce "her dosyayı ayrı arşive ekle" seçeneğini kontrol edin
+
+
+VAROLAN ARŞİVİ GÜNCELLE
+
+Arşivi PeaZip ile açmak için çift tıklayın. Eklenecek dosya ve klasörleri buraya taşıyın, veya "Ekle" tuşuna tıklayın ve arşive eklemek için uygulamanın içerik menüsünu kullanın
+
+
+PEAZIP HAKKINDA
+
+PeaZip açık kaynak bir dosya ve arşiv yöneticisidir: çapraz platform, 32 ve 64 bit Windowslar (9x, 2k, XP, Vista) ve Linux için (PeaZip masaüstü bağımsız bir uygulamadır) taşınabilir ve kurulabilir yazılım olarak kullanılabilir.
+
+PeaZip arşiv içeriklerine birçok güçlü arama filtresi uygulamanızı sağlar; bir kerede birçok arşiv oluşturma ve çıkartma; kendi açılan (SFX) arşiv oluşturma; görev tanımını komut satırı olarak ihraç etme; arşivleme ve çıkartma düzenlerini kaydetme; arşivleri ve klasörleri yerimlerine ekleme; sıkıştırılmış veya sıkıştırılmamış dosyaları özel uygulamayla tarama ve açma vb...
+
+Diğer özellikler: Güçlü şifreleme, güçlü dosya kopyalama, dosya böl/birleştir (dosya genişliği), güvenli dosya silme, karşılaştırma, checksum ve hash, sistem testi, rastgele şifre ve anahtar üretimi.
+
+Downloads: http://peazip.sourceforge.net/ | http://www.peazip.org/
+Özellikler ve desteklenen formatların tam listesi: http://peazip.sourceforge.net/peazip-free-archiver.html
+Destek: http://peazip.sourceforge.net/peazip-help.html
+FAQ: http://peazip.sourceforge.net/peazip-help-faq.html
+
+Bu uygulamada kullanılan Açık Kaynak yazılım (Open Source) bileşenlerin büyütülmesi geliştirilmesi ve PeaZip projesine katkıları için herkese (tüm liste için websitesine bakın) ve geribildirimleri, deneyim ve önerileri ile katkıları için tüm kullanıcılara çok teşekkürler.

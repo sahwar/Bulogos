@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+Module Translation: gimp
+</title>
+  <link rel="icon" type="image/png" href="/static/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://static.gnome.org/css/deneb.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/template.css">
+
+  <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/static/js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="/static/js/main.js"></script>
+  <script type="text/javascript" src="/static/js/modal.js"></script>
+  <script type="text/javascript" src="/static/js/login.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(document).on('hidden.bs.modal', function (e) {
+        $(e.target).removeData('bs.modal');
+      });
+    });
+  </script>
+
+  
+<style type="text/css">
+tr.tr_author, tr.tr_sync_master { display: none; }
+img.icons { width: 24px; height: 24px; margin: 0 0.7em; }
+</style>
+<script type="text/javascript" src="/static/js/autosize.min.js"></script>
+<script type="text/javascript">
+
+function updateForm() {
+    var actionValue = $("#id_action").val();
+    $("#id_send_to_ml").prop('checked', send_mail_defaults[actionValue]);
+    if (actionValue == 'CI') {
+        $("tr.tr_author, tr.tr_sync_master").css('display', 'table-row');
+        $("tr.tr_file").css('display', 'none');
+    } else {
+        $("tr.tr_author, tr.tr_sync_master").css('display', 'none');
+        $("tr.tr_file").css('display', 'table-row');
+    }
+}
+
+$(document).ready(function() {
+    autosize(document.querySelector('#id_comment'));
+    if(typeof send_mail_defaults != 'undefined') {
+        $("#id_action").change(updateForm);
+        updateForm();
+    }
+});
+</script>
+
+</head>
+
+<body class="gnome-body">
+<header class="gnome-header">
+    <div class="navbar navbar-fixed-top navbar-default affix-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <a class="gnome-navbar-brand" title="Back to Damned Lies home page" href="/"><img src="/static/img/gnome-logo.svg" alt="GNOME - Damned Lies" /></a>
+                <ul class="nav navbar-nav icons visible-xs">
+                    <li class="dropdown pull-right">
+                    
+                        <a href="#userDropdownMenu" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/static/img/avatar-default.svg" alt="GNOME - Damned Lies" /></a>
+                    
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav navbar-right no-padding">
+                <li id="userDropdownMenu" class="dropdown">
+                
+                    <a href="/login/" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Вход</a>
+                
+                    <ul class="dropdown-menu login_popup_form user-menu">
+                        <li>
+                            
+
+
+    
+
+<div class="row">
+    <div class="col-sm-12">
+        <form action="/login/" method="post" class="form">
+          <input type="hidden" name="csrfmiddlewaretoken" value="KbIjureS5xcWh5VH5EMO8FcLpQ4Cczfxw1HbnOTaqLiA17A9aaHAzYerEnOFnveB">
+            <div class="form-group">
+                <input type="text" name="username" id="id_username" class="form-control" placeholder="Username"/>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" id="id_password" class="form-control" placeholder="Парола"/>
+            </div>
+            <input type="hidden" name="referer" value="" />
+            <div class="form-group">
+                <button type="submit" class="btn btn-action btn-block">Вход</button>
+            </div>
+            <div class="form-group">
+                <a href="/password_reset/">Forgot your password?</a>
+            </div>
+            <li class="divider"></li>
+            <p>Don’t have an account?</p>
+            <div class="form-group">
+                <a href="/register/" class="btn btn-action btn-block">Register</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="navbar-wrapper" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/teams/"><span>Teams</span></a></li>
+                    <li><a href="/languages/"><span>Languages</span></a></li>
+                    <li><a href="/releases/"><span>Release sets</span></a></li>
+                    <li class="active"><a href="/module/"><span>Modules</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="clearfix"></div>
+
+<div id="content" class="container gnome-content">
+    
+
+    
+    
+<div class="mainpage">
+
+
+
+<div class="release_link">
+
+  <p><h4>Used in release(s):</h4>
+  
+    <a href="/languages/bg/gnome-gimp/ui/">
+    GIMP and Friends
+    </a><br/>
+  
+
+</div>
+
+
+<h1>
+<a href="/module/gimp/">gimp</a>
+» <span style="color: #000">master</span> » <a href="/teams/bg/">български език</a>
+</h1>
+
+<p class="main_feature">UI translations</p>
+
+<h2 class="plain">
+State: Inactive
+
+</h2>
+
+
+  
+
+
+<div id="vertimus_stats">
+<div><em><a class="btn btn-action" href="/POT/gimp.master/gimp.master.pot" title="Download POT file">
+      <img src="/static/img/download.png" alt="Download POT file" /></a>
+    POT file (5504 messages — 23806 words) — updated on 2019-12-09 11:55 преди обяд +0000
+  </em></div>
+  <div style="margin-top: 5px;">
+    <a class="btn btn-action" href="/POT/gimp.master/gimp.master.bg.po" title="Download PO file"><img src="/static/img/download.png" alt="Download PO file"></a>
+    
+      <a href="/vertimus/stats/14498/msgiddiff/" title="PO file with inline diffs for fuzzy strings"><img class="icons" src="/static/img/diff.png"></a>
+    
+    
+    PO file statistics: <br>
+	<div id="stats_po">
+    <div title="Translated/Fuzzy/Untranslated">
+		<span>Strings: <pre class="stats"><b> 23%</b><span class="num1">   1297</span><span class="num2">  2889</span><span class="num3">  1318</span></pre></span>&nbsp;
+	<div class="graph graphinline">
+        <div class="translated" style="width: 23px;"></div><div class="fuzzy" style="left: 23px; width: 52px;"></div><div class="untranslated" style="left: 75px; width: 23px;"></div>
+	</div>
+		<span style="margin-left: 15px;">Words: <pre class="stats"><b> 26%</b><span class="num1">   6312</span><span class="num2">  9789</span><span class="num3">  7705</span></pre></span>&nbsp;
+	<div class="graph graphinline">
+        <div class="translated" style="width: 26px;"></div><div class="fuzzy" style="left: 26px; width: 41px;"></div><div class="untranslated" style="left: 67px; width: 32px;"></div>
+	</div>
+
+	</div>
+  </div>
+</div> <!-- end of div.vertimus_stats -->
+
+	<div class="clear"></div>
+
+  
+</div>
+
+
+
+
+
+
+
+
+<div id="vertimus_actions_title">
+  <h2>
+    
+      Actions
+    
+    
+  </h2>
+</div>
+
+
+  <p><em>No current actions.</em></p>
+
+
+
+  <h2>New Action</h2>
+
+  
+    
+    You need <a href="/login/">to be authenticated</a> and member of the български език team.
+  
+
+  
+
+  
+
+
+</div>
+
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+                <div class="col-xs-12 col-sm-2">
+                    <h4><a href="https://www.gnome.org">The GNOME Project</a></h4>
+                    <ul>
+                        <li><a href="https://www.gnome.org/about/">About Us</a></li>
+                        <li><a href="https://www.gnome.org/get-involved/">Get Involved</a></li>
+                        <li><a href="https://www.gnome.org/support-gnome/">Support GNOME</a></li>
+                        <li><a href="https://www.gnome.org/teams/">Merchandise</a></li>
+                        <li><a href="https://www.gnome.org/contact/">Contact Us</a></li>
+                        <li><a href="https://www.gnome.org/foundation/">The GNOME Foundation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <h4><a href="#">Resources</a></h4>
+                    <ul class="sub-menu">
+                        <li><a href="https://developer.gnome.org">Developer Center</a></li>
+                        <li><a href="https://help.gnome.org">Документация</a></li>
+                        <li><a href="https://wiki.gnome.org">Wiki</a></li>
+                        <li><a href="https://mail.gnome.org/mailman/listinfo">Mailing Lists</a></li>
+                        <li><a href="https://wiki.gnome.org/GettingInTouch/IRC">IRC Channels</a></li>
+                        <li><a href="https://gitlab.gnome.org/">Bug Tracker</a></li>
+                        <li><a href="https://gitlab.gnome.org/">Development Code</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <h4><a href="https://www.gnome.org/news/">News</a></h4>
+                    <ul class="sub-menu">
+                        <li><a href="https://www.gnome.org/press/">Press Releases</a></li>
+                        <li><a href="https://www.gnome.org/start/stable">Latest Release</a></li>
+                        <li><a href="https://planet.gnome.org">Planet GNOME</a></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>© <a href="https://www.gnome.org/">The GNOME Project</a>.</p>
+                <p><a href="/about/">Damned Lies</a>. Hosted by <a href='http://www.canonical.com/'>Canonical</a>.
+                Powered by <a href='https://www.djangoproject.com/'>Django</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-labelledby="DamnedliesModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://static.gnome.org/js/deneb.min.js"></script>
+</body>
+</html>

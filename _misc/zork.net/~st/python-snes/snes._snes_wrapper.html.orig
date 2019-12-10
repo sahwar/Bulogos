@@ -1,0 +1,183 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module snes._snes_wrapper</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="snes.html"><font color="#ffffff">snes</font></a>._snes_wrapper</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/st/Code/python-snes/snes/_snes_wrapper.py">/home/st/Code/python-snes/snes/_snes_wrapper.py</a></font></td></tr></table>
+    <p><tt>A&nbsp;low-level&nbsp;ctypes&nbsp;wrapper&nbsp;for&nbsp;the&nbsp;libsnes&nbsp;API.<br>
+&nbsp;<br>
+You&nbsp;probably&nbsp;want&nbsp;to&nbsp;use&nbsp;the&nbsp;Python&nbsp;API&nbsp;in&nbsp;snes.core&nbsp;instead&nbsp;of&nbsp;this.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="atexit.html">atexit</a><br>
+</td><td width="25%" valign=top><a href="ctypes.html">ctypes</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="_ctypes.html#_Pointer">_ctypes._Pointer</a>(_ctypes._CData)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial">LP_c_ubyte
+</font></dt><dt><font face="helvetica, arial">LP_c_ushort
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>data_p</strong> = <a name="data_p">class LP_c_ubyte</a>(<a href="_ctypes.html#_Pointer">_ctypes._Pointer</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd>LP_c_ubyte</dd>
+<dd><a href="_ctypes.html#_Pointer">_ctypes._Pointer</a></dd>
+<dd>_ctypes._CData</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="_ctypes.html#_Pointer">_ctypes._Pointer</a>:<br>
+<dl><dt><a name="LP_c_ubyte-__delitem__"><strong>__delitem__</strong></a>(...)</dt><dd><tt>x.<a href="#data_p-__delitem__">__delitem__</a>(y)&nbsp;&lt;==&gt;&nbsp;del&nbsp;x[y]</tt></dd></dl>
+
+<dl><dt><a name="LP_c_ubyte-__getitem__"><strong>__getitem__</strong></a>(...)</dt><dd><tt>x.<a href="#data_p-__getitem__">__getitem__</a>(y)&nbsp;&lt;==&gt;&nbsp;x[y]</tt></dd></dl>
+
+<dl><dt><a name="LP_c_ubyte-__getslice__"><strong>__getslice__</strong></a>(...)</dt><dd><tt>x.<a href="#data_p-__getslice__">__getslice__</a>(i,&nbsp;j)&nbsp;&lt;==&gt;&nbsp;x[i:j]<br>
+&nbsp;<br>
+Use&nbsp;of&nbsp;negative&nbsp;indices&nbsp;is&nbsp;not&nbsp;supported.</tt></dd></dl>
+
+<dl><dt><a name="LP_c_ubyte-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt>x.<a href="#data_p-__init__">__init__</a>(...)&nbsp;initializes&nbsp;x;&nbsp;see&nbsp;x.__class__.__doc__&nbsp;for&nbsp;signature</tt></dd></dl>
+
+<dl><dt><a name="LP_c_ubyte-__nonzero__"><strong>__nonzero__</strong></a>(...)</dt><dd><tt>x.<a href="#data_p-__nonzero__">__nonzero__</a>()&nbsp;&lt;==&gt;&nbsp;x&nbsp;!=&nbsp;0</tt></dd></dl>
+
+<dl><dt><a name="LP_c_ubyte-__setitem__"><strong>__setitem__</strong></a>(...)</dt><dd><tt>x.<a href="#data_p-__setitem__">__setitem__</a>(i,&nbsp;y)&nbsp;&lt;==&gt;&nbsp;x[i]=y</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="_ctypes.html#_Pointer">_ctypes._Pointer</a>:<br>
+<dl><dt><strong>contents</strong></dt>
+<dd><tt>the&nbsp;object&nbsp;this&nbsp;pointer&nbsp;points&nbsp;to&nbsp;(read-write)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="_ctypes.html#_Pointer">_ctypes._Pointer</a>:<br>
+<dl><dt><strong>__new__</strong> = &lt;built-in method __new__ of _ctypes.PointerType object at 0x7f6f50b17340&gt;<dd><tt>T.<a href="#data_p-__new__">__new__</a>(S,&nbsp;...)&nbsp;-&gt;&nbsp;a&nbsp;new&nbsp;object&nbsp;with&nbsp;type&nbsp;S,&nbsp;a&nbsp;subtype&nbsp;of&nbsp;T</tt></dl>
+
+<hr>
+Methods inherited from _ctypes._CData:<br>
+<dl><dt><a name="LP_c_ubyte-__ctypes_from_outparam__"><strong>__ctypes_from_outparam__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="LP_c_ubyte-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><tt>x.<a href="#data_p-__hash__">__hash__</a>()&nbsp;&lt;==&gt;&nbsp;hash(x)</tt></dd></dl>
+
+<dl><dt><a name="LP_c_ubyte-__reduce__"><strong>__reduce__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="LP_c_ubyte-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>pixel_p</strong> = <a name="pixel_p">class LP_c_ushort</a>(<a href="_ctypes.html#_Pointer">_ctypes._Pointer</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd>LP_c_ushort</dd>
+<dd><a href="_ctypes.html#_Pointer">_ctypes._Pointer</a></dd>
+<dd>_ctypes._CData</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="_ctypes.html#_Pointer">_ctypes._Pointer</a>:<br>
+<dl><dt><a name="LP_c_ushort-__delitem__"><strong>__delitem__</strong></a>(...)</dt><dd><tt>x.<a href="#pixel_p-__delitem__">__delitem__</a>(y)&nbsp;&lt;==&gt;&nbsp;del&nbsp;x[y]</tt></dd></dl>
+
+<dl><dt><a name="LP_c_ushort-__getitem__"><strong>__getitem__</strong></a>(...)</dt><dd><tt>x.<a href="#pixel_p-__getitem__">__getitem__</a>(y)&nbsp;&lt;==&gt;&nbsp;x[y]</tt></dd></dl>
+
+<dl><dt><a name="LP_c_ushort-__getslice__"><strong>__getslice__</strong></a>(...)</dt><dd><tt>x.<a href="#pixel_p-__getslice__">__getslice__</a>(i,&nbsp;j)&nbsp;&lt;==&gt;&nbsp;x[i:j]<br>
+&nbsp;<br>
+Use&nbsp;of&nbsp;negative&nbsp;indices&nbsp;is&nbsp;not&nbsp;supported.</tt></dd></dl>
+
+<dl><dt><a name="LP_c_ushort-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt>x.<a href="#pixel_p-__init__">__init__</a>(...)&nbsp;initializes&nbsp;x;&nbsp;see&nbsp;x.__class__.__doc__&nbsp;for&nbsp;signature</tt></dd></dl>
+
+<dl><dt><a name="LP_c_ushort-__nonzero__"><strong>__nonzero__</strong></a>(...)</dt><dd><tt>x.<a href="#pixel_p-__nonzero__">__nonzero__</a>()&nbsp;&lt;==&gt;&nbsp;x&nbsp;!=&nbsp;0</tt></dd></dl>
+
+<dl><dt><a name="LP_c_ushort-__setitem__"><strong>__setitem__</strong></a>(...)</dt><dd><tt>x.<a href="#pixel_p-__setitem__">__setitem__</a>(i,&nbsp;y)&nbsp;&lt;==&gt;&nbsp;x[i]=y</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="_ctypes.html#_Pointer">_ctypes._Pointer</a>:<br>
+<dl><dt><strong>contents</strong></dt>
+<dd><tt>the&nbsp;object&nbsp;this&nbsp;pointer&nbsp;points&nbsp;to&nbsp;(read-write)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="_ctypes.html#_Pointer">_ctypes._Pointer</a>:<br>
+<dl><dt><strong>__new__</strong> = &lt;built-in method __new__ of _ctypes.PointerType object at 0x7f6f50b17340&gt;<dd><tt>T.<a href="#pixel_p-__new__">__new__</a>(S,&nbsp;...)&nbsp;-&gt;&nbsp;a&nbsp;new&nbsp;object&nbsp;with&nbsp;type&nbsp;S,&nbsp;a&nbsp;subtype&nbsp;of&nbsp;T</tt></dl>
+
+<hr>
+Methods inherited from _ctypes._CData:<br>
+<dl><dt><a name="LP_c_ushort-__ctypes_from_outparam__"><strong>__ctypes_from_outparam__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="LP_c_ushort-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><tt>x.<a href="#pixel_p-__hash__">__hash__</a>()&nbsp;&lt;==&gt;&nbsp;hash(x)</tt></dd></dl>
+
+<dl><dt><a name="LP_c_ushort-__reduce__"><strong>__reduce__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="LP_c_ushort-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>cheat_reset</strong> = &lt;_FuncPtr object at 0x7f6f50b371f0&gt;<br>
+<strong>cheat_set</strong> = &lt;_FuncPtr object at 0x7f6f50b372c0&gt;<br>
+<strong>get_memory_data</strong> = &lt;_FuncPtr object at 0x7f6f50b377a0&gt;<br>
+<strong>get_memory_size</strong> = &lt;_FuncPtr object at 0x7f6f50b37870&gt;<br>
+<strong>library_revision</strong> = &lt;_FuncPtr object at 0x7f6f519c46d0&gt;<br>
+<strong>libsnes</strong> = &lt;CDLL 'libsnes.so', handle 183fd10 at 7f6f50b236d0&gt;<br>
+<strong>libsnes_version</strong> = 1L<br>
+<strong>load_cartridge_bsx</strong> = &lt;_FuncPtr object at 0x7f6f50b37530&gt;<br>
+<strong>load_cartridge_bsx_slotted</strong> = &lt;_FuncPtr object at 0x7f6f50b37460&gt;<br>
+<strong>load_cartridge_normal</strong> = &lt;_FuncPtr object at 0x7f6f50b37390&gt;<br>
+<strong>load_cartridge_sufami_turbo</strong> = &lt;_FuncPtr object at 0x7f6f50b37600&gt;<br>
+<strong>load_cartridge_super_game_boy</strong> = &lt;_FuncPtr object at 0x7f6f50b376d0&gt;<br>
+<strong>power</strong> = &lt;_FuncPtr object at 0x7f6f519c4bb0&gt;<br>
+<strong>reset</strong> = &lt;_FuncPtr object at 0x7f6f519c4c80&gt;<br>
+<strong>run</strong> = &lt;_FuncPtr object at 0x7f6f519c4d50&gt;<br>
+<strong>serialize</strong> = &lt;_FuncPtr object at 0x7f6f50b37050&gt;<br>
+<strong>serialize_size</strong> = &lt;_FuncPtr object at 0x7f6f519c4ef0&gt;<br>
+<strong>set_audio_sample_cb</strong> = &lt;_FuncPtr object at 0x7f6f519c4870&gt;<br>
+<strong>set_controller_port_device</strong> = &lt;_FuncPtr object at 0x7f6f519c4ae0&gt;<br>
+<strong>set_input_poll_cb</strong> = &lt;_FuncPtr object at 0x7f6f519c4940&gt;<br>
+<strong>set_input_state_cb</strong> = &lt;_FuncPtr object at 0x7f6f519c4a10&gt;<br>
+<strong>set_video_refresh_cb</strong> = &lt;_FuncPtr object at 0x7f6f519c47a0&gt;<br>
+<strong>unload</strong> = &lt;_FuncPtr object at 0x7f6f519c4e20&gt;<br>
+<strong>unserialize</strong> = &lt;_FuncPtr object at 0x7f6f50b37120&gt;</td></tr></table>
+</body></html>

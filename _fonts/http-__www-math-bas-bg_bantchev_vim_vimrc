@@ -1,0 +1,72 @@
+"general settings
+set nocompatible
+"set nobackup
+
+"make sure that Vim menus are in English
+set langmenu=en_US
+let $LANG='en_US'
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+
+"general preferences
+colorscheme clue
+syntax on
+set laststatus=2
+set splitbelow
+set splitright
+set expandtab
+set showbreak=++\ 
+set textwidth=0
+set formatoptions=""
+set fileformats+=mac
+set showcmd
+set visualbell t_vb=
+set matchpairs+=<:>
+set showmatch
+set matchtime=3
+set incsearch
+set hlsearch
+set nrformats=hex,alpha
+set keymap=bulgarian-phonetic
+"set keymap=bulgarian-bds
+map <Down> gj
+map <Up>   gk
+set iminsert=0
+set imsearch=-1
+
+"C program formatting
+set shiftwidth=1
+set cinoptions=>1e1n1:1=2l1g4h2t0+5(0m1)50
+set smartindent
+set cinwords=if,else,while,do,for,switch,[
+
+"interaction with C and C++
+set shellslash
+if has('unix')
+  set makeprg=g++\ -o\ %:r\ -Wall\ %       " C++
+ "set makeprg=gcc\ -o\ %:r\ -Wall\ %       " C
+elseif has('dos16') || has('dos32') || has('win32') || has('win64')
+  set makeprg=g++\ -o\ %:r.exe\ -Wall\ %   " C++
+ "set makeprg=gcc\ -o\ %:r.exe\ -Wall\ %   " C
+endif
+set shellpipe=2>&1\ >%s
+
+"gui
+set guioptions-=T
+set guioptions+=a
+if &termencoding == "" | let &termencoding = &encoding | endif
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp1251
+setglobal fileencoding=utf-8
+if has('unix')
+  set guifont=UbuntuMono\ 11         " linux
+ "set guifont=Monospace\ 9           " linux
+elseif has('win32') || has('win64')
+  set guifont=consolas:h10           " windows
+ "set guifont=courier_new:h10        " windows
+endif
+set mousehide
+"autocmd GUIEnter * simalt ~x
+
+" to edit a specific file in a specific encoding, say, latin1, do
+"     :e ++enc=latin1 filename

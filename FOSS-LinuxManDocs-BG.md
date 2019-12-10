@@ -9,8 +9,47 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 
 ## Основни инструкции за превода на софтуер (програми за компютър, по-точно приложен софтуер) на български език плюс хранилища с файлове с български преводи на софтуер: ##
 * **BGlocalize**: https://sites.google.com/site/bglocalize/
+* Речникът на Антон Зиновиев („Англо-български терминологичен речник по информатика и изчислителна техника“): http://lml.bas.bg/~anton/linux/rechnik.html (последна редакция: `23 юни 2004 г., 22:55:11 ч.`; кодиране на текста: `windows-1251`)
+* **Bulogos/CBASTILS**: https://github.com/Bulogos/CBASTILS_BGlocalize_DB/
+* https://github.com/stelf/en2bg4term
+* Речникът с преведени низове на KDE: https://l10n.kde.org/dictionary/
+* **_БГ Офис_ помощник (GTK версия)**: [gbgoffice](http://gbgoffice.info/)
+* Речниците на slovored.com:
+	- https://slovored.com/english/ (Двупосочен английско-български речник), 
+	- https://slovored.com/computer (Английско-български речник на компютърните термини)
+	- https://slovored.com/polytechnical (Технически речник - Двупосочен английско-български политехнически речник)
+	- https://slovored.com/geography (Географски понятия - Двупосочен английско-български речник на географските понятия), 
+	- https://slovored.com/medical (Медицински речник - Двупосочен английско-български речник на медицинските термини), 
+	- https://slovored.com/en/abbr/grammar (Граматически съкращения - Списък на употребяваните съкращения в речниците)
+	- https://slovored.com/synonymous (Синонимен речник - Речник на синонимите в българския език), 
+	- https://slovored.com/spellchecker (Правопис - Проверка на правописа на български)
+	- https://slovored.com/unilingual (Тълковен речник - Тълковен речник на българския език)
+	- https://slovored.com/accent (Ударения - Проверка на ударенията на думите)
+	- https://slovored.com/pravopisen-rechnik (Правописен речник - Правописен речник на българския език)
+	- https://slovored.com/hyphenation (Сричкопренасяне - Сричкопренасяне на български думи)
+	- https://slovored.com/transliteration (Транслитерация - Транслитерация от български към английски според действащите закони)
+	- https://slovored.com/grammar (Граматика - Система за граматичен анализ на българския език)
+	- https://slovored.com/bg/abbr/grammar (Граматически съкращения - Списък на употребяваните съкращения в речниците)
+	- https://slovored.com/words.html (Списък на думите - Списък на наличните думи в речниците)
+* 23-те речника на eurodict.com и http://bulgariandictionary.com/ :
+	- Bulgarian - English: https://eurodict.com/dictionary/-1 ..(.) https://eurodict.com/dictionary/-136975
+	- Bulgarian (Тълковен): https://eurodict.com/dictionary/%D0%B0-174983 .. https://eurodict.com/dictionary/%D1%8F%D1%88%D0%B5%D0%BD-205877 / https://eurodict.com/dictionary/%D1%8F%D1%88%D0%BC%D0%B0%D0%BA-205878
+	- Bulgarian - English-math: https://eurodict.com/dictionary/%D0%B0%D0%B1%D0%B5%D0%BB%D0%BE%D0%B2-527904 ... 
+	- English - Bulgarian-math: https://eurodict.com/dictionary/%D1%8F%D0%B4%D1%80%D0%BE-528710 ...
+	- ...
+* http://fsa-bg.org/project/gtp/wiki/HowToTranslate , http://fsa-bg.org/project/gtp/wiki/HowToUpdateWebkit , http://fsa-bg.org/project/gtp/wiki/Typography , http://fsa-bg.org/project/gtp/wiki/RepositoryUsage , http://fsa-bg.org/project/gtp/wiki/HowToTest , http://fsa-bg.org/project/gtp/wiki/ToDo , http://fsa-bg.org/project/gtp/wiki/NewsLetters , http://fsa-bg.org/project/gtp/wiki/Jamborees
 * **FOSS-BG-translators EMailList (Пощенският списък за преводи и локализация на български на Linux, познат и като „Пощенският списък за преводи и локализация на KDE“)**: <dict@ludost.net> (за записване/абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict) (KNOWN AS ["Dict" Bulgarian free software translators mailing list](http://ludost.net/cgi-bin/mailman/listinfo/dict))
-* **KDE-BG**: https://kde.lindeas.com/ (KNOWN AS [KDE in Bulgarian home page](http://kde.lindeas.com)) & https://l10n.kde.org/team-infos.php?teamcode=bg
+
+### **KDE-BG**: 
+
+	- https://kde.lindeas.com/ (KNOWN AS [KDE in Bulgarian home page](http://kde.lindeas.com))
+	- & https://l10n.kde.org/team-infos.php?teamcode=bg
+	- https://l10n.kde.org/teams-list.php
+	- https://l10n.kde.org/team-infos.php?teamcode=bg
+* _KDE in Bulgarian home page (Website):_
+	- http://kde.lindeas.com/
+* _"Dict" Bulgarian free software translators mailing list:_
+	- http://ludost.net/cgi-bin/mailman/listinfo/dict
 
 ````
 * ***KDE Internationalization***
@@ -45,27 +84,24 @@ http://userbase.kde.org/Lokalize
 https://l10n.kde.org/scripts/l10n-stats/documentation.php
 
 * KDE5 Localization Statistics (Stats):
-** https://l10n.kde.org/stats/gui/trunk-kf5/team/
 ** https://l10n.kde.org/stats/gui/trunk-kf5/team/bg/
-** https://l10n.kde.org/stats/gui/stable-kf5/team/
+** https://l10n.kde.org/stats/gui/trunk-kf5/team/
+** https://l10n.kde.org/stats/gui/trunk-kf5/team/en/
+
 ** https://l10n.kde.org/stats/gui/stable-kf5/team/bg/
+** https://l10n.kde.org/stats/gui/stable-kf5/team/
+** https://l10n.kde.org/stats/gui/stable-kf5/team/en/
 
 * KDE4 Localization Statistics (Stats):
-** https://l10n.kde.org/stats/gui/stable-kde4/team/
 ** https://l10n.kde.org/stats/gui/stable-kde4/team/bg/
+** https://l10n.kde.org/stats/gui/stable-kde4/team/en/
+** https://l10n.kde.org/stats/gui/stable-kde4/team/
+
+````
 
 ======
 
-https://l10n.kde.org/teams-list.php
-https://l10n.kde.org/team-infos.php?teamcode=bg
-
-* _KDE in Bulgarian home page (Website):_
-http://kde.lindeas.com/
-
-* _"Dict" Bulgarian free software translators mailing list:_
-http://ludost.net/cgi-bin/mailman/listinfo/dict
-
-****A new HTML table to suggest for adding to https://sites.google.com/site/bglocalize/dict (with git diffs to the document OR to its HTML iframe table columns!!!):****
+****A new HTML table to suggest for adding to  AND/OR https://sites.google.com/site/bglocalize/dict (with git diffs to the document OR to its HTML iframe table columns!!!):****
 
 * White = the official default English text string(s)/term/collocation
 * Light Blue = technical notes, context, hyperlinks about the technology and its English-language text string/term & translation problems (including images and linked videos)
@@ -85,6 +121,7 @@ String Localization Statistics Coloring-Scheme (borrowed from https://l10n.kde.o
 
 ======
 
+````
 _KDE DE (desktop environment) apps:_
 https://community.kde.org/Main_Page
 https://community.kde.org/Konqi
@@ -96,104 +133,148 @@ https://chocolatey.org/profiles/KDE
 KDE Localization:
 https://community.kde.org/KDE_Localization
 https://community.kde.org/KDE_Localization/LTMT
+````
 
 https://l10n.kde.org/scripts/l10n-stats/documentation.php
 
----
-
-Linux From Scratch (LFS) books:
-http://lfs.phayoune.org/lfs/
-http://lfs.phayoune.org/blfs/
-http://lfs.phayoune.org/alfs/
-https://trac.clfs.org/
-http://lfs.phayoune.org/blfs/downloads/stable/BLFS-BOOK-8.4-nochunks.html
-http://lfs.phayoune.org/blfs/downloads/stable-systemd/BLFS-BOOK-8.4-systemd-nochunks.html
-http://lfs.phayoune.org/blfs/view/8.1/lxqt/lxqt-session.html
-http://lfs.phayoune.org/blfs/view/8.1/index.html
-http://lfs.phayoune.org/blfs/
-http://lfs.phayoune.org/blfs/read.html
-http://lfs.phayoune.org/blfs/view/stable/
-
----
+------
 
 * Pootle localization servers, Weblate localization servers, Mozilla Pantoon/Pontoon localization servers & the Translate Toolkit
 
-* You can download the complete GNOME
-translation package:
-https://l10n.gnome.org/
-https://l10n.gnome.org/languages/bg/gnome-3-34/ui.tar.gz
-https://l10n.gnome.org/languages/en/gnome-3-34/ui.tar.gz
-https://l10n.gnome.org/languages/ru/gnome-3-34/ui.tar.gz
+* Amagama & Pootle:
+	- https://amagama-live.translatehouse.org/
+	- http://amagama.translatehouse.org/
+	- http://pootle.translatehouse.org/
 
-* Amagama&Pootle:
-https://amagama-live.translatehouse.org/
-http://amagama.translatehouse.org/
-http://pootle.translatehouse.org/
-
-* LaunchPad BZR (Bazaar) translations & PPAs (Personal Package Archive with .deb's):
+* (Ubuntu, Linux Mint) LaunchPad.net BZR (Bazaar) translations & PPAs (Personal Package Archive with .deb's):
 https://translations.launchpad.net/
 
-* B-Translator by Dashamir Hoxha: http://bg.btranslator.org/
-Bulgarian:
-https://bg.btranslator.org/translations/bg/8f840b36f96c4fd4bc078607f6bf3c00b1e2bab2
-https://bg.btranslator.org/btr/project
-https://bg.btranslator.org/vocabulary/ICT_bg
-https://bg.btranslator.org/btr/project/ubuntu/gnome-shell/bg/dashboard
-https://bg.btranslator.org/btr/project/ubuntu/gnome-shell/bg/list?list_mode=untranslated
-https://bg.btranslator.org/btr/project/ubuntu/gnome-shell/bg/list?list_mode=untranslated
-https://bg.btranslator.org/translations/bg/2ced57f125910a9e8ab95deea86e4ad7be418b5a
-http://info.btranslator.org/
-https://l10n.org.al/translations
-http://info.btranslator.org/install.html
-https://bg.btranslator.org/
-https://l10n.org.al/
-<bg@l10n.org.al>
-.xbm file
-The scripts I use to download the translations are here:
+* **B-Translator** by Dashamir Hoxha: http://bg.btranslator.org/
+**Bulgarian:**
+	- **https://bg.btranslator.org/translations/bg/**
+	- https://bg.btranslator.org/translations/bg/8f840b36f96c4fd4bc078607f6bf3c00b1e2bab2
+	- https://bg.btranslator.org/btr/project
+	- https://bg.btranslator.org/vocabulary/ICT_bg
+	- https://bg.btranslator.org/btr/project/ubuntu/gnome-shell/bg/dashboard
+	- https://bg.btranslator.org/btr/project/ubuntu/gnome-shell/bg/list?list_mode=untranslated
+	- https://bg.btranslator.org/btr/project/ubuntu/gnome-shell/bg/list?list_mode=untranslated
+	- https://bg.btranslator.org/translations/bg/2ced57f125910a9e8ab95deea86e4ad7be418b5a
+	- http://info.btranslator.org/
+	- https://l10n.org.al/translations
+	- http://info.btranslator.org/install.html
+	- **https://bg.btranslator.org/**
+	- https://l10n.org.al/
+	- <bg@l10n.org.al>
+	- `.xbm` file
+	- The scripts I use to download the translations are here:
 https://gitlab.com/b-translator/btr_server/tree/master/modules/custom/btrCore/data/get
 
 * Pylyglot:
-http://pylyglot.org/
-https://omaciel.github.io/translations/life/2014/07/12/end-of-pylyglot.html
-https://github.com/omaciel/pylyglot
+	- http://pylyglot.org/
+	- https://omaciel.github.io/translations/life/2014/07/12/end-of-pylyglot.html
+	- https://github.com/omaciel/pylyglot (Pylyglot RESTORED for self-hosting it! It extracts strings from LaunchPad.net...)
 
-````
+-----
 
-* **GNOME-BG**: http://fsa-bg.org/project/gtp
-https://l10n.gnome.org/teams/bg/
-http://translatehouse.org/
-https://l10n.gnome.org/module/gnome-latex/
+### **GNOME-BG**:
+	- http://fsa-bg.org/project/gtp
+	- https://l10n.gnome.org/teams/bg/
+	- https://l10n.gnome.org/teams/ (all language localization teams for GNOME)
+Coordinator: [Alexander Shopov](https://l10n.gnome.org/users/al_shopov/) <ash AT kambanaria DOT org>
+	- http://identi.ca/gnomebg
+	- https://twitter.com/gnomebg
+	- Резервни копия: ​http://fsa-bg.org/~ash/gtp-backup/ - всяко 1 и 15 число на месеца
+
+<!--
+
+## [Как да започнете да превеждате](http://fsa-bg.org/project/gtp/wiki/HowToTranslate) [¶](http://fsa-bg.org/project/gtp#%D0%9A%D0%B0%D0%BA%D0%B4%D0%B0%D0%B7%D0%B0%D0%BF%D0%BE%D1%87%D0%BD%D0%B5%D1%82%D0%B5%D0%B4%D0%B0%D0%BF%D1%80%D0%B5%D0%B2%D0%B5%D0%B6%D0%B4%D0%B0%D1%82%D0%B5 "Link to this section")
+
+Повече инфорация за това има на страницата „[Как да превеждаме](http://fsa-bg.org/project/gtp/wiki/HowToTranslate)“.
+
+Подробна инфорация за [обновяване на превода на WebKitGTK+](http://fsa-bg.org/project/gtp/wiki/HowToUpdateWebkit).
+
+Погледнете и [типографските особености на превода](http://fsa-bg.org/project/gtp/wiki/Typography).
+
+## [Използване на хранилището на проекта](http://fsa-bg.org/project/gtp/wiki/RepositoryUsage) [¶](http://fsa-bg.org/project/gtp#%D0%98%D0%B7%D0%BF%D0%BE%D0%BB%D0%B7%D0%B2%D0%B0%D0%BD%D0%B5%D0%BD%D0%B0%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5%D1%82%D0%BE%D0%BD%D0%B0%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0 "Link to this section")
+
+[Допълнителна информация](http://fsa-bg.org/project/gtp/wiki/RepositoryUsage) за хората с права да подават към хранилището на проекта.
+
+## [Как да тествате преводите](http://fsa-bg.org/project/gtp/wiki/HowToTest) [¶](http://fsa-bg.org/project/gtp#%D0%9A%D0%B0%D0%BA%D0%B4%D0%B0%D1%82%D0%B5%D1%81%D1%82%D0%B2%D0%B0%D1%82%D0%B5%D0%BF%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5 "Link to this section")
+
+Подробна информация за [тестването](http://fsa-bg.org/project/gtp/wiki/HowToTest) на преводите.
+
+## [Задачи](http://fsa-bg.org/project/gtp/wiki/ToDo) [¶](http://fsa-bg.org/project/gtp#%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B8 "Link to this section")
+
+Ако искате, можете да поемете някоя от следните „[Задачи](http://fsa-bg.org/project/gtp/wiki/ToDo)“.
+
+## [Бюлетини](http://fsa-bg.org/project/gtp/wiki/NewsLetters) [¶](http://fsa-bg.org/project/gtp#%D0%91%D1%8E%D0%BB%D0%B5%D1%82%D0%B8%D0%BD%D0%B8 "Link to this section")
+
+В секция „[Бюлетини](http://fsa-bg.org/project/gtp/wiki/NewsLetters)“ са периодичните съобщения на екипа.
+
+## [Джамборета](http://fsa-bg.org/project/gtp/wiki/Jamborees) [¶](http://fsa-bg.org/project/gtp#%D0%94%D0%B6%D0%B0%D0%BC%D0%B1%D0%BE%D1%80%D0%B5%D1%82%D0%B0 "Link to this section")
+
+Когато празнуваме, понякога го обявяваме в [Джамборета](http://fsa-bg.org/project/gtp/wiki/Jamborees).
+
+-->
+
+
+`
+Пощенският списък на преводачите е dict@fsa-bg.org. Можете да се абонирате за него като пратите е-писмо на адрес dict-request@fsa-bg.org с тема subscribe или като посетите следната страница: ​http://zver.fsa-bg.org/cgi-bin/mailman/listinfo/dict
+`
+
+* GNOME GIMP-BG:
+	- https://gitlab.gnome.org/GNOME/gimp/blob/master/README.i18n
+	- https://gitlab.gnome.org/GNOME/gimp/tree/master
+	- https://gitlab.gnome.org/GNOME/gimp/commits/master
+
+* You can download the complete GNOME translation package from https://l10n.gnome.org/ :
+	- _**Bulgarian PO**_ **https://l10n.gnome.org/languages/bg/gnome-3-34/ui.tar.gz**
+	- English POT template for GNOME (v3.34): **https://l10n.gnome.org/languages/en/gnome-3-34/ui.tar.gz**
+	- Russian PO: https://l10n.gnome.org/languages/ru/gnome-3-34/ui.tar.gz
+	- https://l10n.gnome.org/module/
+	- https://l10n.gnome.org/module/gnome-latex/
+
+* **hhttp://translatehouse.org/**
 http://docs.translatehouse.org/projects/translate-toolkit/en/latest/commands/pogrep.html?id=toolkit/pogrep
-* https://translatehouse.org/
-* https://translationproject.org/team/bg.html
-For backup purposes, each month a tarball containing all the above PO files is made: https://translationproject.org/backups/last/bg.tgz
-https://translationproject.org/team/index.html
-https://translationproject.org/html/welcome.html
-* **XFCE-BG:**
-https://www.transifex.com/xfce/public/
-https://wiki.xfce.org/translations
-https://wiki.xfce.org/translations/translation_guidance_in_xfce
-http://docs.translatehouse.org/projects/localization-guide/en/latest/guide/xfce.html
-* **MATE-BG:**
-https://www.transifex.com/mate/MATE/
-* **LXQT-BG:** https://weblate.lxqt.org/languages/bg/
-https://weblate.lxqt.org/languages/
-https://weblate.lxqt.org/
-https://lxqt.org/
-https://github.com/lxqt/lxqt-l10n
-https://pkgs.org/download/lxqt-l10n
-* **[BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/)**, [gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
-(* стари безплатни версии на програмата за проверка на правописа на български текстове **IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking** [IDIdictionary & spellchecker (hyperlink)](http://freeplace.info/ididictionary/bulgarian_spell_checker/), WinEst, др.)
-* **[ludost.net](https://ludost.net/)** - https://ludost.net/projects.html - https://marla.ludost.net/hosted/ - Ако имате проект с не-стопанска цел и се чудите къде да го приютите, пратете ни e-mail на requests[at]ludost.net. Ние ще направим всичко, което е по силите ни, за да ви помогнем. (Включва и... :P "OpenDC - An OpenDC Hub for unlicensed (e.g. legal) anime content - maintained by Vasil Kolev" и https://anime.ludost.net/ - "български откачен аниме и манга портал")
-* `bglinux` — пакет за българизация и кирилизация на Linux (от Антон Кирилов Зиновиев и други); `bgtex` — пакет за българизация и кирилизация на TeX/LaTeX - вижте още XeTeX (Tex with Unicode fonts!):
-https://en.wikipedia.org/wiki/List_of_TeX_extensions
-https://en.wikipedia.org/wiki/Comparison_of_TeX_editors
-https://en.wikipedia.org/wiki/Template:TeX_editors
-http://xetex.sourceforge.net/
-https://tug.org/usergroups.html#bg
-https://www.ctan.org/lugs
-Local Bulgarian TeX User Group (UG):
-bgTEX
+* **https://translationproject.org/team/bg.html**
+	- For backup purposes, each month a tarball containing all the above PO files is made: 
+**https://translationproject.org/backups/last/bg.tgz**
+	- https://translationproject.org/team/index.html
+	- https://translationproject.org/html/welcome.html
+### **XFCE-BG:**
+	- https://www.transifex.com/xfce/public/
+	- https://wiki.xfce.org/translations
+	- https://wiki.xfce.org/translations/translation_guidance_in_xfce
+	- http://docs.translatehouse.org/projects/localization-guide/en/latest/guide/xfce.html
+### **MATE-BG:**
+	- https://www.transifex.com/mate/MATE/
+### **LXQT-BG:**
+	- **https://weblate.lxqt.org/languages/bg/**
+	- https://weblate.lxqt.org/languages/
+	- https://weblate.lxqt.org/
+	- https://lxqt.org/
+	- https://github.com/lxqt/lxqt-l10n
+	- https://pkgs.org/download/lxqt-l10n
+
+### BGoffice, BG spellcheckers + etc
+* **[BGoffice (БГ Офис)](http://bgoffice.sourceforge.net/)**, 
+[gbgoffice, БГ Офис помощник (GTK версия)](http://gbgoffice.info/) и https://slovored.com/english/
+(* стари безплатни версии на програмата за проверка на правописа на български текстове **IDI Spellchecker/IDI Dictionary/IDI Dictionary Talking** [IDIdictionary & spellchecker (hyperlink)](http://freeplace.info/ididictionary/bulgarian_spell_checker/), ItaEst/WinEst, др.)
+* **[ludost.net](https://ludost.net/)** - **https://ludost.net/projects.html** - **https://marla.ludost.net/hosted/** - Ако имате проект с не-стопанска цел и се чудите къде да го приютите, пратете ни e-mail на `requests@ludost.net`. Ние ще направим всичко, което е по силите ни, за да ви помогнем. (Включва и... :P "OpenDC - An OpenDC Hub for unlicensed (e.g. legal) anime content - maintained by Vasil Kolev" и **https://anime.ludost.net/ - "български откачен аниме и манга портал"**)
+
+### `bglinux`
+* `bglinux` — пакет за българизация и кирилизация на Linux (от [Антон Кирилов Зиновиев](http://lml.bas.bg/~anton/) и други): http://lml.bas.bg/~anton/original/bglinux.html (Антон Зиновиев и други)
+
+### TeX/LaTeX_BG
+* TeX/LaTeX + XeTeX (Unicode TeX/LaTeX): `bgtex` — пакет за българизация и кирилизация на TeX/LaTeX - вижте още XeTeX (Tex with Unicode fonts!):
+	- https://en.wikipedia.org/wiki/List_of_TeX_extensions
+	- https://en.wikipedia.org/wiki/Comparison_of_TeX_editors
+	- https://en.wikipedia.org/wiki/Template:TeX_editors
+	- http://xetex.sourceforge.net/
+	- https://tug.org/usergroups.html#bg
+	- https://www.ctan.org/lugs
+* Local Bulgarian TeX(/LaTeX) User Group (TEX-LUG-BG (да НЕ се бърка с LUG-BG (Linux Users Group - Bulgaria(n)!!!), LBulTeXUG, LBTeXUG, LBTUG):
+`bgTEX
 Bul­gar­ian LATEX Users Group
 Dept. of Ap­plied Math­e­mat­ics and Statis­tics
 Univer­sity of Ruse
@@ -202,28 +283,28 @@ Ruse,7017
 Bul­garia
 Web: groups.google.com/fo­rum/?hl=bg&from­groups#!fo­rum/bul­gar­ian-la­tex-users-group
 Email: bul­gar­ian-la­tex-users-group@google­groups.com
-Lan­guages: Bul­gar­ian
+Lan­guages: Bul­gar­ian`
 
-```
+````
 http://lml.bas.bg/~anton/linux/bglinux.html
 http://lml.bas.bg/~anton/original/
 http://lml.bas.bg/~anton/original/BG_Linux.html
 http://lml.bas.bg/~anton/original/Bulgarization.html
 http://lml.bas.bg/~anton/original/Ontogenesis.html
 http://lml.bas.bg/~anton/original/bglinux.html (Антон Зиновиев и други)
+````
 
-https://github.com/omaciel/EmblemDivide (an example of a ebook/e-book written in TeX/LaTeX, with full .tex source code!)
-https://github.com/omaciel/book-source = the source code of the boook The Joy of Clojure (изходния код на книгата „Радостта от езика за програмиране Clojure)
+https://github.com/omaciel/EmblemDivide (an example of a ebook/e-book written in TeX/LaTeX, with full `.tex` source code!)
+https://github.com/omaciel/book-source = the source code of the boook The Joy of Clojure (изходния код на книгата „Радостта от езика за програмиране Clojure“)
 
 https://github.com/omaciel/gnome-i18n-manage-vcs
 https://github.com/omaciel/python-postats
 
-`pandoc`, `yelp` + `gnome-doc-util`, (GNU/)Linux `man`pages, http://projectmallard.org/ (a DocBook-like(?) Markdown-like(?) document lightweight markup language)
+`pandoc`, `yelp` + `gnome-doc-util`, (GNU/)Linux `man`pages, http://projectmallard.org/ (a DocBook-like(?) Markdown-like(?) document lightweight markup language); http://bellard.org
 
-```
-* Учебник за Дебиан Линукс на български език (Debian Linux): http://d.linux-bg.org/download/books/Debian-book/src/debian-book.html (за малко по-стара версия на Debian, но много от информацията е все още напълно приложима)
+----
 
-http://lml.bas.bg/~anton/original/bglinux.html (Антон Зиновиев и други)
+### Localization platforms
 
 * _**Transifex.com**_ (например https://www.transifex.com/mate/MATE/translate/#bg), _**[CrowdIn.com](https://crowdin.com/)**_, _**[Zanata.org](http://zanata.org/)**_, [Mojito](http://www.mojito.global/), [TranslationExchange](https://translationexchange.com/), [Localize.co](https://lokalise.co/), [GetLocalization](https://www.getlocalization.com/), 
 и [други инструменти за превод (CAT, MT, TM и т.н)](https://opensource.com/article/17/6/open-source-localization-tools)
@@ -243,7 +324,7 @@ lug-bg@linux-bulgaria.org ; за абониране: http://linux-bulgaria.org/m
 * https://www.localize.io/
 * ...
 
-`````
+````
 Някои от долните хипервръзки вече на са налични, но са в този документ като исторически спомен...
 
 линукс за българи: http://linux-bg.org
@@ -262,7 +343,7 @@ https://www.iro.umontreal.ca/contrib/po/HTML/team-bg.html
 https://debian.fmi.uni-sofia.bg/~ogi/bulgarian.el
 http://archive.is/UKrWk
 http://archive.is/LXWYN
-``````
+````
 
 ## FOSS конференции и срещи от и за българи (конференции за свободен софтуер и софтуер с отворен код) ##
 * **[OpenFest](http://www.openfest.org/2018/bg/)**
@@ -314,15 +395,39 @@ https://www.microsoft.com/en-us/language/Translations?rtc=1
 https://templates.office.com/?legRedir=true&qu=books&CorrelationId=99a64b77-15a6-4299-be0b-5dbafa63771b#ai:TC101919240|
 ````
 
-## Свободно достъпни учебници по компютърно програмиране (на български език):
+## BOOKS - Свободно достъпни учебници по компютърно програмиране (на български език):
 
-http://nikolay.it/Pages/About-me
+* Учебник за Дебиан Линукс на български език (Debian Linux): http://d.linux-bg.org/download/books/Debian-book/src/debian-book.html (за малко по-стара версия на Debian, но много от информацията е все още напълно приложима, стига да не промените нещо важно в Debian... :P Backup преди употреба...)
+* https://github.com/stelf/fmi-perl (Perl5 book (collection of lecture notes) - Practical Perl Programming at FMI/Sofia University)
+* http://lml.bas.bg/~anton/original/bglinux.html (Антон Зиновиев и други)
+* https://github.com/stelf/fmi-db
+* https://github.com/omaciel/EmblemDivide (an example of a ebook/e-book written in TeX/LaTeX, with full `.tex` source code!)
+* https://github.com/omaciel/book-source = the source code of the boook The Joy of Clojure (изходния код на книгата „Радостта от езика за програмиране Clojure“)
+* **http://nikolay.it/Pages/About-me**
 * Introduction to programming with C# (English version) - http://www.introprogramming.info/english-intro-csharp-book/ - ISBN: 978-954-400-773-7
 * Introduction to programming with C# (Bulgarian version) - http://www.introprogramming.info/intro-csharp-book/ - ISBN: 978-619-00-0778-4
 * Programming Basics with JavaScript (Bulgarian version) - https://js-book.softuni.bg/ - ISBN: 978-619-00-0702-9
 * Programming Basics with Python (Bulgarian version) - https://python-book.softuni.bg/ - ISBN: 978-619-00-0806-4
 * Programming Basics with C++ (Bulgarian version) - https://cpp-book.softuni.bg/ - ISBN: TBA
+* * **The Jargon File (The (New) Hacker's Dictionary)**: **http://catb.org/jargon/html/ (най-нова версия)**, https://www.dourish.com/goodies/jargon.html (оригиналът), http://www.eps.mcgill.ca/jargon/jargon.html (v4.2.0, 31 JAN 2000), https://www.netmeister.org/news/jargon.html (v4.2.3, 23 NOV 2000); https://en.wikipedia.org/wiki/Jargon_File.
+* _The Linux Shell Scripting Tutorial (LSST) v2.0 (free **book** for bash-schellscripting)_ = https://bash.cyberciti.biz/guide/Main_Page
+* https://github.com/13542/free-programming-books
+* https://github.com/13542/the-book-of-secret-knowledge
+* https://github.com/13542/books
 * и др. (за допълване...)
+
+* **Linux From Scratch (LFS)** books:
+	- http://lfs.phayoune.org/lfs/
+	- http://lfs.phayoune.org/blfs/
+	- http://lfs.phayoune.org/alfs/
+	- https://trac.clfs.org/
+	- http://lfs.phayoune.org/blfs/downloads/stable/BLFS-BOOK-8.4-nochunks.html
+	- http://lfs.phayoune.org/blfs/downloads/stable-systemd/BLFS-BOOK-8.4-systemd-nochunks.html
+	- http://lfs.phayoune.org/blfs/view/8.1/lxqt/lxqt-session.html
+	- http://lfs.phayoune.org/blfs/view/8.1/index.html
+	- http://lfs.phayoune.org/blfs/
+	- http://lfs.phayoune.org/blfs/read.html
+	- http://lfs.phayoune.org/blfs/view/stable/
 
 ### Още полезни информационни ресурси за учене на компютърно програмиране + списъци с качествен (безплатен (freeware) и свободен (F(L)OSS)) софтуер
 
@@ -344,7 +449,7 @@ http://nikolay.it/Pages/About-me
 * ( https://github.com/vkandola/Best-websites-a-programmer-should-visit )
 * https://github.com/13542/coding-interview-university
 
-* https://github.com/13542/htmlpreview.github.com (view GitHub-hosted .html rendered as HTML, NOT as 'view-source:' source-code!
+* https://github.com/13542/htmlpreview.github.com (view GitHub-hosted .html rendered as HTML, NOT as 'view-source:' source-code!!!
 
 __[SoftUni](https://softuni.bg)__
 * https://github.com/13542/SoftUni-1
@@ -396,6 +501,7 @@ https://userbase.kde.org/Lokalize
 https://translate-toolkit.readthedocs.io/en/latest/
 https://binary-factory.kde.org/job/Lokalize_Release_win32/
 https://binary-factory.kde.org/job/Lokalize_Nightly_win32/
+* KBabel
 * Лично хоствани екземпляри на системата за уеб-преводи Weblate
 * Примерни инструкции за преводни файлове за локализация PO и TS (???): http://wiki.pointlinux.org/index.php?title=Localization
 * Основни формати за превод на софтуер: .po (GNU gettext), .pot (.po Template), .mo (compiled binary .po); Qt Linguist: .ts (compiled: .qm); .lng, .lang; .txt, .conf, .config, .cfg; .json, .xaml, .haml; .tmx (Google Translate), .tbx (Microsoft Terminology), .xliff и др. ...; XLIFF (.xlf, .xliff), (.spec?)... ... ... Translation-related formats:
@@ -601,15 +707,16 @@ http://evocore.io/viewtopic.php?t=6266&start=20
 * https://linuxmint-installation-guide.readthedocs.io/bg/latest/
 * https://ubuntu-manual.org/
 * Командата `$ bg` в POSIX/Linux: http://man7.org/linux/man-pages/man1/bg.1p.html :smiley:
-* The Jargon File (The Hacker's Dictionary): http://catb.org/jargon/html/ (най-нова версия), https://www.dourish.com/goodies/jargon.html (оригиналът), http://www.eps.mcgill.ca/jargon/jargon.html (v4.2.0, 31 JAN 2000), https://www.netmeister.org/news/jargon.html (v4.2.3, 23 NOV 2000); https://en.wikipedia.org/wiki/Jargon_File.
-* _The Linux Shell Scripting Tutorial (LSST) v2.0 (free book for bash-schellscripting)_ = https://bash.cyberciti.biz/guide/Main_Page
+* **The Jargon File (The (New) Hacker's Dictionary)**: **http://catb.org/jargon/html/ (най-нова версия)**, https://www.dourish.com/goodies/jargon.html (оригиналът), http://www.eps.mcgill.ca/jargon/jargon.html (v4.2.0, 31 JAN 2000), https://www.netmeister.org/news/jargon.html (v4.2.3, 23 NOV 2000); https://en.wikipedia.org/wiki/Jargon_File.
+* _The Linux Shell Scripting Tutorial (LSST) v2.0 (free **book** for bash-schellscripting)_ = https://bash.cyberciti.biz/guide/Main_Page
 * статии за софтуер от Wikipedia/Уикипедия, свободната онлайн енциклопедия, редактирана от потребителите си
 * и други (за допълване после...)
 
 ## Полезни онлайн речници за преводачи ##
-* EuroDict (BG): https://eurodict.com/ (със стария, далеч по-удобен интерфейс: http://bulgariandictionary.com/ + [GitHub gist с написан от мой познат PHP скрипт за остъргване/webscraping на bulgariandictionary.com с Ubuntu/Linux Mint/Debian с цел лична офлайн употреба на 23-те речника](deadlink?TO ADD))
+* EuroDict (BG): https://eurodict.com/ (със стария, далеч по-удобен интерфейс: http://bulgariandictionary.com/ + [GitHub gist с написан от мой познат PHP скрипт за остъргване/webscraping на bulgariandictionary.com с Ubuntu/Linux Mint/Debian с цел лична офлайн употреба на 23-те речника](deadlink?TO ADD) )
 * https://www.dicts.info/uddl.php (речници за генериране и изтегляне!), https://www.dicts.info, https://www.dicts.info/ud.phpq и https://www.dicts.info/dictionaries.php
 * https://freedict.org/
+* http://dicts.org
 * ОЩЕ: https://slovored.com/, https://rechnik.chitanka.info/, http://rechnik.info/, https://www.talkoven.com/, https://www.ezikov.com/, https://www.linguee.com/bulgarian-english/translation/, https://bg.glosbe.com/en/bg/, https://www.t-rechnik.info/, https://www.bgjargon.com/ и много други...
 * [GoldenDict dictionary database files]()
 * [AEDictionaryXP dictionary](http://www.kamburov.net/aleksandar/projects/aedict/)
@@ -944,6 +1051,9 @@ https://www.reddit.com/r/thepiratebay/comments/7l5kro/the_wayback_machine_and_th
 * https://man.cx/fortune
 * https://man.cx/strfile
 
-##
+## Търсачки из менютата на интерфейса на програма
+* За GNOME под (GNU/)Linux: https://github.com/p-e-w/plotinus/
+https://github.com/p-e-w/argos/
+* Wox (за MS Windows)???
 
 * и други...

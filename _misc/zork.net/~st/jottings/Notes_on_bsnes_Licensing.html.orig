@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Notes on bsnes licensing - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="notes-on-bsnes-licensing">Notes on bsnes licensing<a class="headerlink" href="#notes-on-bsnes-licensing" title="Permanent link">&para;</a></h1>
+<p><strong>Note:</strong> I&rsquo;m pretty sure this was a draft for a post on the <a href="http://board.byuu.org/">bsnes forums</a>. bsnes itself has been under the GPLv3 for a while now.</p>
+<hr>
+<blockquote>
+<p>What I want:
+ 1. anyone can use my code, in an open or closed app
+ 2. they can statically link my code
+ 3.  if they make changes to my code, they have to release those changes
+ 4.  those changes follow the same rules: people can use them in closed apps</p>
+</blockquote>
+<p>The trouble here, as I understand it, is that copyright law works on the concept of a &lsquo;derived work&rsquo;; that is, an idea based off a previous idea. Whether the modification is &lsquo;edited the source-code to change how it works&rsquo; or &lsquo;ran the source through a compiler&rsquo; is immaterial; the law treats both the same way, which makes it difficult to write a licence based on copyright law that distinguishes them.</p>
+<p>For example, if somebody was using a non-ISO-C++ compiler to make some product and had to adjust the order of fields in some headers in order to link some bsnes component with the rest of their code, or to modify your makefiles to call their special compiler at a particular path, would your hypothetical licence require them to release those changes or not? On the one hand, they&rsquo;re minimally invasive changes as anyone who wants to use an open-source library might expect to make, on the other hand they are technically changes to your code. Distinguishing between the two would be difficult for a human to do on a case-by-case basis; writing static legal code to reliably distinguish them would be practically impossible.</p>
+<blockquote>
+<p>What I&rsquo;m afraid of: someone doing something really cool that I want to add back, but without losing the ability to release this new combined code under LGPL in the future</p>
+</blockquote>
+<p>This is not so much a legal opinion as an observation of life in general, but so far as I can tell, either I can share what I have with people and accept that some people will be bastards unfit for human society, or I can keep everything to myself. The hypothetical third option of &lsquo;only share with people I like&rsquo; works out to be the same as &lsquo;keep everything to myself&rsquo;, since very few people will want to invest the time to establish a personal relationship with me and gain my trust so they can ask for and be reasonably confident of receiving permission to make changes to my code.</p>
+<blockquote>
+<p>I prefer non-commercial only, but I know not letting others profit off your work makes your work &ldquo;proprietary and non-free.&rdquo; Meh.</p>
+</blockquote>
+<p>Like the &ldquo;how significant does a change have to be before it&rsquo;s required to be shared&rdquo; problem, &ldquo;non-commercial use&rdquo; is difficult to reliably define. For example, I&rsquo;d assume that playing games in the privacy of my basement would be OK while selling bsnes CDs on eBay would be not OK. However, what about if I publish modifications to bsnes and an employer who sees them decides to hire me because of them? Is that commercial use of the bsnes code? What about a video-game museum who uses bsnes to demonstrate SNES games without endangering antique SNES hardware? Visitors are being charged to come in and play SNES games (among other things), does that become commercial use of the bsnes code? Even something simple like using bsnes in a university course about embedded programming would be problematic - you&rsquo;d think that academia would be the opposite of commercial use, but those students are paying an awful lot of money in tuition fees&hellip;</p>
+<p>(You might be interested to know that <a href="http://www.opensource.org/licenses/mozilla1.1.php">the Mozilla Public Licence</a> defines &ldquo;commercial use&rdquo; as &ldquo;distribution or otherwise making the Covered Code available to a third party.&rdquo;)</p>
+<p>One of the reasons I prefer to use software under the BSD and GPL licences (and similiar licences like the MIT/X11 licence and the <a href="http://sam.zoy.org/wtfpl/">WTFPL</a>) is that as a user, it&rsquo;s incredibly easy for me to know what my rights are - no long and complicated EULAs to read, no inadequately defined clauses where my interpretation might legitimately differ from the copyright holder&rsquo;s. The words &ldquo;proprietary and non-free&rdquo; often get thrown around like curses, which is sad because people react to the tone of voice rather than the meaning. It&rsquo;s simply the division between &ldquo;I&rsquo;m sure I can do whatever I want to this code&rdquo; and &ldquo;I&rsquo;m not entirely sure&rdquo;. When there&rsquo;s a range of software that I might be able to use, and I don&rsquo;t personally know any of the copyright holders, I prefer the guarantee of &ldquo;I can do whatever I want&rdquo; over doubt and uncertainty.</p>    </body>
+</html>

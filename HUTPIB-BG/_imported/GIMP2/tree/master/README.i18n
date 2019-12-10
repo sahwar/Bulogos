@@ -1,0 +1,65 @@
+This file contains some important hints for translators.
+
+
+The current status of the GIMP translation can be checked at
+
+  https://l10n.gnome.org/module/gimp
+
+
+Translation of the GNU Image Manipulation Program is handled by the
+GNOME Translation Project (see https://l10n.gnome.org/). If you want to
+help, we suggest that you get in touch with the translation team of
+your language (see https://l10n.gnome.org/teams/).
+
+
+GIMP is different
+
+ GIMP is a complex application which has a bunch of scripts and
+ plug-ins that all want to be internationalized. Therefore there is
+ not one catalog but many. For a full translation of GIMP's UI, you
+ will have to add translations for the following catalogs:
+
+   po/gimp20.po                                       --  the core
+   po-libgimp/gimp20-libgimp.pot                      --  the libgimp library
+   po-plugins/gimp20-std-plugins.pot                  --  the C plug-ins
+   po-python/gimp20-python.pot                        --  the pygimp plug-ins
+   po-script-fu/gimp20-script-fu.pot                  --  the script-fu scripts
+   po-tips/gimp20-tips.pot                            --  the startup tips
+   po-windows-installer/gimp20-windows-installer.pot  --  the windows installer
+
+ If you are looking for the translations of gimp-perl, please note that
+ gimp-perl has been moved into it's own git module called
+ gimp-perl.
+
+
+GIMP Tips dialog
+
+ In addition to message catalogs GIMP provides a file with tips that
+ are displayed in the Tips dialog. This file is in XML format and can
+ be found in the tips directory. The english tips messages are
+ extracted from gimp-tips.xml.in so translators can use the usual
+ tools to create a <lang>.po file that holds the translations. All
+ translations are then merged into gimp-tips.xml with language
+ identifiers taken from the po filename.
+
+ GIMP needs to know what language it should select from gimp-tips.xml.
+ Therefore, there's the special message "tips-locale:C" in the main
+ message catalog that needs to be translated correctly. For a german
+ translation of the tips this would look like this:
+
+ #: ../app/dialogs/tips-parser.c:188
+ msgid "tips-locale:C"
+ msgstr "tips-locale:de"
+
+
+Localization of third-party plug-ins
+
+ Third-party plug-ins (plug-ins that are not distributed with GIMP)
+ can't have their messages in the gimp-std-plugins textdomain.  We
+ have therefore provided a mechanism that allows plug-ins to install
+ their own message catalogs and tell GIMP to bind to that
+ textdomain. This is necessary so that GIMP can correctly translate
+ the menu paths the plug-in registers. Basically the plug-in has to
+ call gimp_plugin_domain_add() or gimp_domain_plugin_add_with_path()
+ before it registers any functions. Have a look at the script-fu
+ plug-in to see how this is done in detail.

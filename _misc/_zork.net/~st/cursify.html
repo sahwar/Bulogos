@@ -1,0 +1,131 @@
+#!/usr/bin/env python
+# vim: set fileencoding=UTF-8 expandtab :
+# Copyright 2010 Jonas Häggqvist <rasher@rasher.dk>
+#
+# BSD license up in this shiznit
+# 
+# Version 1.0
+# Version 1.1
+# - fraktur -> boldfraktur
+# - add fraktur
+# - add boldscript
+# - add numbers to doublestruck
+# Version 1.2
+# - add bold
+# - add italic
+# - add bolditalic
+# - add sans-serif
+# - add boldsans-serif
+# - add italicsans-serif
+# - add bolditalicsans-serif
+# - add monospace
+
+import sys
+import locale
+
+ALLRANGES = {
+        'bold': {
+            (65, 90)  : 0x1D400,
+            (97, 122) : 0x1D41A,
+            (48, 57)  : 0x1D7CE,      # Digits
+            (0x391, 0x3A1) : 0x1D6A8, # ALPHA-RHO
+            (0x3A3, 0x3A9) : 0x1D6BA, # SIGMA-OMEGA
+            (0x3B1, 0x3C9) : 0x1D6C2, # alpha-omega
+            },
+        'italic': {
+            (65, 90)  : 0x1D434,
+            (97, 122) : 0x1D44E,
+            (0x391, 0x3A1) : 0x1D6E2, # ALPHA-RHO
+            (0x3A3, 0x3A9) : 0x1D6F4, # SIGMA-OMEGA
+            (0x3B1, 0x3C9) : 0x1D6FC, # alpha-omega
+            },
+        'bolditalic': {
+            (65, 90)  : 0x1D468,
+            (97, 122) : 0x1D482,
+            (0x391, 0x3A1) : 0x1D71C, # ALPHA-RHO
+            (0x3A3, 0x3A9) : 0x1D72E, # SIGMA-OMEGA
+            (0x3B1, 0x3C9) : 0x1D736, # alpha-omega
+            },
+        'script': {
+            (65, 90)  : 0x1D49C,
+            (97, 122) : 0x1D4B6,
+            },
+        'boldscript': {
+            (65, 90)  : 0x1D4D0,
+            (97, 122) : 0x1D4EA,
+            },
+        'fraktur': {
+            (65, 90)  : 0x1D504,
+            (97, 122) : 0x1D51E,
+            },
+        'boldfraktur': {
+            (65, 90)  : 0x1D56C,
+            (97, 122) : 0x1D586,
+            },
+        'doublestruck': {
+            (65, 90)  : 0x1D538,
+            (97, 122) : 0x1D552,
+            (48, 57)  : 0x1D7D8,
+            },
+        'sans-serif': {
+            (65, 90)  : 0x1D5A0,
+            (97, 122) : 0x1D5BA,
+            (48, 57)  : 0x1D7E2,      # Digits
+            },
+        'boldsans-serif': {
+            (65, 90)  : 0x1D5D4,
+            (97, 122) : 0x1D5EE,
+            (48, 57)  : 0x1D7EC,      # Digits
+            (0x391, 0x3A1) : 0x1D756, # ALPHA-RHO
+            (0x3A3, 0x3A9) : 0x1D768, # SIGMA-OMEGA
+            (0x3B1, 0x3C9) : 0x1D770, # alpha-omega
+            },
+        'italicsans-serif': {
+            (65, 90)  : 0x1D608,
+            (97, 122) : 0x1D622,
+            },
+        'bolditalicsans-serif': {
+            (65, 90)  : 0x1D63C,
+            (97, 122) : 0x1D656,
+            (0x391, 0x3A1) : 0x1D790, # ALPHA-RHO
+            (0x3A3, 0x3A9) : 0x1D7A2, # SIGMA-OMEGA
+            (0x3B1, 0x3C9) : 0x1D7AA, # alpha-omega
+            },
+        'monospace': {
+            (65, 90)  : 0x1D670,
+            (97, 122) : 0x1D68A,
+            (48, 57)  : 0x1D7F6,      # Digits
+            },
+        }
+
+
+def cursifychar(c, ranges):
+    n = ord(c)
+    for (start, end), offset in ranges.items():
+        if n >= start and n <= end:
+            return unichr(offset + (n - start))
+    return c
+
+
+def cursify(s, ranges):
+    return u"".join(cursifychar(c, ranges) for c in s)
+
+
+if __name__ == "__main__":
+    encoding = locale.getpreferredencoding()
+
+    if len(sys.argv) == 1:
+        ranges = ALLRANGES['script']
+    elif len(sys.argv) == 2 and sys.argv[1] in ALLRANGES:
+        ranges = ALLRANGES[sys.argv[1]]
+    else:
+        rangenames = "[%s]" % "|".join(sorted(ALLRANGES.keys()))
+        print "Usage: %s %s" % (sys.argv[0], rangenames)
+        print "Converts characters from stdin to the given Unicode "
+        print "character range."
+        sys.exit(1)
+
+    for line in sys.stdin:
+        line = cursify(line.decode(encoding), ranges)
+        sys.stdout.write(line.encode(encoding))
+

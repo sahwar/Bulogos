@@ -1,0 +1,363 @@
+body  {
+  color:#e8e8e8;
+  background-color:black;
+  font-size:12px;
+  font-family:Ubuntu,sans-serif;
+  text-align:justify;
+  margin-left:25%;
+  margin-right:25%;
+}
+
+p,li,dd  {
+  line-height:1.5;
+}
+
+p.tit  {
+  font-size:28px;
+  font-variant:small-caps;
+  color:#ffc0ff;
+  text-align:right;
+  word-spacing:3px;
+  letter-spacing:1px;
+  margin-bottom:0px;
+}
+
+p.subtit  {
+  font-size:20px;
+  font-style:italic;
+  color:#ffa0ff;
+  text-align:right;
+  word-spacing:2px;
+  letter-spacing:1px;
+  margin-top:0px;
+}
+
+p.langlist  {
+  text-align:left;
+  line-height:2.5;
+  margin-left:10%;
+  margin-right:10%;
+}
+
+h1  {
+  font-size:22px;
+  text-align:center;
+  font-weight:normal;
+  letter-spacing:1px;
+  word-spacing:2px;
+  color:#00e8e8;
+  margin-top:2em;
+  margin-bottom:1.5em;
+}
+
+h3  {
+  font-size:16px;
+  text-align:left;
+  font-weight:normal;
+  letter-spacing:1px;
+  word-spacing:2px;
+  color:white;
+  background-color:#304070;
+  margin-top:1.6em;
+  margin-bottom:1.2em;
+  padding-left:.6em;
+  padding-top:.2em;
+  padding-bottom:.2em;
+}
+
+h4  {
+  font-size:14px;
+  font-style:italic;
+  text-align:left;
+  font-weight:normal;
+  letter-spacing:1px;
+  word-spacing:2px;
+  color:#00e8e8;
+  margin-top:1.4em;
+  margin-bottom:1.1em;
+}
+
+td  {
+  color:black;
+  margin:0px;
+}
+
+td.main  {
+  color:#8080f0;
+  font-family:Ubuntu Mono,Consolas,monospace;
+  text-align:right;
+}
+
+td.topbar  {
+  text-align:center;
+  border:1px solid;
+  border-color:#00c0ff;
+  border-radius:5px;
+  font-size:12px;
+  color:white;
+  background-color:#1874cd;
+  letter-spacing:1px;
+  word-spacing:2px;
+  padding-left:0px;
+  padding-right:0px;
+  padding-top:2px;
+  padding-bottom:3px;
+}
+
+td.impl  {
+  padding-top:3px;
+  padding-bottom:3px;
+  padding-left:0px;
+  padding-right:0px;
+}
+
+span.csc  {
+  font-variant:small-caps;
+}
+
+tt,code  {
+  color:#00ffff;
+  font-size:15px;
+  font-family:Ubuntu Mono,Consolas,monospace;
+  font-weight:normal;
+}
+
+pre  {
+  color:#e8e8e8;
+  background-color:#000088;
+  border-color:#808080;
+  font-size:12px;
+  font-family:Ubuntu Mono,Consolas,monospace;
+  line-height:1.4;
+  font-weight:normal;
+  margin-top:1.0em;
+  margin-bottom:1.0em;
+  border-style:solid;
+  border-width:1px;
+  padding-left:0.5em;
+  padding-top:0.4em;
+  padding-bottom:0.6em;
+}
+
+pre.plain {
+  background-color:black;
+  border:none;
+  line-height:1.1;
+  margin-top:.8em;
+  margin-bottom:.8em;
+}
+
+table {
+  background-color:black;
+  border:none;
+  margin-top:0pt;
+  margin-bottom:0pt;
+  padding-top:0pt;
+  padding-bottom:0pt;
+}
+
+table.topbar  {
+  left:1%;
+  top:1%;
+  position:fixed;
+}
+
+span.pseudo  {  /* preprocessor etc */
+  color:#e06000;
+  font-weight:bold;
+}
+
+span.command  {  /* statement, operator */
+  color:#e09000;
+  font-weight:bold;
+}
+
+span.bif  {  /* built-in procedure/function or operator */
+  color:#f0d000;
+}
+
+span.typename  {  /* typename and similar */
+  color:#9090ff;
+}
+
+span.identifier  {  /* library procedure/function */
+  color:#a0c000;
+}
+
+span.constant  {  /* numbers, chars, strings */
+  color:#00ffff;
+}
+
+span.special  {  /* special name, symbol, escape/formating sequence etc */
+  color:#d800d8;
+}
+
+span.sectsep  {  /* section separator */
+  color:#e0e0e0;
+  background-color:#008000;
+}
+
+span.comment  {
+  color:#808080;
+  font-style:italic;
+}
+
+a  {
+  text-decoration:none;
+  border:1px dotted;
+  padding-left:1px;
+  padding-right:1px;
+}
+
+a:link  {
+  color:#80ffd0;
+  background-color:#202020;
+  border:none;
+}
+
+a:visited  {
+  color:#80d0ff;
+  background-color:#303030;
+  border:none;
+}
+
+a:hover  {
+  color:white;
+  background-color:#00a0a0;
+}
+
+a.invis  {
+  border:none;
+  padding:0px;
+  display:none;
+}
+
+a.topbar  {
+  color:white;
+  background-color:#1874cd;
+  border-radius:5px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:2px;
+  padding-bottom:3px;
+  margin:0px;
+}
+
+a:visited.topbar  {
+  color:white;
+  background-color:#1874cd;
+}
+
+a:hover.topbar  {
+  color:#000060;
+  background-color:#a0c8e0;
+}
+
+a.lang  {
+  border:1px solid;
+  border-color:#0080ff;
+  border-radius:4px;
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:1px;
+  word-spacing:0px;
+  margin-left:8px;
+  margin-right:1px;
+  padding-top:1px;
+  padding-bottom:1px;
+  padding-left:3px;
+  padding-right:3px;
+}
+
+a:link.lang  {
+  color:#000090;
+  background-color:#70c0e0;
+}
+
+a:visited.lang  {
+  border:1px solid;
+  border-color:#0080ff;
+  color:#000090;
+  background-color:#70c0e0;
+}
+
+a:hover.lang  {
+  border:1px solid;
+  border-color:#0080ff;
+  color:#000090;
+  background-color:#e0f090;
+}
+
+a.impl  {
+  border:1px solid;
+  border-color:#8080d0;
+  border-radius:4px;
+  font-size:12px;
+  font-weight:normal;
+  letter-spacing:1px;
+  word-spacing:2px;
+  margin-bottom:10px;
+  margin-left:4px;
+  margin-right:4px;
+  padding-top:1px;
+  padding-bottom:1px;
+  padding-left:4px;
+  padding-right:4px;
+}
+
+a:link.impl  {
+  color:#d0c0ff;
+  background-color:#4800c0;
+}
+
+a:visited.impl  {
+  border:1px solid;
+  border-color:#8080d0;
+  color:#d0c0ff;
+  background-color:#4800c0;
+}
+
+a:hover.impl  {
+  border:1px solid;
+  border-color:#5050b0;
+  color:#400060;
+  background-color:#b0b0ff;
+}
+
+hr  {
+  color:#1874cd;
+  height:1px;
+  width:100%;
+  text-align:center;
+  border-style:solid;
+  margin-top:0.7em;
+  margin-bottom:0.7em;
+}
+
+a.main  {
+  background-color:black;
+  padding-left:4px;
+  padding-right:4px;
+  padding-top:2px;
+  padding-bottom:3px;
+  margin:0px;
+}
+
+a:visited.main  {
+  background-color:black;
+}
+
+a:hover.main  {
+  background-color:black;
+}
+
+span.main  {
+  color:#90c0ff;
+  font-size:18px;
+  letter-spacing:1px;
+  word-spacing:2px;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:0px;
+  padding-right:0px;
+}

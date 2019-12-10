@@ -1,0 +1,42 @@
+# Indentable rlcompleter
+#
+# Extend standard rlcompleter module to let tab key can indent
+# and also completing valid Python identifiers and keywords.
+
+import os.path, atexit
+
+try:
+    import readline
+except ImportError:
+    pass
+else:
+    import rlcompleter
+
+    class irlcompleter(rlcompleter.Completer):
+        def complete(self, text, state):
+            if text == "":
+                readline.insert_text('\t')
+                return None
+            else:
+                return rlcompleter.Completer.complete(self,text,state)
+
+    # You could change this line to bind another key instead tab.
+    readline.parse_and_bind("tab: complete")
+    readline.set_completer(irlcompleter().complete)
+
+    # Restore our command-line history, and save it when Python exits.
+    historyPath = os.path.expanduser("~/.pyhistory")
+    try:
+        readline.read_history_file(historyPath)
+    except IOError:
+        # presumably file-not-found
+        pass
+    atexit.register(lambda x=historyPath, y=readline: y.write_history_file(x))
+
+# Delete the imports so we don't clutter the default namespace. However, if we
+# delete rlcompleter, completion stops working.
+del os
+del atexit
+del readline
+del irlcompleter
+del historyPath

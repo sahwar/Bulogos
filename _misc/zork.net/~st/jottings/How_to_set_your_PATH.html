@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+How to set your $PATH - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="index.html">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="how-to-set-your-path">How to set your PATH<a class="headerlink" href="How_to_set_your_PATH.html#how-to-set-your-path" title="Permanent link">&para;</a></h1>
+<p>It&rsquo;s a common scenario:
+somebody installs some Unix software for the first time,
+but just typing the name gives &ldquo;command not found&rdquo;,
+so they have to type the full path every time.
+Pretty quickly,
+they learn they can set a new value for <code>$PATH</code>,
+but that setting vanishes as soon as they close the terminal.</p>
+<p>Maybe a friend tells them to put the value in <code>~/.bashrc</code>,
+and that works sometimes,
+but maybe not all the time,
+and it&rsquo;s difficult to discern a pattern.</p>
+<p>It is legitimately a complicated system,
+but I&rsquo;m going to show you the best way to set things up,
+and then if you&rsquo;re interested you can stick around
+and we can talk about why things are such a mess.</p>
+<h2 id="tldr-do-this">TL;DR: Do this<a class="headerlink" href="How_to_set_your_PATH.html#tldr-do-this" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Set <code>$PATH</code>
+    (or any other environment variable)
+    in the file <code>~/.profile</code>, like this:</p>
+<div class="codehilite"><pre><span></span>    export PATH=/some/new/path:/another/new/path:/what/ever:$PATH
+</pre></div>
+
+
+</li>
+<li>
+<p>Make sure that <code>~/.bash_profile</code> includes
+    configuration from <code>~/.profile</code>, like this:</p>
+<div class="codehilite"><pre><span></span>    source ~/.profile
+</pre></div>
+
+
+</li>
+<li>
+<p>Log out of your computer, then log back in.</p>
+</li>
+</ol>
+<p>That&rsquo;s it!</p>
+<p><strong>Note:</strong>
+the above may not work correctly
+if you use a shell other than <code>bash</code>,
+like <code>zsh</code> or <code>fish</code>.
+If you don&rsquo;t know what shell you&rsquo;re using,
+you&rsquo;re almost certainly using <code>bash</code>,
+and the above should be fine.</p>
+<h2 id="what-the-heck-is-going-on">What the heck is going on?<a class="headerlink" href="How_to_set_your_PATH.html#what-the-heck-is-going-on" title="Permanent link">&para;</a></h2>
+<p>It&rsquo;s technically possible to figure out what&rsquo;s going on
+by reading between the lines of the INVOCATION section
+of the <code>bash(1)</code> man page,
+but you need to know some extra context,
+like the different ways you can log into a Unix system,
+and how they execute commands differently.</p>
+<h2 id="system-vs-user-shells">System vs. user shells<a class="headerlink" href="How_to_set_your_PATH.html#system-vs-user-shells" title="Permanent link">&para;</a></h2>
+<p>For any given Unix user,
+there are two programs that are important here:</p>
+<ul>
+<li>the system shell is always <code>/bin/sh</code>,
+    for every user on the system</li>
+<li>the user shell can be configured for each user individually
+    (it&rsquo;s the last field on each line of <code>/etc/passwd</code>)</li>
+</ul>
+<p>Generally,
+the user shell is used for interactive command-line sessions,
+while the system shell is used as the default for shell-scripts,
+used for the <code>system(3)</code> C function,
+and basically everything else.</p>
+<h2 id="login-vs-non-login-shells">Login vs. non-login shells<a class="headerlink" href="How_to_set_your_PATH.html#login-vs-non-login-shells" title="Permanent link">&para;</a></h2>
+<p>In the very early days of Unix,
+<code>/bin/sh</code> was the only shell,
+so it was used as both the system and user shells.
+This was awkward,
+because a system shell needs to be predictable and fast,
+while a user shell needs to be customizable.</p>
+<aside><p>
+While some shells also accept a flags like `--login`,
+the official algorithm for checking "am I a login shell" is
+"is the first character of my command line a dash".
+</p></aside>
+
+<p>Therefore,
+<code>/bin/sh</code> had a special feature:
+at startup,
+if it detected that it was a <em>login shell</em>
+(that is, the shell launched for a user who just logged in)
+it would execute the file <code>~/.profile</code>,
+otherwise it would start up normally.
+Because of the way things like environment variables
+are automatically shared from one Unix process to its children,
+anything set in a user&rsquo;s login shell
+affects the user&rsquo;s entire session.</p>
+<h2 id="interactive-vs-non-interactive-shells">Interactive vs. non-interactive shells<a class="headerlink" href="How_to_set_your_PATH.html#interactive-vs-non-interactive-shells" title="Permanent link">&para;</a></h2>
+<p>After login,
+there&rsquo;s still an important distinction to make:
+some shells are <em>interactive</em>
+(that is, they print a prompt and wait for you to enter a command)
+while other shells are just running shell-scripts or whatever.</p>
+<p>For peformance reasons,
+there are some things we&rsquo;d only like to set up for interactive shells,
+like <a href="Per-Host_Prompt_Colouring.html">a fancy prompt</a>.
+There&rsquo;s also
+things that can&rsquo;t be inherited from the login shell,
+like aliases or tab-completion configuration.
+Therefore,
+many shells will load different configuration files
+if they&rsquo;re started in interactive mode.</p>
+<h2 id="creating-different-kinds-of-shell">Creating different kinds of shell<a class="headerlink" href="How_to_set_your_PATH.html#creating-different-kinds-of-shell" title="Permanent link">&para;</a></h2>
+<p>In different circumstances,
+you may encounter shells running in
+different combinations of the above modes.
+Here&rsquo;s the most common ones:</p>
+<ul>
+<li><strong>user, login, interactive</strong><ul>
+<li>If you log into a Unix system at the text-based console,
+    or if you connect over the network via SSH,
+    you&rsquo;ll likely wind up in a shell like this.</li>
+</ul>
+</li>
+<li><strong>system, login, non-interactive</strong><ul>
+<li>If you login to a Unix system at a graphical console,
+    your GUI desktop will probably be started
+    by a a shell like this.</li>
+<li>If you login to a Unix system via SSH,
+    and specify a command to run
+    (like <code>ssh somehost some-command</code>)
+    it will be run inside a shell like this.</li>
+</ul>
+</li>
+<li><strong>user, non-login, interactive</strong><ul>
+<li>If you open a terminal window,
+    either in a GUI desktop
+    or in a tool like <code>tmux</code> or <code>screen</code>,
+    you&rsquo;ll get a shell like this.</li>
+</ul>
+</li>
+<li><strong>system, non-login, non-interactive</strong><ul>
+<li>Shell-scripts that do not start with a <code>#!</code> line,
+    and ones that explicitly mention <code>#!/bin/sh</code>,
+    will run in a shell like this.</li>
+</ul>
+</li>
+<li><strong>user, non-login, non-interactive</strong><ul>
+<li>If you write a shell-script and explicitly
+    name your user shell in the <code>#!</code> line,
+    it will run in a shell like this.</li>
+</ul>
+</li>
+</ul>
+<p>The other possibilities
+(system, login, interactive;
+system, non-login, interactive;
+user, login, non-interactive)
+don&rsquo;t really come up,
+and can be safely ignored.</p>
+<h2 id="what-startup-files-do-shells-read">What startup files do shells read?<a class="headerlink" href="How_to_set_your_PATH.html#what-startup-files-do-shells-read" title="Permanent link">&para;</a></h2>
+<p>Different shells read different files at startup,
+in different circumstances.</p>
+<table>
+    <thead>
+        <tr>
+            <th>Shell</th>
+            <th>Login?</th>
+            <th>Interactive?</th>
+            <th>Config file</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>system</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td rowspan="2"><code>~/.profile</code></td>
+        </tr>
+        <tr>
+            <td>system</td>
+            <td>✔</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>system</td>
+            <td>-</td>
+            <td>✔</td>
+            <td rowspan="2"><i>Nothing</i></td>
+        </tr>
+        <tr>
+            <td>system</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>bash</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td rowspan="2"><code>~/.bash_profile</code></td>
+        </tr>
+        <tr>
+            <td>bash</td>
+            <td>✔</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>bash</td>
+            <td>-</td>
+            <td>✔</td>
+            <td><code>~/.bashrc</code></td>
+        </tr>
+        <tr>
+            <td>bash</td>
+            <td>-</td>
+            <td>-</td>
+            <td><i>Nothing</i></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>(<code>bash</code> actually checks a bunch of different files,
+but in the specific context of per-user configuration,
+if these files exist it won&rsquo;t check others)</p>
+<h2 id="how-can-we-plumb-it-all-together">How can we plumb it all together?<a class="headerlink" href="How_to_set_your_PATH.html#how-can-we-plumb-it-all-together" title="Permanent link">&para;</a></h2>
+<p>We have some configuration
+that we want to run for every login shell,
+whether it&rsquo;s a system shell or a user shell,
+interactive or not.
+We also have some configuration
+that we want to run for interactive shells,
+whether they&rsquo;re login shells or not.</p>
+<p>Based on the table in the previous section:</p>
+<ul>
+<li>Login-shell configuration goes in <code>~/.profile</code></li>
+<li>Interactive-shell configuration goes in <code>~/.bashrc</code></li>
+<li>The following wizardry goes into <code>~/.bash_profile</code>:<div class="codehilite"><pre><span></span>    # Load generic login-shell configuration
+    source ~/.profile
+
+    # $PS1 will be set if this is an interactive shell
+    if [ -n &quot;$PS1&quot; ]; then
+        # It&#39;s an interactive shell, load interactve settings
+        source ~/.bashrc
+    fi
+</pre></div>
+
+
+</li>
+</ul>
+<p>Let&rsquo;s double-check this covers
+all the scenarios from &ldquo;Creating different kinds of shell&rdquo; above:</p>
+<ul>
+<li><strong>user, login, interactive</strong><ul>
+<li><code>bash</code> will read <code>~/.bash_profile</code>,
+    and be redirected to read both the login-shell configuration
+    and the interactive-shell configuration.</li>
+</ul>
+</li>
+<li><strong>system, login, non-interactive</strong><ul>
+<li>The system shell will read <code>~/.profile</code>,
+    so it gets all the login-shell configuration.</li>
+</ul>
+</li>
+<li><strong>user, non-login, interactive</strong><ul>
+<li><code>bash</code> will read <code>~/.bashrc</code>,
+    so it gets all the interactive-shel configuration.</li>
+</ul>
+</li>
+<li><strong>system, non-login, non-interactive</strong><ul>
+<li>The system shell reads nothing,
+    which is just what we want.</li>
+</ul>
+</li>
+<li><strong>user, non-login, non-interactive</strong><ul>
+<li><code>bash</code> reads nothing,
+    which is just what we want.</li>
+</ul>
+</li>
+</ul>
+<p>Huzzah!</p>    </body>
+</html>

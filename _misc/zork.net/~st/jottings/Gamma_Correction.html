@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+What&#39;s the deal with... gamma correction? - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="index.html">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="whats-the-deal-with-gamma-correction">What&rsquo;s the deal with&hellip; gamma correction?<a class="headerlink" href="Gamma_Correction.html#whats-the-deal-with-gamma-correction" title="Permanent link">&para;</a></h1>
+<p>So, here&rsquo;s the deal with gamma: phosphor.</p>
+<p>If you pump twice as much energy into a piece of phosphor, you might get less
+or more than twice the photons out of it, depending on how much energy you
+started with. Which is to say: phosphor&rsquo;s light output is <em>non-linear</em> in
+relation to its input.</p>
+<p>You generally have a handful of TV cameras and studios, and millions (or more)
+of TV sets, so rather than building a circuit into every TV to compensate for
+the non-linearity of its phosphor (which would add to the cost of TV sets), TV
+standards like NTSC and PAL specify which particular type and variety of
+phosphor should be used in the manufacture of TVs, so they&rsquo;ll all have
+approximately the same degree of non-linearity in their displays, and so the
+non-linearity-compensation can be done in the TV studio, or better yet in the
+TV camera itself, and everything will still look as it should.</p>
+<p>As it happens, if you express signal strength as a number between 0 and 1, then
+the non-linearity of phosphor can be modelled with the exponentiation function
+<em>x<sup>y</sup></em> (that&rsquo;s &ldquo;x to the power of y&rdquo;), where <em>x</em> is the signal
+strength and <em>y</em> is a measure of exactly how non-linear the phosphor we&rsquo;re
+talking about happens to be. This &ldquo;measure of non-linearity&rdquo; is typically
+referred to by the Greek letter &ldquo;gamma&rdquo;, and the NTSC standard (to pick one
+example) declares that all TVs should be made out of phosphor whose
+non-linearity can be modelled with a gamma of 2.2. If you want to get an idea
+what an NTSC display is going to do to an image, you can run <em>x</em><sup>2.2</sup>
+over the R, G, B components of each pixel. If you have an image in a linear
+colour space and you want to prepare it to be displayed on an NTSC display, you
+can run <em>x</em><sup>(1/2.2)</sup> over it (that&rsquo;s <em>x</em> to the power of (1 divided by
+2.2) or <em>x</em> to the power of 0.4545&hellip;) and then the phosphor physics will
+(effectively) run <em>x</em><sup>2.2</sup> over it later to reverse the process.</p>
+<p>The major problem with this scheme is that if you have an image that&rsquo;s ready to
+be displayed on a phosphor-based display (with gamma of 0.4545&hellip; applied) you
+can&rsquo;t reliably do any mathematical operations on the pixel data - for example,
+a signal of 0.5 is noticeably darker than &ldquo;halfway between black and white&rdquo;,
+and trying to average colours will give more weight to whichever one is darker
+rather than a proper average. If you want to do any kind of calculation on the
+signal at all, like simulating how light from nearby phosphors merge, or
+alpha-blending, or scaling an image up or down with any kind of interpolation,
+you need to uncorrect the pixel data you get (by raising it to the power of
+0.4545), do your calculation, then recorrect the pixel data (by raising it to
+the power of 2.2).</p>
+<p>If you start with purely generated colour data (say, you wrote a raytracer or
+something), then you&rsquo;ll need to gamma-correct it to make it display correctly
+on an NTSC display (or an sRGB display like any modern computer monitor, since
+sRGB was invented to describe existing CRT displays). However, anything
+created interactively by somebody looking at a screen (artwork made in
+Photoshop, or sprite data, or whatever) is probably already gamma-corrected
+(just because the person making it would have picked colours that looked good
+to them on their sRGB display), and so is pretty much anything from a camera
+(video cameras, because they&rsquo;re designed to output a signal a TV can display,
+and digital still cameras, because most computers can only reliably display
+sRGB images, so that&rsquo;s what they make).</p>
+<h2 id="references">References<a class="headerlink" href="Gamma_Correction.html#references" title="Permanent link">&para;</a></h2>
+<p>This article is mostly based on knowledge absorbed by osmosis from various
+posters on <a href="http://board.byuu.org/">byuu&rsquo;s message board</a>, but I would like to
+mention <a href="http://blargg.8bitalley.com/">blargg</a>&lsquo;s posts in various threads about
+his NTSC filters.</p>
+<p>Naturally, there&rsquo;s <a href="https://en.wikipedia.org/wiki/Gamma_correction">a Wikipedia page on Gamma
+Correction</a> which is probably
+more accurate than anything written here, even if I think my explanation is
+more readable.</p>
+<p>The origin-story of sRGB I&rsquo;d heard was fact-checked against the <a href="http://www.w3.org/Graphics/Color/sRGB">original sRGB
+proposal</a>.</p>    </body>
+</html>

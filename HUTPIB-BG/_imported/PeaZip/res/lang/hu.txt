@@ -1,0 +1,1125 @@
+﻿=== PeaZip language file ===
+Hungarian - Magyar
+5.7
+Fordította: Zityi's Translator Team
+Last rev. by: Giorgio Tani
+Last rev.: 20150817
+
+=== PeaZip text group ===
+
+txt_5_7_pinstalled: TELEPÍTVE
+txt_5_7_pmissing: HIÁNYZÓ
+txt_5_7_plugin: A beépülő modul hiányzik, telepítheti a Súgó > Beépülő és bővítmény keresése menüpontból
+txt_5_6_basic: Alapvető
+txt_5_6_exarc: Archívum kicsomagolása
+txt_5_6_tab: Megnyitás új lapon
+txt_5_6_rc: Jobb kattintás az opciók eléréséhez
+txt_5_6_layouts: Mentett elrendezések
+txt_5_6_upexisting: Meglévő archívum frissítése
+txt_5_6_verbose: Részletes
+txt_5_5_case: (kis-és nagybetű megkülönböztetése)
+txt_5_5_add: Karakterlánc hozzáadása a megadott pozícióba
+txt_5_5_addsel: Hozzáadás a jelenlegi kijelöléshez
+txt_5_5_ext: Fájlok kiterjesztésének módosítása
+txt_5_5_plugin: Beépülő és bővítmény keresése
+txt_5_5_copypath: Útvonal másolása
+txt_5_5_delete: Karakterek törlése a megadott pozícióban
+txt_5_5_halt: Rendszer leállítása a feladat befejezésekor
+txt_5_5_positionw: Tipp: 1 adja az első karakter elé, 2 második, stb... "z" a fájlnév végére
+txt_5_5_positionwd: Tipp: 1 törölje az első tartalmazó karakterből, 2 második, ... "z" a fájlnév végére
+txt_5_5_replaceneww: Tipp: adjon egy új üres karakterláncot a régi karakterlánc egyszerű eltávolításához
+txt_5_5_lower: Kisbetűs
+txt_5_5_replaceoldw: Ez a karakterlánc vagy karakter összes előfordulásának módosítása a fájlnévben
+txt_5_5_newext: Új kiterjesztés
+txt_5_5_new: Új karakterlánc
+txt_5_5_n: Törlendő karakterek száma
+txt_5_5_old: Régi karakterlánc
+txt_5_5_position: Pozíció (szám vagy "z" a végére)
+txt_5_5_intdir: Egyetlen közbenső könyvtár eltávolítása a Kibontás új mappába műveleteknél
+txt_5_5_replacestr: Karakterlánc cseréje/eltávolítása
+txt_5_5_datesameday: Kijelölt objektummal azonos napon
+txt_5_5_datesamehour: Kijelölt objektummal azonos órában
+txt_5_5_datesamemonth: Kijelölt objektummal azonos hónapban
+txt_5_5_datesameweek: Kijelölt objektummal azonos héten
+txt_5_5_datesameyear: Kijelölt objektummal azonos évben
+txt_5_5_scan: Vizsgálat
+txt_5_5_select: Kiválasztás
+txt_5_5_similar: A kiválasztott elemhez hasonló
+txt_5_5_starting: Kezdés ugyanazzal a karakterrel
+txt_5_5_string: Hozzáadni kívánt karakterlánc
+txt_5_5_subtractsel: Kivonás az aktuális kijelölésből
+txt_5_5_datehour: Ebben az órában
+txt_5_5_datemonth: Ebben a hónapban
+txt_5_5_dateweek: A héten
+txt_5_5_dateyear: Idén
+txt_5_5_dateday: Ma
+txt_5_5_upper: Nagybetűs
+txt_5_5_extw: Figyelem: a fájl kiterjesztésének módosításakor a fájl használhatatlanná válhat
+txt_5_4_da: Hozzáadás dátuma
+txt_5_4_deletearchives: Archívumok törlése kicsomagolás után
+txt_5_4_deletefiles: Fájlok törlése kicsomagolás után
+txt_5_4_deleteoriginal: Törlési eljárás, a fő képernyőn meghatározottként csatolva lesz a parancsfájlhoz.
+txt_5_4_lv: Utolsó látogatás
+txt_5_4_deletearchivesconfirm: Jóváhagyja az eredeti archívumok törlését?
+txt_5_4_deletefilesconfirm: Jóváhagyja az eredeti fájlok törlését?
+txt_5_4_used: Használt
+txt_5_3_profilebest: Legjobb tömörítés, 7Z Ultra szint formátum
+txt_5_3_profileadvanced: Fejlett tömörítés, 7Z formátum
+txt_5_3_profilenormal: Normál ZIP tömörítést, a legtöbb kicsomagolóval kompatibilis
+txt_5_3_profileveryfast: Nagyon gyors ZIP-tömörítés, nagy multimédiás fájlok esetén ajánlott
+txt_5_3_profilepassword: Jelszavas védelem, 7Z formátum
+txt_5_3_profile10mb: Tartsa 10 MB alatt a levélmelléklet korlátozások miatt
+txt_5_3_profilesfx: Automatikus kicsomagolás, a fogadónak nincs szüksége kicsomagoló szoftverre
+txt_5_3_cml: Rendszer helyi menü nyelve
+txt_5_3_cmlmessage: Kattintson duplán a kívánt helyi menü nyelvre és hagyja jóvá annak hozzáadását a rendszerleíró adatbázishoz. Ezt a beállítást újra alkalmazni kell az alkalmazás telepítése/ frissítése, vagy a Rendszerintegrációs varázsló használata esetén.
+txt_5_3_exc: Kizárási szűrők elsőbbséget élveznek a belefoglalási szűrőknél
+txt_5_3_ia: Tartalmazza azt is
+txt_5_3_io: Csak azt tartalmazza
+txt_5_3_rec: Alkönyvtárak rekurzívvá tétele
+txt_5_3_resetsi: Újrakonfigurálja a rendszerintegrációt (helyi menü, küldés, fájltársítások)?
+txt_5_2_oadd: Archiválás az eredeti helyre
+txt_5_2_zerodelete: Szeretné törölni, és felülírja az összes kiválasztott fájlt nullával? A művelet nem vonható vissza és a fájlokat nem lehet visszaállítani.
+txt_5_2_zfree: Szeretné felülírni a meghajtó teljes szabad lemezterületét nullákkal?
+txt_5_2_sdfree: Szeretné biztonságosan törölni a szabad helyet ezen a meghajtón?
+txt_5_2_oext: Kibontás az eredeti helyre
+txt_5_2_securedeletefree: Szabad hely biztonságos törlése
+txt_5_2_free: Ez a művelet eltarthat néhány percig, és gyakori végrehajtása esetén a  flash alapú lemezek gyors elhasználódását okozhatja.
+txt_5_2_zerofiles: Törlés nullákkal
+txt_5_2_zerofree: Szabad terület törlése nullákkal
+txt_5_1_schedadd: Ütemezés hozzáadása
+txt_5_1_schederr: Az ütemezés nem hozható létre
+txt_5_1_daily: Naponta 
+txt_5_1_day: Nap
+txt_5_1_days: Nap
+txt_5_1_enddate: Befejezés dátuma
+txt_5_1_every: Minden
+txt_5_1_w6: Péntek
+txt_5_1_hourly: Óránként
+txt_5_1_hours: Óra
+txt_5_1_last: Utolsó
+txt_5_1_schedmanage: Feladatütemező, a PeaZip ágban menti feladatok kezelése
+txt_5_1_scriptmanage: Mentett ütemezett parancsfájlok kezelése
+txt_5_1_w2: Hétfő
+txt_5_1_monthly: Havonta
+txt_5_1_months: Hónap
+txt_5_1_onlogin: Bejelentkezésnél
+txt_5_1_onstart: Indításnál
+txt_5_1_once: Egyszer
+txt_5_1_w7: Szombat
+txt_5_1_schedule: Ütemezés
+txt_5_1_schedexplain: Létrehoz egy egyszerű szöveges parancsfájlt a GUI feladatdefinícióból és ütemezi azt. Az ütemezett feladatok parancsállományai az "Ütemezett parancsfájlok" mappába kerülnek mentésre. Az ütemezett feladatok szerkesztéséhez vagy törléséhez  használhatja a Feladatütemezőt. A PeaZip által létrehozott összes ütemezett feladat a feladatok könyvtár "PeaZip" ágában kerül összegyűjtésre.
+txt_5_1_schedok: Az ütemezés sikeresen létrejött
+txt_5_1_schedscripts: Mentett ütemezett parancsfájlok
+txt_5_1_startdate: Kezdési dátum
+txt_5_1_starttime: Kezdés idő
+txt_5_1_w1: Vasárnap
+txt_5_1_schedname: Feladat neve, a mentett ütemezett parancsfájl, és a rendszer ütemezett feladat azonosítása
+txt_5_1_ts: Feladatütemező
+txt_5_1_w5: Csütörtök
+txt_5_1_w3: Kedd
+txt_5_1_w4: Szerda
+txt_5_1_weekly: Hetente
+txt_5_1_weeks: Hét
+txt_5_0_bc: Helynavigáció
+txt_5_0_resetpm: Jóváhagyja a Jelszókezelő visszaállítását? Az összes tárolt jelszó PeaZip Jelszókezelőjében el fog veszni ha ezt jóváhagyja.
+txt_5_0_enum: Mappa tartalmának felsorolása
+txt_5_0_music: Zene
+txt_5_0_ps: PowerShell megnyitása itt
+txt_5_0_perf: Teljesítmény
+txt_5_0_pictures: Képek
+txt_5_0_removeall: Az összes eltávolítása
+txt_5_0_resetbookmarks: Visszaállítja a könyvjelzőket alapértelmezettre? (A könyvjelzőket ezt követően a Könyvjelzők> Rendezés menüpontban szabhatja testre)
+txt_5_0_sh: Munkamenet napló
+txt_5_0_skip: A könyvtártartalmak felsorolásának kihagyása az elrendezésben
+txt_5_0_videos: Videók
+txt_4_9_frame: Keret
+txt_4_9_listth: Lista és miniatűrök
+txt_4_9_shadow: Árnyék
+txt_4_9_style: Stílus
+txt_4_8_attach25: 25 MB (melléklet csatolási korlát)
+txt_4_8_crop: Vágás
+txt_4_8_detailsno: Részletek
+txt_4_8_details: Részletek és miniatűrök
+txt_4_8_fit: Igazítás
+txt_4_8_fitl: Igazítás a legnagyobbhoz
+txt_4_8_flip: Tükrözés
+txt_4_8_fullscreen: Teljes képernyő
+txt_4_8_fun: Funkciók
+txt_4_8_h: Magasság
+txt_4_8_keeparchive: Archívum megtartása
+txt_4_8_noresize: Eredeti méret megtartása
+txt_4_8_iconl: Nagy képek
+txt_4_8_iconm: Ikonok és képek
+txt_4_8_imagemanager: Képkezelő
+txt_4_8_immersive: Modern
+txt_4_8_listno: Lista
+txt_4_8_aspect: Képarány fenntartása 
+txt_4_8_mirror: Tükör
+txt_4_8_presets: Előbeállított minták
+txt_4_8_replace: Lecseréli az eredeti képe(ke)t? "Nem" alkalmazza az átalakítást az új fájl(ok)nál.
+txt_4_8_resize: Átméretezés
+txt_4_8_rl: Forgatás balra
+txt_4_8_rr: Forgatás jobbra
+txt_4_8_stop: Leállítás
+txt_4_8_t: Átalakítás
+txt_4_8_w: Szélesség
+txt_4_7_pk: Véletlenszerű jelszó/kulcsfájl létrehozása
+txt_4_7_spchar: Karakterek korlátozása betűkre és számokra
+txt_4_7_recycleask: A kiválasztott fájl(oka)t áthelyezi a lomtárba?
+txt_4_7_recycle: Áthelyezés a lomtárba
+txt_4_7_pcomp: Potenciális tömörítés
+txt_4_6_am: Archívumkezelő
+txt_4_6_fm: Fájlkezelő
+txt_4_6_users: Felhasználók
+txt_4_5_goupdate: Egy új verzió érhető el. Megnyitja a PeaZip hivatalos weboldalát a frissítés letöltéséhez?
+txt_4_5_b: Lent
+txt_4_5_koupdate: Nem lehet ellenőrizni a frissítéseket, nincs kapcsolat a frissítési szerverrel
+txt_4_5_update: Frissítések ellenőrzése
+txt_4_5_dock: Rögzítés
+txt_4_5_l: Balra
+txt_4_5_noupdate: A PeaZip naprakész
+txt_4_5_properties: Tulajdonságok
+txt_4_5_r: Jobbra
+txt_4_5_pj: Mentett parancsfájlok
+txt_4_5_shaddress: Címsor megjelenítése
+txt_4_5_shnav: Navigációs sáv megjelenítése
+txt_4_5_shstatus: Állapotsor megjelenítése
+txt_4_5_shtool: Eszköztár megjelenítése
+txt_4_5_upxpj: Sajnáljuk, de nem lehet exportálni a feladat definíciót, mivel ez a művelet vagy opció több különböző parancs végrehajtását ígényli
+txt_4_5_t: Fent
+txt_4_4_confremoveall: Eltávolítja az összes PeaZip konfigurációs fájlt (Alkalmazások, Könyvjelzők, Jelszókezelő)?
+txt_4_4_confremove: Eltávolítja a PeaZip konfigurációját?
+txt_4_3_pwmanhint: Dupla kattintás a jelszólistában lévő elemek szerkesztéséhez,jobb kattintás az opciók eléréséhez, Ctrl+C a jelszavak másolásához
+txt_4_3_exppl: Jelszólista exportálása
+txt_4_3_expple: Titkosított (Jelszókezelő biztonsági mentése)
+txt_4_3_keeppw: Az aktuális munkafolyamat jelszavak/kulcsfájlok megtartása
+txt_4_3_pwmanpwhint: Egy jelszó/kulcsfájl beállítása (nem kötelező) a jelszólista titkosításához ajánlott, ily módon hitelesítési jelszóra lesz szükség a Jelszókezelőhöz való hozzáféréshez. A jelszó/kulcsfájl bármikor módosítható.
+txt_4_3_pwmanmaster: A fő jelszó megadása/módosítása
+txt_4_3_pwmanlist: Jelszólista
+txt_4_3_pwman: Jelszókezelő
+txt_4_3_pwmancorr: A Jelszókezelő hamisítottnak vagy sérültnek tűnik. Mindenképpen tartsa meg a Jelszókezelőt és próbálja meg visszaállítani a jelenlegi jelszólistát, megbízik benne? (Nem fogja visszaállítani a Jelszókezelőt, ajánlott)
+txt_4_3_expplp: Egyszerű szöveg (az összes felhasználás)
+txt_4_3_recsrc: Rekurzív keresés alapértelmezés szerint
+txt_4_3_resetpm: Visszaállítja a Jelszókezelőt? Az összes mentett jelszó törlésre kerül
+txt_4_3_breadcrumb: Cím megjelenítése helynavigációként
+txt_4_2_arcabspath: Teljes elérési útvonal használata
+txt_4_1_duplicateshint: "méret"/"ellenőrzőösszeg" karakterlánc a CRC oszlopban jelenik meg a jelenlegi könyvtárban vagy keresési szűrő által talált duplikált elemek esetén
+txt_4_1_adminhint: (TIPP: Alternatív megoldásként, kérheti az UAC emelést a munkához a védett helyeken, Alt+F10 vagy Beállítások > Futtatás rendszergazdaként)
+txt_4_1_selected: (kiválasztva)
+txt_4_1_duplicatesfound: másodpéldány találat
+txt_4_1_duplicatesfind: Másodpéldányok keresése
+txt_4_1_runasadmin: Futtatás rendszergazdaként
+txt_4_1_simplesearch: Egyszerű keresés
+txt_4_0_thim: Kép miniatűrök megjelenítése
+txt_3_8_type_description_wim: WIM: Microsoft lemezkép formátum
+txt_3_8_type_description_xz: XZ: LZMA2-n alapuló erőteljes fájltömörítés
+txt_3_7_donations: Adományok
+txt_3_7_nameasparent: Név archívum az elem szülő mappájaként van kiválasztva több elem hozzáadása esetén
+txt_3_7_tracker: Hibakövető
+txt_3_7_sort: Rendezés
+txt_3_7_swapbars: Eszközsáv / Címsáv felcserélés
+txt_3_7_themedbars: Témával ellátott eszközsávok
+txt_3_6_ignoredd: Mindig hagyja figyelmen kívül a helyeket a húzd és ejtsd kicsomagolás esetén
+txt_3_6_close: Bezárás
+txt_3_6_resetapps: Visszaállítja az alkalmazásokat (testreszabható programcsoportok és szkriptek a fájlok megnyitásához a fájl-társítások felülbírálásával)?
+txt_3_6_ethemes: Létező témák
+txt_3_5_td: Témák letöltése
+txt_3_5_managecustomthemes: Témák kezelése
+txt_3_4_nopaths: Nincsenek helyek
+txt_3_4_smallicons: Ikonok
+txt_3_3_skipunits: (Windows) Kötet információ lekérés a hálózati egységek számára, lassabb indítás
+txt_3_3_stralt: Alternatív parancs, amikor nincs paraméter megadva
+txt_3_3_apps: Alkalmazások
+txt_3_3_multi: Többszörös kiválasztás
+txt_3_3_runexp: Egy program, fájl, mappa vagy weboldal megnyitása
+txt_3_3_apppath: A PeaZip mappája
+txt_3_3_run: Futtatás
+txt_3_2_7zutf8nonascii: 7z/p7zip -mcu használata UTF8-fájlneveket tartalmazó .zip fájlokon belüli nem-ASCII szimbólumok esetén
+txt_3_2_alltasks: Összes feladat
+txt_3_2_conf: Konfiguráció
+txt_3_2_donations: Adományok a jótékonysági szervezeteknek
+txt_3_1_sccenc: 7z/p7zip -scc karakter kódolás
+txt_3_1_downloads: Letöltések
+txt_3_1_lib: Könyvtárak
+txt_3_1_more: További
+txt_3_1_openasarchive: Megnyitás archívumként
+txt_3_1_sendto: A felhasználó Küldés menü mappája
+txt_3_1_pathexc: A hely meghaladta a maximálisan engedélyezett méretet
+txt_3_1_recent: Legutóbbi
+txt_3_1_plsmartmin: Futtatás minimalizálva, megjelenítés/nyitva tartás ha szükséges
+txt_3_1_src: Keresések
+txt_3_1_systmp: Rendszer temp
+txt_3_1_languagetools: Fordítás
+txt_3_1_workingdir: Munkakönyvtár
+txt_3_0_nonreadableorpw: Archívum nem olvasható. Szeretné kipróbálni a jelszót?
+txt_3_0_readablepw: Az archívum jelszóval védettnek tűnik
+txt_3_0_configure: Fájl társítások, szövegkörnyezeti és a küldés menü konfigurálása
+txt_3_0_resettmp: Peazip-tmp visszaállítása
+txt_2_9_address: Címsor
+txt_2_9_adv: Speciális szűrők használata az összes fájl által támogatott 7z vagy FreeArc modulok kezelésében, tekintse meg a dokumentációt, és helyezze vissza az alap szűrőket (a keresési funkciók számára használják és a Könyvjelzőkben illetve az Előzményekben lesz megjelenítve)
+txt_2_9_columns: Oszlopok
+txt_2_9_copyhere: Másolás ide
+txt_2_9_noscan: Ne ellenőrizze az elrendezéshez hozzáadandó fájlokat
+txt_2_9_extconsole: A kicsomagolási konzol csak az archívum böngészése közben érhető el
+txt_2_9_thl: Gombok kiemelése
+txt_2_9_home: Főoldal
+txt_2_9_lt: Nagy
+txt_2_9_mt: Közepes
+txt_2_9_movehere: Áthelyezés ide
+txt_2_9_nav: Navigáció
+txt_2_9_navbar: Navigációs sáv
+txt_2_9_none: Nincs
+txt_2_9_organize: Rendezés
+txt_2_9_public: Publikus
+txt_2_9_rec: Rekurzív: keresés az alkönyvtárakban, hosszabb ideig tarthat
+txt_2_9_selected: Kiválasztott
+txt_2_9_setapps: Kedvelt alkalmazások beállítása
+txt_2_9_showmenu: Menüsáv megjelenítése
+txt_2_9_st: Kicsi
+txt_2_9_test_pw2G: A <2GB-nál nagyobb titkosított archívumok tesztelése
+txt_2_9_vst: Csak szöveg
+txt_2_9_toolbar: Eszköztár
+txt_2_9_tree: Fa
+txt_2_9_views: Nézetek
+txt_2_8_experimental: (kisérleti)
+txt_2_8_zcopy: (Windows) Fájlok másolása újraindítható módban, lassabb másolás
+txt_2_8_addvol: A teljes kötet(ek) hozzáadása az archívumhoz, több időt vehet igénybe, mindenképp folytatja?
+txt_2_8_uniterror: Az egység nem hozzáférhető
+txt_2_8_cannotconvert: A kiválasztott archívum nem konvertálható
+txt_2_8_convertbegin: Folytatja ezzel a tömörítési szinttel a konverzió befejezéséhez?
+txt_2_8_convert: Konvertálás
+txt_2_8_convertexisting: Létező archívumok konvertálása
+txt_2_8_convertdelete: Törli a konvertáláshoz ideiglenesen létrehozott fájlokat és mappákat?
+txt_2_8_details: Részletek
+txt_2_8_parallel: Feladatok párhuzamos végrehajtása, ha lehetőség van rá
+txt_2_8_convertnote: Az eredeti archívumok nem minden esetben lesznek módosítva, a felhasználó dönt a megtartásukról vagy eltávolításukról
+txt_2_8_custom: közvetlenül nem támogatott a PeaZip-ben, de a kicsomagolási szinteket beállíthatja az egyéni fájltípusok kezeléséhez a "Haladó" fül alatt. Megnyitja ezt a fájlt?
+txt_2_8_unitrecommend: A kicsomagoláshoz ajánlott (jobbklikk > Kiválasztott kicsomagolása) vagy a fájlrendszerek megnyitásához a számítógép gyökérkönyvtárából (rendszereszközök > Egység megnyitása archívumként)
+txt_2_8_viewasarchive: Egység megnyitása archívumként
+txt_2_8_nounit: Nincs kiválasztva egység
+txt_2_8_rowselect: Sor választás
+txt_2_8_statusbar: Állapotsor
+txt_2_8_typeunit: Logikai vagy fizikai egység nevének beírása
+txt_2_8_usedefaultoutpath: Alapértelmezett kimeneti hely használata
+txt_2_7_experimental: (kisérleti, tekintse meg a dokumentációt)
+txt_2_7_optional: (nem kötelező)
+txt_2_7_list_tryflatorpw: , lehetséges megoldások: lebegő nézet (F6), jelszó megadása (F9), az archívum egy friss példányának beszerzése
+txt_2_7_separate: Elemek hozzáadása különálló archívumba
+txt_2_7_pwsupported: archiválás jelszóval
+txt_2_7_cancel: Mégse
+txt_2_7_encfn: Fájlnevek titkosítása (ha támogatott a formátum által)
+txt_2_7_setpw: Kulcsfájl / jelszó megadása
+txt_2_7_ext: Kicsomagolás:
+txt_2_7_extfrom: Kicsomagolás archívumból:
+txt_2_7_es: A támogatott nem-archívum fájltípusok kicsomagolása, pl. végrehajtható, MS Office és OOo fájlok
+txt_2_7_eu: Nem támogatott fájltípusok kicsomagolása, egyéni kicsomagolási segédprogram megadása
+txt_2_7_clipboard: Fájl böngésző vágólap
+txt_2_7_goarclayout: Ugrás az archiválási tervezethez
+txt_2_7_goextlayout: Ugrás a kicsomagolási tervezethez
+txt_2_7_ok: OK
+txt_2_7_drag_archive: fájl megnyitása új archívumként? ("Nem" fájl hozzáadása a jelenlegi archiválási tervezethez)
+txt_2_7_oop: A kimeneti hely megnyitása a művelet befejezésekor
+txt_2_7_validatefn: Művelet leállítva, érvénytelen fájlnév észlelve:
+txt_2_7_validatecl: Művelet leállítva, potenciálisan veszélyes parancs észlelve (a parancs konkatenáció nincs engedélyezve a programon belül):
+txt_2_7_output: Kimenet
+txt_2_7_pwnotset: Nincs jelszó megadva 
+txt_2_7_pwarcset: A jelszó meg van adva
+txt_2_7_pwextset: Jelszó be van állítva, ez lehetséges a kicsomagolás/lista/titkosított archívumok teszteléséhez
+txt_2_7_archivehint: Jobb klikk a fájlok archívumhoz adásához és a további elérhető funkciók megtekintéséhez vagy hozzáadáshoz húzza a fájlokat ide
+txt_2_7_exthint: Jobb klikk a kicsomagolandó fájlok hozzáadásához vagy húzza a fájlokat ide
+txt_2_7_setadvf: Fejlett szűrők megadása
+txt_2_7_selpath: Kiválasztott elemek helye
+txt_2_7_separateerror: Sajnáljuk, de nem importálható a feladatdefiníció parancssora, míg használatban van a "Minden elem hozzáadása egy különálló archívumhoz" kapcsoló, mivel a feladat több különböző parancs szerint van végrehajtva
+txt_2_7_noinput: A tervezet üres: kérjük, használja a Fájl(ok) hozzáadása vagy Tervezet betöltése opciót az archívum lista feltöltéséhez
+txt_2_7_dirsize: A mappák tartalmának mérete nincs ellenőrizve a teljes méret kiszámításánál
+txt_2_7_un7z_browse_flat: lebegő nézet (F6)
+txt_2_7_updating: Meglévő archívum frissítése
+txt_2_6_folders: (mappák)
+txt_2_6_advanced: Fejlett
+txt_2_6_plalways: Mindig tartsa megnyitva a feladat jelentések ellenőrzéséhez
+txt_2_6_plsmart: Tartsa nyitva, ha szükséges (hiba, lista vagy teszt jelentések)
+txt_2_5_sessionio: (ez a folyamat)
+txt_2_5_advanced: Haladó szerkesztés: paraméter karaktersorok és fájlnevek közti helyköz ha szükséges
+txt_2_5_basic: Alap szerkesztés: alkalmazás és paraméterek a név bevitel előtt
+txt_2_5_cannotrun: Nem futtatható
+txt_2_5_custeditors: Egyéni szerkesztők, lejátszók, antivírus keresők, stb... (rendszer fájltársítások felülbíráslása)
+txt_2_5_delete: Törlés
+txt_2_5_delete_fromarchive: Törlés az archívumból
+txt_2_5_langflag: Archívált elem nevek megjelenítése UTF-8 szövegként; a kijelöletlen kiterjesztett karakterek cseréje "?" karakterre
+txt_2_5_encpj: Feladatdefiníció kódolása UTF-8 szövegként
+txt_2_5_execommand: Végrehajtható vagy parancs
+txt_2_5_help: Súgó
+txt_2_5_langhint: Tipp: a kiterjesztett karakterek cseréje "?" karakterre, mely javíthatja a szintaxist ha archívum karakterkészletet nem lehet konvertálni az aktuális gépen
+txt_2_5_mini_help: Honosított ismertető
+txt_2_5_offline_help: PeaZip súgó
+txt_2_5_tray: Küldés a tálcára
+txt_2_5_remove: Eltávolítás
+txt_2_5_hintpaths: Jobb kattintás a rendszer és felhasználói helyek megnyitásához
+txt_2_5_selectapp: Alkalmazás kiválasztása
+txt_2_5_strafter: Karaktersor a név bevitel után
+txt_2_5_strbefore: Karaktersor a név bevitel elött
+txt_2_5_encoding: Szövegkódolás
+txt_2_5_nopw: ez az archívum típus nem támogatja a kódolást
+txt_2_4_draghint: [húzás az Intézőbe, engedélyezett címsávval]
+txt_2_4_tb: Eszköztár gombok alkalmazása (PeaZip újraindítás)
+txt_2_4_adding: Hozzáadás
+txt_2_4_advclip: Több kijelölés megtartása a vágólapon
+txt_2_4_yanswers: Válaszok
+txt_2_4_itemsheight: Automatikus elem magassági méret
+txt_2_4_clearclipboard: A válólap ürítése (Esc)
+txt_2_4_wcommons: Közös
+txt_2_4_copyfrom: Másolás innen
+txt_2_4_deletebookmarks: Valóban törli a könyvjelzővel jelölt fájlok és mappák listáját?
+txt_2_4_documents: Dokumentumok
+txt_2_4_wenc: Enciklopédia
+txt_2_4_extractfrom: Kicsomagolás innen
+txt_2_4_hexp: Hex nézet
+txt_2_4_operation: Művelet
+txt_2_4_path: a hely nem írható (csak-olvasható). Szeretne kiválasztani egy írható kimeneti útvonalat?
+txt_2_4_removefromclipboard: Eltávolítás a vágólapról
+txt_2_4_stdclip: Általános: egy szimpla kijelölt elem tárolása a vágólapon, a kivágási műveletek törlése beillesztéskor
+txt_2_4_totalmem: teljes memória
+txt_2_4_gvideo: Videó
+txt_2_4_wbook: Wikibook
+txt_2_4_wnews: Wikinews
+txt_2_4_wsrc: Wikisource
+txt_2_4_wdict: Wiktionary
+txt_2_3_pw_errorchar: : ez a karakter nem használható a PeaZip GUI jelszóban a jelenlegi rendszerben, kérjük, módosítsa a jelszót vagy válassza ki a Konzol módot az Eszközök > Beállítások fül alatt
+txt_2_3_envstr: Környezeti változók megjelenítése
+txt_2_3_never_pw: Ne kérje a jelszót
+txt_2_3_home: Felhasználói oldal
+txt_2_3_on_pw: Kicsomagolás/lista/teszt műveletek a rendszer menüből:
+txt_2_3_test_pw100: Titkosítási teszt <100MB archívum
+txt_2_3_test_pw: Titkosítási teszt (lassú lehet)
+txt_exclude_recourse: az ismétlődő alkönyvtárak "kizárása"
+txt_action_extopen: Kicsomagolás és megnyitás a társított alkalmazással
+txt_error_passwordnotmatch: A "Jelszó" és "Jelszó megerősítés" mezők nem azonosak. Kérjük, javítsa ki azt
+txt_action_preview: "Megtekintés a társított alkalmazással" művelet
+txt_preview_hint: A "Gyorsnézet" művelet, ugyanazt a feladatot hajtja végre mint a "Kicsomagolás és megnyitás", de ez a kimeneti könyvtárban lévő ideiglenes helyre. Automatikusan törölve lesz az archívum lezárásakor.
+txt_better: (jobb)
+txt_default2: (alapértelmezett)
+txt_faster: (gyorsabb)
+txt_fastermem: (gyorsabb, kevesebb memória)
+txt_tempdir: (PeaZip's ideiglenes munka könyvtár)
+txt_stream: (beállítás mint "Adatfolyam vezérlő")
+txt_slowermem: (lassabb, több memória)
+txt_store: (tárolás, leggyorsabb)
+txt_newfolder: (új mappába)
+txt_7z_exitcodeunknown: : Ismeretlen hiba a feladatban
+txt_list_isfolder:  [mappa]
+txt_none: <nincs>
+txt_fd: 1.44 MB hajlékonylemez
+txt_7z_exitcode1: 1: Figyelem: nem végzetes hibák; pl. néhány fájl hiányzik vagy zárolva van
+txt_attach10: 10 MB (csatolási korlát)
+txt_7z_exitcode2: 2: Fatális hiba történt
+txt_7z_exitcode255: 255: A feladatot a felhasználó megszakította
+txt_fat32: 4 GB (max FAT32 fájlméret)
+txt_dvd: 4.7 GB DVD
+txt_attach5: 5 MB (csatolási korlát)
+txt_cd650: 650 MB CD
+txt_7z_exitcode7: 7: Hiba: helytelen parancssor
+txt_cd700: 700 MB CD
+txt_type_description_7z: 7Z: funkció gazdag archívum formátum, magas tömörítési aránnyal
+txt_dvddl: 8.5 GB DVD Dupla-rétegű
+txt_7z_exitcode8: 8: Hiba: nincs elegendő memória a művelet végrehajtásához
+txt_abort: Az ütemezett fájl másolási/áthelyezési művelet megszakítása?
+txt_about: Névjegy
+txt_action: Művelet
+txt_action_hint: Megnyitás vagy megtekintés a társított alkalmazással
+txt_add: Hozzáadás
+txt_add_existing_archive: hozzáadás (ha létezik az archívum)
+txt_add_archive: Archívum hozzáadása
+txt_add_files: Fájl(ok) hozzáadása
+txt_add_folder: Mappa hozzáadása
+txt_add_path: Hely hozzáadása
+txt_add_tolayout: A kijelölt fájlok és mappák hozzáadása az archívum szerkezethez
+txt_add_toarchive: Hozzáadás az archívumhoz
+txt_add_tobookmarks: Hozzáadás a könyvjelzőhöz
+txt_address_hint: Cím: ? helyettesítő jelek a karakterekhez és * a karaktersorokhoz; nincs szükség " vagy ' határolójelekre
+txt_adv_filters: Fejlett szűrők
+txt_algo: Algoritmus
+txt_all: mind
+txt_all_default: Az összes (alapértelmezett)
+txt_all_type: A típus összes eleme
+txt_all_date: Az összes elem dátummal...
+txt_all_psize: Az összes elem tömörített mérettel...
+txt_all_attributes: Az össze elem azonos paraméterekkel
+txt_all_size: Az összes elem mérettel...
+txt_error_input_upx: egy szimpla exe fájl engedélyezése forrásként
+txt_always_pw: Mindig rákérdez a jelszóra
+txt_ignore_ext: Helyek mellőzése a "Kicsomagolás és..." funkciónál
+txt_ignore_disp: Helyek mellőzése a "A megjelenített kicsomagolása... " funkciónál
+txt_ignore_sel: Helyek mellőzése a "A kijelölt kicsomagolása..." funkciónál
+txt_key_hint: A kulcsfájl hash a jelszóhoz lesz csatolva; az archívum a PeaZip-el vagy más olyan programmal dekódolható,amely ezt a szabványt követi, vagy megadhatja a hash értéket a jelszó részeként is
+txt_timestamp: Időbélyegző hozzáfűzés az archívum nevekhez
+txt_appoptions: Alkalmazás beállítások
+txt_type_description_arc: ARC: kisérleti archiváló, erőteljes, hatékony és funkció gazdag
+txt_archive: Archívum
+txt_un7z_browse_ok: az archívum sikeresen megjelenítve
+txt_interface: Archívum megjelenítési felület
+txt_archivecreation: Archívum készítés
+txt_tarbefore_hint: Adat archíválás TAR formátumba a megadott típus elött.
+txt_archive_hint: Archívum, tömörítés, darabolás és a személyes fájlok, mappák és kötetek megtartása
+txt_compressionratio_hint: Archívum tömörítési arány
+txt_archiving: Archíválás:
+txt_cl_long: A paraméterek elérték a maximális méretet, kérjük, válasszon egy kisebb forrásfájlt (pl. könyvtárak helyett válasszon különálló fájlokat)
+txt_overwrite_askbefore: Rákérdez felülírás elött (konzol mód)
+txt_associated: társított alkalmazás
+txt_attributes: Attribútumok
+txt_author: Készítő
+txt_ren_existing: A létező fájlok automatikus átnevezése
+txt_ren_extracted: A kicsomagolt fájlok automatikus átnevezése
+txt_autofolder: Új mappa automatikus létrehozása a kicsomagoláshoz?
+txt_back: Vissza
+txt_backend: Kiszolgálói kétváltozós felhasználói felület
+txt_backupexe: Végrehajtható állomány mentése (ajánlott)
+txt_bettercompression: jobb tömörítés
+txt_blogs: Blogok
+txt_blowfish: Blowfish448 (64 bit blokk)
+txt_bookmarks: Könyvjelzők
+txt_browse: Tallózás
+txt_browser: Böngésző
+txt_aborted_error: Az archívum böngészése le lett állítva, mivel túl sok időt venne igénybe. Szűkítheti a kiválasztást a keresési (F3) vagy Lebegő nézeti mód funkciók használatáva; ez a kicsomagolás/lista/teszt műveletekre nem vonatkozik.
+txt_list_browsing: Böngészés
+txt_archive_root: Keresés: archívum gyökérkönyvtár
+txt_type_description_bzip2: BZip2: erőteljes tömörítés, átlagos sebesség
+txt_pw_empty: Kérjük, adjon meg egy jelszót (vagy egy kulcsfájlt)
+txt_add_error: Nem lehet hozzáadni/frissíteni vagy törölni az elem(eke)t; az archívum típus, lehet, hogy csak a böngészés/kicsomagolás funkciókat támogatja, vagy ez a speciális művelet nem támogatott (pl. ez több kötetes vagy tömör), vagy esetleg a PeaZip teljesen nem tudja kezelni az archívum nevet
+txt_un7z_browse_failure: az archívum böngészés nem lehetséges
+txt_list_error: Lehetetlen felsorolni az archívum tartalmát, kérjük, ellenőrizze, hogy az archívum, nincs-e jelszóval védve vagy nem hibás-e.
+txt_conf_cannotsave: Nem lehet menteni konfigurációs fájlt, ellenőrizze, hogy a hely írható és, hogy van-e elég szabad terület
+txt_check_hint: Előre nem várt adatsérülés vizsgálata; a hash algoritmusok megfelelően észlelni tudják a rosszindulatú adat módosítókat (tekintse meg a dokumentációt)
+txt_check: Ellenőrző összeg/hash fájl(ok)
+txt_check_select: Ellenőrzőösszeg/hash
+txt_clear: Törlés
+txt_clearlayout: Tervezet törlése
+txt_pj_hint: Kattintson ide a feladat importálásához és a legfrissebb feladatdefiníció betöltéséhez a grafikus felhasználói felületből
+txt_autoclose: A PeaLauncher bezárása a feladat befejezésekor
+txt_cl: parancssor:
+txt_compare: Fájlok összehasonlítása
+txt_compress: Tömörítés
+txt_compress_executable: Exe tömörítés
+txt_compress_openforwriting: A tömörítési fájlok megnyitása írásra
+txt_compression: Tömörítés
+txt_compmanagement: Számítógép kezelés
+txt_pw_confirm: Megerősítés
+txt_console: Konzol
+txt_console_interface: Konzol: natív felület
+txt_content: Tartalom
+txt_controlpanel: Vezérlőpult
+txt_convert: Lemez konvertálása NTFS fájlrendszerbe
+txt_copy: Másolás
+txt_copyto: Másolás...
+txt_create: Készítés
+txt_create_archive: Archívum létrehozása
+txt_title_create: Archívum létrehozása, tömörítés, kódolás, darabolás...
+txt_create_keyfile: Kulcsfájl készítés
+txt_create_folder: Új mappa készítés
+txt_create_theme: Új téma létrehozás a jelenlegi beállításokkal:
+txt_rr: Visszaállítási pont készítés
+txt_create_sfx: Ön-kicsomagoló archívum készítés
+txt_cr_current: Jelenlegi hely vagy szűrő tömörítési arány
+txt_custom: Egyéni
+txt_type_description_custom: Egyéni (haladó felhasználók): az exe fájl nevének és paramétereinek megadása
+txt_customapp: egyénileg megadott alkalmazás
+txt_custom_parameters: Egyéni paraméterek
+txt_customsize: Egyéni méret
+txt_cut: Kivágás
+txt_datetime: Dátum/idő
+txt_default: alapértelmezett
+txt_default_compression: alapértelmezett tömörítés
+txt_default_format: Alapértelmezett formátum
+txt_theme_default: Alapértelmezett téma
+txt_hard_reset_hint: Könyvjelző fájl törlése
+txt_desktop: Asztal
+txt_dictionary: Szótár
+txt_dirs: könyvtár(ak),
+txt_dis: Egyértelműsítés:
+txt_disk_cleanup: Lemeztisztítás
+txt_disk_defrag: Lemez töredezettség mentesítés
+txt_disk_management: Lemezkezelés
+txt_dispaly: Eredmények megjelenítési módja
+txt_displayedmnu_obj: megjelenített
+txt_displayedobjects: Megjelenített elem(ek)
+txt_nocompress: nincs tömörítés
+txt_delete: Valóban törli a kiválasztott fájl(oka)t? A műveletet nem vonható vissza és a fájlokat nem lehet visszaállítani a lomtárból utólag
+txt_wipe: Valóban véglegesen törli a kiválasztott fájl(oka)t? A műveletet nem vonható vissza és a fájlokat nem lehet visszaállítani.
+txt_done: Kész
+txt_edit: Szerkesztés
+txt_elapsed: eltelt:
+txt_error_emptycl: Üres a parancssor!
+txt_encrypt: Titkosítás
+txt_encrypted: titkosított
+txt_encryption: Titkosítás
+txt_note: Megjegyzés/leírás hozzáadása
+txt_random_keys: Véletlenszerű kulcs megadása
+txt_random_keys_hint: Véletlenszerű kulcs megadása
+txt_ent: Entrópia értékmegállapítás
+txt_ent_tools: Mozgassa az egeret vagy használjon kiegészítő entrópiai mintavevő eszközöket
+txt_eqorlarger: Ugyanaz, vagy nagyobb, mint a kijelölt elem
+txt_eqorrecent: Ugyanaz, vagy újabb, mint a kijelölt elem
+txt_eqorolder: Ugyanaz, vagy a régebbi, mint a kijelölt elem
+txt_eqorsmaller: Ugyanakkora, vagy kisebb, mint a kijelölt elem
+txt_equal: azonos a kijelölt elemmel
+txt_erase_hint: Fájlok törlése: felülírás véletlenszerű adattal, maszk méret, átnevezés, végleges törlés
+txt_extraction_error: Hiba történt a kiválasztott elem kicsomagolásakor. Ha az archívum jelszó védett, kérjük, adja meg a megfelelő jelszót
+txt_exclude_hint: Fájl(ok) kizárása, soronként egy; használja a * és ? helyettesítő jeleket; " és ' határolójelekre nincs szükség
+txt_exclusion_recourse: Alkönyvtár szűrők kizárása
+txt_exclusion: Kizárás
+txt_exe: Végrehajtható
+txt_overwrite_qry: létezik a cél helyen; felülírja a forrás hely azonos nevű állományaival? (Mégse: az elem másolásának kihagyása)
+txt_confirm_overwrite: létezik; felülírja? (nem a kihagyáshoz)
+txt_explore_outpath: A kimeneti hely megnyitása
+txt_explore_path: Hely megnyitása
+txt_ext: Kib:
+txt_caption_extract: Kicsomagolás
+txt_ext_nopath: Kicsomagolás (hely nélkül)
+txt_ext_all: Az összes kicsomagolása
+txt_ext_allhere: Az összes kicsomagolása ide
+txt_ext_allto: Mind kicsomagol
+txt_extopen_custom: Kicsomagolás és megnyitás egyéni alkalmazással
+txt_extopen_with: Kicsomagolás és megnyitás ezzel...
+txt_ext_disp_here: A megjelenített(ek) kicsomagolása ide
+txt_ext_disp: A megjelenített elem(ek) kicsomagolása
+txt_ext_disp_to: A megjelenített elem(ek) kicsomagolása...
+txt_ext_here: Kicsomagolás ide
+txt_ext_sel_here: A kijelölt(ek) kicsomagolása ide
+txt_ext_sel: A kijelölt elem(ek) kicsomagolása
+txt_ext_sel_to: A kijelölt elem(ek) kicsomagolása...
+txt_extobj: Elem kicsomagolása
+txt_newfoldermenu: Kicsomagolás új mappába
+txt_extto: Kicsomagolás...
+txt_level_fast: Gyors
+txt_fastcompr: gyors tömörítés
+txt_fastopen: Gyors megnyitási rutin, a különösen nagy archívumok böngészésének leállítása, szűrők használata helyett
+txt_level_fastest: Leggyorsabb
+txt_favformats: Kedvenc formátumok
+txt_file: Fájl
+txt_filebrowser: Fájl kereső / archívum kereső
+txt_filetools: Fájl eszközök
+txt_files: fájl,
+txt_nfiles: Fájl
+txt_fs: Fájlrendszer
+txt_filters_recourse: alkönyvtár szűrő(k)
+txt_filters: Szűrők
+txt_flat: Lebegő (az összes megjelenítése)
+txt_list_flat: Lebegő nézet
+txt_unit_floppy: Hajlékonylemez
+txt_foldername: Mappanév
+txt_nfolders: Mappák
+txt_error_input_multi: a formátum, csak egy forrásfájlt engedélyez; használhatja a "TAR előtt" opciót a .TAR archívumba mentéséhez, ha nem választ ki másik formátumot.
+txt_fwd: Előre
+txt_list_found: Talált
+txt_free: Szabad
+txt_free2: szabad
+txt_name_full: Teljes név
+txt_function: Funkció
+txt_general: Általános
+txt_multithreading: általános többszálú mód
+txt_go_browser: Ugrás a fájlböngészőbe
+txt_go_path: Ugrás az elem helyéhez
+txt_guicl: Grafikus + Konzol
+txt_guipealauncher: Grafikus: PeaLauncher felszín
+txt_graphic: Grafikai mappa
+txt_gridaltcolor: Rácsvonal alternatív szín
+txt_gridrowheight: Sor rács szín
+txt_gui: GUI
+txt_type_description_gzip: GZip: gyors tömörítés
+txt_here: ide
+txt_list_history: Előzmény
+txt_homeroot: Számítógép/archívum gyökérkönyvtár
+txt_quickbrowse_hint: Ha a böngészés le lesz állítva, a felhasználó tudja szűkíteni a kiválasztást, ami keresést vagy szűrő funkciókat használ; a kicsomagolás/lista/teszt-funkciókra nem vonatkozik.
+txt_backupexe_hint: Ha valami hiba lépne fel, visszaállíthatja az eredeti exét az automatikus biztonsági mentésből
+txt_attach: Ha a levél kliens támogatja a parancsot, az archívum csatolva lesz egy új levélhez
+txt_images: Képek
+txt_include_hint: Fájl(ok) kizárása, soronként egy; * és ? helyettesítő jelek használata; " és ' határolójelekre nincs szükség
+txt_filters_hint: A 7z bináris szűrők kizárásához és belefoglalásához, kérjük, figyelmesen olvassa el a 7-Zip dokumentációját a szűrő funkciók megértéséhez
+txt_inclusion_recourse: Alkönyvtár szürök belefoglalása
+txt_inclusion: Felvétel
+txt_error_function: Érvénytelen funkció
+txt_info: Információ
+txt_infoall: Információ az összesről
+txt_infodisp: Információ a megjelenített elem(ek)ről
+txt_infosel: Információ a kijelölt elem(ek)ről
+txt_inputinfo: Forrás információ
+txt_input_list: Forrás lista:
+txt_iop: bemenet, kimenet, paraméterek
+txt_ipo: bemenet, paraméterek, kimenet
+txt_input: bemenet:
+txt_integrity: Adat-sértetlenség vizsgálat
+txt_chunk_size: Érvénytelen méret, kérjük, javítsa ki egy számbeli értékre
+txt_invertsel: Fordított kijelölés
+txt_type_exe: egy Windows futtatható, futtatni szeretné? ("Nem" próbálja megnyitni archívként) TIPP: héhány végrehajtható állomány nem megfelelően fut, ha nincs kicsomagolva előtte
+txt_return_to_archive: jelenleg meg van nyitva; szeretné megtekinteni azt?
+txt_not_accessible: már nem hozzáférhető
+txt_type_unsupported: nem támogatott archívum típus
+txt_checkname_failed: nem érvényes név.
+txt_not_accessible_list: nem elérhető, kérjük, ellenőrizze, hogy a fájl megfelelően hozzá van-e adva a listához
+txt_theme_create_error: Az új téma létrehozása nem lehetséges, próbálja meg egy érvényes nevet használni a mappához és válasszon egy írható helyet
+txt_theme_exists: már létezik, kérjük, adjon meg egy másik helyet
+txt_job_code: feladatkód:
+txt_job_definition_saved: A feladatdefiníció sikeresen mentésre került:
+txt_job_success: A feladat sikeresen befejeződött!
+txt_join: Egyesítés
+txt_joinfiles: Fájlok egyesítése
+txt_keyfile: Kulcsfájl
+txt_keyfile_not_found: A kulcsfájl nem olvasható vagy nincs meg. Kérjük, válasszon egy másik kulcsfájlt.
+txt_keyfile_notcreated: A kulcsfájl nem lett létrehozva!
+txt_larger: Nagyobb, mint a kijelölt elem
+txt_lastused: Utoljára használt
+txt_launch: Feladat indítása
+txt_layout: Tervezet
+txt_filelist_savedas: Az elrendezés mentve mint
+txt_level: Szint
+txt_license: Licenc
+txt_caption_list: Lista
+txt_list_details: Lista (részletekkel)
+txt_list_all: Lista (összes)
+txt_list_disp: A megjelenített elem(ek) listája
+txt_list_sel: A kijelölt elem(ek) listája
+txt_toggle_warning: Az útvonal felsorolás, hosszú időt vehet igénybe, mindenképpen folytatja?
+txt_loadfile: Fájl betöltése
+txt_loadlayout: Tervezet betöltése
+txt_unit_hd: Helyi lemez
+txt_localization: Fordítás
+txt_lpaqver: LPAQ verzió
+txt_type_description_lpaq: LPAQ: gyorsabb PAQ verzió, nagyon jó tömörítés
+txt_maininterface: Fő felhasználói felület
+txt_maxcomp: Maximális tömörítési mód
+txt_level_maximum: Maximális
+txt_restartrequired: A programott, lehet, hogy újra kell indítani a módosítás alkalmazásához
+txt_required_memory: MB memória szükséges
+txt_method: Mód
+txt_misc: Vegyes
+txt_modify: Módosítás
+txt_morecontrols: További vezérlők (előzmény, könyvjelzők, ...)
+txt_morerecent: Újabb, mint a kijelölt elem
+txt_ent_hint: Mozgassa az egeret, adja meg a kulcsot a szerkesztő mezőben, fájlok betöltése az entrópia gyűjteményből...
+txt_moveto: Áthelyezés...
+txt_mypc: PC gyökérkönyvtár
+txt_list_na: n/a
+txt_name: Név
+txt_naming: Házirend megnevezés
+txt_unit_remote: Hálózati meghajtó
+txt_newarchive: új archívum
+txt_cnewfolder: Új mappa
+txt_news: Hírek
+txt_no: Nincs
+txt_noinput: Nincs elérhető forrásfájl
+txt_nocompress_hint: nincs tömörítés (gyorsabb)
+txt_split_noinput: Nincs forrásfájl kiválasztva; kérjük, válasszon egy fájlt a daraboláshoz
+txt_open_noinput: Nincs forrásfájl kiválasztva; kérjük, válasszon egy archívumot (az első archívum kötet a több-kötetes archívumok számára)
+txt_list_nomatch: nem azonos
+txt_singlethread: nincs többszálú végrehajtás
+txt_none2: nincs
+txt_nonsolid: Nem-tömör
+txt_level_normal: Normál
+txt_copy_error: másolás/áthelyezés sikertelen, hibakód:
+txt_description: Megjegyzések
+txt_compare_second: Válasszon ki egy fájlt az összehasonlításhoz
+txt_peaobj: Elem vezérlés
+txt_displayed_obj: elem
+txt_olderthan: Régebbi, mint a kijelölt elem
+txt_on: on
+txt_ondblclick: Dupla kattintási művelet:
+txt_opacity: Tömörség
+txt_open: Megnyitás
+txt_openarchive: Archívum megnyitása
+txt_title_open: Archívum megnyitása, dekódolás, egyesítés...
+txt_open_bookmark: Könyvjelző megnyitása
+txt_cphere: Parancssor megnyitás itt
+txt_open_file: Fájl megnyitása
+txt_open_files: Fájl(ok) megnyitása
+txt_open_path: Hely megnyitása
+txt_opensource: Hordozható forrás archiváló megnyitása
+txt_openwith: Megnyitás...
+txt_aborted: A müvelet megszakadt
+txt_unit_cd: Optikai meghajtó
+txt_options: Beállítások
+txt_other: További
+txt_otherparams: További paraméterek (szabad szerkesztés)
+txt_oip: kimenet, bemenet, paraméterek
+txt_opi: kimenet, paraméterek, bemenet
+txt_output: kimenet:
+txt_overwrite: A létező fájlok felülírása
+txt_compressed_size: Csomagolt
+txt_paqver: PAQ verzió
+txt_type_description_paq: PAQ: lassú, de rendkívül erőteljes tömörítő
+txt_pio: paraméterek, bemenet, kimenet
+txt_poi: paraméterek, kimenet, bemenet
+txt_parameters: Paraméterek:
+txt_error_partial: A részleges kicsomagolás nem lett végrehajtva a jelenlegi archívum típushoz
+txt_passes: Menetek
+txt_pw: Jelszó
+txt_pwlength: A jelszó hossza karakterekben (4..64)
+txt_un7z_browse_pw: jelszó szükséges
+txt_un7z_browse_pw_other: a jelszó hibás lehet
+txt_paste: Beillesztés
+txt_path: Hely
+txt_pea_appcolor: Pea program színe
+txt_pea_textcolor: Pea szövegszín
+txt_type_description_pea: PEA: biztonság orientált archívum formátum, gyors tömörítéssel
+txt_peazip_new: PeaZip (még egy példány megnyitása)
+txt_peazip_help: Támogatás
+txt_peazip_web: PeaZip weboldal
+txt_performall: Az összes támogatott algoritmus végrehajtása
+txt_name_provide: Új név (kérjük, mellőzze a \ / : * ? ' " < > | karaktereket)
+txt_upxorstrip: Strip és/vagy UPX kiválasztása
+txt_not_removable_file: Zárja be a használatban lévő fájlt, hogy a PeaZip eltávolíthassa azt:
+txt_not_removable: Zárja be a használatban lévő fájlt, hogy a PeaZip eltávolíthassa a mappát:
+txt_custom_executable_missing: Kérjük, adja meg egy exe fájl nevet
+txt_type_unsupported_select: Kérjük, válasszon ki egy támogatott archívum típust:
+txt_no_theme_name: Kérjük, adjon meg egy téma nevet
+txt_please_wait: Kis türelmet
+txt_copy_wait: Kérjük, várja meg míg a jelenlegi ütemezett fájl másolási/áthelyzési művelet befejeződik, további feladatok ütemezése elött
+txt_previewwith: Gyorsnézet...
+txt_projectadmin: Projekt vezető:
+txt_type_description_quad: BALZ/QUAD: nagy teljesítményű ROLZ-alapú fájl tömörítő
+txt_quickdelete: Gyorstörlés
+txt_quit: Kilépés
+txt_unit_ram: RAM lemez
+txt_read: Olvasás:
+txt_recentarchives: Legutóbbi archívumok 
+txt_rr_hint: Bejegyzések visszaállításának engedélyezése, adatsérülés esetén az archívum javítása
+txt_search_refine: Keresési szűrő finomítás, ? és * helyettesítő jel elfogadása
+txt_fefreshf5: Frissítés (F5)
+txt_release: kiadás:
+txt_unit_removable: Eltávolítható egység
+txt_remove_bookmark: Könyvjelző törlése
+txt_remove_external_unit: Külső eszköz(ök) eltávolítása
+txt_removeselected: A kiválasztott elem(ek) törlése
+txt_rename: Átnevezés
+txt_caption_repair: Javítás
+txt_restartrequired2: az alkalmazásához a program újraindítása szükséges
+txt_reset: Visszaállítás
+txt_reset_archivename: Az archívumnév visszaállítása
+txt_hardreset: A könyvjelzők visszaállítása
+txt_reset_theme: Visszaállítás az alapértelmezett témára
+txt_restore_att: az eredeti paraméterek visszaállítása
+txt_run_as: Futtatás mint (nem lehet átváltani a felhasználóra jelszó hiányában)
+txt_run_as2: Futtatás más felhasználóként
+txt_sample: Minta: 
+txt_saveas: Mentés mint
+txt_savehistory: Előzmények mentése
+txt_save_infolder: Mentés mappába (automatikus)
+txt_savejob: Feladatdefiníció mentése
+txt_savejobdefinition: Feladatdefiníció mentése
+txt_savejobdefinition_hint: A feladatdefiníció mentése egyszerű szövegként; használhatja parancsfájlokból is
+txt_savelayout: Tervezet mentése
+txt_save_winstate: A fő ablak helyzetének mentése
+txt_search: Keresés (ismétlődő), kis ideig eltarthat
+txt_searchanddrag: Keresés és húzás ide
+txt_searchfor: Keresés:
+txt_nrsearch: Keresés itt (nem ismétlődő)
+txt_search_hint: Keresés az archívum alkönyvtáraiban a szűrőhöz hasonló találatokhoz
+txt_search_web: Keresés a weben
+txt_list_searching: Keresés...
+txt_securedelete: Végleges törlés (fájlok)
+txt_default_description: Válasszon egy funkciót vagy húzza a fájlokat ide
+txt_selectall: Az összes kijelölése
+txt_selectdir: Könyvtár választás
+txt_selected_obj: kiválasztva
+txt_selected_objects: Kiválasztott elemek
+txt_sfx: Ön-kicsomagoló
+txt_sendbymail: Küldés e-mailben
+txt_set_defaults: Az alkalmazás alapértelmezett paramétereinek beállítása
+txt_settings: Beállítások
+txt_sfx_interface: sfx felület
+txt_showhints: Tippek megjelenítése
+txt_show_messages: Információs üzentek megjelenítése
+txt_showpw: A jelszó mező tartalmának megjelenítése
+txt_singlevol: Egy kötet
+txt_size: Méret
+txt_sizeb: Méret (B)
+txt_skip_existing: A létező fájlok átugrása
+txt_slowercomp: lassabb tömörítés, azonban egyformán gyors kicsomagolás
+txt_smaller: Kisebb, mint a kijelölt elem
+txt_solid: Tömör
+txt_solid_block: Tömör blokk
+txt_solid_auto: Tömör, automatikus beállítás
+txt_solid_extension: Tömör, csoportosítás kiterjesztés szerint
+txt_listtest: sajnálom, de a lista/teszt művelet nem valósítható meg ennél a formátumnál
+txt_sortbysel: Rendezés kijelölési állapot szerint
+txt_list_sorting: Rendezés...
+txt_speed: sebesség
+txt_split: Felosztás
+txt_type_description_split: Egy fájl felosztása kihagyható adatépség vizsgálattal
+txt_split_file: Fájl darabolása
+txt_list_nostats: statisztika nem elérhető
+txt_status: Állapot
+txt_level_store: Tárolás
+txt_stream_control: Adatfolyam vezérlő
+txt_strip: Strip az UPX elött (ajánlott)
+txt_keyfile_created: A kulcsfájl sikeresen létre lett hozva mint:
+txt_suggestpw: Véletlenszerű jelszó létrehozása
+txt_noupx: UPX tömörítés kihagyva
+txt_syntax: Mondattan:
+txt_sysbenchmark: Rendszer teljesítmény teszt
+txt_benchmark: A Rendszerteljesítmény teszt több percig is eltarthat és az összes elérhető CPU és memória készlet felhasználásra kerül. A rendszer, lehet, hogy nem fog válaszolni a teljesítménymérés közben; mindenképpen folytatja?
+txt_systools: Rendszereszközök
+txt_tarbefore: TAR elött
+txt_type_description_tar: TAR: az UNIX rendszerek alapvető archíválási formátuma
+txt_taskman: Feladatkezelő
+txt_caption_test: Teszt
+txt_testall: Az összes tesztelése
+txt_testdisp: A megjelenített elem(ek) tesztelése
+txt_testpw: A jelszó / kulcsfájl tesztelés
+txt_testsel: A kiválasztott elem(ek) tesztelése
+txt_col_hint: A színeket ki kellene választani az ikon és egyéb GUI elem színek integrálásához
+txt_bookmarks_hint: A teljes és szerkeszthető könyvjelzők lista a fájl böngésző felületen érhető el, kattintson a "További vezérlők" ikonra és az "Előzmény/könyvjelzők kapcsoló"-ra.
+txt_archive_noinput_tolist: Az elrendezés üres: kérjük, használja a Fájl(ok) hozzáadása, Mappák hozzáadása vagy Tervezet betöltése opciót az archívum elrendezés feltöltéséhez 
+txt_theme: Téma
+txt_icons_found: A téma sikeresen be lett töltve.
+txt_themename: Téma neve
+txt_icons_not_found: A téma nincs helyesen betöltve. Próbáljon meg átváltani az alapértelmezett témára, vagy egy olyanra, amelyről biztosan tudja, hogy működik.
+txt_theme_create_success: téma sikeresen létre lett hozva
+txt_theming: Felszín
+txt_extand_error: Ezt a funkciót legközelebb egy szimpla elemnél hajthatja végre 
+txt_threads: Szálak
+txt_titlescolor: Felirat színek
+txt_to: cél
+txt_toggle_browseflat: Tallózás/lebegő nézet kapcsoló
+txt_toggle_historybookmarks: Előzmények/könyvjelzők kapcsoló
+txt_toolbarscolor: Eszköztár színek
+txt_tools: Eszközök
+txt_best: próbálja a legjobb beállításokat (lassú)
+txt_type: Típus
+txt_level_ultra: Ultra
+txt_error_openfile: Nem lehet megnyitni a megadott fájlt
+txt_cl_hint: Az UNACE és UPX futtatásához, mindig a konzol módot használja; a lista, teszt és mérési feladatokhoz, pedig mindig a GUI módot
+txt_ace_missing: Az UNACE beépülő hiányzik; az ACE archívumok kezeléséhez, le kell töltenie ezt a beépülő modult a PeaZip's weboldaláról (a beépülőt nem tartalmazza az alap csomag)
+txt_units: egység
+txt_unit_unknown: Ismeretlen meghajtó típus
+txt_un7z_pw_untested: Teszteletlen
+txt_up: Fel
+txt_update: frissítés (ha létezik az archívum)
+txt_type_description_upx: UPX: csak a végrehajtható állományok tömörítése
+txt_advfilters: Feljett szűrők használata
+txt_openfiles_hint: Használja ezt az opciót, azoknak a fájloknak az archívumba foglalásához, amelyeket más alkalmazás nyitottak meg írásra (hasznos a mentési feladatokban)
+txt_usenet: Usenet
+txt_user_name: Felhasználónév; user@DOMAIN vagy DOMAIN felhasználói alak, ha szükséges.
+txt_using: Használt összetevők:
+txt_volumepea: Kötetvezérlő
+txt_volume_size: Kötet méret
+txt_type_ext_uns: sikeresen kicsomagolva
+txt_websearch: Web keresés
+txt_websites: Weboldalak
+txt_word: Szó
+txt_write: Írás:
+txt_ramdompw_hint: Ki tudja másolni a véletlenszerűen létrehozott jelszót innen
+txt_exe_hint: Szabadon megadhatja az exe állomány nevét és paramétereit az egyéni tömörítéshez, és kiválaszthatja a mondattani szerkezetét. A színtaktikai parancsokat, kézi úton a "Konzol" fül alatt módosíthatja.
+txt_pj_hint2: Importálhatja a feladatdefiniciókat a GUI felület elülső rétegéből az alábbi memo mezőbe. Szerkesztheti, elindíthatja vagy mentheti azt módosítás vagy a feladatdefiníció elvesztése nélkül.
+txt_type_description_zip: ZIP: gyors archíválási/tömörítési formátum, a Windows rendszerek alapeleme
+txt_zipcrypto_hint: ZipCrypto
+
+=== end PeaZip text group ===
+
+=== PeaLauncher text group ===
+
+txt_5_6_update: Frissítések ellenőrzése
+txt_5_6_cml: Rendszer helyi menü nyelve
+txt_5_6_donations: Adományok
+txt_5_6_localization: Honosítás
+txt_5_6_runasadmin: Futtatás rendszergazdaként
+txt_5_6_help: Támogatás
+txt_5_5_cancelall: Összes megszakítása
+txt_5_3_details: Részletek
+txt_5_3_files: fájl
+txt_5_3_folders: mappa
+txt_5_3_info: Információk
+txt_5_3_list: Lista
+txt_5_3_os: Eredeti méret
+txt_5_3_ps: Csomagolt méret
+txt_5_3_test: Teszt
+txt_5_0_extract: Kicsomagolás
+txt_5_0_from: Forrás
+txt_5_0_in: in
+txt_5_0_to: Cél
+txt_4_5_search: Keresés
+txt_4_0_drag: Húzza ide az archívumot a kicsomagoláshoz vagy 
+txt_4_0_dragorselect: Húzza ide vagy válasszon fájlt
+txt_4_0_select: fájl kiválasztása
+txt_3_6_selectdir: Könyvtár választás
+txt_3_5_close: Bezárás
+txt_3_0_details: További részletekért, a "Jelentés" tartalmazza a feladatnaplót, illetve a "Konzol" tartalmazza a feladatdefiníciót parancssorként.
+txt_3_0_hints: Információk a hibáról
+txt_3_0_arc: Néhány bemeneti állomány nem olvasható (lehet, hogy zárolt, nem hozzáférhető vagy sérült)
+txt_3_0_ext: Az archívum egy másik jelszót igényelhet az aktuális feladathoz
+txt_2_8_oop: A kimeneti hely megnyitása a feladat befejezésekor
+txt_2_7_validatefn: Művelet leállítva, érvénytelen fájlnév észlelve:
+txt_2_7_validatecl: Művelet leállítva, potenciálisan veszélyes parancs észlelve (a parancs konkatenáció nem engedélyezett a programon belül):
+txt_2_6_open: Archvum megnyitása
+txt_2_5_ace_missing: Az UNACE beépülő modul hiányzik; az ACE archívumok kezeléséhez, a beépülő modul letölthető a PeaZip weboldaláról (az UNACE forrása le van zárva, a beépülő modul nem szerepel alapcsomagban)
+txt_2_3_pw_errorchar_gwrap: : ez a karakter nem használható a PeaLauncher jelszóban a jelenlegi rendszernél, kérjük, módosítsa a jelszót vagy használja a PeaZip konzol módot (Eszközök > Beállítások)
+txt_2_3_renameexisting: A létező fájlok automatikus átnevezése
+txt_2_3_renameextracted: A kicsomagolt fájlok automatikus átnevezése
+txt_2_3_cancel: Mégse
+txt_2_3_encryption: Titkosítás
+txt_2_3_extinnew: Kicsomagolás új mappába
+txt_2_3_keyfile: Kulcsfájl
+txt_2_3_kf_not_found_gwrap: A kulcsfájl nincs meg vagy nem olvasható. Kérjük, válasszon egy másik kulcsfájlt.
+txt_2_3_moreoptions: További beállítások...
+txt_2_3_nopaths: Nincsenek helyek
+txt_2_3_options: Beállítások
+txt_2_3_overexisting: A létező fájlok felülírása
+txt_2_3_pw: Jelszó
+txt_2_3_skipexisting: A létező fájlok kihagyása
+txt_job_unknown: : Ismeretlen hiba történt
+txt_stdjob: [az animáció le fog állni a feladat befejezéskor]
+txt_benchmarkjob: [a rendszer lassan reagálhat a teszt futtatása közben (néhány perc)]
+txt_defragjob: [lehet, hogy nem válaszol a töredezettség mentesítés alatt, futtathatja a háttérben is]
+txt_consolejob: [a feladat visszajelzés és részletes folyamat a feladat konzol ablakban tekinthető meg]
+txt_job1: 1: Figyelem: nem végzetes hibák; pl. néhány fájl hiányzik vagy zárolt
+txt_job127: 127: Nem lehet végrehajtani a szükséges műveletet
+txt_job2: 2: Fatális hiba történt
+txt_job255: 255: A feladatot a felhasználó leállította
+txt_job7: 7: Hiba: helytelen parancssor
+txt_job8: 8: Hiba: nincs elegendő memória a szükséges művelethez
+txt_autoclose: Az ablak bezárása a művelet végén
+txt_crscale: Tömörítési arány (alacsonyabb, jobb):
+txt_console: Konzol
+txt_benchscale: 2 magos Duo 6600 értékelés, megfelelő MHz sebesség.
+txt_create: Készítés 
+txt_done: Kész:
+txt_nocl: Üres parancssor
+txt_error: Hiba:
+txt_explore: Intéző
+txt_extto: Kicsomagolás...
+txt_halt: A rendszer leállítása a feladat befejezésekor
+txt_halted: Leállítva:
+txt_hardware: hardver
+txt_high: magas prioritás
+txt_idle: üresjárati prioritás
+txt_input: Bemenet:
+txt_jpaused: Feladat szüneteltetve
+txt_jresumed: Feladat folytatása
+txt_job_started: Feladat elindítva
+txt_jobstatus: Feladat állapota:
+txt_jstopped: Feladat leállítva a felhasználó által
+txt_jobstopped: A feladat le lett állítva a felhasználó által; a részleges eredményeket a kimeneti hely hivatkozásra kattintva ellenőrizheti.
+txt_job_success: A feladat sikeresen befejeződött
+txt_lt: Lista/teszt
+txt_normal: normál prioritás
+txt_ok: OK
+txt_output: Kimenet:
+txt_pause: Szünet
+txt_paused: Szüneteltetve,
+txt_p_high: Magas prioritási mód
+txt_p_idle: Üresjárati prioritás mód
+txt_p_normal: Normál prioritási mód
+txt_p_realtime: Valós idejű prioritási mód
+txt_rating: Besorolás:
+txt_rt: valós idejű prioritás
+txt_report: Jelentés
+txt_resume: Folytatás
+txt_priority: Kattintson a feladat prioritás beállításához
+txt_running: Futtatás,
+txt_isrunning: Futtatás...
+txt_saveas: Mentés mint
+txt_savejob: Feladatdefinició mentése (jelszót tartalmazhat!)
+txt_savelog: Feladatnapló mentése
+txt_software: szoftver
+txt_speedscale: Sebesség, logaritmikus számsor (magasabb, jobb):
+txt_status: Állapot
+txt_stop: Leállítás
+txt_bench: Rendszer teljesítmény teszt
+txt_threads: Végrehajtási szálak:
+txt_time: Idő:
+
+=== end PeaLauncher text group ===
+
+=== about text group ===
+
+ARCHÍVUM(OK) KICSOMAGOLÁSA
+Rendszerből: 
+- jobb kattintás az archívumra, majd a rendszer szövegkörnyezeti menüjében klikk a "Kicsomagolás ide" vagy "Kicsomagolás ide (új mappába)" tételre a kicsomagoláshoz. 
+- vagy használja a "Kicsomagolás..." menü bejegyzést további opciók eléréséhez: mentési hely, jelszó, fájlok kicsomagolása egy új könyvtárba, átnevezés vagy létező fájlok felülírása, stb.
+
+Egy archívum megnyitása a PeaZip-ben, pl. dupla-kattintással vagy az archívum PeaZip ablakára vagy ikonjára húzásával
+- kattintson a "Kicsomagolás" elemre az eszköztáron vagy a szövegkörnyezeti menüben csak a kijelölt objektumok kicsomagolásához. A megerősítési párbeszédablakon keresztül, lehetősége van az összes opció beállítására (cél hely, jelszó, névadási eljárás, kicsomagolás egy új könyvtárba, stb.)
+- húzza a fájlokat és/vagy mappákat a kívánt célmappába, csak a kiválasztott tartalom lesz kicsomagolva (további információkért tekintse meg a húzd és ejtsd funkcióval foglalkozó fejezetet)
+- kattintson a gyors kicsomagolás lenyíló gombra a “Kicsomagolás”-tól jobbra az eszköztáron, ez lehetővé teszi a teljes archívum közvetlen kicsomagolását egyénileg megadott célmappákba (a megerősítési párbeszédablak kihagyásával) és megadhatja a fontosabb beállításokat; billentyűparancsok: Ctrl+E (vagy F12) a teljes archívum kicsomagolásához, rákérdezés a cél könyvtárra; Ctrl+Alt+E kicsomagolja az archívumot az aktuális mappába; Ctrl+Shift+E kicsomagolás az asztalra; Ctrl+Alt+Shift+E a dokumentumok kicsomagolásához; Ctrl+0 kicsomagolás az előző helyre; Ctrl+1..8 kicsomagolás a könyvjelző 1..8 helyekre (ha meg van adva)
+
+Nyissa meg a PeaZip-et, válasszon ki egy vagy több archívumot és kattintson a “Kicsomagolás”-ra az eszköztáron vagy a szövegkörnyezeti menüben, esetleg használhatja az előző pontban taglalt gyors kicsomagolási célokat.
+
+CSAK A KIVÁLASZTOTT ELEMEK KICSOMAGOLÁSA AZ ARCHÍVUMBÓL
+Egy archívum megnyitása a PeaZip-ben, pl. dupla-kattintással vagy az archívum PeaZip ablakára vagy ikonjára húzásával
+- kattintson a "Kicsomagolás" elemre az eszköztáron: csak a kijelölt objektumok lesznek kicsomagolva
+- húzza a fájlokat és/vagy mappákat a kívánt célmappába, csak a kiválasztott tartalom lesz kicsomagolva
+- jobb kattintás az egérrel és a helyi menü “Kicsomagolás” csoportjában kattintson a “Kiválasztott kicsomagolása” menüpontra (csak a kijelölt elemek kicsomagolásához) vagy a “Megjelenített kicsomagolása” menüpontra (a jelenlegi könyvtár tartalmának kicsomagolásához)
+
+EGY JELSZÓ MEGADÁSA AZ ARCHÍVUM TARTALMÁNAK MEGTEKINTÉSÉHEZ VAGY KICSOMAGOLÁSÁHOZ
+Kattintson a lakat ikonra egy jelszó és szabadon választható kulcsfájl megadásához.
+Az ikon a PeaZip fájlböngészőjének állapotsorában és az archívum kicsomagolási ablakában is látható; a jelszó beállításakor az ikon színe módosulni fog.
+
+ARCHÍVUM LÉTREHOZÁSA
+Rendszerből:
+- jobb klikk az archíválandó elemre, majd válassza a "Hozzáadás az archívumhoz" tételt a szövegkörnyezeti vagy a Küldés menüből. Ez meg fogja nyitni az archívum létrehozási párbeszédablakot, további opciók a "Haladó" fülnél érhetőek el. Kattintson az OK gombra az archívum létrehozásához.
+- vagy pedig húzza a fájlokat/mappákat a PeaZip ablakára vagy parancsikonjára; ugyanaz az archívum létrehozási felület fog megjelenni.
+
+PeaZip-ből
+- válassza ki az archiválandó elemeket és kattintson a "Hozzáadás" gombra; ugyanaz az archívum létrehozási felület fog megjelenni.
+
+FÁJLOK/MAPPÁK HOZZÁADÁSA EGY LÉTEZő ARCHÍVUM FRISSÍTÉSÉHEZ
+Egy archívum megnyitása a PeaZip-ben (pl. dupla-kattintással vagy egérrel a PeaZip ablakára vagy ikonjára húzással) és húzza a hozzáadandó fájlokat és mappákat az arhívumba (vagy kattintson a "Hozzáadás" gombra és használja az alkalmazás helyi menüjét az elemek arhívumhoz adásához).
+Ez meg fogja nyitni az archívum létrehozás megerősítési párbeszédablakot, kattintson az OK gombra a létező archívum frissítéséhez.
+
+KISEBB FÁJLOKRA DARABOLT ARCHÍVUM LÉTREHOZÁSA
+Mialatt létrehoz egy archívumot az előző pontokban leírt módok alapján, kattintson az “Egyetlen kötet” lengördülő menüre a kimeneti fájlok méretének kiválasztásához (kötetek), az archívum ez a méret alapján lesz feldarabolva.
+Az archívumok egyéni típusainak támogatnia kell ezt az opciót.
+
+TITKOSÍTOTT ARCHÍVUM LÉTREHOZÁSA
+Kattintson a lakat ikonra egy jelszó és szabadon választható kulcsfájl megadásához; az ikon a PeaZip fájlböngészőjének állapotsorában és az archívum kicsomagolási ablakában is látható.
+A fájlnevek és könyvtárak rejtéséhez aktiválja a “Fájlnevek titkosítása” jelölőnégyzetet, Kérjük, vegye figyelembe, hogy ez csak akkor alkalmazható, ha a létrehozandó archívum támogatja ezt a funkciót, úgymint 7Z és ARC.
+Jegyezze meg, hogy az archívum létrehozási felületen a lakat ikon mellett, látható egy jelzés, amely vizuálisan informálja arról, ha a titkosítás be van állítva és ha a jelenlegi archívum formátum támogatja a titkosítást.
+
+KÜLÖNÁLLÓ ARCHÍVUMOK LÉTREHOZÁSA
+Adja hozzá az archíválandó elemeket (a PeaZip "Hozzáadás" gombjával, a szövegkörnyezeti vagy a Küldés menüből) és mielött jóváhagyná az "Ok" gombbal, aktiválja a "Minden archívum hozzáadása különálló archívumként" opciót.
+
+ARCHÍVUMOK KONVERTÁLÁSA
+A konvertálandó archívumokat válassza ki a PeaZip-ből és kattintson a "Konvertálás" menüelemre az eszköztáron vagy a szövegkörnyezeti menüben, nem archívum fájlok és mappák úgyszintén hozzáadhatóak, a különbség az archívumok tömörítési szakasz elötti kibontása.
+Használja a “Létező archívumok konvertálása” kapcsolót a “Minden archívum hozzáadása különálló archívumként" opcióval együtt (alapértelmezett), amely végrehajtja a felsorolt archívumok csoportos konvertálását, célja az archívum konverzió átváltása nélkül a bemeneti adatok egyetlen archívumba egyesítése, mely növeli a tömörítés hatékonyságát, mivel lehetővé teszi az eredeti adat újratömörítését, annak tömörítetlen formájából.
+
+ARCHÍVUMOK KÖZVETLEN LÉTREHOZÁSA EGY MEGADOTT FORMÁTUMBA A KIVÁLASZTOTT TÖMÖRÍTÉSI SZINT HASZNÁLATÁVAL
+Használja a “Rendszer integráció” módot az Opciók menüben a szövegkörnyezeti menü bejegyzések engedélyezéséhez, amellyel közvetlenül hozzáadhatóak a kiválasztott fájlok/mappák egy ZIP, 7Z vagy önkicsomagoló archívumhoz.
+A Zip és 7Z formátumok esetén, úgyszintén engedélyezhetőek a szövegkörnyezeti menü bejegyzések a gyorsabb, normál vagy ultra szintű tömörítés érdekében a kiválasztott formátumnál az alapértelmezett tömörítési szint megkerülésével.
+
+JELSZÓKEZELŐ
+A Jelszókezelő elérhető a főmenüből, Eszközök > Jelszókezelő vagy a Jelszó űrlapról, a legördülő menüből a jelszó menü bal oldalán.
+A mentett jelszavakat a jelszó mező bal oldalán a Jelszó űrlapon lehet kiválasztani a legördülő menüből, vagy átmásolhatja a Jelszókezelőből, bármely más alkalmazásban való használathoz.
+Ha nincs fő jelszó beállítva a Jelszókezelőben, a jelszólista mindenféle hozzáférési azonosító lekérése nélkül hozzáférhető, máskülönben a jelszavak nem jelennek meg, amíg a felhasználó meg nem adja a helyes azonosítót.
+
+AZ ALKALMAZÁS KONFIGURÁLÁSA
+Opciók > Fordítás (Opciók > Beállítások első fül) lehetővé teszi az alkalmazás nyelvének beállítását.
+Opciók > Beállítások lehetővé teszi az alkalmazás beállítások szerkesztését
+Opciók > Téma lehetővé teszi az alkalmazás ikonjainak és megjelenésének módosítását
+Opciók > A rendszer integráció elindítása az egyik módja a fájltársítások, szövegkörnyezeti és Küldés menü bejegyzések konfigurálásának (Windows alatt)
+A menü bejegyzések rendezése a testreszabáshoz, a böngésző funkciók engedélyezése vagy tiltása, úgymint eszköztár, címsáv, navigációs sáv, stb.
+
+F1 	súgó
+F2 	fájl(ok) átnevezése / Ctrl+F2 kiválasztott másolása / Shift+F2 kiválasztott áthelyezése
+F3	keresés / Ctrl+F3 nem rekurzív (keresés itt) / Shift+F3 rekurzív (keresés az alkönyvtárakban)
+F4 	navigációs felugró menü megjelenítése / Ctrl+Shift+F4 számítógép gyökér tallózása / Ctrl+F4 asztal tallózása / Shift+F4 főoldal tallózása
+F5 	frissítés
+F6 	tallózás/lebegő nézet kapcsoló
+F7 	hozzáadás a könyvjelzőkhöz / Ctrl+F7 egy új PeaZip példány megnyitása / Shift+F7 parancssor megnyitása a kiválasztott helyen / Alt+F7 kiválasztott hely tallózása
+F8 	a könyvjelző lista első elemének megjelenítése (Ctrl, második, Shift, harmadik)
+F9 	jelszó/kulcsfájl beállítása / Ctrl+F9 kulcsfájl vagy véletlenszerű jelszó létrehozása / Shift+F9 speciális szűrők beállítása
+F10 	menü / Ctrl+F10 futtatás másik felhasználóként / Alt+F10 futtatás rendszergazdaként (Windows Vista és újabb rendszerek)
+F11 	teljes képernyős mód váltókapcsoló
+F12 	az összes kicsomagolása...
+
+A PEAZIP PROGRAMRÓL
+
+A PeaZip, egy ingyenes, hordozható, nyílt forrású archívum kezelő: kereszt-platformos alkalmazás, elérhető portable és telepítős változatban 32 és 64 bites Windows (9x, 2k, XP, Vista) és Linux rendszerekhez (a PeaZip egy asztal semleges alkalmazás).
+
+A PeaZip lehetőséget biztosít összetett kereső szűrők alkalmazására; több archívum készítése és kicsomagolása egy időben; önkicsomagoló archívumok létrehozása; feladatdefinició exportálása parancssorként; archiválási és kicsomagolási struktúrák mentése; archívum és mappa könyvjelzők; vizsgálat és a tömörített és kicsomagolt fájlok megnyitása egyéni alkalmázásokkal, stb...
+
+További funkciók: nagy fokú titkosítás, erőteljes fájl másolás, fájlok vágása/egyesítése, biztonságos adat törlés, összehasonlítás, checksum és hash fájlok, rendszer teljesítménymérés, véletlenszerű jelszavak és kulcsfájlok generálása.
+
+Letöltések: http://www.peazip.org/
+További tudnivalók: http://www.peazip.org/peazip-free-archiver.html
+Támogatás: http://www.peazip.org/peazip-help.html
+GYIK: http://www.peazip.org/peazip-help-faq.html
+
+Köszönjük mindazoknak az embereknek, akik hozzájárultak a nyílt forráskódú szoftver komponenseket (lásd a weblapon a teljes listát) használó PeaZip projekt fejlesztésében, valamint az összes felhasználónak akik visszajelzésekkel, és tanácsokkal láttak el minket.

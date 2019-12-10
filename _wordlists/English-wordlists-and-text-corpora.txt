@@ -7,4 +7,23 @@ https://fasttext.cc/docs/en/english-vectors.html
 
 http://ngrams.googlelabs.com/datasets
 
+(VARIOUS, EN, BG) http://www.wiksearch.com/ (an experimental interface for searching through Wikipedia.org)
+(VARIOUS, EN, BG, NON-DICT, WORDLIST_GENERATE_FROM) https://dumps.wikimedia.org/ + https://dumps.wikimedia.org/other/pagecounts-raw/ + https://old.datahub.io/organization/wikimedia
+
 ...
+
+------
+
+# EVEN MORE ENGLISH-LANGUAGE TEXT CORPORA
+
+## Data sources
+
+The Datamuse API leans on many freely available data sources to do its work:
+
+*   **Phonetic data**: The [CMU pronouncing dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict) is used as a source of phonetic transcriptions for the "sounds\-like" constraint and for the various English\-language phonetic relations such as perfect rhymes and homophones. The "approximate rhymes" constraint ("rel\_nry") is based on this data as well as an analysis of lyrics and poetry on the Web (via the [Common Crawl](https://commoncrawl.org/)).
+*   **Corpus\-based data**: The [Google Books Ngrams](http://storage.googleapis.com/books/ngrams/books/datasetsv2.html) data set is used to build the language model that scores candidate words by context, and also for some of the lexical relations. [word2vec](https://code.google.com/archive/p/word2vec/) is used for reranking result sets by topic (the "topics" parameter). word2vec as well as the excellent [Paraphrase Database](http://www.cis.upenn.edu/~ccb/ppdb/) are used to backfill the results for single\-word "means\-like" constraints (the "ml" parameter); in particular, the "XXL" lexical paraphrases are used, without modification.
+*   **Semantic knowledge**: [WordNet 3.0](http://wordnet.princeton.edu) is used for several of the static semantic lexical relations. For the "means\-like" ("ml") constraint, dozens of online dictionaries crawled by [OneLook](https://onelook.com/) are used in addition to WordNet.
+
+
+SOURCE:
+https://www.datamuse.com/api/ ( http://archive.is/MjNaf )

@@ -1,0 +1,36 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roll a die</title>
+<script>
+function roll() {
+	var raw = Math.random();
+	var scaled = raw * 11;
+	var rounded = Math.round(scaled);
+	var value = rounded + 1;
+
+	var newelem = document.createElement("li");
+        newelem.appendChild(document.createTextNode(value));
+
+	var results = document.getElementById("results");
+
+	results.insertBefore(newelem, results.firstChild);
+}
+</script>
+<style>
+body { margin: 0; padding: 0; width: 100%; height: 100%; font-size: 2em; line-height: 2em; }
+input { width: 100%; height: 2em; position: fixed; background: green; color: white; border: none; font-size: inherit; padding: none; margin: none; }
+ol {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	position: fixed;
+	top: 2em;
+	bottom: 0;
+	overflow-y: scroll;
+	text-align: center;
+}
+li { margin: 0; padding: 0; list-style: none; }
+</style>
+<input type="button" value="Roll" id="roll" onclick="roll()" tabindex="0">
+<ol id="results"></ol>

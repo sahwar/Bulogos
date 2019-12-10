@@ -1,0 +1,229 @@
+@import "reset.css";
+@import "pygments.css";
+
+/***************** Colors *****************/
+div.document {
+	background: #efc url(https://zork.net/images/repeat.jpeg) repeat-y top left; 
+	color: black;
+}
+div.document * { border-color: #251; }
+table, p, blockquote, h1, h2, h3, h4, h5, h6, div.footer { background-color: #efc; }
+
+blockquote, th, h1, h2, h3, h4, h5, h6, a:link, a:visited, div.footer { color: #251; }
+body, pre, h1.title, a:hover, a:active {
+	background-color: #2b411b !important;
+	color: #efc;
+}
+pre { 
+	border-color: #c9e1aa; 
+	max-width: 40em !important;
+}
+
+p.admonition-title, p.rubric { color: #721; } /* 'rubrica' means red ochre in Latin */
+
+/***************** Typographic metrics *****************/
+
+body {
+	font: 1.0em/1.5em "droid serif", georgia, "lucida bright", "times new roman", serif;
+	font-size: 90%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font: 1.0em/1.5em "droid sans", helvetica, sans;
+	font-weight: bold !important;
+	letter-spacing: -0.05em;
+}
+
+/* leading, vertical rhythm, and a comfortable paragraph width */
+p, div,
+h1, h2, h3, h4, h5, h6,
+dl, dt, dd, li, ul, ol,
+blockquote, pre, img,
+table, td
+{
+	max-width: 33em;	/* Roughly 66 characters */
+	line-height: 1.5em;	/* our flow */
+	margin-top: 1.5em;	/* one-line gaps */
+	margin-bottom: 0;	/* no need? */
+}
+
+/* These are the only completely page-wide elements */
+div.document, div.section, div.footer, h1.title, h2.subtitle { 
+	max-width: 100%; 
+	width: 100%;
+	margin: 0;
+}
+
+/* Center our main document blocks */
+div.section>*, div.document>* {
+	margin-left: auto;
+	margin-right: auto;
+}
+div.document { padding-bottom: 1.5em; }
+
+/***************** A mess of stuff  *****************/
+
+/* links */
+A:link, A:visited { text-decoration: underline; }
+A:hover, A:active { 
+	text-decoration: none; 
+	-moz-border-radius: 1%;
+}
+
+/* avoiding doubled-up top-margins */
+BLOCKQUOTE>*:first-child, DD>*:first-child { margin-top: 0!important; }
+BLOCKQUOTE>* { padding: 0 !important; }
+
+/* paragraphs under other paragraphs abut neatly, but indent */
+p + p {
+	margin-top: 0;
+	text-indent: 1.5em;
+}
+
+/* Indenting blocks */
+blockquote { padding-left: 5em; }
+dd { margin-left: 1.5em; }
+li { margin-left: 1.5em; margin-top: 0;}
+
+/* Special headers used for the top title and subtitle of a document */
+h1.title, h2.subtitle, div.footer { 
+	text-indent: 0 !important; 
+	text-align: center;
+	border-bottom: thin solid;
+}
+h1.title { font-size: 2em; }
+/* mmm, italics... lumped in with other italic thingies */
+h2.subtitle,
+div.footer,
+dt, p.topic-title, p.admonition-title, p.rubric, blockquote,
+caption {
+	font-style: italic;
+}
+p.attribution {
+	font-style: normal;
+}
+p.admonition-title:after, p.admonition-title:before {
+	content: "\26A0"
+}
+div.tip>p.admonition-title:after, div.tip>p.admonition-title:before { 
+	content: "\2139";
+}
+
+
+
+/* Sizing for four levels of heading and adjustment to match our vertical
+ * rhythm 
+ */
+h1 {
+	font-size: 1.333em;
+	line-height: 1.125em;
+	margin-top: 1.125em;
+}
+h2 {
+	font-size: 1.2em;
+	line-height:1.25em;
+	margin-top:1.25em;
+}
+h3, P.topic-title {
+	font-size: 1.167em;
+	line-height:1.286em;
+	margin-top:1.286em;
+}
+h4 {
+	font-size: 1.1em;
+	line-height: 1.363em;
+	margin-top: 1.363em;
+}
+
+/* Code style */
+tt, pre {
+	font-family: inconsolata, "courier new", monospace;
+}
+pre { 
+	overflow: auto; 
+	line-height: 1em; /* gaps make ascii art hard */
+	width: auto;
+	min-width: 20em;
+	-moz-border-radius: 1%;
+	padding: 0.5em;
+	font-size: 80%;
+	border: thin solid;
+}
+
+/*********** Stuff that floats to the right ***********/
+div.contents, div.sidebar, table.footnote {
+	float: right;
+	clear: both;
+	font-size: 70% !important;
+}
+div.contents {
+	border: thin dashed;
+	margin: 0.5em !important;
+}
+div.sidebar, table.footnote {
+	width: auto !important;
+	padding: 0 1em;
+	margin: 1em !important;
+}
+div.sidebar {
+	border: thin solid;
+}
+/* These are headings, not paragraphs :\ */
+p.topic-title, p.sidebar-title, p.sidebar-subtitle { 
+	width: auto;
+	text-indent: 0 !important;
+	text-align: center;
+}
+
+/* Table of Contents */
+div.contents li {
+	text-indent: -1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	width: 100%;
+	margin: 0 !important;
+}
+div.contents ul, div.contents ul ul, ul.auto-toc, ul.auto-toc ul {
+	margin: 0.5em 0 0.5em 0;
+	padding: 0 1em;
+	list-style: none !important;
+	width: auto !important;
+}
+
+div.topic, div.note { font-size: 80%; }
+
+/* Re-assert some list style defaults */
+ul { list-style: disc; }
+ul ul  { list-style: square; }
+ul ul ul  { list-style: circle; }
+ol.arabic { list-style: decimal; }
+ol.upperalpha { list-style: upper-alpha; }
+ol.loweralpha { list-style: lower-alpha; }
+ol.upperroman { list-style: upper-roman; }
+ol.lowerroman { list-style: lower-roman; }
+
+table.docinfo {
+	float: right;
+	font-size: 70%;
+	margin: 0 0.5em !important;
+}
+img, table.docutils { display: block; /* play nicer with floats */ }
+thead {
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+}
+thead + tbody tr {
+	border-top: 0;
+	border-bottom: 0;
+}
+tr {
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+}
+
+th, td { 
+	text-align: left; 
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+th.head { text-align: center; }
+th.field-name img { margin-top: 0px; display: inline; }

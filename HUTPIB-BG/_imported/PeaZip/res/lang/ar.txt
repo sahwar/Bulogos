@@ -1,0 +1,1125 @@
+﻿=== PeaZip language file ===
+Arabic
+5.7
+Translated by: Awadh alghaamdi 
+Last rev. by: منتديات عميد التعريب
+Last rev.: 20120721
+
+=== PeaZip text group ===
+
+txt_5_7_pinstalled: INSTALLED
+txt_5_7_pmissing: MISSING
+txt_5_7_plugin: Plugin missing, can be installed from Help > Check for pulgin and addon
+txt_5_6_basic: Basic
+txt_5_6_exarc: Extract archive
+txt_5_6_tab: Open in new tab
+txt_5_6_rc: Right click for options
+txt_5_6_layouts: Saved layouts
+txt_5_6_upexisting: Update existing archive
+txt_5_6_verbose: Verbose
+txt_5_5_case: (case sensitive)
+txt_5_5_add: Add string at specified position
+txt_5_5_addsel: Add to current selection
+txt_5_5_ext: Change files extension
+txt_5_5_plugin: Check for plugin and addon
+txt_5_5_copypath: Copy path
+txt_5_5_delete: Delete characters at specified position
+txt_5_5_halt: Halt system when task completes
+txt_5_5_positionw: Hint: 1 add before first char, 2 second, etc... "z" for end of file name
+txt_5_5_positionwd: Hint: 1 delete from first char included, 2 second, ... "z" for end of file name
+txt_5_5_replaceneww: Hint: provide an empty new string to simply remove the old string
+txt_5_5_lower: Lowercase
+txt_5_5_replaceoldw: Modify all occurrences of this string or character in the file name
+txt_5_5_newext: New extension
+txt_5_5_new: New string
+txt_5_5_n: Number of characters to delete
+txt_5_5_old: Old string
+txt_5_5_position: Position (number or "z" for end)
+txt_5_5_intdir: Remove single intermediate directory on Extract to new folder operations
+txt_5_5_replacestr: Replace/remove string
+txt_5_5_datesameday: Same day of selected object
+txt_5_5_datesamehour: Same hour of selected object
+txt_5_5_datesamemonth: Same month of selected object
+txt_5_5_datesameweek: Same week of selected object
+txt_5_5_datesameyear: Same year of selected object
+txt_5_5_scan: Scan
+txt_5_5_select: Select
+txt_5_5_similar: Similar to selected object
+txt_5_5_starting: Starting with same character
+txt_5_5_string: String to add
+txt_5_5_subtractsel: Subtract from current selection
+txt_5_5_datehour: This hour
+txt_5_5_datemonth: This month
+txt_5_5_dateweek: This week
+txt_5_5_dateyear: This year
+txt_5_5_dateday: Today
+txt_5_5_upper: Uppercase
+txt_5_5_extw: Warning: changing file extension the file may become unusable
+txt_5_4_da: Date added
+txt_5_4_deletearchives: Delete archives after extraction
+txt_5_4_deletefiles: Delete files after archiving
+txt_5_4_deleteoriginal: Deletion procedure, as set in main screen, will be appended to the script.
+txt_5_4_lv: Last visited
+txt_5_4_deletearchivesconfirm: Confirm deletion of original archives?
+txt_5_4_deletefilesconfirm: Confirm deletion of original files?
+txt_5_4_used: Used
+txt_5_3_profilebest: Best compression, 7Z format Ultra level
+txt_5_3_profileadvanced: Advanced compression, 7Z format
+txt_5_3_profilenormal: Normal ZIP compression, compatible with most extractors
+txt_5_3_profileveryfast: Very fast ZIP compression, recommended for large multimedia files
+txt_5_3_profilepassword: Protect with password, 7Z format
+txt_5_3_profile10mb: Keep output under 10 MB, for mail attachment limitations
+txt_5_3_profilesfx: Auto extracting, recipient will not need an extraction software
+txt_5_3_cml: System context menu language
+txt_5_3_cmlmessage: Double click on desired context menu language and confirm registry merging. This setting needs to be re-applied when the application is installed/updated or after System integration wizard is used.
+txt_5_3_exc: Exclusion filters prevail on inclusion filters
+txt_5_3_ia: Include also
+txt_5_3_io: Include only
+txt_5_3_rec: Recurse subdirs
+txt_5_3_resetsi: Re-configure system integration (context menu, SendTo, file associations)?
+txt_5_2_oadd: Archive to original path
+txt_5_2_zerodelete: Do you want to delete and overwrite with all 0 selected file(s)? The operation can't be undone and files will be not recoverable
+txt_5_2_zfree: Do you want to overwrite with all 0 free space on this drive?
+txt_5_2_sdfree: Do you want to securely delete free space on this drive?
+txt_5_2_oext: Extract to original path
+txt_5_2_securedeletefree: Secure delete free space
+txt_5_2_free: This operation can take some minutes and, if performed often, it can quickly wear flash-based disks
+txt_5_2_zerofiles: Zero delete
+txt_5_2_zerofree: Zero delete free space
+txt_5_1_schedadd: Add schedule
+txt_5_1_schederr: Cannot create schedule
+txt_5_1_daily: Daily
+txt_5_1_day: Day
+txt_5_1_days: Days
+txt_5_1_enddate: End date
+txt_5_1_every: Every
+txt_5_1_w6: Friday
+txt_5_1_hourly: Hourly
+txt_5_1_hours: Hours
+txt_5_1_last: Last
+txt_5_1_schedmanage: Task Scheduler, manage tasks saved in PeaZip branch
+txt_5_1_scriptmanage: Manage saved scheduled scripts
+txt_5_1_w2: Monday
+txt_5_1_monthly: Monthly
+txt_5_1_months: Months
+txt_5_1_onlogin: On login
+txt_5_1_onstart: On start
+txt_5_1_once: Once
+txt_5_1_w7: Saturday
+txt_5_1_schedule: Schedule
+txt_5_1_schedexplain: Create a plain text script from GUI task definition and schedule it. Scheduled tasks' scripts are saved in "Scheduled scripts" folder. To edit or delete scheduled tasks you can use system's Task Scheduler, all scheduled tasks created by PeaZip are collected in "PeaZip" branch of the tasks library.
+txt_5_1_schedok: Schedule created successfully
+txt_5_1_schedscripts: Saved scheduled scripts
+txt_5_1_startdate: Start date
+txt_5_1_starttime: Start time
+txt_5_1_w1: Sunday
+txt_5_1_schedname: Task name, identify both the saved scheduled script and the system's scheduled task
+txt_5_1_ts: Task Scheduler
+txt_5_1_w5: Thursday
+txt_5_1_w3: Tuesday
+txt_5_1_w4: Wednesday
+txt_5_1_weekly: Weekly
+txt_5_1_weeks: Weeks
+txt_5_0_bc: Breadcrumb
+txt_5_0_resetpm: Do you confirm resetting Password Manager? All passwords stored in PeaZip's Password Manager will be lost if confirmed.
+txt_5_0_enum: Enumerate directories' content
+txt_5_0_music: Music
+txt_5_0_ps: Open PowerShell here
+txt_5_0_perf: Performances
+txt_5_0_pictures: Pictures
+txt_5_0_removeall: Remove all
+txt_5_0_resetbookmarks: Reset Bookmarks to default? (Bookmarks can then be customized with Bookmarks > Organize)
+txt_5_0_sh: Session history
+txt_5_0_skip: Skip enumerating directories' content in layout
+txt_5_0_videos: Videos
+txt_4_9_frame: Frame
+txt_4_9_listth: List and thumbnails
+txt_4_9_shadow: Shadow
+txt_4_9_style: Style
+txt_4_8_attach25: 25 MB (attachment limit)
+txt_4_8_crop: Crop
+txt_4_8_detailsno: Light file browser
+txt_4_8_details: File browser with thumbnails
+txt_4_8_fit: Fit to
+txt_4_8_fitl: Fit to largest
+txt_4_8_flip: Flip
+txt_4_8_fullscreen: Full screen
+txt_4_8_fun: Functions
+txt_4_8_h: Height
+txt_4_8_keeparchive: Keep archive
+txt_4_8_noresize: Keep original size
+txt_4_8_iconl: Large images
+txt_4_8_iconm: Icons and images
+txt_4_8_imagemanager: Image manager
+txt_4_8_immersive: Immersive
+txt_4_8_listno: Minimal list
+txt_4_8_aspect: Maintain aspect ratio
+txt_4_8_mirror: Mirror
+txt_4_8_presets: Presets
+txt_4_8_replace: Replace original image(s)? "No" apply the transformation in new file(s).
+txt_4_8_resize: Resize
+txt_4_8_rl: Rotate left
+txt_4_8_rr: Rotate right
+txt_4_8_stop: Stop
+txt_4_8_t: Transform
+txt_4_8_w: Width
+txt_4_7_pk: إنشاء كلمة مرور عشوائي/keyfile
+txt_4_7_spchar: تحديد عدد الأحرف إلى أحرف وأرقام
+txt_4_7_recycleask: نقل الملفات المحددة إلى "سلة المحذوفات"؟
+txt_4_7_recycle: الانتقال إلى "سلة المحذوفات"
+txt_4_7_pcomp: الضغط المحتملة
+txt_4_6_am: مدير الأرشيف
+txt_4_6_fm: إدارة الملفات
+txt_4_6_users: المستخدمين
+txt_4_5_goupdate: يتوفر إصدار جديد. فتح PeaZip للموقع الرسمي لتحميل التحديث؟
+txt_4_5_b: أسفل
+txt_4_5_koupdate: لا يمكن التحقق من وجود تحديثات، أي اتصال مع خادم التحديث
+txt_4_5_update: التحقق من وجود تحديثات
+txt_4_5_dock: قفص الاتهام
+txt_4_5_l: اليسار
+txt_4_5_noupdate: محدث PeaZip يغتبر
+txt_4_5_properties: الخصائص
+txt_4_5_r: اليمين
+txt_4_5_pj: حفظ البرامج النصية تعريف الوظيفة
+txt_4_5_shaddress: إظهار شريط العنوان
+txt_4_5_shnav: إظهار شريط التصفح
+txt_4_5_shstatus: إظهار شريط المعلومات
+txt_4_5_shtool: إظهار شريط الأدوات
+txt_4_5_upxpj: آسف، لا يمكن تصدير تعريف الوظيفة منذ هذا العمل أو الخيار يتطلب أداء عدة أوامر متميزة
+txt_4_5_t: أعلى
+txt_4_4_confremoveall: إزالة جميع ملفات التخصيص PeaZip  (التطبيقات، الإشارات المرجعية، مدير كلمة السر)؟
+txt_4_4_confremove: PeaZip إزالة التكوين؟
+txt_4_3_pwmanhint: انقر نقراً مزدوجاً فوق لتحرير العناصر الموجودة في قائمة كلمات المرور، rightclick للخيارات، Ctrl + C لنسخ كلمات المرور
+txt_4_3_exppl: تصدير قائمة كلمات المرور
+txt_4_3_expple: المشفرة  (إدارة كلمة المرور النسخ الاحتياطي)
+txt_4_3_keeppw: الحفاظ على كلمة المرور/keyfile للدورة الحالية
+txt_4_3_pwmanpwhint: ينصح بوضع كلمة مرور/keyfile  (اختياري) لتشفير كلمة المرور قائمة، وبهذه الطريقة سوف تكون المصادقة مطلوبة للوصول إلى إدارة كلمة المرور. يمكن تغيير كلمة المرور/keyfile في أي وقت من هذا النموذج.
+txt_4_3_pwmanmaster: مجموعة/تغيير كلمة السر الرئيسية
+txt_4_3_pwmanlist: قائمة كلمة المرور
+txt_4_3_pwman: إدارة كلمة المرور
+txt_4_3_pwmancorr: مدير كلمة السر يبدو العبث أو تالفة. إبقاء إدارة كلمة المرور على أي حال، وفي محاولة لاسترداد قائمة كلمة المرور الحالية، إذا كنت تثق به؟  (لا توجد إرادة إعادة تعيين مدير كلمة السر، وأوصت)
+txt_4_3_expplp: نص عادي  (جميع الاستعمالات)
+txt_4_3_recsrc: البحث العودية بشكل افتراضي
+txt_4_3_resetpm: مدير إعادة تعيين كلمة المرور؟ سيتم حذف جميع كلمات المرور المحفوظة
+txt_4_3_breadcrumb: إظهار العنوان كفتات الخبز
+txt_4_2_arcabspath: استخدام مسارات مطلقة
+txt_4_1_duplicateshint: "حجم"/سلسلة "المجموع الاختباري" هو المبلغ عنها في العمود CRC لجميع المرشحين المكررة التي وجدت في عامل التصفية الحالي في الدليل أو البحث
+txt_4_1_adminhint:  (تلميح: بدلاً من ذلك، يمكنك طلب UAC الارتفاع للعمل في مسارات محمية، Alt + F10 أو خيارات > تشغيل كمسؤول)
+txt_4_1_selected:  (مختارة)
+txt_4_1_duplicatesfound: العثور على التكرارات
+txt_4_1_duplicatesfind: البحث عن التكرارات
+txt_4_1_runasadmin: تشغيل كمسؤول
+txt_4_1_simplesearch: البحث البسيط
+txt_4_0_thim: إظهار مصغرات الصورة
+txt_3_8_type_description_wim: يم: مايكروسوفت القرص تنسيق الصورة
+txt_3_8_type_description_xz: XZ: ضغط الملفات قوية تستند إلى LZMA2
+txt_3_7_donations: هبات
+txt_3_7_nameasparent: اسم الأرشيف كالمجلد الأصل العنصر المحدد، وإذا أضيفت عناصر متعددة
+txt_3_7_tracker: PeaZip المقتفي: البق، طلبات ميزة
+txt_3_7_sort: فرز حسب
+txt_3_7_swapbars: شريط أدوات مبادلة/عنوان شريط
+txt_3_7_themedbars: أشرطة تحت عنوان
+txt_3_6_ignoredd: دائماً تجاهل مسارات لسحب وإسقاط الاستخراج
+txt_3_6_close: وثيقة
+txt_3_6_resetapps: هل تريد إعادة تعيين تطبيقات  (مجموعة قابلة للتخصيص للبرامج والبرامج النصية لفتح الملفات، مع تجاوز ملف الجمعيات)؟
+txt_3_6_ethemes: المواضيع الموجودة
+txt_3_5_td: تحميل المواضيع
+txt_3_5_managecustomthemes: إدارة المواضيع
+txt_3_4_nopaths: ليست مسارات
+txt_3_4_smallicons: أيقونات
+txt_3_3_skipunits:  (Windows) الحصول على معلومات وحدة التخزين لوحدات الشبكة، أبطأ من بدء التشغيل
+txt_3_3_stralt: القيادة البديلة، عندما يتم تمرير أية معلمة
+txt_3_3_apps: تطبيقات
+txt_3_3_multi: التحديد المتعدد
+txt_3_3_runexp: فتح البرنامج، ملف أو مجلد أو موقع ويب
+txt_3_3_apppath: المجلد المفتوح PeaZip
+txt_3_3_run: تشغيل
+txt_3_2_7zutf8nonascii: 7z/p7zip-mcu استخدام UTF8 لأسماء الملفات التي تحتوي على رموز غير ASCII داخل الملفات بالملحق .zip
+txt_3_2_alltasks: جميع المهام
+txt_3_2_conf: التكوين
+txt_3_2_donations: التبرع للمنظمات الخيرية
+txt_3_1_sccenc: 7z/p7zip-scc ترميز الأحرف
+txt_3_1_downloads: التنزيلات
+txt_3_1_lib: مكتبات
+txt_3_1_more: أكثر
+txt_3_1_openasarchive: مفتوح كأرشيف
+txt_3_1_sendto: فتح مجلد قائمة SendTo للمستخدم
+txt_3_1_pathexc: الطريق التي تتجاوز الحد الأقصى للحجم المسموح به
+txt_3_1_recent: الأخيرة
+txt_3_1_plsmartmin: تشغيل مصغر، فتح المعرض/الاحتفاظ فقط إذا لزم الأمر
+txt_3_1_src: البحث
+txt_3_1_systmp: نظام temp
+txt_3_1_languagetools: ترجمة
+txt_3_1_workingdir: دليل العمل
+txt_3_0_nonreadableorpw: أرشيف غير قابلة للقراءة. هل ترغب في محاولة كلمة مرور؟
+txt_3_0_readablepw: يبدو الأرشيف محمي بكلمة مرور
+txt_3_0_configure: نظام التكامل
+txt_3_0_resettmp: إعادة تعيين peazip tmp
+txt_2_9_address: شريط العناوين
+txt_2_9_adv: عوامل تصفية متقدمة يتم تطبيقها عند إدارة أي ملف دعم عن طريق 7z أو FreeArc backends، راجع وثائق، وتجاوز مرشحات الأساسية  (التي تستخدم للبحث عن وظائف، ويتم عرضها في الإشارات المرجعية، والتاريخ الألواح)
+txt_2_9_columns: الأعمدة
+txt_2_9_copyhere: نسخ هنا
+txt_2_9_noscan: لا مسح الملفات التي يتم إضافتها إلى التخطيط
+txt_2_9_extconsole: استخراج وحدة التحكم متوفرة فقط أثناء تصفح المحفوظات
+txt_2_9_thl: تسليط الضوء على الأزرار
+txt_2_9_home: الصفحة الرئيسية
+txt_2_9_lt: كبيرة
+txt_2_9_mt: متوسطة
+txt_2_9_movehere: نقل إلى هنا
+txt_2_9_nav: الملاحة
+txt_2_9_navbar: شريط التنقل
+txt_2_9_none: لا شيء
+txt_2_9_organize: تنظيم
+txt_2_9_public: العام
+txt_2_9_rec: العودية: البحث في الدلائل الفرعية، قد يستغرق بعض الوقت
+txt_2_9_selected: تحديد
+txt_2_9_setapps: تنظيم التطبيقات
+txt_2_9_showmenu: إظهار شريط القوائم
+txt_2_9_st: صغيرة
+txt_2_9_test_pw2G: اختبار لتشفير < المحفوظات 2 غيغابايت
+txt_2_9_vst: النص فقط
+txt_2_9_toolbar: شريط الأدوات
+txt_2_9_tree: شجرة
+txt_2_9_views: وجهات النظر
+txt_2_8_experimental:  (تجريبية)
+txt_2_8_zcopy: نسخة  (Windows) الملفات في الوضع القابل لإعادة التشغيل، أبطأ
+txt_2_8_addvol: إضافة وحدات كاملة لأرشفة قد يستغرق وقتاً طويلاً، المتابعة على أية حال؟
+txt_2_8_uniterror: لا يمكن الوصول إلى الوحدة
+txt_2_8_cannotconvert: لا يمكن تحويل المحفوظات المختارة
+txt_2_8_convertbegin: تواصل مع مرحلة ضغط وضع اللمسات الأخيرة على عملية التحويل؟
+txt_2_8_convert: تحويل
+txt_2_8_convertexisting: تحويل المحفوظات الموجودة
+txt_2_8_convertdelete: حذف الملفات والمجلدات التي تم إنشاؤها مؤقتاً للتحويل؟
+txt_2_8_details: التفاصيل
+txt_2_8_parallel: تنفيذ وظائف في نفس الوقت عندما يكون ذلك ممكناً
+txt_2_8_convertnote: على أي حال لا تعديل الأرشيف الأصلي، للسماح للمستخدم في عنصر التحكم حول إبقاء أو إزالة لهم
+txt_2_8_custom: غير معتمد مباشرة من PeaZip، ولكن في مرحلة الاستخراج يمكنك تعيين PeaZip للتعامل مع أنواع الملفات المخصصة في علامة التبويب "خيارات متقدمة" المضي قدما في فتح هذا الملف؟
+txt_2_8_unitrecommend: من المستحسن أما استخراج  (rightclick > استخراج مختارة) أو لفتح نظام الملفات من الجذر للكمبيوتر  (أدوات النظام > وحدة مفتوحة كأرشيف)
+txt_2_8_viewasarchive: وحدة مفتوحة كأرشيف
+txt_2_8_nounit: ليست وحدة مختارة
+txt_2_8_rowselect: تحديد صف
+txt_2_8_statusbar: شريط المعلومات
+txt_2_8_typeunit: اسم نوع الوحدة المنطقية أو الفيزيائية
+txt_2_8_usedefaultoutpath: استخدام مسار الإخراج الافتراضي
+txt_2_7_experimental:  (التجريبية، راجع وثائق)
+txt_2_7_optional:  (اختياري)
+txt_2_7_list_tryflatorpw:، الحلول الممكنة: جرب طريقة العرض منبسطة  (F6)، توفير كلمة المرور  (F9)، والحصول على نسخة حديثة من الأرشيف
+txt_2_7_separate: إضافة كل كائن إلى أرشيف منفصلة
+txt_2_7_pwsupported: الأرشفة مع كلمة المرور
+txt_2_7_cancel: إلغاء
+txt_2_7_encfn: تشفير أيضا أسماء الملفات  (إذا كان معتمداً من قبل التنسيق)
+txt_2_7_setpw: أدخل كلمة المرور/keyfile
+txt_2_7_ext: استخراج:
+txt_2_7_extfrom: استخراج من الأرشيف:
+txt_2_7_es: استخراج دعم أنواع الملفات غير الأرشيف، أي الملفات القابلة للتنفيذ، ومايكروسوفت أوفيس والملفات OOo
+txt_2_7_eu: استخراج أنواع الملفات غير معتمد، تحديد الأداة المساعدة استخراج مخصصة
+txt_2_7_clipboard: الحافظة
+txt_2_7_goarclayout: الذهاب إلى الأرشفة تخطيط
+txt_2_7_goextlayout: الذهاب إلى تخطيط الاستخراج
+txt_2_7_ok: حسنا
+txt_2_7_drag_archive: ملف مفتوح كأرشيف جديد؟  ("لا" لإضافة ملف إلى التخطيط الحالي الأرشفة)
+txt_2_7_oop: مسار الإخراج مفتوحاً عند اكتمال المهمة
+txt_2_7_validatefn: إيقاف العملية، تم الكشف عن اسم ملف غير صالح:
+txt_2_7_validatecl: العملية توقفت، اكتشاف الأمر يحتمل أن تكون خطرة  (أي لا يسمح داخل البرنامج سلسلة الأوامر):
+txt_2_7_output: الإخراج
+txt_2_7_pwnotset: لم يتم تعيين كلمة المرور 
+txt_2_7_pwarcset: يتم تعيين كلمة المرور
+txt_2_7_pwextset: يتم تعيين كلمة المرور، فمن الممكن لاستخراج/قائمة/اختبار المحفوظات مشفرة
+txt_2_7_archivehint: Rightclick لإضافة ملفات إلى الأرشيف ومشاهدة الوظائف المتاحة الأخرى، أو اسحب الملفات المراد إضافتها هنا
+txt_2_7_exthint: Rightclick لإضافة الملفات لاستخراج و مشاهدة الوظائف المتاحة الأخرى، أو اسحب الملفات سيتم استخراج هنا
+txt_2_7_setadvf: مجموعة مرشحات متقدمة
+txt_2_7_selpath: تحديد مسار للصنف
+txt_2_7_separateerror: آسف، لا يمكن استيراد سطر الأوامر تعريف المهمة أثناء استخدام رمز التبديل "إضافة كل كائن إلى أرشيف منفصلة"، نظراً للوظيفة تنفيذ أوامر متميزة متعددة كما
+txt_2_7_noinput: التخطيط فارغ: الرجاء استخدام إضافة ملف (ملفات) أو "تحميل تخطيط" لتعبئة قائمة المحفوظات لاستخراجها
+txt_2_7_dirsize: لم يتم فحص حجم محتوى المجلدات لحساب الحجم الإجمالي
+txt_2_7_un7z_browse_flat: جرب طريقة العرض منبسطة  (F6)
+txt_2_7_updating: تحديث، إضافة إلى أرشيف القائمة:
+txt_2_6_folders:  (المجلدات)
+txt_2_6_advanced: متقدم
+txt_2_6_plalways: تبقى دائماً مفتوحة لفحص تقرير للوظيفة
+txt_2_6_plsmart: تبقى مفتوحة فقط إذا لزم الأمر  (تقارير الخطأ أو قائمة أو اختبار)
+txt_2_5_sessionio:  (هذه الدورة)
+txt_2_5_advanced: تحرير متقدم: وضع مسافات بين السلاسل المعلمة واسم الملف إذا لزم الأمر
+txt_2_5_basic: تحرير الأساسية: التطبيق ومعلمات قبل اسم الإدخال
+txt_2_5_cannotrun: لا يمكن تشغيل
+txt_2_5_custeditors: مخصص المحررين، اللاعبين، والماسحات الضوئية مكافحة الفيروسات إلخ...  (تجاوز اقترانات الملفات في النظام)
+txt_2_5_delete: حذف
+txt_2_5_delete_fromarchive: حذف من الأرشيف
+txt_2_5_langflag: عرض أرشفة اسم الكائن كنص UTF-8؛ إلغاء تحديد لاستبدال الأحرف الموسعة مع "؟"
+txt_2_5_encpj: ترميز تعريف المهمة كنص UTF-8
+txt_2_5_execommand: الملف القابل للتنفيذ أو الأمر
+txt_2_5_help: تعليمات
+txt_2_5_langhint: تلميح: استبدال الأحرف الموسعة مع "؟" حرف جولي يمكن تحسين بناء الجملة إذا لا يمكن تحويل مجموعة الأحرف في الأرشيف بنجاح على الجهاز الحالي
+txt_2_5_mini_help: البرنامج التعليمي مصغرة
+txt_2_5_offline_help: تعليمات PeaZip
+txt_2_5_tray: التقليل إلى علبة
+txt_2_5_remove: إزالة
+txt_2_5_hintpaths: Rightclick فتح مسارات للمستخدم والنظام
+txt_2_5_selectapp: تحديد التطبيق
+txt_2_5_strafter: السلسلة بعد اسم الإدخال
+txt_2_5_strbefore: السلسلة قبل اسم الإدخال
+txt_2_5_encoding: ترميز النص
+txt_2_5_nopw: هذا النوع من المحفوظات لا يعتمد التشفير
+txt_2_4_draghint:  [اسحب لمستكشف مع تمكين شريط العنوان]
+txt_2_4_tb: التكيف مع أزرار شريط الأدوات  (تشغيل PeaZip)
+txt_2_4_adding: إضافة
+txt_2_4_advclip: الحافظة تحافظ على تحديدات متعددة
+txt_2_4_yanswers: الأجوبة
+txt_2_4_itemsheight: البنود السيارات-حجم الارتفاع
+txt_2_4_clearclipboard: الحافظة واضحة  (Esc)
+txt_2_4_wcommons: مجلس العموم
+txt_2_4_copyfrom: نسخة من
+txt_2_4_deletebookmarks: هل تريد حذف قائمة الملفات ذات الإشارة المرجعية والمجلدات؟
+txt_2_4_documents: الوثائق
+txt_2_4_wenc: موسوعة
+txt_2_4_extractfrom: استخراج من
+txt_2_4_hexp: معاينة ست عشري
+txt_2_4_operation: تشغيل
+txt_2_4_path: المسار غير قابل للكتابة  (مفقود، أو للقراءة فقط)، الرجاء تحديد مسار إخراج لكتابة
+txt_2_4_removefromclipboard: إزالة من الحافظة
+txt_2_4_stdclip: القياسية: إبقاء تحديد واحد في الحافظة، قاطعة العمليات على لصق
+txt_2_4_totalmem: مجموع الذاكرة
+txt_2_4_gvideo: فيديو
+txt_2_4_wbook: ويكيبوك
+txt_2_4_wnews: ويكي الأخبار
+txt_2_4_wsrc: ويكي مصدر
+txt_2_4_wdict: ويكاموس
+txt_2_3_pw_errorchar: حرف اقتباس لا يمكن استخدام بواجهة المستخدم الرسومية PeaZip في كلمات المرور تحت النظام الحالي، الرجاء تغيير كلمة المرور أو اختيار وضع وحدة التحكم في واجهة المستخدم الثنائيات الخلفية في خيارات > الإعدادات
+txt_2_3_envstr: عرض متغيرات البيئة
+txt_2_3_never_pw: لا تسأل عن كلمة المرور
+txt_2_3_home: الصفحة الرئيسية للمستخدم
+txt_2_3_on_pw: في عمليات استخراج/قائمة/اختبار من القوائم للنظام:
+txt_2_3_test_pw100: اختبار للتشفير<100MB archives></100MB archives>
+txt_2_3_test_pw: اختبار للتشفير  (قد تكون بطيئة)
+txt_exclude_recourse: "استبعاد" ريكورسي سوبديرس
+txt_action_extopen: "استخراج ومفتوحة مع التطبيق المقترن" العمل
+txt_error_passwordnotmatch: "كلمة المرور" و "تأكيد كلمة المرور" لا يتطابق مع حقول، يرجى تصحيحها
+txt_action_preview: عمل "معاينة مع التطبيق المقترن"
+txt_preview_hint: عمل "معاينة" أداء نفس المهمة ك "استخراج ومفتوحة" ولكن على مسار مؤقت في دليل الإخراج، أوتوماثيكالي إزالة عندما يتم إغلاق الأرشيف.
+txt_better:  (أفضل)
+txt_default2:  (الافتراضي)
+txt_faster:  (أسرع)
+txt_fastermem:  (أسرع وأقل ذاكرة)
+txt_tempdir:  (مجلد العمل المؤقت PeaZip's)
+txt_stream:  (تعيين من قبل "تيار التحكم")
+txt_slowermem:  (أبطأ، المزيد من الذاكرة)
+txt_store:  (مخزن، أسرع)
+txt_newfolder:  (في المجلد الجديد)
+txt_7z_exitcodeunknown:: خطأ غير معروف في الوظيفة
+txt_list_isfolder:  [مجلد]
+txt_none:<none></none>
+txt_fd: 1.44 ميغابايت القرص المرن
+txt_7z_exitcode1: 1: تحذير: خطأ غير فادح؛ أي بعض الملفات مفقودة أو مؤمن
+txt_attach10: 10 ميغابايت  (مرفق بحد أقصى)
+txt_7z_exitcode2: 2: حدث خطأ فادح
+txt_7z_exitcode255: 255: توقف الوظيفة حسب المستخدم
+txt_fat32: 4 جيجا بايت  (حجم الملف FAT32 كحد أقصى)
+txt_dvd: دي في دي 4.7 جيجا بايت
+txt_attach5: 5 ميغابايت  (مرفق بحد أقصى)
+txt_cd650: 650 ميغابايت مضغوط
+txt_7z_exitcode7: 7: خطأ: حصلت على سطر الأوامر غير صحيحة
+txt_cd700: 700 ميغابايت مضغوط
+txt_type_description_7z: 7Z: الغنية ميزة أرشفة تنسيق مع نسبة انضغاط عالية
+txt_dvddl: دل دي في دي 8.5 غيغابايت
+txt_7z_exitcode8: 8: خطأ: لا توجد ذاكرة كافية للعملية المطلوبة
+txt_abort: من المقرر إحباط عمليات نسخ/نقل الملفات؟
+txt_about: حول
+txt_action: العمل
+txt_action_hint: العمل على فتح أو معاينة مع التطبيق المرتبطة
+txt_add: إضافة
+txt_add_existing_archive: إضافة  (في حالة وجود أرشيف)
+txt_add_archive: إضافة أرشيف
+txt_add_files: إضافة ملف (ملفات)
+txt_add_folder: إضافة مجلد
+txt_add_path: إضافة مسار
+txt_add_tolayout: إضافة الملفات والمجلدات المحددة إلى تخطيط للأرشيف
+txt_add_toarchive: إضافة للأرشيف
+txt_add_tobookmarks: إضافة إلى الإشارات المرجعية
+txt_address_hint: عامل التصفية: يقبل * و؟ أحرف البدل
+txt_adv_filters: مرشحات متقدمة
+txt_algo: خوارزمية
+txt_all: جميع
+txt_all_default: جميع  (الافتراضي)
+txt_all_type: كافة الكائنات من هذا النوع
+txt_all_date: كافة الكائنات مع التاريخ...
+txt_all_psize: كافة الكائنات مع حجم وجبات...
+txt_all_attributes: كافة الكائنات مع نفس السمات
+txt_all_size: كافة الكائنات مع حجم...
+txt_error_input_upx: يسمح ملف قابل للتنفيذ مفردة كمدخل
+txt_always_pw: اسأل دائماً لكلمة المرور
+txt_ignore_ext: تجاهل مسارات لدوما "استخراج و..."
+txt_ignore_disp: تجاهل مسارات دائماً لاستخراج "عرض"...
+txt_ignore_sel: تجاهل مسارات دائماً لاستخراج "المحددة..."
+txt_key_hint: إلحاق التجزئة ل keyfile كلمة مرور؛ يمكن فك تشفيرها الأرشيف PeaZip والتطبيقات الأخرى بعد نفس المعيار، أو دخول التجزئة كجزء من كلمة المرور
+txt_timestamp: الطابع الزمني بإلحاق اسم الأرشيف
+txt_appoptions: خيارات التطبيق
+txt_type_description_arc: القوس: أرشيفي التجريبية، قوية وفعالة وميزة الغنية
+txt_archive: أرشيف
+txt_un7z_browse_ok: أرشيف تصفحها بنجاح
+txt_interface: واجهة المستعرض الأرشيف
+txt_archivecreation: إنشاء أرشيف
+txt_tarbefore_hint: أرشيف البيانات في تقرير التقييم الثالث تنسيق قبل من النوع المحدد.
+txt_archive_hint: أرشيف، ضغط، وانقسام وإبقاء القطاع الخاص الملفات والمجلدات ووحدات التخزين
+txt_compressionratio_hint: نسبة الضغط في الأرشيف
+txt_archiving: الأرشفة:
+txt_cl_long: تبدو الحجج تتجاوز الحد الأقصى للحجم الذي يمكن تمريره بالواجهة PeaZip، الرجاء تحديد ملفات الإدخال أقل  (أي تحديد dirs بدلاً من ملفات مفردة)
+txt_overwrite_askbefore: اسأل قبل الكتابة فوق  (في وحدة التحكم)
+txt_associated: التطبيق المرتبطة
+txt_attributes: سمات
+txt_author: مقدم البلاغ
+txt_ren_existing: السيارات بإعادة تسمية الملفات الموجودة
+txt_ren_extracted: تسمية الملفات المستخرجة من السيارات
+txt_autofolder: إنشاء مجلد جديد لاستخراج ملف الأرشيف تلقائياً؟
+txt_back: مرة أخرى
+txt_backend: واجهة المستخدم الثنائيات الخلفية
+txt_backupexe: النسخ الاحتياطي الملف القابل للتنفيذ  (مستحسن)
+txt_bettercompression: أفضل ضغط
+txt_blogs: مدونات
+txt_blowfish: Blowfish448  (64 بت كتل)
+txt_bookmarks: الإشارات المرجعية
+txt_browse: تصفح
+txt_browser: متصفح
+txt_aborted_error: تصفح أرشيف توقفت، سوف يستغرق الكثير من الوقت. يمكنك تضييق نطاق التحديد باستخدام البحث  (F3) أو الخروج من وضع العرض المسطحة  (F6)؛ عمليات استخراج/قائمة/الاختبار لا تتأثر هذه المشكلة.
+txt_list_browsing: تصفح:
+txt_archive_root: تصفح: الجذر للأرشيف
+txt_type_description_bzip2: BZip2: ضغط قوية جداً، ومتوسط سرعة
+txt_pw_empty: يرجى تقديم كلمة مرور  (أو keyfile)
+txt_add_error: لا يمكن إضافة/تحديث أو حذف كائن (كائنات)؛ ربما قد استعرض/استخراج الدعم فقط نوع الأرشيف، أو لا نستطيع أن نؤيد تماما أن عملية معينة  (أي أنها عدة مجلدات أو الصلبة)، أو PeaZip لا يمكن معالجة اسم الأرشيف
+txt_un7z_browse_failure: لا يمكن تصفح الأرشيف
+txt_list_error: لا يمكن سرد محتوى الأرشيف، الرجاء التحقق إذا كان الأرشيف كلمة السر المحمية أو تلف.
+txt_conf_cannotsave: لا يمكن حفظ ملف التكوين، والتحقق إذا كان المسار قابل للكتابة فيه، ومع بعض المساحة الحرة
+txt_check_hint: التحقق من وجود عطب في البيانات عارضة؛ خوارزميات التجزئة مناسبة للكشف عن البيانات الخبيثة حتى العبث بها  (انظر الوثائق)
+txt_check: المجموع الاختباري/تجزئة الملف (الملفات)
+txt_check_select: المجموع الاختباري/التجزئة
+txt_clear: واضح
+txt_clearlayout: تخطيط واضح
+txt_pj_hint: انقر فوق استيراد الوظائف وإعادة تعيين التغييرات وتحميل التعريف حتى الآن من واجهة المستخدم الرسومية
+txt_autoclose: بيلاونتشير إغلاق عند اكتمال المهمة
+txt_cl: سطر الأوامر:
+txt_compare: مقارنة الملفات
+txt_compress: ضغط
+txt_compress_executable: ضغط الملف القابل للتنفيذ
+txt_compress_openforwriting: فتح ضغط الملفات للكتابة
+txt_compression: ضغط
+txt_compmanagement: إدارة الكمبيوتر
+txt_pw_confirm: تأكيد كلمة المرور
+txt_console: وحدة التحكم
+txt_console_interface: وحدة التحكم: الواجهة الأصلية
+txt_content: المحتوى
+txt_controlpanel: لوحة التحكم
+txt_convert: تحويل القرص إلى NTFS
+txt_copy: نسخة
+txt_copyto: نسخ إلى...
+txt_create: إنشاء
+txt_create_archive: إنشاء أرشيف
+txt_title_create: إنشاء أرشيف، ضغط، تشفير، وتقسيم...
+txt_create_keyfile: إنشاء keyfile
+txt_create_folder: إنشاء مجلد جديد
+txt_create_theme: إنشاء موضوع من الإعدادات الحالية
+txt_rr: إنشاء سجلات الانتعاش
+txt_create_sfx: إنشاء أرشيف يعتمد الاستخراج الذاتي
+txt_cr_current: نسبة ضغط المسار أو عامل التصفية الحالي
+txt_custom: مخصص
+txt_type_description_custom: مخصص  (المستخدمين المتقدمين): أدخل الاسم القابل للتنفيذ والمعلمات
+txt_customapp: تطبيق مخصص
+txt_custom_parameters: معلمات مخصص
+txt_customsize: حجم مخصص
+txt_cut: قص
+txt_datetime: تاريخ/وقت
+txt_default: الافتراضي
+txt_default_compression: الافتراضي ضغط
+txt_default_format: التنسيق الافتراضي
+txt_theme_default: السمة الافتراضية
+txt_hard_reset_hint: حذف الإشارات المرجعية الملف
+txt_desktop: سطح المكتب
+txt_dictionary: قاموس
+txt_dirs: دير،
+txt_dis: توضيح:
+txt_disk_cleanup: تنظيف القرص
+txt_disk_defrag: إلغاء تجزئة القرص
+txt_disk_management: إدارة القرص
+txt_dispaly: عرض النتائج حسب
+txt_displayedmnu_obj: عرض
+txt_displayedobjects: عرض الكائنات
+txt_nocompress: عدم الضغط
+txt_delete: هل تريد حذف الملف (الملفات)المحددة؟ لا يمكن التراجع عن العملية والملفات سوف تكون غير قابلة للاسترداد من سلة المحذوفات
+txt_wipe: هل تريد حذف الملفات المحددة بشكل أمن؟ لا يمكن التراجع عن العملية والملفات سوف تكون غير قابلة للاسترداد.
+txt_done: القيام به
+txt_edit: تحرير
+txt_elapsed: المنقضي:
+txt_error_emptycl: سطر الأوامر فارغة!
+txt_encrypt: تشفير
+txt_encrypted: مشفر
+txt_encryption: التشفير
+txt_note: أدخل ملاحظة/الوصف
+txt_random_keys: أدخل مفاتيح عشوائية
+txt_random_keys_hint: أدخل مفاتيح عشوائية  (ليس عليك أن تتذكر)
+txt_ent: التقييم انثروبي
+txt_ent_tools: تحريك الماوس أو استخدام أدوات أخذ العينات الإضافية انثروبي
+txt_eqorlarger: مساوية أو أكبر من الكائن المحدد
+txt_eqorrecent: مساوية أو أكثر حداثة من الكائن المحدد
+txt_eqorolder: تساوي أو تزيد أعمارهم عن الكائن المحدد
+txt_eqorsmaller: تساوي أو أصغر من الكائن المحدد
+txt_equal: مساوية للكائن المحدد
+txt_erase_hint: حذف آمنة: الكتابة فوق بالبيانات عشوائي، قناع الحجم، إعادة تسمية، وحذف أخيرا
+txt_extraction_error: خطأ في استخراج الكائن المحدد. إذا كان الأرشيف محمي بكلمة مرور يرجى تقديم ذلك
+txt_exclude_hint: استبعاد ملفات، واحد لكل خط؛ استخدام * و؟ أحرف البدل؛ "و' محددات غير مطلوبة
+txt_exclusion_recourse: استبعاد مرشحات ريكورسي سوبديرس
+txt_exclusion: الاستبعاد:
+txt_exe: الملف القابل للتنفيذ
+txt_overwrite_qry: موجود في مسار الوجهة؛ الكتابة فوق مع الملف (الملفات) بنفس الاسم من مسار المصدر؟  (إلغاء: تخطي نسخ هذا أوبجيسي)
+txt_confirm_overwrite: موجود؛ هل تريد الكتابة فوقه؟  (لا لتخطي)
+txt_explore_outpath: استكشاف مسار الإخراج
+txt_explore_path: استكشاف المسار
+txt_ext: تحويله:
+txt_caption_extract: استخراج
+txt_ext_nopath: استخراج  (بدون المسار)
+txt_ext_all: استخراج كافة
+txt_ext_allhere: استخراج كل شيء هنا
+txt_ext_allto: استخراج جميعا إلى
+txt_extopen_custom: استخراج ومفتوحة مع تطبيق مخصص
+txt_extopen_with: استخراج ومفتوحة مع...
+txt_ext_disp_here: عرض استخراج هنا
+txt_ext_disp: استخراج عرض كائن (كائنات)
+txt_ext_disp_to: استخراج عرض كائن (كائنات) إلى...
+txt_ext_here: استخراج هنا
+txt_ext_sel_here: تحديد استخراج هنا
+txt_ext_sel: استخراج الكائن/الكائنات المحددة
+txt_ext_sel_to: استخراج الكائن/الكائنات المحددة إلى...
+txt_extobj: استخراج الكائن
+txt_newfoldermenu: استخراج في مجلد جديد
+txt_extto: استخراج إلى...
+txt_level_fast: سريع
+txt_fastcompr: بسرعة ضغط
+txt_fastopen: سريع فتح الروتينية، وإيقاف التصفح إذا تجاوز قائمة
+txt_level_fastest: أسرع
+txt_favformats: تنسيقات المفضل
+txt_file: ملف
+txt_filebrowser: ملف المستعرض/أرشيف المتصفح
+txt_filetools: ملف الأدوات
+txt_files: ملف (ملفات)،
+txt_nfiles: الملفات
+txt_fs: نظام الملفات
+txt_filters_recourse: تريد ريكورسي سوبديرس
+txt_filters: مرشحات
+txt_flat: مسطحة  (إظهار الكل)
+txt_list_flat: طريقة عرض مسطحة:
+txt_unit_floppy: قرص مرن
+txt_foldername: اسم المجلد
+txt_nfolders: مجلدات
+txt_error_input_multi: يسمح تنسيق ملف واحد كمدخلات؛ يمكنك استخدام رمز التبديل "القطران قبل" لحفظ الإدخال في .TAR أرشيف قبل، وإلا يمكن اختيار تنسيق آخر. تلميح: قد تحديد تنسيق الأرشيف اختار بعد إدخال البيانات: سيتم تلقائياً تعيين رمز التبديل "القطران قبل"
+txt_fwd: إلى الأمام
+txt_list_found: العثور على:
+txt_free: مجاناً
+txt_free2: مجاناً
+txt_name_full: الاسم الكامل
+txt_function: الدالة
+txt_general: العام
+txt_multithreading: generic تعدد العمليات
+txt_go_browser: الذهاب إلى ملف المتصفح
+txt_go_path: استكشاف المسار  (PeaZip)
+txt_guicl: الرسم + وحدة التحكم
+txt_guipealauncher: الرسوم البيانية: تغليف بواسطة بيلاونتشير
+txt_graphic: مجلد للرسم
+txt_gridaltcolor: لون البديل الشبكات
+txt_gridrowheight: شبكات الصف الارتفاع
+txt_gui: واجهة المستخدم الرسومية
+txt_type_description_gzip: GZip: ضغط بسرعة
+txt_here: هنا
+txt_list_history: التاريخ
+txt_homeroot: المستوى الجذر جهاز الكمبيوتر/أرشيف
+txt_quickbrowse_hint: إذا تم إيقاف التصفح المستخدم يمكن تضييق التحديد باستخدام دالات البحث أو التصفية؛ استخراج/قائمة/اختبار وظائف لا تتأثر بأي شكل من الأشكال.
+txt_backupexe_hint: إذا ما سارت الأمور خاطئة وتؤدي إلى نتيجة غير وظيفية، قد يمكنك استرداد الملف القابل للتنفيذ الأصلي من النسخة الاحتياطية أوتومتيك
+txt_attach: إذا كان عميل البريد يدعم ذلك الأمر، الأرشيف سوف يتم إرفاق بريد جديد
+txt_images: الصور
+txt_include_hint: تتضمن الملف (الملفات)، واحد لكل خط؛ استخدام * و؟ أحرف البدل؛ "و' محددات غير مطلوبة
+txt_filters_hint: إدراج واستبعاد حات 7z ثنائي، الرجاء قراءة بعناية الوثائق 7-الرمز البريدي لفهم الكيفية التي يعمل الفلاتر
+txt_inclusion_recourse: إدراج مرشحات ريكورسي سوبديرس
+txt_inclusion: إدراج:
+txt_error_function: الدالة غير صحيحة وطلبت
+txt_info: معلومات
+txt_infoall: معلومات عن جميع
+txt_infodisp: معلومات عن عرض كائن (كائنات)
+txt_infosel: معلومات حول الكائن/الكائنات المحددة
+txt_inputinfo: إدخال المعلومات
+txt_input_list: قائمة الإدخال:
+txt_iop: الإدخال، الإخراج، والمعلمات
+txt_ipo: الإدخال، الإخراج معلمات،
+txt_input: الإدخال:
+txt_integrity: التحقق من سلامة
+txt_chunk_size: مخصص غير صحيح الحجم، يرجى تصحيح ذلك في قيمة رقمية
+txt_invertsel: عكس التحديد
+txt_type_exe: هو نظام التشغيل Windows قابل للتنفيذ، هل تريد تشغيله؟  ("لا" لفتحه في PeaZip's أرشيف المستعرض؛ والمثبتات معاهد الإحصاءات الوطنية فقط، 7-الرمز البريدي في سفاكس و .يمكن تصفحها التركيب MSI بهذه الطريقة)
+txt_return_to_archive: مفتوح حاليا؛ هل تريد أن تصفح؟
+txt_not_accessible: لم يعد موجوداً
+txt_type_unsupported: ليس من نوع أرشيف مدعومة
+txt_checkname_failed: ليس اسماً صالحاً.
+txt_not_accessible_list: لا يمكن الوصول إليه، الرجاء التحقق إذا كان قائمة الملفات المقدمة الصحيحة وحتى الآن
+txt_theme_create_error: أنه لم يكن ممكناً إنشاء الموضوع، في محاولة لاستخدام اسم صالح لمجلد كاسم التخصص واختيار مسار قابل لكتابة
+txt_theme_exists: جيت موجود، الرجاء توفير مسار مختلف
+txt_job_code: الوظيفة التعليمات البرمجية:
+txt_job_definition_saved: الوظيفة حفظ بنجاح في تعريف
+txt_job_success: الوظيفة بنجاح!
+txt_join: الانضمام إلى
+txt_joinfiles: الانضمام إلى ملفات
+txt_keyfile: Keyfile
+txt_keyfile_not_found: لا يمكن العثور على Keyfile أو قراءة. الرجاء اختيار Keyfile مختلفة.
+txt_keyfile_notcreated: KeyFile لا إنشاء
+txt_larger: أكبر من الكائن المحدد
+txt_lastused: آخر استخدام
+txt_launch: إطلاق الوظيفة
+txt_layout: تخطيط
+txt_filelist_savedas: تخطيط حفظ باسم
+txt_level: مستوى
+txt_license: ترخيص
+txt_caption_list: قائمة
+txt_list_details: قائمة  (مع التفاصيل)
+txt_list_all: قائمة بكافة
+txt_list_disp: عرض قائمة كائن (كائنات)
+txt_list_sel: تحديد قائمة كائن (كائنات)
+txt_toggle_warning: قائمة طريقة العرض منبسطة من المحتوى في مسار قد يستغرق وقتاً طويلاً، والمتابعة على أية حال؟
+txt_loadfile: تحميل ملف
+txt_loadlayout: تحميل تخطيط
+txt_unit_hd: القرص المحلي
+txt_localization: التعريب
+txt_lpaqver: الإصدار لباق
+txt_type_description_lpaq: لباق: الإصدار أسرع من تلك، ضغط جيد جداً
+txt_maininterface: الواجهة الرئيسية
+txt_maxcomp: وضع الضغط ماكس
+txt_level_maximum: الحد الأقصى
+txt_restartrequired: قد تحتاج إلى إعادة تشغيل التطبيق ليتم تطبيقها
+txt_required_memory: ميغابايت من الذاكرة المطلوبة
+txt_method: أسلوب
+txt_misc: متفرقات
+txt_modify: تعديل
+txt_morecontrols: مزيد من الضوابط  (التاريخ، والإشارات المرجعية، ...)
+txt_morerecent: أحدث من الكائن المحدد
+txt_ent_hint: تحريك الماوس، أدخل مفاتيح في حقل التحرير، تحميل ملفات جمع انثروبي من النظام...
+txt_moveto: الانتقال إلى...
+txt_mypc: الجذر للكمبيوتر
+txt_list_na: n/a
+txt_name: الاسم
+txt_naming: تسمية السياسة
+txt_unit_remote: محرك أقراص شبكة
+txt_newarchive: أرشيف جديد
+txt_cnewfolder: مجلد جديد
+txt_news: أخبار
+txt_no: لا
+txt_noinput: ليست الإدخال موجوداً وتلقى
+txt_nocompress_hint: لا يوجد ضغط  (أسرع)
+txt_split_noinput: أي مدخلات محددة؛ الرجاء تحديد ملف لتقسيم
+txt_open_noinput: أي مدخلات محددة؛ الرجاء تحديد أرشيف  (حجم أول أرشيف للمحفوظات عدة مجلدات)
+txt_list_nomatch: أي تطابق
+txt_singlethread: ليست خاصية تعدد
+txt_none2: لا شيء
+txt_nonsolid: غير خالصة
+txt_level_normal: عادي
+txt_copy_error: لا بنجاح بنسخة أو نقله، رمز الخطأ:
+txt_description: ملاحظة/الوصف
+txt_compare_second: الآن تحديد ملف مقارنة مع
+txt_peaobj: كائن عنصر التحكم
+txt_displayed_obj: object(s)
+txt_olderthan: أقدم من الكائن المحدد
+txt_on: على
+txt_ondblclick: دبل كليك:
+txt_opacity: العتامة
+txt_open: فتح
+txt_openarchive: أرشيف مفتوح
+txt_title_open: فتح الأرشيف، فك تشفير، والانضمام إلى...
+txt_open_bookmark: فتح الإشارة المرجعية
+txt_cphere: فتح موجه الأوامر هنا
+txt_open_file: ملف مفتوح
+txt_open_files: فتح ملف (ملفات)
+txt_open_path: مسار مفتوح
+txt_opensource: أرشيفي المحمولة مفتوح المصدر
+txt_openwith: فتح باستخدام...
+txt_aborted: تم إحباط العملية
+txt_unit_cd: محرك الأقراص الضوئية
+txt_options: خيارات
+txt_other: أخرى
+txt_otherparams: معلمات أخرى  (تحرير مجاناً)
+txt_oip: معلمات الإدخال، الإخراج،
+txt_opi: الإخراج، معلمات، إدخال
+txt_output: الإخراج:
+txt_overwrite: الكتابة فوق الملفات الموجودة
+txt_compressed_size: وجبات
+txt_paqver: إصدار تلك
+txt_type_description_paq: تلك: بطيئة ولكن قوية للغاية الضاغط
+txt_pio: معلمات، المدخلات، المخرجات
+txt_poi: إدخال معلمات، الإخراج،
+txt_parameters: معلمات:
+txt_error_partial: استخراج جزئية لم تنفذ لنوع الأرشيف الحالي
+txt_passes: يمر
+txt_pw: كلمة المرور
+txt_pwlength: لطول كلمة المرور بالحروف  (4..64)
+txt_un7z_browse_pw: قد تكون كلمة المرور المطلوبة
+txt_un7z_browse_pw_other: قد تكون كلمة مرور خاطئة
+txt_paste: لصق
+txt_path: المسار:
+txt_pea_appcolor: البازلاء تطبيق لون
+txt_pea_textcolor: لون النص البازلاء
+txt_type_description_pea: البازلاء: تنسيق أرشيف توجه الأمن مع الضغط السريع
+txt_peazip_new: PeaZip  (مثيل جديد)
+txt_peazip_help: صفحات الدعم PeaZip
+txt_peazip_web: موقع المشروع PeaZip
+txt_performall: أداء كافة الخوارزميات معتمدة
+txt_name_provide: اسم جديد  (يرجى تجنب \/: *؟ ' " < >  | الأحرف)
+txt_upxorstrip: الرجاء اختيار قطاع و/أو UPX في الثنائي
+txt_not_removable_file: الرجاء إغلاق ملف قيد الاستخدام، من أجل السماح PeaZip لإزالته:
+txt_not_removable: الرجاء إغلاق الملفات قيد الاستخدام، من أجل السماح PeaZip لإزالة المجلد:
+txt_custom_executable_missing: يرجى تقديم اسم مخصص للملف القابل للتنفيذ
+txt_type_unsupported_select: الرجاء تحديد نوع أرشيف مدعومة:
+txt_no_theme_name: الرجاء تحديد اسم موضوع
+txt_please_wait: الرجاء الانتظار
+txt_copy_wait: الرجاء الانتظار المقرر حاليا عمليات نسخ/نقل الملفات إكمال قبل جدولة عمليات أخرى من نفس النوع
+txt_previewwith: معاينة مع...
+txt_projectadmin: المسؤول عن المشروع:
+txt_type_description_quad: بالز/رباعية: ضواغط ملف يستند إلى رولز عالية الأداء
+txt_quickdelete: حذف سريع
+txt_quit: إنهاء
+txt_unit_ram: قرص ذاكرة الوصول العشوائي
+txt_read: القراءة:
+txt_recentarchives: المحفوظات الأخيرة
+txt_rr_hint: استرداد سجلات يسمح لمحاولة تصحيح المحفوظات في حالة تلف البيانات
+txt_search_refine: تعديل عامل تصفية بحث، ويقبل؟ و * أحرف البدل
+txt_fefreshf5: تحديث  (F5)
+txt_release: الإصدار:
+txt_unit_removable: وحدة التخزين القابلة للإزالة
+txt_remove_bookmark: إزالة الإشارة المرجعية
+txt_remove_external_unit: إزالة الوحدات الخارجية
+txt_removeselected: إزالة الكائن/الكائنات المحددة
+txt_rename: إعادة تسمية
+txt_caption_repair: إصلاح
+txt_restartrequired2: يتطلب إعادة تشغيل التطبيق لتطبيق
+txt_reset: إعادة تعيين
+txt_reset_archivename: إعادة تعيين اسم الأرشيف
+txt_hardreset: إعادة تعيين الإشارات المرجعية
+txt_reset_theme: إعادة تعيين إلى موضوع مضمن
+txt_restore_att: استعادة السمات الأصلية
+txt_run_as: تشغيل ك  (لا يمكن التبديل إلى المستخدمين مع كلمة مرور فارغة)
+txt_run_as2: تشغيل كمستخدم مختلف
+txt_sample: نموذج: 
+txt_saveas: حفظ باسم
+txt_savehistory: حفظ تاريخ أرشيف تستخدم أحدث
+txt_save_infolder: حفظ في مجلد  (السيارات)
+txt_savejob: حفظ تعريف المهمة
+txt_savejobdefinition: حفظ تعريف المهمة
+txt_savejobdefinition_hint: حفظ تعريف الوظيفة كنص عادي؛ يمكنك استخدام من البرامج النصية الخاصة بك
+txt_savelayout: حفظ تخطيط
+txt_save_winstate: حفظ حالة الإطار الرئيسي
+txt_search: البحث العودية،  (قد يستغرق بعض الوقت)
+txt_searchanddrag: البحث واسحب هنا
+txt_searchfor: البحث
+txt_nrsearch: البحث هنا  (غير متكرر)
+txt_search_hint: البحث في الدلائل الفرعية للأرشيف لمباريات مع تريد
+txt_search_web: البحث في الويب
+txt_list_searching: البحث عن...
+txt_securedelete: حذف آمنة
+txt_default_description: تحديد دالة أو اسحب الملفات هنا
+txt_selectall: تحديد الكل
+txt_selectdir: حدد الدليل
+txt_selected_obj: مختارة
+txt_selected_objects: تحديد كائنات
+txt_sfx: استخراج ذاتي
+txt_sendbymail: إرسال بالبريد  (إذا كان معتمداً)
+txt_set_defaults: تعيين المعلمات الافتراضية للتطبيق
+txt_settings: الإعدادات
+txt_sfx_interface: واجهة سفاكس
+txt_showhints: إظهار تلميحات
+txt_show_messages: إظهار رسائل المعلومات
+txt_showpw: إظهار محتوى حقل كلمة المرور
+txt_singlevol: واحد وحدة التخزين
+txt_size: الحجم
+txt_sizeb: حجم  (ب)
+txt_skip_existing: تخطي الملفات الموجودة
+txt_slowercomp: ضغط أبطأ لكن الضغط السريع على قدم المساواة
+txt_smaller: أصغر من كائن محدد
+txt_solid: الصلبة
+txt_solid_block: كتلة صلبة
+txt_solid_auto: الصلبة، ضبط تلقائي
+txt_solid_extension: مجموعة صلبة، بتمديد
+txt_listtest: آسف، قائمة/اختبار العملية غير jet تنفيذ لهذا الشكل
+txt_sortbysel: الفرز حسب حالة التحديد
+txt_list_sorting: الفرز...
+txt_speed: السرعة
+txt_split: انقسام
+txt_type_description_split: تقسيم ملف مع التحقق من سلامة اختياري
+txt_split_file: تقسيم ملف
+txt_list_nostats: إحصائيات غير متوفرة
+txt_status: مركز
+txt_level_store: مخزن
+txt_stream_control: تيار التحكم
+txt_strip: قطاع قبل UPX  (مستحسن)
+txt_keyfile_created: تم بنجاح إنشاء KeyFile ك:
+txt_suggestpw: إنشاء كلمة مرور عشوائي
+txt_noupx: جردت الرموز، ضغط UPX محذوفة
+txt_syntax: بناء الجملة:
+txt_sysbenchmark: النظام القياسي
+txt_benchmark: النظام القياسي سوف يستغرق بضع دقائق، وسيتم استخدام كافة موارد وحدة المعالجة المركزية والذاكرة المتاحة. قد لا يستجيب النظام أثناء القياس المرجعي؛ تشغيله على أي حال؟
+txt_systools: أدوات النظام
+txt_tarbefore: القطران قبل
+txt_type_description_tar: القطران: أرشفة تنسيق التيار الرئيسي في أنظمة يونكس
+txt_taskman: إدارة المهام
+txt_caption_test: اختبار
+txt_testall: اختبار كل
+txt_testdisp: اختبار عرض كائن (كائنات)
+txt_testpw: اختبار كلمة السر/keyfile
+txt_testsel: اختبار تحديد كائن (كائنات)
+txt_col_hint: يجب أن يكون اختيار اللون بغية إدماج جيدا مع رمز الألوان وعناصر أخرى لواجهة المستخدم الرسومية
+txt_bookmarks_hint: تتوفر قائمة كاملة وقابلة للتعديل للإشارات المرجعية في واجهة المستعرض الملف، والنقر على أيقونة "عناصر تحكم إضافية" وعلى "تبديل التاريخ/الإشارات المرجعية"
+txt_archive_noinput_tolist: التخطيط فارغ: الرجاء استخدام إضافة ملف (ملفات)أو المجلد (المجلدات) إضافة أو "تحميل تخطيط" لتجميع تخطيط الأرشيف
+txt_theme: الموضوع
+txt_icons_found: تحميل السمة بنجاح.
+txt_themename: اسم الموضوع
+txt_icons_not_found: الموضوع لم يتم تحميلها بشكل صحيح. حاول التبديل إلى السمة الافتراضية، أو إلى معروف العامل واحد.
+txt_theme_create_success: موضوع بنجاح تم إنشاؤها في
+txt_theming: تطبيق السمات
+txt_extand_error: يمكن إنجاز هذه الوظيفة على كائن مفرد في الوقت
+txt_threads: المواضيع
+txt_titlescolor: الألقاب اللون
+txt_to: إلى
+txt_toggle_browseflat: تصفح تبديل-شقة عرض  (إظهار الكل)
+txt_toggle_historybookmarks: تبديل التاريخ/الإشارات المرجعية
+txt_toolbarscolor: أشرطة الألوان
+txt_tools: أدوات
+txt_best: جرب إعدادات أفضل  (بطيء)
+txt_type: نوع
+txt_level_ultra: الترا
+txt_error_openfile: غير قادر على فتح الملف المحدد
+txt_cl_hint: UNACE وتشغيل UPX دائماً استخدام وضع وحدة التحكم؛ قائمة، واختبار وقياس الوظائف دائماً تشغيل في وضع واجهة المستخدم الرسومية باستخدام
+txt_ace_missing: البرنامج المساعد يونس مفقود؛ يمكنك تحميل موقع على شبكة الإنترنت PeaZip نموذج البرنامج المساعد للتعامل مع المحفوظات آيس  (يجري اسم مغلقة المصدر، والبرنامج المساعد هي ليست واردة في الحزمة الأساسية)
+txt_units: وحدات
+txt_unit_unknown: نوع محرك أقراص غير معروف
+txt_un7z_pw_untested: لم تختبر
+txt_up: أعلى
+txt_update: تحديث  (في حالة وجود أرشيف)
+txt_type_description_upx: UPX: ضغط الملفات القابلة للتنفيذ فقط
+txt_advfilters: استخدام مرشحات متقدمة
+txt_openfiles_hint: استخدم هذا الخيار لتضمين في ملفات الأرشيف المفتوح للكتابة بتطبيقات أخرى  (مفيدة في مهام النسخ الاحتياطي)
+txt_usenet: Usenet
+txt_user_name: اسم المستخدم؛ استخدام user@DOMAIN أو المجال \ المستخدم النموذج إذا لزم الأمر.
+txt_using: استخدام:
+txt_volumepea: التحكم بحجم الصوت
+txt_volume_size: حجم وحدة التخزين
+txt_type_ext_uns: تم بنجاح استخراج
+txt_websearch: البحث في الويب
+txt_websites: مواقع ويب
+txt_word: كلمة
+txt_write: كتابة:
+txt_ramdompw_hint: يمكنك نسخ كلمة المرور الذي تم إنشاؤه عشوائياً من هنا
+txt_exe_hint: يمكنك بحرية يمكن إدخال الاسم القابل للتنفيذ والمعلمات لضغط مخصص، واختيار سيتدخل في بناء الجملة. الرجاء ملاحظة أنه يمكنك أيضا يدوياً تغيير بناء الجملة للأمر في علامة التبويب "وحدة التحكم".
+txt_pj_hint2: يمكنك استيراد تعريف الوظيفة من الواجهة GUI في حقل المذكرة أدناه. ثم، يمكنك تحرير أو إطلاق أو حفظه دون تغيير أو فقدان الوظيفة المحددة للواجهة GUI.
+txt_type_description_zip: الرمز البريدي: تنسيق سريع الأرشفة/الضغط، التيار الرئيسي في أنظمة ويندوز
+txt_zipcrypto_hint: زيبكريبتو  (قديم)
+
+=== end PeaZip text group ===
+
+=== PeaLauncher text group ===
+
+txt_5_6_update: Check for updates
+txt_5_6_cml: System context menu language
+txt_5_6_donations: Donations
+txt_5_6_localization: Localization
+txt_5_6_runasadmin: Run as administrator
+txt_5_6_help: Support
+txt_5_5_cancelall: Cancel all
+txt_5_3_details: Details
+txt_5_3_files: files
+txt_5_3_folders: folders
+txt_5_3_info: Info
+txt_5_3_list: List
+txt_5_3_os: Original size
+txt_5_3_ps: Packed size
+txt_5_3_test: Test
+txt_5_0_extract: Extract
+txt_5_0_from: from
+txt_5_0_in: in
+txt_5_0_to: to
+txt_4_5_search: البحث
+txt_4_0_drag: اسحب هنا الأرشيف لاستخراج، أو 
+txt_4_0_dragorselect: اسحب هنا، أو تحديد الملف
+txt_4_0_select: حدد ملف
+txt_3_6_selectdir: حدد الدليل
+txt_3_5_close: وثيقة
+txt_3_0_details: لتفاصيل الوضع، "التقرير" يحتوي على سجل الوظيفة، و "وحدة التحكم" يحتوي على تعريف الوظيفة كسطر الأوامر
+txt_3_0_hints: تلميحات حول الخطأ
+txt_3_0_arc: لا يمكن قراءة بعض ملفات الإدخال  (قد تكون مؤمنة، وليس موجوداً أو تالف)
+txt_3_0_ext: الأرشيف قد تتطلب كلمة مرور مختلفة للعملية الحالية
+txt_2_8_oop: مسار الإخراج مفتوحاً عند اكتمال المهمة
+txt_2_7_validatefn: إيقاف العملية، تم الكشف عن اسم ملف غير صالح:
+txt_2_7_validatecl: العملية توقفت، اكتشاف الأمر يحتمل أن تكون خطرة  (أي لا يسمح داخل البرنامج سلسلة الأوامر):
+txt_2_6_open: أرشيف مفتوح
+txt_2_5_ace_missing: البرنامج المساعد يونس مفقود؛ يمكنك تحميل موقع على شبكة الإنترنت PeaZip نموذج البرنامج المساعد للتعامل مع المحفوظات آيس  (يجري اسم مغلقة المصدر، والبرنامج المساعد هي ليست واردة في الحزمة الأساسية)
+txt_2_3_pw_errorchar_gwrap: حرف اقتباس لا يمكن استخدامها من جانب بيلاونتشير في كلمات المرور تحت النظام الحالي، الرجاء تغيير كلمة المرور أو اختيار وضع وحدة التحكم في واجهة المستخدم الثنائيات الخلفية في خيارات > الإعدادات
+txt_2_3_renameexisting: السيارات بإعادة تسمية الملفات الموجودة
+txt_2_3_renameextracted: تسمية الملفات المستخرجة من السيارات
+txt_2_3_cancel: إلغاء
+txt_2_3_encryption: التشفير
+txt_2_3_extinnew: استخراج في مجلد جديد
+txt_2_3_keyfile: Keyfile
+txt_2_3_kf_not_found_gwrap: لا يمكن العثور على Keyfile أو قراءة. الرجاء اختيار Keyfile مختلفة.
+txt_2_3_moreoptions: المزيد من الخيارات...
+txt_2_3_nopaths: ليست مسارات
+txt_2_3_options: خيارات
+txt_2_3_overexisting: الكتابة فوق الملفات الموجودة
+txt_2_3_pw: كلمة المرور
+txt_2_3_skipexisting: تخطي الملفات الموجودة
+txt_job_unknown:: تمت مصادفة خطأ غير معروف
+txt_stdjob:  [الرسوم المتحركة سوف تتوقف عند الانتهاء لمهمة]
+txt_benchmarkjob:  [نظام سوف يستجيب ببطء أثناء تشغيل المؤشر المرجعي  (حوالي دقيقة)]
+txt_defragjob:  [لن تستجيب أثناء إلغاء تجزئة، يمكنك أن تدع تشغيله في الخلفية]
+txt_consolejob:  [ردود الفعل للوظيفة والتقدم مفصلة متاحة في إطار وحدة التحكم]
+txt_job1: 1: تحذير: خطأ غير فادح؛ أي بعض الملفات مفقودة أو مؤمن
+txt_job127: 127: لا يمكن تنفيذ العملية المطلوبة
+txt_job2: 2: حدث خطأ فادح
+txt_job255: 255: توقف الوظيفة حسب المستخدم
+txt_job7: 7: خطأ: حصلت على سطر الأوامر غير صحيحة
+txt_job8: 8: خطأ: لا توجد ذاكرة كافية للعملية المطلوبة
+txt_autoclose: إغلاق هذه النافذة عند اكتمال المهمة
+txt_crscale: نسبة الضغط  (أقل، أفضل):
+txt_console: وحدة التحكم
+txt_benchscale: كور 2 ديو 6600 الترتيب، أي ما يعادل سرعة ميغاهيرتز.
+txt_create: إنشاء
+txt_done: القيام به:
+txt_nocl: سطر الأوامر فارغة
+txt_error: خطأ:
+txt_explore: استكشاف
+txt_extto: استخراج إلى
+txt_halt: توقف النظام عند اكتمال المهمة
+txt_halted: توقف:
+txt_hardware: الأجهزة
+txt_high: أولوية عالية
+txt_idle: الخمول الأولوية
+txt_input: الإدخال:
+txt_jpaused: الوظيفة مؤقتاً
+txt_jresumed: الوظيفة التي استأنفت
+txt_job_started: بدأت مهمة
+txt_jobstatus: المركز الوظيفي:
+txt_jstopped: توقف الوظيفة حسب المستخدم
+txt_jobstopped: الوظيفة أوقفت من قبل المستخدم؛ يمكنك فحص نتائج جزئية للوظيفة النقر فوق زر "استكشاف" أو قراءة سجل الوظيفة
+txt_job_success: الوظيفة بنجاح
+txt_lt: قائمة/اختبار/إصلاح الأرشيف
+txt_normal: أفضلية عادية
+txt_ok: حسنا
+txt_output: الإخراج:
+txt_pause: إيقاف مؤقت
+txt_paused: تم إيقاف مؤقتاً،
+txt_p_high: تعيين الأولوية إلى مرتفع
+txt_p_idle: مجموعة ذات الأولوية للخمول
+txt_p_normal: تعيين الأولوية إلى عادي
+txt_p_realtime: تعيين الأولوية إلى الوقت الحقيقي
+txt_rating: تصنيف:
+txt_rt: الأولوية الوقت الحقيقي
+txt_report: تقرير
+txt_resume: السيرة الذاتية
+txt_priority: انقر لتعيين الأولوية للوظيفة
+txt_running: تشغيل،
+txt_isrunning: تشغيل...
+txt_saveas: حفظ باسم
+txt_savejob: حفظ تعريف الوظيفة  (قد تشمل كلمة السر!)
+txt_savelog: حفظ السجل الوظيفي
+txt_software: البرمجيات
+txt_speedscale: السرعة، مقياس لوغاريتمي  (أعلى، أفضل):
+txt_status: مركز
+txt_stop: إيقاف
+txt_bench: النظام القياسي
+txt_threads: المواضيع:
+txt_time: الوقت:
+
+=== end PeaLauncher text group ===
+
+=== about text group ===
+
+EXTRACT ARCHIVE(S)
+From the system 
+-rightclick في archive(s) وفي قائمة السياق للنظام انقر فوق "استخراج هنا" أو "استخراج هنا  (في مجلد جديد)" لاستخراج مع ليست مزيد من التفاعل
+-استخدام إدخال القائمة "استخراج..." وإلا لوجود المزيد من الخيارات: مسار الإخراج، اختيار كلمة السر، استخراج الملفات إلى دليل جديد، تخطي أو إعادة تسمية أو الكتابة فوق الملفات الموجودة إلخ.
+
+فتح أرشيف في PeaZip، أي مع دبل كليك، أو اسحب أرشيفا على نافذة أو رمز في PeaZip
+--انقر على "استخراج" في شريط الأدوات، أو في سياق الكائنات القائمة لاستخراج تحديد فقط الحوض الصغير مربع حوار تأكيد السماح لتعيين كافة الخيارات  (مسار الإخراج، كلمة السر، تسمية السياسة، استخراج إلى دليل جديد إلخ)
+-اسحب الملفات والمجلدات إلى الوجهة المطلوبة، تحديد فقط سيتم استخراج المحتوى  (لمزيد من المعلومات انظر الفصل حول سحب وإسقاط في PeaZip)
+-انقر فوق الزر القائمة المنسدلة استخراج سريعة على حق "استخراج" في شريط الأدوات، فإنه يسمح لاستخراج مباشرة أرشيف كامل للوجهات الأكثر شيوعاً  (تخطي مربع الحوار تأكيد)، وتعيين الخيارات الأكثر أهمية؛ اختصارات لوحة المفاتيح: Ctrl + E  (أو F12) مقتطفات من أرشيف كامل، ويسأل عن دليل الإخراج؛ Ctrl + Alt + E استخراج الأرشيف في المجلد الحالي به؛ Ctrl + Shift + E استخراج إلى سطح المكتب؛ مقتطفات Ctrl + Alt + Shift + E للوثائق؛ Ctrl + 0 مقتطفات للمسار السابق؛ مقتطفات Ctrl + 1..8 إلى مسار للإشارة المرجعية 1..8  (إذا كانت محددة)
+
+فتح PeaZip وحدد محفوظات واحد أو أكثر وانقر فوق "استخراج" في شريط أدوات أو قائمة السياق، أو استخدام استخراج سريعة الوجهات كما سبق شرحه في النقطة السابقة.
+
+استخراج الكائنات المحددة فقط من الأرشيف
+فتح أرشيف في PeaZip، أي مع دبل كليك، أو اسحب أرشيفا على نافذة أو رمز في PeaZip
+--انقر فوق "استخراج" في شريط الأدوات: سيتم استخراج العناصر المحددة فقط
+-اسحب الملفات والمجلدات إلى الوجهة المطلوبة، تحديد فقط سيتم استخراج المحتوى
+-rightclick وفي مجموعة "استخراج" من قائمة السياق انقر فوق "استخراج مختارة"  (للعناصر المحددة فقط استخراج) أو "عرض" استخراج  (لاستخراج المحتوى من الدليل الحالي أو من عامل تصفية البحث الحالي)
+
+أدخل كلمة مرور لاستعراض أو استخراج أرشيف
+انقر على أيقونة القفل بإدخال كلمة مرور و keyfile اختيارياً.
+ظهرت الأيقونة في شريط الحالة ملف المتصفح في PeaZip وفي واجهة استخراج الأرشيف؛ حالما يتم تعيين كلمة المرور الرمز سيتم تغيير اللون.
+
+إنشاء أرشيف
+من النظام
+-rightclick على الكائنات إلى تتم أرشفة ثم انقر فوق "إضافة الأرشيف" في قائمة السياق أو إرسال إلى القائمة. فإنه سيتم فتح مربع الحوار تأكيد إنشاء أرشيف، تتوفر المزيد من الخيارات في علامة التبويب "خيارات متقدمة"؛ انقر فوق حسنا لإنشاء الأرشيف.
+--وبدلاً من ذلك، اسحب الملفات والمجلدات إلى PeaZip للنافذة أو الاختصار؛ سيظهر نفس واجهة إنشاء أرشيف.
+
+من PeaZip 
+-تحديد الكائنات إلى تتم أرشفة ثم انقر فوق الزر "إضافة"؛ سيظهر نفس واجهة إنشاء أرشيف.
+
+إضافة ملفات أو مجلدات تحديث أرشيف القائمة
+فتح أرشيف في PeaZip  (أي مع دبل كليك، أو اسحب أرشيفا في PeaZip في نافذة أو رمز)، ثم سحب الملفات والمجلدات يتم إضافتها في الأرشيف  (أو انقر فوق الزر "إضافة" واستخدام قائمة السياق للتطبيق لإضافة كائنات إلى الأرشيف).
+سوف افتح مربع الحوار تأكيد إنشاء الأرشيف، انقر فوق حسنا لتحديث الأرشيف الموجودة.
+
+إنشاء تقسيم الأرشيف في ملفات أصغر
+في حين إنشاء أرشيف كما موضح في النقاط السابقة، انقر فوق "مفرد حجم" القائمة المنسدلة لتحديد حجم للملفات الإخراج  (وحدات التخزين) سيتم تقسيم الأرشيف في.
+الأنواع الأكثر شيوعاً من المحفوظات يدعم هذا الخيار.
+
+إنشاء أرشيف مشفر
+انقر على أيقونة القفل لإدخال كلمة مرور و بشكل اختياري keyfile؛ ظهرت الأيقونة في شريط الحالة ملف المتصفح في PeaZip وفي واجهة إنشاء أرشيف.
+لإخفاء أسماء الملفات والدلائل الواردة في الاختيار أرشيف "تشفير أيضا أسماء الملفات"، الرجاء ملاحظة أنه سيتم تطبيقه فقط إذا كان سيتم إنشاء الأرشيف في شكل دعم هذه الوظيفة، مثل 7Z والقوس.
+لاحظ أنه يوجد في واجهة إنشاء أرشيف، جنبا إلى جنب مع رمز القفل، تحذيراً لإعلام مرئي إذا كان يتم تشفير مجموعة، وما إذا كان تنسيق الأرشيف الحالي يدعم التشفير.
+
+إنشاء محفوظات منفصلة
+إضافة كائنات إلى تتم أرشفة  (مع الزر ل PeaZip "إضافة"، أو من قائمة السياق للنظام أو قائمة SendTo) وتأكيد من قبل مع الخيار "إضافة كل كائن إلى أرشيف منفصلة" الاختيار "حسنا".
+
+تحويل المحفوظات
+PeaZip تحديد المحفوظات تحويله، وانقر فوق "تحويل" في القائمة شريط الأدوات أو السياق، عدم أرشفة الملفات والمجلدات يمكن إضافة كذلك، الفرق بينهما في المحفوظات يجري استخراجه قبل مرحلة ضغط.
+استخدام رمز التبديل "تحويل المحفوظات الموجودة" بالاقتران مع "إضافة كل كائن إلى أرشيف منفصلة"  (الافتراضي) ينفذ تحويل شامل للمحفوظات المذكورة، دون تحويل أرشيف رمز التبديل هذا هو يعني توحيد البيانات المدخلة في أرشيف واحد، تحسين كفاءة ضغط لأنه يسمح بإعادة الضغط للبيانات الأصلية من شكله غير مضغوط.
+
+إنشاء المحفوظات مباشرة في تنسيق محدد ومع مستوى ضغط المختار
+باستخدام الإجراء "نظام التكامل" في القائمة خيارات من الممكن لتمكين إدخالات قائمة السياق لمباشرة إضافة الملفات/المجلدات المحددة إلى الرمز بريدي، 7Z، أو الذاتي استخراج الأرشيف.
+لصيغ Zip و 7Z من الممكن أيضا لتمكين إدخالات قائمة السياق لضغط إلى مستوى أسرع أو العادي أو الترا، تجاوز مستوى الضغط الافتراضي للشكل المحدد.
+
+إدارة كلمة المرور
+مدير كلمة المرور يتم الوصول إليها من القائمة الرئيسية، أدوات > مدير كلمة السر أو من نموذج كلمة السر، من القائمة المنسدلة على يسار كلمة المرور في الميدان.
+كلمات المرور المحفوظة يمكن تحديدها من القائمة المنسدلة على يسار كلمة المرور المحفوظة في شكل كلمة السر، أو يمكن نسخها من إدارة كلمة المرور لاستخدامها في أي تطبيق آخر.
+يتم تعيين ليست كلمة مرور رئيسية لإدارة كلمة المرور، قائمة كلمات المرور يمكن الوصول إليها دون المطالبة بالمصادقة، خلاف ذلك كلمات المرور لن يتم عرضها حتى يصادق المستخدم بشكل صحيح.
+
+تكوين التطبيق
+خيارات > التعريب  (وفي خيارات > إعدادات، علامة التبويب الأولى) يسمح لك بضبط اللغة للتطبيق.
+خيارات > إعدادات يسمح لتحرير إعدادات التطبيقات
+خيارات > موضوع يسمح لتغيير الرموز للتطبيق والمظهر
+خيارات > تكامل النظام يبدأ إجراء لتكوين ملف الجمعيات وقائمة السياق وإدخالات قائمة SendTo  (في Windows)
+تنظيم قائمة تحتوي على الإدخال تخصيص، وتمكين أو تعطيل الميزات في المستعرض، مثل شريط الأدوات، شريط العناوين، وشريط التنقل، إلخ
+
+تعليمات F1
+F2 إعادة تسمية الملف (الملفات)/نسخ Ctrl + F2 المحدد لنقل Shift + F2 المحددة إلى
+البحث F3  (تذكرت الخيار ريكورسيفيتي)/Ctrl + F3 بداية كغير عودي  (البحث هنا)/عودي + Shift + F3/بحث نظام Alt + F3
+F4 مستوى واحد لأعلى/Ctrl + F4 تصفح الكمبيوتر الجذر/Shift + F4 تصفح سطح المكتب
+تحديث F5
+F6 تبديل عرض استعراض/شقة
+F7 إضافة إلى الإشارات المرجعية/Ctrl + F7 افتح في مثيل جديد من PeaZip/Shift + F7 افتح موجه الأوامر في المسار المحدد/Alt + F7 استكشاف المسار المحدد
+F8 استعراض العنصر الأول في قائمة الإشارات المرجعية  (Ctrl، وثانيا، التحول، الثالث)
+F9 تعيين كلمة المرور/keyfile/Shift + F9 كلمة مدير/Ctrl + F9 إنشاء keyfile أو كلمة مرور عشوائي/Ctrl + Shift + F9 تعيين عوامل تصفية متقدمة
+F10 القائمة/Ctrl + F10 تشغيل كمستخدم مختلف/Alt + F10 تشغيل كمسؤول  (ويندوز فيستا وأحدث النظم)
+وضع ملء الشاشة F11 التبديل/Ctrl + F11 غامرة
+F12 استخراج كل شيء إلى...
+
+حول PEAZIP
+
+PeaZip هو مدير الملفات وأرشيف مفتوح مصدر: عبر منصة، متاح كالبرمجيات المحمولة والقابلة للتثبيت على 32 و 64 بت من Windows  (9 × 2 ك، إكس بي، فيستا) ولينكس  (PeaZip تطبيق سطح مكتب محايدة).
+
+PeaZip يسمح بتطبيق عوامل تصفية البحث متعددة قوية للمحتوى الأرشيف؛ إنشاء واستخراج المحفوظات متعددة في وقت واحد؛ إنشاء الذاتي انتزاع المحفوظات؛ تصدير تعريف المهمة كسطر الأوامر؛ حفظ أرشفة واستخراج تخطيطات؛ المحفوظات الإشارة المرجعية والمجلدات؛ المسح الضوئي ومع تطبيقات مخصصة بفتح الملفات المضغوطة وغير المضغوطة إلخ...
+
+ميزات أخرى: التشفير القوى، ونسخ ملف قوية، سبليت/الانضمام ملفات  (امتداد الملف)، تأمين البيانات الحذف، ومقارنة، والمجموع الاختباري وتجزئة الملفات، نظام مرجعي، توليد كلمات السر العشوائية وكييفيليس.
+
+الأسبوعية والتغيير: http://peazip.sourceforge.net/ | http://www.peazip.org/
+ميزات وقائمة كاملة من تنسيقات المعتمدة: http://www.peazip.org/peazip-free-archiver.html 
+الدعم: http://www.peazip.org/peazip-help.html
+FAQ: http://www.peazip.org/peazip-help-faq.html
+
+شكرا جزيلا لجميع الناس المساهمة في النمو PeaZip المشروع تطوير مكونات برمجيات "مفتوحة المصدر" المستخدمة في هذا التطبيق  (انظر الموقع الإلكتروني للحصول على قائمة كاملة)، وإلى كافة المستخدمين المساهمة مع الملاحظات والتجارب والنصائح.

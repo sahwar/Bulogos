@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+XXXII, a Numerological Roguelike - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>But the other gods disagreed, saying &ldquo;Surely no one number is more beautiful than any other!&rdquo;. So the Creator set out to build a universe based around his beloved Thirty-Two, one that would demonstrate once and for all the supremacy of that particular number.</p>
+</blockquote>
+<p>A while ago, I got a mobile phone that could run specially-crafted Java applications. Being a small and rather cheap phone, there were a number of limitations on the programs it would run; for example, it had a very slow processor, a tiny (96x64) display, and would not accept programs larger than 64KB. I wondered what kind of game might suit such a limited platform - it would have to be turn-based, not rely too much on graphics, and would preferably be algorithm-based rather than requiring stored level maps. The obvious solution: a roguelike!</p>
+<p>So I set about planning how I might squeeze a roguelike into a form acceptable to this phone. I recalled hearing about how Elite generated multiple galaxies filled with stars and solar-systems based on a very small random seed, I recalled . As I pondered storing items, monsters and levels space-efficiently, I started obsessing a little over the number 32, and, well, here we are.</p>
+<h2 id="the-universe">The Universe<a class="headerlink" href="#the-universe" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>The creator carved out thirty two planes, each thirty-two cubits square, and linked them together.</p>
+</blockquote>
+<p>The dungeon is a series of 32 levels, each 32x32 squares. I haven&rsquo;t decided on whether levels should be regenerated every time.</p>
+<h2 id="creatures-monsters-and-the-player">Creatures (Monsters and the Player)<a class="headerlink" href="#creatures-monsters-and-the-player" title="Permanent link">&para;</a></h2>
+<p>A creature, either a monster or the Player is represented by two 32-bit words, called Intrinsics and State. Intrinsics is a bit-field, where each bit represents a particular skill or attribute, while State has a number of things packed into it.</p>
+<table>
+<thead>
+<tr>
+<th>Bit</th>
+<th>Intrinsics</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>0</td>
+  <td>Claw (1 damage to 1 adjacent square)
+  <td rowspan="5">X coordinate</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>Blast (1 damage to all squares +/- 45 degrees from a line in a given direction, radius 1 - so, the three squares on a side or corner in the given direction)
+</tr>
+<tr>
+  <td>2</td>
+  <td>Swipe (1 damage to all nearby squares, radius 1 - so, all adjacent squares)
+</tr>
+<tr>
+  <td>3</td>
+  <td>Beam (1 damage to all squares on a line in a given direction, radius 3)
+</tr>
+<tr>
+  <td>4</td>
+  <td>Hard Blast (1 damage to all squares +/- 45 degrees from a line in a given direction, radius 3)
+</tr>
+<tr>
+  <td>5</td>
+  <td>Hard Swipe (1 damage to all nearby squares, radius 3)
+  <td rowspan="5">Y coordinate</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>Zap (1 damage to adjacent square, but recursively chains to a randomly-chosen adjacent square, to a depth of 3)
+</tr>
+<tr>
+  <td>7</td>
+  <td>Penetrating Beam (1 damage to all squares on a line in a given direction, radius 5)
+</tr>
+<tr>
+  <td>8</td>
+  <td>Penetrating Blast (1 damage to all squares +/- 45 degrees from a line in a given direction, radius 5)
+</tr>
+<tr>
+  <td>9</td>
+  <td>Penetrating Swipe (1 damage to all nearby squares, radius 5)</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>Penetrating Zap (1 damage to adjacent square, but recursively chains to a randomly-chosen adjacent square, to a depth of 5)</td>
+  <td rowspan="5">Current HP</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>Mighty Beam (2 damage to all squares on a line in a given direction, radius 3)
+</tr>
+<tr>
+  <td>12</td>
+  <td>Mighty Blast (2 damage to all squares +/- 45 degrees from a line in a given direction, radius 3)
+</tr>
+<tr>
+  <td>13</td>
+  <td>Mighty Swipe (2 damage to all nearby squares, radius 3)
+</tr>
+<tr>
+  <td>14</td>
+  <td>Mighty Zap (2 damage to adjacent square, but recursively chains to a randomly-chosen adjacent square, to a depth of 3)
+</tr>
+<tr>
+  <td>15</td>
+  <td>Mega Beam (2 damage to all squares on a line in a given direction, radius 5)</td>
+  <td rowspan="5">Max HP</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>Mega Blast (2 damage to all squares +/- 45 degrees from a line in a given direction, radius 5)
+</tr>
+<tr>
+  <td>17</td>
+  <td>Mega Zap (2 damage to adjacent square, but recursively chains to a randomly-chosen adjacent square, to a depth of 5)
+</tr>
+<tr>
+  <td>18</td>
+  <td>Mine (adds an invisible mine to the current square that detonates for 2 damage the next time a creature walks over it)
+</tr>
+<tr>
+  <td>19</td>
+  <td>Fetch (targets any visible creature or item. Monsters are moved to the nearest unoccupied square to the caster, items are moved to beneath the caster's feet)
+</tr>
+<tr>
+  <td>20</td>
+  <td>Teleport (targets any visible monster or item, moves it to a randomly-chosen empty square within radius 10)
+  <td rowspan="5">Current MP</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>Heal (regain full HP)
+</tr>
+<tr>
+  <td>22</td>
+  <td>Fire Damage (adds 1 to the damage multiplier if the target does not have Fire Resist)
+</tr>
+<tr>
+  <td>23</td>
+  <td>Acid Damage (adds 1 to the damage multiplier if the target does not have Acid Resist)
+</tr>
+<tr>
+  <td>24</td>
+  <td>Sonic Damage (adds 1 to the damage multiplier if the target does not have Acid Resist)
+</tr>
+<tr>
+  <td>25</td>
+  <td>Electric Damage (adds 1 to the damage multiplier if the target does not have Electric Resist)
+  <td rowspan="5">Max HP</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>Fire Resist (negates the Fire Damage bonus)
+</tr>
+<tr>
+  <td>27</td>
+  <td>Acid Resist (negates the Acid Damage bonus)
+</tr>
+<tr>
+  <td>28</td>
+  <td>Sonic Resist (negates the Sonic Damage bonus)
+</tr>
+<tr>
+  <td>29</td>
+  <td>Electric Resist (har-de-har)
+</tr>
+<tr>
+  <td>30</td>
+  <td>Regeneration (regain 1HP/1MP every turn)
+  <td><em>Suggestions welcome</em></td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>Fast (twice as many turns)
+  <td><em>Suggestions welcome</em></td>
+</tr>
+</tbody>
+</table>
+
+<p>Upon creation, a monster will have a number of its Intrinsics bit set, according to the level upon which it&rsquo;s generated - so a monster on level 5 will have five intrinsic abilities, and every monster on the last level will have everything. The player starts with no intrinsics, but can add them via equipment, enchantment, etc.</p>
+<p>Upon creation, a monster will have its Current HP, Current MP, Max HP and Max MP set to the level on which it&rsquo;s generated - so a monster on level 5 will have 5HP, 5MP, etc. The player starts with maybe 3HP/0MP, just so he can&rsquo;t be insta-killed, recovers 1HP every few turns (unless he has Regenerate, in which case every turn), and their max HP/MP is the maximum depth of the dungeon that they&rsquo;ve visited.</p>
+<p>I think there should be some kind of MP cost associated with using intrinsics, just so a freakish level-1 monster can&rsquo;t spam you with Mega Blast, although I&rsquo;m not sure how it would work. </p>
+<p>Ideally, the intrinsics would be purely random, but you might wind up with a level-4 creature with every kind of damage bonus, but no actual offensive skills. I don&rsquo;t know if that&rsquo;s going to be a game-balance problem, though.</p>
+<h2 id="items">Items<a class="headerlink" href="#items" title="Permanent link">&para;</a></h2>
+<p><em>Nothing yet.</em></p>
+<h2 id="levels">Levels<a class="headerlink" href="#levels" title="Permanent link">&para;</a></h2>
+<p><em>Nothing yet.</em></p>    </body>
+</html>

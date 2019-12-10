@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Specifying colours in Metacity themes - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="specifying-colours-in-metacity-themes">Specifying colours in Metacity themes<a class="headerlink" href="#specifying-colours-in-metacity-themes" title="Permanent link">&para;</a></h1>
+<p>Colours are terribly important part of creating an attractive theme, but I&rsquo;ve never seen a list of what syntax Metacity understands, let alone an explanation. here&rsquo;s what I&rsquo;ve learned.</p>
+<h2 id="basic-colours">Basic colours<a class="headerlink" href="#basic-colours" title="Permanent link">&para;</a></h2>
+<p>Metacity accepts X11 hex RGB colours, much like HTML does.  Thus, <code>#FFFFFF</code> is white, <code>#ffff80</code> is a pale yellow, <code>#484</code> is a darkish grey-green, etc.</p>
+<h2 id="colour-names">Colour names<a class="headerlink" href="#colour-names" title="Permanent link">&para;</a></h2>
+<p>Metacity accepts colour names defined in the standard X11 <code>rgb.txt</code> file, again much like HTML does. Thus, you can use colours like <code>YellowGreen</code> and <code>DarkSlateBlue</code>. You&rsquo;ll want to checkout <a href="http://en.wikipedia.org/wiki/X11_color_names">the Wikipedia article</a> for details.</p>
+<h2 id="gtk-theme-colours">GTK+ theme colours<a class="headerlink" href="#gtk-theme-colours" title="Permanent link">&para;</a></h2>
+<p>These are colours set by the user&rsquo;s currently-active GTK theme. They are all of the form:</p>
+<div class="codehilite"><pre><span></span><span class="n">gtk</span><span class="o">:</span><span class="n">part</span><span class="o">[</span><span class="n">STATE</span><span class="o">]</span>
+</pre></div>
+
+
+<p><code>part</code> must be one of the following values:</p>
+<ul>
+<li><code>fg</code>: The foreground of the contents of controls accepting input - text in a text-entry, items in a list, etc. With the <code>SELECTED</code> state, returns the foreground colour of selected items.</li>
+<li><code>bg</code>: The background of the contents of controls accepting input. With the <code>SELECTED</code> state, returns the background, accent colour of selected items.</li>
+<li><code>text</code>: The foreground of controls not accepting input - for example, text on buttons, labels, pop-up lists, etc. Usually used with the <code>NORMAL</code>, <code>PRELIGHT</code>, and <code>INSENSITIVE</code> states.</li>
+<li><code>text_aa</code>: The only documentation I can find says &ldquo;halfway between <code>text</code> and <code>base</code>&rdquo;.</li>
+<li><code>base</code>: The background of controls not accepting input. </li>
+<li><code>light</code>: A lighter shade of the <code>base</code> colour, used for drawing the 3D effect on buttons</li>
+<li><code>mid</code>: A medium shade of the <code>base</code> colour, similar but not identical to the original</li>
+<li><code>dark</code>: A darker shade of the <code>base</code> colour, used for drawing the 3D affect on buttons</li>
+</ul>
+<p><code>STATE</code> must be one of the following values:</p>
+<ul>
+<li><code>NORMAL</code>: The normal state of controls.</li>
+<li><code>PRELIGHT</code>: When the mouse pointer is moved over a control, it &ldquo;lights up&rdquo; to highlight exactly which control would be affected by a click. Much like the <code>:hover</code> selector in CSS.</li>
+<li><code>ACTIVE</code>: While a button is actually being held down, it takes on a darker appearance. Much like the <code>:active</code> selector in CSS.</li>
+<li><code>SELECTED</code>: Things that have been explictly selected by the user, like text in a text-box, file icons in a file-manager or cells in a spreadsheet. I&rsquo;m not sure how an ordinary button or frame control might possibly become <code>SELECTED</code>; <code>fg</code> and <code>bg</code> are the only really useful parts that can be used with this state.</li>
+<li><code>INSENSITIVE</code>: Controls that cannot be activated or edited - usually called &ldquo;disabled&rdquo;. Often a paler, less saturated set of the <code>NORMAL</code> colours.</li>
+</ul>
+<p>All combinations of part and state are allowed, but not all combinations are visually distinct in all themes - for example, some themes only change the text colour of <code>INSENSITIVE</code> controls, so colours based on the other parts of the <code>INSENSITIVE</code> state would wind up looking exactly like the same parts of the <code>NORMAL</code> state. The parts and states are defined in terms of the default &ldquo;Raleigh&rdquo; theme; you&rsquo;ll want to check it out to get a better idea of how the various parts and states interact.</p>
+<p>More potentially useful information: These colours are all stored in the GTK+ &ldquo;Style&rdquo; object, you might be able to find out more information by looking for that.</p>
+<h2 id="composite-colours">Composite colours<a class="headerlink" href="#composite-colours" title="Permanent link">&para;</a></h2>
+<p>Metacity can calculate new colour values from existing colour values at runtime. This is mostly useful for generating colours based on GTK+ theme colours, but it works with any of the colour syntaxes mentioned above. There are two composite colour operations Metacity understands:</p>
+<div class="codehilite"><pre><span></span>blend/background/foreground/alpha
+</pre></div>
+
+
+<p>&hellip;where both <code>background</code> and <code>foreground</code> should be colours, and <code>alpha</code> should be a number between 0 and 1. The resulting colour is partway between the background and foreground colours - for example, <code>blend/black/white/0.75</code> produces the colour <code>#BFBFBF</code>.</p>
+<div class="codehilite"><pre><span></span>shade/base/factor
+</pre></div>
+
+
+<p>&hellip;where the <code>base</code> argument should be a colour, and the <code>factor</code> argument should be a number - numbers less than 0 make the result black, numbers between 0 and 1 make the colour darker, 1 leaves the colour alone and numbers greater than 1 make the colour lighter (there&rsquo;s no specific maximum number; exactly how much you can lighten a particular colour depends on how light it was to begin with).</p>
+<p>A technical note: the shade operation seems to be implemented with <code>gtk_style_shade()</code>, which isn&rsquo;t described in any GTK+ documentation I can find, and is listed in the &ldquo;private API&rdquo; section of <code>gtk/gtkstyle.h</code>.</p>    </body>
+</html>

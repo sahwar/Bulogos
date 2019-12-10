@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Automatic $TERM selection - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="automatic-term-selection">Automatic <code>$TERM</code> selection<a class="headerlink" href="#automatic-term-selection" title="Permanent link">&para;</a></h1>
+<p>Everybody wants to use the terminal description that best fits their terminal, but the most flexible and powerful terminal descriptions are also the rarest - which means terminal emulators tend to default to the oldest and most widespread terminal descriptions even if they fall far short of what the emulator can actually do.</p>
+<p>Here&rsquo;s a fragment of <code>.bashrc</code> that I use to automatically set <code>$TERM</code> to the most capable version available when I log in:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">case</span> <span class="s2">&quot;</span><span class="nv">$TERM</span><span class="s2">&quot;</span> in
+    xterm*<span class="o">)</span>
+        <span class="nv">TERMLIST</span><span class="o">=(</span>
+            xterm-256color
+            xterm-16color
+            xterm-color
+            xterm
+            <span class="o">)</span> <span class="p">;;</span>
+    screen*<span class="o">)</span>
+        <span class="nv">TERMLIST</span><span class="o">=(</span>
+            screen-256color-bce
+            screen-256color
+            screen-16color-bce
+            screen-16color
+            screen
+            <span class="o">)</span> <span class="p">;;</span>
+    *<span class="o">)</span>
+        <span class="nv">TERMLIST</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$TERM</span><span class="s2">&quot;</span> <span class="p">;;</span>
+<span class="k">esac</span>
+<span class="k">for</span> term in <span class="nv">$TERMLIST</span><span class="p">;</span> <span class="k">do</span>
+    infocmp <span class="s2">&quot;</span><span class="nv">$term</span><span class="s2">&quot;</span> &gt;/dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="o">&amp;&amp;</span>
+        <span class="nb">export</span> <span class="nv">TERM</span><span class="o">=</span><span class="nv">$term</span> <span class="o">&amp;&amp;</span>
+        <span class="nb">break</span>
+<span class="k">done</span>
+</pre></div>
+</td></tr></table>
+
+<p>Basically, it says:</p>
+<ul>
+<li>If you currently claim to be an xterm variant, here&rsquo;s a list of alternatives from most to least powerful.</li>
+<li>If you currently claim to be a GNU Screen variant, here&rsquo;s a list of alternatives from most to least powerful.</li>
+<li>If you currently claim to be something else, we don&rsquo;t have any alternatives so stick with what you&rsquo;ve got.</li>
+<li>For each alternative:<ul>
+<li>Ask <code>infocmp</code> (part of the ncurses tools) if it can find a terminal definition with that name.</li>
+<li>If it can, we assume other tools will be able to find it too, and we set <code>$TERM</code> appropriately and stop looking.</li>
+</ul>
+</li>
+</ul>
+<p>Note that <code>$TERMLIST</code> for <code>xterm*</code> and <code>screen*</code> uses the <code>bash</code>/<code>zsh</code> array syntax. If you&rsquo;re using a different shell, changing the parentheses to ordinary double-quote characters should work just as well (but doesn&rsquo;t work in zsh).</p>    </body>
+</html>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Exploring Functional Reactive Programming in Python - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="exploring-functional-reactive-programming-in-python">Exploring Functional Reactive Programming in Python<a class="headerlink" href="#exploring-functional-reactive-programming-in-python" title="Permanent link">&para;</a></h1>
+<p>As a software developer
+who cares about making robust, debuggable systems,
+I&rsquo;ve been interested for a while now
+in ideas like Functional Reactive Programming,
+or <a href="https://guide.elm-lang.org/architecture/">the Elm Architecture</a>.
+Sadly,
+regular employement does not include a lot of opportunities
+to play with new ideas,
+so it wasn&rsquo;t until I took some time off over Easter
+that I had a chance to sit down and explore for myself.</p>
+<p>I had originally intended to implement something like
+<a href="http://elm-lang.org/examples/buttons">the simple counter example</a>
+from the Elm documentation,
+but as a console application in Python,
+and built on top of a Functional Reactive base.
+Unfortunately, it turns out that
+<a href="http://elm-lang.org/blog/farewell-to-frp">Elm does not have anything to do with FRP these days</a>,
+so I wound up with two loosely-related things
+instead of the single compelling example I&rsquo;d hoped for.
+(If you&rsquo;d like to take a look at the end result,
+<a href="https://gitlab.com/Screwtapello/frptui">the complete project is up on GitLab</a>.)</p>
+<p>Nevertheless,
+I did learn things,
+and I want to talk about them.
+But first,
+some background information.</p>
+<div class="toc">
+<ul>
+<li><a href="#exploring-functional-reactive-programming-in-python">Exploring Functional Reactive Programming in Python</a><ul>
+<li><a href="#what-is-functional-programming">What is functional programming?</a></li>
+<li><a href="#where-does-reactive-come-in">Where does &ldquo;reactive&rdquo; come in?</a></li>
+</ul>
+</li>
+<li><a href="#implementing-frp-in-python">Implementing FRP in Python</a><ul>
+<li><a href="#lets-try-generator-functions">Let&rsquo;s try generator functions!</a></li>
+<li><a href="#the-stream-interface">The Stream interface</a></li>
+<li><a href="#the-stream-interface-take-2">The Stream interface, take 2</a></li>
+<li><a href="#stateful-stream-functions">Stateful stream functions</a></li>
+</ul>
+</li>
+<li><a href="#making-it-pretty">Making it pretty</a><ul>
+<li><a href="#a-decorator-for-stream-functions">A decorator for stream functions</a></li>
+<li><a href="#stateful-stream-functions-too">Stateful stream functions, too!</a></li>
+</ul>
+</li>
+<li><a href="#how-can-we-do-better">How can we do better?</a></li>
+</ul>
+</div>
+<h2 id="what-is-functional-programming">What is functional programming?<a class="headerlink" href="#what-is-functional-programming" title="Permanent link">&para;</a></h2>
+<p>Functional programming means a lot of different things
+to different people,
+but the relevant part to this discussion is 
+<em>mathematically pure functional programming</em>,
+or just &ldquo;pure functions&rdquo; for short.
+A pure function is one whose return value
+is determined only by its inputs.</p>
+<p>For example,
+this is a perfectly respectable pure function:</p>
+<aside><p>
+By the way,
+all the examples in this essay are written for Python 3.5,
+although they could probably be made to work in Python 2.7 fairly easily.
+</p></aside>
+
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">add_seven</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="mi">7</span> <span class="o">+</span> <span class="n">x</span>
+</pre></div>
+
+
+<p>Every time you pass 5 into that function,
+you&rsquo;re always going to get 12 back out,
+no matter what the rest of the program might have done in the meantime.</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">add_seven</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="mi">12</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">add_seven</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="mi">12</span>
+</pre></div>
+
+
+<p>On the other hand,
+here&rsquo;s an example of an <em>impure</em> function:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">number_from_file</span><span class="p">(</span><span class="n">somefile</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">somefile</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span>
+</pre></div>
+
+
+<p>Even if you pass in exactly the same value for <code>somefile</code> twice in a row,
+you probably won&rsquo;t get the same result out.
+The second time <code>.readline()</code> will read
+the <em>next</em> line of the file,
+not the same line it read originally:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">io</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">handle</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">StringIO</span><span class="p">(</span><span class="s2">&quot;5</span><span class="se">\n</span><span class="s2">9</span><span class="se">\n</span><span class="s2">32</span><span class="se">\n</span><span class="s2">17</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">number_from_file</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">number_from_file</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="mi">9</span>
+</pre></div>
+
+
+<p>Pure functional code is easy to work with,
+because all the context you need to understand it
+is right in front of you.
+You don&rsquo;t need to keep notes about
+what the rest of the program might be doing.
+It&rsquo;s also easier to unit-test,
+since you don&rsquo;t need to mock out API calls
+or reset test fixtures between each test.</p>
+<p>It&rsquo;s impossible to write an entire program in
+a pure functional style,
+because eventually you need to get input from the outside world
+and send a result somewhere.
+However, the more pure functional code in your codebase,
+the greater the chance that any given bug will be
+in one of the easy-to-understand, easy-to-test, easy-to-fix parts of the code.</p>
+<h2 id="where-does-reactive-come-in">Where does &ldquo;reactive&rdquo; come in?<a class="headerlink" href="#where-does-reactive-come-in" title="Permanent link">&para;</a></h2>
+<p>Functional Reactive Programming
+(FRP, from now on)
+is like pure functional programming,
+except that instead of a function taking values and returning a new value,
+a function takes <em>streams</em> of values and returns a new <em>stream</em>.
+You could say that
+the function &ldquo;reacts&rdquo; to changes in its input streams
+by updating its output stream.
+Imagine a stream of numbers being fed into
+the FRP equivalent of <code>add_seven()</code> above.
+If the input stream contains
+5, 9, 32, and 17,
+the output stream would include
+12, 16, 39 and 24.</p>
+<p>One natural use of FRP is service monitoring:
+given some application&rsquo;s log file,
+a monitoring tool could read the logs,
+parse each line,
+and apply stream functions to convert
+that stream of records
+into streams of statistics like
+&ldquo;average request latency&rdquo; or
+&ldquo;total requests per client&rdquo;.
+You could have even more stream functions
+stacked on top,
+like a five-minute moving average of request latency,
+a one-hour moving average of request latency,
+and a stream that contains an alert
+while the five-minute moving average is
+20% higher than the one-hour moving average.</p>
+<p>FRP is not just about monitoring,
+it can be useful in any situation where
+events happen over time.
+You might think of the state of a database as
+a function over a stream of insert/update events,
+or think of a user-interface as
+a function over a stream of keyboard/mouse/touch events.</p>
+<h1 id="implementing-frp-in-python">Implementing FRP in Python<a class="headerlink" href="#implementing-frp-in-python" title="Permanent link">&para;</a></h1>
+<p>If you&rsquo;ve written much Python,
+a function that takes a stream and produces another stream
+might sound a lot like Python&rsquo;s generator functions.</p>
+<h2 id="lets-try-generator-functions">Let&rsquo;s try generator functions!<a class="headerlink" href="#lets-try-generator-functions" title="Permanent link">&para;</a></h2>
+<p>You could write a generator function to add 7 to a stream like this:</p>
+<aside><p>
+As a convention,
+where a pure function would take a parameter <code>x</code>,
+I have the stream equivalent take a parameter named <code>xs</code>.
+It's the plural of <code>x</code>
+because that variable has more than one <code>x</code> in it.
+</p></aside>
+
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">add_seven_generator</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">xs</span><span class="p">:</span>
+<span class="o">...</span>         <span class="k">yield</span> <span class="mi">7</span> <span class="o">+</span> <span class="n">x</span>
+<span class="o">...</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">xs</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">17</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="n">add_seven_generator</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="mi">12</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="mi">16</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="mi">39</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="mi">24</span>
+</pre></div>
+
+
+<p>However,
+Python&rsquo;s generators aren&rsquo;t quite the same thing as FRP.
+Generators are designed to link together
+into a single long chain:
+Once a generator has yielded a value
+it must move on to the next value,
+it can&rsquo;t yield the same value to
+any other the downstream generators that might want to consume it.</p>
+<p>As an example,
+let&rsquo;s say you have a function that adds two numbers:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</pre></div>
+
+
+<p>You can use that function to double a number
+by adding the number to itself:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="mi">10</span>
+</pre></div>
+
+
+<p>However, if you have a generator function that adds two iterables of numbers:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">add_generator</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">):</span>
+<span class="o">...</span>         <span class="k">yield</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</pre></div>
+
+
+<p>&hellip;you cannot use it to double numbers:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">xs</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">24</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">doubles</span> <span class="o">=</span> <span class="n">add_generator</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">xs</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">doubles</span><span class="p">)</span>
+<span class="mi">14</span>
+</pre></div>
+
+
+<p>Doubling 5 should not produce 14!</p>
+<p>Because of the way Python generators work,
+the call to <code>zip()</code> inside <code>add_generator()</code>
+gets the first and second values from <code>xs</code>,
+rather than two copies of the first value.
+To implement FRP in Python,
+we need different behaviour.
+We want streams to be re-usable,
+so the same stream can be
+passed to many different stream functions,
+the same way a value like 5 can be
+passed to many different pure functions
+without being &ldquo;used up&rdquo;.</p>
+<h2 id="the-stream-interface">The Stream interface<a class="headerlink" href="#the-stream-interface" title="Permanent link">&para;</a></h2>
+<p>There&rsquo;s two basic styles of FRP we could follow:</p>
+<ul>
+<li>in the <em>push</em> model,
+    we wait for an input event,
+    then notify all the stream functions subscribed to that input,
+    then notify all the stream functions subscribed to the first round
+    of stream functions,
+    and so forth until we get to all the downstream outputs.</li>
+<li>in the <em>pull</em> model,
+    an output asks its immediate upstream for a new value,
+    that upstream asks its upstreams for a new value,
+    and so forth until we get to all the upstream inputs that can affect
+    the output we&rsquo;re interested in.</li>
+</ul>
+<p>In Python,
+there&rsquo;s no standard way for a function
+to refer to where its output goes to,
+so a &ldquo;push&rdquo; system would likely be awkward to use.
+On the other hand,
+every Python function can refer to its inputs
+(that&rsquo;s what function parameters are!)
+so the &ldquo;pull&rdquo; model should be a natural fit.</p>
+<p>Assuming we have a Python object representing a stream,
+the &ldquo;pull&rdquo; model requires
+a method to poll for the current value:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">IStream</span><span class="p">:</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="nf">poll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="o">...</span>         <span class="s2">&quot;Return the current output value of this stream.&quot;</span>
+</pre></div>
+
+
+<p>As a very basic example, we can describe a stream
+containing a sequence of numbers:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">NumberStream</span><span class="p">(</span><span class="n">IStream</span><span class="p">):</span>
+<span class="o">...</span>     <span class="s2">&quot;A stream of numbers&quot;</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">numbers</span><span class="p">):</span>
+<span class="o">...</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_numbers</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="nf">poll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="o">...</span>         <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_numbers</span><span class="p">)</span>
+</pre></div>
+
+
+<p>It works exactly how you&rsquo;d expect:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="n">NumberStream</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">17</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span><span class="o">.</span><span class="n">poll</span><span class="p">()</span>
+<span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span><span class="o">.</span><span class="n">poll</span><span class="p">()</span>
+<span class="mi">9</span>
+</pre></div>
+
+
+<p>The stream equivalent of <code>add()</code> is almost as simple:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">AddStream</span><span class="p">(</span><span class="n">IStream</span><span class="p">):</span>
+<span class="o">...</span>     <span class="s2">&quot;A stream that adds its inputs&quot;</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">):</span>
+<span class="o">...</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_xs</span> <span class="o">=</span> <span class="n">xs</span>
+<span class="o">...</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_ys</span> <span class="o">=</span> <span class="n">ys</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="nf">poll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="o">...</span>         <span class="c1"># Get the latest x from the stream of xs</span>
+<span class="o">...</span>         <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_xs</span><span class="o">.</span><span class="n">poll</span><span class="p">()</span>
+<span class="o">...</span>         <span class="c1"># Get the latest y from the stream of ys</span>
+<span class="o">...</span>         <span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ys</span><span class="o">.</span><span class="n">poll</span><span class="p">()</span>
+<span class="o">...</span>
+<span class="o">...</span>         <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</pre></div>
+
+
+<p>If we apply this stream function to
+a <code>NumberStream</code> of 5s,
+and a <code>NumberStream</code> of 7s,
+we will get a stream of 12s,
+just like applying <code>add()</code> to
+the values 5 and 7 gives
+the single value 12:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">fives</span> <span class="o">=</span> <span class="n">NumberStream</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">sevens</span> <span class="o">=</span> <span class="n">NumberStream</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">twelves</span> <span class="o">=</span> <span class="n">AddStream</span><span class="p">(</span><span class="n">fives</span><span class="p">,</span> <span class="n">sevens</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">twelves</span><span class="o">.</span><span class="n">poll</span><span class="p">()</span>
+<span class="mi">12</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">twelves</span><span class="o">.</span><span class="n">poll</span><span class="p">()</span>
+<span class="mi">12</span>
+</pre></div>
+
+
+<p>Now we can recreate the generators example from before,
+but in proper FRP style:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="n">NumberStream</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">17</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">doubles</span> <span class="o">=</span> <span class="n">AddStream</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span> <span class="n">numbers</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">doubles</span><span class="o">.</span><span class="n">poll</span><span class="p">()</span>
+<span class="mi">14</span>
+</pre></div>
+
+
+<p>Waaaaaait, that&rsquo;s not right!
+This is exactly the same problem we had before!</p>
+<h2 id="the-stream-interface-take-2">The Stream interface, take 2<a class="headerlink" href="#the-stream-interface-take-2" title="Permanent link">&para;</a></h2>
+<p>If we think about a stream as a value that can change over time,
+it makes sense that repeated polls at the same time
+should return the same value.
+The calls to <code>.poll()</code>
+do not literally happen at exactly the same nanosecond,
+but they&rsquo;re close enough together that
+we expect them to be treated the same.</p>
+<p>That is,
+we want to introduce an idea of &ldquo;time&rdquo; to <code>IStream</code>
+so that the caller can keep it &ldquo;the same time&rdquo; until
+they&rsquo;re done examining output streams,
+and then &ldquo;advance time&rdquo; when they are ready to see what happens next.</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">IStream</span><span class="p">:</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="nf">poll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phase</span><span class="p">):</span>
+<span class="o">...</span>         <span class="s2">&quot;Return the current output value of this stream.&quot;</span>
+</pre></div>
+
+
+<p>We&rsquo;ve added a new parameter named <code>phase</code>.
+When a stream&rsquo;s <code>.poll()</code> method is called,
+if the value of <code>phase</code> is the same as it was for the previous call,
+the method must return the same value as it did for the previous call.
+If the <code>phase</code> argument has changed since the previous call,
+then the stream function may recalculate its output.
+The idea is that a system decides it&rsquo;s in &ldquo;blue&rdquo; phase
+(or whatever)
+and when it polls all the streams it cares about,
+it can be sure all the calculations are based on the system state
+at the time &ldquo;blue&rdquo; phase began.
+Then it can switch to &ldquo;green&rdquo; phase
+(or whatever)
+and be sure that none of the stream outputs are based on
+stale &ldquo;blue&rdquo;-phase data.</p>
+<p>Because every stream needs to handle phases in the same way,
+let&rsquo;s put that functionality into
+a base class where it can be easily shared:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">BaseStream</span><span class="p">(</span><span class="n">IStream</span><span class="p">):</span>
+<span class="o">...</span>     <span class="s2">&quot;A base class that handles stream phases for you.&quot;</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="o">...</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_last_phase</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="o">...</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_last_output</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="nf">_poll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phase</span><span class="p">):</span>
+<span class="o">...</span>         <span class="s2">&quot;Override this to implement the actual stream function&quot;</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="nf">poll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phase</span><span class="p">):</span>
+<span class="o">...</span>         <span class="k">if</span> <span class="n">phase</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_last_phase</span><span class="p">:</span>
+<span class="o">...</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_last_phase</span> <span class="o">=</span> <span class="n">phase</span>
+<span class="o">...</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_last_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_poll</span><span class="p">(</span><span class="n">phase</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="o">...</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_last_output</span>
+</pre></div>
+
+
+<p>Now, instead of overriding <code>.poll()</code>
+to implement the calculation we want,
+we must override <code>._poll()</code>
+(with the leading underscore),
+which <code>.poll()</code> only calls once per phase.
+Note that <code>._poll()</code> still takes a <code>phase</code> argument:
+if it needs data from other streams,
+it will need to pass the current phase along when polling them.</p>
+<p>Let&rsquo;s recreate <code>NumberStream</code> in this new style:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">NumberStream</span><span class="p">(</span><span class="n">BaseStream</span><span class="p">):</span>
+<span class="o">...</span>     <span class="s2">&quot;A stream of numbers&quot;</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">numbers</span><span class="p">):</span>
+<span class="o">...</span>         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+<span class="o">...</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_numbers</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="c1"># Because NumberStream does not poll any other streams,</span>
+<span class="o">...</span>     <span class="c1"># it does not need the &#39;phase&#39; argument.</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="nf">_poll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_</span><span class="p">):</span>
+<span class="o">...</span>         <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_numbers</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Inheriting from <code>BaseStream</code> ensures that
+<code>NumberStream</code> respects phases:</p>
+<div class="codehilite"><pre><span></span>&gt;&gt;&gt; numbers = NumberStream(5, 9, 32, 17)
+&gt;&gt;&gt; numbers.poll(&quot;blue&quot;)
+5
+&gt;&gt;&gt; numbers.poll(&quot;blue&quot;)
+5
+&gt;&gt;&gt; numbers.poll(&quot;green&quot;)
+9
+</pre></div>
+
+
+<p>Meanwhile, <code>AddStream</code> is nearly the same as it was before:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">AddStream</span><span class="p">(</span><span class="n">BaseStream</span><span class="p">):</span>
+<span class="o">...</span>     <span class="s2">&quot;A stream that adds its inputs&quot;</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">):</span>
+<span class="o">...</span>         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+<span class="o">...</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_xs</span> <span class="o">=</span> <span class="n">xs</span>
+<span class="o">...</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_ys</span> <span class="o">=</span> <span class="n">ys</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="nf">_poll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phase</span><span class="p">):</span>
+<span class="o">...</span>         <span class="c1"># Get the latest x from the stream of xs</span>
+<span class="o">...</span>         <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_xs</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="n">phase</span><span class="p">)</span>
+<span class="o">...</span>         <span class="c1"># Get the latest y from the stream of ys</span>
+<span class="o">...</span>         <span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ys</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="n">phase</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="o">...</span>         <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</pre></div>
+
+
+<p>But this time,
+because we have phases,
+the doubling example works properly:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="n">NumberStream</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">17</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">doubles</span> <span class="o">=</span> <span class="n">AddStream</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span> <span class="n">numbers</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">doubles</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+<span class="mi">10</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">doubles</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="s2">&quot;green&quot;</span><span class="p">)</span>
+<span class="mi">18</span>
+</pre></div>
+
+
+<p>Huzzah!</p>
+<h2 id="stateful-stream-functions">Stateful stream functions<a class="headerlink" href="#stateful-stream-functions" title="Permanent link">&para;</a></h2>
+<p>So far we&rsquo;ve made stream-based versions
+of pure functions like &ldquo;addition&rdquo;.
+Because addition is a pure function,
+it should not be surprising that stream addition
+maintains the understandable, testable nature
+of the pure functions it&rsquo;s based on.</p>
+<p>However,
+streams implicitly hide a little state
+(the current position in the stream),
+which means we can write stream functions
+that do more than stateless, pure functions can do.
+Accessing arbitrary shared state
+(like global variables)
+still breaks the rules,
+but a stateful stream function
+can keep the understandable, testable nature of pure functions
+as long as
+the stream function always produces the same output stream
+given a particular set of input streams.</p>
+<p>Let&rsquo;s say we have some stream that&rsquo;s intermittent
+(that is,
+sometimes it has a useful value
+and sometimes it just has <code>None</code>),
+and we want a stream that always has a value
+(for example, maybe we want to compare it to some other stream).
+We need to &ldquo;fill the gaps&rdquo; in the input stream
+with some sensible value
+to produce an output stream that always has useful values.</p>
+<p>Here&rsquo;s a stateful stream that does just that:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">GapFiller</span><span class="p">(</span><span class="n">BaseStream</span><span class="p">):</span>
+<span class="o">...</span>     <span class="s2">&quot;Fills gaps in the input stream with the last good value.&quot;</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xs</span><span class="p">):</span>
+<span class="o">...</span>         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+<span class="o">...</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_xs</span> <span class="o">=</span> <span class="n">xs</span>
+<span class="o">...</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_last_good_value</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="nf">_poll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phase</span><span class="p">):</span>
+<span class="o">...</span>         <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_xs</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="n">phase</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="o">...</span>         <span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+<span class="o">...</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_last_good_value</span> <span class="o">=</span> <span class="n">x</span>
+<span class="o">...</span>
+<span class="o">...</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_last_good_value</span>
+</pre></div>
+
+
+<p><code>GapFiller</code> maintains extra state in the form of
+the <code>._last_good_value</code> property,
+but its behaviour is completely determined by the input stream,
+so it&rsquo;s just as easy to test as a plain pure function:</p>
+<div class="codehilite"><pre><span></span>&gt;&gt;&gt; maybe_numbers = NumberStream(5, None, None, 17)
+&gt;&gt;&gt; numbers = GapFiller(maybe_numbers)
+&gt;&gt;&gt; numbers.poll(&quot;blue&quot;)
+5
+&gt;&gt;&gt; numbers.poll(&quot;green&quot;)
+5
+&gt;&gt;&gt; numbers.poll(&quot;blue&quot;)
+5
+&gt;&gt;&gt; numbers.poll(&quot;green&quot;)
+17
+</pre></div>
+
+
+<h1 id="making-it-pretty">Making it pretty<a class="headerlink" href="#making-it-pretty" title="Permanent link">&para;</a></h1>
+<p>At this point,
+we&rsquo;ve got basic FRP functionality working,
+but it&rsquo;s difficult to use:
+creating a new subclass of <code>BaseStream</code>,
+overriding <code>._poll()</code>,
+calling <code>.poll()</code> on our input streams&hellip;
+that&rsquo;s a bunch of boilerplate that obscures
+the actual logic of a stream function.</p>
+<h2 id="a-decorator-for-stream-functions">A decorator for stream functions<a class="headerlink" href="#a-decorator-for-stream-functions" title="Permanent link">&para;</a></h2>
+<p>Let&rsquo;s make a decorator
+that turns a pure function into
+a pure stream function:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">stream_function</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+<span class="o">...</span>     <span class="s2">&quot;Decorates a pure function, making a stream function.&quot;</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="k">class</span> <span class="nc">Inner</span><span class="p">(</span><span class="n">BaseStream</span><span class="p">):</span>
+<span class="o">...</span>         <span class="c1"># We don&#39;t know in advance how many inputs func() takes,</span>
+<span class="o">...</span>         <span class="c1"># so we&#39;ll take any number.</span>
+<span class="o">...</span>         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">inputs</span><span class="p">):</span>
+<span class="o">...</span>             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+<span class="o">...</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_inputs</span> <span class="o">=</span> <span class="n">inputs</span>
+<span class="o">...</span>
+<span class="o">...</span>         <span class="k">def</span> <span class="nf">_poll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phase</span><span class="p">):</span>
+<span class="o">...</span>             <span class="c1"># Poll all the input streams to get their current values.</span>
+<span class="o">...</span>             <span class="n">current_input_values</span> <span class="o">=</span> <span class="p">[</span>
+<span class="o">...</span>                 <span class="n">each</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="n">phase</span><span class="p">)</span>
+<span class="o">...</span>                 <span class="k">for</span> <span class="n">each</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_inputs</span>
+<span class="o">...</span>             <span class="p">]</span>
+<span class="o">...</span>
+<span class="o">...</span>             <span class="c1"># Whatever func() returns, given these values,</span>
+<span class="o">...</span>             <span class="c1"># is the current output stream value.</span>
+<span class="o">...</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">current_input_values</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">Inner</span>
+</pre></div>
+
+
+<p>The <code>Inner</code> class is similar to <code>AddStream</code>,
+except that it handles any number of inputs
+instead of hardcoding exactly two,
+and it calles the wrapped function
+instead of hard-coding <code>x + y</code>.
+Now we can write a stream function
+by writing a pure function
+and decorating it:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="nd">@stream_function</span>
+<span class="o">...</span> <span class="k">def</span> <span class="nf">add_streams</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</pre></div>
+
+
+<p>&hellip;and all the stream-polling
+and phase-handling happens automatically:</p>
+<div class="codehilite"><pre><span></span>&gt;&gt;&gt; numbers = NumberStream(5, 9, 32, 17)
+&gt;&gt;&gt; doubles = add_streams(numbers, numbers)
+&gt;&gt;&gt; doubles.poll(&quot;blue&quot;)
+10
+</pre></div>
+
+
+<p>Huzzah again!</p>
+<h2 id="stateful-stream-functions-too">Stateful stream functions, too!<a class="headerlink" href="#stateful-stream-functions-too" title="Permanent link">&para;</a></h2>
+<p>Although Python generator functions
+can&rsquo;t properly iterate over an FRP stream
+(because they don&rsquo;t pass along the current phase),
+they&rsquo;re a still a convenient way to express resumable calculations.
+If there were some non-iterator-based way
+to feed in new values from input streams,
+they could be quite convenient.</p>
+<p>Luckily,
+Python 2.5 introduced &ldquo;yield expressions&rdquo;,
+where the generator function is paused,
+yields a value,
+and the caller can later pass in a new value
+which will be returned by the yield expression.
+We can use this to write a decorator
+that makes stateful stream functions
+out of generator functions:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">stateful_stream_function</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+<span class="o">...</span>     <span class="s2">&quot;Decorates a generator function, making a stream function.&quot;</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="k">class</span> <span class="nc">Inner</span><span class="p">(</span><span class="n">BaseStream</span><span class="p">):</span>
+<span class="o">...</span>         <span class="c1"># We don&#39;t know in advance how many inputs func() takes,</span>
+<span class="o">...</span>         <span class="c1"># so we&#39;ll take any number.</span>
+<span class="o">...</span>         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">inputs</span><span class="p">):</span>
+<span class="o">...</span>             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+<span class="o">...</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_inputs</span> <span class="o">=</span> <span class="n">inputs</span>
+<span class="o">...</span>
+<span class="o">...</span>             <span class="c1"># We need to store the generator object returned</span>
+<span class="o">...</span>             <span class="c1"># when we call func(), so we can repeatedly resume it.</span>
+<span class="o">...</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_generator</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="o">...</span>
+<span class="o">...</span>         <span class="k">def</span> <span class="nf">_poll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phase</span><span class="p">):</span>
+<span class="o">...</span>             <span class="c1"># Poll all the input streams to get their current values.</span>
+<span class="o">...</span>             <span class="n">current_input_values</span> <span class="o">=</span> <span class="p">[</span>
+<span class="o">...</span>                 <span class="n">each</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="n">phase</span><span class="p">)</span>
+<span class="o">...</span>                 <span class="k">for</span> <span class="n">each</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_inputs</span>
+<span class="o">...</span>             <span class="p">]</span>
+<span class="o">...</span>
+<span class="o">...</span>             <span class="c1"># If we have not yet created the generator object...</span>
+<span class="o">...</span>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_generator</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+<span class="o">...</span>                 <span class="c1"># ...create it, passing the initial input values...</span>
+<span class="o">...</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_generator</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">current_input_values</span><span class="p">)</span>
+<span class="o">...</span>                 <span class="c1"># ...then execute up to the first yield expression.</span>
+<span class="o">...</span>                 <span class="c1"># The yielded value is our first output.</span>
+<span class="o">...</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_generator</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="o">...</span>             <span class="c1"># If we already have a generator object,</span>
+<span class="o">...</span>             <span class="c1"># pass in the next input values and execute up to</span>
+<span class="o">...</span>             <span class="c1"># the next yield expression. The yielded value is</span>
+<span class="o">...</span>             <span class="c1"># our next output.</span>
+<span class="o">...</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_generator</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">current_input_values</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">Inner</span>
+</pre></div>
+
+
+<p>This is more complex than <code>stream_function()</code>
+because it has to deal with Python&rsquo;s generator object API,
+but the basic structure is the same.</p>
+<p>We can re-implement the <code>GapFiller</code> stateful stream function
+as a generator function in this style:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="nd">@stateful_stream_function</span>
+<span class="o">...</span> <span class="k">def</span> <span class="nf">fill_gaps</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="o">...</span>     <span class="n">last_good_value</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="o">...</span>     <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+<span class="o">...</span>         <span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+<span class="o">...</span>             <span class="n">last_good_value</span> <span class="o">=</span> <span class="n">x</span>
+<span class="o">...</span>
+<span class="o">...</span>         <span class="n">x</span><span class="p">,</span> <span class="o">=</span> <span class="k">yield</span> <span class="n">last_good_value</span>
+</pre></div>
+
+
+<p>The initial value for <code>x</code> is passed in as a parameter,
+and subsequent values are returned from the yield expression.</p>
+<p>Note the comma after <code>x</code> in the last line.
+Because <code>stateful_stream_function()</code> is designed to work for
+functions with any number of parameters
+and the generator <code>.send()</code> method only takes a single value,
+we always send a list of input values.
+If this function took multiple inputs,
+we could say:</p>
+<div class="codehilite"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="k">yield</span> <span class="n">whatever</span>
+</pre></div>
+
+
+<p>&hellip;but because it only takes one,
+we need the odd-looking <code>x,</code>
+to unpack the one-item list.</p>
+<p>Although this generator function is not completely
+idiomatic Python,
+it&rsquo;s still straight-forward code,
+and it produces a proper FRP stream:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">maybe_numbers</span> <span class="o">=</span> <span class="n">NumberStream</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">17</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="n">fill_gaps</span><span class="p">(</span><span class="n">maybe_numbers</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+<span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="s2">&quot;green&quot;</span><span class="p">)</span>
+<span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+<span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="s2">&quot;green&quot;</span><span class="p">)</span>
+<span class="mi">17</span>
+</pre></div>
+
+
+<h1 id="how-can-we-do-better">How can we do better?<a class="headerlink" href="#how-can-we-do-better" title="Permanent link">&para;</a></h1>
+<p>FRP is a promising technique,
+and (as demonstrated)
+it can be neatly and ergonomically implmented in Python.
+That said,
+there&rsquo;s a number of potential problems with the implementation shown:</p>
+<ul>
+<li>As far as I know,
+  there&rsquo;s no standard model for handling streams that end,
+  only infinite streams.
+  As you can imagine,
+  in practice streams almost always end
+  for one reason or another.</li>
+<li>If you have more than one independent input stream,
+  like network sockets or a timer,
+  you will need some kind of concurrency framework
+  like <a href="http://twistedmatrix.com/">Twisted Python</a> or <a href="https://docs.python.org/3.5/library/asyncio.html"><code>asyncio</code></a>
+  to manage them.
+  If you figure out
+  how to build an FRP system
+  on top of one of those,
+  I&rsquo;d love to hear about it.</li>
+<li>This implementation runs the entire stream network in lock-step,
+  requiring every input stream
+  to produce a new value at the same time.
+  You might have input streams that produce values at different rates.</li>
+<li>The <code>stream_function()</code> and <code>stateful_stream_function()</code> decorators
+  make no attempt to handle keyword-arguments,
+  or keyword-only arguments,
+  or anything besides plain positional arguments.</li>
+<li>The <code>stream_function()</code> and <code>stateful_stream_function()</code> decorators
+  require every argument to be a stream.
+  If you want some parameters to be constant,
+  you have to wrap them in
+  a stream that returns the same value forever.
+  That&rsquo;s understandable,
+  but clunky to use.</li>
+</ul>
+<p>For the specific use-case I had in mind
+(a single input stream,
+namely <code>window.get_wch()</code> in the <code>curses</code> module),
+none of these limitations affected me,
+but your mileage may vary.</p>
+<p>If you have comments or questions,
+you can discuss this post on
+<a href="https://lobste.rs/s/9lkn9j/exploring_functional_reactive">Lobste.rs</a>,
+<a href="https://news.ycombinator.com/item?id=14373405">Hacker News</a>,
+or <a href="https://www.reddit.com/r/Python/comments/6c1z3f/exploring_functional_reactive_programming_in/">/r/Python</a>.</p>    </body>
+</html>

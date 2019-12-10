@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rule IF</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script type="text/javascript">
+"use strict";
+
+var unnamed_count = 0;
+
+function Thing(config) {
+    this.shortdesc = "Unnamed " + unnamed_count;
+    unnamed_count += 1;
+
+    this.supported = [];
+    this.contained = [];
+    this.transparent = false;
+    this.open = false;
+    this.parent = null;
+
+    var key;
+    for (key in config) {
+        this[key] = config[key];
+    }
+
+    for (key in this.supported) {
+        this.supported[key].parent = this;
+    }
+    for (key in this.contained) {
+        this.contained[key].parent = this;
+    }
+}
+
+// Is this thing called by this name?
+Thing.prototype.answersToName = function (name) {
+    return this.shortdesc === name;
+}
+
+// Get a thing with the given name from inside this thing.
+Thing.prototype.getThingsByName = function (name) {
+    var key, item, res = [];
+    var allItems = this.supported.concat(this.contained);
+    for (key in allItems) {
+        item = allItems[key];
+
+        if (item.answersToName(name)) res.push(item);
+
+        if (res.open || res.transparent) {
+            res = res.concat(res.getThingByName(name));
+        }
+    }
+
+    return res;
+}
+
+// Get a thing with the given name from our inventory or our immediate environs.
+Thing.prototype.findThingsByName = function (name) {
+    // If we have this in our inventory, cool.
+    var res = this.getThingsByName(name);
+
+    // Otherwise, examine all the other things nearby.
+    return res.concat(this.parent.getThingsByName(name));
+}
+
+function Room(config) {
+    Thing.call(this, config);
+}
+Room.prototype = new Thing();
+
+function Person(config) {
+    Thing.call(this, config);
+}
+Person.prototype = new Thing();
+
+var player = new Person({shortdesc: "the player"})
+var startroom = new Room({
+    shortdesc: "The Inky Void",
+    contained: [
+        player, 
+        new Thing({shortdesc: "a trinket"})
+    ]
+});
+
+var rulebook = [
+    {
+        action: "examine",
+        dobj: function () { return this instanceof Room },
+        result: function (output) {
+            output.write(this.parent.shortdesc + "\n");
+            output.write("So dark you couldn't see your hand in front of " +
+                    "your face, if you had either or both.\n");
+            if (this.parent.contained.length) {
+                output.write("You see ");
+
+                for (var key in this.parent.contained) {
+                    if (this.parent.contained[key] === this) continue;
+                    output.write(this.parent.contained[key].shortdesc + ", ");
+                }
+                output.write("here.\n");
+            }
+        }
+    },
+    {
+        action: "examine",
+        dobj: "a trinket",
+        result: "It glints in the reflected light of nothing in particular."
+    },
+    {result: "Huh?\n"}
+]
+
+function testRuleCond(target, cond) {
+    // If this rule doesn't care about this particular field, return 1
+    if (cond === null) return 1;
+    else if (typeof(cond) === "undefined") return 1;
+
+    // If this rule matches this particular field, return 10.
+    else if (cond === target) return 10;
+    else if (typeof(cond) === "function" && cond.call(target)) return 10;
+    else if (typeof(cond) === "string" && target.answersToName(cond)) return 10;
+    else if (cond instanceof String && target.answersToName(cond)) return 10;
+
+    // If this rule doesn't match, return -1.
+    else return -1;
+}
+
+function dispatchAction(actor, action, dobj, iobj, output) {
+    var best_score = 0;
+    var best_rule = null;
+
+    for (var i = 0; i < rulebook.length; i++) {
+        var rule = rulebook[i];
+        var score = 0;
+        var extraScore;
+
+        extraScore = testRuleCond(actor, rule.actor);
+        if (extraScore === -1) continue;
+        score += extraScore;
+
+        extraScore = testRuleCond(action, rule.action);
+        if (extraScore === -1) continue;
+        score += extraScore;
+
+        extraScore = testRuleCond(dobj, rule.dobj);
+        if (extraScore === -1) continue;
+        score += extraScore;
+
+        extraScore = testRuleCond(iobj, rule.iobj);
+        if (extraScore === -1) continue;
+        score += extraScore;
+
+        console.debug("Rule " + i + " got score " + score);
+
+        if (score > best_score) {
+            best_score = score;
+            best_rule = rule;
+        }
+    }
+
+    if (typeof(best_rule.result) === "function") {
+        best_rule.result.call(actor, output);
+    } else {
+        output.write(best_rule.result);
+    }
+}
+
+function Output () {
+    this.write = function (data) {
+        var dest = document.getElementsByTagName("pre")[0];
+        dest.appendChild(new Text(data));
+    };
+}
+
+var output = new Output();
+
+        </script>
+    </head>
+    <body>
+        <p>Try typing 'dispatchAction(player, "examine", startroom, null,
+        output)' in your browser's debug console.</p>
+        <pre></pre>
+    </body>
+</html>

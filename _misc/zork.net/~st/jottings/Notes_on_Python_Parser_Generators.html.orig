@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Notes on Python Parser Generators - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
+<p>So, I&rsquo;ve been reading through the OMeta documentation (by which I mean the PhD thesis linked from the OMeta web-page, titled &ldquo;Experimenting with Programming Languages&rdquo;) and trying to figure out how best to fit these ideas into Python. It&rsquo;s not as natural and easy a fit as I&rsquo;d like, let&rsquo;s see if I can organise my ideas more effectively by writing them down.</p>
+<h1 id="funky-things-in-ometa">Funky things in OMeta<a class="headerlink" href="#funky-things-in-ometa" title="Permanent link">&para;</a></h1>
+<p>So far I&rsquo;ve practised by writing an ordinary PEG parser in Python (based on the Wikipedia article about PEG parsers) and that was easy enough, so I&rsquo;ll try to concentrate on things where OMeta goes beyond basic PEG parsing.</p>
+<h2 id="matching-against-multiple-arbitrary-data-streams">Matching against multiple, arbitrary data streams<a class="headerlink" href="#matching-against-multiple-arbitrary-data-streams" title="Permanent link">&para;</a></h2>
+<p>This is going to make memoization for packrat-parsing difficult. Also, it means rules can&rsquo;t just take &ldquo;position&rdquo; as an input parameter; they need to know which sequence they&rsquo;re in.</p>
+<h2 id="ometa-really-wants-to-help-parse-source-files">OMeta <em>really</em> wants to help parse source files<a class="headerlink" href="#ometa-really-wants-to-help-parse-source-files" title="Permanent link">&para;</a></h2>
+<p>As a meta-circular language, OMeta <em>really</em> wants the world to be based on an OMeta parser. Ideally, the host language would have something like Scheme macros, where the host language allows arbitrary code to hook into the parser, the OMeta engine can read OMeta code and compile it into the host-language&rsquo;s AST, then the host language&rsquo;s parser can take that and continue. Python doesn&rsquo;t really work like that, and doesn&rsquo;t have any hooks to let you emulate it.</p>
+<p>Python&rsquo;s basic concession to meta-programming is the &ldquo;metaclass&rdquo;, but that just lets you tinker with the class&rsquo; dictionary before the class is defined; you don&rsquo;t get the class&rsquo; AST or any information about line-numbers, etc. In particular, if your metaclass adds new methods to the class, the code in those methods is probably going to see global variables from the <em>metaclass&rsquo;</em> module, not from the module that defined the class.</p>
+<p>Alternatively, you might be able to peek up the stack to find the filename being executed, then write your own Python parser in OMeta and use that to parse the file, then dig out the definitions you need&hellip; but no, that&rsquo;s terrible.</p>
+<p>Perhaps you could supply a custom <code>importOMeta()</code> function that takes the filename of a file containing only OMeta code, parses that into a Python module containing a single class definition, and then hands you the module object. So you could say:</p>
+<div class="codehilite"><pre><span></span><span class="n">parserlib</span> <span class="o">=</span> <span class="n">importOMeta</span><span class="p">(</span><span class="s2">&quot;parserlib.ometa&quot;</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">parserlib</span><span class="o">.</span><span class="n">IntParser</span><span class="p">(</span><span class="s2">&quot;0xff&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>&hellip;but that would make it difficult to have OMeta code access names from the Python environment (for the semantic-predicate and semantic-action operators, as well as the <code>foreign</code> rule that calls other grammars).</p>
+<p>I&rsquo;m thinking perhaps the least offensive API would be to say something like this:</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">MyParser</span><span class="p">(</span><span class="n">BaseParser</span><span class="p">):</span>
+    <span class="n">__grammar</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">        digit = &#39;0&#39; | &#39;1&#39; | &#39;2&#39; | &#39;3&#39; | &#39;4&#39; | &#39;5&#39; | &#39;6&#39; | &#39;7&#39; | &#39;8&#39; | &#39;9&#39;</span>
+<span class="s2">        integer = digit+:x -&gt; int(x)</span>
+<span class="s2">        &quot;&quot;&quot;</span>
+</pre></div>
+
+
+<p>&hellip;then the functions created from the grammar can have their filename set to something like &ldquo;<code>&lt;MyParser grammar&gt;</code> and even if your IDE can&rsquo;t automatically jump to <em>exactly</em> the correct spot, you should be able to figure things out.</p>
+<h2 id="rule-values-semantic-actions-and-predicates">Rule Values, Semantic Actions and Predicates<a class="headerlink" href="#rule-values-semantic-actions-and-predicates" title="Permanent link">&para;</a></h2>
+<p>This seems simple enough - just parse a Python expression from the string. But Python&rsquo;s standard library doesn&rsquo;t include a function for parsing an expression from an offset within a string, just for parsing an entire string as an expression. We could use the Magic of OMeta to add support for the full Python expression syntax, but that would have to be kept up-to-date as the Python language changes, and that&rsquo;s a drag.</p>
+<p>It occurs to me that if we just teach OMeta about Python string syntax, we can probably get away with a cheap hack where we just match brackets, except for brackets that occur inside string literals (but string literals&rsquo; quotes need to be balanced too). That&rsquo;s not <em>quite</em> as much help for Rule Values (since they don&rsquo;t have any enclosing brackets or parentheses), but I&rsquo;m sure there&rsquo;s some way to figure out where they end (next newline character?).</p>
+<p>I think the parameters to parameterized rules are supposed to be host-language expressions, too.</p>
+<h2 id="matching-objects">Matching Objects<a class="headerlink" href="#matching-objects" title="Permanent link">&para;</a></h2>
+<p>In OMeta&rsquo;s original host language, which was Scheme-like, giving special precedence to lists is perfectly reasonable, because every data-structure in Scheme is built from lists. In Python, where you have lists and dicts and arbitrarily-complicated objects, maybe this isn&rsquo;t such a useful idea.</p>
+<p>Perhaps we could say &ldquo;an OMeta list rule matches if we can call <code>iter()</code> on the next object in the stream&rdquo;, but in order for backtracking to work, we need random access to the sequence.</p>
+<p>Perhaps we could say &ldquo;an OMeta list rule matches the next object in the stream (<code>O</code>) if <code>isinstance(O, list)</code> is true&rdquo;. That would suit the OMeta grammar nicely, but make it pretty useless for parsing most Python data structures. Better yet, <code>isinstance(O, tuple)</code>, so that we can store the sequence, position, and rule-name in a dictionary for our packrat implementation.</p>
+<p>As a (very) specific use-case, I&rsquo;m thinking about parsing Python AST nodes, which are objects with an unordered (or at least, very implicitly ordered) list of properties. You might be able to parse AST nodes with OMeta if you transformed the AST into a Scheme-style tree of lists, but the decorate/undecorate boilerplate would make this approach pretty ugly.</p>
+<h2 id="pattern-matching-on-rule-arguments">Pattern Matching on Rule Arguments<a class="headerlink" href="#pattern-matching-on-rule-arguments" title="Permanent link">&para;</a></h2>
+<p>Oww. Obviously Python has nothing approaching &ldquo;method dispatch on number and type of arguments&rdquo;, so implementing this along-side &ldquo;rules are native methods&rdquo; would be hella-difficult. The OMeta spec says that for a rule with multiple definitions, each definition is tried in order until one of the matches, but I don&rsquo;t really know how such a thing might be achieved.</p>
+<p>If you call a rule with the wrong <em>number</em> of arguments, I guess that&rsquo;ll just be a TypeError like in regular Python.</p>
+<h2 id="stateful-pattern-matching">Stateful Pattern Matching<a class="headerlink" href="#stateful-pattern-matching" title="Permanent link">&para;</a></h2>
+<p>We don&rsquo;t need any fancy initialisation rule names in Python, since grammars are classes and Python already provides <code>__init__()</code>.</p>
+<h1 id="proposed-parser-api">Proposed Parser API<a class="headerlink" href="#proposed-parser-api" title="Permanent link">&para;</a></h1>
+<div class="codehilite"><pre><span></span><span class="c1"># Exceptions</span>
+
+<span class="k">class</span> <span class="nc">ParseError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Parent of all possible parsing problem.s</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sequence</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">description</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sequence</span> <span class="o">=</span> <span class="n">sequence</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="n">pos</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="n">description</span>
+
+<span class="k">class</span> <span class="nc">UnrecoverableParseError</span><span class="p">(</span><span class="n">ParseError</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A parsing problem that can&#39;t be solved by back-tracking.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<span class="k">class</span> <span class="nc">BacktrackException</span><span class="p">(</span><span class="n">ParseError</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A parsing problem that might be solved by back-tracking.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<span class="c1"># Support classes</span>
+
+<span class="k">class</span> <span class="nc">Grammar</span><span class="p">(</span><span class="nb">type</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    MetaClass that compiles the __grammar attribute to parser methods.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="n">mcls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">contents</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This will compile the rules in the __grammar attribute to methods.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">match</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">sequence</span><span class="p">,</span> <span class="n">ruleName</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Basic entry point for parsing.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="n">sequence</span><span class="p">)</span>
+        <span class="n">rule</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">parser</span><span class="p">,</span> <span class="s2">&quot;rule_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ruleName</span><span class="p">,))</span>
+        <span class="n">result</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="n">rule</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">result</span>
+
+<span class="k">class</span> <span class="nc">BaseParser</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    All parser classes should inherit from this.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Make sure we invoke the meta-class to define any rules, etc.</span>
+    <span class="vm">__metaclass__</span> <span class="o">==</span> <span class="n">Grammar</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sequence</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">packratCache</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialise the parser state.</span>
+
+<span class="sd">        sequence should be any hashable, immutable sequence (such as</span>
+<span class="sd">        a string or tuple). It will be parsed using the grammar rules of</span>
+<span class="sd">        this class.</span>
+
+<span class="sd">        pos should be an integer, the offset into sequence at which parsing</span>
+<span class="sd">        will begin.</span>
+
+<span class="sd">        packratCache should be a dict object. If not supplied, a fresh,</span>
+<span class="sd">        blank dict will be created.</span>
+
+<span class="sd">        If your grammar needs to store more state, you can override this</span>
+<span class="sd">        but make sure you call the super class!</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sequence</span> <span class="o">=</span> <span class="n">sequence</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pos</span> <span class="o">=</span> <span class="n">pos</span>
+
+        <span class="k">if</span> <span class="n">packratCache</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_packratCache</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_packratCache</span> <span class="o">=</span> <span class="n">packratCache</span>
+
+    <span class="c1"># Basic rules supplied by the implementation.</span>
+
+    <span class="c1"># Note that rule methods must begin with &quot;_rule_&quot; and accept at least</span>
+    <span class="c1"># these basic parameters (if they accept more, they should be called with</span>
+    <span class="c1"># OMeta&#39;s parameterized-rule syntax).</span>
+    <span class="k">def</span> <span class="nf">_rule_anything</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># The &#39;anything&#39; rule accepts anything, but obviously it can&#39;t</span>
+        <span class="c1"># accept anything beyond the end of the sequence!</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pos</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sequence</span><span class="p">):</span>
+            <span class="c1"># Every rule that matches must return a tuple of its result,</span>
+            <span class="c1"># and the number of items it has consumed from the sequence.</span>
+            <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sequence</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_pos</span><span class="p">],</span> <span class="mi">1</span><span class="p">)</span>
+
+        <span class="c1"># If we&#39;re at the end of the sequence, there&#39;s nothing more we can</span>
+        <span class="c1"># do here, so back-track and try something else.</span>
+        <span class="k">raise</span> <span class="n">BacktrackException</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sequence</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pos</span><span class="p">,</span> <span class="s2">&quot;End of file&quot;</span><span class="p">)</span>
+
+    <span class="c1"># The token(x) rule can be invoked explicitly, but is also invoked</span>
+    <span class="c1"># by a string-literal with double-quotes. The default implementation</span>
+    <span class="c1"># skips over any whitespace characters in the sequence, then matches</span>
+    <span class="c1"># the characters from the literal.</span>
+    <span class="k">def</span> <span class="nf">_rule_token</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">token</span><span class="p">):</span>
+        <span class="k">pass</span> <span class="c1"># Not implemented yet.</span>
+
+
+    <span class="c1"># The apply(x) rule applies the rule with the given name.</span>
+    <span class="k">def</span> <span class="nf">_rule_apply</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ruleName</span><span class="p">):</span>
+        <span class="n">rule</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;rule_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ruleName</span><span class="p">,))</span>
+        <span class="n">rule</span><span class="p">()</span>
+
+    <span class="c1"># The foreign(x, y) rule applies the rule in the given grammar with the</span>
+    <span class="c1"># given name.</span>
+    <span class="k">def</span> <span class="nf">_rule_foreign</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">grammar</span><span class="p">,</span> <span class="n">ruleName</span><span class="p">):</span>
+        <span class="n">foreignGrammar</span> <span class="o">=</span> <span class="n">grammar</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sequence</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pos</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_packratCache</span><span class="p">)</span>
+        <span class="n">foreignRule</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">foreignGrammar</span><span class="p">,</span> <span class="s2">&quot;rule_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ruleName</span><span class="p">,))</span>
+        <span class="n">foreignRule</span><span class="p">()</span>
+
+    <span class="c1"># You may have noticed that although rules are defined with names</span>
+    <span class="c1"># beginning &quot;_rule_&quot;, code that looks up rules uses the prefix &quot;rule_&quot;.</span>
+    <span class="c1"># This is because every rule needs to be wrapped in boiler-plate code</span>
+    <span class="c1"># that handles the packrat memoization.</span>
+    <span class="k">def</span> <span class="nf">_call_rule</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ruleName</span><span class="p">):</span>
+        <span class="n">key</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sequence</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pos</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="n">ruleName</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_packratCache</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_packratCache</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="ne">Exception</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="n">value</span>
+            <span class="k">return</span> <span class="n">value</span>
+
+        <span class="n">rule</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;_rule_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ruleName</span><span class="p">,))</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">rule</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_packratCache</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+            <span class="k">return</span> <span class="n">value</span>
+        <span class="k">except</span> <span class="n">ParseError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_packratCache</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">e</span>
+            <span class="k">raise</span>
+
+    <span class="k">def</span> <span class="fm">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;rule_&quot;</span><span class="p">):</span>
+            <span class="k">return</span> <span class="k">lambda</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_rule</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">(</span><span class="n">BaseParser</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__getattr__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</pre></div>    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Building a new PC (2012-07) - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="building-a-new-pc-july-2012-edition">Building a new PC, July 2012 Edition<a class="headerlink" href="#building-a-new-pc-july-2012-edition" title="Permanent link">&para;</a></h1>
+<p>Things I&rsquo;ll need:</p>
+<ul>
+<li><a href="http://www.techbuy.com.au/p/191311/CPU_INTEL_SOCKET_1155/Intel/BX80637I53570K.asp">Intel i5-3570K CPU</a> because it&rsquo;s the cheapest one that comes with HD Graphics 4000 ($282.15)<ul>
+<li>Requires DDR3-1333 or DDR3-1600 RAM</li>
+<li>Requires LGA1155 socketed motherboard</li>
+</ul>
+</li>
+<li>3×500GB hard-drives; a <a href="http://www.techbuy.com.au/p/179151/HDD_INTERNAL_SATA-II_DRIVES/Seagate/ST500DM002.asp">Seagate</a> ($88.90), a <a href="http://www.techbuy.com.au/p/183840/HDD_INTERNAL_SATA-II_DRIVES/Hitachi/0F13178.asp">Hitachi</a> ($91.25) and a <a href="http://www.techbuy.com.au/p/159115/HDD_INTERNAL_SATA-II_DRIVES/Western_Digital/WD5000AAKX.asp">WD</a> ($93.35) to put into a RAID5 for maximum reliability. I quite likely won&rsquo;t be able to fill these before they break.<ul>
+<li>Requires 3×SATA connectors on the motherboard</li>
+<li>Requires 3×3.5&rdquo; internal drive-bays in the case</li>
+</ul>
+</li>
+<li><a href="http://www.techbuy.com.au/p/152038/MEMORY_MEMORY_DDR-3_RAM/Kingston/KVR1333D3N9K2_8G.asp">Kingston 2×4GB DDR3-1333 RAM</a> because hey, why the hell not. ($62.90)<ul>
+<li>Requires two RAM slots on the motherboard</li>
+</ul>
+</li>
+<li><a href="http://www.techbuy.com.au/p/186566/MOTHERBOARD_INTEL_SOCKET_1155/Gigabyte/GA-H61MA-D2V.asp">Gigabyte GA-H61MA-D2V motherboard</a> because it&rsquo;s cheap and has 4 SATA-II connectors. ($67.75)</li>
+<li><a href="http://www.techbuy.com.au/p/167361/CASINGS_MINI-TOWER/Fractal_Design/FD-CA-DEF-MINI-B.asp">Fractal Design &lsquo;Define Mini&rsquo; case</a> is smallish and has been recommended to me as quiet, and has a decent number of internal drive bays. ($153.55)<ul>
+<li>Requires PSU &ldquo;with a depth of maximum circa 170mm, when using bottom 120/140mm fan location.&rdquo;</li>
+</ul>
+</li>
+<li><a href="http://www.techbuy.com.au/p/180504/POWERSUPPLIES_400W_-_499W/Antec/0-761345-10544-6.asp">Antec 450W Basiq PSU</a> is cheapish and has 4 SATA power connectors. ($58.20)</li>
+</ul>
+<p>Intentionally omitted:</p>
+<ul>
+<li>optical drive: We have boot-from-USB-stick technology these days!</li>
+<li>third-party fans/heatsink: I&rsquo;m given to understand that the case in question comes with case-fans, and the CPU should come with a heat-sink. I don&rsquo;t intend to tweak for performance or anything, and I assume that if it runs hot I can buy better fans or a better heat sink later.</li>
+</ul>
+<p>Remaining questions:</p>
+<ul>
+<li>What&rsquo;s missing from the list above (cables, screws, etc.)?</li>
+<li>Is there a better place to buy computer parts from?</li>
+</ul>    </body>
+</html>

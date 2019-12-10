@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+How to limit the length of your bash prompt - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="how-to-limit-the-length-of-your-bash-prompt">How to limit the length of your <code>bash</code> prompt<a class="headerlink" href="#how-to-limit-the-length-of-your-bash-prompt" title="Permanent link">&para;</a></h1>
+<p>Under &ldquo;PROMPTING&rdquo;, the <code>bash</code> manual describes two codes that can be added to the <code>PS1</code> variable to insert information about the current working directory into your prompt:</p>
+<blockquote>
+<dl>
+<dt><code>\w</code></dt>
+<dd>the current working directory, with <code>$HOME</code> abbreviated with a tilde</dd>
+<dt><code>\W</code></dt>
+<dd>the basename of the current working directory, with <code>$HOME</code> abbreviated with a tilde</dd>
+</dl>
+</blockquote>
+<p><code>\w</code> is annoying because it shows the complete path from the root of the directory tree to your current location - if you have deeply nested directory structures (and once you start doing actual work on a decent-sized project you probably will) your prompt can get absurdly long.</p>
+<p><code>\W</code> is annoying because it removes all the context from your current location - if you have several projects lying around and they all have a &ldquo;<code>docs</code>&rdquo; subdirectory, you&rsquo;ve got no way of telling them apart without having to run some other command.</p>
+<p>Wouldn&rsquo;t it be good if there was a way to have your prompt show you a level of detail in between &ldquo;everything&rdquo; and &ldquo;nothing&rdquo;?</p>
+<h1 id="the-pieces">The pieces<a class="headerlink" href="#the-pieces" title="Permanent link">&para;</a></h1>
+<h2 id="getting-the-current-working-directory">Getting the current working directory<a class="headerlink" href="#getting-the-current-working-directory" title="Permanent link">&para;</a></h2>
+<p>Because <code>\w</code> and <code>\W</code> are special codes interpreted by <code>bash</code>&lsquo;s prompt code, you can&rsquo;t work on them like ordinary shell variables. One alternative might be to use command expansion with <code>pwd</code>, or (on linux) clever introspection via <code>/proc/self</code>, but it turns out there&rsquo;s an easier way: bash keeps a record of the current working directory in the magic variable <code>PWD</code>. I call it &ldquo;magic&rdquo; because the shell keeps it up-to-date without you having to manually set it every time. See &ldquo;Shell Variables&rdquo; in the <code>bash</code> manual for other magic variables that bash maintains.</p>
+<h2 id="trimming-a-variable">Trimming a variable<a class="headerlink" href="#trimming-a-variable" title="Permanent link">&para;</a></h2>
+<p>What we really want here is something like Python&rsquo;s string slicing, where you can say &ldquo;give me the last n characters of this variable&rdquo;. Looking at the &ldquo;Parameter Expansion&rdquo; section of the <code>bash</code> manual, we discover Substring Expansion:</p>
+<blockquote>
+<dl>
+<dt><code>${parameter:offset}</code></dt>
+<dt><code>${parameter:offset:length}</code></dt>
+<dd>Expands to up to length characters of parameter starting at the character  specified  by  offset.  If length is omitted, expands to the substring of parameter starting at the character specified by offset. [&hellip;] If offset evaluates to a number less than zero, the value  is  used  as  an offset  from  the  end of the value of parameter.</dd>
+</dl>
+</blockquote>
+<p>Sounds great, let&rsquo;s try it!</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> <span class="nb">echo</span> <span class="nv">$PWD</span>
+<span class="go">/home/st</span>
+<span class="gp">$</span> <span class="nb">echo</span> <span class="si">${</span><span class="nv">PWD</span><span class="p">: -4</span><span class="si">}</span>
+<span class="go">e/st</span>
+<span class="gp">$</span> _
+</pre></div>
+
+
+<p>It works! Or does it&hellip;</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> <span class="nb">echo</span> <span class="si">${</span><span class="nv">PWD</span><span class="p">: -10</span><span class="si">}</span>
+<span class="gp">$</span> _
+</pre></div>
+
+
+<p>It turns out that if you have a string n characters long, asking for the last (n-1) characters will give you (n-1) characters, asking for the last (n) characters will give you (n) characters, but asking for (n+1) or more characters will give you nothing.</p>
+<p>We can get around this by using a temporary variable and the Use Default Values exansion:</p>
+<blockquote>
+<dl>
+<dt><code>${parameter:-word}</code></dt>
+<dd>If parameter is unset or null, the expansion of word is substituted.  Otherwise, the value of  parameter is substituted.</dd>
+</dl>
+</blockquote>
+<p>(clever readers will note that the Substring Expansion examples above very carefully left a space between the &ldquo;:&rdquo; and the negative number, so the shell wouldn&rsquo;t get them confused with Use Default Values expansion)</p>
+<p>Here&rsquo;s our workaround. First, we grab the last however-many characters (10 in this case) if we can:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> <span class="nv">TEMP_PWD</span><span class="o">=</span><span class="si">${</span><span class="nv">PWD</span><span class="p">: -10</span><span class="si">}</span>
+</pre></div>
+
+
+<p>If <code>PWD</code> was less than 10 characters long, <code>TEMP_PWD</code> will be empty. </p>
+<p>If <code>TEMP_PWD</code> is empty, we know <code>PWD</code> was already short enough and we can just set <code>TEMP_PWD</code> to <code>PWD</code>. Otherwise (<code>TMP_PWD</code> is not empty), we must have trimmed something and we can use it as-is:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> <span class="nv">TEMP_PWD</span><span class="o">=</span><span class="si">${</span><span class="nv">TEMP_PWD</span><span class="k">:-</span><span class="nv">$PWD</span><span class="si">}</span>
+<span class="gp">$</span> <span class="nb">echo</span> <span class="nv">$TEMP_PWD</span>
+<span class="go">/home/st</span>
+<span class="gp">$</span> _
+</pre></div>
+
+
+<h2 id="hooking-into-the-shell">Hooking into the shell<a class="headerlink" href="#hooking-into-the-shell" title="Permanent link">&para;</a></h2>
+<p>We have some commands we can run to set up a variable that contains the data we want to display in our prompt, but we need to recalculate it every time the user changes directory. <code>bash</code> doesn&rsquo;t give us useful event-handlers like that, but under &ldquo;Shell Variables&rdquo;, the <code>bash</code> manual describes the <code>PROMPT_COMMAND</code> variable, which can be set to a sequence of commands to be run every time <code>bash</code> is about to display a prompt.</p>
+<h2 id="variables-in-the-prompt">Variables in the prompt<a class="headerlink" href="#variables-in-the-prompt" title="Permanent link">&para;</a></h2>
+<p>There&rsquo;s one final trick to setting a custom prompt: if you just set <code>PS1</code> to include a variable directly, it probably won&rsquo;t do what you expect:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> <span class="nv">PS1</span><span class="o">=</span><span class="s2">&quot;You are in </span><span class="nv">$PWD</span><span class="s2">: &quot;</span>
+<span class="go">You are in /home/st: pwd</span>
+<span class="go">/home/st</span>
+<span class="go">You are in /home/st: cd /</span>
+<span class="go">You are in /home/st: pwd</span>
+<span class="go">/</span>
+<span class="go">You are in /home/st: _</span>
+</pre></div>
+
+
+<p>This is because <code>PWD</code> was expanded at the time you set <code>PS1</code> - if you want the prompt to include the contents of <code>PWD</code> at the time the prompt is displayed, you have to stop <code>bash</code> from expanding the variables at the time you set <code>PS1</code>. The easiest way is just to use single-quotes instead of double-quotes:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> <span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;You are in $PWD: &#39;</span>
+<span class="go">You are in /Users/st: cd /</span>
+<span class="go">You are in /: _</span>
+</pre></div>
+
+
+<h1 id="putting-it-all-together">Putting it all together<a class="headerlink" href="#putting-it-all-together" title="Permanent link">&para;</a></h1>
+<p>Here&rsquo;s what I have in my <code>~/.bashrc</code> that uses all the things mentioned above, plus a few more that should be adequately described in the comments:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># If PS1 is not set at all, this is not an interactive</span>
+<span class="c1"># shell and we should not mess with it.</span>
+<span class="k">if</span> <span class="o">[</span> -n <span class="s2">&quot;</span><span class="nv">$PS1</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="c1"># A temporary variable to contain our prompt command</span>
+    <span class="nv">NEW_PROMPT_COMMAND</span><span class="o">=</span><span class="s1">&#39;</span>
+<span class="s1">        TRIMMED_PWD=${PWD: -40};</span>
+<span class="s1">        TRIMMED_PWD=${TRIMMED_PWD:-$PWD}</span>
+<span class="s1">    &#39;</span>
+
+    <span class="c1"># If there&#39;s an existing prompt command, let&#39;s not </span>
+    <span class="c1"># clobber it</span>
+    <span class="k">if</span> <span class="o">[</span> -n <span class="s2">&quot;</span><span class="nv">$PROMPT_COMMAND</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">do</span>
+        <span class="nv">PROMPT_COMMAND</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$PROMPT_COMMAND</span><span class="s2">;</span><span class="nv">$NEW_PROMPT_COMMAND</span><span class="s2">&quot;</span>
+    <span class="k">else</span>
+        <span class="nv">PROMPT_COMMAND</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$NEW_PROMPT_COMMAND</span><span class="s2">&quot;</span>
+    <span class="k">fi</span>
+
+    <span class="c1"># We&#39;re done with our temporary variable</span>
+    <span class="nb">unset</span> NEW_PROMPT_COMMAND
+
+    <span class="c1"># Set PS1 with our new variable</span>
+    <span class="c1"># \h - hostname, \u - username</span>
+    <span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;\u@\h:$TRIMMED_PWD\$ &#39;</span>
+<span class="k">fi</span>
+</pre></div>
+</td></tr></table>
+
+<p>Note that I&rsquo;ve boosted the trim length up to 40 characters (half the width of a standard terminal window), and introduced some logic to extend <code>PROMPT_COMMAND</code> if it&rsquo;s already set. The simple thing to do would have been:</p>
+<div class="codehilite"><pre><span></span><span class="nv">PROMPT_COMMAND</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$PROMPT_COMMAND</span><span class="s2">; new prompt command&quot;</span>
+</pre></div>
+
+
+<p>&hellip;but if <code>PROMPT_COMMAND</code> is not already set, that gives you a <code>PROMPT_COMMAND</code> beginning with a semicolon, and certain versions of <code>bash</code> complain bitterly about such things.</p>    </body>
+</html>

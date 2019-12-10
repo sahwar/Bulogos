@@ -1,0 +1,24 @@
+#!/bin/sh
+
+cd `dirname "$0"`
+SOURCE=`pwd`
+TARGET="$HOME"
+
+for sourcefile in $SOURCE/* $SOURCE/.*; do
+    basename=`basename "$sourcefile"`
+
+    # Ignore housekeeping entries and other things that aren't useful dotfiles.
+    case "$basename" in
+	install_dotfiles)   continue ;;
+	.git)		    continue ;;
+	..)		    continue ;;
+	.)		    continue ;;
+    esac
+
+    if [ -e "$TARGET/$basename" ]; then
+	echo "file already exists, skipping: $TARGET/$basename"
+	continue
+    fi
+
+    ln -s "$sourcefile" "$TARGET/$basename"
+done

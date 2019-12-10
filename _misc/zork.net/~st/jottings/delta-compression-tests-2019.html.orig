@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Delta Compression tests, 2019 edition - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="delta-compression-tests-2019-edition">Delta Compression tests, 2019 edition<a class="headerlink" href="#delta-compression-tests-2019-edition" title="Permanent link">&para;</a></h1>
+<p>Nearly a decade ago,
+I spent some time learning about delta-compression tools
+and writing a test-harness to compare them.
+Recently,
+some of those tools were updated
+so I decided to update my tests and run them again.</p>
+<div class="toc">
+<ul>
+<li><a href="#delta-compression-tests-2019-edition">Delta Compression tests, 2019 edition</a></li>
+<li><a href="#what-is-delta-compression">What is delta-compression?</a></li>
+<li><a href="#the-contenders">The contenders</a></li>
+<li><a href="#the-tests">The tests</a></li>
+<li><a href="#the-results">The results</a><ul>
+<li><a href="#total-patch-sizes">Total patch sizes</a></li>
+<li><a href="#reverse-patch-sizes">Reverse patch sizes</a></li>
+<li><a href="#patch-sizes-by-use-case">Patch sizes by use-case</a></li>
+<li><a href="#bonus-file-compression">Bonus: File compression</a></li>
+</ul>
+</li>
+<li><a href="#what-about-elapsed-time-or-memory-usage">What about elapsed time or memory usage?</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+</div>
+<h1 id="what-is-delta-compression">What is delta-compression?<a class="headerlink" href="#what-is-delta-compression" title="Permanent link">&para;</a></h1>
+<p>Delta compression is a form of file compression
+that describes the <em>differences</em>
+(traditionally abbreviated as &ldquo;d&rdquo;, or the Greek equivalent, &ldquo;delta&rdquo;)
+between two files.
+If a person already has a copy of version 1 of a file,
+and you want to give them a copy of version 2,
+it can be much more efficient to just send them
+the differences from version 1 to version 2,
+rather than the whole thing.</p>
+<h1 id="the-contenders">The contenders<a class="headerlink" href="#the-contenders" title="Permanent link">&para;</a></h1>
+<p>In my tests, I used the following delta-compression tools:</p>
+<table>
+    <caption>Tested delta-compression tools</caption>
+    <thead>
+        <th>Tool</th>
+        <th>Format</th>
+        <th>Algorithm</th>
+        <th>Notes</th>
+    </thead>
+    <tr>
+        <td><a href="https://byuu.org/tool/beat">beat</a></td>
+        <td>BPS</td>
+        <td>Suffix arrays</td>
+        <td>The latest tool from byuu, the author of bsnes.</td>
+    </tr>
+    <tr>
+        <td><a href="http://www.daemonology.net/bsdiff/">bsdiff</a></td>
+        <td>Custom</td>
+        <td>Suffix arrays</td>
+        <td>Used by Firefox to distribute updates.</td>
+    </tr>
+    <tr>
+        <td>bps</td>
+        <td>BPS</td>
+        <td>brute force</td>
+        <td>The previous tool from byuu, no longer supported.</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/Alcaro/Flips">Flips</a></td>
+        <td>BPS</td>
+        <td>Suffix arrays</td>
+        <td>Also supports the more primitive IPS format.</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://gitlab.com/Screwtapello/python-bps">python-bps</a>
+        </td>
+        <td>BPS</td>
+        <td>hashing</td>
+        <td>My own attempt at writing a BPS comparison tool.</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/jmacd/xdelta/">xdelta3</a></td>
+        <td><a href="https://tools.ietf.org/html/rfc3284">VCDIFF</a></td>
+        <td>Rolling hashes</td>
+        <td>The most popular tool for delta-compression.</td>
+    </tr>
+</table>
+
+<p>I started writing python-bps
+to experiment with different delta-compression algorithms,
+and wrote the test-harness
+so I could easily compare my own code to others&rsquo;.
+The new entries in the 2019 edition
+are beat and Flips;
+the others are the same as before.</p>
+<h1 id="the-tests">The tests<a class="headerlink" href="#the-tests" title="Permanent link">&para;</a></h1>
+<p>I collected various pairs of slightly modified files,
+used each tool to compare the source and target,
+and recorded the size of the resulting patch file.</p>
+<dl>
+<dt>bsnes</dt>
+<dd>compares the Windows executable for bsnes v071
+with the executable for v072.
+This is a simple &ldquo;recompiled binary&rdquo; scenario.</dd>
+<dt>bsnes-compression</dt>
+<dd>compares a file containing a single newline
+with the executable for bsnes v072.</dd>
+<dt>der-langrisser</dt>
+<dd>compares Der Langrisser for the Super Famicom (revision 1)
+with the fan-translated version, which 50% larger.
+This is the &ldquo;hand-modified binary&rdquo; scenario.</dd>
+<dt>dkc2</dt>
+<dd>compares the original American version of Donkey Kong Country 2
+with the first revision.
+This is the &ldquo;recompiled binary&rdquo; scenario again,
+but for a different platform.</dd>
+<dt>mother3</dt>
+<dd>compares the Japanese version of Mother 3 for the Game Boy Advance
+with the fan-translated version.
+This is the &ldquo;hand-modified binary&rdquo; scenario again,
+but for a much more invasive change
+(since the target the same size as the source).</dd>
+<dt>mystic-ark</dt>
+<dd>compares Mystic Ark for the Super Famicom
+with the fan-translated version.
+This is the &ldquo;hand-modified binary&rdquo; scenario again.</dd>
+<dt>netscape-binary</dt>
+<dd>compares the executable for Netscape Communicator version 4.74 for Linux
+with version 4.77.
+This is the &ldquo;recompiled binary&rdquo; scenario again,
+but for a different platform.</dd>
+<dt>simple-extension</dt>
+<dd>compares a file containing &ldquo;A&rdquo;
+with a file containing &ldquo;A&rdquo; followed by NUL.
+This is a basic sanity check.</dd>
+<dt>synthetic-large</dt>
+<dd>takes 8MB of random data from <code>/dev/urandom</code> as the source,
+and generates the target by randomly copy/pasting chunks of it.</dd>
+<dt>synthetic-medium</dt>
+<dd>is like synthetic-large, but with only 2MB of data.</dd>
+<dt>synthetic-small</dt>
+<dd>is like synthetic-large, but with only 512KB of data.</dd>
+<dt>zdelta-benchmark1-emacs</dt>
+<dd>compares tarballs of two versions of GNU Emacs.
+This test case was taken from the paper
+&ldquo;Delta Algorithms: An Empirical Analysis&rdquo; by Hunt, Vo, and Tichy
+(ACM Transactions on Software Engineering and Methodology, 1998).
+This is the &ldquo;hand-modified source&rdquo; scenario.</dd>
+<dt>zdelta-benchmark1-gcc</dt>
+<dd>compares tarballs of two versions of the GNU Compiler Collection.
+This test was taken from the same paper.
+This is the &ldquo;hand-modified source&rdquo; scenario again.</dd>
+<dt>zdelta-benchmark2-tar625-1M</dt>
+<dd>compares two randomly-generated ~1MB files with a similarity of 62.5%.
+This test was taken from the same paper.</dd>
+<dt>zdelta-benchmark2-tar800-1M</dt>
+<dd>compares two randomly-generated ~1MB files with a similarity of 80%.
+This test was taken from the same paper.</dd>
+<dt>zdelta-benchmark2-tar915-1M</dt>
+<dd>compares two randomly-generated ~1MB files with a similarity of 91.5%.
+This test was taken from the same paper.</dd>
+</dl>
+<p>In addition,
+many tests have a &ldquo;rev&rdquo; variant,
+which reverses the source and target files.</p>
+<h1 id="the-results">The results<a class="headerlink" href="#the-results" title="Permanent link">&para;</a></h1>
+<p>In case you want to run tests for yourself,
+or even submit your own,
+I&rsquo;ve published my test harness
+as a <a href="https://gitlab.com/Screwtapello/delta-compression-tests">git repo</a>.
+Note that for legal reasons,
+the repo does not contain every testcase listed above,
+just the ones that can be legally distributed.</p>
+<p>The test harness runs every tool for every test,
+and produces a tab-separated values file
+listing the size of every patch,
+and the tool and test involved.
+This file can be loaded into your favourite spreadsheet or database tool
+so you can analyse it as you like.</p>
+<h2 id="total-patch-sizes">Total patch sizes<a class="headerlink" href="#total-patch-sizes" title="Permanent link">&para;</a></h2>
+<p>Let&rsquo;s start with the total size of all the patches generated by each tool:</p>
+<table>
+    <caption>Total uncompressed patch sizes</caption>
+    <thead>
+        <th>Size</th>
+        <th>Tool</th>
+    </thead>
+    <tbody>
+        <TR><TD class="number"> 7,934,971</TD> <TD>bsdiff</TD> </TR>
+        <TR><TD class="number"> 9,787,718</TD> <TD>xdelta3-9</TD> </TR>
+        <TR><TD class="number">10,695,964</TD> <TD>flips</TD> </TR>
+        <TR><TD class="number">11,263,992</TD> <TD>beat</TD> </TR>
+        <TR><TD class="number">11,667,963</TD> <TD>byuu-bps</TD> </TR>
+        <TR><TD class="number">12,349,692</TD> <TD>xdelta3-0</TD> </TR>
+        <TR><TD class="number">18,711,680</TD> <TD>python-bps</TD> </TR>
+    </tbody>
+</table>
+
+<p>Note that xdelta appears twice in the table.
+Unlike other formats,
+the VCDIFF format supports optional internal compression,
+and xdelta allows the amount of compression to be tweaked.
+&ldquo;xdelta3 -0&rdquo; disables the internal compression,
+while &ldquo;xdelta3 -9&rdquo; compresses as much as possible.
+Clearly this helps xdelta3 quite a bit,
+so let&rsquo;s run the patches through gzip
+to see if that changes anything.</p>
+<table>
+    <caption>Total compressed patch sizes</caption>
+    <thead>
+        <th>Size</th>
+        <th>Tool</th>
+    </thead>
+    <tbody>
+        <TR><TD class="number"> 7,932,612</TD> <TD>bsdiff.gz</TD> </TR>
+        <TR><TD class="number"> 9,588,976</TD> <TD>flips.gz</TD> </TR>
+        <TR><TD class="number"> 9,790,203</TD> <TD>xdelta3-9.gz</TD> </TR>
+        <TR><TD class="number">10,198,987</TD> <TD>beat.gz</TD> </TR>
+        <TR><TD class="number">10,541,049</TD> <TD>byuu-bps.gz</TD> </TR>
+        <TR><TD class="number">11,470,947</TD> <TD>python-bps.gz</TD> </TR>
+        <TR><TD class="number">12,351,408</TD> <TD>xdelta3-0.gz</TD> </TR>
+    </tbody>
+</table>
+
+<p>&ldquo;xdelta3 -9&rdquo; doesn&rsquo;t change much at all,
+as expected since it&rsquo;s already compressed.</p>
+<p>&ldquo;bsdiff&rdquo; also doesn&rsquo;t change much,
+since it is also already compressed.
+Unlike xdelta3,
+compression isn&rsquo;t optional for bsdiff,
+so there&rsquo;s no compression-disabled variant.</p>
+<p>It looks like all the BPS-based tools
+(flips, beat, byuu-bps and python-bps)
+aren&rsquo;t as efficient as they could be,
+since gzip shaves about a megabyte off the total for each one.</p>
+<p>Weirdly, the uncompressed &ldquo;xdelta3 -0&rdquo; gets <em>bigger</em>.
+I guess the delta-compression information
+is stored in a way that naive gzip can&rsquo;t compress,
+which is why the format supports internal compression.</p>
+<h2 id="reverse-patch-sizes">Reverse patch sizes<a class="headerlink" href="#reverse-patch-sizes" title="Permanent link">&para;</a></h2>
+<p>Some tests have &ldquo;forwards&rdquo; and &ldquo;reverse&rdquo; variants,
+where the &ldquo;reverse&rdquo; patch just undoes the effect of the &ldquo;forwards&rdquo; patch.
+Are some tools better at one than the other?</p>
+<table>
+    <caption>Total uncompressed "forward" patch sizes</caption>
+    <thead>
+        <th>Size</th>
+        <th>Tool</th>
+    </thead>
+    <tbody>
+        <TR><TD class="number"> 6,972,622</TD> <TD>bsdiff</TD> </TR>
+        <TR><TD class="number"> 8,063,656</TD> <TD>xdelta3-9</TD> </TR>
+        <TR><TD class="number"> 8,436,037</TD> <TD>flips</TD> </TR>
+        <TR><TD class="number"> 8,793,056</TD> <TD>beat</TD> </TR>
+        <TR><TD class="number"> 9,138,600</TD> <TD>byuu-bps</TD> </TR>
+        <TR><TD class="number">10,028,155</TD> <TD>xdelta3-0</TD> </TR>
+        <TR><TD class="number">15,214,791</TD> <TD>python-bps</TD> </TR>
+    </tbody>
+</table>
+
+<table>
+    <caption>Total uncompressed "reverse" patch sizes</caption>
+    <thead>
+        <th>Size</th>
+        <th>Tool</th>
+    </thead>
+    <tbody>
+        <TR><TD class="number">  962,349</TD> <TD>bsdiff</TD> </TR>
+        <TR><TD class="number">1,724,062</TD> <TD>xdelta3-9</TD> </TR>
+        <TR><TD class="number">2,259,927</TD> <TD>flips</TD> </TR>
+        <TR><TD class="number">2,321,537</TD> <TD>xdelta3-0</TD> </TR>
+        <TR><TD class="number">2,470,936</TD> <TD>beat</TD> </TR>
+        <TR><TD class="number">2,529,363</TD> <TD>byuu-bps</TD> </TR>
+        <TR><TD class="number">3,496,889</TD> <TD>python-bps</TD> </TR>
+    </tbody>
+</table>
+
+<p>The total size of reverse-patches is much smaller than forward patches,
+because there&rsquo;s not as many reverse patches in the corpus.
+The relative performance of each tool is quite consistent,
+except that xdelta3 -0 is much better in reverse than forwards,
+while xdelta3 -9 remains the same.
+Perhaps that&rsquo;s because forward patchse add
+data that needs to be inserted into the file,
+which can benefit from compression,
+while reverse patches tend to remove data,
+and therefore do not benefit as much from compression.</p>
+<h2 id="patch-sizes-by-use-case">Patch sizes by use-case<a class="headerlink" href="#patch-sizes-by-use-case" title="Permanent link">&para;</a></h2>
+<p>Now that we&rsquo;ve establish trends across our entire corpus,
+let&rsquo;s look at the different use-cases for for delta compression.
+Do different tools behave differently
+for the &ldquo;recompiled binary&rdquo; use-case?</p>
+<table>
+    <caption>Total uncompressed "recompiled binary" patch sizes</caption>
+    <thead>
+        <th>Size</th>
+        <th>Tool</th>
+    </thead>
+    <tbody>
+        <TR><TD class="number">  492,739</TD> <TD>bsdiff</TD> </TR>
+        <TR><TD class="number">1,237,717</TD> <TD>xdelta3-9</TD> </TR>
+        <TR><TD class="number">1,676,116</TD> <TD>flips</TD> </TR>
+        <TR><TD class="number">1,821,815</TD> <TD>xdelta3-0</TD> </TR>
+        <TR><TD class="number">1,858,891</TD> <TD>beat</TD> </TR>
+        <TR><TD class="number">1,872,539</TD> <TD>byuu-bps</TD> </TR>
+        <TR><TD class="number">2,547,556</TD> <TD>python-bps</TD> </TR>
+    </tbody>
+</table>
+
+<p>bsdiff is the undisputed champion of this category,
+which is unsurprising since it was specifically designed for such things.</p>
+<p>How about hand-modified binaries?</p>
+<table>
+    <caption>Total uncompressed "hand modified binary" patch sizes</caption>
+    <thead>
+        <th>Size</th>
+        <th>Tool</th>
+    </thead>
+    <tbody>
+        <TR><TD class="number">1,857,705</TD> <TD>xdelta3-0</TD> </TR>
+        <TR><TD class="number">1,862,345</TD> <TD>xdelta3-9</TD> </TR>
+        <TR><TD class="number">1,869,546</TD> <TD>bsdiff</TD> </TR>
+        <TR><TD class="number">1,954,570</TD> <TD>flips</TD> </TR>
+        <TR><TD class="number">1,986,327</TD> <TD>beat</TD> </TR>
+        <TR><TD class="number">2,023,865</TD> <TD>byuu-bps</TD> </TR>
+        <TR><TD class="number">2,177,781</TD> <TD>python-bps</TD> </TR>
+    </tbody>
+</table>
+
+<p>bsdiff falls back into the middle of the pack for hand-modified binaries.
+Somewhat bizarrely,
+the uncompressed xdelta3 -0
+is smaller than every other tool,
+including the compressed xdelta3 -9.
+However,
+all the tools are pretty closely-matched
+in this category,
+so it might not be a significant difference.</p>
+<p>The last major category is &ldquo;hand modified sources&rdquo;:</p>
+<table>
+    <caption>Total uncompressed "hand modified source" patch sizes</caption>
+    <thead>
+        <th>Size</th>
+        <th>Tool</th>
+    </thead>
+    <tbody>
+        <TR><TD class="number">2,386,047</TD> <TD>xdelta3-9</TD> </TR>
+        <TR><TD class="number">2,616,045</TD> <TD>flips</TD> </TR>
+        <TR><TD class="number">2,671,313</TD> <TD>beat</TD> </TR>
+        <TR><TD class="number">2,860,706</TD> <TD>bsdiff</TD> </TR>
+        <TR><TD class="number">2,937,447</TD> <TD>byuu-bps</TD> </TR>
+        <TR><TD class="number">3,350,040</TD> <TD>xdelta3-0</TD> </TR>
+        <TR><TD class="number">7,721,845</TD> <TD>python-bps</TD> </TR>
+    </tbody>
+</table>
+
+<p>For mostly-text data like source-code,
+bsdiff is again mediocre,
+and Flips and beat make a good showing.
+xdelta3 -9 makes the best showing,
+possibly because the new data added into the target file is text,
+and therefore compresses well.</p>
+<h2 id="bonus-file-compression">Bonus: File compression<a class="headerlink" href="#bonus-file-compression" title="Permanent link">&para;</a></h2>
+<p>If you think about it,
+traditional file-compression is just
+a special case of delta-compression
+where the source file is always empty,
+so any delta-compression tool
+should be usable as a regular file-compression tool.
+Just for kicks,
+let&rsquo;s try using our delta-compression tools
+to compresst the bsnes v072 binary from the &ldquo;bsnes&rdquo; test:</p>
+<table>
+    <caption>Compressed bsnes v072 binary size</caption>
+    <thead>
+        <th>Size</th>
+        <th>Tool</th>
+    </thead>
+    <tbody>
+        <TR><TD class="number">  356,530</TD> <TD>xdelta3-0</TD> </TR>
+        <TR><TD class="number">  397,620</TD> <TD>xdelta3-9</TD> </TR>
+        <TR><TD class="number">  401,225</TD> <TD>bsdiff</TD> </TR>
+        <TR><TD class="number">  546,702</TD> <TD>flips</TD> </TR>
+        <TR><TD class="number">  575,797</TD> <TD>beat</TD> </TR>
+        <TR><TD class="number">  603,691</TD> <TD>byuu-bps</TD> </TR>
+        <TR><TD class="number">1,124,889</TD> <TD>python-bps</TD> </TR>
+    </tbody>
+</table>
+
+<p>For comparison,
+the uncompressed file is 1.1MiB,
+and gzip -9 compresses it to ~400KiB.
+Surprisingly,
+xdelta3 beats everything else,
+including gzip.
+Even more surprisingly,
+xdelta3 -0 beats xdelta3 -9.
+I could not begin to imagine how.</p>
+<h1 id="what-about-elapsed-time-or-memory-usage">What about elapsed time or memory usage?<a class="headerlink" href="#what-about-elapsed-time-or-memory-usage" title="Permanent link">&para;</a></h1>
+<p>Total patch size is an important measurement
+for any kind of file compression,
+but not the only one.
+If a particular tool can generate super-tightly compressed files,
+but requires a gigabyte of RAM for each kilobyte of the source file,
+or takes days to run,
+it may not be worth the effort.</p>
+<p>Unfortunately,
+my test harness does not record elapsed time or memory usage,
+so I can&rsquo;t provide those numbers here.
+However, while running the tests
+I observed the following:</p>
+<ul>
+<li>Every tool whose algorithm involves suffix arrays
+    uses quite a bit of RAM to store the suffix array.</li>
+<li>Because it uses rolling hashes,
+    xdelta3 is quite RAM-efficient.</li>
+<li>&ldquo;byuu-bps&rdquo; is quite slow,
+    because of its brute-force algorithm,
+    and &ldquo;python-bps&rdquo; is hilariously slow,
+    because of Python.</li>
+<li>Every other tool is acceptably fast.</li>
+</ul>
+<h1 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h1>
+<p>From the numbers we&rsquo;ve seen,
+we can draw a few conclusions:</p>
+<ul>
+<li>
+<p>If you&rsquo;re developing software
+    and want to distribute updates to your users,
+    bsdiff is the only game in town.</p>
+</li>
+<li>
+<p>If you&rsquo;re hand-modifying binaries or source
+    less than a few hundred megabytes in size,
+    Flips produces great patches,
+    and the BPS file-format is the simplest to support in your patcher.</p>
+</li>
+<li>
+<p>If you&rsquo;re hand-modifying binaries like CD or DVD images,
+    you&rsquo;ll probably want xdelta3.</p>
+</li>
+</ul>    </body>
+</html>

@@ -1,0 +1,426 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module snes.core</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="snes.html"><font color="#ffffff">snes</font></a>.core</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href="index.html">index</a><br><a href="file:/home/st/Code/python-snes/snes/core.py">/home/st/Code/python-snes/snes/core.py</a></font></td></tr></table>
+    <p><tt>A&nbsp;Pythonic&nbsp;interface&nbsp;to&nbsp;libsnes&nbsp;functionality.<br>
+&nbsp;<br>
+libsnes&nbsp;only&nbsp;allows&nbsp;one&nbsp;emulated&nbsp;SNES&nbsp;per&nbsp;process,&nbsp;therefore&nbsp;the&nbsp;interface&nbsp;to<br>
+libsnes&nbsp;is&nbsp;a&nbsp;module&nbsp;rather&nbsp;than&nbsp;a&nbsp;class.&nbsp;The&nbsp;usual&nbsp;use&nbsp;of&nbsp;this&nbsp;module&nbsp;runs<br>
+something&nbsp;like&nbsp;this:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;Call&nbsp;the&nbsp;set_*_cb&nbsp;methods&nbsp;to&nbsp;set&nbsp;up&nbsp;the&nbsp;callbacks&nbsp;that&nbsp;will&nbsp;be&nbsp;notified<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when&nbsp;the&nbsp;emulated&nbsp;snes&nbsp;has&nbsp;produced&nbsp;a&nbsp;video&nbsp;frame,&nbsp;audio&nbsp;sample,&nbsp;or<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;needs&nbsp;controller&nbsp;input.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;Call&nbsp;one&nbsp;of&nbsp;the&nbsp;load_cartridge_*&nbsp;methods&nbsp;to&nbsp;give&nbsp;the&nbsp;emulated&nbsp;SNES<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;cartridge&nbsp;image&nbsp;to&nbsp;run.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp;Call&nbsp;<a href="snes.core.html#-run">run</a>()&nbsp;fifty&nbsp;(PAL)&nbsp;or&nbsp;sixty&nbsp;(NTSC)&nbsp;times&nbsp;a&nbsp;second&nbsp;to&nbsp;cause&nbsp;emulation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;occur.&nbsp;Process&nbsp;the&nbsp;output&nbsp;and&nbsp;supply&nbsp;input&nbsp;as&nbsp;the&nbsp;registered<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callbacks&nbsp;are&nbsp;called.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.&nbsp;Call&nbsp;<a href="snes.core.html#-unload">unload</a>()&nbsp;to&nbsp;free&nbsp;the&nbsp;resources&nbsp;associated&nbsp;with&nbsp;the&nbsp;loaded<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cartridge,&nbsp;and&nbsp;return&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;cartridge's&nbsp;non-volatile<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;storage&nbsp;for&nbsp;use&nbsp;with&nbsp;the&nbsp;next&nbsp;session.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.&nbsp;If&nbsp;you&nbsp;want&nbsp;to&nbsp;switch&nbsp;to&nbsp;a&nbsp;different&nbsp;cartridge,&nbsp;call&nbsp;a&nbsp;load_cartridge_*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;method&nbsp;again,&nbsp;and&nbsp;go&nbsp;to&nbsp;step&nbsp;3.<br>
+&nbsp;<br>
+Constants&nbsp;defined&nbsp;in&nbsp;this&nbsp;module:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MEMORY_*&nbsp;constants&nbsp;represent&nbsp;the&nbsp;diffent&nbsp;types&nbsp;of&nbsp;non-volatile&nbsp;storage<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;SNES&nbsp;cartridge&nbsp;can&nbsp;use.&nbsp;Not&nbsp;every&nbsp;cartridge&nbsp;uses&nbsp;every&nbsp;kind&nbsp;of&nbsp;storage,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;some&nbsp;cartridges&nbsp;use&nbsp;no&nbsp;storage&nbsp;at&nbsp;all.&nbsp;These&nbsp;constants&nbsp;are&nbsp;useful&nbsp;for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;indexing&nbsp;into&nbsp;the&nbsp;list&nbsp;returned&nbsp;from&nbsp;<a href="snes.core.html#-unload">unload</a>().<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VALID_MEMORY_TYPES&nbsp;is&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;the&nbsp;valid&nbsp;memory&nbsp;type&nbsp;constants.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PORT_*&nbsp;constants&nbsp;represent&nbsp;the&nbsp;different&nbsp;ports&nbsp;to&nbsp;which&nbsp;controllers&nbsp;can&nbsp;be<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;connected&nbsp;on&nbsp;the&nbsp;SNES.&nbsp;These&nbsp;should&nbsp;be&nbsp;passed&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="snes.core.html#-set_controller_port_device">set_controller_port_device</a>()&nbsp;and&nbsp;will&nbsp;be&nbsp;given&nbsp;to&nbsp;the&nbsp;callback&nbsp;passed&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="snes.core.html#-set_input_state_cb">set_input_state_cb</a>()<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEVICE_*&nbsp;(but&nbsp;not&nbsp;DEVICE_ID_*)&nbsp;constants&nbsp;represent&nbsp;the&nbsp;different&nbsp;kinds&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;controllers&nbsp;that&nbsp;can&nbsp;be&nbsp;connected&nbsp;to&nbsp;a&nbsp;port.&nbsp;These&nbsp;should&nbsp;be&nbsp;passed&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="snes.core.html#-set_controller_port_device">set_controller_port_device</a>()&nbsp;and&nbsp;will&nbsp;be&nbsp;given&nbsp;to&nbsp;the&nbsp;callback&nbsp;passed&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="snes.core.html#-set_input_state_cb">set_input_state_cb</a>()<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEVICE_ID_*&nbsp;constants&nbsp;represent&nbsp;the&nbsp;button&nbsp;and&nbsp;axis&nbsp;inputs&nbsp;on&nbsp;various<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;controllers.&nbsp;They&nbsp;will&nbsp;be&nbsp;given&nbsp;to&nbsp;the&nbsp;callback&nbsp;passed&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="snes.core.html#-set_input_state_cb">set_input_state_cb</a>()</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="snes._snes_wrapper.html">snes._snes_wrapper</a><br>
+</td><td width="25%" valign=top><a href="https://zork.net/~st/python-snes/ctypes.html">ctypes</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="https://zork.net/~st/python-snes/exceptions.html#Exception">exceptions.Exception</a>(<a href="https://zork.net/~st/python-snes/exceptions.html#BaseException">exceptions.BaseException</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="snes.core.html#SNESException">SNESException</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="SNESException">class <strong>SNESException</strong></a>(<a href="https://zork.net/~st/python-snes/exceptions.html#Exception">exceptions.Exception</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Something&nbsp;went&nbsp;wrong&nbsp;with&nbsp;libsnes.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="snes.core.html#SNESException">SNESException</a></dd>
+<dd><a href="https://zork.net/~st/python-snes/exceptions.html#Exception">exceptions.Exception</a></dd>
+<dd><a href="https://zork.net/~st/python-snes/exceptions.html#BaseException">exceptions.BaseException</a></dd>
+<dd><a href="https://zork.net/~st/python-snes/__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="https://zork.net/~st/python-snes/exceptions.html#Exception">exceptions.Exception</a>:<br>
+<dl><dt><a name="SNESException-__init__"><strong>__init__</strong></a>(...)</dt><dd><tt>x.<a href="snes.core.html#SNESException-__init__">__init__</a>(...)&nbsp;initializes&nbsp;x;&nbsp;see&nbsp;x.__class__.__doc__&nbsp;for&nbsp;signature</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="https://zork.net/~st/python-snes/exceptions.html#Exception">exceptions.Exception</a>:<br>
+<dl><dt><strong>__new__</strong> = &lt;built-in method __new__ of type object at 0x8108c0&gt;<dd><tt>T.<a href="snes.core.html#SNESException-__new__">__new__</a>(S,&nbsp;...)&nbsp;-&gt;&nbsp;a&nbsp;new&nbsp;object&nbsp;with&nbsp;type&nbsp;S,&nbsp;a&nbsp;subtype&nbsp;of&nbsp;T</tt></dl>
+
+<hr>
+Methods inherited from <a href="https://zork.net/~st/python-snes/exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><a name="SNESException-__delattr__"><strong>__delattr__</strong></a>(...)</dt><dd><tt>x.<a href="snes.core.html#SNESException-__delattr__">__delattr__</a>('name')&nbsp;&lt;==&gt;&nbsp;del&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="SNESException-__getattribute__"><strong>__getattribute__</strong></a>(...)</dt><dd><tt>x.<a href="snes.core.html#SNESException-__getattribute__">__getattribute__</a>('name')&nbsp;&lt;==&gt;&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="SNESException-__getitem__"><strong>__getitem__</strong></a>(...)</dt><dd><tt>x.<a href="snes.core.html#SNESException-__getitem__">__getitem__</a>(y)&nbsp;&lt;==&gt;&nbsp;x[y]</tt></dd></dl>
+
+<dl><dt><a name="SNESException-__getslice__"><strong>__getslice__</strong></a>(...)</dt><dd><tt>x.<a href="snes.core.html#SNESException-__getslice__">__getslice__</a>(i,&nbsp;j)&nbsp;&lt;==&gt;&nbsp;x[i:j]<br>
+&nbsp;<br>
+Use&nbsp;of&nbsp;negative&nbsp;indices&nbsp;is&nbsp;not&nbsp;supported.</tt></dd></dl>
+
+<dl><dt><a name="SNESException-__reduce__"><strong>__reduce__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="SNESException-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt>x.<a href="snes.core.html#SNESException-__repr__">__repr__</a>()&nbsp;&lt;==&gt;&nbsp;repr(x)</tt></dd></dl>
+
+<dl><dt><a name="SNESException-__setattr__"><strong>__setattr__</strong></a>(...)</dt><dd><tt>x.<a href="snes.core.html#SNESException-__setattr__">__setattr__</a>('name',&nbsp;value)&nbsp;&lt;==&gt;&nbsp;x.name&nbsp;=&nbsp;value</tt></dd></dl>
+
+<dl><dt><a name="SNESException-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="SNESException-__str__"><strong>__str__</strong></a>(...)</dt><dd><tt>x.<a href="snes.core.html#SNESException-__str__">__str__</a>()&nbsp;&lt;==&gt;&nbsp;str(x)</tt></dd></dl>
+
+<dl><dt><a name="SNESException-__unicode__"><strong>__unicode__</strong></a>(...)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="https://zork.net/~st/python-snes/exceptions.html#BaseException">exceptions.BaseException</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+<dl><dt><strong>message</strong></dt>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-cheat_add"><strong>cheat_add</strong></a>(index, code, enabled<font color="#909090">=True</font>)</dt><dd><tt>Stores&nbsp;the&nbsp;given&nbsp;cheat&nbsp;code&nbsp;at&nbsp;the&nbsp;given&nbsp;index&nbsp;in&nbsp;the&nbsp;cheat&nbsp;list.<br>
+&nbsp;<br>
+"index"&nbsp;must&nbsp;be&nbsp;an&nbsp;integer.&nbsp;Only&nbsp;one&nbsp;cheat&nbsp;can&nbsp;be&nbsp;stored&nbsp;at&nbsp;any&nbsp;given<br>
+index.<br>
+&nbsp;<br>
+"code"&nbsp;must&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;a&nbsp;valid&nbsp;Game&nbsp;Genie&nbsp;cheat&nbsp;code,&nbsp;or<br>
+a&nbsp;sequence&nbsp;of&nbsp;them&nbsp;separated&nbsp;with&nbsp;plus&nbsp;signs&nbsp;like&nbsp;"DD62-3B1F+DD12-FA2C".<br>
+&nbsp;<br>
+"enabled"&nbsp;must&nbsp;be&nbsp;a&nbsp;boolean.&nbsp;It&nbsp;determines&nbsp;whether&nbsp;the&nbsp;cheat&nbsp;code&nbsp;is<br>
+enabled&nbsp;or&nbsp;not.</tt></dd></dl>
+ <dl><dt><a name="-cheat_is_enabled"><strong>cheat_is_enabled</strong></a>(index)</dt><dd><tt>Returns&nbsp;true&nbsp;if&nbsp;the&nbsp;cheat&nbsp;at&nbsp;the&nbsp;given&nbsp;index&nbsp;is&nbsp;enabled.<br>
+&nbsp;<br>
+"index"&nbsp;must&nbsp;be&nbsp;an&nbsp;integer&nbsp;previously&nbsp;passed&nbsp;to&nbsp;cheat_add.</tt></dd></dl>
+ <dl><dt><a name="-cheat_remove"><strong>cheat_remove</strong></a>(index)</dt><dd><tt>Removes&nbsp;the&nbsp;cheat&nbsp;at&nbsp;the&nbsp;given&nbsp;index&nbsp;from&nbsp;the&nbsp;cheat&nbsp;list.<br>
+&nbsp;<br>
+"index"&nbsp;must&nbsp;be&nbsp;an&nbsp;integer&nbsp;previously&nbsp;passed&nbsp;to&nbsp;cheat_add.</tt></dd></dl>
+ <dl><dt><a name="-cheat_set_enabled"><strong>cheat_set_enabled</strong></a>(index, enabled)</dt><dd><tt>Enables&nbsp;or&nbsp;disables&nbsp;the&nbsp;cheat&nbsp;at&nbsp;the&nbsp;given&nbsp;index&nbsp;in&nbsp;the&nbsp;cheat&nbsp;list.<br>
+&nbsp;<br>
+"index"&nbsp;must&nbsp;be&nbsp;an&nbsp;integer&nbsp;previously&nbsp;passed&nbsp;to&nbsp;cheat_add.<br>
+&nbsp;<br>
+"enabled"&nbsp;must&nbsp;be&nbsp;a&nbsp;boolean.&nbsp;It&nbsp;determines&nbsp;whether&nbsp;the&nbsp;cheat&nbsp;code&nbsp;is<br>
+enabled&nbsp;or&nbsp;not.</tt></dd></dl>
+ <dl><dt><a name="-load_cartridge_bsx"><strong>load_cartridge_bsx</strong></a>(base_data, slot_data, base_sram<font color="#909090">=None</font>, base_rtc<font color="#909090">=None</font>, bsx_ram<font color="#909090">=None</font>, bsx_pram<font color="#909090">=None</font>, base_mapping<font color="#909090">=None</font>, slot_mapping<font color="#909090">=None</font>)</dt><dd><tt>Load&nbsp;a&nbsp;BS-X&nbsp;slotted&nbsp;cartridge&nbsp;into&nbsp;the&nbsp;emulated&nbsp;SNES.<br>
+&nbsp;<br>
+"base_data"&nbsp;must&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;uncompressed,&nbsp;de-interleaved,<br>
+headerless&nbsp;ROM&nbsp;image&nbsp;of&nbsp;the&nbsp;BS-X&nbsp;base&nbsp;cartridge.<br>
+&nbsp;<br>
+"slot_data"&nbsp;must&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;uncompressed,&nbsp;de-interleaved,<br>
+headerless&nbsp;ROM&nbsp;image&nbsp;of&nbsp;the&nbsp;cartridge&nbsp;loaded&nbsp;inside&nbsp;the&nbsp;BS-X&nbsp;base<br>
+cartridge.<br>
+&nbsp;<br>
+"base_sram"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;SRAM&nbsp;data&nbsp;saved&nbsp;from&nbsp;the<br>
+previous&nbsp;session.&nbsp;If&nbsp;not&nbsp;supplied&nbsp;or&nbsp;None,&nbsp;the&nbsp;cartridge&nbsp;will&nbsp;be&nbsp;given<br>
+a&nbsp;fresh,&nbsp;blank&nbsp;SRAM&nbsp;region.<br>
+&nbsp;<br>
+"base_rtc"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;real-time-clock&nbsp;data&nbsp;saved<br>
+from&nbsp;the&nbsp;previous&nbsp;session.&nbsp;If&nbsp;not&nbsp;supplied&nbsp;or&nbsp;None,&nbsp;the&nbsp;cartridge&nbsp;will&nbsp;be<br>
+given&nbsp;a&nbsp;fresh,&nbsp;blank&nbsp;RTC&nbsp;region&nbsp;(most&nbsp;cartridges&nbsp;don't&nbsp;use&nbsp;an&nbsp;RTC).<br>
+&nbsp;<br>
+"bsx_ram"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;BS-X&nbsp;RAM&nbsp;data&nbsp;saved&nbsp;from&nbsp;the<br>
+previous&nbsp;session.&nbsp;If&nbsp;not&nbsp;supplied&nbsp;or&nbsp;None,&nbsp;the&nbsp;cartridge&nbsp;will&nbsp;be&nbsp;given<br>
+a&nbsp;fresh,&nbsp;blank&nbsp;RAM&nbsp;region.<br>
+&nbsp;<br>
+"bsx_pram"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;BS-X&nbsp;PRAM&nbsp;data&nbsp;saved&nbsp;from&nbsp;the<br>
+previous&nbsp;session.&nbsp;If&nbsp;not&nbsp;supplied&nbsp;or&nbsp;None,&nbsp;the&nbsp;cartridge&nbsp;will&nbsp;be&nbsp;given<br>
+a&nbsp;fresh,&nbsp;blank&nbsp;PRAM&nbsp;region.<br>
+&nbsp;<br>
+"base_mapping"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;an&nbsp;XML&nbsp;document&nbsp;describing&nbsp;the<br>
+memory-mapping&nbsp;for&nbsp;the&nbsp;BS-X&nbsp;base&nbsp;cartridge.&nbsp;If&nbsp;not&nbsp;supplied&nbsp;or&nbsp;None,<br>
+a&nbsp;guessed&nbsp;mapping&nbsp;will&nbsp;be&nbsp;used&nbsp;(the&nbsp;guess&nbsp;should&nbsp;be&nbsp;correct&nbsp;for&nbsp;all<br>
+licenced&nbsp;games&nbsp;released&nbsp;in&nbsp;all&nbsp;regions).<br>
+&nbsp;<br>
+"slot_mapping"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;an&nbsp;XML&nbsp;document&nbsp;describing&nbsp;the<br>
+memory-mapping&nbsp;for&nbsp;the&nbsp;cartridge&nbsp;loaded&nbsp;inside&nbsp;the&nbsp;BS-X&nbsp;base&nbsp;cartridge.&nbsp;If<br>
+not&nbsp;supplied&nbsp;or&nbsp;None,&nbsp;a&nbsp;guessed&nbsp;mapping&nbsp;will&nbsp;be&nbsp;used&nbsp;(the&nbsp;guess&nbsp;should&nbsp;be<br>
+correct&nbsp;for&nbsp;all&nbsp;licenced&nbsp;games&nbsp;released&nbsp;in&nbsp;all&nbsp;regions).<br>
+&nbsp;<br>
+TODO:&nbsp;How&nbsp;on&nbsp;earth&nbsp;is&nbsp;this&nbsp;different&nbsp;from&nbsp;load_cartridge_bsx_slotted?</tt></dd></dl>
+ <dl><dt><a name="-load_cartridge_bsx_slotted"><strong>load_cartridge_bsx_slotted</strong></a>(base_data, slot_data, base_sram<font color="#909090">=None</font>, base_rtc<font color="#909090">=None</font>, bsx_ram<font color="#909090">=None</font>, bsx_pram<font color="#909090">=None</font>, base_mapping<font color="#909090">=None</font>, slot_mapping<font color="#909090">=None</font>)</dt><dd><tt>Load&nbsp;a&nbsp;BS-X&nbsp;slotted&nbsp;cartridge&nbsp;into&nbsp;the&nbsp;emulated&nbsp;SNES.<br>
+&nbsp;<br>
+"base_data"&nbsp;must&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;uncompressed,&nbsp;de-interleaved,<br>
+headerless&nbsp;ROM&nbsp;image&nbsp;of&nbsp;the&nbsp;BS-X&nbsp;base&nbsp;cartridge.<br>
+&nbsp;<br>
+"slot_data"&nbsp;must&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;uncompressed,&nbsp;de-interleaved,<br>
+headerless&nbsp;ROM&nbsp;image&nbsp;of&nbsp;the&nbsp;cartridge&nbsp;loaded&nbsp;inside&nbsp;the&nbsp;BS-X&nbsp;base<br>
+cartridge.<br>
+&nbsp;<br>
+"base_sram"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;SRAM&nbsp;data&nbsp;saved&nbsp;from&nbsp;the<br>
+previous&nbsp;session.&nbsp;If&nbsp;not&nbsp;supplied&nbsp;or&nbsp;None,&nbsp;the&nbsp;cartridge&nbsp;will&nbsp;be&nbsp;given<br>
+a&nbsp;fresh,&nbsp;blank&nbsp;SRAM&nbsp;region.<br>
+&nbsp;<br>
+"base_rtc"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;real-time-clock&nbsp;data&nbsp;saved<br>
+from&nbsp;the&nbsp;previous&nbsp;session.&nbsp;If&nbsp;not&nbsp;supplied&nbsp;or&nbsp;None,&nbsp;the&nbsp;cartridge&nbsp;will&nbsp;be<br>
+given&nbsp;a&nbsp;fresh,&nbsp;blank&nbsp;RTC&nbsp;region&nbsp;(most&nbsp;cartridges&nbsp;don't&nbsp;use&nbsp;an&nbsp;RTC).<br>
+&nbsp;<br>
+TODO:&nbsp;Does&nbsp;the&nbsp;BS-X&nbsp;base&nbsp;cart&nbsp;use&nbsp;SRAM&nbsp;and/or&nbsp;RTC&nbsp;storage?<br>
+&nbsp;<br>
+"bsx_ram"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;BS-X&nbsp;RAM&nbsp;data&nbsp;saved&nbsp;from&nbsp;the<br>
+previous&nbsp;session.&nbsp;If&nbsp;not&nbsp;supplied&nbsp;or&nbsp;None,&nbsp;the&nbsp;cartridge&nbsp;will&nbsp;be&nbsp;given<br>
+a&nbsp;fresh,&nbsp;blank&nbsp;RAM&nbsp;region.<br>
+&nbsp;<br>
+"bsx_pram"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;BS-X&nbsp;PRAM&nbsp;data&nbsp;saved&nbsp;from&nbsp;the<br>
+previous&nbsp;session.&nbsp;If&nbsp;not&nbsp;supplied&nbsp;or&nbsp;None,&nbsp;the&nbsp;cartridge&nbsp;will&nbsp;be&nbsp;given<br>
+a&nbsp;fresh,&nbsp;blank&nbsp;PRAM&nbsp;region.<br>
+&nbsp;<br>
+"base_mapping"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;an&nbsp;XML&nbsp;document&nbsp;describing&nbsp;the<br>
+memory-mapping&nbsp;for&nbsp;the&nbsp;BS-X&nbsp;base&nbsp;cartridge.&nbsp;If&nbsp;not&nbsp;supplied&nbsp;or&nbsp;None,<br>
+a&nbsp;guessed&nbsp;mapping&nbsp;will&nbsp;be&nbsp;used&nbsp;(the&nbsp;guess&nbsp;should&nbsp;be&nbsp;correct&nbsp;for&nbsp;all<br>
+licenced&nbsp;games&nbsp;released&nbsp;in&nbsp;all&nbsp;regions).<br>
+&nbsp;<br>
+"slot_mapping"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;an&nbsp;XML&nbsp;document&nbsp;describing&nbsp;the<br>
+memory-mapping&nbsp;for&nbsp;the&nbsp;cartridge&nbsp;loaded&nbsp;inside&nbsp;the&nbsp;BS-X&nbsp;base&nbsp;cartridge.&nbsp;If<br>
+not&nbsp;supplied&nbsp;or&nbsp;None,&nbsp;a&nbsp;guessed&nbsp;mapping&nbsp;will&nbsp;be&nbsp;used&nbsp;(the&nbsp;guess&nbsp;should&nbsp;be<br>
+correct&nbsp;for&nbsp;all&nbsp;licenced&nbsp;games&nbsp;released&nbsp;in&nbsp;all&nbsp;regions).</tt></dd></dl>
+ <dl><dt><a name="-load_cartridge_normal"><strong>load_cartridge_normal</strong></a>(data, sram<font color="#909090">=None</font>, rtc<font color="#909090">=None</font>, mapping<font color="#909090">=None</font>)</dt><dd><tt>Load&nbsp;an&nbsp;ordinary&nbsp;cartridge&nbsp;into&nbsp;the&nbsp;emulated&nbsp;SNES.<br>
+&nbsp;<br>
+"data"&nbsp;must&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;uncompressed,&nbsp;de-interleaved,<br>
+headerless&nbsp;ROM&nbsp;image.<br>
+&nbsp;<br>
+"sram"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;SRAM&nbsp;data&nbsp;saved&nbsp;from&nbsp;the&nbsp;previous<br>
+session.&nbsp;If&nbsp;not&nbsp;supplied&nbsp;or&nbsp;None,&nbsp;the&nbsp;cartridge&nbsp;will&nbsp;be&nbsp;given&nbsp;a&nbsp;fresh,<br>
+blank&nbsp;SRAM&nbsp;region.<br>
+&nbsp;<br>
+"rtc"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;real-time-clock&nbsp;data&nbsp;saved&nbsp;from&nbsp;the<br>
+previous&nbsp;session.&nbsp;If&nbsp;not&nbsp;supplied&nbsp;or&nbsp;None,&nbsp;the&nbsp;cartridge&nbsp;will&nbsp;be&nbsp;given<br>
+a&nbsp;fresh,&nbsp;blank&nbsp;RTC&nbsp;region&nbsp;(most&nbsp;cartridges&nbsp;don't&nbsp;use&nbsp;an&nbsp;RTC).<br>
+&nbsp;<br>
+"mapping"&nbsp;should&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;an&nbsp;XML&nbsp;document&nbsp;describing&nbsp;the<br>
+required&nbsp;memory-mapping&nbsp;for&nbsp;this&nbsp;cartridge.&nbsp;If&nbsp;not&nbsp;supplied&nbsp;or&nbsp;None,<br>
+a&nbsp;guessed&nbsp;mapping&nbsp;will&nbsp;be&nbsp;used&nbsp;(the&nbsp;guess&nbsp;should&nbsp;be&nbsp;correct&nbsp;for&nbsp;all<br>
+licenced&nbsp;games&nbsp;released&nbsp;in&nbsp;all&nbsp;regions).</tt></dd></dl>
+ <dl><dt><a name="-power"><strong>power</strong></a>()</dt><dd><tt>Turn&nbsp;the&nbsp;emulated&nbsp;SNES&nbsp;off&nbsp;and&nbsp;back&nbsp;on.<br>
+&nbsp;<br>
+Requires&nbsp;that&nbsp;a&nbsp;cartridge&nbsp;be&nbsp;loaded.</tt></dd></dl>
+ <dl><dt><a name="-reset"><strong>reset</strong></a>()</dt><dd><tt>Press&nbsp;the&nbsp;front-panel&nbsp;Reset&nbsp;button&nbsp;on&nbsp;the&nbsp;emulated&nbsp;SNES.<br>
+&nbsp;<br>
+Requires&nbsp;that&nbsp;a&nbsp;cartridge&nbsp;be&nbsp;loaded.</tt></dd></dl>
+ <dl><dt><a name="-run"><strong>run</strong></a>()</dt><dd><tt>Run&nbsp;the&nbsp;emulated&nbsp;SNES&nbsp;for&nbsp;one&nbsp;frame.<br>
+&nbsp;<br>
+Before&nbsp;this&nbsp;function&nbsp;returns,&nbsp;the&nbsp;registered&nbsp;callbacks&nbsp;will&nbsp;be&nbsp;called&nbsp;at<br>
+least&nbsp;once&nbsp;each.<br>
+&nbsp;<br>
+This&nbsp;function&nbsp;should&nbsp;be&nbsp;called&nbsp;fifty&nbsp;(for&nbsp;PAL&nbsp;cartridges)&nbsp;or&nbsp;sixty&nbsp;(for<br>
+NTSC&nbsp;cartridges)&nbsp;times&nbsp;per&nbsp;second&nbsp;for&nbsp;real-time&nbsp;emulation.<br>
+&nbsp;<br>
+Requires&nbsp;that&nbsp;a&nbsp;cartridge&nbsp;be&nbsp;loaded.</tt></dd></dl>
+ <dl><dt><a name="-serialize"><strong>serialize</strong></a>()</dt><dd><tt>Serializes&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;emulated&nbsp;SNES&nbsp;to&nbsp;a&nbsp;string.<br>
+&nbsp;<br>
+This&nbsp;serialized&nbsp;data&nbsp;can&nbsp;be&nbsp;handed&nbsp;to&nbsp;<a href="snes.core.html#-unserialize">unserialize</a>()&nbsp;at&nbsp;a&nbsp;later&nbsp;time&nbsp;to<br>
+resume&nbsp;emulation&nbsp;from&nbsp;this&nbsp;point.<br>
+&nbsp;<br>
+Requires&nbsp;that&nbsp;a&nbsp;cartridge&nbsp;be&nbsp;loaded.</tt></dd></dl>
+ <dl><dt><a name="-set_audio_sample_cb"><strong>set_audio_sample_cb</strong></a>(callback)</dt><dd><tt>Sets&nbsp;the&nbsp;callback&nbsp;that&nbsp;will&nbsp;handle&nbsp;updated&nbsp;audio&nbsp;frames.<br>
+&nbsp;<br>
+The&nbsp;callback&nbsp;should&nbsp;accept&nbsp;the&nbsp;following&nbsp;parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"left"&nbsp;is&nbsp;an&nbsp;integer&nbsp;between&nbsp;0&nbsp;and&nbsp;65535&nbsp;that&nbsp;specifies&nbsp;the&nbsp;volume&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;left&nbsp;audio&nbsp;channel.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"right"&nbsp;is&nbsp;an&nbsp;integer&nbsp;between&nbsp;0&nbsp;and&nbsp;65535&nbsp;that&nbsp;specifies&nbsp;the&nbsp;volume&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;right&nbsp;audio&nbsp;channel.<br>
+&nbsp;<br>
+The&nbsp;callback&nbsp;should&nbsp;return&nbsp;nothing.</tt></dd></dl>
+ <dl><dt><a name="-set_controller_port_device"><strong>set_controller_port_device</strong></a>(port, device)</dt><dd><tt>Connects&nbsp;the&nbsp;given&nbsp;device&nbsp;to&nbsp;the&nbsp;given&nbsp;controller&nbsp;port.<br>
+&nbsp;<br>
+Connecting&nbsp;a&nbsp;device&nbsp;to&nbsp;a&nbsp;port&nbsp;implicitly&nbsp;removes&nbsp;any&nbsp;device&nbsp;previously<br>
+connected&nbsp;to&nbsp;that&nbsp;port.&nbsp;To&nbsp;remove&nbsp;a&nbsp;device&nbsp;without&nbsp;connecting&nbsp;a&nbsp;new&nbsp;one,<br>
+pass&nbsp;DEVICE_NONE&nbsp;as&nbsp;the&nbsp;device&nbsp;parameter.&nbsp;From&nbsp;this&nbsp;point&nbsp;onward,&nbsp;the<br>
+callback&nbsp;passed&nbsp;to&nbsp;<a href="snes.core.html#-set_input_state_cb">set_input_state_cb</a>()&nbsp;will&nbsp;be&nbsp;called&nbsp;with&nbsp;the&nbsp;appropriate<br>
+device,&nbsp;index&nbsp;and&nbsp;id&nbsp;parameters.<br>
+&nbsp;<br>
+If&nbsp;this&nbsp;function&nbsp;is&nbsp;never&nbsp;called,&nbsp;the&nbsp;default&nbsp;is&nbsp;to&nbsp;have&nbsp;no&nbsp;controllers<br>
+connected&nbsp;at&nbsp;all.&nbsp;(TODO:&nbsp;is&nbsp;this&nbsp;true?)<br>
+&nbsp;<br>
+"port"&nbsp;must&nbsp;be&nbsp;one&nbsp;of&nbsp;the&nbsp;PORT_*&nbsp;constants,&nbsp;describing&nbsp;which&nbsp;port&nbsp;the&nbsp;given<br>
+controller&nbsp;will&nbsp;be&nbsp;connected&nbsp;to.<br>
+&nbsp;<br>
+"device"&nbsp;must&nbsp;be&nbsp;one&nbsp;of&nbsp;the&nbsp;DEVICE_*&nbsp;(but&nbsp;not&nbsp;DEVICE_ID_*)&nbsp;constants,<br>
+describing&nbsp;what&nbsp;kind&nbsp;of&nbsp;device&nbsp;will&nbsp;be&nbsp;connected&nbsp;to&nbsp;the&nbsp;given&nbsp;port.<br>
+&nbsp;<br>
+TODO:&nbsp;Is&nbsp;there&nbsp;any&nbsp;time&nbsp;it's&nbsp;not&nbsp;safe&nbsp;to&nbsp;call&nbsp;this&nbsp;method?&nbsp;For&nbsp;example,&nbsp;is<br>
+it&nbsp;safe&nbsp;to&nbsp;call&nbsp;this&nbsp;method&nbsp;from&nbsp;inside&nbsp;the&nbsp;input&nbsp;state&nbsp;callback?</tt></dd></dl>
+ <dl><dt><a name="-set_input_poll_cb"><strong>set_input_poll_cb</strong></a>(callback)</dt><dd><tt>Sets&nbsp;the&nbsp;callback&nbsp;that&nbsp;will&nbsp;check&nbsp;for&nbsp;updated&nbsp;input&nbsp;events.<br>
+&nbsp;<br>
+The&nbsp;callback&nbsp;should&nbsp;accept&nbsp;no&nbsp;parameters&nbsp;and&nbsp;return&nbsp;nothing.&nbsp;It&nbsp;should&nbsp;just<br>
+read&nbsp;new&nbsp;input&nbsp;events&nbsp;and&nbsp;store&nbsp;them&nbsp;somewhere&nbsp;so&nbsp;they&nbsp;can&nbsp;be&nbsp;returned&nbsp;by<br>
+the&nbsp;input&nbsp;state&nbsp;callback.</tt></dd></dl>
+ <dl><dt><a name="-set_input_state_cb"><strong>set_input_state_cb</strong></a>(callback)</dt><dd><tt>Sets&nbsp;the&nbsp;callback&nbsp;that&nbsp;reports&nbsp;the&nbsp;current&nbsp;state&nbsp;of&nbsp;input&nbsp;devices.<br>
+&nbsp;<br>
+The&nbsp;callback&nbsp;should&nbsp;accept&nbsp;the&nbsp;following&nbsp;parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"port"&nbsp;is&nbsp;one&nbsp;of&nbsp;the&nbsp;constants&nbsp;PORT_1&nbsp;or&nbsp;PORT_2,&nbsp;describing&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;controller&nbsp;port&nbsp;is&nbsp;being&nbsp;reported.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"device"&nbsp;is&nbsp;one&nbsp;of&nbsp;the&nbsp;DEVICE_*&nbsp;constants&nbsp;describing&nbsp;which&nbsp;type&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;device&nbsp;is&nbsp;currently&nbsp;connected&nbsp;to&nbsp;the&nbsp;given&nbsp;port.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"index"&nbsp;is&nbsp;a&nbsp;number&nbsp;describing&nbsp;which&nbsp;of&nbsp;the&nbsp;devices&nbsp;connected&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;port&nbsp;is&nbsp;being&nbsp;reported.&nbsp;It's&nbsp;probably&nbsp;only&nbsp;useful&nbsp;for&nbsp;DEVICE_MULTITAP<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;DEVICE_JUSTIFIERS&nbsp;(TODO:&nbsp;check&nbsp;this).<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id"&nbsp;is&nbsp;one&nbsp;of&nbsp;the&nbsp;DEVICE_ID_*&nbsp;constants&nbsp;for&nbsp;the&nbsp;given&nbsp;device,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;describing&nbsp;which&nbsp;button&nbsp;or&nbsp;axis&nbsp;is&nbsp;being&nbsp;reported&nbsp;(for&nbsp;DEVICE_MULTITAP,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use&nbsp;the&nbsp;DEVICE_ID_JOYPAD_*&nbsp;IDs)<br>
+&nbsp;<br>
+The&nbsp;callback&nbsp;should&nbsp;return&nbsp;a&nbsp;number&nbsp;between&nbsp;-32768&nbsp;and&nbsp;32767&nbsp;representing<br>
+the&nbsp;value&nbsp;of&nbsp;the&nbsp;button&nbsp;or&nbsp;axis&nbsp;being&nbsp;reported&nbsp;(TODO:&nbsp;what&nbsp;do&nbsp;button&nbsp;inputs<br>
+return?).</tt></dd></dl>
+ <dl><dt><a name="-set_video_refresh_cb"><strong>set_video_refresh_cb</strong></a>(callback)</dt><dd><tt>Sets&nbsp;the&nbsp;callback&nbsp;that&nbsp;will&nbsp;handle&nbsp;updated&nbsp;video&nbsp;frames.<br>
+&nbsp;<br>
+The&nbsp;callback&nbsp;should&nbsp;accept&nbsp;the&nbsp;following&nbsp;parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"data"&nbsp;is&nbsp;a&nbsp;pointer&nbsp;to&nbsp;the&nbsp;top-left&nbsp;of&nbsp;a&nbsp;512*480&nbsp;array&nbsp;of&nbsp;pixels.&nbsp;Each<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixel&nbsp;is&nbsp;an&nbsp;unsigned,&nbsp;16-bit&nbsp;integer&nbsp;in&nbsp;XBGR1555&nbsp;format.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"width"&nbsp;is&nbsp;the&nbsp;number&nbsp;of&nbsp;pixels&nbsp;in&nbsp;each&nbsp;row&nbsp;of&nbsp;the&nbsp;frame.&nbsp;It&nbsp;can&nbsp;be<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;either&nbsp;256&nbsp;(if&nbsp;the&nbsp;SNES&nbsp;is&nbsp;in&nbsp;"low-res"&nbsp;mode)&nbsp;or&nbsp;512&nbsp;(if&nbsp;the&nbsp;SNES&nbsp;is&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"hi-res"&nbsp;or&nbsp;"psuedo-hi-res"&nbsp;modes).<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"height"&nbsp;is&nbsp;the&nbsp;number&nbsp;of&nbsp;pixel-rows&nbsp;in&nbsp;the&nbsp;frame.&nbsp;It&nbsp;can&nbsp;vary&nbsp;between<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;224&nbsp;and&nbsp;478,&nbsp;depending&nbsp;on&nbsp;whether&nbsp;the&nbsp;SNES&nbsp;has&nbsp;"interlace"&nbsp;and/or<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"overscan"&nbsp;modes&nbsp;enabled.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"hires"&nbsp;is&nbsp;True&nbsp;if&nbsp;this&nbsp;frame&nbsp;is&nbsp;"hi-res"&nbsp;or&nbsp;"pseudo-hi-res".<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"interlace"&nbsp;is&nbsp;True&nbsp;if&nbsp;this&nbsp;frame&nbsp;has&nbsp;"interlace"&nbsp;mode&nbsp;enabled.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"overscan"&nbsp;is&nbsp;True&nbsp;if&nbsp;this&nbsp;frame&nbsp;has&nbsp;"overscan"&nbsp;mode&nbsp;enabled.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"pitch"&nbsp;is&nbsp;the&nbsp;number&nbsp;of&nbsp;pixels&nbsp;from&nbsp;the&nbsp;beginning&nbsp;of&nbsp;one&nbsp;line&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;beginning&nbsp;of&nbsp;the&nbsp;text.&nbsp;In&nbsp;non-interlaced&nbsp;modes,&nbsp;every&nbsp;other&nbsp;line&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;frame-buffer&nbsp;is&nbsp;left&nbsp;blank.<br>
+&nbsp;<br>
+The&nbsp;callback&nbsp;should&nbsp;return&nbsp;nothing.</tt></dd></dl>
+ <dl><dt><a name="-unload"><strong>unload</strong></a>()</dt><dd><tt>Remove&nbsp;the&nbsp;cartridge&nbsp;and&nbsp;return&nbsp;its&nbsp;non-volatile&nbsp;storage&nbsp;contents.<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;list&nbsp;with&nbsp;an&nbsp;entry&nbsp;for&nbsp;each&nbsp;MEMORY_*&nbsp;constant&nbsp;in<br>
+VALID_MEMORY_TYPES.&nbsp;If&nbsp;the&nbsp;current&nbsp;cartridge&nbsp;uses&nbsp;that&nbsp;type&nbsp;of&nbsp;storage,&nbsp;the<br>
+corresponding&nbsp;index&nbsp;in&nbsp;the&nbsp;list&nbsp;will&nbsp;be&nbsp;a&nbsp;string&nbsp;containing&nbsp;the&nbsp;storage<br>
+contents,&nbsp;which&nbsp;can&nbsp;later&nbsp;be&nbsp;passed&nbsp;to&nbsp;load_cartridge_*.&nbsp;Otherwise,&nbsp;the<br>
+corresponding&nbsp;index&nbsp;is&nbsp;None.<br>
+&nbsp;<br>
+Requires&nbsp;that&nbsp;a&nbsp;cartridge&nbsp;be&nbsp;loaded.</tt></dd></dl>
+ <dl><dt><a name="-unserialize"><strong>unserialize</strong></a>(state)</dt><dd><tt>Restores&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;emulated&nbsp;SNES&nbsp;from&nbsp;a&nbsp;string.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;the&nbsp;cartridge's&nbsp;SRAM&nbsp;data&nbsp;is&nbsp;part&nbsp;of&nbsp;the&nbsp;saved&nbsp;state.<br>
+&nbsp;<br>
+Requires&nbsp;that&nbsp;the&nbsp;same&nbsp;cartridge&nbsp;that&nbsp;was&nbsp;loaded&nbsp;when&nbsp;serialize&nbsp;was&nbsp;called,<br>
+be&nbsp;loaded&nbsp;before&nbsp;unserialize&nbsp;is&nbsp;called.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>DEVICE_ID_JOYPAD_A</strong> = 8<br>
+<strong>DEVICE_ID_JOYPAD_B</strong> = 0<br>
+<strong>DEVICE_ID_JOYPAD_DOWN</strong> = 5<br>
+<strong>DEVICE_ID_JOYPAD_L</strong> = 10<br>
+<strong>DEVICE_ID_JOYPAD_LEFT</strong> = 6<br>
+<strong>DEVICE_ID_JOYPAD_R</strong> = 11<br>
+<strong>DEVICE_ID_JOYPAD_RIGHT</strong> = 7<br>
+<strong>DEVICE_ID_JOYPAD_SELECT</strong> = 2<br>
+<strong>DEVICE_ID_JOYPAD_START</strong> = 3<br>
+<strong>DEVICE_ID_JOYPAD_UP</strong> = 4<br>
+<strong>DEVICE_ID_JOYPAD_X</strong> = 9<br>
+<strong>DEVICE_ID_JOYPAD_Y</strong> = 1<br>
+<strong>DEVICE_ID_JUSTIFIER_START</strong> = 3<br>
+<strong>DEVICE_ID_JUSTIFIER_TRIGGER</strong> = 2<br>
+<strong>DEVICE_ID_JUSTIFIER_X</strong> = 0<br>
+<strong>DEVICE_ID_JUSTIFIER_Y</strong> = 1<br>
+<strong>DEVICE_ID_MOUSE_LEFT</strong> = 2<br>
+<strong>DEVICE_ID_MOUSE_RIGHT</strong> = 3<br>
+<strong>DEVICE_ID_MOUSE_X</strong> = 0<br>
+<strong>DEVICE_ID_MOUSE_Y</strong> = 1<br>
+<strong>DEVICE_ID_SUPER_SCOPE_CURSOR</strong> = 3<br>
+<strong>DEVICE_ID_SUPER_SCOPE_PAUSE</strong> = 5<br>
+<strong>DEVICE_ID_SUPER_SCOPE_TRIGGER</strong> = 2<br>
+<strong>DEVICE_ID_SUPER_SCOPE_TURBO</strong> = 4<br>
+<strong>DEVICE_ID_SUPER_SCOPE_X</strong> = 0<br>
+<strong>DEVICE_ID_SUPER_SCOPE_Y</strong> = 1<br>
+<strong>DEVICE_JOYPAD</strong> = 1<br>
+<strong>DEVICE_JUSTIFIER</strong> = 5<br>
+<strong>DEVICE_JUSTIFIERS</strong> = 6<br>
+<strong>DEVICE_MOUSE</strong> = 3<br>
+<strong>DEVICE_MULTITAP</strong> = 2<br>
+<strong>DEVICE_NONE</strong> = 0<br>
+<strong>DEVICE_SUPER_SCOPE</strong> = 4<br>
+<strong>MEMORY_BSX_PRAM</strong> = 3<br>
+<strong>MEMORY_BSX_RAM</strong> = 2<br>
+<strong>MEMORY_CARTRIDGE_RAM</strong> = 0<br>
+<strong>MEMORY_CARTRIDGE_RTC</strong> = 1<br>
+<strong>MEMORY_GAME_BOY_RAM</strong> = 6<br>
+<strong>MEMORY_GAME_BOY_RTC</strong> = 7<br>
+<strong>MEMORY_SUFAMI_TURBO_A_RAM</strong> = 4<br>
+<strong>MEMORY_SUFAMI_TURBO_B_RAM</strong> = 5<br>
+<strong>PORT_1</strong> = False<br>
+<strong>PORT_2</strong> = True<br>
+<strong>VALID_DEVICES</strong> = [0, 1, 2, 3, 4, 5, 6]<br>
+<strong>VALID_MEMORY_TYPES</strong> = [0, 1, 2, 3, 4, 5, 6, 7]</td></tr></table>
+</body></html>

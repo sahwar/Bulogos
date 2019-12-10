@@ -1,0 +1,309 @@
+==================
+GIVE CODE TO WORLD
+==================
+
+--------------------------------------------------------------
+An Essay on the State of Interactive Fiction and Free Software
+--------------------------------------------------------------
+
+.. contents::
+
+.. epigraph::
+
+   ...we want to establish the idea that a computer language is not just a way of getting a computer to perform operations but rather that it is a novel formal medium for expressing ideas about methodology. Thus, programs must be written for people to read, and only incidentally for machines to execute
+
+   -- http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-7.html
+
+My Dilemma
+==========
+
+When I was a child my parents believed computers to be philosophically superior to game consoles, and bought the family a Commodore 128.  They were librarians, and as such were great lovers of books and literature.  They encouraged me to participate in Banned Book Week and they gave me free rein to use their charge account at the University of Washington bookstore.  However firm they stood on any of the sorts of things they denied me, they always wanted me to have access to the written word.
+
+When I asked for a Nintendo they categorically refused, [#]_ opting instead to give me text adventures.  I'd beg for Gauntlet and they'd buy me Planetfall_.  I wheedled for Metroid, but got `A Mind Forever Voyaging`_.  I demanded Zaxxon, but found `The Hitchhiker's Guide To The Galaxy`_ beneath the Christmas tree.  This was the one sort of game that really appealed to their sensibilities.
+
+.. _Planetfall: http://www.ifwiki.org/index.php/Planetfall 
+.. _A Mind Forever Voyaging: http://www.ifwiki.org/index.php/A_Mind_Forever_Voyaging
+.. _The Hitchhiker's Guide To The Galaxy: http://www.ifwiki.org/index.php/The_Hitchhiker%27s_Guide_to_the_Galaxy
+
+In the end I don't really much remember the time spent as a child on neighbors' Nintendos, but I have fond memories of playing Mindwheel_ with my father late into the night.  I used to keep the printer spitting out transcripts of my games to read over lunch breaks at school.  I came to love these games so profoundly that when I registered a vanity domain for myself in the mid-90s I chose ``zork.net``, stunned that it was still available.  
+
+.. _Mindwheel: http://www.ifwiki.org/index.php/Mindwheel 
+
+So here I am, someone with a strong personal connection to `Interactive Fiction`_, someone with the technical ability and desire to create new works, and yet I have stood aside as a conscientious objector to the new IF movement for a decade and a half.  When I mention this to people in either the modern IF community or the Free Software community, I get puzzled reactions.  After all, didn't IF go through a progression from retail software to hobbyist community?  Aren't the biggest users of plain text terminals the Free Software Unix brigade? Shouldn't there be no conflict here?
+
+.. _Interactive Fiction: https://secure.wikimedia.org/wikipedia/en/wiki/Interactive_fiction
+
+What I hope to do in this essay is explain my position and describe the forces and factors behind the current state of IF software.  I will attempt to describe the biases and positions of people I have never met, so that I can show their positions from my own perspective and perhaps show "my people" in the Free Software community why certain decisions seem to have been made.
+
+.. [#] For some reason they bought my younger brother all manner of  console system.  Go figure.
+
+A Little History
+================
+
+I am going to dispense with the boilerplate here and assume that you have either purchased or downloaded the excellent `Get Lamp`_ documentary.  With that bit of nostalgia-something in your eye, let me boil down the story of the 1990s IF renaissance to the bits most relevant to my dilemma.
+
+.. _Get Lamp: http://getlamp.com
+
+There are two pieces of software most relevant to the IF author in 2010: Inform_ and TADS_. [#]_
+
+.. [#] http://www.inform-fiction.org/manual/html/s46.html#p369
+.. _Inform: http://inform7.com
+.. _TADS: http://www.tads.org
+
+
+TADS
+----
+
+TADS_ was a shareware system written in the 1980s, at the height of the retail home computer software market for this sort of thing.  It has often been characterized as being aimed more toward people who are used to programming, and is praised for its brevity.  It has a longer history of hobbyist games by virtue of being the older of the two major authorship systems, but many of these games pre-date the formation of a cohesive community.
+
+TADS was released as "freeware" in the 1990s, and there have been irregular publications of full source code.  The tads3 source distribution's ``LICENSE.TXT`` file permits redistribution, restricts publication of modified versions to changes required for "porting" the software, and forbids commercial use of the sources.  
+
+The restrictions on modification and fields of endeavor disqualify it under `The Open Source Definition`_ or `The Debian Free Software Guidelines`_, keeping it from being distributed as part of a free operating system.  Many people accept the license and write great IF with it, but I cannot in good conscience join them.
+
+.. _The Open Source Definition: http://www.opensource.org/osd.html
+.. _The Debian Free Software Guidelines: http://www.debian.org/social_contract#guidelines
+
+Inform
+------
+
+Inform_ is an entirely different sort of beast from TADS, and it has a far more dramatic history.  In the early 1990s, `Graham Nelson`_ set about reverse-engineering the virtual machine that Infocom used to make porting its games simpler.  He also produced a compiler that could produce binaries for this Z-machine_, and included some libraries that were useful for writing IF for this VM.
+
+.. _Graham Nelson: http://www.ifwiki.org/index.php/Graham_Nelson
+.. _Z-machine: http://www.ifwiki.org/index.php/Z-machine
+
+The fact that Inform compiles to the same format that Infocom used gave it a certain cachet, and a community gelled around the software and the language.  While TADS developers tended to be programmers wanting to make games, Inform developers often included more of a sort of starry-eyed 1990s medialab type. [#]_  These folks saw IF as a way to develop new interactive forms of literature and create art.  They were authors looking to add interactivity to their creations.
+
+The division isn't quite as clear-cut as the previous paragraph might imply, but the current community of avant-garde IF authors came into its own as Inform developed.  Many of the titans of the genre these days use Inform to the exclusion of other systems.
+
+The licensing for this system is a far more complicated question.  The license under which most versions of Inform were released had similar constraints to that of TADS: modified versions could not be redistributed if they were "substantially different" from the official version, and "profit" was forbidden. [#]_
+
+Since Inform was such a community effort, the libraries of functions that might compile into a final story file were under a real mess of permissions.  Some had no license, and thus it would behoove any user of these libraries to request specific permission to publish any story that uses them.  Some were under "`public domain`_" licenses, occasionally with explanations of what permissions this included for the benefit of countries that are not the United States.
+
+.. _public domain: http://linuxmafia.com/faq/Licensing_and_Law/public-domain.html
+
+The libraries remain a sticky problem: you compile them into your own stories, making your resulting IF a derivative work.  If the licenses for the libraries do not permit modified works or commercial use, then you need to explicitly request permission for the right to either of these for your story.  The core libraries written by Nelson had an exception to allow users to sell their own games, but not all library authors followed this example.
+
+This situation remained up until Inform 6.  Things changed when Inform 7 hit the net.  Inform 7 is a radical departure for Inform in many ways.  It takes the view of IF as fiction first and foremost, and drives it to its logical conclusion: stories are written in a declarative rules-driven syntax based on modern English.  It has the potential to introduce IF authorship to a wider audience than ever would have been possible before.
+
+Unlike all previous versions of Inform, Nelson did not publish his sources as he went.  To date, most of v7 is unavailable in source code form, and one downloads binaries built by members of the core development team.  
+
+.. [#] For those who don't remember, the MIT Medialab in the 1990s (and to be fair, always) had a lot of optimistic projects involving ways to make text more interactive.  The 90s saw a lot of interest in hypertext, the potential of CD-ROMs, and other approaches that don't get as much excitement today.  I chose this particular institution in this particular era because the way it was portrayed in Wired at that time seems to capture something about the Inform community.
+.. [#] This language always struck me as astonishingly sloppy.  What if one profited from it intellectually?  Could I sell copies of Inform to lose money as a tax shelter?
+
+The Seeds of Confusion
+~~~~~~~~~~~~~~~~~~~~~~
+
+Here is where the story takes a confusing turn, because pieces of Inform 7 are source-available.  What's more, the source is released to the net under the terms of the `Artistic License 2.0`_, which is both a DFSG-free_ and `Open Source Approved`_ license.  Cementing confusion, the pieces that are truly free software include the Inform 6N compiler and the Inform 6 templates.
+
+.. _Artistic License 2.0: http://www.opensource.org/licenses/artistic-license-2.0.php
+.. _DFSG-free: http://wiki.debian.org/DFSGLicenses#TheArtisticLicense
+.. _Open Source Approved: http://www.opensource.org/approval
+
+This leads to the circumstance that inspired this essay in the first place.  To any casual observer, it almost appears that Inform 6 has been released under DFSG-free terms and that Inform 7 is hot on its heels.  I have been told numerous times that Inform is free software and that I was spreading misinformation.  
+
+The troublesome fact here is that the I6N pieces of Inform 7 don't appear to constitute a complete Inform 6 platform.  Yes there is a compiler, but the "templates" appear to have been re-tooled dramatically from their I6 Library origins in order to support the output of ni_.  Seeing this, it's tempting to ignore the Z-machine cachet, pick your favorite language and start from there. [#]_
+
+.. [#] And indeed, why haven't I done this?  For starters the Z-machine is *the* delivery mechanism for IF.  Secondly I am the author of the AWK entry in the `Cloak of Darkness`_ project, and have dug through enough prior art to realize what an enormous task that would be.  Thirdly, that would disconnect me from the main community of IF authors and experimenters, and require bootstrapping an entirely new and separate community.  Inform 7 is just too exciting to ignore, and it's by no means hopeless in terms of software freedom.
+.. _Cloak of Darkness: http://www.firthworks.com/roger/cloak/
+
+Summary of Software
+-------------------
+
+One other thing that has caused this to get swept under the rug a little is that there are plenty of TADS and Z-machine story file interpreters out there.  It's hard to explain to anyone who only ever *plays* IF on free software that it's all built on proprietary foundations.  
+
+So here's what we have as free software now:
+
+* TADS runtimes
+* Z-machine runtimes
+* `Inform 6N compiler`_
+* `Inform 6N template`_
+* `The GNOME User Interface for Inform7`_
+* `The cblorb IF packaging tool`_
+* `The Inform 7 Standard Rules`_
+
+.. _Inform 6N compiler: http://inform7.com/sources/i6n/
+.. _Inform 6N template: http://inform7.com/sources/src/i6template/Woven/index.html
+.. _The GNOME User Interface for Inform7: http://sourceforge.net/projects/gnome-inform7
+.. _The cblorb IF packaging tool: http://inform7.com/sources/src/cBlorb/Woven/index.html
+.. _The Inform 7 Standard Rules: http://inform7.com/sources/src/stdrules/Woven/index.html
+
+Here are the key pieces we're lacking:
+
+* `The Inform 6 Library`_
+* the pre-6N compiler, if that matters
+* ni_, the Inform 7 compiler
+
+.. _The Inform 6 Library: http://www.inform-fiction.org/software/current.html
+.. _ni: http://inform7.com/sources/ 
+
+The first piece would be necessary to get a DFSG-free Inform 6 toolchain, and the third would be required to make a DFSG-free Inform 7 toolchain.
+
+Their People, Your People, and My People
+========================================
+
+As this essay is about perspectives and biases, for the most part, I am going to paint a few "us and them" caricatures to stand in for some of the positions that have been at odds here.  I'll begin with my own, as that has colored all the text to this point and some readers may be baffled by my core assumptions.
+
+My People
+---------
+
+I consider myself a relatively dedicated supporter of free software as described and advocated by the `Free Software Foundation`_.  I believe that software holds a unique position in its status as both communication and functional work, and that this requires a rethinking of how copyright and patent law currently treat it.  I am a big fan of the commons that the `GNU GPL`_ and other "copyleft" licenses have created by setting copyright on its own tail.
+
+.. _Free Software Foundation: http://fsf.org/
+.. _GNU GPL: http://www.gnu.org/licenses/gpl.html
+
+Since this stance covers issues of freedom of speech, education, sharing, helping your neighbor and so forth, it has become something of a moral conviction for me.  Naturally, when anyone hears that you have such a conviction they will attempt to tease you with contrived dilemmas as though their very existence somehow "debunked" your moral code. [#]_  The interesting dilemma here is that of games and spoilers.
+
+I have a reasonably relaxed view on games and free software, although I'm led to understand that it's one I share with `Richard Stallman`_ himself.  Basically it falls under the old parenting maxim of "no secrets: only surprises".  I am not saddened by an inability to easily dig out the solution to a game.  The important moral question to me is the functional aspect of the game–the engine, basically.  The world doesn't need to learn the location of the macguffin in your story before playing it through, but it should learn how you implemented the clever NPC engine that the story relied on.
+
+.. _Richard Stallman: http://stallman.org
+
+I see a fair number of My People in the IF community, let it be said.  For starters there's a fair amount of `free software IF`_. [#]_  One of the big names in really clever IF, `Andrew Plotkin`_ (or "zarf", if you like) has published all the sources for his major works.  `Adam Thornton`_ may be found in newsgroup archives making encouraging noises toward DFSG-free licensing and promising Debian packages when that day comes.
+
+.. [#] For pity's sake people, I would run a completely proprietary software stack if that alone would free even *one* slave_.
+.. _slave: http://www.independent.co.uk/opinion/commentators/johann-hari/the-dark-side-of-dubai-1664368.html
+
+.. _free software IF: http://www.ifwiki.org/index.php/Free_Software_IF
+.. [#] Although I'd note that since the Inform 6 library is linked statically into any Inform 6 work, it's unlikely that the authors who used the GPL will be able to fully satisfy a request for full source under the terms of the GPL.  This sort of thing typically requires explicit exceptions noted by the copyright holder for the GPL'd portion.
+.. _Andrew Plotkin: http://www.eblong.com/zarf/if.html
+.. _Adam Thornton: http://www.ifwiki.org/index.php/Adam_Thornton
+
+Retailists
+----------
+
+Another common perspective in these sorts of discussions is that of the software author who expects to be paid ultimately from end-user license fees.  This is something of a long story, but basically in the 1980s Microsoft lobbied the US Congress to get software covered under copyright.  Previously it was considered too functional to be copyrightable and too abstract to be patentable.  
+
+What resulted was a short period when people actually went to shops and put down money to take home a box of software.  This still happens a lot, but it's nowhere near as total as it once was.  For some people, this model is the only right and true path, and they get irritated when some punk kid who doesn't have any serious sales under his belt starts talking about sharing.
+
+I must admit that My People have often been impolite when confronted by this perspective.  It's not uncommon for a bunch of shouting to fly back and forth, and the Retailist in question fires the usual "why do you want me to starve" rant and everybody leaves unhappy.
+
+I'm not sure how common this is in IF, but it showed up as a theme in `Get Lamp`_ a surprising number of times.  Despite most of the interviews ending with admonitions that IF would never be the retail success it was in the 1980s, there still appear to be people trying to live out their dreams of becoming the next Infocom.  I feel that this sentiment is at least somewhat responsible for the plague of "non-commercial use only" licenses in IF.
+
+It is interesting to note Plotkin as a counterexample here: he recently solicited donations to sponsor him for some interesting IF projects.  He asked for $8k and left the donation period open for a month, but received $15k on the first day alone.  This is someone who is not wedded to the 1980s publishing model for software, to be sure!
+
+I am going to make a rather harsh prediction: `Creating Interactive Fiction with Inform 7`_ will make more money than any efforts to sell IF licenses to end-users over the next decade.
+
+.. _Creating Interactive Fiction with Inform 7: http://inform7.textories.com/
+
+Auteurs
+-------
+
+Of course the Retailists and My People are kind of a sideline here.  If either one had taken the fore, the licensing situation would have been extremely clear-cut.  Instead what we got was something of an amalgam.  The modern IF toolset was built up by a community of proud Auteurs.
+
+I mentioned earlier that Inform attracted a lot of 1990s medialab types.  These were folks who didn't come with ideas about free software, but they saw themselves as using new tools to bring forth their creative visions.  They shared with one another in a spirit of free expression, but did not have the history of license development that My People had.  Consider for example `this outright editorial rejection of the authority of the Open Source Definition`_. [#]_
+
+.. _this outright editorial rejection of the authority of the Open Source Definition: http://www.ifwiki.org/index.php/Open_Source_IF 
+
+This is where most of the disconnects seem to come from.  As you dig around discussion archives and look at licenses, you find that (aside from the odd restrictions on commerce) there are two concerns on the Auteur's mind that prevent them from freely embracing DFSG-free licenses.
+
+1. Being misrepresented
+2. Artistic control
+
+These are not unreasonable things to be nervous about, but I maintain that neither is the sort of thing that requires a hammer as large as copyright law to defend.  
+
+The issue of confusion and misrepresentation is one that many DFSG-free licenses do manage, and the Artistic License in particular requires that it be made clear when a program has been significantly modified from that provided by the original copyright holder.  This is likely to be the reason why this license was chosen above all others on opensource.org.
+
+In `one of the original announcements for Inform 7`_, Emily Short touched on both of the above concerns:
+
+        It has been pointed out that the current license for NI and Inform 6
+        is arguably not broad enough for Linux norms (for instance, some
+        distros would not allow I6 to be shipped with their releases). We are
+        willing to re-address this: the decision has been postponed for
+        now. While Inform will probably not move to the GPL, it may well
+        move to an open source license granting freedom for derivative
+        works but requiring that such works may only call themselves
+        "Inform" if they comply with a reference set of behaviour -
+        something like the TeX license, in fact.  We certainly do not
+        intend licensing issues to present any difficulty to Inform's
+        users, and the only rights we wish to retain are the moral rights of
+        authorship over the design of the language. 
+
+.. _one of the original announcements for Inform 7: https://groups.google.com/group/rec.arts.int-fiction/msg/980b5a84e8dfc29b
+
+The matter of artistic control is a subtle one.  It certainly ties in with the user confusion about whose software is actually running, but it goes a bit deeper than that.  In one `SPAG interview`_ Graham Nelson said:
+
+        Had Inform 7 been developed in open source, I am fairly sure it
+        would now be an elaborated version of the superficial prototype, and
+        that it would be much the poorer. And it ought to be remembered
+        that for at least the first year of the project, I wasn't at all
+        sure it would ever work - "work" in the sense of being capable
+        enough to be useful.
+
+        I do not quite buy the argument put by Eric Raymond in "The
+        Cathedral and the Bazaar", that the bustling, self-organised world of
+        the bazaar gets things built better and faster than the secretive
+        clergy.
+
+.. _SPAG interview: http://www.sparkynet.com/spag/backissues/SPAG44
+
+You see this conversation repeated a lot.  Basically Graham is just trying to avoid the bikeshedding_ and keep control, and the best arguments he's getting from My People about sharing his source code under DFSG-free licenses seem to devolve into quoting `Eric S. Raymond`_ of all people.
+
+.. _bikeshedding: http://bikeshed.org/
+.. _Eric S. Raymond: http://www.ntk.net/2002/11/29/
+
+Of course Nelson's anxieties do not come from ignorance, but from experience.  In the `Inform 6 development history`_ Nelson notes:
+
+        Something that partially frustrated this was that Inform acquired a
+        serious user base "too soon", before the language design was mature
+        enough: by Inform 4, a good many people were using Inform, and this
+        began to make me nervous of changing the established syntax. But if a
+        syntax feature is clearly "wrong" (that is, anomalous and
+        inconvenient) then clearly one must bite the bullet and make a
+        change.  In retrospect, I feel I have always been too hesitant over
+        this.
+
+.. _Inform 6 development history: http://www.inform-fiction.org/source/tm/chapter13.txt
+
+Graham Nelson knows how he works and how communities affect the way he develops software.  For this reason, he is unlikely to be moved by claims of practical improvements that were originally written for a more corporate audience.
+
+.. [#] For pity's sake, dear reader, *please* do not take this as some sort of incitement to go and loudly argue that point.  While I find the perspective behind the decision hard to internalize, it is a logically defensible position and one that stems from hackerly sentiments of history over marketing.
+
+Pride and TeX
+=============
+
+Right, so how did we get here again?  How did we end up with pieces of this thing under a DFSG-free license, but not everything?  Well, it doesn't seem that strange at all when you view the project from the perspective of the Auteur.
+
+Graham Nelson worked very hard on a project that he feels very invested in.  As an auteur, he wants to refine his creative vision for the software and then provide it in a form he can be happy with.  He doesn't want his film to go out as public rushes, and he'd love it if the public's first viewing is his final edit.  So he has released binaries for people to use only once the functionality was at a level of quality he was satisfied with.
+
+As for source code, this is where the Auteur spirit truly shines.  Nelson et al are using `Literate Programming techniques`_ to make a vast book out of the Inform 7 source code itself.  The result will be something rather like the TeXbook_ in scope and presentation.
+
+.. _Literate Programming techniques: http://inform7.com/sources/inweb/
+.. _TeXbook: http://www-cs-faculty.stanford.edu/~uno/abcde.html
+
+In 2007 `Nelson wrote`_:
+
+        About 60% of my time spent on NI is being spent on reconstructing it
+        so that it can usefully be published in source, and so that others
+        will be able to find bugs in it, and contribute patches. I'm aware
+        that many people feel it should always have been out there,
+        whatever its condition, but I didn't think it was in anything like a
+        state good enough to make that productive (in terms of helping to
+        improve the program's internal workings), and I'm afraid that was my
+        priority. 
+
+.. _Nelson wrote: https://groups.google.com/group/rec.arts.int-fiction/msg/0f8d292e0f9ad4d2
+
+Conclusion
+==========
+
+So let's recap a little here.  Graham Nelson almost single-handedly rebooted interactive fiction in the early 1990s, and a community formed around his software for IF authorship.  For someone not part of the free software movement, this software was developed and released under extremely liberal terms.  
+
+As tempting as it would be to cast this community as dog-in-the-manger copyright holders dictating fields of endeavor to the world ("No commerce, kids!  That's for me to build the next Infocom with!"), that characterization simply does not hold water.  The Inform developers have real and practical objections to the claims of real and practical advantages to particular development styles that the Open Source movement advocates.  Despite these objections they have set upon a program of releasing the entire toolchain under a free software license.
+
+The last missing piece of this stack is blocked on a rewrite effort designed to make it fit into a self-documenting book of source code that users can *really* learn from by reading.  If My People had this kind of dedication to the principles of communicating ideas through sharing source code, we'd be in a much better place than we are now!
+
+I expected to research this and turn up a few stubborn holdouts who dislike DFSG-licensing for ineffable personal reasons, but instead turned up so much generosity and good faith effort that I really feel like a heel for complaining, but it's been *three years*.
+
+Above I quoted Nelson in January of 2007 (nearly three years ago, as of this writing), claiming that he was spending a majority of his time polishing the Inform 7 compiler source code up for publication.  The `Inform 7 webs`_ page states:
+
+        Not yet published. This is the largest and the most experimental of
+        Inform's components; a long-term project of rewriting and
+        clarifying ni for publication is now, as of April 2009, about
+        two-thirds done.
+
+.. _Inform 7 webs: http://inform7.com/sources/webs/
+
+That update is from one and a half years ago, as of this writing.  Most of the other pieces appear to have landed around mid-2008.  I would really love to know how far along this project is now, near the end of 2010.  Is it possible that somewhere between ⅔ and complete, there's a stage where it's good enough for public review?  
+
+I'm aware that Nelson has very strong feelings about his software that prevent him from publishing sub-standard sources.  I have strong feelings about software as well, after all.  My feelings, unfortunately, will continue to keep me out of a community I admire for some time.  
+
+I'm sure Graham has bigger fish to fry, of course.  Inform 7 currently makes IF more accessible to newcomers, even if it alienates My People.  So I sit on the sidelines, feeling somewhat helpless, flipping through my copy of `Creating Interactive Fiction with Inform 7`_ and waiting for the day when I can join in with a clear conscience.

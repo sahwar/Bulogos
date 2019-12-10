@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Notes on terminal emulation - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="notes-on-terminal-emulation">Notes on terminal emulation<a class="headerlink" href="#notes-on-terminal-emulation" title="Permanent link">&para;</a></h1>
+<h2 id="closed-questions">Closed questions<a class="headerlink" href="#closed-questions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Does at Tab character just move the cursor, or actually wipe out the cells it passes over?</p>
+<ul>
+<li>The command <code>printf 'hello\r\tworld\n'</code> produces the text <div class="codehilite"><pre><span></span>hello   world
+</pre></div>
+
+
+</li>
+</ul>
+<p>so tabs just move the cursor.</p>
+</li>
+<li>
+<p>If you insert characters before a string that was positioned with a Tab, does the string stay where it is (like in Vim) or does it get shifted across?</p>
+<ul>
+<li>The command <code>printf '\033[2J\033[1;1H\thello\r\033[4@\n'</code> produces a <code>hello</code> preceeded by 12 empty cells, so the fact that a given string was aligned with a tab is not recorded.</li>
+</ul>
+</li>
+</ul>
+<h2 id="the-vt52">The VT52<a class="headerlink" href="#the-vt52" title="Permanent link">&para;</a></h2>
+<ul>
+<li>A VT52 sure is simpler to begin with than a VT100.</li>
+<li>The VT52 manual says that it doesn&rsquo;t support line-wrap, but xterm&rsquo;s VT52 mode does it anyway.</li>
+</ul>
+<h2 id="xterm-extensions">xterm extensions<a class="headerlink" href="#xterm-extensions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>There&rsquo;s two framebuffers, the standard screen and the alternate screen. What settings are per-framebuffer and what settings are for the terminal as a whole?<ul>
+<li>
+<p>It seems that the cursor-position is set for the terminal as a whole:</p>
+<div class="codehilite"><pre><span></span><span class="nb">printf</span> <span class="s1">&#39;\033[1;1H\033[?47h\033[5;5H\033[?47l&#39;</span>
+</pre></div>
+
+
+<p>After running this command, the normal framebuffer is active but the cursor is located when it was put while the alternate framebuffer was active.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="the-framebuffer">The Framebuffer<a class="headerlink" href="#the-framebuffer" title="Permanent link">&para;</a></h2>
+<ul>
+<li>I&rsquo;m thinking a good model for a framebuffer might be a list of lines, where each line has a list of text-runs, and  each text-run has:<ul>
+<li>A starting column</li>
+<li>Video attributes</li>
+<li>A string to display</li>
+</ul>
+</li>
+<li>What do we do about &lsquo;background colour erase&rsquo;? <ul>
+<li>As far as I can tell, this just means than any cell touched by an erasure escape sequence will have its background-colour set to the current background-colour. </li>
+<li>I like the text-run system because it lets me distinguish &lsquo;bits of the display that have had spaces drawn on them&rsquo; from &lsquo;bits of the display that have been erased&rsquo; - which is important when you want to clone certain bits of xterm behaviour, such as &lsquo;selecting past the end of the line means the newline gets copied too&rsquo;.</li>
+<li>The downside of the text-run system is that parts of the screen with no content (such as freshly-erased lines) can&rsquo;t have attributes, which the BCE module requires.</li>
+<li>How about we add &lsquo;trailing background colour&rsquo; to the text-run state?</li>
+<li>When we create a new text-run in the middle of an existing text-run, trailingBG doesn&rsquo;t matter because there&rsquo;ll be no trailing space.</li>
+<li>When we create a new text-run in the middle of an existing space, trailingBG should be the same as the one that was in effect where our first character goes.</li>
+<li>When we run &lsquo;erase to end of line&rsquo;, we remove all the text-runs from here on, and set our trailingBG to the current BG.</li>
+<li>What about things like Insert/Delete Char?</li>
+<li>We should also have a trailingBG attribute for each line, to cope with blank space between the beginning of the line and the first text-run.</li>
+</ul>
+</li>
+</ul>
+<h2 id="tests">Tests<a class="headerlink" href="#tests" title="Permanent link">&para;</a></h2>
+<h3 id="tabs-move-the-cursor-rather-than-printing-output">Tabs move the cursor, rather than printing output.<a class="headerlink" href="#tabs-move-the-cursor-rather-than-printing-output" title="Permanent link">&para;</a></h3>
+<p>Note: xterm seems to not distinguish between:</p>
+<div class="codehilite"><pre><span></span><span class="nb">printf</span> <span class="s1">&#39;hello   world&#39;</span>
+</pre></div>
+
+
+<p>and:</p>
+<div class="codehilite"><pre><span></span><span class="nb">printf</span> <span class="s1">&#39;hello\tworld&#39;</span>
+</pre></div>
+
+
+<p>&hellip;both produce a three-cell gap between the two words (as opposed to three 1-cell space characters, as iTerm does).</p>
+<p>On the other hand, when you include colours, they are different:</p>
+<div class="codehilite"><pre><span></span><span class="nb">printf</span> <span class="s2">&quot;</span><span class="k">$(</span>tput setab <span class="m">3</span><span class="k">)</span><span class="s2">hello</span><span class="k">$(</span>tput setab <span class="m">4</span><span class="k">)</span><span class="s2">\\t</span><span class="k">$(</span>tput setab <span class="m">5</span><span class="k">)</span><span class="s2">world\\n&quot;</span>
+<span class="nb">printf</span> <span class="s2">&quot;</span><span class="k">$(</span>tput setab <span class="m">3</span><span class="k">)</span><span class="s2">hello</span><span class="k">$(</span>tput setab <span class="m">4</span><span class="k">)</span><span class="s2">   </span><span class="k">$(</span>tput setab <span class="m">5</span><span class="k">)</span><span class="s2">world\\n&quot;</span>
+</pre></div>
+
+
+<p>When the words are seperated by a tab, a gap is left coloured in the original background colour. When the words are separated by spaces, those cells have their background colour set to &lsquo;4&rsquo; (blue). So, uh, that makes things messy.</p>
+<h3 id="printing-across-a-word-wrap-merges-lines">Printing across a word-wrap merges lines<a class="headerlink" href="#printing-across-a-word-wrap-merges-lines" title="Permanent link">&para;</a></h3>
+<p>If two consecutive physical lines are distinct (resizing the window does not affect the alignment of the second line), and text is printed across their shared boundary, the two lines are joined into one logical line, and after that resizing the window does affect the alignment of the second line.</p>
+<p>Testcase:</p>
+<div class="codehilite"><pre><span></span><span class="nb">printf</span> <span class="s1">&#39;hello\nworld\n\033[2A\033[78Gencyc\n\n&#39;</span>
+</pre></div>
+
+
+<h3 id="resizing-the-terminal-pins-the-lower-left-corner-of-the-framebuffer">Resizing the terminal pins the lower-left corner of the framebuffer.<a class="headerlink" href="#resizing-the-terminal-pins-the-lower-left-corner-of-the-framebuffer" title="Permanent link">&para;</a></h3>
+<p>In iTerm and Terminal.app, when making the framebuffer narrower, lines that wrap always push the lines above them up. For example, if physical and logical line 23 is exactly the width of the terminal, and the terminal is subsequently resized narrower such that it wraps onto two lines, those will be physical lines 22 and 23 (but still one logical line).</p>
+<p>Testcase:</p>
+<div class="codehilite"><pre><span></span><span class="nb">printf</span> <span class="s1">&#39;\033[2J\033[1;79H01\n&#39;</span>
+<span class="k">for</span> <span class="o">((</span> <span class="nv">i</span><span class="o">=</span><span class="m">2</span><span class="p">;</span> i &lt;<span class="o">=</span> <span class="m">23</span><span class="p">;</span> <span class="nv">i</span><span class="o">=</span>i+1 <span class="o">))</span><span class="p">;</span> <span class="k">do</span> 
+     <span class="nb">printf</span> <span class="s1">&#39;\033[79G%02i\n&#39;</span> <span class="nv">$i</span>
+<span class="k">done</span>
+<span class="nb">printf</span> <span class="s1">&#39;\033[1;1H&#39;</span>
+</pre></div>
+
+
+<h3 id="a-double-width-character-at-the-end-of-a-line-wraps">A double-width character at the end of a line wraps<a class="headerlink" href="#a-double-width-character-at-the-end-of-a-line-wraps" title="Permanent link">&para;</a></h3>
+<p>In xterm and Terminal.app, printing a double-width character at the end of a line causes that character to appear at the beginning of the next line (in Terminal.app, such wrapping occurs dynamically, so dragging the window 1 cell wider makes it jump back to the end of the first line; in xterm the wrapping occurs statically).</p>
+<p>Testcase:</p>
+<div class="codehilite"><pre><span></span><span class="nb">printf</span> <span class="s1">&#39;\033[80G病\n&#39;</span>
+</pre></div>    </body>
+</html>

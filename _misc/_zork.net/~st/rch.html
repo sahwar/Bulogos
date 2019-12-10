@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+        <title>registerContentHandler test</title>
+        <script type="text/javascript">
+            function testRCH() {
+                var res = window.navigator.registerContentHandler(
+                        "application/pdf", "?url=%s",
+                        "Google Docs Viewer");
+            }
+
+            function urlParamsToDict() {
+                var res = {};
+                var params = new String(window.location).split("?")[1];
+
+                if (params !== undefined) {
+                    for each (var param in params.split("&")) {
+                        var keyAndValue = param.split("=");
+                        var key = keyAndValue[0];
+                        var value = keyAndValue[1];
+                        if (key !== undefined && value !== undefined) {
+                            res[unescape(key)] = unescape(value);
+                        }
+                    }
+                }
+
+                return res;
+            }
+
+            function init() {
+                var params = urlParamsToDict();
+                if (params.url !== undefined) {
+                    window.location = "http://docs.google.com/viewer?url=" +
+                        escape(params.url);
+                }
+            }
+        </script>
+    </head>
+    <body onload="init()">
+        <p><button onclick="testRCH()">Configure</button></p>
+    </body>
+</html>
+

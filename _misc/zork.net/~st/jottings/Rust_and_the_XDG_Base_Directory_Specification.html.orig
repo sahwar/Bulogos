@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Tricking Rust into following the XDG Base Directory Specification - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="tricking-rust-into-following-the-xdg-base-directory-specification">Tricking Rust into following the XDG Base Directory Specification<a class="headerlink" href="#tricking-rust-into-following-the-xdg-base-directory-specification" title="Permanent link">&para;</a></h1>
+<p>Rust is a <a href="https://www.rust-lang.org/">fancy new programming language</a> with many good reasons
+to recommend it, but one of the things I like most is the tooling built
+around it: <a href="http://doc.crates.io/index.html">Cargo</a> is one of the best language-specific package
+managers available for any language, while <a href="https://www.rustup.rs/">rustup</a> is a friendly
+installer that will give you the latest versions of the compiler, Cargo,
+etc. while making it easy to keep them up-to-date.</p>
+<p>Unfortunately, while these tools are designed to be easy to use, they&rsquo;re
+also designed to be cross-platform, which makes life easy and pleasant
+for people who work exclusively on Rust across many platforms, but less so
+for people who work with many tools on one platform: it&rsquo;s another set of
+configuration files and cache directories to clean up, another entry on
+<code>$PATH</code>, and so forth.</p>
+<p>While there is <a href="https://github.com/rust-lang/rfcs/pull/1615">a Rust RFC</a> suggesting that Cargo (and hence,
+rustup) follow platform-specific conventions out of the box, apparently
+there&rsquo;s some technical issues that make it difficult in practice. Also,
+it&rsquo;s not immediately obvious what the platform conventions of POSIX
+are: the POSIX standard has never mandated any specific conventions for
+storing per-user information, and Cargo and rustup don&rsquo;t do anything
+wildly uncommon.</p>
+<p>While I appreciate that a universal convention might be difficult to
+identify and implement, most of the sofware I personally use on a daily
+basis follows very well-defined conventions. Specifically, the <a href="https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html">XDG Base
+Directory Specification</a> which says that per-user configuration
+should go in <code>~/.config/appname</code> and caches of re-generatable or
+re-downloadable data should go into <code>~/.cache/appname</code>. The base directory
+spec has a fairly straight-forward extension in <a href="https://www.freedesktop.org/software/systemd/man/file-hierarchy.html">file-hierarchy</a>,
+which adds <code>~/.local/bin</code> for per-user binaries that should be available
+from the shell. Since I&rsquo;ve already learned those conventions and adapted
+them into my workflow, I want to make Cargo and rustup follow them
+without having to modify the software myself, and convince upstream to
+adopt my changes.</p>
+<h2 id="actual-procedure-starts-here">Actual procedure starts here<a class="headerlink" href="#actual-procedure-starts-here" title="Permanent link">&para;</a></h2>
+<p>If you already have Cargo or rustup installed, maybe you can migrate
+your old configuration but to keep things simple let&rsquo;s just move them
+out of the way:</p>
+<div class="codehilite"><pre><span></span>mkdir ~/old-rust-bits
+mv ~/.cargo ~/.rustup ~/.multirust ~/old-rust-bits
+</pre></div>
+
+
+<p>Create the directories where we want Cargo and rustup to <em>actually</em> store their stuff:</p>
+<div class="codehilite"><pre><span></span>mkdir -p .local/bin
+mkdir -p .cache/cargo
+mkdir -p .cache/rustup/downloads
+mkdir -p .cache/rustup/tmp
+mkdir -p .cache/rustup/toolchains
+mkdir -p .cache/rustup/update-hashes
+mkdir -p .config/rustup
+</pre></div>
+
+
+<p>Create the old directories that Cargo and rustup look in, and fill them with symlinks to the corresponding XDG-compliant locations:</p>
+<div class="codehilite"><pre><span></span>mkdir -p .cargo
+mkdir -p .rustup
+ln -sfn .rustup .multirust
+ln -sfn ../.local/bin .cargo/bin
+ln -sfn ../.cache/cargo .cargo/registry
+ln -sfn ../.cache/rustup/downloads .rustup/downloads
+ln -sfn ../.cache/rustup/tmp .rustup/tmp
+ln -sfn ../.cache/rustup/toolchains .rustup/toolchains
+ln -sfn ../.cache/rustup/update-hashes .rustup/update-hashes
+ln -sfn ../.config/rustup/settings.toml .rustup/settings.toml
+</pre></div>
+
+
+<p>Now you should be able to install rustup. Note that we pass
+<code>--no-modify-path</code> to the installer, because the whole premise of this
+operation is that you want rust installed in a location your environment
+already knows about, right?</p>
+<div class="codehilite"><pre><span></span>curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path
+</pre></div>
+
+
+<p>Once that&rsquo;s done, test that you can run all the shiny new tools:</p>
+<div class="codehilite"><pre><span></span>rustup --version
+cargo --version
+rustc --version
+</pre></div>
+
+
+<p>You might even want to install something, to verify Cargo will put things
+into the right places:</p>
+<div class="codehilite"><pre><span></span>cargo install ripgrep
+</pre></div>
+
+
+<h2 id="things-to-worry-about">Things to Worry About<a class="headerlink" href="#things-to-worry-about" title="Permanent link">&para;</a></h2>
+<p>I created the above list of symlinks by running rustup and cargo in an
+isolated environment, looking at what files and directories they created,
+and deciding which XDG base-directory they each belonged to. If future
+versions of Cargo or rustup change their directory layout, or if the
+current versions create other files or directories in circumstances I
+haven&rsquo;t exercised, these instructions will need updating.</p>
+<p>Properly following the XDG Base Directory Specification requires
+you to respect environment variables like <code>$XDG_CONFIG_HOME</code> and
+<code>$XDG_CONFIG_DIRS</code>, which this example does not do. I don&rsquo;t think it&rsquo;s
+possible to do that without modifying the source-code to these tools,
+though.</p>
+<p><strong>EDIT:</strong> It has been <a href="https://np.reddit.com/r/rust/comments/66g5by/tricking_rust_into_following_the_xdg_base/dgid0ol/">pointed out</a> that if you make rustup
+install things into a shared directory like <code>~/.local/bin</code>, you can
+never run <code>rustup self uninstall</code>, or it will blow away things it did
+not install. Be careful!</p>    </body>
+</html>

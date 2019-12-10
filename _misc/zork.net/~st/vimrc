@@ -1,0 +1,332 @@
+" vim: set ts=8:fileencoding=utf-8
+set nocompatible	    " Use Vim defaults (much better!)
+
+" Use the system terminfo files in preference to vim's builtin ones.
+set nottybuiltin
+
+" This enables text-mode Vim to detect and use all the funky features of
+" a genuine xterm.
+if &term == "xterm"
+    set t_RV=[>c
+endif
+
+" Screen can also handle xterm mousiness, but Vim doesn't detect it by
+" default.
+if &term == "screen"
+    set ttymouse=xterm2
+endif
+
+set autoindent	" New lines copy the indent of the previous line
+set incsearch	" Find-as-you-type
+set nohlsearch	" Can't stand that highlighting messing up my screen
+set ignorecase	" Case insensitive searching...
+set smartcase	" ...but case sensitive if you use any capital letters.
+set showmatch	" flash matching brackets as they are typed.
+set showmode	" Show --- INSERT --- in insert mode, etc.
+set showcmd	" Show command prefixes as they are typed (counts, registers)
+
+set wildmode=longest,list   " Tab-completion like bash
+set suffixes+=.pyc	    " Ignore .pyc when tab-completing filenames
+set bs=indent,eol	    " Can backspace over autoindent and word-wrap
+set nrformats-=octal	    " Make ^A and ^X treat "07" as decimal.
+
+" These settings let us leave tabs to be 8 chars, but makes it 'feel' like
+" 4-space tabs.
+set shiftwidth=4 softtabstop=4
+
+" A long timeout for mappings, but a short timeout for keycodes (so 'Esc' is
+" quickly detected, but you can take a while to type mappings).
+set timeout timeoutlen=3000 ttimeoutlen=100
+
+if v:version >= 700
+    " Vim 7.0 adds a spell checker.
+    set spelllang=en_au
+    
+    " Words we've added to the spellchecker are also dictionary
+    " words.
+    set dictionary+=spell
+
+    " Always show the tab-bar across the top of the window, to stop the window
+    " resizing itself just because a tab was closed or opened.
+    set showtabline=2
+endif
+
+" The only sensible setup for Unicode editing.
+if v:version >= 600
+    set encoding=utf-8
+    set termencoding=utf-8
+    set fileencodings=ucs-bom,ascii,utf-8,latin1
+endif
+
+" Set the symbols used for 'list' mode.
+set listchars=eol:$,tab:>-,extends:>,trail:*
+if v:version >= 600
+    " This wacky character only works in Unicode mode.
+    set listchars-=trail:*
+    set listchars+=trail:·
+    set listchars-=tab:>-
+    set listchars+=tab:►─
+    " This was added in 6.0
+    set listchars+=precedes:<
+endif
+if v:version >= 700
+    " This was added in 7.0
+    set listchars+=nbsp:¬
+endif
+
+" Show extended Statusline, displaying the ASCII or Unicode value of the char
+" under the cursor in hex
+set laststatus=2
+set statusline=%<%t%m%r%h%w%=%c%V,\ %l/%L\ %a\ 0x%0B\ %p%%
+
+" Configure the gq command to wrap things nicely,
+set formatoptions+=r
+set formatoptions+=o
+set formatoptions+=n
+if v:version > 600
+    set formatoptions+=1
+endif
+
+set clipboard+=unnamed		" yank/delete use system clipboard
+set clipboard+=autoselect	" Selecting with the mouse in xterm auto-yanks.
+set clipboard+=exclude:screen	" Can't reliably connect to X11 from inside.
+
+" Everybody loves syntax highlighting
+if has("syntax") && (&t_Co > 2 || has("gui_running"))
+    syntax on
+
+    " My own personal colorscheme
+    colorscheme screwtape
+endif
+
+" Settings for various file types
+if v:version >= 600 && has("autocmd")
+    filetype indent plugin on
+
+    " Additional filename -> filetype patterns
+    autocmd BufNewFile,BufRead *conkyrc			setlocal filetype=conkyrc
+    autocmd BufNewFile,BufRead *.sql			setlocal filetype=psql
+    autocmd BufNewFile,BufRead *.{rpy,pyw}		setlocal filetype=python
+    autocmd BufNewFile,BufRead .pythonrc		setlocal filetype=python
+    autocmd BufNewFile,BufRead config,config.template	setlocal filetype=dosini
+    autocmd BufNewFile,BufRead *.dj			setlocal filetype=htmldjango
+    autocmd BufNewFile,BufRead wiki.*.txt		setlocal filetype=moin
+
+    " Additional settings for Python files.
+    autocmd FileType python setlocal tw=79 fo-=t noexpandtab ts=4 sts=0 sw=4
+    autocmd FileType python match Error /\%>79v.\+/
+    " make gd work in Python source like it does for C source.
+    autocmd FileType python map <buffer> gd /\(class\\|def\)\s\+<C-R><C-W><CR> 
+
+    " Check Python files with :make
+    if executable("pyflakes")
+	" Pyflakes is fast and non-anal-retentive, so we like it.
+	autocmd FileType python setlocal makeprg=pyflakes\ %:p
+    elseif executable("pylint")
+	" pylint is more anal-retentive, but it returns useful warnings too
+	autocmd FileType python setlocal makeprg=pylint\ -fparseable\ -rn\ %:p
+    endif
+    "autocmd FileType python setlocal fileencoding=ascii
+
+    autocmd FileType {css,html,htmldjango}	setlocal tw=79 fo-=t expandtab
+    autocmd FileType java	compiler javac
+    autocmd FileType *sql	setlocal comments+=:-- expandtab
+
+    autocmd FileType text	setlocal tw=79 fo+=t
+
+    " Set up variables for editing bulk text, from things like the Firefox
+    " It's All Text extension.
+    autocmd FileType moin,bbcode,markdown setlocal tw=0 linebreak
+    autocmd FileType moin,bbcode,markdown map <Up> gk
+    autocmd FileType moin,bbcode,markdown map k gk
+    autocmd FileType moin,bbcode,markdown map <Down> gj
+    autocmd FileType moin,bbcode,markdown map j gj
+
+    " \q quotes a word as a literal.
+    autocmd FileType moin	nmap \q "qciw{{{<Esc>"qpa}}}<Esc> 
+
+    " For primarily text documents, let's enable dictionary completion.
+    autocmd FileType text,mail,moin,bbcode,markdown setlocal complete+=k infercase
+
+    " Quick and hacky folding for diffs
+    autocmd FileType diff	setlocal foldexpr=getline(v:lnum)=~'^[-+@\ ]'?1:0 foldmethod=expr
+
+    " Settings for editing shell scripts
+    autocmd FileType sh		setlocal tabstop=8 shiftwidth=8 softtabstop=8
+
+    " I'm not sure what the proper FileType for these is.
+    autocmd BufNewFile,BufRead *.asp            setlocal tw=79 fo-=t expandtab comments=:\' 
+
+    " Twisted gets cranky if it finds Vim's temp files in its log directory.
+    autocmd BufNewFile,BufRead test.log	setlocal noswapfile nobackup
+
+    " Automatically jump to the place where the cursor was when this file was
+    " previously opened
+    autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
+
+    " A hackish way to make fenc work as you'd expect in a modeline
+    autocmd BufReadPost * let b:freshly_loaded = 1 " debounce the BufWinEnter event
+    function! EnforceModelineFileEncoding()
+	" Only reload the file if it's just been read.
+	if exists('b:freshly_loaded')
+	    unlet b:freshly_loaded
+	    " If the modeline changed fileencoding after reading, the buffer
+	    " will already be modified.
+	    if &modified && &fileencoding != ''
+		exec 'e! ++enc=' . &fileencoding
+	    endif
+	endif
+    endfunction
+    autocmd BufWinEnter * call EnforceModelineFileEncoding()
+endif
+
+" More settings for various file-types
+if v:version >= 700
+    autocmd FileType mail setlocal spell
+
+    autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+endif
+
+" Useful things
+ab buisness business
+
+" Useful mappings
+
+" Elvis-style 'maximise window'
+map \ _
+" MS Windows-style 'indent selection'
+vmap <Tab> >
+" MS Windows-style 'dedent selection'
+vmap <S-Tab> <
+" Bash-style keybindings
+cmap <C-A> <Home>
+" Omni-completion for console Vim
+inoremap <Nul> <C-x><C-o>
+" Omni-completion for GUI Vim
+inoremap <C-Space> <C-x><C-o>
+" Nobody wants to switch to Ex mode.
+nmap Q gqq
+vmap Q gq
+
+" MS Windows-style 'next pane' and 'previous pane' (overridden for Vim 7 later)
+nmap <C-Tab> w
+nmap <CS-Tab> W
+
+if v:version >= 600
+    " Use the tab key for completion, like bash
+    function InsertTabWrapper()
+	let col = col('.') - 1
+	if !col || getline('.')[col - 1] !~ '\k'
+	    return "\<tab>"
+	else
+	    return "\<c-p>"
+	endif
+    endfunction 
+    inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+
+    " A single key to add or remove the fold-column.
+    let g:default_fold_column_width=3
+    function ToggleFoldColumn()
+	if &foldcolumn > 0
+	    let &l:foldcolumn=0
+	else
+	    let &l:foldcolumn=g:default_fold_column_width
+	endif
+    endfunction
+    nnoremap <F2> :call ToggleFoldColumn()<cr>
+endif
+
+if v:version >= 700
+    " A single key for stepping through all open buffers.
+    function NextWindow()
+	if winnr() == winnr('$')
+	    if tabpagenr() == tabpagenr('$')
+		" We're at the end of the last tab, go back to the beginning
+		tabfirst	" Go to first tab
+		1 wincmd w	" Go to first window
+	    else
+		" We're at the end of this tab, go to the next tab
+		tabnext		" Go to next tab
+		1 wincmd w	" Go to first window
+	    endif
+	else
+	    " We're at some random window in the tab, go to the next window
+	    wincmd w
+	endif
+    endfunction
+
+    function PrevWindow()
+	if winnr() == 1
+	    if tabpagenr() == 1
+		" We're at the beginning of the first tab, wrap around
+		tablast
+		exe winnr('$') . "wincmd w"
+	    else
+		" We're at the beginning of this tab, go to the previous
+		tabprevious
+		exe winnr('$') . "wincmd w"
+	    endif
+	else
+	    " We're at some random window in the tab, go to the previous
+	    " window
+	    wincmd W
+	endif
+    endfunction
+
+    " MS Windows-style bindings for gvim
+    nnoremap <C-Tab> :call NextWindow()<cr>
+    nnoremap <CS-Tab> :call PrevWindow()<cr>
+
+    " Vim-style bindings for terminals
+    nnoremap <C-W>w :call NextWindow()<cr>
+    nnoremap <C-W><C-W> :call NextWindow()<cr>
+    nnoremap <C-W>W :call PrevWindow()<cr>
+
+endif
+
+" Plugin configuration
+vnoremap <c-a> :Inc<CR>			" A binding for the Increment plugin
+if v:version >= 600
+    source $VIMRUNTIME/macros/matchit.vim	" Makes the % key very useful
+    source $VIMRUNTIME/ftplugin/man.vim		" Adds a :Man command
+endif
+if 1 " Hide from copies of vim without 'eval'
+    let CVSCommandDiffOpt=''		" Don't override my prefs, dammit!
+endif
+
+" Settings for the TagList plugin:
+if executable("ctags") || has("win32")
+    if has("win32")
+	let Tlist_Ctags_Cmd='C:\cygwin\bin\ctags.exe'
+    endif
+
+    runtime macros/taglist.vim
+    nnoremap <silent> <F8> :Tlist<CR>
+    nnoremap <silent> <F9> :TlistSync<CR>
+    let Tlist_Display_Prototype=1
+endif
+
+" Settings for the python syntax highlighter
+if has("expr")
+    let python_highlight_string_formatting = 1
+    let python_highlight_indent_errors = 1
+    let python_slow_sync = 1
+endif
+
+" Platform-dependent bits
+if has("win32")
+	set fileformats=dos,unix,mac
+elseif has("unix")
+	set fileformats=unix,dos,mac
+	set dictionary+=/usr/share/dict/words
+endif
+
+" Funky mouse features for the console
+if has("mouse") && !has("gui_running")
+    set mouse=nvir
+endif
+
+" If we have cscp, it's likely to be more useful than scp
+if executable("cscp")
+    let g:netrw_scp_cmd="cscp"
+endif

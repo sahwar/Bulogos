@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Getting Started with higan v106.217 - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="getting-started-with-higan-v106217">Getting Started with higan v106.217<a class="headerlink" href="#getting-started-with-higan-v106217" title="Permanent link">&para;</a></h1>
+<p><a href="https://higan.byuu.org/">higan</a>, the multi-system emulator,
+has changed a whole lot since v106
+when the documentation was last updated.
+As a starting point for new documentation,
+and to help people test higan for themselves,
+this tutorial will show you
+how to run a SNES ROM in higan v106.217 on Linux.</p>
+<div class="toc">
+<ul>
+<li><a href="#getting-started-with-higan-v106217">Getting Started with higan v106.217</a></li>
+<li><a href="#what-you-need">What you need</a></li>
+<li><a href="#installing-things">Installing things</a></li>
+<li><a href="#setting-up-a-system">Setting up a system</a></li>
+<li><a href="#setting-up-a-controller">Setting up a controller</a></li>
+<li><a href="#connecting-a-cartridge">Connecting a cartridge</a></li>
+<li><a href="#playing-the-game">Playing the game</a></li>
+</ul>
+</div>
+<h1 id="what-you-need">What you need<a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h1>
+<p>To follow this tutorial exactly, you will need:</p>
+<ul>
+<li>A desktop or laptop computer running a modern Linux distro
+    (I&rsquo;m using Debian Testing, but Ubuntu/Mint/etc. should be fine)</li>
+<li>A copy of the higan <a href="https://cirrus-ci.com/build/6251694783987712">v106.217</a> nightly build
+    (Later versions may work,
+    but higan is still undergoing significant changes)</li>
+<li>A copy of the <a href="https://github.com/VitorVilela7/SnesSpeedTest/raw/master/speed_test_v51.sfc">SNES Speed Test</a> ROM
+    (Other ROMs should work,
+    but aren&rsquo;t legal to download)</li>
+</ul>
+<p>If you don&rsquo;t have exactly all these things,
+you can still try to follow along with what you have,
+and let me know if you run into problems.</p>
+<h1 id="installing-things">Installing things<a class="headerlink" href="#installing-things" title="Permanent link">&para;</a></h1>
+<p>When you download the higan nightly build,
+it should be a file named <code>higan-nightly.zip</code>.
+Extract it to create a <code>higan-nightly</code> directory,
+containing <code>higan</code> and <code>icarus</code> executables,
+and <code>Database</code>, <code>Firmware</code>, and <code>System</code> directories.</p>
+<p>Unfortunately,
+higan does not yet support a &ldquo;portable&rdquo; mode
+where it reads required data from beside the executable,
+so we&rsquo;re going to have to install all the bits and pieces manually.</p>
+<p>From the directory where you extracted <code>higan-nightly.zip</code>,
+run the following commands:</p>
+<aside>
+If <code>~/.local/bin</code> isn't on your <code>$PATH</code>,
+see <a href="How_to_set_your_PATH.html">How to set your PATH</a>
+</aside>
+
+<div class="codehilite"><pre><span></span><span class="c1"># Make sure our executables are on $PATH</span>
+<span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="o">~/.</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span>
+<span class="n">mv</span> <span class="n">higan</span> <span class="n">icarus</span> <span class="o">~/.</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span>
+<span class="c1"># icarus needs its game database and firmware files to import games</span>
+<span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="o">~/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">icarus</span><span class="o">/</span>
+<span class="n">mv</span> <span class="n">Database</span> <span class="n">Firmware</span> <span class="o">~/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">icarus</span><span class="o">/</span>
+<span class="c1"># higan needs a template for each system it supports</span>
+<span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="o">~/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">higan</span><span class="o">/</span>
+<span class="n">mv</span> <span class="n">System</span><span class="o">/*</span> <span class="o">~/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">higan</span>
+</pre></div>
+
+
+<h1 id="setting-up-a-system">Setting up a system<a class="headerlink" href="#setting-up-a-system" title="Permanent link">&para;</a></h1>
+<p>Now that everything&rsquo;s installed,
+you should be able to launch higan
+and see the main window.
+It consists of the following parts:</p>
+<ul>
+<li>A menu-bar, containing System, Settings, and Help menus.</li>
+<li>The video output,
+    a big black area where the running game will eventually appear</li>
+<li>The status bar,
+    a dark grey bar which displays information about the running game</li>
+<li>The system/component pane,
+    a white box that lists available systems,
+    or the components of the current system</li>
+<li>The details pane,
+    a light-grey box with a dark-grey higan logo,
+    which will contain details of whatever is selected in the component pane</li>
+</ul>
+<p>We want to play a SNES game,
+so we&rsquo;ll need a SNES system.
+From the &ldquo;System&rdquo; menu,
+choose &ldquo;Create&rdquo;,
+and a list of known system will appear in the details pane.</p>
+<aside>
+All the configuration and details
+of each system you create
+will be stored in a subdirectory
+of <code>~/higan/</code>
+</aside>
+
+<p>Because of higan&rsquo;s country-of-origin naming policy,
+the SNES is listed as &ldquo;Super Famicom&rdquo;,
+so scroll down and select that item in the list.
+When an system is selected in the list,
+a &ldquo;Name&rdquo; field appears below,
+so we can actually name this system &ldquo;SNES&rdquo; like we wanted.</p>
+<p>When you have the name the way you want it,
+click the &ldquo;Create&rdquo; button in the bottom right,
+and a new &ldquo;SNES&rdquo; system will appear in the system pane.
+Select it,
+and the details pane will show details of the selected system.
+Because we haven&rsquo;t configured anything about the system yet,
+there&rsquo;s no details other than &ldquo;Super Famicom&rdquo;.</p>
+<aside>
+You can get back to choose-a-system mode
+by opening the "SNES" menu
+and selecting "Unload"
+</aside>
+
+<p>Double-click the &ldquo;SNES&rdquo; item in the system pane,
+and higan will switch to system mode,
+listing all the components of this system
+in the component pane.
+In system mode,
+the &ldquo;System&rdquo; menu has been replaced by a &ldquo;SNES&rdquo; menu
+(since that&rsquo;s what we named the system),
+and there&rsquo;s a new Tools menu.</p>
+<h1 id="setting-up-a-controller">Setting up a controller<a class="headerlink" href="#setting-up-a-controller" title="Permanent link">&para;</a></h1>
+<p>In the component pane,
+select &ldquo;Controller Port 1&rdquo;.
+A list of possible controllers
+appears in the Details pane.</p>
+<aside>
+You can imagine having a gamepad configuration
+for "XBox controller bindings"
+and one for "Playstation controller bindings".
+</aside>
+
+<p>We want to create a new controller configuration,
+based on the &ldquo;Gamepad&rdquo; template,
+so select the entry with the &ldquo;plus&rdquo; icon that&rsquo;s named &ldquo;Gamepad&rdquo;,
+and click &ldquo;Create&rdquo; at the bottom.
+higan prompts for the name of this new configuration,
+but &ldquo;Gamepad&rdquo; is fine for now.</p>
+<p>Once the new configuration is created,
+it is automatically connected to Controller Port 1,
+and it appears beneath it in the component list.
+Select the new &ldquo;Gamepad&rdquo; component,
+and all the mappable buttons are shown
+in the details pane.</p>
+<h1 id="connecting-a-cartridge">Connecting a cartridge<a class="headerlink" href="#connecting-a-cartridge" title="Permanent link">&para;</a></h1>
+<p>In the component pane,
+select &ldquo;Cartridge Port&rdquo;.
+A list of available cartridges appears
+in the details pane (probably empty).
+Like previous versions of higan,
+game ROMs must be imported to higan&rsquo;s native format
+before they can be played.</p>
+<p>At the bottom of the detail pane,
+click &ldquo;Import &hellip;&rdquo; to open a file-picker dialog,
+and choose the SNES ROM you want to import.
+It&rsquo;s not added to the list immediately,
+but if you select a different component
+then switch back to &ldquo;Cartridge Port&rdquo;,
+the ROM you imported should appear in the list.</p>
+<aside>
+The SNES Speed Test cart has no further configuration,
+but for example
+the Super Game Boy would have another cartridge port
+for a Game Boy game.
+</aside>
+
+<p>Select it,
+then click &ldquo;Connect&rdquo; in the bottom right.
+Like the gamepad did,
+the selected cartridge should appear in the component list.</p>
+<h1 id="playing-the-game">Playing the game<a class="headerlink" href="#playing-the-game" title="Permanent link">&para;</a></h1>
+<p>Now that we have a system
+with a cartridge and a controller connected,
+we can turn it on
+and see what happens.
+From the &ldquo;SNES&rdquo; menu,
+choose &ldquo;Power&rdquo;.
+For the SNES Speed Test,
+you can switch pages of results
+with the left and right buttons
+on the emulated gamepad.</p>    </body>
+</html>

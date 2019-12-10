@@ -1,0 +1,31 @@
+set guioptions-=m		" No menus
+set guioptions-=T		" No toolbar
+set guioptions-=r		" No scrollbars except when necessary
+set guioptions+=R		
+
+" Fonts and other GUI settings
+if has("gui_gtk2")
+	" Try and pick it up from GNOME if we can
+	if executable("gconftool-2")
+	    let &gfn=system("gconftool-2 -g /desktop/gnome/interface/monospace_font_name")
+	else
+	    set guifont=Terminus\ 10
+	endif
+elseif has("x11")
+	set guifont=-*-lucidatypewriter-medium-r-*-*-12-*-*-*-*-*-*-*
+elseif has("gui_mac")
+	set guifont=Consolas:h12
+	set macatsui
+elseif has("gui_macvim")
+	set guifont=Droid_Sans_Mono:h12
+	set transparency=25
+	set fuoptions=maxvert,maxhorz
+
+	" The same bindings I have in iTerm and Camino
+	nmap <D-M-Left> :tabNext<cr>
+	nmap <D-M-Right> :tabnext<cr>
+else
+	" MS Windows
+	set guifont=Bitstream_Vera_Sans_Mono:h9:cDEFAULT
+endif
+

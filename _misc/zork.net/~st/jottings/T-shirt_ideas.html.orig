@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+T-shirt ideas - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="some-ideas-for-sexy-t-shirts">Some ideas for sexy t-shirts<a class="headerlink" href="#some-ideas-for-sexy-t-shirts" title="Permanent link">&para;</a></h1>
+<ol>
+<li><a href="http://web.aanet.com.au/Screwtape/Helvetica%20Caps.svg">HELVETICA</a></li>
+<li>Platinum, some random-looking shape built from pieces of Apple Platinum. Pixelly good.</li>
+<li>Audio, some pretty visualisation of a favourite song or sound. Need to find out what pretty visualisations can be easily generated. Ideas include:<ul>
+<li>Echoes, Pink Floyd</li>
+<li>Mogwai Fear Satan, Mogwai</li>
+<li>The two bar intro to the Final Fantasy battle music.</li>
+<li>The Macintosh startup sound</li>
+<li>&ldquo;I love you&rdquo;</li>
+<li>Fitter Happier, Radiohead</li>
+<li>The Mario 1-Up sound</li>
+<li>The Zelda &lsquo;you found a secret&rsquo; sound</li>
+<li>Any quote from HAL, in 2001</li>
+<li>The notes from Close Encounters Of The Third Kind</li>
+</ul>
+</li>
+<li>X11, the standard cross cursor in front of the standard stippled background. Since we can&rsquo;t extend the stippled background indefinitely, we&rsquo;ll have to fade it out toward the edges - perhaps an oval alpha gradient, dithered to black-and-white.</li>
+<li><a href="http://web.aanet.com.au/Screwtape/The%20Young%20And%20The%20Headless.svg">The Young And The Headless</a></li>
+</ol>    </body>
+</html>

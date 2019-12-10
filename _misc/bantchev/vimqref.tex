@@ -1,0 +1,313 @@
+%----------------------------------------------------------------------------
+%
+%   This card may be freely distributed under the terms of the GNU general
+%   public license.  
+%
+%   DVI:                 latex vimqref
+%   PostScript:          dvips -o vimqref.ps -t landscape vimqref
+%   PDF:                 ps2pdf vimqref.ps
+%
+%   Boyko Bantchev, November 2008
+%
+%----------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,landscape]{article}
+
+\usepackage{fancyvrb}
+\usepackage{multicol}
+
+\setlength{\hoffset}{-19mm}
+\setlength{\voffset}{0mm}
+
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{0mm}
+
+\setlength{\topmargin}{-20mm}
+\setlength{\headsep}{0mm}
+
+\setlength{\textwidth}{285mm}
+\setlength{\textheight}{190mm}
+
+\setlength{\columnsep}{12mm}
+
+\newlength{\oldindent}
+\setlength{\oldindent}{\parindent}
+\setlength{\parindent}{0mm}
+
+\def\sect#1{\vskip3mm{\large\bfseries#1}\vskip1mm}
+\def\spckey#1{$<${\small\sc#1}$>$}
+
+\DefineShortVerb{\|}   % | for verbatim printing (package fancyvrb)
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{multicols}{3}
+
+\centerline{\large\bfseries{}VIM QUICK REFERENCE CARD}
+\vskip 1mm
+\hrule
+\vskip 3mm
+
+\sect{Basic movement}
+character left, right; line up, down \dotfill|h l k j|\\
+word/token left, right \dotfill|b w|\\
+end of word/token left, right \dotfill|ge e|\\
+beginning of previous, next section \dotfill|{ }|\\
+beginning of previous, next sentence \dotfill|( )|\\
+beginning, middle of line \dotfill|0 gm|\\
+first, last character of line \dotfill|^ $|\\
+line $n$, default the last, first \dotfill$n$|G| $n$|gg|\\
+percentage $n$ of the file \dotfill$n$|%|\\
+column $n$ of current line \dotfill$n$\Verb+|+\\
+match of next brace, bracket, comment, |#define|\dotfill|%|\\
+line $n$ from start, bottom of window \dotfill$n$|H| $n$|L|\\
+middle line of window \dotfill|M|
+
+\sect{Insertion \& replace $\rightarrow$ insert mode}
+insert before, after cursor \dotfill|i a|\\
+insert at beginning, end of line \dotfill|I A|\\
+insert text in first column \dotfill|gI|\\
+open a new line below, above the current line \dotfill|o O|\\
+replace character under cursor with $c$ \dotfill|r|$c$\\
+like r, but without affecting layout \dotfill|gr|$c$\\
+replace characters starting at the cursor \dotfill|R|\\
+like R, but without affecting layout \dotfill|gR|\\
+change text of movement command $m$ \dotfill|c|$m$\\
+change current line \dotfill|cc| or |S|\\
+change to the end of line \dotfill|C|\\
+change one character and insert \dotfill|s|\\
+switch case and advance cursor \dotfill|~|\\
+switch case of movement command $m$ \dotfill|g~|$m$\\
+lowercase, uppercase text of movement $m$ \dotfill|gu|$m$ |gU|$m$\\
+shift left, right text of movement $m$ \dotfill|<|$m$ |>|$m$\\
+shift n lines left, right \dotfill$n$|<<| $n$|>>|
+
+\sect{Deletion}
+delete character under, before cursor \dotfill|x X|\\
+delete text of movement command $m$ \dotfill|d|$m$\\
+delete current line, to the end of line \dotfill|dd D|\\
+join current line with next, without space \dotfill|J gJ|\\
+delete range $r$ lines \dotfill|:|$r$|d|\\
+delete range $r$ lines into register $x$\dotfill|:|$r$|d|$x$
+
+\sect{Insert mode}
+insert char $c$ literally, decimal value $n$ \dotfill|^V|$c$ |^V|$n$\\
+insert previously inserted text \dotfill|^A|\\
+same as |^A| \& command mode \dotfill|^@|\\
+insert content of register $x$, literally \dotfill|^R|$x$ |^R^R|$x$\\
+text completion before, after cursor \dotfill|^N ^P|\\
+delete word before cursor \dotfill|^W|\\
+delete all inserted characters in current line \dotfill|^U|\\
+shift left, right one shift width \dotfill|^D ^T|\\
+enter digraph $c_1c_2$ \dotfill|^K|$c_1c_2$ or $c_1${}$\leftarrow${}$c_2$\\
+execute $c$ in temporary command mode \dotfill|^O|$c$\\
+scroll up, down \dotfill|^X^E ^X^Y|\\
+abandon editing \& command mode \dotfill\spckey{esc} or |^[|
+
+\sect{Copying}
+use register $x$ for next delete, yank, put \dotfill|"|$x$\\
+show the content of all registers \dotfill|:reg|\\
+show the content of registers $x$ \dotfill|:reg| $x$\\
+yank the text of movement command $m$ \dotfill|y|$m$\\
+yank current line into register\dotfill|yy| or |Y|\\
+put register after, before cursor position \dotfill|p P|\\
+like p, P with indent adjusted \dotfill|]p [p|\\
+like p, P leaving cursor after new text \dotfill|gp gP|
+
+\sect{Advanced insertion}
+perform rot13 encoding on movement $m$ \dotfill|g?|$m$\\
+$+n$, $-n$ to number under cursor \dotfill$n$|^A| $n$|^X|\\
+format lines of movement $m$ to fixed width \dotfill|gq|$m$\\
+centre lines in range $r$ to width $w$ \dotfill|:|$r$|ce| $w$\\
+left align lines in range $r$ with indent $i$ \dotfill|:|$r$|le| $i$\\
+right align lines in range $r$ to width $w$ \dotfill|:|$r$|ri| $w$\\
+filter lines of movement $m$ through command $c$ \dotfill|!|$mc$\\
+filter $n$ lines through command $c$ \dotfill$n$|!!|$c$\\
+filter range $r$ lines through command $c$ \dotfill|:|$r$|!|$c$
+
+\sect{Visual mode }
+start/stop highlighting characters, lines, block \dotfill|v V ^V|\\
+exchange cursor position with start of highlighting \dotfill|o|\\
+start highlighting on previous visual area \dotfill|gv|\\
+select a word, a sentence, a section \dotfill|aw as ap|\\
+select a block |( )|, a block |{ }|\dotfill|ab aB|
+
+\columnbreak
+
+\sect{Undoing, repeating \& registers }
+undo last command, restore last changed line \dotfill|u U|\\
+repeat last changes, redo last undo \dotfill|. ^R|\\
+repeat last changes with count replaced by $n$ \dotfill$n$|.|\\
+record, append typed characters in register $c$ \dotfill|q|$c$ |q|$C$\\
+stop recording \dotfill|q|\\
+execute the content of register $c$ \dotfill|@|$c$\\
+repeat previous |@| command \dotfill|@@|\\
+execute register $c$ as an |ex| command \dotfill|:@|$c$\\
+execute |ex| command $c$ on range $r$ where pattern $p$ matches \dotfill|:|$r$|g/|$p$|/|$c$
+
+\sect{Complex movement }
+line up, down on first non-blank character \dotfill|- +|\\
+space-separated word left, right \dotfill|B W|\\
+end of space-separated word left, right \dotfill|gE E|\\
+down $n-1$ lines on first non-blank character \dotfill$n$|_|\\
+beginning of screen line \dotfill|g0|\\
+first, last character of screen line \dotfill|g^ g$|\\
+screen line up, down \dotfill|gk gj|\\
+next, previous occurence of character $c$ \dotfill|f|$c$ |F|$c$\\
+before next, previous occurence of $c$ \dotfill|t|$c$ |T|$c$\\
+repeat last |fFtT|, in opposite direction \dotfill|; ,|\\
+start of section backward, forward \dotfill|[[ ]]|\\
+end of section backward, forward \dotfill|[] ][|\\
+unclosed |(|, |)| backward, forward \dotfill|[( ])|\\
+unclosed |{|, |}| backward, forward \dotfill|[{ ]}|\\
+start of backward, forward Java method \dotfill|[|$m$ |]|$m$\\
+unclosed |#if|, |#else| etc backward, forward \dotfill|[# ]#|\\
+start, end of |/* */| backward, forward \dotfill|[* ]*|
+
+\sect{Search \& substitution}
+search forward, backward for $s$ \dotfill|/|$s$ |?|$s$\\
+search fwd, bwd for $s$ with offset $o$ \dotfill|/|$s$|/|$o$ |?|$s$|?|$o$\\
+repeat forward last search \dotfill|n| or |/|\\
+repeat backward last search \dotfill|N| or |?|\\
+search backward, forward for word under cursor \dotfill|# *|\\
+same, but also find partial matches \dotfill|g# g*|\\
+local, global definition of symbol under cursor \dotfill|gd gD|\\
+substitute $f$ by $t$ in range $r$ \dotfill|:|$r$|s/|$f$|/|$t$|/|$x$\\
+\hspace*{20mm}$x$\,: |g|--all occurrences, |c|--confirm changes \\ 
+repeat substitution with new $r$ \& $x$\dotfill|:|$r$|s| $x$
+
+\columnbreak
+
+\sect{Special characters in search patterns }
+any single character, start, end of line \dotfill|. ^ $|\\
+start, end of word \dotfill|\< \>|\\
+a single character in range $c_1..c_2$ \dotfill|[|$c_1$|-|$c_2$|]|\\
+a single character not in range \dotfill|[^|$c_1$|-|$c_2$|]|\\
+an identifier, keyword; excl.\ digits \dotfill|\i \k \I \K|\\
+a file name, printable char.; excl.\ digits \dotfill|\f \p \F \P|\\
+a white space, a non-white space \dotfill|\s \S|\\
+\spckey{esc}, \spckey{tab}, \spckey{cr}, \spckey{bksp} \dotfill|\e \t \r \b|\\
+match $0..1$, $0..\infty$, $1..\infty$ of preceding atoms \dotfill|\? * \+|\\
+separate two branches \dotfill \Verb+\|+ \\
+group patterns into an atom \dotfill|\( \)|\\
+the whole matched pattern, $n$-th {\tt()} group \dotfill|\& \|$n$\\
+next character made upper, lowercase \dotfill|\u \l|
+
+\sect{Offsets in search commands}
+$n$ line downward in column 1 \dotfill$n$ or $+n$\\
+$n$ line upward in column 1 \dotfill$-n$\\
+$n$ characters right, left to end of match \dotfill|e+|$n$ |e-|$n$\\
+$n$ characters right, left to start of match \dotfill|s+|$n$ |s-|$n$\\
+execute search command $sc$ next \dotfill|;|$sc$
+
+\sect{Marks and motions }
+mark current position with mark $c\in[a..Z]$ \dotfill|m|$c$\\
+go to mark $c$ in current, $C$ in any file \dotfill|`|$c$ |`|$C$\\
+go to last exit position \dotfill|`|$0\cdots9$\\
+go to position before jump, at last edit \dotfill|`` `"|\\
+go to start, end of previously operated text \dotfill|`[ `]|\\
+print the active marks list \dotfill|:marks|\\
+print the jump list \dotfill|:jumps|\\
+go to $n$-th older position in jump list \dotfill$n$|^O|\\
+go to $n$-th newer position in jump list \dotfill$n$|^I|
+
+\sect{Key mapping \& abbreviations }
+map $c$ $\mapsto$ $e$ in normal \& visual mode \dotfill|:map| $c$ $e$\\
+map $c$ $\mapsto$ $e$ in insert \& cmd-line mode \dotfill|:map!| $c$ $e$\\
+remove mapping $c$ \dotfill|:unmap| $c$ |:unmap!| $c$\\
+write current mappings, settings\dots to file $f$ \dotfill |:mk |$f$\\
+add abbreviation for $c$ $\mapsto$ $e$ \dotfill|:ab| $c$ $e$\\
+show abbreviations starting with $c$ \dotfill|:ab| $c$\\
+remove abbreviation $c$\dotfill|:una| $c$
+
+\columnbreak
+
+\sect{Tags }
+jump to tag $t$ \dotfill|:ta|$t$\\
+jump to $n$-th newer tag in list \dotfill|:|$n$|ta|\\
+jump to the tag under cursor, return from tag \dotfill|^] ^T|\\
+list matching tags and select one for jump \dotfill|:ts t|\\
+jump to tag or select one if multiple matches \dotfill|:tj t|\\
+print tag list \dotfill|:tags|\\
+jump back from, to $n$-th older tag \dotfill|:|$n$|po :|$n$|^T|\\
+jump to last matching tag \dotfill|:tl|\\
+preview tag under cursor, tag $t$ \dotfill|^W} :pt| $t$\\
+split window and show tag under cursor \dotfill|^W]|\\
+close tag preview window \dotfill|^Wz| or |:pc|
+
+\sect{Scrolling \& multi-windowing }
+scroll line up, down \dotfill|^E ^Y|\\
+scroll half a page up, down \dotfill|^D ^U|\\
+scroll page up, down \dotfill|^F ^B|\\
+set current line at top of window \dotfill|zt| or |z|\spckey{cr}\\
+set current line at centre of window \dotfill|zz| or |z.|\\
+set current line at bottom of window \dotfill|zb| or |z-|\\
+scroll one character to the right, left \dotfill|zh zl|\\
+scroll half a screen to the right, left \dotfill|zH zL|\\
+split window in two \dotfill|^Ws| or |:split|\\
+create new empty window \dotfill|^Wn| or |:new|\\
+make current window one on screen \dotfill\verb|^Wo| or |:on|\\
+move to window below, above \dotfill|^Wj ^Wk|\\
+move to window below, above (wrap) \dotfill|^Ww ^W^W|
+
+\vbox{
+\sect{\verb|ex| commands}
+edit file $f$ , unless changes have been made \dotfill|:e| $f$\\
+edit file $f$ always (by default reload current) \dotfill|:e!| $f$\\
+write file and edit next, previous one \dotfill|:wn :wN|\\
+edit next, previous file in list \dotfill|:n :N|\\
+write range $r$ to current file \dotfill|:|$r$|w|\\
+write range $r$ to file $f$ \dotfill|:|$r$|w| $f$\\
+append range $r$ to file $f$ \dotfill|:|$r$|w>>|$f$\\
+quit and confirm, quit and discard changes \dotfill|:q :q!|\\
+write to current file and exit \dotfill|:wq| or |:x| or |ZZ|\\
+recall commands starting with current \dotfill\spckey{$\uparrow$} \spckey{$\downarrow$}\\
+insert content of file $f$ below cursor \dotfill|:r| $f$\\
+insert output of command $c$ below cursor \dotfill|:|$r$|!| $c$\\
+open a window for each file in the argument list \dotfill|:all|\\
+display the argument list\dotfill|:args| \\
+copy, move range $r$ below line $a$ \dotfill|:|$r$|c |$a$| :|$r$|m |$a$
+}
+
+\sect{\verb|ex| ranges }
+separates two lines numbers, set to first line \dotfill|, ;|\\
+an absolute line number $n$ \dotfill$n$\\
+the current line, the last line in file\dotfill|. $|\\
+entire file, visual area\dotfill|% *|\\
+position of mark $t$ \dotfill|'|$t$\\
+the next, previous line where $p$ matches \dotfill|/|$p$|/| |?|$p$|?|\\
+$+n$, $-n$ to the preceding line number \dotfill$+n$ $-n$
+
+\sect{Folding }
+create fold of movement $m$ \dotfill|zf|$m$\\
+create fold for range $r$ \dotfill|:|$r$|fo|\\
+delete fold at cursor, all in window \dotfill|zd zE|\\
+open, close one fold; recursively \dotfill|zo zc zO zC|\\
+move to start, end of current open fold \dotfill|[z ]z|\\
+move down, up to start, end of next fold \dotfill|zj zk|
+
+\sect{Miscellaneous }
+start shell, execute command $c$ in shell \dotfill|:sh :!|$c$\\
+lookup keyword under cursor with man \dotfill|K|\\
+start make, read errors and jump to first \dotfill|:make|\\
+display the next, previous error \dotfill|:cn :cp|\\
+list all errors, read errors from file \dotfill|:cl :cf|\\
+redraw screen, show filename and position \dotfill|^L ^G|\\
+show cursor column, line, and character position \dotfill|g^G|\\
+show ASCII value of character under cursor \dotfill|ga|\\
+open file which filename is under cursor \dotfill|gf|\\
+redirect output to file $f$ \dotfill|:redir>|$f$\\
+save view configuration [to file $f$] \dotfill|:mkview |$[f]$\\
+load view configuration [from file $f$] \dotfill|:loadview |$[f]$\\
+unmapped keys\dotfill\verb|^@ ^K ^_ \ F|$n$\verb| ^F|$n$
+
+\vfill
+\hrulefill \\
+{\small
+This reference card may be freely distributed under the terms of the GNU general public license.  The card is a (2008) much corrected and improved version from the \LaTeX{} source of Sebastian Menge, which is a slight redoing of the original (|http://tnerual.eriogerg.free.fr/vim.html|) card of Laurent Gr\'egoire.
+
+For corrections or improvements to this version, e-mail me at |boykobb@gmail.com| (Boyko Bantchev).
+}
+\end{multicols}
+\end{document}

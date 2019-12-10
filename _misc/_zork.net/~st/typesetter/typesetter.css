@@ -1,0 +1,106 @@
+@import "normalize.css";
+
+html {
+    background: #fffcf0;
+    color:      #333350;
+    font-size: 1em;
+    line-height: 1.2em;
+
+    text-align: justify;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+:link { color: #55C; }
+:link:hover { color: #33E; background: rgba(0, 0, 0, 0.1); }
+:visited { color: #848; }
+:visited:hover { color: #A3A; }
+:link:active, :visited:active { color: #E33; }
+
+body {
+    width: 35em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+h1 { margin: 1.2rem 0; font-size: 2.4rem; line-height: 3.6rem; text-align: center; }
+h2 { margin: 1.2rem 0; font-size: 1.8rem; line-height: 2.3rem; border-bottom: 0.1rem solid currentColor; }
+h3 { margin: 1.2rem 0; font-size: 1.4rem; line-height: 2.3rem; border-bottom: 0.1rem solid currentColor; }
+h4 { margin: 1.2rem 0; font-size: 1.2rem; line-height: 1.2rem; }
+h5 { margin: 1.2rem 0; font-size: 1.0rem; line-height: 1.2rem; }
+h6 { margin: 1.2rem 0; font-size: 0.8rem; line-height: 1.2rem; }
+
+p, div, ul, ol, blockquote, address, table { margin: 1.2rem 0; }
+
+li p:first-child, dd p:first-child { margin-top: 0; }
+li p:last-child, dt p:last-child { margin-bottom: 0; }
+
+p+p { text-indent: 1.2rem; }
+
+ul, ol {
+    padding-left: 0;
+    margin-left: 2.4em;
+}
+
+dt { font-weight: bolder; margin-top: 1.2rem; }
+dd { margin-bottom: 1.2rem; margin-left: 1.2rem; }
+
+blockquote {
+    /*
+     * This overflow setting prevents the margins on blockquote's contents from
+     * collapsing with blockquote's siblings, which means our border and
+     * background will be nicely separate.
+     */
+    overflow: hidden;
+    padding: 0 1.2rem;
+    border-radius: 0.6rem;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+table { margin-left: auto; margin-right: auto; }
+thead { border-bottom: 0.1rem solid black; }
+tfoot { border-top: 0.1rem solid black; }
+thead th, thead td, tfoot th, tfoot td { line-height: 1.1rem; }
+td, th { font-size: 80%; padding: 0 0.6rem; }
+td:first-child, th:first-child { padding-left: 0; }
+td:last-child, th:last-child { padding-right: 0; }
+tr:nth-child(even) { background: rgba(0, 0, 0, 0.1); }
+
+pre {
+    padding: 1.2rem 0;
+    border-left: 0.1rem solid currentColor;
+    padding-left: 1.1rem;
+}
+
+hr {
+    color: inherit;
+    margin: 1.2rem 0;
+    margin-top: -0.1rem;
+    padding: 0;
+    border: none;
+    border-top: 0.1rem solid currentColor;
+    height: 0;
+}
+
+aside {
+    clear: right;
+    float: right;
+    margin: 1.2rem;
+    width: 10rem;
+    margin-right: -13.6rem;
+
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+
+    padding: 0 1.2rem;
+    outline: 1px solid currentColor;
+}
+
+aside h1, aside h2 { font-size: 1.0rem; line-height: 1.2rem; }
+aside h3, aside h4 { font-size: 0.8rem; line-height: 1.2rem; }
+
+/* Special support for footnotes from Pandoc */
+div.footnotes { font-size: 80%; }

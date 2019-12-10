@@ -1,0 +1,186 @@
+body  {
+  color:black;
+  background-color:white;
+  font-family:Ubuntu,sans-serif;
+  text-align:justify;
+  font-size:100%;
+  margin-left:7%;
+  margin-right:7%;
+}
+
+p,li  {
+  line-height:1.5;
+}
+
+p.langlist  {
+  text-align:left;
+  line-height:1.5;
+  margin-left:15%;
+  margin-right:20%;
+}
+
+h1  {
+  text-align:center;
+  font-weight:bold;
+  font-size:1.6em;
+  margin-top:2em;
+  margin-bottom:1.5em;
+}
+
+h3  {
+  font-size:1.2em;
+  text-align:left;
+  font-weight:bold;
+  letter-spacing:0.03em;
+  word-spacing:0.1em;
+  margin-top:1.6em;
+  margin-bottom:1.2em;
+}
+
+h4  {
+  font-size:1.0em;
+  font-style:italic;
+  text-align:left;
+  font-weight:bold;
+  letter-spacing:0.03em;
+  word-spacing:0.1em;
+  margin-top:1.4em;
+  margin-bottom:1.1em;
+}
+
+td  {
+  padding-left:.5em;
+  padding-right:.5em;
+  padding-top:.1em;
+  padding-bottom:.2em;
+  margin:0pt;
+  color:black;
+  background-color:white;
+}
+
+td.topbar  {
+  padding:0pt;
+  margin:0pt;
+  display:none;
+}
+
+span.csc  {font-variant:small-caps}
+
+tt,code  {
+  font-family:Ubuntu Mono,Consolas,monospace;
+  font-weight:bold;
+  color:black;
+  font-size:1.3em;
+}
+
+pre  {
+  margin-top:1.0em;
+  margin-bottom:1.0em;
+  color:black;
+  background-color:white;
+  border-color:gray;
+  border-style:solid;
+  border-top-width:0pt;
+  border-bottom-width:0pt;
+  border-left-width:0pt;
+  border-right-width:0pt;
+  padding-left:0pt;
+  padding-top:0.4em;
+  padding-bottom:0.6em;
+  font-family:Ubuntu Mono,Consolas,monospace;
+  font-size:1.1em;
+}
+
+span.pseudo  {  /* preprocessor etc */
+  color:black;
+  font-weight:bold;
+}
+
+span.command  {  /* statement, operator */
+  color:black;
+  font-weight:bold;
+}
+
+span.bif  {  /* built-in procedure/function or operator */
+  color:black;
+}
+
+span.typename  {  /* typename and similar */
+  color:black;
+  font-weight:bold;
+}
+
+span.identifier  {  /* library procedure/function */
+  color:black;
+}
+
+span.constant  {  /* numbers, chars, strings */
+  color:black;
+}
+
+span.special  {  /* special name, symbol, escape/formating sequence etc */
+  color:black;
+}
+
+span.sectsep  {  /* section separator */
+  color:black;
+  font-weight:bold;
+}
+
+span.comment  {
+  color:#404040;
+  background-color:#c0c0c0;
+  font-style:italic;
+}
+
+a  {
+  text-decoration:none;
+  border:none;
+  padding-left:0pt;
+  padding-right:0pt;
+}
+a:link    {color:black}
+a:visited {color:black}
+a:hover   {background-color:white; color:black}
+
+a.invis  {
+  border:none;
+  padding:0px;
+  display:none;
+}
+
+a.topbar  {
+  border:none;
+  padding-left:3pt;
+  padding-right:3pt;
+}
+a:link.topbar    {color:white}
+a:visited.topbar {color:white}
+a:hover.topbar   {color:white;background-color:white}
+
+a.lang  {
+  border:none;
+  margin-left:10pt;
+  margin-right:0pt;
+  padding-left:0pt;
+  padding-right:0pt;
+}
+a:link.lang    {color:black; background-color:white}
+a:visited.lang {color:black; background-color:white}
+a:hover.lang   {color:black; background-color:white}
+
+a.impl  {
+  border:none;
+  margin-left:4pt;
+  margin-right:4pt;
+  padding-left:0pt;
+  padding-right:0pt;
+}
+a:link.impl    {color:black; background-color:white}
+a:visited.impl {color:black; background-color:white}
+a:hover.impl   {color:black; background-color:white}
+
+hr  {
+  margin:0pt;
+  display:none;
+}

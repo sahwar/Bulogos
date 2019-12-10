@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Controlling XBox 360 LEDs under Linux - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="index.html">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="controlling-xbox-360-leds-under-linux">Controlling XBox 360 LEDs under Linux<a class="headerlink" href="XBox360_LEDs.html#controlling-xbox-360-leds-under-linux" title="Permanent link">&para;</a></h1>
+<p>I bought a shiny new wired XBox 360 controller so I could more easily play some
+of the Humble Indie Bundle games I&rsquo;ve bought. I plugged it into my Debian
+machine and it lit up and created an appropriate device under <code>/dev/input/</code> as
+expected so that was all good. However, after it lit up, it never&hellip; un-lit,
+and its blinking began to get annoying.</p>
+<h2 id="the-scenario">The Scenario<a class="headerlink" href="XBox360_LEDs.html#the-scenario" title="Permanent link">&para;</a></h2>
+<p>Let me back up and describe the controller, for people unfamilliar: the front
+of the 360 pad has an analogue stick (for movement) in the top-left, four
+face-buttons (for actions) in the top-right, a 4-way directional pad in the
+lower-left (generally used for mode-switching) and another analogue stick in
+the lower-right (for moving the camera). In the middle, there&rsquo;s a Start button
+(for pausing, as per decades of tradition), a Back button (for no discernable
+purpose) and a big shiny silver X button which (when pushed) takes you back to
+the 360&rsquo;s menu-system (if you&rsquo;re using a real 360). Surrounding this shiny
+metal button are four bright-green LEDs, each one lighting up a quadrant of the
+bezel. As I understand it, when you plug a 360 pad into a real 360, it starts
+flashing all the LEDs simultaneously, until the system decides whether your pad
+will be regarded as player 1, 2, 3 or 4. Once the system has picked on, it
+tells the pad to just blink the relevant quadrant for a bit, then just leave
+that quadrant&rsquo;s light on.</p>
+<p>This doesn&rsquo;t always work properly in Linux; the first time I plugged in my 360
+pad it just sat there blinking every LED forever, although on subsequent
+connections it behaved more sensibly.</p>
+<h2 id="a-blind-alley">A blind alley<a class="headerlink" href="XBox360_LEDs.html#a-blind-alley" title="Permanent link">&para;</a></h2>
+<p>If you start poking around in the usual places for LED controls, you&rsquo;ll
+eventually stumble across a directory in <code>/sys/class/leds/</code> with a relevant
+name; because I only have one 360 pad connected, I found a directory named
+<code>/sys/class/leds/xpad0/</code>. Inside are two files, one named <code>brightness</code> and one
+named <code>max_brightness</code>. If you think for five seconds, or if you go look up the
+standard Linux Kernel documentation on the standard LED interface, you will
+conclude that <code>max_brightness</code> contains a number which represents the brightest
+the LED can be, <code>brightest</code> contains a number representing the current
+brightness, and you can set the brightness by writing a new number into the
+<code>brightness</code> file:</p>
+<div class="codehilite"><pre><span></span>$ cat /sys/class/leds/xpad0/brightness
+<span class="m">0</span>
+$ cat /sys/class/leds/xpad0/max_brightness
+<span class="m">255</span>
+</pre></div>
+
+
+<p>It turns out this is completely wrong. Maybe it works for other, saner LED
+drivers, but the 360 pad doesn&rsquo;t actually allow the computer to specifically
+control the LEDs; the computer just says &ldquo;display pattern #5&rdquo; (or whatever) and
+the pad looks up that pattern and plays it in a loop until it&rsquo;s told to display
+some other pattern.</p>
+<h2 id="the-real-deal">The real deal<a class="headerlink" href="XBox360_LEDs.html#the-real-deal" title="Permanent link">&para;</a></h2>
+<p>It turns out the 360 pad can display 14 different patterns (numbered 0-13). To
+display pattern <code>$N</code>, you can send that code to the 360 pad like this:</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$N</span> <span class="p">|</span> sudo tee /sys/class/leds/xpad0/brightness
+</pre></div>
+
+
+<p>&hellip;where <code>$N</code> should be replaced by a number from the list below, and <code>xpad0</code>
+might change depending on how many times you&rsquo;ve connected a 360 pad to your
+computer since the last reboot.</p>
+<p>Anyway, here&rsquo;s the list of patterns:</p>
+<ul>
+<li><code>0</code>: All LEDs off</li>
+<li><code>1</code>: Flash all LEDs 3 times, then go back to the previous display.</li>
+<li><code>2</code>: Flash the top-left LED 3 times, then leave it on.</li>
+<li><code>3</code>: Flash the top-right LED 3 times, then leave it on.</li>
+<li><code>4</code>: Flash the bottom-left LED 3 times, then leave it on.</li>
+<li><code>5</code>: Flash the bottom-right LED 3 times, then leave it on.</li>
+<li><code>6</code>: Turn on the top-left LED.</li>
+<li><code>7</code>: Turn on the top-right LED.</li>
+<li><code>8</code>: Turn on the bottom-left LED.</li>
+<li><code>9</code>: Turn on the bottom-right LED.</li>
+<li><code>10</code>: Turn on each LED, one after another, clockwise.</li>
+<li><code>11</code>: Flash the currently-active LED (on for about half a second,
+   off for about half a second) 15 times, then leave it on.</li>
+<li><code>12</code>: Flash the currently-active LED (on for about half a second, off for
+   about 3.5 seconds), forever.</li>
+<li><code>13</code>: Flash a chequer-board pattern (top-left and bottom-right, followed by
+   top-right and bottom left; on for about half a second, off for about half
+   a second) for about 10 seconds, then go back to the previous display.</li>
+</ul>    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+All Pages - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="./">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<ul>
+<li><a href="Automatic_$TERM_Selection.html">Automatic $TERM selection</a></li>
+<li><a href="sais.html">A walk through the SA-IS algorithm</a></li>
+<li><a href="New_PC_2012-07.html">Building a new PC (2012-07)</a></li>
+<li><a href="rust-windows-and-debian.html">Building Rust programs for Windows on Debian Linux</a></li>
+<li><a href="Christmas_List.html">Chrismas List</a></li>
+<li><a href="XBox360_LEDs.html">Controlling XBox 360 LEDs under Linux</a></li>
+<li><a href="delta-compression-tests-2019.html">Delta Compression tests, 2019 edition</a></li>
+<li><a href="FRP_in_Python.html">Exploring Functional Reactive Programming in Python</a></li>
+<li><a href="Getting_Started_with_higan_v106.217.html">Getting Started with higan v106.217</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="How_to_limit_the_length_of_your_bash_prompt.html">How to limit the length of your bash prompt</a></li>
+<li><a href="How_to_set_your_PATH.html">How to set your $PATH</a></li>
+<li><a href="Torchlight_2_Guide.html">Installing Torchlight II under Linux</a></li>
+<li><a href="Mark_Hulmes'_DM_Tips.html">Mark Hulmes&rsquo; DM Tips</a></li>
+<li><a href="Notes_on_bsnes_Licensing.html">Notes on bsnes licensing</a></li>
+<li><a href="Notes_on_Python_Parser_Generators.html">Notes on Python Parser Generators</a></li>
+<li><a href="Notes_on_Terminal_Emulation.html">Notes on terminal emulation</a></li>
+<li><a href="Per-Host_Prompt_Colouring.html">Per-host prompt colouring</a></li>
+<li><a href="PyMeta2_Documentation.html">PyMeta2_Documentation</a></li>
+<li><a href="Screwtape_Needs_To_See.html">Screwtape_Needs_To_See</a></li>
+<li><a href="Serializing_awkward_data_with_serde.html">Serializing awkward data with serde</a></li>
+<li><a href="Colours_in_Metacity_Themes.html">Specifying colours in Metacity themes</a></li>
+<li><a href="Stupid_bash_tricks.html">Stupid bash tricks</a></li>
+<li><a href="Rust_and_the_XDG_Base_Directory_Specification.html">Tricking Rust into following the XDG Base Directory Specification</a></li>
+<li><a href="T-shirt_ideas.html">T-shirt ideas</a></li>
+<li><a href="gnome-i3.html">Using i3 with GNOME 3</a></li>
+<li><a href="Gamma_Correction.html">What&rsquo;s the deal with&hellip; gamma correction?</a></li>
+<li><a href="GBA_saves.html">What&rsquo;s the deal with&hellip; GBA save files?</a></li>
+<li><a href="xxxii,_a_numerological_roguelike.html">XXXII, a Numerological Roguelike</a></li>
+</ul>    </body>
+</html>

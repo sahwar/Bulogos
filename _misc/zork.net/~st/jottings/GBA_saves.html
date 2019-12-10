@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+What&#39;s the deal with... GBA save files? - 		Screwtape's Notepad
+	</title>
+        <link rel="stylesheet" href="combined.css">
+    </head>
+    <body>
+	<header>
+	    <h1>Screwtape's Notepad</h1>
+	    <nav>
+		<ul>
+		    <li><a href="index.html">Home</a>
+		    <li><a href="all_pages.html">All pages</a>
+		</ul>
+	    </nav>
+	</header>
+<h1 id="whats-the-deal-with-gba-save-files">What&rsquo;s the deal with&hellip; GBA save files?<a class="headerlink" href="GBA_saves.html#whats-the-deal-with-gba-save-files" title="Permanent link">&para;</a></h1>
+<p>Game Boy Advance cartridges manufactured by Nintendo use a variety of different
+technologies for non-volatile storage (colloquially, &ldquo;save files&rdquo; or &ldquo;save
+RAM&rdquo;), and each type works a little differently. For a real cartridge running
+on real hardware, there&rsquo;s no problem because Nintendo made sure that each
+game cartridge included the kind of storage that the game expected, but for
+emulation and preservation things get more complicated.</p>
+<p>To start with, let&rsquo;s look at the list of available technologies. As far as we
+know, every official GBA cartridge shipped by Nintendo used one of the
+following storage technologies, which I will refer to as &ldquo;save types&rdquo;:</p>
+<ul>
+<li>Nothing (no save storage at all)</li>
+<li>EEPROM with 512 bytes of storage</li>
+<li>EEPROM with 8 kilobytes of storage</li>
+<li>SRAM (either 32 kilobytes of &ldquo;static RAM&rdquo; with a long-life battery
+  attached, or 32 kilobytes of ferro-electric RAM)</li>
+<li>Flash RAM with 64 kilobytes of storage</li>
+<li>Flash RAM with 128 kilobytes of storage</li>
+</ul>
+<p>A game designed to work with one kind of storage won&rsquo;t work with the others,
+and what&rsquo;s worse is that the hardware interfaces for these storage systems
+occupy the same portion of the GBA&rsquo;s memory-map, so it&rsquo;s impossible for an
+emulator to emulate more than one at a time. When it boots the software, it
+needs to know what storage the game needs, before the game needs it. So what
+does it do?</p>
+<h2 id="save-codes">Save Codes<a class="headerlink" href="GBA_saves.html#save-codes" title="Permanent link">&para;</a></h2>
+<p>In previous Nintendo consoles, like the SNES, there&rsquo;s information in the game&rsquo;s
+internal header that specifies the hardware features the game expects to be
+present, or at least that can be used to make a reliable educated guess.
+Unfortunately, the GBA&rsquo;s internal header does not have any such information.</p>
+<p>However, by a happy chance it turns out that the official Nintendo SDK seems to
+have shipped with library functions for dealing with different types of save
+storage. The code isn&rsquo;t consistent enough to be fingerprinted, but it generally
+includes some common byte-strings that the emulator can search for, which
+I will refer to as &ldquo;save codes&rdquo;. These include:</p>
+<ul>
+<li><code>EEPROM_V</code>: Indicates one of the EEPROM save types.</li>
+<li><code>SRAM_V</code>: Indicates the SRAM save type.</li>
+<li><code>FLASH_V</code>: Indicates the 64 kilobyte Flash RAM save type.</li>
+<li><code>FLASH512_V</code>: Also indicates the 64 kilobyte Flash RAM save type (usually found in later games)</li>
+<li><code>FLASH1M_V</code>: Indicates the 128 kilobyte Flash RAM save type.</li>
+</ul>
+<p>These save codes give a pretty good hint about the save code, so if an emulator
+scans through the game image looking for one of these codes before booting it
+up, it&rsquo;s got a pretty good chance of working. Unfortunately, this is not
+a perfect method, for a variety of reasons:</p>
+<h2 id="wrinkle-1-games-lie">Wrinkle 1: Games lie<a class="headerlink" href="GBA_saves.html#wrinkle-1-games-lie" title="Permanent link">&para;</a></h2>
+<p>There are some games that contain two save codes, but only work with one
+specific save-type. There&rsquo;s no reliable heuristic for picking the correct
+save-type.</p>
+<p>There&rsquo;s only one game that contains <em>three</em> save codes, which is &ldquo;Top Gun
+- Combat Zones&rdquo;. It is a filthy liar, and if the game detects any of the
+storage types described by those save codes, it activates an anti-piracy
+routine and prevents you from picking any options in the main menu.</p>
+<h2 id="wrinkle-2-eeprom-sizes">Wrinkle 2: EEPROM sizes<a class="headerlink" href="GBA_saves.html#wrinkle-2-eeprom-sizes" title="Permanent link">&para;</a></h2>
+<p>There&rsquo;s two possible sizes of EEPROM storage, but only one save code for both
+of them. Obviously if the emulator sets up an emulated 512-byte storage area,
+and the game expects 8 kilobytes of storage, that&rsquo;s not going to work out too
+well.</p>
+<p>Due to the particular protocol used by the EEPROM storage systems in GBA
+cartridges, an emulator can pretty reliably guess what storage size a game
+expects to use before the game actually reads or writes any data, so this isn&rsquo;t
+a terrible limitation. It&rsquo;s still added complexity, however.</p>
+<h2 id="wrinkle-3-flash-manufacturer-codes">Wrinkle 3: Flash manufacturer codes<a class="headerlink" href="GBA_saves.html#wrinkle-3-flash-manufacturer-codes" title="Permanent link">&para;</a></h2>
+<p>The GBA was far from the only device that supported Flash RAM for storage;
+manufacturers of Compact Flash cards and SD cards and USB thumb-drives were all
+churning out Flash RAM chips as fast as they could. Although each
+manufacturer&rsquo;s chips behaved in more or less the same way at the electrical
+level, at the software level they all expected the instructions to read or
+write data in different, manufacturer specific formats. Software written to
+store information to one brand of Flash RAM chips wouldn&rsquo;t work at all with
+Flash RAM chips from another manufacturer.</p>
+<p>Nintendo came up with a reasonable solution to this problem: As best I can make
+out, the story went something like this: they would buy batches of Flash RAM
+chips from a few manufacturers, then add support for those Flash RAM chips into
+their official SDK, and send it out to the game developers whose games were
+scheduled to be manufactured in the near future. At start up, the code in the
+SDK would talk to the Flash chip and say &ldquo;what&rsquo;s your manufacturer code?&rdquo; and
+use the protocol corresponding to that manufacturer. When Nintendo&rsquo;s
+cartridge-factories began to run out of Flash RAM chips, they&rsquo;d buy more
+batches from whichever manufacturer had the best deal, and remove support for
+the previous manufacturer&rsquo;s chips from the SDK and replace it with the new.</p>
+<p>The upshot of all this is that if a GBA game is designed for one of the Flash
+RAM save types, the first thing it will do is ask the emulated Flash RAM
+&ldquo;what&rsquo;s your manufacturer code&rdquo;, and there are half a dozen or so possible
+answers, some of which will be accepted and some of which will cause error
+messages or maybe even a crash&hellip; and exactly <em>which</em> codes are accepted
+changes from one game to the next.</p>
+<h2 id="solution-a-save-type-database">Solution: a save-type database<a class="headerlink" href="GBA_saves.html#solution-a-save-type-database" title="Permanent link">&para;</a></h2>
+<p>Every GBA emulator with reasonable compatibility has some kind of database that
+specifies save-type information. Some emulators, like
+<a href="http://vba-m.com/">VBA-M</a> have carefully-chosen defaults with <a href="http://sourceforge.net/p/vbam/code/HEAD/tree/trunk/src/vba-over.ini">a list of
+exceptions</a>,
+while <a href="http://www.mamedev.org/">MAME</a> tries to be
+<a href="http://mamedev.org/source/hash/gba.xml.html">exhaustive</a>. Unfortunately, none
+that I&rsquo;ve found actually guarantees that every game has been tested, and none
+of them seem to include Flash RAM manufacturer code information, so reliably
+emulating GBA games is still somewhat difficult.</p>
+<h2 id="references">References:<a class="headerlink" href="GBA_saves.html#references" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="http://nocash.emubase.de/gbatek.htm#gbacartbackupids">GBATEK</a></li>
+</ul>    </body>
+</html>
