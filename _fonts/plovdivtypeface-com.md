@@ -1,1 +1,1 @@
-* plovdivtypeface.com
+* http://plovdivtypeface.com
