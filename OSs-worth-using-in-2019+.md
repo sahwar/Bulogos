@@ -14,6 +14,7 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 `cmd.exe`, PowerShell / PowerShell Core (open-source), [ConEmu](https://conemu.github.io/), [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer), [Clink](http://mridgers.github.io/clink), [PSReadLine](https://github.com/lzybkr/PSReadLine), [PSGet](https://github.com/psget/psget), Chocolatey / NuGet / MS [OneGet](https://github.com/OneGet/oneget), [Process Hacker](http://processhacker.sourceforge.net/), [cmder](https://cmder.net/), [GitForWindows](https://gitforwindows.org/), [mintty](https://mintty.github.io/), [wsltty](https://github.com/mintty/wsltty), [NirSoft apps](http://www.nirsoft.net/) (especially NirCmd), [Windows utilities by Code.Kliu.org](http://code.kliu.org/) (like [elevate](http://code.kliu.org/misc/elevate/)), [Babun](https://github.com/babun/babun), plus Windows (x64) builds of `curl`, `wget`, `ffmpeg`/`libav`, etc.
 
 ### Viable Linux distros 2019 ###
+> for more (GNU/)Linux distros, please see: https://distrowatch.com/ & https://en.wikipedia.org/wiki/List_of_Linux_distributions
 * [MX Linux](http://mxlinux.org/) 10/10
 * [AntiX](https://antixlinux.com/) 8/10
 * [Debian](http://debian.org/) (newest; +squeeze-backports and later) 8/10
@@ -50,7 +51,24 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [LXLE](http://www.lxle.net/)
 * [PureOS](https://www.pureos.net/) (from https://puri.sm/, powerful libre laptops!)
 * [ZorinOS](https://zorinos.com/)
-* ...
+* ReactOS (NOT a (GNU/)Linux distro; it is an open-source reverse-engineered (?) clone of Microsoft Windows NT/2K/XP and so it is compatible with most MS Windows apps made for MS Windows XP; maybe if you add Mono (an open-source clone of .NET framework for MS Windows 7+) to it, it may also run apps made for MS Windows 7/8/8.1/10 (UWP (Universal Windows(10) Platform)?...)
+* ferenOS Linux (an extremely well-polished (GNU/)Linux distro with a nice set of visual styles/themes mimicking other OSs!)
+* EasyOS (a very cool PuppyLinux fork based on Debian/Ubuntu; it's comparable to AntiX Linux & MX Linux 17+)
+* elementaryOS (a very nice Linux distro that tries to mimick MacOSX X/macOS's design aesthetics&usability)
+* TinyCore Linux (tinycore.org)
+* LFS (Linux From Scratch)
+* MinimalLinux LiveISO (a Bulgarian (GNU/)Linux distro similar to TinyCore Linux, X86Free+, BusyBox, LFS (Linux from scratch), etc.)
+* SenlinOS Linux (a nice Chinese/PRC Linux distro with cool visual styles & a custom DE (desktop environment))
+* SliTaz Linux (a very cool small-to-medium-sized Linux distro aimed at repackaging it as custom do-it-yourself (DIY) Linux distro)
+* Medibuntu
+* Kubuntu / Ubuntu (GNOME 3.0+) / Ubuntu MATE (MATE DE is the polished fork of GNOME2 DE) / Xubuntu (XFCE) / Lubuntu (LXDE/LXQt)
+* KDE Allegra / KDE Graphics Linux distro
+* LXLE Linux
+* SerenityOS
+* Deepin Linux + Deepin DE (Deepin Desktop Environment)
+* PCLinuxOS
+* eZIX
+* etc. ...
 * https://www.scientificlinux.org/
 * https://archiveos.org/foresight/
 

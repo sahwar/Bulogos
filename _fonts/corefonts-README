@@ -1,0 +1,57 @@
+1. As root untar fonts in /usr/X11/lib/fonts
+
+	tar xzvf corefonts.tar.gz -C /usr/X11/lib/fonts
+
+2. Add fonts paths in /etc/X11/XF86Config or /etc/X11/xorg.conf
+
+	Section "Files"
+	    ...
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/type1/"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/truetype/"
+
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/cp1251/75dpi"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/cp1251/misc"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-10646-1/75dpi"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-10646-1/misc"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-8859-5/75dpi"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-8859-5/misc"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/koi8-r/75dpi"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/koi8-r/misc"
+
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/cronyx/cp1251/100dpi"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/cronyx/iso-10646-1/100dpi"
+
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/misc/"
+	    ...
+	EndSection
+
+3. Make sure you have this lines in /etc/X11/XF86Config or /etc/X11/xorg.conf
+
+	Section "Module"
+	    ...
+	    Load        "type1"
+	    Load        "freetype"
+	    ...
+	EndSection
+
+
+4. /etc/fonts/local.conf must look something like this
+
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+	<dir>/usr/share/fonts</dir>
+	<dir>/usr/X11R6/lib/X11/fonts/TTF</dir>
+	<dir>/usr/X11R6/lib/X11/fonts/Type1</dir>
+	<dir>/usr/X11R6/lib/X11/fonts/corefonts/truetype</dir>
+	<dir>/usr/X11R6/lib/X11/fonts/corefonts/type1</dir>
+	<dir>/usr/X11R6/lib/X11/fonts/vera</dir>
+	<dir>~/.fonts</dir>
+</fontconfig>
+
+4. Run /usr/X11/bin/fc-cache -f -v
+
+5. Restart the X server
+
+For example see configs in http://georgi.unixsol.org/programs/X11 or
+example in the archive

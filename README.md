@@ -58,6 +58,10 @@ git clone https://github.com/sahwar/Bulogos.git
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ve4ernik)
 
+## License / Лиценз
+
+* [LICENSE.txt](https://github.com/sahwar/Bulogos/LICENSE.txt) + [CREDITS_FAIR-USE.txt](https://github.com/sahwar/Bulogos/CREDITS_FAIR-USE.txt)
+
 ----
 
 :us: :gb:  This website is open-source. <a href="https://github.com/sahwar/Bulogos/edit/master/README.md">Propose edits to this webpage</a>.

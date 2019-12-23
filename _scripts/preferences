@@ -1,0 +1,107 @@
+Package: ssh
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: openssl
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: stunnel
+Pin: release a=testing
+Pin-Priority: 989
+
+Package: portmap
+Pin: release a=testing
+Pin-Priority: 989
+
+Package: samba-common
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: smbfs
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: smbclient
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: libsmbclient
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: ircd
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: openoffice.org
+Pin: version 1.1.0-2
+Pin-Priority: 989
+
+Package: wwwoffle
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: tcpd
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: vsftpd
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: phpmyadmin
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: rsync
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: shorewall
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: nvidia-kernel-src
+Pin: release a=testing
+Pin-Priority: 989
+
+Package: nvidia-glx-src
+Pin: release a=testing
+Pin-Priority: 989
+
+Package: devfsd
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: ftp-proxy
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: bastille
+Pin: release a=stable
+Pin-Priority: 989
+
+Package: apache
+Pin: release a=testing
+Pin-Priority: 989
+
+Package: apt-build
+Pin: release a=testing
+Pin-Priority: 989
+
+Package: apache-common
+Pin: release a=testing
+Pin-Priority: 989
+
+Package: openwebmail
+Pin: release a=testing
+Pin-Priority: 989
+
+Package: xserver-xfree86
+Pin: release a=testing
+Pin-Priority: 989
+
+Package: x-window-system
+Pin: release a=testing
+Pin-Priority: 989

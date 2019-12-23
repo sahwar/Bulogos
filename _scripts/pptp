@@ -1,0 +1,53 @@
+#!/bin/sh
+#
+# /etc/rc.d/init.d/pptp
+#
+# description: PPTP Link Control
+#
+NAME="server"
+USER='server'
+ECN=0
+DEBUG=
+
+start_pptp() {
+    echo $ECN > /proc/sys/net/ipv4/tcp_ecn
+    if /usr/bin/pon $NAME; then
+        touch /var/lock/subsys/pptp
+        echo "PPTP Connection to $NAME Started"
+    fi
+}
+
+stop_pptp() {
+    if /usr/bin/poff $NAME 2> /dev/null; then
+        echo "Stopped pptp"
+    else
+        rm -f /var/run/pptp/*
+    fi
+
+    rm -f /var/lock/subsys/pptp
+
+    echo 1 > /proc/sys/net/ipv4/tcp_ecn
+}
+
+
+case "$1" in
+start)
+    echo "Starting PPTP Connection to ${NAME}..."
+    start_pptp
+    ;;
+stop)
+    echo "Stopping $NAME PPTP Connection..."
+    stop_pptp
+    ;;
+restart)
+    echo "Restarting $NAME PPTP Connection..."
+    stop_pptp
+    start_pptp
+    ;;
+status)
+    ifconfig
+    ;;
+*)
+    echo "Usage: $0 {start|stop|restart|status}"
+    ;;
+esac

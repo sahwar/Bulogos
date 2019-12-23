@@ -1,0 +1,9 @@
+#CODE { font-size:14px; color: #333333; background-color: #FAFAD8;  border : 1px solid Black; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; text-indent: 2pt; }
+.linecomment { color: green }
+.blockcomment { color: green }
+.prepro { color: purple }
+.select { font-weight: bold;  }
+.quote { color: blue }
+.category_1 { color: blue}
+.category_2 { color: brown}
+.category_3 { color: blue}

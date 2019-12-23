@@ -1,0 +1,933 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- Copyright (c) 1999,2006  Slavei  Karadjov, slaff@linux-bg.org -->
+<html><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div><head>
+ <title>Проект на „Линукс за българи“ и МТИТС - доклад по Фаза I | РАЗРАБОТКИ | Линукс за българи</title>
+ <meta content="text/html; charset=windows-1251" http-equiv="Content-Type">
+ <link rel="shortcut icon" href="https://www.linux-bg.org/favicon.ico" type="image/x-icon">
+ <meta name="description" content="Welcome to Linux-bg : Everything you need for Linux in Bulgarian! Your guide from the beginning till the end.">
+ <meta name="keywords" content="linux, linux-bg, bulgaria, bulgarian, debian, slackware, caldera, redhat, minix, sco, free bsd, mxlinux, SUSE, unix, solaris, networking, samba, xf86,
+ sgi, linus, kernel, OS, Apache Web Server, newbie, cyrillic, beginner, help, org, new, distributions, games,
+ computers, GGI, FreeSci, Quake,  KDE, internet, ipchains , red hat linux, mandrake, mount, xwindows">
+ <meta name="author" content="Slavei Karadjov - slaff@linux-bg.org - http://www.linux-bg.org">
+ <link rel="stylesheet" href="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/lbg.css" type="text/css">
+<style>
+.ln
+{
+        font-family: arial, helvetica, geneva, tahoma;
+        font-size: 9px;
+        color: white;
+        text-decoration: none;
+        background-color:green;
+        padding: 2px;
+        border: 1px solid black;
+        cursor: pointer;
+}
+</style>
+<script type="text/javascript" async="" src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/recaptcha__bg.js"></script><script src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/mobrowser.js"></script>
+<script src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/motranslator.js"></script>
+<script src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/CookieManager.js"></script>
+<link rel="top" href="https://www.linux-bg.org/cgi-bin/y/index.pl" title="Начало">
+<link rel="parent" href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs" title="">
+<link rel="next" href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=447340038" title="Проект на „Линукс за българи“ и МТИТС - скрипт за сканиране ">
+<link rel="prev" href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=446995655" title="Raspberry Pi – една добра идея ">
+<link rel="alternate" title="Linux-BG.org статии" href="https://www.linux-bg.org/linux-bg-cyr.rdf" type="application/rss+xml">
+
+ <link rel="stylesheet" href="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/code.css" type="text/css">
+ <script src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/mofade.js" language="JavaScript"></script>
+ <script language="JavaScript">
+ <!--
+ var hHeaderImg = new Image()
+ hHeaderImg.src = '/themes/blju/header_c10.gif'
+ 
+ function setHeader()
+ {
+ 	document.images["HEADERIMG"].src = hHeaderImg.src
+ }
+ 
+ onload = function()
+ {
+ 	setTimeout( "setHeader()", 1000 )
+ }
+ //-->
+ </script>
+ </head>
+ 
+ <body class="scrollbar" topmargin="0" text="#000000" marginwidth="0" marginheight="0" leftmargin="0" bgcolor="#FFFFFF" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/bodybg.gif">
+ <table width="100%" cellspacing="0" cellpadding="0" border="0s" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/headerbg.gif">
+   <tbody><tr>
+ 	<td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/header_c10.gif" name="HEADERIMG" width="244" height="97"></td>
+ 	<td width="99%" valign="top" align="left">
+ 	  <table width="100%" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif">
+ 		<tbody><tr>
+ 		  <td>
+ 		  	<table cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif">
+ 			<tbody><tr>
+ 			  <td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif" width="1" height="75"></td>
+ 			  <td>&nbsp;
+ <script type="text/javascript"><!--//<![CDATA[
+    var m3_u = (location.protocol=='https:'?'https://a.linux-bg.org/www/delivery/ajs.php':'http://a.linux-bg.org/www/delivery/ajs.php');
+    var m3_r = Math.floor(Math.random()*99999999999);
+    if (!document.MAX_used) document.MAX_used = ',';
+    document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+    document.write ("?zoneid=1");
+    document.write ('&amp;cb=' + m3_r);
+    if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+    document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+    document.write ("&amp;loc=" + escape(window.location));
+    if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+    if (document.context) document.write ("&context=" + escape(document.context));
+    if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+    document.write ("'></scr"+"ipt>");
+ //]]>--></script><script type="text/javascript" src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/ajs.php"></script><a href="https://a.linux-bg.org/www/delivery/ck.php?oaparams=2__bannerid=1__zoneid=1__cb=faf6c22f58__oadest=https%3A%2F%2Fwww.openfest.org%2F2019%2Fbg%2F" target="_blank"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/f3a69d2ea40f3760eab3f09f8f081072.png" alt="OpenFest 2019" title="OpenFest 2019" width="468" height="60" border="0"></a><div id="beacon_faf6c22f58" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/lg.gif" alt="" style="width: 0px; height: 0px;" width="0" height="0"></div>
+<noscript><a href='http://a.linux-bg.org/www/delivery/ck.php?n=a715c11e&amp;cb=4341209809831231200' target='_blank'><img src='http://a.linux-bg.org/www/delivery/avw.php?zoneid=1&amp;cb=4341209809831231200&amp;n=a715c11e' border='0' alt='' /></a></noscript>
+ 
+ <!--
+ <script type="text/javascript">
+ google_ad_client = "ca-pub-8029488103901346";
+ /* Linux-BG Header */
+ google_ad_slot = "9742083333";
+ google_ad_width = 468;
+ google_ad_height = 60;
+ </script>
+ <script type="text/javascript"
+ src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+ </script>
+ -->
+ 			  </td>
+ 			</tr>
+ 			</tbody></table>
+ 		  </td>
+ 		</tr>
+ 		<tr>
+ 		  <td>
+ 			<table cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif">
+ 			  <tbody><tr>
+ 				<td valign="bottom"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/hmenubullet2.gif" width="20" height="12"></td>
+ 				<td class="hmenu" valign="bottom"><a href="https://www.linux-bg.org/cgi-bin/y/index.pl">Начало</a></td>
+ 				<td valign="bottom"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/hmenubullet2.gif" width="20" height="12"></td>
+ 				<td class="hmenu" valign="bottom"><a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=login" class="dlink">Вход/Регистрация</a></td>
+ 				<td valign="bottom"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/hmenubullet2.gif" width="20" height="12"></td>
+ 				<td class="hmenu" valign="bottom"><a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=help">Помощ</a></td>
+ 				<td valign="bottom"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/hmenubullet2.gif" width="20" height="12"></td>
+ 				<td class="hmenu" valign="bottom"><font size="-1" face="Verdana"><a href="https://www.linux-bg.org/cgi-bin/y/index.pl?act=convert&amp;status=yes&amp;page=article&amp;id=devs&amp;key=447085933"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/bgbgcyr.gif" heigth="12" alt="Tazi stranica s latinski bukwi" width="40" border="0"></a></font></td>
+ 			 </tr>
+ 			</tbody></table>
+ 		  </td>
+ 		</tr>
+ 	  </tbody></table>
+ 	</td>
+ 	<td valign="top" align="right">
+ 	  <table width="180" cellspacing="0" cellpadding="0" border="0">
+ 		<tbody><tr>
+ 		  <td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif" width="180" height="45"></td>
+ 		</tr>
+ 		<tr>
+ 		  <td align="center">
+ 			<table width="100" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/searchbg.gif" align="left">
+ 			    <form method="GET" action="/cgi-bin/y/index.pl"></form>
+ 			    <input type="hidden" name="act" value="big_search">
+     			   <input type="hidden" name="page" value="search">
+ 			  <tbody><tr>
+ 				<td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/searchl.gif" width="6" height="41"></td>
+ 				  <td valign="middle" align="center">
+ 					<input type="text" name="keywords" value="търси" onfocus="this.value=(this.value=='търси')?'':this.value" onblur="this.value=(this.value=='')?'търси':this.value">
+ 				  </td>
+ 				<td align="right"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/searchr.gif" width="6" height="41"></td>
+ 			  </tr>
+ 			
+ 			</tbody></table>
+ 		  </td>
+ 		</tr>
+ 	  </tbody></table>
+ 	</td>
+   </tr>
+   	<tr>
+     <td colspan="3" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/bodybg.gif"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif" width="1" height="8"></td>
+   </tr>
+ </tbody></table>
+ <table width="100%" cellspacing="0" cellpadding="0" border="0">
+   <tbody><tr>
+ 	<td width="175" valign="top" align="center">
+ 	   <table width="100" cellspacing="0" cellpadding="0" border="0">
+  <tbody><tr>
+    <td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/menuareast.gif" alt="Области" width="157" height="27"></td>
+  </tr>
+  <tr>
+    <td background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/menubg.gif">
+  	<table width="90%" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif" align="center">
+  	  <tbody><tr>
+  		<td>	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=news" class="dlink">Новини</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=hot_topic" class="dlink">Актуална тема</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=latest_news" class="dlink">Linux портали</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=advices&amp;key=360040421" class="dlink">Какво е Линукс?</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=forum" class="dlink">Въпроси-отговори</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/forum/index.php" class="dlink">Форуми</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/forum/index.php#c8" class="dlink">&nbsp; •Трудова борса</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/forum/index.php?board=31" class="dlink"><font color="red">&nbsp; •Конкурс</font></a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=articles" class="dlink">Статии</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=history" class="dlink">&nbsp; • История</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=advices" class="dlink">&nbsp; • Съвети</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=ideas" class="dlink">&nbsp; • Идеи/Мнения</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs" class="dlink">&nbsp; • Разработки</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=programs" class="dlink">&nbsp; • Програми</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=games" class="dlink">&nbsp; • Игри</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=distro" class="dlink">Дистрибуции</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=cd" class="dlink">&nbsp; •<font color="green">Поръчка на CD</font></a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=repository" class="dlink">Made In BG</a><br>
+ 	&nbsp;<a href="http://d.linux-bg.org/" class="dlink"><font color="green">Файлове</font></a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=links" class="dlink">Връзки</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=gallery" class="dlink">Галерия</a><br>
+ 	&nbsp;<a href="http://conf.linux-bg.org/" class="dlink"><font color="red">Конференции</font></a><br>
+ </td>
+  	  </tr>
+  	</tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/menub.gif" width="157" height="8"></td>
+  </tr>
+  </tbody></table>
+ <table width="100" cellspacing="0" cellpadding="0" border="0">
+  <tbody><tr>
+    <td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/menuprefst.gif" alt="Настройки" width="157" height="27"></td>
+  </tr>
+  <tr>
+    <td background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/menubg.gif">
+  	<table width="90%" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif" align="center">
+  	  <tbody><tr>
+  		<td>	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=templates" class="dlink">Външен вид</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=proposals" class="dlink">Предложения</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=MYS" class="dlink">Направи си сам</a><br>
+ </td>
+  	  </tr>
+  	</tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/menub.gif" width="157" height="8"></td>
+  </tr>
+  </tbody></table>
+ <table width="100" cellspacing="0" cellpadding="0" border="0">
+  <tbody><tr>
+    <td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/menuaboutt.gif" alt="И още ..." width="157" height="27"></td>
+  </tr>
+  <tr>
+    <td background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/menubg.gif">
+  	<table width="90%" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif" align="center">
+  	  <tbody><tr>
+  		<td>	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=aboutus" class="dlink">За нас</a><br>
+ 	&nbsp;<a href="http://company.linux-bg.org/" class="dlink">Линукс за българи  ЕООД</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=linkus" class="dlink">Линк към нас</a><br>
+ 	&nbsp;<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=feedback" class="dlink">Предложения</a><br>
+ </td>
+  	  </tr>
+  	</tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/menub.gif" width="157" height="8"></td>
+  </tr>
+  </tbody></table>
+
+ 	   
+        	   
+ 	   <br>
+        	   <table width="100" cellspacing="0" cellpadding="0" border="0">
+ 	   <tbody><tr>
+ 	   	<td class="cmenuTitle">Подкрепяно от:</td>
+ 	   </tr>
+ 	   <tr>
+             <td>
+                 <a href="http://www.telepoint.bg/"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/telepoint.jpg" alt="TelePoint - Място за хора със свободни идеи" width="125" height="43" border="0"></a>
+                 <br><br>
+                 <a href="http://www.siteground.com/"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/siteground.png" alt="SiteGround" width="125" height="49" border="0"></a>
+                 <br><br>
+                 <a href="https://initlab.org/"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/initLab.png" alt="initLab" width="125" height="125" border="0"></a>
+                 <br><br>
+                 <a href="http://www.adsysgroup.com/"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/adsys-98x32.png" alt="Adsys Group" width="98" height="32" border="0"></a>
+                 <br><br>
+                 <a href="http://www.sap.com/bulgaria/index.aspx"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/sap_corp_280_R_r_p_small.png" alt="SAP Bulgaria" width="125" height="62" border="0"></a>
+             </td>
+        </tr>
+ 	   </tbody></table>
+ 	 <img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif" width="175" height="1"><br>
+     </td>
+ 	<td width="4" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/menusep.gif"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif" width="4" height="4"></td>
+ 	<td width="99%" valign="top">
+ 
+ <!--BODY BLOCK START -->
+ 	  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+ 		<tbody><tr>
+ 		  <td width="99%" valign="top" align="center">
+ 				<!-- ### Header of Content ### -->
+         			<table width="100%" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/transbg.gif">
+ <tbody><tr>
+ 	<td valign="top" height="10" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/titlebg.gif"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/titlet.gif" width="20" height="3"></td>
+ 	<td rowspan="3" class="pageTitle" width="99%">РАЗРАБОТКИ</td>
+ </tr>
+ <tr>
+ 	<td height="99%" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/titlebg.gif"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/titlea.gif" width="20" height="11"></td>
+ </tr>
+ <tr>
+ 	<td valign="bottom" height="10" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/titlebg.gif"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/titleb.gif" width="20" height="3"></td>
+ </tr>
+ </tbody></table>
+ <!-- BEGIN ARTICLE -->
+ <table width="100%" cellspacing="0" cellpadding="0" border="0">
+ <tbody><tr><td colspan="3" align="center">&nbsp;</td>
+ </tr>
+ <tr>
+ 	  	<td width="98%" valign="top">	  	  
+ 		   <img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/foldero.gif" width="20" height="20"><a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs">РАЗРАБОТКИ</a><p><table width="100%" cellspacing="0" cellpadding="0" border="0">
+   <tbody><tr>
+ 	<td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cnt_title_l.gif" width="9" height="28"></td>
+ 	<td width="99%">
+ 	  <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+ 		<tbody><tr>
+ 		  <td class="contentTitle" nowrap="nowrap" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cnt_title_bg.gif">Проект на „Линукс за българи“ и МТИТС - доклад по Фаза I 
+ 		  </td>
+ 		  <td background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cnt_top_bg.gif"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cnt_title_r.gif" width="7" height="28"></td>
+ 		  <td width="99%" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cnt_top_bg.gif">&nbsp;</td>
+ 		</tr>
+ 	  </tbody></table>
+ 	</td>
+ 	<td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cnt_top_r.gif" width="9" height="28"></td>
+   </tr>
+   <tr>
+ 	<td background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cnt_l_bg.gif"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif" width="8" height="8"></td>
+ 	<td class="contentBody" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cnt_body_bg.gif"><br><font size="-1" face="Verdana" color="#878787">от <i>linux-bg team(2-07-2012) </i></font><br>		
+		<br><font size="-1" face="Verdana">рейтинг&nbsp;(<b>24</b>)&nbsp;&nbsp;
+		[ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=447085933&amp;act=add_report&amp;cmd=rate&amp;plus=1"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/hot.gif" width="11" height="24" border="0" align="textmiddle">добре</a>&nbsp;]
+		&nbsp;[ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=447085933&amp;act=add_report&amp;cmd=rate&amp;minus=1"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cool.gif" width="11" height="24" border="0" align="textmiddle">зле</a> ]</font>
+                <script>
+                    document.write('<iframe src="http://www.facebook.com/plugins/like.php?href='+escape('http://www.linux-bg.org/cgi-bin/y/index.pl?page=article&id=devs&key=447085933')+'&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>')
+                </script><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A//www.linux-bg.org/cgi-bin/y/index.pl%3Fpage%3Darticle%26id%3Ddevs%26key%3D447085933&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" style="border:none; overflow:hidden; width:450px; height:21px;" allowtransparency="true" frameborder="0"></iframe>
+                <br>
+	<br><p><a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=447085933&amp;layout=clean"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/printer.gif" alt="Printer Friendly" border="0" align="MIDDLE"><font size="-1" face="Verdana">&nbsp;<u>Вариант за отпечатване</u></font></a></p><p><font size="-1" face="Verdana"></font></p><p style="margin-bottom: 0px;"><font size="-1" face="Verdana">
+ Както обявихме, екипът на „Линукс за българи“, със съдействието на 
+заместник-министъра на транспорта, информационните технологии и 
+съобщенията, с ресор информационни технологии и съобщения, г-н Валери 
+Борисов, стартира пилотен проект „Внедряване на свободни технологии в 
+държавната администрация“. Тук ще публикуваме някои извадки от доклада 
+по Фаза I - миграция на работна станция 
+ в дирекция „Канцелария“ на МТИТС към Linux дистрибуцията Ubuntu 12.04 
+LTS, които решихме, че ще представляват интерес за нашите потребители 
+или пък ще послужат като текстови образци за други проекти с подобни 
+цели.
+ </font></p><font size="-1" face="Verdana">
+ 
+ <p style="margin-top: 10px; margin-bottom: 0px;margin-left: 25px;">
+ ...
+ </p>
+ 
+ <div style="font-family: helvetica;margin-left: 25px;">
+ <p style="margin-top: 10px; margin-bottom: 0px;">
+ <b>Извършени дейности:</b><br>
+ </p><ol style="list-style-type: lower-latin; margin-top: 2px; margin-bottom: 0px;">
+ <li>
+ Избор на графична среда, която възможно най-пълно да се доближава до 
+навиците на потребителите в дирекция „Канцелария“. Средата трябва да 
+бъде съобразена с хардуерната конфигурация на наличните работни станции.
+ </li>
+ <li>
+ Тестване на работоспособността на използваната в MТИТС система за 
+електронен документооборот – Eventis – в Интернет браузър Mozilla 
+Firefox.
+ </li>
+ <li>
+ Конфигуриране на принтер Canon IR 2022 и настройка за двустранно разпечатване на страници.
+ </li>
+ <li>
+ Конфигуриране на професионален скенер Fujitsu FI-6130dj с две сканиращи
+ глави. Допълнително изискване бе възможността за сканиране към файл в 
+PDF формат с автоматично премахване белите листове.
+ </li>
+ <li>
+ Достъп до потребителската електронна поща, управлявана от Microsoft Exchange 2010 сървър, без персонализиране на профил.
+ </li>
+ <li>
+ Инсталиране на драйвери за електронен подпис на смарт карта и конфигуриране на Mozilla Firefox за работа с него.
+ </li>
+ <li>
+ Интегриране, при необходимост, на работната станция със съществуващата Microsoft Active Directory.
+ </li>
+ <li>
+ Извеждане на икони за бърз достъп на най-често използваните програми върху работния плот.
+ </li>
+ <li>
+ Запознаване на потребителите с работната среда на Ubuntu 12.04.
+ </li>
+ </ol>
+ <p></p>
+ </div>
+ 
+ <p style="margin-top: 10px; margin-bottom: 0px;margin-left: 25px;">
+ ...
+ </p>
+ 
+ <div style="font-family: helvetica;margin-left: 25px;">
+ <p style="margin-top: 10px; margin-bottom: 0px;">
+ <b>Технически аспекти на дейностите</b><br>
+ 
+ </p><p style="margin-top: 10px; margin-bottom: 0px;">
+ При инсталирането и конфигурирането на пилотната работна станция са 
+взети под внимание всички дефинирани задачи. Избрана е разработваната от
+ Canonical Ltd. дистрибуция Ubuntu и, по-точно, версия 12.04 LTS с 
+5-годишна поддръжка.
+ </p>
+ <p style="margin-top: 5px; margin-bottom: 0px;">
+ Изборът на Ubuntu 12.04 е породен от високото качество на системата, 
+удължената техническа поддръжка, сходната визия за обикновения и бизнес 
+потребителя, леснотата за инсталиране на софтуерни пакети и работа с 
+тях. Операционната система притежава много добра интеграция в 
+хетерогенни среди и отлично взаимодействие с продуктите на Microsoft.
+ </p>
+ <p style="margin-top: 5px; margin-bottom: 0px;">
+ За графична система е избрана GNOME Classic – много лека и 
+потребителски интуитивна графична система. Тя е предпочетена пред други 
+масови графични системи като KDE, Unity и т.н., за конфигурацията на 
+които биха били необходими допълнителни дейности.
+ </p>
+ <p style="margin-top: 5px; margin-bottom: 0px;">
+ Интернет браузърът Mozilla Firefox е добре познат на потребителите на 
+Microsoft Windows. Процентът на използването му в глобален мащаб 
+непрекъснато нараства. Деловодната система Eventis е предварително 
+тествана от разработчика за работа с Mozilla Firefox, като при тестовете
+ не са открити проблеми. 
+ </p>
+ 
+ 
+ 
+ <p style="margin-top: 10px; margin-bottom: 0px;">
+ Операционната система Ubuntu 12.04 разпозна всички функции на скенера 
+Fujitsu FI&#8209;6130dj, което подпомогна лесното му конфигуриране. За 
+сканиране и обработка на сканирани изображения е разработен специален 
+скрипт. 
+ </p>
+ <p style="margin-top: 5px; margin-bottom: 0px;">
+ Скриптът автоматично сканира документа, едновременно използвайки и 
+двете сканиращи глави, премахва белите страници, предварително 
+изрязвайки рамката, която се получава от некачествено сканиране. На 
+следваща стъпка скриптът увеличава изображението, преглежда го и, на 
+база процентно съдържание на черни точки, премахва или оставя страницата
+ в документа.  </p>
+ <p style="margin-top: 5px; margin-bottom: 0px;">
+ Скриптът е тестван с множество документи, запълнени в различна степен, и
+ е оптимизиран максимално за предвидените дейности. Като краен файл, 
+документът се показва във формат PDF – като черно-бял документ с 
+оптимизирано качество и оптимизиран размер.
+ </p>
+ 
+ <p style="margin-top: 10px; margin-bottom: 0px;">
+ Инсталирането и конфигурирането на принтера отне повече време от 
+предвиденото поради факта, че вграденият драйвер за този модел принтери 
+на Canon е за PCL поддръжка. За съжаление, хардуерен модул с поддръжка 
+на PCL не е инсталиран в принтера и се наложи ръчно конфигуриране на UFR
+ драйвери. Тестовете са успешни за едностранно и двустранно разпечатване
+ на страници.
+ </p>
+ 
+ <p style="margin-top: 10px; margin-bottom: 0px;">
+ За конфигуриране на електронния подпис бе необходимо да се инсталират 
+следните пакети - libacr38u, opensc, libccid, pcscd. Настройката на 
+Mozilla Firefox става чрез добавяне на библиотеката 
+/usr/lib/opensc-pkcs11.so в Device Manager чрез нов PKCS модул.
+ </p>
+ 
+ <p style="margin-top: 10px; margin-bottom: 0px;">
+ За връзка на работната станция с Microsoft Active Directory се използва пакета – likewise-open.
+ </p>
+ </div>
+ 
+ <p style="margin-top: 10px; margin-bottom: 0px;margin-left: 25px;">
+ ...
+ </p>
+ 
+ <div style="font-family: helvetica;margin-left: 25px;">
+ <p style="margin-top: 10px; margin-bottom: 0px;">
+ <b>Анализ на постигнатите резултати</b>
+ </p>
+ <p style="margin-top: 10px; margin-bottom: 0px;">
+ Резултатите от изпълнението на Фаза I са много добри. За това говори, 
+на първо място, положителното отношение към системата на потребителите в
+ МТИТС и ускоряването на процесите в дирекция „Канцелария“. Бяха 
+обхванати успешно и цялостно всички дейности на служителите – работа със
+ системата за документооборот, електронна поща, сканиране и разпечатване
+ на документи. 
+ </p>
+ <p style="margin-top: 5px; margin-bottom: 0px;">
+ След приключване на Фаза I бяха отчетени следните преимущества при използване на Linux дистрибуцията Ubuntu 12.04:<br>
+ </p><ul style="margin-top: 2px; margin-bottom: 0px;">
+ <li>
+ По-качествено и бързо сканиране на изображението
+ </li>
+ <li>
+ Автоматично премахване на белите страници. <br>
+ Отпада необходимостта служителите ръчно да преглеждат документите и да премахват празните страници.
+ </li>
+ <li>
+ Автоматично генериране на крайния документ в PDF формат. <br>
+ Отпада необходимостта този процес да се извършва ръчно от служителите.
+ </li>
+ </ul>
+ <p></p>
+ 
+ <p style="margin-top: 5px; margin-bottom: 0px;">
+ За Министерството на Транспорта, Информационните Технологии и 
+Съобщенията използването на базирана на Linux операционна система носи 
+видими ползи, като например:<br>
+ </p><ul style="margin-top: 2px; margin-bottom: 0px;">
+ <li>Чувствително минимизиране на настоящите разходи за софтуерни лицензи, след отпадане на:<br>
+ <ul style="margin-top: 2px; margin-bottom: 0px;">
+ <li>
+ Лиценз за Microsoft Windows
+ </li>
+ <li>
+ Лиценз за Microsoft Office
+ </li>
+ <li>
+ Лиценз за софтуер за генериране на PDF файлове
+ </li>
+ <li>
+ Лиценз за антивирусен софтуер
+ </li>
+ </ul>
+ </li>
+ <li>
+ Увеличаване на продуктивността на работата на служителите при голямо 
+натоварване, породено от автоматизирането на процеса по оформяне на 
+сканираните документи
+ </li>
+ </ul></div>
+ 
+ <p style="margin-top: 10px; margin-bottom: 0px;margin-left: 25px;">
+ ...
+ </p>
+ 
+ <p style="margin-top: 15 px;">
+ След като Фаза I на проекта вече завърши, и то с отлични резултати, 
+сега предстои Фаза II - внедряване на избраните програмни продукти по 
+всички работни станции в дирекция „Канцелария“ на МИТС. Разбира се, 
+когато и тя стане факт, отново ще споделим с посетителите на „Линукс за 
+българи“ какво се е получило. Междувременно, очаквайте и статия, в която
+ ще разкажем малко повече за скрипта, който съставихме с оглед на 
+лесното сканиране на документи в дирекция "Канцелария“ на МТИТС.
+ </p><br></font><p></p><br><center><p align="center"><font size="-1" face="Verdana"><a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=447340038"> &lt;&lt; Проект на „Линукс за българи“ и МТИТС - скрипт за сканиране</a> | <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=446995655">Raspberry Pi – една добра идея &gt;&gt;</a></font><br></p></center></td>
+ 	<td background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cnt_r_bg.gif"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif" width="1" height="1"></td>
+   </tr>
+   <tr>
+ 	<td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cnt_bottom_l.gif" width="9" height="10"></td>
+ 	<td background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cnt_bottom_bg.gif"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer.gif" width="1" height="1"></td>
+ 	<td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cnt_bottom_r.gif" width="9" height="10"></td>
+   </tr>
+ </tbody></table>
+<br><br>		  
+ 		           
+ 		        
+ 		   		        
+ 		   </p><p><a name="other_comments"></a><table width="95%" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody><tr><td width="40%" valign="top" bgcolor="#C0C0C0">
+                                                <font size="-1" face="Verdana"><b>Коментари: (общо 5) </b></font>
+                                             </td>
+					     <td width="59%" valign="top" bgcolor="#C0C0C0"><font size="-1" face="Verdana"><b>Оценени с</b></font>
+		       <select name="" onchange="document.cookie='el='+this[selectedIndex].value;document.location='/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=447085933&amp;id=devs&amp;redo=1576075999#other_comments'"><option value="-1">-1</option>
+<option value="0">0</option>
+<option value="1" selected="selected">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select> <font size="-1" face="Verdana"><b>или повече</b></font>			     </td>
+                                             <td width="1%" valign="top" nowrap="nowrap" bgcolor="#C0C0C0"><font size="-1" face="Verdana">[<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;key=447085933&amp;list=all&amp;id=devs#other_comments" onclick="document.cookie='c_list=all';return true;">Пълен&nbsp;преглед&gt;&gt;</a>]</font>                             </td>
+                                         </tr>
+                                         <tr>
+                                                <td colspan="3" align="right"><font size="-1" face="Verdana">[<a href="#add_comment"><b><u>Добави коментар</u></b></a>]</font>
+                                                </td>
+                                        </tr>
+                                        </tbody></table>
+                                </p><ul>
+<li><font size="-1" face="Verdana" color="black"><a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;key=447085933&amp;cmtkey=447085933_1341299269&amp;id=devs#comment_info"><u>Поздравления</u></a>   [3-07-2012] {1/Неутрален}</font></li>
+<ul>
+<li><font size="-1" face="Verdana" color="black"><a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;key=447085933&amp;cmtkey=447085933_1341308077&amp;id=devs#comment_info"><u>Към: Поздравления</u></a>   [3-07-2012] {1/Неутрален}</font></li>
+<ul>
+<li><font size="-1" face="Verdana" color="black"><a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;key=447085933&amp;cmtkey=447085933_1341325698&amp;id=devs#comment_info"><u>Към: Към: Поздравления</u></a>   [3-07-2012] {1/Неутрален}</font></li>
+</ul>
+</ul>
+<li><font size="-1" face="Verdana" color="black"><a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;key=447085933&amp;cmtkey=447085933_1341414957&amp;id=devs#comment_info"><u>Opera?</u></a>   [4-07-2012] {1/Неутрален}</font></li>
+<li><font size="-1" face="Verdana" color="black"><a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;key=447085933&amp;cmtkey=447085933_1341751561&amp;id=devs#comment_info"><u>Браво</u></a>   [8-07-2012] {1/Неутрален}</font></li>
+</ul>
+
+				<form name="commt" action="/cgi-bin/y/index.pl" method="POST">
+				<input type="hidden" name="page" value="article">
+				<input type="hidden" name="act" value="add_newscomment">
+				<input type="hidden" name="cmd" value="add">
+				<input type="hidden" name="cmtkey" value="447085933_1576075999">
+				<input type="hidden" name="key" value="447085933">
+				<input type="hidden" name="id" value="devs">
+				<input type="hidden" name="parent" value=""><table width="95%" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/clearpixel.gif">
+			<tbody><tr><td colspan="2" bgcolor="#C0C0C0"><a name="add_comment"></a><font size="-1" face="Verdana"><b>Вашият коментар</b></font></td></tr>
+			<tr><td><font size="-1" face="Verdana">Име:</font></td><td><input type="TEXT" name="c_name" size="25" maxlength="25"></td></tr>
+			<tr><td><font size="-1" face="Verdana">E-Mail:</font></td><td><input type="TEXT" name="c_email" size="25"><font size="-1" face="Verdana"> (по желание)</font></td></tr>
+			<tr><td><font size="-1" face="Verdana">Заглавие:</font></td><td><input type="Text" name="c_title" size="38" maxlength="42" molang="DEFAULT"></td></tr>
+			
+			<tr><td colspan="2"><p><br><font size="-1" face="Verdana">Описание: <span id="langLink" title="Клавиатура" class="ln">OFF</span> <a href="http://momche.net/redir.php?page=inputlocalehelp" title="Помощ" onclick="window.open(this.href, '', 'width=640, height=480, scrollbars=1'); return false;" tabindex="10000"><strong>?</strong></a>
+			</font></p></td></tr>
+			<tr><td colspan="2"><textarea cols="45" rows="9" name="c_body" molang="DEFAULT" wrap="Physical"></textarea></td></tr>
+                        <tr><td colspan="2"><font color="red">Внимание:</font> Допълнителна проверка при коментари от нерегистрирани потребители.</td></tr><tr><td colspan="2"><script type="text/javascript">var onloadCallback = function(){grecaptcha.render('recaptcha_6LfywgAAAA',{"sitekey":"6LfywgAAAAAAAF-OKTdfjcS33rqlcRSBRondfj0P"});};</script><script src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/api.js" type="text/javascript"></script><div id="recaptcha_6LfywgAAAA"><div style="width: 304px; height: 78px;"><div><iframe src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/anchor.htm" role="presentation" name="a-ukuwu4i7iu7h" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div></td></tr>
+			<tr><td colspan="2"><input type="Submit" value="Добави"></td></tr>
+			</tbody></table>
+			</form>
+			
+ 		        <img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/clearpixel.gif" alt="" width="402" height="5">
+ 		</td>					
+ 		<td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/clearpixel.gif" alt="" width="10" height="1"></td>
+ 		<td valign="top" align="right">	
+ 			<table width="1" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenutbg.gif" align="center">
+ 			  <tbody><tr>
+ 				<td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenui.gif" width="31" height="29"></td>
+ 				<td class="cmenuTitle" width="139">МЕНЮ</td>
+ 				<td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenutr.gif" width="10" height="29"></td>
+ 			  </tr>
+ 			  <tr>
+ 				<td colspan="3" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubg.gif">
+ 				  <table width="95%" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer_002.gif" align="center">
+ 					<tbody><tr>
+ 					  <td class="cmenuText" align="left">
+ 					  	<img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;cmd=search">Търсене</a><br>
+ 						<img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=report&amp;id=devs&amp;cmd=add&amp;back_to=article">Добавяне</a><br>								   					 
+ 					  </td>
+ 					</tr>
+ 				  </tbody></table>
+ 				</td>
+ 			  </tr>
+ 			  <tr>
+ 				<td colspan="3"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenub.gif" width="169" height="6"></td>
+ 			  </tr>
+ 			</tbody></table>
+ 			<br>
+ 			
+ 			<table width="1" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenutbg.gif" align="center">
+    <tbody><tr>
+  	<td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenui.gif" width="31" height="29"></td>
+  	<td class="cmenuTitle" width="139">ЗАГЛАВИЯ</td>
+  	<td align="right"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenutr.gif" width="10" height="29"></td>
+    </tr>
+    <tr>
+  	<td colspan="3" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubg.gif">
+  	  <table width="95%" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer_002.gif" align="center">
+  		<tbody><tr>
+  		  <td class="cmenuText" align="left">
+  		  	<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=473487864" class="dlink" style="color: rgb(0, 51, 153);"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Проект LinuxWriter</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=449814436" class="dlink" style="color: rgb(0, 51, 153);"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Attachix - свободен Dropbox клон</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=447340038" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Проект на „Линукс за българи“ и МТИТС - скрипт за сканиране</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=447085933" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Проект на „Линукс за българи“ и МТИТС - доклад по Фаза I</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=446995655" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Raspberry Pi – една добра идея</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=439876088" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Да громим невежеството със сатира!</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=390794693" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> SquashFS</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=390713057" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Линукс модули</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=390321666" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Прост и ефективен начин за backup с rsync</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=390254519" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Правене на архиви по "лесния начин"</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=388580000" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Програмиране графичен интерфейс (GUI) с Lazarus и freepascal</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=387120081" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Размисли по HFSC</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=380207153" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Крайна цел: FreeBSD</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=375023745" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Начални стъпки с Ant</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=374961042" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Въведение в динамичната оптимизация</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=374800765" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Програмиране под Линукс. Въведение за начинаещи.</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=374460427" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Модерни методи за управление на паметта в C++</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=369690951" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> T2 Project има нужда от помощ</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=363041343" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Публични информационни системи с Линукс терминали</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=358298173" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Персонален pure-ftpd с виртуални потребители и криптиране</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=356844398" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Помогнете на Fedora</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=356615928" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Заинтересовани за проектът по разработване на портала ? </a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=346792721" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Doc_Embed: В помощ на авторите на статии в Linux-BG</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=345124928" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Пак за преводите на програми (Част II или предложението)</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=345124867" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0"> Пак за преводите на програми</a><br>
+ 
+ 
+  		  </td>
+  		</tr>
+  	  </tbody></table>
+  	</td>
+    </tr>
+    <tr>
+  	<td colspan="3"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenub.gif" width="169" height="6"></td>
+    </tr>
+  </tbody></table>
+  <br>
+ 
+
+ 			<table width="1" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenutbg.gif" align="center">
+    <tbody><tr>
+  	<td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenui.gif" width="31" height="29"></td>
+  	<td class="cmenuTitle" width="139">ПОДКАТЕГОРИИ</td>
+  	<td align="right"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenutr.gif" width="10" height="29"></td>
+    </tr>
+    <tr>
+  	<td colspan="3" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubg.gif">
+  	  <table width="95%" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer_002.gif" align="center">
+  		<tbody><tr>
+  		  <td class="cmenuText" align="left">
+  		  	<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;cmd=cat&amp;cid=proj" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0">  Проекти</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;cmd=cat&amp;cid=prog" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0">  Програмиране</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;cmd=cat&amp;cid=bulg" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0">  Преводи  на Български</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;cmd=cat&amp;cid=cyr" class="dlink"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubullet.gif" width="12" height="12" border="0">  Кирилизация</a><br>
+ 
+ 
+  		  </td>
+  		</tr>
+  	  </tbody></table>
+  	</td>
+    </tr>
+    <tr>
+  	<td colspan="3"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenub.gif" width="169" height="6"></td>
+    </tr>
+  </tbody></table>
+  <br>
+ 
+
+ 			<table width="1" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenutbg.gif" align="center">
+    <tbody><tr>
+  	<td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenui.gif" width="31" height="29"></td>
+  	<td class="cmenuTitle" width="139">АРХИВ</td>
+  	<td align="right"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenutr.gif" width="10" height="29"></td>
+    </tr>
+    <tr>
+  	<td colspan="3" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubg.gif">
+  	  <table width="95%" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer_002.gif" align="center">
+  		<tbody><tr>
+  		  <td class="cmenuText" align="left">
+  		  	<a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2012_10">10 - 2012</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2012_07">07 - 2012</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2012_06">06 - 2012</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2011_10">10 - 2011</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2010_08">08 - 2010</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2007_02">02 - 2007</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2006_12">12 - 2006</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2006_10">10 - 2006</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2006_02">02 - 2006</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2005_08">08 - 2005</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2005_02">02 - 2005</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2004_07">07 - 2004</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2004_01">01 - 2004</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2003_12">12 - 2003</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2003_11">11 - 2003</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2002_12">12 - 2002</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2002_10">10 - 2002</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2002_05">05 - 2002</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2002_03">03 - 2002</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2001_12">12 - 2001</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2001_11">11 - 2001</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2001_09">09 - 2001</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2001_07">07 - 2001</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2001_03">03 - 2001</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2001_01">01 - 2001</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2000_11">11 - 2000</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2000_05">05 - 2000</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2000_03">03 - 2000</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2000_02">02 - 2000</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx=2000_01">01 - 2000</a><br>
+ 
+ <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=article&amp;id=devs&amp;key=all&amp;idx="> - </a><br>
+ 
+ 
+  		  </td>
+  		</tr>
+  	  </tbody></table>
+  	</td>
+    </tr>
+    <tr>
+  	<td colspan="3"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenub.gif" width="169" height="6"></td>
+    </tr>
+  </tbody></table>
+  <br>
+ 
+	
+ 			<table width="1" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenutbg.gif" align="center">
+   <tbody><tr>
+ 	<td><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenui.gif" width="31" height="29"></td>
+ 	<td class="cmenuTitle" width="139">ВРЪЗКИ</td>
+ 	<td align="right"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenutr.gif" width="10" height="29"></td>
+   </tr>
+   <tr>
+ 	<td colspan="3" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenubg.gif">
+ 	  <table width="95%" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/spacer_002.gif" align="center">
+ 		<tbody><tr>
+ 		  <td class="cmenuText" align="left">
+ 		  	<a href="http://www.sourceforge.net/"><font color="black">www.sourceforge.net
+</font></a><br>
+
+
+ 		  </td>
+ 		</tr>
+ 	  </tbody></table>
+ 	</td>
+   </tr>
+   <tr>
+ 	<td colspan="3"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/cmenub.gif" width="169" height="6"></td>
+   </tr>
+ </tbody></table>
+ <br>
+
+			
+ 			<br>				  
+ 		</td>		        
+ </tr>		      
+ </tbody></table>
+ <!-- END ARTICLE -->	
+
+
+
+         			<br>
+ <!--BODY BLOCK START -->
+ 		  </td>
+ 		</tr>
+ <!--BODY BLOCK END -->
+ 		<tr>
+ 			<td>
+ 
+ 			</td>
+ 			<td>
+ 			</td>
+ 		</tr><tr>
+ 	  </tr></tbody></table>
+ <!--BODY BLOCK END -->
+ 	</td>
+ 	<td valign="top" align="center">
+ 	 
+          
+ 	</td>
+   </tr>
+  <tr>
+  	<td colspan="2">&nbsp;</td>
+  	<td>
+  	<!--START DISCLAIMER BLOCK -->
+ 			<br>
+ 			<table width="100%" cellspacing="0" cellpadding="0" border="0" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/transbg.gif">
+ 			  <tbody><tr>
+ 				<td valign="top" height="10" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/titlebg.gif"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/titlet.gif" width="20" height="3"></td>
+ 				<td rowspan="3" class="pageTitle" width="99%" align="center">
+ 					<span class="cmenuText">
+ 						© 2011-... <a href="http://company.linux-bg.org/">Асоциация "Линукс за българи"</a><br>
+ 						© 2007-2010 <a href="http://company.linux-bg.org/">Линукс за българи ЕООД</a><br>
+ 						© 1999-2006 Slavej Karadjov<br>
+     					<em>Ако искате да препечатате или цитирате информация от този сайт прочетете първо <a href="https://www.linux-bg.org/cgi-bin/y/index.pl?page=rules"><u>това</u></a></em><br>
+     					Външния вид е направен от <a href="mailto:mircho@hotmail.com">MOMCHE</a><br>
+                                 	Code Version: 1.0.8 H  (Revision: 23-09-2011)
+     					</span>
+     				</td>
+   			  </tr>
+ 			  <tr>
+ 				<td height="99%" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/titlebg.gif"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/titlea.gif" width="20" height="11"></td>
+ 			  </tr>
+ 			  <tr>
+ 				<td valign="bottom" height="10" background="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/titlebg.gif"><img src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/titleb.gif" width="20" height="3"></td>
+ 			  </tr>
+ 	</tbody></table>
+ 	<!--END DISCLAIMER BLOCK -->
+ 	</td>
+ 	<td>&nbsp;</td>
+ </tr>
+ </tbody></table>
+ 
+ 
+ <script src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/urchin.js" type="text/javascript">
+ </script>
+ <script type="text/javascript">
+ _uacct = "UA-1464084-1";
+ urchinTracker();
+ </script>
+ 
+ <!-- End of tracker //-->
+ <script language="JavaScript">cTranslator.onLoad()</script>
+ 
+ 
+
+<center><font size="1" face="Verdana" color="#000000">Изпълнението отне: 0 wallclock secs ( 0.16 usr +  0.03 sys =  0.19 CPU)<br>
+</font></center><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="z-index: 2000000000; position: relative;"><iframe title="предизвикателство с recaptcha" src="%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%BD%D0%B0%20%E2%80%9E%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%E2%80%9C%20%D0%B8%20%D0%9C%D0%A2%D0%98%D0%A2%D0%A1%20-%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%20%D0%BF%D0%BE%20%D0%A4%D0%B0%D0%B7%D0%B0%20I%20%20%20%D0%A0%D0%90%D0%97%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%9A%D0%98%20%20%20%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81%20%D0%B7%D0%B0%20%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8_files/bframe.htm" style="width: 100%; height: 100%;" name="c-ukuwu4i7iu7h" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" frameborder="0"></iframe></div></div></body></html>

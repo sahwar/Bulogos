@@ -1,0 +1,1227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+ <!-- Copyright (c) 1999,2006  Slavei  Karadjov, slaff@linux-bg.org -->
+ 
+ <html>
+ <head>
+ <title>Кирилица + efax + html2ps + php HOWTO | РАЗРАБОТКИ | Линукс за българи</title>
+ <meta content="text/html; charset=windows-1251" http-equiv="Content-Type">
+ <link REL="shortcut icon" HREF="/favicon.ico" TYPE="image/x-icon">
+ <meta NAME="description" CONTENT="Welcome to Linux-bg : Everything you need for Linux in Bulgarian! Your guide from the beginning till the end.">
+ <meta NAME="keywords"  CONTENT="linux, linux-bg, bulgaria, bulgarian, debian, slackware, caldera, redhat, minix, sco, free bsd, mxlinux, SUSE, unix, solaris, networking, samba, xf86,
+ sgi, linus, kernel, OS, Apache Web Server, newbie, cyrillic, beginner, help, org, new, distributions, games,
+ computers, GGI, FreeSci, Quake,  KDE, internet, ipchains , red hat linux, mandrake, mount, xwindows">
+ <META Name="author" Content="Slavei Karadjov - slaff@linux-bg.org - http://www.linux-bg.org">
+ <link rel="stylesheet" href="/themes/blju2/lbg.css" type="text/css">
+<style>
+.ln
+{
+        font-family: arial, helvetica, geneva, tahoma;
+        font-size: 9px;
+        color: white;
+        text-decoration: none;
+        background-color:green;
+        padding: 2px;
+        border: 1px solid black;
+        cursor: pointer;
+}
+</style>
+<script src="/js/mobrowser.js"></script>
+<script src="/js/motranslator.js"></script>
+<script src="/js/CookieManager.js"></script>
+<link REL="top"    HREF="/cgi-bin/y/index.pl" TITLE="Начало">
+<link REL="parent"    HREF="/cgi-bin/y/index.pl?page=article&id=devs" TITLE="">
+<link REL="next"    HREF="/cgi-bin/y/index.pl?page=article&id=devs&key=345124867" TITLE="Пак за преводите на програми ">
+<link REL="prev"    HREF="/cgi-bin/y/index.pl?page=article&id=devs&key=338900525" TITLE="Създаване на потребителски графичен интерфейс с Qt ">
+<link REL="alternate" TITLE="Linux-BG.org статии" HREF="/linux-bg-cyr.rdf" TYPE="application/rss+xml">
+
+ <link rel="stylesheet" href="/themes/blju2/code.css" type="text/css">
+ <SCRIPT src="/themes/blju/mofade.js" language="JavaScript"></SCRIPT>
+ <SCRIPT language="JavaScript">
+ <!--
+ var hHeaderImg = new Image()
+ hHeaderImg.src = '/themes/blju/header_c10.gif'
+ 
+ function setHeader()
+ {
+ 	document.images["HEADERIMG"].src = hHeaderImg.src
+ }
+ 
+ onload = function()
+ {
+ 	setTimeout( "setHeader()", 1000 )
+ }
+ //-->
+ </SCRIPT>
+ </head>
+ 
+ <body class=scrollbar bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background="/themes/blju2/bodybg.gif">
+ <table width="100%" border="0s" cellspacing="0" cellpadding="0" background="/themes/blju2/headerbg.gif">
+   <tr>
+ 	<td><img src="/themes/blju2/header.gif" width="244" height="97" name=HEADERIMG></td>
+ 	<td width="99%" align="left" valign="top">
+ 	  <table width="100%" border="0" cellspacing="0" cellpadding="0" background="/themes/blju2/spacer.gif">
+ 		<tr>
+ 		  <td>
+ 		  	<table border="0" cellspacing="0" cellpadding="0" background="/themes/blju2/spacer.gif">
+ 			<tr>
+ 			  <td><img src="/themes/blju2/spacer.gif" width="1" height="75"></td>
+ 			  <td>&nbsp;
+ <script type='text/javascript'><!--//<![CDATA[
+    var m3_u = (location.protocol=='https:'?'https://a.linux-bg.org/www/delivery/ajs.php':'http://a.linux-bg.org/www/delivery/ajs.php');
+    var m3_r = Math.floor(Math.random()*99999999999);
+    if (!document.MAX_used) document.MAX_used = ',';
+    document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+    document.write ("?zoneid=1");
+    document.write ('&amp;cb=' + m3_r);
+    if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+    document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+    document.write ("&amp;loc=" + escape(window.location));
+    if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+    if (document.context) document.write ("&context=" + escape(document.context));
+    if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+    document.write ("'></scr"+"ipt>");
+ //]]>--></script><noscript><a href='http://a.linux-bg.org/www/delivery/ck.php?n=a715c11e&amp;cb=4341209809831231200' target='_blank'><img src='http://a.linux-bg.org/www/delivery/avw.php?zoneid=1&amp;cb=4341209809831231200&amp;n=a715c11e' border='0' alt='' /></a></noscript>
+ 
+ <!--
+ <script type="text/javascript">
+ google_ad_client = "ca-pub-8029488103901346";
+ /* Linux-BG Header */
+ google_ad_slot = "9742083333";
+ google_ad_width = 468;
+ google_ad_height = 60;
+ </script>
+ <script type="text/javascript"
+ src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+ </script>
+ -->
+ 			  </td>
+ 			</tr>
+ 			</table>
+ 		  </td>
+ 		</tr>
+ 		<tr>
+ 		  <td>
+ 			<table border="0" cellspacing="0" cellpadding="0" background="/themes/blju2/spacer.gif">
+ 			  <tr>
+ 				<td valign="bottom"><img src="/themes/blju2/hmenubullet2.gif" width="20" height="12"></td>
+ 				<td valign="bottom" class="hmenu"><a href="/cgi-bin/y/index.pl">Начало</a></td>
+ 				<td valign="bottom"><img src="/themes/blju2/hmenubullet2.gif" width="20" height="12"></td>
+ 				<td valign="bottom" class="hmenu"><a href="/cgi-bin/y/index.pl?page=login" class="dlink">Вход/Регистрация</a></td>
+ 				<td valign="bottom"><img src="/themes/blju2/hmenubullet2.gif" width="20" height="12"></td>
+ 				<td valign="bottom" class="hmenu"><a href="/cgi-bin/y/index.pl?page=help">Помощ</a></td>
+ 				<td valign="bottom"><img src="/themes/blju2/hmenubullet2.gif" width="20" height="12"></td>
+ 				<td valign="bottom" class="hmenu"><font face="Verdana" size="-1"><a href="/cgi-bin/y/index.pl?act=convert&status=yes&page=article&id=devs&key=340284802"><img src="/themes/blju2/bgbgcyr.gif" border=0 width=40 heigth=12 alt="Tazi stranica s latinski bukwi"></a></td>
+ 			 </tr>
+ 			</table>
+ 		  </td>
+ 		</tr>
+ 	  </table>
+ 	</td>
+ 	<td align="right" valign="top">
+ 	  <table width="180" border="0" cellspacing="0" cellpadding="0">
+ 		<tr>
+ 		  <td><img src="/themes/blju2/spacer.gif" width="180" height="45"></td>
+ 		</tr>
+ 		<tr>
+ 		  <td align="center">
+ 			<table width="100" border="0" cellspacing="0" cellpadding="0" background="/themes/blju2/searchbg.gif" align="left">
+ 			    <FORM method="GET" action="/cgi-bin/y/index.pl">
+ 			    <input type="hidden" name="act" value="big_search">
+     			   <input type="hidden" name="page" value="search">
+ 			  <tr>
+ 				<td><img src="/themes/blju2/searchl.gif" width="6" height="41"></td>
+ 				  <td align="center" valign="middle">
+ 					<input type="text" name="keywords" value="търси" onfocus="this.value=(this.value=='търси')?'':this.value" onblur="this.value=(this.value=='')?'търси':this.value">
+ 				  </td>
+ 				<td align="right"><img src="/themes/blju2/searchr.gif" width="6" height="41"></td>
+ 			  </tr>
+ 			</FORM>
+ 			</table>
+ 		  </td>
+ 		</tr>
+ 	  </table>
+ 	</td>
+   </tr>
+   	<tr>
+     <td colspan=3  background="/themes/blju2/bodybg.gif"><img src="/themes/blju2/spacer.gif" width="1" height="8"></td>
+   </tr>
+ </table>
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+ 	<td width="175" valign="top" align="center">
+ 	   <table width="100" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="/themes/blju2/menuareast.gif" width="157" height="27" alt="Области"></td>
+  </tr>
+  <tr>
+    <td background="/themes/blju2/menubg.gif">
+  	<table width="90%" border="0" cellspacing="0" cellpadding="0" align="center" background="/themes/blju2/spacer.gif">
+  	  <tr>
+  		<td>	&nbsp;<a href="/cgi-bin/y/index.pl?page=news" class=dlink>Новини</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=hot_topic" class=dlink>Актуална тема</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=latest_news" class=dlink>Linux портали</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=article&id=advices&key=360040421" class=dlink>Какво е Линукс?</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=forum" class=dlink>Въпроси-отговори</a><br>
+ 	&nbsp;<a href="/forum/index.php" class=dlink>Форуми</a><br>
+ 	&nbsp;<a href="/forum/index.php#c8" class=dlink>&nbsp; &#149;Трудова борса</a><br>
+ 	&nbsp;<a href="/forum/index.php?board=31" class=dlink><font color=red>&nbsp; &#149;Конкурс</font></a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=articles" class=dlink>Статии</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=article&id=history" class=dlink>&nbsp; &#149; История</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=article&id=advices" class=dlink>&nbsp; &#149; Съвети</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=article&id=ideas" class=dlink>&nbsp; &#149; Идеи/Мнения</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=article&id=devs" class=dlink>&nbsp; &#149; Разработки</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=article&id=programs" class=dlink>&nbsp; &#149; Програми</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=article&id=games" class=dlink>&nbsp; &#149; Игри</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=distro" class=dlink>Дистрибуции</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=cd" class=dlink>&nbsp; &#149;<font color=green>Поръчка на CD</font></a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=repository" class=dlink>Made In BG</a><br>
+ 	&nbsp;<a href="http://d.linux-bg.org" class=dlink><font color="green">Файлове</font></a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=links" class=dlink>Връзки</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=gallery" class=dlink>Галерия</a><br>
+ 	&nbsp;<a href="http://conf.linux-bg.org" class=dlink><font color=red>Конференции</font></a><br>
+ </td>
+  	  </tr>
+  	</table>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="/themes/blju2/menub.gif" width="157" height="8"></td>
+  </tr>
+  </table>
+ <table width="100" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="/themes/blju2/menuprefst.gif" width="157" height="27" alt="Настройки"></td>
+  </tr>
+  <tr>
+    <td background="/themes/blju2/menubg.gif">
+  	<table width="90%" border="0" cellspacing="0" cellpadding="0" align="center" background="/themes/blju2/spacer.gif">
+  	  <tr>
+  		<td>	&nbsp;<a href="/cgi-bin/y/index.pl?page=templates" class=dlink>Външен вид</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=proposals" class=dlink>Предложения</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=MYS" class=dlink>Направи си сам</a><br>
+ </td>
+  	  </tr>
+  	</table>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="/themes/blju2/menub.gif" width="157" height="8"></td>
+  </tr>
+  </table>
+ <table width="100" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="/themes/blju2/menuaboutt.gif" width="157" height="27" alt="И още ..."></td>
+  </tr>
+  <tr>
+    <td background="/themes/blju2/menubg.gif">
+  	<table width="90%" border="0" cellspacing="0" cellpadding="0" align="center" background="/themes/blju2/spacer.gif">
+  	  <tr>
+  		<td>	&nbsp;<a href="/cgi-bin/y/index.pl?page=aboutus" class=dlink>За нас</a><br>
+ 	&nbsp;<a href="http://company.linux-bg.org" class=dlink>Линукс за българи  ЕООД</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=linkus" class=dlink>Линк към нас</a><br>
+ 	&nbsp;<a href="/cgi-bin/y/index.pl?page=feedback" class=dlink>Предложения</a><br>
+ </td>
+  	  </tr>
+  	</table>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="/themes/blju2/menub.gif" width="157" height="8"></td>
+  </tr>
+  </table>
+
+ 	   
+        	   
+ 	   <br>
+        	   <table width=100 border=0 cellspacing=0 cellpadding=0>
+ 	   <tr>
+ 	   	<td class=cmenuTitle>Подкрепяно от:</td>
+ 	   </tr>
+ 	   <tr>
+             <td>
+                 <a href="http://www.telepoint.bg"><img src="/ads/telepoint.jpg" width="125" height="43" border="0" alt="TelePoint - Място за хора със свободни идеи"></a>
+                 <br><br>
+                 <a href="http://www.siteground.com"><img src="/ads/siteground.png" width="125" height="49" border="0" alt="SiteGround"></a>
+                 <br><br>
+                 <a href="https://initlab.org/"><img src="/ads/initLab.png" width="125" height="125" border="0" alt="initLab"></a>
+                 <br><br>
+                 <a href="http://www.adsysgroup.com/"><img src="/ads/adsys-98x32.png" width="98" height="32" border="0" alt="Adsys Group"></a>
+                 <br><br>
+                 <a href="http://www.sap.com/bulgaria/index.aspx"><img src="/ads/sap_corp_280_R_r_p_small.png" width="125" height="62" border="0" alt="SAP Bulgaria"></a>
+             </td>
+        </tr>
+ 	   </table>
+ 	 <img src="/themes/blju2/spacer.gif" width="175" height="1"><br>
+     </td>
+ 	<td background="/themes/blju2/menusep.gif" width="4"><img src="/themes/blju2/spacer.gif" width="4" height="4"></td>
+ 	<td width="99%" valign="top">
+ 
+ <!--BODY BLOCK START -->
+ 	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+ 		<tr>
+ 		  <td width="99%" valign="top" align="center">
+ 				<!-- ### Header of Content ### -->
+         			<table width="100%" border="0" cellspacing="0" cellpadding="0" background="/themes/blju2/transbg.gif">
+ <tr>
+ 	<td height=10 valign=top background="/themes/blju2/titlebg.gif"><img src="/themes/blju2/titlet.gif" width="20" height="3"></td>
+ 	<td rowspan="3" width="99%" class="pageTitle">РАЗРАБОТКИ</td>
+ </tr>
+ <tr>
+ 	<td background="/themes/blju2/titlebg.gif" height="99%"><img src="/themes/blju2/titlea.gif" width="20" height="11"></td>
+ </tr>
+ <tr>
+ 	<td height=10 valign=bottom background="/themes/blju2/titlebg.gif"><img src="/themes/blju2/titleb.gif" width="20" height="3"></td>
+ </tr>
+ </table>
+ <!-- BEGIN ARTICLE -->
+ <table border="0" cellSpacing="0" width="100%" cellpadding="0">
+ <TR><TD colspan="3" align="center">&nbsp;</TD>
+ </TR>
+ <tr>
+ 	  	<td valign="top" width="98%">	  	  
+ 		   <img src="/default_images/foldero.gif" width=20 height=20><a href="/cgi-bin/y/index.pl?page=article&id=devs&cmd=cat&cid=0">Разработки</a>&gt;<a href="/cgi-bin/y/index.pl?page=article&id=devs&cmd=cat&cid=cyr">Кирилизация</a><br><p><table width="100%" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+ 	<td><img src="/themes/blju2/cnt_title_l.gif" width="9" height="28"></td>
+ 	<td width="99%">
+ 	  <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+ 		<tr>
+ 		  <td background="/themes/blju2/cnt_title_bg.gif" nowrap  class="contentTitle">Кирилица + efax + html2ps + php HOWTO 
+ 		  </td>
+ 		  <td background="/themes/blju2/cnt_top_bg.gif"><img src="/themes/blju2/cnt_title_r.gif" width="7" height="28"></td>
+ 		  <td width="99%" background="/themes/blju2/cnt_top_bg.gif">&nbsp;</td>
+ 		</tr>
+ 	  </table>
+ 	</td>
+ 	<td><img src="/themes/blju2/cnt_top_r.gif" width="9" height="28"></td>
+   </tr>
+   <tr>
+ 	<td background="/themes/blju2/cnt_l_bg.gif"><img src="/themes/blju2/spacer.gif" width="8" height="8"></td>
+ 	<td background="/themes/blju2/cnt_body_bg.gif" class="contentBody"><br><font face="Verdana" size="-1" color="#878787">от <i>Лъчезар Георгиев / Тодор Стаматов (8-05-2002) </i></font><br>		
+		<br><font face="Verdana" size=-1>рейтинг&nbsp;(<b>18</b>)&nbsp;&nbsp;
+		[ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=340284802&act=add_report&cmd=rate&plus=1"><img src="/themes/blju2/hot.gif" width="11" height="24" border="0" align="textmiddle">добре</a>&nbsp;]
+		&nbsp;[ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=340284802&act=add_report&cmd=rate&minus=1"><img src="/themes/blju2/cool.gif" width="11" height="24" border="0" align="textmiddle">зле</a> ]</font>
+                <script>
+                    document.write('<iframe src="http://www.facebook.com/plugins/like.php?href='+escape('http://www.linux-bg.org/cgi-bin/y/index.pl?page=article&id=devs&key=340284802')+'&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>')
+                </script>
+                <br>
+	<br><P><a href="/cgi-bin/y/index.pl?page=article&id=devs&key=340284802&layout=clean"><img src="/default_images/printer.gif" align="CENTER" alt="Printer Friendly" border="0"><font face="Verdana" size="-1">&nbsp;<u>Вариант за отпечатване</u></font></a></P><p><font face="Verdana" size="-1">
+
+
+
+
+
+
+  Лъчезар Георгиев &lt;<A
+HREF="mailto:lucho@maverick2000.com"><u>lucho@maverick2000.com</u></A>&gt;<br>
+  Тодор Стаматов &lt;<A
+HREF="mailto:tssdigital@yahoo.com"><u>tssdigital@yahoo.com</u></A>&gt;<br>
+ 02 май 2002<br>
+ версия 0.9<br>
+ <br>
+ (c) 2002 busbg.com<br>
+ <br>
+ Статията и кода към нея може да свалите от:<br>
+  <A 
+ HREF="http://www.linux-bg.org/download/programs/efaxCyr.zip"
+target="_self"><u>http://www.linux-bg.org/download/programs/efaxCyr.zip</u></A><br>
+ <br>
+ <br>
+ 1.1 Цели<br>
+ 1.2 Няколко думи за факсовете, факс-модемите и Линукс<br>
+  2. &nbsp;Подготовка за купона: какъв софтуер ни е
+необходим<br>
+ 2.1.efax - програмата, която върши черната работа<br>
+  2.2.Кирилските шрифтове в ghostscript - без тях не
+можем<br>
+ 2.3.hml2ps - слабото място<br>
+ 2.4.function cp1251: Хак-ът<br>
+ 2.5.В орбита: факс от web-сървъра<br>
+ 2.5.1 Описание на функциите<br>
+ 2.5.2 Сорсовете<br>
+ <br>
+ <br>
+ 1. Въведение<br>
+ <br>
+  1.1 Целта на този документ е да опише
+ &quot;кирилизацията&quot; на пакета efax 0.9 както и някои
+ трикове за изпращане на &nbsp;html-файлове с факс модем.
+ Също така са дадени няколко функции на php за обработка и
+ изпращане на факсове &nbsp;съдържащи текст в cp1251
+ енкодинг, както и кратко описание на това, как можете да
+ добавите постскрипт кирилски шрифтове в ghostscript
+ интерпретатора. Изпращането на факсове от web-сървър изисква
+ root достъп (или +s флаг) на някои от описаните скриптове.
+<br>
+  Извън обсега на този документ е как да се предпазим от
+ пробиви по сигурността. Също така функциите от сорса не са
+ предвидени да се изпълняват от няколко потребители на
+ уеб-сървъра едновременно - това може да предизвика срив на
+ сървъра. Използването им в мулти-юзер режим ще бъде описано
+ в бъдещите версии на този документ. Текста и сорсовете към
+него са лицензирани под GPL2.<br>
+ <br>
+ <br>
+ <br>
+ 1.2 Няколко думи за факсовете, факс-модемите и Линукс<br>
+ <br>
+  Както може би ви е известно от безбройните WinModem-HOWTO и
+ LinModem-HOWTO, когато става думи за &quot;софтуерни&quot;
+ модеми под Линукс, нещата могат да станат драматични. Аз ви
+ съветвам, ако все още нямате модем при покупката му да
+ направите предварителна уговорка с фирмата от която го
+ купувате, че ако не работи под Линукс ще ви го сменят.
+ Първото нещо, което ви е необходимо за да започнете
+ естествено е факс-модема. И тъй като повечето модеми вече си
+ имат вграден факс, оттук нататък ще ги наричаме само модем.
+ Аз съм тествал следните марки модеми с Red Hat (версии от
+4.2 до 7.2):<br>
+ <br>
+ Motorola Modem Sfr 56.6<br>
+ Lucent-Venus Fax Modem - този е PCMCA<br>
+ TrendNET TFM-560X<br>
+  И няколко вътрешни, ISA с неустановен произход, но
+хардуерни.<br>
+ <br>
+  Линукс ги познава и работи без проблем с тях в режим факс.
+ Някои софтуерни Conexeant &nbsp;също &quot;работят&quot; под
+ Линукс, но за целта ви трябват драйвери, а те нямат
+ поддръжка на факс режим. Моето мнение е че, повечето външни
+ модеми ще ви свършат работа. Този документ предполага
+ наличието на инсталиран и готов за работа в факс режим
+ модем. Марката, модела и инсталацията на модема не са целите
+ на това ръководство. Можете да проверите дали модемът ви
+поддържа факс по следния начин:<br>
+ <br>
+  Инсталирате и/или включвате модема, &quot;палите&quot;
+minicom или някакъв друг терминален емулатор:<br>
+ 	<br>
+ [user@host lucho]# minicom<br>
+ <br>
+ резултата би трябвало да изглежда така:<br>
+ <br>
+ Welcome to minicom 1.83.1<br>
+ <br>
+  OPTIONS: History Buffer, F-key Macros, Search History
+Buffer, I18n <br>
+ Compiled on Aug 28 2001, 15:09:33.<br>
+ <br>
+ Press CTRL-A Z for help on special keys<br>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<br>
+  atz &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; <br>
+ OK &nbsp; &nbsp; &nbsp;<br>
+ AT+FCLASS=?<br>
+ 0,1,8<br>
+ <br>
+ OK<br>
+ <br>
+ 0,1,8 означава че вашият модем поддържа факс режим.<br>
+ <br>
+ Ако отговорът е само :<br>
+ О<br>
+ ОК <br>
+ <br>
+  Това означава че вашият модем не поддържа факс режим. Това
+ се отнася и за драйверите с които &nbsp;работят
+ Конексант-модемите. Единственото решение, което мога да ви
+ предложа е да си смените модема с хардуерен. Предполагаме че
+ всичко е минало както трябва и сега вече разполагаме с
+хардуера.<br>
+ <br>
+ 2. Подготовка за купона: какъв софтуер ни е необходим <br>
+ <br>
+  2.1. efax - програмата, която върши черната работа Ако
+ вашата дистрибуция не го е инсталирала, можете да намерите
+ efax пакет-а на адрес: <A 
+ HREF="http://casas.ee.ubc.ca/efax/."
+ target="_blank"><u>http://casas.ee.ubc.ca/efax/.</u></A>
+ Разпакетирайте сорсовете в /usr/src/efax- . Ние ще
+предположим че пътят към сорсовете е: /usr/src/efax-0.9/<br>
+ <br>
+ cd /usr/src/efax-0.9/<br>
+  [user@host efax-0.9]#make След като мине компилацията,
+ редактирайте /usr/src/efax-0.9/fax. Това е шел-скрипт, в
+ който можете да укажете вашето име, организацията, как да
+ набира и още много неща които са описани в документацията на
+пакета. За да го инсталирате изпълнете командата:<br>
+ <br>
+ [user@host efax-0.9]#make install<br>
+ <br>
+  ако нещо не ви хареса в последствие, винаги можете да
+ промените настройките в /usr/bin/fax. Сега вече efax е готов
+за работа ;). Нека да го тестваме:<br>
+ <br>
+ Направете един &quot;тестов&quot; факс с командата:<br>
+ <br>
+ [user@host efax-0.9]# fax make COPYING <br>
+ <br>
+ това ще генерира в текущата директория няколко файла:<br>
+ <br>
+ [user@host efax-0.9]# ls -l COPYING*<br>
+  -rw-r--r-- &nbsp; &nbsp;1 lucho &nbsp; &nbsp;root &nbsp;
+&nbsp; &nbsp; &nbsp;18007 Feb 20 &nbsp;1999 COPYING<br>
+  -rw-r--r-- &nbsp; &nbsp;1 root &nbsp; &nbsp; root &nbsp;
+&nbsp; &nbsp; &nbsp;58562 May &nbsp;1 15:21 COPYING.001<br>
+  -rw-r--r-- &nbsp; &nbsp;1 root &nbsp; &nbsp; root &nbsp;
+&nbsp; &nbsp; &nbsp;53418 May &nbsp;1 15:21 COPYING.002<br>
+  -rw-r--r-- &nbsp; &nbsp;1 root &nbsp; &nbsp; root &nbsp;
+&nbsp; &nbsp; &nbsp;45348 May &nbsp;1 15:21 COPYING.003<br>
+  -rw-r--r-- &nbsp; &nbsp;1 root &nbsp; &nbsp; root &nbsp;
+&nbsp; &nbsp; &nbsp;37731 May &nbsp;1 15:21 COPYING.004<br>
+  -rw-r--r-- &nbsp; &nbsp;1 root &nbsp; &nbsp; root &nbsp;
+&nbsp; &nbsp; &nbsp;26217 May &nbsp;1 15:21 COPYING.005<br>
+  -rw-r--r-- &nbsp; &nbsp;1 root &nbsp; &nbsp; root &nbsp;
+&nbsp; &nbsp; &nbsp;16678 May &nbsp;1 15:21 COPYING.006<br>
+ [user@host efax-0.9]# <br>
+ <br>
+  тези с разширения 001-006 са &quot;нашите
+файлове&quot;.<br>
+ <br>
+ Вижте какво е генерирал fax-скрипта с командата:<br>
+ <br>
+ [user@host efax-0.9]# file COPYING.001 &nbsp; &nbsp;<br>
+ COPYING.001: TIFF image data, little-endian<br>
+ [user@host efax-0.9]# <br>
+ <br>
+  Като цяло, efax изпраща файлове в формат tiffg3. Не го
+ забравяйте! Независимо какво сте решили да изпращате по
+ факса, ще опрете до този формат. Това е формата, който се
+използва при факс комуникацията от efax.<br>
+ <br>
+ Вече можем да се опитаме да изпратим първият си факс:<br>
+ <br>
+ [user@host efax-0.9]# ./fax send 9744XXXX COPYING.001 <br>
+  efax: Wed May &nbsp;1 15:28:08 2002 efax v 0.9 Copyright
+1999 Ed Casas<br>
+ efax: 28:08 opened /dev/cua1<br>
+ efax: 28:10 using CL-MD56xx in class 1<br>
+ efax: 28:10 dialing T9744XXXXX<br>
+ ....<br>
+ ....<br>
+ <br>
+  Естествено, efax ви позволява да изпратите директно текстов
+ файл, като автоматично го конвертира, но тези а и други
+ полезни неща можете да научите ако прочетете документацията
+ на пакета ;). Имайте предвид че кирилицата няма да бъде
+ енкодирана на този етап. Една програма, която конвертира
+ кирилски текст в Postscript, можете да свалите от сайта на
+Линукс за българи <br>
+  (<A 
+ HREF="http://www.linux-bg.org/download/programs/kir2ps.tgz"
+ target="_self"><u>http://www.linux-bg.org/download/programs/kir2ps.tgz</u></A>).
+ В нея са включени вградени шрифтове и ако държите на първо
+ време да имате опростена форма на факсове на кирилица, ще ви
+ свърши работа. Естествено, можете да кирилизирате efax, но
+ за това малко по късно. Целта ни дотук беше да изпратим
+какъвто и да е факс.<br>
+ <br>
+ <br>
+  2.2.кирилските шрифтове в ghostscript - без тях не
+можем<br>
+ <br>
+  Ghostscript aka gs е постскрипт интерпретатора на GNU.
+ Постскрипт, накратко казано е език за описание на графики и
+ текст, които да бъдат рендирани на екрана или на принтер.
+ Ако държите на подробностите, пълното му описание можете да
+ намерите на адрес <A 
+ HREF="http://www.adobe.com:80/products/postscript/pdfs/PLRM.pdf."
+ target="_blank"><u>http://www.adobe.com:80/products/postscript/pdfs/PLRM.pdf.</u></A>
+ Ghostscript интерпретатора е много важен за целите ни. Това
+ което ни е &nbsp;необходимо е просто да включим в файла за
+ описание на шрифтовете такива, който имат във себе си cp1251
+ енкодинг и са във формат postscript. Аз използвам шрифтовете
+ на Top Team Co, които пакета bglinux-4 ми инсталира. Ако още
+ не сте инсталирали bglinux, ви съветвам да го направите -
+ адски полезен и добре работещ е. Можете да го свалите от
+ адрес <A 
+ HREF="ftp://lml.bas.bg/home/anton/linux/bglinux-4.0.tar.gz"
+ target="_blank"><u>ftp://lml.bas.bg/home/anton/linux/bglinux-4.0.tar.gz</u></A>
+ а сайта на създателя му е <A 
+ HREF="http://lml.bas.bg/~anton/linux/bglinux.html."
+ target="_blank"><u>http://lml.bas.bg/~anton/linux/bglinux.html.</u></A>
+ Директорията, в която се намират шрифтовете на ghostscript в
+ RedHat 7.2 е /usr/share/fonts/default/ghostscript. Направете
+ в нея символен линк към тази в която се намират
+ &quot;вашите&quot; постскрипт шрифтове. bglinux ги инсталира
+/usr/local/share/fonts/type1/scalable-cyrfonts/<br>
+ Ето как изглежда &nbsp;на моят компютър:<br>
+ <br>
+ [user@host ghostscript]# ll c* &nbsp;<br>
+  lrwxrwxrwx &nbsp; &nbsp;1 root &nbsp; &nbsp; root &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; 47 Apr 29 10:03 cyr -&gt;
+/usr/local/share/fonts/type1/scalable-cyrfonts/<br>
+ [user@host ghostscript]# cd cyr/<br>
+ [user@host cyr]# ll<br>
+ total 5624<br>
+  -rw-r--r-- &nbsp; &nbsp;1 root &nbsp; &nbsp; root &nbsp;
+&nbsp; &nbsp; &nbsp;42239 Nov &nbsp;2 13:40 a010013d.afm<br>
+  -rw-r--r-- &nbsp; &nbsp;1 root &nbsp; &nbsp; root &nbsp;
+&nbsp; &nbsp; &nbsp;74143 Nov &nbsp;2 13:39 a010013d.pfb<br>
+  -rw-r--r-- &nbsp; &nbsp;1 root &nbsp; &nbsp; root &nbsp;
+&nbsp; &nbsp; &nbsp;42211 Nov &nbsp;2 13:40 a010015d.afm<br>
+  -rw-r--r-- &nbsp; &nbsp;1 root &nbsp; &nbsp; root &nbsp;
+&nbsp; &nbsp; &nbsp;80727 Nov &nbsp;2 13:39 a010015d.pfb<br>
+  -rw-r--r-- &nbsp; &nbsp;1 root &nbsp; &nbsp; root &nbsp;
+&nbsp; &nbsp; &nbsp;42065 Nov &nbsp;2 13:40 a010033d.afm<br>
+ ....<br>
+ ....<br>
+ <br>
+  следващото нещо което трябва да направите е да опишете тези
+ шрифтове в файла /usr/share/ghostscript/6.51/lib/Fontmap.GS.
+ В този файл е &quot;картата&quot; на шрифтовете на
+ ghostscript. Това означава че всеки шрифт, който искате да
+ използвате от gs-интерпретатора, трябва да е описан в него.
+Ние ще добавим шрифтовете на Topteam накрая:<br>
+ <br>
+  /URWGothicCYR-Book &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;(cyr/a010013d.pfb) ;<br>
+  /URWGothicCYR-Demi &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;(cyr/a010015d.pfb) ;<br>
+  /URWGothicCYR-BookObli &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/a010033d.pfb) ;<br>
+  /URWGothicCYR-DemiObli &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/a010035d.pfb) ;<br>
+  /URWBookmanCYR-Ligh &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; (cyr/b018012d.pfb) ;<br>
+  /URWBookmanCYR-DemiBold &nbsp; &nbsp; &nbsp; &nbsp;
+(cyr/b018015d.pfb) ;<br>
+  /URWBookmanCYR-LighItal &nbsp; &nbsp; &nbsp; &nbsp;
+(cyr/b018032d.pfb) ;<br>
+  /URWBookmanCYR-DemiBoldItal &nbsp; &nbsp;
+(cyr/b018035d.pfb) ;<br>
+  /CenturySchCYR-Roma &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; (cyr/c059013d.pfb) ;<br>
+  /CenturySchCYR-Bold &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; (cyr/c059016d.pfb) ;<br>
+  /CenturySchCYR-Ital &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; (cyr/c059033d.pfb) ;<br>
+  /CenturySchCYR-BoldItal &nbsp; &nbsp; &nbsp; &nbsp;
+(cyr/c059036d.pfb) ;<br>
+  /NimbusSanCYR-Regu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;(cyr/n019003d.pfb) ;<br>
+  /NimbusSanCYR-Bold &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;(cyr/n019004d.pfb) ;<br>
+  /NimbusSanCYR-ReguItal &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/n019023d.pfb) ;<br>
+  /NimbusSanCYR-BoldItal &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/n019024d.pfb) ;<br>
+  /NimbusSanCYR-ReguCond &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/n019043d.pfb) ;<br>
+  /NimbusSanCYR-BoldCond &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/n019044d.pfb) ;<br>
+  /NimbusSanCYR-ReguCondItal &nbsp; &nbsp;
+&nbsp;(cyr/n019063d.pfb) ;<br>
+  /NimbusSanCYR-BoldCondItal &nbsp; &nbsp;
+&nbsp;(cyr/n019064d.pfb) ;<br>
+  /NimbusRomCYR-Regu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;(cyr/n021003d.pfb) ;<br>
+  /NimbusRomCYR-Medi &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;(cyr/n021004d.pfb) ;<br>
+  /NimbusRomCYR-ReguItal &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/n021023d.pfb) ;<br>
+  /NimbusRomCYR-MediItal &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/n021024d.pfb) ;<br>
+  /NimbusMonCYR-Regu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;(cyr/n022003d.pfb) ;<br>
+  /NimbusMonCYR-Bold &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;(cyr/n022004d.pfb) ;<br>
+  /NimbusMonCYR-ReguObli &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/n022023d.pfb) ;<br>
+  /NimbusMonCYR-BoldObli &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/n022024d.pfb) ;<br>
+  /URWPalladioCYR-Roma &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/p052003d.pfb) ;<br>
+  /URWPalladioCYR-Bold &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/p052004d.pfb) ;<br>
+  /URWPalladioCYR-Ital &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/p052023d.pfb) ;<br>
+  /URWPalladioCYR-BoldItal &nbsp; &nbsp; &nbsp;
+&nbsp;(cyr/p052024d.pfb) ;<br>
+  /Teams-Normal &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; (cyr/teams.pfb) ;<br>
+  /Teams-Bold &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; (cyr/teamsb.pfb) ;<br>
+  /Teams-BoldItalic &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; (cyr/teamsbi.pfb) ;<br>
+  /Teams-Italic &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; (cyr/teamsi.pfb) ;<br>
+ <br>
+ /TeamsCYR-Normal				/Teams-Normal	; <br>
+ /TeamsCYR-Bold					/Teams-Bold &nbsp; ;	 &nbsp;<br>
+  /TeamsCYR-BoldItalic		 &nbsp; &nbsp;/Teams-BoldItalic
+&nbsp;;<br>
+ /TeamsCYR-Italic			 &nbsp; &nbsp;/Teams-Italic &nbsp;;<br>
+  /Teams &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/Teams-Normal
+&nbsp; ; <br>
+ <br>
+ Просто копирайте горните 2 колони в края на Fontmap.GS<br>
+ <br>
+  Забележка: Въпреки че според документацията на ghostscript
+ има възможност за използване на truetype шрифтове, аз не
+ успях да пусна кирилицата с тях, въпреки че
+ gs-интерпретатора ги зарежда без проблеми. Ако някой успее -
+ аз ще включа бележките му в следващите версии на това
+ръководство.<br>
+ Tествайте &quot;новите&quot; шрифтове&quot;:<br>
+ <br>
+ [user@host /]# cd /usr/share/ghostscript/6.51/lib<br>
+  [user@host lib]# gs prfont.ps &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;<br>
+ GNU Ghostscript 6.51 (2001-03-28)<br>
+  Copyright (C) 2001 artofcode LLC, Benicia, CA. &nbsp;All
+rights reserved.<br>
+  This software comes with NO WARRANTY: see the file COPYING
+for details.<br>
+  Loading NimbusRomNo9L-Regu font from
+/usr/share/fonts/default/Type1/n021003l.pfb...<br>
+  2362024 990061 1622424 328124 0 done.<br>
+  Loading NimbusSanL-Regu font from
+/usr/share/fonts/default/Type1/n019003l.pfb...<br>
+ 39936 1248856 1642520 335588 0 done.<br>
+  GS&gt;/Teams DoFont % - това ще ви покаже шрифта
+Teams-Normal<br>
+ GS&gt;quit<br>
+ [user@host lib]#<br>
+ <br>
+  Ако всичко е минало както трябва, вече можем да пристъпим
+към кирилизацията на efax:<br>
+ <br>
+ [user@host lib]# cd /usr/src/efax-0.9/<br>
+ <br>
+  Като начало, нека да генерираме шрифт-а с кирилица. Опцията
+ на efix -f (забележете че това е помощна програма от пакета,
+ не е efax) позволява използването на външен шрифт. За целта
+ той се генерира от ./fax &nbsp;с помощта на току-що
+ кирилизирания ghostscript от шрифта на Top Team Co. Това е
+ битмап, съдържащ готови рендирани изображения на всички
+ букви (глифове) в даденият шрифт: [<A
+ HREF="mailto:user@hostefax-0.9"><u>user@hostefax-0.9</u></A>]#
+ fax makefont &nbsp;Teams-Normal 8 16 24 efaxfont за да видим
+какво сме направили:<br>
+ <br>
+  [user@host efax-0.9]# file efaxfont efaxfont: Netpbm PBM
+&quot;rawbits&quot; image data<br>
+  [user@host efax-0.9]# Друг начин е да пуснете някоя
+ програма за преглед на изображения. gqview разпознава .pbm
+ файловете, въпреки че не открих с какво могат да се
+редактират.<br>
+ <br>
+  как се използва шрифта за изпращане на &quot;чисти&quot;
+ текстови файлове можете да прочете от man-страниците на fax,
+efax и efix.<br>
+ <br>
+ <br>
+ <br>
+ 2.3.hml2ps - слабото място<br>
+ <br>
+  Това е perl-скрипт, който твърди че конвертира html
+ страници в postscript. Има някой ограничения, но като цяло
+ върши работа -за &quot;чист&quot; html. Можете да го свалите
+ от <A  HREF="http://www.tdb.uu.se/~jan/"
+ target="_blank"><u>http://www.tdb.uu.se/~jan/</u></A>
+ Въпреки че в документацията е описано как да се
+ &quot;интернационализира&quot;, в момента в който му кажете
+ да използва шрифт с cp1251 енкодинг, генерираният от него
+ файл вече не работи под ghostscript интерпретатора, като
+ &nbsp;по този начин ни затваря вратичката към изпращането на
+ факсове с кирилица. Ето защо ние генерираме некирилизиран
+ ps-файл и в последствие с помощта на php го преработваме
+ така че да се рендира с кирилски шрифтове. Ще видите как
+ става това малко по-долу. Както сте видели вече (почти съм
+ сигурен) съобщенията за грешка на gs не са от
+ най-разбираемите. Всеки опит да бъде конвертиран генериран
+ от htm2ps файл с кирилица в tiffg3 завършва с такава грешка.
+ Още една подробност: при конвертирането от html в ps ИЗРИЧНО
+ трябва да викате html2ps с опция -D . Това принуждава
+ html2ps да &quot;парсне&quot; генерирания файл през
+ gs-интерпретатора. По този начин ако html2ps -D мине без
+ съобщения за грешки след това, при конвертирането то tiffg3
+няма да има проблеми.<br>
+ <br>
+ 2.4. function cp1251: Хак-ът<br>
+  Начина който ви предлагам е реализиран с php по разбираеми
+ причини, но може да се направи със всеки друг език за
+ програмиране. Идеята е да се генерира ps-файл, който не е
+кирилизиран и след това да се обработи<br>
+  така че gs-интерпретатора да рендира правилно шрифтовете
+ при конвертирането до tiffg3 формат. Решението на проблема е
+ просто: преди всеки оператор за показване на стринг от типа
+ \240\313\350\355\366) S в ps-файла да се сложи указание да
+ се използва някой от шрифтовете, които са кирилизирани. С
+прости думи:<br>
+ <br>
+ (\240\313\350\355\366) S се подменя с<br>
+ <br>
+  /Teams-Normal findfont 8 scalefont setfont
+(\240\313\350\355\366) S<br>
+ <br>
+  като числата в скобите са, както може би предполагате
+ кодовете на кирилските букви. Това увеличава големината на
+ файла, но премахва възможността да се изпращат факсове на
+&quot;маймуница&quot;.<br>
+ <br>
+ 2.5. В орбита: факс от web-сървъра<br>
+ <br>
+ 2.5.1 Описание на функциите<br>
+ <br>
+ decode_str($font_arg)<br>
+ 	callback функция, която се използва от cp1251() само. <br>
+ <br>
+ <br>
+  cp1251($psarr) на входа и се подава масив, в който се
+ съдържа цял постскрипт файл, а на изхода е кирилизираният
+вариант.<br>
+ 	Пример:<br>
+  		$fp = popen(&quot;$html2ps -D $loc&quot;,
+&quot;r&quot;)<br>
+ 				or die (&quot;Cannot execute&quot;);<br>
+ 		<br>
+ 		$contents = fread($fp, 29999999);<br>
+  	 &nbsp; &nbsp; &nbsp; &nbsp;pclose($fp); &nbsp;<br>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;set_cyr_font(); &nbsp; <br>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$r
+ = cp1251($contents); // 	в $r е &quot;кирилизираният
+файл&quot;<br>
+ <br>
+  SendFile($File_Name,$File_Extension, $arr) отваря диалог
+ &quot;save as&quot; на браузера и праща съдържанието на
+$arr. Нищо особено. &nbsp;		 <br>
+ 		<br>
+ set_cyr_font($font=&quot;/Teams-Normal&quot;, $size=8)<br>
+  	установява шрифта който да се използва при енкодиране на
+ ps-файл с cp1251(), като проверява дали шрифта присъства в
+ map-файла на gs-интерпретатора. Името на шрифта трябва да е
+в постскрипт формат.<br>
+ <br>
+ <br>
+ set_orientation_Land($file_name)<br>
+ set_orientation_Port($file_name)<br>
+ <br>
+  Тези 2 функции установяват ориентацията на ps-файл -
+&quot;Portrait&quot; или &quot;Landcape&quot;.<br>
+ <br>
+ get_orientation($file_name) <br>
+ 	Връща ориентацията на файла. Връщаните стойности са:<br>
+ 	1 &quot;Portrait&quot;<br>
+ 	2 &quot;Landscape&quot;<br>
+ 	0 грешка<br>
+ <br>
+ fetch_location($loc, $fax_number)<br>
+  	Прочита, кирилизира и записва постскрипт файл, който се
+ изпраща на функцията fax_make. Полученият от fax_make списък
+ от файлове се изпраща на функцията fax_send, която праща
+страниците на факс с номер $fax_number<br>
+ <br>
+ fax_make($file)<br>
+  	Конвертира в tiffg3 ps-файла $file и връща масив с имената
+ на генерираните файлове в формат file.ps.001, 002... като на
+всяка страница съответства един файл<br>
+ <br>
+ fax_send($files_list, $fax_number)<br>
+  	Изпраща на факс с номер $fax_number файловете $files_list,
+коитo са направени с функцията fax_make.<br>
+ <br>
+ <br>
+  get_gs_fonts() - връща масив с имената на шрифтовете,
+ описани в Fontmap.GS. Използва се в set_cyr_font(), но може
+да бъде извиквана самостоятелно.<br>
+ <br>
+ Пример за използване на горните функции:<br>
+ <br>
+ &lt;?php<br>
+ <br>
+  $location=&quot;<A  HREF="http://някъде.си/нещо.си&quot;;"
+target="_blank"><u>http://някъде.си/нещо.си&quot;;</u></A><br>
+ fetch_location($location,95859);<br>
+ <br>
+ ?&gt;<br>
+ <br>
+ Статията и кода към нея може да свалите от:<br>
+  <A 
+ HREF="http://www.linux-bg.org/download/programs/efaxCyr.zip"
+target="_self"><u>http://www.linux-bg.org/download/programs/efaxCyr.zip</u></A><br>
+<br></font></p><br><center><p align='center'><font face="Verdana" size="-1"><a href="/cgi-bin/y/index.pl?page=article&id=devs&key=345124867"> &lt;&lt; Пак за преводите на програми</a> | <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=338900525">Създаване на потребителски графичен интерфейс с Qt &gt;&gt;</a></font><br></center></td>
+ 	<td background="/themes/blju2/cnt_r_bg.gif"><img src="/themes/blju2/spacer.gif" width="1" height="1"></td>
+   </tr>
+   <tr>
+ 	<td><img src="/themes/blju2/cnt_bottom_l.gif" width="9" height="10"></td>
+ 	<td background="/themes/blju2/cnt_bottom_bg.gif"><img src="/themes/blju2/spacer.gif" width="1" height="1"></td>
+ 	<td><img src="/themes/blju2/cnt_bottom_r.gif" width="9" height="10"></td>
+   </tr>
+ </table>
+<br></br>		  
+ 		           
+ 		        
+ 		   		        
+ 		   <p><a name="other_comments"></a><table border="0" width="95%" cellspacing=0 cellpadding=0>
+                                        <tr><td bgcolor="#C0C0C0" width="40%" valign="top">
+                                                <font face="Verdana" size="-1"><b>Коментари: (общо 0) </b></font>
+                                             </td>
+					     <td  bgcolor="#C0C0C0" width="59%" valign="top"><font face="Verdana" size="-1"><b>Оценени с</b></font>
+		       <select name='' onChange="document.cookie='el='+this[selectedIndex].value;document.location='/cgi-bin/y/index.pl?page=article&id=devs&key=340284802&id=devs&redo=1576076331#other_comments'"><option value="-1" >-1</option>
+<option value="0" >0</option>
+<option value="1" SELECTED>1</option>
+<option value="2" >2</option>
+<option value="3" >3</option>
+<option value="4" >4</option>
+<option value="5" >5</option>
+</select> <font face="Verdana" size="-1"><b>или повече</b></font>			     </td>
+                                             <td bgcolor="#C0C0C0" width="1%" nowrap valign="top">                             </td>
+                                         </tr>
+                                         <tr>
+                                                <td  align="right" colspan=3><font face="Verdana" size="-1">[<a href="#add_comment"><b><u>Добави коментар</u></b></a>]</font>
+                                                </td>
+                                        </tr>
+                                        </table>
+                                </p><UL>
+</UL>
+
+				<form name="commt" action="/cgi-bin/y/index.pl" Method="POST">
+				<input type="hidden" name="page" value="article">
+				<input type="hidden" name="act" value="add_newscomment">
+				<input type="hidden" name="cmd" value="add">
+				<input type="hidden" name="cmtkey" value="340284802_1576076331">
+				<input type="hidden" name="key" value="340284802">
+				<input type="hidden" name="id" value="devs">
+				<input type="hidden" name="parent" value=""><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="95%" background="/default_images/clearpixel.gif">
+			<TR><TD colspan="2" bgcolor="#C0C0C0"><a name="add_comment"></a><font face="Verdana" size="-1"><b>Вашият коментар</b></font></TD></TR>
+			<TR><TD><font face="Verdana" size="-1">Име:</font></TD><TD><INPUT TYPE=TEXT NAME="c_name" value="" SIZE=25 MAXLENGTH=25></TD></TR>
+			<TR><TD><font face="Verdana" size="-1">E-Mail:</font></TD><TD><INPUT TYPE=TEXT NAME="c_email" value="" SIZE=25><font face="Verdana" size="-1"> (по желание)</font></TD></TR>
+			<TR><TD><font face="Verdana" size="-1">Заглавие:</font></TD><TD><INPUT TYPE="Text" NAME="c_title" SIZE="38" MAXLENGTH=42 value="" MOLANG="DEFAULT"></TD></TR>
+			
+			<TR><TD COLSPAN=2><P><BR><font face="Verdana" size="-1">Описание: <span id="langLink" title="Клавиатура" class="ln"></span> <a href="http://momche.net/redir.php?page=inputlocalehelp" title="Помощ" onclick="window.open(this.href, '', 'width=640, height=480, scrollbars=1'); return false;" tabindex="10000"><strong>?</strong></a>
+			</font></TD></TR>
+			<TR><TD COLSPAN=2><TEXTAREA COLS=45 ROWS=9 NAME="c_body" WRAP="Physical" MOLANG="DEFAULT"></TEXTAREA></TD></TR>
+                        <TR><TD COLSPAN=2><font color="red">Внимание:</font> Допълнителна проверка при коментари от нерегистрирани потребители.</TD></TR><TR><TD COLSPAN=2><script type="text/javascript">var onloadCallback = function(){grecaptcha.render('recaptcha_6LfywgAAAA',{"sitekey":"6LfywgAAAAAAAF-OKTdfjcS33rqlcRSBRondfj0P"});};</script><script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" type="text/javascript"></script><div id="recaptcha_6LfywgAAAA"></div></TD></TR>
+			<TR><TD COLSPAN=2><INPUT TYPE="Submit" VALUE="Добави"></TD></TR>
+			</TABLE>
+			</form>
+			
+ 		        <img src="/default_images/clearpixel.gif" width="402" height="5" alt="">
+ 		</td>					
+ 		<td><img src="/default_images/clearpixel.gif" width="10" height="1" alt=""></td>
+ 		<td align="right" vAlign="top">	
+ 			<table width="1" border="0" cellspacing="0" cellpadding="0" background="/themes/blju2//cmenutbg.gif" align="center">
+ 			  <tr>
+ 				<td><img src="/themes/blju2/cmenui.gif" width="31" height="29"></td>
+ 				<td width="139" class="cmenuTitle">МЕНЮ</td>
+ 				<td><img src="/themes/blju2/cmenutr.gif" width="10" height="29"></td>
+ 			  </tr>
+ 			  <tr>
+ 				<td colspan="3" background="/themes/blju2/cmenubg.gif">
+ 				  <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center" background="/themes/blju2//spacer.gif">
+ 					<tr>
+ 					  <td align="left" class="cmenuText">
+ 					  	<img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> <a href="index.pl?page=article&id=devs&cmd=search">Търсене</a><br>
+ 						<img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> <a href="index.pl?page=report&id=devs&cmd=add&back_to=article">Добавяне</a><br>								   					 
+ 					  </td>
+ 					</tr>
+ 				  </table>
+ 				</td>
+ 			  </tr>
+ 			  <tr>
+ 				<td colspan="3"><img src="/themes/blju2/cmenub.gif" width="169" height="6"></td>
+ 			  </tr>
+ 			</table>
+ 			<br>
+ 			
+ 			<table width="1" border="0" cellspacing="0" cellpadding="0" background="/themes/blju2//cmenutbg.gif" align="center">
+    <tr>
+  	<td><img src="/themes/blju2/cmenui.gif" width="31" height="29"></td>
+  	<td width="139" class="cmenuTitle">ЗАГЛАВИЯ</td>
+  	<td align="right"><img src="/themes/blju2/cmenutr.gif" width="10" height="29"></td>
+    </tr>
+    <tr>
+  	<td colspan="3" background="/themes/blju2/cmenubg.gif">
+  	  <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center" background="/themes/blju2//spacer.gif">
+  		<tr>
+  		  <td align="left" class="cmenuText">
+  		  	<a href="/cgi-bin/y/index.pl?page=article&id=devs&key=473487864" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Проект LinuxWriter</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=449814436" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Attachix - свободен Dropbox клон</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=447340038" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Проект на „Линукс за българи“ и МТИТС - скрипт за сканиране</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=447085933" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Проект на „Линукс за българи“ и МТИТС - доклад по Фаза I</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=446995655" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Raspberry Pi – една добра идея</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=439876088" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Да громим невежеството със сатира!</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=390794693" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> SquashFS</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=390713057" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Линукс модули</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=390321666" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Прост и ефективен начин за backup с rsync</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=390254519" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Правене на архиви по &quot;лесния начин&quot;</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=388580000" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Програмиране графичен интерфейс (GUI) с Lazarus и freepascal</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=387120081" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Размисли по HFSC</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=380207153" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Крайна цел: FreeBSD</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=375023745" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Начални стъпки с Ant</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=374961042" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Въведение в динамичната оптимизация</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=374800765" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Програмиране под Линукс. Въведение за начинаещи.</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=374460427" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Модерни методи за управление на паметта в C++</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=369690951" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> T2 Project има нужда от помощ</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=363041343" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Публични информационни системи с Линукс терминали</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=358298173" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Персонален pure-ftpd с виртуални потребители и криптиране</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=356844398" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Помогнете на Fedora</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=356615928" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Заинтересовани за проектът по разработване на портала ? </a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=346792721" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Doc_Embed: В помощ на авторите на статии в Linux-BG</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=345124928" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Пак за преводите на програми (Част II или предложението)</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=345124867" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12> Пак за преводите на програми</a><br>
+ 
+ 
+  		  </td>
+  		</tr>
+  	  </table>
+  	</td>
+    </tr>
+    <tr>
+  	<td colspan="3"><img src="/themes/blju2/cmenub.gif" width="169" height="6"></td>
+    </tr>
+  </table>
+  <br>
+ 
+
+ 			<table width="1" border="0" cellspacing="0" cellpadding="0" background="/themes/blju2//cmenutbg.gif" align="center">
+    <tr>
+  	<td><img src="/themes/blju2/cmenui.gif" width="31" height="29"></td>
+  	<td width="139" class="cmenuTitle">ПОДКАТЕГОРИИ</td>
+  	<td align="right"><img src="/themes/blju2/cmenutr.gif" width="10" height="29"></td>
+    </tr>
+    <tr>
+  	<td colspan="3" background="/themes/blju2/cmenubg.gif">
+  	  <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center" background="/themes/blju2//spacer.gif">
+  		<tr>
+  		  <td align="left" class="cmenuText">
+  		  	<a href="/cgi-bin/y/index.pl?page=article&id=devs&cmd=cat&cid=proj" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12>  Проекти</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&cmd=cat&cid=prog" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12>  Програмиране</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&cmd=cat&cid=bulg" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12>  Преводи  на Български</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&cmd=cat&cid=cyr" class="dlink"><img src="/themes/blju2/cmenubullet.gif" border=0 width=12 height=12>  Кирилизация</a><br>
+ 
+ 
+  		  </td>
+  		</tr>
+  	  </table>
+  	</td>
+    </tr>
+    <tr>
+  	<td colspan="3"><img src="/themes/blju2/cmenub.gif" width="169" height="6"></td>
+    </tr>
+  </table>
+  <br>
+ 
+
+ 			<table width="1" border="0" cellspacing="0" cellpadding="0" background="/themes/blju2//cmenutbg.gif" align="center">
+    <tr>
+  	<td><img src="/themes/blju2/cmenui.gif" width="31" height="29"></td>
+  	<td width="139" class="cmenuTitle">АРХИВ</td>
+  	<td align="right"><img src="/themes/blju2/cmenutr.gif" width="10" height="29"></td>
+    </tr>
+    <tr>
+  	<td colspan="3" background="/themes/blju2/cmenubg.gif">
+  	  <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center" background="/themes/blju2//spacer.gif">
+  		<tr>
+  		  <td align="left" class="cmenuText">
+  		  	<a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2012_10">10 - 2012</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2012_07">07 - 2012</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2012_06">06 - 2012</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2011_10">10 - 2011</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2010_08">08 - 2010</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2007_02">02 - 2007</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2006_12">12 - 2006</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2006_10">10 - 2006</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2006_02">02 - 2006</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2005_08">08 - 2005</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2005_02">02 - 2005</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2004_07">07 - 2004</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2004_01">01 - 2004</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2003_12">12 - 2003</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2003_11">11 - 2003</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2002_12">12 - 2002</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2002_10">10 - 2002</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2002_05">05 - 2002</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2002_03">03 - 2002</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2001_12">12 - 2001</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2001_11">11 - 2001</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2001_09">09 - 2001</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2001_07">07 - 2001</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2001_03">03 - 2001</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2001_01">01 - 2001</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2000_11">11 - 2000</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2000_05">05 - 2000</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2000_03">03 - 2000</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2000_02">02 - 2000</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx=2000_01">01 - 2000</a><br>
+ 
+ <a href="/cgi-bin/y/index.pl?page=article&id=devs&key=all&idx="> - </a><br>
+ 
+ 
+  		  </td>
+  		</tr>
+  	  </table>
+  	</td>
+    </tr>
+    <tr>
+  	<td colspan="3"><img src="/themes/blju2/cmenub.gif" width="169" height="6"></td>
+    </tr>
+  </table>
+  <br>
+ 
+	
+ 			<table width="1" border="0" cellspacing="0" cellpadding="0" background="/themes/blju2//cmenutbg.gif" align="center">
+   <tr>
+ 	<td><img src="/themes/blju2/cmenui.gif" width="31" height="29"></td>
+ 	<td width="139" class="cmenuTitle">ВРЪЗКИ</td>
+ 	<td align="right"><img src="/themes/blju2/cmenutr.gif" width="10" height="29"></td>
+   </tr>
+   <tr>
+ 	<td colspan="3" background="/themes/blju2/cmenubg.gif">
+ 	  <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center" background="/themes/blju2//spacer.gif">
+ 		<tr>
+ 		  <td align="left" class="cmenuText">
+ 		  	<a href="http://www.sourceforge.net"><font color="black">www.sourceforge.net
+</font></a><br>
+
+
+ 		  </td>
+ 		</tr>
+ 	  </table>
+ 	</td>
+   </tr>
+   <tr>
+ 	<td colspan="3"><img src="/themes/blju2/cmenub.gif" width="169" height="6"></td>
+   </tr>
+ </table>
+ <br>
+
+			
+ 			<br>				  
+ 		</td>		        
+ </tr>		      
+ </table>
+ <!-- END ARTICLE -->	
+
+
+
+         			<br>
+ <!--BODY BLOCK START -->
+ 		  </td>
+ 		</tr>
+ <!--BODY BLOCK END -->
+ 		<tr>
+ 			<td>
+ 
+ 			</td>
+ 			<td>
+ 			</td>
+ 		<tr>
+ 	  </table>
+ <!--BODY BLOCK END -->
+ 	</td>
+ 	<td align="center" valign="top">
+ 	 
+          
+ 	</td>
+   </tr>
+  <tr>
+  	<td colspan="2">&nbsp;</td>
+  	<td>
+  	<!--START DISCLAIMER BLOCK -->
+ 			<br>
+ 			<table width="100%" border="0" cellspacing="0" cellpadding="0" background="/themes/blju2/transbg.gif">
+ 			  <tr>
+ 				<td height=10 valign=top background="/themes/blju2/titlebg.gif"><img src="/themes/blju2/titlet.gif" width="20" height="3"></td>
+ 				<td rowspan="3" width="99%" class="pageTitle" align="center">
+ 					<span class="cmenuText">
+ 						&copy; 2011-... <a href="http://company.linux-bg.org">Асоциация "Линукс за българи"</a><br>
+ 						&copy; 2007-2010 <a href="http://company.linux-bg.org">Линукс за българи ЕООД</a><br>
+ 						&copy; 1999-2006 Slavej Karadjov<br>
+     					<em>Ако искате да препечатате или цитирате информация от този сайт прочетете първо <a href="/cgi-bin/y/index.pl?page=rules"><u>това</u></a></em><br>
+     					Външния вид е направен от <a href="mailto:mircho@hotmail.com">MOMCHE</a><br>
+                                 	Code Version: 1.0.8 H  (Revision: 23-09-2011)
+     					</span>
+     				</td>
+   			  </tr>
+ 			  <tr>
+ 				<td background="/themes/blju2/titlebg.gif" height="99%"><img src="/themes/blju2/titlea.gif" width="20" height="11"></td>
+ 			  </tr>
+ 			  <tr>
+ 				<td height=10 valign=bottom background="/themes/blju2/titlebg.gif"><img src="/themes/blju2/titleb.gif" width="20" height="3"></td>
+ 			  </tr>
+ 	</table>
+ 	<!--END DISCLAIMER BLOCK -->
+ 	</td>
+ 	<td>&nbsp;</td>
+ </tr>
+ </table>
+ 
+ 
+ <script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+ </script>
+ <script type="text/javascript">
+ _uacct = "UA-1464084-1";
+ urchinTracker();
+ </script>
+ 
+ <!-- End of tracker //-->
+ <script language="JavaScript">cTranslator.onLoad()</script>
+ </body>
+ </html>
+
+<center><font face='Verdana' color='#000000' size='1'>Изпълнението отне: 0 wallclock secs ( 0.13 usr +  0.02 sys =  0.15 CPU)<br>

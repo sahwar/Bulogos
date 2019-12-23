@@ -1,0 +1,7 @@
+flare for Debian
+----------------
+
+You need bgtex-v2 from http://lml.bas.bg/~anton/ftp/
+in order to build the pdf output.
+
+ -- George Danchev <danchev@spnet.net>, Tue,  5 Oct 2004 11:06:15 +0300

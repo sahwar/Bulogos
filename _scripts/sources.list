@@ -1,0 +1,24 @@
+deb file:/var/cache/apt-build/repository apt-build main
+
+#Debian main
+deb http://logos-bg.net:9999/debian stable main contrib non-free
+deb http://logos-bg.net:9999/debian sid main contrib non-free
+
+deb-src http://logos-bg.net:9999/debian stable main contrib non-free
+deb-src http://logos-bg.net:9999/debian sid main contrib non-free
+
+# Debian non-US
+deb http://logos-bg.net:9999/non-US stable/non-US main contrib non-free
+deb http://logos-bg.net:9999/non-US sid/non-US main contrib non-free
+
+deb-src http://logos-bg.net:9999/non-US stable/non-US main contrib non-free
+deb-src http://logos-bg.net:9999/non-US sid/non-US main contrib non-free
+
+# Debian security
+deb http://logos-bg.net:9999/security stable/updates main contrib non-free
+deb http://logos-bg.net:9999/security sarge/updates main contrib non-free
+
+deb-src http://logos-bg.net:9999/security stable/updates main contrib non-free
+deb-src http://logos-bg.net:9999/security sarge/updates main contrib non-free
+
+deb http://apt-build.photo-forum.net/repository ./

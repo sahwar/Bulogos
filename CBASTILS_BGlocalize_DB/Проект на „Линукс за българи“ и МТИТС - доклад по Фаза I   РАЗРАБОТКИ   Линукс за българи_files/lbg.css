@@ -1,0 +1,54 @@
+.pageTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #333333; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.blue {
+	COLOR: #333399
+}
+.contentTitle {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 12px; 
+	COLOR: #000033; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.contentTitleDate {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #330099; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.contentBody {
+	FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.cmenuTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000033; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.cmenuText {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000066; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	padding: 2px;
+}
+.umenuTitle {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 12px; 
+	COLOR: #000066; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+.hmenu {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.formTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #6666cc; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.newsbox {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #eeeeee 1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; BORDER-LEFT: #eeeeee 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #cccccc
+}
+.scrollbar {
+	SCROLLBAR-FACE-COLOR: #59a4e1; SCROLLBAR-HIGHLIGHT-COLOR: #b9def9; SCROLLBAR-SHADOW-COLOR: #59a4e1; SCROLLBAR-ARROW-COLOR: #333333; SCROLLBAR-DARKSHADOW-COLOR: #2d76b3; SCROLLBAR-BASE-COLOR: #2d76b3
+}
+BODY {
+	FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #003399; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.code {
+	BACKGROUND: #ff0000; COLOR: #990000; FONT-FAMILY: "Courier New", Courier, mono
+}

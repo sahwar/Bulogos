@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="generator" content="HTML Tidy, see www.w3.org" />
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+		<link rel="stylesheet" href="site.css" type="text/css" />
+		<script language="JavaScript" type="text/javascript" src="mofade.js"></script>
+		<title>Transtlations</title>
+	</head>
+
+	<body>
+		<table width="90%" border="0" cellspacing="0" cellpadding="0" align="CENTER" summary="Centering Container">
+			<caption>
+				Преведен софтуер
+			</caption>
+
+			<tr>
+				<td valign="top" class="body">
+					<br />
+					<p>Колкото и да ни се струва странен интерфейсът на една програма, когато е преведена на български, факт е, че с него се свиква много бързо и той е много по-удобен.</p>
+					<p>Именно това е причината да поддържаме няколко малки проекта за локализация на често използван софтуер под Линукс.</p>
+					<p>Обикновено преводите, които ще намерите на този сайт са в процес на разработка и са доста непълни. Когато преводът е завършен окончателно ние се стараем той да влезе в официалната дистрибуция на програмата и реално тогава преводът престава да съществува като част от нашият проект.</p>
+					<p>Ето и проектите, които се поддържат в момента:</p>
+					<p><a target="_top" href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/lug-bg/translations/bluefish/bg.po?rev=HEAD&amp;content-type=text/plain">bluefish</a></p>
+					<p><a target="_top" href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/lug-bg/translations/gaim/bg.po?rev=HEAD&amp;content-type=text/plain">gaim</a></p>
+					<p><a target="_top" href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/lug-bg/translations/kxicq2/bg.po?rev=HEAD&amp;content-type=text/plain">kxicq2</a></p>
+					<p><a target="_top" href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/lug-bg/translations/licq-qt-gui/bg.po?rev=HEAD&amp;content-type=text/plain">licq-qt-gui</a></p>
+					<p><a target="_top" href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/lug-bg/translations/sylpheed/bg.po?rev=HEAD&amp;content-type=text/plain">sylpheed</a></p>
+					<hr />
+
+					<p>За да можете да използвате преводите първо трябва да ги изтеглите и след това да ги компилирате. Компилирането става със следната команда: <i>msgfmt bg.po --statistics -o &lt;ime na programa&gt;.mo</i>.
+					Тоест за gaim командата ще е: <i>msgfmt bg.po --statistics -o gaim.mo</i></p>
+					<p>След това трябва да инсталирате компилираните .mo файлове. Инсталацията е много лесна, бърза и елементарна - просто копирате .mo файлът във директория /usr/share/locale/bg_BG/LC_MESSAGES</p>
+					<p>Някои QT приложения (например licq-qt-gui) използват друг формат. Тогава компилацията се извършва с командата <i>msg2qm</i>.</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

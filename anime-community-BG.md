@@ -112,6 +112,7 @@ Gamedev, game-art, open typography, and open-fonts making:
 🔞 ***ВНИМАНИЕ: Сексът е само по ВЗАИМНО СЪГЛАСИЕ (след флиртуване) между 2-ма или повече души. НЕ подкрепяме изнасилвания и сме ТВЪРДО ПРОТИВ педофили (хора, правещи секс с лица под 16 г. По закон в България брак може да сключват само лица, навършили 16 г. със съгласието на родител/настойник; При навършени поне 18 г. включително, сами си решавате, но и сами си поемате евентуални последствия - т.е. гледането на и грижата за децата)!***
 
 🔞 **(САМО ЗА ЛИЦА НАД 18 г.!!!)** Хентай (hentai) манги и хентай анимета:
+* http://nyaa.si
 * https://nhentai.net/ (top-secret: https://nhentai.net/users/1548271/breeder117 )
 * https://hentai2read.com/
 * https://hitomi.la/
@@ -162,8 +163,36 @@ Gamedev, game-art, open typography, and open-fonts making:
 * http://www.chounyuu.com/
 * http://www.hentai-foundry.com/
 * http://www.pixiv.com/
-* http://gelbooru.com/
+* http://gelbooru.com/ - hentai image board
+* https://danbooru.com/ - hentai image board
+* http://safebooru.com - 
+* http://mspabooru.com/
+* http://hackage.haskell.org/package/h-booru-0.3.0.0/docs/HBooru-Types.html
+* https://idol.sankakucomplex.com/
+````
+https://idol.sankakucomplex.com/?tags=uncensored
+https://idol.sankakucomplex.com/?tags=video
+https://idol.sankakucomplex.com/?tags=large_filesize
+https://idol.sankakucomplex.com/?tags=has_audio
+https://idol.sankakucomplex.com/?tags=mp4
+https://idol.sankakucomplex.com/?tags=asian
+https://idol.sankakucomplex.com/?tags=16%3A9_aspect_ratio
+https://idol.sankakucomplex.com/?tags=cum_in_mouth
+https://idol.sankakucomplex.com/?tags=facial
+https://idol.sankakucomplex.com/?tags=gokkun
+https://idol.sankakucomplex.com/?tags=hard_cock
+https://idol.sankakucomplex.com/?tags=alina_li
+https://idol.sankakucomplex.com/?tags=cowgirl_position
+https://idol.sankakucomplex.com/?tags=reverse_cowgirl_position
+https://idol.sankakucomplex.com/?tags=webm
+https://idol.sankakucomplex.com/?tags=doggystyle_position
+https://idol.sankakucomplex.com/?tags=shaved_pussy
+https://idol.sankakucomplex.com/?tags=cumdump
+https://idol.sankakucomplex.com/?tags=creampie
+````
+* https://www.sankakucomplex.com/?pg=X
 * https://www.gfycat.com (animated GIFs of sex)
+* http://tumblr.com (before they shut down the porn animated-GIFs & porn MP4-videos & porn meme photos...)
 * babymaking fetish, impregnation fetishism
 * too many to add... this section will be updated later if I'm still alive and in good health...
 
@@ -304,6 +333,8 @@ https://www.reddit.com/r/wincest
 https://www.reddit.com/r/womeninprison
 https://www.reddit.com/r/womeninshirtandtie
 https://www.reddit.com/r/xxfitness
+
+http://theporndude.net
 
 * OTHER SEX-RELATED SUBREDDITS:
 https://www.reddit.com/r/holdthemoan

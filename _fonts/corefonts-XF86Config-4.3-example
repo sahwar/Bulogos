@@ -1,0 +1,117 @@
+Section "Files"
+	RgbPath		"/usr/X11R6/lib/X11/rgb"
+
+	FontPath	"/usr/X11R6/lib/X11/fonts/75dpi/"
+	FontPath	"/usr/X11R6/lib/X11/fonts/100dpi/"
+	FontPath	"/usr/X11R6/lib/X11/fonts/75dpi/:unscaled"
+	FontPath	"/usr/X11R6/lib/X11/fonts/100dpi/:unscaled"
+	FontPath	"/usr/X11R6/lib/X11/fonts/Speedo/"
+	FontPath	"/usr/X11R6/lib/X11/fonts/Type1/"
+	FontPath	"/usr/X11R6/lib/X11/fonts/misc/"
+
+# Corefonts (type1-cyrillic, truetype-ms, bitmap-cyrillic)
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/type1/"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/truetype/"
+
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/cp1251/75dpi"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/cp1251/misc"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-10646-1/75dpi"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-10646-1/misc"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-8859-5/75dpi"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-8859-5/misc"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/koi8-r/75dpi"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/koi8-r/misc"
+
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/cronyx/cp1251/100dpi"
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/cronyx/iso-10646-1/100dpi"
+
+		FontPath	"/usr/X11R6/lib/X11/fonts/corefonts/bitmap/misc/"
+
+# Cyrillic fonts for XFree distribution
+	FontPath	"/usr/X11R6/lib/X11/fonts/cyrillic/"
+EndSection
+
+Section "Module"
+	Load "dbe"
+	Load "record"
+	Load "extmod"
+	Load "xtrap"
+	Load "glx"
+	Load "dri"
+	Load "speedo"
+	Load "type1"
+	Load "freetype"
+EndSection
+
+Section "DRI"
+	Mode 0666
+EndSection
+
+Section "InputDevice"
+	Identifier "Keyboard0"
+	Driver	"keyboard"
+	Option	"XkbLayout" "us,bg"
+	Option	"XkbVariant" ",phonetic"
+#	Option	"XkbLayout" "us,bg,bg"
+#	Option	"XkbVariant" ",phonetic,bds"
+	Option "XKbOptions" "grp:alt_shift_toggle,grp_led:scroll"
+EndSection
+
+Section "InputDevice"
+	Identifier "Mouse0"
+	Driver "mouse"
+	Option "Protocol" "IMPS/2"
+	Option "Device" "/dev/psaux"
+	Option "ZAxisMapping" "4 5"
+EndSection
+
+Section "Monitor"
+	Identifier "Monitor0"
+	VendorName "CTX"
+	ModelName "5694"
+	HorizSync 30-64
+	VertRefresh 70-90
+	# 1024x768-75
+	Modeline "1024x768"   78.80  1024 1040 1136 1312  768 769 772 800 +hsync +vsync
+	Option "DPMS"
+EndSection
+
+Section "Device"
+	Option "SWcursor" "true"
+#	Option "HWcursor" "true"
+#	Option "UseFBDev" "true"
+#	Option "NoHal" "true"
+	Option "DRI" "true"
+
+	Identifier "Card0"
+	Driver "mga"
+	VendorName "Matrox"
+	BoardName "MGA G400 AGP"
+	BusID "PCI:1:0:0"
+#	VideoRam 32768
+EndSection
+
+Section "Screen"
+	Identifier "Screen0"
+	Device "Card0"
+	Monitor "Monitor0"
+	DefaultDepth 24
+	SubSection "Display"
+		Depth 24
+		Modes "1024x768"
+		ViewPort 0 0
+	EndSubSection
+	SubSection "Display"
+		Depth 16
+		Modes "1024x768"
+		ViewPort 0 0
+	EndSubSection
+
+EndSection
+
+Section "ServerLayout"
+	Identifier "Default Layout"
+	Screen 0 "Screen0" 0 0
+	InputDevice "Mouse0" "CorePointer"
+	InputDevice "Keyboard0" "CoreKeyboard"
+EndSection

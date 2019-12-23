@@ -1,0 +1,499 @@
+				Настройка на qmail МТА за dial-up 2
+
+
+
+		    Основано на официалната документация на qmail,
+		    съвети от познати,приятели, USENET & Google search, 
+		                     полеви опити
+
+
+
+Съдържание
+
+1.Уточнение 
+
+2.Необходими неща 
+
+3.Инсталация
+
+4.Настройка
+
+5.Тестове
+
+6.Допълнителни трикове
+
+7.Заключение 
+
+8.Благодарности 
+
+9.Направени промени (CHANGELOG) 
+
+10. Остават (TO DO)
+
+1. Уточнение
+
+
+ Причините за написването на този документ са: 
+
+
+А)  част от инструкциите в Life with qmail бяха неясни за мен.
+Останалите са разнородни по произход, съдържание и са насочени към
+професионалистите - системни администратори, експерти по сигурност и
+други.
+
+
+Б) Съгласете се, че е много удобно да имате изпробвани инструкции
+online, вместо да се мъчите да търсите забравените си записки.
+
+
+В) Смятам за егоистично да не споделя с вас показаното от Стоян Жеков, моите
+приятели и наученото от собствените си опити да настроя qmail да работи както искам.
+Последното - виж точка 6 ми отне месец и половина, но даде резултат. Документът
+не се съпровожда от никакви гаранции. Може да се разпространява свободно под GPL 
+vеrsion 2.0 или по-висока.
+
+
+2. Необходими неща
+
+
+   Молив и хартия за да записвате какво правите. 
+Пакетите: qmail-1.03, daemontools-0.76, ucspi-tcp-0.88, 
+djbdns-1.05, serialmail-0.75.tar.gz, fastforward 0.51 
+(http://cr.yp.to, www.qmail.org), 
+qmail-conf-0.60.tar.gz oт www.qmail.org, 
+safecat - www.pobox.com/~lbudney/linux/software/safecat.html.
+getmail: www.qcc.sk.ca/~charlesc/software/
+ 
+
+3. Инсталация
+
+
+   След набавянето на пакетите, спрете старото си МТА (Sendmail,Postfix)
+и махнете реда за него в стартовите скриптове. Влезте като
+администратор, напишете: 
+
+A.
+
+killall -s TERM MTA # така спирате в MTA-то 
+chkconfig --delete MTA # с това премахвате стартирането на  старото си
+МТА при зареждане. За *BSD системите не съм сигурен, дали това действа.
+Затова намерете реда за Sendmail/e.t.c в стартовите си скриптове и го
+закоментирайте с #. Рестартирайте.                                                      
+
+Б.
+
+mv /usr/sbin/sendmail /usr/sbin/sendmail sendmail.old 
+mv /usr/lib/sendmail /usr/lib/sendmail.old 
+chmod 0 /usr/sbin/sendmail.old /usr/lib/sendmail.old
+
+  Това беше следващата стъпка - премахваме МТА-то от пътеката с
+командите и сваляте правата от него, за да не бъде изпълнено по
+случайност от някоя програма.
+
+В. Разархивирайте всички пакети без daemontools в директория по ваш избор. 
+Аз избрах /usr/local/src. Създайте /package в / и там преместете и
+разархивирайте daemontools. Chmod /package 1755.
+
+Г. Създайте /var/qmail - това e главната работна директория на qmail. 
+
+Д. Преместете се в qmail-1.03/. Нaмерете файла INSTALL.ids. Напревете
+му резервно копие и го редактирайте според това на кой Unix клонинг - Solaris, Linux, 
+FreeBSD 2.2, BSDI 2.0, AIX инсталирате.
+
+   Ако работите на други клонинги, използвайте vipw editor да добавите qmail v /etc/passwd 
+и /etc/group.
+Пояснение: заместете editor с еmacs,vi*,mc...Така си спестявате доста
+неудобства, ако не сте добре запознати с vi*.
+
+Предупрeждение: направете aрхив нa /etc/passwd и /etc/group, за да не
+се каете после! 
+
+   Изполвайте тези параметри в /etc/passwd:
+
+alias:*:7790:2108::/var/qmail/alias:/bin/true
+qmaild:*:7791:2108::/var/qmail:/bin/true
+qmaill:*:7792:2108::/var/qmail:/bin/true
+qmailp:*:7793:2108::/var/qmail:/bin/true
+qmailq:*:7794:2107::/var/qmail:/bin/true
+qmailr:*:7795:2107::/var/qmail:/bin/true
+
+В /etc/group:
+
+qmail:*:2107:
+nofiles:*:2108:
+
+Ако гореспоменатите UID+GID са заети, заместете със свободни такива.
+
+E. Изпълнете променения INSTALL.ids: chmod 700; /bin/sh INSTALL.ids.
+Така добавяте qmail в /etc/passwd i /etc/group.
+
+Ж. Компилирайтe и инсталирайте qmail: 
+make 
+make setup check.
+
+
+З. Настройте qmail:
+
+
+./config - ako имате DNS сървър
+
+./config-fast цялото име на машината (shield.gate.org) - akо нямате.
+
+ 
+И. cd /var/qmail/alias
+
+
+touch .qmail-postmaster
+
+touch .qmail-root
+
+ln -s .qmail-postmaster /var/qmail/alias/.qmail-mailer-daemon
+
+Chmod 644 .qmail-*
+
+Това e минималната инсталация, без която не може да съществува.
+
+
+4. Настройка
+
+
+В .qmail-root и в .qmail-postmaster напишете имената на потребителите,
+които ще получават писмата за тях.
+
+Прочетете INSTALL.mbox, *.maildir, *.vsm. Отидете в /var/qmail/boot/.
+Изберете си някой от файловете и гo копирайте като /var/qmail/rc.
+
+Време е да изберете къде ще се складира пощата: /var/spool/mail ; ~/mbox; ~/Maildir/.
+
+Aз избрах /Maildir/: echo ./Maildir/ > /var/qmail/control/defaultdelivery. 
+На друг виртуален терминал влезте като редови потребител в домашната си  директория и напишете:
+maildirmake Maildir/. 
+Така създавате директорията, в която щe получаватe пощa. Направете
+символна връзка oт /var/qmail/bin/sendmail към /usr/lib/sendmail и /usr/sbin/sendmail.
+
+Инсталирайте последoвателно: 
+
+А. ucspi-tcp:
+
+cd /PATH TO/ucspi-tcp/
+make
+make setup check. 
+
+Б. Daemontools: 
+
+cd /package/admin/daemontools.
+package/install
+
+С това добавяте daemontools (svscan*)  към /etc/rc.local или
+/etc/inittab, създавате /command и /service.
+
+В. qmail-conf:
+
+cd /PATH TO/qmail-conf-0.60/
+makefile -f Makefile.ini djbdns=/PATH TO/djbdns-1.05/
+make 
+make setup check
+
+В1. Настройка на LMTP и SMTP:
+
+Дружески съвет: преди да пуснете демоните в действие, прегледайте и
+редактирайте файловете MAXFILESIZE,MAXLOGFILES,DATALIMIT и CONCURRENCY
+намиращи се в съответните подиректории env/.
+Така си спестявате много неприятности, произтичащи от липса на ресурси
+в даден момент.
+Подсказка: писма по-големи от 1.5MB са вредни.
+еcho 1500000 > /var/qmail/service/smtpd/env/DATALIMIT и въпросът се
+урежда. Прочете упътването за всички променливи ползвани от qmail.
+
+В1.1 LMTP:
+
+qmail-delivery-conf qmaill /var/qmail/service/qmail
+
+Махнетe "splogger qmail" / "multilog t ./main" ot /var/qmail/rc.
+
+Направетe символни връзки както е указано: 
+
+ln -s /var/qmail/service/qmail /service 
+cd /var/log
+test -d qmail && mv qmail qmail.bak
+
+ln -s /var/qmail/service/qmail/log/main qmail
+
+Така указвате на svscan процесите, зa които трябва да си грижи и
+създавате съвместимост към официалната документация зa qmail.
+
+Проверете дали работи:
+
+svstat /service/qmail /service/qmail/log
+
+Резултатът трябва да наподобява:
+
+/service/qmail: up (pid 6345) 6 seconds
+/service/qmail/log: up (pid 6346) 5seconds
+
+Пуснете svstat няколко пъти и гледайте дали pid-овете са еднакви.
+
+Прочетете TEST.deliver и проведете тeстовете указани в него. При успех
+ще видите тестовите съобщения в пощенската си кутия. 
+
+В1.2 SMTP доставки:
+
+qmail-smtpd-conf qmaild qmaill var/qmail/service/smtpd
+
+cd /var/qmail/service/smtpd
+
+Aко сте настроили /etc/tcp.smtp зa tcpserver и искате да запазите
+правилата в него, копирайте /etc/tcp.smtp kъм tcp:
+
+cp /etc/tcp.smtp tcp
+
+Moже и да добавите други машини като ползвате:
+
+./add-relayclient 127.0.0.1, 192.168.1.0
+
+Компилирайте зa tcpserver:
+
+make
+
+Забележкa: трябва всеки път да компилирате tcp с make като правите
+промени по него.
+
+
+В3. Уведомете svscan зa новата услуга:
+
+ln -s /var/qmail/service/smtpd /service
+
+svscan ще стартира SMTP дo 5 секунди.
+
+По желaние може да създадете символна връзка /var/log/smtpd сочеща към
+истинската директория с логовете:
+
+cd /var/log
+test -d smtpd && mv smtpd smtpd.bak
+
+ln -s /var/qmail/service/smtpd/log/main smtpd
+
+Използвайте ps waux | grep qmail да видите дали всичко е наред. Търсете:
+
+svscan /service
+supervise smtpd
+/usr/local/bin/tcpserver -vDUHR -lyour.host -xtcp.cdb -- 0 25 ...
+supervise log
+multilog t ./main
+
+  Ako не виждате tcpserver, това е защото не сме го добавили. Сега ще го
+сторим - въведете в rc.local или /etc/inittab/ нa двa редa:
+
+tcpserver -v -u [qmaild_uid] -g [nofiles_gid]_smtp
+/var/qmail/bin/qmail-smtpd \ # това е на един ред
+2 & 1 | /var/qmail/bin/splogger или /usr/local/bin/multilog smtpd 3 &
+
+  Стоян Жеков има алтернативно виждане по въпроса зa tcpserver. В едно
+от писмата си до мен, той сподели, чe е по-добре да се създаде файл в
+/etc/xinetd.d/. Неговият пример беше за РОР3. Aз го адаптирах за smtp :
+
+service_smtp
+{
+socket = stream
+protocol = tcp
+wait = no
+user = root
+bind = dns.isp.com
+server = /var/qmail/bin/qmail-smtpd
+server_args = isp.com
+log_type = FILE /var/log/xinetd.log
+log_on_success = HOST
+log_on_failure = HOST_RECORD
+}
+
+ Повече подробности: man xinetd,man xinetd.conf.
+Прочетете TEST.receive и направете опитите описани в него, за да
+видите дали SMTP работи
+
+
+Г. Serialmail:
+
+cd /PATH TO/serialmail-0.75/
+make 
+make setup check
+
+   Време е да създадем спул директорията, в която ще трупате писмата
+преди да се включим в мрежата. Даденото решение е взето от: 
+http://uk.geocities.com/blimp001/bent/guide.html. Принципно работи.
+
+/var/qmail/bin/maildirmake ~alias/pppdir
+chown -R alias ~alias/pppdir
+echo ./pppdir/ > ~alias/.qmail-ppp-default
+echo :alias-ppp > /var/qmail-control/virtualdomains
+killall -s HUP qmail-send
+
+  Сложете maildirsmtp ~alias/pppdir alias-ppp- 1.2.3.4 `hostname`
+в ip-up.local. Заместете 1.2.3.4 с IP-to на мейл сървъра или неговото
+име.Това е аналог на /usr/sbin/sendmail -q.
+ 
+  Друго решение, смятано от мен за удачно се намира в qmail aрхива нa
+www.ornl.gov (№00701).
+
+Д.fastforward
+
+cd /PATH TO/fasforward-0.51/
+
+make setup check
+
+
+5. Tестове
+
+
+  Вече ги проведохме. При успешен резултат можете да се самопоздравите.
+
+
+6. Допълнителни трикове
+
+
+qmail върви без грешка. Обаче защо възловите сървъри ни връщат пощата?
+
+Отговор: Възловите сървъри (онези през които минава световният пощенски трафик) 
+се опитват да установят кой е pppххх.provider.com. 
+Тъй като това не е разрешено от provider.com, те връщат писмата
+обратно с мотива, че това е спам. 
+
+Решение: сложете QMAILIDHOST=mailserver.provider.com 
+	 	 export QMAILIDHOST
+
+във вашия .bash_profile. Може да създадете qmailidhost в ~qmaild/control/
+вместо на пишете в .bash_profile.Недостатъкът на това решение, е че се
+ограничавате само до 1 QMAILIDHOST. При bash метода всеки потребител
+си задава QMAILIDHOST - по-гъвкаво и елегантно по моя преценка.
+
+Защо входящите писма се складират в ~alias/pppdir/ вместо в ~user/Maildir?
+
+Отговор: При предаването на писмата от fetchmail на qmail, демонът
+очаква името на потребителя на вашата машина да съвпада с това на пощенската 
+ви кутия. Друга възможност е невъзможност да намери инструкция
+за местна доставка на определен адрес.
+
+Ето и лековете:
+
+А. Getmail: www.qcc.sk.ca/~charlesc/software/. Инвестирайте 1-2 часа
+за четене и настройка - резултатът няма да закъснее.Ефектът е много
+по-голям отколкото с fetchmail.
+
+Б. Редактирайте /etc/aliases - определете кой ще получава пощата за
+root,postmaster,daemon и т.н.
+
+Haкрая напишете:
+
+popuser@provider.com: localuser@localhost.localdomain
+
+Въведете newaliases на терминала.
+Сложете provider.com в rcpthosts и virtualdomains.
+virtualdomains: provider.com:alias
+
+killall -HUP qmail-send или /command/svc -h /service/qmail
+/command/svc -h /service/smtpd
+
+Създайте .qmail-default във /var/qmail/alias:
+
+| fastforward -d -p /etc/aliases.cdb
+| forward "$DEFAULT" localuser@localhost.localdomain
+Така указвате qmail да прегледа базата, която създадохте. Ако не се
+получи съвпадение, да препрати *.* на localuser
+Повече подробности - в документацията на fastforward/qmail.
+
+Време е да си поиграем с /var/qmail/rc:
+
+exec env - PATH="/var/qmail/bin:/usr/local/bin:$PATH \
+qmail-start '|preline safecat ./Maildir/tmp ./Maildir/new' qmail
+
+Това е моят rc файл.Вие можете да си измислите друг.
+Накарайте qmail-lspawn да прочете новата конфигурация:
+
+killall -HUP qmail-lspawn или
+/command/svc -h /service/qmail
+
+Засега ползвам fetchmail 5.9.* и procmail като mda и филтър.
+В ~/.procmailrc съм добавил следното в началото/може и в края: 
+:0w
+|safecat Maildir/tmp Maildir/new
+  Работи, но има още какво да се желае - филтриращата способност
+на procmail е под въпрос. Причината е във fetchmail - променя
+съдържанието на данните в заглавните части на писмото.
+  
+  Изпробвани алтернативи на fetchmail и procmail: 
+  а)maildrop - www.courier-mta.org/download.php#maildrop
+  б)mailfilter- http://mailfilter.sourceforge.net
+
+  За повече информация по настройката на fetchmail, procmail, safecat -
+man fetchmail, procmail, safecat.
+
+По желание, сложете следните редове в .qmail, намиращ се в домашния ви каталог:
+/home/user/Maildir 
+|preline /path to/safecat /home/user/Maildir/tmp /home/usr/Maildir/new
+  
+  Заместете user с вашето потребителско име и Maildir с избраното от
+вас -  Maildir,.Mailbox, /var/spool/mail/user
+   
+
+7.Заключение
+ 
+
+  Този FUQ e почти пълен - липсват задаване граници на ресурсите,
+които qmail може да ползва, host + luser masquarading. Някои от моите
+фини настройки не са описани изцяло. 
+  На www.openbg.net има кратко ръководство,в което са дадени принципите 
+на действие. Задължителен е и прочитът на оригиналните документи на DJB, 
+съпровождащи пакетите; qmail.faqts.com; www.qmail.org - има го на
+руски, английски, немски ... Може и на български в близко бъдеще.
+  www.lifewithqmail.org е интересно четиво, обхващащо разни теми -
+стартови скриптове, решения на проблеми при инсталация...
+Абонирайте се за qmail списъка: qmail-subscribe@list.cr.yp.to.
+Изпратете празно съобщение и чакайте потвърждение.
+  Ако имате въпроси - RTFM, RTFFAQ, търсете през Google, USENET,
+qmail.faqts.com. Питайте по форумите и ваши колеги. 
+  При наличие на кредитна карта, въпросът ви се решава: на www.qmail.org 
+има препратка paid support.
+  Аз не съм компютърен специалист и не мога да ви помогна.
+Успех!
+
+  Забележки, коментари, предложения изпращайте на:
+ 
+echo to: <vassilev_dimitar@yahoo.com> |/var/qmail/bin/qmail-inject
+
+НЕ ЗЛОЧПОТРЕБЯВАЙТЕ! Всичко на тоз свят се връща. 
+
+
+8.Благодарности:
+
+
+D.J. Bernstein - за написването qmail
+Стоян Жеков - за отделеното време и ценните съвети
+администраторите на Garibaldicafe.net - за добрите идеи 
+Антон Зиновиев - за bglinux. Изполвах неговата разработка за написването
+на този текст на български.
+John E. Davis - за Jed
+Tetsu Ushijima - за qmail-conf
+Len Budney - safecat
+Charles Cazabon - за getmail
+Dave Sill - за LifeWithQmail
+the qmail mailing list - qmail@list.cr.yp.to
+Google - searching couple of billion pages
+моя милост - за това, че устисках да не се върна към Postfix.
+
+
+9. Направени промени (CHANGELOG):
+
+
+* пренаписване на кирилица
+* KWORD -> JED - спестяват се много главоболия при прекодиране и
+  форматиране в HTML
+* добавени секции 6-10
+* множество промени (основни и козметични)
+* английска версия
+
+
+10. Остават (TO DO):
+
+
+* приложение и превод на www.antioffline.com/tls4dummies.html
+* превод на qmail.org на български език, ако остане време
+ 

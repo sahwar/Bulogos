@@ -409,7 +409,8 @@ https://templates.office.com/?legRedir=true&qu=books&CorrelationId=99a64b77-15a6
 * Programming Basics with JavaScript (Bulgarian version) - https://js-book.softuni.bg/ - ISBN: 978-619-00-0702-9
 * Programming Basics with Python (Bulgarian version) - https://python-book.softuni.bg/ - ISBN: 978-619-00-0806-4
 * Programming Basics with C++ (Bulgarian version) - https://cpp-book.softuni.bg/ - ISBN: TBA
-* * **The Jargon File (The (New) Hacker's Dictionary)**: **http://catb.org/jargon/html/ (най-нова версия)**, https://www.dourish.com/goodies/jargon.html (оригиналът), http://www.eps.mcgill.ca/jargon/jargon.html (v4.2.0, 31 JAN 2000), https://www.netmeister.org/news/jargon.html (v4.2.3, 23 NOV 2000); https://en.wikipedia.org/wiki/Jargon_File.
+* https://www.tldp.org/ ( **The Linux Documentation Project** )
+* * **The Jargon File (The (New) Hacker's Dictionary)**: **http://catb.org/jargon/html/ (най-нова версия)**, https://www.dourish.com/goodies/jargon.html (оригиналът), http://www.eps.mcgill.ca/jargon/jargon.html (v4.2.0, 31 JAN 2000), https://www.netmeister.org/news/jargon.html (v4.2.3, 23 NOV 2000); https://en.wikipedia.org/wiki/Jargon_File ; an older edition translated in Bulgarian (???) was available for download from http://linux-bg.com ().
 * _The Linux Shell Scripting Tutorial (LSST) v2.0 (free **book** for bash-schellscripting)_ = https://bash.cyberciti.biz/guide/Main_Page
 * https://github.com/13542/free-programming-books
 * https://github.com/13542/the-book-of-secret-knowledge

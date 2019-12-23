@@ -1,0 +1,449 @@
+// This is NOT the Bulgarian locale file BUT the strings that it contains! For the locale file, please download&install SumatraPDF: https://www.sumatrapdfreader.org/free-pdf-reader.html
+
+// http://www.apptranslator.org/app/SumatraPDF/bg
+
+
+Home : SumatraPDF : Bulgarian translations Not logged in. Log in with Twitter
+0 untranslated out of 293 total strings
+Progress:
+100%
+
+&About => За &програмата Edit
+About SumatraPDF => За SumatraPDF Edit
+&Actual Size\tCtrl+1 => &Оригинален (реален) размер\tCtrl+1 Edit
+previous: &Оригинален размер\tCtrl+1
+Add Favorite => Добавяне към любимите Edit
+previous: Добави Любими
+previous: Добавяне в „Любими“
+Add page %s to favorites => Добавяне на страница %s към любимите Edit
+previous: Добави страница %s към любимите
+Add page %s to favorites with (optional) name: => Добавяне на страница %s към любимите с име (по избор): Edit
+previous: Добави страница %s към любимите с име (по избор):
+Add to favorites => Добавяне към любимите Edit
+previous: Добави към любимите
+Advanced => Разширени (Допълнителни) Edit
+previous: Допълнителни
+&Advanced Options... => Разширени опции Edit
+All files => Всички файлове Edit
+&All selected pages => &Всички избрани страници Edit
+All supported documents => Всички поддържани документи Edit
+Application: => Приложение: Edit
+Are you sure you want to uninstall SumatraPDF? => Наистина ли искате да деинсталирате SumatraPDF ? Edit
+Associate with PDF files? => Указване на програмата като такава по подразбиране за отваряне на PDF файлове? Edit
+previous: По подразбиране за PDF файлове?
+Attachment: %s => Прикрепен: %s Edit
+Author: => Автор: Edit
+Automatic => Автоматично Edit
+Automatically check for &updates => Автоматична проверка за &обновления Edit
+previous: Автоматично проверявай за &обновления
+&Back\tAlt+Left Arrow => На&зад\tAlt+Лява стрелка Edit
+Book View => Изглед като книга Edit
+&Book View\tCtrl+8 => &Изглед като книга\tCtrl+8 Edit
+Book&marks\tF12 => &Отметки\tF12 Edit
+Bookmark shortcut to page %s of %s => Кратък път към отметка на страница %s от %s Edit
+Bookmark Shortcuts => Кратък път към отметки Edit
+Bookmarks => Отметки Edit
+Bytes => байта Edit
+previous: Байтове
+Can't connect to the Internet (error %#x). => Няма връзка с Интернет (грешка %#x). Edit
+Cancel => Отказ Edit
+Cannot print this file => Файлът не може да бъде отпечатан Edit
+Cannot start inverse search command. Please check the command line in the settings. => Обратното търсене не може да започне. Моля проверете параметрите в настройките. Edit
+Change Language => Смяна на езика на програмата (Change Language) Edit
+previous: Смени езика (Change Language)
+[Changes detected; refreshing] %s => [Намерени са промени; обновявам] %s Edit
+Check for &Updates => Проверка за нова &версия Edit
+CHM documents => CHM документи Edit
+Close => Затваряне Edit
+previous: Затвори
+&Close\tCtrl+W => &Затвори\tCtrl+W Edit
+Comic books => CBR, CBZ документи (комикси) Edit
+Compatibility => Съвместимост Edit
+Continuous => Непрекъснати страници Edit
+Continuous Book View => Непрекъснат изглед като книга Edit
+Continuous Facing => Непрекъснати срещуположни страници Edit
+Contribute Translation => Допринеси за превода Edit
+Copy &Image => Копиране на &изображението Edit
+previous: Копирай &изображението
+Copy &Link Address => Копиране на интернет &адреса Edit
+previous: Копирай Интернет &адреса
+Copy Co&mment => Копиране на &коментара Edit
+previous: Копирай &коментара
+&Copy Selection => &Копиране на избраното Edit
+previous: &Копирай избраното
+&Copy Selection\tCtrl+C => &Копиране на избраното\tCtrl+C Edit
+previous: &Копирай избраното\tCtrl+C
+copying text => копиране на текст Edit
+Copying text was denied (copying as image only) => Текстът не може да бъде копиран (затова беше копиран само като картинка) Edit
+previous: Текстът не може да бъде копиран (копиране само като картинка)
+Copyright: => Авторско право: Edit
+Could not obtain Printer properties => Настройките на принтера не са намерени Edit
+Couldn't create temporary directory => Не може да се създаде временна директория Edit
+Couldn't create the installation directory => Не може да се създаде директория за инсталация Edit
+Couldn't initialize printer => Принтерът не може да бъде инициализиран Edit
+Couldn't install PDF previewer => Програмата за преглед на PDF файлове не се инсталира Edit
+Couldn't install PDF search filter => Не можа да се инсталира PDF филтър за търсене Edit
+Couldn't obtain temporary directory => Не можа да се получи временна директория Edit
+Couldn't remove installation directory => Не можа да се изтрие инсталационната директория Edit
+Couldn't remove the shortcut => Не можа да се изтрие командата за бърз достъп Edit
+Couldn't render the page => Страницата не може да се изобрази Edit
+Couldn't uninstall browser plugin => Не може да деинсталирате плъгина за браузъра Edit
+Couldn't uninstall PDF previewer => Програмата за преглед на PDF файлове не е премахната. Edit
+Couldn't uninstall PDF search filter => Не може да деинсталирате PDF филтър за търсене Edit
+Couldn't write %s to disk => Не можа да се запише %s на диска Edit
+Created: => Създаден: Edit
+Current file => Сегашен файл Edit
+Cursor position: => Позиция на курсора Edit
+Custom &Zoom...\tCtrl+Y => Увеличение по &избор...\tCtrl+Y Edit
+Dark => Тъмен Edit
+Darker => По-тъмен Edit
+Default &Layout: => &Разположение по подразбиране: Edit
+Default &Zoom: => &Увеличение по подразбиране: Edit
+Default PDF reader can't be changed in portable mode => PDF четеца не може да бъде сменен в преносим режим Edit
+Denied Permissions: => Достъпът отказан: Edit
+DjVu documents => DjVu документи Edit
+Document Properties => Свойства на документа Edit
+&Don't ask me again => Без повтор&но питане Edit
+previous: &Не питай отново
+Download => Свали Edit
+E&xit\tCtrl+Q => Из&ход\tCtrl+Q Edit
+Enter password => Въведете парола Edit
+Enter password for %s => Въведете парола за %s Edit
+Enter the command-line to invoke when you double-click on the PDF document: => Въведете командата, която ще бъде изпълнена при двоен клик върху PDF документа: Edit
+EPUB ebooks => EPUB документи Edit
+Error loading %s => Грешка при зареждане на %s Edit
+&Even pages only => Само &четни страници Edit
+F&avorites => &Любими Edit
+F&orward\tAlt+Right Arrow => Нап&ред\tAlt+Дясна стрелка Edit
+F&ullscreen\tF11 => На &цял екран\tCtrl+Shift+L / F11 Edit
+previous: &Цял Екран\tCtrl+Shift+L
+Facing => Срещуположни страници Edit
+&Facing\tCtrl+7 => &Срещуположни страници\tCtrl+7 Edit
+Failed to copy uninstaller to temp directory => Не може да се копира деинсталатора във временната директория Edit
+Failed to create a shortcut => Не може да се създаде командата за бърз достъп Edit
+Failed to delete uninstaller registry keys => Неуспешно изтриване на ключовете на деинсталатора в регистъра Edit
+Failed to register as default program on win 10 => Грешка при регистрация като програма по подразбиране на Windows 10 Edit
+Failed to rename the file! => Преименуването не беше успешно! Edit
+Failed to save a file => Грешка при запаметяване на файла Edit
+Failed to write the extended file extension information to the registry => Информация за разширението за изпълнителни файлове не може да се вкара в регистъра. Edit
+Failed to write the uninstallation information to the registry => Информацията за премахването на програмата не може да се впише в регистъра. Edit
+Fast Web View => Бърз Web изглед Edit
+Favorites => Любими Edit
+FictionBook documents => Документи FictionBook Edit
+&File => &Файл Edit
+File: => Файл: Edit
+File %s not found => Файлът %s не е намерен Edit
+File Size: => Големина на файла: Edit
+Fin&d...\tCtrl+F => &Търси...\tCtrl+F Edit
+Find: => Търсене: Edit
+previous: Търси:
+Find => Търсене Edit
+previous: Търси
+Find Next => Намиране на следващото съвпадение Edit
+previous: Намери следващото
+Find Previous => Намиране на предишното съвпадение Edit
+previous: Намери предишното
+&Find what: => &Търсене на: Edit
+&First Page\tHome => &Начална страница\tHome Edit
+Fit &Content\tCtrl+3 => Оразмеряване по &съдържание\tCtrl+3 Edit
+previous: Оразмери по &съдържание\tCtrl+3
+Fit &Page\tCtrl+0 => Оразмеряване по &височина\tCtrl+0 Edit
+previous: Оразмери по &височина\tCtrl+0
+Fit &Width\tCtrl+2 => Оразмеряване по &ширина\tCtrl+2 Edit
+previous: Оразмери по &ширина\tCtrl+2
+Fit a Single Page => Оразмери една страница Edit
+Fit Content => Оразмеряване по съдържание Edit
+previous: Оразмери по съдържание
+Fit Page => Оразмеряване по височина Edit
+previous: Оразмери по височина
+&Fit pages to printable area => &Оразмери страниците в полето за отпечатване Edit
+Fit Width => Оразмери по ширина Edit
+Fit Width and Show Pages Continuously => Оразмери по широчина и покажи страниците непрекъснато Edit
+Fonts: => Шрифтове: Edit
+Formatting the book... %d pages => Форматиране на книгата... %d страници Edit
+Found text at page %s => Текстът е намерен на страница %s Edit
+Found text at page %s (again) => Текстът е намерен на страница %s (отново) Edit
+Frequently Read => Често четени Edit
+GB => GB Edit
+&Go To => &Отиване на Edit
+previous: &Отиди на
+&Go to page: => Отиди на &страница: Edit
+Go to page => Отиване на страница Edit
+previous: Отиди на страница
+&Help => &Помощ Edit
+Hide &Options => Скрии &Опции Edit
+Hide frequently read => Скриване на често четените Edit
+previous: Скрий често четените
+Hint: Use the F3 key for finding again => Съвет: Използвайте F3 за повторно търсене Edit
+Image files (*.%s) => Изображения (*.%s) Edit
+Install SumatraPDF => Инсталиране на SumatraPDF Edit
+Install SumatraPDF in &folder: => Инсталираи SumatraPDF във &папка Edit
+Installation failed! => Инсталацията беше неуспешна! Edit
+Installation in progress... => Инсталиране... Edit
+KB => KB Edit
+Keep the PDF &browser plugin installed (no longer supported) => Запази PDF приставката за &браузъри (не се поддържа) Edit
+&Last Page\tEnd => &Последна страница\tEnd Edit
+Let Windows Desktop Search &search PDF documents => Нека Windows Desktop Search &търси PDF документи Edit
+Let Windows show &previews of PDF documents => Нека Windows показва &преглед на PDF документи Edit
+Light => Светъл Edit
+&Magnification: => &Увеличение: Edit
+Make SumatraPDF default application for PDF files? => Искате ли да зададете SumatraPDF като основното си приложение за отваряне на PDF файлове? Edit
+previous: Направи SumatraPDF основно приложение за PDF файлове?
+Make SumatraPDF my default PDF reader => Направи SumatraPDF четец на PDF по подразбиране Edit
+Man&ga Mode => Режим за ман&га Edit
+&Manual => &Ръководство Edit
+Match Case => Същия текст Edit
+&Match case => &Същия текст Edit
+MB => MB Edit
+Mobi documents => Mobi документи Edit
+Modified: => Променен: Edit
+New version %s is available. Download new version? => Достъпна е нова версия %s. Искате ли да я свалите? Edit
+Next Page => Следваща страница Edit
+&Next Page\tRight Arrow => Следва&ща страница\tДясна стрелка Edit
+&No => &Не Edit
+No matches were found => Няма съвпадения Edit
+No result found around line %u in file %s => Няма резултати около ред %u във файла %s Edit
+No synchronization file found => Файлът за синхронизация не е намерен Edit
+No synchronization info at this position => В тази позиция няма информация за синхронизация Edit
+&No, thanks => &Не, благодаря Edit
+Number of Pages: => Брой страници: Edit
+&Odd pages only => Само &нечетни страници Edit
+(of %d) => (от %d) Edit
+OK => OK Edit
+Open => Отваряне Edit
+previous: Отвори
+Open &in PDF-XChange => Отворяне с PDF-XChange Edit
+previous: Отвори с PDF-XChange
+Open a document... => Отворяне на документ... Edit
+previous: Отвори документ...
+&Open Document => &Отваряне на документ Edit
+previous: &Отвори документ
+Open in %s => Отваряне с %s Edit
+Open in &Adobe Reader => Отваряне с &Adobe Reader Edit
+previous: Отвори с &Adobe Reader
+Open in &Foxit Reader => Отваряне с &Foxit Reader Edit
+previous: Отвори с &Foxit Reader
+Open in &Microsoft HTML Help => Отваряне с Microsoft HTML Help Edit
+previous: Отвори с Microsoft HTML Help
+Open in &Microsoft XPS-Viewer => Отваряне с Microsoft XPS-Viewer Edit
+previous: Отвори с Microsoft XPS-Viewer
+&Open...\tCtrl+O => &Отваряне...\tCtrl+O Edit
+previous: &Отвори...\tCtrl+O
+&Options => &Настройки Edit
+&Options... => &Настройки Edit
+P&roperties => &Свойства Edit
+P&roperties\tCtrl+D => &Свойства Edit
+Pa&ge...\tCtrl+G => &Страница...\tCtrl+G Edit
+Page: => Страница: Edit
+(page %s) => (страница %s) Edit
+Page %s => Страница %s Edit
+Page number %u inexistant => Страница с номер %u не съществува Edit
+Page scaling => Оразмеряване на страницата Edit
+Page Size: => Размери на страницата: Edit
+PalmDoc documents => PalmDoc документи Edit
+&Password: => &Парола Edit
+PDF Document => PDF документ Edit
+PDF documents => PDF документи Edit
+PDF Optimizations: => PDF оптимизации: Edit
+PDF Producer: => PDF създател: Edit
+PDF Version: => PDF версия: Edit
+&Pin Document => &Закачи документ Edit
+Please close %s to proceed! => Моля изберете %s за да продължите! Edit
+Please wait - rendering... => Моля изчакайте - изображението се създава Edit
+Postscript documents => Postscript документи Edit
+Pr&esentation\tF5 => &Презентация\tCtrl+L Edit
+Previous Page => Предишна страница Edit
+&Previous Page\tLeft Arrow => Преди&шна страница\tЛява стрелка Edit
+Print => Отпечатване Edit
+previous: Отпечатай
+Print range => Отпечатване на някои страници Edit
+&Print... => &Отпечатване... Edit
+&Print... (denied) => От&печатване... (отказано) Edit
+&Print...\tCtrl+P => От&печатай\tCtrl+P Edit
+Printer with given name doesn't exist => Принтер с това име не съществува Edit
+printing document => отпечатване на документ Edit
+Printing in progress. => Печатане... Edit
+Printing is still in progress. Abort and quit? => Печатането все още е на ход. Сигурни ли сте, че искате принудително да го откажете и да излезете? Edit
+Printing is still in progress. Abort and start over? => Отпечатването се извършва. Прекъсни и започни отначало? Edit
+Printing page %d of %d... => Отпечатване на страница %d от %d... Edit
+Printing problem. => Проблем при печатане. Edit
+Re&name...\tF2 => Преименувай...\tF2 Edit
+Remember &opened files => &Запомни отворените файлове Edit
+&Remember the password for this document => Запомни &паролата за този документ Edit
+&Remember these settings for each document => Запази &настройките за всеки документ Edit
+&Remove Document => &Премахни документ Edit
+Remove from favorites => Премахни от любимите Edit
+Remove page %s from favorites => Премахни страница %s от любимите Edit
+Rename To => Преименувай на Edit
+Rotate &Left\tCtrl+Shift+- => Завъртане на&ляво\tCtrl+Shift+- Edit
+previous: Завърти на&ляво\tCtrl+Shift+-
+Rotate &Right\tCtrl+Shift++ => Завъртане на&дясно\tCtrl+Shift++ Edit
+previous: Завърти на&дясно\tCtrl+Shift++
+Save As => Запис като Edit
+previous: Запамети като
+&Save As... => За&пис като... Edit
+previous: Запа&мети като...
+&Save As...\tCtrl+S => За&пис като...\tCtrl+S Edit
+previous: Запа&мети като...\tCtrl+S
+Save S&hortcut...\tCtrl+Shift+S => Запамети &кратък път към файла...\tCtrl+Shift+S Edit
+Searching %d of %d... => Търсене в страница %d от %d... Edit
+Select &All => Избери всичко Edit
+Select &All\tCtrl+A => Избери &всичко\tCtrl+A Edit
+Select content with Ctrl+left mouse button => Изберете съдържание с Ctrl и левия бутон на мишката Edit
+Select the folder where SumatraPDF should be installed: => Изберете папката, в която да се инсталира SumatraPDF: Edit
+Selection: => Избор: Edit
+Send by &E-mail... => Изпрати по &електронната поща Edit
+Set inverse search command-line => Въведи параметри за обратно търсене Edit
+&Settings => &Настройки Edit
+Show &Bookmarks => Покажи отметките Edit
+Show &Pages Continuously => &Непрекъснати страници Edit
+Show &Toolbar\tF8 => Лен&та с инструменти Edit
+Show Favorites => Покажи Любими Edit
+Show frequently read => Покажи често четените Edit
+Show the &bookmarks sidebar when available => Покажи &показалеца в страничната колона когато е възможно Edit
+&Shrink pages to printable area (if necessary) => &Намали страниците в мястото за отпечатване (при необходимост) Edit
+Single Page => Една страница Edit
+&Single Page\tCtrl+6 => &Една страница\tCtrl+6 Edit
+&Skip this version => &Пропусни тази версия Edit
+Some files to be installed are damaged or missing => Някои файлове които са нужни за инсталацията са повредени или липсват Edit
+Sorry, that shouldn't have happened!\n\nPlease press 'Cancel', if you want to help us fix the cause of this crash. => Извинете, това не би трябвало да се случва!\n\nМоля, натиснете „Отказ“, ако искате да ни помогнете да поправим причината за този срив (спиране). Edit
+previous: Извинете, това не би трябвало да се случва!\n\nНатиснете 'Отказ', ако искате да ни помогнете да поправим причината за това спиране.
+Source file %s has no synchronization point => Файлът-източник %s няма точка на синхронизация Edit
+previous: Източникът %s няма точка на синхронизация
+Start SumatraPDF => Стартираи SumatraPDF Edit
+Subject: => Относно (тема): Edit
+previous: Относно:
+SumatraPDF %s Installer => SumatraPDF %s инсталатор Edit
+SumatraPDF %s Uninstaller => SumatraPDF %s деинсталатор Edit
+SumatraPDF crashed => SumatraPDF се срина (спря внезапно) Edit
+previous: SumatraPDF спря
+SumatraPDF has been uninstalled. => SumatraPDF е премахнат. Edit
+SumatraPDF installation not found. => Не е намерена инсталационен пакет на SumatraPDF Edit
+SumatraPDF is your default PDF reader => SumatraPDF е вашият PDF четец по подразбиране Edit
+previous: SumatraPDF е вашият PDF четец
+SumatraPDF Options => Настройки на SumatraPDF Edit
+SumatraPDF should now be your default PDF reader => SumatraPDF вече трябва да е указана като подразбиращ се четец на/за PDF файлове Edit
+previous: SumatraPDF вече трябва да е четец на PDF по подразбиране
+SumatraPDF Update => Обновяване на SumatraPDF Edit
+Synchronization file cannot be opened => Файлът за синхронизация не може да бъде отворен Edit
+Tagged PDF => Етикетирен .PDF файл (Tagged PDF) Edit
+Text documents => Текстови документи Edit
+Thank you for choosing SumatraPDF! => Благодаря че избрахте SumatraPDF! Edit
+Thank you! SumatraPDF has been installed. => Благодаря ви! SumatraPDF вече е инсталиран. Edit
+The installer has been corrupted. Please download it again.\nSorry for the inconvenience! => Програмата за инсталиране е повредена. Моля, изтеглете я отново.\n Простете ни за неудобството! Edit
+&Theme => &Тема Edit
+This document uses unsupported features (%s) and might not render properly => Този документ използва неподдържана функционалност (%s) и може да не се визуализира коректно Edit
+Title: => Заглавие: Edit
+Uninstall SumatraPDF => Деинсталиране на SumatraPDF Edit
+Uninstallation failed => Деинсталирането беше неуспешно! Edit
+Uninstallation in progress... => Деинсталиране... Edit
+Unknown source file (%s) => Файлът, избран за източник, е непознат (%s) Edit
+previous: Непознат файлов източник (%s)
+Use &tabs => &Използвай табулатор Edit
+&Use original page sizes => Използване на &оригиналните размери на страниците Edit
+previous: Използвай &оригиналната големина
+Use SumatraPDF as the &default PDF reader => Използване на SumatraPDF като основен четец на PDF файлове Edit
+&View => &Изглед Edit
+View => Изглед Edit
+Visit &Website => Посетете &уебсайта Edit
+previous: Посетете &сайта
+Warning => Внимание Edit
+&Window => &Прозорец Edit
+XPS documents => XPS документи Edit
+&Yes => &Да Edit
+You have the latest version. => Имате последната версия. Edit
+You have version %s => Вашата версия е %s Edit
+&Zoom => &Увеличение Edit
+Zoom => Увеличение Edit
+Zoom factor => Коефициент на увеличение Edit
+Zoom In => Увеличаване Edit
+previous: Увеличи
+Zoom Out => Намаляне Edit
+previous: Намали
+
+18 unused strings:
+%s of %s => %s от %s
+Couldn't install browser plugin => Не можа да се инсталира плъгина за браузъра
+Error: Couldn't run SumatraPDF! => Грешка: Не може да се стартира SumatraPDF!
+Error: SumatraPDF hasn't been found! => Грешка: SumatraPDF не може да бъде открит!
+Error: The document couldn't be downloaded! => Грешка: Документът не може да бъде изтеглен!
+F&ullscreen\tCtrl+L => &Цял Екран\tCtrl+L
+F&ullscreen\tCtrl+Shift+L => &Цял Екран\tCtrl+Shift+L
+previous: &Цял Екран\tCtrl+Shift+L
+previous: &Цял Екран\tCtrl+L
+Install PDF &browser plugin for Firefox, Chrome and Opera
+Loading file %s... => Зареждане на файл %s...
+Opening document in SumatraPDF...
+Pr&esentation\tCtrl+L => &Презентация\tCtrl+L
+Print as &image (requires more memory) => Отпечатване като изображение (изисква повече памет)
+previous: Отпечатай като изображение (изисква повече памет)
+Replace document &colors with Windows color scheme => Замени &цветовете на документа с цветовата схема на Windows
+Selekcja:
+Show &pages continuously => &Непрекъснати страници
+Show &Toolbar => Лен&та с инструменти
+SumatraPDF %s Instaler
+Use &Tabs
+
+App Translator, lovingly crafted by Krzysztof Kowalczyk
+
+
+// http://www.apptranslator.org/user/ve4ernik
+
+
+Home : Translations by ve4ernik Not logged in. Log in with Twitter
+
+ve4ernik made the following 51 translations:
+
+    'Uninstallation failed' as 'Деинсталирането беше неуспешно!' in SumatraPDF / bg
+    'Find Previous' as 'Намиране на предишното съвпадение' in SumatraPDF / bg
+    'Find Next' as 'Намиране на следващото съвпадение' in SumatraPDF / bg
+    'Installation failed!' as 'Инсталацията беше неуспешна!' in SumatraPDF / bg
+    'Select the folder where SumatraPDF should be installed:' as 'Изберете папката, в която да се инсталира SumatraPDF:' in SumatraPDF / bg
+    '&Save As...\tCtrl+S' as 'За&пис като...\tCtrl+S' in SumatraPDF / bg
+    '&Save As...' as 'За&пис като...' in SumatraPDF / bg
+    'Save As' as 'Запис като' in SumatraPDF / bg
+    'Make SumatraPDF default application for PDF files?' as 'Искате ли да зададете SumatraPDF като основното си приложение за отваряне на PDF файлове?' in SumatraPDF / bg
+    '&Don't ask me again' as 'Без повтор&но питане' in SumatraPDF / bg
+    '&Copy Selection' as '&Копиране на избраното' in SumatraPDF / bg
+    'Copy Co&mment' as 'Копиране на &коментара' in SumatraPDF / bg
+    'Copy &Image' as 'Копиране на &изображението' in SumatraPDF / bg
+    'Hide frequently read' as 'Скриване на често четените' in SumatraPDF / bg
+    'Print as &image (requires more memory)' as 'Отпечатване като изображение (изисква повече памет)' in SumatraPDF / bg
+    '&Open...\tCtrl+O' as '&Отваряне...\tCtrl+O' in SumatraPDF / bg
+    'Open in &Microsoft XPS-Viewer' as 'Отваряне с Microsoft XPS-Viewer' in SumatraPDF / bg
+    'Open in &Microsoft HTML Help' as 'Отваряне с Microsoft HTML Help' in SumatraPDF / bg
+    'Open in &Foxit Reader' as 'Отваряне с &Foxit Reader' in SumatraPDF / bg
+    'Open in &Adobe Reader' as 'Отваряне с &Adobe Reader' in SumatraPDF / bg
+    '&Open Document' as '&Отваряне на документ' in SumatraPDF / bg
+    'Open a document...' as 'Отворяне на документ...' in SumatraPDF / bg
+    'Find' as 'Търсене' in SumatraPDF / bg
+    'Find:' as 'Търсене:' in SumatraPDF / bg
+    'Open &in PDF-XChange' as 'Отворяне с PDF-XChange' in SumatraPDF / bg
+    '&Go To' as '&Отиване на' in SumatraPDF / bg
+    'Go to page' as 'Отиване на страница' in SumatraPDF / bg
+    'F&ullscreen\tF11' as 'На &цял екран\tCtrl+Shift+L / F11' in SumatraPDF / bg
+    'Change Language' as 'Смяна на езика на програмата (Change Language)' in SumatraPDF / bg
+    'Open' as 'Отваряне' in SumatraPDF / bg
+    'Print' as 'Отпечатване' in SumatraPDF / bg
+    '&Copy Selection\tCtrl+C' as '&Копиране на избраното\tCtrl+C' in SumatraPDF / bg
+    'Copy &Link Address' as 'Копиране на интернет &адреса' in SumatraPDF / bg
+    'Close' as 'Затваряне' in SumatraPDF / bg
+    'Copying text was denied (copying as image only)' as 'Текстът не може да бъде копиран (затова беше копиран само като картинка)' in SumatraPDF / bg
+    'Fit Page' as 'Оразмеряване по височина' in SumatraPDF / bg
+    'Install SumatraPDF' as 'Инсталиране на SumatraPDF' in SumatraPDF / bg
+    'Man&ga Mode' as 'Режим за ман&га' in SumatraPDF / bg
+    'Use SumatraPDF as the &default PDF reader' as 'Използване на SumatraPDF като основен четец на PDF файлове' in SumatraPDF / bg
+    'Fit Content' as 'Оразмеряване по съдържание' in SumatraPDF / bg
+    'Fit &Width\tCtrl+2' as 'Оразмеряване по &ширина\tCtrl+2' in SumatraPDF / bg
+    'Fit &Page\tCtrl+0' as 'Оразмеряване по &височина\tCtrl+0' in SumatraPDF / bg
+    'Fit &Content\tCtrl+3' as 'Оразмеряване по &съдържание\tCtrl+3' in SumatraPDF / bg
+    'Bytes' as 'байта' in SumatraPDF / bg
+    'Rotate &Right\tCtrl+Shift++' as 'Завъртане на&дясно\tCtrl+Shift++' in SumatraPDF / bg
+    'Rotate &Left\tCtrl+Shift+-' as 'Завъртане на&ляво\tCtrl+Shift+-' in SumatraPDF / bg
+    'Uninstallation in progress...' as 'Деинсталиране...' in SumatraPDF / bg
+    'Installation in progress...' as 'Инсталиране...' in SumatraPDF / bg
+    'Automatically check for &updates' as 'Автоматична проверка за &обновления' in SumatraPDF / bg
+    'Open in %s' as 'Отваряне с %s' in SumatraPDF / bg
+    'Uninstall SumatraPDF' as 'Деинсталиране на SumatraPDF' in SumatraPDF / bg
+
+App Translator, lovingly crafted by Krzysztof Kowalczyk

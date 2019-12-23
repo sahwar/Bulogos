@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="bg"><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style type="text/css">
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="bframe_data/styles__ltr.css">
+
+<script type="text/javascript" src="recaptcha__bg.js" nonce="awIO70g/A0dmOl2foOB7zw">
+      
+    </script><script type="text/javascript" charset="UTF-8" src="anchor_data/hXx9FLqs445W2qgnFhm_HMWoQC_zK880E2pKDGygpUc.js" nonce="awIO70g/A0dmOl2foOB7zw"></script></head>
+<body><div id="rc-anchor-alert" class="rc-anchor-alert"></div>
+<input type="hidden" id="recaptcha-token" value="03AOLTBLRdwDA0_ybWZ5YOippi1cfJkbJkdbcaZU44TsrVYOIiadsPDHWVB3UXF6PtTniwPO3Gj4IPIHu9Z9f_z6f1bS-l_71DSq2Yyl2WBKLWFsPvnFn-g8civjqCXnNWey6Z3A_xPlzpVH2eQKVU_WcRiSd78jli5Dlt8dujf1y_36Vp8N_yGEVxVAMyuJ-fZyoiXXg8l-6MmQFo3-uWUfriQjz5Xl81fkK67K_pgWsYskPAe72Ew2veiO_zUcl67ak-JxtoDMqRDu14HnGYhZ4rSeNkQGKWI3H8njAE85U-W6FlkUuqSft-kkppH8b2XN-6MROC5iWXmvriNPhVSV2XOrjX6SReK0u9cdMTdKyISIQBMpwu64H72vaAdw68QgxrMk9NhODCJrBCQJYYcVMc010Okx4ByA">
+<script type="text/javascript" nonce="awIO70g/A0dmOl2foOB7zw">
+      recaptcha.anchor.Main.init("[\x22ainput\x22,[\x22bgdata\x22,\x22Ly93d3cuZ29vZ2xlLmNvbS9qcy9iZy9oWHg5RkxxczQ0NVcycWduRmhtX0hNV29RQ196Szg4MEUycEtER3lncFVjLmpz\x22,\x22\x22,\x22UExmdEdrUEpFTXlSTWNPenNxZFF0dDNIQ2JibGMwempiUEROd3BLbWg5VzFEVGFCTTV6NzNGSHBmK055KzRMQ28zN1Awd3RvclVkYURWZHlyMlNnVS9mczJ5Wk1BWjJyVnZQcHdZMVVRR3p3L0xodGdOU25qcnlvaEZaMGZnMFhYS3BKdjNXNmxzOHJCdVR6Um9jZkUwbGF5UEJTR1o3ajBnVTkxcTc5R05RbG5TVjgwK1dqZGowc2tKNEg2RTdQVFhCc0tudFVyNjNVaW9XT3RBU1lpMkcwbmdBMDhvWnRhNjIwOUE2OEorSXBlTG1NLzFSTlV0VXZYR1VheWh1RFNmZ0kvdlZoU2Nhb212QjUxQTl5aEVTMitMMTJnTDNxeWFhWUlaL1FIVVdSRm5sb2hpU2s3dGNYaXQ5OEJDam52bUJHYjdTL3R1eGN5aVZ2bkY0cGp6dXZKYkFHVmZnQ2tueWJBRVAweFpZZm10UWlyQlZ2TklMcFB3UzVWdlVubElua2pvUGpGdWZ3RldtczFNMFRLVTZKUHlrSXZQOWFIU0NwMXpYdVlTV241NzBWS0ZTVHE2NXdoS1JvcFlZK1luVGxUeC90V2lyWkdVL2w5UXVKeFl2S2lKdllSQ1BKYmhnOE5qWlM1N05uaG5DQzUxNzBBZzdwbUdvR2tLcDh2cHRrcmF5RGg1WjFoSGUxTWsvckVOUElsUFlSUDRIekVlV21VeEZvY3o4N0pXUFNxemJVMklXY0MxajdVQklYOHJoR1J4UmxZYTRFcjQ0WFNRV05CVHEzb2R6Vm4zS2NHeFZwQW1ncGdaK0J6ZDFxNWFnWEdDSE9JblArR3RJVFZDN2VoZDBxeFlnSG5OQm9UQktZKzM3SUlJcFMyQ0FINmNZemJDdlVrcmR4MmlIR0d4bk84SUEzY1ZFUitHTU5OcSs4RHFJVGs0SncyaHlpdVFNMFYxYlg3UGE0RGF6WGVFVG41NTNTNGo4RG1RTndKRStNVzRQeCs3dmdGeWV2Y0dQWSt0bkNtOTRWWHB3YmlLeHh2MERNUy93SHhVM3F2MHhIRVhYMm9wMU56UGhCbjQ0TnZ1SWlJREtVVC9SRE51bldUbEFWRXVsRWdFYnNjZDNiQkRBS0JJdlFUMURDc3FQMEQrbVVhWTVQY0lKRHlKNVRIc2FjQStJVk9zbElZaHZNRldTM2FiZ01paVlJd0tKK3lOckpmLy8vQ3k2ZzltcGZhb1BWWGdZbGU0VmVSMmJpYkhxSXRXMFFZQlh5WitrYjBESGtCdWwraDVyRUFqbG8wc09sUjNqVzlSNjFHQnkwcGNuUktFWUtNaE1ha09sYlh5aW91eE90U1BOMnJueXA1ZXJkN1BVZFZHcWExT3A4cVdnYVFOTHRRVmFKQTJWUCtNK2J2UWJUZTNRNGdoakgxSWNPWXErcjcveExoemwyNUVjOUFJM29yZlBKTVA1Vm5VdWU0bERQVVJ0Q0JneU1nZ3dmeC9VR1c0eGVOYUxNaXZvNlF6RGFWSGFCSGdDbzk1NXlFK3hKRDdNQndiMTE5TXZpUzZxQUlMYWd6ZGlsNDc1UDZrRTJqRmxPS1dodXRnMGZ4Y0phb0ZnUFV6UERHUHdoelo5djF6cjd4WkVZSzdnMnhIRVZrc3E2bzNNZCtlK3ViYlB2WDdRbEtYTFZ6ZjJEYUhuNUZldWp1V0p0T2JZQ3lLT0xZNVNFQnh2RTBEY3IrUFZEYUJtazN5M0pQYmpKbUg4TFpRQ1BGdjFRS3lBcm84bjFIaXZFYWpPVFFsdVA0bzI0NTIrRFB1RzRPVTN4bUdaZ0lnaTdidjJRWlVPblZYWU9vaGZxTXErbjFtM0wxeU8wV3BQSTlCdTdBUXE1cDRSV2RNMDk3WHZ4VzRkMnlHdkZsejhReVQ5cnlUYUloWnYycVBrYlhtb0FlSkQyV0drRGZYV0wwQzh6ci85TUpySlJBbXlvZzNNN0dZMFpvbzNtcU5JQUpQTjZHNXFjaExDcXpOck5QUnk5emJuZ0NoYU1TSTF2VEhEdC9mTkVvczdOaS9zd1h5a2JrcmlDeFowTSsvVjVTUFNRTkxqYWEwYS9TZmdvS1BYemNKMzZhaFdsTHVXNWoxUTRoU0g3TkZXV0RPQ0lNRWViR1kzTHFLN1VCd0tzd3ZaNHNkMDFqUW9WRnFzYzV0Y2NFWEQ3UjU4RUtDaS9qMVh6czV5ekRxVllGSjNhaVcxSkM1emNmVytGUHBoQW5KR3FROFduejNPem1UMENaRkc1djM0NnVTRmNXakF2SllhVHhlVW5CRlpFcHhvekl4ZXhRdU16U3NPVzAyQU9ta1N2emNMYyt2RW1vcHFDRldBS2NLWHk5WHlod05SaFVXdTJSKzVMV2d6VGlpMVBRSFNFV08yY1hWVmwwTzU0S1pYWHpXcC9XVzFNYThGdU5xemp2bU1yaDJLbzVycWt3YldGTmpxRTFpREgrUFRjbVl1eThNRjJOM1ZQbnZCN2doRXlCcmFld2FScFEwMm95N3NWRmFaWkhVSFljVDJwbWZES21RNWp6TEp6WHJRUWhKaEI2Z1ZJZVlpd1hWT3dXWEhtODY0QzVMTXNiY0VJbzFXQXJybkNqc2YxOE5WSGpBTXBtYUFPSzhraWNuekNOUEt2YlhXa0dKNDJTdVhwZkE5eG9hNFlITlVRV0RxZm9RUytZSFA0dEJIWTk1NmkvWC9JclF3aG5GanJRUDVBVm1qVmpYZ2FNQ1JVOUFRZFVxcDJ1c0xXQ2wxaE4xWmN5NXljMXY3NjA5REp1UGowdVpndk9oOFcwZjVWeEZac1BaR09ZcGRDMmtoVXVxcVMxcXZjUUtDSnBDZ2FBanJJVkF3MkhRVGJ0dVo0eTg2emxKdk9hNFFEdmpsT3QxZFlpN1NwdTM4a0ZCRWo5KzQxYmwySTJDZlZpUFdZSVh2WGh3cGQ3WWpVUVNEeUpGTzU0enJ1NE5iYWU4a3lxd2F5TXZ3RDVJZzFvOUtYUzV3RkRIazljclpkd0NxZlVrU2ZTSEFXbGtXTndpcTh3cHcremU4V2J4dURZWlVLY2IyampRRDBjcXpCNENlNEdFMGRYRWtFdjdkaVdrMDdXQlFhWHNCVFNVS1ptL1pGR3lZa2p2N0xiaFlHdXllY1U5UzV3dkJWYW9FY2RqYjQ4MzZlUUdpY1NjSUVtMTFlMjBTZDhKWVFRdWROeCtEVTFnYnJxM1ZLekNObXZXbVM3L1RjYlVQQmtZd2hkVm9QTVk5YzZwbmcwOU1xWGp3TlFmbFJ6ZGtndzd3MStNODFtYnFFL0tGdG05V3ZEeTRoUlhpZlpNc2pFREc4dUR1bi9YQmJ2dWhGV21KZmlFY2NwQUNxaVE1MENyWWdnVHZyYlkwY2RxU3VoRXpTaVA2d3NBLy83QzFDVWErWDR0SUpMOHNXZ2tva3JSNUFROHE1MG4zazdvVm5TeVVZNHA1TCtPcXFWZ3I0UFdmNi9tZy9rN0lJc1N3QlQ2eHdPTnl1TmxyZTFrYVB3Q1JsZ05lemFHcmxaMk1ieFBwdE1uejdIZXoxY3cxMTdOVWNYcXdHZEVROGlscnA0MUYyRE9WUDA1azN4bDV3QUk1Q0dyQ1RiUkVKUGFBMTJ0MDdLUDdCMEFIYzdONW9TcWRNODh4WUF6d3MxL2dLRWlrNTZaQ0ZwKzdVWW5iNThBSm5jRVFsbFJ5TWtUQ08xcXhmWlJZVksrR2t4VDg1RkxkYm5mSWVqVXFMdkxON1RBNEQyUXJPWTBnMUl0VXhLYkVDbFNJUldmWG84T0ZJb3hiQjA3WkpZaG5YM3ZMc21CY1A5UGpyektsNFlua0hlNFNDdDZjYllOOHcwMWl2TVQzQUVEQ2h6SktLMkcrblR2MGR1S0lNd2xCZ09NMU1iZlJKZHc5OWlnSFl3cG9paW1xOWo0RDROaXFRVnJJcHZhSVM0RnBEdyt2d0dCcWQ3RFZMN2hqQ3pueENsWUVGeE9MVXFrN3BPZE5hSFpuUTlCaEJURk55Y014c1k0c09jV1dSY1UxMlg0VUVtSHkxSGRhbDNCaHJLK1ZrWVVRV0VpSlQyQmJpVFk3RnBiTzBsOVowczNCRWtrM0d1WEQ2a0EySnRVOENoRk41OE4yUjZxV3FBR3VhckdDbTcxanNtTU5yb3VVWEUxcVBnbFlwVE8xTzh5bytBM2ZFV3l2Y1UrOVF1VXY2TEJjOFhabFA3RHVENWhNMEl2eStMRW16dmd5V2d0NnVXOG5aZWN1Nmt1aTR6UFRqZ2M1Tjdad0RvTTVINEh0VG5jZXdGd0ZLZG5Qd3RrMDN3Sk5JYjYxdUVyUzNJVXYyeUVDejBCcUlUdW95R3g4MzhwRDZmTDN0bmhNTC9odkpHU2RTWS9QclB3MkdGRDMvT2pGZy9JQm9vT3Z4TEdGWllkNnBaejQ0cExoQVpCd0dsRGpyRFJaWmNaaE5rNGR4VEpmY01DQ1V2NzdWRzhWKzZyYTJuc0lMUHFsTjlZVThaKzFLU0IrNjNzWVNudDlGWUd3TWptWE9RQ3B2NjFJdzZ6K0thdThZeDZoL2JnZTBoUWNOL1ZsYno5bDVINVBqVDJPY3VnTExZYXFQMEYrU0ltL2xFODdHNFVNVzB1aHlVazE2Zm0yOElxaS9GR3gwdGFkZVV6bG5ITlVjV2pXTjBjVXR4RTJGa3N0akVsbktHNXVFVVBtZWh3emhpdW5mMGtLbkx0NFJZUUFVYllPV3RLTkg1UlhLY3RVMjMrM09XaXFqaGZ6ZEVxRzAxb2dQZGEwM2JLZWN4UTAxelRZaVhWdlMxZlNWNlpqTENGTDhzbVBGWkhIL0MxcjJnNkJNS3VHS0p5YXNHUjM2WWtsakhXc2JpbjgwbFRseFJEeXBOYlRsREpYbzBUZEM3NzJaV28xelFmamdZZDJ4QzZ2MVlkVWhVeFVCZ1NFYWFJbTQxRVh1Nk9XN0xCdS8vUTlBYkhDc0c4RG9mN2NLcTZtVStneFVWTjZscksydHIyMlFtWi9pUzhadDhjaE93OFFMeXpLMlIxOExpczhRN3NMb0ZOa0lDSDNQZkY5UnhOZEdmZStuczlqSk45U1VYaTkyOVpZRXZ6WlZuQkZoZHYycGdLS1JNTGxKWWlCSFJwcXNNbC8wbFBuTXpxdUI0bnRmVHAzaVdMeE1sZTZJN3NHR2N4NTI3WTRpS0Y3WDBEamxIZHdsZDBBS3lwUUdITkg4MDlJQ0RlQ3pPV3d5M3FSMFlkU1Vqc3hJZmsrdkFhcUU2TlJ5bDIyb3Z1c2pLc1huazh1alZnZ1hVWnE5V3JlNmJYU29TTWN1VVg2eWxualdrL2ZzUlJ0cnhWS25ONVNTWmI5VEJXZ25qc015dDlueGdzWld1OTZWc3Jpc252SmZYTTdHLzE5UVk4TzJsSnZPbktqMkhJSXhIY1QwYTM4dmRVcG40ZDZMYmp6eEFJZEx6VkhieUloL0g3NEVXRnZqV045RmJVSXNTWURTelUxQjZqelFhd0VFTEJ0eWtheTlKSkVSRnphWHhjc2VlMnE0Y2xIM2F5RGVuSFpJTW9EQnRXd2ZBQ2JHdFdqOG5nRlVIcXdYeHM0N3M2NXMvWm11VWVGVEg3TjFqMTFOMEEzcTl6K2k5M3pyTHlIOERFYWE2L3lOdnk1T0hvanJQNUFUYmVianFLVVkvMThrWkV5bW9FMVlIMS9IOFhYNG1MUWVraDY4NEhoZkd1ZjZpOFIzQUlQNGxXeXh5QW44VzVxQzhUK0xCSXBGVkswWklIcUY3MkpDQ1R1WFI0bnE3c2JJeER3cFl5NWFLazNTeUk0MW5FVkhtTTdLL1JHOU1qSXhLd3A0eWdZMlRTSnJMYXFnM1NyRURJejJDcWJ0YXRSenkydm5iL0ZBVk9ubEJCbFljVnU3MEIyZFptRFp2SWdKZWZLR2xlQ2dwdnRHSlk3KzVrUU1oL2tBTDNHZVg0V2poZzIvUERBbkEzTE1BVlZ5eHY1WVVCMjluM2tTaWFJYTJ1MlUwRThUVEx3Z29lbDVjY2wrUDBGMUxCY1NHd3UzUS9YR0YrVm5kRjJWZkZQTE1BeVpvczJBTTAyVHkrWkNoa3Zia24raENjeDZpdk1pMys1VW83TUUwaGlWekU1d2FldG1TY2cwM3dDQmNKT3NBT2ZHcDFVSjVVOFRxY2w4STg1U1Q3VjMvUG52anUrTmhlakpNUmxmTVpUR2RURnM2dzJBMkhPUlplZTV4YWRnejl4REM1emhONkVTN2IxYWdKdkNRaU9UZmxGU2wzLytraTNNdjlLeHNER1l2d1RMblVITWJrVmFMZUttbDgvOEk4Tm9VcDU0aThkeTFsODNHQytWTFJtdXF5L3kva2xVdGJtNTBoRlAvMExIWVZkYzZlM3FvRzg5M1ZVaGxPVUpVYnNSZU85WDAvYm9LNWdtVlBmcDZUTjlzSzQzdDJSbG1DbGYwV01WblRyam04WVhDQ0lPcERSQmRKMThhVEo5bkJBVS9Vb2dxc29UL256dkFyVG80aktlcUxlQ2E0MU5leTlueWJhQzNZV2FmT2RTQkVWUTB3UEJyTS9Mckk5bmF6WXdvZkwxaXdwck5FTjN3UVV1NW1sOXVTbklXTEJ0M2JXcUVoK3lSOUhVNGYwTzRsZG5rdDNMRHdxNnpLdXg5dnd4NmhEdEVRTWdUbVdrWDRnbzdpRUR0UklrdEd1N0I0cTJrVjNQak81R1phcnlKNFlEQ0JnMGd2bHh6NjZyMXRaeGxyYkdLQys2UmtDMVRHcmtoNzFIQW9NL2lkSVVEaUlYc0NXZDI1d2x2a3RGUGRabW1jeGNwakhVdDhxeUcydEFqb20vdTJ3WWs0YVFDTUlkdU9KaVhjc3poejB5OFYzdzhocXNPb3lpRS9Ha2FrSmhNL01QVHZwS3Y0QjQ5ME9JOG9oaDlBUXRYVE5QZS9acXA5WlpzakZleVZzWXZTcTc0d1hNdzI1ZzdPbURwTXdKVnBUVkdaVjdvYlZUK1RmTmtuTE9Eell4OFV1SWZaQ3JBOXFHcDY4TVI5VlZmM0pkaHp6ckpvQ2VyZVI3Z3N0ckdXenNEaEtlemdydGtMK0MrQmhVTkZxOGFOZmIzZ0dKaEM5eDVwMDZEbllWMUtwVGlEUzlldi9URFFMYTN6WDIvaXEwd0p2MVNlNUh5TmJ1TVlvZHZPSStueDZVOE02eFQ3b21OdjdZK0w3bWdmVlpySUJVUkNXUmhyRk8xRkw1OEZTY2p1WkFJdVVTK3p3TS92Q1VmV1pvcEo2TUYwUEgxKzlXTm1tVk1Wa2NabWxMdGl4cWpvdHYvRFliZmQ4YXMzS1hJb1N3bHNRK2QvL2ZVQ1YvODZTMFBNRmhUam1yN01pdXdzK1FrY3I4T0s4WVJXT052MUtNcmZkUW5vWWtZSkEyOWZPYjFzV0ZBYlk1dTFJY1poL0U0M2FFTzFoUVpDRGI1alA5RnU5YktZS2cwUm5ELzh4UU9rNG1ONGhTNzRoQ2FibGRTU2dyWEc5Mkp4TXFVN0I0UEhzaTNHNWlGL1lJUUlQV0Q4dGpkSWdGUWpwREVBeHppUDhUL200OG4xaW5ZamY0UXNmRWJPVlZiYzFFSzRmNENVbmhzQ1dEMXNJcTJKQ215YnhBTlRYMUptQmpPQlplVEJKSWtCZDkvSUsrajh3c1NhWXFqbFdRZWUvMDZ1em9FeFV3TGNwTVRxNkdoc2IwVFZ4dWtScWxXZU9hQ1VhV2RFeElPc0RzYW1MTUhTaEVkVUVQbHZWUm8ySVg5eFRZV0V1S1BtMVVMWE5LUURDenhGdzhoU3pLSWl0c2tuNTBHeXVnNXY5dU1Xc1Q5elcvbGdTaDE1MHgzclkzbTJmdGgyVWtyMUROM0hjQU1uZHlDSWhXMExQdEpDdWpvY0NFRklKNmw4QVlGTkswUi9iQTduSXdqNHNDV1BySktDaWdkT1QxaWNrcGdhMGNNL1RXMHdHR0pEWnRmanlkdW1MbE9iSW5XbFNtcUNET3FIb3RpZTU2d01XOUFCY1JwQXp1bmsrRVR4YWs4RjBHY3MvWTVkM2J2YkFRc2lDSVRlc2hOYmF3dFdFTEY2a2ZDeG1TeXVReWpTYWttS2I1OENuZXpwQ3BFN1BpdmhiVWlIeHNIZFlpRzNiOElucVB3U25RekJtbm4xVFZ6OWtXUmlwWENuaTJDaStpVThTdllFdlc2U2dHN3lyTGM2UWlwOGd0ZEJENE9kK2s5MW42SEV0RHM0aXFrMURuTDdibExYcFhyMk5ObWl6Zm80cTRqNmppdVdMVlNsbmVBb3RUV0hrVFBJeW1jOTVmTzVEa1NBcEdhQVl2UXR1S3prQ1dNcTdiWHQ4M0dnVVg2Z1dJTVFabUVoZVpDWHpNOGxSVURQeW9RbU9rQjAyLzZ0b3VTdlhIRXNXa0JKYWUxRjdBUkU5NGVtNlBCNzQrU1BNMGpabmNXc09GQXZKekF2WlNacUV6OTI2Qjhkdy9ESWpid0p2Rnh4bUdOWG9OTFIyVUxyVkx6L25kbHJuT1JTL25lVHlnQzJvQTFVWHRyWU81QW9xc2JwU2NvYnFON1k3U21aSXpTdzdoN1NzSHV3Mkp4b2lKNXRDWUZwS2t5aWdGM0p1bnE4QXh2dlFlWmw3eTBkYit3RDNxbUJrR1RNSk1uZXY5SmJzMjE0clFZM2orM1hwWmt2eVJOQXRyQS9IYTludHhCS0NDZFEzUE9UNFRNQm5pYVlLME9RNGc0MzBKT205NG9IN0phNTVkR3lZVFZBNGFmSkVZblR0dzFyT2tBOFFaRXZNUnhsZHlQQllreWtmY25Ibzl0Vnd6YzVVZzFMSnBVYXN3Y3VxeGlrbXkrNTByTE5qY1E0SDk4SFpEYjUwNUw3RXZKREN3d0ZHeDNOYWpja25FajVDNlhaYk9uMlBhZVpNSWFZS0Z5Qm9JdmU4TG9tZUdFdmc5K1RidlhsL0lROFUya0dvdjEwbTk2NkxPdkFEQzl3K1h5clg4ekZYeFNHN1JjMy95SEdsWU5zTkxTM05TVzFKekdsVmswcmdueEZNazI3ZGdRckZaclhpNHdxY1piNE5SaDVPTDlpZG9sNDNXUGhPVzJPOVZIbHA3QWdOSmY5MGpJeWtLQjB5YURXYkdTZlRKL0h6eDFPaTNVQUJDNS9jcUllYkMyVVZvS1EvYXRXb1liMTRwOVJwc1UzSGJpNWFISGdWRWpPOUJPMVZldzI3Z21pd2lBQ00wYnpzRnNYR3VXWUhUbHVNaHdoeVF0WXRNQzBxbTI3M2dTMWJ3K3JMK1pnNHNHZmlFUE1WT1FBcVdBUEl2NHg5T1cxVFh2WnJkL004OUhyZGZ0NjhIcngxWmRZanFybjYyTkNxekVzbEYxdUk0LzZvdS9RVk52ckJWdis3aHJsRmdTRDRNbG9MMmV0R1FLQmQ1c3l0eGZRTGxaQ3JnVTFMUWVCT25GN2tvZlF6djEyeW1NZ1h3RW1TemY2Nnh1dzUxbE9JMHBiQUd5djN6bWh6c3NWWjRNSG5kVTROVTNpOW5IaUs2YVpyWnFFNnh5SDg2TTlaNkxCd0ZHRThTSTB2dktJY0xSd001czVvR2lsT3BwQTBqM3YxQTB2NnU4WWt1R0s3ZEIwcExOUnRHaWgybTViUFpDSlZjUzdldlcvazh1cy9XUjdpczNXcUZ2RS9DZmp3K1NxRk1BdnNtQTNpN2c4WHJ2NTNRYk5xVCtCVG5HMGtLWElzRWhmOUVrU3BrSEc0TmpUL1JNQmxjUVVYc2NiMDYwVWZkNG9sVXYzTUl6QkkveS93cU1MTVVZcTF1WDh0Q3dYbVlvNUlaSHFqZXVXMmJOTnA5cktSSG5XbG8wd0E4Q2sxWHhtMUpjd3NIY3o0ai9SWnU2dVY1TEcvaUhiRGdXME00N0F5RlhVT2ZzZXo5a1dzMzFVU3NZc3Y0UEtINGk0NkwyK1BUY2c4WTg4a1IyUlkxOHJ1cFlGK2h6SjZDWHlHV0ZnSGF0TU4xNDN1MjF3TVd6MTVaOFVjY3BKWA\\u003d\\u003d\x22]\n,null,[\x22conf\x22,null,\x226LfywgAAAAAAAF-OKTdfjcS33rqlcRSBRondfj0P\x22,0,null,[\x22JS_BR\x22]\n]\n,\x22https://www.linux-bg.org:443\x22,[\x22ctask\x22,[[\x22hctask\x22,\x224dbc26df\x22,\x22a5009e209556d74c01a1ad9857f77dde8e7e1c2f5c5a04fd33f8d5e4bcb2db25\x22,0,100]\n,[\x22hctask\x22,\x221add4815\x22,\x22937c866c51c537a693c8f59f229b0b71da3c2a30e46a50550aac0d19ceade7df\x22,0,100]\n,[\x22hctask\x22,\x2217a44f7a\x22,\x2220e9a80631d37c4b54170fdf6a3bfff49f9f4cc3ca627e15c73884f24cd4f8a7\x22,0,100]\n]\n,\x22/recaptcha/api2/webworker.js\x22]\n,[1,1,1]\n,null,null,[\x22ftask\x22,[10,3]\n]\n,0,3600,[\x22https://www.google.com/intl/bg/policies/privacy/\x22,\x22https://www.google.com/intl/bg/policies/terms/\x22]\n]\n");
+    </script><div id="rc-anchor-container" class="rc-anchor rc-anchor-normal rc-anchor-light"><div id="recaptcha-accessible-status" class="rc-anchor-aria-status" aria-hidden="true">Recaptcha изисква потвърждение. </div><div class="rc-anchor-error-msg-container" style="display:none"><span class="rc-anchor-error-msg" aria-hidden="true"></span></div><div class="rc-anchor-content"><div class="rc-inline-block"><div class="rc-anchor-center-container"><div class="rc-anchor-center-item rc-anchor-checkbox-holder"><span class="recaptcha-checkbox goog-inline-block recaptcha-checkbox-unchecked rc-anchor-checkbox" role="checkbox" aria-checked="false" id="recaptcha-anchor" tabindex="0" dir="ltr" aria-labelledby="recaptcha-anchor-label"><div class="recaptcha-checkbox-border" role="presentation"></div><div class="recaptcha-checkbox-borderAnimation" role="presentation"></div><div class="recaptcha-checkbox-spinner" role="presentation"></div><div class="recaptcha-checkbox-spinnerAnimation" role="presentation"></div><div class="recaptcha-checkbox-checkmark" role="presentation"></div></span></div></div></div><div class="rc-inline-block"><div class="rc-anchor-center-container"><label class="rc-anchor-center-item rc-anchor-checkbox-label" aria-hidden="true" role="presentation" id="recaptcha-anchor-label"><span aria-live="polite" aria-labelledby="recaptcha-accessible-status"></span>Не съм робот</label></div></div></div><div class="rc-anchor-normal-footer"><div class="rc-anchor-logo-portrait" aria-hidden="true" role="presentation"><div class="rc-anchor-logo-img rc-anchor-logo-img-portrait"></div><div class="rc-anchor-logo-text">reCAPTCHA</div></div><div class="rc-anchor-pt"><a href="https://www.google.com/intl/bg/policies/privacy/" target="_blank">Поверителност</a><span aria-hidden="true" role="presentation"> - </span><a href="https://www.google.com/intl/bg/policies/terms/" target="_blank">Условия</a></div></div></div></body></html>

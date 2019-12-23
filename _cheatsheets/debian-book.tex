@@ -1,0 +1,245 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PREAMBULE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The file uses the latex style
+%% Heavily based on http://lug-bg.sf.net CVS code authored by Valentin Valchev
+
+%% \batchmode
+\documentclass{book}
+
+%% Package(s) to include
+
+\usepackage{fire}
+%% \usepackage{html}
+%% \usepackage{verbatimfiles}
+%% \usepackage{justify}
+%% \usepackage{multirow}
+%% \usepackage{color}
+%% \usepackage{colordvi}
+%% \usepackege{webtex}
+%%\usepackage[a4paper]{geometry}
+\usepackage{vmargin}
+	\setpapersize{A4}
+	\setmargrb{22mm}{5mm}{22mm}{5mm}
+\usepackage{textcomp}
+\usepackage{sectsty}
+
+%% Серията от команди по-долу определя начина на вмъкване на картинки във
+%% LaTeX документа. При генериране на PDF файл с pdflatex може да се вмъкват
+%% директно JPEG картинки. Когато се ползва dvips за генериране на PostScript,
+%% тогава е нужно тези картинки да се конвертират в EPS. Правилата долу
+%% определят и начина по който това може да стане.
+\ifx \pdfoutput \undefined
+        \usepackage[dvips]{graphicx}
+        \DeclareGraphicsRule{.png}{eps}{.png.bb}{`convert #1 eps:- }
+        \DeclareGraphicsRule{.jpg}{eps}{.jpg.bb}{`convert #1 eps:- }
+\else
+        \usepackage[dvips,pdftex]{graphicx}
+        \usepackage[
+                    pdftex,
+		    pdfpagelabels,
+		    hyperfootnotes=false,
+		    plainpages=false,
+                    bookmarks=false,
+                    colorlinks=true,
+                    linkcolor=blue
+                   ]{hyperref}
+        \hypersetup{pdftitle = Книга за Debian GNU/Linux,
+                    pdfauthor  = {Александър Велин, 
+		     		  Георги Данчев, 
+		                  Дамян Иванов,
+				  Делян Делчев
+		                  Димитър Андонов,
+                                  Никола Антонов,
+		                  Никола Колев
+                                  Николай Манчев,
+                                  Огнян Кулев,
+                                  Пламен Тонев,
+                                  Стоян Жеков},
+        }
+\fi
+
+\ifx \htmlonly \undefined
+        \newenvironment{latexonly}{}{}
+        \newcommand{\linkTo}[1]{\href{#1}{#1}}
+        \newcommand{\img}[1]{\begin{center} \includegraphics[width=11cm]{#1} \end{center}
+        }
+        \newcommand{\hlink}[2]{\htmladdnormallinkfoot{#1}{#2}}
+        \newcommand{\deb}[1]{{\texttt\textit{\texttt{#1}}}}
+        \newcommand{\man}[2]{\textbf{#1}(#2)}
+\else
+        \newcommand{\textasciitilde}{\~{}}
+        \newcommand{\textasciicircum}{\^}
+        \newcommand{\linkTo}[1]{\begin{rawhtml}<a \end{rawhtml} href="#1" target="blank" \begin{rawhtml}> \end{rawhtml} #1 \begin{rawhtml}</a> \end{rawhtml}
+        }
+        \newcommand{\img}[1]{\begin{rawhtml}<center><a\end{rawhtml} href="#1" target="blank" \begin{rawhtml}><img\end{rawhtml} src="#1" width="500" alt="Click to see a bigger image" \begin{rawhtml}></a></center>\end{rawhtml}
+        }
+        \newcommand{\hlink}[2]{\begin{rawhtml}<a \end{rawhtml} href="#2" target="blank" \begin{rawhtml}>\end{rawhtml}\ #1\begin{rawhtml}</a>\end{rawhtml}}
+        \newcommand{\deb}[1]{\hlink{\texttt{#1}}{http://packages.debian.org/#1}}
+        \newcommand{\man}[2]{\textbf{\hlink{#1}{http://www.fifi.org/cgi-bin/man2html?query=#1+#2}}(#2)}
+\fi
+
+\newcommand{\manx}[2]{\textbf{#1}(#2)}
+
+%% Указва версията. Само и единствено тук се пипа при смяна на версията 
+\newcommand{\dbversion}{\begin{center}\textbf{Версия 0.3cvs}\end{center}}
+
+%% Указва сайт на който има директорийната структура на книгата, 
+%% така, че ни остава само да указва пътя до файл или директория
+\newcommand{\dbsite}[1]{\hlink{http://www.debianbookbg.org/#1}{http://www.debianbookbg.org/#1}}
+
+%% С команда от долния вид се определя шрифтове с кое кодиране ще
+%% използвате.  При отсъствие на такава команда по подразбиране се ще
+%% използват шрифтове с кодиране T2C. 
+%% Общо правило: не използвайте тази команда след като вече сте
+%% заявили използване на пакета babel.  В квадратните скоби може да се
+%% посочи повече от едно кодиране.  Последното кодиране задължително
+%% трябва да съдържа латинските букви. Такива кодирания са T2A, T2B,
+%% T2C, T1, OT1 и др.  По подразбиране за български език ще се
+%% използва последното посочено кодиране, което съдържа кирилица
+\usepackage[X2,OT1,OMS,T2A,T2B,T2C]{fontenc}
+
+%% С тази команда посочвата какво кодиране ще използвате за да
+%% въвеждате текста.  Разпространени кодирания у нас са cp1251 и mik,
+%% но освен тях може да използвате още maccyr, koi8-r, iso-8859-5,
+%% cp866, cp855 и др.  В квадратните скоби може да се посочи повече от
+%% едно кодиране!  Преминаването от едно кодиране към друго става с
+%% команда от вида \inputencoding{mik}
+\usepackage[cp1251]{inputenc}
+
+%% Със следващата команда определяте на какъв език ще бъде текста в
+%% документа.  По подразбиране се използва последният посочен език.
+\usepackage[english,bulgarian]{babel}
+
+%% Да не забравяме за индекиране, включване на графики, times шрифта
+%% за конвертиране в PDF, както и включване на хиперлинкове в документа.
+\usepackage{fancyhdr,cyrtimes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Корица
+\pagestyle{empty}
+\title{Книга за Debian GNU/Linux}
+\author{}
+\begin{center}
+\date{\today}
+\end{center}
+\maketitle
+\ifx\pdfoutput\undefined
+\dbversion
+\fi
+
+% Втора корица
+\pagestyle{empty}
+\setlength{\parindent}{0cm}
+%begin{latexonly}
+%\vspace*{2cm}
+%end{latexonly}
+
+\bigskip
+Copyright \copyright\ 2002--2004 Александър Велин, Георги Данчев,
+Дамян Иванов, Делян Делчев, Димитър Андонов, Никола Антонов, Никола Колев, 
+Николай Манчев, Огнян Кулев, Пламен Тонев, Стоян Жеков
+
+\smallskip
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  A
+copy of the license is included in the section entitled ``GNU Free
+Documentation License''.
+
+\cleardoublepage
+
+% Съдържание (започва от втора страница)
+\pagestyle{plain}
+\pagenumbering{arabic}
+\fontfamily{\sfdefault}
+\selectfont
+\setcounter{tocdepth}{4}
+\tableofcontents
+
+\begin{flushleft}
+
+% Подготовка за самия текст
+%begin{latexonly}
+\cleardoublepage
+\pagestyle{fancy}
+\fancyhead[RE,LO]{}
+\fancyhead[LE]{\leftmark}       % chapter
+\fancyhead[RO]{\rightmark}      % section
+\renewcommand{\chaptermark}[1]{\markboth{\textsf{\thechapter\ #1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\textsf{\thesection\ #1}}}
+\pagenumbering{arabic}
+\fontfamily{\familydefault}
+\fontsize{10}{1}
+\selectfont
+\usefont{T2C}{ftm}{m}{n}\selectfont
+\allsectionsfont{\usefont{T2C}{fhv}{m}{n}\selectfont}
+\setlength{\parindent}{0.7cm}
+%end{latexonly}
+
+\part{\textbf{Въведение}}                  %% Formatting Status:
+\include{ch-introduction}                           %% ok
+
+\part{\textbf{Проблеми}}
+\include{ch-problems}                               %% NOT ok
+
+\part{\textbf{Решения и предложения за подобрения}}
+\include{ch-solutions-livecd}	 		    %% ok			   
+\include{ch-solutions-download}                     %% ok
+\include{ch-solutions-installer}                    %% има за превод и допълнение
+\include{ch-solutions-beginners}                    %% ok
+\include{ch-solutions-desktop}                      %% има за превод, остана menu
+\include{ch-solutions-i18n-intro}
+\include{ch-solutions-i18n-console}
+\include{ch-solutions-i18n-xfree86}
+\include{ch-solutions-i18n-applications}
+\include{ch-solutions-i18n-contrib}
+\include{ch-solutions-network}                          
+\include{ch-solutions-peripherals}                          
+\include{ch-solutions-migrate}			    %% ok
+\include{ch-solutions-backup}			    %% не е довършен 
+
+\part{\textbf{Управление на софтуера}}
+\include{ch-software-basics}                        %% ok
+\include{ch-software-archives-common}               %% ok
+\include{ch-software-dpkg}                          %% ok
+\include{ch-software-dselect}                       %% ok
+\include{ch-software-apt}                           %% ok
+\include{ch-software-apt-dpkg-ref}		    %% ok
+\include{ch-software-packages-examples}             %% ok
+\include{ch-software-config-admin}                  %% ok
+\include{ch-software-config-maint}                  %% ok 
+\include{ch-software-packaging-official}            %% да се дадат още примери
+\include{ch-software-packaging-unofficial}          %% ok
+\include{ch-software-build}                         %% ok
+\include{ch-software-security}                      %% ok
+\include{ch-software-hints-common}                  %% ok
+\include{ch-software-hints-hppa}                    %% ok
+\include{ch-software-hints-sgi}                     %% ok
+\include{ch-software-hints-amd64}                   %% да се даде пример
+\include{ch-software-hints-cluster}                 %% има за превод малко
+\include{ch-software-analysis}                      %% ok
+\include{ch-software-myths}                         %% ok
+\include{ch-software-conclusion}                    %% ok
+        
+\part{\textbf{Често задавани въпроси за Debian}}
+\include{ch-faq}                                    %% ok
+
+\part{\textbf{Участие в писането на книгата}}
+\include{ch-contributing-intro}
+\include{ch-contributing-latex}
+\include{ch-contributing-cvs}
+\include{ch-contributing-builds}
+
+\part{\textbf{Мотивация и благодарности}}
+\include{ch-conclusion}                             %% ok
+    
+\part{\textbf{Лиценз}}
+\selectlanguage{english}
+\include{fdl}                                       %% ok
+
+\end{flushleft}
+
+\end{document}

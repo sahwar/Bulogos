@@ -1,0 +1,1634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div><head>
+    <meta name="generator" content="HTML Tidy, see www.w3.org">
+    <meta name="author" content="ManiaX &lt;maniax@phreedom.org&gt; and Renegade">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <title>
+      QoS Advanced Routing for Linux
+    </title>
+  </head>
+  <body text="#000000" background="QoS%20Advanced%20Routing%20for%20Linux_files/bgstati.htm">
+    <center>
+      <b>QoS Advanced Routing for Linux</b>
+    </center>
+    <div align="right">
+      <i> от <a href="mailto:maniax@phreedom.org">ManiaX</a>, Renegade
+      23:22:20, 10 Януари 2000</i>
+    </div>
+    <hr width="100%">
+    <center>
+      10x na Renegade (който даде идеята да напиша т'ва нещо и който доста ми
+      помогна (например написа цялата <b>traffic control</b> част), Алексей
+      Кузнецов (за прекрасното ръководство на <b>ip</b> командата, част от
+      което съм превел тука).
+    </center>
+    <p>
+       &nbsp;&nbsp;&nbsp; С новите ядра (v2.2.x) <b>Linux</b> започна да придобива мрежовите
+      възможности на <b>Cisco router</b> (благодарение на Алексей Кузнецов).
+    </p>
+    <p>
+       &nbsp;&nbsp;&nbsp; Тези възможности се включват от <b>Network Options/Quality of
+      Services</b> и <b>Network Options/Advanced routing</b>". За да използваме
+      тези възможности, ни е нужен пакета <b>iproute2</b> (или <b>
+      iproute2+tc</b>), достъпен от <b><a href="ftp://ftp.inr.ac.ru/ip-routing"> ftp.inr.ac.ru/ip-routing</a></b>. В
+      него се съдържат 2 основни програми - <b>ip</b> и <b>tc</b>. Първата
+      служи за манипулация на интерфейси <b>routing</b>-таблици и т.н., а
+      втората - за <b>traffic control</b>. За първата има дълго и подробно
+      ръководство в пакета, а за втората е в процес на разработка. Тук ще
+      опиша, доколкото ми е възможно, и двете команди.
+    </p>
+    <h5>
+       <b>Манипулация на интерфейси</b>
+    </h5>
+    &nbsp;&nbsp;&nbsp; С командата <b>ip</b> могат да се модифицират следните типове обекти:
+    <b>link</b> (модификации на параметрите на интерфейсите), <b>route</b>
+    (модификации на <b>routing</b>-таблицата), <b>rule</b> (разширения на <b>
+    routing</b>-таблицата с правила), <b>address</b> (задаване на адреси на
+    интерфейсите), <b>maddress</b> (<b>multicast</b> адреси), <b>mroute</b>
+    (<b>multicast routing</b>), <b>tunnel</b> (създаване на тунели, като
+    например IPv6-in-IPv4), <b>neighbour</b> (ARP-таблица). Лесно се забелязва,
+    че тази команда може да замени, ако не целия, то почти целия <b>
+    netbase</b>. <b>ip link</b> има следните команди: <b>ip link set</b> или
+    <b>ip link show</b> (по подразбиране). <b>ip link show</b> показва всички
+    интерфейси с техните параметри, а на <b>ip link set</b> могат да се подадат
+    следните параметри: 
+    <table width="100%" border="">
+      <tbody><tr>
+        <td>
+          <i>dev &lt;device&gt;</i>
+        </td>
+        <td>
+          интерфейс за манипулация
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>up</i> или <i>down</i>
+        </td>
+        <td>
+          дали е <b>up</b> (т.е. работещ) или <b>down</b> (т.е. не)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>arp &lt;on</i> или <i>off&gt;</i>
+        </td>
+        <td>
+          дали интерфейсът да използва ARP или не (резулатът от <b>ip link set
+          arp off dev xxx</b>, ако интерфейсът е <b>up</b> може да бъде много
+          неприятен)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>multicase &lt;on</i> или <i>off&gt;</i>
+        </td>
+        <td>
+          <b>multicast</b> поддръжка на интерфейса
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>name &lt;name&gt;</i>
+        </td>
+        <td>
+          сменя името на интерфейса (от <b>eth0</b> на <b>xxx0</b> например)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>txqueuelen &lt;ADDRESS&gt;</i>
+        </td>
+        <td>
+          големина на <b>transmit</b>-опашката
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>mtu &lt;mtu&gt;</i>
+        </td>
+        <td>
+          сменя MTU-то (<b>Maximum Transmit Unit</b>) на интерфейса
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>address &lt;ADDRESS&gt;</i>
+        </td>
+        <td>
+          сменя <b>link-layer</b>-адреса (т.е. <b>ethernet</b>-адреса)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>broadcast</i> или <i>brd</i> или <i>peer</i> &lt;ADDRESS&gt;
+        </td>
+        <td>
+          сменя <b>broadcast</b> или <b>point-to-pointlink-layer</b>-адреса на
+          интерфейса.
+        </td>
+      </tr>
+    </tbody></table>
+    &nbsp;&nbsp;&nbsp; Също така на <b>ip link show</b> може да бъде подадена опция
+    "<b>-statistics</b>", която да изведе статистика за интерфейса. 
+    <p>
+       &nbsp;&nbsp;&nbsp; Този пример за използването на <b>ip link</b> конфигурира <b>
+      eth0</b> с адрес 2.3.4.5, да използва ARP и да включи интерфейса.
+    </p>
+    <blockquote>
+      <i>ip link set dev eth0 address 2.3.4.5<br>
+       ip link set dev eth0 arp on<br>
+       ip link set dev eth0 up</i>
+    </blockquote>
+    &nbsp;&nbsp;&nbsp; Този ред пък увеличава <b>transmit</b>-опашката на <b>
+    ppp0</b>-интерфейса, правейки го като <b>ethernet</b> - удобно е за <b>
+    ppp-on-ethernet</b> връзки, за да се използва пълноценно преносната среда. 
+    <blockquote>
+      <i> ip link set dev ppp0 txqueuelen 100</i>
+    </blockquote>
+    &nbsp;&nbsp;&nbsp; На <b>ip route</b> могат да се подават следните команди: <b>add</b>,
+    <b>change</b>, <b>replace</b>, <b>delete</b>, <b>show</b>, <b>flush</b> и
+    <b>get</b>. 
+    <p>
+       &nbsp;&nbsp;&nbsp; &lt;[ <b><font color="#ff0000">* <u>Кратка забележка:</u></font> В
+      linux-2.2.x типовете entry-та на</b> routing-таблица са следните:
+    </p>
+    <table width="100%" border="">
+      <tbody><tr>
+        <td>
+          <i>unicast</i>
+        </td>
+        <td>
+          описва истински път до определено място
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>unreachable</i>
+        </td>
+        <td>
+          адресът е недостъпен, връща се ICMP съобщение "<b>host
+          unreachable</b>", програмата, изпратила пакета, получава грешка <b>
+          EHOSTUNREACH</b>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>blackhole</i>
+        </td>
+        <td>
+          адресът е недостъпен, не се връща ICMP съобщение, програмата,
+          изпратила пакета, получава грешка <b>EINVAL</b>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>prohibit</i>
+        </td>
+        <td>
+          адресът е недостъпен, връща се ICMP съобщение "<b>communication
+          administratively prohibited</b>", програмата, генерирала пакета,
+          получава грешка <b>EACCES</b>.&nbsp;
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>local</i>
+        </td>
+        <td>
+          локален, всички пакети се връщат в локалната машина.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>broadcast</i>
+        </td>
+        <td>
+          адресът е <b>broadcast</b>-адрес, пакетите се пращат като <b>link
+          broadcast</b>-ове.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>throw</i>
+        </td>
+        <td>
+          специален тип, използван с <b>policy rules</b>. Ако при <b>
+          lookup</b> на таблицата се избере подобен път, <b>lookup</b>-ът се
+          прекратява, като се казва, че няма подобен <b>route</b> в тая таблица
+          (ако <b>lookup</b>-ът се прави с <b>policy</b>, а ако не е
+          еквивалентно на липсата на <b>route</b> и се връща ICMP събщение
+          "<b>netork unreachable</b>", а програмата изпратила пакета - грешка
+          <b>ENETUNREACH</b>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>nat</i>
+        </td>
+        <td>
+          т.нар. "<b>Network Address Translation</b>", всички пакети с такъв
+          <b>source</b> се маскират през адреса подаден с параметъра <b>
+          via</b>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>anycast</i>
+        </td>
+        <td>
+          не е написан.....
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>multicast</i>
+        </td>
+        <td>
+          специален тип, използван в <b>multicast routing</b>-а. Не се среща в
+          нормалните <b>routing</b>-таблици.
+        </td>
+      </tr>
+    </tbody></table>
+    ]&gt; 
+    <p>
+       <b>ip route add</b>, <b>change</b> и <b>replace</b> поддържат следните
+      опции:
+    </p>
+    <table width="100%" border="">
+      <tbody><tr>
+        <td>
+          <i>to &lt;PREFIX&gt;</i> или&nbsp;<i>to &lt;TYPE&gt; &lt;PREFIX&gt;</i>
+        </td>
+        <td>
+          Отсрещна точка. Ако TYPE не е зададен, <b>ip</b> подразбира тип <b>
+          unicast</b>. <b>PREFIX</b> е IP или IPv6 адрес с опционална <b>
+          netmask</b>-а. Също така има един специален <b>PREFIX</b> -
+          "<b>default</b>", който е еквивалентен в IPv4 на "0/0" или на
+          "<b>::/0</b>"в IPv6.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>tos &lt;TOS&gt;</i> или <i>dsfield &lt;TOS&gt;</i>
+        </td>
+        <td>
+          <b>Type of Service</b> (ToS, Тип на услугата). Използва се, за да
+          могат да се използват различни пътища за пакети с различни ToS
+          полета.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>metric &lt;NUMBER&gt;</i> или <i>preference &lt;NUMBER&gt;</i>
+        </td>
+        <td>
+          Приоритет/дължина на <b>route</b>. <b>NUMBER</b> е нормално 32-битово
+          число.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>table &lt;TABLEID&gt;</i>
+        </td>
+        <td>
+          Таблица в която да се включи този <b>route</b>. <b>TABLEID</b> може
+          да е е число или стринг, указващ файл в /etc/iproute2/rt_tables. Ако
+          този параметър го няма, <b>ip</b> подразбира таблицата <b>main</b>, с
+          изключение на таблица <b>local</b>, <b>broadcast</b> и <b>nat</b> <b>
+          route</b>-овете, в които влиза по подразбиране в таблицата <b>
+          local</b>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>dev &lt;NAME&gt;</i>
+        </td>
+        <td>
+          име на изходното устройство.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>via &lt;ADDRESS&gt;</i>
+        </td>
+        <td>
+          адреса на следващия <b>router</b>. Фактически, значението зависи от
+          типа <b>route</b>. За нормални <b>unicast route</b>-ове или чистия
+          следващ <b>router</b>, или адреса на интерфейс, през който да се
+          прати, ако е адрес инсталиран в BSD. За <b>NAT route</b>-ове това е
+          адреса на маскиране на минаващите връзки.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>src &lt;ADDRESS&gt;</i>
+        </td>
+        <td>
+          Изходен адрес, от който да се пращат пакетите, попадащи в това <b>
+          routing</b> правило.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>realm &lt;REALMID&gt;</i>
+        </td>
+        <td>
+          <b>realm</b>, в който попада този <b>route</b>. <b>REALMID</b> може
+          да е число или стринг от файла /etc/iproute2/rt_realms.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>mtu &lt;MTU&gt;</i> или <i>mtu lock &lt;MTU&gt;</i>
+        </td>
+        <td>
+          MTU-то по пътя до отсрещния адрес. Ако не се използва lock, MTU-то
+          може да променя от <b>kernel</b>-а с <b>Path MTU Discovery</b>. Ако
+          се използва <b>lock</b>, няма да се използва <b>Path MTU
+          Discovery</b>. Всички пакети ще се изпращат без <b>DF</b>-бита в IPv4
+          случая или <b>fragmented</b>-бита за IPv6.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>window &lt;NUMBER&gt;</i>
+        </td>
+        <td>
+          маклималният TCP прозорец за позволяване до тези места в байтове.
+          Ограничава максималния поток от данни, които могат да бъдат пратени
+          до хоста по TCP.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>rtt &lt;NUMBER&gt;</i>
+        </td>
+        <td>
+          началното RTT (<b>Round Trip Time</b>). 
+          <p>
+             &lt;[ <b><font color="#ff0000">* <u> Бележка:</u>Всъщност, в
+            Linux-2.2.x (и 2.0.x) то не е точно RTT, а timeout-а при начало на
+            TCP връзка. Kernel-а спира да го използва при първия получен
+            валиден ACK. ]&gt;</font></b>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>nexthop &lt;NEXTHOP&gt;</i>
+        </td>
+        <td>
+          Следващият <b>hop</b> на <b>multipath route</b>. <b>NEXTHOP</b> е
+          комплексна стойност със синтаксис подобен на този на останалите
+          параметри от типа на <b>add</b>:&nbsp; &nbsp; 
+          <table width="100%" border="">
+            <tbody><tr>
+              <td>
+                <i>via &lt;ADDRESS&gt;</i>
+              </td>
+              <td>
+                следващият <b>router</b>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i>dev &lt;NAME&gt;</i>
+              </td>
+              <td>
+                &gt;устройството
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i>weight &lt;NUMBER&gt;</i>
+              </td>
+              <td>
+                "тежестта" или "стойността" на този <b>route</b> в <b>
+                multipath</b>-а, базирана на скоростта или качеството.
+              </td>
+            </tr>
+          </tbody></table>
+          &nbsp;
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>scope &lt;SCOPE_VAL&gt;</i>
+        </td>
+        <td>
+          обхват (<b>scope</b>) от цели покривани от <b>route</b>-префикса. <b>
+          SCOPE_VAL</b> може да е число или стринг от файла
+          /etc/iproute2/rt_scopes. Ако този параметър се пропусне, <b>ip</b>
+          приема обхвата <b>global</b> за всички <b>unicast route</b>-ове,
+          минаващи през <b>gateway</b>-а, обхвата <b>link</b> за директни <b>
+          unicast route</b>-ве и <b>broadcast</b>-и, както и обхват <b>
+          host</b> за локалните <b>route</b>-ове.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>protocol &lt;RTPROTO&gt;</i>
+        </td>
+        <td>
+          "routing"-протокол за този "route". RTPROTO може да е число или
+          стринг от файла "/etc/iproute2/rt_protos". Ако не зададен такъв, "ip"
+          приема протокол "boot" (т.е. такъв, добавен от някой, който не знае
+          к'во прави). Няколко такива стойности имат фиксирано значение:&nbsp; &nbsp; 
+          <table width="100%" border="">
+            <tbody><tr>
+              <td>
+                <i>redirect</i>
+              </td>
+              <td>
+                <b>route</b>, инсталиран от "<b>ICMP redirect</b>".
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i>kernel</i>
+              </td>
+              <td>
+                <b>route</b>, иснталиран от <b>kernel</b>-а по време на
+                автоматичната конфигурация.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i>boot</i>
+              </td>
+              <td>
+                <b>route</b>, инсталиран по време на <b>boot</b>-а. Ако бъде
+                стартиран <b>routing daemon</b>, той би ги изтрил.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i>static</i>
+              </td>
+              <td>
+                <b>route</b>, инсталиран от администратора, за да прескочи
+                динамичния <b>routing</b>. <b>Routing daemon</b>-а може би няма
+                да ги закача и, може би, дори ще ги, препоръча на съседите си.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i>ra</i>
+              </td>
+              <td>
+                <b>route</b>, инсталиран от "<b>Router Discovery Protocol</b>".
+              </td>
+            </tr>
+          </tbody></table>
+          Останалите стойности не са резервирани и администратора може да ги
+          задава за различни протоколи. Най-малко, <b>routing daemon</b>-ите
+          трябва да се погрижат да използват уникалниза системата възможности,
+          като тези в <b>rtnetlink.h</b> или <b>rt_protos</b>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>online</i>
+        </td>
+        <td>
+          казва, че следващия <b>hop</b> е директно свързан за тази връзка,
+          даже и ако не пасва на който и да е интерфейс.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>equalize</i>
+        </td>
+        <td>
+          Позволява изравняване по произволен начин по <b>multipath routes</b>.
+          Без тази опция <b>route</b> ще бъде определен до един следващ <b>
+          hop</b>, така че разделянето на трафика ще се получава само на база
+          трафик. <b>equalize</b> работи само на <b>patch</b>-нати <b>
+          kernel</b>-и. (?)
+        </td>
+      </tr>
+    </tbody></table>
+    <b><u>Примери:</u></b> 
+    <p>
+       &nbsp;&nbsp;&nbsp; Тук имаме машина с две мрежови карти, която има три адреса:
+      192.168.1.1 на <b>eth1</b>, и 192.168.0.4 и 193.200.17.103 на <b>
+      eth0</b>. Това е <b>Samba server</b> на мрежата и, когато осъществява
+      връзки до 192.168.x.x използва 192.168.x.x адресите си, а се свързва към
+      реални адреси, използва реалния си адрес. Също така има два хоста, за
+      които минава през друг <b>router</b> (193.200.17.98), а не през главния
+      си (193.200.17.97), както и три машини, които са и на <b>LAN</b>-а:
+    </p>
+    <blockquote>
+      ip route add 192.168.0.0/24 dev eth0 srv 192.168.0.4<br>
+       ip route add 192.168.1.0/24 dev eth1<br>
+       ip route add 193.200.17.97 dev eth0 src 193.200.17.103 onlink<br>
+       ip route add 193.200.17.101 dev eth0 src 193.200.17.103 onlink<br>
+       ip route add 193.200.17.98 dev eth0 src 193.200.17.103 onlink<br>
+       ip route add 193.200.17.105 via 193.200.17.98 src 193.200.17.103<br>
+       ip route add 193.200.17.102 via 193.200.17.98 src 193.200.17.103<br>
+       ip route add default via 193.200.17.97 src 193.200.17.103
+    </blockquote>
+    &nbsp;&nbsp;&nbsp; Тук <b>defaultroute</b> се разделя между <b>ppp0</b> и <b>ppp1</b>
+    поравно, т.е. прави се балансиране на натоварването (<b>load
+    balancing</b>): 
+    <blockquote>
+      <i> ip route add default scope global nexthop dev ppp0 nexthop dev
+      ppp1</i>
+    </blockquote>
+    &nbsp;&nbsp;&nbsp; Тук се постига същото като в горния пример, но се използва по-добрия
+    начин - с IP адреси, защото имената на интерфейсите са динамични, и се
+    използва изравняване: 
+    <blockquote>
+      <i> ip route add defaulte equalize scope global nexthop via 193.200.17.98
+      nexthop via 193.200.17.99</i>
+    </blockquote>
+    <b>ip route delete</b> има подобни опции като <b>ip route add</b>, с тази
+    разлика, че се изтрива <b>route</b>, който има същите опции, като тези
+    подадени на командата, като обачене е задължително да се подадат докрай
+    всички опции за този <b>route</b>, ако няма подобни на него в <b>
+    routing</b>-таблицата. 
+    <p>
+       <b>ip route show</b> също така има подобни опции, но с него се извеждат
+      <b>route</b>-овете, които имат подобни параметри.
+    </p>
+    <p>
+       &nbsp;&nbsp;&nbsp; Ето един пример:
+    </p>
+    <blockquote>
+      <i> eosnw:~# ip route show 193.200.17.97 dev eth0 scope link
+      193.200.17.98 dev eth0 scope link 193.200.17.101 dev eth0 scope link
+      193.200.17.102 via 193.200.17.98 dev eth0 src 193.200.17.103
+      193.200.17.105 via 193.200.17.98 dev eth0 src 193.200.17.103
+      192.168.1.0/24 dev eth1 proto kernel scope link src 192.168.1.1
+      192.168.0.0/24 dev eth0 proto kernel scope link src 192.168.0.4 default
+      via 193.200.17.97 dev eth0 src 193.200.17.103</i>
+    </blockquote>
+    &nbsp;&nbsp;&nbsp; Тук <b>route</b>-овете до 192.168.x.x са добавени от <b>kernel</b>-а,
+    защото <b>ifconfig</b> при 2.2.x <b>kernel</b>-и автоматично добавя <b>
+    route</b> към <b>address/netmask</b> през този интерфейс. 
+    <p>
+       <b>ip route flush</b> пък се различава от <b>ip route show</b> само по
+      това, че изтрива всички <b>route</b>-ове, които имат такива параметри
+      като зададените на командата.
+    </p>
+    <p>
+       <b>ip route get</b> пък проверява през кой <b>route</b> ще мине пакет
+      със свойства като тези, зададени на командата. (<font color="#ff0000">*
+      <u> Внимание!</u> Това не е точно <b>ip route show</b> - при <b>rules</b>
+      и т.н. резултатът може да е различен. <b>ip route get</b> повтаря
+      действията на <b>kernel</b>-а при <b>lookup</b> в <b>
+      routing</b>-таблиците.).</font>
+    </p>
+    <p>
+       <b>ip rule</b> позволява да се задават правила, на база на които да се
+      прави <b>lookup</b> в други <b>routing</b>-таблици - по този начин може
+      да се прави <b>routing</b>, базиран не само на адреса на целта, но и на
+      база на изходния адрес, на <b>ToS</b>, на входен интерфейс. <b>ip
+      rule</b> има няколко възможни команди: <b>add</b>, <b>delete</b> и <b>
+      show</b>.
+    </p>
+    <p>
+       &nbsp;&nbsp;&nbsp; Тези правила могат да бъдат следните типове: &nbsp;
+    </p>
+    <table width="100%" border="">
+      <tbody><tr>
+        <td>
+          <i>unicast</i>
+        </td>
+        <td>
+          Връща <b>route</b> от <b>routing</b>-таблицата, към която сочи
+          правилото.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>blackhole</i>
+        </td>
+        <td>
+          Дропва пакетите директно.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>unreachable</i>
+        </td>
+        <td>
+          Връща грешка "Network is unreachable".
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>prohibit</i>
+        </td>
+        <td>
+          Връща грешка "Communication is administratively prohibited".
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>nat</i>
+        </td>
+        <td>
+          Правилото транслира изходния адрес.
+        </td>
+      </tr>
+    </tbody></table>
+    <b>ip rule add</b> има следните опции: &nbsp; 
+    <table width="100%" border="">
+      <tbody><tr>
+        <td>
+          <i>type &lt;TYPE&gt;</i>
+        </td>
+        <td>
+          (по подразбиране) тип на правилото.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>from &lt;PREFIX&gt;</i>
+        </td>
+        <td>
+          изходен адрес на пакета.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>to &lt;PREFIX&gt;</i>
+        </td>
+        <td>
+          адрес на целта на пакета.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>iif &lt;NAME&gt;</i>
+        </td>
+        <td>
+          избира входен интерфейс. Ако интерфейса е <b>loopback</b>-а,
+          правилото обхваща само пакети, изпратени от този хост. По този начин
+          могат да се направят <b>routing</b>-таблици за пакети, изпратени от
+          хоста и за пренасочени пакети и така да се разделят изцяло двата
+          трафика.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>tos &lt;TOS&gt;</i> или&nbsp;<i>dsfield &lt;TOS&gt;</i>
+        </td>
+        <td>
+          самообясняващо се.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>fwmark &lt;MARK&gt;</i>
+        </td>
+        <td>
+          за какъв <b>fwmark</b> да се отнася. 
+          <p>
+             &lt;[ <b><font color="#ff0000">* <u> Бележка:</u></font>fwmark</b>
+            в възможност с <b>ipchains</b> на определени пакети да се поставя
+            т.нар. <b>fwmark</b>, т.е. да се прави <b>routing</b> на базата на
+            <b>ipchains</b> правила .... ]&gt;
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>priority &lt;PREFERENCE&gt;</i>
+        </td>
+        <td>
+          приоритет на правилото. Всяко правило би трябвало да има уникален
+          зададен приоритет. 
+          <p>
+             &lt;[ <b><font color="#ff0000">* <u> Бележка:</u></font></b>
+            Всъщност, по исторически причини <b>ip rule add</b> не изисква
+            никакъв приоритет. Ако потребителят не зададе никакъв приоритет,
+            <b>kernel</b>-а му избирасамо, а ако зададе с такъв приоритет,
+            който не съществува, го поставя преди всички по-стари правила със
+            същия приоритет. Както казва Кузнецов: "<b>It is mistake in design,
+            not more. And it will be fixed one day, so that do not rely on this
+            feature, use explicit priorities.</b>". ]&gt;
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>table &lt;TABLEID&gt;</i>
+        </td>
+        <td>
+          <b>routing</b>-таблица, в която да се прави <b>lookup</b>, ако
+          пакетът отговаря на правилото.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>realms &lt;FROM/TO&gt;</i>
+        </td>
+        <td>
+          <b>realm</b>-ове, които да се използват, ако пакетът отговаря на
+          правилото.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>nat &lt;ADDRESS&gt;</i>
+        </td>
+        <td>
+          База на блок от IP адреси за транслиране на изходния адрес. <b>
+          ADDRESS</b> може да е или началото на блок от IP-адреси, избрани от
+          <b>NAT route</b>-ове, или локален адрес (или дори нула). В последния
+          случай <b>router</b>-а не ги транслира, а ги маскира с този адрес.
+        </td>
+      </tr>
+    </tbody></table>
+    <b><u>Примери:</u></b> 
+    <p>
+       &nbsp;&nbsp;&nbsp; Това <b>routе</b>-ира всичко от 192.203.80.0/24 през правилата на
+      таблица 13:
+    </p>
+    <blockquote>
+      <i> ip rule add from 192.203.80.0/24 table 13 prio 220</i>
+    </blockquote>
+    &nbsp;&nbsp;&nbsp; Това дропва всички пакети получени през <b>eth0</b> от адреси
+    192.168.1.0/24: 
+    <blockquote>
+      <i> ip rule add iif eth0 from 192.168.1.0/24 type blackhole prio 100</i>
+    </blockquote>
+    &nbsp;&nbsp;&nbsp; Това изтрива предишното правило: 
+    <blockquote>
+      <i> ip rule del iif eth0 prio 100</i>
+    </blockquote>
+    &nbsp;&nbsp;&nbsp; С <b>ip rule show</b> се показва списък на правилата, дефинирани в
+    момента. 
+    <p>
+       <b><u>Пример:</u></b>
+    </p>
+    <blockquote>
+      <i> eosnw:~# ip rule show0: from all lookup local100: from 192.168.1.0/0
+      \<br>
+       iif eth0 lookup main blackhole32766: from all lookup main32767: from all
+      \<br>
+       lookup 253</i>
+    </blockquote>
+    <b>ip address</b> позволява добавяне/премахване на адрес от интерфейс -
+    това е, което позволяваше <b>ip aliasing</b>-а, но в много по-добър вид.
+    Сега може да имате 10000 <b>vhosta</b>-а на машината си без нито един
+    виртуален интерфейс. Командата има 4 възможни подкоманди: <b>add</b>, <b>
+    delete</b>, <b>show</b> и <b>flush</b>. 
+    <p>
+       <b>ip address add/delete</b> имат следните параметри: &nbsp;
+    </p>
+    <table width="100%" border="">
+      <tbody><tr>
+        <td>
+          <i>dev &lt;NAME&gt;</i>
+        </td>
+        <td>
+          устройство, на което да бъде добавен адреса.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>local &lt;ADDRESS&gt;</i>
+        </td>
+        <td>
+          (по подразбиране) адрес на интерфейса. Форматът му зависи от това,
+          дали е IPv4 или IPv6, и се записва по стандартните за тях начини. <b>
+          ADDRESS</b> може да бъде следвано от "/" и число, което да задава
+          директно цяла мрежа адреси на интерфейса.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>peer &lt;ADDRESS&gt;</i>
+        </td>
+        <td>
+          адрес на отсрещната точка. Пак както и при <b>local</b>, може да се
+          използва "/" и число, определящи <b>netmask</b>-ата на адреса. Ако се
+          задава такъв адрес, локалния адрес не може да има "/xx".
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>broadcast &lt;ADDRESS&gt;</i>
+        </td>
+        <td>
+          <b>broadcast</b>-адрес за интерфейса. Възможно е да се използват "+"
+          и "-" вместо самия адрес. В този случай, <b>broadcast</b>-адреса се
+          смята, като се слагат/нулират битовете в <b>host</b>-частта на
+          интерфейсния адрес.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>label &lt;NAME&gt;</i>
+        </td>
+        <td>
+          На всеки адрес може да се определя отделно устройство. За да се
+          поддържа съжместимостта с <b>alias</b>-ите на <b>linux</b> 2.0.x,
+          този стринг трябва да съвпада с името на интерфейса или да бъде името
+          на интерфейса, следвано от ":" и номер.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>scope &lt;SCOPE_VALUE&gt;</i>
+        </td>
+        <td>
+          обхват (<b>scope</b>) на зоната, в която този адрес е валиден.
+          Възможните обхвати са записани във файла /etc/iproute2/rt_scopes.
+          Специални такива стойности са:&nbsp; &nbsp; 
+          <table width="100%" border="">
+            <tbody><tr>
+              <td>
+                <i>global</i>
+              </td>
+              <td>
+                адресът е глобално валиден.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i>site</i>
+              </td>
+              <td>
+                (само за IPv6) Валиден е само в този сайт.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i>link</i>
+              </td>
+              <td>
+                Валиден е само за това устройство.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i>host</i>
+              </td>
+              <td>
+                Валиден е само за този хост.
+              </td>
+            </tr>
+          </tbody></table>
+          &nbsp;
+        </td>
+      </tr>
+    </tbody></table>
+    <p>
+       <b><u>Примери:</u></b>
+    </p>
+    <p>
+       &nbsp;&nbsp;&nbsp; Тук например се създават три логически мрежи върху една физическа и
+      те могат да работят независимо една от друга, независимо да им се прави
+      <b>shaping</b> и <b>accounting</b> и т.н.:
+    </p>
+    <blockquote>
+      <i>ip address add 192.168.0.1 dev eth0<br>
+       ip address add 192.168.1.1 dev eth0<br>
+       ip address add 192.168.2.1 dev eth0<br>
+       ip route add 192.168.0.0/24 dev eth0 src 192.168.0.1<br>
+       ip route add 192.168.1.0/24 dev eth0 src 192.168.1.1<br>
+       ip route add 192.168.2.0/24 dev eth0 src 192.168.2.1</i>
+    </blockquote>
+    &nbsp;&nbsp;&nbsp; Това дава <b>primary</b>-адрес на <b>eth0</b> 194.12.235.195 и създава
+    <b>alias</b> <b>eth0:0</b> с адрес 194.12.235.199: 
+    <blockquote>
+      <i>ip address add 194.12.235.195 dev eth0<br>
+       ip address add 194.12.235.199 dev eth0 name eth0:0</i>
+    </blockquote>
+    <b>&nbsp;&nbsp;&nbsp; ip address show/flush</b> имат еднакви параметви, а се различават
+    само по това, че едната команда показва адресите, съответстващи на
+    критерия, подаден на командата, а другата ги изтрива. Възможните параметри
+    са: 
+    <table width="100%" border="">
+      <tbody><tr>
+        <td>
+          <i>dev &lt;NAME&gt;</i>
+        </td>
+        <td>
+          (по подразбиране) име на интерфейса.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>scope &lt;SCOPE_VAL&gt;</i>
+        </td>
+        <td>
+          само адресите в този обхват.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>to &lt;PREFIX&gt;</i>
+        </td>
+        <td>
+          само адреси съвпадащи с <b>PREFIX</b>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>label &lt;PATTERN&gt;</i>
+        </td>
+        <td>
+          само адреси, чието име съвпада с <b>PATTERN</b>. <b>PATTERN</b> е
+          нормален <b>shell</b>-ки модел ("<b>eth*</b>", "<b>eth1:?</b>" и
+          т.н.)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>dynamic</i> или<i>permanent</i>
+        </td>
+        <td>
+          (само за IPv6) само статични или динамични адреси.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>tentative</i>
+        </td>
+        <td>
+          (само за IPv6) само адреси, които не прминават през <b>duplicate
+          address</b> теста.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>deprecated</i>
+        </td>
+        <td>
+          (само за IPv6) само безсмислени (ненужни) адреси.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>primary</i> или<i>secondary</i>
+        </td>
+        <td>
+          само главни или вторични адреси.
+        </td>
+      </tr>
+    </tbody></table>
+    <b><u>Примери:</u></b> 
+    <p>
+       &nbsp;&nbsp;&nbsp; Така се виждат всички интерфейси:
+    </p>
+    <blockquote>
+      <i> eosnw:~# ip address show1: lo: &lt;LOOPBACK,UP&gt; mtu 3924 qdisc
+      noqueuelink/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00 inet
+      127.0.0.1/8 scope host lo2: teql0: &lt;NOARP&gt; mtu 1500 qdisc noop qlen
+      100 link/generic3: eth0: &lt;BROADCAST,MULTICAST,PROMISC,UP&gt; mtu 1500
+      qdisc pfifo_fast qlen 100link/ether 00:20:af:3c:07:f7 brd
+      ff:ff:ff:ff:ff:ff inet 192.168.0.4/24 brd 192.168.0.255 scope global
+      eth0inet 193.200.17.103/32 scope global eth04: eth1:
+      &lt;BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc pfifo_fast qlen
+      100link/ether 00:20:af:3c:08:0f brd ff:ff:ff:ff:ff:ff inet 192.168.1.1/24
+      brd 192.168.1.255 scope global eth1</i>
+    </blockquote>
+    &nbsp;&nbsp;&nbsp; А така само тези, които се казват "<b>eth*</b>": 
+    <blockquote>
+      <i> eosnw:~# ip address show label "eth*"3: eth0:
+      &lt;BROADCAST,MULTICAST,PROMISC,UP&gt; mtu 1500 qdisc pfifo_fast qlen
+      100link/ether 00:20:af:3c:07:f7 brd ff:ff:ff:ff:ff:ff inet 192.168.0.4/24
+      brd 192.168.0.255 scope global eth0 inet 193.200.17.103/32 scope global
+      eth04: eth1: &lt;BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc pfifo_fast
+      qlen 100 link/ether 00:20:af:3c:08:0f brd ff:ff:ff:ff:ff:ff inet
+      192.168.1.1/24 brd 192.168.1.255 scope global eth1</i>
+    </blockquote>
+    &nbsp;&nbsp;&nbsp; Друго, което може да се прави с командата komandata <b>ip</b>, е да се
+    създадат т.нар. "тунели". Например от типа IPv6-in-IPv4 (които позволяват
+    на мрежи/хостове, които имат пряка връзка с мрежи/хостове поддържащи само
+    IPv4, да ползват IPv6 като минават през друго място, което поддържа IPv6). 
+    <p>
+       &nbsp;&nbsp;&nbsp; С <b>ip tunnel</b> се манипулират тези т.нар. тунели. Тази команда
+      има следните подкоманди: <b>add</b>, <b>change</b>, <b>delete</b>, <b>
+      show</b>.
+    </p>
+    <p>
+       <b>ip tunnel add/change/delete</b> има следните опции:
+    </p>
+    <table width="100%" border="">
+      <tbody><tr>
+        <td>
+          <i>name &lt;NAME&gt;</i>
+        </td>
+        <td>
+          (по подразбиране) Задава име <b>NAME</b> на тунела.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>mode &lt;MODE&gt;</i>
+        </td>
+        <td>
+          Задава тип на тунела. За момента съществуващи са <b>ipip</b>, <b>
+          sit</b> и <b>gre</b>. 
+          <p>
+             &lt;[ <b><font color="#ff0000">* <u> Бележка:</u></font></b>
+            IPIP-тунелите са стандартна енкапсулация на пакет в пакет.
+            GRE-тунелите са прoизведение на CISCO, което е препоръчително да се
+            използва, ако отсрещната точка е CISCO рутер, а и този протокол
+            поддържа <b>multicast</b> вътре в самия тунел (а и все пак CISCO си
+            остават специалистите в тази област ;)) ]&gt;
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>remote &lt;ADDRESS&gt;</i>
+        </td>
+        <td>
+          Задава адрес на отсрещната точка в тунела.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>local &lt;ADDRESS&gt;</i>
+        </td>
+        <td>
+          Задава фиксиран изходен адрес на изпращаните през тунела пакети. Този
+          адрес трябва да бъде адрес на някой интерфейс на машината.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>ttl &lt;N&gt;</i>
+        </td>
+        <td>
+          Задава фиксирано TTL за тунелираните пакети. N е число от 1 до 255. 0
+          е специална стойност значеща, че пакетите не променят TTL-а си.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>tos &lt;T&gt; или</i> <i>dsfield &lt;T&gt;</i>
+        </td>
+        <td>
+          Задава фиксиран TOS &lt;T&gt; за тунелираните пакети. По подразбиране
+          не се променя.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>dev &lt;NAME&gt;</i>
+        </td>
+        <td>
+          Задължава тунела на ползва интерфейса <b>NAME</b>, така че пакетите
+          да не минават през други интерфейси, ако <b>routing</b>-а се промени.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          nopmtudisc
+        </td>
+        <td>
+          Маха <b>Path MTU Discovery</b>-то за тунела, което е включено по
+          подразбиране. Тази опция е несъвместима с фиксирания TTL: тунел с
+          фиксиран TTL винаги прави <b>Path MTU Discovery</b>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>key &lt;K&gt;</i>,<i>ikey &lt;K&gt;</i> и<i>okey &lt;K&gt;</i>
+        </td>
+        <td>
+          (само за GRE тунели) да използва 'keyed' GRE с ключ <b>K</b>. <b>
+          K</b> е или число, или IP адрес. Параметърът <b>key</b> задава ключа
+          за използване в двете посоки, а <b>ikey</b> и <b>okey</b> - съотверно
+          само за изходящи и само за входящи пакети.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>csum</i>,<i>icsum</i> и<i>ocsum</i>
+        </td>
+        <td>
+          (само за GRE тунели) <b>checksum</b>-проверка за тунелираните пакети.
+          <b>ocsum</b> проверява само изходящите пакети, а <b>icsum</b> - само
+          за входящите пакети. <b>csum</b> е еквивалентно на комбинацията от
+          двата флага <b>icsum</b> и <b>ocsum</b>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>seq</i>,<i>iseq</i> и<i>oseq</i>
+        </td>
+        <td>
+          (само за GRE тунели) Да "сериализира" пакетите. Тук пак <b>
+          oseq</b>/<b>iseq</b> включват тази опция съответно за входните и
+          изходните пакети. 
+          <p>
+             &lt;[ <b><font color="#ff0000">* <u> Бележка:</u></font> Според
+            Ал.Кузнецов, тази опция не работи или поне не е тествана. Не е и
+            известно как точно трябва да работи и за какво точно са мислели да
+            използват CISCO тази опция. ]&gt;</b>
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+    <b>&nbsp;&nbsp;&nbsp; ip tunnel show</b> показва съществуващите в момента тунели. 
+    <p>
+       &nbsp;&nbsp;&nbsp; &lt;[<i>Това по-надолу е произведение на Renegade в/у <b>traffic
+      control</b>-а</i> ]&gt;
+    </p>
+    <h5>
+       <b>"Traffic Control"</b>
+    </h5>
+    &nbsp;&nbsp;&nbsp; С това бих искал да хвърля малко светлина върху поддръжката на
+    "<b>Traffic Control</b>", и "<b>Quality of Service</b>" в кернелите 2.2.x. 
+    <p>
+       &nbsp;&nbsp;&nbsp; За да се компилира кернела с тая поддръжка, трябва да се компилират
+      в кернела, или като модули "<b>Class Based Queueing (CBQ)</b>",
+      "<b>Tocken Bucket Flow (TBF)</b>", "<b>Traffic Sharpers</b>", както и <b>
+      RED</b>. След това, необходима е <b>iproute2</b>, за да може да се
+      използват тия функции на кернела. Тя може да се свали от <a href="ftp://ftp.sunet.se/pub/Linux/ip-routing">
+      ftp://ftp.sunet.se/pub/Linux/ip-routing</a>. Принципът, на който работи
+      "<b>traffic control</b> (<b>tc</b>)", е следния: входящите пакети се
+      проверяват дали са за дадена точка, и, ако това е така, те се изпращат за
+      обработка на по-висок слой. В противен случай се гледа <b>
+      routing</b>-таблицата, за да се установи следващия <b>hop</b> за пакета.
+      Също така, по-високия слой също може да генерира трафик, който да кара
+      <b>forwarding agent</b> процесите да търсят следващия <b>hop</b>. Когато
+      това стане, <b>forwarding agent</b>-а слага дадения пакет към изходния
+      интерфейс за предаване. Именно тук <b>Linux Traffic Control</b>-а почва
+      да върши работа.
+    </p>
+    <p>
+       <b>Linux Traffic Control</b>-а е базиран на три основни блока:
+    </p>
+    <ul>
+      <li>
+        <b>Queueing</b>-дисциплина
+      </li>
+      <li>
+        Класове
+      </li>
+      <li>
+        Филтри
+      </li>
+    </ul>
+    1. <b>Queueing</b> (опашки) 
+    <p>
+       &nbsp;&nbsp;&nbsp; Всеки интерфейс има начин за обработване на опашките, асоциирани към
+      него. Най-простата е FIFO. Има няколко типа на <b>queueing</b>, които се
+      поддържат в момента:
+    </p>
+    <ul>
+      <li>
+        Class Based Queue
+      </li>
+      <li>
+        Token Bucket Flow
+      </li>
+      <li>
+        CSZ
+      </li>
+      <li>
+        First In First Out (FIFO)
+      </li>
+      <li>
+        Priority
+      </li>
+      <li>
+        TEQL
+      </li>
+      <li>
+        SFQ
+      </li>
+      <li>
+        ATM
+      </li>
+      <li>
+        RED
+      </li>
+    </ul>
+    &nbsp;&nbsp;&nbsp; Някои от тези дисциплини използват филтри, за да се квалифицират
+    пакетите в различни класове, и да ги обработват спрямо това. Това позволява
+    даден пакет да има приоритет над друг. Такива са например FIFO, CBQ. <b>
+    Queueing</b>-дисциплините и класовете са вързани едно с друго. Присъствието
+    на класове е фундаментална опция за <b>queueing</b>-дисциплината. Също
+    така, филтрите могат да бъдат комбинирани със <b>queueing</b>-дисциплини и
+    класове. 
+    <p>
+       2. Класове
+    </p>
+    <p>
+       &nbsp;&nbsp;&nbsp; Опашките и класовете са тясно свързани. Всеки клас има опашка.
+      Класовете се индетифицират спрямо <b>class ID</b> и <b>internal ID</b>.
+      <b>Class ID</b>-то се задава от потребителя, докато <b>internal ID</b>-то
+      се задава от <b>queueing</b>-дисциплината. <b>Class ID</b>-то има
+      структура "<b>major:minor</b>". <b>Major</b>-номера сочи инстанцията в
+      <b>queueing</b>-дисциплината, от която зависи. <b>Minor</b>-номера
+      идентифицира тоя клас в дадена дисциплина.
+    </p>
+    <p>
+       &nbsp;&nbsp;&nbsp; За повече подробности може да се види<i>
+      include/net/pkt_sched.h</i>.
+    </p>
+    <p>
+       "<b>tc</b> (<b>Traffic Controller</b>)"
+    </p>
+    <p>
+       <b>Traffic Controller</b> (<b>tc</b>) е потребителска програма, която е
+      грубо казано <b>frontend</b> към създаването и асоциирането на опашки към
+      дадени изходни интерфейси. Тя се използва за създаването на различни
+      видове опашки и асоцииране на класове към всяка от тези опашки. Също така
+      може да се използва за слагане на филтри базирани на <b>
+      routing</b>-таблицата, <b>u32</b>-класификаторите, както и
+      RSVP-класификаторите. Тя използва <b>netlink socket</b>-ите като
+      механизъм за комуникиране с мрежовите функции на кернела.
+    </p>
+    <p>
+       <b>tc</b> се използва по следния начин:
+    </p>
+    <blockquote>
+      <i> tc [-s[tatistics]] [-d[etails]] [-r[aw]] &lt; qdiscp | class | filter
+      &gt; { COMMAND | help }</i>
+    </blockquote>
+    , където: 
+    <table width="100%" border="">
+      <tbody><tr>
+        <td>
+          <i>-s[tatistics]</i>
+        </td>
+        <td>
+          статистика
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>-d[etails]</i>
+        </td>
+        <td>
+          детйлна информация
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>-r[aw]</i>
+        </td>
+        <td>
+          говори само за себе си
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>qdiscp</i>
+        </td>
+        <td>
+          <b>queueing</b>-дисциплина
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>class</i>
+        </td>
+        <td>
+          клас
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>filter</i>
+        </td>
+        <td>
+          филтър
+        </td>
+      </tr>
+    </tbody></table>
+    <p>
+       <b>Queuing</b>-дисциплина:
+    </p>
+    <p>
+       &nbsp;&nbsp;&nbsp; Синтаксиса за задаване на <b>queueing</b>-дисциплина е следния:
+    </p>
+    <blockquote>
+      <i>tc qdisc [ add | del | replace | change | get ] dev STRING [ handle
+      QHANDLE ] [ root | parent CLASSID ] [ estimator INTERVAL TIME_CONSTANT ]
+      [ [ QDISC_KIND ] [ help | OPTIONS ] ]<br>
+       tc qdisc show [ dev STRING ]</i>
+    </blockquote>
+    , където: 
+    <table width="100%" border="">
+      <tbody><tr>
+        <td>
+          <i>QDISC_KIND</i>
+        </td>
+        <td>
+          може да има стойност <b>pfifo</b>, <b>bfifo</b>, <b>tbf</b>, <b>
+          prio</b>, <b>cbq</b>, <b>red</b> или т.н., т.е. име на <b>
+          queueing</b>-дисциплината
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>hande</i>
+        </td>
+        <td>
+          уникален <b>handle</b>, даден на дадената дисциплина от създателя. Не
+          може да има две дисциплини с еднакъв <b>handle</b>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>root</i>
+        </td>
+        <td>
+          показва, че дадената дисциплина е <b>root</b> в <b>
+          sharing</b>-йерархията.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>parent</i>
+        </td>
+        <td>
+          показва родителя на дадената дисциплина.
+        </td>
+      </tr>
+    </tbody></table>
+    <p>
+       &nbsp;&nbsp;&nbsp; За да се създаде "<b>class based queue (CBQ)</b>":
+    </p>
+    <blockquote>
+      <i>tc qdisc [ add | del | replace | change | get ] dev STRING \<br>
+       cbq bandwidth BPS [ avpkt BYTES ] [ mpu BYTES ] [ cell BYTES ] [ ewma
+      LOG ]</i>
+    </blockquote>
+    , където: &nbsp; 
+    <table width="100%" border="">
+      <tbody><tr>
+        <td>
+          <i>bandwidth</i>
+        </td>
+        <td>
+          максимална скорост на дадения интерфейс
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>mpu</i>
+        </td>
+        <td>
+          минимални байтове, които да се изпращат в даден пакет
+        </td>
+      </tr>
+    </tbody></table>
+    <p>
+       <b><u> Пример:</u></b>
+    </p>
+    <p>
+       <i>&nbsp;&nbsp;&nbsp; tc qdisc add dev eth0 root handle 1: cbq bandwidth 10Mbit allot
+      1514 cell 8 avpkt 1000 mpu 64</i>
+    </p>
+    <p>
+       &nbsp;&nbsp;&nbsp; В дадения пример, <b>Class Based Queue (CBQ)</b> се създава и се
+      връзва към <b>eth0</b>. <b>handle</b>-ът е 1: (което е 1:0). Общата
+      възможна скорост е 10Mbit.
+    </p>
+    <p>
+       &nbsp;&nbsp;&nbsp; Класове:<br>
+       Синтаксисът за създаване на класове е следния:
+    </p>
+    <blockquote>
+      <i>tc class [ add | del | change | get ] dev STRING [ classid CLASSID ] [
+      root | parent CLASSID ] [ [ QDISC_KIND ] [ help | OPTIONS ] ]<br>
+       tc class show [ dev STRING ] [ root | parent CLASSID ]</i>
+    </blockquote>
+    , където: &nbsp; 
+    <table width="100%" border="">
+      <tbody><tr>
+        <td>
+          <i>QDISC_KIND</i>
+        </td>
+        <td>
+          QDISC_KIND може да бъде някоя от <b>queueing</b>-дисциплините, които
+          поддържат класове (<b>prio</b>, <b>cbq</b> и т.н.).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>classid</i>
+        </td>
+        <td>
+          представлява <b>handle</b>-ът, който е даден на тоя клас от
+          създателя.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>root</i>
+        </td>
+        <td>
+          показва, че тоя клас е <b>root</b>-клас в <b>sharing</b>-йерархията.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>parent</i>
+        </td>
+        <td>
+          показва <b>handle</b>-ът на родителя на дадената&nbsp; <b>
+          queueing</b>-дисциплина.
+        </td>
+      </tr>
+    </tbody></table>
+    <p>
+       3. <b>Class Based Queue</b>
+    </p>
+    <p>
+       &nbsp;&nbsp;&nbsp; За да се създаде CBQ, синтаксисът е следния:
+    </p>
+    <blockquote>
+      <i>cbq bandwidth BPS rate BPS maxburst PKTS [ avpkt BYTES ] \<br>
+       [ minburst PKTS ] [ bounded ] [ isolated ] \<br>
+       [ allot BYTES ] [ mpu BYTES ] [ weight RATE ] \<br>
+       [ prio NUMBER ] [ cell BYTES ] [ ewma LOG ] \<br>
+       [ estimator INTERVAL TIME_CONSTANT ] \<br>
+       [ split CLASSID ] [ defmap MASK/CHANGE ]</i>
+    </blockquote>
+    , където: 
+    <table width="100%" border="">
+      <tbody><tr>
+        <td>
+          <i>bandwidth</i>
+        </td>
+        <td>
+          показва максималната скорост, която е възможна за <b>
+          queueing</b>-дисциплината от тоя клас.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>rate</i>
+        </td>
+        <td>
+          представлява скоростта, която се дава на тоя клас.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>avpkt</i>
+        </td>
+        <td>
+          представлява средния брой байтове в пакет, за тоя клас.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>bounded</i>
+        </td>
+        <td>
+          показва, че тоя клас не може да "всзина назаем" неизползвана скорост
+          от "parent"-класа си.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i>isolated</i>
+        </td>
+        <td>
+          показва, че класа няма да дели скорост с някой друг клас.
+        </td>
+      </tr>
+    </tbody></table>
+    &nbsp;&nbsp;&nbsp; В дадения пример се създава <b>CBQ</b> клас с <b>handle</b> - 1:2.
+    Неговият родител се индентифицира с <b>handle</b> - 1:1. Средният размер на
+    пакета е 1000 байта. <b>Split</b>-точката е 1:0, което показва <b>
+    root</b>-а на <b>sharing</b>-процедурата. 
+    <blockquote>
+      <i>tc class add dev eth1 parent 1:1 classid 1:2 cbq bandwidth 10Mbit
+      \<br>
+       rate 1Mbit allot 1514 cell 8 weight 100Kbit prio 3 maxburst 20 \<br>
+       avpkt 1000 split 1:0 defmap c0</i>
+    </blockquote>
+    4. Филтри: 
+    <p>
+       Синтаксисът за създаване на филтри е:
+    </p>
+    <blockquote>
+      <i>tc filter [ add | del | change | get ] dev STRING \<br>
+       [ prio PRIO ] [ protocol PROTO ] [ root | classid CLASSID ] \<br>
+       [ handle FILTERID ] [ [ FILTER_TYPE ] [ help | OPTIONS ] ] \</i><br>
+       <i>tc filter show [ dev STRING ] [ root | parent CLASSID ]</i>
+    </blockquote>
+    , където: <b>FILTER_TYPE</b> е типа на филтъра (<b>rsvp</b>, <b>u32</b>,
+    <b>fw</b>, <b>route</b> и т.н.}, а форматът на <b>FILTERID</b> зависи от
+    класификатора. <b>prio</b> показва приоритет на дадения филтер. Останалите
+    опции бяха разгледани по-горе. 
+    <p>
+       <b>Route</b>-класификаторите класифицират пакетите спрямо <b>
+      routing</b>-таблицата. Синтаксисът е следния:
+    </p>
+    <blockquote>
+      <i>tc filter [add | del | change | get] dev STRING \<br>
+       [parent PARENTID] [protocol PROTO] [prio PRIORITY] route</i>
+    </blockquote>
+    , където: <b>PROTO</b> е <b>low-level</b> протокола {<b>ip</b>, <b>
+    icmp</b> или някой друг} 
+    <p>
+       &nbsp;&nbsp;&nbsp; Ето и един пример:
+    </p>
+    <blockquote>
+      <i> tc filter add dev eth0 parent 1:0 protocol ip prio 100 route</i>
+    </blockquote>
+    &nbsp;&nbsp;&nbsp; За да се зададат правила към филтъра: 
+    <blockquote>
+      <i> ip route add 129.237.125.150 via 129.237.125.146 dev eth0 flow
+      1:2</i>
+    </blockquote>
+    &nbsp;&nbsp;&nbsp; Тук се зададе правило за IP 129.237.125.150 с <b>Gateway</b>
+    129.237.125.146, като целия трафик принадлежи към клас, чийто <b>handle</b>
+    е 1:2. 
+    <p>
+       &nbsp;&nbsp;&nbsp; И най-накрая, след толкова изписани глупости, нека да разгледам един
+      реален пример:
+    </p>
+    <p>
+       &nbsp;&nbsp;&nbsp; Нека да имаме три компютъра: <i>computer1</i>, който е с IP
+      10.10.10.149. Нека средната големина на пакета да е 1000 байта. И да
+      имаме два класа: един за трафика към машината с IP 10.10.10.146
+      (<i>computer2</i>), и трафика към машината 10.10.10.148
+      (<i>computer3</i>). Т.е. с една дума, да се ограничи трафика на
+      машини<i>computer2</i> и<i>computer3</i>. Трафикът към<i>computer2</i> е
+      с по-висок приоритет от&nbsp; тоя към<i>computer3</i>. Към<i>computer2</i> се
+      пуска 1Mbps, а към<i> computer3</i> - 5Mbps.
+    </p>
+    <p>
+       На <i>computer1</i>:<br>
+       --------------
+    </p>
+    <blockquote>
+      # <b>Attach</b>-ваме <b>queueing</b>-дисциплина към eth0. (там са
+      вързани<br>
+       # другите две машини). Максималната възможна скорост е 10Mbps.<br>
+       <i>tc qdisc add dev eth0 root handle 1: cbq bandwidth 10Mbit \<br>
+       cell 8 avpkt 1000 mpu 64</i><br>
+       # Дефинираме <b>root</b>-класа. Той има 10Mbps.<br>
+       <i>tc class add dev eth0 parent 1:0 classid 1:1 cbq bandwidth 10Mbit
+      \<br>
+       rate 10MBit allot 1514 cell 8 weight 1Mbit prio 8 maxburst 20 \<br>
+       avpkt 1000</i><br>
+       # Трафик към computer2. Приоритетът е 3, а скоростта е 1Mbps.<br>
+       <i>tc class add dev eth0 parent 1:1 classid 1:2 cbq bandwidth 10Mbit
+      \<br>
+       rate 1Mbit allot 1514 cell 8 weight 100Kbit prio 3 maxburst 20 \<br>
+       avpkt 1000 split 1:0</i><br>
+       # Трафик към computer3. Приоритетът е 7, а скоростта е 5Mbps.<br>
+       <i>tc class add dev eth0 parent 1:1 classid 1:3 cbq bandwidth 10Mbit
+      \<br>
+       rate 5Mbit allot 1514 cell 8 weight 800Kbit prio 7 maxburst 20 \<br>
+       avpkt 1000 split 1:0</i><br>
+       # Слагаме <b>route</b> класификатора<br>
+       <i>tc filter add dev eth0 parent 1:0 protocol ip prio 100 route</i><br>
+       # Слагаме <b>route</b> и правила за computer2<br>
+       <i>ip route add 10.10.10.146 via 10.10.10.149 flow 1:2</i><br>
+       # Слагаме <b>route</b> и правила за computer3<br>
+       <i>ip route add 10.10.10.148 via 10.10.10.149 flow 1:3</i>
+    </blockquote>
+    <hr width="100%">
+    <div align="right">
+      <i> от <a href="mailto:maniax@phreedom.org">ManiaX</a>, Renegade
+      23:22:20, 10 Януари 2000</i>
+    </div>
+<center><a href="http://d.linux-bg.org/download/docs/sywet.htm"><img src="QoS%20Advanced%20Routing%20for%20Linux_files/left.htm" alt="back" border="0"></a>
+</center>
+  
+
+
+</body></html>

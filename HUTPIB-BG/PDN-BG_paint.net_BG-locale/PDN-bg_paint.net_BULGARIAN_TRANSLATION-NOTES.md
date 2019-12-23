@@ -19,12 +19,12 @@ https://forums.getpaint.net/applications/core/interface/file/attachment.php?id=3
 https://forums.getpaint.net/applications/core/interface/file/attachment.php?id=7804
 https://forums.getpaint.net/topic/1851-bulgarian-localization/?tab=comments#comment-11955
 
-За съжаление, не можах да \[намеря откъде да\] изтегля този файл, че да го тествам с по-стара версия
+За съжаление, не можах да \[намеря откъде да \] изтегля този файл, че да го тествам с по-стара версия
 на paint.net или с версиите v4+ на paint.net... Затова и правя този нов превод на български език,
 като от уважение към предишния преводач, ще включа и неговото име ( `nikolaijelev <?@?.com>` ) в списъка с българските преводачи
 на paint.net.
 
-`
+````
 https://forums.getpaint.net/topic/1851-bulgarian-localization/
 https://forums.getpaint.net/profile/45756-nikolaijelev/
 http://nikolaijelev.data.bg/p/files/Paint.Net_BG_%20Lang%20file
@@ -47,7 +47,7 @@ Location: Bulgaria/Kazanlak
 | [Paint.Net\_USB\_BG\_v 3.20](http://nikolaijelev.data.bg/p/files/Paint.Net_BG_ Lang file/Paint.Net_USB_BG_v 3.20) |
 | [Paint.Net\_USB\_BG\_v 3.30](http://nikolaijelev.data.bg/p/files/Paint.Net_BG_ Lang file/Paint.Net_USB_BG_v 3.30) |
 | [Paint.Net\_v3.5.4](http://nikolaijelev.data.bg/p/files/Paint.Net_BG_ Lang file/Paint.Net_v3.5.4) |
-`
+````
 
 2. На 11 април 2019 г. официално писах в уеб-форума на paint.net, че изявявам желание да преведа
 програмата на български език. Прекрасно съвпадение е, че основният програмист точно беше пуснал
@@ -76,15 +76,15 @@ https://www.getpaint.net/doc/latest/Translations.html
 ### Алтернативни варианти за превод на някои елементи от текстовите менюта на ГПИ
 * Някои твърде технически термини оставих непреведени на английски или ги преведох описателно (с включване в скоби на оригиналния текст на английски език).
 * Спорен беше преводът на думите `clipboard`, `select, select all, selection, deselect` и `crop`. Избрах да ги преведа по следния начин:
-* * select = *селектирам*, селектиране, избирам, маркирам
+* * select = *селектирам*, селектиране, избирам, маркирам 
 * * select all = *избиране на всичко*, избери всички, селектиране на всичко, селекция на всичко, маркиране на всички (7-ZIP)
-* * selection = *селекция*, избрана област \[от изображението/картинката/картината\], маркирана област
+* * selection = *селекция*, избрана област \[ от изображението/картинката/картината \], маркирана област
 * * deselect = „деселектирам“ (сравни с: деинсталирам = uninstall), *отмяна на селекцията*, отмяна на избраното / отмяна на избраната област, размаркирам, размаркирам избраното/избраната област/селекцията ...
 * * deselect all = размаркиране на всички (7-ZIP)
 * * invert selection = обръщане на избора (7-ZIP), обръщане на селекцията, обърни селекцията (IvoSoft ClassicShell)
 * * undo = отмяна, отменяне; отменяне, отмяна; отмени (MS Windows 7)
 * * redo = връщане, възстановяване
-* * crop = *подрязвам*, {НЕ отрязвам, cut = отрязвам (в буферната/системната памет - clipboard} (сравни с: `cut (от 4-те класики: cut, copy, paste, delete) = изрязвам`)
+* * crop = *подрязвам*, {НЕ отрязвам, сравни с cut = отрязвам (в буферната/системната памет - clipboard} (сравни с: `cut (от 4-те класики: cut, copy, paste, delete) = изрязвам`)
 * * bold = , italic/italics = , underline/underlining = , strike/strikethrough, blink = , marquee = 
 * * refresh = опресняване, обнови (MS Windows 7)
 * color picker = цветова пипетка (капкомер (за отброяване на капките), взимане на цвят)
@@ -103,9 +103,9 @@ https://www.getpaint.net/doc/latest/Translations.html
 * Auto-adjust(ment) = Автоматично наглася(ва)не на нивата
 * Artistic = Художествени/артистични
 * Blur = Замъглявания
-* Distort = 
+* Distort = Изкривяване (речник: DISTORT \[dis'tɔ:t\] 1. изопачавам, извращавам; 2. извъртам, изкривявам, разкривявам)
 * Noise = Визуален шум
-* Photo = Фото(графия)/Фотоси
+* Photo = Фотографски, Фото(графия)/Фотоси
 * Render = Рендиране/Графично изчертаване
 * Stylize = Стилизиране
 * More >> = Още >>, Повече >>
@@ -125,7 +125,10 @@ https://www.getpaint.net/doc/latest/Translations.html
 * Hide = скриване, скрий
 * Close (GUI) = затваряне, Затваряне, затвори, Затвори
 * 
-
+* LIP (Language Interface Pack)
+* MUI (Multi-User Interface / Multilingual User Interface...)
+* INS (Ins / Insert) = ВМК (вмъкване) {в интерфейса на програми текстови редактори}
+* OVR (Overwrite) = припокриващо се изтриващо вече написаното въвеждане на текст {в интерфейса на програми текстови редактори}
 * bookmark = отметка, добяване в „Любими“ (Фаворити), показалец
 * cursor = курсор, показалец, (посочващ маркер)
 * login = вход, влизане \[от системата на даден уебсайт\]
@@ -137,190 +140,3 @@ https://www.getpaint.net/doc/latest/Translations.html
 
 ======
 
-
-
-======
-[aria2/Aria2c](https://aria2.sourceforge.io/)[webui-aria2](https://github.com/ziahamza/webui-aria2)
-======
-Формат с изображения с тагове (TIFF)
- .tif и .tiff
-Портативни мрежови графики (PNG)
- .png
-Формат за обмен на графика (GIF)
- .gif
-Растерна графика
- .bmp и .dib
-======
-
-класицизъм
-Просвещението, романтизма, и отиде всичко по дяволите след 2010-те... ???
-======
----
-
-чорбаджии и сиромаси --- богати и бедни
-ратаи
-баце, бате...
-
-
----
-
-„сори, ама бати стана тати...“ -Криско :DDD
-
----
-
-flaps, levers, handles, GUI controls (GUI widgets), buttons...
-
----
-
-
-convention, norm, consensus reality
-
----
-
-======
-
-502 Bad Gateway
-nginx/1.2.1
-Apache, nginx, lighttpd, h18np-http-webserver?
-http://nikolaijelev.data.bg/p/files/Paint.Net_BG_%20Lang%20file
-
-https://www.docker.com/products/docker-desktop
-Относно бисквитките на този сайт
-
-„Бисквитките“ са важни за правилното функциониране на сайта. За да подобрим вашето преживяване, ние използваме „бисквитки“, за да запомним данните ви за влизане и да осигурим сигурно влизане, събираме статистически данни, за да оптимизираме функционалността на сайта и да предоставяме съобразено с вашите интереси съдържание. Щракнете върху Съгласен съм и продължавам, за да приемете „бисквитките“ и да преминете директно към сайта, или щракнете върху Преглед на настройките на „бисквитките“, за да видите подробни описания на видовете „бисквитки“ и да изберете дали да приемете определени „бисквитки“, докато сте в сайта.
- Приемане и продължаване
-Преглед на настройки за бисквитки »
-
-
-Политика за поверителност
-Поддържано от: Company logo for TrustArc
-
----
-https://id.docker.com/login/?next=%2Fid%2Foauth%2Fauthorize%2F%3Fclient_id%3D43f17c5f-9ba4-4f13-853d-9d0074e349a7%26next%3D%252F%253Foverlay%253Donboarding%26nonce%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiI0M2YxN2M1Zi05YmE0LTRmMTMtODUzZC05ZDAwNzRlMzQ5YTciLCJleHAiOjE1NzUzODYzODIsImlhdCI6MTU3NTM4NjA4MiwicmZwIjoielYzdHUzMGJGYUVldmw4ZTd5OTJxUT09IiwidGFyZ2V0X2xpbmtfdXJpIjoiLz9vdmVybGF5PW9uYm9hcmRpbmcifQ.z7fpWvDIos3CIN78qyZlkVq-Mil35UaTlRrN3I6tQYk%26redirect_uri%3Dhttps%253A%252F%252Fhub.docker.com%252Fsso%252Fcallback%26ref%3Dlogin%26response_type%3Dcode%26scope%3Dopenid%26state%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiI0M2YxN2M1Zi05YmE0LTRmMTMtODUzZC05ZDAwNzRlMzQ5YTciLCJleHAiOjE1NzUzODYzODIsImlhdCI6MTU3NTM4NjA4MiwicmZwIjoielYzdHUzMGJGYUVldmw4ZTd5OTJxUT09IiwidGFyZ2V0X2xpbmtfdXJpIjoiLz9vdmVybGF5PW9uYm9hcmRpbmcifQ.z7fpWvDIos3CIN78qyZlkVq-Mil35UaTlRrN3I6tQYk
----
-
-
-======
-
->>> ' The display names of Chinese cultures have changed to follow the naming convention LanguageName ([Script,] Country/RegionName). In the .NET Framework 4, the word "Legacy" has been appended to the zh-CHS and zh-CHT display names to differentiate them from zh-Hans and zh-Hant. zh, which was recently introduced into Windows, has "Chinese" as its display name.
-
-Microsoft .NET: the naming convention `LanguageName ([Script,] Country/RegionName)` + ve4ernik@gmail.com's email to bmanolov/BGlocalize... '
-
-======
-
-https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/dd997383(v=vs.100)?redirectedfrom=MSDN
-https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/8k5611at(v=vs.100)
-
-glyph (a specific instance of a single linguistic written character) -> aloglyph/alloglyph -> grapheme ~ letter / ideogram / logogram
-
-substring search, fulltext searching & fulltext indexing, ElasticSearch, ...
-
-======
-https://docs.microsoft.com/bg-bg/samples/azure-samples/cognitive-speech-tts/microsoft-speech-service-api-text-to-speech-samples/
-
-https://docs.microsoft.com/bg-bg/samples/microsoft/rockpaperscissorslizardspock/azure-rock-paper-scissors/
-
-https://visualstudio.microsoft.com/vs/
-
-======
-Page last modified on November 21, 2019 at 9:13 PM PST by chore(kubectl): Formatting markdown (#17697) (Page History)
-
-======
-
-KaliLinux
-Ubuntu/Linux Mint*, Debian/Devuan*, HypriotOS
-CentOS, RHEL (RedHat Enterprise Linux), Fedora Linux
-ArchLinux
-
----
-
----
-
-Top languages: Tcl/Tk (programming language), Shell, Python, C, Ruby
-
-fair-use.org
-
----
-curl-7.66.0_2-win64-mingw
----
-
----
-
-https://godoc.org/
-https://godoc.org/-/about
-
----
-https://docs.microsoft.com/bg-bg/samples/microsoft/rockpaperscissorslizardspock/azure-rock-paper-scissors/deploy/powershell/readme#Generate-Config
-https://github.com/Microsoft/Windows-universal-samples/archive/master.zip
-https://docs.microsoft.com/en-us/dotnet/api/system.reflection.module.getpekind?redirectedfrom=MSDN&view=netframework-4.8#System_Reflection_Module_GetPEKind_System_Reflection_PortableExecutableKinds__System_Reflection_ImageFileMachine__
-
-
----
-https://github.com/helm/helm
----
-social interactionism; symbolic interactionism
----
-## Community, discussion, contribution, and support
-
-You can reach the Helm community and developers via the following channels:
-
-*   [Kubernetes Slack](https://kubernetes.slack.com):
-    *   [#helm\-users](https://kubernetes.slack.com/messages/helm-users)
-    *   [#helm\-dev](https://kubernetes.slack.com/messages/helm-dev)
-    *   [#charts](https://kubernetes.slack.com/messages/charts)
-*   Mailing List:
-    *   [Helm Mailing List](https://lists.cncf.io/g/cncf-helm)
-*   Developer Call: Thursdays at 9:30\-10:00 Pacific. [https://zoom.us/j/696660622](https://zoom.us/j/696660622)
----
-
----
-From:   "Mike McHenry" 
-Subject: Rsync 2.3.1 WinNT binaries and instructions available
-Date:   Fri, 15 Oct 1999 02:53:30 +1000
-======
-
-bash 4.1+, zsh; uxterm, GNOME-terminal
-
-======
-
-'The [peculiar minimalistic & abbreviational nature of the modern] English language has become part of the (G)UI & UX... thus causing trouble for translators of CLI apps & computer software...' ~github.com/sahwar/
-
-======
-
-https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms230117(v=vs.100)
-https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/8477k21c(v=vs.100)
-
-Side-by-Side Execution
-    02/04/2013
-    4 minutes to read
-
-Side-by-side execution is the ability to run multiple versions of an application or component on the same computer. You can have multiple versions of the common language runtime, and multiple versions of applications and components that use a version of the runtime, on the same computer at the same time.
-
-https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/x3de234a%28v%3dvs.100%29
-https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/z5e12zb4(v=vs.100)
-
-https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164699%28v%3dvs.100%29https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms241064%28v%3dvs.100%29
-
-https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms754130(v=vs.100)Sub-pixel Rendering and Layout Rounding ~~~ paint.net 
-
-https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms745058%28v%3dvs.100%29
-
-https://docs.microsoft.com/bg-bg/samples/browse/?redirectedfrom=MSDN-samples
-
-https://docs.microsoft.com/bg-bg/samples/microsoft/windows-universal-samples/resizeappview/
-
-https://docs.microsoft.com/en-us/Samples/FullScreenMode
-
-
-Български
-    Документи на предишни версии Блог Сътрудничество Поверителност & Бисквитки Условия на използване Обратна връзка за сайт Търговски марки 
-Обучение за Azure с избрано от вас темпо
-Microsoft Speech Service API: Text-to-Speech Samples
-
-======
-
-mitigated the issue/problem...
-======
-WONTFIX
-NOTABUGBUTAFEATUREHAHAHA
-======

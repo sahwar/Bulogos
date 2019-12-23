@@ -1,0 +1,318 @@
+Section "ServerFlags"
+       Option   "AllowMouseOpenFail" "true"
+       Option   "DontZap"   "True"
+       Option   "DontVTSwitch"   "False"
+# Enable this so TV can be second display
+#       Option   "DefaultServerLayout" "GeForce_FX_5200_AGP_TV"
+# Enable this so TV can be extension to the display (xinerama)
+       Option   "DefaultServerLayout" "GeForce_FX_5200_Twinview_AGP_TV"
+Endsection
+
+Section "ServerLayout"
+       Identifier     "GeForce_FX_5200_AGP_TV"
+       Screen       0 "Screen0" 0 0
+       Screen       1 "Screen1" RightOf "Screen0"
+       InputDevice    "Mouse0" "CorePointer"
+       InputDevice    "Keyboard0" "CoreKeyboard"
+       Option         "Xinerama" "off"
+EndSection
+
+Section "ServerLayout"
+       Identifier     "GeForce_FX_5200_AGP"
+       Screen       0 "Screen0" 0 0
+       InputDevice    "Mouse0" "CorePointer"
+       InputDevice    "Keyboard0" "CoreKeyboard"
+       Option         "Xinerama" "off"
+EndSection
+
+Section "ServerLayout"
+       Identifier     "GeForce_FX_5200_Twinview_AGP_TV"
+       Screen      0  "Screen2" 0 0
+       Screen      1  "Screen3" 0 0
+       InputDevice    "Mouse0" "CorePointer"
+       InputDevice    "Keyboard0" "CoreKeyboard"
+       Option         "Xinerama" "off"
+EndSection
+
+Section "ServerLayout"
+       Identifier     "GeForce_FX_5200_Twinview_TV_AGP"
+       Screen       0 "Screen3" 0 0
+       InputDevice    "Mouse0" "CorePointer"
+       InputDevice    "Keyboard0" "CoreKeyboard"
+       Option         "Xinerama" "off"
+EndSection
+
+Section "ServerLayout"
+       Identifier     "GeForce_FX_5200_TV"
+       Screen       0 "Screen4" 0 0
+       InputDevice    "Mouse0" "CorePointer"
+       InputDevice    "Keyboard0" "CoreKeyboard"
+       Option         "Xinerama" "off"
+EndSection
+
+
+Section "Files"
+    RgbPath         "/usr/X11R6/lib/X11/rgb"
+
+    ModulePath      "/usr/X11R6/lib/modules"
+
+    FontPath        "/usr/X11R6/lib/X11/fonts/misc/"
+    FontPath        "/usr/X11R6/lib/X11/fonts/TTF/"
+    FontPath        "/usr/X11R6/lib/X11/fonts/Type1/"
+    FontPath        "/usr/X11R6/lib/X11/fonts/75dpi/"
+    FontPath        "/usr/X11R6/lib/X11/fonts/100dpi/"
+    FontPath        "/usr/X11R6/lib/X11/fonts/corefonts/type1/"
+    FontPath        "/usr/X11R6/lib/X11/fonts/corefonts/truetype/"
+    FontPath        "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/cp1251/75dpi"
+    FontPath        "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/cp1251/misc"
+    FontPath        "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-10646-1/75dpi"
+    FontPath        "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-10646-1/misc"
+    FontPath        "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-8859-5/75dpi"
+    FontPath        "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/iso-8859-5/misc"
+    FontPath        "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/koi8-r/75dpi"
+    FontPath        "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/bolkhov/koi8-r/misc"
+    FontPath        "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/cronyx/cp1251/100dpi"
+    FontPath        "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/cronyx/iso-10646-1/100dpi"
+    FontPath        "/usr/X11R6/lib/X11/fonts/corefonts/bitmap/misc/"
+    FontPath        "/usr/X11R6/lib/X11/fonts/cyrillic/"
+EndSection
+
+Section "Module"
+       Load  "dbe"
+       Load  "glx"
+       Load  "extmod"
+       Load  "fbdevhw"
+       Load  "record"
+       Load  "freetype"
+       Load  "bitmap"
+       Load  "type1"
+EndSection
+
+Section "Extensions"
+       Option "Composite" "Enable"
+EndSection
+
+Section "InputDevice"
+    Identifier     "Keyboard0"
+    Driver         "kbd"
+    Option         "XkbLayout" "us,bg"
+    Option         "XkbVariant" ",phonetic"
+    Option         "XKbOptions" "grp:alt_shift_toggle,grp_led:scroll"
+EndSection
+
+Section "InputDevice"
+    Identifier     "Mouse0"
+    Driver         "mouse"
+    Option         "Device" "/dev/input/mice"
+#    Option         "Device" "/dev/psaux"
+    Option         "Protocol" "IMPS/2"
+    Option         "ZAxisMapping" "4 5"
+EndSection
+
+Section "Monitor"
+       Identifier   "Belinea"
+       VendorName   "Belinea"
+       HorizSync    30.0-96.0
+       VertRefresh  50-180
+       Option       "dpms"
+EndSection
+
+Section "Monitor"
+       Identifier   "TV"
+       VendorName   "Philips"
+       ModelName    "TV"
+       HorizSync    30-50
+       VertRefresh  60
+       Option       "dpms"
+EndSection
+
+Section "Device"
+       Identifier   "GeForce FX 5200 AGP"
+       Driver       "nvidia"
+       Option       "UseEdidFreqs" "True"
+       VendorName   "GeForce FX 5200"
+       BoardName    "GeForce FX 5200"
+       BusID        "PCI:1:0:0"
+       Option       "NoLogo" "True"
+       Option       "TVOverScan" "1.0"
+       Option       "NvAGP" "3"
+       Option       "ConnectedMonitor" "crt"
+       Option       "RenderAccel" "true"
+       Screen 0
+EndSection
+
+Section "Device"
+       Identifier   "GeForce FX 5200 TV"
+       Driver       "nvidia"
+       Option       "UseEdidFreqs" "True"
+       VendorName   "GeForce FX 5200"
+       BoardName    "GeForce FX 5200"
+       BusID        "PCI:1:0:0"
+       Option       "NoLogo" "True"
+       Option       "TVOverScan" "1.0"
+       Option       "NvAGP" "3"
+       Option       "ConnectedMonitor" "tv"
+       Option       "TVStandard" "PAL-B"
+       Option       "TVOutFormat" "COMPOSITE"
+       Option       "RenderAccel" "true"
+       Screen 1
+EndSection
+
+Section "Device"
+       Identifier   "GeForce FX 5200 TV only"
+       Driver       "nvidia"
+       Option       "UseEdidFreqs" "True"
+       VendorName   "GeForce FX 5200"
+       BoardName    "GeForce FX 5200"
+       BusID        "PCI:1:0:0"
+       Option       "NoLogo" "True"
+       Option       "TVOverScan" "1.0"
+       Option       "NvAGP" "3"
+       Option       "ConnectedMonitor" "tv"
+       Option       "TVStandard" "PAL-B"
+       Option       "TVOutFormat" "COMPOSITE"
+       Option       "RenderAccel" "true"
+EndSection
+
+Section "Device"
+       Identifier   "GeForce FX 5200 Twinview AGP TV"
+       Driver       "nvidia"
+       Option       "UseEdidFreqs" "True"
+       VendorName   "GeForce FX 5200"
+       BoardName    "GeForce FX 5200"
+       BusID        "PCI:1:0:0"
+       Option       "NoLogo" "True"
+       Option       "TVOverScan" "1.0"
+       Option       "NvAGP" "3"
+       Option       "TwinView" "true"
+       Option       "ConnectedMonitor" "crt,tv"
+       Option       "TwinViewOrientation" "RightOf"
+       Option       "SecondMonitorHorizSync" "30-50"
+       Option       "SecondMonitorVertRefresh" "60"
+       Option       "MetaModes" "1280x1024,1024x768; 1024x768; 800x600,800x600; 800x600; 640x480,640x480; 640x480"
+       Option       "TVStandard" "PAL-B"
+       Option       "TVOutFormat" "COMPOSITE"
+       Option       "RenderAccel" "true"
+EndSection
+
+Section "Device"
+       Identifier   "GeForce FX 5200 Twinview TV AGP"
+       Driver       "nvidia"
+       Option       "UseEdidFreqs" "True"
+       VendorName   "GeForce FX 5200"
+       BoardName    "GeForce FX 5200"
+       BusID        "PCI:1:0:0"
+       Option       "NoLogo" "True"
+       Option       "TVOverScan" "1.0"
+       Option       "NvAGP" "3"
+       Option       "TwinView" "true"
+       Option       "TwinViewOrientation" "Clone"
+       Option       "ConnectedMonitor" "tv,crt"
+       Option       "SecondMonitorHorizSync" "30.0-96.0"
+       Option       "SecondMonitorVertRefresh" "50-180"
+       Option       "MetaModes" "1024x768,1280x1024; 1280x1024 ; 1024x768,1024x768; 1024x768; 800x600,800x600; 800x600; 640x480,640x480; 640x480"
+       Option       "TVStandard" "PAL-B"
+       Option       "TVOutFormat" "COMPOSITE"
+       Option       "RenderAccel" "true"
+EndSection
+
+Section "Screen"
+    Identifier   "Screen0"
+       Device       "GeForce FX 5200 AGP"
+       Monitor      "Belinea"
+    DefaultDepth     24
+    Subsection "Display"
+               Depth       8
+               Modes       "1280x1024" "1280x960" "1024x768" "800x600" "640x480" "400x300"
+    EndSubsection
+    Subsection "Display"
+               Depth       16
+               Modes       "1280x1024" "1280x960" "1024x768" "800x600" "640x480" "400x300"
+    EndSubsection
+    Subsection "Display"
+               Depth       24
+               Modes       "1280x1024" "1280x960" "1024x768" "800x600" "640x480" "400x300"
+    EndSubsection
+EndSection
+
+Section "Screen"
+    Identifier   "Screen1"
+    Device       "GeForce FX 5200 TV"
+    Monitor      "TV"
+    DefaultDepth 24
+    Subsection "Display"
+               Depth       8
+               Modes       "1024x768" "800x600" "640x480"
+    EndSubsection
+    Subsection "Display"
+               Depth       16
+               Modes       "1024x768" "800x600" "640x480"
+    EndSubsection
+    Subsection "Display"
+               Depth       24
+               Modes       "1024x768" "800x600" "640x480"
+    EndSubsection
+EndSection
+
+Section "Screen"
+    Identifier   "Screen2"
+    Device       "GeForce FX 5200 Twinview AGP TV"
+    Monitor      "Belinea"
+    DefaultDepth 24
+    Subsection "Display"
+        Depth       8
+        Modes       "1280x1024" "1024x768" "800x600" "640x480" "400x300"
+		Viewport   0 0
+    EndSubsection
+    Subsection "Display"
+        Depth       16
+        Modes       "1280x1024" "1024x768" "800x600" "640x480" "400x300"
+		Viewport   0 0
+    EndSubsection
+    Subsection "Display"
+        Depth       24
+        Modes       "1280x1024" "1024x768" "800x600" "640x480" "400x300"
+		Viewport   0 0
+    EndSubsection
+EndSection
+
+Section "Screen"
+    Identifier   "Screen3"
+    Device       "GeForce FX 5200 Twinview TV AGP"
+    Monitor      "TV"
+    DefaultDepth 24
+    Subsection "Display"
+        Depth      8
+        Modes      "1024x768" "800x600" "640x480"
+		Viewport   0 0
+    EndSubsection
+    Subsection "Display"
+        Depth      16
+        Modes      "1024x768" "800x600" "640x480"
+		Viewport   0 0
+    EndSubsection
+    Subsection "Display"
+        Depth      24
+        Modes      "1024x768" "800x600" "640x480"
+		Viewport   0 0
+    EndSubsection
+EndSection
+
+Section "Screen"
+    Identifier   "Screen4"
+    Device       "GeForce FX 5200 TV only"
+    Monitor      "TV"
+    DefaultDepth 24
+    Subsection "Display"
+         Depth   8
+         Modes  "1024x768" "800x600" "640x480"
+    EndSubsection
+    Subsection "Display"
+         Depth  16
+         Modes  "1024x768" "800x600" "640x480"
+    EndSubsection
+    Subsection "Display"
+         Depth  24
+         Modes  "1024x768" "800x600" "640x480"
+    EndSubsection
+EndSection 

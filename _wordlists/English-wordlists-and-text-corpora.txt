@@ -1,3 +1,4 @@
+https://www.ssa.gov/OACT/babynames/
 https://www.ssa.gov/oact/babynames/limits.html
 https://www.ssa.gov/agency/plain-language/
 
@@ -6,6 +7,11 @@ https://commoncrawl.org/
 https://fasttext.cc/docs/en/english-vectors.html
 
 http://ngrams.googlelabs.com/datasets
+
+https://github.com/TimeMagazineLabs/babynames
+https://www.ssa.gov/OACT/babynames/
+
+https://github.com/collections/open-journalism
 
 (VARIOUS, EN, BG) http://www.wiksearch.com/ (an experimental interface for searching through Wikipedia.org)
 (VARIOUS, EN, BG, NON-DICT, WORDLIST_GENERATE_FROM) https://dumps.wikimedia.org/ + https://dumps.wikimedia.org/other/pagecounts-raw/ + https://old.datahub.io/organization/wikimedia
