@@ -495,6 +495,14 @@ http://www.compciv.org/bash-guide/
 
 https://curl.haxx.se/docs/manpage.html
 https://curl.haxx.se/docs/
+
+http://pwmt.org - Zathura, Jumanji, ...
+http://suckless.org
+http://ezix.org - pukcab file-backuping
+
+ElementaryOS apps
+PuppyLinux Ubuntu apps
+SpaceFM
 ````
 
 ## Under `Apple macOS` ##
