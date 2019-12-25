@@ -26,30 +26,32 @@
 **https://github.com/sahwar/Bulogos/archive/master.zip**
 (OR right-click & `Save link as...` / `Save Target As` (ИЛИ щракване с десния бутон на мишката и `Запазване на връзката като...` / `Запис на препратката като...`, ...)
 
-Изтегляне чрез [`wget`](https://www.gnu.org/software/wget/):
+* Изтегляне чрез [`wget`](https://www.gnu.org/software/wget/):
 ````
 wget -nc -O Bulogos_master.zip https://github.com/sahwar/Bulogos/archive/master.zip
 ````
-~
-Изтегляне чрез [wget2](https://gitlab.com/gnuwget/wget2):
+------
+* Изтегляне чрез [`wget2`](https://gitlab.com/gnuwget/wget2):
 ````
 wget2 -nc -O Bulogos_master.zip https://github.com/sahwar/Bulogos/archive/master.zip
 ````
-~
-Изтегляне чрез [curl](http://curl.haxx.se/):
+------
+* Изтегляне чрез [`curl`](http://curl.haxx.se/):
 ````
 curl -nc -LO https://github.com/sahwar/Bulogos/archive/master.zip
 ````
-~
-Клониране на хранилището чрез `git` (https://git-scm.org):
+------
+**БЕЛЕЖКА:** wget, wget2, curl, lftp, aria2c и др. са програми с текстов интерфейс за виртуален терминал за изпълняване на текстови команди, например като `.exe` файл, задействан с `-option1 -option2 --optionN` (`{ИмеНаКомандатаБезФигурнитеСкобиОтстрани} --help` за помощни инструкции на английски + помощно търсене чрез/в google.com, Wikipedia.org и груб машинен/автоматичен превод чрез translate.google.com) вътре в `cmd.exe` или PowerShell (Microsoft Windows), или като текстови команди (стига да са предварително инсталирани) вътре в shells като `bash` или `zsh` вътре в терминалите urxvt или в GNOME/KDE/XFCE Terminal ((GNU/)Linux, *BSD, macOS/Mac OS X).
+------
+* Клониране на хранилището чрез `git` (https://git-scm.org):
 ````
 git clone https://github.com/sahwar/Bulogos.git
 ````
 
 ## Contact / За контакти
-:us: :gb:  If you have any ideas, suggestions or `git merge` requests about this project, then just send me an email with your ideas to [ve4ernik@gmail.com](mailto:ve4ernik@gmail.com).
+:us: :gb:  If you have any ideas, suggestions or [`git merge`](https://git-scm.com/docs/git-merge) pull-requests about this project, then just send me an email with your ideas to [ve4ernik@gmail.com](mailto:ve4ernik@gmail.com).
 
-🇧🇬 &#x1F1E7;&#x1F1EC;  Ако имате каквито и да е идеи, предложения или молби/заявки за сливане ( `git merge` ) относно този проект, то тогава просто ми изпратете имейл с идеите си на [ve4ernik@gmail.com](mailto:ve4ernik@gmail.com).
+🇧🇬 &#x1F1E7;&#x1F1EC;  Ако имате каквито и да е идеи, предложения или молби/заявки за сливане на Ваши промени чрез `git` ( `git merge` ) относно този проект, то тогава просто ми изпратете имейл (е-поща) с идеите си на [ve4ernik@gmail.com](mailto:ve4ernik@gmail.com).
 
 ## Donations / Дарения
 :us: :gb:  If you like to support my work on Bulogos, you are invited to make a donation if you can afford it. Just click the button below.
