@@ -1,7 +1,9 @@
 # Bulogos
 
-* [Mirror repository at _GitLab.com_ (always slighty not so up-to-date to this one)](https://gitlab.com/sahwar/Bulogos) (https://gitlab.com/sahwar/Bulogos.git)
-* [.ZIP backup of a recent version of this repository at _sahwar.animerulezzz.org_ (always slightly not so up-to-date to this one)](http://sahwar.animerulezzz.org/mirrors/Bulogos-master_[ISO8601-datetime-stamp].zip)
+------
+|-Резервни копия на това хранище, но другаде-|
+| [Mirror repository at _GitLab.com_ (always slighty not so up-to-date to this one)](https://gitlab.com/sahwar/Bulogos) (https://gitlab.com/sahwar/Bulogos.git) | [.ZIP backup of a recent version of this repository at _sahwar.animerulezzz.org_ (always slightly not so up-to-date to this one)](http://sahwar.animerulezzz.org/mirrors/Bulogos-master_[ISO8601-datetime-stamp].zip)
+------
 
 ### Bulogos /bɤlɔgɔs/, /bɤləgɔs/ (Бълогос / БълЪгос); The Bulogos Project; Project Bulogos
 :us: :gb: Useful information for Bulgarian-language users of Linux and FOSS/FLOSS (Free (, libre) and open-source software), among other things.
@@ -41,7 +43,9 @@ wget2 -nc -O Bulogos_master.zip https://github.com/sahwar/Bulogos/archive/master
 curl -nc -LO https://github.com/sahwar/Bulogos/archive/master.zip
 ````
 ------
-**БЕЛЕЖКА:** wget, wget2, curl, lftp, aria2c и др. са програми с текстов интерфейс за виртуален терминал за изпълняване на текстови команди, например като `.exe` файл, задействан с `-option1 -option2 --optionN` (`{ИмеНаКомандатаБезФигурнитеСкобиОтстрани} --help` за помощни инструкции на английски + помощно търсене чрез/в google.com, Wikipedia.org и груб машинен/автоматичен превод чрез translate.google.com) вътре в `cmd.exe` или PowerShell (Microsoft Windows), или като текстови команди (стига да са предварително инсталирани) вътре в shells като `bash` или `zsh` вътре в терминалите urxvt или в GNOME/KDE/XFCE Terminal ((GNU/)Linux, *BSD, macOS/Mac OS X).
+
+**БЕЛЕЖКА:** `wget`, `wget2`, `curl`, `lftp`, `aria2c` и др. са програми-команди с текстов интерфейс за пускане чрез виртуален терминал за изпълняване на текстови команди, например  като `curl64.exe` файл, задействан с `-option1 -option2 --optionN` (`{ИмеНаКомандатаБезФигурнитеСкобиОтстрани} --help` за помощни инструкции на английски + помощно търсене чрез/в google.com, Wikipedia.org и груб машинен/автоматичен превод чрез translate.google.com) вътре в `cmd.exe` или PowerShell (Microsoft Windows), или като текстови команди (стига да са предварително инсталирани) вътре в shells като `bash` или `zsh` вътре в терминалите urxvt или в GNOME/KDE/XFCE Terminal ((GNU/)Linux, *BSD, macOS/Mac OS X). Изброените програми служат основно за изтегляне на файлове от Интернет (например `.htm/.html` уебстраница; а някои от програмите може и да качват файлове (но не като `git`...)).
+
 ------
 * Клониране на хранилището чрез `git` (https://git-scm.org):
 ````
