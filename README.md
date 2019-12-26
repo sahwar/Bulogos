@@ -69,7 +69,7 @@ git clone https://github.com/sahwar/Bulogos.git
 
 ## License / Лиценз
 
-* [LICENSE.txt](https://github.com/sahwar/Bulogos/LICENSE.txt) + [CREDITS_FAIR-USE.txt](https://github.com/sahwar/Bulogos/CREDITS_FAIR-USE.txt)
+* [LICENSE.txt](https://github.com/sahwar/Bulogos/blob/master/LICENSE.txt) + [CREDITS_FAIR-USE.txt](https://github.com/sahwar/Bulogos/blob/master/CREDITS_FAIR-USE.txt)
 
 ----
 
