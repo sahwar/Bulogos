@@ -14,7 +14,10 @@
 ### Bulogos /bɤlɔgɔs/, /bɤləgɔs/ (Бълогос / БълЪгос); Проект „Бълогос“ (Проект „БълЪгос“, Проект Bulogos)
 🇧🇬 &#x1F1E7;&#x1F1EC; Полезна информация за българоезични ползватели на Линукс и ССиСсОК (свободен софтуер и софтуер с отворен код), измежду други неща.
 
+------
+
 * * *
+Помощ за GitHub и `git`...
 
 * [Help with using GIT commands](https://github.com/k88hudson/git-flight-rules)
 * [How to sync(hronize) this GitHub repo with the GitLab mirror repo](https://moox.io/blog/keep-in-sync-git-repos-on-github-gitlab-bitbucket/)
@@ -22,6 +25,8 @@
 * https://github.com/MoOx/git-init
 * https://github.github.com/training-kit/
 * https://git-scm.com/book/en & https://git-scm.com/book/bg/v2
+
+------
 
 ## DOWNLOAD the entire archive of files / ИЗТЕГЛЯНЕ на целия архив с файлове
 :us: :gb: Click on `Clone or download` -> `Download ZIP` button above, OR click the hyperlink below by using your web-browser.
