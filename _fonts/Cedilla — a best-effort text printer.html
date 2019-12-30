@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/loose.dtd">
+<!-- saved from url=(0043)https://www.irif.fr/~jch//software/cedilla/ -->
+<html lang="en"><div id="bm-2225254214"><div data-reactroot="" id="bm-2225254214"></div></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Cedilla — a best-effort text printer</title>
+<link rel="stylesheet" type="text/css" href="./Cedilla — a best-effort text printer_files/jch.css">
+</head>
+<body>
+
+<h1>Cedilla — a best-effort text printer</h1>
+
+<p>Cedilla is a simple text printer that uses Unicode internally.
+
+</p><p>Using Unicode means that the set of characters that can appear in
+the input is very large, and the user may very well have no font
+available that contains glyphs for the characters that he wants to
+print.  Cedilla attempts to at least partially solve this problem
+by making heroic efforts to find or create a suitable glyph.
+
+</p><p>For example, in order to typeset a Polish <em>e with ogonek</em>
+«&nbsp;ę&nbsp;», Cedilla will first try to find a suitable precomposed
+glyph.  If that fails, Cedilla will try to locate an <em>ogonek</em>
+«&nbsp;˛&nbsp;» which it will use to overstrike a plain
+«&nbsp;e&nbsp;».  If there is no ogonek in the font being used,
+Cedilla, will overstrike a plain «&nbsp;e&nbsp;» with a comma, leading
+to an ugly but legible rendition of Polish text.
+
+</p><p>Cedilla is believed to fully support at least the following languages:
+</p><ul>
+<li>with the default fontset (no extra fonts): all European languages
+using the Latin script (except Sami), Vietnamese, very ugly but legible
+rendition of Greek (mono- and polytonic) using the Symbol font;
+</li><li>using the free «&nbsp;Nimbus-Mono&nbsp;» font: as above, plus
+modern (post-1917) Russian orthography, Ukrainian, Belarusian;
+</li><li>using the free «&nbsp;OmegaSerif&nbsp;» fonts: all European
+languages using the Latin script, Vietnamese, all modern and
+pre-Revolutionary Russian, modern and archaic Ruthenian (Ukrainian,
+Belarusian), mono- and polytonic Greek.
+</li></ul>
+
+<p>More details about the algorithm used by Cedilla are given in 
+<a href="https://www.irif.fr/~jch//software/cedilla/README.text">the Cedilla README</a>
+(<a href="https://www.irif.fr/~jch//software/cedilla/README.pdf">PDF</a>).
+
+</p><h2>Download</h2>
+
+<p>Please 
+<a href="https://www.irif.univ-paris-diderot.fr/~jch/software/files/">download
+Cedilla</a>, <a href="https://www.irif.fr/~jch//software/cedilla/NEWS.text">read the latest news about
+Cedilla</a>.
+
+</p><p>My working tree is available over git:
+</p><p class="displaycode">git clone https://github.com/jech/cedilla.git
+</p><p>A <a href="https://github.com/jech/cedilla">web interface</a> is also available.
+
+</p><h2>Documentation and samples</h2>
+
+<p>The Cedilla README: as <a href="https://www.irif.fr/~jch//software/cedilla/README.text">plain text</a>,
+</p><ul>
+<li>typeset (by Cedilla) in Courier: as 
+<a href="https://www.irif.fr/~jch//software/cedilla/README.ps.gz">compressed PostScript</a>,
+<a href="https://www.irif.fr/~jch//software/cedilla/README.pdf">PDF</a>;
+</li><li>typeset in Times-Roman: as <a href="https://www.irif.fr/~jch//software/cedilla/README-times.ps.gz">compressed PostScript</a>;
+</li><li>typeset in Helvetica: as <a href="https://www.irif.fr/~jch//software/cedilla/README-helvetica.ps.gz">compressed PostScript</a>.
+</li></ul>
+
+<p>A sample of Vietnamese text, as 
+<a href="https://www.irif.fr/~jch//software/cedilla/vietnamese-sample.text">plain text</a>,
+</p><ul>
+<li>typeset using Courier, as
+<a href="https://www.irif.fr/~jch//software/cedilla/vietnamese-sample.ps.gz">compressed PostScript</a>.
+</li><li>typeset using Omega-Serif, as
+<a href="https://www.irif.fr/~jch//software/cedilla/vietnamese-sample-omega.ps.gz">compressed PostScript</a>.
+</li></ul>
+
+<p>A sample of Cyrillic and Greek text, as
+<a href="https://www.irif.fr/~jch//software/cedilla/cyrillic-greek-sample.text">plain text</a>,
+</p><ul>
+<li>typeset using Nimbus Mono and Symbol (all archaic characters are
+missing), as
+<a href="https://www.irif.fr/~jch//software/cedilla/cyrillic-greek-sample.ps.gz">compressed PostScript</a> 
+</li><li>typeset using the Omega Serif fonts (with all the yat', yus, and
+even an occasional omega with titlo), as
+<a href="https://www.irif.fr/~jch//software/cedilla/cyrillic-greek-sample-omega.ps.gz">compressed PostScript</a>.
+</li></ul>
+
+<h2>Alternatives</h2>
+
+<p><a href="http://www.infres.enst.fr/~demaille/a2ps/">Le GNU
+a2ps</a>, a plain text typesetter with support for a number of 8-bit
+encodings but no support for Unicode.
+
+</p><p><a href="http://paps.sourceforge.net/">Paps</a> is based on Pango,
+and therefore has excellent support for Unicode (much better than
+Cedilla).  However, it generates bitmaps in the resulting PostScript,
+which makes it slow to print and unsuitable for conversion to PDF.
+
+</p><h2>Related links</h2>
+
+<p><a href="http://www.cl.cam.ac.uk/~mgk25/unicode.html">Markus Kuhn's
+Unicode FAQ</a>, a very comprehensive resource about Unicode support
+on Free Unix-like systems.
+
+</p><p><a href="https://www.irif.fr/~jch//software/ogonkify/">Ogonkify</a>, my first attempt at best-effort
+typesetting.
+
+</p><p><a href="http://webhostingrating.com/libs/cedilla-be">Belarusian
+translation</a>.
+
+</p><p><a href="https://www.irif.fr/~jch//software/">Back to my software page</a>.
+
+</p><p class="signature"><a href="https://www.irif.univ-paris-diderot.fr/~jch/">Juliusz Chroboczek</a>
+
+
+
+</p></body></html>

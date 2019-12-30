@@ -1,0 +1,104 @@
+/* CSS for Juliusz Chroboczek */
+
+body {
+    font-family: "DejaVu Sans", "BitStream Vera Sans", arial, helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: black;
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold; font-style: normal;
+    line-height: 1.2;
+}
+
+tt, code, .displaycode, .code {
+  font-family: "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Menlo, monospace;
+}
+
+a:link img, a:visited img { border-style: none; }
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:link {
+    color: #2b5e82;
+}
+
+a:visited {
+    color: #52188b;
+}
+
+a:hover {
+    color: red;
+}
+
+.displaycode, .code, .bib, .displaysomething {
+  color: black;
+  background: #F7F7F7;
+}
+
+.displaycode, .bib, .displaysomething {
+  width: 85%;
+  display: block; 
+  margin: 1em 2em;
+}
+
+.displaynote, .quotation {
+  font-style: italic;
+  font-size: 90%;
+  width: 70%;
+  display: block;
+  margin: 1em 4em 1em 1em;
+}
+
+.quotation {
+  color: #333;
+}
+
+.displaymath {
+  display: block;
+  margin: 1em 1em;
+}
+
+.emph {
+  font-style: italic;
+}
+
+.floatright {
+  float: right;
+  margin: 0 1.5em 0 1em;
+}
+
+.signature {
+  border-top: solid;
+  margin-top: 2em;
+  padding-top: 0em;
+  border-width: thin;
+  clear: both;
+}
+
+td.file-size {
+  text-align: right;
+}  
+
+td.file-name a {
+  font-weight: normal;
+}  
+
+ul.plain {
+  list-style-type: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.patents {
+    display: none;
+}
+

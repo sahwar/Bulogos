@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!-- saved from url=(0046)https://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html -->
+<html><div id="bm-2225254214"><div data-reactroot="" id="bm-2225254214"></div></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unicode fonts and tools for X11</title>
+<meta name="keywords" content="Unicode, UCS, ISO/IEC 10646-1, font, X11,
+X Window System, BFD, Type1">
+<meta name="description" content="Information about Unicode fonts for
+Linux and X11 users">
+<link rel="stylesheet" href="./Unicode fonts and tools for X11_files/default.css" type="text/css">
+<script src="./Unicode fonts and tools for X11_files/urchin.js.изтеглен файл" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-78103-1";
+urchinTracker();
+</script>
+</head>
+<body>
+<script type="text/javascript"><!--
+google_ad_client = "pub-5556489343403998";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text";
+google_ad_channel ="";
+//--></script>
+<script type="text/javascript" src="./Unicode fonts and tools for X11_files/f.txt">
+</script>
+
+<h1>Unicode fonts and tools for X11</h1>
+
+<p>The classic <a href="http://www.x.org/">X Window System</a> bitmap
+fonts are now available in an ISO&nbsp;10646-1/Unicode extension.
+
+</p><p><img src="./Unicode fonts and tools for X11_files/ucs-fonts.gif" alt="UTF-8 xterm screenshot using 6x13.bdf">
+
+</p><p>We have extended all the "-misc-fixed-*" fonts:
+
+</p><pre>  5x7     -Misc-Fixed-Medium-R-Normal--7-70-75-75-C-50-ISO10646-1
+  5x8     -Misc-Fixed-Medium-R-Normal--8-80-75-75-C-50-ISO10646-1
+  6x9     -Misc-Fixed-Medium-R-Normal--9-90-75-75-C-60-ISO10646-1
+  6x10    -Misc-Fixed-Medium-R-Normal--10-100-75-75-C-60-ISO10646-1
+  6x12    -Misc-Fixed-Medium-R-Semicondensed--12-110-75-75-C-60-ISO10646-1
+  6x13    -Misc-Fixed-Medium-R-SemiCondensed--13-120-75-75-C-60-ISO10646-1
+  6x13B   -Misc-Fixed-Bold-R-SemiCondensed--13-120-75-75-C-60-ISO10646-1
+  7x13    -Misc-Fixed-Medium-R-Normal--13-120-75-75-C-70-ISO10646-1
+  7x13B   -Misc-Fixed-Bold-R-Normal--13-120-75-75-C-70-ISO10646-1
+  7x14    -Misc-Fixed-Medium-R-Normal--14-130-75-75-C-70-ISO10646-1
+  7x14B   -Misc-Fixed-Bold-R-Normal--14-130-75-75-C-70-ISO10646-1
+  8x13    -Misc-Fixed-Medium-R-Normal--13-120-75-75-C-80-ISO10646-1
+  8x13B   -Misc-Fixed-Bold-R-Normal--13-120-75-75-C-80-ISO10646-1
+  9x15    -Misc-Fixed-Medium-R-Normal--15-140-75-75-C-90-ISO10646-1
+  9x15B   -Misc-Fixed-Bold-R-Normal--15-140-75-75-C-90-ISO10646-1
+  10x20   -Misc-Fixed-Medium-R-Normal--20-200-75-75-C-100-ISO10646-1
+</pre>
+
+<h2>Coverage</h2>
+
+<p>These fonts contain now <strong>all</strong> characters found in the
+following character sets:
+
+</p><ul>
+
+<li>ISO 8859 parts 1-5, 7-10, 13-15 (i.e., all parts except Arabic and Thai)
+
+</li><li>ISO 6937 and the <a href="http://www.evertype.com/standards/iso10646/pdf/cwa13873.pdf">CEN MES-1
+European Unicode Subset</a>
+
+</li><li>IBM/Microsoft code pages CP 437, 850, 1251, 1252, and many others
+
+</li><li>Microsoft/Adobe <a href="http://partners.adobe.com/asn/tech/type/opentype/appendices/wgl4.jsp">Windows Glyph List 4 (WGL4)</a>
+
+</li><li>KOI8-R
+
+</li><li>DEC VT100 graphics symbols
+
+</li></ul>
+
+<p>The 6x13, 8x13, 9x15, 9x18, and 10x20 fonts cover a much larger
+repertoire in addition, that covers the comprehensive <a href="http://www.evertype.com/standards/iso10646/pdf/cwa13873.pdf">CEN
+MES-3A European Unicode 3.2 Subset</a>, the International Phonetic
+Alphabet, Armenian, Georgian, Thai, Yiddish, all Latin, Greek, and
+Cyrillic characters, all mathematical symbols (including the entire
+TeX repertoire), APL, Braille, Runes, and much more. 9x15 and 10x20
+also cover Ethiopian.
+
+</p><h2>Newly added fonts</h2>
+
+<p>The following new "-misc-fixed-*" fonts were added:
+
+</p><pre>  6x13O   -Misc-Fixed-Medium-O-SemiCondensed--13-120-75-75-C-60-ISO10646-1
+  7x13O   -Misc-Fixed-Medium-O-Normal--13-120-75-75-C-70-ISO10646-1
+  8x13O   -Misc-Fixed-Medium-O-Normal--13-120-75-75-C-80-ISO10646-1
+  9x18    -Misc-Fixed-Medium-R-Normal--18-120-100-100-C-90-ISO10646-1
+  9x18B   -Misc-Fixed-Bold-R-Normal--18-120-100-100-C-90-ISO10646-1
+  12x13ja -Misc-Fixed-Medium-R-Normal-ja-13-120-75-75-C-120-ISO10646-1
+  18x18ja -Misc-Fixed-Medium-R-Normal-ja-18-120-100-100-C-180-ISO10646-1
+  18x18ko -Misc-Fixed-Medium-R-Normal-ko-18-120-100-100-C-180-ISO10646-1
+</pre>
+
+<p>6x13O, 7x13O and 8x13O are oblique/italic versions of 6x13, 7x13
+and 8x13. 9x18 is an improved version of 9x15 that has more space
+above and below the base characters to increase readability and to
+allow overstriking combining characters to work properly. 18x18ja and
+18x18ko provide Japanese and Korean doublewidth ideograms for 9x18.
+12x13ja provides Japanese doublewidth ideograms for 6x13.
+
+</p><h2>Adobe BDF fonts</h2>
+
+<p>I have also created revised ISO10646-1 versions of all the Adobe
+and B&amp;H pixel fonts that come with X11R6.4. They contained about
+30 additional Postscript characters (roughly the CP1252 repertoire)
+that were present in the old ISO8859-1 BDF files, but were not encoded
+and therefore not accessible for X clients.  The revised ISO10646-1
+versions contain not only these but also many more automatically
+generated accented Latin characters (e.g., all characters from ISO
+8859 parts 1-4, 9-10, 13-15), and they also fix a few long-standing
+bugs with the old fonts (missing NBSP, exchanged
+multiplication/division sign, etc.).
+
+</p><h2>Status</h2>
+
+<p>The fonts are now completed and implement at present version 3.2 of
+the Unicode standard (ISO 10646-1/Amd.1:2002). I will maintain them to
+fix bugs and to satisfy any newly reported user requirements. Note
+that the new fonts fix a <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html">problem with the
+Latin-1 quotation mark and accents</a>.
+
+</p><h2>Download</h2>
+
+<p>The fonts are freely available with installation instructions and
+<a href="https://www.cl.cam.ac.uk/~mgk25/ucs/examples/">example UTF-8 text files</a>.
+
+</p><dl>
+<dt>The "-misc-fixed-*" font package:
+</dt><dd><samp><a href="https://www.cl.cam.ac.uk/~mgk25/download/ucs-fonts.tar.gz">http://www.cl.cam.ac.uk/~mgk25/download/ucs-fonts.tar.gz</a></samp>
+</dd><dt>CJK ideographic wide character supplement
+(unpack into the same subdirectory as the above):
+</dt><dd><samp><a href="https://www.cl.cam.ac.uk/~mgk25/download/ucs-fonts-asian.tar.gz">http://www.cl.cam.ac.uk/~mgk25/download/ucs-fonts-asian.tar.gz</a></samp>
+</dd><dt>The Adobe and B&amp;H font package:
+</dt><dd><samp><a href="https://www.cl.cam.ac.uk/~mgk25/download/ucs-fonts-75dpi100dpi.tar.gz">http://www.cl.cam.ac.uk/~mgk25/download/ucs-fonts-75dpi100dpi.tar.gz</a></samp>
+</dd></dl>
+
+<p>There is also a <a href="https://www.cl.cam.ac.uk/~mgk25/download/ucs-fonts.changes">change log</a>
+file for the "-misc-fixed-*" fonts.
+
+</p><h2>Other character sets</h2>
+
+<p>The font packages include the <samp>ucs2any.pl</samp> Perl script,
+which converts ISO 10646-1 fonts into any other encoding for which
+there is a <a href="ftp://ftp.unicode.org/Public/MAPPINGS/">Unicode
+mapping table</a> available. This way, you can quickly generate ISO
+8859-* versions from the above fonts automatically, for the benefit of
+older software that cannot yet handle ISO 10646-1 fonts directly.
+
+</p><h2>Distribution</h2>
+
+<p>I periodically contribute a recent snapshot of all of the above
+fonts to <a href="http://www.xfree86.org/">XFree86</a> and they have
+been shipping as part of the XFree86 releases since XFree86 4.1. I
+have also made them available to <a href="http://www.x.org/">X.Org</a>
+for inclusion into one of the next official X11 distributions as a
+replacement for the current ISO 8859-1 BDF fonts (hopefully they will
+be in X11R6.7). The copyright status of these fonts remains the same
+as for the original fonts in the X11 distribution, therefore any X11
+server vendors are welcome to include them into their products without
+payment of royalties.
+
+</p><h2>Related information and links</h2>
+
+<ul>
+
+<li>Read the <a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html">UTF-8 and Unicode FAQ for
+Unix/Linux</a> for detailed general information on how to use Unicode
+and its ASCII-compatible UTF-8 encoding under Unix, Linux, X11,
+etc.
+
+</li><li>To use these ISO10646-1 fonts, you will need applications that
+support ISO10646-1 fonts (hardly any software released before ~2001
+does). These are not simply 8-bit replacement fonts but usually need
+to be used together with UTF-8 support in an application. For
+instance, if you want to use these fonts with xterm, you need to use
+an <a href="http://www.cl.cam.ac.uk/~mgk25/unicode.html#getxterm">xterm
+version that can handle ISO10646-1 fonts</a> (e.g., the one in XFree86
+4.x).
+
+</li><li>The "-misc-fixed-*" fonts were created using Mark Leisher’s <a href="http://crl.nmsu.edu/~mleisher/xmbdfed.html">xmbdfed</a> font
+editor, which you can also use to view and modify these fonts.
+
+</li><li>Unicode X11 font names end with <samp>-ISO10646-1</samp>. This is
+now the officially <a href="ftp://ftp.x.org/pub/DOCS/registry">registered</a> value for the <a href="ftp://ftp.x.org/pub/R6.4/xc/doc/hardcopy/XLFD/xlfd.PS.gz">X Logical Font Descriptor (XLFD)</a> fields
+<samp>CHARSET_REGISTRY</samp> and <samp>CHARSET_ENCODING</samp> for
+all Unicode and ISO 10646-1 16-bit fonts. There is no registered XLFD
+scheme yet for ISO 10646 characters outside the BMP, though some
+proposals have been discussed.
+
+</li><li>Unicode and ISO 10646 merged CJK ideograph repertoires from
+several groups of national source standards. In order to indicate that
+an ISO10646-1 font with ideographic characters was designed following
+the glyph style from one particular group of national source
+standards, the <samp>ADD_STYLE_NAME</samp> XLFD field can be used to
+indicate the corresponding language or region. Examples for such
+<samp>ADD_STYLE_NAME</samp> values are:
+
+<p></p><table class="solid">
+<tbody><tr><th><samp>ADD_STYLE_NAME</samp></th><th>IRG Source</th><th>Countries</th><th>Standards
+</th></tr><tr><td>zh</td><td>G</td><td>China, Hongkong, Singapore</td><td>GB2312, GB12345, GB7589, GB7590, GB8565, GB16500
+</td></tr><tr><td>zh_TW</td><td>T</td><td>Taiwan</td><td>CNS 11643
+</td></tr><tr><td>ja</td><td>J</td><td>Japan</td><td>JIS X 0208, JIS X 0212
+</td></tr><tr><td>ko</td><td>K</td><td>Korea</td><td>KS C 5601, KS C 5657, PKS C 5700
+</td></tr><tr><td>vi</td><td>V</td><td>Vietnam</td><td>TCVN 5773, TCVN 6056
+</td></tr></tbody></table>
+
+<p><a href="http://linux.infoterm.org/infoterm-e/i-infoterm.htm?raiso639-1_start.htm~Mitte">ISO
+639</a> language and <a href="http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/index.html">ISO
+3166</a> country/region codes should be preferred in
+<samp>ADD_STYLE_NAME</samp>. This way, if an application knows a style
+preference from, for example, the <a href="http://www.ietf.org/rfc/rfc1766.txt">RFC
+1766</a> code "xx-yy" in a <a href="http://www.unicode.org/unicode/reports/tr7/">language tag</a>, or
+from the locale name "xx_YY.ZZZ", it can search for a suitable font by
+looking for <samp>ADD_STYLE_NAME</samp> values in the following order
+of preference: "xx_YY", "xx", "", "*".
+
+</p></li><li>The specification of the BDF X11 pixel font format is available <a href="http://partners.adobe.com/public/developer/en/font/5005.BDF_Spec.pdf">as Technical Note 5005 from Adobe</a> or in a simplified form as part
+of the <a href="ftp://ftp.x.org/pub/R6.6/xc/doc/hardcopy/BDF/bdf.PS.gz">X11 documentation</a>.
+
+</li><li>The fonts use the <a href="http://partners.adobe.com/asn/tech/type/unicodegn.jsp">Adobe
+standard glyph names for Unicode fonts</a>.
+
+</li><li>There is also a <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html">note on why the
+apostrophe and grave accent look different</a> in the new fonts.
+
+</li><li>A <a href="http://www.xfree86.org/pipermail/fonts/2001-March/000569.html">bug in
+old GTK+ libraries</a> is triggered by the presence of ISO10646-1
+Helvetica fonts.
+
+</li></ul>
+
+<h2>Other information relevant to Unicode font projects</h2>
+
+<ul>
+
+<li>The <a href="http://www.freetype.org/">FreeType Project</a> has
+implemented an open source version of the <a href="http://www.microsoft.com/typography/tt/tt.htm">Microsoft</a>/<a href="http://developer.apple.com/fonts/TTRefMan/">Apple TrueType</a>
+font rendering engine. <a href="http://partners.adobe.com/asn/tech/type/opentype/">OpenType</a>
+is a merger of the TrueType and Type1 font formats, with extensions
+for better handling of all scripts supported by Unicode.
+
+</li><li><a href="ftp://crl.nmsu.edu/CLR/multiling/General/">ttf2bdf and
+xmbdfed</a> by Mark Leisher allow you to generate X11 BDF pixel fonts
+from TrueType fonts and edit them.
+
+</li><li><a href="http://pfaedit.sourceforge.net/">PfaEdit</a> is a free
+Type1, TrueType, OpenType and BDF font editor by George Williams.
+
+</li><li>Two free PostScript Type1 font editors that are currently under
+development are <a href="http://www.cs.usyd.edu.au/~matty/Spif/">Spif</a> by Matty Farrow
+and <a href="http://www.levien.com/gfonted/">gfonted</a> by Raph
+Levien.
+
+</li><li>Commercial vector font editors: <a href="http://www.macromedia.com/software/fontographer/">Macromedia
+Fontographer</a>, <a href="http://www.fontlab.com/">FontLab</a>.
+
+</li><li><a href="mailto:taco.hoekwater%40wkap.nl">Taco Hoekwater</a> has
+created a Unicode math font that can be used with Postscript Times
+Roman.
+
+</li><li><a href="http://www.dcs.ed.ac.uk/home/jec/programs/xfsft/">xfsft:
+TrueType Font Support For X</a> is a set of patches to make X11
+support truetype fonts by <a href="http://www.dcs.ed.ac.uk/home/jec/">
+Juliusz Chroboczek</a> (included with XFree86 4.0).
+
+</li><li><a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html">Fonts
+in the X Window System</a> by <a href="http://www.math.utah.edu/~beebe/">Nelson Beebe</a> is a useful
+quick introduction. The <a href="http://users.frii.com/meldroc/Font-Deuglification.html">XFree86
+Font Deuglification Mini HOW-TO</a> by <a href="http://users.frii.com/meldroc/">Doug Holland</a> also contains
+numerous good tips for setting up fonts under Linux/X11.
+
+</li><li>Luc Devroye’s <a href="http://www-cgrl.cs.mcgill.ca/~luc/fontsoftware.html">Font
+software</a> page is a <em>very</em> comprehensive collection of
+pointers to further font resources.
+
+</li><li>Ulf Jordan’s <a href="http://www.etek.chalmers.se/~e4jordan/font/">Misc-Fixed ISO
+10646-1 Outline Font Project</a> is to develop Type1 versions of the
+BDF font family provided here.
+
+</li><li><a href="mailto:nick%40sigfs.org">Nick Reinking</a> prepared <a href="http://www.twoevils.org/html/files.html">TrueType versions of the
+Latin-1 subsets of 6x13 and 6x13B</a>.
+
+</li><li>The <a href="http://openlab.ring.gr.jp/efont/">Electronic Font
+Open Laboratory</a> in Japan is also working on a family of Unicode
+bitmap fonts.
+
+</li></ul>
+
+<h2 id="indic">Why are there no Indic or Syriac glyphs in the ucs-fonts
+package?</h2>
+
+<p>In European and East Asian scripts, each Unicode character can be
+represented by a single graphical shape ("glyph"). The X11 font system
+is entirely built around the idea that there is a one-to-one
+relationship between characters and glyphs, which works fine for
+Latin, Greek, Cyrillic, Hebrew, Han, Hiragana, Katakana, Hangul, etc.
+However, things are far more complicated for handwritten cursive
+scripts such as Arabic, Syriac and the various Indic scripts
+(Devanagari, Bengali, Gurmukhi, Gujarati, Oriya, Tamil, Telugu,
+Kannada, etc.). For these scripts, the sequence of values
+("characters") encoded in a Unicode string (which usually corresponds
+to the sequence of keystrokes during entry and the sequence of
+phonemes when speaking) first has to be converted into a sequence of
+graphical symbols ("glyphs") as they are found in a font, before a
+string can be displayed. In a given Latin font style, always the same
+graphical glyph of a font will be used for representing a character on
+a screen. In an Arabic or Indic font, the shape of the glyph depends
+not only on the character that it represents, but also on its
+neighbour characters. Sometimes, different glyphs have to be used
+depending on the character appearing at the beginning, middle, or end
+of a word, and often certain entire sequences of characters have to be
+represented by a special ligature glyph. A very simple form of that is
+used in Latin fine typography in the form of the "fi" and "fl"
+ligatures, but in Indic scripts, the situation is far more extreme,
+and the number of glyphs is often several times the number of
+characters. For details and examples, read <a href="http://www.unicode.org/unicode/uni2book/ch09.pdf">Chapter 9</a>
+and <a href="http://www.unicode.org/unicode/uni2book/ch08.pdf">Chapter
+8</a> as well as the relevant <a href="http://www.unicode.org/charts/">code charts</a> of <a href="http://www.unicode.org/unicode/uni2book/u2.html">The Unicode
+Standard</a>.
+
+</p><p>The Unicode standard does contain encoding ranges for a simple
+scheme of Arabic glyphs, the "Arabic Presentation Forms". This was
+possible, because for Arabic there is a reasonably good consensus
+among font designers on how many glyphs are actually necessary for
+proper rendering of Arabic text, even though some argue that for
+really high-quality typesetting the Unicode collection of Arabic
+presentation forms is not sufficient. For Indic scripts on the other
+hand, there seems no consensus among font designers, which glyphs are
+actually necessary as this can vary significantly across different
+font styles. Therefore, an Indic font is always a proprietary
+non-standardized collection of glyphs together with a mapping table
+that defines, how sequences of standard Unicode characters have to be
+transformed into sequences of non-standard Indic glyphs from this
+particular font, before the text can be displayed.
+
+</p><p>The <a href="http://partners.adobe.com/asn/tech/type/opentype/">OpenType</a>
+font format developed by Microsoft and Adobe is an outline font
+format that does include such character/glyph mapping tables. The BDF
+format used by X11 pixel fonts does not have any standardized way of
+including a character/glyph mapping table, and neither do current BDF
+editors such as xmbdfed or X servers. The <a href="http://www.pango.org/">Pango</a> rendering library developed
+for the Gnome project can make use of BDF glyph fonts, but it requires
+the corresponding character/glyph mapping table in a separate
+client-side file. The X11 standards currently provide no support for
+transmitting such mapping tables over the X11 protocol. Roman
+Czyborra’s GNU Unifont does contain a naive representation of the
+Indic glyphs shown in the Unicode Standard code charts, but that is of
+no use in practice for displaying Indic strings properly.
+
+</p><p>Summary: X11 was never designed for Arabic, Syriac, Indic, and
+special libraries such as Pango have to be used for these scripts. If
+you want to help getting Indic supported under X11, you have to extend
+the X11 standards to fix this problem and provide a font mechanism
+that understands that some scripts need to map characters into glyphs.
+The solution is unfortunately not as easy as just drawing a few glyphs
+with a font editor, otherwise we would already have added the Indic
+scripts long ago to the ucs-fonts package.
+
+</p><p><a href="http://www.cl.cam.ac.uk/~mgk25/">Markus Kuhn</a>
+</p><p class="footdate">created 1998-09-22 –
+last modified 2002-11-15 –
+http://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html
+
+
+</p></body></html>

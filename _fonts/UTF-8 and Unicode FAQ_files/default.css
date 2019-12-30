@@ -1,0 +1,228 @@
+/* Default style sheet for Markus Kuhn's web pages */
+
+@viewport {
+   width: device-width;
+}
+
+@media handheld {
+}
+
+body {
+    font-family: "Verdana", "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    background: white;
+    color: black;
+    margin: 1em auto;
+    padding: 0 1em;
+    max-width: 800px;
+}
+
+img {border: none; }
+
+p.note, div.note {
+    font-size: small;
+    line-height: 120%;
+    background: #eee;
+    padding: 3pt;
+}
+
+span.note {
+    font-size: small;
+    line-height: 120%;
+}
+
+samp, pre {
+    font-size: 95%;
+}
+
+li {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+}
+
+li ul li {
+    list-style-type: square;
+    margin: 0pt;
+}
+
+ol li ol {
+    list-style-type: lower-latin;
+}
+
+ul.compact li, ol.compact li {
+    margin: 0ex;
+}
+
+a {
+    color: #00c;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #66f;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+strong.new {
+    color: #f00;
+}
+
+blockquote.sidequote {
+    margin-left: 50%;
+    margin-right: 0%;
+    font-style: italic;
+    text-align: right;
+}
+
+h1 {
+    font-family: "Trebuchet", "Helvetica", sans-serif;
+    font-size: 200%;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 130%;
+}
+
+h2 {
+    font-family: "Trebuchet", "Helvetica", sans-serif;
+    font-size: 150%;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 130%;
+    border-bottom: 2px solid #f80;
+}
+
+h3 {
+    font-family: "Trebuchet", "Helvetica", sans-serif;
+    font-size: 130%;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 130%;
+}
+
+h4 {
+    font-family: "Verdana", "Helvetica", sans-serif;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 130%;
+    margin-top: 0ex;
+    margin-bottom: 0ex;
+    padding: 0;
+
+}
+
+h5 {
+    font-family: "Verdana", "Helvetica", sans-serif;
+    font-size: medium;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 130%;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+p.footdate {
+    font-size: small;
+    text-align: center;
+    background: #eee;
+    margin-left: -3pt;
+    margin-right: -3pt;
+    padding: 1pt 3pt;
+    clear: both;
+}
+
+/* table with 2px solid lines */
+
+table.solid {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table.solid tbody td, table.solid tbody th {
+    border: 2px solid black;
+    padding: 2px 4px;
+}
+
+table.solid tbody th {
+    font-family: "Verdana", "Helvetica", sans-serif;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 100%;
+    background: #eee;
+}
+
+table.solid tbody td {
+    vertical-align: top;
+}
+
+/* table with grey background and white separators */
+
+table.grey {
+    border-spacing: 5px;
+}
+
+table.grey tbody tr {
+    background: #EEEEEE;
+    vertical-align: top;
+}
+
+table.grey tbody tr td {
+    padding: 3px;
+}
+
+div.alert {
+    background: #ffc;
+    margin: 0;
+    padding: 1px 1em;
+}
+
+div.alert h2 {
+    font-family: "Trebuchet", "Helvetica", sans-serif;
+    font-size: 120%;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 130%;
+    background: inherit;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+div.ucampas-toc {
+    font-size: small;
+    line-height: 100%;
+    border: 1px solid #aaa;
+    padding: 0 5px;
+    max-width: 30%;
+}
+div.ucampas-toc.right {
+    display: inline;
+    float: right;
+    margin: 1em 0 1em 1em;
+}
+div.ucampas-toc p {
+    margin: 0.5em 0;
+    padding: 0;
+}
+div.ucampas-toc ul {
+  list-style: none;
+  margin: 0.5em;
+  padding: 0;
+}
+div.ucampas-toc ul li ul {
+  list-style: none;
+  margin: 0.5em;
+  padding: 0;
+}
+div.ucampas-toc li {
+  display: run-in;
+}

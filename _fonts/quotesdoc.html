@@ -1,0 +1,175 @@
+
+<!-- saved from url=(0036)http://towo.net/mined/quotesdoc.html -->
+<html><div id="bm-2225254214"><div data-reactroot="" id="bm-2225254214"></div></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" type="text/css" href="./quotesdoc_files/style.css">
+<style>
+code, td span {background-color: #CCC0C0;}
+</style>
+<script language="JavaScript">top.select ("quotesdoc");</script>
+</head>
+
+<body><h3>MinEd Quotation Marks Styles (smart quotes)</h3>
+Mined smart quotes mode turns ASCII double and single quotation marks 
+(" and ') into typographic quotation marks according to the selected style.
+The style to be applied can be selected from the Quotes menu, 
+or a locale-specific style can be preset.
+<p>Use command line option <code>-q=<i>locale</i></code> to set a specific 
+style, <code>+q=<i>locale</i></code> to set a standby style (for quick 
+toggling on the Quotes flag), or use just <code>-q</code> or <code>+q</code> 
+to derive a style from the current locale environment.
+
+</p><h4>Style issues</h4>
+Information about international usage of typographic quotation marks has 
+been collected from Wikipedia (mainly English/German pages) and some 
+other web resources; note however that available information is sparse 
+and not consistent. Comments are welcome.
+<br>Note that the “double” quotation marks are normally used for 
+single (or outer) quotations while the ‘single’ quotation marks are 
+used for nested (or inner) quotations. In some styles, however, e.g. 
+British usage, these are reversed. To achieve that, simply use the 
+corresponding keys (e.g. apostrophe for British single quotation or 
+for Chinese/Japanese corner brackets).
+<br>Note also that many languages have more than one typical style; the 
+style from the “alternate” column below is used as standby style.
+<p>Language-specific notes:
+</p><ul>
+<li>	The alternate/standby style is sometimes used to provide 
+	a traditional style (e.g. Dutch, Greek).
+</li><li>	For Arabic, the assumption is that in countries with French 
+	influence the French «guillemets» are the preferred style.
+</li><li>	For Greek, a traditional style is provided as standby style;
+	to use an alternate modern style (« Οὗτος ἔφη· “ Ἁδρόν ἐστι. ” »), 
+	select Spanish style.
+</li><li>	For Hebrew, the language tag <code>he</code> (or <code>hebrew</code>) 
+	triggers a more traditional style (lower opening), while the 
+	language tag <code>he_IL</code> triggers a supposedly more 
+	modern style (upper opening); in both cases, the reverse closing 
+	quotation mark is available as alternate style.
+</li><li>	For Polish, three major styles are described; different styles 
+	are triggered by locales <code>pl</code> (with inner single quotes) 
+	and <code>polish</code> (with inner guillemets), respectively, 
+	and can be selected from the menu.
+</li><li>	For right-to-left scripts, quotation marks are applied in the 
+	configured order but appear in right-to-left order, so e.g. 
+	Arabic ”…“ will appear like “cibarA”. Note, however, that 
+	«angle» quotation marks have the Unicode bidi_mirrored property 
+	so each of them will appear mirrored on the terminal; this makes 
+	their configuration look like their later appearance, by 
+	conincidence of double reversal.
+</li></ul>
+
+<h4>Mapping</h4>
+
+<table>
+<tbody><tr>
+<th>Language
+</th><th>Locale
+</th><th colspan="2">main style
+</th><th colspan="2">alternate style
+</th></tr><tr>
+<th colspan="2">
+</th><th>outer
+</th><th>inner
+</th><th>outer
+</th><th>inner
+</th></tr><tr>
+<td>(default)
+</td><td>(others)
+</td><td><span>“…”</span></td><td><span>‘…’
+</span></td><td><span>“…”</span></td><td><span>‘…’
+</span></td></tr><tr><td>Afrikaans</td><td><code>af</code></td><td><span>“…”</span></td><td><span>‘…’</span></td><td><span>„…”</span></td><td><span>‚…’
+</span></td></tr><tr><td>Albanian</td><td><code>sq</code></td><td><span>«…»</span></td><td><span>‹…›</span></td><td><span>“…„</span></td><td><span>‘…‚
+</span></td></tr><tr><td>Arabic, Algeria</td><td><code>ar_DZ</code></td><td><span>«…»</span></td><td><span></span></td><td><span>”…“</span></td><td><span>
+</span></td></tr><tr><td>Arabic, Chad</td><td><code>ar_TD</code></td><td><span>«…»</span></td><td><span></span></td><td><span>”…“</span></td><td><span>
+</span></td></tr><tr><td>Arabic, Comoros</td><td><code>ar_KM</code></td><td><span>«…»</span></td><td><span></span></td><td><span>”…“</span></td><td><span>
+</span></td></tr><tr><td>Arabic, Djibouti</td><td><code>ar_DJ</code></td><td><span>«…»</span></td><td><span></span></td><td><span>”…“</span></td><td><span>
+</span></td></tr><tr><td>Arabic, Lebanon</td><td><code>ar_LB</code></td><td><span>«…»</span></td><td><span></span></td><td><span>”…“</span></td><td><span>
+</span></td></tr><tr><td>Arabic, Mauritania</td><td><code>ar_MR</code></td><td><span>«…»</span></td><td><span></span></td><td><span>”…“</span></td><td><span>
+</span></td></tr><tr><td>Arabic, Morocco</td><td><code>ar_MA</code></td><td><span>«…»</span></td><td><span></span></td><td><span>”…“</span></td><td><span>
+</span></td></tr><tr><td>Arabic, Syria</td><td><code>ar_SY</code></td><td><span>«…»</span></td><td><span></span></td><td><span>”…“</span></td><td><span>
+</span></td></tr><tr><td>Arabic, Tunisia</td><td><code>ar_TN</code></td><td><span>«…»</span></td><td><span></span></td><td><span>”…“</span></td><td><span>
+</span></td></tr><tr><td>Arabic, Western Sahara</td><td><code>ar_EH</code></td><td><span>«…»</span></td><td><span></span></td><td><span>”…“</span></td><td><span>
+</span></td></tr><tr><td>Arabic</td><td><code>ar</code></td><td><span>”…“</span></td><td><span></span></td><td><span>«…»</span></td><td><span>
+</span></td></tr><tr><td>Armenian</td><td><code>hy</code></td><td><span>«…»</span></td><td><span>“…”</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Azerbaijani</td><td><code>az</code></td><td><span>«…»</span></td><td><span>‹…›</span></td><td><span>“…”</span></td><td><span>‘…’
+</span></td></tr><tr><td>Basque</td><td><code>eu</code></td><td><span>«…»</span></td><td><span>‹…›</span></td><td><span>“…”</span></td><td><span>‘…’
+</span></td></tr><tr><td>Belarusian</td><td><code>be</code></td><td><span>«…»</span></td><td><span>„…“</span></td><td><span>„…“</span></td><td><span>
+</span></td></tr><tr><td>Breton</td><td><code>br</code></td><td><span>«…»</span></td><td><span>‹…›</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Bulgarian</td><td><code>bg</code></td><td><span>„…“</span></td><td><span></span></td><td><span>«…»</span></td><td><span>‘…’
+</span></td></tr><tr><td>Catalan</td><td><code>ca</code></td><td><span>«…»</span></td><td><span>“…”</span></td><td><span>“…”</span></td><td><span>‘…’
+</span></td></tr><tr><td>Chinese, simplified</td><td><code>chinese</code></td><td><span>“…”</span></td><td><span>‘…’</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Chinese, simplified</td><td><code>zh</code></td><td><span>“…”</span></td><td><span>‘…’</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Chinese, simplified</td><td><code>zh_CN</code></td><td><span>“…”</span></td><td><span>‘…’</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Chinese, traditional</td><td><code>tchinese</code></td><td><span>『…』</span></td><td><span>「…」</span></td><td><span>“…”</span></td><td><span>‘…’
+</span></td></tr><tr><td>Chinese, traditional</td><td><code>zh_HK</code></td><td><span>『…』</span></td><td><span>「…」</span></td><td><span>“…”</span></td><td><span>‘…’
+</span></td></tr><tr><td>Chinese, traditional</td><td><code>zh_TW</code></td><td><span>『…』</span></td><td><span>「…」</span></td><td><span>“…”</span></td><td><span>‘…’
+</span></td></tr><tr><td>Croatian</td><td><code>croatian</code></td><td><span>„…”</span></td><td><span>‚…’</span></td><td><span>»…«</span></td><td><span>
+</span></td></tr><tr><td>Croatian</td><td><code>hr</code></td><td><span>„…”</span></td><td><span>‚…’</span></td><td><span>»…«</span></td><td><span>
+</span></td></tr><tr><td>Croatian</td><td><code>hrvatski</code></td><td><span>„…”</span></td><td><span>‚…’</span></td><td><span>»…«</span></td><td><span>
+</span></td></tr><tr><td>Czech</td><td><code>cs</code></td><td><span>„…“</span></td><td><span>‚…‘</span></td><td><span>»…«</span></td><td><span>›…‹
+</span></td></tr><tr><td>Czech</td><td><code>czech</code></td><td><span>„…“</span></td><td><span>‚…‘</span></td><td><span>»…«</span></td><td><span>›…‹
+</span></td></tr><tr><td>Danish</td><td><code>da</code></td><td><span>»…«</span></td><td><span>›…‹</span></td><td><span>„…“</span></td><td><span>’…’
+</span></td></tr><tr><td>Dutch</td><td><code>nl</code></td><td><span>“…”</span></td><td><span>‘…’</span></td><td><span>„…”</span></td><td><span>‚…’
+</span></td></tr><tr><td>Estonian</td><td><code>et</code></td><td><span>„…”</span></td><td><span></span></td><td><span>„…“</span></td><td><span>
+</span></td></tr><tr><td>Farsi</td><td><code>fa</code></td><td><span>«…»</span></td><td><span>‹…›</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Finnish</td><td><code>fi</code></td><td><span>”…”</span></td><td><span>’…’</span></td><td><span>»…»</span></td><td><span>›…›
+</span></td></tr><tr><td>French, Swiss</td><td><code>fr_CH</code></td><td><span>«…»</span></td><td><span>‹…›</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>French</td><td><code>fr</code></td><td><span>« … »</span></td><td><span>“ … ”</span></td><td><span>« … »</span></td><td><span>‹ … ›
+</span></td></tr><tr><td>Galician</td><td><code>gl</code></td><td><span>«…»</span></td><td><span>‹…›</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Georgian</td><td><code>ka</code></td><td><span>„…“</span></td><td><span></span></td><td><span>“…”</span></td><td><span>
+</span></td></tr><tr><td>German, Liecht.</td><td><code>de_LI</code></td><td><span>«…»</span></td><td><span>‹…›</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>German, Swiss</td><td><code>de_CH</code></td><td><span>«…»</span></td><td><span>‹…›</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>German</td><td><code>de</code></td><td><span>„…“</span></td><td><span>‚…‘</span></td><td><span>»…«</span></td><td><span>›…‹
+</span></td></tr><tr><td>Greek</td><td><code>el</code></td><td><span>«…»</span></td><td><span>‟…”</span></td><td><span>“…„</span></td><td><span>‘…‚
+</span></td></tr><tr><td>Greek</td><td><code>greek</code></td><td><span>«…»</span></td><td><span>‟…”</span></td><td><span>“…„</span></td><td><span>‘…‚
+</span></td></tr><tr><td>Hebrew, modern</td><td><code>he_IL</code></td><td><span>”…”</span></td><td><span></span></td><td><span>”…“</span></td><td><span>
+</span></td></tr><tr><td>Hebrew</td><td><code>he</code></td><td><span>„…”</span></td><td><span>‚…’</span></td><td><span>„…“</span></td><td><span>
+</span></td></tr><tr><td>Hebrew</td><td><code>hebrew</code></td><td><span>„…”</span></td><td><span>‚…’</span></td><td><span>„…“</span></td><td><span>
+</span></td></tr><tr><td>Hungarian</td><td><code>hu</code></td><td><span>„…”</span></td><td><span>»…«</span></td><td><span>„…”</span></td><td><span>’…’
+</span></td></tr><tr><td>Hungarian</td><td><code>hungarian</code></td><td><span>„…”</span></td><td><span>»…«</span></td><td><span>„…”</span></td><td><span>’…’
+</span></td></tr><tr><td>Icelandic</td><td><code>is</code></td><td><span>„…“</span></td><td><span>‚…‘</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Italian, Swiss</td><td><code>it_CH</code></td><td><span>«…»</span></td><td><span>‹…›</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Italian</td><td><code>it</code></td><td><span>«…»</span></td><td><span></span></td><td><span>“…”</span></td><td><span>‘…’
+</span></td></tr><tr><td>Japanese</td><td><code>ja</code></td><td><span>『…』</span></td><td><span>「…」</span></td><td><span>【…】</span></td><td><span>〖…〗
+</span></td></tr><tr><td>Japanese</td><td><code>japanese</code></td><td><span>『…』</span></td><td><span>「…」</span></td><td><span>【…】</span></td><td><span>〖…〗
+</span></td></tr><tr><td>Kazakh</td><td><code>kk</code></td><td><span>«…»</span></td><td><span>„…“</span></td><td><span>“…”</span></td><td><span>
+</span></td></tr><tr><td>Khmer</td><td><code>km</code></td><td><span>«…»</span></td><td><span>‹…›</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Korean</td><td><code>ko</code></td><td><span>“…”</span></td><td><span>‘…’</span></td><td><span>『…』</span></td><td><span>「…」
+</span></td></tr><tr><td>Korean</td><td><code>korean</code></td><td><span>“…”</span></td><td><span>‘…’</span></td><td><span>『…』</span></td><td><span>「…」
+</span></td></tr><tr><td>Latvian</td><td><code>lv</code></td><td><span>«…»</span></td><td><span>„…“</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Lithuanian</td><td><code>lithuanian</code></td><td><span>„…“</span></td><td><span></span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Lithuanian</td><td><code>lt</code></td><td><span>„…“</span></td><td><span></span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Macedonian</td><td><code>mk</code></td><td><span>„…“</span></td><td><span>’…‘</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>North Korean</td><td><code>ko_KP</code></td><td><span>《…》</span></td><td><span>〈…〉</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Norwegian</td><td><code>no</code></td><td><span>«…»</span></td><td><span>‘…’</span></td><td><span>”…”</span></td><td><span>’…’
+</span></td></tr><tr><td>Polish, altern.</td><td><code>polish</code></td><td><span>„…”</span></td><td><span>«…»</span></td><td><span>„…”</span></td><td><span>»…«
+</span></td></tr><tr><td>Polish</td><td><code>pl</code></td><td><span>„…”</span></td><td><span>‚…’</span></td><td><span>«…»</span></td><td><span>‚…’
+</span></td></tr><tr><td>Portuguese, Brazil</td><td><code>pt_BR</code></td><td><span>“…”</span></td><td><span>‘…’</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Portuguese</td><td><code>pt</code></td><td><span>«…»</span></td><td><span>‹…›</span></td><td><span>“…”</span></td><td><span>‘…’
+</span></td></tr><tr><td>Romanian</td><td><code>ro</code></td><td><span>„…”</span></td><td><span>«…»</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Romanian</td><td><code>romanian</code></td><td><span>„…”</span></td><td><span>«…»</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Russian</td><td><code>ru</code></td><td><span>«…»</span></td><td><span>„…“</span></td><td><span>“…”</span></td><td><span>
+</span></td></tr><tr><td>Russian</td><td><code>russian</code></td><td><span>«…»</span></td><td><span>„…“</span></td><td><span>“…”</span></td><td><span>
+</span></td></tr><tr><td>Serbian, Cyrillic</td><td><code>sr</code></td><td><span>„…“</span></td><td><span>‚…’</span></td><td><span>„…”</span></td><td><span>
+</span></td></tr><tr><td>Serbian, Latin</td><td><code>sr_BA@latin</code></td><td><span>„…“</span></td><td><span>’…’</span></td><td><span>„…”</span></td><td><span>
+</span></td></tr><tr><td>Serbian, Latin</td><td><code>sr_CS@latin</code></td><td><span>„…“</span></td><td><span>’…’</span></td><td><span>„…”</span></td><td><span>
+</span></td></tr><tr><td>Serbian, Latin</td><td><code>sr_ME@latin</code></td><td><span>„…“</span></td><td><span>’…’</span></td><td><span>„…”</span></td><td><span>
+</span></td></tr><tr><td>Serbian, Latin</td><td><code>sr_RS@latin</code></td><td><span>„…“</span></td><td><span>’…’</span></td><td><span>„…”</span></td><td><span>
+</span></td></tr><tr><td>Slovak</td><td><code>sk</code></td><td><span>„…“</span></td><td><span>‚…‘</span></td><td><span>»…«</span></td><td><span>›…‹
+</span></td></tr><tr><td>Slovak</td><td><code>slovak</code></td><td><span>„…“</span></td><td><span>‚…‘</span></td><td><span>»…«</span></td><td><span>›…‹
+</span></td></tr><tr><td>Slovene</td><td><code>sl</code></td><td><span>„…“</span></td><td><span>‚…‘</span></td><td><span>»…«</span></td><td><span>›…‹
+</span></td></tr><tr><td>Slovene</td><td><code>slovene</code></td><td><span>„…“</span></td><td><span>‚…‘</span></td><td><span>»…«</span></td><td><span>›…‹
+</span></td></tr><tr><td>Slovene</td><td><code>slovenian</code></td><td><span>„…“</span></td><td><span>‚…‘</span></td><td><span>»…«</span></td><td><span>›…‹
+</span></td></tr><tr><td>Sorbian</td><td><code>dsb</code></td><td><span>„…“</span></td><td><span>‚…‘</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Sorbian</td><td><code>hsb</code></td><td><span>„…“</span></td><td><span>‚…‘</span></td><td><span></span></td><td><span>
+</span></td></tr><tr><td>Spanish</td><td><code>es</code></td><td><span>«…»</span></td><td><span>“…”</span></td><td><span>“…”</span></td><td><span>‘…’
+</span></td></tr><tr><td>Swedish</td><td><code>sv</code></td><td><span>”…”</span></td><td><span>’…’</span></td><td><span>»…»</span></td><td><span>
+</span></td></tr><tr><td>Tajik</td><td><code>tg</code></td><td><span>«…»</span></td><td><span>„…“</span></td><td><span>“…”</span></td><td><span>
+</span></td></tr><tr><td>Tatar</td><td><code>tt</code></td><td><span>«…»</span></td><td><span>„…“</span></td><td><span>“…”</span></td><td><span>
+</span></td></tr><tr><td>Turkish</td><td><code>tr</code></td><td><span>“…”</span></td><td><span>‘…’</span></td><td><span>«…»</span></td><td><span>‹…›
+</span></td></tr><tr><td>Turkish</td><td><code>turkish</code></td><td><span>“…”</span></td><td><span>‘…’</span></td><td><span>«…»</span></td><td><span>‹…›
+</span></td></tr><tr><td>Ukrainian</td><td><code>uk</code></td><td><span>«…»</span></td><td><span>„…“</span></td><td><span>„…“</span></td><td><span>
+</span></td></tr><tr><td>Vietnamese</td><td><code>vi</code></td><td><span>«…»</span></td><td><span>‹…›</span></td><td><span>“…”</span></td><td><span>
+</span></td></tr></tbody></table>
+</body></html>

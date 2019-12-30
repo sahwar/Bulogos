@@ -1,0 +1,2734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!-- saved from url=(0053)https://www.cl.cam.ac.uk/~mgk25/unicode.html#getxterm -->
+<html lang="en"><div id="bm-2225254214"><div data-reactroot="" id="bm-2225254214"></div></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>UTF-8 and Unicode FAQ</title>
+<link rel="Up" href="http://www.cl.cam.ac.uk/~mgk25/">
+<link rel="stylesheet" href="./UTF-8 and Unicode FAQ_files/default.css" type="text/css">
+<meta name="keywords" content="Unicode, ISO 10646-1, UCS, X11, X Window
+System, Linux, Unix, POSIX, character sets, ISO 8859-1, xterm">
+<meta name="description" content="All you need to know to use
+Unicode/UTF-8 on Unix and Linux systems.">
+</head>
+<body>
+<script type="text/javascript"><!--
+google_ad_client = "pub-5556489343403998";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text";
+google_ad_channel ="";
+//--></script>
+<script type="text/javascript" src="./UTF-8 and Unicode FAQ_files/f.txt">
+</script>
+<h1>UTF-8 and Unicode FAQ for Unix/Linux</h1>
+
+<p>by <a href="https://www.cl.cam.ac.uk/~mgk25/">Markus Kuhn</a>
+
+</p><p><b>This text is a very comprehensive one-stop information resource
+on how you can use Unicode/UTF-8 on POSIX systems (Linux, Unix). You
+will find here both introductory information for every user, as well as
+detailed references for the experienced developer.</b>
+
+</p><p><b>Unicode now replaces ASCII, ISO 8859 and EUC at all levels. It
+enables users to handle not only practically any script and language
+used on this planet, it also supports a comprehensive set of
+mathematical and technical symbols to simplify scientific information
+exchange.</b>
+
+</p><p><b>With the UTF-8 encoding, Unicode can be used in a convenient and
+backwards compatible way in environments that were designed entirely
+around ASCII, like Unix. UTF-8 is the way in which Unicode is used
+under Unix, Linux, and similar systems. Make sure that you are well
+familiar with it and that your software supports UTF-8 smoothly.</b>
+
+</p><h2>Contents</h2>
+
+<ul>
+
+<li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#ucs">What are UCS and ISO 10646?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#comb">What are combining characters?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#levels">What are UCS implementation levels?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#national">Has UCS been adopted as a national standard?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#unicode">What is Unicode?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#diffs">So what is the difference between Unicode and ISO 10646?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8">What is UTF-8?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#history">Who invented UTF-8?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#examples">Where do I find nice UTF-8 example files?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#ucsutf">What different encodings are there?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#lang">What programming languages support Unicode?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#linux">How should Unicode be used under Linux?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#mod">How do I have to modify my software?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#c">C support for Unicode and UTF-8</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#activate">How should the UTF-8 mode be activated?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#getxterm">How do I get a UTF-8 version of xterm?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#xterm">How much of Unicode does xterm support?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#fonts">Where do I find ISO 10646-1 X11 fonts?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#term">What are the issues related to UTF-8 terminal emulators?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#apps">What UTF-8 enabled applications are available?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#patches">What patches to improve UTF-8 support are available?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#libs">Are there free libraries for dealing with Unicode available?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#widgets">What is the status of Unicode support for various X widget libraries?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#wip">What packages with UTF-8 support are currently under development?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#solaris">How does UTF-8 support work under Solaris?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#web">Can I use UTF-8 on the Web?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#ps">How are PostScript glyph names related to UCS codes?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#subsets">Are there any well-defined UCS subsets?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#conv">What issues are there to consider when converting encodings</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#x11">Is X11 ready for Unicode?</a> 
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#perl">What are useful Perl one-liners for working with UTF-8?</a> 
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#input">How can I enter Unicode characters?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#lists">Are there any good mailing lists on these issues?</a>
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#refs">Further references</a>
+
+</li></ul>
+
+<h2 id="ucs">What are UCS and ISO 10646?</h2>
+
+<p>The international standard <b>ISO 10646</b> defines the
+<b>Universal Character Set (UCS)</b>. UCS is a superset of all other
+character set standards. It guarantees <em>round-trip
+compatibility</em> to other character sets. This means simply that no
+information is lost if you convert any text string to UCS and then
+back to its original encoding.
+
+</p><p>UCS contains the characters required to represent practically all
+known languages. This includes not only the Latin, Greek, Cyrillic,
+Hebrew, Arabic, Armenian, and Georgian scripts, but also Chinese,
+Japanese and Korean Han ideographs as well as scripts such as
+Hiragana, Katakana, Hangul, Devanagari, Bengali, Gurmukhi, Gujarati,
+Oriya, Tamil, Telugu, Kannada, Malayalam, Thai, Lao, Khmer, Bopomofo,
+Tibetan, Runic, Ethiopic, Canadian Syllabics, Cherokee, Mongolian,
+Ogham, Myanmar, Sinhala, Thaana, Yi, and others. For scripts not yet
+covered, research on how to best encode them for computer usage is
+still going on and they will be added eventually. This includes not
+only historic scripts such as <a href="http://std.dkuug.dk/jtc1/sc2/wg2/docs/n1639/n1639.htm">Cuneiform</a>, <a href="http://std.dkuug.dk/jtc1/sc2/wg2/docs/n1637/n1637.htm">Hieroglyphs</a> and various Indo-European notations, but even some
+selected artistic scripts such as Tolkien’s <a href="http://std.dkuug.dk/jtc1/sc2/wg2/docs/n1641/n1641.htm">Tengwar</a> and <a href="http://std.dkuug.dk/jtc1/sc2/wg2/docs/n1642/n1642.htm">Cirth</a>. UCS also covers a large number of graphical,
+typographical, mathematical and scientific symbols, including those
+provided by TeX, PostScript, APL, the International Phonetic Alphabet
+(IPA), MS-DOS, MS-Windows, Macintosh, OCR fonts, as well as many word
+processing and publishing systems. The standard continues to be
+maintained and updated. Ever more exotic and specialized symbols and
+characters will be added for many years to come.
+
+</p><p>ISO 10646 originally defined a 31-bit character set. The subsets of
+2<sup>16</sup> characters where the elements differ (in a 32-bit
+integer representation) only in the 16 least-significant bits are
+called the <em>planes</em> of UCS.
+
+</p><p>The most commonly used characters, including all those found in
+major older encoding standards, have been placed into the first plane
+(0x0000 to 0xFFFD), which is called the
+<b>Basic Multilingual Plane (BMP)</b> or Plane 0. The characters that
+were later added outside the 16-bit BMP are mostly for specialist
+applications such as historic scripts and scientific notation. Current
+plans are that there will never be characters assigned outside the
+21-bit code space from 0x000000 to 0x10FFFF, which covers a bit over
+one million potential future characters. The ISO 10646-1 standard was
+first published in 1993 and defines the architecture of the character
+set and the content of the BMP. A second part ISO 10646-2 was added in
+2001 and defines characters encoded outside the BMP. In the 2003
+edition, the two parts were combined into a single ISO 10646 standard.
+New characters are still being added on a continuous basis, but the
+existing characters will not be changed any more and are stable.
+
+</p><p>UCS assigns to each character not only a code number but also an
+official name. A hexadecimal number that represents a UCS or Unicode
+value is commonly preceded by “U+” as in U+0041 for the character
+“Latin capital letter A”. The UCS characters U+0000 to U+007F are
+identical to those in US-ASCII (ISO 646 IRV) and the range U+0000 to
+U+00FF is identical to ISO 8859-1 (Latin-1). The range U+E000 to
+U+F8FF and also larger ranges outside the BMP are reserved for private
+use. UCS also defines several methods for encoding a string of
+characters as a sequence of bytes, such as UTF-8 and UTF-16.
+
+</p><p>The full reference for the UCS standard is
+
+</p><blockquote>
+
+<p>International Standard ISO/IEC 10646, Information technology
+— Universal Multiple-Octet Coded Character Set (UCS) . Third
+edition, International Organization for Standardization, Geneva, 2003.
+
+</p></blockquote>
+
+<p>The standard can be <a href="http://www.iso.ch/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=39921&amp;ICS1=35&amp;ICS2=40&amp;ICS3=">ordered
+online from ISO</a> as a set of PDF files on CD-ROM for 112 CHF.
+
+</p><p>In September 2006, ISO released
+a free online PDF copy of ISO 10646 on its <a href="http://isotc.iso.org/livelink/livelink/fetch/2000/2489/Ittf_Home/PubliclyAvailableStandards.htm">Freely
+Available Standards</a> web page. The <a href="http://standards.iso.org/ittf/PubliclyAvailableStandards/c051273_ISO_IEC_10646_2011(E).zip">ZIP
+file</a> is 80 MB long.
+
+</p><h2 id="comb">What are combining characters?</h2>
+
+<p>Some code points in UCS have been assigned to <b>combining
+characters</b>. These are similar to the non-spacing accent keys on a
+typewriter. A combining character is not a full character by itself.
+It is an accent or other diacritical mark that is added to the
+previous character. This way, it is possible to place any accent on
+any character. The most important accented characters, like those used
+in the orthographies of common languages, have codes of their own in
+UCS to ensure backwards compatibility with older character sets. They
+are known as
+<b>precomposed characters</b>. Precomposed characters are available in
+UCS for backwards compatibility with older encodings that have no
+combining characters, such as ISO 8859. The combining-character
+mechanism allows one to add accents and other diacritical marks to any
+character. This is especially important for scientific notations such
+as mathematical formulae and the International Phonetic Alphabet,
+where any possible combination of a base character and one or several
+diacritical marks could be needed.
+
+</p><p>Combining characters follow the character which they modify. For
+example, the German umlaut character Ä (“Latin capital letter A with
+diaeresis”) can either be represented by the precomposed UCS code
+U+00C4, or alternatively by the combination of a normal “Latin capital
+letter A” followed by a “combining diaeresis”: U+0041 U+0308. Several
+combining characters can be applied when it is necessary to stack
+multiple accents or add combining marks both above and below the base
+character. The Thai script, for example, needs up to two combining
+characters on a single base character.
+
+</p><h2 id="levels">What are UCS implementation levels?</h2>
+
+<p>Not all systems can be expected to support all the advanced
+mechanisms of UCS, such as combining characters. Therefore, ISO 10646
+specifies the following three implementation levels:
+
+</p><dl>
+
+<dt>Level 1</dt><dd>Combining characters and Hangul Jamo characters 
+are not supported.
+
+<br><small>[Hangul Jamo are an alternative representation of
+precomposed modern Hangul syllables as a sequence of consonants and
+vowels. They are required to fully support the Korean script including
+Middle Korean.]</small>
+
+</dd><dt>Level 2</dt><dd>Like level 1, however in some scripts, a fixed list of
+combining characters is now allowed (e.g., for Hebrew, Arabic,
+Devanagari, Bengali, Gurmukhi, Gujarati, Oriya, Tamil, Telugo, Kannada,
+Malayalam, Thai and Lao). These scripts cannot be represented
+adequately in UCS without support for at least certain combining
+characters.
+
+</dd><dt>Level 3</dt><dd>All UCS characters are supported, such that, for
+example, mathematicians can place a tilde or an arrow (or both) on any
+character.
+
+</dd></dl>
+
+<h2 id="national">Has UCS been adopted as a national standard?</h2>
+
+<p>Yes, a number of countries have published national adoptions of ISO
+10646, sometimes after adding additional annexes with cross-references
+to older national standards, implementation guidelines, and
+specifications of various national implementation subsets:
+
+</p><ul>
+
+<li>China: GB 13000.1-93
+
+</li><li>Japan: <a href="http://www.jsa.or.jp/default_english.asp">JIS</a>
+X 0221-1:2001
+
+</li><li>Korea: KS X 1005-1:1995 (includes ISO 10646-1:1993 amendments 1-7)
+
+</li><li>Vietnam: <a href="http://www.undp.org.vn/unicode/">TCVN
+6909:2001</a>
+<br>(This “16-bit Coded Vietnamese Character Set” is a
+small UCS subset and to be implemented for data interchange with and
+within government agencies as of 2002-07-01.)
+
+</li><li>Iran: <a href="http://prdownloads.sourceforge.net/farsitools/finalversion.pdf?download">ISIRI
+6219:2002</a>, Information Technology — Persian Information
+Interchange and Display Mechanism, using Unicode. (This is not a
+version or subset of ISO 10646, but a separate document that provides
+additional national guidance and clarification on handling the Persian
+language and the Arabic script in Unicode.)
+
+</li></ul>
+
+<h2 id="unicode">What is Unicode?</h2>
+
+<p>In the late 1980s, there have been two independent attempts to
+create a single unified character set. One was the ISO 10646 project
+of the <a href="http://www.iso.ch/">International Organization for
+Standardization (ISO)</a>, the other was the <a href="http://www.unicode.org/">Unicode Project</a> organized by a
+consortium of (initially mostly US) manufacturers of multi-lingual
+software. Fortunately, the participants of both projects realized in
+around 1991 that two different unified character sets is not exactly
+what the world needs. They joined their efforts and worked together on
+creating a single code table. Both projects still exist and publish
+their respective standards independently, however the Unicode
+Consortium and ISO/IEC JTC1/SC2 have agreed to keep the code tables of
+the Unicode and ISO 10646 standards compatible and they closely
+coordinate any further extensions. Unicode 1.1 corresponded to ISO
+10646-1:1993, Unicode 3.0 corresponded to ISO 10646-1:2000, Unicode
+3.2 added ISO 10646-2:2001, and Unicode 4.0 corresponds to ISO
+10646:2003, and Unicode 5.0 corresponds to ISO 10646:2003 plus its
+amendments 1–3. All Unicode versions since 2.0 are compatible, only
+new characters will be added, no existing characters will be removed
+or renamed in the future.
+
+</p><p>The Unicode Standard can be ordered like any normal book, for
+instance via <a href="http://www.amazon.com/exec/obidos/ASIN/0321480910/">amazon.com</a>
+for around 60&nbsp;USD:
+
+</p><blockquote>
+<p>The Unicode Consortium: <a href="http://www.amazon.com/exec/obidos/ASIN/0321480910/">The
+Unicode Standard 5.0</a>,<br>
+Addison-Wesley, 2006,<br>
+ISBN 0-321-48091-0.
+</p></blockquote>
+
+<p>If you work frequently with text processing and character sets, you
+definitely should get a copy. Unicode 5.0 is also available <a href="http://www.unicode.org/versions/Unicode5.0.0/">online</a>.
+
+</p><h2 id="diffs">So what is the difference between Unicode and ISO 10646?</h2>
+
+<p>The <a href="http://www.unicode.org/unicode/standard/standard.html">Unicode
+Standard</a> published by the Unicode Consortium corresponds to ISO
+10646 at implementation level 3. All characters are at the same
+positions and have the same names in both standards.
+
+</p><p>The Unicode Standard defines in addition much more semantics
+associated with some of the characters and is in general a better
+reference for implementors of high-quality typographic publishing
+systems. Unicode specifies algorithms for rendering presentation forms
+of some scripts (say Arabic), handling of bi-directional texts that
+mix for instance Latin and Hebrew, algorithms for sorting and string
+comparison, and much more.
+
+</p><p>The ISO 10646 standard on the other hand is not much more than a
+simple character set table, comparable to the old ISO 8859 standards.
+It specifies some terminology related to the standard, defines some
+encoding alternatives, and it contains specifications of how to use
+UCS in connection with other established ISO standards such as ISO
+6429 and ISO 2022. There are other closely related ISO standards, for
+instance <a href="http://dkuug.dk/jtc1/sc22/open/n2933.pdf">ISO
+14651</a> on sorting UCS strings. A nice feature of the ISO 10646-1
+standard is that it provides CJK example glyphs in five different
+style variants, while the Unicode standard shows the CJK ideographs
+only in a Chinese variant.
+
+</p><h2 id="utf-8">What is UTF-8?</h2>
+
+<p>UCS and Unicode are first of all just code tables that assign
+integer numbers to characters. There exist several alternatives for
+how a sequence of such characters or their respective integer values
+can be represented as a sequence of bytes. The two most obvious
+encodings store Unicode text as sequences of either 2 or 4 bytes
+sequences. The official terms for these encodings are UCS-2 and UCS-4,
+respectively. Unless otherwise specified, the most significant byte
+comes first in these (Bigendian convention). An ASCII or Latin-1 file
+can be transformed into a UCS-2 file by simply inserting a 0x00 byte
+in front of every ASCII byte. If we want to have a UCS-4 file, we have
+to insert three 0x00 bytes instead before every ASCII byte.
+
+</p><p>Using UCS-2 (or UCS-4) under Unix would lead to very severe
+problems. Strings with these encodings can contain as parts of many
+wide characters bytes like “\0” or “/” which have a special meaning in
+filenames and other C library function parameters. In addition, the
+majority of UNIX tools expects ASCII files and cannot read 16-bit words
+as characters without major modifications. For these reasons,
+<b>UCS-2</b> is not a suitable external encoding of <b>Unicode</b> in
+filenames, text files, environment variables, etc.
+
+</p><p>The <b>UTF-8</b> encoding defined in ISO 10646-1:2000 <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/ISO-10646-UTF-8.html">Annex D</a> and also described in <a href="http://www.ietf.org/rfc/rfc3629.txt">RFC 3629</a> as well as
+section 3.9 of the Unicode 4.0 standard does not have these problems.
+It is clearly the way to go for using
+<b>Unicode</b> under Unix-style operating systems.
+
+</p><p>UTF-8 has the following properties:
+
+</p><ul>
+
+<li>UCS characters U+0000 to U+007F (ASCII) are encoded simply as
+bytes 0x00 to 0x7F (ASCII compatibility). This means that files and
+strings which contain only 7-bit ASCII characters have the same
+encoding under both ASCII and UTF-8.
+
+</li><li>All UCS characters &gt;U+007F are encoded as a sequence of several
+bytes, each of which has the most significant bit set. Therefore, no
+ASCII byte (0x00-0x7F) can appear as part of any other character.
+
+</li><li>The first byte of a multibyte sequence that represents a non-ASCII
+character is always in the range 0xC0 to 0xFD and it indicates how
+many bytes follow for this character. All further bytes in a multibyte
+sequence are in the range 0x80 to 0xBF. This allows easy
+resynchronization and makes the encoding stateless and robust against
+missing bytes.
+
+</li><li>All possible 2<sup>31</sup> UCS codes can be encoded.
+
+</li><li>UTF-8 encoded characters may theoretically be up to six bytes
+long, however 16-bit BMP characters are only up to three bytes long.
+
+</li><li>The sorting order of Bigendian UCS-4 byte strings is preserved.
+
+</li><li>The bytes 0xFE and 0xFF are never used in the UTF-8 encoding.
+
+</li></ul>
+
+<p>The following byte sequences are used to represent a character. The
+sequence to be used depends on the Unicode number of the character:
+
+</p><p></p><table class="solid">
+<tbody><tr><td>U-00000000 – U-0000007F:
+</td><td>0<i>xxxxxxx</i>
+</td></tr><tr><td>U-00000080 – U-000007FF:
+</td><td>110<i>xxxxx</i> 10<i>xxxxxx</i>
+</td></tr><tr><td>U-00000800 – U-0000FFFF:
+</td><td>1110<i>xxxx</i> 10<i>xxxxxx</i> 10<i>xxxxxx</i>
+</td></tr><tr><td>U-00010000 – U-001FFFFF:
+</td><td>11110<i>xxx</i> 10<i>xxxxxx</i> 10<i>xxxxxx</i> 10<i>xxxxxx</i>
+</td></tr><tr><td>U-00200000 – U-03FFFFFF:
+</td><td>111110<i>xx</i> 10<i>xxxxxx</i> 10<i>xxxxxx</i> 10<i>xxxxxx</i>
+10<i>xxxxxx</i>
+</td></tr><tr><td>U-04000000 – U-7FFFFFFF:
+</td><td>1111110<i>x</i> 10<i>xxxxxx</i> 10<i>xxxxxx</i> 10<i>xxxxxx</i>
+10<i>xxxxxx</i> 10<i>xxxxxx</i>
+</td></tr></tbody></table>
+
+<p>The <i>xxx</i> bit positions are filled with the bits of the
+character code number in binary representation. The rightmost <i>x</i>
+bit is the least-significant bit. Only the shortest possible multibyte
+sequence which can represent the code number of the character can be
+used. Note that in multibyte sequences, the number of leading 1 bits
+in the first byte is identical to the number of bytes in the entire
+sequence.
+
+</p><p><b>Examples:</b> The Unicode character <samp>U+00A9 = 1010
+1001</samp> (copyright sign) is encoded in UTF-8 as
+
+</p><pre>    11000010 10101001 = 0xC2 0xA9
+</pre>
+
+<p> and character <samp>U+2260 = 0010 0010 0110 0000</samp> (not equal
+to) is encoded as:
+
+</p><pre>    11100010 10001001 10100000 = 0xE2 0x89 0xA0
+</pre>
+
+<p>The official name and spelling of this encoding is UTF-8, where UTF
+stands for <b>U</b>CS <b>T</b>ransformation <b>F</b>ormat. Please do
+not write UTF-8 in any documentation text in other ways (such as utf8
+or UTF_8), unless of course you refer to a variable name and not the
+encoding itself.</p>
+
+<p><b>An important note for developers of UTF-8 decoding routines:</b>
+For security reasons, a UTF-8 decoder <a href="http://www.unicode.org/unicode/uni2errata/UTF-8_Corrigendum.html">must
+not</a> accept UTF-8 sequences that are longer than necessary to
+encode a character. For example, the character U+000A (line feed) must
+be accepted from a UTF-8 stream <b>only</b> in the form 0x0A, but not
+in any of the following five possible overlong forms:
+
+</p><pre>  0xC0 0x8A
+  0xE0 0x80 0x8A
+  0xF0 0x80 0x80 0x8A
+  0xF8 0x80 0x80 0x80 0x8A
+  0xFC 0x80 0x80 0x80 0x80 0x8A
+</pre>
+
+<p>Any overlong UTF-8 sequence could be abused to bypass UTF-8
+substring tests that look only for the shortest possible encoding. All
+overlong UTF-8 sequences start with one of the following byte
+patterns:
+
+</p><p></p><table class="solid">
+<tbody><tr><td>1100000<i>x</i> (10<i>xxxxxx</i>)
+</td></tr><tr><td>11100000 100<i>xxxxx</i> (10<i>xxxxxx</i>)
+</td></tr><tr><td>11110000 1000<i>xxxx</i> (10<i>xxxxxx</i> 10<i>xxxxxx</i>)
+</td></tr><tr><td>11111000 10000<i>xxx</i> (10<i>xxxxxx</i> 10<i>xxxxxx</i>
+10<i>xxxxxx</i>)
+</td></tr><tr><td>11111100 100000<i>xx</i> (10<i>xxxxxx</i> 10<i>xxxxxx</i>
+10<i>xxxxxx</i> 10<i>xxxxxx</i>)
+</td></tr></tbody></table>
+
+<p>Also note that the code positions U+D800 to U+DFFF (UTF-16
+surrogates) as well as U+FFFE and U+FFFF must not occur in normal
+UTF-8 or UCS-4 data. UTF-8 decoders should treat them like malformed
+or overlong sequences for safety reasons.
+
+</p><p><a href="https://www.cl.cam.ac.uk/~mgk25/ucs/examples/UTF-8-test.txt">Markus Kuhn’s UTF-8 decoder
+stress test file</a> contains a systematic collection of malformed and
+overlong UTF-8 sequences and will help you to verify the robustness of
+your decoder.
+
+</p><h2 id="history">Who invented UTF-8?</h2>
+
+<p>The encoding known today as UTF-8 was invented by <a href="http://www.cs.bell-labs.com/who/ken/">Ken Thompson</a>. It was
+born during the evening hours of 1992-09-02 in a New Jersey diner,
+where he designed it in the presence of <a href="http://www.cs.bell-labs.com/who/rob/">Rob Pike</a> on a placemat
+(see <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt">Rob Pike’s UTF-8 history</a>). It
+replaced an earlier attempt to design a FSS/UTF (file system safe UCS
+transformation format) that was circulated in an X/Open working
+document in August 1992 by Gary Miller (IBM), Greger Leijonhufvud and
+John Entenmann (SMI) as a replacement for the division-heavy UTF-1
+encoding from the first edition of ISO 10646-1. By the end of the
+first week of September 1992, Pike and Thompson had turned AT&amp;T
+Bell Lab’s <a href="http://plan9.bell-labs.com/plan9dist/">Plan 9</a>
+into the world’s first operating system to use UTF-8. They <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/UTF-8-Plan9-paper.pdf">reported</a> about their experience
+at the <a href="http://www.usenix.org/publications/library/proceedings/sd93/">USENIX
+Winter 1993 Technical Conference</a>, San Diego, January 25-29, 1993,
+Proceedings, pp. 43-50. FSS/UTF was briefly also referred to as UTF-2
+and later renamed into UTF-8, and pushed through the standards process
+by the X/Open Joint Internationalization Group XOJIG.
+
+</p><h2 id="examples">Where do I find nice UTF-8 example files?</h2>
+
+<p>A few interesting UTF-8 example files for tests and demonstrations
+are:
+
+</p><ul>
+
+<li><a href="http://www.columbia.edu/kermit/utf8.html">UTF-8
+Sampler</a> web page by the Kermit project
+
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/ucs/examples/">Markus Kuhn’s example plain-text
+files</a>, including among others the classic <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/examples/UTF-8-demo.txt">demo</a>, <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/examples/UTF-8-test.txt">decoder test</a>, <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/examples/TeX.txt">TeX repertoire</a>, <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/wgl4.txt">WGL4 repertoire</a>, <a href="https://www.cl.cam.ac.uk/~mgk25/eurotest/">euro test
+pages</a>, and Robert Brady’s <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/examples/lyrics-ipa.txt">IPA lyrics</a>.
+
+</li><li><a href="http://www.macchiato.com/unicode/Unicode_transcriptions.html">Unicode Transcriptions</a>
+
+</li><li><a href="http://acharya.iitm.ac.in/demos/unicode_testview.html">Generator
+for Indic Unicode test files</a>
+
+</li></ul>
+
+<h2 id="ucsutf">What different encodings are there?</h2>
+
+<p>Both the UCS and Unicode standards are first of all large tables
+that assign to every character an integer number. If you use the term
+“UCS”, “ISO 10646”, or “Unicode”, this just refers to a mapping
+between characters and integers. This does not yet specify how to
+store these integers as a sequence of bytes in memory.
+
+</p><p>ISO 10646-1 defines the UCS-2 and UCS-4 encodings. These are
+sequences of 2 bytes and 4 bytes per character, respectively. ISO
+10646 was from the beginning designed as a 31-bit character set (with
+possible code positions ranging from U-00000000 to U-7FFFFFFF),
+however it took until 2001 for the first characters to be assigned
+beyond the Basic Multilingual Plane (BMP), that is beyond the first
+2<sup>16</sup> character positions (see ISO 10646-2 and <a href="http://www.unicode.org/unicode/reports/tr27/">Unicode 3.1</a>).
+UCS-4 can represent all UCS and Unicode characters, UCS-2 can
+represent only those from the BMP (U+0000 to U+FFFF).
+
+</p><p>“Unicode” originally implied that the encoding was UCS-2 and it
+initially didn’t make any provisions for characters outside the BMP
+(U+0000 to U+FFFF). When it became clear that more than 64k characters
+would be needed for certain special applications (historic alphabets
+and ideographs, mathematical and musical typesetting, etc.), Unicode
+was turned into a sort of 21-bit character set with possible code
+points in the range U-00000000 to U-0010FFFF. The 2×1024 surrogate
+characters (U+D800 to U+DFFF) were introduced into the BMP to allow
+1024×1024 non-BMP characters to be represented as a sequence of
+two 16-bit surrogate characters. This way <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/ISO-10646-UTF-16.html">UTF-16</a> was born, which represents
+the extended “21-bit” Unicode in a way backwards compatible with
+UCS-2. The term <a href="http://www.unicode.org/unicode/reports/tr19/">UTF-32</a> was
+introduced in Unicode to describe a 4-byte encoding of the extended
+“21-bit” Unicode. UTF-32 is the exact same thing as UCS-4, except that
+by definition UTF-32 is never used to represent characters above
+U-0010FFFF, while UCS-4 can cover all 2<sup>31</sup> code positions up
+to U-7FFFFFFF. The ISO 10646 working group has agreed to modify their
+standard to exclude code positions beyond U-0010FFFF, in order to turn
+the new UCS-4 and UTF-32 into practically the same thing.
+
+</p><p>In addition to all that, <a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8">UTF-8</a> was introduced
+to provide an ASCII backwards compatible multi-byte encoding. The
+definitions of UTF-8 in UCS and Unicode differed originally slightly,
+because in UCS, up to 6-byte long UTF-8 sequences were possible to
+represent characters up to U-7FFFFFFF, while in Unicode only up to
+4-byte long UTF-8 sequences are defined to represent characters up to
+U-0010FFFF. (The difference was in essence the same as between UCS-4
+and UTF-32.)
+
+</p><p>No endianess is implied by the encoding names UCS-2, UCS-4, UTF-16,
+and UTF-32, though ISO 10646-1 says that Bigendian should be preferred
+unless otherwise agreed. It has become customary to append the letters
+“BE” (Bigendian, high-byte first) and “LE” (Littleendian, low-byte
+first) to the encoding names in order to explicitly specify a byte
+order.
+
+</p><p>In order to allow the automatic detection of the byte order, it has
+become customary on some platforms (notably Win32) to start every
+Unicode file with the character U+FEFF (ZERO WIDTH NO-BREAK SPACE),
+also known as the Byte-Order Mark (BOM). Its byte-swapped equivalent
+U+FFFE is not a valid Unicode character, therefore it helps to
+unambiguously distinguish the Bigendian and Littleendian variants of
+UTF-16 and UTF-32.
+
+</p><p>A full featured character encoding converter will have to provide
+the following 13 encoding variants of Unicode and UCS:
+
+</p><blockquote>
+<p>UCS-2, UCS-2BE, UCS-2LE, UCS-4, UCS-4LE, UCS-4BE, UTF-8, UTF-16,
+UTF-16BE, UTF-16LE, UTF-32, UTF-32BE, UTF-32LE
+</p></blockquote>
+
+<p>Where no byte order is explicitly specified, use the byte order of
+the CPU on which the conversion takes place and in an input stream
+swap the byte order whenever U+FFFE is encountered. The difference
+between outputting UCS-4 versus UTF-32 and UTF-16 versus UCS-2 lies in
+handling out-of-range characters. The fallback mechanism for
+non-representable characters has to be activated in UTF-32 (for
+characters &gt; U-0010FFFF) or UCS-2 (for characters &gt; U+FFFF) even where
+UCS-4 or UTF-16 respectively would offer a representation.
+
+</p><p>Really just of historic interest are <a href="http://www.itscj.ipsj.or.jp/ISO-IR/178.pdf">UTF-1</a>, <a href="http://www.ietf.org/rfc/rfc2152.txt">UTF-7</a>, <a href="http://www.unicode.org/unicode/reports/tr6/">SCSU</a> and a
+dozen other less widely publicised UCS encoding proposals with various
+properties, none of which ever enjoyed any significant use. Their use
+should be avoided.
+
+</p><p>A good encoding converter will also offer options for adding or
+removing the BOM:
+
+</p><ul>
+
+<li>Unconditionally prefix the output text with U+FEFF.
+
+</li><li>Prefix the output text with U+FEFF unless it is already there.
+
+</li><li>Remove the first character if it is U+FEFF.
+
+</li></ul>
+
+<p>It has also been suggested to use the UTF-8 encoded BOM (0xEF 0xBB
+0xBF) as a signature to mark the beginning of a UTF-8 file. This
+practice should definitely <strong>not</strong> be used on POSIX
+systems for several reasons:
+
+</p><ul>
+
+<li>On POSIX systems, the locale (and not a magic file-type code)
+defines the encoding of plain text files. Mixing the two concepts
+would add a lot of complexity and break existing functionality.
+
+</li><li>Adding a UTF-8 signature at the start of a file would interfere
+with many established conventions such as the kernel looking for “#!”
+at the beginning of a plaintext executable to locate the appropriate
+interpreter.
+
+</li><li>Handling BOMs properly would add undesirable complexity even to
+simple programs like <samp>cat</samp> or <samp>grep</samp> that mix
+contents of several files into one.
+
+</li></ul>
+
+<p>In addition to the encoding alternatives, Unicode also specifies
+various <a href="http://www.unicode.org/unicode/reports/tr15/">Normalization
+Forms</a>, which provide reasonable subsets of Unicode, especially to
+remove encoding ambiguities caused by the presence of precomposed and
+compatibility characters:
+
+</p><ul>
+
+<li><b>Normalization Form D (NFD):</b> Split up (decompose)
+precomposed characters into combining sequences where possible,
+e.g. use U+0041 U+0308 (LATIN CAPITAL LETTER A, COMBINING DIAERESIS)
+instead of U+00C4 (LATIN CAPITAL LETTER A WITH DIAERESIS). Also avoid
+deprecated characters, e.g. use U+0041 U+030A (LATIN CAPITAL LETTER A,
+COMBINING RING ABOVE) instead of U+212B (ANGSTROM SIGN).
+
+</li><li><b>Normalization Form C (NFC):</b> Use precomposed characters
+instead of combining sequences where possible, e.g. use U+00C4 (“Latin
+capital letter A with diaeresis”) instead of U+0041 U+0308 (“Latin
+capital letter A”, “combining diaeresis”). Also avoid deprecated
+characters, e.g. use U+00C5 (LATIN CAPITAL LETTER A WITH RING ABOVE)
+instead of U+212B (ANGSTROM SIGN).<br><em>NFC is the preferred form for
+Linux and WWW.</em>
+
+</li><li><b>Normalization Form KD (NFKD):</b> Like NFD, but avoid in
+addition the use of compatibility characters, e.g. use “fi” instead of
+U+FB01 (LATIN SMALL LIGATURE FI).
+
+</li><li><b>Normalization Form KC (NFKC):</b> Like NFC, but avoid in
+addition the use of compatibility characters, e.g. use “fi” instead of
+U+FB01 (LATIN SMALL LIGATURE FI).
+
+</li></ul>
+
+<p>A full-featured character encoding converter should also offer
+conversion between normalization forms. Care should be used with
+mapping to NFKD or NFKC, as semantic information might be lost (for
+instance U+00B2 (SUPERSCRIPT TWO) maps to 2) and extra mark-up
+information might have to be added to preserve it (e.g.,
+<samp>&lt;SUP&gt;2&lt;/SUP&gt;</samp> in HTML).
+
+</p><h2 id="lang">What programming languages support Unicode?</h2>
+
+<p>More recent programming languages that were developed after around
+1993 already have special data types for Unicode/ISO 10646-1
+characters. This is the case with Ada95, Java, TCL, Perl, Python, C#
+and others.
+
+</p><p>ISO C 90 specifies mechanisms to handle multi-byte encoding and
+wide characters. These facilities were improved with <a href="http://www.lysator.liu.se/c/na1.html">Amendment 1 to ISO C
+90</a> in 1994 and even further improvements were made in the <a href="http://www.iso-9899.info/wiki/The_Standard#C99">ISO C 99</a> standard.
+These facilities were designed originally with various East-Asian encodings
+in mind. They are on one side slightly more sophisticated than what
+would be necessary to handle UCS (handling of “shift sequences”), but
+also lack support for more advanced aspects of UCS (combining
+characters, etc.). UTF-8 is an example of what the ISO C standard
+calls multi-byte encoding. The type <var>wchar_t</var>, which in
+modern environments is usually a signed 32-bit integer, can be used to
+hold Unicode characters. (Since <var>wchar_t</var> has ended up being
+a 16-bit type on some platforms and a 32-bit type on others,
+<a href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1040.pdf">additional
+types <var>char16_t</var> and <var>char32_t</var> have been proposed
+in ISO TR 19769</a> for future revisions of the C language, to give
+application programmers more control over the representation of such
+wide strings.)
+
+</p><p>Unfortunately, <var>wchar_t</var> was already widely used for
+various Asian 16-bit encodings throughout the 1990s. Therefore, the
+ISO C 99 standard was bound by backwards compatibility. It could not
+be changed to require <var>wchar_t</var> to be used with UCS, like
+Java and Ada95 managed to do. However, the C compiler can at least
+signal to an application that <var>wchar_t</var> is guaranteed to hold
+UCS values in all locales. To do so, it defines the macro
+<samp>__STDC_ISO_10646__</samp> to be an integer constant of the form
+<var>yyyymm</var>L. The year and month refer to the version of
+ISO/IEC&nbsp;10646 and its amendments that have been implemented. For
+example, <samp>__STDC_ISO_10646__ == 200009L</samp> if the
+implementation covers ISO/IEC 10646-1:2000.
+
+</p><h2 id="linux">How should Unicode be used under Linux?</h2>
+
+<p>Before UTF-8 emerged, Linux users all over the world had to use
+various different language-specific extensions of ASCII. Most popular
+were ISO 8859-1 and ISO 8859-2 in Europe, ISO 8859-7 in Greece, KOI-8
+/ ISO 8859-5 / CP1251 in Russia, EUC and Shift-JIS in Japan, <a href="http://www.cns11643.gov.tw/web/big5/">BIG5</a> in Taiwan, etc.
+This made the exchange of files difficult and application software had
+to worry about various small differences between these encodings.
+Support for these encodings was usually incomplete, untested, and
+unsatisfactory, because the application developers rarely used all
+these encodings themselves.
+
+</p><p>Because of these difficulties, major Linux distributors and
+application developers are now phasing out these older legacy
+encodings in favour of UTF-8. UTF-8 support has improved dramatically
+over the last few years and many people now use UTF-8 on a daily basis
+in
+
+</p><ul>
+<li>text files (source code, HTML files, email messages, etc.)
+</li><li>file names
+</li><li>standard input and standard output, pipes
+</li><li>environment variables
+</li><li>cut and paste selection buffers
+</li><li>telnet, modem, and serial port connections to terminal emulators
+</li></ul>
+
+<p>and in any other places where byte sequences used to be interpreted in
+ASCII.
+
+</p><p>In UTF-8 mode, terminal emulators such as xterm or the Linux
+console driver transform every keystroke into the corresponding UTF-8
+sequence and send it to the stdin of the foreground process.
+Similarly, any output of a process on stdout is sent to the terminal
+emulator, where it is processed with a UTF-8 decoder and then
+displayed using a 16-bit font.
+
+</p><p>Full Unicode functionality with all bells and whistles (e.g.
+high-quality typesetting of the Arabic and Indic scripts) can only be
+expected from sophisticated multi-lingual word-processing packages.
+What Linux supports today on a broad base is far simpler and mainly
+aimed at replacing the old 8- and 16-bit character sets. Linux
+terminal emulators and command line tools usually only support a Level
+1 implementation of ISO 10646-1 (no combining characters), and only
+scripts such as Latin, Greek, Cyrillic, Armenian, Georgian, CJK, and
+many scientific symbols are supported that need no further processing
+support. At this level, UCS support is very comparable to ISO 8859
+support and the only significant difference is that we have now
+thousands of different characters available, that characters can be
+represented by multibyte sequences, and that ideographic
+Chinese/Japanese/Korean characters require two terminal character
+positions (double-width).
+
+</p><p>Level 2 support in the form of combining characters for selected
+scripts (in particular <a href="ftp://linux.thai.net/pub/thailinux/cvs/docs/thaisupp/thaisupp.html">Thai</a>)
+and Hangul Jamo is in parts also available (i.e., some fonts, terminal
+emulators and editors support it via simple overstringing), but
+precomposed characters should be preferred over combining character
+sequences where available. More formally, the preferred way of
+encoding text in Unicode under Linux should be <em>Normalization Form
+C</em> as defined in <a href="http://www.unicode.org/unicode/reports/tr15/">Unicode Technical
+Report #15</a>.
+
+</p><p>One influential non-POSIX PC operating system vendor (whom we shall
+leave unnamed here) suggested that all Unicode files should start with
+the character ZERO WIDTH NOBREAK SPACE (U+FEFF), which is in this role
+also referred to as the “signature” or “byte-order mark (BOM)”, in
+order to identify the encoding and byte-order used in a file.
+Linux/Unix does <strong>not</strong> use any BOMs and signatures. They
+would break far too many existing ASCII syntax conventions (such as
+scripts starting with <samp>#!</samp>). On POSIX systems, the selected
+locale identifies already the encoding expected in all input and
+output files of a process. (It has also been suggested to call UTF-8
+files without a signature “UTF-8N” files, but this non-standard term
+is usually not used in the POSIX world.)
+
+</p><p>Before you switch to UTF-8 under Linux, update your installation to
+a recent distribution with up-to-date UTF-8 support. This is
+particular the case if you use an installation older than SuSE 9.1 or
+Red Hat 8.0. Before these, UTF-8 support was not yet mature enough to
+be recommendable for daily use.
+
+</p><p><a href="http://www.redhat.com/docs/manuals/linux/RHL-8.0-Manual/release-notes/x86/">Red
+Hat Linux 8.0</a> (September 2002) was the first distribution to take
+the leap of switching to UTF-8 as the default encoding for most
+locales. The only exceptions were Chinese/Japanese/Korean locales, for
+which there were at the time still too many specialized tools
+available that did not yet support UTF-8. This first mass deployment
+of UTF-8 under Linux caused most remaining issues to be ironed out
+rather quickly during 2003. <a href="http://www.novell.com/products/opensuse/">SuSE
+Linux</a> then switched its default locales to UTF-8 as well, as of
+version <a href="ftp://ftp.suse.com/pub/suse/i386/current/docu/RELEASE-NOTES.en.html">9.1</a>
+(May 2004). It was followed by <a href="http://www.ubuntulinux.org/">Ubuntu Linux</a>, the first
+Debian-derivative that switched to UTF-8 as the system-wide default
+encoding. With the migration of the three most popular Linux
+distributions, UTF-8 related bugs have now been fixed in practically
+all well-maintained Linux tools. Other distributions can be expected
+to follow soon.
+
+</p><h2 id="mod">How do I have to modify my software?</h2>
+
+<p>If you are a developer, there are several approaches to add UTF-8
+support. We can split them into two categories, which I will call soft
+and hard conversion. In soft conversion, data is kept in its UTF-8
+form everywhere and only very few software changes are necessary. In
+hard conversion, any UTF-8 data that the program reads will be
+converted into wide-character arrays and will be handled as such
+everywhere inside the application. Strings will only be converted back
+to UTF-8 at output time. Internally, a character remains a fixed-size
+memory object.
+
+</p><p>We can also distinguish hard-wired and locale-dependent approaches
+for supporting UTF-8, depending on how much the string processing
+relies on the standard library. C offers a number of string processing
+functions designed to handle arbitrary locale-specific multibyte
+encodings. An application programmer who relies entirely on these can
+remain unaware of the actual details of the UTF-8 encoding. Chances
+are then that by merely changing the locale setting, several other
+multi-byte encodings (such as EUC) will automatically be supported as
+well. The other way a programmer can go is to hardcode knowledge about
+UTF-8 into the application. This may lead in some situations to
+significant performance improvements. It may be the best approach for
+applications that will only be used with ASCII and UTF-8.
+
+</p><p>Even where support for every multi-byte encoding supported by libc
+is desired, it may well be worth adding extra code optimized for
+UTF-8. Thanks to UTF-8’s self-synchronizing features, it can be
+processed very efficiently. The locale-dependent libc string functions
+can be two orders of magnitude slower than equivalent hardwired UTF-8
+procedures. A bad teaching example was GNU grep 2.5.1, which relied
+entirely on locale-dependent libc functions such as
+<samp>mbrlen()</samp> for its generic multi-byte encoding support.
+This made it about 100× slower in multibyte mode than in
+single-byte mode! Other applications with hardwired support for UTF-8
+regular expressions (e.g., Perl 5.8) do not suffer this dramatic
+slowdown.
+
+</p><p>Most applications can do very fine with just soft conversion. This
+is what makes the introduction of UTF-8 on Unix feasible at all. To
+name two trivial examples, programs such as <samp>cat</samp> and
+<samp>echo</samp> do not have to be modified at all. They can remain
+completely ignorant as to whether their input and output is ISO 8859-2
+or UTF-8, because they handle just byte streams without processing
+them. They only recognize ASCII characters and control codes such as
+<samp>'\n'</samp> which do not change in any way under UTF-8.
+Therefore the UTF-8 encoding and decoding is done for these
+applications completely in the terminal emulator.
+
+</p><p>A small modification will be necessary for any program that
+determines the number of characters in a string by counting the bytes.
+With UTF-8, as with other multi-byte encodings, where the length of a
+text string is of concern, programmers have to distinguish clearly
+between
+
+</p><ol>
+
+<li>the number of bytes,
+
+</li><li>the number of characters,
+
+</li><li>the display width (e.g., the number of cursor position cells in a
+VT100 terminal emulator)
+
+</li></ol>
+
+<p>of a string.
+
+</p><p>C’s <samp>strlen(s)</samp> function always counts the <em>number of
+bytes</em>. This is the number relevant, for example, for memory
+management (determination of string buffer sizes). Where the output of
+strlen is used for such purposes, no change will be necessary.
+
+</p><p>The <em>number of characters</em> can be counted in C in a portable
+way using <samp>mbstowcs(NULL,s,0)</samp>. This works for UTF-8 like
+for any other supported encoding, as long as the appropriate locale
+has been selected. A hard-wired technique to count the number of
+characters in a UTF-8 string is to count all bytes except those in the
+range 0x80 – 0xBF, because these are just continuation bytes and not
+characters of their own. However, the need to count characters arises
+surprisingly rarely in applications.
+
+</p><p>In applications written for ASCII or ISO 8859, a far more common
+use of <samp>strlen</samp> is to predict the <em>number of
+columns</em> that the cursor of the terminal will advance if a string
+is printed. With UTF-8, neither a byte nor a character count will
+predict the display width, because ideographic characters (Chinese,
+Japanese, Korean) will occupy two column positions, whereas control
+and combining characters occupy none. To determine the width of a
+string on the terminal screen, it is necessary to decode the UTF-8
+sequence and then use the <samp>wcwidth</samp> function to test the
+display width of each character, or <samp>wcswidth</samp> to measure
+the entire string.
+
+</p><p>For instance, the <samp>ls</samp> program had to be modified,
+because without knowing the column widths of filenames, it cannot
+format the table layout in which it presents directories to the user.
+Similarly, all programs that assume somehow that the output is
+presented in a fixed-width font and format it accordingly have to
+learn how to count columns in UTF-8 text. Editor functions such as
+deleting a single character have to be slightly modified to delete all
+bytes that might belong to one character. Affected were for instance
+editors (<samp>vi</samp>, <samp>emacs</samp>, <samp><a href="http://cnswww.cns.cwru.edu/~chet/readline/rltop.html">readline</a></samp>,
+etc.) as well as programs that use the <samp>ncurses</samp> library.
+
+</p><p>Any Unix-style kernel can do fine with soft conversion and needs
+only very minor modifications to fully support UTF-8. Most kernel
+functions that handle strings (e.g. file names, environment variables,
+etc.) are not affected at all by the encoding. Modifications were
+necessary in Linux the following places:
+
+</p><ul>
+
+<li>The console display and keyboard driver (another VT100 emulator)
+have to encode and decode UTF-8 and should support at least some
+subset of the Unicode character set. This had already been available
+in Linux as early as kernel 1.2 (send ESC %G to the console to
+activate UTF-8 mode).
+
+</li><li>External file system drivers such as VFAT and WinNT have to
+convert file name character encodings. UTF-8 is one of the available
+conversion options, and the <samp>mount</samp> command has to tell the
+kernel driver that user processes shall see UTF-8 file names. Since
+VFAT and WinNT use already Unicode anyway, UTF-8 is the only available
+encoding that guarantees a lossless conversion here.
+
+</li><li>The tty driver of any POSIX system supports a “cooked” mode, in
+which some primitive line editing functionality is available. In order
+to allow the character-erase function (which is activated when you
+press backspace) to work properly with UTF-8, someone needs to tell it
+not count continuation bytes in the range 0x80-0xBF as characters, but
+to delete them as part of a UTF-8 multi-byte sequence. Since the
+kernel is ignorant of the libc locale mechanics, another mechanism is
+needed to tell the tty driver about UTF-8 being used. Linux kernel
+versions 2.6 or newer support a bit IUTF8 in the c_iflag member
+variable of struct termios. If it is set, the “cooked” mode line
+editor will treat UTF-8 multi-byte sequences correctly. This mode can
+be set from the command shell with “stty iutf8”. Xterm and friends
+should set this bit automatically when called in a UTF-8 locale.
+
+</li></ul>
+
+<h2 id="c">C support for Unicode and UTF-8</h2>
+
+<p>Starting with GNU glibc 2.2, the type <samp>wchar_t</samp> is
+officially intended to be used only for 32-bit ISO 10646 values,
+independent of the currently used locale. This is signalled to
+applications by the definition of the <samp>__STDC_ISO_10646__</samp>
+macro as required by ISO C99. The ISO C multi-byte conversion
+functions (<samp>mbsrtowcs()</samp>, <samp>wcsrtombs()</samp>, etc.)
+are fully implemented in glibc 2.2 or higher and can be used to
+convert between <samp>wchar_t</samp> and any locale-dependent
+multibyte encoding, including UTF-8, ISO 8859-1, etc.
+
+</p><p>For example, you can write
+
+</p><pre>  #include &lt;stdio.h&gt;
+  #include &lt;locale.h&gt;
+
+  int main()
+  {
+    if (!setlocale(LC_CTYPE, "")) {
+      fprintf(stderr, "Can't set the specified locale! "
+              "Check LANG, LC_CTYPE, LC_ALL.\n");
+      return 1;
+    }
+    printf("%ls\n", L"Schöne Grüße");
+    return 0;
+  }
+</pre>
+
+<p>Call this program with the locale setting <samp>LANG=de_DE</samp>
+and the output will be in ISO 8859-1. Call it with
+<samp>LANG=de_DE.UTF-8</samp> and the output will be in UTF-8. The
+<samp>%ls</samp> format specifier in <samp>printf</samp> calls
+<samp>wcsrtombs</samp> in order to convert the wide character argument
+string into the locale-dependent multi-byte encoding.
+
+</p><p>Many of C’s string functions are locale-independent and they just
+look at zero-terminated byte sequences:
+
+</p><pre>  strcpy strncpy strcat strncat strcmp strncmp strdup strchr strrchr
+  strcspn strspn strpbrk strstr strtok
+</pre>
+
+<p>Some of these (e.g. strcpy) can equally be used for single-byte
+(ISO 8859-1) and multi-byte (UTF-8) encoded character sets, as they
+need no notion of how many byte long a character is, while others
+(e.g., strchr) depend on one character being encoded in a single char
+value and are of less use for UTF-8 (strchr still works fine if you
+just search for an ASCII character in a UTF-8 string).
+
+</p><p>Other C functions are locale dependent and work in UTF-8 locales
+just as well:
+
+</p><pre>  strcoll strxfrm
+</pre>
+
+<h2 id="activate">How should the UTF-8 mode be activated?</h2>
+
+<p>If your application is soft converted and does not use the standard
+locale-dependent C multibyte routines (<samp>mbsrtowcs()</samp>,
+<samp>wcsrtombs()</samp>, etc.) to convert everything into
+<samp>wchar_t</samp> for processing, then it might have to find out in
+some way, whether it is supposed to assume that the text data it
+handles is in some 8-bit encoding (like ISO 8859-1, where 1 byte = 1
+character) or UTF-8. Once everyone uses only UTF-8, you can just make
+it the default, but until then both the classical 8-bit sets and UTF-8
+may still have to be supported.
+
+</p><p>The first wave of applications with UTF-8 support used a whole lot
+of different command line switches to activate their respective UTF-8
+modes, for instance the famous <samp>xterm -u8</samp>. That turned out
+to be a very bad idea. Having to remember a special command line
+option or other configuration mechanism for <em>every</em> application
+is very tedious, which is why command line options are
+<strong>not</strong> the proper way of activating a UTF-8 mode.
+
+</p><p>The proper way to activate UTF-8 is the POSIX locale mechanism. A
+locale is a configuration setting that contains information about
+culture-specific conventions of software behaviour, including the
+character encoding, the date/time notation, alphabetic sorting rules,
+the measurement system and common office paper size, etc. The names of
+locales usually consist of <a href="http://lcweb.loc.gov/standards/iso639-2/iso639jac.html">ISO
+639-1</a> language and <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO
+3166-1 alpha-2</a> country codes, sometimes with additional encoding names or
+other qualifiers.
+
+</p><p>You can get a list of all locales installed on your system (usually
+in <samp>/usr/lib/locale/</samp>) with the command <samp>locale
+-a</samp>. Set the environment variable <samp>LANG</samp> to the name
+of your preferred locale. When a C program executes the
+<samp>setlocale(LC_CTYPE, "")</samp> function, the library will test
+the environment variables <samp>LC_ALL</samp>, <samp>LC_CTYPE</samp>,
+and <samp>LANG</samp> in that order, and the first one of these that
+has a value will determine which locale data is loaded for the
+<samp>LC_CTYPE</samp> category (which controls the multibyte
+conversion functions). The locale data is split up into separate
+categories. For example, <samp>LC_CTYPE</samp> defines the character
+encoding and <samp>LC_COLLATE</samp> defines the string sorting order.
+The <samp>LANG</samp> environment variable is used to set the default
+locale for all categories, but the <samp>LC_*</samp> variables can be
+used to override individual categories. Do not worry too much about the
+country identifiers in the locales. Locales such as <samp>en_GB</samp>
+(English in Great Britain) and <samp>en_AU</samp> (English in
+Australia) differ usually only in the <samp>LC_MONETARY</samp>
+category (name of currency, rules for printing monetary amounts),
+which practically no Linux application ever uses.
+<samp>LC_CTYPE=en_GB</samp> and <samp>LC_CTYPE=en_AU</samp> have
+exactly the same effect.
+
+</p><p id="collate" class="note"><b>Effect of locale on sorting order:</b> If
+ you had not set a locale previously, you may quickly notice that
+ setting one (e.g., LANG=en_US.UTF-8 or LANG=en_GB.UTF-8), also
+ changes the sorting order used by some tools: the “ls” command now
+ sorts filenames with uppercase and lowercase first character next to
+ each other (like in a dictionary), and file globbing no longer uses
+ the ASCII order either (e.g. “echo [a-z]*” also lists filenames
+ starting uppercase). To get the old ASCII sorting order back that you
+ are used to, simply set in addition also LC_COLLATE=POSIX (or
+ equivalently LC_COLLATE=C), and you will quickly feel at home again.
+
+</p><p>You can query the name of the character encoding in your current
+locale with the command <samp>locale charmap</samp>. This should say
+<samp>UTF-8</samp> if you successfully picked a UTF-8 locale in the
+LC_CTYPE category. The command <samp>locale -m</samp> provides a list
+with the names of all installed character encodings.
+
+</p><p>If you use exclusively C library multibyte functions to do all the
+conversion between the external character encoding and the
+<samp>wchar_t</samp> encoding that you use internally, then the C
+library will take care of using the right encoding according to
+<samp>LC_CTYPE</samp> for you and your program does not even have to
+know explicitly what the current multibyte encoding is.
+
+</p><p>However, if you prefer not to do everything using the libc
+multi-byte functions (e.g., because you think this would require too
+many changes in your software or is not efficient enough), then your
+application has to find out for itself when to activate the UTF-8
+mode. To do this, on any X/Open compliant systems, where <a href="http://www.opengroup.org/onlinepubs/007904975/basedefs/langinfo.h.html"><samp>&lt;langinfo.h&gt;</samp></a> is available, you can use a line
+such as
+
+</p><pre>  utf8_mode = (strcmp(nl_langinfo(CODESET), "UTF-8") == 0);</pre>
+
+<p>in order to detect whether the current locale uses the UTF-8
+encoding. You have of course to add a <samp>setlocale(LC_CTYPE,
+"")</samp> at the beginning of your application to set the locale
+according to the environment variables first. The standard function
+call <samp>nl_langinfo(CODESET)</samp> is also what <samp>locale
+charmap</samp> calls to find the name of the encoding specified by the
+current locale for you. It is available on pretty much every modern
+Unix now. FreeBSD added <samp>nl_langinfo(CODESET)</samp> support with
+version 4.6 (2002-06). If you need an autoconf test for the
+availability of <samp>nl_langinfo(CODESET)</samp>, here is the one
+Bruno Haible suggested:
+
+</p><pre>======================== m4/codeset.m4 ================================
+#serial AM1
+
+dnl From Bruno Haible.
+
+AC_DEFUN([AM_LANGINFO_CODESET],
+[
+  AC_CACHE_CHECK([for nl_langinfo and CODESET], am_cv_langinfo_codeset,
+    [AC_TRY_LINK([#include &lt;langinfo.h&gt;],
+      [char* cs = nl_langinfo(CODESET);],
+      am_cv_langinfo_codeset=yes,
+      am_cv_langinfo_codeset=no)
+    ])
+  if test $am_cv_langinfo_codeset = yes; then
+    AC_DEFINE(HAVE_LANGINFO_CODESET, 1,
+      [Define if you have &lt;langinfo.h&gt; and nl_langinfo(CODESET).])
+  fi
+])
+=======================================================================
+</pre>
+
+<p>[You could also try to query the locale environment variables
+yourself without using <samp>setlocale()</samp>. In the sequence
+<samp>LC_ALL</samp>, <samp>LC_CTYPE</samp>, <samp>LANG</samp>, look
+for the first of these environment variables that has a value. Make
+the UTF-8 mode the default (still overridable by command line
+switches) when this value contains the substring <samp>UTF-8</samp>,
+as this indicates reasonably reliably that the C library has been
+asked to use a UTF-8 locale. An example code fragment that does this
+is
+
+</p><pre>  char *s;
+  int utf8_mode = 0;
+
+  if (((s = getenv("LC_ALL"))   &amp;&amp; *s) ||
+      ((s = getenv("LC_CTYPE")) &amp;&amp; *s) ||
+      ((s = getenv("LANG"))     &amp;&amp; *s)) {
+    if (strstr(s, "UTF-8"))
+      utf8_mode = 1;
+  }
+
+</pre>
+
+<p>This relies of course on all UTF-8 locales having the name of the
+encoding in their name, which is not always the case, therefore the
+<samp>nl_langinfo()</samp> query is clearly the better method. If you
+are really concerned that calling <samp>nl_langinfo()</samp> might not
+be portable enough, there is also Markus Kuhn’s portable public domain
+<a href="https://www.cl.cam.ac.uk/~mgk25/ucs/langinfo.c"><samp>nl_langinfo(CODESET)</samp>
+emulator</a> for systems that do not have the real thing (and <a href="ftp://ftp.ilog.fr/pub/Users/haible/utf8/locale_charset.c">another
+one from Bruno Haible</a>), and you can use the <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/norm_charmap.c"><samp>norm_charmap()</samp></a> function to
+standardize the output of the <samp>nl_langinfo(CODESET)</samp> on
+different platforms.]
+
+</p><h2 id="getxterm">How do I get a UTF-8 version of xterm?</h2>
+
+<p>The <a href="http://dickey.his.com/xterm/xterm.html">xterm</a>
+version that comes with <a href="http://www.xfree86.org/">XFree86</a>
+4.0 or higher (maintained by <a href="http://dickey.his.com/">Thomas
+Dickey</a>) includes UTF-8 support. To activate it, start xterm in a
+UTF-8 locale and use a font with <samp>iso10646-1</samp> encoding, for
+instance with
+
+</p><pre>  LC_CTYPE=en_GB.UTF-8 xterm \
+    -fn '-Misc-Fixed-Medium-R-SemiCondensed--13-120-75-75-C-60-ISO10646-1'
+</pre>
+
+<p>and then cat some example file, such as <a href="http://www.cl.cam.ac.uk/~mgk25/ucs/examples/">UTF-8-demo.txt</a>
+in the newly started xterm and enjoy what you see.
+
+</p><p>If you are not using XFree86 4.0 or newer, then you can
+alternatively download the <a href="ftp://dickey.his.com/xterm/xterm.tar.gz">latest xterm
+development version</a> separately and compile it yourself with
+“<samp>./configure --enable-wide-chars ; make</samp>” or alternatively
+with “<samp>xmkmf; make Makefiles; make; make install; make
+install.man</samp>”.
+
+</p><p>If you do not have UTF-8 locale support available, use command line
+option <samp>-u8</samp> when you invoke xterm to switch input and
+output to UTF-8.
+
+</p><h2 id="xterm">How much of Unicode does xterm support?</h2>
+
+<p>Xterm in XFree86 4.0.1 only supported Level 1 (no combining
+characters) of ISO 10646-1 with fixed character width and
+left-to-right writing direction. In other words, the terminal
+semantics were basically the same as for ISO 8859-1, except that it
+can now decode UTF-8 and can access 16-bit characters.
+
+</p><p>With XFree86 4.0.3, two important functions were added:
+
+</p><ul>
+
+<li>automatic switching to a double-width font for CJK ideographs
+</li><li>simple overstriking combining characters
+
+</li></ul>
+
+<p>If the selected normal font is <var>X</var>&nbsp;×&nbsp;<var>Y</var> pixels
+large, then xterm will attempt to load in addition a
+<var>2X</var>&nbsp;×&nbsp;<var>Y</var> pixels large font (same XLFD, except
+for a doubled value of the <samp>AVERAGE_WIDTH</samp> property). It
+will use this font to represent all Unicode characters that have been
+assigned the <em>East Asian Wide (W)</em> or <em>East Asian FullWidth
+(F)</em> property in <a href="http://www.unicode.org/unicode/reports/tr11/">Unicode Technical
+Report #11</a>. 
+
+</p><p>The following fonts coming with XFree86 4.x are suitable for
+display of Japanese and Korean Unicode text with terminal emulators
+and editors:
+
+</p><pre>  6x13    -Misc-Fixed-Medium-R-SemiCondensed--13-120-75-75-C-60-ISO10646-1
+  6x13B   -Misc-Fixed-Bold-R-SemiCondensed--13-120-75-75-C-60-ISO10646-1
+  6x13O   -Misc-Fixed-Medium-O-SemiCondensed--13-120-75-75-C-60-ISO10646-1
+  12x13ja -Misc-Fixed-Medium-R-Normal-ja-13-120-75-75-C-120-ISO10646-1
+
+  9x18    -Misc-Fixed-Medium-R-Normal--18-120-100-100-C-90-ISO10646-1
+  9x18B   -Misc-Fixed-Bold-R-Normal--18-120-100-100-C-90-ISO10646-1
+  18x18ja -Misc-Fixed-Medium-R-Normal-ja-18-120-100-100-C-180-ISO10646-1
+  18x18ko -Misc-Fixed-Medium-R-Normal-ko-18-120-100-100-C-180-ISO10646-1
+</pre>
+
+<p>Some simple support for nonspacing or enclosing combining
+characters (i.e., those with <a href="ftp://ftp.unicode.org/Public/UNIDATA/UnicodeData.html#GeneralCategory">general category code</a> Mn or Me in the <a href="ftp://ftp.unicode.org/Public/UNIDATA/UnicodeData.txt">Unicode
+database</a>) is now also available, which is implemented by just
+overstriking (logical OR-ing) a base-character glyph with up to two
+combining-character glyphs. This produces acceptable results for
+accents below the base line and accents on top of small characters. It
+also works well, for example, for Thai and Korean Hangul Conjoining Jamo
+fonts that were specifically designed for use with overstriking.
+However, the results might not be fully satisfactory for combining
+accents on top of tall characters in some fonts, especially with the
+fonts of the “fixed” family. Therefore precomposed characters will
+continue to be preferable where available.
+
+</p><p>The fonts below that come with XFree86 4.x are suitable for display
+of Latin etc. combining characters (extra head-space). Other fonts
+will only look nice with combining accents on small x-high characters.
+
+</p><pre>  6x12    -Misc-Fixed-Medium-R-Semicondensed--12-110-75-75-C-60-ISO10646-1
+  9x18    -Misc-Fixed-Medium-R-Normal--18-120-100-100-C-90-ISO10646-1
+  9x18B   -Misc-Fixed-Bold-R-Normal--18-120-100-100-C-90-ISO10646-1
+</pre>
+
+<p>The following fonts coming with XFree86 4.x are suitable for
+display of Thai combining characters:
+
+</p><pre>  6x13    -Misc-Fixed-Medium-R-SemiCondensed--13-120-75-75-C-60-ISO10646-1
+  9x15    -Misc-Fixed-Medium-R-Normal--15-140-75-75-C-90-ISO10646-1
+  9x15B   -Misc-Fixed-Bold-R-Normal--15-140-75-75-C-90-ISO10646-1
+  10x20   -Misc-Fixed-Medium-R-Normal--20-200-75-75-C-100-ISO10646-1
+  9x18    -Misc-Fixed-Medium-R-Normal--18-120-100-100-C-90-ISO10646-1
+</pre>
+
+<p>The fonts
+<a href="http://chem.skku.ac.kr/~wkpark/project/font/iso10646/18x18ko.bdf.gz">18x18ko</a>,
+<a href="http://chem.skku.ac.kr/~wkpark/project/font/iso10646/18x18Bko.bdf.gz">18x18Bko</a>,
+<a href="http://chem.skku.ac.kr/~wkpark/project/font/iso10646/16x16Bko.bdf.gz">16x16Bko</a>, and
+<a href="http://chem.skku.ac.kr/~wkpark/project/font/iso10646/16x16ko.bdf.gz">16x16ko</a>
+are suitable for displaying Hangul Jamo (using the same simple
+overstriking character mechanism used for Thai).
+
+</p><p><b>A note for programmers of text mode applications:</b>
+
+</p><p>With support for CJK ideographs and combining characters, the
+output of xterm behaves a little bit more like with a proportional
+font, because a Latin/Greek/Cyrillic/etc. character requires one
+column position, a CJK ideograph two, and a combining character zero.
+
+</p><p>The Open Group’s <a href="http://www.unix-systems.org/online.html">Single UNIX
+Specification</a> specifies the two C functions <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/wcwidth.html">wcwidth()</a> and <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/wcswidth.html">wcswidth()</a> that allow an application to
+test how many column positions a character will occupy:
+
+</p><pre>  #include &lt;wchar.h&gt;
+  int wcwidth(wchar_t wc);
+  int wcswidth(const wchar_t *pwcs, size_t n);
+</pre>
+
+<p><a href="https://www.cl.cam.ac.uk/~mgk25/ucs/wcwidth.c">Markus Kuhn’s free wcwidth()
+implementation</a> can be used by applications on platforms where the C
+library does not yet provide a suitable function.
+
+</p><p>Xterm will for the foreseeable future probably not support the
+following functionality, which you might expect from a more
+sophisticated full Unicode rendering engine:
+
+</p><ul>
+
+<li>bidirectional output of Hebrew and Arabic characters
+</li><li>substitution of
+<a href="http://www.unicode.org/unicode/uni2book/ch08.pdf">Arabic</a>
+presentation forms
+</li><li>substitution of
+<a href="http://www.unicode.org/unicode/uni2book/ch09.pdf">Indic</a>/Syriac
+ligatures
+</li><li>arbitrary stacks of combining characters
+
+</li></ul>
+
+<p>Hebrew and Arabic users will therefore have to use application
+programs that reverse and left-pad Hebrew and Arabic strings before
+sending them to the terminal. In other words, the bidirectional
+processing has to be done by the application and not by xterm. The
+situation for Hebrew and Arabic improves over ISO 8859 at least in the
+form of the availability of precomposed glyphs and presentation forms.
+It is far from clear at the moment, whether bidirectional support
+should really go into xterm and how precisely this should work. Both
+<a href="http://www.ecma-international.org/publications/standards/Ecma-048.htm">ISO
+6429 = ECMA-48</a> and the <a href="http://www.unicode.org/unicode/reports/tr9/">Unicode bidi
+algorithm</a> provide alternative starting points. See also <a href="http://www.ecma-international.org/publications/techreports/E-TR-053.htm">ECMA
+Technical Report TR/53</a>.
+
+</p><p>If you plan to support bidirectional text output in your
+application, have a look at either Dov Grobgeld’s <a href="http://fribidi.sourceforge.net/">FriBidi</a> or Mark Leisher’s <a href="http://crl.nmsu.edu/~mleisher/ucdata.html">Pretty Good Bidi
+Algorithm</a>, two free implementations of the Unicode bidi algorithm.
+
+</p><p>Xterm currently does not support the Arabic, Syriac, or Indic text
+formatting algorithms, although Robert Brady has published some <a href="http://www.zepler.org/~rwb197/xterm/">experimental patches</a>
+towards bidi support. It is still unclear whether it is feasible or
+preferable to do this in a VT100 emulator at all. Applications can
+apply the Arabic and Hangul formatting algorithms themselves easily,
+because xterm allows them to output the necessary presentation forms.
+For Hangul, Unicode contains the presentation forms needed for modern
+(post-1933) Korean orthography. For Indic scripts, the X font
+mechanism at the moment does not even support the encoding of the
+necessary ligature variants, so there is little xterm could offer
+anyway. Applications requiring Indic or Syriac output should better
+use a proper Unicode X11 rendering library such as <a href="http://www.pango.org/">Pango</a> instead of a VT100 emulator like
+xterm.
+
+</p><h2 id="fonts">Where do I find ISO 10646-1 X11 fonts?</h2>
+
+<p>Quite a number of Unicode fonts have become available for X11 over
+the past few months, and the list is growing quickly:
+
+</p><ul>
+
+<li>Markus Kuhn together with a number of other volunteers has
+extended the old <samp>-misc-fixed-*-iso8859-1</samp> fonts that come
+with X11 towards a repertoire that covers all European characters
+(Latin, Greek, Cyrillic, intl. phonetic alphabet, mathematical and
+technical symbols, in some fonts even Armenian, Georgian, Katakana,
+Thai, and more). For more information see the <a href="https://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html">Unicode fonts and tools for X11</a> page. These
+fonts are now also distributed with <a href="http://www.xfree86.org/">XFree86</a> 4.0.1 or higher.
+
+</li><li>Markus has also prepared <a href="http://www.cl.cam.ac.uk/~mgk25/download/ucs-fonts-75dpi100dpi.tar.gz">ISO
+10646-1 versions of all the Adobe and B&amp;H BDF fonts in the X11R6.4
+distribution</a>. These fonts already contained the full PostScript
+font repertoire (around 30 additional characters, mostly those used
+also by CP1252 MS-Windows, e.g. smart quotes, dashes, etc.), which
+were however not available under the ISO 8859-1 encoding. They are now
+all accessible in the ISO 10646-1 version, along with many additional
+precomposed characters covering ISO 8859-1,2,3,4,9,10,13,14,15. These
+fonts are now also distributed with <a href="http://www.xfree86.org/">XFree86</a> 4.1 or higher.
+
+</li><li>XFree86 4.0 comes with an <a href="http://www.dcs.ed.ac.uk/home/jec/programs/xfsft/">integrated
+TrueType font engine</a> that can make available any Apple/Microsoft
+font to your X application in the ISO 10646-1 encoding.
+
+</li><li>Some future XFree86 release might also remove most old BDF fonts
+from the distribution and replace them with ISO 10646-1 encoded
+versions. The X server will be extended with an automatic encoding
+converter that creates other font encodings such as ISO 8859-* from
+the ISO 10646-1 font file on-the-fly when such a font is requested by
+old 8-bit software. Modern software should preferably use the ISO
+10646-1 font encoding directly.
+
+</li><li><a href="ftp://crl.nmsu.edu/CLR/multiling/unicode/fonts/">ClearlyU
+(cu12)</a> is a 12 point, 100 dpi proportional ISO 10646-1 BDF font
+for X11 with over 3700 characters by Mark Leisher (<a href="http://crl.nmsu.edu/~mleisher/cu/cu-examples.html">example
+images</a>).
+
+</li><li>The <a href="http://openlab.ring.gr.jp/efont/">Electronic Font
+Open Laboratory</a> in Japan is also working on a family of Unicode
+bitmap fonts.
+
+</li><li>Dmitry Yu. Bolkhovityanov created a <a href="http://www.inp.nsk.su/~bolkhov/files/fonts/univga/index.html">Unicode
+VGA font</a> in BDF for use by text mode IBM PC emulators etc.
+
+</li><li>Roman Czyborra’s <a href="http://czyborra.com/unifont/">GNU
+Unicode font</a> project works on collecting a complete and free
+8×16/16×16 pixel Unicode font. It currently covers over 34000
+characters.
+
+</li><li><a href="ftp://ftp.x.org/contrib/fonts/etl-unicode.tar.gz">etl-unicode</a> is
+an ISO 10646-1 BDF font prepared by Primoz Peterlin.
+
+</li><li><a href="http://biofiz.mf.uni-lj.si/~peterlin/">Primoz Peterlin</a>
+has also started the <a href="http://savannah.nongnu.org/projects/freefont/">freefont</a>
+project, which extends to better UCS coverage some of the 35 core
+PostScript outline fonts that URW++ donated to the ghostscript
+project, with the help of <a href="http://pfaedit.sourceforge.net/">pfaedit</a>.
+
+</li><li>George Williams has created a <a href="http://bibliofile.mc.duke.edu/gww/fonts/Unicode.html">Type1
+Unicode font family</a>, which is also available in BDF. He also
+developed the <a href="http://bibliofile.mc.duke.edu/gww/FreeWare/PfaEdit/">PfaEdit</a>
+PostScript and bitmap font editor.
+
+</li><li><a href="http://www.evertype.com/emono/">EversonMono</a> is a
+shareware monospaced font with over 3000 European glyphs, also
+available from the <a href="ftp://dkuug.dk/CEN/TC304/EversonMono10646">DKUUG server</a>.
+
+</li><li>Birger Langkjer has prepared a <a href="http://members.nbci.com/langkjer/unicode.bdf.gz">Unicode VGA
+Console Font</a> for Linux.
+
+</li><li>Alan Wood has a list of <a href="http://www.alanwood.net/unicode/fontsbyrange.html">Microsoft
+fonts that support various Unicode ranges</a>.
+
+</li><li><a href="http://home.att.net/~jameskass/code2000_page.htm">CODE2000</a>
+is a Unicode font by James Kass.
+
+</li></ul>
+
+<p>Unicode X11 font names end with <samp>-ISO10646-1</samp>. This is
+now the officially <a href="ftp://ftp.x.org/pub/DOCS/registry">registered</a> value for the <a href="ftp://www.x.org/pub/R6.6/xc/doc/hardcopy/XLFD/xlfd.PS.gz">X Logical Font Descriptor (XLFD)</a> fields
+<samp>CHARSET_REGISTRY</samp> and <samp>CHARSET_ENCODING</samp> for
+all Unicode and ISO 10646-1 16-bit fonts. The
+<samp>*-ISO10646-1</samp> fonts contain some unspecified subset of the
+entire Unicode character set, and users have to make sure that
+whatever font they select covers the subset of characters needed by
+them.
+
+</p><p>The <samp>*-ISO10646-1</samp> fonts usually also specify a
+<samp>DEFAULT_CHAR</samp> value that points to a special non-Unicode
+glyph for representing any character that is not available in the font
+(usually a dashed box, the size of an H, located at 0x00). This
+ensures that users at least see clearly that there is an unsupported
+character. The smaller fixed-width fonts such as 6x13 etc. for xterm
+will never be able to cover all of Unicode, because many scripts such
+as Kanji can only be represented in considerably larger pixel sizes
+than those widely used by European users. Typical Unicode fonts for
+European usage will contain only subsets of between 1000 and 3000
+characters, such as the <a href="http://www.evertype.com/standards/iso10646/pdf/cwa13873.pdf">CEN MES-3
+repertoire</a>.
+
+</p><p>You might notice that in the *-ISO10646-1 fonts the <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html">shapes of the ASCII quotation marks</a> has
+slightly changed to bring them in line with the standards and practice
+on other platforms.
+
+</p><h2 id="term">What are the issues related to UTF-8 terminal emulators?</h2>
+
+<p><a href="http://vt100.net/">VT100</a> terminal emulators accept ISO
+2022 (=<a href="http://www.ecma-international.org/publications/standards/Ecma-035.htm">ECMA-35</a>)
+ESC sequences in order to switch between different character sets.
+
+</p><p>UTF-8 is in the sense of ISO 2022 an “other coding system” (see
+section 15.4 of ECMA 35). UTF-8 is outside the ISO 2022
+SS2/SS3/G0/G1/G2/G3 world, so if you switch from ISO 2022 to UTF-8,
+all SS2/SS3/G0/G1/G2/G3 states become meaningless until you leave
+UTF-8 and switch back to ISO 2022. UTF-8 is a stateless encoding, i.e.
+a self-terminating short byte sequence determines completely which
+character is meant, independent of any switching state. G0 and G1 in
+ISO 10646-1 are those of ISO 8859-1, and G2/G3 do not exist in ISO
+10646, because every character has a fixed position and no switching
+takes place. With UTF-8, it is not possible that your terminal remains
+switched to strange graphics-character mode after you accidentally
+dumped a binary file to it. This makes a terminal in UTF-8 mode much
+more robust than with ISO 2022 and it is therefore useful to have a
+way of locking a terminal into UTF-8 mode such that it cannot
+accidentally go back to the ISO 2022 world.
+
+</p><p>The ISO 2022 standard specifies a range of ESC % sequences for
+leaving the ISO 2022 world (designation of other coding system, DOCS),
+and a number of such sequences have been registered for <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/ISO-10646-UTF-8.html">UTF-8</a> in section 2.8 of the <a href="http://www.itscj.ipsj.or.jp/ISO-IR/">ISO 2375 International
+Register of Coded Character Sets</a>:
+
+</p><ul>
+
+<li><samp>ESC %G</samp> activates UTF-8 with an unspecified
+implementation level from ISO 2022 in a way that allows to go back
+to ISO 2022 again.
+
+</li><li><samp>ESC %@</samp> goes back from UTF-8 to ISO 2022 in case
+UTF-8 had been entered via <samp>ESC %G</samp>.
+
+</li><li><samp>ESC %/G</samp> switches to UTF-8 Level 1 with no return.
+</li><li><samp>ESC %/H</samp> switches to UTF-8 Level 2 with no return.
+</li><li><samp>ESC %/I</samp> switches to UTF-8 Level 3 with no return.
+
+</li></ul>
+
+<p>While a terminal emulator is in UTF-8 mode, any ISO 2022 escape
+sequences such as for switching G2/G3 etc. are ignored. The only ISO
+2022 sequence on which a terminal emulator might act in UTF-8 mode is
+<samp>ESC %@</samp> for returning from UTF-8 back to the ISO 2022
+scheme.
+
+</p><p>UTF-8 still allows you to use C1 control characters such as CSI,
+even though UTF-8 also uses bytes in the range 0x80-0x9F. It is
+important to understand that a terminal emulator in UTF-8 mode must
+apply the UTF-8 decoder to the incoming byte stream
+<strong>before</strong> interpreting any control characters. C1
+characters are UTF-8 decoded just like any other character above
+U+007F.
+
+</p><p>Many text-mode applications available today expect to speak to the
+terminal using a legacy encoding or to use ISO 2022 sequences for
+switching terminal fonts. In order to use such applications within a
+UTF-8 terminal emulator, it is possible to use a conversion layer that
+will translate between ISO 2022 and UTF-8 on the fly. Examples for
+such utilities are Juliusz Chroboczek’s <a href="http://invisible-island.net/luit/">luit</a> and <a href="http://www.pps.jussieu.fr/~jch/software/pluto/">pluto</a>. If
+all you need is ISO 8859 support in a UTF-8 terminal, you can also use
+<a href="ftp://ftp.uni-erlangen.de/pub/utilities/screen/">screen</a>
+(version 4.0 or newer) by Michael Schröder and Jürgen Weigert. As
+implementation of ISO 2022 is a complex and error-prone task, better
+avoid implementing ISO 2022 yourself. Implement only UTF-8 and point
+users who need ISO 2022 at luit (or screen).
+
+</p><h2 id="apps">What UTF-8 enabled applications are available?</h2>
+
+<p>Warning: As of mid-2003, this section is becoming increasingly
+incomplete. UTF-8 support is now a pretty standard feature for most
+well-maintained packages. This list will soon have to be converted
+into a list of the most popular programs that still have problems with
+UTF-8.
+
+</p><h3>Terminal emulation and communication</h3>
+
+<ul>
+
+<li><a href="http://dickey.his.com/xterm/xterm.html">xterm</a> as
+shipped with XFree86 4.0 or higher works correctly in UTF-8 locales if
+you use an *-iso10646-1 font. Just try it with for example
+<samp>LC_CTYPE=en_GB.UTF-8 xterm -fn
+'-Misc-Fixed-Medium-R-Normal--18-120-100-100-C-90-ISO10646-1'</samp>.
+
+</li><li><a href="http://www.columbia.edu/kermit/ckermit.html">C-Kermit</a>
+has supported UTF-8 as the transfer, terminal, and file character set
+since version 7.0.
+
+</li><li><a href="http://mlterm.sourceforge.net/">mlterm</a> is a
+multi-lingual terminal emulator that supports UTF-8 among many other
+encodings, combining characters, XIM.
+
+</li><li><a href="http://www.rano.org/">Edmund Grimley Evans</a> extended
+the <a href="http://www.msu.edu/user/pfaffben/">BOGL</a> Linux
+framebuffer graphics library with UCS font support and built a simple
+UTF-8 console terminal emulator called <samp>bterm</samp> with it.
+
+</li><li><a href="http://members.ispwest.com/hanpaul/uterm.html">Uterm</a>
+purports to be a UTF-8 terminal emulator for the Linux framebuffer
+console.
+
+</li><li><a href="http://www.pps.jussieu.fr/~jch/software/pluto/">Pluto</a>,
+Juliusz Chroboczek’s paranormal Unicode converter, can guess which
+encoding is being used in a terminal session, and converts it
+on-the-fly to UTF-8. (Wonderful for reading IRC channels with mixed
+ISO 8859 and UTF-8 messages!)
+
+</li></ul>
+
+<h3>Editing and word processing</h3>
+
+<ul>
+
+<li><a href="http://www.vim.org/">Vim</a> (the popular clone of the
+classic vi editor) supports UTF-8 with wide characters and up to two
+combining characters starting from version 6.0.
+
+</li><li><a href="http://www.gnu.org/software/emacs/">Emacs</a> has quite
+good basic UTF-8 support starting from version 21.3. Emacs 23 changed
+the internal encoding to UTF-8.
+
+</li><li><a href="http://www.yudit.org/">Yudit</a> is Gaspar Sinai’s
+free X11 Unicode editor.
+
+</li><li><a href="http://towo.net/mined/">Mined 2000</a> by <a href="http://page.mi.fu-berlin.de/~wolff/">Thomas Wolff</a> is a very
+nice UTF-8 capable text editor, ahead of the competition with features
+such as not only support of double-width and combining characters, but
+also bidirectional scripts, keyboard mappings for a wide range of
+scripts, script-dependent highlighting, etc.
+
+</li><li><a href="http://sourceforge.net/projects/joe-editor">JOE</a> is a
+popular WordStar-like editor that supports UTF-8 as of version 3.0.
+
+</li><li><a href="http://cooledit.sourceforge.net/">Cooledit</a> offers
+UTF-8 and UCS support starting with version 3.15.0.
+
+</li><li><a href="http://fabrice.bellard.free.fr/qemacs/">QEmacs</a> is a
+small editor for use on UTF-8 terminals.
+
+</li><li><a href="http://www.greenwoodsoftware.com/less/">less</a> is a
+popular plain-text file viewer that had UTF-8 support since version
+348. (Version 358 had a <a href="http://mail.nl.linux.org/linux-utf8/2001-05/msg00022.html">bug</a>
+related to the handling of UTF-8 characters and backspace
+underlining/boldification as used by nroff/man, for which a <a href="http://mail.nl.linux.org/linux-utf8/2001-05/msg00023.html">patch</a>
+is available, version 381 still has problems with UTF-8 characters in
+the search-mode input line.)
+
+</li><li>GNU <a href="ftp://ftp.gnu.org/pub/gnu/bash/">bash</a> and <a href="ftp://ftp.gnu.org/pub/gnu/readline/">readline</a> provide
+single-line editors and they introduced support for multi-byte
+character encodings, such as UTF-8, with versions bash 2.05b and
+readline 4.3.
+
+</li><li><a href="http://gucharmap.sourceforge.net/">gucharmap</a> and <a href="http://umap.sourceforge.net/">UMap</a> are tools to select and
+paste any Unicode character into your application.
+
+</li><li><a href="http://www.latex-project.org/">LaTeX</a> has <a href="ftp://ftp.tex.ac.uk/tex-archive/macros/latex/base/utf8ienc.dtx">supported</a>
+UTF-8 in its base package since <a href="http://www.latex-project.org/ltnews/ltnews15.pdf">March 2004</a>
+(still experimental). You can simply
+write <samp>\usepackage[utf8]{inputenc}</samp> and then encode at
+least some of TeX’s standard character repertoire in UTF-8 in your
+LaTeX sources. (Before that, UTF-8 was already available in the form
+of <a href="http://www.unruh.de/DniQ/latex/unicode/">Dominique Unruh’s
+package</a>, which covered far more characters and was rather resource
+hungry.) <a href="http://www.tug.org/xetex/">XeTeX</a> is a reengineered
+version of TeX that reads and understands (UTF-8 encoded) Unicode text.
+
+</li><li><a href="http://www.abisource.com/">Abiword</a>.
+
+</li></ul>
+
+<h3>Programming</h3>
+
+<ul>
+
+<li><a href="http://www.perl.org/">Perl</a> offers useable Unicode and
+UTF-8 support starting with version 5.8.1. Strings are now tagged in
+memory as either byte strings or character strings, and the latter are
+stored internally as UTF-8 but appear to the programmer just as
+sequences of UCS characters. There is now also comprehensive support
+for encoding conversion and normalization included. Read “man
+perluniintro” for details.
+
+</li><li><a href="http://www.python.org/">Python</a> got Unicode support
+added in version 1.6.
+
+</li><li><a href="http://dev.scriptics.com/">Tcl/Tk</a> started using <a href="http://dev.scriptics.com/doc/howto/i18n.html">Unicode as its
+base character set</a> with version 8.1. ISO10646-1 fonts are
+supported in Tk from version 8.3.3 or newer.
+
+</li><li><a href="http://clisp.cons.org/">CLISP</a> can work with all
+multi-byte encodings (including UTF-8) and with the functions
+<samp>char-width</samp> and <samp>string-width</samp> there is an API
+comparable to <samp>wcwidth()</samp> and <samp>wcswidth()</samp>
+available.
+
+</li></ul>
+
+<h3>Mail and Internet</h3>
+
+<ul>
+
+<li>The <a href="http://www.mutt.org/">Mutt</a> email client has
+worked since version 1.3.24 in UTF-8 locales. When compiled and linked
+with <a href="http://dickey.his.com/ncurses/">ncursesw (ncurses built
+with wide-character support)</a>, Mutt 1.3.x works decently in UTF-8
+locales under UTF-8 terminal emulators such as xterm.
+
+</li><li id="exmh"><a href="http://www.beedub.com/exmh/">Exmh</a> is a
+GUI frontend for the <a href="http://www.ics.uci.edu/~mh/">MH</a> or
+<a href="http://www.nongnu.org/nmh/">nmh</a> mail system and partially
+supports Unicode starting with version 2.1.1 if <a href="http://www.tcl.tk/software/tcltk/">Tcl/Tk</a> 8.3.3 or newer is
+used. To enable displaying UTF-8 email, make sure you have the <a href="https://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html">*-iso10646-1 fonts</a> installed and add to .Xdefaults
+the line “exmh.mimeUCharsets: utf-8”. Much of the Exmh-internal MIME
+charset-set mechanics however still dates from the days before Tcl
+8.1, therefore ignores Tcl/Tk’s more recent Unicode support, and could
+now be simplified and improved significantly. In particular, writing
+or replying to UTF-8 mail is still broken.
+
+</li><li>Most modern web browsers such as <a href="http://www.mozilla.org/">Mozilla Firefox</a> have pretty decent
+UTF-8 support today.
+
+</li><li>The popular <a href="http://www.washington.edu/pine/">Pine</a>
+email client lacks UTF-8 support and is no longer maintained. Switch
+to its successor <a href="http://www.washington.edu/alpine/">Alpine</a>, a complete
+reimplementation by the same authors, which has <a href="http://www.washington.edu/alpine/tech-notes/low-level.html#char-set">excellent
+UTF-8 support</a>.
+
+</li></ul>
+
+<h3>Printing</h3>
+
+<ul>
+
+<li><a href="http://www.pps.jussieu.fr/~jch/software/cedilla/">Cedilla</a> is
+Juliusz Chroboczek’s best-effort Unicode to PostScript text printer.
+
+</li><li>Markus Kuhn’s <a href="http://www.cl.cam.ac.uk/~mgk25/ucs/hpp.c">hpp</a> is a very
+simple plain text formatter for HP PCL printers that supports the <a href="http://www.cl.cam.ac.uk/~mgk25/ucs/hpp-repertoire.txt">repertoire</a>
+of characters covered by the standard PCL fixed-width fonts in all the
+character encodings for which your C library has a locale mapping.
+Markus Kuhn’s <a href="http://www.cl.cam.ac.uk/~mgk25/ucs/utf2ps.c">utf2ps</a> is an
+early quick-and-dirty proof-of-concept UTF-8 formatter for PostScript,
+that was only written to demonstrate which <a href="http://www.cl.cam.ac.uk/~mgk25/ucs/utf2ps.ps">character
+repertoire</a> can easily be printed using only the standard
+PostScript fonts and was never intended to be actually used.
+
+</li><li>Some post-2004 HP printers
+have <a href="http://h20331.www2.hp.com/enterprise/downloads/Internationaldrivers.pdf">UTF-8
+PCL firmware support</a>
+(<a href="http://h71019.www7.hp.com/enterprise/cache/37011-0-0-0-121.html">more</a>).
+The relevant PCL5 commands appear to be “␛&amp;t1008P” (encoding method: UTF-8) and “␛(18N” (Unicode code page). Recent
+PCL printers from other manufacturers (e.g., <a href="http://www.kyoceramita.eu/index/products/kyoware_solutions/output_management/kyomulticode_1_0.-contextmargin-54616-files-96853-File.cpsdownload.tmp/KYOmulticode%20Referencel%20EN.pdf">Kyocera</a>) also advertise
+UTF-8 support (for SAP compatibility).
+
+</li><li>The <a href="http://www.cups.org/">Common UNIX Printing System</a>
+comes with a texttops tool that converts plaintext UTF-8 to
+PostScript.
+
+</li><li><a href="http://www.geocities.com/CapeCanaveral/Lab/5735/1/txtbdf2ps.html">txtbdf2ps</a>
+by Serge Winitzki is a Perl script to print UTF-8 plaintext to
+PostScript using BDF pixel fonts.
+
+</li></ul>
+
+<h3>Misc</h3>
+
+<ul>
+
+<li>The <a href="http://www.postgresql.org/">PostgreSQL</a> DBMS had
+support for UTF-8 since version 7.1, both as the frontend encoding,
+and as the backend storage encoding. Data conversion between frontend
+and backend encodings is performed automatically.
+
+</li><li><a href="http://www.figlet.org/">FIGlet</a> is a tool to output
+banner text in large letters using monospaced characters as block
+graphics elements and added UTF-8 support in version 2.2.
+
+</li><li><a href="http://www.w3.org/International/charlint/">Charlint</a>
+is a character normalization tool for the <a href="http://www.w3.org/TR/charmod/">W3C character model</a>.
+
+</li><li>The first available UTF-8 tools for Unix came out of the <a href="http://plan9.bell-labs.com/plan9dist/">Plan 9</a> project, Bell
+Lab’s Unix successor and the world’s first operating system using
+UTF-8. Plan 9’s <a href="http://hawkwind.utcs.utoronto.ca:8001/mlists/sam.html">Sam</a>
+editor and <a href="http://www.cs.usyd.edu.au/~matty/9term/">9term</a>
+terminal emulator have also been ported to Unix. <a href="http://www.cs.yorku.ca/~oz/wily/">Wily</a> started out as a Unix
+implementation of the Plan 9 Acme editor and is a mouse-oriented,
+text-based working environment for programmers. More recently the <a href="http://swtch.com/plan9port/">Plan 9 from User Space</a> (aka
+plan9port) package has emerged, a port of many Plan 9 programs from
+their native Plan 9 environment to Unix-like operating systems.
+
+</li><li>The <a href="http://www.gnome.org/projects/gnumeric/">Gnumeric</a>
+spreadsheet is fully Unicode based from version 1.1.
+
+</li><li><a href="http://heirloom.sourceforge.net/">The Heirloom Toolchest</a>
+is a collection of standard Unix utilities derived from original Unix
+material <a href="http://www.tuhs.org/Archive/Caldera-license.pdf">released as
+open source by Caldera</a> with support for multibyte character sets,
+especially UTF-8.
+
+</li><li><a href="http://osx.freshmeat.net/projects/convmv/">convmv</a> is
+a tool to convert the filenames in entire directory trees from a
+legacy encoding to UTF-8.
+
+</li></ul>
+
+<h2 id="patches">What patches to improve UTF-8 support are available?</h2>
+
+<p>Many of these already have been included in the respective main
+distribution.
+
+</p><ul>
+
+<li>The Advanced Utility Development subgroup of the OpenI18N
+(formerly Li18nux) project have prepared various <a href="http://www.openi18n.org/subgroups/utildev/dli18npatch2.html">internationalization patches</a> for tools such as cut, fold, glibc,
+join, sed, uniq, xterm, etc. that might improve UTF-8 support.
+
+</li><li>A collection of UTF-8 patches for various tools as well as a UTF-8
+support status list is in Bruno Haible’s <a href="ftp://ftp.ilog.fr/pub/Users/haible/utf8/Unicode-HOWTO-4.html">Unicode-HOWTO</a>.
+
+</li><li>Bruno Haible has also prepared <a href="ftp://ftp.ilog.fr/pub/Users/haible/utf8/">various patches</a>
+for stty, the Linux kernel tty, etc.
+
+</li><li>The <a href="http://www2u.biglobe.ne.jp/~hsaka/w3m/">multilingualization
+patch (w3m-m17n)</a> for the text-mode web browser <a href="http://w3m.sourceforge.net/">w3m</a> allows you to view
+documents in all the common encodings on a UTF-8 terminal like xterm
+(also switch option “Use alternate expression with ASCII for entity”
+to OFF after pressing “o”). Another <a href="http://pub.ks-and-ks.ne.jp/prog/w3mmee/">multilingual version
+(w3mmee)</a> is available as well (have not tried that yet).
+
+</li></ul>
+
+<h2 id="libs">Are there free libraries for dealing with Unicode available?</h2>
+
+<ul>
+
+<li>Ulrich Drepper’s <a href="http://sources.redhat.com/glibc/">GNU C
+library glibc</a> has featured since version 2.2 full multi-byte
+locale support for UTF-8, an ISO ISO 14651 sorting order algorithm,
+and it can recode into many other encodings. All current Linux
+distributions come with glibc 2.2 or newer, so you definitely should
+upgrade now if you are still using an earlier Linux C library.
+
+</li><li>The <a href="http://icu.sourceforge.net/">International Components
+for Unicode (ICU)</a> (formerly IBM Classes for Unicode) have become
+what is probably the most powerful cross-platform standard library for
+more advanced Unicode character processing functions.
+
+</li><li>X.Net’s <a href="http://www.xnetinc.com/xiua/">xIUA</a> is a
+package designed to retrofit existing code for ICU support by
+providing locale management so that users do not have to modify
+internal calling interfaces to pass locale parameters. It uses more
+familiar APIs, for example to collate you use xiua_strcoll, and is
+thread safe.
+
+</li><li><a href="http://crl.nmsu.edu/~mleisher/">Mark Leisher</a>’s UCData
+Unicode character property and bidi library as well as his
+<samp>wchar_t</samp> support test code.
+
+</li><li>Bruno Haible’s <a href="http://www.gnu.org/software/libiconv/">libiconv</a>
+character-set conversion library provides an <a href="http://www.opengroup.org/onlinepubs/007904975/functions/iconv.html">iconv()</a> implementation, for use on systems which do not have one,
+or whose implementation cannot convert from/to Unicode.
+
+<br>It also contains the libcharset character-encoding query library
+that allows applications to determine in a highly portable way the
+character encoding of the current locale, avoiding the portability
+concerns of using <a href="http://www.opengroup.org/onlinepubs/007904975/basedefs/langinfo.h.html">nl_langinfo(CODESET)</a> directly.
+
+</li><li><a href="ftp://ftp.ilog.fr/pub/Users/haible/utf8/">Bruno Haible’s
+libutf8</a> provides various functions for handling UTF-8 strings,
+especially for platforms that do not yet offer proper UTF-8 locales.
+
+</li><li><a href="mailto:tromey%40cygnus.com">Tom Tromey</a>’s <a href="http://people.redhat.com/otaylor/pango-mirror/download/libunicode-0.4.tar.gz">libunicode</a> library is part of the Gnome Desktop project, but can
+be built independently of Gnome. It contains various character class
+and conversion functions. (<a href="http://cvs.gnome.org/lxr/source/libunicode/">CVS</a>)
+
+</li><li><a href="http://fribidi.sourceforge.net/">FriBidi</a> is Dov
+Grobgeld’s free implementation of the Unicode bidi algorithm.
+
+<!--LI><A HREF="http://czyborra.com/arabjoin/">Arabjoin</A> is Roman
+Czyborra’s little Perl tool that takes Arabic UTF-8 text (encoded in
+the U+06<VAR>xx</VAR> Arabic block in logical order) as input,
+performs Arabic glyph joining, and outputs a UTF-8 octet stream that
+is arranged in visual order. This gives readable results when
+formatted with a simple Unicode renderer like xterm or yudit that does
+not handle Arabic differently but simply outputs all glyphs in
+left-to-right order.-->
+
+</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/ucs/wcwidth.c">Markus Kuhn’s free wcwidth()
+implementation</a> can be used by applications on platforms where the
+C library does not yet provide an equivalent function to find, how
+many column positions a character or string will occupy on a UTF-8
+terminal emulator screen.
+
+</li><li>Markus Kuhn’s <a href="https://www.cl.cam.ac.uk/~mgk25/download/transtab.tar.gz">transtab</a> is a
+transliteration table for applications that have to make a best-effort
+conversion from Unicode to ASCII or some 8-bit character set. It
+contains a comprehensive list of substitution strings for Unicode
+characters, comparable to the fallback notations that people use
+commonly in email and on typewriters to represent unavailable
+characters. The table comes in <a href="https://www.cl.cam.ac.uk/~mgk25/volatile/ISO-14652.pdf">ISO/IEC TR 14652</a> format, to allow
+simple inclusion into POSIX locale definition files.
+
+</li></ul>
+
+<h2 id="widgets">What is the status of Unicode support for various X widget libraries?</h2>
+
+<ul>
+
+<li>The <a href="http://www.pango.org/">Pango – Unicode and Complex
+Text Processing</a> project added full-featured Unicode support to <a href="http://www.gtk.org/">GTK+</a>.
+
+</li><li><a href="http://www.trolltech.com/">Qt</a> supported the use of
+*-ISO10646-1 fonts since version 2.0.
+
+</li><li>A <a href="http://www.oksid.ch/fltk-utf/">UTF-8 extension</a> for the
+<a href="http://www.fltk.org/">Fast Light Tool Kit</a> was prepared by
+Jean-Marc Lienher, based on his Xutf8 Unicode display library.
+
+</li></ul>
+
+<h2 id="wip">What packages with UTF-8 support are currently under development?</h2>
+
+<ul>
+
+<li>Native Unicode support is planned for Emacs 23. If you are
+interested in contributing/testing, please join the
+<samp>emacs-devel</samp> <samp>@gnu.org</samp> mailing list.
+
+</li><li>The <a href="http://linuxconsole.sourceforge.net/">Linux Console
+Project</a> works on a complete revision of the VT100 emulator built
+into the Linux kernel, which will improve the simplistic UTF-8 support
+already there.
+
+</li></ul>
+
+<h2 id="solaris">How does UTF-8 support work under Solaris?</h2>
+
+<p>Starting with Solaris 2.8, UTF-8 is at least partially supported.
+To use it, just set one of the UTF-8 locales, for instance by typing
+
+</p><pre> setenv LANG en_US.UTF-8
+</pre>
+
+<p>in a C shell.
+
+</p><p>Now the <samp>dtterm</samp> terminal emulator can be used to input
+and output UTF-8 text and the <samp>mp</samp> print filter will print
+UTF-8 files on PostScript printers. The <samp>en_US.UTF-8</samp>
+locale is at the moment supported by Motif and CDE desktop
+applications and libraries, but not by OpenWindows, XView, and
+OPENLOOK DeskSet applications and libraries.
+
+</p><p>For more information, read Sun’s <a href="http://docs.sun.com/app/docs/doc/805-4123/6j3tmpc73?a=view">Overview of en_US.UTF-8 Locale Support</a> web page.
+
+</p><h2 id="web">Can I use UTF-8 on the Web?</h2>
+
+<p>Yes. There are two ways in which a HTTP server can indicate to a
+client that a document is encoded in UTF-8:
+
+</p><ul>
+
+<li>Make sure that the HTTP header of a document contains the
+line
+<pre>  Content-Type: text/html; charset=utf-8
+</pre>
+if the file is HTML, or the line
+<pre>  Content-Type: text/plain; charset=utf-8
+</pre>
+if the file is plain text. How this can be achieved depends on your
+web server. If you use <a href="http://httpd.apache.org/">Apache</a>
+and you have a subdirecory in which all *.html or *.txt files are
+encoded in UTF-8, then create there a file <a href="http://httpd.apache.org/docs/configuring.html#htaccess">.htaccess</a> and add to it the two lines
+
+<pre>  AddType text/html;charset=UTF-8 html
+  AddType text/plain;charset=UTF-8 txt
+</pre>
+
+A webmaster can modify /etc/httpd/mime.types to make the same change
+for all subdirectories simultaneously.
+
+</li><li>If you cannot influence the HTTP headers that the web server
+prefixes to your documents automatically, then add in a HTML document
+under HEAD the element
+
+<pre>  &lt;META http-equiv=Content-Type content="text/html; charset=UTF-8"&gt;
+</pre>
+
+which usually has the same effect. This obviously works only for HTML
+files, not for plain text. It also announces the encoding of the file
+to the parser only after the parser has already started to read the
+file, so it is clearly the less elegant approach.
+
+</li></ul>
+
+<p>The currently most widely used browsers support UTF-8 well enough
+to generally recommend UTF-8 for use on web pages. The old Netscape 4
+browser used an annoyingly large single font for displaying any UTF-8
+document. Best upgrade to Mozilla, Netscape 6 or some other recent
+browser (Netscape 4 is generally very buggy and not maintained any
+more).
+
+</p><p>There is also the question of how non-ASCII characters entered into
+HTML forms are encoded in the subsequent HTTP GET or POST request that
+transfers the field contents to a CGI script on the server.
+Unfortunately, both <a href="http://www.w3.org/TR/REC-html40/interact/forms.html#h-17.13">standardization</a> and implementation are still a huge mess here, as
+discussed in the <a href="http://ppewww.ph.gla.ac.uk/~flavell/charset/form-i18n.html">
+FORM submission and i18n tutorial</a> by Alan Flavell. We can only
+hope that a practice of doing all this in UTF-8 will emerge
+eventually. See also the discussion about <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=18643">Mozilla bug
+18643</a>.
+
+</p><h2 id="ps">How are PostScript glyph names related to UCS codes?</h2>
+
+<p>See Adobe’s <a href="http://www.adobe.com/devnet/opentype/archives/glyph.html">Unicode
+and Glyph Names</a> guide.
+
+</p><h2 id="subsets">Are there any well-defined UCS subsets?</h2>
+
+<p>With over 40000 characters, the design of a font that covers every
+single Unicode character is an enormous project, not just regarding
+the number of glyphs that need to be created, but also in terms of the
+calligraphic expertise required to do an adequate job for each script.
+As a result, there are hardly any fonts that try to cover “all of
+Unicode”. While a few projects have attempted to create single
+complete Unicode fonts, their quality is not comparable with that of
+many good smaller fonts. For example, the Unicode and ISO 10646 books
+are still printed using a large collection of different fonts that
+only together cover the entire repertoire. Any high-quality font can
+only cover the Unicode subset for which the designer feels competent
+and confident.
+
+</p><p>Older, regional character encoding standards defined both an encoding
+and a repertoire of characters that an individual calligrapher could
+handle. Unicode lacks the latter, but in the interest of
+interoperability, it is useful to have defined a hand full of
+standardized subsets, each a few hundred to a few thousand character
+large and targeted at particular markets, that font designers could
+practically aim to cover. A number of different UCS subsets already
+have been established:
+
+</p><ul>
+
+<li>The <a href="http://partners.adobe.com/asn/tech/type/opentype/appendices/wgl4.jsp">Windows
+Glyph List 4.0 (WGL4)</a> is a set of 650 characters that covers all
+the 8-bit MS-DOS, Windows, Mac, and ISO code pages that Microsoft had
+used before. All Windows fonts now cover at least the WGL4 repertoire.
+WGL4 is a superset of CEN MES-1. (<a href="https://www.cl.cam.ac.uk/~mgk25/ucs/wgl4.txt">WGL4 test
+file</a>).
+
+</li><li>Three <a href="http://www.evertype.com/standards/iso10646/pdf/cwa13873.pdf">European
+UCS subsets MES-1, MES-2, and MES-3</a> have been defined by the
+European standards committee CEN/TC304 in CWA 13873:
+
+<ul>
+
+<li>MES-1 is a very small Latin subset with only 335 characters. It
+contains exactly all characters found in ISO 6937 plus the EURO SIGN.
+This means MES-1 contains all characters of ISO 8859 parts
+1,2,3,4,9,10,15. [Note: If your aim is to provide only the cheapest
+and simplest reasonable Central European UCS subset, I would implement
+MES-1 plus the following important 14 additional characters found in
+Windows code page 1252 but not in MES-1: U+0192, U+02C6, U+02DC,
+U+2013, U+2014, U+201A, U+201E, U+2020, U+2021, U+2022, U+2026,
+U+2030, U+2039, U+203A.]
+
+</li><li>MES-2 is a Latin/Greek/Cyrillic/Armenian/Georgian subset with 1052
+characters. It covers every language and every 8-bit code page used in
+Europe (not just the EU!) and European language countries. It also
+adds a small collection of mathematical symbols for use in technical
+documentation. MES-2 is a superset of MES-1. If you are developing
+only for a European or Western market, MES-2 is the recommended
+repertoire. [Note: For bizarre committee-politics reasons, the
+following eight WGL4 characters are missing from MES-2: U+2113,
+U+212E, U+2215, U+25A1, U+25AA, U+25AB, U+25CF, U+25E6. If you
+implement MES-2, you should definitely also add those and then you can
+claim WGL4 conformance in addition.]
+
+</li><li>MES-3 is a very comprehensive UCS subset with 2819 characters. It
+simply includes every UCS collection that seemed of potential use to
+European users. This is for the more ambitious implementors. MES-3 is
+a superset of MES-2 and WGL4.
+
+</li></ul>
+
+</li><li>JIS X 0221-1995 specifies 7 non-overlapping UCS subsets for
+Japanese users:
+
+<ul>
+
+<li>Basic Japanese (6884 characters): JIS X 0208-1997, JIS X 0201-1997
+
+</li><li>Japanese Non-ideographic Supplement (1913 characters): JIS X
+0212-1990 non-kanji, plus various other non-kanji
+
+</li><li>Japanese Ideographic Supplement 1 (918 characters): some JIS X
+0212-1990 kanji
+
+</li><li>Japanese Ideographic Supplement 2 (4883 characters): remaining JIS
+X 0212-1990 kanji
+
+</li><li>Japanese Ideographic Supplement 3 (8745 characters): remaining
+Chinese characters
+
+</li><li>Full-width Alphanumeric (94 characters): for compatibility
+
+</li><li>Half-width Katakana (63 characters): for compatibility
+
+</li></ul>
+
+</li><li>The ISO 10646 standard splits up its repertoire into a number of
+<a href="http://www.evertype.com/standards/iso10646/ucs-collections.html">collections</a> that can be used to define and document implemented
+subsets. Unicode defines similar, but not quite identical, <a href="ftp://ftp.unicode.org/Public/UNIDATA/Blocks.txt">blocks</a> of
+characters, which correspond to sections in the Unicode standard.
+
+</li><li><a href="http://www.ietf.org/rfc/rfc1815.txt">RFC 1815</a> is a
+memo written in 1995 by someone who obviously did not like ISO 10646
+and was unaware of JIS X 0221-1995. It discusses a UCS subset called
+“ISO-10646-J-1” consisting of 14 UCS collections, some of which are
+intersected with JIS X 0208. This is just what a particular font in an
+old Japanese Windows NT version from 1995 happened to implement. RFC
+1815 is completely obsolete and irrelevant today and should best be
+ignored.
+
+</li><li>Markus Kuhn has defined in the <a href="https://www.cl.cam.ac.uk/~mgk25/download/ucs-fonts.tar.gz">ucs-fonts.tar.gz</a> README three UCS
+subsets TARGET1, TARGET2, TARGET3 that are sensible extensions of the
+corresponding MES subsets and that were the basis for the completion
+of this xterm font package.
+
+</li></ul>
+
+<p>Markus Kuhn’s <a href="https://www.cl.cam.ac.uk/~mgk25/download/uniset.tar.gz">uniset</a> Perl script
+allows convenient set arithmetic over UCS subsets for anyone who wants
+to define a new one or wants to check coverage of an implementation.
+
+</p><h2 id="conv">What issues are there to consider when converting encodings</h2>
+
+<p>The Unicode Consortium maintains a <a href="http://www.unicode.org/Public/MAPPINGS/">collection of mapping
+tables</a> between Unicode and various older encoding standards. It is
+important to understand that the primary purpose of these tables was
+to demonstrate that Unicode is a superset of the mapped legacy
+encodings, and to document the motivation and origin behind those
+Unicode characters that were included into the standard primarily for
+round-trip compatibility reasons with older character sets. The
+implementation of good character encoding conversion rountines is a
+significantly more complex task than just blindly applying these
+example mapping tables! This is because some character sets
+distinguish characters that others unify.
+
+</p><p>The Unicode mapping tables alone are to some degree well suited to
+directly convert text from the older encodings to Unicode. High-end
+conversion tools nevertheless should provide interactive mechanisms,
+where characters that are unified in the legacy encoding but
+distinguished in Unicode can interactively or semi-automatically be
+disambiguated on a case-by-case basis.
+
+</p><p>Conversion in the opposite direction from Unicode to a legacy
+character set requires non-injective (= many-to-one) extensions of
+these mapping tables. Several Unicode characters have to be mapped to
+a single code point in many legacy encodings. The Unicode consortium
+currently does not maintain standard many-to-one tables for this
+purpose and does not define any standard behavior of coded character
+set conversion tools.
+
+</p><p>Here are some examples for the many-to-one mappings that have to be
+handled when converting from Unicode into something else:
+
+</p><p></p><table class="solid">
+<tbody><tr><th>UCS characters</th><th>equivalent character</th><th>in target code
+</th></tr><tr><td>U+00B5 MICRO SIGN<br>U+03BC GREEK SMALL LETTER MU
+    </td><td>0xB5</td><td>ISO 8859-1
+</td></tr><tr><td>U+00C5 LATIN CAPITAL LETTER A WITH RING ABOVE<br>U+212B ANGSTROM SIGN
+    </td><td>0xC5</td><td>ISO 8859-1
+</td></tr><tr><td>U+03B2 GREEK CAPITAL LETTER BETA<br>U+00DF LATIN SMALL LETTER SHARP S
+    </td><td>0xE1</td><td>CP437
+</td></tr><tr><td>U+03A9 GREEK CAPITAL LETTER OMEGA<br>U+2126 OHM SIGN
+    </td><td>0xEA</td><td>CP437
+</td></tr><tr><td>U+03B5 GREEK SMALL LETTER EPSILON<br>U+2208 ELEMENT OF
+    </td><td>0xEE</td><td>CP437
+</td></tr><tr><td>U+005C REVERSE SOLIDUS<br>U+FF3C FULLWIDTH REVERSE SOLIDUS
+    </td><td>0x2140</td><td>JIS X 0208
+</td></tr></tbody></table>
+
+<p>A first approximation of such many-to-one tables can be generated
+from available normalization information, but these then still have to
+be manually extended and revised. For example, it seems obvious that
+the character 0xE1 in the original IBM PC character set was meant to
+be useable as both a Greek small beta (because it is located between
+the code positions for alpha and gamma) and as a German sharp-s
+character (because that code is produced when pressing this letter on
+a German keyboard). Similarly 0xEE can be either the mathematical
+element-of sign, as well as a small epsilon. These characters are not
+Unicode normalization equivalents, because although they look similar
+in low-resolution video fonts, they are very different characters in
+high-quality typography. <a href="http://www.unicode.org/Public/MAPPINGS/VENDORS/IBM/">IBM’s
+tables</a> for CP437 reflected one usage in some cases, Microsoft’s
+the other, both equally sensible. A good code converter should aim to
+be compatible with both, and not just blindly use the <a href="http://www.unicode.org/Public/MAPPINGS/VENDORS/MICSFT/PC/CP437.TXT">Microsoft
+mapping table</a> alone when converting from Unicode.
+
+</p><p>The <a href="http://www.unicode.org/Public/UNIDATA/UnicodeData.html">Unicode
+database</a> does contain in field 5 the Character Decomposition
+Mapping that can be used to generate some of the above example
+mappings automatically. As a rule, the output of a
+Unicode-to-Something converter should not depend on whether the
+Unicode input has first been converted into <a href="http://www.unicode.org/unicode/reports/tr15/">Normalization Form
+C</a> or not. For equivalence information on Chinese, Japanese, and
+Korean Han/Kanji/Hanja characters, use the <a href="http://www.unicode.org/charts/unihan.html">Unihan database</a>.
+In the cases of the IBM PC characters in the above examples, where the
+normalization tables do not offer adequate mapping, the
+cross-references to similar looking characters in the Unicode book are
+a valuable source of suggestions for equivalence mappings. In the end,
+which mappings are used and which not is a matter of taste and
+observed usage.
+
+</p><p>The Unicode consortium used to maintain mapping tables to CJK
+character set standards, but has declared them to be obsolete, because
+their presence on the Unicode web server led to the development of a
+number of inadequate and naive EUC converters. In particular, the (now
+obsolete) CJK Unicode mapping tables had to be slightly modified
+sometimes to preserve information in combination encodings. For
+example, the standard mappings provide round-trip compatibility for
+conversion chains ASCII to Unicode to ASCII as well as for JIS X 0208
+to Unicode to JIS X 0208. However, the EUC-JP encoding covers the
+union of ASCII and JIS X 0208, and the UCS repertoire covered by the
+ASCII and JIS X 0208 mapping tables overlaps for one character, namely
+U+005C REVERSE SOLIDUS. EUC-JP converters therefore have to use a
+slightly modified JIS X 0208 mapping table, such that the JIS X 0208
+code 0x2140 (0xA1 0xC0 in EUC-JP) gets mapped to U+FF3C FULLWIDTH
+REVERSE SOLIDUS. This way, round-trip compatibility from EUC-JP to
+Unicode to EUC-JP can be guaranteed without any loss of information.
+<a href="http://www.unicode.org/unicode/reports/tr11/#Recommendation">Unicode
+Standard Annex #11: East Asian Width</a> provides further guidance on
+this issue. Another problem area is compatibility with older
+conversion tables, as explained in an <a href="http://www.debian.or.jp/~kubota/unicode-symbols.html">essay by
+Tomohiro Kubota</a>.
+
+</p><p>In addition to just using standard normalization mappings,
+developers of code converters can also offer transliteration support.
+Transliteration is the conversion of a Unicode character into a
+graphically and/or semantically similar character in the target code,
+even if the two are distinct characters in Unicode after
+normalization. Examples of transliteration:
+
+</p><p></p><table class="solid">
+<tbody><tr><th>UCS characters</th><th>equivalent character</th><th>in target code
+</th></tr><tr><td>U+0022 QUOTATION MARK<br>U+201C LEFT DOUBLE QUOTATION MARK<br>
+        U+201D RIGHT DOUBLE QUOTATION MARK<br>
+        U+201E DOUBLE LOW-9 QUOTATION MARK<br>
+        U+201F DOUBLE HIGH-REVERSED-9 QUOTATION MARK
+    </td><td>0x22</td><td>ISO 8859-1
+</td></tr></tbody></table>
+
+<p>The Unicode Consortium does not provide or maintain any standard
+transliteration tables at this time. CEN/TC304 has a draft report
+“European fallback rules” on recommended ASCII fallback characters for
+MES-2 in the pipeline, but this is not yet mature. Which
+transliterations are appropriate or not can in some cases depend on
+language, application field, and most of all personal preference.
+Available Unicode transliteration tables include, for example, those
+found in Bruno Haible’s <a href="http://www.gnu.org/software/libiconv/">libiconv</a>, the <a href="http://sources.redhat.com/glibc/">glibc 2.2</a> locales, and
+Markus Kuhn’s <a href="https://www.cl.cam.ac.uk/~mgk25/download/transtab.tar.gz">transtab</a> package.
+
+</p><h2 id="x11">Is X11 ready for Unicode?</h2>
+
+<p>The <a href="ftp://ftp.x.org/pub/X11R7.0/">X11 R7.0 release</a>
+(2005) is the latest version of the X Consortium’s sample
+implementation of the X11 Window System standards. The bulk of the <a href="ftp://ftp.x.org/pub/X11R7.0/doc/PDF/">current X11 standards</a>
+and parts of the sample implementation still pre-date widespread
+interest in Unicode under Unix.
+
+</p><p>Among the things that have already been fixed are:
+
+</p><ul>
+
+<li><b>Keysyms:</b> Since X11R6.9, a keysym value has been allocated
+for every Unicode character in Appendix A of the <a href="ftp://ftp.x.org/pub/X11R7.0/doc/PDF/proto.pdf">X Window System
+Protocol</a> specification. Any UCS character in the range U-00000100
+to U-00FFFFFF can now be represented by a keysym value in the range
+0x01000100 to 0x01ffffff. This scheme was proposed by Markus Kuhn in
+1998 and has been supported by a number of applications for many
+years, starting with xterm. The revised Appendix A now also contains
+an official UCS cross reference column in its table of pre-Unicode
+legacy keysyms.
+
+</li><li><b>UTF-8 locales:</b> The X11R6.8 sample implementation added
+support for UTF-8 locales.
+
+</li><li><b>Fonts:</b> A number of comprehensive Unicode standard fonts
+were added in X11R6.8, and they are now supported by some of the
+classic standard tools, such as xterm.
+
+</li></ul>
+
+<p>There remain a number of problems in the X11 standards and some
+inconveniences in the sample implementation for Unicode users that
+still need to be fixed in one of the next X11 releases:
+
+</p><ul>
+
+<li><p><b>UTF-8 cut and paste:</b> The <a href="ftp://ftp.x.org/pub/X11R7.0/doc/PDF/icccm.pdf">ICCCM</a>
+standard still does not specify how to transfer UCS strings in
+selections. Some vendors have added UTF-8 as yet another encoding to
+the existing <a href="ftp://ftp.x.org/pub/X11R7.0/doc/PDF/ctext.pdf">COMPOUND_TEXT</a> mechanism (CTEXT). This is not a good solution for
+at least the following reasons:</p>
+
+<ul>
+
+<li>CTEXT is a rather complicated ISO 2022 mechanism and Unicode
+offers the opportunity to provide not just another add-on to CTEXT,
+but to replace the entire monster with something far simpler, more
+convenient, and equally powerful.
+
+</li><li>Many existing applications can communicate selections via CTEXT,
+but do not support a newly added UTF-8 option. A user of CTEXT has to
+decide whether to use the old ISO 2022 encodings or the new UTF-8
+encoding, but both cannot be offered simultaneously. In other words,
+adding UTF-8 to CTEXT seriously breaks backwards compatibility with
+existing CTEXT applications.
+
+</li><li>The current CTEXT specification even explicitly forbids the
+addition of UTF-8 in section 6: “ISO registered ‘other coding systems’
+are not used in Compound Text; extended segments are the only
+mechanism for non-2022 encodings.”
+
+</li></ul>
+
+<p><a href="http://www.dcs.ed.ac.uk/home/jec/">Juliusz Chroboczek</a>
+has written an <a href="http://www.pps.jussieu.fr/~jch/software/UTF8_STRING/">Inter-Client Exchange of Unicode Text</a> draft proposal for an
+extension of the ICCCM to handle UTF-8 selections with a new
+UTF8_STRING atom that can be used as a property type and selection
+target. This clean approach fixes all of the above problems.
+UTF8_STRING is just as state-less and easy to use as the existing
+STRING atom (which is reserved exclusively for ISO 8859-1 strings and
+therefore not usable for UTF-8), and adding a new selection target
+allows applications to offer selections in both the old CTEXT and the
+new UTF8_STRING format simultaneously, which maximizes
+interoperability. The use of UTF8_STRING can be negociated between the
+selection holder and requestor, leading to no compatibility issues
+whatsoever. Markus Kuhn has prepared an <a href="https://www.cl.cam.ac.uk/~mgk25/ucs/icccm.diff">ICCCM
+patch</a> that adds the necessary definition to the standard. Current
+status: The UTF8_STRING atom has now been officially <a href="ftp://ftp.x.org/pub/DOCS/registry">registered</a> with X.Org,
+and we hope for an update of the ICCCM in one of the next releases.
+
+</p></li><li><b>Application window properties:</b> In order to assist the
+window manager in correctly labeling windows, the <a href="ftp://ftp.x.org/pub/X11R7.0/doc/PDF/icccm.pdf">ICCCM 2.0</a>
+specification requires applications to assign properties such as
+WM_NAME, WM_ICON_NAME and WM_CLIENT_MACHINE to each window. The old
+ICCCM 2.0 (1993) defines these to be of the polymorphic type TEXT,
+which means that they can have their text encoding indicated using one
+of the property types STRING (ISO 8859-1), COMPOUND_TEXT (a ISO 2022
+subset), or C_STRING (unknown character set). Simply adding
+UTF8_STRING as a new option for TEXT would break backwards
+compatibility with old window managers that do not know about this
+type. Therefore, the <a href="http://freedesktop.org/Standards/">freedesktop.org draft
+standard</a> developped in the <a href="http://freedesktop.org/Standards/wm-spec">Window Manager
+Specification Project</a> adds new additional window properties
+_NET_WM_NAME, _NET_WM_ICON_NAME, etc. that have type UTF8_STRING.
+
+</li><li id="xfontstruct"><b>Inefficient font data structures:</b>
+The Xlib API and X11 protocol data structures used for representing
+font metric information are extremely inefficient when handling
+sparsely populated fonts. The most common way of accessing a font in
+an X client is a call to XLoadQueryFont(), which allocates memory for
+an XFontStruct and fetches its content from the server. XFontStruct
+contains an array of XCharStruct entries (12 bytes each). The size of
+this array is the code position of the last character minus the code
+position of the first character plus one. Therefore, any
+“*-iso10646-1” font that contains both U+0020 and U+FFFD will cause an
+XCharStruct array with 65502 elements to be allocated (even for
+CharCell fonts), which requires 786 kilobytes of client-side memory
+and data transmission, even if the font contains only a thousand
+characters.
+
+<p>A few workarounds have been used so far:</p>
+
+<ul>
+
+<li>The non-Asian <samp>-misc-fixed-*-iso10646-1</samp> fonts that
+come with XFree86 4.0 contain no characters above U+31FF. This reduces
+the memory requirement to 153 kilobytes, which is still bad, but much
+less so. (There are actually many useful characters above U+31FF
+present in the BDF files, waiting for the day when this problem will
+be fixed, but they currently all have an encoding of -1 and are
+therefore ignored by the X server. If you need these characters, then
+just install the <a href="https://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html">original fonts</a> without
+applying the <samp>bdftruncate</samp> script).
+
+</li><li>Starting with XFree86 4.0.3, the truncation of a BDF font can also
+be done by specifying a character code subrange at the end of the
+XLFD, as described in the <a href="ftp://ftp.x.org/pub/R6.4/xc/doc/hardcopy/XLFD/xlfd.PS.gz">XLFD
+specification</a>, section 3.1.2.12. For example,
+<pre>-Misc-Fixed-Medium-R-Normal--20-200-75-75-C-100-ISO10646-1[0x1200_0x137f]
+</pre>
+will load only the Ethiopic part of this BDF font with a
+correspondingly nicely small XFontStruct. Earlier X server versions
+will simply ignore the font subset brackets and will give you the full
+font, so there is no compatibility problem with using that.
+
+</li><li>Bruno Haible has written a BIGFONT protocol extension for XFree86
+4.0, which uses a compressed transmission of XCharStruct from server
+to client and also uses shared memory in Xlib between several clients
+which have loaded the same font.
+
+</li></ul>
+
+<p>These workarounds do not solve the underlying problem that
+XFontStruct is unsuitable for sparsely populated fonts, but they do
+provide a significant efficiency improvement without requiring any
+changes in the API or client source code. One real solution would be
+to extend or replace XFontStruct with something slightly more flexible
+that contains a sorted list or hash table of characters as opposed to
+an array. This redesign of XFontStruct would at the same time also
+allow the addition of the urgently needed provisions for combining
+characters and ligatures.
+
+</p><p>Another approach would be to introduce a new font encoding, which
+could be called for instance “ISO10646-C” (the C stands for combining,
+complex, compact, or character-glyph mapped, as you prefer). In this
+encoding, the numbers assigned to each glyph are really font-specific
+glyph numbers and are not equivalent to any UCS character code
+positions. The information necessary to do a character-to-glyph
+mapping would have to be stored in to be standardized new properties.
+This new font encoding would be used by applications together with a
+few efficient C functions that perform the character-to-glyph code
+mapping:
+
+</p><ul>
+
+<li><samp>makeiso10646cglyphmap(XFontStruct *font, iso10646cglyphmap
+*map)</samp>
+
+<br>Reads the character-to-glyph mapping table from the font
+properties into a compact and efficient in-memory representation.
+
+</li><li><samp>freeiso10646cglyphmap(iso10646cglyphmap *map)</samp>
+
+<br>Frees that in-memory representation.
+
+</li><li><samp>mbtoiso10646c(char *string, iso10646cglyphmap *map, XChar2b
+*output)</samp>
+
+<br><samp>wctoiso10646c(wchar_t *string, iso10646cglyphmap *map,
+XChar2b *output)</samp><br>These take a Unicode character string and
+convert it into a <samp>XChar2b</samp> glyph string suitable for
+output by <samp>XDrawString16</samp> with the ISO10646-C font from
+which the <samp>iso10646cglyphmap</samp> was extracted.
+
+</li></ul>
+
+<p>ISO10646-C fonts would still be limited to having not more than 64
+<a href="http://physics.nist.gov/cuu/Units/binary.html">kibi</a>glyphs,
+but these can come from anywhere in UCS, not just from the BMP. This
+solution also easily provides for glyph substitution, such that we can
+finally handle the Indic fonts. It solves the huge-XFontStruct problem
+of ISO10646-1, as XFontStruct grows now proportionally with the number
+of glyphs, not with the highest characters. It could also provide for
+simple overstriking combining characters, but then the glyphs for
+combining characters would have to be stored with negative width
+inside an ISO10646-C font. It can even provide support for variable
+combining accent positions, by having several alternative combining
+glyphs with accents at different heights for the same combining
+character, with the ligature substitution tables encoding which
+combining glyph to use with which base character.
+
+</p><p>TODO: write specification for ISO10646-C properties, write sample
+implementations of the mapping routines, and add these to xterm, GTK,
+and other applications and libraries. Any volunteers?
+
+</p></li><li><b>Combining characters:</b> The X11 specification does not
+support combining characters in any way. The font information lacks
+the data necessary to perform high-quality automatic accent placement
+(as it is found, for example, in all TeX fonts). Various people have
+experimented with implementing simplest overstriking combining
+characters using zero-width characters with ink on the left side of
+the origin, but details of how to do this exactly are unspecified
+(e.g., are zero-width characters allowed in CharCell and Monospaced
+fonts?) and this is therefore not yet widely established practice.
+
+</li><li><b>Ligatures:</b> The Indic scripts need font file formats that
+support ligature substitution, which is at the moment just as
+completely out of the scope of the X11 specification as are combining
+characters.
+
+</li></ul>
+
+<p>Several XFree86 team members have worked on these issues. <a href="http://www.x.org/">X.Org</a>, the official successor of the X
+Consortium and the Opengroup as the custodian of the X11 standards and
+the sample implementation, has taken over the results or is still
+considering them.
+
+</p><p>With regard to the font related problems, the solution will
+probably be to dump the old server-side font mechanisms entirely and
+use instead <a href="http://xfree86.org/">XFree86’s</a> new <a href="http://www.xfree86.org/current/fonts.html">Xft</a>. Another
+related work-in-progress is <a href="http://stsf.sourceforge.net/">Standard Type Services (ST)</a>
+framework that Sun has been working on.
+
+</p><h2 id="perl">What are useful Perl one-liners for working with UTF-8?</h2>
+
+<p>These examples assume that you have Perl 5.8.1 or newer and that
+you work in a UTF-8 locale (i.e., “locale charmap” outputs “UTF-8”).
+
+</p><p class="note">For Perl 5.8.0, option <samp>-C</samp> is not needed and
+the examples without <samp>-C</samp> will not work in a UTF-8 locale.
+You really should no longer use Perl 5.8.0, as its Unicode support had
+lots of bugs.
+
+</p><p>Print the euro sign (U+20AC) to stdout:
+</p><pre>  perl -C -e 'print pack("U",0x20ac)."\n"'
+  perl -C -e 'print "\x{20ac}\n"'           # works only from U+0100 upwards
+</pre>
+
+<p>Locate malformed UTF-8 sequences:
+</p><pre>  perl -ne '/^(([\x00-\x7f]|[\xc0-\xdf][\x80-\xbf]|[\xe0-\xef][\x80-\xbf]{2}|[\xf0-\xf7][\x80-\xbf]{3})*)(.*)$/;print "$ARGV:$.:".($-[3]+1).":$_" if length($3)'
+</pre>
+
+<p>Locate non-ASCII bytes:
+</p><pre>  perl -ne '/^([\x00-\x7f]*)(.*)$/;print "$ARGV:$.:".($-[2]+1).":$_" if length($2)'
+</pre>
+
+<p>Convert non-ASCII characters into SGML/HTML/XML-style decimal
+numeric character references (e.g. <samp>Ş</samp> becomes
+<samp>&amp;#350;</samp>):
+
+</p><pre>  perl -C -pe 's/([^\x00-\x7f])/sprintf("&amp;#%d;", ord($1))/ge;'
+</pre>
+
+<p>Convert (hexa)decimal numeric character references to UTF-8:
+
+</p><pre>  perl -C -pe 's/&amp;\#(\d+);/chr($1)/ge;s/&amp;\#x([a-fA-F\d]+);/chr(hex($1))/ge;'
+</pre>
+
+<h2 id="input">How can I enter Unicode characters?</h2>
+
+<p>There are a range of techniques for entering Unicode characters
+that are not present by default on your keyboard.
+
+</p><h3>Application-independent methods</h3>
+
+<ul>
+
+<li>Copy-and-paste from a small file that lists your most commonly
+used Unicode characters in a convenient and for your needs suitably
+chosen arrangement. This is usually the most convenient and
+appropriate method for relatively rarely required very special
+characters, such as more esoteric mathematical operators.
+
+</li><li>Extend your keyboard mapping using xmodmap. This is particularly
+convenient if your keyboard has an AltGr key, which is meant for
+exactly this purpose (some US keyboards have instead of AltGr just a
+right Alt key, others lack that key entirely unfortunately, in which
+case some other key must be assigned the Mode_switch function). Write
+a file "~/.Xmodmap" with entries such as
+
+<pre>  keycode 113 = Mode_switch Mode_switch
+  keysym d = d NoSymbol degree        NoSymbol
+  keysym m = m NoSymbol emdash        mu
+  keysym n = n NoSymbol endash        NoSymbol
+  keysym 2 = 2 quotedbl twosuperior   NoSymbol
+  keysym 3 = 3 sterling threesuperior NoSymbol
+  keysym 4 = 4 dollar   EuroSign      NoSymbol
+  keysym space = space  NoSymbol      nobreakspace NoSymbol
+  keysym minus = minus  underscore    U2212        NoSymbol
+  keycode 34 = bracketleft  braceleft  leftsinglequotemark  leftdoublequotemark
+  keycode 35 = bracketright braceright rightsinglequotemark rightdoublequotemark
+  keysym KP_Subtract = KP_Subtract NoSymbol U2212    NoSymbol
+  keysym KP_Multiply = KP_Multiply NoSymbol multiply NoSymbol
+  keysym KP_Divide   = KP_Divide   NoSymbol division NoSymbol
+</pre>
+
+and load it with "xmodmap ~/.Xmodmap" from your X11 startup script
+into your X server. You will then find that you get with AltGr easily
+the following new characters out of your keyboard:
+
+<p></p><table class="solid">
+<tbody><tr><td>AltGr+d</td><td>°
+</td></tr><tr><td>AltGr+ </td><td>NBSP
+</td></tr><tr><td>AltGr+[</td><td>‘
+</td></tr><tr><td>AltGr+]</td><td>’
+</td></tr><tr><td>AltGr+{</td><td>“
+</td></tr><tr><td>AltGr+}</td><td>”
+</td></tr><tr><td>AltGr+2</td><td>²
+</td></tr><tr><td>AltGr+3</td><td>³
+</td></tr><tr><td>AltGr+-</td><td>−
+</td></tr><tr><td>AltGr+n</td><td>–
+</td></tr><tr><td>AltGr+m</td><td>—
+</td></tr><tr><td>AltGr+M</td><td>µ
+</td></tr><tr><td>AltGr+keypad-/</td><td>÷
+</td></tr><tr><td>AltGr+keypad-*</td><td>×
+</td></tr></tbody></table>
+
+<p>The above example file is meant for a UK keyboard, but easily
+adapted to other layouts and extended with your own choice of
+characters. If you use Microsoft Windows, try
+<a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=8be579aa-780d-4253-9e0a-e17e51db2223&amp;displaylang=en">Microsoft
+Keyboard Layout Creator</a> to make similar customizations.
+
+</p></li><li><a href="https://www.cl.cam.ac.uk/~mgk25/volatile/ISO-14755.pdf">ISO 14755</a> defines a
+hexadecimal input method: Hold down both the Ctrl and Shift key while
+typing the hexadecimal Unicode number. After releasing Ctrl and Shift,
+you have entered the corresponding Unicode character.
+
+<p>This is currently implemented in GTK+ 2, and works in applications
+such as GNOME Terminal, Mozilla and Firefox.
+
+</p></li></ul>
+
+<h3>Application-specific methods</h3>
+
+<ul>
+
+<li>In VIM, type Ctrl-V u followed by a hexadecimal number. Example:
+Ctrl-V u 20ac
+
+</li><li>In Microsoft Windows, press the Alt key while typing the decimal
+Unicode number with a leading zero on the numeric keypad. Example:
+press-Alt 08364 release-Alt
+
+</li><li>In Microsoft Word, type a hexadecimal number and then press Alt+X
+to turn it into the corresponding Unicode character. Example: 20ac Alt-X
+
+</li></ul>
+
+<h2 id="lists">Are there any good mailing lists on these issues?</h2>
+
+<p>You should certainly be on the <samp>linux-utf8@nl.linux.org</samp>
+mailing list. That’s the place to meet for everyone interested in
+working towards better UTF-8 support for GNU/Linux or Unix systems and
+applications. To subscribe, send a message to <a href="mailto:linux-utf8-request%40nl.linux.org?Subject=subscribe">linux-utf8-request@nl.linux.org</a> with the subject
+<samp>subscribe</samp>. You can also browse the <a href="http://mail.nl.linux.org/linux-utf8/">linux-utf8 archive</a> and
+subscribe from there via a web interface.
+
+</p><p>There is also the <a href="http://www.unicode.org/unicode/consortium/distlist.html"><samp>unicode@unicode.org</samp></a> mailing list, which is the best
+way of finding out what the authors of the Unicode standard and a lot
+of other gurus have to say. To subscribe, send to <a href="mailto:unicode-request%40unicode.org">unicode-request@unicode.org</a>
+a message with the subject line “subscribe” and the text “subscribe
+<var>YOUR@EMAIL.ADDRESS</var> unicode”.
+
+</p><p>The relevant mailing list for discussions about Unicode support in
+Xlib and the X server is now xorg at xorg.org. In the past, there were
+also the <a href="http://www.mail-archive.com/fonts@xfree86.org/">fonts</a> and <a href="http://www.mail-archive.com/i18n@xfree86.org/">i18n</a> at
+xfree86.org mailing lists, whose archives still contain valueable
+information.
+
+</p><h2 id="refs">Further references</h2>
+
+<ul>
+
+<li>Bruno Haible’s <a href="ftp://ftp.ilog.fr/pub/Users/haible/utf8/Unicode-HOWTO.html">Unicode
+HOWTO</a>.
+
+</li><li><a href="http://www.amazon.com/exec/obidos/ASIN/0321480910/">The
+Unicode Standard, Version 5.0</a>, Addison-Wesley, 2006. You
+definitely should have a copy of the standard if you are doing
+anything related to fonts and character sets.
+
+</li><li>Ken Lunde’s <a href="http://www.amazon.com/exec/obidos/ASIN/1565922247/"> CJKV
+Information Processing</a>, O’Reilly &amp; Associates, 1999. This is
+clearly the best book available if you are interested in East Asian
+character sets.
+
+</li><li><a href="http://www.unicode.org/unicode/reports/">Unicode Technical Reports</a>
+
+</li><li>Mark Davis’ <a href="http://www.unicode.org/unicode/faq/">Unicode
+FAQ</a>
+
+</li><li><a href="http://www.iso.ch/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=29819">ISO/IEC
+10646-1:2000</a>
+
+</li><li><a href="http://people.netscape.com/ftang/i18n.html">Frank Tang’s
+Iñtërnâtiônàlizætiøn Secrets</a>
+
+</li><li><a href="http://www-106.ibm.com/developerworks/unicode/">IBM’s Unicode
+Zone</a>
+
+</li><li><a href="http://wwws.sun.com/software/whitepapers/wp-unicode/">Unicode Support
+in the Solaris 7 Operating Environment</a>
+
+</li><li>The USENIX Winter 1993 paper by Rob Pike and Ken Thompson on the
+<a href="https://www.cl.cam.ac.uk/~mgk25/ucs/UTF-8-Plan9-paper.pdf">introduction of UTF-8 under
+Plan 9</a> reports about the experience gained when <a href="http://plan9.bell-labs.com/plan9dist/">Plan 9</a> migrated as the
+first operating system back in 1992 completely to UTF-8 (which was at
+the time still called UTF-2). A must read!
+
+</li><li><a href="http://www.openi18n.org/">OpenI18N</a> is a project
+initiated by several Linux distributors to enhance Unicode support for
+free operating systems. It published the <a href="http://www.openi18n.org/docs/pdf/OpenI18N1.3.pdf">OpenI18N
+Globalization Specification</a>, as well as some <a href="http://www.openi18n.org/subgroups/utildev/dli18npatch2.html">patches</a>.
+
+</li><li>The <a href="http://www.unix-systems.org/online.html">Online
+Single Unix Specification</a> contains definitions of all the ISO C
+Amendment 1 function, plus extensions such as wcwidth().
+
+</li><li>The Open Group’s summary of <a href="http://www.unix-systems.org/version2/whatsnew/login_mse.html">ISO
+C Amendment 1</a>.
+
+</li><li><a href="http://sources.redhat.com/glibc/">GNU libc</a>
+
+</li><li><a href="http://lct.sourceforge.net/">The Linux Console Tools</a>
+
+</li><li>The Unicode Consortium <a href="ftp://ftp.unicode.org/Public/UNIDATA/">character database</a>
+and <a href="ftp://ftp.unicode.org/Public/MAPPINGS/">character set
+conversion tables</a> are an essential resource for anyone developing
+Unicode related tools.
+
+</li><li>Other conversion tables are available from <a href="http://www.microsoft.com/globaldev/reference/WinCP.asp">Microsoft</a>
+and  <a href="ftp://dkuug.dk/i18n/WG15-collection/charmaps/">Keld
+Simonsen’s WG15 archive</a>.
+
+</li><li>Michael Everson’s <a href="http://www.evertype.com/sc2wg2.html">Unicode and JTC1/SC2/WG2
+Archive</a> contains online versions of many of the more recent ISO
+10646-1 amendments, plus many other goodies. See also his <a href="http://www.evertype.com/standards/iso10646/ucs-roadmap.html">Roadmaps to the Universal Character Set</a>.
+
+</li><li>An introduction into <a href="http://std.dkuug.dk/CEN/TC304/guide/gucsch00.htm">The
+Universal Character Set (UCS)</a>.
+
+</li><li>Otfried Cheong’s essay on <a href="http://www.win.tue.nl/~ocheong/Mule/unihan.html">Han Unification
+in Unicode</a>
+
+</li><li>The <a href="http://www.ams.org/STIX/">AMS STIX</a> project
+revised and extended the mathematical characters for Unicode 3.2 and
+ISO 10646-2. They are now preparing a freely available the <a href="http://www.stixfonts.org/">STIX Fonts</a> family of fully hinted
+Type1 and TrueType fonts, covering the over 7700 characters needed for
+scientific publishing in a “Times compatible” design.
+
+</li><li>Jukka Korpela’s <a href="http://www.cs.tut.fi/~jkorpela/shy.html">Soft hyphen (SHY) –
+a hard problem?</a> is an excellent discussion of the controversy
+surrounding U+00AD.
+
+</li><li>James Briggs’ <a href="http://rf.net/~james/perli18n.html">Perl,
+Unicode and I18N FAQ</a>.
+
+</li><li>Mark Davis discusses in <a href="http://www-106.ibm.com/developerworks/library/utfencodingforms/">Forms
+of Unicode</a> the tradeoffs between UTF-8, UTF-16, and UCS-4 (now
+also called UTF-32 for political reasons). Doug Ewell wrote <a href="http://users.adelphia.net/~dewell/compression.html">A survey of
+Unicode compression</a>.
+
+</li><li>Alan Wood has a good page on <a href="http://www.alanwood.net/unicode/">Unicode and Multilingual
+Support in Web Browsers and HTML</a>.
+
+</li><li><a href="http://std.dkuug.dk/jtc1/sc22/WG20/docs/projects">ISO/JTC1/SC22/WG20</a> produced various Unicode related standards
+such as the <a href="http://dkuug.dk/jtc1/sc22/open/n2933.pdf">International String Ordering (ISO 14651)</a> and the <a href="http://std.dkuug.dk/jtc1/sc22/WG20/docs/n690.pdf">Cultural Convention Specification TR (ISO TR 14652)</a> (an extension
+of the POSIX locale format that covers, for example, transliteration of
+wide character output).
+
+</li><li><a href="http://www.cse.cuhk.edu.hk/~irg/">ISO/JTC1/SC2/WG2/IRG</a>
+(Ideographic Rapporteur Group)
+
+</li><li>The <a href="http://www.eki.ee/letter/">Letter Database</a>
+answers queries on languages, character sets and names, as does the <a href="http://zvon.org/other/charSearch/PHP/search.php">Zvon Character
+Search</a>.
+
+</li><li><a href="http://vietunicode.sourceforge.net/">Vietnamese Unicode FAQs</a>
+
+</li><li>China has specified in <a href="ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/pdf/GB18030_Summary.pdf">GB 18030</a> a new encoding of UCS for use in Chinese government
+systems that is backwards-compatible with the widely used GB 2312 and
+GBK encodings for Chinese. It seems though that the first version
+(released 2000-03) is somewhat buggy and will likely go through a
+couple more revisions, so use with care. GB 18030 is probably more of
+a temporary migration path to UCS and will probably not survive for
+long against UTF-8 or UTF-16, even in Chinese government systems.
+
+</li><li><a href="http://www.info.gov.hk/digital21/eng/hkscs/introduction.html">Hong
+Kong Supplementary Character Set (HKSCS)</a>
+
+</li><li>Various people propose UCS alternatives: <a href="http://www.kotovnik.com/~avg/rosetta/">Rosetta</a>, <a href="http://www.bytext.org/">Bytext</a>.
+
+</li><li>Proceedings of the International Unicode Conferences: <a href="http://www.unicode.org/iuc/iuc13/papers.html">ICU13</a>, <a href="http://www.unicode.org/iuc/iuc14/papers.html">ICU14</a>, <a href="http://www.unicode.org/iuc/iuc15/papers.html">ICU15</a>, <a href="http://www.unicode.org/iuc/iuc16/papers.html">ICU16</a>, <a href="http://www.unicode.org/iuc/iuc17/papers.html">ICU17</a>, <a href="http://www.unicode.org/iuc/iuc18/papers.html">ICU18</a>, etc.
+
+</li><li>This FAQ has been translated into other languages:
+
+<ul>
+
+<li>Korean: <a href="http://doc.kldp.org/Translations/html/UTF8-Unicode-KLDP/UTF8-Unicode-KLDP.html">2001-02</a>
+
+</li></ul>
+
+Be aware that each translation reflects only some past version of <a href="http://www.cl.cam.ac.uk/~mgk25/unicode.html">this document</a>,
+which I update occasionally.
+
+</li></ul>
+
+<p>Suggestions for improvement are welcome.
+
+</p><p>Special thanks to Ulrich Drepper, Bruno Haible, Robert Brady,
+Juliusz Chroboczek, Shuhei Amakawa, Jungshik Shi, Robert Rogers, Roman
+Czyborra, Josef Hinteregger and many others for valuable comments, and
+to SuSE GmbH, Nürnberg, for their past support.
+
+</p><div style="font-size:8px;line-height:10px;float:right;">This work is
+licensed under a<br><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
+Attribution<br>4.0 International License</a>.</div>
+<div style="float: right"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative
+Commons Licence" style="margin:0 5px 1px 1px;border-width:0" src="./UTF-8 and Unicode FAQ_files/88x31.png"></a></div>
+
+<p><a href="https://www.cl.cam.ac.uk/~mgk25/">Markus Kuhn</a>
+
+</p><p class="footdate">created 1999-06-04 – last modified 2009-05-11 –
+http://www.cl.cam.ac.uk/~mgk25/unicode.html
+
+
+</p></body></html>

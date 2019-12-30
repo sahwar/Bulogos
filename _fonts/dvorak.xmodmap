@@ -1,0 +1,40 @@
+keysym equal = bracketright braceright
+keysym minus = bracketleft braceleft
+keysym q = apostrophe quotedbl
+keysym w = comma less
+keysym e = period greater
+keysym r = p
+keysym t = y
+keysym y = f
+keysym u = g
+keysym i = c
+keysym o = r
+keysym p = l
+keysym bracketleft = slash question
+keysym bracketright = equal plus
+keysym s = o
+keysym d = e
+keysym f = u
+keysym g = i
+keysym h = d
+keysym j = h
+keysym k = t
+keysym l = n
+keysym semicolon = s
+keysym apostrophe = minus underscore
+keysym z = semicolon colon
+keysym x = q
+keysym c = j
+keysym v = k
+keysym b = x
+keysym n = b
+keysym comma = w
+keysym period = v
+keysym slash = z
+!
+! Switch Caps Lock and Escape
+!
+remove Lock = Caps_Lock
+keysym Caps_Lock = Escape
+keysym Escape = Caps_Lock
+add Lock = Caps_Lock

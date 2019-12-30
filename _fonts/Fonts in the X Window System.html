@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!-- saved from url=(0064)http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html -->
+<html><div id="bm-2225254214"><div data-reactroot="" id="bm-2225254214"></div></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            Fonts in the X Window System
+        </title>
+        <link rev="made" href="mailto:beebe@math.utah.edu">
+    </head>
+    <body>
+        <!---------------------------------------------------------------->
+        <h1>
+            Fonts in the X Window System
+        </h1>
+        <p>
+            Last updates: <b>
+                <font color="#ff0000">
+                    Thu Oct 11 17:25:23 2001&nbsp;&nbsp;&nbsp;&nbsp;
+                    Thu Sep 13 16:43:57 2007
+                </font>
+            </b>
+        </p>
+        <!---------------------------------------------------------------->
+        <hr>
+        <h2>
+            Table of contents
+        </h2>
+        <ul>
+            <li>
+                <a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html#X11-font-formats">
+                    X11 font formats
+                </a>
+            </li>
+            <li>
+                <a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html#Font-utilities">
+                    Font utilities
+                </a>
+            </li>
+            <li>
+                <a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html#How-X11-fonts-are-found">
+                    How X11 fonts are found
+                </a>
+            </li>
+            <li>
+                <a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html#European-language-fonts">
+                    European language fonts
+                </a>
+            </li>
+            <li>
+                <a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html#Asian-language-fonts">
+                    Asian language fonts
+                </a>
+            </li>
+            <li>
+                <a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html#Unicode-fonts">
+                    Unicode fonts
+                </a>
+            </li>
+            <li>
+                <a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html#Font-file-names">
+                    Font file names
+                </a>
+            </li>
+            <li>
+                <a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html#Font-servers">
+                    Font servers
+                </a>
+            </li>
+            <li>
+                <a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html#X-server-font-access-and-file-permissions">
+                    X server font access and file permissions
+                </a>
+            </li>
+            <li>
+                <a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html#X-terminals-and-X11-fonts">
+                    X terminals and X11 fonts
+                </a>
+            </li>
+        </ul>
+
+        <!---------------------------------------------------------------->
+        <hr>
+        <h2>
+            <a name="X11-font-formats">X11 font formats</a>
+        </h2>
+        <p>
+            Last update: <b><font color="#ff0000">[20-Nov-1997]</font></b>
+        </p>
+        <p>
+            Fonts in the X Window System are available in these bitmap
+            forms,
+        </p>
+        <ul>
+            <li>
+                <samp>.bdf</samp> (binary distribution format)
+            </li>
+            <li>
+                <samp>.pcf</samp> (portable compiled format)
+            </li>
+            <li>
+                <samp>.snf</samp> (server normal format)
+            </li>
+        </ul>
+        <p>
+            and on some systems, as outline fonts:
+        </p>
+        <ul>
+            <li>
+                <samp>.f3b</samp> (Sun Microsystems' proprietary outline
+                font format)
+            </li>
+            <li>
+                <samp>.pfa</samp> (Adobe Type 1 PostScript Font ASCII)
+            </li>
+            <li>
+                <samp>.pfb</samp> (Adobe Type 1 PostScript Font Binary)
+            </li>
+            <li>
+                <samp>.spd</samp> (Bitstream Speedo outline font format)
+            </li>
+        </ul>
+        <p>
+            The <samp>.snf</samp> format is considered obsoleted, having
+            been replaced by the <samp>.pcf</samp> format; however, many
+            of our local systems still use the <samp>.snf</samp> format.
+        </p>
+        <p>
+            Outline fonts need to be rasterized into specific sizes;
+            this may be done on-the-fly in the X server, or via a remote
+            <a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html#Font-servers">font server.</a>
+        </p>
+        <p>
+            More information on font formats can be found in the GNU
+            Font Utilities documentation in the <samp>emacs info</samp>
+            and <samp>xinfo</samp> systems.
+        </p>
+        <!---------------------------------------------------------------->
+        <hr>
+        <h2>
+            <a name="Font-utilities">Font utilities</a>
+        </h2>
+        <p>
+            The utilities <a href="http://www.math.utah.edu/~beebe/fonts/manpages/dxfc.html"><samp>dxfc</samp></a>, <a href="http://www.math.utah.edu/~beebe/fonts/manpages/bdftopcf.html"><samp>bdftopcf</samp></a>
+            and <a href="http://www.math.utah.edu/~beebe/fonts/manpages/bdftosnf.html"><samp>bdftosnf</samp></a>
+            convert between some of these formats, but converters for
+            several font file format combinations are lacking.
+        </p>
+        <p>
+            <samp>getbdf</samp> can fetch a font from the X server,
+            and output it in <samp>.bdf</samp> format.  Since there
+            are converters from this format to the others, this
+            utility makes it possible to convert between any pair of
+            formats, albeit by a roundabout route through the X
+            server.
+        </p>
+        <p>
+            <a href="http://www.math.utah.edu/~beebe/fonts/manpages/bdfresize.html"><samp>bdfresize</samp></a>
+            can be used to scale a font in <samp>.bdf</samp> format by
+            a rational factor.  The output is also a <samp>.bdf</samp>
+            file, but before you can use it, you need to edit the FONT
+            line in the output file to change the font name to reflect
+            the altered size.
+        </p>
+        <p>
+            <a href="http://www.math.utah.edu/~beebe/fonts/manpages/showsnf.html"><samp>showsnf</samp></a>
+            can be used to print the contents of an <samp>.snf</samp>
+            file.
+        </p>
+        <p>
+            <a href="http://www.math.utah.edu/~beebe/fonts/manpages/mftobdf.html"><samp>mftobdf</samp></a>
+            can be used to convert Metafont fonts to <samp>.bdf</samp>
+            format.
+        </p>
+        <p>
+            The
+            <a href="http://www.math.utah.edu/~beebe/fonts/manpages/fstobdf.html"><samp>fstobdf</samp></a>
+            utility can read any font from a font server, and output
+            it in <samp>.bdf</samp> format
+        </p>
+        <p>
+            The <a href="http://www.math.utah.edu/~beebe/fonts/manpages/xfd.html"><samp>xfd</samp></a>
+            utility displays a table of all characters in a font, for
+            example, <samp>xfd -fn 10x20</samp>.
+        </p>
+        <p>
+            The <a href="http://www.math.utah.edu/~beebe/fonts/manpages/xlsfonts.html"><samp>xlsfonts</samp></a>
+            utility lists all of the fonts known to the X server.  On
+            many systems, this will produce a long list of 1000--2000
+            fonts, so if you use it, you probably want to filter its
+            output through a pager, like <a href="http://www.math.utah.edu/~beebe/fonts/manpages/less.html">
+            <samp>less</samp></a>, <a href="http://www.math.utah.edu/~beebe/fonts/manpages/more.html"><samp>more</samp></a>, or <a href="http://www.math.utah.edu/~beebe/fonts/manpages/pg.html"><samp>pg</samp></a>, or else
+            through a pattern search utility like <a href="http://www.math.utah.edu/~beebe/fonts/manpages/agrep.html"><samp>agrep</samp></a>, <a href="http://www.math.utah.edu/~beebe/fonts/manpages/cgrep.html"><samp>cgrep</samp></a>, <samp>
+            ceegrep</samp>, <a href="http://www.math.utah.edu/~beebe/fonts/manpages/egrep.html"><samp>egrep</samp></a>, <a href="http://www.math.utah.edu/~beebe/fonts/manpages/fgrep.html"><samp>fgrep</samp></a>, <a href="http://www.math.utah.edu/~beebe/fonts/manpages/grep.html"><samp>grep</samp></a>, or <a href="http://www.math.utah.edu/~beebe/fonts/manpages/sgrep.html"><samp>sgrep</samp></a>.
+        </p>
+        <p>
+            There is a very nice BDF font editor developed at New
+            Mexico State University, <samp>xmbdfed</samp>. It has
+            a Web page at
+            <a href="http://crl.nmsu.edu/~mleisher/download.html">
+                http://crl.nmsu.edu/~mleisher/download.html
+            </a>
+            with pointers to source code and precompiled binary
+            executable distributions for GNU/Linux, Microsoft Windows
+            NT 4.0, and Sun Solaris 2.x.
+        </p>
+        <!---------------------------------------------------------------->
+        <hr>
+        <h2>
+            <a name="How-X11-fonts-are-found">How X11 fonts are found</a>
+        </h2>
+        <p>
+            Fonts are found in a directory path established by the <a href="http://www.math.utah.edu/~beebe/fonts/manpages/xset.html"><samp>xset</samp></a> command,
+            and once the directories have been established, it is
+            necessary to run <samp>xset fp rehash</samp> to force the
+            X server to read all of the directories and load up the
+            names of fonts found in them:
+        </p>
+<pre>% xset fp+ /usr/local/share/lib/X11/fonts/European
+% xset fp+ /usr/openwin/lib/X11/fonts/F3
+% xset fp+ /usr/dt/config/xfonts
+% xset fp rehash
+</pre>
+        <p>
+            The <samp>fp+</samp> option adds the directory to the <em>
+            end</em> of the current list, which was originally
+            established by a command in your <samp>.xinitrc</samp> or
+            <samp>.xsession</samp> file.
+        </p>
+        <p>
+            The <samp>fp+</samp> option adds the directory to the <em>
+            end</em> If required, you can add a directory to the front
+            of the search path by using <samp>+fp</samp> instead.
+        </p>
+        <p>
+            You can find out what the current font path is like this:
+        </p>
+<pre>% xset q
+Keyboard Control:
+...
+Pointer Control:
+...
+Screen Saver:
+...
+Colors:
+...
+Font Path:
+        /usr/openwin/lib/X11/fonts/F3/,
+        /usr/openwin/lib/X11/fonts/F3bitmaps/,
+        /usr/openwin/lib/X11/fonts/Type1/,
+        /usr/openwin/lib/X11/fonts/Speedo/,
+        /usr/openwin/lib/X11/fonts/misc/,
+        /usr/openwin/lib/X11/fonts/75dpi/,
+        /usr/openwin/lib/X11/fonts/100dpi/,
+        /usr/openwin/lib/X11/fonts/Xt+/,
+        /usr/dt/config/xfonts/C,
+        /usr/dt/config/xfonts/C,
+        /usr/local/share/lib/amaya/amaya-1.0b/Thot/fonts/,
+        /usr/local/share/lib/X11/fonts/100dpi,
+        /usr/local/share/lib/X11/fonts/European,
+        /usr/local/share/lib/X11/fonts/Ethiopic,
+        /usr/local/share/lib/X11/fonts/Asian,
+        /usr/local/share/lib/X11/fonts/waterloo,
+        /usr/local/share/lib/X11/fonts/Korean,
+        /usr/local/share/lib/X11/fonts/Chinese,
+        /usr/local/share/lib/X11/fonts/Chinese-BIG,
+        /usr/local/share/lib/X11/fonts/Japanese,
+        /usr/local/share/lib/X11/fonts/Japanese-BIG,
+        /usr/local/share/lib/X11/fonts/Misc
+</pre>
+        <p>
+            Notice that there are many common directory paths in this
+            list.  That is a clue about where to find other fonts.  For
+            example,
+        </p>
+<pre>% ls -F /usr/dt/config/xfonts/
+C/         ja/        ko/        tchinese@  zh_TW/
+chinese@   japanese@  korean@    zh/
+
+% ls -F /usr/local/share/lib/X11/fonts/
+100dpi/        Ethiopic/      Korean/        cyrillic/      ncd/
+75dpi/         European/      Misc/          dec/           pcfonts/
+Asian/         European-BIG/  axfonts/       fonts/         waterloo/
+Chinese/       Japanese/      chinese/       hds/
+Chinese-BIG/   Japanese-BIG/  cm/            misc/
+
+% ls -F /usr/openwin/lib/X11/fonts
+100dpi/     F3/         Speedo/     Type3/      encodings/
+75dpi/      F3bitmaps/  Type1/      Xt+/        misc/
+</pre>
+        <p>
+            Because most users will use only a rather small number of
+            fonts, their font paths may be rather short.  Nevertheless,
+            if you want to take advantage of additional fonts, you
+            should be prepared to investigate the local offerings with
+            suitable <samp>ls -F</samp> commands as shown above.
+        </p>
+        <!---------------------------------------------------------------->
+        <hr>
+        <h2>
+            <a name="European-language-fonts">European language fonts</a>
+        </h2>
+        <p>
+            Most computer users in the Western World are accustomed to
+            the ASCII or ISO8859-1 Latin 1 character sets, which are
+            standard on computer keyboards (except in the IBM mainframe
+            world).  ISO8859-1 is the standard character set used in
+            HTML, the document markup language used on the World-Wide
+            Web.
+        </p>
+        <p>
+            These character sets offer 128 or 256 characters, which is
+            usually enough for languages such as English, French,
+            German, Danish, ....  However, when the accented characters
+            of the European languages are enumerated, then 256
+            characters are insufficient, and consequently, there are
+            several character set variants, sometimes called <em>code
+            pages</em>, in the ISO8859 Standard which have common
+            lower-128 character assignments, but differ in the upper
+            128:
+        </p>
+        <dl>
+            <dt>
+                ISO8859-0
+            </dt>
+            <dd>
+                Latin alphabet No.  0 [old proposal, since replaced by
+                ISO 8859-14 and ISO 8859-15, see below].
+            </dd>
+            <dt>
+                <a href="http://www.microsoft.com/globaldev/reference/iso/28591.htm">
+                    ISO8859-1
+                </a>
+            </dt>
+            <dd>
+                Latin alphabet No.  1:  Western Europe (Danish, Dutch,
+                English, Faeroese, Finnish, Flemish, French, German,
+                Icelandic, Irish, Italian, Norwegian, Portuguese,
+                Spanish, and Swedish).  Many other languages can be
+                written in this character set, including Hawaiian,
+                Indonesian, and Swahili.
+            </dd>
+            <dt>
+                <a href="http://www.microsoft.com/globaldev/reference/iso/28592.htm">
+                    ISO8859-2
+                </a>
+            </dt>
+            <dd>
+                Latin alphabet No.  2:  Eastern Europe (Czechoslovakian,
+                English, German, Hungarian, Polish, Rumanian,
+                Serbo-Croatian, Slovak, Slovene).
+            </dd>
+            <dt>
+                <a href="http://www.microsoft.com/globaldev/reference/iso/28593.htm">
+                    ISO8859-3
+                </a>
+            </dt>
+            <dd>
+                Latin alphabet No.  3:  (English, Esperanto, Galician,
+                Maltese and Turkish).  Use for Turkish is deprecated,
+                in favor of ISO8859-9 (see below).
+            </dd>
+            <dt>
+                <a href="http://www.microsoft.com/globaldev/reference/iso/28594.htm">
+                    ISO8859-4
+                </a>
+            </dt>
+            <dd>
+                Latin alphabet No.  4:  (English, Baltic languages
+                (Estonian, Latvian, Lithuanian), and Scandinavian
+                languages (Danish, Faeroese, Icelandic, Lappish,
+                Norwegian, and Swedish)).
+            </dd>
+            <dt>
+                <a href="http://www.microsoft.com/globaldev/reference/iso/28595.htm">
+                    ISO8859-5
+                </a>
+            </dt>
+            <dd>
+                Latin/Cyrillic alphabet: (Bulgarian, Byelorussian,
+                English, (Slavic) Macedonian, Russian, Serbian,
+                Ukrainian (up to 1990)).
+            </dd>
+            <dt>
+                <a href="http://www.microsoft.com/globaldev/reference/iso/28596.htm">
+                    ISO8859-6
+                </a>
+            </dt>
+            <dd>
+                Latin/Arabic alphabet:  (English, Arabic).
+            </dd>
+            <dt>
+                <a href="http://www.microsoft.com/globaldev/reference/iso/28597.htm">
+                    ISO8859-7
+                </a>
+            </dt>
+            <dd>
+                Latin/Greek alphabet:  (English, Greek).
+            </dd>
+            <dt>
+                <a href="http://www.microsoft.com/globaldev/reference/iso/28598.htm">
+                    ISO8859-8
+                </a>
+            </dt>
+            <dd>
+                Latin/Hebrew alphabet:  (English, Hebrew).
+            </dd>
+            <dt>
+                <a href="http://www.microsoft.com/globaldev/reference/iso/28599.htm">
+                    ISO8859-9
+                </a>
+            </dt>
+            <dd>
+                Latin alphabet No.  5:  (Danish, Dutch, English,
+                Finnish, French, German, Irish, Italian, Norwegian,
+                Portuguese, Spanish, Swedish, Turkish), formed by
+                extending ISO8859-1 with additional characters from
+                Icelandic and Turkish.
+            </dd>
+            <dt>
+                ISO8859-10
+            </dt>
+            <dd>
+                Latin alphabet No.  6:  Nordic alphabets:  Modification
+                of ISO8859-4 to include characters needed for Sami.
+            </dd>
+            <dt>
+                ISO8859-11
+            </dt>
+            <dd>
+                Latin/Thai alphabet.
+            </dd>
+            <dt>
+                ISO8859-12
+            </dt>
+            <dd>
+                Not yet assigned.
+            </dd>
+            <dt>
+                ISO8859-13
+            </dt>
+            <dd>
+                Latin alphabet No. 7 (Baltic Rim).
+            </dd>
+            <dt>
+                ISO8859-14
+            </dt>
+            <dd>
+                Latin alphabet No. 8 (Celtic); see ISO/IEC
+                8859-14:1998 (E) at
+                <a href="http://www.indigo.ie/egt/standards/iso8859/8859-14-en.pdf">
+                    http://www.indigo.ie/egt/standards/iso8859/8859-14-en.pdf
+                </a>
+                for details.
+            </dd>
+            <dt>
+                <a href="http://www.microsoft.com/globaldev/reference/iso/28605.htm">
+                    ISO8859-15
+                </a>
+            </dt>
+            <dd>
+                Latin alphabet No. 9 (similar to Latin-1, with euro
+                and oe ligature); see the FDIS for ISO/IEC
+                8859-15:1998 (E) document at
+                <a href="http://www.indigo.ie/egt/standards/iso8859/lat9-en.pdf">
+                    http://www.indigo.ie/egt/standards/iso8859/lat9-en.pdf
+                </a>
+                and
+                <a href="http://www.indigo.ie/egt/standards/iso8859/8859-15-en.pdf">
+                    http://www.indigo.ie/egt/standards/iso8859/8859-15-en.pdf
+                </a>
+                for details.
+            </dd>
+            <dt>
+                <a href="http://www.egt.ie/standards/iso8859/cd8859-16-en.pdf">
+                    ISO8859-16
+                </a>
+            </dt>
+            <dd>
+                Latin alphabet No. 10: (Albanian, Croatian, English,
+                Finnish, French, German, Hungarian, Irish Gaelic (new
+                orthography), Italian, Latin, Polish, Romanian, and
+                Slovenian).
+            </dd>
+        </dl>
+        <p>
+	    More details on these character sets, and some amusing
+	    comments on their history, can be found at
+	    <a href="http://www.czyborra.com/">
+		Roman Czyborra's Web site.
+	    </a>
+        </p>
+        <p>
+            Within the limitations of an 8-bit character set, there
+            are a great many `code pages', that is, assignments of
+            particular glyphs to entries in a 256-character table,
+            with the glyph set chosen to be important for a particular
+            language or region.  For an extensive listing of such code
+            tables, follow this link to
+            <a href="http://publib.boulder.ibm.com/cgi-bin/bookmgr/BOOKS/QB3AQ501/F.0">
+                IBM's code page compendium.
+            </a>
+        </p>
+        <p>
+            For information about pre-1980 computer character sets,
+            see the excellent book
+        </p>
+<pre>@String{<a name="pub-AW"><strong>pub-AW</strong></a>                  = "Ad{\-d}i{\-s}on-Wes{\-l}ey"}
+
+@String{<a name="pub-AW:adr"><strong>pub-AW:adr</strong></a>              = "Reading, MA, USA"}
+
+@Book{<a name="Mackenzie:CCS80"><strong>Mackenzie:CCS80</strong></a>,
+  author =       "Charles E. Mackenzie",
+  title =        "Coded Character Sets: History and Development",
+  publisher =    <a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html#pub-AW">pub-AW</a>,
+  address =      <a href="http://www.math.utah.edu/~beebe/fonts/X-Window-System-fonts.html#pub-AW:adr">pub-AW:adr</a>,
+  pages =        "xxi + 513",
+  year =         "1980",
+  ISBN =         "0-201-14460-3",
+  LCCN =         "QA268 .M27 1980",
+  bibdate =      "Wed Dec 15 10:38:43 1993",
+  price =        "US\$24.95",
+  series =       "The Systems Programming Series",
+}
+</pre>
+
+        <!---------------------------------------------------------------->
+        <hr>
+        <h2>
+            <a name="Asian-language-fonts">Asian language fonts</a>
+        </h2>
+        <p>
+            Chinese, Japanese, and Korean pose a much larger problem for
+            font designers and font software, because each requires
+            several thousand characters.
+        </p>
+        <p>
+            The X Window System font file formats can support up to
+            65,536 characters in a font, but not all font software works
+            properly with these fonts.  In particular, on Sun
+            Microsystems systems, <samp>/usr/openwin/bin/xfd</samp> will
+            display only the first 256 characters in such a font.  You
+            need to use <samp>/usr/local/X11R5/bin/xfd</samp> to view
+            such fonts.
+        </p>
+        <p>
+            Until recently, vendor support of Asian language fonts was
+            spotty, at least in the vendors of the systems normally sold
+            in North America.  Fortunately, the Free Software Foundation
+            has collected a large number of international fonts
+            contributed by many individuals and companies around the
+            world, and our local systems now have all of them available
+            for use.
+        </p>
+        <p>
+            The sample listing above for the directory
+            <samp>/usr/local/share/lib/X11/fonts/</samp> shows
+            subdirectories containing fonts for Chinese, Japanese,
+            Korean, ISO-8859-n European, Asian (Devanagiri, Lao,
+            Tibetan, and Thai), Arabic, and Hebrew.  Some of these are
+            still incomplete (notably, Devanagiri), and there is still
+            no coverage of the scripts required by most the major
+            languages of India, nor of Persian and Urdu, nor of any of
+            the south-central Asian languages, such as Georgian.
+        </p>
+        <!---------------------------------------------------------------->
+        <hr>
+        <h2>
+            <a name="Unicode-fonts">Unicode fonts</a>
+        </h2>
+        <p>
+          Roman Czyborra has developed prototype
+          <a href="http://www.math.utah.edu/~beebe/fonts/unicode.html">
+            Unicode
+          </a>
+          fonts for the X Window System: see
+          <a href="http://czyborra.com/unifont/">
+            http://czyborra.com/unifont/
+          </a>
+          for details.
+        </p>
+        <p>
+           Markus Kuhn has developed prototype ISO10646-1 (Unicode) fonts
+           for the X Window System; see
+           <a href="http://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html">
+             http://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html
+           </a>
+           for details.
+        </p>
+        <p>
+            Microsoft maintains a comprehensive Web site on Unicode-related
+            issues at
+            <a href="http://www.microsoft.com/globaldev/">
+                http://www.microsoft.com/globaldev/
+            </a>
+        </p>
+        <p>
+            More information on Unicode fonts is available here:
+            <a href="http://www.math.utah.edu/~beebe/fonts/unicode.html">
+                http://www.math.utah.edu/~beebe/fonts/unicode.html
+            </a>
+        </p>
+        <!---------------------------------------------------------------->
+        <hr>
+        <h2>
+            <a name="Font-file-names">Font file names</a>
+        </h2>
+        <p>
+            Fonts in the X Window System have long descriptive names,
+            but such names are often inconvenient to type, so provisions
+            are made for aliases.
+        </p>
+        <p>
+            Each X11 font directory contains one or two additional files
+            beside the font files: <samp>fonts.dir</samp> and
+            <samp>fonts.alias</samp>.
+        </p>
+        <p>
+            The <samp>fonts.dir</samp> file is created by the <a href="http://www.math.utah.edu/~beebe/fonts/manpages/mkfontdir.html"><samp>mkfontdir</samp></a>
+            utility, which reads all of the font files in the
+            directory and extracts their long names.  A typical file
+            looks like this:
+        </p>
+<pre>% cd /usr/local/share/lib/X11/fonts/Asian
+% head -5 fonts.dir
+14
+mule-indian-24.pcf -misc-fixed-medium-r-normal--24-240-72-72-c-120-muleindian-2
+thai-16.pcf -misc-fixed-medium-r-normal--16-160-72-72-m-80-tis620.2529-1
+thai-14.pcf -misc-fixed-medium-r-normal--14-140-72-72-m-70-tis620.2529-1
+thai-24.pcf -misc-fixed-medium-r-normal--24-240-72-72-c-120-tis620.2529-1
+</pre>
+        <p>
+            The first line contains a font count, and the remaining
+            lines consist of a file name, and a long font name.
+        </p>
+        <p>
+            The <samp>fonts.alias</samp> file is created by a human, and
+            consists of lines with a short name and a full name, for
+            example:
+        </p>
+<pre>% cd /usr/local/share/lib/X11/fonts
+% cat fonts.alias
+a14 -ETL-Fixed-Medium-R-Normal--14-140-72-72-C-70-ISO8859-1
+a16 -ETL-Fixed-Medium-R-Normal--16-160-72-72-C-80-ISO8859-1
+a24 -ETL-Fixed-Medium-R-Normal--24-240-72-72-C-120-ISO8859-1
+</pre>
+        <p>
+            Thus, you should use the second of these fonts in an X
+            terminal session like this:
+        </p>
+<pre>% xterm -fn a14 &amp;
+</pre>
+        or like this:
+<pre>% xterm -fn -ETL-Fixed-Medium-R-Normal--14-140-72-72-C-70-ISO8859-1 &amp;
+</pre>
+        <p>
+            Alternatively, you can switch to such a font in an X
+            terminal selection by getting the font name into the X
+            selection buffer (e.g. by a copy operation in the <a href="http://www.math.utah.edu/~beebe/fonts/manpages/emacs.html"><samp>emacs</samp></a> text
+            editor, or in an <a href="http://www.math.utah.edu/~beebe/fonts/manpages/xfontsel.html"><samp>xfontsel</samp></a>
+            window), then using Ctrl-Right-MouseButton to popup the
+            <em> VT Fonts</em> menu, and from it select the last item,
+            labelled <em>Selection </em>.  This can be convenient if
+            you need to temporarily switch fonts, such as to read an
+            e-mail message in a different character set.
+        </p>
+        <p>
+            You can find further details of the X Window System font
+            naming conventions in the <a href="http://www.math.utah.edu/~beebe/fonts/manpages/X11.html#HDR.9"><samp>X11</samp></a> UNIX
+            manual pages.
+        </p>
+        <!---------------------------------------------------------------->
+        <hr>
+        <h2>
+            <a name="Font-servers">Font servers</a>
+        </h2>
+        <p>
+            In order to address some of the deficiencies of font
+            handling in the X Window System, among them the need to
+            propagate many megabytes of font files to each client
+            system, and to rasterize outline fonts into bitmap fonts
+            on-the-fly, X11R5 introduced the idea of <em>font
+            servers</em>.
+        </p>
+        <p>
+            While font servers may indeed work adequately at sites with
+            all machines purchased from a single UNIX vendor, the
+            experience at our site, which has more than a hundred
+            workstations representing 5 vendors, 8 operating systems,
+            and dozens of hardware models, is that font servers tend to
+            cause hard-to-debug hangs of client systems, and therefore,
+            we choose not to run them.  Instead, we simply provide the
+            font files in a common NFS-mounted directory that is
+            accessible to all of our systems.  This avoids file space
+            replication, and greatly facilitates maintenance and update
+            of the font collection.
+        </p>
+        <!---------------------------------------------------------------->
+        <hr>
+        <h2>
+            <a name="X-server-font-access-and-file-permissions">X server font
+            access and file permissions</a>
+        </h2>
+        <p>
+            The X server, which is responsible for rendering fonts,
+            normally runs as the root user, rather than as the
+            logged-in user.  In most cases, this is transparent to the
+            human user.  However, if there are directories in the font
+            path which reside on another system, and those
+            directories, or files in them, lack world read access,
+            then the X server will not be able to read them, <em>even
+            if the human user can</em>.
+        </p>
+        <!---------------------------------------------------------------->
+        <hr>
+        <h2>
+            <a name="X-terminals-and-X11-fonts">X terminals and X11 fonts</a>
+        </h2>
+        <p>
+            X terminals are low-cost workstations that run a simplified
+            UNIX-like operating system that is just sufficient to
+            support running an X server, but no user processes.
+            X terminals usually have no disks, and therefore, no file
+            system.
+        </p>
+        <p>
+            X terminals may be configured so that the user automatically
+            logs in on a specific remote system, or they may be
+            configured to offer a menu of assorted remote hosts that the
+            user can select from before logging in.
+        </p>
+        <p>
+            X terminals store a very small set of fonts in read-only
+            nonvolatile memory, and then when they are powered on, or
+            rebooted, they fetch their operating system and other
+            needed fonts from a remote server machine.  Because they
+            do not have user accounts on the remote server, there is
+            no password authentication possible, so they get their
+            data via TFTP (Trivial File Transfer Protocol), or via a
+            mount of a memory-mapped read-only NFS (Network File
+            System) tree.
+        </p>
+        <p>
+            For both TFTP and NFS access, remote servers drastically
+            limit the part of the file system that the X terminals can
+            see, usually just to a small file directory tree provided
+            by the X terminal vendor.  For security reasons, this tree
+            does not permit symbolic links to other files or
+            directories outside the tree.
+        </p>
+        <p>
+            This practice has a <em>significant</em> impact on users who
+            want to use additional X11 fonts:
+        </p>
+        <ul>
+            <li>
+                Since the only files the X terminal can see are those in
+                its remote TFTP tree, unless local system management has
+                copied the normal X11 fonts into that tree, the X
+                terminal user will not be able to access them.
+            </li>
+            <li>
+                Users who have private collections of X11 fonts will be
+                entirely unable to access them from an X terminal,
+                whereas they could do so without problems from an ordinary
+                UNIX workstation.
+            </li>
+            <li>
+                If your site has X terminals from multiple vendors, then
+                their TFTP trees and thus, font collections, will
+                differ.
+            </li>
+        </ul>
+        <p>
+            In the second case, your only recourse is to ask your system
+            management to add your personal X11 font collection to the X
+            terminal TFTP trees.
+        </p>
+        <p>
+            If I login to a local X terminal (an HDS ViewStation) and
+            run <samp>xset q</samp>, here is what I get for a font path:
+        </p>
+<pre>% xset q
+...
+Font Path:
+        /builtin/,
+        /hds/fonts/100dpi/,
+        /hds/fonts/75dpi/,
+        /hds/fonts/Asterx2.1/,
+        /hds/fonts/Asterx3.0/,
+        /hds/fonts/Xol/,
+        /hds/fonts/lotus123/,
+        /hds/fonts/misc/,
+        /hds/fonts/softpc/,
+        /hds/fonts/wp5.1/,
+        /hds/fonts/international/,
+        /hds/fonts/tn/,
+        /hds/local/fonts/decwin/100dpi/,
+        /hds/local/fonts/decwin/75dpi/
+</pre>
+        <p>
+            The path <samp>/hds</samp> represents the root of the TFTP
+            tree, which actually corresponds to the UNIX file path
+            <samp>/export/local/netOS/2.0.2</samp> on a local file
+            server.
+        </p><p>
+
+        </p><p>
+            To solve these problems, at the University of Utah Center
+            for Scientific Computing facilities in the Mathematics
+            Department, we are making rearrangements in the NCD and
+            HDS/Neoware X terminal TFTP trees, and the normal shared X11
+            font tree, <samp>/usr/local/share/lib/X11/fonts</samp>, to
+            ensure that the same set of fonts is available in all of
+            them.  However, as of the time of writing this
+            [21-Nov-1997], the work is still in progress.
+        </p>
+        <hr>
+    
+
+<!--
+http://www.developer.ibm.com:8080/library/ref/about4.1/df4graph.html
+
+AIXwindows SNF Font Utilities withdrawn
+
+The SNF (Server Natural Format - compiled X Window font file format)
+utilities bdftosnf, showsnf, pcfsnfdir, and pcftobdf will not be
+available on AIX Version 4.1. There are no requirements for SNF font
+support in the AIXwindows environment on AIX Version 4.1. The AIXwindows
+fonts will be shipped in the PCF (Portable Compiled Font Format -
+compiled X font file format).
+
+NB: I could not find these on a local AIX 3.2 system:
+
+         which bdftosnf showsnf pcfsnfdir pcftobdf
+        bdftosnf: Command not found.
+        showsnf: Command not found.
+        pcfsnfdir: Command not found.
+        pcftobdf: Command not found.
+
+Nor were they in the /usr/lpp/X11 tree.
+
+-->
+</body></html>

@@ -1,0 +1,70 @@
+body {
+	background: #dbd7cc;
+}
+/*over-riding colours in layout.css and content.css*/
+
+div#dept-title {
+	background: #036;
+	border-left: 1px solid #dbd7cc;
+	border-right: 1px solid #dbd7cc;
+	border-bottom: 1px solid #dbd7cc;
+}
+	
+div#dept-title h1, div#dept-title .main {
+	color: #fff;
+	background: #036;
+}
+
+div#dept-title h1 a, div#dept-title .main a {
+	color: #fff;
+}
+
+div#dept-title h2, div#dept-title .sub {
+	color: #fff;
+	background: #036;
+}
+
+div#navtabs {
+	background: #06c;
+	border-left: 1px solid #dbd7cc;
+	border-right: 1px solid #dbd7cc;
+}
+div#navtabs a {
+	color: #000;
+	background-color:#69f;
+	border-right: 1px solid #efefef;
+}
+
+div#navtabs a.current {
+	background-color: #036;
+	color:#fff;
+}
+div#navtabs a.first {
+	border-left: 1px solid #9c9;
+	border-right: 1px solid #9c9;
+}
+div#navtabs a:hover {
+	color: #000;
+	background-color: #edeeec;
+}
+
+/*borders*/
+div#header {
+	border-left: 1px solid #dbd7cc;
+	border-right: 1px solid #dbd7cc;
+}
+div#container {
+	border-left: 1px solid #dbd7cc;
+	border-right: 1px solid #dbd7cc;
+}
+
+/*bottom line */
+ul#site-info {
+	border-top: 2px solid #036;
+}
+
+@media (max-width:560px){
+	.dept div#header, div#header, div#dept-title, div#container {
+		border:0px solid #ffffff;
+	}
+}

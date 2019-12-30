@@ -1,0 +1,314 @@
+
+<!-- saved from url=(0035)http://towo.net/mined/navigate.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="description" content="Powerful text editor with extensive Unicode and CJK support.">
+<meta name="keywords" content="editor, text mode editor, programmers editor, programming editor, Unicode editor, UTF-8 editor, Unicode text editor, UTF-8 text editor, Unicode text mode editor, UTF-8 text mode editor, text mode Unicode editor, text mode UTF-8 editor, text mode HTML editor, CJK editor">
+<meta name="robots" content="index">
+
+<link rel="prefetch" href="http://towo.net/mined/mined.html">
+
+<link rel="stylesheet" type="text/css" href="./style.css">
+<title>Unicode text editor MinEd</title>
+
+<style type="text/css">
+<!--
+	a {text-decoration: none;}
+	.linkcell {cursor: pointer;}
+	#level2 {font-size: smaller;}
+
+	.hidden {display: none;}
+
+	x.oldlink {background-color: #4080F0;}
+	x.darklink {background-color: #4D6DC9;}
+	x.bluelink {background-color: #7080DD;}
+
+	.link td.linkcell {
+		xbackground-color: #FFF500;
+		background-color: #FDEB97;
+		border-style: solid; border-color: #B045A3; border-width: 1px;
+	}
+	.active td.linkcell {
+		xbackground-color: #FFCC00;
+		background-color: #FDEB97;
+		xborder-style: solid; border-color: #B045A3; border-width: 1px;
+		border-style: inset; border-color: #B045A3; border-width: 1px;
+	}
+	.selected td.linkcell {
+		xbackground-color: #FFBB00;
+		background-color: #FDB297;
+		border-style: solid; border-color: #B045A3; border-width: 1px;
+	}
+	.selecting td.linkcell {
+		xbackground-color: #E09000;
+		background-color: #FDB297;
+		border-style: inset; border-color: #B045A3; border-width: 1px;
+	}
+-->
+</style>
+
+<script language="JavaScript">
+var selected_node;
+var selected_subnode;
+
+function select (name, subitem) {
+	select2 (name, subitem);
+}
+
+function obsolete_select1 (name) {
+	if (selected_node) {
+		selected_node.className = 'link';
+	}
+	selected_node = document.getElementById (name);
+	if (selected_node) {
+		selected_node.className = 'selected';
+	}
+}
+
+function select2 (name, subitem) {
+	if (document.forms.debug && document.forms.debug.debug) {
+		document.forms.debug.debug.value = name + " " + subitem;
+	}
+	var tds = document.getElementsByTagName ("tr");
+	selected_subnode = null;
+	for (var i = 0; i < tds.length; i ++) {
+		if (tds [i].id) {
+			/* has a name, navigation entry */
+			var tdid = tds [i].id;
+			var sep = tdid.indexOf ("_");
+			if (sep < 0) {
+				/* no "_", level 1 entry */
+				if (tdid == name) {
+					tds [i].className = "selected";
+					selected_node = tds [i];
+				} else {
+					tds [i].className = "link";
+				}
+			} else {
+				/* "_", level 2 entry */
+				var mainname = tdid.substring (0, sep);
+				var subname = tdid.substring (sep + 1);
+				if (subname.charAt (0) == "#") {
+					subname = subname.substring (1);
+				}
+				if (mainname == name) {
+					if (subname == subitem) {
+						tds [i].className = "selected";
+						selected_subnode = tds [i];
+					} else {
+						tds [i].className = "link";
+					}
+				} else {
+					tds [i].className = "hidden";
+				}
+			}
+		}
+	}
+}
+
+function setrelease (r) {
+	var rnode = document.getElementById ("releases");
+	rnode.firstChild.nodeValue = r;
+}
+
+function activate (node) {
+	node.className = 'active';
+}
+
+function deactivate (node) {
+	if (node == selected_node || node == selected_subnode) {
+		node.className = 'selected';
+	} else {
+		node.className = 'link';
+	}
+}
+
+function press (node) {
+	node.className = 'selecting';
+}
+
+function release (node) {
+	deactivate (node);
+}
+
+function loadpage (node) {
+	/* node.className = 'selected'; would reduce flickering */
+	var sep = node.id.indexOf ("_");
+	var newloc;
+	if (sep < 0) {
+		newloc = node.id + ".html";
+	} else {
+		var main = node.id.substring (0, sep);
+		var sub = node.id.substring (sep + 1);
+		if (sub.charAt (0) == "#") {
+			newloc = main + ".html" + sub;
+		//} else if (main == "mined" || main == "changes") {
+		//	newloc = main + ".html#" + sub;
+		} else {
+			newloc = sub + ".html";
+		}
+	}
+	top.frames.mined.location = newloc;
+	top.frames.mined.focus ();
+}
+</script>
+
+</head>
+
+<body onload="select (top.selected_item);" xbackground="bricks_white.gif" xbgcolor="#B070D0" marginwidth="0" marginheight="0">
+
+<!--form name=debug-->
+<!--input type=text name=debug-->
+<!--/form-->
+
+<table xwidth="100%" width="160" cellpadding="4" cellspacing="4">
+
+<tbody><tr>
+<td colspan="3" height="10">
+</td></tr>
+
+<tr class="link" id="overview" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td colspan="3" class="linkcell"><a target="mined" href="http://towo.net/mined/overview.html"><font color="black"><b>
+Overview</b></font></a></td></tr>
+
+<tr class="hidden" id="overview_screenshots" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/screenshots.html"><font color="black">
+Screenshots</font></a></td></tr>
+
+<tr class="hidden" id="overview_keyboard" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/keyboard.html"><font color="black">
+Keyboard</font></a></td></tr>
+
+
+<tr class="link" id="features" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td colspan="3" class="linkcell"><a target="mined" href="http://towo.net/mined/features.html"><font color="black"><b>
+Features</b></font></a></td></tr>
+
+
+<tr class="link" id="design" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td colspan="3" class="linkcell"><a target="mined" href="http://towo.net/mined/design.html"><font color="black"><b>
+Design Principles</b></font></a></td></tr>
+
+<tr>
+<td colspan="3" height="10">
+</td></tr>
+
+<tr class="link" id="unicode" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td colspan="3" class="linkcell"><a target="mined" href="http://towo.net/mined/unicode.html"><font color="black"><b>
+Unicode Howto</b></font></a></td></tr>
+
+<tr class="hidden" id="unicode_#handling" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/unicode.html#handling"><font color="black">
+Editing</font></a></td></tr>
+
+<tr class="hidden" id="unicode_uterm" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/uterm.html"><font color="black">
+<code>uterm</code></font></a></td></tr>
+
+<tr class="hidden" id="unicode_#setup" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/unicode.html#setup"><font color="black">
+Terminal setup</font></a></td></tr>
+
+<tr class="link" id="mined" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td colspan="3" class="linkcell"><a target="mined" href="http://towo.net/mined/mined.html"><font color="black"><b>
+Mined Manual</b></font></a></td></tr>
+
+
+<tr class="hidden" id="mined_#options" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#options"><font color="black">
+Options</font></a></td></tr>
+
+<tr class="hidden" id="mined_#editing" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#editing"><font color="black">
+Editing</font></a></td></tr>
+
+<tr class="hidden" id="mined_#inputsupport" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#inputsupport"><font color="black">
+Input overview</font></a></td></tr>
+
+<tr class="hidden" id="mined_#handlingfiles" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#handlingfiles"><font color="black">
+Handling files</font></a></td></tr>
+
+<tr class="hidden" id="mined_#working" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#working"><font color="black">
+Working with mined</font></a></td></tr>
+
+<tr class="hidden" id="mined_#languagesupport" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#languagesupport"><font color="black">
+Language support</font></a></td></tr>
+
+<tr class="hidden" id="mined_#characterhandlingsupport" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#characterhandlingsupport"><font color="black">
+Character handling</font></a></td></tr>
+
+<tr class="hidden" id="mined_#characterinputsupport" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#characterinputsupport"><font color="black">
+Character input</font></a></td></tr>
+
+<tr class="hidden" id="mined_#charencoding" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#charencoding"><font color="black">
+Character encoding</font></a></td></tr>
+
+<tr class="hidden" id="mined_#unicode" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#unicode"><font color="black">
+Unicode support</font></a></td></tr>
+
+<tr class="hidden" id="mined_#cjk" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#cjk"><font color="black">
+CJK support</font></a></td></tr>
+
+<tr class="hidden" id="mined_#terminalencoding" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#terminalencoding"><font color="black">
+Terminal support</font></a></td></tr>
+
+<tr class="hidden" id="mined_#commands" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#commands"><font color="black">
+<b>Command reference</b></font></a></td></tr>
+
+<tr class="hidden" id="mined_#configuration" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/mined.html#configuration"><font color="black">
+Configuration</font></a></td></tr>
+
+<tr id="mined_" idcomment="make hidden if folded" class="hidden"><td colspan="3" height="10">
+</td></tr>
+
+
+<tr class="selected" id="mnemodoc" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td colspan="3" class="linkcell"><a target="mined" href="http://towo.net/mined/mnemodoc.html"><font color="black"><b>
+Character Mnemos</b></font></a></td></tr>
+
+<tr class="link" id="quotesdoc" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td colspan="3" class="linkcell"><a target="mined" href="http://towo.net/mined/quotesdoc.html"><font color="black"><b>
+Quotation Styles</b></font></a></td></tr>
+
+<tr class="link" id="configuration" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td colspan="3" class="linkcell"><a target="mined" href="http://towo.net/mined/configuration.html"><font color="black"><b>
+Configuration File</b></font></a></td></tr>
+
+<tr>
+<td colspan="3" height="10">
+</td></tr>
+
+<tr class="link" id="download" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td colspan="3" class="linkcell"><a target="mined" href="http://towo.net/mined/download.html"><font color="black"><b>
+Download</b></font></a></td></tr>
+
+<tr class="link" id="changes" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td colspan="3" class="linkcell"><a target="mined" href="http://towo.net/mined/changes.html"><font color="black"><b>
+Change Log</b></font></a></td></tr>
+
+<tr class="hidden" id="changes_#index" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/changes.html"><font color="black">
+Index</font></a></td></tr>
+
+<tr class="hidden" id="changes_#releases" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td></td><td colspan="2" class="linkcell" id="level2"><a target="mined" href="http://towo.net/mined/changes.html#releases"><font color="black">
+<span id="releases">Releases</span></font></a></td></tr>
+
+<tr class="link" id="contact" onclick="loadpage (this);" onmouseover="activate (this);" onmouseout="deactivate (this);" onmousedown="press (this);" onmouseup="release (this);">
+<td colspan="3" class="linkcell"><a target="mined" href="http://towo.net/mined/contact.html"><font color="black"><b>
+Contact</b></font></a></td></tr>
+</tbody></table>
+
+
+</body></html>

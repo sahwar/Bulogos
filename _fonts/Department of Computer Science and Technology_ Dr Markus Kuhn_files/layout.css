@@ -1,0 +1,572 @@
+/* --------------------------------------------------------------
+
+   CSS Framework
+   Web Design & Development by Studio 24 Ltd
+   www.studio24.net - (0870) 241 6159
+
+   * Screen & Projection Styles *
+
+   This is the main CSS-file for the framework.
+   Include this in the <head> of every page.
+
+-------------------------------------------------------------- */
+
+@import "reset.css";
+@import "content.css";
+@import "typography.css";
+@import "forms.css";
+@import "links.css";
+@import "cl-extensions.css";
+
+
+/* =MAIN-CONTAINER-ELEMENTS
+-------------------------------------------------------------- */
+
+body {
+	/* background: #EEE; */
+	background: #699;
+	padding: 0 20px 0 20px;
+}
+
+div#skip {
+	display: none;
+}
+
+div#container {
+	background: #fff;
+	/*min-width: 694px;*/
+	max-width: 1214px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 20px 0 20px;
+	border-left: 1px solid #d3d3b1;
+	border-right: 1px solid #d3d3b1;
+	border-bottom: 1px solid #d3d3b1;
+}
+
+img.ucam {
+	padding: 0.7em 1em 0 1em;
+	width:100%;
+}
+
+/*hvs 14.4*/
+div#dept-title {
+	background: #9c9;
+	/*min-width: 694px;*/
+	max-width: 1214px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 20px 0 20px;
+	border-left: 1px solid #d3d3b1;
+	border-right: 1px solid #d3d3b1;
+	border-bottom: 1px solid #d3d3b1;
+}
+
+div#navtabs {
+	background: #d3d3b1;
+	/*min-width: 694px;*/
+	max-width: 1214px;
+	line-height: 1em;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 20px 0 20px;
+	border-left: 1px solid #d3d3b1;
+	border-right: 1px solid #d3d3b1;
+}
+
+div#header {
+	height:70px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding:0;
+	background: #fff;
+	/*min-width: 734px;*/
+	max-width: 1254px;
+
+	/*border-bottom: 1px solid #cdc5bc;*/
+	border-left: 1px solid #d3d3b1;
+	border-right: 1px solid #d3d3b1;
+}
+
+div#branding {
+	float: left;
+	width: 50%;
+	max-width: 224px;
+}
+
+div#content {
+	float: left;
+	width: 100%;
+	padding-bottom: 1em;
+}
+
+
+div#content-primary {
+	float: left;
+	width: 62%;
+	padding-right: 1em;
+	}
+
+.dept div#content-primary {
+	margin: 1em 0 0 0;
+}
+
+.dept div#content-primary h1 {
+	margin: 0 0 0.5em 0; padding: 0;
+}
+
+div#content-primary a {
+	text-decoration: none;
+}
+
+div#content-primary a:hover {
+	text-decoration: underline;
+}
+
+/*following three styles are to make links in text panel show up better*/
+div#content-primary a:link.textlink {text-decoration:none; border-bottom: 1px #999 solid;}
+
+div#content-primary a:hover.textlink {text-decoration:none; color: #cf5200;}
+
+div#content-primary a:visited.textlink {text-decoration:none; border-bottom: 1px #999 solid;}
+
+div#content-secondary {
+	float: right;
+	background: #f1f5ff;
+	border-left: 1px solid #ccc;
+	width: 35%;
+}
+
+.dept div#content-secondary, .dept.three-col.nosub div#content-secondary {
+	border-top: 1px solid #ccc;
+}
+
+.dept.three-col div#content-secondary  {
+	border: 0;
+}
+
+/* Set one column layout
+-------------------------------------------------------------- */
+
+body.one-col div#content-secondary, body.one-col ul#nav-primary {
+	display: none;
+}
+
+body.one-col div#content-primary {
+	width: 100%;
+}
+
+/* Set two and three column layouts
+-------------------------------------------------------------- */
+
+/* added by DMR (Studio24) 01.02.08 */
+body.alt div#content-primary {
+	width: 80%;
+}
+/* added by DMR (Studio24) 01.02.08 */
+body.alt div#content-secondary {
+	width: 20%;
+}
+
+body.two-col div#content, body.three-col div#content {
+	float: right;
+	width: 76%;
+}
+
+body.two-col ul#nav-primary, body.three-col ul#nav-primary {
+	float: left;
+	width: 22%;
+	padding-left: 0;
+}
+
+body.two-col div#content-primary {
+	width: 100%;
+}
+
+body.two-col div#content-secondary  {
+	display: none;
+}
+
+body.three-col div#content-primary {
+ 	width: 63.6%;
+	padding-right: 2%;
+}
+
+body.three-col div#content-secondary {
+	float: right;
+	width: 34.4%;
+	padding-left: 0;
+}
+
+
+/* =SITE-TOOLS
+-------------------------------------------------------------- */
+
+.dept div#site-search {
+	padding: 0.5em 0 0 0;
+}
+
+div#site-search ul {
+	padding:5px;
+	margin: 0;
+	list-style-type: none;
+	}
+
+div#site-search ul li {
+	float: right;
+	padding: 0 7px 0 7px;
+	background: url(../images/divider-site-tools-small.gif) no-repeat 100% 50%;
+}
+
+div#site-search ul li.last {
+	background: none;
+	padding-right: 15px;
+}
+
+div#site-search ul li a {
+	color:#036;
+	text-decoration:none;
+}
+div#site-search ul li a:hover {
+	color:#c60;
+}
+div#site-search {
+	float:none;
+	width:auto;
+	height:auto;
+	padding:10px 0 5px 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div#site-search form {
+	text-align:right;
+}
+
+/* =NAV-PRIMARY
+-------------------------------------------------------------- */
+
+ul#nav-primary {
+	list-style-type: none;
+	border-top: 2px solid #CCC;	
+	border-bottom: 1px solid #CCC;	
+	margin: 0.15em 0 50px 0;
+	clear: both;
+	width: 100%;
+	background: #f1f5ff;
+	font-weight: bold;
+}
+
+ul#nav-primary li {
+	border-top: 1px solid #CCC;
+	margin: 0 1px 0 0;
+	padding:0;
+}
+
+/* added by DMR (Studio24) 24.01.08 */
+ul#nav-primary li.title {
+	border-top: none;
+	font-weight: bold;
+	padding: 0.6em 20px 0.45em 10px;
+	background: #666;
+	color: white;
+}
+
+ul#nav-primary li a {
+	border-top: 1px solid white;
+	padding: 0.2em 20px 0.2em 10px;
+	display: block;
+	height: 100%;
+	text-decoration: none;
+}
+
+
+ul#nav-primary li a:hover {
+	color:#c60;
+}
+
+/* =nav-primary sub-nav
+-------------------------------------------------------------- */
+
+ul#nav-primary li.active {
+	background:#fff;
+}
+
+ul#nav-primary li.active a {
+	border: none;
+	color:#c60;
+	background:#fff;
+}
+
+ul#nav-primary li.active ul,
+ul#nav-primary li ul {
+	font-size: 1em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0.3em 0 0 0;
+}
+
+ul#nav-primary li.active ul li,
+ul#nav-primary li ul li {
+	border: none;	
+	border-top: solid #E8F0FF 1px;
+	padding: 4px 0 4px 0;
+}
+
+/* Style for unselected secondary nav link */
+ul#nav-primary li.active ul li a,
+ul#nav-primary li.active ul li a:hover,
+ul#nav-primary li ul li a,
+ul#nav-primary li ul li a:hover {
+	padding: 0 20px 0 30px;
+	border: none;
+	color: #036;
+	font-weight: normal;
+}
+
+/* Style for selected secondary nav link */
+ul#nav-primary li.active ul li.active a,
+ul#nav-primary li.active ul li.active a:hover,
+ul#nav-primary li ul li.active a,
+ul#nav-primary li ul li.active a:hover {
+	background: url(../images/icon-arrow-nav-primary.gif) no-repeat 10px 5px;
+	color: #c60;
+	font-weight: bold;
+}
+
+ul#nav-primary li.active ul li a:hover,
+ul#nav-primary li ul li a:hover {
+	color: #c60;
+	text-decoration: underline;
+}
+
+
+/* =NAV-TABBED
+-------------------------------------------------------------- */
+
+ul#nav-tabbed {
+	list-style-type: none;
+	margin: 1em 0 2em 0;
+	padding: 0;
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;
+	clear: both;
+	width: 100%;
+	overflow: hidden;
+}
+
+ul#nav-tabbed li {
+	float: left;
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+
+ul#nav-tabbed li a {
+	color: white;
+	background:#06c url(../images/bg-tab-right.gif) no-repeat 100% 0;
+	display: block;
+	padding: 0.6em 20px 0.45em 20px;
+	position: relative;
+	text-decoration: none;
+}
+
+ul#nav-tabbed.az li a {
+	color: white;
+	padding: 0.6em 9px 0.45em 9px;
+	font-size: 0.9em;
+}
+
+ul#nav-tabbed li a span {
+	background: url(../images/bg-tab-left.gif) no-repeat 0 0;
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+ul#nav-tabbed li a:hover {
+	text-decoration: none;
+	background: #036 url(../images/bg-tab-right-over.gif) no-repeat 100% 0;
+}
+
+ul#nav-tabbed li a:hover span {
+	background: url(../images/bg-tab-left-over.gif) no-repeat 100% 0;
+}
+
+ul#nav-tabbed li.active a {
+	background: #b2ccff url(../images/bg-tab-right-active.gif) no-repeat 100% 0; 
+	color: #000;
+	font-weight: bold;
+}
+
+ul#nav-tabbed li.active a span {
+	background: url(../images/bg-tab-left-active.gif) no-repeat 100% 0;
+}
+
+/* =BREADCRUMB
+-------------------------------------------------------------- */
+
+ul#nav-breadcrumb {
+	overflow: hidden;
+	margin:0;
+	padding:  0.5em 0 1em 0;
+	list-style-type: none;
+	color: #666;
+	font-size: 0.65em;
+	width:100%;
+}
+
+
+ul#nav-breadcrumb li {
+	float: left;
+	padding: 0 6px 0 6px;
+	background: url(../images/icon-arrow-nav-breadcrumb.gif) no-repeat 0 50%;
+	white-space: nowrap;
+}
+
+ul#nav-breadcrumb li.first {
+	padding-left: 21px;
+	background: url(../images/icon-home.gif) no-repeat 0 0;
+}
+
+ul#nav-breadcrumb li.last {
+	/*background: none;*/
+}
+/*
+ul#nav-breadcrumb li.first a {
+	color: #cf5200;
+}
+*/
+ul#nav-breadcrumb a, ul#nav-breadcrumb a:hover {
+	text-decoration: none;
+}
+
+/* =SITE-INFO
+-------------------------------------------------------------- */
+
+ul#site-info {
+	overflow: hidden;
+	margin: 0;
+	clear: both;
+	width: 100%;
+	list-style-type: none;
+	border-top: 2px solid #9c9;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	font-size: 0.7em;
+}
+
+ul#site-info li {
+	float: left;
+}
+
+ul#site-info li a{
+	text-decoration:none;
+}
+
+
+ul#site-info li.link {
+	float: right;
+	padding: 0 10px 0 10px;
+	background: url(../images/divider-site-tools-small.gif) no-repeat 100% 50%;
+}
+
+ul#site-info li.last {
+	background: none;
+	padding-right: 0;
+}
+
+/* =RESPONSIVE DESIGN
+-------------------------------------------------------------- */
+
+img{
+	max-width:100%;
+	height:auto;
+}
+
+@media (max-width:827px){
+	body[class*="-col"] div#content-primary, body[class*="-col"] div#content-secondary, div#content-primary, div#content-secondary{
+		width:100%;
+		border-left: none;
+	}
+	body[class*="-col"] div#content {
+		width: 100%;
+	}
+	div#container{
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	ul#nav-primary, body[class*="-col"] ul#nav-primary{
+		width:100%;
+		margin: 0px;
+		list-style-position: inside;
+		-webkit-box-ordinal-group: 3;
+		-moz-box-ordinal-group: 3;
+		-ms-flex-order: 3;
+		-webkit-order: 3;
+		order: 3;
+	}
+	div#content,div#content-primary{
+		-webkit-box-ordinal-group: 1;
+		-moz-box-ordinal-group: 1;
+		-ms-flex-order: 1;
+		-webkit-order: 1;
+		order: 1;
+	}
+	div#content-secondary{
+		-webkit-box-ordinal-group: 2;
+		-moz-box-ordinal-group: 2;
+		-ms-flex-order: 2;
+		-webkit-order: 2;
+		order: 2;
+	}
+	ul#site-info{
+		-webkit-box-ordinal-group: 4;
+		-moz-box-ordinal-group: 4;
+		-ms-flex-order: 4;
+		-webkit-order: 4;
+		order: 4;
+	}
+}
+
+@media (max-width:560px){
+	body {
+		padding:0px;
+	}
+	div#site-search{
+		width:50%;
+		float:right;
+	}
+	div#site-search ul{
+		display:none;
+	}
+	div#site-search form label{
+		display:none;
+	}
+	div#site-search form #search-term{
+		width:70%;
+	}
+	div#branding{
+		width:50%;
+	}
+	div.ucampas-toc{
+		display:none;
+	}
+	th.name,td.name{
+		min-width:12em;
+	}
+	dl.menu {
+		width:100%;
+	}
+	.dept div#header, div#header, div#dept-title, div#container {
+		border:0px solid #ffffff;
+	}
+}

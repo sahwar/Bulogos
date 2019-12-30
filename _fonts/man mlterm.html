@@ -1,0 +1,2406 @@
+
+<!-- saved from url=(0043)http://mlterm.sourceforge.net/mlterm.1.html -->
+<html><div id="bm-2225254214"><div data-reactroot="" id="bm-2225254214"></div></div><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>man mlterm</title></head>
+<body>
+<pre>MLTERM(1)                                                            MLTERM(1)
+
+<b>NAME</b>
+       mlterm - Multi Lingual TERMinal emulator on X
+
+<b>SYNOPSIS</b>
+       <b>mlterm</b> [<u>options</u>]
+
+<b>DESCRIPTION</b>
+       <b>mlterm</b> is a multi-lingual terminal emulator written from scratch, which
+       supports various character sets and encodings in the world and  complex
+       characters  such  as  double  width for East Asian, combining for Thai,
+       Vietnamese, and so on, and bi-direction for Arabic and  Hebrew.   Indic
+       scripts  are experimentally supported.  It also supports various unique
+       feature such as anti-alias using FreeType, multiple XIM, multiple  win-
+       dows,  scrollbar  API,  scroll  by  mouse wheel, automatic selection of
+       encoding, daemon mode, and so on.
+
+       Supported encodings  are:  ISO-8859-[1-11],  ISO-8859-[13-16],  TIS-620
+       (same  as  ISO-8859-11), KOI8-R, KOI8-U, KOI8-T, GEORGIAN-PS, TCVN5712,
+       ISCII_(ASSAMESE|BENGALI|GUJARATI|    HINDI|KANNADA|MALAYALAM|ORIYA|PUN-
+       JABI|TAMIL|TELUGU),  VISCII,  CP125[0-8],  CP874, EUC-JP, EUC-JISX0213,
+       Shift_JIS,  Shift_JISX0213,  ISO-2022-JP[1-3],  EUC-KR,   UHC,   JOHAB,
+       ISO-2022-KR,  GB2312  (EUC-CN),  GBK, GB18030, ISO-2022-CN, HZ, EUC-TW,
+       BIG5, BIG5HKSCS, and UTF-8.  If you have already set locale (for  exam-
+       ple  LANG variable; see <b><a href="file:///home/ken/w3m/libexec/w3m/cgi-bin/w3mman2html.cgi?locale(7)">locale</a></b>(7) for detail) <b>mlterm</b> will automatically
+       select proper encoding.
+
+<b>OPTIONS</b>
+       Note that <u>bool</u> is to be substituted by <b>true</b> or <b>false</b>.
+
+       <b>-A</b>, <b>--aa</b>(=<u>bool</u>)
+              Use anti-aliased fonts. This option works only with Xft or cairo
+              for now.  The default is <b>false</b>.
+
+       <b>-B</b>, <b>--sbbg</b>=<u>color</u>
+              Specify  a  background  color of a scrollbar.  A valid value for
+              <u>color</u> is a color name or a RGB value.  The color name should  be
+              defined  in  rgb.txt  or  "<b>color</b>"  configuration  file.  The RGB
+              value's format should be "#RRGGBB", "#RRGGBBAA",  "rgb:RR/GG/BB"
+              or "rgba:RR/GG/BB/AA".
+
+       <b>-C</b>, <b>--ctl</b>(=<u>bool</u>)
+              Enable  complex text layouting on UTF8 encoding to support indic
+              scripts and RTL (right-to-left) languages  such  as  Arabic  and
+              Hebrew.  The default is <b>true</b>.
+
+       <b>-E</b>, <b>--km</b>=<u>encoding</u>
+              Specify  encoding.   Valid  encodings  are listed in <b>DESCRIPTION</b>
+              section above in this man page.  <b>AUTO</b> makes mlterm determine the
+              according according to the current locale (default <b>AUTO</b>).
+
+       <b>-F</b>, <b>--sbfg</b>=<u>color</u>
+              Specify  a  foreground  color of a scrollbar.  See <b>--sbbg</b> option
+              for valid values.
+
+       <b>-G</b>, <b>--vertical=</b><u>mode</u>
+              Specify vertical writing mode.  <b>cjk</b> for RTL vertical writing and
+              <b>mongol</b>  for LTR one.  The default is <b>none</b> which means horizontal
+              writing mode.
+
+       <b>-H</b>, <b>--bright=</b><u>value</u>
+              Brightness of background images in percent.  See <b>-p</b>  option  for
+              details  of  background images.  The default is <b>100</b> (keep origi-
+              nal).
+
+       <b>-I</b>, <b>--icon</b>=<u>name</u>
+              Specify a name to be used when a  mlterm  window  is  iconified.
+              The default is "<b>mlterm</b>".
+
+       <b>-J</b>, <b>--dyncomb</b>(=<u>bool</u>)
+              Enable  dynamic  character combining.  "Dynamic" means that com-
+              bining characters are stored in without combining but  they  are
+              displayed using combined form.  This affects calculation of col-
+              umn position, i.e., a pair of base character and combining char-
+              acter  is  counted  to  be two columns in this mode, while it is
+              counted to be one column in the normal mode.  Under this option,
+              a  (logical) column number and a character one-to-one correspon-
+              dence.  even for combining characters (though not for  fullwidth
+              characters;  see  <b>-Z</b>/<b>--multicol</b> option for handling of fullwidth
+              characters).  Thus, this mode enables you to use combining char-
+              acters  with  software  which does not support combining charac-
+              ters.  The default is <b>false</b>.
+
+       <b>-K</b>, <b>--metakey</b>=<u>value</u>
+              Specify a key to be interpreted as a  META  key.   Valid  <u>value</u>s
+              are:  <b>alt</b>, <b>meta</b>, <b>hyper</b>, <b>super</b>, <b>mod1</b>, <b>mod2</b>, <b>mod3</b>, <b>mod4</b>, and <b>none</b>.
+              The default is <b>none</b>.
+
+              See <b>-k</b> option also.
+
+       <b>-L</b>, <b>--ls</b>(=<u>bool</u>)
+              Whether to use login shell or not.  The default is <b>false</b>.
+
+       <b>-M</b>, <b>--im</b>= <u>input</u> <u>method</u> : <b>[</b> <u>arguments</u> <b>...</b> <b>]</b>
+              Specify an input method. (See doc/ja/README.ja in detail)
+
+              <b>Examples:</b>
+
+              --im=xim
+                     Use XIM with the default XIM server specified by standard
+                     way (i.e., <b>XMODIFIERS</b> environmental variable).
+
+              --im=xim:Ami
+                     Use XIM with Ami on the system locale.
+
+              --im=xim:kinput2:ja_JP.EUC-JP
+                     Use XIM with kinput2 on ja_JP.EUC-JP locale.
+
+              --im=kbd:arabic
+                     Use keyboard mapping input method in Arabic.
+
+              --im=kbd:hebrew
+                     Use keyboard mapping input method in Hebrew.
+
+              --im=kbd:isciixxx
+                     Use keyboard mapping input method in Indic.
+
+              --im=uim
+                     Use uim with the default conversion engine.
+
+              --im=uim:prime
+                     Use uim with prime conversion engine.
+
+              --im=m17nlib:ru
+                     Use m17n library in Russian.
+
+              --im=m17nlib:or:itrans
+                     Use m17n library in Oriya using ITRANS method.
+
+              --im=scim
+                     Use SCIM.
+
+              --im=ibus
+                     Use IBus with the default conversion engine.
+
+              --im=ibus:anthy
+                     Use IBus with anthy conversion engine.
+
+              --im=fcitx
+                     Use Fcitx.
+
+              --im=canna
+                     Use Canna.
+
+              --im=wnn
+                     Use Freewnn.
+
+              --im=wnn:foo.bar
+                     Use Freewnn with jserver at foo.bar host.  (JSERVER envi-
+                     ronmental variable is also available.)
+
+              --im=skk
+                     Use SKK.
+
+              --im=skk:dict=foo.bar:utf8,sskey=\x3b
+                     Use SKK with the use of utf8 skk server at  foo.bar  host
+                     and  semicolon  key as sticky shift key.  (SKK_DICTIONARY
+                     and SKK_STICKY_SHIFT_KEY environmental variable are  also
+                     available.)
+
+              --im=iiimf
+                     Use IIIMF in the system language.
+
+              --im=iiimf:ar
+                     Use IIIMF in Arabic.
+
+              --im=iiimf:ja:CannaLE
+                     Use IIIMF in Japanese using CannaLE language engine.
+
+              --im=none
+                     Don't use input method.
+
+       <b>-N</b>, <b>--name</b>=<u>name</u>
+              Specify  application name. (WM_CLASS property) The
+              default is "<b>mlterm</b>".
+
+       <b>-O</b>, <b>--sbmod</b>=<u>value</u>
+              Specify the side to show a  scrollbar.   <b>left</b>  for
+              left  side  and  <b>right</b> for right side.  <b>none</b> turns
+              off a scrollbar.  <b>autohide</b> shows a scrollbar  only
+              if  mouse  pointer  is  at  the  right edge of the
+              screen.  The default is <b>left</b>.
+
+       <b>-P</b>, <b>--clip</b>(=<u>bool</u>)
+              Whether to enable  CLIPBOARD  (not  only  PRIMARY)
+              selection.  The default is <b>true</b>.
+
+       <b>-Q</b>, <b>--vcur</b>(=<u>bool</u>)
+              Change interpretation of cursor keys to be natural
+              in vertical writing mode.  This means that up  and
+              down  arrow  keys  are  treated  as backward (left
+              arrow in horizontal LTR) and forward (right  arrow
+              in   horizontal   LTR),   respectively.    In  <b>cjk</b>
+              <b>-G</b>/<b>--vertical</b> mode, left and right arrow keys  are
+              also  treated as next line (down arrow in horizon-
+              tal LTR) and previous line (up arrow in horizontal
+              LTR),  respectively,  while  vice  versa in <b>mongol</b>
+              mode.  The default is <b>true</b>.
+
+       <b>-R</b>, <b>--fsrange</b>=<u>range</u>
+              Set acceptable range of font size.  The format  is
+              "<u>minsize</u>-<u>maxsize</u>",  where  <u>minsize</u> and <u>maxsize</u> are
+              font sizes in pixel (default  <b>1-10000</b>).   The  GUI
+              configurator  and other means for setting fontsize
+              should honor the range.
+
+       <b>-S</b>, <b>--sbview</b>=<u>name</u>
+              Select a type of scrollbar.  See <b>SCROLLBAR</b> section
+              below  for details.  The default is "<b>simple</b>" which
+              means the built-in simple scrollbar.
+
+       <b>-T</b>, <b>--title</b>=<u>name</u>
+              Specify a title for a mlterm window.  The  default
+              is "<b>mlterm</b>".
+
+       <b>-U</b>, <b>--viaucs</b>(=<u>bool</u>)
+              Force to convert a selection (i.e., copy-and-paste
+              strings) whose type is not UTF8_STRING to the cur-
+              rent  mlterm  encoding via Unicode.  See <b>SELECTION</b>
+              section below for detail.  The default is <b>false</b>.
+
+       <b>-V</b>, <b>--varwidth</b>(=<u>bool</u>)
+              Use variable column width.  You may  want  to  use
+              this  option when you use proportional fonts.  The
+              default is <b>false</b>.
+
+       <b>-W</b>, <b>--sep</b>=<u>characterlist</u>
+              Delimiter  characters  used  for  word  selection,
+              which   are   consulted  when  you  double-clicked
+              mlterm, to define what is a word.  The default  is
+              " <b>,.:;/|@()[]{}</b>")
+
+       <b>-X</b>, <b>--alpha</b>=<u>value</u>
+              Alpha  in pseudo or true transparent.  The default
+              is <b>255</b>.
+
+       <b>-Y</b>, <b>--decsp</b>(=<u>bool</u>)
+              Use dynamically composed  line  drawing  character
+              set  of  DEC special.  The default is <b>false</b>.  This
+              overrides  DEC_SPECIAL  in  "font"   configuration
+              file,  while  DEC_SPECIAL  in "aafont" (for Xft or
+              cairo) is always overridden.
+
+       <b>-Z</b>, <b>--multicol</b>(=<u>bool</u>)
+              Treat fullwidth characters (east Asian  characters
+              in  most  cases; which occupies two columns on the
+              screen) as they occupy two logical columns.  It is
+              the  de-facto  standard  way  to  handle fullwidth
+              characters  in  east  Asian   terminal   emulators
+              (XFree86  xterm and  kterm, cxterm, hanterm, rxvt,
+              eterm) and other systems such as MS-DOS,  PC-9801,
+              and so on.  In most fonts, the glyphs of fullwidth
+              characters are designed assuming that their  width
+              are  twice  of normal characters and won't display
+              correctly without this  option.   The  default  is
+              <b>true</b>.
+
+       <b>-0</b>, <b>--crbg</b>=<u>color</u>
+              Specify  background  color  for cursor (default is
+              same to foreground color).  Valid values for <u>color</u>
+              are  color  names defined in rgb.txt and color rgb
+              string whose  format  is  "#RRGGBB",  "#RRGGBBAA",
+              "rgb:RR/GG/BB" or "rgba:RR/GG/BB/AA".
+
+       <b>-1</b>, <b>--wscr</b>=<u>value</u>
+              Specify actual window width, by percentage against
+              calculated value by multiplying font width by col-
+              umn number.  This is useful when you use a propor-
+              tional font which includes some glyphs with excep-
+              tionally  large  width, i.e., much larger "maximum
+              width" than your expectation.   In  vertical  mode
+              this  option  changes  actual  window height.  The
+              default is <b>100</b>.
+
+       <b>-3</b>, <b>--contrast</b>=<u>value</u>)
+              Contrast of background image in percent.   See  <b>-p</b>
+              option  for  details  of  background  image.   The
+              default is <b>100</b>.
+
+       <b>-4</b>, <b>--gamma</b>=<u>value</u>)
+              Gamma of background  image  in  percent.   See  <b>-p</b>
+              option  for  details  of  background  image.   The
+              default is <b>100</b>.
+
+       <b>-5</b>, <b>--big5bug</b>(=<u>bool</u>)
+              Enable a workaround for Big5 CTEXT bugs (which had
+              been  existed  until XFree86 4.1.0).  This affects
+              Big5 selections (i.e., copy-and-paste strings)  in
+              COMPOUND_TEXT  format  which  <b>mlterm</b>  sends.   The
+              default is <b>false</b>.
+
+       <b>-6</b>, <b>--stbs</b>(=<u>bool</u>)
+              Don't exit backscroll mode when  console  applica-
+              tions output something.  The default is <b>false</b>.
+
+       <b>-7</b>, <b>--bel</b>=<u>mode</u>
+              Behavior  when  BEL  (0x07) is received. <b>sound</b> for
+              beep , <b>visual</b> for blanking screen and <b>sound|visual</b>
+              for  the  both.  The default is <b>none</b> which ignores
+              BEL.
+
+       <b>-8</b>, <b>--88591</b>(=<u>bool</u>)
+              Use ISO8859-1 fonts for US-ASCII part  of  various
+              encodings.
+
+       <b>-9</b>, <b>--crfg</b>=<u>color</u>
+              Specify  foreground  color  for cursor (default is
+              same to background color).  Valid values for <u>color</u>
+              are  color  names defined in rgb.txt and color rgb
+              string whose  format  is  "#RRGGBB",  "#RRGGBBAA",
+              "rgb:RR/GG/BB" or "rgba:RR/GG/BB/AA".
+
+       <b>-$</b>, <b>--mc</b>=<u>value</u>
+              Doubleclick/tripleclick  interval  in millisecond.
+              The default is <b>250</b>.
+
+       <b>-%</b>, <b>--logseq</b>(=<u>bool</u>)
+              Enable logging. Contents  of  stream  received  by
+              mlterm  will  be  logged  under  <a href="file://%7E/.mlterm/">~/.mlterm/.</a>  This
+              option is mainly intended to be used for debugging
+              purposes.   The  default  is  <b>false</b>.   Note that <b>%</b>
+              should be escaped to be supplied as a command line
+              option on most shells.
+
+       <b>-&amp;</b>, <b>--borderless</b>(=<u>bool</u>)
+              Asks  the  window manager to use no decorations at
+              all. Warning: You will not be able to  resize  the
+              window.  You  probably  want  to use <b>--geometry</b> as
+              well.  The default is <b>false</b>.
+
+       <b>-@</b>, <b>--screens</b>=<u>value</u>
+              Specify number of screens (sessions) to be used in
+              start  up.   The default is <b>1</b>.  Note that when one
+              of these screens are closed, sessions  which  were
+              connected   to  the  screens  do  not  immediately
+              killed.
+
+              See <b>MULTIPLE</b> <b>PTY</b> section for details.
+
+       <b>-*</b>, <b>--type</b>=<u>value</u>
+              Specify the rendering engine to be  used  to  draw
+              fonts.  <b>xcore</b> is conventional X11 core font mecha-
+              nism.  <b>xft</b> means Xft  mechanism  and  <b>cairo</b>  means
+              cairo mechanism.  The default is <b>cairo</b>.
+
+       <b>-#</b>, <b>--initstr</b>=<u>value</u>
+              Specify  a  string  to be automatically sent after
+              initialization of  session.   The  <b>value</b>  normally
+              will  be parsed by a shell.  See <b>-e</b> option to exe-
+              cute other application at start-up time.
+
+       <b>-a</b>, <b>--ac</b>=<u>value</u>
+              Specify number of columns to be occupied by a Uni-
+              code's    "EastAsianAmbiguous"   character.    The
+              default is <b>1</b> except "ja" locale where the  default
+              is  <b>2</b>. Some of asian people may want to specify <b>2</b>.
+              See Unicode Standard Annex (UAX)  #11  East  Asian
+              Width found at Unicode web site for details.
+
+       <b>-b</b>, <b>--bg</b>=<u>color</u>
+              Specify  background  color (default <b>white</b>).  Valid
+              values  for  <u>color</u>  are  color  names  defined  in
+              rgb.txt  and  color  rgb  string  whose  format is
+              "#RRGGBB",    "#RRGGBBAA",    "rgb:RR/GG/BB"    or
+              "rgba:RR/GG/BB/AA".
+
+       <b>-c</b>, <b>--cp932</b>(=<u>bool</u>)
+              Use CP932 mapping table to convert from JIS X 0208
+              to Unicode when displaying JIS X  0208  characters
+              using  Unicode font in Xft or cairo mode.  This is
+              useful when you use proprietary Japanese true type
+              fonts which are intended to be used with Microsoft
+              Windows, with <b>mlterm</b> with encodings (such as  EUC-
+              JP,  Shift_JIS, ISO-2022-JP, and so on) which con-
+              tain JIS X 0208 as a coded character set.
+
+              The reason is, such  proprietary  fonts  may  have
+              glyphs only for Unicode code points into which JIS
+              X 0208 code points are converted using CP932  map-
+              ping  table.   (CP932  is  a name of mapping table
+              which  is  used  by  Microsoft  to  convert   from
+              Shift_JIS [plus Microsoft private extended charac-
+              ters] into Unicode.  In Unicode's point  of  view,
+              CP932  is  a  name of encoding which is similar to
+              Shift_JIS and  is  used  by  Japanese  version  of
+              Microsoft  Windows.)   If  you  use such fonts for
+              encodings  such  as  EUC-JP  and  Shift_JIS   with
+              JIS0208.TXT  mapping  table which <b>mlterm</b> adopts as
+              the standard, a few  characters  are  mapped  into
+              Unicode  code  points  where  the fonts don't have
+              glyphs.
+
+              Both of CP932.TXT and JIS0208.TXT  mapping  tables
+              are  supplied  by  Unicode Consortium, though they
+              are regarded to be obsolete.
+
+              The default is <b>true</b>.
+
+       <b>-d</b>, <b>--display</b>=<u>string</u>
+              Specify X display to connect with.
+
+       <b>-e</b> <u>program</u> <b>[</b> <u>arguments</u> <b>...</b> <b>]</b>
+              Invoke the command in  the  <b>mlterm</b>  window.   This
+              option  must  be  the  last  option on the command
+              line.
+
+       <b>-f</b>, <b>--fg</b>=<u>color</u>
+              Foreground color (default  <b>black</b>).   Valid  values
+              for  <u>color</u>  are color names defined in rgb.txt and
+              color  rgb  string  whose  format  is   "#RRGGBB",
+              "#RRGGBBAA", "rgb:RR/GG/BB" or "rgba:RR/GG/BB/AA".
+
+       <b>-g</b>, <b>--geometry</b>=<u>geometry</u>
+              Specify size and position of the window; see <b><a href="file:///home/ken/w3m/libexec/w3m/cgi-bin/w3mman2html.cgi?X(7)">X</a></b>(7).
+
+       <b>-h</b>, <b>--help</b>(=<u>bool</u>)
+              Show help messages.
+
+       <b>-i</b>, <b>--xim</b>(=<u>bool</u>)
+              Whether  to  use  XIM (X Input Method).  Most east
+              Asian people will  want  to  enable  this  option.
+              Other  people  can  also  safely enable this.  The
+              default is <b>true</b>.  The name of the XIM server to be
+              connected  is  specified  by  standard  way (i.e.,
+              <b>XMODIFIERS</b> environmental variable).
+
+       <b>-j</b>, <b>--daemon</b>=<u>value</u>
+              Start as a daemon process. Note that  mlclient  is
+              executed  if a daemon process has already started.
+              Possible =<u>value</u>s are "blend" and  "genuine".   See
+              the chapter of <b>DAEMON</b> <b>MODE</b> for details.
+
+       <b>-k</b>, <b>--meta</b>=<u>mode</u>
+              Behavior  of  META  key.   <b>esc</b> for sending ESC and
+              <b>none</b> for ignoring META key.  The default  is  <b>8bit</b>
+              which sets the most significant bit.
+
+              See <b>-K</b> option also.
+
+       <b>-l</b>, <b>--sl</b>=<u>value</u>
+              Specify number of lines of backlog or "unlimited".
+              Over <a href="file:///home/ken/w3m/libexec/w3m/cgi-bin/w3mman2html.cgi?65535(0xffff)">65535</a>(0xffff)  is  regarded  as  "unlimited".
+              The default is <b>128</b>.
+
+       <b>-m</b>, <b>--comb</b>(=<u>bool</u>)
+              Enable combining characters by overstriking glyphs
+              (recommended for TIS-620,  TCVN5712,  and  UTF-8).
+              Note that fonts which contain combining characters
+              which extend backward cannot be used, since <b>mlterm</b>
+              does combine characters by controlling the writing
+              positions.  This option is automatically turned on
+              when using <b>--dyncomb</b> option.  The default is <b>true</b>.
+
+       <b>-n</b>, <b>--noucsfont</b>(=<u>bool</u>)
+              Use non-Unicode fonts even when <b>mlterm</b> encoding is
+              UTF-8.   Useful  when  you  don't  have ISO10646-1
+              fonts and you want to  use  UTF-8  encoding.   The
+              default is <b>false</b>.
+
+       <b>-o</b>, <b>--lsp</b>(=<u>value</u>)
+              Specify number of extra pixels between lines.  The
+              default is <b>0</b>.
+
+       <b>-p</b>, <b>--pic</b>=<u>path</u>
+              Path for a  wallpaper  (background)  image.   Note
+              that  the  wallpaper  cannot  be  used with pseudo
+              transparent background.
+
+       <b>-q</b>, <b>--extkey</b>(=<u>bool</u>)
+              Enable extended keys  for  backscroll  mode.   The
+              default   is  <b>false</b>.   Extended  scroll  keys  are
+              <b>SCROLL_UP</b>, up arrow, and "k"  (for  scrolling  one
+              line  backward)  and  <b>SCROLL_DOWN</b>, down arrow, and
+              "j" (for scrolling one line forward).  Please note
+              that  concrete  keys  for symbols of <b>SCROLL_UP</b> and
+              <b>SCROLL_DOWN</b> are  specified  in  <b>key</b>  configuration
+              file.   Only  keys of <b>PAGE_UP</b> and <b>PAGE_DOWN</b> (which
+              are  specified  in  <b>key</b>  configuration  file)  are
+              available by default.
+
+       <b>-r</b>, <b>--fade</b>=<u>ratio</u>
+              Specify  fading  ratio for unfocused windows.  <b>100</b>
+              means no fading and <b>0</b> means darkest.  The  default
+              is <b>100</b>
+
+       <b>-s</b>, <b>--mdi</b>(=<u>bool</u>)
+              Whether  to  use multiple document interface.  The
+              default is <b>true</b>.   If  you  disable  this  option,
+              scrollbar and screen separation are unavailable.
+
+       <b>-t</b>, <b>--transbg</b>(=<u>bool</u>)
+              Whether  to  enable pseudo transparent background.
+              Note that pseudo transparent background cannot  be
+              used with wallpaper.  The default is <b>false</b>.
+
+       <b>-u</b>, <b>--onlyucsfont</b>(=<u>bool</u>)
+              Use Unicode fonts even when <b>mlterm</b> encoding is not
+              UTF-8.  Useful when you have  ISO10646  fonts  but
+              you  don't  have  other fonts and want to use non-
+              UTF-8 encodings.  Note that conversion to  Unicode
+              is lossy.  i.e. if <b>mlterm</b> encoding is not a subset
+              of Unicode like ISO-2022-JP-2 or  EUC-TW,  charac-
+              ters  which  are  regarded  as a same character in
+              Unicode will be displayed with the same glyph  and
+              cannot be distinguished.
+
+              The default is <b>false</b>.
+
+       <b>-v</b>, <b>--version</b>
+              Show version information.
+
+       <b>-w</b>, <b>--fontsize</b>=<u>value</u>
+              Specify font size in pixel.  The default is <b>16</b>.
+
+       <b>-x</b>, <b>--tw</b>=<u>value</u>
+              Specify tab width.  The default is <b>8</b>.
+
+       <b>-y</b>, <b>--term</b>=<u>string</u>
+              Specify  terminal  type,  i.e.,  the value of <b>TERM</b>
+              variable.  The default is <b>xterm</b>.
+
+       <b>-z</b>, <b>--largesmall</b>=<u>size</u>
+              Specify the step of changing font  size  in  pixel
+              when  you  pushed "Font size larger" or "Font size
+              smaller" button on GUI configurator.  The  default
+              is <b>1</b>.
+
+       <b>--aafont</b>=(<u>bool</u>)  (Available  for  mlterm-fb, mlterm-wl or
+       mlterm-sdl2)
+              Whether  to  use  <a href="file://%7E/.mlterm/">~/.mlterm/</a>*aafont configurations
+              with the use of fontconfig.  The default is  <b>false</b>
+              for  mlterm-fb  and <b>true</b> for mlterm-wl and mlterm-
+              sdl2.
+
+       <b>--ade</b>=<u>value</u>
+              Specify  character  encodings  detected  automati-
+              cally.
+
+       <b>--auto</b>(=<u>bool</u>)
+              Automatically  detect appropriate character encod-
+              ing from the encodings specified by --ade  option.
+              The default is <b>false</b>.
+
+       <b>--altbuf</b>(=<u>bool</u>)
+              Whether  to  enable alternate screen buffer.  This
+              option is similar to "titeInhibit" of xterm.
+
+       <b>--bc</b>(=<u>bool</u>)
+              Whether to broadcast input or pasted characters to
+              all ptys whose value of "ignore_broadcasted_chars"
+              option is false.  The default is <b>false</b>.
+
+       <b>--bd</b>=<u>value</u>
+              Specify the color to use to display  bold  charac-
+              ters.
+
+       <b>--bdfont</b>(=<u>bool</u>)
+              Use   bold  font  for  characters  with  the  bold
+              attribute.  The default is <b>true</b>.
+
+       <b>--bimode</b>=<u>value</u>
+              Specify bidi mode. Valid values are: <b>normal</b>,  <b>left</b>
+              and <b>right</b>.  The default is <b>normal</b>.
+
+       <b>--bisep</b>=<u>characterlist</u>
+              Specify  separator characters to render bidi text.
+
+       <b>--bl</b>=<u>value</u>
+              Specify the color to use to display blinking char-
+              acters.
+
+       <b>--blink</b>(=<u>bool</u>)
+              Blink cursor. The default is <b>false</b>.
+
+       <b>--blpos</b>=<u>value</u>
+              Specify  the  position  (offset  from  the default
+              baseline) of baseline.  The default is <b>0</b>.
+
+       <b>--border</b>=<u>value</u>
+              Specify inner border width. The default is <b>2</b>.  The
+              maximum value is <b>224</b>.
+
+       <b>--boxdraw</b>=<u>value</u>
+              Use  either  unicode  font  or  DEC  Special  font
+              forcibly to draw box-drawing characters.   <b>unicode</b>
+              for  unicode  font and <b>decsp</b> for DEC special font.
+              The default is <b>noconv</b> which draw them as they are.
+
+       <b>--ciphlist</b>=<u>value</u>
+              Specify   ciphers   (comma   separated  list)  for
+              encrypting the ssh session.
+
+       <b>--ckm</b>=<u>encoding</u> (Available for mlterm-con)
+              Specify encoding of the console  where  mlterm-con
+              works.   Valid encodings are listed in <b>DESCRIPTION</b>
+              section above in this man page.  <b>AUTO</b> makes mlterm
+              determine  the  according according to the current
+              locale (default <b>AUTO</b>).
+
+       <b>--co</b>=<u>value</u>
+              Specify the color to use  to  display  crossed-out
+              characters.
+
+       <b>--colors</b>(=<u>bool</u>)
+              Whether  to  recognize  ANSI  color  change escape
+              sequences.  The default is <b>true</b>.
+
+       <b>--csc</b>=<u>value</u> (Available for mlterm-con)
+              Specify the number of sixel graphics colors of the
+              console  where mlterm-con works.  A valid value is
+              16, 256 or full. The default is <b>16</b>.
+
+       <b>--csp</b>=<u>value</u>
+              Specify number  of  extra  pixels  between  lines.
+              (ignored  if you specify <b>--V</b> option.)  The default
+              is <b>0</b>.
+
+       <b>--csz</b>=<u>value</u> (Available for mlterm-con)
+              Specify cell  width  and  height  in  pixel  which
+              mlterm-con  uses  if  it  doesn't  get  them.  The
+              default is <b>8,16</b>.
+
+       <b>--da1</b>=<u>value</u>
+              Specify primary  device  attributes  string.   The
+              default is <b>63;1;2;3;4;7;29</b>.
+
+       <b>--da2</b>=<u>value</u>
+              Specify  secondary  device attributes string.  The
+              default is <b>24;279;0</b>.
+
+       <b>--depth</b>=<u>value</u>
+              Specify visual depth. (8,16,24,32) If depth is 32,
+              you  can  enable  semi-transparency  by specifying
+              opacity  as  the  value  of  --alpha   option   or
+              "rgba:RR/GG/BB/AA" as the value of --bg option.
+
+       <b>--deffont</b>=<u>value</u>
+              DEFAULT in <a href="file://%7E/.mlterm/">~/.mlterm/</a>*font.
+
+       <b>--emoji</b>=<u>value</u>
+              Specify  path  of  a  directory  where emoji image
+              files exist or a open type emoji font to show uni-
+              code    emoji    characters.    The   default   is
+              <b><a href="file://%7E/.mlterm/emoji">~/.mlterm/emoji</a></b>.
+
+       <b>--exitbs</b>(=<u>bool</u>)
+              Whether to exit backscroll mode on receiving  data
+              from pty.  The default is <b>false</b>.
+
+       <b>--fullwidth</b>=<u>value</u>
+              Force full width regardless of EastAsianWidth.txt.
+
+              e.g.) --fullwidth=U+1234-5678,U+0123-4567
+
+       <b>--halfwidth</b>=<u>value</u>
+              Force half width regardless of EastAsianWidth.txt.
+
+              e.g.) --halfwidth=U+1234-5678,U+0123-4567
+
+       <b>--ibc</b>(=<u>bool</u>)
+              Whether  to  ignore  broadcasted  characters.  The
+              default is <b>false</b>.
+
+       <b>--iconpath</b>=<u>path</u>
+              Specify the file to be used as a window icon.
+
+       <b>--it</b>=<u>value</u>
+              Specify the color to use to display italic charac-
+              ters.
+
+       <b>--itfont</b>(=<u>bool</u>)
+              Use  italic  font  for  characters with the italic
+              attribute.  The default is <b>true</b>.
+
+       <b>--keepalive</b>=<u>value</u>
+              Specify interval seconds to send keepalive message
+              to ssh server.  The default is <b>0</b>.
+
+       <b>--lborder</b>=<u>value</u>
+              Specify  inner  border  width of a layout manager.
+              The default is <b>0</b>.  The maximum value is <b>224</b>.
+
+       <b>--ldd</b>(=<u>bool</u>)
+              Embold glyphs by drawing doubly at 1  pixel  left-
+              ward  instead of rightward.  The default is <b>false</b>.
+
+       <b>--lew</b>=<u>value</u>
+              Specify time (msec) to keep local echo mode.   The
+              default is <b>250</b>.
+
+       <b>--locale</b>=<u>value</u>
+              Specify locale.  The default is <b>""</b>.
+
+       <b>--logmsg</b>(=<u>bool</u>)
+              Enable    logging    messages    of    mlterm   to
+              <a href="file://%7E/.mlterm/msg.log.">~/.mlterm/msg.log.</a>  The default is <b>true</b>.
+
+       <b>--loecho</b>(=<u>bool</u>)
+              Whether to use local echo mode or not. The default
+              is <b>false</b>.
+
+       <b>--maxptys</b>=<u>value</u>
+              Specify  maximum  number  of ptys (sessions) to be
+              opened simultaneously.  It should be  multiple  of
+              32.  The default is <b>32</b>.
+
+              See <b>MULTIPLE</b> <b>PTY</b> section for detail.
+
+       <b>--metaprefix</b>=<u>value</u>
+              Specify  prefix characters in pressing meta key if
+              mod_meta_mode = esc.  The default is <b>\x1b</b>.
+
+       <b>--multivram</b>(=<u>bool</u>)   (Available    for    mlterm-fb    on
+       NetBSD/x68k)
+              Whether to draw the  wall  picture  on  Text  VRAM
+              instead of Graphic VRAM to improve the performance
+              of scrolling.  The default is <b>true</b>.
+
+       <b>--noul</b>(=<u>bool</u>)
+              Don't draw underline.  The default is <b>false</b>.
+
+       <b>--oft</b>=<u>value</u>
+              Specify  features  of  glyph  substitution.    The
+              default is <b>fliga,clig,dlig,hlig,rlig</b>.
+
+       <b>--osc52</b>(=<u>bool</u>)
+              Allow  access  to  clipboard(selection)  by OSC 52
+              sequence.  The default is <b>false</b>.
+
+       <b>--ost</b>=<u>value</u>
+              Specify script of glyph substitution.  The default
+              is <b>latn</b>.
+
+       <b>--otl</b>(=<u>bool</u>)
+              Whether  to  show substituting glyphs in open type
+              fonts with the use of libotf or  harfbuzz.   Don't
+              specify  --ctl=false if you want to use substitut-
+              ing  glyphs.   --ctl  option  disables   automatic
+              search  of  alternative  glyphs  in other fonts on
+              cairo/xlib and freetype+fontconfig/{wayland|frame-
+              buffer}.  The default is <b>false</b>.
+
+       <b>--parent</b>=<u>value</u>
+              Specify parent Window ID.  The default is <b>0</b>.
+
+       <b>--point</b>(=<u>bool</u>)
+              Treat  the  value of -w option as point instead of
+              pixel.  Note that this option works on xft,  cairo
+              or win32.  The default is <b>false</b>.
+
+       <b>--pubkey</b>=<u>value</u>
+              Specify  public  key file for ssh connection.  The
+              default    is     <b><a href="file://%7E/.ssh/id_rsa.pub">~/.ssh/id_rsa.pub</a></b>(<b>%HOMEPATH%ter-</b>
+              <b>mid_rsa.pub</b> in win32).
+
+       <b>--privkey</b>=<u>value</u>
+              Specify  private key file for ssh connection.  The
+              default is  <b><a href="file://%7E/.ssh/id_rsa">~/.ssh/id_rsa</a></b>(<b>%HOMEPATH%termid_rsa</b>  in
+              win32).
+
+       <b>--rcn</b>(=<u>bool</u>)
+              Reconnect  to  ssh  server  automatically in unex-
+              pected disconnection.  The default is <b>false</b>.
+
+       <b>--recvdir</b>=<u>value</u>
+              Specify the directory to save received  files  via
+              zmodem or scp.  The default is <b><a href="file://%7E/.mlterm/recv">~/.mlterm/recv</a></b>.
+
+       <b>--restart</b>=<u>value</u>
+              Whether  to  restart  mlterm  with all opened ptys
+              except ssh if SIGSEGV, SIGBUS, SIGFPE or SIGILL is
+              received.  The default is <b>true</b>.
+
+       <b>--rv</b>=<u>value</u>
+              Specify  the color to use to display reverse char-
+              acters.
+
+       <b>--scp</b>(=<u>bool</u>)
+              Allow OSC 5379 scp.  The default is  <b>false</b>.   Even
+              if allow_scp = false, it is possible to transfer a
+              file to "." directory (<a href="file://%7E/.mlterm/scp">~/.mlterm/scp</a>).
+
+       <b>--seqfmt</b>=<u>value</u>
+              Specify the format of logging vt100 sequence.  <b>raw</b>
+              for  logging  as  it  is and <b>ttyrec</b> for logging by
+              ttyrec format.  The default is <b>raw</b>.
+
+       <b>--serv</b>=<u>value</u>
+              Specify a host you want to connect  via  ssh  etc.
+              This  option  is  enabled  only if mlterm is built
+              with MinGW or --enable-ssh2 option.
+
+              Value               format:               (&lt;proto-
+              col&gt;://)(&lt;user&gt;@)&lt;server&gt;(:&lt;port&gt;)(:&lt;encoding&gt;)
+
+              e.g.) mlterm --serv ssh://user@host:22:eucjp
+                    mlterm --serv mosh://user@host:22:utf8
+
+       <b>--shortcut</b>(=<u>bool</u>)
+              Whether  to  allow dynamic change of shortcut keys
+              by OSC 5379 set_shortcut sequence.  The default is
+              <b>false</b>.
+
+       <b>--slp</b>(=<u>bool</u>) (Available for Android)
+              Whether  to start mlterm with local pty instead of
+              ssh connection.  The default is <b>false</b>.
+
+       <b>--sr</b>(=<u>bool</u>)
+              Whether to scroll out all lines on resizing.   The
+              default is <b>false</b>.
+
+       <b>--trim</b>(=<u>bool</u>)
+              Whether  to trim new line characters at the end in
+              pasting text.  The default is <b>false</b>.
+
+       <b>--ul</b>=<u>value</u>
+              Specify the color to  use  to  display  underlined
+              characters.
+
+       <b>--ulpos</b>=<u>value</u>
+              Specify the position (offset from the baseline) of
+              underline.  The default is <b>0</b>.
+
+       <b>--ucsnoconv</b>=<u>value</u>
+              Use  unicode  fonts  partially  regardless  of  -n
+              option.
+
+              e.g.) --ucsnoconv=U+1234-5678,U+0123-4567
+
+       <b>--urgent</b>(=<u>bool</u>)
+              Draw the user's attention when making a bell sound
+              in the unfocused window.  The default is <b>false</b>.
+
+       <b>--uriword</b>(=<u>bool</u>)
+              Select URI by double clicking it regardless of  <b>-W</b>
+              option.  The default is <b>false</b>.
+
+       <b>--vtcolor</b>=<u>mode</u>
+              Set  vt color mode. <b>256</b> for pseudo color, <b>high</b> for
+              high color and <b>true</b> for true color.   The  default
+              is <b>high</b>.
+
+       <b>--working-directory</b>=<u>value</u>
+              Working directory.
+
+       <b>--x11</b>(=<u>bool</u>)
+              Enable  x11  forwarding  for  ssh connection.  The
+              default is <b>false</b>.
+
+<b>GUI</b> <b>CONFIGURATOR</b>
+       Pushing control key and mouse button 3 invokes  GUI  con-
+       figurator (<b>mlconfig</b>).  It can modify encoding, foreground
+       and background color, tab size, backlog size, font  size,
+       usage of combining character, and so on.
+
+       GUI  configurator  has  six  pages (Encoding, Font, Back-
+       ground, Color, Scrollbar,  and  Others),  OK/Apply/Cancel
+       buttons, and four special buttons.
+
+       Note this feature needs GTK+ 2.x or later.
+
+   <b>Encoding</b> <b>page</b>
+       Encoding-related configurations are located in this page.
+       Note that configurations will be enabled  when  you  push
+       Apply button.
+
+       Encoding
+              Specify encoding.  (<b>-E</b>, <b>--km</b>)
+
+       Auto detect
+              Whether  to  detect appropriate character encoding
+              automatically. (<b>--auto</b>)
+
+       Encoding list
+              Specify  character  encodings  detected  automati-
+              cally. (<b>--ade</b>)
+
+       Input Method
+              Specify which input method to be used. (<b>-M</b>, <b>--im</b>)
+
+              <b>XIM:</b>
+
+              XIM Server
+                     Specify  the  name of XIM server to be con-
+                     nected.  You can input from  your  keyboard
+                     or  you  can  choose  one of registered XIM
+                     servers.  This doesn't have equivalent com-
+                     mand  option.   See the section of <b>XIM</b> <b>Con-</b>
+                     <b>figuration</b> <b>File</b>  for  registration  of  XIM
+                     servers.
+
+              XIM locale
+                     Specify  the  name of the locale to be used
+                     for connection to the XIM server.   Popular
+                     XIM servers usually have acceptable locales
+                     to be used for connection.  If  you  choose
+                     registered XIM server in <b>Input</b> <b>Method</b>, this
+                     will be set automatically.   You  can  also
+                     input the locale name from your keyboard.
+
+              <b>keyboard:</b>
+
+              Option Specify the name of key mapping table. When
+                     using ISCII encoding, Indic key mapping  is
+                     used  automatically.  In  other  encodings,
+                     this will be automatically selected accord-
+                     ing to the current locale.
+
+              <b>uim:</b>
+
+              Option Specify  the  name of the conversion engine
+                     to be used. If you choose auto, the conver-
+                     sion  engine will be automatically selected
+                     according to the current locale.
+
+              Note this feature needs uim library.
+
+              <b>m17n</b> <b>library:</b>
+
+              Option Specify the language and the  input  method
+                     to  be  used.  If you choose auto, the lan-
+                     guage and input method  will  be  automati-
+                     cally  selected  according  to  the current
+                     locale.
+
+              Note this feature needs m17n library and  m17n-db.
+
+              <b>SCIM:</b>
+
+              No option
+
+              <b>iBus:</b>
+
+              No option
+
+              <b>Fcitx:</b>
+
+              No option
+
+              <b>Freewnn:</b>
+
+              Option Specify  the  address  of  the  host  where
+                     jserver works.
+
+              <b>Canna:</b>
+
+              No option
+
+              <b>SKK:</b>
+
+              Option Specify the place of skk dictionary (server
+                     or  file)  and the key used as sticky shift
+                     key.
+
+              <b>IIIMF:</b>
+
+              Option Specify the language id (RFC1766)  and  the
+                     language  engine  to be used. If you choose
+                     auto, the language id/engine will be  auto-
+                     matically selected according to the current
+                     locale.
+
+              Note this feature needs IIIMCF library.
+
+       Complex Text Layout
+              Whether to enable complex text layouting  on  UTF8
+              encoding  to support indic scripts and RTL (right-
+              to-left) languages  such  as  Arabic  and  Hebrew.
+              (<b>-C</b>, <b>--ctl</b>)
+
+       Combining
+              Whether  to  support combining characters by over-
+              striking. (<b>-m</b>, <b>--comb</b>)
+
+       Combining = 1 (or 0) logical column(s)
+              Processing combining characters as if it  occupies
+              one column logically while it occupies zero column
+              on the screen.  (<b>-J</b>, <b>--dyncomb</b>)
+
+       Process received strings via Unicode
+              When you  paste  some  strings  into  <b>mlterm</b>,  the
+              strings  are  converted  into  Unicode and then to
+              <b>mlterm</b> encoding.  (<b>-U</b>, <b>--viaucs</b>)
+
+       OpenType Layout
+              Whether to show substituting glyphs in  open  type
+              fonts with the use of libotf or harfbuzz.  (<b>--otl</b>)
+
+       Ambiguouswidth = fullwidth (UTF8 only)
+              Processing Unicode  characters  with  EastAsianAm-
+              biguous property as fullwidth.  (<b>-a</b>, <b>--ac</b>)
+
+       Fullwidth = 2 (or 1) logical column(s)
+              Processing CJK fullwidth characters as it occupies
+              two columns logically since it occupies  two  col-
+              umns on the screen.  (<b>-Z</b>, <b>--multicol</b>)
+
+   <b>Font</b> <b>page</b>
+       Configurations  related  to appearance (or look&amp;feel) are
+       located in this page.
+
+       Font size
+              Font size in pixel. (<b>-w</b>, <b>--fontsize</b>)
+
+       Foreground color
+              Foreground color for letters. (<b>-f</b>, <b>--fg</b>)
+
+       Xft    Use xft for rendering engine. (<b>-*</b>, <b>--type</b>)
+
+       Cairo  Use cairo for rendering engine. (<b>-*</b>, <b>--type</b>)
+
+       Anti alias
+              Use anti-alias fonts by using Xft or  cairo.  (<b>-A</b>,
+              <b>--aa</b>)
+
+       Variable column width
+              Use variable column width. (<b>-V</b>, <b>--varwidth</b>)
+
+       Vertical mode
+              Vertical writing mode. (<b>-G</b>, <b>--vertical</b>)
+
+       Font name
+              Specify  XLFD,  Xft  or  cairo  font for character
+              sets.  "Select" button shows a  dialog  to  choose
+              it.
+
+       Font policy
+              Whether  to  use  unicode  fonts  (or  non-unicode
+              fonts) all  the  time  regardless  of  a  selected
+              encoding. (<b>-u</b>, <b>--onlyucsfont</b>) (<b>-n</b>, <b>--noucsfont</b>)
+
+       Unicode areas you won't convert to other charsets
+              Specify  code  point areas which are shown by uni-
+              code fonts regardless of -n option.  (<b>--ucsnoconv</b>)
+
+       Box drawing
+              Whether  to  use  a unicode font or (a dec special
+              font) all the time to draw box drawing characters.
+              (<b>--boxdraw</b>)
+
+       Line space
+              Specify  number  of extra dots between lines. (<b>-o</b>,
+              <b>--lsp</b>)
+
+       Letter space
+              Specify number of extra dots  between  characters.
+              (<b>--csp</b>)
+
+       Underline position
+              Specify the position (offset from the baseline) of
+              underline. (<b>--ulpos</b>)
+
+       Baseline position
+              Specify the  position  (offset  from  the  default
+              baseline) of baseline. (<b>--blpos</b>)
+
+       Screen size ratio against font size
+              Specify actual screen width (screen height in ver-
+              tical mode). (<b>-1</b>, <b>--wscr</b>)
+
+   <b>Background</b> <b>page</b>
+       Configurations related to background are located in  this
+       page.
+
+       Background color
+              Background color. (<b>-b</b>, <b>--bg</b>)
+
+       Picture
+              Specify  the  image file to be used for background
+              image.  (<b>-p</b>, <b>--pic</b>)
+
+       Pseudo Transparent
+              Pseudo transparent background. (<b>-t</b>, <b>--transbg</b>)
+
+       Picture/Transparent  Brightness,  Contrast,   Gamma   and
+       Alpha.
+              Brightness, contrast, gamma  alpha  of  the  back-
+              ground  image.   (<b>-H</b>,  <b>--bright</b>)  (<b>-3</b>, <b>--contrast</b>)
+              (<b>-4</b>, <b>--gamma</b>) (<b>-X</b>, <b>--alpha</b>)
+
+       Fade ratio on unfocus
+              Fading  ratio  when  window  is  unfocused.   (<b>-r</b>,
+              <b>--fade</b>)
+
+   <b>Color</b> <b>page</b>
+       Configurations related to color are located in this page.
+
+       Cursor color
+              Specify color to show cursor.  (<b>-9</b>,  <b>--crfg</b>)  (<b>-0</b>,
+              <b>--crbg</b>)
+
+       Substituting color
+              Specify color to show instead of bold, underlined,
+              italic, blinking or crossed-out attribute.  (<b>--bd</b>)
+              (<b>--ul</b>) (<b>--it</b>) (<b>--bl</b>) (<b>--co</b>)
+
+       VT basic 16 colors
+              Customize VT basic 16 text colors.
+
+   <b>Scrollbar</b> <b>page</b>
+       Configurations  related  to scrollbar are located in this
+       page.
+
+       Position
+              Specify scrollbar position. (<b>-O</b>, <b>--sbmod</b>)
+
+       View   Specify name of scrollbar. (<b>-S</b>, <b>--sbview</b>)
+
+       Foreground color
+              Specify  foreground  color  of   scrollbar.   (<b>-F</b>,
+              <b>--sbfg</b>)
+
+       Background color
+              Specify   background   color  of  scrollbar.  (<b>-B</b>,
+              <b>--sbbg</b>)
+
+   <b>Others</b> <b>page</b>
+       Other configurations are located in this page.
+
+       Tab size
+              Column number of tab. (<b>-x</b>, <b>--tw</b>)
+
+       Backlog size
+              Number of lines of backlog. (<b>-l</b>, <b>--sl</b>)
+
+       Columns/Rows
+              Number of columns and rows  of  the  screen.  (<b>-g</b>,
+              <b>--geometry</b>)
+
+       Word separators
+              Delimiter  characters  used  for  word  selection,
+              which  are  consulted  when   you   double-clicked
+              mlterm, to define what is a word.  (<b>-W</b>, <b>--sep</b>)
+
+       Double click interval (msec)
+              Doubleclick/tripleclick  interval  in millisecond.
+              (<b>-$</b>, <b>--mc</b>)
+
+       Meta key outputs
+              Behavior of META key. (<b>-k</b>, <b>--meta</b>)
+
+       Bell mode
+              Behavior when <b>mlterm</b>  receives  BEL  (0x07)  code.
+              (<b>-7</b>, <b>--bel</b>)
+
+       Save log
+              Whether  to  log  sequence  received  from  pty in
+              <a href="file://%7E/.mlterm/">~/.mlterm/</a>[pty].log  in  raw  or  ttyrec   format.
+              (<b>--logseq</b>) (<b>--seqfmt</b>)
+
+       CLIPBOARD Selection
+              Whether  to  enable  CLIPBOARD  (not only PRIMARY)
+              selection. (<b>-P</b>, <b>--clip</b>)
+
+       Local echo
+              Whether to use local echo mode. (<b>--loecho</b>)
+
+       Blink cursor
+              Whether to blink cursor. (<b>--blink</b>)
+
+       Don't scroll automatically in scrolling back.
+              Don't exit backscroll mode when  console  applica-
+              tions output something. (<b>-6</b>, <b>--stbs</b>)
+
+       Scroll by Shift+Up or Shift+Down
+              Enable  extended  keys  for  backscroll mode. (<b>-q</b>,
+              <b>--extkey</b>)
+
+       Select URI by double click
+              Select URI by double clicking it regardless of  <b>-W</b>
+              option. (<b>--uriword</b>)
+
+       Send keys to all windows
+              Whether to broadcast input or pasted characters to
+              all ptys whose value of "ignore_broadcasted_chars"
+              option is false. (<b>--bc</b>)
+
+       Trim trailing CR/LF in pasting
+              Whether  to trim new line characters at the end in
+              pasting text. (<b>--trim</b>)
+
+   <b>Buttons</b>
+       There are buttons which is independent from OK/Apply/Can-
+       cel buttons.
+
+       OK/Apply/Cancel
+              OK  button  applies  the modified configuration to
+              the  current   mlterm   session,   saves   it   to
+              "<b><a href="file://%7E/.mlterm/main">~/.mlterm/main</a></b>" configuration file, and quits the
+              GUI Configurator.  Apply button just  applies  the
+              modified  configuration to the current <b>mlterm</b> ses-
+              sion.
+
+       Font size (Larger and Smaller)
+              Change font size.
+
+       Full reset
+              Reset internal status.
+
+       Snapshot
+              Snapshot   the   screen    and    save    it    to
+              <a href="file://%7E/.mlterm/">~/.mlterm/</a>*.snp.
+
+       SSH SCP
+              Transfer a file via SCP.
+
+       PTY List
+              One  process  of <b>mlterm</b> may have multiple sessions
+              and screens.  The sessions may  or  may  not  have
+              corresponding screen, i.e., the number of sessions
+              can be more than the number of screens.  Such sit-
+              uation can be achieved by closing a part of multi-
+              ple screens from  <b>-@</b>/<b>--screens</b>  option.   In  such
+              case, the screen-less session can be designated to
+              one of screens by choosing the session (pty)  from
+              this list and push "select" button.
+
+<b>CONFIGURABLE</b> <b>MENU</b>
+       Pushing  control  key  and mouse button 1 invokes config-
+       urable menu displayer (<b>mlterm-menu</b>).  It displays a  menu
+       with  items  such  as  "Larger Font" or "UTF-8 encoding".
+       Though a default menu definition  is  supplied,  you  can
+       freely  define menu items by writing a menu configuration
+       file.  See <b>Menu</b> <b>Configuration</b> <b>File</b> section for detail.
+
+       Note this feature needs GTK+ 2.x or later.
+
+<b>MULTIPLE</b> <b>XIM</b>
+       <b>mlterm</b> can use multiple XIM  (X  Input  Method)  servers.
+       The  current  XIM  is  specified by the GUI configurator.
+       Using this feature you can input  multiple  complex  lan-
+       guages  such  as  Japanese and Korean.  Locale to be used
+       for communication with XIM can also be specified for each
+       XIM.  In the GUI configurator, you can choose one of reg-
+       istered pair of XIM and its locale or you can input  your
+       favorite XIM and its locale.
+
+       The  locale  for  XIM is only used for communication with
+       the XIM and is not related to the current <b>mlterm</b>  locale.
+       You  have  to properly configure the XIM locale only when
+       your XIM has preference  on  the  locale  of  XIM  client
+       (i.e.,  <b>mlterm</b>  in this case).  <b>mlterm</b> automatically con-
+       vert the inputed string  into  proper  encoding  and  you
+       don't have to care about it.
+
+       Of  course  the  initial  XIM is chosen by using standard
+       configuration, i.e., using <b>XMODIFIERS</b> environmental vari-
+       able.   See  <b><a href="file:///home/ken/w3m/libexec/w3m/cgi-bin/w3mman2html.cgi?X(7)">X</a></b>(7)  for detail on XIM and <b>XMODIFIERS</b> vari-
+       able.
+
+<b>DAEMON</b> <b>MODE</b>
+       When invoked with <b>-j</b>/<b>--daemon</b> command line option, mlterm
+       starts  to  listen  on  a  unix  domain socket and accept
+       requests from mlclient.
+
+       With <b>blend</b>  mlterm will exit when the final terminal win-
+       dow is closed.  But with  <b>genuine</b>, mlterm will disconnect
+       from X server windows and continues to  work.  In  latter
+       case,  it's  possible  to stop and restart a X server and
+       revive the lasting sessions on mlterm.
+
+<b>SCROLLBAR</b>
+       <b>mlterm</b> supports scrollbar API so that users  can  develop
+       scrollbar  libraries  with  arbitrary look and feel.  The
+       scrollbar libraries can be used by putting the  libraries
+       at the specified directory (determined on the compilation
+       process) and  invoke  <b>mlterm</b>  with  <b>-s</b>  <b>-S</b>  <u>name</u>  option.
+       Scrollbar  libraries named "<b>sample</b>", "<b>sample2</b>", "<b>athena</b>",
+       "<b>motif</b>", "<b>mozmodern</b>", and "<b>next</b>" are supplied.
+
+<b>ANTI-ALIAS</b>
+       <b>mlterm</b> can use  True  Type  fonts  using  -A  option  via
+       FreeType   library   when   it  has  been  compiled  with
+       anti-alias option.
+
+       Note this  feature  needs  XFree86  4.0.2  or  above  and
+       FreeType 2.0.2 or above.
+
+<b>WALLPAPER</b>
+       <b>mlterm</b>  can use background image (as known as wallpaper),
+       by using <b>-p</b>/<b>--pic</b>  option.   You  can  also  specify  the
+       brightness of the image by using <b>-H</b>/<b>--bright</b> option.
+
+       Note this feature needs gdk-pixbuf.
+
+<b>MULTIPLE</b> <b>PTY</b>
+       This  is one of most unique features of <b>mlterm</b>.  The num-
+       ber of windows can be specified using -P option.   Typing
+       control  +  F1 opens another window which shares the same
+       process.  The maximum number of windows can be  specified
+       using --maxptys option.
+
+<b>BACKSCROLL</b> <b>MODE</b>
+       <b>mlterm</b>  enters  into backscroll mode by typing Shift + up
+       or Shift + PageUp key.  In the mode, you can use the fol-
+       lowing keys.
+
+       <b>j</b> or <b>Down</b>
+              Scroll down one line.
+
+       <b>k</b> or <b>Up</b>
+              Scroll up one line.
+
+       <b>d</b> or <b>PageDown</b>
+              Scroll down one page.
+
+       <b>u</b> or <b>PageUp</b>
+              Scroll up one page.
+
+       <b>Shift</b> + <b>space</b>
+              Initialize XIM.
+
+       <b>Shift</b> + <b>Insert</b>
+              Insert selection.
+
+       <b>Control</b> + <b>F1</b>
+              Open a new pty window.
+
+       keys defined in <b>key</b> configuration file
+              <b>PAGE_UP</b>,  <b>PAGE_DOWN</b>,  <b>SCROLL_UP</b>,  and  <b>SCROLL_DOWN</b>
+              keys are defined in the file.
+
+       other keys
+              Exit from the backscroll mode.
+
+       Please note that keys other than <b>PAGE_UP</b> and <b>PAGE_DOWN</b> in
+       <b>key</b>  configuration  file are available only when you used
+       <b>-q</b>/<b>--extkey</b> command option.
+
+<b>SELECTION</b>
+       Selection is a mechanism to be used for copy-and-paste in
+       X  Window  System.   Thus,  this section describes on so-
+       called copy-and-paste.
+
+       There are many encodings in the world.  Though  copy-and-
+       paste  needs sender and receiver and each of them can use
+       one of various encodings, <b>mlterm</b> is designed to  be  able
+       to  receive  characters from various encodings as much as
+       possible.
+
+       There are two internationalized types of selection.   One
+       is  <b>COMPOUND_TEXT</b>  is  the  another is <b>UTF8_STRING</b>.  COM-
+       POUND_TEXT is ISO2022-based and can distinguish character
+       sets  which a character belongs to.  However, the charac-
+       ter sets which  COMPOUND_TEXT  supports  are  limited  to
+       ISO8859-*  and  East  Asian character sets.  On the other
+       hand, UTF8_STRING is Unicode-based and  can  express  all
+       characters  from Unicode character set.  However, it can-
+       not distinguish characters from different character  sets
+       which  share  one  codepoint  in  Unicode, which can be a
+       problem especially for CJK Han Ideogram (in other  words,
+       Kanji, Hanji, or Hanja).  Note that UTF8_STRING is rather
+       new and can be used only with XFree86.
+
+       Though the receiver of  copy-and-paste  can  request  the
+       preferable  type of selection, the sender may not support
+       the requested type.   Thus  <b>mlterm</b>  has  to  be  able  to
+       process both of COMPOUND_TEXT and UTF8_STRING.
+
+       On  the  other  hand,  encodings supported by <b>mlterm</b> (see
+       <b>DESCRIPTION</b> section for detail) are classified into  four
+       categories;
+
+       (a) Unicode itself
+              UTF-8.
+
+       (b) subset of Unicode and ISO-2022-compliant
+              "Subset  of  Unicode"  means that Unicode supports
+              round-trip compatibility for the  encoding,  i.e.,
+              the conversion of the encoding --&gt; Unicode --&gt; the
+              encoding    doesn't    lose    any    information.
+              "ISO-2022-compliant"  means  that the encoding can
+              be regarded as a subset of ISO-2022 where  a  part
+              of ISO-2022 control codes and escape sequences are
+              not supported.  Many popular encodings  belong  to
+              this   category   such   as   ISO-8859-*,   EUC-*,
+              ISO-2022-KR, TIS-620, TCVN5712, and so on.
+
+       (c) subset of Unicode and non-ISO-2022-compliant
+              Some of popular encodings such as Shift_JIS, Big5,
+              GBK,  GB18030,  Johab,  and  so on belongs to this
+              category.
+
+       (d) not subset of Unicode
+              ISO-2022-JP, ISO-2022-JP-2, ISO-2022-JP-3, EUC-TW,
+              and so on.  All of them are ISO-2022-compliant.
+
+       Now the behavior of <b>mlterm</b> can be explained.
+
+       -------------------------------------------------------
+       encoding received selection  how to process?
+       -------------------------------------------------------
+          a     COMPOUND_TEXT       convert to Unicode
+          a     UTF8_STRING         no need for conversion
+          b     COMPOUND_TEXT       user preference *1
+          b     UTF8_STRING         convert to the encoding *2
+          c     COMPOUND_TEXT       user preference *1
+          c     UTF8_STRING         convert to the encoding *2
+          d     COMPOUND_TEXT       no need for conversion *3
+          d     UTF8_STRING         convert to the encoding *2
+       -------------------------------------------------------
+
+       *1  Characters  from  unsupported  character  sets (i.e.,
+       characters which cannot be expressed in the <b>mlterm</b> encod-
+       ing) may appear in the selection (received copy-and-paste
+       string).  If you want to  receive  characters  which  are
+       equivalent  to characters which are supported in the cur-
+       rent <b>mlterm</b> encoding (i.e., characters  which  share  the
+       same  codepoint in Unicode), you can use <b>-U</b> (or <b>--viaucs</b>)
+       option.  Otherwise,  these  characters  are  pasted  into
+       <b>mlterm</b> using ISO-2022 escape sequence (when <b>mlterm</b> encod-
+       ing is category b).  Note such ISO-2022 escape  sequences
+       are illegal in the current <b>mlterm</b> encoding and the appli-
+       cation software will need special feature to  treat  them
+       properly,  though  it  is displayed well in <b>mlterm</b>.  When
+       <b>mlterm</b> encoding is category c, such characters are simply
+       ignored (when <b>-U</b> option is not enabled).
+
+       *2  Characters  which  cannot  be  converted  into <b>mlterm</b>
+       encoding are simply ignored.
+
+       *3 Characters from unsupported  character  sets  will  be
+       pasted into <b>mlterm</b> using ISO-2022 escape sequence.
+
+<b>CONFIGURATION</b>
+       <b>mlterm</b>  loads  configuration  files  of  "<b>main</b>",  "<b>font</b>",
+       "<b>vfont</b>",   "<b>tfont</b>",   "<b>aafont</b>",   "<b>vaafont</b>",   "<b>taafont</b>",
+       "<b>color</b>", "<b>key</b>", "<b>termcap</b>", and "<b>xim</b>" on start up.  "<b>menu</b>"
+       configuration file is loaded  by  the  configurable  menu
+       displayer (<b>mlterm-menu</b>).  See the section of <b>CONFIGURABLE</b>
+       <b>MENU</b> for detail.
+
+       Configuration files for one user are  to  be  located  in
+       "<b><a href="file://%7E/.mlterm/">~/.mlterm/</a></b>"  directory, while location for configuration
+       files for all users depends on  the  compilation  option.
+       Possible     locations    are    "<b><a href="file://etc/">/etc/</a></b>",    "<b><a href="file://etc/X11/">/etc/X11/</a></b>",
+       "<b>/usr/X11R6/lib/X11/mlterm/</b>", and so on.
+
+       The names and the roles of configuration files are:
+
+       <b>main</b>   Main configuration items which can  be  overridden
+              by command line options.
+
+       <b>font</b>   Configurations for ordinary X fonts.
+
+       <b>vfont</b>  Configurations  for  ordinary  X fonts of variable
+              column width.
+
+       <b>tfont</b>  Configurations for ordinary X  fonts  of  vertical
+              writing.
+
+       <b>aafont</b> Configurations for Xft or cairo fonts.
+
+       <b>vaafont</b>
+              Configurations  for Xft or cairo fonts of variable
+              column width.
+
+       <b>taafont</b>
+              Configurations for Xft or cairo fonts of  vertical
+              writing.
+
+       <b>color</b>  Designate concrete RGB values for color names.
+
+       <b>key</b>    Key definitions for special features of <b>mlterm</b>.
+
+       <b>termcap</b>
+              Define  <b>mlterm</b>'s  behaviors which affects terminfo
+              and termcap definition.
+
+       <b>xim</b>    Define preset locales for X  Input  Methods  which
+              are  shown in the GUI configurator.  Of course you
+              can input XIM names and locales for the  GUI  con-
+              figurator  which are not listed in this configura-
+              tion file.
+
+       <b>menu</b>   Define menu items which is  displayed  by  config-
+              urable menu displayer.
+
+       The  contents  of  these  configuration files (other than
+       <b>menu</b>) consist of  lines  of  "<u>key</u>=<u>value</u>"  format.   Lines
+       beginning with "<b>#</b>" are ignored.
+
+       Note  that the configuration files are changed since ver-
+       sion 1.9.44.
+
+   <b>Main</b> <b>Configuration</b> <b>File</b>
+       This file contains main configuration items which can  be
+       overridden  by command line options.  The main configura-
+       tion file "<b>main</b>" has  the  following  keys.   Parentheses
+       show  the  corresponding  command-line  options.  See the
+       explanation on these command-line options for detail.
+
+       <b>auto_detect_encodings=</b><u>value</u> (<b>--ade</b>)
+              Specify  character  encodings  detected  automati-
+              cally.
+
+       <b>allow_osc52=</b><u>bool</u> (<b>--osc52</b>)
+              Allow  access  to  clipboard(selection)  by OSC 52
+              sequence.
+
+       <b>allow_scp=</b><u>bool</u> (<b>--scp</b>)
+              Allow OSC 5379 scp.
+
+       <b>allow_change_shortcut=</b><u>bool</u> (<b>--shortcut</b>)
+              Allow dynamic change of shortcut keys by OSC  5379
+              set_shortcut sequence.
+
+       <b>alpha=</b><u>name</u> (<b>-X</b>, <b>--alpha</b>)
+              Alpha in pseudo or true transparent.
+
+       <b>app_name=</b><u>name</u> (<b>-N</b>, <b>--name</b>)
+              Application      name.     (WM_CLASS     property)
+              <b>auto_restart=</b><u>bool</u> (<b>--restart</b>) Restart mlterm  with
+              all  opened  ptys  except  ssh if SIGSEGV, SIGBUS,
+              SIGFPE or SIGILL is received.  If you want to  get
+              core image, specify "false".
+
+       <b>baseline_offset=</b><u>value</u> (<b>--blpos</b>)
+              Specify  the position of baseline.  The default is
+              <b>0</b>.
+
+       <b>bel_mode=</b><u>mode</u> (<b>-7</b>, <b>--bel</b>)
+              Behavior when BEL (0x07) is received.
+
+       <b>bd_color=</b><u>value</u> (<b>--bd</b>)
+              Specify the color to use to display  bold  charac-
+              ters.
+
+       <b>bl_color=</b><u>value</u> (<b>--bl</b>)
+              Specify the color to use to display blinking char-
+              acters.
+
+       <b>bg_color=</b><u>color</u> (<b>-b</b>, <b>--bg</b>)
+              Background color.
+
+       <b>bidi_mode=</b><u>mode</u> (<b>--bimode</b>)
+              Specify bidi mode.
+
+       <b>bidi_separators=</b><u>characterlist</u> (<b>--bisep</b>)
+              Specify separator characters  (\x00-\xFF  is  also
+              available) to render bidi text.
+
+       <b>big5_buggy=</b><u>bool</u> (<b>-5</b>, <b>--big5bug</b>)
+              Support  Big5  CTEXT  bugs (which exist in XFree86
+              4.1.0 or before).
+
+       <b>blink_cursor=</b><u>bool</u> (<b>--blink</b>)
+              Blink cursor.
+
+       <b>box_drawing_font=</b><u>value</u> (<b>--boxdraw</b>)
+              Use  either  unicode  font  or  DEC  Special  font
+              forcibly to draw box-drawing characters.
+
+       <b>borderless=</b><u>bool</u> (<b>-&amp;</b>, <b>--borderless</b>)
+              Don't draw window decorations.
+
+       <b>brightness=</b><u>value</u> (<b>-H</b>, <b>--brightness</b>)
+              Specify  the amount of darkening or lightening the
+              background image.
+
+       <b>broadcast=</b><u>bool</u> (<b>-H</b>, <b>--bc</b>)
+              Whether to broadcast input or pasted characters to
+              all ptys whose value of "ignore_broadcasted_chars"
+              option is false.
+
+       <b>cipher_list</b>=<u>value</u> (<b>--ciphlist</b>)
+              Specify  ciphers  (comma   separated   list)   for
+              encrypting the ssh session.
+
+       <b>co_color=</b><u>value</u> (<b>--co</b>)
+              Specify  the  color  to use to display crossed-out
+              characters.
+
+       <b>col_size_of_width_a=</b><u>value</u> (<b>-a</b>, <b>--ac</b>)
+              Number of columns of Unicode characters with East-
+              AsianAmbiguous property.
+
+       <b>compose_dec_special_font=</b><u>bool</u> (<b>-Y</b>, <b>--decsp</b>)
+              Compose line drawing character set.
+
+       <b>console_encoding=</b><u>encoding</u>  (<b>--ckm</b>) (Available for mlterm-
+       con)
+              Specify  encoding  of the console where mlterm-con
+              works.
+
+       <b>console_sixel_colors=</b><u>value</u> (<b>--csc</b>) (Available for mlterm-
+       con)
+              Specify the number of sixel graphics colors of the
+              console where mlterm-con works.
+
+       <b>contrast=</b><u>value</u> (<b>-3</b>, <b>--contrast</b>)
+              Contrast of background image in percent.
+
+       <b>cursor_bg_color=</b><u>color</u> (<b>-0</b>, <b>--crbg</b>)
+              Specify background color for cursor.
+
+       <b>cursor_fg_color=</b><u>color</u> (<b>-9</b>, <b>--crfg</b>)
+              Specify foreground color for cursor.
+
+       <b>daemon_mode=</b><u>mode</u> (<b>-j</b>, <b>--daemon</b>)
+              Start as a daemon process.
+
+       <b>default_cell_size=</b><u>value</u>  (<b>--csz</b>)  (Available  for mlterm-
+       con)
+              Specify  cell  width  and  height  in  pixel which
+              mlterm-con uses if it doesn't get them.
+
+       <b>default_server=</b><u>value</u> (<b>--serv</b>)
+              Specify a host you want to connect via ssh etc.
+
+       <b>depth</b>=<u>value</u> (<b>--depth</b>)
+              Specify visual depth.
+
+       <b>display=</b><u>value</u> (<b>-d</b>, <b>--display</b>)
+              Specify X server to connect.
+
+       <b>emoji_path=</b><u>value</u> (<b>--emoji</b>)
+              Specify path of  a  directory  where  emoji  image
+              files exist or a open type emoji font to show uni-
+              code emoji characters.
+
+       <b>encoding=</b><u>encoding</u> (<b>-E</b>, <b>--km</b>)
+              Specify encoding.
+
+       <b>exit_backscroll_by_pty=</b><u>bool</u> (<b>--exitbs</b>)
+              Exit backscroll mode on receiving data from pty.
+
+       <b>fade_ratio=</b><u>ratio</u> (<b>-r</b>, <b>--fade_ratio</b>)
+              Specify fading ratio when window is unfocused.
+
+       <b>fb_resolution=</b><u>ratio</u>   (Available   for    mlterm-fb    on
+       NetBSD/x68k or OpenBSD)
+              Specify the screen  resolution  and  depth.  (e.g.
+              768x512x4)
+
+       <b>fg_color=</b><u>color</u> (<b>-f</b>, <b>--fg</b>)
+              Foreground color.
+
+       <b>fontsize=</b><u>value</u> (<b>-w</b>, <b>--fontsize</b>)
+              Font size in pixel.
+
+       <b>font_size_range=</b><u>range</u> (<b>-R</b>, <b>--fsrange</b>)
+              Range of size of usable fonts.
+
+       <b>gamma=</b><u>value</u> (<b>-4</b>, <b>--gamma</b>)
+              Gamma of background image in percent.
+
+       <b>geometry=</b><u>value</u> (<b>-g</b>, <b>--geometry</b>)
+              Specify size and position of the window; see <b><a href="file:///home/ken/w3m/libexec/w3m/cgi-bin/w3mman2html.cgi?X(7)">X</a></b>(7).
+
+       <b>hide_underline=</b><u>bool</u> (<b>--noul</b>)
+              Don't draw underline.
+
+       <b>icon_name=</b><u>name</u> (<b>-I</b>, <b>--icon</b>)
+              Icon name.
+
+       <b>icon_path=</b><u>path</u>
+              Path for the image file to be used as window icon.
+
+       <b>ignore_broadcasted_chars=</b><u>bool</u> (<b>--ibc</b>)
+              Whether to ignore broadcasted characters.
+
+       <b>inner_border=</b><u>value</u> (<b>--border</b>)
+              Specify inner border width.
+
+       <b>input_method</b>= <u>input</u> <u>method</u> : <b>[</b> <u>arguments</u> <b>...</b> <b>]</b> (<b>-M</b>, <b>--im</b>)
+              Specify input method.
+
+       <b>iso88591_font_for_usascii=</b><u>bool</u> (<b>-8</b>, <b>--88591</b>)
+              Use  ISO8859-1  fonts for US-ASCII part of various
+              encodings.
+
+       <b>it_color=</b><u>value</u> (<b>--it</b>)
+              Specify the color to use to display italic charac-
+              ters.
+
+       <b>layout_inner_border=</b><u>value</u> (<b>--lborder</b>)
+              Specify inner border width of a layout manager.
+
+       <b>leftward_double_drawing=</b><u>bool</u> (<b>--ldd</b>)
+              Embold  glyphs  by drawing doubly at 1 pixel left-
+              ward instead of rightward.
+
+       <b>letter_space=</b><u>value</u> (<b>--csp</b>)
+              Specify number  of  extra  dots  between  letters.
+              (ignored  if  you specify <b>--V</b> option.)  If you use
+              multiple fonts whose widths are different,  adjust
+              this option.
+
+       <b>line_space=</b><u>value</u> (<b>-o</b>, <b>--lsp</b>)
+              Specify number of extra dots between lines. (Nega-
+              tive value is available.)   If  you  use  multiple
+              fonts  whose  heights  are  different, adjust this
+              option.
+
+       <b>locale=</b><u>value</u> (<b>--locale</b>)
+              Specify locale.
+
+       <b>local_echo_wait=</b><u>value</u> (<b>--lew</b>)
+              Specify time (msec) to keep local echo mode.
+
+       <b>logging_msg=</b><u>bool</u> (<b>--logmsg</b>)
+              Enable   logging    messages    of    mlterm    to
+              <a href="file://%7E/.mlterm/msg">~/.mlterm/msg</a>[pid].log.
+
+       <b>logging_vt_seq=</b><u>bool</u> (<b>--logseq</b>)
+              Enable      logging     vt100     sequences     to
+              <a href="file://%7E/.mlterm/">~/.mlterm/</a>[device].log.
+
+       <b>logsize=</b><u>value</u> (<b>-l</b>, <b>--sl</b>)
+              Specify number of lines of backlog or "unlimited".
+
+       <b>max_ptys=</b><u>value</u> (<b>--maxptys</b>)
+              Specify  maximum  number  of ptys (sessions) to be
+              opened simultaneously.
+
+       <b>meta_prefix=</b><u>value</u> (<b>--metaprefix</b>)
+              Specify prefix characters in pressing meta key  if
+              mod_meta_mode = esc.
+
+       <b>mod_meta_mode=</b><u>mode</u> (<b>-k</b>, <b>--meta</b>)
+              Behavior of META key.
+
+       <b>mod_meta_key=</b><u>value</u> (<b>-K</b>, <b>--metakey</b>)
+              Specify a key to be regarded as META.
+
+       <b>not_use_unicode_font=</b><u>bool</u> (<b>-n</b>, <b>--noucsfont</b>)
+              Use non-Unicode fonts even when <b>mlterm</b> encoding is
+              UTF-8.
+
+       <b>only_use_unicode_font=</b><u>bool</u> (<b>-u</b>, <b>--onlyucsfont</b>)
+              Use Unicode fonts even when <b>mlterm</b> encoding is not
+              UTF-8.
+
+       <b>ot_features=</b><u>value</u> (--gft)
+              Specify features of glyph substitution.
+
+       <b>ot_features=</b><u>value</u> (--gst)
+              Specify script of glyph substitution.
+
+       <b>parent_window=</b><u>value</u> (<b>--parent</b>)
+              Specify parent Window ID.
+
+       <b>primary_da=</b><u>value</u> (<b>--da1</b>)
+              Specify primary device attributes string.
+
+       <b>receive_directory=</b><u>value</u> (<b>--recvdir</b>)
+              Specify  the  directory to save received files via
+              zmodem or scp.
+
+       <b>receive_string_via_ucs=</b><u>bool</u> (<b>-U</b>, <b>--viaucs</b>)
+              If the received  selection  (i.e.,  copy-and-paste
+              strings)  or  strings  received  from  XIM  is not
+              UTF8_STRING type, convert it into Unicode and then
+              to  the current mlterm encoding, in order to iden-
+              tify equivalent characters (i.e., characters which
+              share  the same codepoint in Unicode) from various
+              character sets.  See <b>SELECTION</b> section  below  for
+              detail.
+
+       <b>regard_uri_as_word=</b><u>bool</u> (<b>--uriword</b>)
+              Select URI by double clicking it regardless of --W
+              option.
+
+       <b>rv_color=</b><u>value</u> (<b>--rv</b>)
+              Specify the color to use to display reverse  char-
+              acters.
+
+       <b>sb_bg_color=</b><u>color</u> (<b>-B</b>, <b>--sbbg</b>)
+              Background color for scrollbar.
+
+       <b>sb_fg_color=</b><u>color</u> (<b>-F</b>, <b>--sbfg</b>)
+              Foreground color for scrollbar.
+
+       <b>screen_width_ratio=</b><u>value</u> (<b>-1</b>, <b>--wscr</b>)
+              Specify actual screen width (screen height in ver-
+              tical mode).
+
+       <b>scroll_on_resizing=</b><u>bool</u> (<b>--sr</b>)
+              Scroll out all lines on resizing.
+
+       <b>scrollbar_mode=</b><u>mode</u> (<b>-O</b>, <b>--sbmod</b>)
+              Specify scrollbar position.
+
+       <b>scrollbar_view_name=</b><u>name</u> (<b>-S</b>, <b>--sbview</b>)
+              Specify name of scrollbar.
+
+       <b>secondary_da=</b><u>value</u> (<b>--da2</b>)
+              Specify secondary device attributes string.
+
+       <b>separate_wall_picture=</b><u>bool</u> (<b>--multivram</b>)  (Available  for
+       mlterm-fb on NetBSD/x68k)
+              Draw the wall picture  on  Text  VRAM  instead  of
+              Graphic   VRAM   to  improve  the  performance  of
+              scrolling.  <b>ssh_auto_reconnect</b>=<u>bool</u> (<b>--rcn</b>) Recon-
+              nect  to  ssh  server  automatically in unexpected
+              disconnection.
+
+       <b>ssh_keepalive_interval</b>=<u>value</u> (<b>--keepalive</b>)
+              Specify interval seconds to send keepalive message
+              to ssh server.
+
+       <b>ssh_public_key</b>=<u>value</u> (<b>--pubkey</b>)
+              Specify public key file for ssh connection.
+
+       <b>ssh_private_key</b>=<u>value</u> (<b>--privkey</b>)
+              Specify private key file for ssh connection.
+
+       <b>ssh_x11_forwarding</b>=<u>bool</u> (<b>--x11</b>)
+              Enable x11 forwarding for ssh connection.
+
+       <b>start_with_local_pty</b> (<b>--slp</b>) (Available for Android)
+              Start mlterm with local pty instead of ssh connec-
+              tion.
+
+       <b>step_in_changing_font_size</b> (<b>-z</b>, <b>--largesmall</b>)
+              Specify  changing  size  when  font  size  becomes
+              larger or smaller.
+
+       <b>tabsize=</b><u>value</u> (<b>-x</b>, <b>--tw</b>)
+              Specify tab width.
+
+       <b>termtype=</b><u>string</u> (<b>-y</b>, <b>--term</b>)
+              Terminal type.
+
+       <b>title=</b><u>name</u> (<b>-T</b>, <b>--title</b>)
+              Title name.
+
+       <b>trim_trailing_newline_in_pasting=</b><u>bool</u> (<b>--trim</b>)
+              Trim  new  line  characters  at the end in pasting
+              text.
+
+       <b>type_engine=</b><u>value</u> (<b>-*</b>, <b>--type</b>)
+              Rendering engine for drawing fonts.
+
+       <b>ul_color=</b><u>value</u> (<b>--ul</b>)
+              Specify the color to  use  to  display  underlined
+              characters.
+
+       <b>underline_offset=</b><u>value</u> (<b>--ulpos</b>)
+              Specify the position (offset from the baseline) of
+              underline.  The default is <b>0</b>.
+
+       <b>unicode_full_width_areas</b>=<u>value</u> (<b>--fullwidth</b>)
+              Force full width regardless of EastAsianWidth.txt.
+
+       <b>unicode_half_width_areas</b>=<u>value</u> (<b>--halfwidth</b>)
+              Force half width regardless of EastAsianWidth.txt.
+
+       <b>unicode_noconv_areas</b>=<u>value</u> (<b>--ucsnoconv</b>)
+              Use  unicode  fonts  partially  regardless  of  -n
+              option.
+
+       <b>use_aafont=</b><u>bool</u>  (<b>--aafont</b>)  (Available  for mlterm-fb or
+       mlterm-wl)
+              Use  <a href="file://%7E/.mlterm/">~/.mlterm/</a>*aafont configurations with the use
+              of fontconfig.
+
+       <b>use_auto_detect=</b><u>bool</u> (<b>--auto</b>)
+              Automatically detect appropriate character  encod-
+              ing    from    the    encodings    specified    by
+              auto_detect_encodings option.
+
+       <b>use_alt_buffer=</b><u>bool</u> (<b>--altbuf</b>)
+              Use alternate screen buffer.
+
+       <b>use_ansi_colors=</b><u>bool</u> (<b>--colors</b>)
+              Recognize ANSI color change escape sequences.
+
+       <b>use_anti_alias=</b><u>bool</u> (<b>-A</b>, <b>--aa</b>)
+              Use anti alias font.
+
+       <b>use_bold_font=</b><u>bool</u> (<b>--bdfont</b>)
+              Use  bold  font  for  characters  with  the   bold
+              attribute.
+
+       <b>use_clipboard=</b><u>bool</u> (<b>-P</b>, <b>--clip</b>)
+              Use CLIPBOARD (not only PRIMARY) selection.
+
+       <b>use_combining=</b><u>bool</u> (<b>-m</b>, <b>--comb</b>)
+              Enable combining characters.
+
+       <b>use_cp932_ucs_for_xft=</b><u>bool</u> (<b>-c</b>, <b>--cp932</b>)
+              Use CP932 - UCS mapping for displaying JISX0208 by
+              Xft or cairo.
+
+       <b>use_dynamic_comb=</b><u>bool</u> (<b>-J</b>, <b>--dyncomb</b>)
+              Enable dynamic character combining.
+
+       <b>use_extended_scroll_shortcut=</b><u>bool</u> (<b>-q</b>, <b>--extkey</b>)
+              Enable extended short cut keys for scrolling.
+
+       <b>use_ctl=</b><u>bool</u> (<b>-C</b>, <b>--ctl</b>)
+              Enable complex text layouting on UTF8 encoding.
+
+       <b>use_ot_layout=</b><u>bool</u> (--otl)
+              Whether to show substituting glyphs in  open  type
+              fonts with the use of libotf or harfbuzz.
+
+       <b>use_italic_font=</b><u>bool</u> (<b>--itfont</b>)
+              Use  italic  font  for  characters with the italic
+              attribute.
+
+       <b>use_local_echo=</b><u>bool</u> (<b>--loecho</b>)
+              Use local echo mode.
+
+       <b>use_login_shell=</b><u>bool</u> (<b>-L</b>, <b>--ls</b>)
+              Whether to use login shell or not.
+
+       <b>use_multi_column_char=</b><u>bool</u> (<b>-Z</b>, <b>--multicol</b>)
+              Process full width characters.
+
+       <b>use_point_size=</b><u>bool</u> (<b>--point</b>)
+              Treat the value of -w option as point  instead  of
+              pixel.
+
+       <b>use_mdi=</b><u>bool</u> (<b>-s</b>, <b>--mdi</b>)
+              Use multiple document interface.
+
+       <b>use_transbg=</b><u>bool</u> (<b>-t</b>, <b>--transbg</b>)
+              Use pseudo transparent background.
+
+       <b>use_urgent_bell=</b><u>bool</u> (<b>--urgent</b>)
+              Draw the user's attention when making a bell sound
+              in the unfocused window.
+
+       <b>use_variable_column_width=</b><u>bool</u> (<b>-V</b>, <b>--varwidth</b>)
+              Use variable column width.
+
+       <b>use_vertical_cursor=</b><u>value</u> (<b>-Q</b>, <b>--vcur</b>)
+              Use cursor movement for vertical writing.
+
+       <b>use_xim=</b><u>bool</u> (<b>-i</b>, <b>--xim</b>)
+              Use XIM (X Input Method).
+
+       <b>vt_color_mode=</b><u>mode</u> (<b>--vtcolor</b>)
+              Set vt color mode.
+
+       <b>vertical_mode=</b><u>value</u> (<b>-G</b>, <b>--vertical</b>)
+              Use vertical writing.
+
+       <b>wall_picture=</b><u>path</u> (<b>-p</b>, <b>--pic</b>)
+              Path for wallpaper image.
+
+       <b>word_separators=</b><u>characterlist</u> (<b>-W</b>, <b>--sep</b>)
+              Delimiter characters (\xNN is also available) used
+              for word selection.
+
+       <b>working_directory=</b><u>value</u> (<b>--working-directory</b>)
+              Working directory.
+
+       <b>static_backscroll_mode=</b><u>bool</u> (<b>-6</b>, <b>--stbs</b>)
+              Don't  exit  backscroll mode when console applica-
+              tions output something.
+
+       <b>vt_seq_format=</b><u>value</u> (<b>--seqfmt</b>)
+              Specify the format of logging vt100 sequence.
+
+   <b>Font</b> <b>Configuration</b> <b>Files</b>
+       The font configuration files  "<b>font</b>",  "<b>vfont</b>",  "<b>tfont</b>",
+       "<b>aafont</b>",  "<b>vaafont</b>",  and  "<b>taafont</b>"  have the following
+       keys.
+
+       <b>DEFAULT=</b><u>font</u>
+       <b>DEC_SPECIAL=</b><u>font</u>
+       <b>ISO8859_</b><u>n</u><b>=</b><u>font</u>
+       <b>TIS620=</b><u>font</u>
+       <b>ISCII_HINDI=</b><u>font</u>
+       <b>ISCII_MALAYALAM=</b><u>font</u>
+       <b>ISCII_ASSAMESE=</b><u>font</u>
+       <b>ISCII_BENGALI=</b><u>font</u>
+       <b>ISCII_GUJARATI=</b><u>font</u>
+       <b>ISCII_KANNADA=</b><u>font</u>
+       <b>ISCII_MALAYALAM=</b><u>font</u>
+       <b>ISCII_ORIYA=</b><u>font</u>
+       <b>ISCII_PUNJABI=</b><u>font</u>
+       <b>ISCII_TAMIL=</b><u>font</u>
+       <b>ISCII_TELUGU=</b><u>font</u>
+       <b>VISCII=</b><u>font</u>
+       <b>KOI8_R=</b><u>font</u>
+       <b>KOI8_U=</b><u>font</u>
+       <b>TCVN5712=</b><u>font</u>
+       <b>JISX0201_ROMAN=</b><u>font</u>
+       <b>JISX0201_KATA=</b><u>font</u>
+       <b>JISX0208_1978=</b><u>font</u>
+       <b>JISX0208_1983=</b><u>font</u>
+       <b>JISX0208_1990=</b><u>font</u>
+       <b>JISX0213_2000_1=</b><u>font</u>
+       <b>JISX0213_2000_2=</b><u>font</u>
+       <b>KSX1001_1997=</b><u>font</u>
+       <b>UHC=</b><u>font</u> (not used)
+       <b>JOHAB=</b><u>font</u> (not used)
+       <b>GB2312_80=</b><u>font</u>
+       <b>GBK=</b><u>font</u>
+       <b>BIG5=</b><u>font</u>
+       <b>HKSCS=</b><u>font</u>
+       <b>CNS11643_1992_</b><u>n</u><b>=</b><u>font</u>
+       <b>ISO10646_UCS4_1=</b><u>font</u>
+       <b>ISO10646_UCS4_1_FULLWIDTH=</b><u>font</u>
+       <b>U+XXXX-XXXX=</b><u>font</u>
+              Specify fonts for  corresponding  character  sets.
+              The  format  is  different between "<b>font</b>", "<b>vfont</b>"
+              "<b>tfont</b>" files and  "<b>aafont</b>",  "<b>vaafont</b>"  "<b>taafont</b>"
+              files.
+
+              In "<b>font</b>", "<b>vfont</b>", "<b>tfont</b>" files, "<u>font</u>" is spec-
+              ified in "<u>NAME</u>:<u>PERCENT</u>"  format  where  "<u>SIZE</u>"  is
+              font  size  in  pixel, and "<u>NAME</u>" is XLFD or alias
+              names of X fonts.  If "<u>NAME</u>" contains "%d", it  is
+              replaced  by  an  appropriate  font  size  number.
+              ":<u>PERCENT</u>" is multiplied by font size and  decides
+              character width of a font.  If ":<u>PERCENT</u>" is omit-
+              ted, max font width is used for it.
+
+              In "<b>aafont</b>", "<b>vaafont</b>", "<b>taafont</b>" files, "<u>font</u>" is
+              specified  in  "<u>FAMILY</u>  <u>WEIGHT</u> <u>SLANT</u> <u>SIZE</u>:<u>PERCENT</u>"
+              format.  ":<u>PERCENT</u>" is multiplied by font size and
+              decides  character width of a font.  If ":<u>PERCENT</u>"
+              is omitted, 'M' width is used for it.
+
+              <b>mlfc</b> command generates <a href="file://%7E/.mlterm/aafont">~/.mlterm/aafont</a>  automati-
+              cally.
+
+       <u>charset</u><b>_BOLD=</b><u>font</u>
+              Specify boldface fonts.
+
+       <u>charset</u><b>_ITALIC=</b><u>font</u>
+              Specify italic fonts.
+
+       <u>charset</u><b>_BOLD_ITALIC=</b><u>font</u>
+              Specify bold-italic fonts.
+
+       <u>U+XXXX-XXXX=font</u>
+              Specify  which  fonts  to  use  for unicode ranges
+              except U+00-7f.
+
+   <b>Color</b> <b>Configuration</b> <b>File</b>
+       The color configuration file "<b>color</b>"  has  the  following
+       key.
+
+       <u>COLORNAME</u>=<u>RGB</u>
+              Assign  a  concrete  color for the name <u>COLORNAME</u>.
+              Default colors used  by  mlterm  are  <b>black</b>,  <b>red</b>,
+              <b>green</b>,  <b>yellow</b>,  <b>blue</b>,  <b>magenta</b>,  <b>cyan</b>, and <b>white</b>.
+              and can be overridden here.
+
+              For highlighted colors, a name with  "hl_"  prefix
+              will  be  automatically  searched.   i.e. for bold
+              read character, "hl_red" is  searched  instead  of
+              "red".
+
+              <b>17</b>  -  <b>230</b> and <b>232</b> - <b>255</b> in 256 colors can be also
+              overridden.
+
+              The  format  of  <u>RGB</u>  is  either  "<u>RRRR</u><b>-</b><u>GGGG</u><b>-</b><u>BBBB</u>"
+              (where  <u>RRRR</u>, <u>GGGG</u>, and <u>BBBB</u> are hexadecimal value
+              from   0   to   ffff),   "<b>#</b><u>RRGGBB</u>",   "<b>#</b><u>RRGGBBAA</u>",
+              "<u>rgb:RR/GG/BB</u>" or "<u>rgba:RR/GG/BB/AA</u>"(where <u>RR</u>, <u>GG</u>,
+              and <u>BB</u> are hexadecimal value from 00 to ff).
+
+              If mlterm failed to parse a entry, the color  will
+              be regarded as black.
+
+   <b>XIM</b> <b>Configuration</b> <b>File</b>
+       The X Input Methods configuration file "<b>xim</b>" has the fol-
+       lowing format
+
+       <u>XIM</u>=<u>locale</u>
+
+       where <u>XIM</u> is XIM name and <u>locale</u> is locale name used  for
+       communication with the XIM server.  For example,
+       kinput2=ja_JP.eucJP
+       Ami=ko_KR.eucKR
+       xcin-zh_CN.GB2312=zh_CN.GB2312
+       These settings are used to create list of XIMs by the GUI
+       configurator.  Though a XIM which is not listed  in  this
+       file  can't be selected from the list, it can be selected
+       by specifying its name directly.
+
+   <b>Feature</b> <b>Key</b> <b>Configuration</b> <b>File</b>
+       The feature key configuration file "<b>key</b>" has the  follow-
+       ing format.
+
+       <u>KEY</u>=<u>FEATURE</u>
+
+       Here,  the  format for <u>KEY</u> is "<u>(MASK</u><b>+</b><u>)KEY</u>", where <u>MASK</u> is
+       one of <b>Control</b>, <b>Shift</b>, <b>Mod1</b>, <b>Mod2</b>, <b>Mod3</b>, <b>Mod4</b>, <b>Mod5</b>,  <b>Mod</b>
+       and  <b>Alt</b>.   You  can  specify multiple "<u>MASK</u><b>+</b>"s.  You can
+       search spellings  of  <u>KEY</u>  by  using  <b><a href="file:///home/ken/w3m/libexec/w3m/cgi-bin/w3mman2html.cgi?xev(1)">xev</a></b>(1)  command  or
+       searching           keysym           macros          from
+       <b>/usr/X11R6/include/X11/keysymdefs.h</b>  (or  the  equivalent
+       file  in  your X11 include directory) and omit the prefix
+       <b>XK_</b>.  Double quotation marks are  not  needed.   You  can
+       specify  Button1, Button2, Button3, Button4 or Button5 as
+       <u>KEY</u>.
+
+       <u>FEATURE</u>  is  one  of  <b>IM_HOTKEY</b>,  <b>EXT_KBD</b>,   <b>OPEN_SCREEN</b>,
+       <b>NEW_PTY</b>,  <b>OPEN_PTY</b>,  <b>NEXT_PTY</b>,  <b>PREV_PTY</b>,  <b>VSPLIT_SCREEN</b>,
+       <b>HSPLIT_SCREEN</b>,  <b>CLOSE_SCREEN</b>,  <b>NEXT_SCREEN</b>,  <b>PREV_SCREEN</b>,
+       <b>HEXPAND_SCREEN</b>,   <b>VEXPAND_SCREEN</b>,   <b>PAGE_UP</b>,   <b>PAGE_DOWN</b>,
+       <b>SCROLL_UP</b>,    <b>SCROLL_DOWN</b>,    <b>INSERT_SELECTION</b>,    <b>RESET</b>,
+       <b>"</b><u>STRING</u><b>"</b>, or <b>"proto:</b><u>STRING</u><b>"</b>.
+
+       <b>IM_HOTKEY</b>
+              Switch  conversion  mode  of  m17n library and kdb
+              input methods. (default <b>UNUSED</b>)
+
+       <b>EXT_KBD</b>
+              Activate or deactivate kbd  input  method.   (This
+              feature was obsoleted by IM_HOTKEY)
+
+       <b>OPEN_SCREEN</b>
+              Open new pty in new screen (default <b>Ctrl+F1</b>).
+
+       <b>NEW_PTY</b>
+              Same as OPEN_SCREEN (obsoleted).
+
+       <b>OPEN_PTY</b>
+              Open  new pty in current screen (default <b>Ctrl+F2</b>).
+
+       <b>NEXT_PTY</b>
+              Switch to a next free pty (default <b>Ctrl+F3</b>).
+
+       <b>PREV_PTY</b>
+              Switch to a previous free pty (default <b>Ctrl+F4</b>).
+
+       <b>HSPLIT_SCREEN</b>
+              Open new pty in horizontally split screen (default
+              <b>Shift+F1</b>).
+
+       <b>VSPLIT_SCREEN</b>
+              Open  new  pty in vertically split screen (default
+              <b>Shift+F2</b>).
+
+       <b>NEXT_SCREEN</b>
+              Switch  to  a  next  unfocused   screen   (default
+              <b>Shift+F3</b>).
+
+       <b>PREV_SCREEN</b>
+              Switch  to  a  previous  unfocused screen (default
+              <b>Shift+F4</b>).
+
+       <b>CLOSE_SCREEN</b>
+              Close current screen (default <b>Shift+F5</b>).
+
+       <b>HEXPAND_SCREEN</b>
+              Expand  current   screen   horizontally   (default
+              <b>Shift+F6</b>).
+
+       <b>VEXPAND_SCREEN</b>
+              Expand    current   screen   vertically   (default
+              <b>Shift+F7</b>).
+
+       <b>PAGE_UP</b>
+              Start backscroll  mode  and  scroll  up  one  page
+              (default <b>Shift+Prior</b>).
+
+       <b>PAGE_DOWN</b>
+              Scroll down one page.  (default <b>Shift+Next</b>).
+
+       <b>SCROLL_UP</b>
+              Start  backscroll  mode  and scroll up by one line
+              (default <b>Shift+Up</b>).  Note this key is enabled only
+              when <b>-q</b>/<b>--extkey</b> option is used.
+
+       <b>SCROLL_DOWN</b>
+              Scroll  down  one line (default <b>Shift+Down</b>).  Note
+              this key is enabled only when  <b>-q</b>/<b>--extkey</b>  option
+              is used.
+
+       <b>INSERT_SELECTION</b>
+              Insert selection (default <b>Shift+Insert</b>).
+
+       <b>RESET</b>  Reset terminal (default <b>Pause</b>).
+
+       <b>"</b><u>STRING</u><b>"</b>
+              The specified string is issued when the <u>KEY</u> key is
+              pressed.   Double  quotation  marks  are  required
+              around  the  <u>STRING</u>.  Note that you cannot control
+              the status of mlterm by sending  terminal  control
+              codes    such   as   <b>"\x1b]5379;encoding=utf8\x0a"</b>
+              because the code sequence will be caught  by  your
+              shell  (or  something  running on it).  To deliver
+              control  sequences   to   mlterm   directly,   use
+              <b>"proto:</b><u>STRING</u><b>"</b> instead.
+
+       <b>"proto:</b><u>STRING</u><b>"</b>
+              The specified string is assumed to <b>mlterm</b>'s origi-
+              nal control sequence. A list of  sequences  should
+              be   found   in   <b>doc/en/PROTOCOL</b>.   For  example,
+              <b>"proto:encoding=utf8"</b> means changing  the  current
+              character encoding to UTF-8.
+
+       <b>"exesel:</b><u>STRING</u><b>"</b>
+              The specified string is assumed to a command to be
+              executed with selected strings as arguments.  "%s"
+              in  a  command  string  is  replaced  by  selected
+              strings.  For example,  <b>"exesel:mlclient</b>  <b>-e</b>  <b>w3m"</b>
+              means executing "mlclient -e w3m [selected text]".
+
+       <b>"menu:</b><u>STRING</u><b>"</b>
+              The specified string is assumed to a configuration
+              program    to    be    executed.    For   example,
+              <b>"menu:mlterm-menu"</b> means executing mlterm-menu.
+
+   <b>Terminal</b> <b>Behavior</b> <b>Configuration</b> <b>File</b>
+       This  configuration  file  determines  the  behaviors  of
+       <b>mlterm</b>  that  should match the definition of terminfo and
+       termcap.  In principle, this file should  not  be  edited
+       and,  instead,  you should choose a proper value for <b>TERM</b>
+       variable (i.e., proper terminfo/termcap definition) which
+       meets  <b>mlterm</b>'s behavior.  (Since <b>mlterm</b>' can behave as a
+       xterm/kterm  to  some  extent,  <b>TERM=kterm</b>  /  <b>TERM=xterm</b>
+       should  give acceptable results.)  However, sometimes you
+       may not want to edit your  terminfo  and  termcap.   Your
+       software  may  don't  understand terminfo nor termcap, or
+       your terminfo/termcap entry is shared by several terminal
+       emulators and changing it will break other terminals.  In
+       such cases, you can configure <b>mlterm</b>  so  that  it  works
+       well  on  existing  terminfo/termcap  definitions on your
+       systems.  This is also useful for distributors of operat-
+       ing  systems (like Debian) with strict policy of terminal
+       emulators' behaviors.
+
+       You can define the behaviors of <b>mlterm</b> for each value  of
+       <b>TERM</b>  variable,  so  that  you don't need to edit <b>termcap</b>
+       file each time you login into other systems and use  dif-
+       ferent value of <b>TERM</b> variable by <b>-y</b> option.  You can also
+       specify the default behavior when <b>TERM</b> variable  is  dif-
+       ferent  from  all  of specified TERM names in the <b>termcap</b>
+       file.
+
+       The grammar of this configuration file is resemble to the
+       grammar  of  termcap entries.  First, one or more name(s)
+       of TERM is written.  Multiple names  are  connected  with
+       vertical  line  character  '|'.   Special name '*' is for
+       default.  Then colon ':' comes, and keys are written sep-
+       arated  by  colons.  Configuration(s) for other TERM will
+       follow after new line.
+
+       Followings are available keys for each TERM value.
+
+       <b>kD=</b><u>sequence</u>
+              Specify sequence to be outputted when  Delete  key
+              is pushed (default <b>\E[3~</b>).
+
+       <b>kb=</b><u>sequence</u>
+              Specify  sequence  to  be outputted when BackSpace
+              key is pushed (default <b>^H</b>).
+
+       <b>kh=</b><u>sequence</u>
+              Specify sequence to be outputted when HOME key  is
+              pushed  in  application cursor key mode.  (default
+              <b>\EOH</b>).
+
+       <b>@7=</b><u>sequence</u>
+              Specify sequence to be outputted when END  key  is
+              pushed  in  application cursor key mode.  (default
+              <b>\EOF</b>).
+
+       <b>k1=</b><u>sequence</u>
+              Specify sequence to be outputted when  F1  key  is
+              pushed (default <b>\EOP</b>).
+
+       <b>k2=</b><u>sequence</u>
+              Specify  sequence  to  be outputted when F2 key is
+              pushed (default <b>\EOQ</b>).
+
+       <b>k3=</b><u>sequence</u>
+              Specify sequence to be outputted when  F3  key  is
+              pushed (default <b>\EOR</b>).
+
+       <b>k4=</b><u>sequence</u>
+              Specify  sequence  to  be outputted when F4 key is
+              pushed (default <b>\EOS</b>).
+
+       <b>k5=</b><u>sequence</u>
+              Specify sequence to be outputted when  F5  key  is
+              pushed (default <b>\E[15~</b>).
+
+       <b>ut</b>     Specify  the  way how the screen is erased by con-
+              trol codes.  If <b>ut</b> is written in the <b>termcap</b> file,
+              charcells  are  painted  by the current background
+              color when erased;  otherwise  the  charcells  are
+              painted  by the initial background color.  Default
+              is non-<b>ut</b> behavior.
+
+       The following special characters can be used  to  specify
+       <u>sequence</u> in keys of <b>kD</b>/<b>kb</b>/<b>kh</b>/<b>@7</b>.
+
+       <b>\E</b>     ESC code (0x1b).
+
+       <b>^?</b>     DEL code (0x7f).
+
+       <b>^A</b>, <b>^B</b>,...
+              Corresponding control code (0x01 - 0x1a).
+
+   <b>Menu</b> <b>Configuration</b> <b>File</b>
+       This configuration file defines the menu displayed by the
+       configurable menu  displayer  <b>mlterm-menu</b>.   See  <b>CONFIG-</b>
+       <b>URABLE</b> <b>MENU</b> section for detail.
+
+<b>SEE</b> <b>ALSO</b>
+       Manual  pages  of  <b><a href="file:///home/ken/w3m/libexec/w3m/cgi-bin/w3mman2html.cgi?mlclient(1)">mlclient</a></b>(1),  <b><a href="file:///home/ken/w3m/libexec/w3m/cgi-bin/w3mman2html.cgi?locale(7)">locale</a></b>(7),  <b><a href="file:///home/ken/w3m/libexec/w3m/cgi-bin/w3mman2html.cgi?charsets(7)">charsets</a></b>(7),
+       <b><a href="file:///home/ken/w3m/libexec/w3m/cgi-bin/w3mman2html.cgi?UTF-8(7)">UTF-8</a></b>(7), and <b><a href="file:///home/ken/w3m/libexec/w3m/cgi-bin/w3mman2html.cgi?X(7)">X</a></b>(7).
+
+       <b>PROTOCOL</b>                                     (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/PROTOCOL)   for
+       mlterm's original control escape sequences  which  enable
+       you to change configurations dynamically.
+
+       e.g.) echo -en "\x1b]5379;encoding=eucjp\x07"
+
+       <b>README.android</b>                               (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/README.android)
+       for mlterm on Android.
+
+       <b>README.beos</b>                                  (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/README.beos)
+       for mlterm on BeOS (Haiku).
+
+       <b>README.brltty</b>                                (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/README.brltty)
+       for    accessibility    with    the    use   of   brlapi.
+       (<a href="http://brl.thefreecat.org/">http://brl.thefreecat.org</a>).
+
+       <b>README.cocoa</b>                                 (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/README.cocoa)
+       for mlterm on MacOSX/Cocoa.
+
+       <b>README.cocoatouch</b>                            (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/README.cocoa-
+       touch) for mlterm on iOS/Cocoa Touch.
+
+       <b>README.console</b>                               (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/README.console)
+       for mlterm on Console.
+
+       <b>README.fb</b>                                    (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/README.fb)  for
+       mlterm on framebuffer.
+
+       <b>README.indic</b>                                 (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/README.indic)
+       for indic scripts.
+
+       <b>README.sb</b>                                    (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/README.sb)  for
+       development of scrollbar library.
+
+       <b>README.sdl2</b>                                  (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/README.sdl2)
+       for mlterm on SDL2.
+
+       <b>README.ssh</b>                                   (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/README.ssh) for
+       ssh connection with the use of  libssh2  (<a href="http://www.lib/">http://www.lib</a>-
+       ssh2.org).
+
+       <b>README.wayland</b>                               (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/README.wayland)
+       for mlterm on Wayland.
+
+       <b>README.win32</b>                                 (<a href="http://bit/">http://bit</a>-
+       bucket.org/arakiken/mlterm/src/tip/doc/en/README.win32)
+       for mlterm on Win32 GDI.
+
+       Mapping  tables  between Unicode and local character sets
+       (and encodings) are found at Unicode Consortium web  site
+       (<a href="http://www.unicode.org/Public/MAPPINGS/">http://www.unicode.org/Public/MAPPINGS/</a>).    Note   that
+       mapping tables for East Asian character sets  and  encod-
+       ings are moved to OBSOLETE/EASTASIA directory of the site
+       since August 2001.
+
+       For BIG5 and BIG5HKSCS encodings, mapping tables for Uni-
+       code              is              taken              from
+       <a href="ftp://xcin.linux.org.tw/pub/xcin/i18n/charset/">ftp://xcin.linux.org.tw/pub/xcin/i18n/charset/</a>.
+
+       <b>Unicode</b> <b>Standard</b> <b>Annex</b> <b>(UAX)</b> <b>#11</b> <b>East</b> <b>Asian</b> <b>Width</b>,  which
+       explains  East  Asian  Width  properties,  and <b>EastAsian-</b>
+       <b>Width.txt</b>, which defines EastAsianAmbiguous characters in
+       Unicode,    are    supplied    by    Unicode   Consortium
+       (<a href="http://www.unicode.org/">http://www.unicode.org</a>).
+
+<b>FILES</b>
+       "<u>main</u>", "<u>font</u>", "<u>vfont</u>",  "<u>tfont</u>",  "<u>aafont</u>",  "<u>vaafont</u>",
+       "<u>taafont</u>", "<u>color</u>", "<u>key</u>", "<u>termcap</u>", "<u>xim</u>", and "<u>menu</u>"
+              Configuration files.
+
+<b>CONTACT</b>
+       Subscribe    mlterm-dev-en    ML    (<a href="http://lists.source/">http://lists.source</a>-
+       forge.net/lists/listinfo/mlterm-dev-en).
+
+       Attach <a href="file://%7E/.mlterm/msg.log">~/.mlterm/msg.log</a>, backtrace log and related files
+       to your report if at all possible.
+
+                                  2019-11-22                         <a href="file:///home/ken/w3m/libexec/w3m/cgi-bin/w3mman2html.cgi?MLTERM(1)">MLTERM</a>(1)
+</pre>
+
+
+</body></html>
