@@ -165,6 +165,7 @@ Gamedev, game-art, open typography, and open-fonts making:
 * http://www.pixiv.com/
 * http://gelbooru.com/ - hentai image board
 * https://danbooru.com/ - hentai image board
+* http://rule34.xxx - hentai image board
 * http://safebooru.com - 
 * http://mspabooru.com/
 * http://hackage.haskell.org/package/h-booru-0.3.0.0/docs/HBooru-Types.html
