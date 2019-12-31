@@ -32,7 +32,7 @@
 **https://github.com/sahwar/Bulogos/archive/master.zip**
 (OR right-click & `Save link as...` / `Save Target As` (ИЛИ щракване с десния бутон на мишката и `Запазване на връзката като...` / `Запис на препратката като...`, ...)
 
-* Изтегляне чрез [`wget`](https://www.gnu.org/software/wget/):
+* Изтегляне чрез [`wget`](https://www.gnu.org/software/wget/) ([`wget` за Microsoft Windows (пуска се чрез `cmd.exe` или PowerShell)](https://eternallybored.org/misc/wget/)):
 ````
 wget -nc -O Bulogos_master.zip https://github.com/sahwar/Bulogos/archive/master.zip
 ````
