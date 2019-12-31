@@ -1,7 +1,5 @@
 # Bulogos
 
-------
-
 | Резервни копия на това хранище | , но другаде |
 | ------ | ------ |
 | [Mirror repository at _GitLab.com_ (always slighty not so up-to-date to this one)](https://gitlab.com/sahwar/Bulogos) (https://gitlab.com/sahwar/Bulogos.git) | [.ZIP backup of a recent version of this repository at _sahwar.animerulezzz.org_ (always slightly not so up-to-date to this one)](http://sahwar.animerulezzz.org/mirrors/Bulogos-master_[ISO8601-datetime-stamp].zip)
@@ -13,8 +11,6 @@
 
 ### Bulogos /bɤlɔgɔs/, /bɤləgɔs/ (Бълогос / БълЪгос); Проект „Бълогос“ (Проект „БълЪгос“, Проект Bulogos)
 🇧🇬 &#x1F1E7;&#x1F1EC; Полезна информация за българоезични ползватели на Линукс и ССиСсОК (свободен софтуер и софтуер с отворен код), измежду други неща.
-
-------
 
 * * *
 Помощ за GitHub и `git`...
