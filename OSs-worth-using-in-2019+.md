@@ -126,6 +126,9 @@ Etc.:
 * Obarun (uses s6 supervision suite)
 * PCLinuxOS
 * Refracta
+* Intel ClearLinux
+* PureOS (by http://puri.sm)
+* TrueOS - https://www.trueos.org/ (formerly: PC-BSD)
 * Slackware (uses sysvinit)
 * Stali (the static Linux, uses sinit)
 * **Void Linux** (uses runit)
