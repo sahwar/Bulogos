@@ -70,6 +70,17 @@ http://www.zak-site.com/whatis.htm#greatest
 * HL1 (Half-Life 1) Deathmatch multiplayer
 
 [BG-HALF-LIFE - Българският Half Life портал (BG-SMURFA-VRATSA-2 & BG-SMURFA-VRATSA-Bat-Man Vs Iron-Man servers) on BG-HALF-LIFE](http://smurfa.bulgarianforum.net/) - Присъединете се към нас в [Discord](https://discord.gg/kawPFxe) или в групата ни във ФБ [HL-BG Community](https://www.facebook.com/groups/427538864719610/); Skype: admina-76 ; [smurfa_vr](http://smurfa.bulgarianforum.net/u1)
+
+````
+https://www.gametracker.com/server_info/46.249.76.19:27015/
+Name: CS.FreeUniBG.Eu 1.6 Server
+Game: Counter Strike 1.6   Browse: Counter Strike 1.6 Servers
+Address: 46.249.76.19   Port: 27015   Status: Alive 
+
+https://www.gametracker.com/search/_all/BG/
+https://www.gametracker.com/search/_all/BG/?searchipp=50#search
+````
+
 * Half-Life 2 Deathmatch multiplayer
 * Tzar: The Burder of the Crown (by the Bulgarian game studio Haemimont Games)
 * Dungeon Siege II
