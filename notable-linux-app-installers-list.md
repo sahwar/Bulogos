@@ -140,9 +140,27 @@ chmod +x ./kubectl`
 _Software download-portals to get ONLY FREEWARE and open-source apps from, NOT other apps:_
 http://brothersoft.com/, https://www.kaldata.com/ (Bulgarian IT website), https://www.download.bg/ (Bulgarian IT website), https://www.softpedia.com/, https://bg.vessoft.com/ (IT downloads + some warez), https://www.techspot.com/downloads/, https://en.softonic.com/windows, https://filehippo.com/, http://www.oldapps.com/, https://www.old-games.com/, https://www.makeuseof.com/, https://www.howtogeek.com/, https://www.techspot.com/downloads/, http://www.tucows.com/downloads, https://download.cnet.com/windows/, https://www.techradar.com/, https://www.tomsguide.com/t/windows/... http://caiman.us/, http://homeoftheunderdogs.net/ (https://twitter.com/HotU_net), http://www.homeoftheunderdogs.net/company.php?name=Freeware, http://www.abandonwarering.com/, http://www.aplaces.net/,* https://www.freewarefiles.com/Essential-Free-Software.html
 * https://www.freewarefiles.com/Top-100-Free-Downloads/
-
+* PortableApps.org portable apps for MS Windows
+* running a Linux app on MS Windows via a hypervisor/virtualization app like Oracle VirtualBox, Xen, QEMU, etc. OR via ssh/mosh or via visual remote-control via RDP (e.g. Remmina for Linux, VNC app for MS Windows, mosh, etc.).
+* running Linux apps via dualbooting & multibooting multiple OSs
+* apps for multiple computer keyboards, multiple computer mouses, multiple OS/system clipboards, multiple I/O for music/audio & graphics/displays/screens-monitors, multiple graphics-tablets, multiple audio/video-conferencing/Unicode-text/screensharing/filesharing/online-or-offline drawingboard-painters/
+* multiplexer app for simultaneous running of several different OSs (or different OS states) as a stacked window manager, i.e. several different OSs on 1 screen divided visually into boxes/sections/minimized-resumed/running-virtual-sessions BUT also running a configurable background daemon that enables full-duplex filesharing/computer-mouse-cursor-sharing/swapping-from-one-screen-section (running one OS)-to-another-screen-section (running another OS!), shared/full-duplex multi-clipboard, and *UNIX-like piping&redirection of commmandline commands, computer-keyboard-sharing (cloning of click-behavior or keyboard-shortcut-switching-from-one-OS-to-another)!!!
+* running apps&games via FreeDOS, Scummvm, video-game emulators (e.g. MAME) + cheatbook apps (e.g. Cheatbook Database) & video-games cheats/unlockers/live-modding apps/video-game game-player stat(istic)s-/variables-hacking apps
 
 etc.
+
+### Other OSs
+* ReactOS
+* TrueOS?
+* PureOS (formerly: PC-BSD)
+* paid/commercial online/offline support & paid feature-adding to an OS or specific app/driver/module/etc.
+* TempleOS
+* SymphonyOS
+* MINIX
+* Intel Linux distro
+* etc.
+* GNU HURD kernel
+* Linux: `PREEMPT_RT` flags, boot config (GRUB2), runit script systems (NO systemd! ? ... Devuan Linux), SYSLINUX, squashfs/USB-flashstick; fully only ROM-loaded OS (?), 
 
 #### **Torrent&magnet-link trackers:** ####
 (they contain some warez&not-so-legal files... to download, use a torrent app like qBittorrent, Deluge Torrent, uTorrent (freeware), etc.):
