@@ -30,6 +30,12 @@
 * https://eurodict.com/
 * http://www.onlinerechnik.com/ = онлайн речници (български универсален, тълковен, правописен и синонимен) и българско-английски речник
 * https://www.ezikov.com/translate/
+
+* https://www.panlex.org/
+* http://rosettaproject.org
+* https://archiveprogram.github.com/
+* https://against-the-grain.com/2019/11/atg-newsflash-for-the-love-of-literacy-better-world-books-and-the-internet-archive-unite-to-preserve-millions-of-books/
+
 * Български правописен речник (Bulgarian spelling dictionary...):
 http://vanyog.com/index.php?pid=8
 http://www.physics-bg.org/z/index.php?pid=2
