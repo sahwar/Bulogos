@@ -30,6 +30,8 @@
 ### Online ###
 * **[PayPal.com](https://www.paypal.com/)** (works with linked debit cards and credit cards)
 * **[TransferWise.com](https://transferwise.com/)**
+* Revolut
+* (ApplePay, GooglePlay store, phyre, etc.)
 * **[Patreon.com](https://www.patreon.com/)**
 * **[LiberaPay.com](LiberaPay.com)**
 * **[Flattr.com](https://flattr.com/)**
