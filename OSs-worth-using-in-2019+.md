@@ -51,7 +51,9 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [LXLE](http://www.lxle.net/)
 * [PureOS](https://www.pureos.net/) (from https://puri.sm/, powerful libre laptops!)
 * [ZorinOS](https://zorinos.com/)
-* ReactOS (NOT a (GNU/)Linux distro; it is an open-source reverse-engineered (?) clone of Microsoft Windows NT/2K/XP and so it is compatible with most MS Windows apps made for MS Windows XP; maybe if you add Mono (an open-source clone of .NET framework for MS Windows 7+) to it, it may also run apps made for MS Windows 7/8/8.1/10 (UWP (Universal Windows(10) Platform)?...)
+* ReactOS (NOT a (GNU/)Linux distro; it is an open-source reverse-engineered/remake (?) clone of Microsoft Windows NT/2K/XP and so it is compatible with most MS Windows apps made for MS Windows XP; maybe if you add Mono (an open-source clone of .NET framework for MS Windows 7+) to it, it may also run apps made for MS Windows 7/8/8.1/10 (UWP (Universal Windows(10) Platform)?...)
+* TempleOS - https://en.wikipedia.org/wiki/TempleOS
+* CollapseOS - https://collapseos.org/
 * ferenOS Linux (an extremely well-polished (GNU/)Linux distro with a nice set of visual styles/themes mimicking other OSs!)
 * EasyOS (a very cool PuppyLinux fork based on Debian/Ubuntu; it's comparable to AntiX Linux & MX Linux 17+)
 * elementaryOS (a very nice Linux distro that tries to mimick MacOSX X/macOS's design aesthetics&usability)
