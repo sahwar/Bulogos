@@ -37,6 +37,8 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 	- Bulgarian - English-math: https://eurodict.com/dictionary/%D0%B0%D0%B1%D0%B5%D0%BB%D0%BE%D0%B2-527904 ... 
 	- English - Bulgarian-math: https://eurodict.com/dictionary/%D1%8F%D0%B4%D1%80%D0%BE-528710 ...
 	- ...
+* Вижте и раздела по-долу (чрез „Търсене...“ чрез уеб-браузъра си за преносими (мобилни) устройства или чрез клавишната комбинация `Ctrl + F` при уеб-браузъри за настолни (десктоп) компютри&десктоп операционни системи):
+[MORE DICTS - ОЩЕ РЕЧНИЦИ](#MORE-DICTS)
 * http://fsa-bg.org/project/gtp/wiki/HowToTranslate , http://fsa-bg.org/project/gtp/wiki/HowToUpdateWebkit , http://fsa-bg.org/project/gtp/wiki/Typography , http://fsa-bg.org/project/gtp/wiki/RepositoryUsage , http://fsa-bg.org/project/gtp/wiki/HowToTest , http://fsa-bg.org/project/gtp/wiki/ToDo , http://fsa-bg.org/project/gtp/wiki/NewsLetters , http://fsa-bg.org/project/gtp/wiki/Jamborees
 * **FOSS-BG-translators EMailList (Пощенският списък за преводи и локализация на български на Linux, познат и като „Пощенският списък за преводи и локализация на KDE“)**: <dict@ludost.net> (за записване/абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict) (KNOWN AS ["Dict" Bulgarian free software translators mailing list](http://ludost.net/cgi-bin/mailman/listinfo/dict))
 
@@ -1056,5 +1058,199 @@ https://www.reddit.com/r/thepiratebay/comments/7l5kro/the_wayback_machine_and_th
 * За GNOME под (GNU/)Linux: https://github.com/p-e-w/plotinus/
 https://github.com/p-e-w/argos/
 * Wox (за MS Windows)???
+* ... PixBuilder Studio (подобна вградена търсачка за търсене на текст из текстовите менюта на програмата...)
+* подобна търсачка&speedlauncher на командите, във Vim/GVim/NeoVim и в emacs/xemacs/Emacsen... (???)
+* платена (комерсиална) техническа помощ и bug fixes&feature implementation...
 
 * и други...
+
+## MORE-DICTS
+MORE DICTS - ОЩЕ РЕЧНИЦИ
+
+* https://mobile.twitter.com/bozhobg - computer linguistics & etc.
+* https://pavlinav.wordpress.com/
+* http://bogeo.net
+* https://eu2018bg.bg/en/translation
+* https://ec.europa.eu/cefdigital/wiki/pages/viewpage.action?mobileBypass=true&spaceKey=CEFDIGITAL&title=CEF+Digital+Home.mobile.phone
+* https://ec.europa.eu/jrc/en/language-technologies/dgt-translation-memory
+* https://data.europa.eu/euodp/bg/data/dataset/dgt-translation-memory
+* https://eur-lex.europa.eu/homepage.html?locale=bg
+* https://ec.europa.eu/jrc/en/language-technologies/ecdc-translation-memory
+* https://ec.europa.eu/jrc/en/publication/contributions-conferences/dgt-tm-freely-available-translation-memory-22-languages
+* https://www.sketchengine.eu/dgt-translation-memory/
+* https://www.ttmem.com/terminology/download-translation-memory/european-commission-translation-memory/
+* https://ec.europa.eu/jrc/en/language-technologies/eac-translation-memory
+* https://ec.europa.eu/jrc/en/language-technologies/ecdc-translation-memory
+* Писмени закони на България: https://www.lex.bg/mobile/
+* https://www.dicts.info/
+https://www.dicts.info/uddl.php (!!!)
+https://www.dicts.info/dictionaries.php
+* https://www.wiktionary.org/
+* https://bg.wiktionary.org/
+* https://rechnik.chitanka.info/ & http://ibl.bas.bg/rbe/lang/bg/
+* https://gramofonche.chitanka.info/
+* http://m.onlinerechnik.com
+* http://rechnik.info
+* https://enacademic.com/
+* https://bg.glosbe.com/
+* https://www.linguee.com/ & https://www.linguee.fr/
+* https://onelook.com/ (18,955,870 words in 1061 dictionaries indexed) & https://onelook.com/?d=all_gen
+* http://www.dict.org/bin/Dict
+* https://www.dict.cc/ (very comprehensive bilingual dictionaries!!!)
+* 
+* http://toaetoa.com = Macedonian Dictionary
+* http://ibl.bas.bg/
+* http://goldendict.org/
+* http://www.kamburov.net/aleksandar/projects/aedict/
+* * SA Dictionary: http://www.thediction.com/
+* https://www.kaldata.com/софтуер/megadict-bg-1-1-build-12-85247.html
+* http://freeplace.info/ididictionary/bulgarian_spell_checker/
+* http://frazite.com
+* https://www.bgjargon.com/
+* https://www.t-rechnik.info/
+* https://liternet.bg/de/
+* https://mobile.twitter.com/ezikovispravki & http://ibl.bas.bg/ & http://ibl.bas.bg/informatsiya/uslugi/ezikovi_spravki_i_konsultatsii/ ( https://web.archive.org/web/20190926000952/http://ibl.bas.bg/informatsiya/uslugi/ezikovi_spravki_i_konsultatsii/ ) & http://ibl.bas.bg/ezikovispravki/kategorii/
+* http://vanyog.com/index.php?pid=8 & http://www.physics-bg.org/z/index.php?pid=2 - български правописен речник
+* http://dictcorrect.com - Корективен речник на чужди думи в българския език + българоезични акаунти в twitter.com с коментари по лингвистика/езикознание (вкл. на българския език) (БЕЛЕЖКА: Лично аз, ve4ernik/sahwar, не съм съгласен с ~25% от коригираните думи в този речник поради редица съображения...)...
+* https://web.archive.org/web/20190730083944/http://dictcorrect.com/ & http://dictcorrect.com/#about & http://dictcorrect.com/#bibliography
+````
+Библиография
+
+Антонов, Н. Речник. Нови и най-нови думи в българския език: А-Я. София: Пеликан Алфа. 1995.
+
+Баламезов, Б. Френско-български юридически речник. София: Софи-Р. 2001.
+
+Бончев, А. Речник на църковнославянския език. Т. 1. София: НБ "Св. св. Кирил и Методий". 2002.
+
+Българска енциклопедия А-Я. София: Академично издателство “Марин Дринов”. 2005.
+
+Български етимологичен речник. Т. 1-7. София: Академично издателство “Марин Дринов”. 1962.
+
+Български тълковен речник на Асен Т. Ботев. Съст. Л. Андрейчин и др. Второ издание. София: Ма Бе Ла (Първо изд. “Наука и изкуство”). 1963.
+
+Войнов, М., В. Георгиев и др. Старогръцко-български речник. Фототипно издание. София: “Отворено общество”. 1996.
+
+Геров, Н. Речник а българския език. Т. 1-6. Фототипно издание. София: Български писател. 1975-1978 (Първо издание. Пловдив. 1895-1904, доработка Т. Панчев).
+
+Енциклопедичен речник на чужди думи в българския език. Отг. ред. П. Нушев. Пловдив: МАГ-77. 1996.
+
+Крумова-Цветкова, Л. Речник на трудностите в българския език. София: Атлантис. 1999.
+
+Милев, Ал., Б. Николов и Й. Братков. Речник на чуждите думи в българския език. София: Наука и изкуство. 1978 (Пето допълн. и преработено изд. от Е. Пернишка. София: Наука и изкуство. 2000).
+
+Младенов, Ст. Речник на чуждите думи в българския език. София: Хемус. 1947.
+
+Нов правописен речник на българския език. София: Академично издателство “Марин Дринов”. Институт за български език. Отг. редактор чл.-кор. В. Станков. София: Хейзъл. 2002.
+
+Обратен речник на българския език. Съст. Вл. Мурдаров и др. София: Изток-Запад. 2011.
+
+Парашкевов, Б. Етимологични дублети в българския език. Енциклопедичен речник на думи и имена с единно лексикално първоначало. София: ЕМАС. 2008.
+
+Парашкевов, Б. Отименна лексика в словника на българския език. Енциклопедичен речник на производни от собствени имена. София: Изток-Запад. 2011.
+
+Речник на българския език. Съст. Л. Крумова и др. Т. 1-13-, София: Академично издателство “Марин Дринов”. 1977-2008-. (Автори на първия том от този речник са С. Бояджиев и др. Главен редактор Кр. Чолакова. Впоследствие авторите стават все повече, Л. Крумова също фигурира в новата редколегия и като отг. редактор. По-горе посочих речника, с който е наложително да бъде цитирана и чий замисъл стои много близо до този на нашия).
+
+Речник на новите думи в българския език (от края на XX и първото десетилетие на XXI в.). Съст. Е. Пернишка и др. София: Наука и изкуство. 2010.
+
+Речник на чуждите думи в българския език. Съст. М. Филипова-Байрова и др. Второ издание. София: Академично издателство “Марин Дринов”. 1993.
+
+Речник на чуждите думи в българския език. Авторски колектив Г. Пашова и др. Пловдив: Хермес. 2001.
+
+Фасмер, М. Этимологический словарь русского языка. Перевод с немецкого и дополнения О. Н. Трубачева. Т. 1-4. Москва: Прогресс. 1964-1974. http://vasmer.narod.ru/
+
+Френско-български, българско-френски речник = Dictionnaire français-bulgare, bulgare- français. Съст. Асен Чаушев. София: ИК Колибри, 2009.
+
+Френско-български, българско-френски речник. Съст. М. Константинова. Второ издание. В.Търново: Gaberoff (sine anno).
+
+Футеков, З. Голям илюстрован немско-български речник. София: издание на автора. 1942.
+
+Четриков, Св. Музикален терминологичен речник. Второ издание. София: Музика. 1979.
+
+Baumgartner, E., Ph. Ménard. Dictionnaire étymologique et historique de la langue française. Paris : Librairie générale française, 1996.
+
+Chantraine, P. Dictionnaire étymologique de la langue grecque (Histoitedsmots). Paris. 1968 -. http://www.archive.org/stream/Dictionnaire-Etymologique-Grec/Chantraine-DictionnaireEtymologiqueGrec#page/n0/mode/1up 
+
+Dauzat, A., J. Dubois, J., H. Mitterand. Nouveau dictionnaire étymologique et historique. Paris : Librairie Larousse, 1971.
+
+Douglas Harper’s Online Etymology Dictionary. http://www.etymonline.com/
+
+Etymologisches Wörterbuch des Deutschen. Erarbeitet unter der Leitung von W. Pfeifer. München: DTV, 2000.
+
+A Greek-English Lexicon. Compiled by H.G. Liddlle and R. Scott. Revised and augmented throughout by Sir H. St. Jones with the assistance of R. Mckenzie and with the cooperation of many scholars. With a revised supplement. Oxford: Clarendon Press. 1996. http://www.perseus.tufts.edu/hopper/resolveform?redirect=true&lang=Greek
+
+Grevisse, M. Le Français correct : guide pratique. 5-е еd., Rév. еt act. par M. Lenoble-Pinson. Bruxelles: Duculot. 1998.
+
+Lexilogos. Dictionnaire français. http://www.lexilogos.com/francais_langue_dictionnaires.htm
+
+Kluge. Etymologisches Wörterbuch der deutschen Sprache. Bearb. von E. Seebold, 24., durchgesehene und erweiterte Auflage. Berlin / New York: Walter de Greuyter. 2002.
+
+Onions, C. T. G. W. S. Friedrichsen, R. W. Burgfield. The Oxford Dictionary of English Etymology. Oxford: At the Clarendon Press, 1979.
+
+Picoche, J. Dictionnaire étymologique du français. Paris : Le Robert,1994.
+
+Thesaurus Graecae Linguae ab Henrico Stephanoconstructus. Vol. I-V. Geneva. 1572. Tertio ediderunt C. B. Hase, G. Dindorfius et L.Dindorfius. I-VIII, Parisiis: Didot. 1831–1861. http://stephanus.tlg.uci.edu/lsj/#eid=1&context=lsj
+
+Μπαμπινιώτης, Γ. Ετυμολογικό λεξικό τής Νέας Ελληνικής γλώσας. Ιστορία τών λέξεων. Αθήνα: Κέντρο Λεξικολογίας. 2010.
+````
+
+* https://www.thefreedictionary.com/ (probably the best online English dictionary on the Internet!)
+* https://www.dictionary.com/
+* https://dictionary.cambridge.org/
+* https://www.urbandictionary.com/ (the original online English jargon dictionary that inspired http://bgjargon.com )
+* https://www.etymonline.com/ (the Etymological Dictionary of the English language)
+* https://www.wordnik.com/ & WordNet: https://wordnet.princeton.edu/ ; https://dcl.bas.bg/bulnet/
+* https://github.com/probonopd/omegadict
+* http://www.omegawiki.org/Meta:Main_Page
+* https://m.wikidata.org/wiki/Wikidata:Main_Page
+* http://wikipedia.org & https://dumps.wikimedia.org/ & http://bg.wiktionary.com
+* https://plato.stanford.edu/index.html (encyclopedia of philosophy)
+* https://www.iep.utm.edu/ (another online encyclopedia of philosophy) & http://en.wikipedia.org/wiki/Philosophy
+* https://arxiv.org/ (Open access to 1,646,007 e-prints in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics)
+* https://www.plos.org/
+* https://en.m.wikipedia.org/wiki/Alan_Watts
+* https://www.sacred-texts.com/index.htm (over 1700 books on the occult, esoterica/esotericism, world mythologies, magick, folk tales, etc.) & buy the ~$130 USD USB-flashstick archive to support them: https://www.sacred-texts.com/cdshop/dvd90/index.htm & https://www.sacred-texts.com/sex/kama/
+* http://taiji-bg.com
+* http://rexresearch.com (+ buy their DVD archive collection) & http://rexresearch.com/caro/caro.htm
+* https://www.bibliotecapleyades.net & https://www.bibliotecapleyades.net/vida_alien/war_celestialconflicts08.htm
+* http://skybooksusa.com/index.html
+* https://parallelreality-bg.com/
+* http://hermetics.org/ & http://www.hermetics.org/home.html & http://www.kybalion.org - '"... all things [are] evolving from other things, and resolving into other things..." — The Kybalion'
+* http://hermetica.org/
+* The Ninth Gate (1999 film with Johnny Depp)
+* https://en.m.wikipedia.org/wiki/The_All
+* https://en.m.wikipedia.org/wiki/Emerald_Tablet
+* https://www.alchemywebsite.com & https://www.alchemywebsite.com/adam.html
+* http://twitter.com/evasurga (Amsterdam sex magick & esoteric lecturer)
+* https://www.google.com/amp/s/amp.theguardian.com/technology/2013/jun/02/aaron-swartz-hacker-genius-martyr-girlfriend-interview & https://archive.org/stream/GuerillaOpenAccessManifesto/Goamjuly2008_djvu.txt & http://www.aaronsw.com & 
+https://www.internethalloffame.org/inductees/aaron-swartz
+* https://openlibrary.org/ & https://archive.org/web/
+* http://archive.is / http://archive.fo / http://archive.today
+* http://www.encyclopedia.bg/index.jsp
+* Encyclopedia of Life (biology encyclopedia): https://eol.org/
+* http://howstuffworks.com
+* Mythbusters, Bear Grylls, etc.
+* http://rimichka.com/ & Речник на римите.exe
+* http://www.myschool-bg.com/morfemi_bg.html
+* http://ucha.se
+* https://bg.m.wikipedia.org/wiki/%D0%A1%D0%BB%D0%BE%D0%B2%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%83%D0%B2%D0%B0%D1%89%D0%B8_%D0%B8_%D1%84%D0%BE%D1%80%D0%BC%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%83%D0%B2%D0%B0%D1%89%D0%B8_%D0%BC%D0%BE%D1%80%D1%84%D0%B5%D0%BC%D0%B8
+* https://ibl.bas.bg/normativna-gramatika-na-savremenniya-balgarski-ezik/
+* https://www.google.com/search?q=%D0%B3%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0+%D0%BD%D0%B0+%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D1%8F+%D0%B5%D0%B7%D0%B8%D0%BA&oq=%D0%B3%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0+%D0%BD%D0%B0+%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D1%8F+%D0%B5%D0%B7%D0%B8%D0%BA&ie=UTF-8
+* https://gramatika-bg.com/pravopis.html
+* http://tellspell.com/english/saharian/331423/
+* https://www.sciencedaily.com/
+* https://www.gcls.org/internet-encyclopedia-philosophy
+* 
+* https://www.thefreelibrary.com/
+* 
+* http://thediction.com
+* http://tatoeba.org (!!!)
+* https://packages.debian.org/search?searchon=contents&keywords=bg+Bulgarian+Cyrillic+fonts+typography+dictionary+dictionaries+locale+localization+man+fortunes&mode=filename&suite=stable&arch=any
+* ...
+
+------
+
+WTF??? :
+https://news.lex.bg/защо-на-практика-конституцията-няма-н/
+
+https://packages.debian.org/sid/pekka-kana-2
+http://github.com/topic/pk2
