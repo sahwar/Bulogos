@@ -34,7 +34,7 @@ https://sites.google.com/site/kdekorte2/gnomemplayer (its comprehensive Playlist
 * https://nirsoft.net/utils/wake_on_lan.html , https://nirsoft.net/utils/product_cd_key_viewer.html
 * UltraVNC, Reminna (Linux), ssh, mosh, remote-desktop (RTP), screen-sharing (Skype, qTox, etc.), oekaki/oakeki online multiplayer board, Japanese-style 4chan-like imageboards & imageboard software, etc.; web-forum software packages, lightweight online comments-section software, etc.
 * _**for DirectX/Direct 3D video games compatibility:**_ **[DxWnd](https://sourceforge.net/projects/dxwnd/)** ( https://sourceforge.net/p/dxwnd/home/Home/ , https://sourceforge.net/projects/dxwnd/files/ ) (  , https://www.play-old-pc-games.com/compatibility-tools/using-dxwnd/ , https://softradar.com/dxwnd/ , https://www.majorgeeks.com/files/details/dxwnd.html , https://browsehappy.com/ , https://downloads.tomsguide.com/DxWnd,0301-65235.html ; **https://sourceforge.net/projects/dxglwrap/** (!!!); **https://sourceforge.net/projects/gldirect/** (!!!), https://sourceforge.net/projects/java-direct3d/ (!); **[?](?)** ( https://sourceforge.net/projects/borderless-gaming.mirror/ , **https://github.com/Codeusa/Borderless-Gaming** , https://store.steampowered.com/app/388080/Borderless_Gaming/ , **http://westechsolutions.net/sites/WindowedBorderlessGaming/** , https://github.com/Codeusa/Borderless-Gaming/releases/ , https://westechsolutions.net/sites/WindowedBorderlessGaming/download ),; Diablo2 widescreen mod/hack; Diablo1 remake on GitHub, open-source Diablo1-like clone = FlareRPG; transparent/translucent windows software, to-system-tray minimization&pausing-without-crashing-or-resuming-issues software, multi-clipboard software; voice-control software; computer online/Internet remote-viewing/webcam-streaming&screenshotting software; ... ; speech synthesis software; voice-masking software; OCR software, OCR-for-handwriting-via-NeuralNetworks software; ... ; mythos & ethos / Eros & Thanatos
-* *Wine* emulation later for *NIX/(GNU)Linux, *Wine-staging* (next/experimental Wine), PlayOnLinux GUI for Wine, WineHQ.com, Vulkan API (*NIX/(GNU)Linux compatibility with Microsoft Windows DirectX(v1–v9–12+)&Direct3D(v1–v9–v12+) via a to-OpenGL translation layer (???)), *Proton for Wine/PlayOnLinuxGUI(/CrossOver for MacOS) on SteamOS Linux*, + Galium3D & Noeveau open-source Linux driver for nVidia video cards (GPUs); CrossOver (Microsoft Windows compatibility layer for MacOS), etc. ... ; .NET/Mono (.NET compatibility for *NIX/Linux), etc. ; FreeDOS; Scummvm; MAME/MAME GUIs, video-game arcades emulation-engines/GUI-frontend apps
+* *Wine* emulation later for *NIX/(GNU)Linux, *Wine-staging* (next/experimental Wine), PlayOnLinux GUI for Wine, WineHQ.com, Vulkan API (*NIX/(GNU)Linux compatibility with Microsoft Windows DirectX(v1–v9–12+)&Direct3D(v1–v9–v12+) via a to-OpenGL translation layer (???)), *Proton for Wine/PlayOnLinuxGUI(/CrossOver for MacOS) on SteamOS Linux*, + Galium3D & Noeveau open-source Linux driver for nVidia video cards (GPUs); CrossOver (Microsoft Windows compatibility layer for MacOS), [AntTweakBar GUI (DirectX, Direct3D, OpenGL stuff...](http://archive.is/vrMuq), https://github.com/ValveSoftware/Proton ( https://www.protondb.com/ , https://en.wikipedia.org/wiki/Proton_(compatibility_layer) , https://lutris.net/ , https://github.com/lutris/lutrisetc ), ... ; .NET/Mono (.NET compatibility for *NIX/Linux), etc. ; FreeDOS; Scummvm; MAME/MAME GUIs, video-game arcades emulation-engines/GUI-frontend apps
 * [CheatBook Database app](https://github.com/cheat-engine/cheat-engine) ( http://cheatbook.de/cheatbook-database-2019.htm , https://www.freewarefiles.com/CheatBook-Issue-10-2019-_program_113238.html )
 * https://browsehappy.com/ , http://caniuse.com , MDN (Mozilla Developer Documentation) documentation, http://whatwg.com - HTML5 Living Standard, http://w3.org WWW Standards, ietf.org - RFC standards, ISO standards, OASIS standards, etc.
 * [Code::Blocks](http://codeblocks.org/), [Geany IDE](https://www.geany.org/) ( https://github.com/geany/geany ), [FreePascal](https://freepascal.org/)/[Lazarus IDE](https://www.lazarus-ide.org/) (e.g. [LazPaint](), [GHCaveDraw](http://ghtopo.blog4ever.com/) - https://wiki.freepascal.org/Lazarus_Application_Gallery#fpctwitGUI ), [Code Typhon Studio](https://www.pilotlogic.com/sitejoom/), **[List of apps written in Free Pascal/Lazarus IDE](https://lazarusccr.github.io/apps/)** , https://wiki.freepascal.org/CudaText , [SynWrite](http://uvviewsoft.com/synwrite/) ( https://github.com/Alexey-T/SynWrite ), http://uvviewsoft.com/
@@ -51,7 +51,7 @@ https://sourceforge.net/projects/pixelvalue/
 * https://castle-engine.io/all_programs.php
 https://castle-engine.io/view3dscene.php
 [gliformation](https://castle-engine.io/glinformation.php)
-`glxinfo` (!!!) ; CPU-Z, GPU-Z, Piriform Speccy, hwls, hwmon, hwinfo, usbls/lsusb
+`glxinfo` (!!!) ; `hwinfo`, CPU-Z, GPU-Z, Piriform Speccy, hwls, hwmon, hwinfo, usbls/lsusb
 https://castle-engine.io/all_programs_sources.php
 https://castle-engine.io/castle-view-image.php
 ````
@@ -186,7 +186,10 @@ https://en.wikipedia.org/wiki/Alias_(command)
 https://en.wikipedia.org/wiki/Windows_10
 
 
-<--
+<!-
+...
+->
+
 For MS Windows:
 https://sourceforge.net/projects/unxutils/
 https://sourceforge.net/projects/getgnuwin32/
@@ -232,7 +235,6 @@ https://cygwin.com/acronyms/
 http://marshall.freeshell.org/abbrev.html
 
 http://codeblocks.org/
--->
 
 AVG Antivirus
 http://5ko.free.fr/bg/#soft
@@ -312,6 +314,22 @@ sudo apt-get install notepadqq
 http://www.system-rescue-cd.org/
 * [Hiren's BootCD PE (Preinstallation Environment)](https://www.hirensbootcd.org/)
 * [DriveDroid for Android](https://play.google.com/store/apps/details?id=com.softwarebakery.drivedroid&hl=en_GB)
+* https://github.com/memononen/nanovg
+* http://eigen.tuxfamily.org/index.php?title=Main_Page
+* https://projects.tuxfamily.org/?do=group;name=bootrepaircd
+* https://sourceforge.net/p/boot-repair/home/Home/
+* https://sourceforge.net/projects/boot-repair-cd/files/
+* https://sourceforge.net/projects/linux-secure/
+* http://www.system-rescue-cd.org/
+* https://gitlab.com/fdupoux/sysresccd-src
+* https://www.ubuntupit.com/15-most-secure-linux-distros-for-privacy-and-security-concern-users/
+* https://www.ubuntupit.com/useful-and-productive-curl-command-in-linux/
+* https://www.cyberciti.biz/tips/linux-security.html
+* https://www.kali.org/
+* https://parrotlinux.org/
+* http://distrowatch.com
+* https://www.youtube.com/watch?v=HR6TP5rmb4k (`$ display filename.ttf (part of imagemagick))
+* https://github.com/bluejamesbond/CharacterMap/
 
 ````
 https://itsfoss.com/recover-deleted-files-linux/
@@ -616,7 +634,7 @@ This is a sentence.  They separate sentences with doublespaces in RFCs to improv
 Too many to list here... for now at least, that is.
 Some examples include:
 Marlin (file-manager for Linux), Nemo (file-manager for Linux), Dino file-manager (Linux), xfe file-manager (Linux), Geary (Linux file-manager), X WinCommander file-manager, KCommander (?!?); Deepin Linux file-manager, 
-fluxbox (?); champferwm, awesome-wm, i3 wm (window-manager), sway (window-manager), pamac, octopi, synaptic, arrongin kirilin, spm (simple password manager), Cuneiform OCR, `tessaract` OCR, ColorGrab color-picker, ColorPix color-picker, conky, Crocotile 3D (pixelart 2D-sprites-to-3D-modelling), Danbooru Client (Danbooru & Gelbooru), Bookworm app, Inferno app, Servo (parallel web-browser engine written in Rust by Mozilla), Tilix terminal, Klondike solitaire, GNU Minesweeper, dash-to-panel previews (like in Windows7), qtile, urxvt, Dia diagram-editor, GoldenDict, StarDict, dino.chat IM, PidginIM, gajimIM, qTox, riot.im, dino.im (github.com/dino/dino), dpixel - Pixel Art Remaster (pixelart rescaling algorithms & CRT-like effects), matrix.org, mastodon (Twitter.com self-hosted clone), Drawpile drawing app, Alchemy drawing app, chibipaint, Code::Blocks IDE, Monkey Studio IDE, KompoZer (outdated HTML&CSS engine?), `python infinity.py`, `python photon.py`, hexyl hex-editor, dwm, EasyPaint, Quilter (ElementaryOS Markdown editor/previewer), http://parall.ax/vtop (htop alternative), Falkon web-browser, CNC-Qt, rfigura, `xclock`, `xcalc`, PikView (file-manager & image-viewer), GNOME Font Manager, UberPaint / 4P (umlautllama.com), FOX Calculator, **Shortcut.org** video-editor, GFontView/GFontViewer, FontMatrix, FontForge, Birdfont, github-com/googlei18n/fontview-v0.1.2 (Linux, macOS), Plotinus app main-menu-searcher, https://github-com/nvbn/thefuck , Glances 'an Eye on Your System' & `gotop` (vtop & htop alternative Task Manager), XMMS, XMMP, Sound Recorder, Gammu, Wammu, GSConnect, `lsusb`, `neofetch`, `archey`, **Aegisub** (Linux, MS Windows)+mkvtoolnix+BGoffice+opensubtitles.org, Subtitle Editor (MS Windows), **(latest stable) Subtitle Workshop (MS Windows)**, gsubedit, Gaupol subtitle-editor, Jubler subtitle-editor, Geeks3D Geexlab H4shG3n, `TODO.txt`, (HermIRES 1.25 - Hires Bitmap Editor for C64 (Commodore64) - Hermit Software Hungary, http://i3.zekjur.net (i3 - an improved dynamic tiling window manager), https://github.com/maoschanz/drawing, xpdf, MuPDF, `_nbscr`, `mc` (Midnight Commander), xosview, `zsh`, `synergyc`, rsync, ssh, Alacritty, `ranger` (CLI Linux file-manager), Anki flashcards memorization repetition app, `infinality` Linux font-rendering hacks, , QIviewer (Qt image-viewer), XChat, synapse chronology viewer, OCaml/Golang/CommonLisp/REBOL/Rust/Julia (programming languages), wxWidgets/GTK/Qt/`libui`/ROX/(LXDE/LXQT?) (widget toolkits), galculator, KCalc, KDE CDEmu Manager, KDE Lokalize, GTK poEdit, QtTranslate, Konqueror, KMyMoney, https://github.com/linde12/kod/editor (text editor for Linux), kolorizerSW, KvAdapta widget toolkit tester, spf13-vim, `lapsus` ThinkPad info for KDE3, `medit`+`sort | uniq`, eBook Reader LibraryListView, Lightweigt2 Qt web-browser, `ntpd` ([https://en.wikipedia.org/wiki/NTP] Internet clock-datetime-synchronization daemon (e.g. `pool.ntp.org`), Vimperator for Google Chrome/Chromium, Amarok, Lollypop music-player, QMMP, LosslessCut, `aidanholm/luakit` WebKit2+GTK3 web-browser, https://luajit.org,  etc.
+fluxbox (?); champferwm, awesome-wm, i3 wm (window-manager), sway (window-manager), pamac, octopi, synaptic, arrongin kirilin, spm (simple password manager), Cuneiform OCR, `tessaract` OCR, ColorGrab color-picker, ColorPix color-picker, conky, Crocotile 3D (pixelart 2D-sprites-to-3D-modelling), Danbooru Client (Danbooru & Gelbooru), Bookworm app, Inferno app, Servo (parallel web-browser engine written in Rust by Mozilla), Tilix terminal, Klondike solitaire, GNU Minesweeper, dash-to-panel previews (like in Windows7), qtile, urxvt, Dia diagram-editor, GoldenDict, StarDict, dino.chat IM, PidginIM, gajimIM, qTox, riot.im, dino.im (github.com/dino/dino), dpixel - Pixel Art Remaster (pixelart rescaling algorithms & CRT-like effects), matrix.org, mastodon (Twitter.com self-hosted clone), Drawpile drawing app, Alchemy drawing app, chibipaint, Code::Blocks IDE, Monkey Studio IDE, KompoZer (outdated HTML&CSS engine?), `python infinity.py`, `python photon.py`, hexyl hex-editor, dwm, EasyPaint, Quilter (ElementaryOS Markdown editor/previewer), http://parall.ax/vtop (htop alternative), Falkon web-browser, CNC-Qt, rfigura, `xclock`, `xcalc`, PikView (file-manager & image-viewer), GNOME Font Manager, UberPaint / 4P (umlautllama.com), FOX Calculator, **Shortcut.org** video-editor, GFontView/GFontViewer, FontMatrix, FontForge, Birdfont, github-com/googlei18n/fontview-v0.1.2 (Linux, macOS), Plotinus app main-menu-searcher, https://github-com/nvbn/thefuck , Glances 'an Eye on Your System' & `gotop` (vtop & htop alternative Task Manager), XMMS, XMMP, Sound Recorder, Gammu, Wammu, GSConnect, `lsusb`, `neofetch`, `archey`, **Aegisub** (Linux, MS Windows)+mkvtoolnix+BGoffice+opensubtitles.org, Subtitle Editor (MS Windows), **(latest stable) Subtitle Workshop (MS Windows)**, gsubedit, Gaupol subtitle-editor, Jubler subtitle-editor, Geeks3D Geexlab H4shG3n, `TODO.txt`, (HermIRES 1.25 - Hires Bitmap Editor for C64 (Commodore64) - Hermit Software Hungary, http://i3.zekjur.net (i3 - an improved dynamic tiling window manager), https://github.com/maoschanz/drawing, xpdf, MuPDF, `_nbscr`, `mc` (Midnight Commander), xosview, `zsh`, `synergyc`, rsync, ssh, Alacritty, `ranger` (CLI Linux file-manager), Anki flashcards memorization repetition app, `infinality` Linux font-rendering hacks, , QIviewer (Qt image-viewer), XChat, synapse chronology viewer, OCaml/Golang/CommonLisp/REBOL/Rust/Julia (programming languages), wxWidgets/GTK/Qt/`libui`/ROX/(LXDE/LXQT?) (widget toolkits), galculator, KCalc, KDE CDEmu Manager, KDE Lokalize, GTK poEdit, QtTranslate, Konqueror, KMyMoney, https://github.com/linde12/kod/editor (text editor for Linux), kolorizerSW, KvAdapta widget toolkit tester, spf13-vim, `lapsus` ThinkPad info for KDE3, `medit`+`sort | uniq`, eBook Reader LibraryListView, Lightweigt2 Qt web-browser, `ntpd` ([https://en.wikipedia.org/wiki/NTP] Internet clock-datetime-synchronization daemon (e.g. `pool.ntp.org`), Vimperator for Google Chrome/Chromium, Amarok, Lollypop music-player, QMMP, LosslessCut, `aidanholm/luakit` WebKit2+GTK3 web-browser, https://luajit.org, https://github.com/varietywalls/variety , Valve Proton, etc.
 
 * ``pandoc`` ([pandoc website](https://github.com/jgm/pandoc))
 * https://github.com/luong-komorebi/Awesome-Linux-Software
