@@ -1,4 +1,5 @@
 # Bulogos
+> https://github.com/sahwar/Bulogos/
 
 | Резервни копия на това хранище | , но другаде |
 | ------ | ------ |
@@ -75,6 +76,9 @@ git clone https://github.com/sahwar/Bulogos.git
 ## License / Лиценз
 
 * [LICENSE.txt](https://github.com/sahwar/Bulogos/blob/master/LICENSE.txt) + [CREDITS_FAIR-USE.txt](https://github.com/sahwar/Bulogos/blob/master/CREDITS_FAIR-USE.txt)
+
+## Live webchat / Уеб-чат на живо
+* Maybe later... on an IRC server or via XMPP... (EEST/EET between XY:ZA o'clock & BC:DE o'clock?...)
 
 ----
 
