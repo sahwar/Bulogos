@@ -1,7 +1,7 @@
 ## Viable offline & online [payment-methods](https://en.wikipedia.org/wiki/Payment#Methods) & payment systems 2019 (legal tender = exchange currency) ##
 
 ### Ancient (older than feudalism) exchange methods ###
-* Physical resource(s)/energy/food&drink/sex/tech/information-data barter
+* Physical resource(s)/energy/food&drink/sex/tech/information-data barter (or barter with additional money/etc. payment - „бартер (размяна) с доплащане“
 * Legal, under-the-table, and 'illegal' payment via providing of services/physical goods/tech/manual (and etc.) help/information-data
 * Bidding in auctions or at local physical bazaars/market-places (for physical goods)
 * залепяне/очакване на надписи, че предлагате дадена платена услуга или че продавате дадени продукти, с вписан телефон, имейл, Viber, адрес, име/псевдоним/(реална/фалшива) фирма - като метод за контакти ((с)връзка); с опция да си откъснете част от хартията със съкратена тази информация
@@ -12,18 +12,13 @@
 * спамене чрез графити надписи или ламинирани лепенки (четящи се от поне 0,50–1 m разстояние) за лепене навсякъде с адрес на уебсайт за услуга/продукт/кауза/и т.н.
 
 ### Classic (e-)banking ###
-* банков превод --- In-country & International bank transfer (IBAN & SWIFT/BIC) (check bank tariffs/costs/charges)
+* банков превод --- In-country & International bank transfer (IBAN & SWIFT/BIC) (check bank tariffs/costs/charges); 24/7 deposit-enabled bank ATMs (банкомати с опция за депозит на пари); + обслужване от служител касиер в банката на място...
 * банков чек (bank cheque)
 * банкомати (ATMs): класически банкомати за теглене с дебитна или кредитна карта, двупосочни банкомати (с опция за депозит/внасяне на сума по сметка), с работно време и 24/7; купюр/купюра (номинална стойност, например банкнота от 5 лв. (5 BGN) или монета от 50 ст. (стотинки)): много банкомати имат ограничение в броя банкноти&монети, които можете да теглите или внасяте в рамките на 24 ч.; някои банкови термини: счетоводно салдо, налично салдо, баланс по сметката; шконто/акаунт/банкова сметка/"банков профил"; Речниккупю̀ра —съществително име, женски род (тип 41) ￼
 Значение
 мн. купю̀ри, ж. (или купюр (м. р.!)
 1. Спец. Класификация на пари или ценни книжа по номиналната им стойност. Купюри от 100 лева. 
 2. Съкращение, пропуск в литературно, научно или музикално произведение. Печата се с купюри.
-
-
-
-
-
 
 
 
