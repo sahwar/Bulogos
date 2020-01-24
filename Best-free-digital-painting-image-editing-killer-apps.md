@@ -654,6 +654,44 @@ https://alternativeto.net/software/gimp/
 * * https://www.tftcentral.co.uk/faq.htm
 * * https://www.reddit.com/r/Monitors/comments/cse24y/tft_central_lg27gl850_review_is_up/
 
+------
+
+* Also add the entries from https://github.com/collections/pixel-art-tools to the above list & re-sort the list: 
+* https://github.com/aseprite/aseprite - Animated sprite editor & pixel art tool (Windows, macOS, Linux). (It is) written in C++.
+* https://github.com/piskelapp/piskel - A simple web-based tool for Spriting and Pixel art. (It is) written in JavaScript.
+* https://github.com/jvalen/pixel-art-react - Pixel art animation and drawing web app powered by React&JavaScript.
+* https://github.com/maierfelix/poxi - A flat pixel art editor. (It is) written in JavaScript.
+* https://github.com/gmattie/Data-Pixels - Create pixel art programmatically. Includes DataPixels.js and Data Pixels Playground desktop application. (It is) written in JavaScript.
+* https://github.com/vsmode/pixel8 - A collection of low-res primitives for creating art and games in React&JavaScript.
+* https://github.com/jennschiffer/make8bitart - THIS REPO IS ARCHIVED AND THE PROJECT IS NOW MAINTAINED ON GLITCH.COM :). (It is) written in JavaScript.
+* https://github.com/kitao/pyxel - A retro game engine for Python. (It is) written in C++.
+* https://github.com/jackschaedler/goya - Pixel art editor built on Clojurescript + Om. (It is) written in Clojurescript+Om&JavaScript.
+* https://github.com/cloudhead/rx - space_invader Modern and minimalist pixel editor implemented in the Rust programming language.
+https://github.com/collections/text-editors
+https://github.com/collections/learn-to-code
+
+https://www.creativebloq.com/advice/the-best-software-for-digital-artists ( [Rebelle (commercial)](https://www.escapemotions.com/products/rebelle/), [Serif.com Affinity Designer](https://affinity.serif.com/en-gb/), [Procreate (only for iPad (iOS 11.1+), commercial)](https://itunes.apple.com/us/app/procreate-sketch-paint-create./id425073498?mt=8&at=1001lnRX&ct=cbq-1186402469428160894), [Clip Studio Paint Pro](https://www.clipstudio.net/en), [Artweaver 7+ (commercial)](https://www.artweaver.de/en), [Artrage 6+ (commercial)](https://www.artrage.com/artrage/), [Krita (OPEN-SOURCE FREE SOFWARE, HIGHLY RECOMMENDED)](https://krita.org/en/download/krita-desktop/), [CorelDRAW Suite 2019 (commercial)](https://www.coreldraw.com/en/product/coreldraw/mac/#v3main), [Pixarra TwistedBrush Pro Studio (commercial)](http://www.pixarra.com/pro_studio.html), [MediBang Paint Pro (FREEWARE, for MS Windows&macOS, HIGHLY RECOMMENDED](https://medibangpaint.com/en/pc/), [Black Ink (commercial, for MS Windows only)](http://blackink.bleank.com/), [Paintstorm Studio (commercial, Windows, macOS, Linux, iPad)](http://www.paintstormstudio.com/index.html), ... )
+* https://www.creativebloq.com/features/the-best-tablets-with-a-stylus-for-drawing-and-note-taking
+* https://www.creativebloq.com/graphic-design/tools-every-graphic-designer-should-have-6133208
+* https://www.creativebloq.com/graphic-design/free-graphic-design-software-8134039
+* https://www.creativebloq.com/inspiration/5-alternatives-to-traditional-sketchbooks
+* https://www.creativebloq.com/features/best-drawing-tablet
+* https://www.creativebloq.com/features/how-to-draw-animals-people-landscapes
+* https://www.creativebloq.com/features/best-drawing-tablet
+* https://www.creativebloq.com/design-tools/pencils-designers-2131969
+* https://www.creativebloq.com/features/what-is-biophilic-design-and-how-can-it-increase-creative-productivity
+* https://www.creativebloq.com/inspiration/tiny-moomin-inspired-houses-ignite-big-design-debate
+* https://www.creativebloq.com/features/the-best-tablets-with-a-stylus-for-drawing-and-note-taking
+
+* https://www.creativebloq.com/graphic-design/tools-every-graphic-designer-should-have-6133208
+* https://www.creativebloq.com/graphic-design/free-graphic-design-software-8134039
+https://www.creativebloq.com/advice/the-best-software-for-digital-artists
+http://batterybarpro.com/
+lifehacker.com
+makeuseof.com
+downloadsquad.com
+fosshub.com
+
 ### TO DO (continued...)
 * Cleanup, remove/Merge duplicate entries, fix typos&formatting, and add missing hyperlinks
 * Add a new category for Google Android & Apple iOS apps
