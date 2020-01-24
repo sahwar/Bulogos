@@ -201,6 +201,43 @@ https://softfamous.com/uniconvertor/
 https://www.linux-apps.com/browse/cat/239/order/latest
 https://github.com/Artanidos/AnimationMaker
 
+#### Online (Internet-based, WWW) social media for artists, online art shops (Shopify, etc.), online art dealings, online art galleries, etc.:
+
+Useful hyperlinks with lists of graphics tablets hardware (& their hardware specifications), computer application software for digital image editing, graphic design, digital painting & drawing, 3D CAD software, voxel editors, 3D raytracers, etc.:
+* https://old.reddit.com/r/stylus/wiki/index
+* https://www.reddit.com/r/wacom/
+* https://www.reddit.com/r/graphicstablets/
+* https://www.creativebloq.com/advice/the-best-software-for-digital-artists
+* https://www.creativebloq.com/features/10-game-changing-tech-innovations-for-2020
+* https://www.creativebloq.com/advice/the-best-software-for-digital-artists
+* https://www.digitalartsonline.co.uk/tutorials/
+* https://www.reddit.com/r/DigitalPainting/
+* https://www.reddit.com/r/DigitalArtist/
+* https://www.reddit.com/r/digitaldrawing/
+* https://www.reddit.com/r/painting/
+* https://www.reddit.com/r/drawing/
+* https://www.reddit.com/r/Art/
+* https://www.reddit.com/r/IDAP
+* https://www.reddit.com/r/sketches
+* https://www.reddit.com/r/doodles
+* https://www.reddit.com/r/fanart
+* https://www.reddit.com/r/artporn
+* https://www.reddit.com/r/comics
+* https://www.reddit.com/r/designjobs
+* https://www.reddit.com/r/artstore
+Online social networks for (digital-media, mixed, and traditional-media) artists, video-game gamedev, HTML+CSS+JavaScript webdesign, etc.:
+* http://deviantart.com
+* http://artstation.com
+* http://pixeljoint.com/
+* http://tigsource.com
+* https://www.reddit.com/r/gamedev/comments/6wduco/is_tig_source_really_worth_it/
+* https://www.reddit.com/r/gamedev/
+* https://www.reddit.com/r/design/
+* https://www.reddit.com/r/webdesign/
+* http://itch.io
+* https://en.wikipedia.org/wiki/Digital_art
+* https://www.webdesignmuseum.org/web-design-history
+
 <!--
 Markdown table with screenshots placed like this one:
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
@@ -573,7 +610,7 @@ https://alternativeto.net/software/gimp/
 * Cleanup, remove/Merge duplicate entries, fix typos&formatting, and add missing hyperlinks
 * Add a new category for Google Android & Apple iOS apps
 * Maybe add a category for apps for exotic and niche OSs
-* Separate commericial apps into a separate category
+* Separate commericial apps into a separate (sub)category?
 * Maybe make the list into a Markdown table
 * Add screenshots for each app = TEDIOUS, IT WILL TAKE A LOT OF TIME. For now just use the RECOMMENDED & HIGHLY RECOMMENDED apps in the list...
 * Maybe add FOSS 3D software as a separate category, e.g. [Blender 3D](https://www.blender.org/), and also FOSS pixel-art-like voxel editors (e.g. [MagicaVoxel](https://ephtracy.github.io/) [2](http://www.voxelmade.com/magicavoxel/) [3](https://www.rollapp.com/app/magicavoxel) [4](https://sketchfab.com/tags/magicavoxel) (+[IsoVoxel](https://github.com/tommyettinger/IsoVoxel) 3D-voxel TO isometric pixel-art plug-in))?
