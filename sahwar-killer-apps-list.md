@@ -644,7 +644,7 @@ fluxbox (?); champferwm, awesome-wm, i3 wm (window-manager), sway (window-manage
 * `locate`, ``friendly-find (ffind)`` & ``find``, catfish (all are file searchers!!!), ``ack`` & ``grep`` & ``awk``, `cron` (and other `cron`-like apps on GitHub...), `iconv` & http://2cyr.com
 * NTFS driver (for using MS Windows 7+ NTFS partitions as data storage partitions)
 * the new best file-system for (GNU/)Linux: https://zfsonlinux.org/
-* GNU binutils, GNU coreutils, ...
+* GNU binutils, GNU coreutils, 
 * https://en.wikipedia.org/wiki/Template:Unix_commands
 https://en.wikipedia.org/wiki/Category:Standard_Unix_programs
 https://en.wikipedia.org/wiki/Category:Unix_SUS2008_utilities
@@ -734,6 +734,67 @@ https://increment.com/open-source/the-lingua-franca-of-latex/
 * https://gitlab.com/bitfireAT/davx5-ose
 * https://www.davx5.com/donate
 https://old.reddit.com/r/stylus/wiki/index
+
+### `grep`-like search apps & `awk`-like text-processing apps for (GNU/)Linux
+
+* https://pdfgrep.org/ , https://github.com/phiresky/ripgrep-all , **https://github.com/cboxdoerfer/fsearch** (similar to the MS Windows tool voidtools.com _Search Everything_ (x64 + localization file), https://github.com/mptre/pick , https://github.com/Canop/broot , https://github.com/BurntSushi/ripgrep , https://github.com/nlamirault/ripgrep.el , https://github.com/monochromegane/the_platinum_searcher , https://github.com/sampson-chen/sack , https://github.com/gvansickle/ucg , https://github.com/svent/sift ( https://sift-tool.org/ , https://sift-tool.org/docs ) ,  https://github.com/shepmaster/jetscii , https://github.com/tkisason/gcrack , https://github.com/Wilfred/ag.el , https://github.com/p-e-w/plotinus (A searchable command palette in every modern GTK+ application), https://github.com/omaciel/pipsearch ,   https://github.com/k-takata/the_silver_searcher-win32 , https://github.com/antirez/kilo , https://github.com/KirillOsenkov/QuickInfo , https://github.com/syohex/emacs-helm-ag , https://github.com/cliffordfajardo/cato , https://github.com/MarioVilas/googlesearch , https://github.com/learnbyexample/Command-line-text-processing , https://github.com/radiantearth/stac-spec , https://github.com/quasoft/postgres-tsearch-bulgarian , https://github.com/jonbakerfish/TweetScraper , https://github.com/appbaseio/dejavu , https://github.com/prakharchoudhary/TwitterAdvSearch , https://github.com/eugeneware/replacestream , https://github.com/vividvilla/csvtotable , https://github.com/eisenbraun/columns , https://github.com/jarun/googler , https://github.com/ggreer/the_silver_searcher , https://github.com/sematext/related-searches , https://github.com/xanderdunn/twitter-scraper , https://github.com/derekeder/csv-to-html-table , https://github.com/tmux-plugins/tmux-copycat , https://github.com/A/go-search-me , https://github.com/btdig/dhtcrawler2 , https://github.com/learnbyexample/learn_gnugrep_ripgrep , https://github.com/ProgerXP/Notepad2e ; https://github.com/onetrueawk/awk , https://github.com/lotabout/rargs (extended `xargs`, https://github.com/TheMozg/awk-raycaster , https://github.com/KirillOsenkov/QuickInfo , https://github.com/ahefner/shuffletron , https://github.com/shepmaster/jetscii , https://github.com/tkisason/gcrack , https://github.com/eugeneware/replacestream , https://github.com/sematext/related-searches , https://github.com/xanderdunn/twitter-scraper , https://github.com/derekeder/csv-to-html-table , https://github.com/tmux-plugins/tmux-copycat , https://github.com/A/go-search-me , https://github.com/m-ender/retina , https://github.com/IonicaBizau/regex-escape.js , https://github.com/rust-lang/regex , https://github.com/firasdib/Regex101 , https://github.com/fitzgen/glob-to-regexp , https://github.com/javallone/regexper-static ; `mlocate`, `locate`, `find`, `ffind`, catfish (GUI frontend for `locate` and `find`), etc. + file launcher + desktop omnilaunchers (similar to Wox for MS Windows, Alfred app for macOS, etc.), ...
+* nmap, iptables, hwls, hpt
+
+https://blog.p2pfoundation.net/proposal-percloud-permanent-personal-cloud-really-usable-one-alternative-facebook-gmail-flickr-dropbox/2018/01/31
+https://gizmodo.com/delete-never-the-digital-hoarders-who-collect-tumblrs-1832900423
+http://stop.zona-m.net/2018/02/the-cost-of-five-more-years-without-perclouds/
+http://stop.zona-m.net/2019/05/the-deliberate-production-of-ignorance-and-a-suggestion-to-contain-it/
+https://www.abc.net.au/news/2019-04-18/fact-check-can-algorithms-screen-out-hate-content-social-media/10979770
+http://mfioretti.com/2018/02/calicut-personal-clouds-to-replace-corporate-controlled-platforms/
+http://mfioretti.com/2019/02/calicut-how-and-why-open-hardware-and-open-source-can-and-should-be-used-in-non-western-countries/
+http://stop.zona-m.net/2018/01/indeed-it-seems-that-google-is-forgetting-the-old-web/
+https://nullprogram.com/blog/2019/05/29/
+https://github.com/sahwar/unicopedia-plus
+https://github.com/sahwar/ripgrep-all
+https://github.com/sahwar/ripgrep
+https://github.com/sahwar/lesspipe
+https://gist.github.com/sahwar/64594891896de4b2f2f0d62a21bdb33d
+https://phiresky.github.io/blog/2019/rga--ripgrep-for-zip-targz-docx-odt-epub-jpg/
+http://www.vpri.org/pdf/tr2015004_cuneiform.pdf
+https://www.southampton.ac.uk/news/2016/02/5d-data-storage-update.page
+https://www.panlex.org/
+http://rosettaproject.org/
+https://www.johndcook.com/blog/2019/09/02/number-of-possible-unicode-characters/
+https://99percentinvisible.org/article/computer-age-typography-hybrid-legibility-explains-that-ubiquitous-check-font/
+https://www.johndcook.com/blog/2019/09/09/how-utf-8-works/
+http://gif2apng.sourceforge.net/
+https://developers.google.com/speed/webp/docs/gif2webp
+https://en.wikipedia.org/wiki/Libjpeg#mozjpeg
+https://en.wikipedia.org/wiki/Quantization_(image_processing)
+https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques
+https://github.com/sahwar/faster-utf8-validator
+https://github.com/sahwar/acefile
+https://www.vice.com/en_us/article/mg9pdv/the-hidden-phenomenon-that-could-ruin-your-old-discs
+http://museum.ipsj.or.jp/en/computer/index.html
+https://www.nytimes.com/1987/05/26/science/hunt-is-on-for-scattered-blueprints-of-powerful-saturn-moon-rocket.html
+https://archiveprogram.github.com/
+https://against-the-grain.com/2019/11/atg-newsflash-for-the-love-of-literacy-better-world-books-and-the-internet-archive-unite-to-preserve-millions-of-books/
+https://tech.slashdot.org/story/19/11/04/2222255/adobe-and-twitter-are-designing-a-system-for-permanently-attaching-artists-names-to-pictures
+https://github.com/sahwar/HRConvert2
+https://github.com/sahwar/libvips
+https://github.com/sahwar/gb-nes-pdf-html-zip
+https://archivebox.io/
+https://jeffhuang.com/designed_to_last/
+https://github.com/sahwar/webrecorder
+https://github.com/sahwar/pywb
+https://github.com/sahwar/openwayback
+https://github.com/sahwar/brozzler
+https://github.com/sahwar/warcprox
+https://github.com/sahwar/wail
+https://github.com/sahwar/warcreate
+https://news.ycombinator.com/item?id=21840140
+https://www.eff.org/deeplinks/2019/12/mint-late-stage-adversarial-interoperability-demonstrates-what-we-had-and-what-we
+https://tech.slashdot.org/story/19/12/12/154202/getting-drivers-for-old-hardware-is-harder-than-ever
+https://bestasciitable.com/
+http://www.fileformat.info/
+https://twitter.com/EsotericExposal/status/1216861244138770433
+
+https://www.csdesignworks.com/blog/2015/06/attention-span-of-a-goldfish-sounds-fishy (attention deficit 'disorder', Alan Watts on the (self-)forgetfulness of the God(head) as a seemingly sepatate human organism individual with a persona/personality (mask), the Forgetting Curve & individual variations (proof of how human memory works & understanding of semi-amnesia (PTSD), moksha (personality disintegration - multiplicity AND concreteness & (secret inherent YinYang-y) UNITY (Indra's web, quantum mechanics, ecology, etc.), etc.
 
 ## Under `Apple macOS` ##
 _I don't use macOS..._ In my opinion, it's only good for art/designer/webdev professionals... I only like some MacBook Pro's and the newer pressure-sensitive iPad's with a Wacom-like graphics stylus.
