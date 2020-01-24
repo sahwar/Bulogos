@@ -607,6 +607,54 @@ https://en.wikipedia.org/wiki/List_of_vector_graphics_editors
 https://amp.reddit.com/r/photography/comments/a6alpu/the_ultimate_list_of_photo_editing_tools_in_2018
 https://alternativeto.net/software/gimp/
 )
+
+#### Add the below entries:
+
+* [Adobe Photshop (commercial, versions CC and up)](http://www.photoshop.com/), 
+* [Alchemy](http://al.chemy.org/)
+* [ArtRage](http://www.artrage.com/)
+* [Autodesk Sketchbook Pro](http://www.autodesk.com/products/sketchbook-pro/overview)
+* [Blender](http://www.blender.org/) (Very powerful open source 3D modeling and composite program.)
+* [Carapace](http://epicgames.com/community/2012/11/free-art-tool-released-thanks-to-epic-friday/) (A fantastic tool released by epic that allows you to make quick and easy perspective guides. You can also recreate a perpsective guide based on an existing image. Truly a helpful program.)
+* [Corel Painter X3](http://www.corel.com/corel/product/index.jsp?pid=prod5090087&cid=catalog20038&segid=10000006&storeKey=us&languageCode=en)
+* [FireAlpaca](http://firealpaca.com/en)
+* [GIMP](http://www.gimp.org/)
+* [Gimpshop](http://www.gimpshop.com/)
+* [Google Sketchup](http://www.sketchup.google.com/)
+* [iScribble](http://www.iscribble.net/) (A neat online painting/drawing platform in which you can draw with multiple people at the same time, i.e. like a Japanese oekaki/oakeki drawing board; also see: imageboard software on Wikipedia)
+* [Krita](http://www.krita.org/)
+* [Lazy Nezumi pro](http://www.lazynezumi.com/) (Manga Studio/ Paint tool sai -esque brush smoothing  but can be used on almost any program)
+* [Manga Studio 5+](http://manga.smithmicro.com/index.html)
+* [MyPaint](http://www.mypaint.intilinux.com/)
+* [Paint Tool Sai](http://www.systemax.jp/en/sai/)
+* [paint.net](http://www.getpaint.net/)
+* [Painter Amazon  Educational version Link](http://www.amazon.com/Corel-Painter-X3-Education-Edition/dp/B00DT04HWU/ref=sr_1_2?ie=UTF8&qid=1379017637&sr=8-2&keywords=painter_)
+* [pixlr.com (online Drawing app)](http://pixlr.com/x/)  
+* [SpeedyPainter](http://speedypainter.altervista.org/)
+* [Sumo Paint (online Drawing app)](http://www.sumopaint.com/app/)  
+* [Twisted Brush](http://www.pixarra.com/)
+* http://rfc2822.github.io/GfxTablet/ & https://github.com/rfc2822/GfxTablet (Google Android tablet + Linux)
+* https://old.reddit.com/r/DigitalPainting/wiki/applications
+
+* https://old.reddit.com/r/stylus/wiki/sp5#wiki_intel_core_m_.2F_core_i-y_cpu_or_similar
+* https://old.reddit.com/r/stylus/wiki/sp3
+* http://forum.tabletpcreview.com/hardware/52592-list-windows-8-rt-tablets-convertibles-stylus.html
+* http://forum.tabletpcreview.com/microsoft/55416-tabletpc-compatible-wacom-pens-work-surface-pro.html
+* http://forum.tabletpcreview.com/what-tablet-pc-should-i-buy/30006-exhaustive-tablet-pc-faq-all-you-ever-wanted-know-about-tablet-pc-s.html
+* http://forum.tabletpcreview.com/threads/the-exhaustive-tablet-pc-faq-all-you-ever-wanted-to-know-about-tablet-pcs.30006/ (VERY COMPREHENSIVE LIST!!!)
+* http://forum.tabletpcreview.com/threads/found-a-tablet-pressure-curve-editor-witha-gui.35990/
+* AFFS+/IPS-or-similar panel for monitor/display screen/touchscreen (optional: Wacom drawing surface...)...
+* The best websites with explanations of computer monitor/display/screen technology & the screen matrix technologies (IPS, etc.):
+* * https://www.tftcentral.co.uk/
+* * https://www.tftcentral.co.uk/advanced.htm
+* * https://www.tftcentral.co.uk/features.htm
+* * https://www.tftcentral.co.uk/articles/pulse_width_modulation.htm
+* * https://www.tftcentral.co.uk/specs.htm
+* * https://www.tftcentral.co.uk/articles/panel_technologies.htm
+* * https://www.tftcentral.co.uk/faq.htm
+* * https://www.reddit.com/r/Monitors/comments/cse24y/tft_central_lg27gl850_review_is_up/
+
+### TO DO (continued...)
 * Cleanup, remove/Merge duplicate entries, fix typos&formatting, and add missing hyperlinks
 * Add a new category for Google Android & Apple iOS apps
 * Maybe add a category for apps for exotic and niche OSs
