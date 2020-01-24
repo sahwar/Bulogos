@@ -23,9 +23,9 @@
 
 
 ### Online ###
-* **[PayPal.com](https://www.paypal.com/)** (works with linked debit cards and credit cards)
+* **[PayPal.com](https://www.paypal.com/)** (works with linked debit cards and credit cards, and can even be linked to bank account in some selected countries)
 * **[TransferWise.com](https://transferwise.com/)**
-* Revolut
+* _Revolut_
 * (ApplePay, GooglePlay store, phyre, etc.)
 * **[Patreon.com](https://www.patreon.com/)**
 * **[LiberaPay.com](LiberaPay.com)** (e.g. https://liberapay.com/Lutris/ )
@@ -39,11 +39,13 @@ https://salt.bountysource.com/ (SALT - A crowdfunding platform that helps develo
 
 * **Western Union (? Sorta reliable, mixed reviews.)** - https://www.westernunion.com/bg/en/terms-conditions-bg.html
 * **MoneyGram (? Sorta reliable, mixed reviews. Seems a bit more reliable than Western Union (?))** - http://moneygram.bg/
-* bitcoin (BTC) & other cryptocurrencies (???) (e.g. Etherium ETH, Litecoin LTC, etc.) [I PERSONALLY **DO NOT** RECOMMEND CRYPTOCURRENCIES AS A VIABLE ALTERNATIVE TO REGULAR CURRENCIES DUE TO Ponzi-scheme-like CONCERNS OVER THE NATURE&AIMS OF CRYPTOCURRENCIES, but if you can buy physical goods&services with cryptocurrencies, then go for it!]
+* bitcoin (BTC) & other cryptocurrencies (???) (e.g. Etherium ETH, Litecoin LTC, etc.) [I PERSONALLY **DO NOT** RECOMMEND CRYPTOCURRENCIES AS A VIABLE ALTERNATIVE TO REGULAR CURRENCIES DUE TO Ponzi-scheme-like CONCERNS OVER THE NATURE&AIMS OF CRYPTOCURRENCIES/binary-options/ForEx (like casino gambling & lottary tickets...), but if you can buy/sell physical goods&services with cryptocurrencies at your current country (or some other target countries), then go for it!]
 http://cryptocompare.com/
 https://99bitcoins.com/ethereum/ethereum-mining/
 https://www.blockchain.com/btc/address/
 (NOTE: 'BTC' and other cryptocurrencies' shorthand codes conflict with some ISO currency codes and thus are not officially recognized by ISO/most bank institutions...)
+* `bitcoin:{hash}` (+QR code), `bitcoincash:{hash}` (+QR code), & other cryptocurrencies (e.g. ETH (Ethereum), etc.)...
+
 ### Payment in cash ###
 * In-person p2p (peer-to-peer) paper-banknotes&coin cash-exchange
 * Payment/Cash-on-delivery (наложен платеж) (geolocation-centric)
