@@ -1,7 +1,7 @@
 # A list of my favorite killer-apps for daily use (Software Tools of the Trade) (2019) #
 > by https://github.com/sahwar 
 > 
-> **NOTE:** A 'killer app' means a _very popular and/or very useful piece of computer (application) software_.
+> **NOTE:** A 'killer app' means a _very popular and/or very useful piece of computer (application) software, usually the best (or among the best) and/or only tool in its category (use case / functionality)_.
 
 ## Under `Microsoft Windows 7 Ultimate/Pro SP1 (x64) / Windows 8.1 / Windows 10` ##
 
@@ -686,6 +686,46 @@ http://ezix.org - pukcab file-backuping
 ElementaryOS apps
 PuppyLinux Ubuntu apps
 SpaceFM
+
+***
+
+https://www.olimex.com/ ; http://puri.sm ; http://system76.org ; http://kernel.org ; http://fsf.org ; http://caniuse.com ; https://ryf.fsf.org/products 
+https://tehnoetic.com/TET-X200T 
+https://minifree.org/product/libreboot-x200-tablet/ 
+http://replicant.us/ 
+https://lineageos.org/ (continuation of the Google Android fork - CyanogenMod)
+https://f-droid.org/ 
+https://github.com/PeterLemon/RaspberryPi 
+http://fosshub.org ; http://github.com ; http://gitlab.org ; http://gitea.org 
+http://docs.ludost.net/ & http://chise.ludost.net/ 
+https://dl.uxnr.de/
+http://www.ibiblio.org/
+http://fosshub.com
+http://sourceforge.net
+https://www.openfest.org/
+https://fosdem.org/
+https://tuxcon.mobi/ — TuxCon BG (IT конференция за ползватели и фенове на Linux и F(L)OSS)
+Божидар — IT консултации, IT проекти за държавните институции и разработка и внедряване на поръчков софтуер: http://blog.bozho.net/ & https://twitter.com/bozhobg &  https://twitter.com/logsentinel
+https://stallman.org/bad-border-policy-countries.html ( https://archive.is/ddKum )
+Проектиране на архитектурни обекти, консултантски услуги по узаконяване на недвижими имоти, строителни услуги — http://5ko.free.fr/bg/ & https://www.accent.bg/
+http://www.system-rescue-cd.org/
+https://wiki.syslinux.org/wiki/index.php?title=Hdt_(Hardware_Detection_Tool)
+http://ophcrack.sourceforge.io
+https://www.iseepassword.com/how-to-reset-windows-7-password.html
+https://www.iseepassword.com/ophcrack-no-tables-found-windows-7.html
+https://www.rmprepusb.com/tutorials/ophcrack
+http://www.fysnet.net/ultimate/index.htm
+https://gparted.org/
+https://alternativeto.net/software/systemrescuecd/
+https://distrowatch.com/
+https://www.cio.com/article/3149771/5-recovery-environments-for-tricky-windows-10-repairs.html
+https://it.slashdot.org/story/19/03/05/1634201/delete-never-the-digital-hoarders-who-collect-tumblrs-medieval-manuscripts-and-terabytes-of-text-files
+http://reddit.com/r/datahoarder/
+'The key advantage of digital media, the more times your copy it, the safer the data. Because a digital copy is an exact copy of the data.'
+https://pdfgrep.org/
+--- ID cards/passports, biometrics, & country entry limits: https://stallman.org/bad-border-policy-countries.html ( https://archive.is/ddKum )
+https://increment.com/open-source/the-lingua-franca-of-latex/
+
 ````
 
 * http://www.webdav.org/ (`Briefly: WebDAV stands for "Web-based Distributed Authoring and Versioning". It is a set of extensions to the HTTP protocol which allows users to collaboratively edit and manage files on remote web servers.`)
@@ -697,12 +737,12 @@ https://old.reddit.com/r/stylus/wiki/index
 
 ## Under `Apple macOS` ##
 _I don't use macOS..._ In my opinion, it's only good for art/designer/webdev professionals... I only like some MacBook Pro's and the newer pressure-sensitive iPad's with a Wacom-like graphics stylus.
-Alfred launcher, PixelPicker, Pixen pixel-art app, Pixelmator Pro, PixelStyle Free
+Alfred launcher, PixelPicker, Pixen pixel-art app, Pixelmator Pro, PixelStyle Free, Adobe InDesign, Adobe Photoshop, etc.
 
 ## Under `Google Android` ##
 * (TO ADD from apps-list-generating apps & my own Google Play Favorited apps)
 * https://github.com/stevesoltys/seedvault (Google Android backup)
-* `adb` + Android Studio + Android Studio Tools
+* `adb` commandline tool (for backuping the apps list of a Google Android smartphone/tablet) + Android Studio + Android Studio (Commandline) Tools
 
 ## Under `Apple iOS` ##
 _I don't use iOS..._
