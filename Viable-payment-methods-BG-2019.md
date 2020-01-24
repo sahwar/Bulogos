@@ -101,4 +101,4 @@ Some open online social-media platforms:
 - FreedomBox + syncloud.org
 - freedesktop.org/wiki/Software/HarfBuzz/ & Pango project & FreeType + color-computer-fonts file-specs; 
 - http://www.catb.org/~esr/netfreedom/
-- I2P, JSXX chat, https://freedombox.org/download/ irc://irc.debian.org/freedombox , https://salsa.debian.org/freedombox-team/plinth , https://wiki.debian.org/FreedomBox
+- I2P, JSXC chat, Mumble audio-conferencing, gitweb/github.com/gitlab-instance/gitea version-controlled, wiki software (MediaWiki, MoinMoin, etc.), `pandoc`; https://freedombox.org/download/ irc://irc.debian.org/freedombox , https://salsa.debian.org/freedombox-team/plinth , https://wiki.debian.org/FreedomBox
