@@ -688,12 +688,21 @@ PuppyLinux Ubuntu apps
 SpaceFM
 ````
 
+* http://www.webdav.org/ (`Briefly: WebDAV stands for "Web-based Distributed Authoring and Versioning". It is a set of extensions to the HTTP protocol which allows users to collaboratively edit and manage files on remote web servers.`)
+* https://github.com/sabre-io/dav
+* https://github.com/sabre-io/Baikal
+* https://gitlab.com/bitfireAT/davx5-ose
+* https://www.davx5.com/donate
+https://old.reddit.com/r/stylus/wiki/index
+
 ## Under `Apple macOS` ##
 _I don't use macOS..._ In my opinion, it's only good for art/designer/webdev professionals... I only like some MacBook Pro's and the newer pressure-sensitive iPad's with a Wacom-like graphics stylus.
 Alfred launcher, PixelPicker, Pixen pixel-art app, Pixelmator Pro, PixelStyle Free
 
 ## Under `Google Android` ##
 * (TO ADD from apps-list-generating apps & my own Google Play Favorited apps)
+* https://github.com/stevesoltys/seedvault (Google Android backup)
+* `adb` + Android Studio + Android Studio Tools
 
 ## Under `Apple iOS` ##
 _I don't use iOS..._
