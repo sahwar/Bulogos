@@ -33,8 +33,9 @@
 * Revolut
 * (ApplePay, GooglePlay store, phyre, etc.)
 * **[Patreon.com](https://www.patreon.com/)**
-* **[LiberaPay.com](LiberaPay.com)**
+* **[LiberaPay.com](LiberaPay.com)** (e.g. https://liberapay.com/Lutris/ )
 * **[Flattr.com](https://flattr.com/)**
+* https://stripe.com/
 * ***SALT.bountysource.com*** - https://salt.bountysource.com/ (for open-source software projects, etc.) = 
 https://salt.bountysource.com/ (SALT - A crowdfunding platform that helps developers earn a monthly salary from open-source software) (e.g. https://salt.bountysource.com/teams/neovim)
 * https://opencollective.com
@@ -83,3 +84,21 @@ _([information in Bulgarian](https://www.crowdfunding.com/), [more information](
 * https://www.kickstarter.com/
 * https://www.indiegogo.com/
 * https://www.gofundme.com/
+
+### Extra...
+
+Some open online social-media platforms:
+- self-hosted Diaspora\*, e.g. https://framasphere.org/u/liberapay
+- self-hosted Mastodon (Twitter.com (microblogging) clone) instance, e.g. https://framapiaf.org/@Framasoft
+- self-hosted XMPP server node - http://xmpp.org
+- Matrix protocol - http://matrix.org
+- p2p file-sharing protocols: DC++ & ADC (EiskaltDC++, DC++, LinuxDC++, etc.), WebRTC, p2p via HTTP (web-browser) file-sharing (e.g. FilePizza); OwnCloud, SyncThing, NextCloud, ProjectSend.org, mounting remote filesystems hosted on external HDDs/SSDs disks via sshfs + Linux FUSE, `f*ex` + `sexxx`, etc.
+- Tox.im
+- OnionShare p2p file-sharing; Tor Browser (sorta secure Tor .onion web-browser)
+- IRC chat server, e.g. freenode.net
+- IRC 'p2p' (?) file-hosting protocol: https://en.wikipedia.org/wiki/XDCC
+- https://github.com/awesome-selfhosted/awesome-selfhosted
+- FreedomBox + syncloud.org
+- freedesktop.org/wiki/Software/HarfBuzz/ & Pango project & FreeType + color-computer-fonts file-specs; 
+- http://www.catb.org/~esr/netfreedom/
+- I2P, JSXX chat, https://freedombox.org/download/ irc://irc.debian.org/freedombox , https://salsa.debian.org/freedombox-team/plinth , https://wiki.debian.org/FreedomBox
