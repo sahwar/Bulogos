@@ -8,7 +8,8 @@
 * писане с перманентен маркер или графити боя на Интернет онлайн адрес, с който се саморекламирате и/или рекламирате продукта/услугата, който/която предлагате срещу парично заплащане и/или бартер(на размяна...).
 * Залепен голям надпис на блока (с данни за контакт), че събирате пари да си оправите сами дупките в асфалта пред блока, щото вече 5-та кола е отишла за ремонт за над 500 лв., както и че предлагаш секс услуги срещу заплащане, и че събирате пари да оправите счупените детски съоръжения до блока (на детската площадка)!!!
 Плюс смяна на дрехите и прическата и пускане като уличен артист с шапка за дарения и спамене на познати да те финансират за поредната врътка с обещание и те да намажат по някакъв начин от това!
-* on-the-spot crowdfunding for some cause / artistic act
+* on-the-spot crowdfunding for some cause / artistic act - молби за дарения на място или по банков път или чрез PayPal или чрез залепени листовки или чрез рекламни лепенки (стикери), или чрез графити надписи, или арт инсталации и streetart кампании или чрез печалба като импровизирани улични музиканти, клоуни, мимове, актьори и т.н.
+* събиране на (или производство на) билки, гъби, риби, дивеч и плодове, зеленчуци, шафран, маслодайни рози, алкохолни напитки и цветя (само проверени, а НЕ отровни!!!) и слагане в пликчета с етикет и продажба на импровизирани щандове
 * спамене чрез графити надписи или ламинирани лепенки (четящи се от поне 0,50–1 m разстояние) за лепене навсякъде с адрес на уебсайт за услуга/продукт/кауза/и т.н.
 
 ### Classic (e-)banking ###
@@ -59,7 +60,7 @@ https://www.blockchain.com/btc/address/
 * food vouchers for Kaufland, LIDL, BILLA, Bulgarian Posts, etc. ... (Bulgaria-centric)
 * book&souvenir vouchers (Helikon.bg, etc.)
 * Пускане на https://www.peticiq.com/ + имейл за PayPal дарения / линк за дарения чрез PayPal на сума по избор
-* Молба за дарения чрез PayPal в уебсайтове за лично творчество като https://deviantart.com, http://etsy.com (+продажба на craft (занаятчийски) творби и принтове на картини), http://otkrovenia.com, http://spodeli.com, https://m.bg-mamma.com/, https://info.tellonym.me/ и т.н.
+* Молба за дарения чрез PayPal в уебсайтове за лично творчество като https://deviantart.com, http://etsy.com (+продажба на craft (занаятчийски) творби и принтове на картини), http://otkrovenia.com, http://spodeli.com, https://m.bg-mamma.com/, https://info.tellonym.me/ , http://ko-fi.com, Instagram PrestaShop/other free mart/online personal shop software и т.н.
 * ...
 
 ### Etc. ###
@@ -69,6 +70,15 @@ https://www.blockchain.com/btc/address/
 * Dropshipping (?)
 * Selling your items on Amazon.com sites, eBay.com sites (https://www.ebay.com/, https://www.ebay.co.uk/, https://www.ebay-kleinanzeigen.de/, https://www.ebaymainstreet.com/digital-density-europe/country.htm, https://www.amazon.co.uk/Ebay-Online-Shopping-Books/b?ie=UTF8&node=14288291, http://blog.linnworks.com/international-ebay-sites-list, https://tech-vise.com/how-to-easily-sell-on-ebay-usa-from-any-country-in-the-world/, https://www.ebaymainstreet.com/, https://www.ebay.com/gds/eu-european-country-list/10000000013891943/g.html, https://blog.edesk.com/resources/european-marketplaces-alternatives, **[ALL EBAY sites list](http://archive.is/5hZZi)**), Etsy.com ([alternatives](https://www.finder.com/sites-like-etsy), [alternatives2](https://www.shoplo.com/blog/sites-like-etsy/))
 * [Freelancing online](https://www.quora.com/Which-are-the-best-websites-to-hire-freelancers) - freelancer.com, upwork.com
+* Продажба на handmade/craft изделия или на сувенири и стари луксозни продукти или на антики в Интернет, или платени freelancer услуги:
+http://fiverr.com
+http://etsy.com
+http://freelancer.com
+http://wework.com
+http://ebay.com , http://ebay.de , http://ebay.co.uk
+https://m.ebay-kleinanzeigen.de/einloggen
+https://amazon.com , https://amazon.de , https://amazon.es , https://amazon.co.uk
+http://aliexpress.com , http://alibaba.com , techtablets.com , ...
 * Some Bulgarian ISPs employ this tactic:  https://en.m.wikipedia.org/wiki/Grace_period
 * увеличаваш с малко цената и после лъжеш, че е с намаление (на промоция) при покупка на няколко броя в комплект ;) 😁🤫🙄😂🤣
 * **http://olx.bg**
@@ -82,7 +92,38 @@ _([information in Bulgarian](https://www.crowdfunding.com/), [more information](
 * https://www.indiegogo.com/
 * https://www.gofundme.com/
 
-### Extra...
+### Extra \#1...
+
+**Cool hardware & software products**
+
+_Recommended:_
+* http://puri.sm
+* http://system76.org
+* http://fsf.org/ryf/ = FSF RYF certified hardware list
+* SailfishOS + smartphones
+* CyanogenMod & its spiritual successor/fork
+* Google Android M / R, Google Fuchsia OS
+* ChromeOS (not my cup of tea...)
+
+_Also nice:_
+* http://droix.net
+* OneNetbook Mix 3 Pro
+* Nokia 5/7 smartphones with Google Android
+* OnePlus smartphones
+* https://old.reddit.com/r/stylus/wiki/index
+* Samsung Galaxy Note 4+ + its Wacom stylus + GitHub.com package about Android+Linux digital drawing (search in github.com/sahwar's starred or cloned repositories...)
+* Samsung Galaxy S4+
+* Huawei P30 smartphone
+* refurbished perfect-working 2nd-hand Lenovo ThinkPad's (from X60&P60 up, not ancient models... X200T, X201T, X220T, X220, X230, T400, ...)
+* Dell XPS13+ laptop
+* Microsoft Surface Pro 2+ & stylus
+* Xiaomi Mi6...
+* Wacom graphics tablets, Huion & M... graphics tablets (DIGImend package for (GNU/)Linux...)
+* shielded AC adapters & AC extender hubs with long cables
+* various AV&data&AC-power-to-DC-battery digital connector cables
+* etc. ...
+
+### Extra \#2...
 
 Some open online social-media platforms:
 - self-hosted Diaspora\*, e.g. https://framasphere.org/u/liberapay
