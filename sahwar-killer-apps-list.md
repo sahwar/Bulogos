@@ -625,9 +625,16 @@ https://github.com/nanomsg/nng
 * WinPcap, qTox IM, Ventrilo, TeamSpeak, [LogMeIn Hamachi](https://vpn.net) (VPN-like LAN-gaming over the Internet) (Hamachi-like virtual-LAN VPN tunnel software: https://beebom.com/hamachi-alternatives/, https://www.reddit.com/r/pcgaming/comments/6s1gsz/whats_a_good_2017_alternative_to_hamachi/, [ZeroTier](https://zerotier.com/) ([tutorial](https://www.reddit.com/r/pcgaming/comments/6s1gsz/whats_a_good_2017_alternative_to_hamachi/dm2mp76?utm_source=share&utm_medium=web2x)), [Tunngle](https://www.tunngle.net/en/), [Evolve](https://www.evolvehq.com/welcome), [Gameranger](https://gameranger.com), [LAN Bridger](http://lanbridger.com), http://www.radmin-vpn.com/, Microsoft Gaming Zone, Kali, Gamespy, Westwood Chat, https://www.techlila.com/hamachi-alternatives/, https://www.topbestalternatives.com/hamachi/, https://alternativeto.net/software/hamachi/?license=free, https://community.spiceworks.com/topic/1963329-seeking-alternatives-to-hamachi-vpn-with-similar-feature-set, https://alternative.me/hamachi, RadminVPN (Windows, freeware), Wippien (open-source, Windows, Linux; discontinued), DynVPN (open-source), Freelan, P2PVPN (open-source, but discontinued), Haguichi, Wirelends, VDE (Virtual Distributed Ethernet, open-source: Linux, BSD), IPOP (IP-over-P2P) (open-source, Linux), , **[SoftEther VPN](https://www.softether.org/) ([source-code at GitHub](https://github.com/SoftEtherVPN/SoftEtherVPN)) (open-source, Windows, Linux, Mac, FreeBSD, Android, iPhone, iPad and Windows Mobile !!!)**, Pertino/Cradlepoint, VPN L2TP/IPsec, etc.), https://www.winpcap.org/install/default.htm, https://nmap.org/npcap/, https://www.wireshark.org/; ... [Brackets (by Adobe and open-source contributors](http://brackets.io/) (https://www.github.com/adobe/brackets), [VisualStudio Code (VS Code) (by Microsoft)](https://code.visualstudio.com/), https://codeshare.io/, etc. ...
 * bgEngDictionary - SourceForge
 * DoubleCommander_x64, UltraCommander, explorer++, EF Commander file-manager, q-Dir/qDir file-manager, _Blackbox_ windows-manager for MS-Windows, bug.n (tiling windows manager for MS Windows), Hornil StylePix (Adobe Photoshop-like graphics editor), Saint Paint Studio, exPhoto, EZ Paint (C#), File Splitter & Joiner (FFSJ v3.3), FreeByte.com HJ \[File] Split Split&Merge 3.0 (Windows 9x, ME, NT, 200x, XP, Vista, 7, Linux/Wine), FileFriend Split, FilmoraPro, Shortcut.org, Studio Ghibli open-source anime animation app (OpenToonz?), Geeks3D GPU CapsViewer, TechPowerUp CPU-Z, GPU-Z, Piriform CCleaner, Piriform Defraggler, Piriform Recuva, Piriform Speccy, Geeks3D GPUShark, HeliosPaint, Graphiter, Gravit Designer, Geeks3D Geexlab H4shG3n, `md5sum`, Pixilart pixel-art editor, Howler11 graphics editor (commercial proprietary), **SumatraPDF**, FoxitReader PDF, Adobe Reader DC, `scrot` (CLI screenshot tool), **IDI Spellchecker & Dictionary**, WordStat 7.0, WinSTAT, MediBang Paint Pro, JumpPaint, FireAlpaca, imgv (image viewer), Intellihide, PyxelEdit, aseprite, **JPixel pixel-art editor&animator by emad.itch.io**, JTablet, Sprite Pad (commercial pixel-art editor?), JugiPaint (commercial proprietary 'natural painting brush strokes' graphics editor), Labography (commercial proprietary graphics editor?), **mtPaint** (also for Linux), **LazPaint** (also for Linux), _Locale Emulator_, StylePix Pro, MadView3D (`.3ds` files viewer), (pattern-texture-template-formatting_style-typographic-feature---glyph-character-substring-word-multiword_expression-sentence-line-paragraph-PgUp/PgDn/till-Home/till-End-style (i.e. leading whitespaces paragraph style and empty-lines and indenting formatting-style...)...),  etc.
+* XYplorer, xplorer2, FreeCommander, DoubleCommander, MemInfoProcess, TotalCommander, MidnightCommander (mc), Directory Opus, Q-Dir, fman, ZTreeWin, SE-Explorer, STDU Explorer, Far Manager, Norton Commander, Explorer++, Altap Salamander file manager, Unreal Commander, http://m.majorgeeks.com/files/details/windows_file_manager_(winfile).html , https://github.com/Microsoft/winfile , https://sdtimes.com/github/sd-times-github-project-of-the-week-winfile/
+
+instalki.pl
+
+nomacs (mmm, borderless mode!), XnView, XnViewMP, Imagine Image & Animation Viewer (x64 Unicode), IrfanView, , HoneyView, FastStone Image Viewer, Mirage Viewer ( https://github.com/xiongchiamiov/Mirage  ), GQView (Linux), geeqie (Linux), gThumb (Linux), Gwenview (Linux), Viewnior (Linux), Ristretto (https://docs.xfce.org/apps/ristretto/start), eog (Linux), Eye of MATE (Linux), KPhotoAlbum, Shotwell, DigiKam, feh (Linux), ImageMagick, GraphicsMagick,  . Nox app, ... 
+https://itsfoss.com/image-viewers-linux/
+https://www.tecmint.com/linux-pdf-viewers-and-readers-tools/amp/
 
 ````
-This is a sentence.  They separate sentences with doublespaces in RFCs to improve machine-readability although we normally use single-space/whitespace (even as HTML &nbsp;) to mark the sentence boundaries in most contemporary (AS IN THE YEAR 2019 C.E./A.D.) texts...  Funny yet cool, huh...
+This is a sentence.  They separate sentences with doublespaces in RFCs to improve machine-readability although we normally use single-space/whitespace (even as HTML &nbsp;) to mark the sentence boundaries in most contemporary (AS IN THE YEAR 2019 C.E./A.D.) texts...  Funny yet cool, huh... This tactic as well as writing according to a standardized spellchecking orthographical dictionary database & according to a language style-guide specification - ensures better machine-readable & OCR-ready digital electronic texts encoded as ASCII&Unicode (UTF-8, UTF-16, UTF-32LE/SE) human-readable/-editable file formats (open specification & open file format & open filetype & open standard)...!!!
 ````
 
 ## Under `(GNU/)Linux` ##
@@ -679,13 +686,13 @@ http://www.compciv.org/bash-guide/
 https://curl.haxx.se/docs/manpage.html
 https://curl.haxx.se/docs/
 
-http://pwmt.org - Zathura, Jumanji, ...
-http://suckless.org
+http://pwmt.org - Zathura, Jumanji, ... apps
+http://suckless.org - amazing Linux apps
 http://ezix.org - pukcab file-backuping
 
 ElementaryOS apps
 PuppyLinux Ubuntu apps
-SpaceFM
+SpaceFM, PuppyLinux FLTK file-browser, conqueror, Konqueror, etc.
 
 ***
 
