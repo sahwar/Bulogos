@@ -27,7 +27,7 @@
 * **[PayPal.com](https://www.paypal.com/)** (works with linked debit cards and credit cards, and can even be linked to bank account in some selected countries)
 * **[TransferWise.com](https://transferwise.com/)**
 * _Revolut_
-* (ApplePay, GooglePlay store, phyre, etc.)
+* (ApplePay, GooglePlay store, phyre, Apple iTunes gift cards from Amazon.com, etc.)
 * **[Patreon.com](https://www.patreon.com/)**
 * **[LiberaPay.com](LiberaPay.com)** (e.g. https://liberapay.com/Lutris/ )
 * **[Flattr.com](https://flattr.com/)**
