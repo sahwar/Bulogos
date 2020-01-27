@@ -21,6 +21,13 @@
 * http://openarts.info & https://artnewscafe.com
 * https://pravatami.bg/ (правата ни като граждани (на/в България); човешки права и граждански права)
 
+* https://www.jstor.org/
+* http://arxiv.org
+* http://academia.eu
+* https://journals.plos.org/plosbiology/
+* myth & ethos
+* http://sciencedaily.com
+
 * https://rechnik.chitanka.info/
 * http://rechnik.info
 * https://slovored.com/
