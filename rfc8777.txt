@@ -1,0 +1,38 @@
+DRAFT - RFC8777
+
+BY https://github.com/sahwar/Bulogos/
+
+EXPERIMENTAL INTERSTELLAR SPACE PROTOCOL FOR OPTICAL DATA TRANSMISSION SIMILAR TO TCP/IP & UDP
+
+(TO PASTE MY R&D NOTES HERE LATER ON...)
+
+1. BASIC IDEA
+
+WE PUT A SPECIAL TRANSMISSION SCREEN ON EACH DUPLEX-COMMUNICATING SPACESHIP.
+THAT SERVES TO SEND OPTICAL (LIGHT) SIGNALS BETWEEN THE SPACESHIPS.
+THE MESSAGES ARE CODED AS SPECIAL QR CODES FASHIONED AS A GRID OF 2 8X8 GRIDS (EACH 8X8 GRID IS MADE OF SMALLER 8X8 DOTS THAT REPRESENT DIGITAL BITS).
+THE 2ND 8X8 GRID IS EITHER A) IDENTICAL (FOR CRC-LIKE CHECKSUM INTEGRITY OF THE MESSAGE), OR B) HAS INVERTED-BITS, OR IS C) MIRRORED HORIZONTALLY & (/OR) VERTICALLY.
+THE MESSAGE BLOCK IS MADE OF SUCH QR CODES THAT ARE BEAMED AND ARE ALTERNATED EVERY 1-TO-N SECONDS, WITH SPECIAL CONTENTS FOR THE 'BEGIN/START' MESSAGE QR BLOCK & THE 'FINISH/END' QR BLOCK...
+
+ETC. ... TO PASTE MORE LATER ON...
+
+2. practical implementation
+...
+
+
+------
+
+REFERENCES:
+* https://tools.ietf.org/html/rfc791
+* https://tools.ietf.org/html/rfc5325
+* https://en.wikipedia.org/w/index.php?title=Interplanetary_Internet&oldid=933944086 - 'The canceled Mars Telecommunications Orbiter had been planned to establish an Interplanetary Internet link between Earth and Mars, in order to support other Mars missions. Rather than using RF, it would have used optical communications using laser beams for their higher data rates. "Lasercom sends information using beams of light and optical elements, such as telescopes and optical amplifiers, rather than RF signals, amplifiers, and antennas"[14]'
+* https://www.sciencealert.com/an-interstellar-internet-network-could-take-300-000-years-to-build
+* https://arxiv.org/abs/1707.03730
+* https://www.researchgate.net/publication/239443993_Bundle_Protocol_Speci_cation
+* https://www.researchgate.net/publication/331266952_Bundle_Protocol_for_Space_Communication_Networks_in_Presence_of_Intermittent_Link_Connectivity
+* https://tools.wordtothewise.com/rfc/5322
+* https://tools.wordtothewise.com/rfc/2047
+* https://tools.wordtothewise.com/rfc/
+* https://www.rfc-editor.org/
+* NOT RELATED: https://tools.wordtothewise.com/rfc/rfc4480
+* 
