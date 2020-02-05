@@ -18,6 +18,8 @@ b) paid commercial support via online IMs, by email, by snail-mail, and by visit
 - selling of CDs/DVDs/USB-flashsticks pre-installed with a live installable 32-bit x86/64-bit x86/ARM/etc. GNU/Linux distro(s), including multiple Linux distros in 1 physical media
 - selling GNU/Linux & F(L)OSS & computer science & programming -themed products: t-shirts, hats, hoodies, pants, etc. clothes/apparel, tote bags, travel gear, mountain gear, kitchen utensils (cups, etc.) & print (or PDF / ebook) tech manuals & reference guides & textbooks, etc.
 - etc.
+- paid writing/programming of custom software per client's project needs...
+- paid support for RHEL, CentOS, Debian, etc. commercial web-hosting services in collocation/CDN data centers (the primary current use of Linux apart from being the backbone of the Google Android OS for mobile devices like smartphones, phablets, tablets, retro-gaming consoles, and RaspberryPi-like hobbyist/enthusiast hardware dev-kits for thinkering & hardware experimentation & learning basic programming with the aid of lecturers & books & googling/web-searching & textbooks & niche manuals...)
 c) selling of mostly-freed & FSF RYF open hardware devices & hardware spare parts
 d) paid installation of mass hardware, software, OSs, drivers, firmware, killer apps, and cuatomization/configuration
 e) web-hosting services
