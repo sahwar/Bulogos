@@ -1,4 +1,5 @@
 HOWTO-MAKE-GNU-LINUX-WIN-THE-DESKTOP-OS-WARS.md
+
 (or at least earn a mass adoption of a desktop/laptop dual-booting or multi-booting scenario together with MS Windows 7/8.1/10+ and macOS and Google Android and {some other OS}... :P
 
 > by https://github.com/sahwar/Bulogos/
