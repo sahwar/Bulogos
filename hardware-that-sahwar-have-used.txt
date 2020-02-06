@@ -1,60 +1,92 @@
 > A list of some hardware that I have used throughout my life...
 > The list is non-exhaustive and is in NO particular order...
-> This URI/URL: https://github.com/sahwar/Bulogos/blob/master/hardware-that-sahwar-have-used.txt
+> This URI/URL:
+https://github.com/sahwar/Bulogos/blob/master/hardware-that-sahwar-have-used.txt
 
 ## Desktops & laptops:
 
-0. My first PC was so old that I don't remember any of its specs; it might even be the same as my 2nd PC but I just forgot...
+0. My first PC was so old that I don't remember any of its specs; it might even 
+be the same as my 2nd PC but I just forgot...
 
-1. my second PC was a novelty in my neighbourhood in Plovdiv, Bulgaria; I am not sure of the exact specification,
-but it was probably some P3/P4 (Pentium III/IV) CPU with 1-3 eye-killing CRT display monitors; it ran Microsoft Windows 98 (32-bit), later
+1. my second PC was a novelty in my neighbourhood in Plovdiv, Bulgaria; I am not
+ sure of the exact specification,
+but it was probably some P3/P4 (Pentium III/IV) CPU with 1-3 eye-killing CRT 
+display monitors; it ran Microsoft Windows 98 (32-bit), later
 upgraded to MS Windows XP SP3 (32-bit)
 
-2. Then I got a new PC that is a single-core AMD Athlon XP 3000 CPU; it ran a Microsoft Windows XP SP3
+2. Then I got a new PC that is a single-core AMD Athlon XP 3000 CPU; it ran a 
+Microsoft Windows XP SP3
 
-3. My last desktop PC was one bought from Multirama BG (before it went out of business) and had a nVidia GeForce 8800 GPU (later
-replaced by a nVidia GeForce 9800GT), 4 GB of RAM DDR2 (or DDR3? I forgot...), and a 4-core Intel Core2 Quad Q6600 CPU (but the CPU fan
-got really mossy and I should put a better CPU fan & much better GPU fan; it also got its Network Card (Etherner/RJ45) replaced once and
-it got some Chinese-brand TV-tuner card that I never really used to record anything from connecting it to a TV because it used some lame
-Chinese-made proprietary app for MS Windows-only... It first ran a MS Windows XP SP3, I later upgraded it to MS Windows 7 Ultimate (64-bit)
-and then to Microsoft Windows 10 Insider, but then I downgraded it back to MS Windows 7 because at that time, MS Windows 10 was fucking too
-unstable... as of February, 2020, MS Windows 10 Pro (64-bit) is way more stable and with a ClassicShell-like app, it mostly usable but it
-still has some nasty BSODs due to the automatic updates & some broken compatibility with apps for older versions of MS Windows (Windows 7
-had the excellent Anniversary Update, and Platform Update packs, as well as the MS Windows XP-like emulator built-in Compatibility Mode
-emulation layer that enabled you to set an app to run with best-compatibility ranging from MS Windows 95 all the way to MS Windows 7...
+3. My last desktop PC was one bought from Multirama BG (before it went out of 
+business) and had a nVidia GeForce 8800 GPU (later replaced by a nVidia GeForce 
+9800GT), 4 GB of RAM DDR2 (or DDR3? I forgot...), and a 4-core Intel Core2 Quad 
+Q6600 CPU (but the CPU fan got really mossy and I should put a better CPU fan & 
+much better GPU fan; it also got its Network Card (Etherner/RJ45) replaced once 
+and it got some Chinese-brand TV-tuner card that I never really used to record 
+anything from connecting it to a TV because it used some lame Chinese-made 
+proprietary app for MS Windows-only... It first ran a MS Windows XP SP3, I later
+ upgraded it to MS Windows 7 Ultimate (64-bit) and then to Microsoft 
+ Windows 10 Insider, but then I downgraded it back to MS Windows 7 because at 
+ that time, MS Windows 10 was fucking too unstable... as of February, 2020, 
+ MS Windows 10 Pro (64-bit) is way more stable and with a ClassicShell-like app,
+  it mostly usable but it still has some nasty BSODs due to the automatic 
+  updates & some broken compatibility with apps for older versions of 
+  MS Windows (Windows 7 had the excellent Anniversary Update, and 
+  Platform Update packs, as well as the MS Windows XP-like emulator built-in 
+  Compatibility Mode emulation layer that enabled you to set an app to run with
+  best-compatibility ranging from MS Windows 95 all the way to MS Windows 7...
 
-4. Acer Aspire 5745G (my current main laptop, made in 2010! It is now 2020 and it still mostly works, only the HDD had to be replaced after
-an HDD hardware failure... and the casing of the laptop's display is starting to fall apart at the edges...)!): 15.6" 16:9 HD LCD (1366x768px),
-nVidia GeForce GT330M 1024MB VRAM, 4 GB RAM, 500/640/950 GB 2.5" HDD, CD/DVD reader/recorder, Bluetooth v2.1+EDR, Multi-in-1 card reader,
-6-cell Li-ion battery (BatteryBar v3.6.6 Free Edition says that it has 29797 MWh and lasts for 1:12h after 10 years of use (I may have replaced
-the battery at least once with a newer one...)... the battery degradation is reported as 37,3% of 47520 MWh...)
+4. Acer Aspire 5745G (my current main laptop, made in 2010! It is now 2020 and 
+it still works mostly fine, only the HDD had to be replaced after an HDD 
+hardware failure... and the casing of the laptop's display is starting to fall 
+apart at the edges...)!): 15.6" 16:9 HD LCD (1366x768px), nVidia GeForce GT330M 
+1024MB VRAM, 4 GB RAM, 500/640/950 GB 2.5" HDD, CD/DVD reader/recorder, 
+Bluetooth v2.1+EDR, Multi-in-1 card reader, 6-cell Li-ion battery (BatteryBar 
+v3.6.6 Free Edition says that it has 29797 MWh and lasts for 1:12h after 10 
+years of use (I may have replaced the battery at least once with a newer one...)
+... the battery degradation is reported as 37,3% of 47520 MWh...)
 
-5. At one point, I owned a sturdy Lenovo X60s laptop; therefore, I recommend FSF RYF-approved refurbished ThinkPad's, especially ThinkPad X200T,
-ThinkPad X201T, ThinkPad X220T (!), ThinkPad X230T, and ThinkPad T400, T420, T440, W500, W520 (!), W530, etc. (AS LONG as they are in
-a A/A-/B+ condition as 2nd-hand PCs and you put a large (500GB-1TB+) HDD-or-SSD, and you may wish to buy a new backup battery
-from aliexpress.com (the Chinese...) and an original ThinkPad expansion dock for your particular model...).
+5. At one point, I owned a sturdy Lenovo X60s laptop; therefore, I recommend 
+FSF.org RYF-approved refurbished ThinkPad's, especially ThinkPad X200T, ThinkPad
+ X201T, ThinkPad X220T (!), ThinkPad X230T, and ThinkPad T400, T420, T440, W500,
+  W520 (!), W530, etc. (AS LONG as they are in a A/A-/B+ condition as 2nd-hand 
+  PCs and you put a large (500GB-1TB+) HDD-or-SSD, and you may wish to buy a 
+  new backup battery from aliexpress.com (the Chinese...) and an original 
+  ThinkPad expansion dock for your particular model...).
 
-(6. I never owned any of these laptops but most people recommend them: Dell XPS 16/17, the latest IPS-screen gaming Dell laptops & desktop PCs,
+(6. I never owned any of these laptops but most people recommend them: 
+Dell XPS 16/17, the latest IPS-screen gaming Dell laptops & desktop PCs,
 Microsoft Surface Pro 2+ + stylus, etc.)
 
 7. ???
 
 ## Smartphones, phablets, tablets, graphics tablets:
 
-I have used several smartphones, phablets, tablets, owned by other people, but I only ever owned the following (most of them were bought
-for me by my generous relatives):
+I have used several smartphones, phablets, tablets, owned by other people, but 
+I only ever owned the following (most of them were bought for me by my generous 
+relatives):
 
-* Alcatel OneTouch Pixi (lame smartphone bought 2nd-hand for under 25 BGN, but it is useful in being very small/portable, like a bigger dumbphone;
-it was only useful for posting on Twitter.com and web-browsing, and storing some files; it is useless without an external SD-card for more storage;
-sadly, it lacked GPS so you had to download offline areas via Google Maps app that go into 100MB-several GiBs...)
+* Alcatel OneTouch Pixi (lame smartphone bought 2nd-hand for under 25 BGN, but 
+it is useful in being very small/portable, like a bigger dumbphone; it was only 
+useful for posting on Twitter.com and web-browsing, and storing some files; it 
+is useless without an external SD-card for more storage; sadly, it lacked GPS 
+so you had to download offline areas via Google Maps app that go into 
+100MB-to-several-GiBs/GBs...)
 
-* Allview AX4 Nano Plus 1024x600px tablet (2-core Cortex-A7 CPU @ 1.3GHz, 512MB DDR3 RAM, 8GB ROM internal NandFlash memory, 
-GPS & A-GPS, Bluetooth V.4, FM Radio, Google Android® 4.4.2 KitKat™ (поддържа български) OS, Wi-Fi IEEE 802.11 b/g/n, 
-microUSB 2.0 + USBv2.0 cable, Li-Polymer 2500mAh)
+* Allview AX4 Nano Plus 1024x600px tablet (2-core Cortex-A7 CPU @ 1.3GHz, 
+512MB DDR3 RAM, 8GB ROM internal NandFlash memory, GPS & A-GPS, Bluetooth V.4, 
+FM Radio, Google Android® 4.4.2 KitKat™ (поддържа български) OS, 
+Wi-Fi IEEE 802.11 b/g/n, microUSB 2.0 + USBv2.0 cable, short-lasting 
+Li-Polymer 2500mAh battery (sadly, non-removable; I hate that newer smartphones
+are ONLY with non-removable batteries...)
 
-* Lenovo Motorola g(6) 64GB-memory - my current smartphone, it is stock Google Android (v8, later updated to v9; Google Android is usable
-only from v4.4.2 and especially starting with v7 - Google Android v7-v9 is the best Android before Android M & the newest FuchsiaOS/desktop-like
-ChromeOS/desktop-like Google Android v10+), but I considered putting CyanogenMod or LineageOS inside, but it is an excellent smartphone
-for its medium-range price, only the battery gets depleted in just under 1 day after extremely heavy web-browser use...
+* Lenovo Motorola g(6) 64GB-memory - my current smartphone, it is stock 
+Google Android (v8, later updated to v9; Google Android is usable only from 
+v4.4.2 and especially starting with v7 - Google Android v7-v9 is the best 
+Google Android before Android M & the newest FuchsiaOS/desktop-like 
+ChromeOS/desktop-like Google Android v10+), but I considered putting 
+CyanogenMod or LineageOS inside, but it is an excellent smartphone for its 
+medium-range price, only the battery gets depleted in just under 1 day after
+extremely heavy web-browser use...
 
-* ???
+
