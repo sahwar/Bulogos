@@ -25,6 +25,7 @@
 * работа като продавач на щандове в базари, пазари и т.н.
 * работа като продавач-консултант и/или пазач в магазини, бензиностанции, заведения (барове, ресторанти, пъбове, fast food заведения, takeaway шведски маси и т.н.) и т.н.
 * и т.н. ... Възможностите и вариантите са почти безкрайни и може да се научите и от това, което правят другите...
+* измислете нещо творческо самите Вие...
 
 ### Classic (e-)banking ###
 * банков превод --- In-country & International bank transfer (IBAN & SWIFT/BIC) (check bank tariffs/costs/charges); 24/7 deposit-enabled bank ATMs (банкомати с опция за депозит на пари); + обслужване от служител касиер в банката на място...
@@ -55,6 +56,7 @@ https://salt.bountysource.com/ (SALT - A crowdfunding platform that helps develo
 * https://info.tellonym.me/ , http://ko-fi.com , Instagram PrestaShop / other free mart/online-personal-website-shop software и т.н.
 * за покупки и продажби: http://ebay.com (и другите домейни на ebay... тарифи: 
 https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4364 ), http://olx.bg , http://bazar.bg , http://wish.com и т.н.
+* Income Ideas (free Google Android app)
 
 * **Western Union (? Sorta reliable, mixed reviews.)** - https://www.westernunion.com/bg/en/terms-conditions-bg.html
 * **MoneyGram (? Sorta reliable, mixed reviews. Seems a bit more reliable than Western Union (?))** - http://moneygram.bg/
