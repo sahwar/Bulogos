@@ -48,6 +48,7 @@
 * **[LiberaPay.com](LiberaPay.com)** (e.g. https://liberapay.com/Lutris/ ) (плащане на пари за разработчици (програмисти) на свободен софтуер и софтуер с отворен код)
 * **[Flattr.com](https://flattr.com/)**
 * _https://stripe.com/_
+* http://subscribestar.com
 * ***SALT.bountysource.com*** - https://salt.bountysource.com/ (for open-source software projects, etc.) = 
 https://salt.bountysource.com/ (SALT - A crowdfunding platform that helps developers earn a monthly salary from open-source software) (e.g. https://salt.bountysource.com/teams/neovim)
 * https://opencollective.com
