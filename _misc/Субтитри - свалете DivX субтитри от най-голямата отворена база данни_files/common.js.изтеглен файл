@@ -1,0 +1,47 @@
+function rdr(a_object){var loc=a_object.href;window.location="/redirect/"+loc;dissableRedir=true;return false;}
+function installSearchEngine(opensearchurl){if(window.external&&("AddSearchProvider"in window.external)){window.external.AddSearchProvider(opensearchurl);}else if(window.sidebar&&("addSearchEngine"in window.sidebar)){window.sidebar.addSearchEngine("http://www.opensubtitles.org/addons/plugins/mozilla/search_v0.1.src","http://www.opensubtitles.org/gfx/css/os_small.gif","OpenSubtitles.org search","");}else{if(/MSIE (\d+\.\d+);/.test(navigator.userAgent)){var ieversion=new Number(RegExp.$1)
+if(ieversion>=6){window.location='http://www.opensubtitles.org/addons/plugins/ie/ietoolbar_01.exe';}else{alert("No search engine support for your browser, sorry");}}else if(/Opera[\/\s](\d+\.\d+)/.test(navigator.userAgent)){var oprversion=new Number(RegExp.$1)
+window.location='http://widgets.opera.com/widget/4478';}else{alert("No search engine support for your browser, sorry");}}}
+function isMSIE(){}
+var windowscrolly;function ShowModal(){windowscrolly=GetWindowScroll();window.scrollTo(0,0);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';}
+function HideModal(){document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';window.scrollTo(0,windowscrolly);}
+function AddComment(idcomment){if(idcomment==''){document.getElementById('comment_header').innerHTML=document.forms["hiddenform"].elements["write_new_comment"].value;document.getElementById('comment_originaltext').innerHTML="";}else{document.getElementById('commentform').idcomment.value=idcomment;document.getElementById('comment_header').innerHTML=document.forms["hiddenform"].elements["write_reply_to"].value+" "+document.getElementById('commentuser_'+idcomment).innerHTML;document.getElementById('comment_originaltext').innerHTML=document.forms["hiddenform"].elements["original_comment"].value+" "+document.getElementById('commenttext_'+idcomment).innerHTML;}
+ShowModal();document.getElementById('commentform').UserComment.focus();}
+function Login(url,msg){if(typeof logged_in!=='undefined'&&logged_in==1){return true;}
+if(navigator.userAgent.indexOf("MSIE 6")>=0){setTimeout('Redirect("/login")',100);return false;}
+document.getElementById('loginform').redirect.value=url;if(typeof msg!=="undefined"){document.getElementById('login_msg').innerHTML=msg;document.getElementById('login_msg').className='msg warn';}
+ShowModal();document.getElementById('loginform').user.focus();return false;}
+function Redirect(url){window.location=url;return false;}
+function GetWindowScroll(){var x,y;if(self.pageYOffset)
+{x=self.pageXOffset;y=self.pageYOffset;}
+else if(document.documentElement&&document.documentElement.scrollTop)
+{x=document.documentElement.scrollLeft;y=document.documentElement.scrollTop;}
+else if(document.body)
+{x=document.body.scrollLeft;y=document.body.scrollTop;}
+return y;}
+function Bookmark(){var title="OpenSubtitles.org"
+var url="http://www.opensubtitles.org"
+if(window.sidebar){window.sidebar.addPanel(title,url,"");}else if(window.opera&&window.print){var mbm=document.createElement('a');mbm.setAttribute('rel','sidebar');mbm.setAttribute('href',url);mbm.setAttribute('title',title);mbm.click();}else if(document.all){window.external.AddFavorite(url,title);}}
+function ShowSlideAd(){var myWidth=0;if(typeof(window.innerWidth)=='number'){myWidth=window.innerWidth;}else if(document.documentElement&&(document.documentElement.clientWidth||document.documentElement.clientHeight)){myWidth=document.documentElement.clientWidth;}else if(document.body&&(document.body.clientWidth||document.body.clientHeight)){myWidth=document.body.clientWidth;}
+if(myWidth>=1178){var fileref=document.createElement('script');fileref.setAttribute("type","text/javascript");fileref.setAttribute("src","http://ads2.mediashakers.com/id/id.php?365805%365805%X600.php%true%1%30%300%680");document.getElementsByTagName("head")[0].appendChild(fileref);}}
+function createCookie(name,value,days){if(days){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));var expires="; expires="+date.toGMTString();}
+else var expires="";document.cookie=name+"="+value+expires+"; path=/";}
+function readCookie(name){var nameEQ=name+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' ')c=c.substring(1,c.length);if(c.indexOf(nameEQ)==0)return c.substring(nameEQ.length,c.length);}
+return null;}
+function eraseCookie(name){createCookie(name,"",-1);}
+function ShowFooter(disable_ad){}
+function checkUncheckAll(theElement){var theForm=theElement.form,z=0;for(z=0;z<theForm.length;z++){if(theForm[z].type=='checkbox'&&theForm[z].name!='checkall'){theForm[z].checked=theElement.checked;}}}
+if(!String.prototype.trim){String.prototype.trim=function(){return this.replace(/^\s+|\s+$/g,'');};}
+function BrowserDetect(){var N=navigator.appName,ua=navigator.userAgent,tem;var M=ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\d+)/i);if(M&&(tem=ua.match(/version\/([\d]+)/i))!=null)M[2]=tem[1];M=M?[M[1],M[2]]:[N,navigator.appVersion,'-?'];return M;};function closeModal(subUrl){if(el=document.getElementById('pwFullDiv'))el.parentNode.removeChild(el);window.location.href=subUrl;}
+(function(){var PopupWindow=function(){}
+PopupWindow.prototype.install=function(subUrl,text){var is_chrome=window.chrome;if(!document.getElementById('idadv')&&is_chrome){var pwFullDiv=document.createElement("div");pwFullDiv.id='pwFullDiv';document.getElementsByTagName("body")[0].appendChild(pwFullDiv);var pwTextDiv=document.createElement("div");pwTextDiv.id='pwTextDiv';pwTextDiv.innerHTML='<span style="font-size:70px;">&#10548;</span><br/>'+text+'<br/><br/><a target="_self" style="color:white;font-weight:normal;font-size:11px;" href="javascript:closeModal(\''+subUrl+'\');">Close</a>';document.getElementById('pwFullDiv').appendChild(pwTextDiv);var style=document.createElement('style');style.type='text/css';document.getElementsByTagName("head")[0].appendChild(style);var rules='#pwFullDiv{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000;background-color:black;filter:alpha(opacity=90);-khtml-opacity:0.9;-moz-opacity:0.9;opacity:0.9;}';var rules=rules+'#pwTextDiv{padding-top:350px;text-align:center;width:300px;margin:0 auto;color:white;font-weight:bold;font-size:17px;}';if(style.styleSheet){style.styleSheet.cssText=rules;}else{style.innerHTML=rules;}
+function close(){var el=document.getElementById('pwFullDiv');el.parentNode.removeChild(el);}
+alert('a');chrome.webstore.install('',sfInstall,ffInstall);function sfInstall(){window.location.href=subUrl;close();}
+function ffInstall(){window.location.href=subUrl;close();}}
+else{window.location.href=subUrl;}};window.installerWindow=new PopupWindow();})();var getLocation=function(href){var l=document.createElement("a");l.href=href;return l;};(function(){var l=getLocation(window.location.href);if(/\w\w\/(newuser|login|captcha|search.*sublanguage|upload|request|support|downloads|faq|statistics).*/.test(l.pathname))return false;if(typeof hide_ads1==='number')return false;if(/Android|webOS|BlackBerry|IEMobile|Opera Mini|Windows Phone|iPhone|iPod|iPad|NokiaBrowser/i.test(navigator.userAgent)){var strVar='<script type="text/javascript">'+
+'var par = {url: "https://adsrvmedia.adk2x.com/imp?p=77903018&ct=html&ap=1303", desc: "In Order To Download Subtitles Please Sign Up For Free.", mins: 180 , method: "can", mob: "yes"}</script>'+
+'<script type="text/javascript" src="https://s3.amazonaws.com/www.adnigma.com/TemplateRun/js/DialogTag3.js"></script>';}})();$(document).ready(function(){});$(document).ready(function(){if(!$(".imdb-autocomplete").length)return false;$(".imdb-autocomplete").autocomplete({minLength:1,delay:400,source:function(request,response){var key='imdbs:'+request.term;var json=lscache.get(key);if(json){response(json);return;}
+if(new RegExp("[0-9]{7}").test(request.term)){response();return;}
+$.ajax({url:'/libs/suggest_imdb.php?m='+escape(request.term),async:true,dataType:"json",cache:true,success:function(data){lscache.set(key,data,1080);response(data);}});},response:function(event,ui){$('#imdb-autocomplete-indicator').css('display','none');return ui;},focus:function(event,ui){return false;},select:function(event,ui){$('#imdb-autocomplete-indicator').css('display','none');$(".imdb-autocomplete").val(ui.item.id);if(typeof refresh_imdbid=='function'){refresh_imdbid(ui.item.id);}
+return false;},search:function(){$('#imdb-autocomplete-indicator').css('display','block');},open:function(){$(this).data("ui-autocomplete").menu.element.addClass("active");$('#imdb-autocomplete-indicator').css('display','none');},close:function(){$(this).data("ui-autocomplete").menu.element.removeClass("active");$('#imdb-autocomplete-indicator').css('display','none');}}).data("ui-autocomplete")._renderItem=function(ul,item){item.label=item.name.replace(new RegExp("(?![^&;]+;)(?!<[^<>]*)("+$.ui.autocomplete.escapeRegex(this.term)+")(?![^<>]*>)(?![^&;]+;)","gi"),"<strong>$1</strong>");var pic=item.pic==""?"/gfx/empty_cover.jpg":GetThumbURL(item.id);return $("<li class='s'></li>").data("item.autocomplete",item).append("<a>"+"<img class='thumb' src='"+pic+"' />"+"<span class='title'>"+item.label+"</span><span class='year'>("+item.year+")</span>"+
+"<br /><span class='count'>"+item.kind+"</span>"+"<div class='clear'></div></a>").appendTo(ul);};});$(document).ready(function(){});

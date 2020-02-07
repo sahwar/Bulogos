@@ -1,0 +1,15 @@
+.tooltipster-light {
+	border-radius: 5px; 
+	border: 1px solid #222;/*#cccccc*/
+	background: #666; /*#E0EFBF;*/
+	color: #fff;/*#333;*/
+	-webkit-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.7);
+	-moz-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.7);
+	box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.7);
+}
+.tooltipster-light .tooltipster-content {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	padding: 8px 10px;
+}

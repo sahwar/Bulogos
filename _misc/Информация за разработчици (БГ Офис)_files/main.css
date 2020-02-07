@@ -1,0 +1,348 @@
+/*
+* Styles of bgOffice web page
+* $Id: main.css..gtml 656 2017-12-06 16:27:54Z stoyanster $
+*/
+
+body {
+margin: 10px;
+background-color: #fff;
+}
+
+
+/*
+* Styles of header and navigation bar
+*/
+table.header {
+margin: 0px;
+margin-bottom: 20px;
+border-collapse: collapse;
+width: 100%;
+background-color: #efefef;
+}
+
+table.header td.logo {
+padding: 3px 5px;
+vertical-align: top;
+text-align: left;
+font-weight: bold;
+font-size: 200%;
+white-space: nowrap;
+width: 30%;
+}
+
+table.header td.middle {
+vertical-align: middle;
+text-align: center;
+white-space: nowrap;
+width: 40%;
+}
+
+table.header td.middle a {
+padding: 1px 3px;
+margin: 2px 2px;
+}
+
+table.header td.middle a:link {
+text-decoration: none;
+color: blue;
+}
+
+table.header td.middle a:visited {
+text-decoration: none;
+color: blue;
+}
+
+table.header td.middle a:hover {
+background: #ccc;
+color: blue;
+}
+
+table.header td.online {
+padding: 3px 5px;
+vertical-align: middle;
+text-align: right;
+white-space: nowrap;
+width: 30%;
+}
+
+table.header td.online span.online {
+font-weight: bold;
+}
+
+table.header td.online a {
+padding: 1px 3px;
+margin: 2px 2px;
+}
+
+table.header td.online a:link {
+text-decoration: none;
+color: blue;
+}
+
+table.header td.online a:visited {
+text-decoration: none;
+color: blue;
+}
+
+table.header td.online a:hover {
+background: #ccc;
+color: blue;
+}
+
+table.header td.navigation {
+padding: 5px;
+vertical-align: middle;
+text-align: center;
+border-top-width: 1px;
+border-top-style: solid;
+border-top-color: #98aab1;
+border-bottom-width: 4px;
+border-bottom-style: solid;
+border-bottom-color: #98aab1;
+}
+
+table.header td.navigation span.menu {
+padding: 1px 3px;
+margin: 2px 5px;
+}
+
+table.header td.navigation a {
+padding: 1px 3px;
+margin: 2px 5px;
+}
+
+table.header td.navigation a:link {
+text-decoration: none;
+color: blue;
+}
+
+table.header td.navigation a:visited {
+text-decoration: none;
+color: blue;
+}
+
+table.header td.navigation a:hover {
+background: #ccc;
+color: blue;
+}
+
+
+/*
+* Styles of main menu and content cell
+*/
+table.layout {
+border-collapse: collapse;
+width: 100%;
+background-color: #fff;
+}
+
+table.layout td.menu {
+vertical-align: top;
+}
+
+table.layout td.menu div.menu {
+margin: 0;
+display: block;
+white-space: nowrap;
+line-height: 1.5;
+background-color: #efefef;
+border-width: 1px;
+border-style: solid;
+border-color: #98aab1;
+}
+
+table.layout td.menu div.menu span.title {
+display: block;
+background-color: #98aab1;
+text-align: center;
+font-weight: bold;
+font-size: 115%;
+}
+
+table.layout td.menu div.menu span.menu {
+display: block;
+padding: 0px 25px 0px 5px;
+}
+
+table.layout td.menu div.menu a {
+display: block;
+padding: 0px 25px 0px 5px;
+}
+
+table.layout td.menu div.menu a:link {
+text-decoration: none;
+color: blue;
+}
+
+table.layout td.menu div.menu a:visited {
+text-decoration: none;
+color: blue;
+}
+
+table.layout td.menu div.menu a:hover {
+background: #ccc;
+color: blue;
+}
+
+table.layout td.content {
+width: 95%;
+vertical-align: top;
+}
+
+table.layout td.content div.content {
+margin: 0px 0px 20px 15px;
+background-color: #efefef;
+border-width: 1px;
+border-style: solid;
+border-color: #98aab1;
+}
+
+table.layout td.content div.content p {
+padding: 0px 5px 0px 5px;
+text-align: justify;
+text-indent: 15px;
+}
+
+table.layout td.content div.content p.title {
+margin: 0px 0px 10px 0px;
+padding: 0px 0px 0px 5px;
+text-indent: 0px;
+line-height: 1.5;
+background-color: #98aab1;
+font-weight: bold;
+font-size: 115%;
+}
+
+table.layout td.content div.content h1.title {
+margin: 0px 0px 10px 0px;
+padding: 0px 0px 0px 5px;
+text-indent: 0px;
+line-height: 1.5;
+background-color: #98aab1;
+font-weight: bold;
+font-size: 115%;
+}
+
+table.layout td.content div.content h2.title {
+margin: 0px 0px 10px 0px;
+padding: 0px 0px 0px 5px;
+text-indent: 0px;
+line-height: 1.5;
+background-color: #98aab1;
+font-weight: bold;
+font-size: 115%;
+}
+
+table.layout td.content div.content a:link {
+text-decoration: none;
+color: blue;
+}
+
+table.layout td.content div.content a:visited {
+text-decoration: none;
+color: blue;
+}
+
+table.layout td.content div.content a:hover {
+background: #ccc;
+color: blue;
+}
+
+span.warning {
+color: red;
+font-weight: bold;
+}
+
+table.layout td.content div.content table {
+margin: 5px 10px;
+border-collapse: collapse;
+width: 100%;
+}
+
+table.layout td.content div.content td {
+vertical-align: middle;
+padding: 10px;
+}
+
+table.layout td.content div.content img {
+border-width: 0px;
+}
+
+
+/*
+* Styles of footer and copyright notice
+*/
+table.footer {
+margin: 0px;
+margin-top: 30px;
+border-collapse: collapse;
+width: 100%;
+background-color: #efefef;
+border-top-width: 4px;
+border-top-style: solid;
+border-top-color: #98aab1;
+}
+
+table.footer td.sflogo {
+padding: 5px 10px 3px 10px;
+width: 50%;
+vertical-align: top;
+text-align: left;
+border-left-width: 1px;
+border-left-style: solid;
+border-left-color: #98aab1;
+}
+
+table.footer td.copyright {
+padding: 5px 10px 3px 10px;
+width: 50%;
+vertical-align: top;
+text-align: right;
+font-size: 80%;
+}
+
+table.footer td.copyright a {
+padding: 1px 3px;
+margin: 2px 2px;
+}
+
+
+/*
+* Styles for Google ads
+*/
+table.layout td.menu div.gads {
+margin: 30px auto 20px auto;
+text-align: center;
+}
+
+div.gads {
+margin: 50px auto 50px auto;
+text-align: center;
+}
+
+
+/*
+* Styles for Links
+*/
+table.layout td.menu div.links {
+margin: 50px auto 10px auto;
+display: block;
+line-height: 1.5;
+background-color: #efefef;
+border-width: 1px;
+border-style: solid;
+border-color: #98aab1;
+padding-bottom: 5px;
+}
+
+table.layout td.menu div.links span.title {
+display: block;
+background-color: #98aab1;
+text-align: center;
+font-weight: bold;
+font-size: 85%;
+}
+
+table.layout td.menu div.links a {
+margin-left: 5px;
+}

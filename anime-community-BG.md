@@ -960,6 +960,93 @@ https://www.reddit.com/r/WomenOfColor
 https://www.reddit.com/r/WorkGoneWild
 https://www.reddit.com/r/strugglefucking
 https://www.reddit.com/r/DeadEyes
+https://www.reddit.com/r/Misogyny_fetish
+https://www.reddit.com/r/hentai_irl
+https://www.reddit.com/r/DP
+https://www.reddit.com/r/fuckfests
+https://www.reddit.com/r/PreggoPorn
+https://www.reddit.com/r/
+https://www.reddit.com/r/incest
+https://www.reddit.com/r/incestgifs
+https://www.reddit.com/r/inbreeding
+https://www.reddit.com/r/breeding
+https://www.reddit.com/r/RealInbreeding
+https://www.reddit.com/r/incestgifs
+https://www.reddit.com/r/Incest_Captions
+https://www.reddit.com/r/taboocaptions
+https://www.reddit.com/r/momson/
+https://www.reddit.com/r/IncestVideos/
+https://www.reddit.com/r/daddaughter
+https://www.reddit/com/r/DadWouldBeProud
+https://www.reddit.com/r/DadsGoneWild/
+https://www.reddit.com/r/Amateurincest/
+https://www.reddit.com/r/xxxcaptions/
+https://www.reddit.com/r/wincest/
+https://motherless.com
+https://theporndude.com
+http://pornhub.com
+http://xvideos.com
+http://youporn.com
+
+
+--------------------------------------------------------------------------------
+
+https://javplay.me/
+http://javguru.com
+https://javplay.me/starring/shibuya-kaho/
+https://incest-hd.net/mom-is-sons-sex-slave-son-impregnates-mom-to-remind-her-who-she-belongs-to-pov-inbreeding-impregnation-hd-1080p-carmen-valentina-fifi-foxx-fantasies/
+https://incest-hd.net/mom-and-son-get-married-start-a-family-together-pov-impregnation-hd-1080p-carmen-valentina-fifi-foxx-fantasies/
+https://incest-hd.net/son-becomes-a-dad-mom-sons-family-pov-pregnant-mom-impregnation-inbred-hd-1080p-carmen-valentina-fifi-foxx-fantasies/
+https://takefile.link/ddrewii1b898/Fifi_Foxx_Fantasies_-_Son_Becomes_a_Dad_-_Mom_&_Son's_Family,_POV_-_Pregnant_Mom,_Impregnation,_Inbred_-_HD_1080p.mp4.html
+https://incest-hd.net/mom-and-son-get-married-start-a-family-together-pov-impregnation-hd-1080p-carmen-valentina-fifi-foxx-fantasies/
+https://takefile.link/ud808bbfwpa4/Fifi_Foxx_Fantasies_-_Carmen_Valentina_-_Mom_and_Son_Get_Married_&_Start_a_Family_Together,_POV_-_Impregnation_-_HD_1080p.mp4.html
+https://sextop.net/movies/jufe-027-all-the-male-subs-are-talking-about-it
+https://web.archive.org/web/20200207020622/https://javplay.me/starring/shibuya-kaho/
+https://javplay.me/hnd-581-active-student-female-college-student-at-the-papa-live-site-and-belkis-middle-aged-father-concentrating-fetish-and-cum-inside-close-up-mating-kaizen/
+https://javplay.me/hnd-585-continuously-cum-shot-soap-which-makes-me-shoot-with-absolutely-catfish-absolutely-rika-nakayama/
+https://sextop.net/category/jav-uncensored
+https://jav-paradise.com/sdmt-461-classroom-bullying-pet-sex-loli-school-girl/
+http://javmama.co/
+http://www3.javhub.me/
+https://javhub.net/
+
+https://twitter.com/jyura777 = hentai
+
+https://www.reddit.com/r/AskReddit/comments/tt6gg/is_there_site_equivalent_to_imdb_but_for_porn/
+imdb for porn = http://www.iafd.com/
+Freeones.com
+chickepedia.com
+
+http://pornhub.com
+http://youporn.com
+http://xvideos.com
+http://youjizz.com
+
+https://jav.guru/jav-studio-list/
+https://jav.guru/48586/jav-studios-official-websites/
+https://en.wikipedia.org/wiki/Pornography_in_Japan
+https://avn.com/porn-stars
+http://www.iafd.com/deadporn/
+https://www.adultdvdtalk.com/price_search/release_calendar.asp
+
+http://theporndude.com
+
+http://hentairules.net
+http://hbrowse.com
+http://nhentai.net
+http://hentai2read.com
+http://luscious.net
+http://doujin.me
+http://doujin.com
+http://rule43.xxx
+
+http://watchseries.tv
+https://www.bgfilmi.net/
+https://www.seirsanduk.com/gledajteleviziq
+http://kolibka.bg
+http://spiralata.bg
+
+--------------------------------------------------------------------------------
 
 ---
 
@@ -972,6 +1059,8 @@ List of definitions for sexual fetishes & kinks:
 * https://www.askmen.com/dating/vanessa/25_love_secrets.html (sexual fetish about 'water, thunder, lightning') (http://archive.is/oxido)
 * https://rekink.com/guides/kinks/ (http://archive.is/xCwfh)
 * https://ru.lovense.com/bdsm-blog/list-of-kinks (http://archive.is/H28md)
+* http://urbandictionary.org
+* Glossary of JAV and hentai and Japanese porn terms (several backups available online...)
 
 ---
 

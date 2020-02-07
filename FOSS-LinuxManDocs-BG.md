@@ -10,6 +10,30 @@ FOSS-LinuxManDocs-BG ще бъде сборно хранилище (repository) 
 ## Основни инструкции за превода на софтуер (програми за компютър, по-точно приложен софтуер) на български език плюс хранилища с файлове с български преводи на софтуер: ##
 * **BGlocalize**: https://sites.google.com/site/bglocalize/
 * Речникът на Антон Зиновиев („Англо-български терминологичен речник по информатика и изчислителна техника“): http://lml.bas.bg/~anton/linux/rechnik.html (последна редакция: `23 юни 2004 г., 22:55:11 ч.`; кодиране на текста: `windows-1251`)
+
+````
+
+injinera & кирилизаторите... или как приключи FlexType...:
+
+https://www.linux-bg.org/forum/index.php?topic=48694.msg312789#msg312789
+П.П. Ееех, жив е той жив, че по едно време се беше затрил, ама имало добри хора - извадили го от архива - http://injinera.narod.ru/na4alo.htm
+..за съжаление не се е архивирал правилно, та ето от правилния архив (за Уиндоус 855, за ДОС 866, кофти кирилизатор - MIK)
+
+http://web.archive.org/web/20100728034913/http://free.hit.bg/injinera/na4alo.htm
+http://web.archive.org/web/20100716095013/http://free.hit.bg/injinera/realdos/dos_bg.htm#links
+http://web.archive.org/web/20100106023232/http://free.hit.bg/injinera/shtirlitz/shtirlitz1.htm#BULMIC
+
+Кирилица в TinyCore Linux & MS-DOS & mutt email & ssh/mosh ???
+
+Важни архивни исторически документи по българизацията и кирилизацията на Линукс и свободния софтуер
+
+https://web.archive.org/web/20100726042927/http://bg-howto.hit.bg/ = Как да настроим ГНУ/Линукс системата си за да можем да четем и пишем на български език
+
+https://web.archive.org/web/20180717081827/http://lml.bas.bg/~anton/linux/Bulgarization.html
+https://web.archive.org/web/20030820063029/http://linux.zonebg.com:80/documentation/local/Zinoviev-Bulgarization.html + речника пак там!!! (dictionary of some English-Bulgarian IT terms)
+https://web.archive.org/web/20030619023855/http://linux.zonebg.com:80/documentation/local/Zinoviev-BG-FAQ.html
+````
+
 * **Bulogos/CBASTILS**: https://github.com/Bulogos/CBASTILS_BGlocalize_DB/
 * https://github.com/stelf/en2bg4term
 * Речникът с преведени низове на KDE: https://l10n.kde.org/dictionary/

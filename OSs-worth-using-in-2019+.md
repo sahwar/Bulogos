@@ -15,13 +15,13 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 
 ### Viable Linux distros 2019 ###
 > for more (GNU/)Linux distros, please see: https://distrowatch.com/ & https://en.wikipedia.org/wiki/List_of_Linux_distributions
-* [MX Linux](http://mxlinux.org/) 10/10
+* [MX Linux](http://mxlinux.org/) 10/10 (9/10 for MX Linux v19 in comparison to v17 & v18; if its PDF manual gets fully git-translated into multiple languages & gets localized `man`-pages, it will be almost perfect!!!)
 * [AntiX](https://antixlinux.com/) 8/10
 * [Debian](http://debian.org/) (newest; +squeeze-backports and later) 8/10
 * [Devuan](https://devuan.org/) (Debian minus `systemd`) 9/10
 * [Linux Mint](http://linuxmint.com/) 10/10 (XFCE DE, MATE DE, Cinnamon DE, LMDE (Debian-based rolling Linux Mint)) 9/10
 * [Ubuntu](http://ubuntu.com/) 9/10 ([Xubuntu](http://xubuntu.org/), [Lubuntu](https://lubuntu.net/), [Ubuntu MATE](http://ubuntu-mate.org/), [Kubuntu](http://kubuntu.org/), Ubunty Unity (~dead)) 9/10
-* [USU](http://learnfree.eu/?lang=bg) (**Ubuntu-based Linux distro oriented towards Bulgarian users!!!**) 8/10
+* [USU Linux (УСУ Линукс)](http://learnfree.eu/?lang=bg) (**Ubuntu-based Linux distro oriented towards Bulgarian users!!!**) 8/10
 * [FerenOS](https://ferenos.weebly.com/get-it.html) [(download)](https://ferenos.weebly.com/get-it.html), [FerenOS at SourceForge](https://sourceforge.net/projects/ferenoslinux/), [FerenOS Next at SourceForge.net](https://sourceforge.net/projects/feren-os-development-builds/), [FerenOS Transfer Tool](https://ferenos.weebly.com/feren-os-transfer-tool.html) 9/10
 * [Arch Linux](http://archlinux.org/) + [AUR](https://aur.archlinux.org/) 8/10
 * [Fedora](https://getfedora.org/) 7.5/10
@@ -62,6 +62,7 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * MinimalLinux LiveISO (a Bulgarian (GNU/)Linux distro similar to TinyCore Linux, X86Free+, BusyBox, LFS (Linux from scratch), etc.)
 * SenlinOS Linux (a nice Chinese/PRC Linux distro with cool visual styles & a custom DE (desktop environment))
 * SliTaz Linux (a very cool small-to-medium-sized Linux distro aimed at repackaging it as custom do-it-yourself (DIY) Linux distro)
+* StotinkaOS - in http://archive.org
 * Medibuntu
 * Kubuntu / Ubuntu (GNOME 3.0+) / Ubuntu MATE (MATE DE is the polished fork of GNOME2 DE) / Xubuntu (XFCE) / Lubuntu (LXDE/LXQt)
 * KDE Allegra / KDE Graphics Linux distro
@@ -77,6 +78,19 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * **ArchiveOS**: https://archiveos.org/about-archiveos/ = Archive of Operating Systems mission is saving the great job of many great people whose created Open Source and/or Freeware distributions/operating systems.
 The systems we archive are based on Linux, BSD, DOS, Solaris, and other, independent technology.
 
+...
+
+Linux kernel downloads - https://www.kernel.org/
+Линукс (статия с полезни хипервръзки (препратки) накрая, от българоезичната Уикипедия) - https://bg.wikipedia.org/wiki/%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81
+
+* **MX Linux** - https://mxlinux.org/
+* Arch Linux - https://www.archlinux.org/ & AUR: https://aur.archlinux.org/ + https://wiki.archlinux.org/index.php/FreeNX + RDP & VNC & ssh/mosh/... etc.
+* Puppy Linux - http://puppylinux.com/download.html & http://puppylinux.com/
+* EasyOS Linux (by Barry Kauler, creator of Puppy Linux & Puppy Linux Ubuntu-remix) - 
+* Slackware Linux - http://www.slackware.com/
+* Devuan Linux (`systemd`-free fork of Debian Linux) - https://devuan.org/os/init-freedom/
+* Kanotix Linux (a Linux distro based on Debian for HD film-viewing) - https://kanotix.com
+* Artix Linux (rolling-release (GNU/)Linux distro based on Arch Linux) - https://artixlinux.org/
 ...
 
 * [Linux Lite](https://www.linuxliteos.com/download.html)

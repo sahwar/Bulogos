@@ -1,0 +1,50 @@
+#lavaLampNoImage {
+	position: relative;
+	height: 21px;
+	width: 1000px;
+	background-color: black;
+	background: url("/navbg.gif") repeat-x top;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	border: 0;
+	clear: both;
+}
+#lavaLampNoImage li {
+	float: left;
+	list-style: none;
+}
+#lavaLampNoImage li.backLava {
+	border: 0px solid #666;
+	background-color: #434E63;
+	background: url("/navbg1.gif") repeat-x top;
+	width: 9px;
+	height: 21px;
+	z-index: 8;
+	position: absolute;
+}
+#lavaLampNoImage li a {
+	font: 12px arial;
+	text-decoration: none;
+	color: #eee;
+	outline: none;
+	text-align: center;
+	top: 2px;
+	letter-spacing: 1px;
+	z-index: 10;
+	display: block;
+	float: left;
+	height: 21px;
+	position: relative;
+	overflow: hidden;
+/*	margin: auto 25px;*/
+	width: 94px;
+	noFocusLine:expression(this.onFocus=this.blur());
+}
+/*
+#lavaLampNoImage li a:hover, #lavaLampNoImage li a:active, #lavaLampNoImage li a:visited, #lavaLampNoImage li a:focus {
+	border: none;
+	color: #eee;
+	outline: none;
+}                 
+*/

@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# video: http://ogp.me/ns/video# ya: http://webmaster.yandex.ru/vocabularies/">
+
+<head>
+  
+<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="pingback" href="https://sayit.nvoq.com/xmlrpc.php">
+<title>404 Page - SayIt from nVoq</title>
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v5.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="news_keywords" content="" />
+<meta name="original-source" content="https://sayit.nvoq.com/404-page/" />
+<link rel="canonical" href="https://sayit.nvoq.com/404-page/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="404 Page - SayIt from nVoq" />
+<meta property="og:description" content="Over the last decade, we have worked to develop the fastest, most accurate, and most reliable dictation in the industry. Leveraging the latest advancements in machine learning and scalable cloud architecture, nVoq’s speaker-independent medical dictation service delivers just that – ... Read More" />
+<meta property="og:url" content="https://sayit.nvoq.com/404-page/" />
+<meta property="og:site_name" content="SayIt from nVoq" />
+<meta property="article:publisher" content="https://www.facebook.com/SayItinHealthcare/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Over the last decade, we have worked to develop the fastest, most accurate, and most reliable dictation in the industry. Leveraging the latest advancements in machine learning and scalable cloud architecture, nVoq’s speaker-independent medical dictation service delivers just that – ... Read More" />
+<meta name="twitter:title" content="404 Page - SayIt from nVoq" />
+<meta name="twitter:site" content="@nVoq" />
+<meta name="twitter:creator" content="@nVoq" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/sayit.nvoq.com\/","name":"SayIt from nVoq | Cloud-based speech recognition solution","alternateName":"Speech Recognition For Healthcare and Customer Care from nVoq","potentialAction":{"@type":"SearchAction","target":"https:\/\/sayit.nvoq.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/sayit.nvoq.com\/404-page\/","sameAs":["https:\/\/www.facebook.com\/SayItinHealthcare\/","https:\/\/www.linkedin.com\/company\/nvoq-inc-?trk=biz-companies-cym","https:\/\/twitter.com\/nVoq"],"@id":"#organization","name":"nVoq","logo":"https:\/\/sayit.nvoq.com\/wp-content\/uploads\/2015\/11\/nVoq.jpg"}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='//sayit.nvoq.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="SayIt from nVoq &raquo; Feed" href="https://sayit.nvoq.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="SayIt from nVoq &raquo; Comments Feed" href="https://sayit.nvoq.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="SayIt from nVoq &raquo; Enterprise-Class Speech API – More Than Great Dictation Comments Feed" href="https://sayit.nvoq.com/enterprise-class-speech-api-more-than-great-dictation/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/sayit.nvoq.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='la-icon-maneger-style-css'  href='https://sayit.nvoq.com/wp-content/uploads/la_icon_sets/style.min.css?ver=5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://sayit.nvoq.com/wp-includes/css/dist/block-library/style.min.css?ver=5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://sayit.nvoq.com/wp-includes/css/dist/block-library/theme.min.css?ver=5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='essential-grid-plugin-settings-css'  href='https://sayit.nvoq.com/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-raleway-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-droid-serif-css'  href='https://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&#038;ver=5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-fontello-css'  href='https://sayit.nvoq.com/wp-content/plugins/essential-grid/public/assets/font/fontello/css/fontello.css?ver=2.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='x-fa-icon-classes-css'  href='https://sayit.nvoq.com/wp-content/themes/pro/cornerstone/assets/dist/css/site/fa-icon-classes.css?ver=3.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='x-stack-css'  href='https://sayit.nvoq.com/wp-content/themes/pro/framework/dist/css/site/stacks/integrity-light.css?ver=2.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_reset_css-css'  href='https://sayit.nvoq.com/wp-content/plugins/gravityforms/css/formreset.min.css?ver=2.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_formsmain_css-css'  href='https://sayit.nvoq.com/wp-content/plugins/gravityforms/css/formsmain.min.css?ver=2.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_ready_class_css-css'  href='https://sayit.nvoq.com/wp-content/plugins/gravityforms/css/readyclass.min.css?ver=2.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_browsers_css-css'  href='https://sayit.nvoq.com/wp-content/plugins/gravityforms/css/browsers.min.css?ver=2.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='x-gravity-forms-css'  href='https://sayit.nvoq.com/wp-content/themes/pro/framework/dist/css/site/gravity_forms/integrity-light.css?ver=2.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='x-cranium-migration-css'  href='https://sayit.nvoq.com/wp-content/themes/pro/framework/legacy/cranium/dist/css/site/integrity-light.css?ver=2.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='x-child-css'  href='https://sayit.nvoq.com/wp-content/themes/pro-child/style.css?ver=2.5.4' type='text/css' media='all' />
+<script type='text/javascript' src='https://sayit.nvoq.com/wp-content/plugins/superfly-menu-5ZkgmK/includes/vendor/looks_awesome/icon_manager/js/md5.js?ver=1.0,0'></script>
+<script type='text/javascript' src='https://sayit.nvoq.com/wp-content/plugins/superfly-menu-5ZkgmK/includes/vendor/looks_awesome/icon_manager/js/util.js?ver=1.0,0'></script>
+<script type='text/javascript' src='https://sayit.nvoq.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://sayit.nvoq.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://sayit.nvoq.com/wp-content/themes/pro/cornerstone/assets/dist/js/site/cs-head.js?ver=3.5.3'></script>
+<script type='text/javascript' src='https://sayit.nvoq.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.4.5'></script>
+<script type='text/javascript' src='https://sayit.nvoq.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.4.5'></script>
+<link rel='https://api.w.org/' href='https://sayit.nvoq.com/wp-json/' />
+<link rel='shortlink' href='https://sayit.nvoq.com/?p=1336' />
+<link rel="alternate" type="application/json+oembed" href="https://sayit.nvoq.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsayit.nvoq.com%2Fenterprise-class-speech-api-more-than-great-dictation%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://sayit.nvoq.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsayit.nvoq.com%2Fenterprise-class-speech-api-more-than-great-dictation%2F&#038;format=xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/uploads/fbrfg/apple-touch-icon.png?v=lk965L8jmr">
+<link rel="icon" type="image/png" sizes="32x32" href="/wp-content/uploads/fbrfg/favicon-32x32.png?v=lk965L8jmr">
+<link rel="icon" type="image/png" sizes="16x16" href="/wp-content/uploads/fbrfg/favicon-16x16.png?v=lk965L8jmr">
+<link rel="manifest" href="/wp-content/uploads/fbrfg/site.webmanifest?v=lk965L8jmr">
+<link rel="mask-icon" href="/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=lk965L8jmr" color="#00add0">
+<link rel="shortcut icon" href="/wp-content/uploads/fbrfg/favicon.ico?v=lk965L8jmr">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml?v=lk965L8jmr">
+<meta name="theme-color" content="#ffffff"><style id="x-generated-css">a,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.x-breadcrumb-wrap a:hover,.widget ul li a:hover,.widget ol li a:hover,.widget.widget_text ul li a,.widget.widget_text ol li a,.widget_nav_menu .current-menu-item > a,.x-accordion-heading .x-accordion-toggle:hover,.x-comment-author a:hover,.x-comment-time:hover,.x-recent-posts a:hover .h-recent-posts{color:#7ac143;}a:hover,.widget.widget_text ul li a:hover,.widget.widget_text ol li a:hover,.x-twitter-widget ul li a:hover{color:#7ac143;}.rev_slider_wrapper,a.x-img-thumbnail:hover,.x-slider-container.below,.page-template-template-blank-3-php .x-slider-container.above,.page-template-template-blank-6-php .x-slider-container.above{border-color:#7ac143;}.entry-thumb:before,.x-pagination span.current,.flex-direction-nav a,.flex-control-nav a:hover,.flex-control-nav a.flex-active,.mejs-time-current,.x-dropcap,.x-skill-bar .bar,.x-pricing-column.featured h2,.h-comments-title small,.x-entry-share .x-share:hover,.x-highlight,.x-recent-posts .x-recent-posts-img:after{background-color:#7ac143;}.x-nav-tabs > .active > a,.x-nav-tabs > .active > a:hover{box-shadow:inset 0 3px 0 0 #7ac143;}.x-main{width:69.536945%;}.x-sidebar{width:25.536945%;}.x-comment-author,.x-comment-time,.comment-form-author label,.comment-form-email label,.comment-form-url label,.comment-form-rating label,.comment-form-comment label,.widget_calendar #wp-calendar caption,.widget.widget_rss li .rsswidget{font-family:"proxima-nova-extra-condensed",sans-serif;font-weight:400;}.p-landmark-sub,.p-meta,input,button,select,textarea{font-family:"proxima-nova-condensed",sans-serif;}.widget ul li a,.widget ol li a,.x-comment-time{color:hsl(0,0%,19%);}.widget_text ol li a,.widget_text ul li a{color:#7ac143;}.widget_text ol li a:hover,.widget_text ul li a:hover{color:#7ac143;}.comment-form-author label,.comment-form-email label,.comment-form-url label,.comment-form-rating label,.comment-form-comment label,.widget_calendar #wp-calendar th,.p-landmark-sub strong,.widget_tag_cloud .tagcloud a:hover,.widget_tag_cloud .tagcloud a:active,.entry-footer a:hover,.entry-footer a:active,.x-breadcrumbs .current,.x-comment-author,.x-comment-author a{color:hsl(0,0%,11%);}.widget_calendar #wp-calendar th{border-color:hsl(0,0%,11%);}.h-feature-headline span i{background-color:hsl(0,0%,11%);}@media (max-width:979px){}html{font-size:17px;}@media (min-width:480px){html{font-size:17px;}}@media (min-width:767px){html{font-size:17px;}}@media (min-width:979px){html{font-size:17px;}}@media (min-width:1200px){html{font-size:17px;}}body{font-style:normal;font-weight:400;color:hsl(0,0%,19%);background:hsl(0,0%,100%) url(/wp-content/uploads/2017/10/bg-integrity-1.png) center top repeat;}.w-b{font-weight:400 !important;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:"proxima-nova-extra-condensed",sans-serif;font-style:normal;font-weight:400;}h1,.h1{letter-spacing:0.02em;}h2,.h2{letter-spacing:0.02em;}h3,.h3{letter-spacing:0.02em;}h4,.h4{letter-spacing:0.02em;}h5,.h5{letter-spacing:0.02em;}h6,.h6{letter-spacing:0.02em;}.w-h{font-weight:400 !important;}.x-container.width{width:88%;}.x-container.max{max-width:1300px;}.x-main.full{float:none;display:block;width:auto;}@media (max-width:979px){.x-main.full,.x-main.left,.x-main.right,.x-sidebar.left,.x-sidebar.right{float:none;display:block;width:auto !important;}}.entry-header,.entry-content{font-size:1rem;}body,input,button,select,textarea{font-family:"proxima-nova-condensed",sans-serif;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.h1 a,.h2 a,.h3 a,.h4 a,.h5 a,.h6 a,blockquote{color:hsl(0,0%,11%);}.cfc-h-tx{color:hsl(0,0%,11%) !important;}.cfc-h-bd{border-color:hsl(0,0%,11%) !important;}.cfc-h-bg{background-color:hsl(0,0%,11%) !important;}.cfc-b-tx{color:hsl(0,0%,19%) !important;}.cfc-b-bd{border-color:hsl(0,0%,19%) !important;}.cfc-b-bg{background-color:hsl(0,0%,19%) !important;}.x-btn,.button,[type="submit"]{color:hsl(0,0%,0%);border-color:#7ac143;background-color:hsl(0,0%,100%);text-shadow:0 0.075em 0.075em rgba(0,0,0,0.5);border-radius:0.25em;padding:0.429em 1.143em 0.643em;font-size:14px;}.x-btn:hover,.button:hover,[type="submit"]:hover{color:#fff;border-color:hsla(190,89%,43%,0);background-color:#7ac143;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.5);}.x-btn.x-btn-real,.x-btn.x-btn-real:hover{margin-bottom:0.25em;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);}.x-btn.x-btn-real{box-shadow:0 0.25em 0 0 #63990c,0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-real:hover{box-shadow:0 0.25em 0 0 #0cb0d1,0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-flat,.x-btn.x-btn-flat:hover{margin-bottom:0;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);box-shadow:none;}.x-btn.x-btn-transparent,.x-btn.x-btn-transparent:hover{margin-bottom:0;border-width:3px;text-shadow:none;text-transform:uppercase;background-color:transparent;box-shadow:none;}.h-widget:before,.x-flickr-widget .h-widget:before,.x-dribbble-widget .h-widget:before{position:relative;font-weight:normal;font-style:normal;line-height:1;text-decoration:inherit;-webkit-font-smoothing:antialiased;speak:none;}.h-widget:before{padding-right:0.4em;font-family:"fontawesome";}.x-flickr-widget .h-widget:before,.x-dribbble-widget .h-widget:before{top:0.025em;padding-right:0.35em;font-family:"foundationsocial";font-size:0.785em;}.widget_archive .h-widget:before{content:"\f303";top:-0.045em;font-size:0.925em;}.widget_calendar .h-widget:before{content:"\f073";top:-0.0825em;font-size:0.85em;}.widget_categories .h-widget:before,.widget_product_categories .h-widget:before{content:"\f02e";font-size:0.95em;}.widget_nav_menu .h-widget:before,.widget_layered_nav .h-widget:before{content:"\f0c9";}.widget_meta .h-widget:before{content:"\f0fe";top:-0.065em;font-size:0.895em;}.widget_pages .h-widget:before{font-family:"FontAwesomeRegular";content:"\f15c";top:-0.065em;font-size:0.85em;}.widget_recent_reviews .h-widget:before,.widget_recent_comments .h-widget:before{content:"\f086";top:-0.065em;font-size:0.895em;}.widget_recent_entries .h-widget:before{content:"\f02d";top:-0.045em;font-size:0.875em;}.widget_rss .h-widget:before{content:"\f09e";padding-right:0.2em;}.widget_search .h-widget:before,.widget_product_search .h-widget:before{content:"\f0a4";top:-0.075em;font-size:0.85em;}.widget_tag_cloud .h-widget:before,.widget_product_tag_cloud .h-widget:before{content:"\f02c";font-size:0.925em;}.widget_text .h-widget:before{content:"\f054";padding-right:0.4em;font-size:0.925em;}.x-dribbble-widget .h-widget:before{content:"\f009";}.x-flickr-widget .h-widget:before{content:"\f010";padding-right:0.35em;}.widget_best_sellers .h-widget:before{content:"\f091";top:-0.0975em;font-size:0.815em;}.widget_shopping_cart .h-widget:before{content:"\f07a";top:-0.05em;font-size:0.945em;}.widget_products .h-widget:before{content:"\f0f2";top:-0.05em;font-size:0.945em;}.widget_featured_products .h-widget:before{content:"\f0a3";}.widget_layered_nav_filters .h-widget:before{content:"\f046";top:1px;}.widget_onsale .h-widget:before{content:"\f02b";font-size:0.925em;}.widget_price_filter .h-widget:before{content:"\f0d6";font-size:1.025em;}.widget_random_products .h-widget:before{content:"\f074";font-size:0.925em;}.widget_recently_viewed_products .h-widget:before{content:"\f06e";}.widget_recent_products .h-widget:before{content:"\f08d";top:-0.035em;font-size:0.9em;}.widget_top_rated_products .h-widget:before{content:"\f075";top:-0.145em;font-size:0.885em;}body .gform_wrapper .gfield_required{color:#7ac143;}body .gform_wrapper h2.gsection_title,body .gform_wrapper h3.gform_title,body .gform_wrapper .top_label .gfield_label,body .gform_wrapper .left_label .gfield_label,body .gform_wrapper .right_label .gfield_label{font-weight:400;}body .gform_wrapper h2.gsection_title{letter-spacing:0.02em !important;}body .gform_wrapper h3.gform_title{letter-spacing:0.02em !important;}body .gform_wrapper .top_label .gfield_label,body .gform_wrapper .left_label .gfield_label,body .gform_wrapper .right_label .gfield_label{color:hsl(0,0%,11%);}body .gform_wrapper .validation_message{font-weight:400;}.wf-loading a, .wf-loading p, .wf-loading ul, .wf-loading ol, .wf-loading dl, .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading h5, .wf-loading h6, .wf-loading em, .wf-loading pre, .wf-loading cite, .wf-loading span, .wf-loading table, .wf-loading strong, .wf-loading blockquote { visibility: hidden !important; }.e6910-1.x-bar {height:2.67em;background-color:hsl(0,0%,100%);box-shadow:0em -0.1em 0.13em 0px rgba(0,0,0,0.15);z-index:9996;}.e6910-12.x-bar {height:6.5em;background-color:#ffffff;box-shadow:0.69em 0.15em .45em 0px rgba(0,0,0,0.38);z-index:9998;}.e6910-1.x-bar,.e6910-12.x-bar {font-size:16px;}.e6910-1.x-bar-content,.e6910-12.x-bar-content {flex-direction:row;justify-content:space-between;align-items:center;flex:0 1 100%;}.e6910-1.x-bar-content {height:2.67em;max-width:1000px;}.e6910-12.x-bar-content {height:6.5em;max-width:1200px;}.e6910-1.x-bar-outer-spacers:before,.e6910-12.x-bar-outer-spacers:before,.e6910-1.x-bar-outer-spacers:after,.e6910-12.x-bar-outer-spacers:after {flex-basis:2em;width:2em;height:2em;}.e6910-1.x-bar-space,.e6910-12.x-bar-space {font-size:16px;}.e6910-1.x-bar-space {height:2.67em;}.e6910-12.x-bar-space {height:6.5em;}.e6910-10.x-anchor {margin:0em 0em 0em 0.9em;background-color:rgb(33,103,136);box-shadow:0em 0.15em 0.65em 0em rgba(0,0,0,0.25);}.e6910-18.x-anchor {margin:0em 0.35em 0em 0em;background-color:#7ac143;}.e6910-19.x-anchor {margin:0em .5em 0em 0em;background-color:rgb(0,0,0);}.e6910-18.x-anchor,.e6910-19.x-anchor {border-radius:4px;box-shadow:0px 2px 3px 0px rgba(0,0,0,0.25);}.e6910-10.x-anchor,.e6910-18.x-anchor,.e6910-19.x-anchor {font-size:1em;}.e6910-10.x-anchor .x-anchor-content,.e6910-18.x-anchor .x-anchor-content,.e6910-19.x-anchor .x-anchor-content {flex-direction:row;}.e6910-10.x-anchor .x-anchor-content,.e6910-19.x-anchor .x-anchor-content {justify-content:center;align-items:center;}.e6910-18.x-anchor .x-anchor-content {justify-content:flex-start;align-items:flex-end;padding:0.55em 0.83em 0.55em 0.55em;}.e6910-10.x-anchor .x-anchor-content {padding:0.575em 0.85em 0.575em 0.85em;}.e6910-19.x-anchor .x-anchor-content {padding:0.8em;}.e6910-10.x-anchor[class*="active"] {background-color:rgba(255,255,255,1);box-shadow:0em 0.15em 0.65em 0em rgba(0,0,0,0.25);}.e6910-18.x-anchor[class*="active"] {background-color:#7ac143;}.e6910-19.x-anchor[class*="active"] {background-color:rgb(35,122,165);}.e6910-18.x-anchor[class*="active"],.e6910-19.x-anchor[class*="active"] {box-shadow:0px 2px 3px 0px rgba(0,0,0,0.25);}.e6910-10.x-anchor .x-anchor-text {margin:5px;}.e6910-19.x-anchor .x-anchor-text {margin:4px;}.e6910-10.x-anchor .x-anchor-text-primary {font-family:inherit;font-size:1em;font-weight:400;color:hsl(0,0%,100%);}.e6910-18.x-anchor .x-anchor-text-primary,.e6910-19.x-anchor .x-anchor-text-primary {font-family:"proxima-nova-condensed",sans-serif;font-weight:700;letter-spacing:.11em;margin-right:calc(.11em * -1);text-align:center;text-shadow:0px 1px 1px rgba(0,0,0,0.25);color:white;}.e6910-18.x-anchor .x-anchor-text-primary {font-size:0.8em;line-height:0;}.e6910-19.x-anchor .x-anchor-text-primary {font-size:0.76em;}.e6910-10.x-anchor .x-anchor-text-primary,.e6910-18.x-anchor .x-anchor-text-primary,.e6910-19.x-anchor .x-anchor-text-primary {font-style:normal;}.e6910-10.x-anchor .x-anchor-text-primary,.e6910-19.x-anchor .x-anchor-text-primary {line-height:1;}.e6910-18.x-anchor[class*="active"] .x-anchor-text-primary,.e6910-19.x-anchor[class*="active"] .x-anchor-text-primary {text-shadow:0px 1px 1px rgba(0,0,0,0.25);color:white;}.e6910-10.x-anchor[class*="active"] .x-anchor-text-primary {color:rgb(11,11,11);}.e6910-18.x-anchor .x-anchor-text-secondary {margin-top:0.5em;font-family:"proxima-nova-condensed",sans-serif;font-size:0.8em;font-style:normal;font-weight:700;line-height:1;letter-spacing:0.08em;margin-right:calc(0.08em * -1);text-align:center;text-shadow:0px 1px 1px rgba(0,0,0,0.25);color:hsl(0,0%,100%);}.e6910-18.x-anchor[class*="active"] .x-anchor-text-secondary {text-shadow:0px 1px 1px rgba(0,0,0,0.25);color:hsl(0,0%,100%);}.e6910-18.x-anchor .x-graphic {margin:4px;}.e6910-18.x-anchor .x-graphic-icon {width:1em;height:1em;line-height:1em;font-size:1em;text-shadow:0px 1px 1px rgba(0,0,0,0.25);color:rgba(255,255,255,0.6);background-color:transparent;}.e6910-18.x-anchor .x-graphic-icon[class*="active"] {text-shadow:0px 1px 1px rgba(0,0,0,0.25);color:white;background-color:transparent;}.e6910-2.x-bar-container,.e6910-4.x-bar-container,.e6910-6.x-bar-container,.e6910-13.x-bar-container,.e6910-15.x-bar-container,.e6910-17.x-bar-container {flex-direction:row;align-items:center;flex:0 1 auto;background-color:transparent;}.e6910-2.x-bar-container,.e6910-4.x-bar-container {justify-content:space-between;}.e6910-6.x-bar-container {justify-content:space-around;}.e6910-13.x-bar-container,.e6910-15.x-bar-container,.e6910-17.x-bar-container {justify-content:flex-start;}.e6910-14.x-image {background-color:transparent;}a.e6910-14.x-image:hover {background-color:transparent;}.e6910-16.x-menu {flex-direction:row;justify-content:space-around;align-items:stretch;align-self:center;flex:0 1 auto;margin:0px 0px 0px 0px;font-size:.9em;}.e6910-16.x-menu > li,.e6910-16.x-menu > li > a {flex:0 1 auto;}.e6910-16.x-menu > li > .x-anchor {margin:0px 4px 0px 4px;border-width:4px;border-style:solid;border-color:transparent;border-radius:4px;font-size:1em;background-color:transparent;}.e6910-16.x-menu > li > .x-anchor .x-anchor-content {flex-direction:row;justify-content:center;align-items:center;padding:.15em;}.e6910-16.x-menu > li > .x-anchor[class*="active"] {border-color:transparent;background-color:hsl(0,0%,92%);}.e6910-16.x-menu > li > .x-anchor .x-anchor-text-primary {font-family:"proxima-nova-condensed",sans-serif;font-size:.95em;font-style:normal;font-weight:700;line-height:1;letter-spacing:.015em;margin-right:calc(.015em * -1);text-align:center;color:rgb(20,20,20);}.e6910-16.x-menu > li > .x-anchor[class*="active"] .x-anchor-text-primary {color:#5c554b;}.e6910-16.x-menu > li > .x-anchor .x-anchor-text-secondary {margin-top:0.35em;font-family:inherit;font-size:0.8em;font-style:normal;font-weight:400;line-height:1;letter-spacing:0.015em;margin-right:calc(0.015em * -1);text-shadow:0px 1px 1px rgba(0,0,0,0.25);color:rgb(150,146,134);}.e6910-16.x-menu > li > .x-anchor[class*="active"] .x-anchor-text-secondary {text-shadow:0px 1px 1px rgba(255,255,255,0.25);color:#857f77;}.e6910-16.x-menu > li > .x-anchor .x-anchor-sub-indicator {margin:4px;font-size:1em;text-shadow:0px 1px 1px rgba(0,0,0,0.25);color:#7ac143;}.e6910-16.x-menu > li > .x-anchor[class*="active"] .x-anchor-sub-indicator {text-shadow:0px 1px 1px rgba(255,255,255,0.25);color:#857f77;}.e6910-16 .x-dropdown {width:14em;border-radius:4px;font-size:0.9em;background-color:hsl(0,0%,92%);box-shadow:0px 10px 30px 0px rgba(0,0,0,0.25);}.e6910-16 .x-dropdown[data-x-stem-top] {margin:0px 4px 0px 4px;}.e6910-16 .sub-menu .x-anchor {margin:4px;border-radius:3px;font-size:1em;background-color:transparent;box-shadow:inset 0px 2px 3px 0px transparent;}.e6910-16 .sub-menu .x-anchor .x-anchor-content {flex-direction:row;justify-content:center;align-items:center;padding:0.75em 0.65em 0.75em 0.65em;}.e6910-16 .sub-menu .x-anchor[class*="active"] {background-color:hsl(0,0%,100%);box-shadow:inset 0px 2px 3px 0px rgba(78,74,65,0.25);}.e6910-16 .sub-menu .x-anchor .x-anchor-text {margin:4px auto 4px 4px;}.e6910-16 .sub-menu .x-anchor .x-anchor-text-primary {font-family:"proxima-nova-condensed",sans-serif;font-size:1em;font-style:normal;font-weight:700;line-height:1;letter-spacing:0.015em;margin-right:calc(0.015em * -1);text-shadow:0px 1px 1px rgba(255,255,255,0.25);color:rgb(14,14,14);}.e6910-16 .sub-menu .x-anchor[class*="active"] .x-anchor-text-primary {text-shadow:0px 1px 1px rgba(255,255,255,0.25);color:#7ac143;}.e6910-16 .sub-menu .x-anchor .x-anchor-text-secondary {margin-top:0.35em;font-family:inherit;font-size:0.75em;font-style:normal;font-weight:400;line-height:1;letter-spacing:0.015em;margin-right:calc(0.015em * -1);text-shadow:0px 1px 1px rgba(255,255,255,0.25);color:#857f77;}.e6910-16 .sub-menu .x-anchor[class*="active"] .x-anchor-text-secondary {text-shadow:0px 1px 1px rgba(255,255,255,0.25);color:#857f77;}.e6910-16 .sub-menu .x-anchor .x-anchor-sub-indicator {margin:0px 4px 0px auto;font-size:1em;text-shadow:0px 1px 1px rgba(255,255,255,0.25);color:hsl(0,0%,100%);}.e6910-16 .sub-menu .x-anchor[class*="active"] .x-anchor-sub-indicator {text-shadow:0px 1px 1px rgba(255,255,255,0.25);color:hsl(0,0%,100%);}.e6910-16 .sub-menu .x-anchor .x-anchor-particle-primary {width:0.75em;height:0.75em;border-radius:100em;color:#7ac143;transform-origin:50% 50%;}.e6910-20.x-anchor-toggle {width:2.75em;height:2.75em;border-radius:100em;font-size:1em;background-color:rgba(255,255,255,1);box-shadow:0em 0.15em 0.65em 0em rgba(0,0,0,0.25);}.e6910-20.x-anchor-toggle .x-anchor-content {flex-direction:row;justify-content:center;align-items:center;}.e6910-20.x-anchor-toggle[class*="active"] {background-color:rgba(255,255,255,1);box-shadow:0em 0.15em 0.65em 0em rgba(0,0,0,0.25);}.e6910-20.x-anchor-toggle .x-graphic {margin:5px;}.e6910-20 .x-toggle {color:rgba(0,0,0,1);}.e6910-20[class*="active"] .x-toggle,.e6910-20 .x-toggle[class*="active"] {color:rgba(0,0,0,0.5);}.e6910-20 .x-toggle-burger {width:12em;margin:3.25em 0;font-size:0.1em;}.e6910-20 .x-toggle-burger-bun-t {transform:translate3d(0,-3.25em,0);}.e6910-20 .x-toggle-burger-bun-b {transform:translate3d(0,3.25em,0);}.e6910-20.x-modal {font-size:16px;}.e6910-20.x-modal .x-modal-bg {background-color:rgba(0,0,0,0.75);}.e6910-20.x-modal .x-modal-close {width:calc(1em * 1);height:calc(1em * 1);font-size:1.5em;color:rgba(255,255,255,0.5);}.e6910-20.x-modal .x-modal-close:hover,.e6910-20.x-modal .x-modal-close:focus {color:#ffffff;}.e6910-20.x-modal .x-modal-content-inner {padding:calc(1.5em * 1);}.e6910-20.x-modal .x-modal-content {max-width:28em;padding:2em;background-color:#ffffff;box-shadow:0em 0.15em 2em 0em rgba(0,0,0,0.25);}.e6910-20.x-menu {margin:0px;font-size:1em;}.e6910-20.x-menu .x-anchor {font-size:1em;background-color:transparent;}.e6910-20.x-menu .x-anchor .x-anchor-content {flex-direction:row;justify-content:center;align-items:center;padding:0.75em;}.e6910-20.x-menu .x-anchor[class*="active"] {background-color:transparent;}.e6910-20.x-menu .x-anchor .x-anchor-text {margin:5px;}.e6910-20.x-menu .x-anchor .x-anchor-text-primary {font-family:inherit;font-size:1em;font-style:normal;font-weight:400;line-height:1;color:rgba(0,0,0,1);}.e6910-20.x-menu .x-anchor[class*="active"] .x-anchor-text-primary {color:rgba(0,0,0,0.5);}.e6910-20.x-menu .x-anchor .x-anchor-sub-indicator {margin:5px;font-size:1em;color:rgba(0,0,0,1);}.e6910-20.x-menu .x-anchor[class*="active"] .x-anchor-sub-indicator {color:rgba(0,0,0,0.5);}.e6910-11.x-anchor-toggle {width:2em;height:2em;border-radius:100em;font-size:1em;background-color:rgba(255,255,255,1);}.e6910-11.x-anchor-toggle .x-anchor-content {flex-direction:row;justify-content:center;align-items:center;}.e6910-11.x-anchor-toggle[class*="active"] {background-color:rgba(255,255,255,1);}.e6910-11.x-anchor-toggle .x-graphic {margin:5px;}.e6910-11.x-anchor-toggle .x-graphic-icon {width:.75em;height:.75em;line-height:.75em;font-size:1em;color:rgba(0,0,0,1);background-color:transparent;}.e6910-11.x-anchor-toggle .x-graphic-icon[class*="active"] {color:#00add0;background-color:transparent;}.e6910-11.x-modal {font-size:16px;}.e6910-11.x-modal .x-modal-bg {background-color:rgba(0,0,0,0.75);}.e6910-11.x-modal .x-modal-close {width:calc(1em * 1);height:calc(1em * 1);font-size:1.5em;color:rgba(255,255,255,0.5);}.e6910-11.x-modal .x-modal-close:hover,.e6910-11.x-modal .x-modal-close:focus {color:#ffffff;}.e6910-11.x-modal .x-modal-content-inner {padding:calc(1.5em * 1);}.e6910-11.x-modal .x-modal-content {max-width:28em;padding:2em;background-color:#ffffff;box-shadow:0em 0.15em 2em 0em rgba(0,0,0,0.25);}.e6910-11.x-search {width:100%;max-width:none;height:auto;border-radius:100em;font-size:1em;background-color:#ffffff;box-shadow:0em 0.15em 0.5em 0em rgba(0,0,0,0.15);}.e6910-11.x-search.x-search-focused {background-color:#ffffff;box-shadow:0em 0.15em 0.5em 0em rgba(0,0,0,0.15);}.e6910-11.x-search .x-search-input {order:2;margin:0em;font-family:inherit;font-size:1em;font-style:normal;font-weight:400;line-height:1.3;color:rgba(0,0,0,0.5);}.e6910-11.x-search.x-search-has-content .x-search-input {color:rgba(0,0,0,1);}.e6910-11.x-search .x-search-btn-submit {order:1;width:1em;height:1em;margin:0.5em 0.5em 0.5em 0.9em;font-size:1em;color:rgba(0,0,0,1);background-color:transparent;}.e6910-11.x-search .x-search-btn-submit:hover,.e6910-11.x-search .x-search-btn-submit:focus {color:rgba(0,0,0,1);background-color:transparent;}.e6910-11.x-search .x-search-btn-clear {order:3;width:2em;height:2em;margin:0.5em;border-radius:100em;font-size:0.9em;color:rgba(255,255,255,1);background-color:rgba(0,0,0,0.25);}.e6910-11.x-search .x-search-btn-clear:hover,.e6910-11.x-search .x-search-btn-clear:focus {color:rgba(255,255,255,1);background-color:rgba(0,0,0,0.3);}.e6910-7.x-anchor,.e6910-8.x-anchor,.e6910-9.x-anchor {font-size:1em;background-color:rgba(255,255,255,1);}.e6910-7.x-anchor .x-anchor-content,.e6910-8.x-anchor .x-anchor-content,.e6910-9.x-anchor .x-anchor-content {flex-direction:row;justify-content:center;align-items:center;}.e6910-7.x-anchor[class*="active"],.e6910-8.x-anchor[class*="active"],.e6910-9.x-anchor[class*="active"] {background-color:rgba(255,255,255,1);}.e6910-7.x-anchor .x-graphic,.e6910-8.x-anchor .x-graphic,.e6910-9.x-anchor .x-graphic {margin:5px;}.e6910-7.x-anchor .x-graphic-icon,.e6910-8.x-anchor .x-graphic-icon,.e6910-9.x-anchor .x-graphic-icon {width:1em;height:1em;line-height:1em;font-size:1.25em;color:#00add0;background-color:transparent;}.e6910-7.x-anchor .x-graphic-icon[class*="active"],.e6910-8.x-anchor .x-graphic-icon[class*="active"],.e6910-9.x-anchor .x-graphic-icon[class*="active"] {color:#3b5998;background-color:transparent;}.e6910-3.x-text,.e6910-5.x-text {margin:0em;padding:0em;font-family:"proxima-nova-condensed",sans-serif;font-size:1em;font-style:normal;line-height:1.4;letter-spacing:0em;text-transform:none;background-color:transparent;}.e6910-3.x-text {font-weight:700;text-align:left;color:rgb(19,18,18);}.e6910-5.x-text {font-weight:400;color:rgb(8,8,8);}.e6910-3.x-text > :first-child,.e6910-5.x-text > :first-child {margin-top:0;}.e6910-3.x-text > :last-child,.e6910-5.x-text > :last-child {margin-bottom:0;} @font-face{font-family:'Verveine';src:url('/wp-content/themes/pro-child/fonts/Verveine-Regular.eot');src:url('/wp-content/themes/pro-child/fonts/Verveine-Regular.eot?#iefix') format('embedded-opentype'),url('/wp-content/themes/pro-child/fonts/Verveine-Regular.woff') format('woff'),url('/wp-content/themes/pro-child/fonts/Verveine-Regular.ttf') format('truetype'),url('/wp-content/themes/pro-child/fonts/Verveine-Regular.svg#Verveine-Regular') format('svg');font-weight:normal;font-style:normal;}@font-face{font-family:'Proxima Nova ExCn';src:url('/wp-content/themes/pro-child/fonts/ProximaNovaExCn-Bold.eot');src:url('/wp-content/themes/pro-child/fonts/ProximaNovaExCn-Bold.eot?#iefix') format('embedded-opentype'),url('/wp-content/themes/pro-child/fonts/ProximaNovaExCn-Bold.woff') format('woff'),url('/wp-content/themes/pro-child/fonts/ProximaNovaExCn-Bold.ttf') format('truetype'),url('/wp-content/themes/pro-child/fonts/ProximaNovaExCn-Bold.svg#ProximaNovaExCn-Bold') format('svg');font-weight:bold;font-style:normal;}@font-face{font-family:'Proxima Nova Cond';src:url('/wp-content/themes/pro-child/fonts/ProximaNovaCond-Regular.eot');src:url('/wp-content/themes/pro-child/fonts/ProximaNovaCond-Regular.eot?#iefix') format('embedded-opentype'),url('/wp-content/themes/pro-child/fonts/ProximaNovaCond-Regular.woff') format('woff'),url('/wp-content/themes/pro-child/fonts/ProximaNovaCond-Regular.ttf') format('truetype'),url('/wp-content/themes/pro-child/fonts/ProximaNovaCond-Regular.svg#ProximaNovaCond-Regular') format('svg');font-weight:normal;font-style:normal;}@font-face{font-family:'Proxima Nova Cond';src:url('/wp-content/themes/pro-child/fonts/ProximaNovaCond-Bold.eot');src:url('/wp-content/themes/pro-child/fonts/ProximaNovaCond-Bold.eot?#iefix') format('embedded-opentype'),url('/wp-content/themes/pro-child/fonts/ProximaNovaCond-Bold.woff') format('woff'),url('/wp-content/themes/pro-child/fonts/ProximaNovaCond-Bold.ttf') format('truetype'),url('/wp-content/themes/pro-child/fonts/ProximaNovaCond-Bold.svg#ProximaNovaCond-Bold') format('svg');font-weight:bold;font-style:normal;}@font-face{font-family:'Proxima Nova ExCn';src:url('/wp-content/themes/pro-child/fonts/ProximaNovaExCn-Regular.eot');src:url('/wp-content/themes/pro-child/fonts/ProximaNovaExCn-Regular.eot?#iefix') format('embedded-opentype'),url('/wp-content/themes/pro-child/fonts/ProximaNovaExCn-Regular.woff') format('woff'),url('/wp-content/themes/pro-child/fonts/ProximaNovaExCn-Regular.ttf') format('truetype'),url('/wp-content/themes/pro-child/fonts/ProximaNovaExCn-Regular.svg#ProximaNovaExCn-Regular') format('svg');font-weight:normal;font-style:normal;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.h1 a,.h2 a,.h3 a,.h4 a,.h5 a,.h6 a,blockquote{font-family:'Proxima Nova ExCn',sans-serif;font-weight:normal;font-style:normal;}p,body,body copy{font-family:'Proxima Nova Cond',sans-serif;font-weight:normal;font-style:normal;}x-btn,x-btn-rounded,x-btn-regular{font-family:'Verveine';src:url('/wp-content/themes/pro-child/fonts/Verveine-Regular.eot');src:url('/wp-content/themes/pro-child/fonts/Verveine-Regular.eot?#iefix') format('embedded-opentype'),url('/wp-content/themes/pro-child/fonts/Verveine-Regular.woff') format('woff'),url('/wp-content/themes/pro-child/fonts/Verveine-Regular.ttf') format('truetype'),url('/wp-content/themes/pro-child/fonts/Verveine-Regular.svg#Verveine-Regular') format('svg');font-weight:normal;font-style:normal;}.x-btn,.button,[type="submit"]{text-shadow:none !important;}p.p-info{display:none;}body .ilightbox-overlay.light{background-color:transparent;background-color:rgba(0,0,0,0.15);}body .ilightbox-holder.ilightbox-next,body .ilightbox-holder.ilightbox-prev{opacity:0 !important;visibility:hidden;}.ilightbox-loader{display:none !important;}.ilightbox-toolbar.light{background:white;border:none;padding:0;left:15px;top:20px;}.ilightbox-toolbar.light a.ilightbox-close:before{font-size:20px;font-weight:lighter;}.ilightbox-toolbar .ilightbox-fullscreen{display:none;}.site .gform_wrapper ul li.gfield{clear:none !important;}</style><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54905025-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-54905025-1');
+</script>
+    <script id="cs-typekit-loader">
+      (function(doc){
+        var config = { kitId:'fax0qvi', async:true }
+
+        var timer = setTimeout(function(){
+          doc.documentElement.className = doc.documentElement.className.replace(/\bwf-loading\b/g,"") + " wf-inactive";
+        }, 3000)
+
+        var tk = doc.createElement("script")
+        var loaded = false
+        var firstScript = doc.getElementsByTagName("script")[0]
+
+        doc.documentElement.className += " wf-loading"
+
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js'
+        tk.async = true
+        tk.onload = tk.onreadystatechange = function(){
+          if (loaded || this.readyState && this.readyState != "complete" && this.readyState != "loaded") return
+          loaded = true
+          clearTimeout(timer)
+          try { Typekit.load(config) } catch(e){}
+        }
+
+        firstScript.parentNode.insertBefore(tk, firstScript)
+      })(window.document)
+    </script>
+    </head>
+
+<body class="page-template page-template-template-blank-5 page-template-template-blank-5-php page page-id-1336 x-integrity x-integrity-light x-full-width-layout-active x-full-width-active x-child-theme-active pro-v2_5_4 cornerstone-v3_5_3">
+
+  
+  <div id="x-root" class="x-root" >
+
+    
+    <div id="x-site" class="x-site site" >
+
+    
+
+  <header class="x-masthead" role="banner" >
+
+    
+    
+<div class="e6910-1 x-bar-space x-bar-space-top x-bar-space-h" style="display: none;" ></div>
+
+
+<div class="e6910-1 x-bar x-bar-top x-bar-h x-bar-relative x-bar-is-sticky x-bar-outer-spacers" data-x-bar="{&quot;id&quot;:&quot;e6910-1&quot;,&quot;region&quot;:&quot;top&quot;,&quot;height&quot;:&quot;2.67em&quot;,&quot;keepMargin&quot;:true,&quot;triggerOffset&quot;:&quot;0&quot;,&quot;shrink&quot;:&quot;0&quot;}" >
+
+    
+      <div class="e6910-1 x-bar-content">
+      
+<div class="e6910-2 x-bar-container" >
+
+  
+  
+<div class="e6910-3 x-text" >
+  <p>1.866.383.4500</p></div>
+
+</div>
+
+<div class="e6910-4 x-bar-container  x-hide-md x-hide-sm x-hide-xs" >
+
+  
+  
+<div class="e6910-5 x-text  x-hide-sm x-hide-xs" >
+  nVoq, Inc. • 4775 Walnut Street, Suite 104, Boulder, CO 80301
+</div>
+
+</div>
+
+<div class="e6910-6 x-bar-container" >
+
+  
+  
+<a class="e6910-7 x-anchor x-anchor-button" tabindex="0" href="https://www.facebook.com/SayItinHealthcare/" >
+
+  
+  <span class="x-anchor-content">
+    
+<span class="x-graphic" aria-hidden="true" >
+
+  
+<i class="x-icon x-graphic-icon x-graphic-primary" aria-hidden="true" data-x-icon-b="&#xf09a;" ></i>
+
+</span>              </span>
+
+  
+</a>
+
+<a class="e6910-8 x-anchor x-anchor-button" tabindex="0" href="https://twitter.com/nVoq" >
+
+  
+  <span class="x-anchor-content">
+    
+<span class="x-graphic" aria-hidden="true" >
+
+  
+<i class="x-icon x-graphic-icon x-graphic-primary" aria-hidden="true" data-x-icon-b="&#xf081;" ></i>
+
+</span>              </span>
+
+  
+</a>
+
+<a class="e6910-9 x-anchor x-anchor-button" tabindex="0" href="https://www.linkedin.com/company/nvoq-inc-?trk=biz-companies-cym" >
+
+  
+  <span class="x-anchor-content">
+    
+<span class="x-graphic" aria-hidden="true" >
+
+  
+<i class="x-icon x-graphic-icon x-graphic-primary" aria-hidden="true" data-x-icon-b="&#xf08c;" ></i>
+
+</span>              </span>
+
+  
+</a>
+
+<a class="e6910-10 x-anchor x-anchor-button" tabindex="0" href="https://sayit.nvoq.com/healthcare-4/blog/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >BLOG</span></span>          </span>
+
+  
+</a>
+
+<a class="e6910-11 x-anchor x-anchor-toggle" tabindex="0" data-x-toggle="1" data-x-toggleable="e6910-11" aria-controls="e6910-11-modal" aria-expanded="false" aria-haspopup="true" aria-label="Toggle Modal Content" >
+
+  
+  <span class="x-anchor-content">
+    
+<span class="x-graphic" aria-hidden="true" >
+
+  
+<i class="x-icon x-graphic-icon x-graphic-primary" aria-hidden="true" data-x-icon-s="&#xf002;" ></i>
+
+<i class="x-icon x-graphic-icon x-graphic-secondary" aria-hidden="true" data-x-icon-s="&#xf002;" ></i>
+
+</span>              </span>
+
+  
+</a>
+
+</div>
+    </div>
+  
+</div>
+
+
+
+<div class="e6910-12 x-bar-space x-bar-space-top x-bar-space-h" style="display: none;" ></div>
+
+
+<div class="e6910-12 x-bar x-bar-top x-bar-h x-bar-relative x-bar-is-sticky x-bar-outer-spacers" data-x-bar="{&quot;id&quot;:&quot;e6910-12&quot;,&quot;region&quot;:&quot;top&quot;,&quot;height&quot;:&quot;6.5em&quot;,&quot;keepMargin&quot;:true,&quot;zStack&quot;:true,&quot;triggerOffset&quot;:&quot;0&quot;,&quot;shrink&quot;:&quot;0&quot;}" >
+
+    
+      <div class="e6910-12 x-bar-content">
+      
+<div class="e6910-13 x-bar-container" >
+
+  
+  
+<a class="e6910-14 x-image" href="/" >
+  <img alt="nVoq" src="/wp-content/uploads/2018/08/nVoq_logo2.jpg" width="90" height="90" >
+</a>
+
+</div>
+
+<div class="e6910-15 x-bar-container  x-hide-sm x-hide-xs" >
+
+  
+  <ul class="e6910-16 x-menu x-menu-inline  x-hide-sm x-hide-xs" ><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-299" id="menu-item-299" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" title="Cloud-based Speech Recognition" href="https://sayit.nvoq.com/healthcare/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Healthcare</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>      </span>
+
+  
+</a>
+<ul class="sub-menu x-dropdown" data-x-depth="0" data-x-stem data-x-stem-top ><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7084" id="menu-item-7084" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/home-health-hospice-care/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Home Health &#038; Hospice Care</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4209" id="menu-item-4209" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/ambulatory-clinic/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Ambulatory Clinics</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5784" id="menu-item-5784" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/cardiology/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Cardiology</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4155" id="menu-item-4155" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/emergency-departments/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Emergency Departments – Urgent Care</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4465" id="menu-item-4465" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="/wp-content/uploads/2018/12/HospitalITLeaders.pdf" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Hospital IT Leaders</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4247" id="menu-item-4247" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/healthcare-speech-recognition-solution-for-medical-specialists/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Medical Specialists</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5768" id="menu-item-5768" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/nurse-practitioners/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Nurse Practitioners</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4207" id="menu-item-4207" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/medical-dictation-software-for-pathologists/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Pathologists</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4208" id="menu-item-4208" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/radiologists/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Radiologists</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2615" id="menu-item-2615" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/dictation-solution-for-veterinarians/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Veterinary</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-556" id="menu-item-556" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/healthcare/events/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Events</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-689" id="menu-item-689" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/customer-care-productivity-tools/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Contact Centers</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>      </span>
+
+  
+</a>
+<ul class="sub-menu x-dropdown" data-x-depth="0" data-x-stem data-x-stem-top ><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6061" id="menu-item-6061" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="/customer-care-productivity-tools/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Workflow Automations</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3431" id="menu-item-3431" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/customer-care-productivity-tools/articles/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Articles</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6124" id="menu-item-6124" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/developers/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Developers</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3850" id="menu-item-3850" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/request-a-trial/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Request a Trial</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3852" id="menu-item-3852" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/contact-nvoq/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >About Us</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>      </span>
+
+  
+</a>
+<ul class="sub-menu x-dropdown" data-x-depth="0" data-x-stem data-x-stem-top ><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4323" id="menu-item-4323" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/contact-nvoq/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Contact nVoq</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4012" id="menu-item-4012" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/company/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Company</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+<ul class="sub-menu x-dropdown" data-x-depth="1" data-x-stem ><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2970" id="menu-item-2970" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/jobs/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Jobs</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4013" id="menu-item-4013" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/company/legal/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Legal</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-419" id="menu-item-419" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/partners/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Partners</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>      </span>
+
+  
+</a>
+<ul class="sub-menu x-dropdown" data-x-depth="0" data-x-stem data-x-stem-top ><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4216" id="menu-item-4216" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/partners/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >VARs</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-513" id="menu-item-513" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/developers/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >ISVs</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+<ul class="sub-menu x-dropdown" data-x-depth="1" data-x-stem ><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5609" id="menu-item-5609" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/dolbey/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Dolbey</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4011" id="menu-item-4011" >
+<a class="e6910-16 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/ehr-vendor-partner/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >EHR Vendor Partners</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf107;" ></i>    
+<span class="x-particle x-anchor-particle-primary" data-x-particle="scale-x_y overlap-c_l" aria-hidden="true" >
+  <span></span>
+</span>  </span>
+
+  
+</a>
+</li></ul></li></ul>
+</div>
+
+<div class="e6910-17 x-bar-container" >
+
+  
+  
+<a class="e6910-18 x-anchor x-anchor-button  x-hide-md x-hide-sm x-hide-xs" tabindex="0" href="https://status.nvoq.com" >
+
+  
+  <span class="x-anchor-content">
+    
+<span class="x-graphic" aria-hidden="true" >
+
+  
+<i class="x-icon x-graphic-icon x-graphic-primary x-scale-up" aria-hidden="true" data-x-icon-o="&#xf164;" ></i>
+
+<i class="x-icon x-graphic-icon x-graphic-secondary x-scale-up" aria-hidden="true" data-x-icon-s="&#xf164;" ></i>
+
+</span>    <span class="x-anchor-text"><span class="x-anchor-text-primary" data-x-single-anim="x-slide-left" >SYSTEM </span><span class="x-anchor-text-secondary" data-x-single-anim="x-slide-left" >STATUS</span></span>          </span>
+
+  
+</a>
+
+<a class="e6910-19 x-anchor x-anchor-button" tabindex="0" href="https://support.nvoq.com/home" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >SUPPORT</span></span>          </span>
+
+  
+</a>
+
+<a class="e6910-20 x-anchor x-anchor-toggle  x-hide-lg x-hide-md x-hide-xl" tabindex="0" data-x-toggle="1" data-x-toggleable="e6910-20" aria-controls="e6910-20-modal" aria-expanded="false" aria-haspopup="true" aria-label="Toggle Modal Content" >
+
+  
+  <span class="x-anchor-content">
+    
+<span class="x-graphic" aria-hidden="true" >
+
+  
+<span class="x-toggle x-toggle-burger x-graphic-toggle" aria-hidden="true" >
+
+  
+    <span class="x-toggle-burger-bun-t" data-x-toggle-anim="x-bun-t-1"></span>
+    <span class="x-toggle-burger-patty" data-x-toggle-anim="x-patty-1"></span>
+    <span class="x-toggle-burger-bun-b" data-x-toggle-anim="x-bun-b-1"></span>
+
+  
+</span>
+</span>              </span>
+
+  
+</a>
+
+</div>
+    </div>
+  
+</div>
+
+
+
+    
+  </header>
+
+
+  <div class="x-main full" role="main">
+
+    
+      <article id="post-1336" class="post-1336 page type-page status-publish hentry no-post-thumbnail">
+        
+
+<div class="entry-content content">
+
+
+  <div id="x-section-1" class="x-section bg-image" style="margin: 0px 0px 0px 0px; padding: 45px 0px 45px 0px;  background-image: url(http://sayit.nvoq.com/wp-content/uploads/2015/11/Sayit_4041.jpg); background-color: transparent;"  data-x-element="section" data-x-params="{&quot;type&quot;:&quot;image&quot;,&quot;parallax&quot;:false}" ><div class="x-container max width" style="margin: 0px auto 0px auto; padding: 0px 0px 0px 0px; "  ><div  class="x-column x-sm x-1-2" style="padding: 0px 0px 0px 0px; " ><h2  class="h-custom-headline h3" ><span>Can&#8217;t find SayIt from nVoq?</span></h2><hr  class="x-gap" style="margin: 50px 0 0 0;"><div class="x-text" style="font-size:120%;line-height:2em;"  ><p>We recently redesigned our website and reworked its structure, so directories have been changed. Maybe you want to learn about our <a href="https://sayit.nvoq.com/company/"><mark  class="x-highlight dark" >COMPANY</mark></a> or our speech recognition solutions for <a href="https://sayit.nvoq.com/health-care/"><mark  class="x-highlight dark" >HEALTHCARE</mark></a> or customer care industries. You can always try our <a href="https://sayit.nvoq.com/"><mark  class="x-highlight dark" >HOMEPAGE</mark></a>.</p>
+</div>
+                <div class='gf_browser_gecko gform_wrapper' id='gform_wrapper_15' ><form method='post' enctype='multipart/form-data'  id='gform_15'  action='/sites/default/files/marketing/White%20Paper_Demystifying%20Speech%20Recognition%20by%20Charles%20Corfield_July2012.pdf'>
+                        <div class='gform_heading'>
+                            <h3 class='gform_title'>Got a sec?</h3>
+                            <span class='gform_description'>Let us know what happened and that will help us get it fixed!</span>
+                        </div>
+                        <div class='gform_body'><ul id='gform_fields_15' class='gform_fields top_label form_sublabel_below description_below'><li id='field_15_3'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_15_3' >Thanks!<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_textarea'><textarea name='input_3' id='input_15_3' class='textarea medium' tabindex='1000'  aria-required="true" aria-invalid="false"   rows='10' cols='50'></textarea></div></li><li id='field_15_4'  class='gfield field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_15_4' >CAPTCHA</label><div id='input_15_4' class='ginput_container ginput_recaptcha' data-sitekey='6LcW5QwTAAAAABxJGWJC38fPGXUksp-nwJO41HCq'  data-theme='light' data-tabindex='1001'></div></li><li id='field_15_5'  class='gfield gform_validation_container field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_15_5' >Phone</label><div class='ginput_container'><input name='input_5' id='input_15_5' type='text' value='' autocomplete='off'/></div><div class='gfield_description'>This field is for validation purposes and should be left unchanged.</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_15' class='gform_button button' value='Submit' tabindex='1002' onclick='if(window["gf_submitting_15"]){return false;}  if( !jQuery("#gform_15")[0].checkValidity || jQuery("#gform_15")[0].checkValidity()){window["gf_submitting_15"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_15"]){return false;} if( !jQuery("#gform_15")[0].checkValidity || jQuery("#gform_15")[0].checkValidity()){window["gf_submitting_15"]=true;}  jQuery("#gform_15").trigger("submit",[true]); }' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_15' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='15' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_15' value='WyJbXSIsIjA3NWZiOTk5ZWFmNjJhNzEyODY5YjY0Mzg4ODk3NzdiIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_15' id='gform_target_page_number_15' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_15' id='gform_source_page_number_15' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> if(typeof gf_global == 'undefined') var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/sayit.nvoq.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/sayit.nvoq.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 15) {} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [15, 1]) } ); </script></div><div  class="x-column x-sm x-1-2" style="padding: 0px 0px 0px 0px; " ><img  class="x-img x-img-none"  src="http://sayit.nvoq.com/wp-content/uploads/2015/11/404page.png" ></div></div></div>
+  
+
+</div>
+
+      </article>
+
+    
+  </div>
+
+
+    
+<div id="e6910-11-modal" class="e6910-11 x-modal" role="dialog" tabindex="-1" data-x-toggleable="e6910-11" data-x-scrollbar="{&quot;suppressScrollX&quot;:true}" aria-hidden="true" aria-label="Modal" >
+
+  <span class="x-modal-bg"></span>
+
+  <button class="x-modal-close x-modal-close-top x-modal-close-right" data-x-toggle-close="1" aria-label="Close Modal Content" >
+    <span>&times;</span>
+  </button>
+
+  <div class="x-modal-content-outer">
+    <div class="x-modal-content-inner">
+      <div class="x-modal-content" role="document" aria-label="Modal Content" >
+        
+<form class="e6910-11 x-search" data-x-search="{&quot;search&quot;:true}" action="https://sayit.nvoq.com/" method="get" >
+
+  <label class="visually-hidden" for="s-e6910-11" >Search</label>
+
+  <input id="s-e6910-11" class="x-search-input" type="search" name="s" tabindex="0" placeholder="Search" >
+  <button class="x-search-btn x-search-btn-submit" type="button" data-x-search-submit="" tabindex="0" ><span class="visually-hidden">Submit</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-1 -1 25 25"><circle fill="none" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="10" cy="10" r="9" stroke-linejoin="miter"/><line fill="none" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="22" y1="22" x2="16.4" y2="16.4" stroke-linejoin="miter"/></svg></button>
+  <button class="x-search-btn x-search-btn-clear" type="button" data-x-search-clear="" tabindex="0" ><span class="visually-hidden">Clear</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-1 -1 25 25"><line fill="none" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="5" x2="5" y2="19" stroke-linejoin="miter"/><line fill="none" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="19" x2="5" y2="5" stroke-linejoin="miter"/></svg></button>
+
+</form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="e6910-20-modal" class="e6910-20 x-modal  x-hide-lg x-hide-md x-hide-xl" role="dialog" tabindex="-1" data-x-toggleable="e6910-20" data-x-scrollbar="{&quot;suppressScrollX&quot;:true}" aria-hidden="true" aria-label="Modal" >
+
+  <span class="x-modal-bg"></span>
+
+  <button class="x-modal-close x-modal-close-top x-modal-close-right" data-x-toggle-close="1" aria-label="Close Modal Content" >
+    <span>&times;</span>
+  </button>
+
+  <div class="x-modal-content-outer">
+    <div class="x-modal-content-inner">
+      <div class="x-modal-content" role="document" aria-label="Modal Content" >
+        <ul class="e6910-20 x-menu x-menu-modal x-menu-layered x-current-layer" data-x-toggle-layered-root="1" ><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-299" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" title="Cloud-based Speech Recognition" href="https://sayit.nvoq.com/healthcare/" id="x-menu-layered-anchor-e6910-20-0" data-x-toggle="layered" data-x-toggleable="e6910-20-0" aria-controls="x-menu-layered-list-e6910-20-0" aria-expanded="false" aria-haspopup="true" aria-label="Toggle Layered Sub Menu" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Healthcare</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+<ul class="sub-menu" id="x-menu-layered-list-e6910-20-0" aria-hidden="true" aria-labelledby="x-menu-layered-anchor-e6910-20-0" data-x-toggleable="e6910-20-0" data-x-toggle-layered="1" ><li><a class="x-anchor x-anchor-layered-back" aria-label="Go Back One Level" data-x-toggle="layered" data-x-toggleable="e6910-20-0" ><span class="x-anchor-content"><span class="x-anchor-text"><span class="x-anchor-text-primary">← Back</span></span></span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7084" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/home-health-hospice-care/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Home Health &#038; Hospice Care</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4209" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/ambulatory-clinic/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Ambulatory Clinics</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5784" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/cardiology/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Cardiology</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4155" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/emergency-departments/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Emergency Departments – Urgent Care</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4465" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="/wp-content/uploads/2018/12/HospitalITLeaders.pdf" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Hospital IT Leaders</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4247" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/healthcare-speech-recognition-solution-for-medical-specialists/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Medical Specialists</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5768" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/nurse-practitioners/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Nurse Practitioners</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4207" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/medical-dictation-software-for-pathologists/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Pathologists</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4208" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/radiologists/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Radiologists</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2615" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/dictation-solution-for-veterinarians/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Veterinary</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-556" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/healthcare/events/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Events</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-689" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/customer-care-productivity-tools/" id="x-menu-layered-anchor-e6910-20-1" data-x-toggle="layered" data-x-toggleable="e6910-20-1" aria-controls="x-menu-layered-list-e6910-20-1" aria-expanded="false" aria-haspopup="true" aria-label="Toggle Layered Sub Menu" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Contact Centers</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+<ul class="sub-menu" id="x-menu-layered-list-e6910-20-1" aria-hidden="true" aria-labelledby="x-menu-layered-anchor-e6910-20-1" data-x-toggleable="e6910-20-1" data-x-toggle-layered="1" ><li><a class="x-anchor x-anchor-layered-back" aria-label="Go Back One Level" data-x-toggle="layered" data-x-toggleable="e6910-20-1" ><span class="x-anchor-content"><span class="x-anchor-text"><span class="x-anchor-text-primary">← Back</span></span></span></a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6061" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="/customer-care-productivity-tools/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Workflow Automations</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3431" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/customer-care-productivity-tools/articles/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Articles</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6124" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/developers/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Developers</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3850" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/request-a-trial/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Request a Trial</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3852" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/contact-nvoq/" id="x-menu-layered-anchor-e6910-20-2" data-x-toggle="layered" data-x-toggleable="e6910-20-2" aria-controls="x-menu-layered-list-e6910-20-2" aria-expanded="false" aria-haspopup="true" aria-label="Toggle Layered Sub Menu" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >About Us</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+<ul class="sub-menu" id="x-menu-layered-list-e6910-20-2" aria-hidden="true" aria-labelledby="x-menu-layered-anchor-e6910-20-2" data-x-toggleable="e6910-20-2" data-x-toggle-layered="1" ><li><a class="x-anchor x-anchor-layered-back" aria-label="Go Back One Level" data-x-toggle="layered" data-x-toggleable="e6910-20-2" ><span class="x-anchor-content"><span class="x-anchor-text"><span class="x-anchor-text-primary">← Back</span></span></span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4323" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/contact-nvoq/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Contact nVoq</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4012" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/company/" id="x-menu-layered-anchor-e6910-20-3" data-x-toggle="layered" data-x-toggleable="e6910-20-3" aria-controls="x-menu-layered-list-e6910-20-3" aria-expanded="false" aria-haspopup="true" aria-label="Toggle Layered Sub Menu" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Company</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+<ul class="sub-menu" id="x-menu-layered-list-e6910-20-3" aria-hidden="true" aria-labelledby="x-menu-layered-anchor-e6910-20-3" data-x-toggleable="e6910-20-3" data-x-toggle-layered="1" ><li><a class="x-anchor x-anchor-layered-back" aria-label="Go Back One Level" data-x-toggle="layered" data-x-toggleable="e6910-20-3" ><span class="x-anchor-content"><span class="x-anchor-text"><span class="x-anchor-text-primary">← Back</span></span></span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2970" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/jobs/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Jobs</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4013" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/company/legal/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Legal</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-419" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/partners/" id="x-menu-layered-anchor-e6910-20-4" data-x-toggle="layered" data-x-toggleable="e6910-20-4" aria-controls="x-menu-layered-list-e6910-20-4" aria-expanded="false" aria-haspopup="true" aria-label="Toggle Layered Sub Menu" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Partners</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+<ul class="sub-menu" id="x-menu-layered-list-e6910-20-4" aria-hidden="true" aria-labelledby="x-menu-layered-anchor-e6910-20-4" data-x-toggleable="e6910-20-4" data-x-toggle-layered="1" ><li><a class="x-anchor x-anchor-layered-back" aria-label="Go Back One Level" data-x-toggle="layered" data-x-toggleable="e6910-20-4" ><span class="x-anchor-content"><span class="x-anchor-text"><span class="x-anchor-text-primary">← Back</span></span></span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4216" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/partners/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >VARs</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-513" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/developers/" id="x-menu-layered-anchor-e6910-20-5" data-x-toggle="layered" data-x-toggleable="e6910-20-5" aria-controls="x-menu-layered-list-e6910-20-5" aria-expanded="false" aria-haspopup="true" aria-label="Toggle Layered Sub Menu" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >ISVs</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+<ul class="sub-menu" id="x-menu-layered-list-e6910-20-5" aria-hidden="true" aria-labelledby="x-menu-layered-anchor-e6910-20-5" data-x-toggleable="e6910-20-5" data-x-toggle-layered="1" ><li><a class="x-anchor x-anchor-layered-back" aria-label="Go Back One Level" data-x-toggle="layered" data-x-toggleable="e6910-20-5" ><span class="x-anchor-content"><span class="x-anchor-text"><span class="x-anchor-text-primary">← Back</span></span></span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5609" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/dolbey/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >Dolbey</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4011" >
+<a class="e6910-20 x-anchor x-anchor-menu-item" tabindex="0" href="https://sayit.nvoq.com/ehr-vendor-partner/" >
+
+  
+  <span class="x-anchor-content">
+        <span class="x-anchor-text"><span class="x-anchor-text-primary" >EHR Vendor Partners</span></span>    <i class="x-anchor-sub-indicator" aria-hidden="true" data-x-icon-s="&#xf105;" ></i>      </span>
+
+  
+</a>
+</li></ul></li></ul>      </div>
+    </div>
+  </div>
+
+</div>
+
+    </div> <!-- END .x-site -->
+
+    
+      <a class="x-scroll-top right fade" title="Back to Top">
+        <i class="x-icon-angle-up" data-x-icon-s="&#xf106;"></i>
+      </a>
+
+      <script>
+
+      jQuery(document).ready(function($) {
+
+        var windowObj            = $(window);
+        var body                 = $('body');
+        var bodyOffsetBottom     = windowObj.scrollBottom();             // 1
+        var bodyHeightAdjustment = body.height() - bodyOffsetBottom;     // 2
+        var bodyHeightAdjusted   = body.height() - bodyHeightAdjustment; // 3
+        var scrollTopAnchor      = $('.x-scroll-top');
+
+        function sizingUpdate(){
+          var bodyOffsetTop = windowObj.scrollTop();
+          if ( bodyOffsetTop > ( bodyHeightAdjusted * 0.25 ) ) {
+            scrollTopAnchor.addClass('in');
+          } else {
+            scrollTopAnchor.removeClass('in');
+          }
+        }
+
+        windowObj.bind('scroll', sizingUpdate).resize(sizingUpdate);
+        sizingUpdate();
+
+        scrollTopAnchor.click(function(){
+          $('html, body').animate({ scrollTop: 0 }, 850, 'xEaseInOutExpo');
+          return false;
+        });
+
+      });
+
+      </script>
+
+    
+  </div> <!-- END .x-root -->
+
+<script type='text/javascript' src='https://sayit.nvoq.com/wp-content/themes/pro/cornerstone/assets/dist/js/site/cs-body.js?ver=3.5.3'></script>
+<script type='text/javascript' src='https://sayit.nvoq.com/wp-content/themes/pro/framework/dist/js/site/x.js?ver=2.5.4'></script>
+<script type='text/javascript' src='https://sayit.nvoq.com/wp-includes/js/comment-reply.min.js?ver=5.0'></script>
+<script type='text/javascript' src='https://sayit.nvoq.com/wp-includes/js/wp-embed.min.js?ver=5.0'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?hl=en&#038;render=explicit&#038;ver=5.0'></script>
+		<script type="text/javascript">
+			( function( $ ) {
+				$( document ).bind( 'gform_post_render', function() {
+					var gfRecaptchaPoller = setInterval( function() {
+						if( ! window.grecaptcha || ! window.grecaptcha.render ) {
+							return;
+						}
+						renderRecaptcha();
+						clearInterval( gfRecaptchaPoller );
+					}, 100 );
+				} );
+			} )( jQuery );
+		</script>
+
+		
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"588274a107","applicationID":"22565917","transactionName":"YgQEbEFVD0AFWkFZW1tOJ1tHXQ5dS01QXURZABJdHlYNUgpSGAU=","queueTime":0,"applicationTime":450,"atts":"TkMHGglPHE4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

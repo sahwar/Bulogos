@@ -22,6 +22,19 @@
 * https://github.com/MoOx/git-init
 * https://github.github.com/training-kit/
 * https://git-scm.com/book/en & https://git-scm.com/book/bg/v2
+* http://commonmark.org
+* http://semver.org
+* http://json.org
+* http://haml.org
+* http://yaml.org
+* http://xml.org
+* http://png.org
+* http://bzip2.org
+* http://lzip.org
+* http://7zip.org
+* http://peazip.org
+* https://github.com/adam-p/markdown-here
+* http://markdown-here.com/
 
 ------
 

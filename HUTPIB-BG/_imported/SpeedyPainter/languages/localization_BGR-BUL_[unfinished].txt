@@ -1,0 +1,320 @@
+# ------------------------------
+# BULGARIAN translation of SpeedyPainter vX.Y.Z - БЪЛГАРСКИ ПРЕВОД на SpeedyPainter vX.Y.Z
+# ------------------------------
+
+
+# general
+UNNAMED_IMAGE_STR									=	unnamed_image
+UNDEFINED_STR										=	undefined
+ERROR_MSG_UNSUPPORTED_FBO_STR						=	Sorry, your system is unable to run SpeedyPainter.\nYour OpenGL driver's version is %s, SpeedyPainter requires version 3.0 or higher
+ERROR_STR											=	ERROR
+FBO_NOT_SUPPORTED_STR								=	Frame Buffer Objects are not supported
+
+
+PLEASE_WAIT_STR										=	Please wait...
+
+SIZE_STR											=	Size
+OPACITY_STR											=	Opacity
+HARDNESS_STR										=	Hardness
+
+TOLERANCE_STR										=	Tolerance
+
+HUE_STR												=	hue
+SATURATION_STR										=	saturation
+VALUE_STR				 							=	value
+
+ALPHA_STR											=	alpha
+
+
+# status messages
+ROTATION_STR										=	rotation
+ROTATION_SNAP_STR									=	hold [SHIFT] to restrict rotation to multiples of 45 degrees
+PANNING_STR											=	panning
+PICK_COLOR_STR										=	pick color
+LOCKED_INTERACTION_STATUS_STR						=	horizontal cursor movement -> change brush size\nvertical cursor movement -> zoom
+CLOSE_SELECTION_STR						            =	click again on first point to close the selection
+ESC_UNDO_SELECTION_STR								=	[ESC] to undo selection
+CTRLD_TO_DESELECT_STR								=	[CRTL+D] to deselect
+ROTATION_PANNING_INFO_STR							=	[CTRL] + mouse drag to rotate\n[SPACE] + mouse drag to pan
+
+YES_STR												=	Yes
+NO_STR												=	No
+OR_STR                                              =	or
+WIDTH_STR											=	width
+HEIGHT_STR											=	height
+NEW_IMAGE_DLG_TITLE_STR								=	New image:
+TRANSPARENT_BACKGROUND_STR							=	Transparent background
+LOAD_IMAGE_TITLE_STR								=	Load image:
+IMAGE_LOADED_STR									=	image loaded
+UNABLE_TO_LOAD_IMAGE_STR							=	unable to load image
+UNABLE_TO_LOAD_FILE_STR								=	unable to load file
+LOAD_AUTOSAVED_FILE_STR								=	Load last autosaved file?
+NO_IMAGE_SELECTED_STR								=	no image selected
+SAVE_IMAGE_AS_STR									=	Save image as:
+EXPORT_VIDEO_AS_STR									=	Export video as:
+SAVE_BTN_STR										=	Save
+EXPORTING_VIDEO_ESC_TO_ABORT_STR					=	exporting video..[ESC] to abort
+COMMAND_ABORTED_STR									=	command aborted
+LAYER_MERGED_DOWN_STR								=	layer merged down
+
+# Reference view																					
+REFERENCE_VIEW_STR									=	reference view
+DROP_IMAGE_HERE_STR									=	(drop image here)
+
+
+# Crop tool
+# -----------------------------------------------------
+# status messages
+CROP_SELECT_FIRST_POINT_STR							=	Select first corner of cropping area
+CROP_SELECT_SECOND_POINT_STR						=	Select second corner of cropping area, [ESC] to discard first corner
+CROP_APPLY_STR										=	[ENTER] to apply image crop, [ESC] to discard area
+CROP_STR											=	crop
+RESIZE_STR											=	resize
+
+
+# Perspective tool																					
+# -----------------------------------------------------
+#ENABLE_PERSPECTIVE_GRID_STR							=	Enable perspective grid
+FIRST_VP_STR										=	First horizontal VP
+SECOND_VP_STR										=	Second horizontal VP
+THIRD_VP_STR										=	Vertical VP
+CLEAR_LINES_STR										=	Clear lines
+STEPS_STR											=	Steps
+# status messages
+PERSPECTIVE_MODE_STATUS_STR							=	Place horizon line and Vanishing Points at desired positions
+PERSPECTIVE_MODE_VP_LOCK_STR						=	[SHIFT]+click over a VP to scatter custom lines from it
+PERSPECTIVE_MODE_VP_UNLOCK_STR						=	[ESC] or [SHIFT]+click over the same VP to unlock it
+
+
+# Bucket fill tool
+# -----------------------------------------------------
+BUCKET_FILL_TOOL_STATUS_STR							=	Click inside a bounded region to fill it with current color
+
+
+# Gradient tool
+# -----------------------------------------------------
+GRADIENT_SELECT_START_POINT_STR						=	Select start point
+GRADIENT_SELECT_END_POINT_STR						=	Select end point
+GRADIENT_APPLY_STR									=	[ENTER] to apply gradient, [ESC] to discard
+
+
+# Selection tool
+# -----------------------------------------------------
+CLOSE_SELECTION_BTN_STR                             =   Close selection
+
+		
+# Notifications
+# -----------------------------------------------------
+RESET_CANVAS_POSITION_STR							=	reset canvas position (zoom: %d%%)
+BRUSH_ACTIVE_STR									=	brush active
+ERASER_ACTIVE_STR									=	eraser active
+ROTATION_MODE_STR									=	rotation mode
+SELECTION_MODE_STR									=	selection mode
+CROP_MODE_STR										=	crop mode
+GRADIENT_MODE_STR									=	gradient tool active
+MIRROR_MODE_STR										=	mirror tool active
+PERSPECTIVE_MODE_STR								=	perspective mode
+
+
+ZOOM_VALUE_STR										=	zoom: %d%%
+BRUSH_SIZE_VALUE_STR								=	brush size: %d
+ROTATION_VALUE_STR									=	rotation: %d degrees
+REPLAY_STOPPED_STR									=	replay stopped
+NEW_LAYER_STR										=	new layer
+LAYER_DELETED_STR									=	layer deleted
+CURRENT_LAYER_VALUE_STR								=	current layer: %d
+LAYER_I_VISIBILITY_VALUE_STR						=	layer %d visibility %s
+UNABLE_TO_SAVE_IMAGE_STR							=	unable to save image
+IMAGE_SAVED_AT_LOCATION_STR							=	image saved\nat location: "%s"
+PRESSURE_CONTROLS_SIZE_STR							=	pressure controls size
+FIXED_SIZE_STR										=	fixed size
+#DYNAMIC_SIZE_STR									=	Dynamic size
+DYNAMIC_SIZE_STR									=	Vary size according to pressure
+PRESSURE_CONTROLS_FLOW_STR							=	pressure controls flow
+FIXED_FLOW_STR										=	fixed flow
+#DYNAMIC_FLOW_STR									=	Dynamic flow
+DYNAMIC_FLOW_STR									=	Vary flow according to pressure
+TEXTURED_BRUSH_STR									=	textured brush
+ROUND_BRUSH_STR										=	round brush
+
+
+VIDEO_EXPORT_ABORTED_STR							=	video export aborted
+VIDEO_EXPORT_DONE_STR								=	video export done
+VIDEO_FORMAT_STR									=	Video format
+AUTHOR_STR											=	Author:
+SHOW_CODECS_CHOICE_DLG_STR							=	Show codecs\ndialog
+AUTHOR_NAME_STR										=	(author name)
+EST_TIME_REMAINING_STR								=	est. time remaining: 
+SAVE_IMAGE_FORMAT_STR								=	Format:\nchoose ".spf" to\npreserve layers
+MAXIMUM_SIZE_SUPPORTED_STR							=	maximum size supported
+MAXIMUM_SIZE_SUPPORTED_ON_INTEL_STR					=	maximum size supported\non Intel HD graphics
+PLEASE_SPECIFY_CANVAS_SIZE_STR						=	please specify new canvas size
+PLEASE_SPECIFY_FILE_NAME_STR						=	please specify a file name
+SAVE_DRAWING_PROCESS_STR							=	Save drawing process:
+DRAWING_PROCESS_SAVED_AT_LOCATION_STR				=	drawing process saved\nat location: "%s"
+UNABLE_TO_SAVE_DRAWING_PROCESS_STR					=	unable to save drawing process
+LOAD_DRAWING_PROCESS_STR							=	Load drawing process:
+NO_DRAWING_PROCESS_SELECTED_STR						=	no drawing process selected
+OK_BTN_STR											=	OK
+CANCEL_BTN_STR										=	Cancel
+APPLY_BTN_STR										=	Apply
+DISCARD_BTN_STR										=	Discard
+CLOSE_BTN_STR										=	Close
+RESET_BTN_STR										=	Reset
+CONTINUE_BTN_STR									=	Continue
+SAVE_CHANGES_QUESTION_STR							=	Save current changes?
+WARNING_CURRENT_WORK_LOST_STR						=	Warning!\nCurrent work will be lost!
+EXIT_QUESTION_STR									=	Exit?
+EXIT_BTN_STR										=	Exit
+HORIZONTAL_FLIP_STR									=	horizontal flip
+REPLAY_OF_DRAWING_PROCESS_STR						=	replay of drawing process..
+START_REPLAY_QUESTION_STR							=	Start replay?
+DRAWING_PROCESS_LOADED_STR							=	drawing process loaded.\npress 'p' to play
+REQUIRES_SPEEDY_PAINTER_STR							=	requires SpeedyPainter
+UNABLE_TO_LOAD_DRAWING_PROCESS_STR					=	unable to load drawing process
+ESC_TO_EXIT_REPLAY_STR								=	[ESC] to exit replay
+PLAY_STR											=	Play
+PAUSE_STR											=	Pause
+EXIT_REPLAY_STR										=	Exit replay
+
+
+# tooltips
+TLT_OPEN_BRUSH_PROPERTIES_DLG_STR					=	open brush properties dialog
+
+# toolbar tooltips
+TLB_NEW_IMAGE_STR									=	new image
+TLB_INFO_STR										=	info
+TLB_UNDO_STR										=	undo
+TLB_REDO_STR										=	redo
+TLB_FIT_TO_WINDOW_STR								=	[press button]: fit canvas to window
+TLB_ACTUAL_PIXELS_STR								=	[CTRL+press button]: zoom 100%
+TLB_FLIP_CANVAS_STR									=	flip canvas
+TLB_SETTINGS_STR									=	settings
+TLB_REFVIEW_STR										=	toggle reference view
+TLB_BRUSH_STR										=	[press button]: select brush\n[CTRL+press button]: open brush properties dialog
+TLB_ERASER_STR										=	eraser
+TLB_BUCKET_FILL_STR									=	bucket fill
+TLB_GRADIENT_FILL_STR								=	gradient
+TLB_ROTATION_MODE_STR								=	enter rotation mode
+TLB_SELECTION_MODE_STR								=	enter selection mode
+TLB_CROP_MODE_STR									=	enter crop mode
+TLB_PERSPECTIVE_MODE_STR							=	enable/disable perspective grid
+TLB_MIRROR_MODE_STR									=	enter/exit mirror mode
+TLB_IMAGE_STR										=	image
+TLB_LOAD_IMAGE_STR									=	load image
+TLB_SAVE_IMAGE_STR									=	save image
+TLB_DRAWING_STR										=	drawing
+TLB_PROCESS_STR										=	process
+TLB_LOAD_DRAWING_PROCESS_STR						=	load drawing process
+TLB_SAVE_DRAWING_PROCESS_STR						=	save drawing process
+TLB_LOAD_STR										=	load
+TLB_SAVE_STR										=	save
+TLB_REPLAY_STR										=	replay
+TLB_EXPORT_AVI_VIDEO_STR							=	export avi video
+
+
+
+# info dialog
+DEVELOPED_BY_INFO_STR								=	developed by: 
+HOME_PAGE_INFO_STR									=	Official home page: 
+MAIL_TO_INFO_STR									=	E-mail: 
+KEYBOARD_SHORTCUTS_INFO_STR							=	KEYBOARD SHORTCUTS
+#S_THIS_DIALOG_INFO_STR								=	show this dialog
+#SH_REFERENCE_VIEW_INFO_STR							=	show/hide reference view
+SH_GUI_INFO_STR										=	show/hide GUI
+PANNING_MODE_INFO_STR								=	panning mode
+ROTATION_MODE_INFO_STR								=	rotation mode
+COLOR_PICKING_MODE_INFO_STR							=	color picking mode (eyedropper)
+HORIZONTAL_STR                                      =   horizontal
+VERTICAL_STR                                        =   vertical
+HOR_CURSOR_MOVEMENT_INFO_STR						=	hor. movement
+VERT_CURSOR_MOVEMENT_INFO_STR						=	vert. movement
+CTRL_LOCK_X_INFO_STR								=	zoom
+CTRL_LOCK_Y_INFO_STR								=	change brush size
+SHOW_COLOR_AND_SIZE_INFO_STR						=	show color & size HUD
+AT_CURSOR_POS_INFO_STR								=	at cursor position
+ZOOM_AT_CURSOR_POS_INFO_STR							=	zoom at cursor position
+CHANGE_BRUSH_SIZE_INFO_STR							=	change brush size
+#FIT_CANVAS_INFO_STR								=	fit canvas on screen
+SELECT_PERSPECTIVE_MODE_INFO_STR					=	select perspective mode
+SELECT_BRUSH_TOOL_INFO_STR							=	select brush tool
+SELECT_ERASER_INFO_STR								=	select eraser
+SELECT_ROTATION_TOOL_INFO_STR						=	select rotation tool
+SELECT_SELECTION_TOOL_INFO_STR						=	select selection tool
+DESELECT_INFO_STR									=	deselect
+#FLIP_CANVAS_INFO_STR								=	flip canvas horizontally
+UNDO_INFO_STR										=	undo
+REDO_INFO_STR										=	redo
+EXIT_INFO_STR										=	exit
+SAVE_AS_INFO_STR									=	save as...
+QUICK_SAVE_INFO_STR									=	quick save (incremental)
+OPEN_BRUSH_PROPERTIES_DLG_INFO_STR					=	open brush properties dialog;
+
+LAYERS_INFO_STR										=	LAYERS
+NEW_LAYER_INFO_STR									=	new layer
+CYCLE_AMONG_LAYERS_INFO_STR							=	cycle among layers
+TOGGLE_LAYER_VISIBILITY_INFO_STR					=	toggle layer visibility
+#MERGE_LAYERS_INFO_STR								=	merge layer with lower one
+
+REPLAY_INFO_STR										=	REPLAY
+REPLAY_DRAWING_PROCESS_INFO_STR						=	replay drawing process
+SAVE_DRAWING_PROCESS_INFO_STR						=	save drawing process to file
+LOAD_DRAWING_PROCESS_INFO_STR						=	load drawing process from file
+EXPORT_VIDEO_TO_AVI_INFO_STR						=	export video to .avi file
+CURRENT_CANVAS_SIZE_INFO_STR						=	\ncurrent canvas size: [%dx%d]
+WITHOUT_FBO_LIMITATIONS_STR							=	\nYour graphics card does not support OpenGL 3.0.\nSome SpeedyPainter functionalities\nmay not work properly.
+
+
+LAYER_OPACITY_STR									=	Opacity
+
+
+# settings dialog
+SETTINGS_STR										=	Settings
+LANGUAGE_STR										=	Language:
+REFVIEW_POSITION_STR								=	Reference view position:
+SHOW_TOGGLE_GUI_BTN_STR								=	Show "toggle GUI" button (in the upper left corner)
+SHOW_SECOND_VIEW_STR								=	Show second view on image
+SHOW_GUI_SHADOW_STR									=	Show GUI shadow (may decrease performance)
+GUI_COLOR_STR										=	GUI color:
+LEFT_STR											=	Left
+RIGHT_STR											=	Right
+NEW_SETTINGS_SAVED_STR								=	New settings saved
+
+
+# brush properties dialog
+BRUSH_PROPERTIES_STR								=	Brush properties
+BRUSH_TEXTURE_STR									=	Brush texture:
+BRUSH_SPACING_STR									=	Brush spacing:
+USE_ANTIALISING_STR									=	Use antialiasing
+
+
+# keyboard shortcuts dialog
+CUSTOMIZABLE_KEY_BINDINGS_STR						=	CUSTOMIZABLE KEY BINDINGS
+COMMAND_STR											=	command
+COMBO_STR											=	combo
+UNABLE_TO_SAVE_KEYB_SHORTCUTS_STR					=	Unable to save changes!\nmultiple commands share the same key combination:
+KEYB_SHORTCUTS_UPDATED_STR							=	The new keyboard bindings were successfully updated.
+
+
+#commands
+NEW_IMAGE											=	new image
+SHOW_HELP										    =	show help dialog
+SHOW_SETTINGS								        =	show settings
+TOGGLE_REFVIEW						      			=	toggle reference view
+LAYER_MERGE								        	=	layer merge
+NEW_LAYER									        =	new layer
+FLIP_CANVAS									        =	flip canvas
+FIT_TO_WINDOW_ZOOM					      			=	fit to window
+ACTUAL_PIXELS_ZOOM				      				=	zoom 100%
+INCR_BRUSH_SIZE							        	=	incr. brush size
+DECR_BRUSH_SIZE						        		=	decr. brush size
+ZOOM_IN										        =	zoom in
+ZOOM_OUT									      	=	zoom out
+PANNING										        =	panning
+PICKING										        =	picking
+ROTATION										    =	rotation
+LOCK_INTERACTION						      		=	lock interaction
+CANVAS_FILL								        	=	fill
+BUCKET_FILL								        	=	bucket fill
+GRADIENT_FILL							        	=	gradient
+MIRROR												=   mirror

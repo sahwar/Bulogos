@@ -53,7 +53,7 @@
 https://salt.bountysource.com/ (SALT - A crowdfunding platform that helps developers earn a monthly salary from open-source software) (e.g. https://salt.bountysource.com/teams/neovim)
 * https://opencollective.com
 * https://beerpay.io/ (e.g. https://beerpay.io/b3by/atom-clock?focus=wish )
-* https://www.fiverr.com/ , http://freelancer.com
+* https://www.fiverr.com/ , http://freelancer.com , https://utip.io/ ( https://utip.io/abandonwarefrance )
 * https://info.tellonym.me/ , http://ko-fi.com , Instagram PrestaShop / other free mart/online-personal-website-shop software и т.н.
 * за покупки и продажби: http://ebay.com (и другите домейни на ebay... тарифи: 
 https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4364 ), http://olx.bg , http://bazar.bg , http://wish.com и т.н.

@@ -1,0 +1,1385 @@
+%!PS-Adobe-3.0
+%%Title: stdin
+%%For: Brett Smith
+%%Creator: a2ps version 4.14
+%%CreationDate: Mon Nov 10 11:38:05 2008
+%%BoundingBox: 24 24 571 818
+%%DocumentData: Clean7Bit
+%%Orientation: Portrait
+%%Pages: 7
+%%PageOrder: Ascend
+%%DocumentMedia: A4 595 842 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Symbol
+%%+ font Times-Bold
+%%+ font Times-Roman
+%%DocumentProcessColors: Black 
+%%DocumentSuppliedResources: procset a2ps-a2ps-hdr
+%%+ procset a2ps-diff-Prolog
+%%+ encoding ISO-8859-1Encoding
+%%EndComments
+/a2psdict 200 dict def
+a2psdict begin
+%%BeginProlog
+%%BeginResource: procset a2ps-diff-Prolog 2.0 1
+%%Copyright: (c) 1988, 89, 90, 91, 92, 93 Miguel Santana
+%%Copyright: (c) 1995, 96, 97, 98 Akim Demaille, Miguel Santana
+% Check PostScript language level.
+/languagelevel where {
+  pop /gs_languagelevel languagelevel def
+} {
+  /gs_languagelevel 1 def
+} ifelse
+
+% EPSF import as in the Red Book
+/BeginInclude {
+  /b4_Inc_state save def    		% Save state for cleanup
+  /dict_count countdictstack def	% Count objects on dict stack
+  /op_count count 1 sub def		% Count objects on operand stack 
+  userdict begin
+    0 setgray 0 setlinecap
+    1 setlinewidth 0 setlinejoin
+    10 setmiterlimit [ ] 0 setdash newpath
+    gs_languagelevel 1 ne {
+      false setstrokeadjust false setoverprint 
+    } if
+} bind def
+
+/EndInclude {
+  count op_count sub { pos } repeat	% Clean up stacks
+  countdictstack dict_count sub { end } repeat
+  b4_Inc_state restore
+} bind def
+
+/BeginEPSF {
+  BeginInclude
+  /showpage { } def
+} bind def
+
+/EndEPSF {
+  EndInclude
+} bind def
+
+% Page prefeed
+/page_prefeed {         % bool -> -
+  statusdict /prefeed known {
+    statusdict exch /prefeed exch put
+  } {
+    pop
+  } ifelse
+} bind def
+
+/deffont {
+  findfont exch scalefont def
+} bind def
+
+/reencode_font {
+  findfont reencode 2 copy definefont pop def
+} bind def
+
+% Function c-show (str => -)
+% centers text only according to x axis.
+/c-show { 
+  dup stringwidth pop
+  2 div neg 0 rmoveto
+  show
+} bind def
+
+% Function l-show (str => -)
+% prints texts so that it ends at currentpoint
+/l-show {
+  dup stringwidth pop neg 
+  0 
+  rmoveto show
+} bind def
+
+% center-fit show (str w => -)
+% show centered, and scale currentfont so that the width is less than w
+/cfshow {
+  exch dup stringwidth pop
+  % If the title is too big, try to make it smaller
+  3 2 roll 2 copy
+  gt
+  { % if, i.e. too big
+    exch div
+    currentfont exch scalefont setfont
+  } { % ifelse
+    pop pop 
+  }
+  ifelse
+  c-show			% center title
+} bind def
+
+% Return the y size of the current font
+% - => fontsize
+/currentfontsize {
+  currentfont /FontType get 0 eq {
+    currentfont /FontMatrix get 3 get
+  }{
+    currentfont /FontMatrix get 3 get 1000 mul
+  } ifelse
+} bind def
+
+% reencode the font
+% <encoding-vector> <fontdict> -> <newfontdict>
+/reencode { %def
+  dup length 5 add dict begin
+    { %forall
+      % <vector> <key> <val>
+      1 index /FID ne 
+      { def }{ pop pop } ifelse
+    } forall
+    /Encoding exch def % -
+
+    % Use the font's bounding box to determine the ascent, descent,
+    % and overall height; don't forget that these values have to be
+    % transformed using the font's matrix.
+    % We use `load' because sometimes BBox is executable, sometimes not.
+    % Since we need 4 numbers an not an array avoid BBox from being executed
+    /FontBBox load aload pop
+    FontMatrix transform /Ascent exch def pop
+    FontMatrix transform /Descent exch def pop
+    /FontHeight Ascent Descent sub def
+
+    % Get the underline position and thickness if they're defined.
+    % Use 1 if they are not defined.
+    currentdict /FontInfo 2 copy known
+    { get
+      /UnderlinePosition 2 copy % <FontInfo> /UP <FontInfo> /UP
+      2 copy known
+      { get }{ pop pop 1 } ifelse
+      0 exch FontMatrix transform exch pop
+      def % <FontInfo>
+
+      /UnderlineThickness 2 copy % <FontInfo> /UT <FontInfo> /UT
+      2 copy known
+      { get }{ pop pop 1 } ifelse
+      0 exch FontMatrix transform exch pop
+      def % <FontInfo>
+      pop % -
+    }{ pop pop
+    } ifelse
+
+    currentdict
+  end 
+} bind def
+
+% composite fonts for ASCII-EUC mixed strings
+% Version 1.2 1/31/1990
+% Original Ken'ichi HANDA (handa@etl.go.jp)
+% Modified Norio Katayama (katayama@rd.nacsis.ac.jp),1998
+% Extend & Fix Koji Nakamaru (maru@on.cs.keio.ac.jp), 1999
+% Anyone can freely copy, modify, distribute this program.
+
+/copyfont {	% font-dic extra-entry-count  copyfont  font-dic
+	1 index maxlength add dict begin
+	{	1 index /FID ne 2 index /UniqueID ne and
+		{def} {pop pop} ifelse
+	} forall
+	currentdict
+	end
+} bind def
+
+/compositefont { % ASCIIFontName EUCFontName RomanScale RomanOffset Rot(T/F) compositefont font
+    /RomanRotation exch def
+    /RomanOffset exch def
+    /RomanScale exch def
+    userdict /fixeucfont_dict known not {
+	userdict begin
+	    /fixeucfont_dict 2 dict begin
+		/UpperByteEncoding [
+		    16#00 1 16#20 { pop 0 } for
+		    16#21 1 16#28 { 16#20 sub } for
+		    16#29 1 16#2F { pop 0 } for
+		    16#30 1 16#74 { 16#27 sub } for
+		    16#75 1 16#FF { pop 0 } for
+		] def
+	        /LowerByteEncoding [
+		    16#00 1 16#A0 { pop /.notdef } for
+		    16#A1 1 16#FE { 16#80 sub 16 2 string cvrs
+				    (cXX) dup 1 4 -1 roll
+				    putinterval cvn } for
+		    /.notdef
+		] def
+		currentdict
+	    end def
+	end
+    } if
+    findfont dup /FontType get 0 eq {
+	14 dict begin
+	    %
+	    % 7+8 bit EUC font
+	    %
+	    12 dict begin
+		/EUCFont exch def
+		/FontInfo (7+8 bit EUC font) readonly def
+		/PaintType 0 def
+		/FontType 0 def
+		/FontMatrix matrix def
+		% /FontName
+		/Encoding fixeucfont_dict /UpperByteEncoding get def
+		/FMapType 2 def
+		EUCFont /WMode known
+		{ EUCFont /WMode get /WMode exch def }
+		{ /WMode 0 def } ifelse
+		/FDepVector [
+		    EUCFont /FDepVector get 0 get
+		    [ 16#21 1 16#28 {} for 16#30 1 16#74 {} for ]
+		    {
+			13 dict begin
+			    /EUCFont EUCFont def
+			    /UpperByte exch 16#80 add def	
+			    % /FontName
+			    /FontInfo (EUC lower byte font) readonly def
+			    /PaintType 0 def
+			    /FontType 3 def
+			    /FontMatrix matrix def
+			    /FontBBox {0 0 0 0} def
+			    /Encoding
+				fixeucfont_dict /LowerByteEncoding get def
+			    % /UniqueID
+			    % /WMode
+			    /BuildChar {
+				gsave
+				exch dup /EUCFont get setfont
+				/UpperByte get
+				2 string
+				dup 0 4 -1 roll put
+				dup 1 4 -1 roll put
+				dup stringwidth setcharwidth
+				0 0 moveto show
+				grestore
+			    } bind def
+			    currentdict
+			end
+			/lowerbytefont exch definefont
+		    } forall
+		] def
+		currentdict
+	    end
+	    /eucfont exch definefont
+	    exch
+	    findfont 1 copyfont dup begin
+		RomanRotation {
+			/FontMatrix FontMatrix
+			[ 0 RomanScale neg RomanScale 0 RomanOffset neg 0 ]
+			matrix concatmatrix def
+		}{
+			/FontMatrix FontMatrix
+			[ RomanScale 0 0 RomanScale 0 RomanOffset ] matrix concatmatrix
+			def
+			/CDevProc
+			    {pop pop pop pop 0 exch -1000 exch 2 div 880} def
+		} ifelse
+	    end
+	    /asciifont exch definefont
+	    exch
+	    /FDepVector [ 4 2 roll ] def
+	    /FontType 0 def
+	    /WMode 0 def
+	    /FMapType 4 def
+	    /FontMatrix matrix def
+	    /Encoding [0 1] def
+	    /FontBBox {0 0 0 0} def
+%	    /FontHeight 1.0 def % XXXX
+	    /FontHeight RomanScale 1.0 ge { RomanScale }{ 1.0 } ifelse def
+	    /Descent -0.3 def   % XXXX
+	    currentdict
+	end
+	/tmpfont exch definefont
+	pop
+	/tmpfont findfont
+    }{
+	pop findfont 0 copyfont
+    } ifelse
+} def	
+
+/slantfont {	% FontName slant-degree  slantfont  font'
+    exch findfont 1 copyfont begin
+    [ 1 0 4 -1 roll 1 0 0 ] FontMatrix exch matrix concatmatrix
+    /FontMatrix exch def
+    currentdict
+    end
+} def
+
+% Function print line number (<string> # -)
+/# {
+  gsave
+    sx cw mul neg 2 div 0 rmoveto
+    f# setfont
+    c-show
+  grestore
+} bind def
+
+% -------- Some routines to enlight plain b/w printings ---------
+
+% Underline
+% width --
+/dounderline {
+  currentpoint
+  gsave
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    0 rlineto
+    stroke
+  grestore
+} bind def
+
+% Underline a string
+% string --
+/dounderlinestring {
+  stringwidth pop
+  dounderline
+} bind def
+
+/UL {
+  /ul exch store
+} bind def
+
+% Draw a box of WIDTH wrt current font
+% width --
+/dobox {
+  currentpoint
+  gsave
+    newpath
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    dup 0 rlineto
+    0 currentfont /FontHeight get currentfontsize mul rlineto
+    neg 0 rlineto
+    closepath
+    stroke
+  grestore
+} bind def
+
+/BX {
+  /bx exch store
+} bind def
+
+% Box a string
+% string --
+/doboxstring {
+  stringwidth pop
+  dobox
+} bind def
+
+%
+% ------------- Color routines ---------------
+%
+/FG /setrgbcolor load def
+
+% Draw the background
+% width --
+/dobackground {
+  currentpoint
+  gsave
+    newpath
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    dup 0 rlineto
+    0 currentfont /FontHeight get currentfontsize mul rlineto
+    neg 0 rlineto
+    closepath
+    bgcolor aload pop setrgbcolor
+    fill
+  grestore
+} bind def
+
+% Draw bg for a string
+% string --
+/dobackgroundstring {
+  stringwidth pop
+  dobackground
+} bind def
+
+
+/BG {
+  dup /bg exch store
+  { mark 4 1 roll ] /bgcolor exch store } if
+} bind def
+
+
+/Show {
+  bg { dup dobackgroundstring } if
+  ul { dup dounderlinestring } if
+  bx { dup doboxstring } if
+  show
+} bind def
+
+% Function T(ab), jumps to the n-th tabulation in the current line
+/T {
+  cw mul x0 add
+  bg { dup currentpoint pop sub dobackground } if
+  ul { dup currentpoint pop sub dounderline } if
+  bx { dup currentpoint pop sub dobox } if
+  y0 moveto
+} bind def
+
+% Function n: move to the next line
+/n {
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+% Function N: show and move to the next line
+/N {
+  Show
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+/S {
+  Show
+} bind def
+
+%%BeginResource: procset a2ps-a2ps-hdr 2.0 2
+%%Copyright: (c) 1988, 89, 90, 91, 92, 93 Miguel Santana
+%%Copyright: (c) 1995, 96, 97, 98 Akim Demaille, Miguel Santana
+% Function title: prints page header.
+% <ct> <rt> <lt> are passed as argument
+/title { 
+  % 1. Draw the background
+  x v get y v get moveto
+  gsave
+    0 th 2 div neg rmoveto 
+    th setlinewidth
+    0.95 setgray
+    pw 0 rlineto stroke
+  grestore
+  % 2. Border it
+  gsave
+    0.7 setlinewidth
+    pw 0 rlineto
+    0 th neg rlineto
+    pw neg 0 rlineto
+    closepath stroke
+  grestore
+  % stk: ct rt lt
+  x v get y v get th sub 1 add moveto
+%%IncludeResource: font Helvetica
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  % 3. The left title
+  gsave
+    dup stringwidth pop fnfs 0.8 mul add exch % leave space took on stack
+    fnfs 0.8 mul hm rmoveto
+    show			% left title
+  grestore
+  exch
+  % stk: ct ltw rt
+  % 4. the right title
+  gsave
+    dup stringwidth pop fnfs 0.8 mul add exch % leave space took on stack
+    dup
+    pw exch stringwidth pop fnfs 0.8 mul add sub
+    hm
+    rmoveto
+    show			% right title
+  grestore
+  % stk: ct ltw rtw
+  % 5. the center title
+  gsave
+    pw 3 1 roll
+    % stk: ct pw ltw rtw
+    3 copy 
+    % Move to the center of the left room
+    sub add 2 div hm rmoveto
+    % What is the available space in here?
+    add sub fnfs 0.8 mul sub fnfs 0.8 mul sub
+    % stk: ct space_left
+%%IncludeResource: font Helvetica-Bold
+  fHelvetica-Bold fnfs scalefont setfont
+    cfshow
+  grestore
+} bind def
+
+% Function border: prints virtual page border
+/border { %def
+  gsave				% print four sides
+    0 setgray
+    x v get y v get moveto
+    0.7 setlinewidth		% of the square
+    pw 0 rlineto
+    0 ph neg rlineto
+    pw neg 0 rlineto
+    closepath stroke
+  grestore
+} bind def
+
+% Function water: prints a water mark in background
+/water { %def
+  gsave
+    scx scy moveto rotate
+%%IncludeResource: font Times-Bold
+  fTimes-Bold 100 scalefont setfont
+    .97 setgray
+    dup stringwidth pop 2 div neg -50 rmoveto
+    show
+  grestore
+} bind def
+
+% Function rhead: prints the right header
+/rhead {  %def
+  lx ly moveto
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  l-show
+} bind def
+
+% Function footer (cf rf lf -> -)
+/footer {
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  dx dy moveto
+  show
+
+  snx sny moveto
+  l-show
+  
+  fnx fny moveto
+  c-show
+} bind def
+%%EndResource
+
+% Another version of `dounderline' which strikes through the string,
+% not under.
+% width --
+/dounderline {
+  currentpoint
+  gsave
+    moveto
+    0
+    currentfont /UnderlineThickness get currentfontsize mul setlinewidth
+    % Move to half the height of the font
+    currentfontsize 4 div rmoveto
+    0 rlineto
+    stroke
+  grestore
+} bind def
+
+/p {
+  0 0 0 FG
+  false BG
+  false UL
+  false BX
+  fCourier bfs scalefont setfont
+  Show
+} bind def
+
+/sy {
+  0 0 0 FG
+  false BG
+  false UL
+  false BX
+  fSymbol bfs scalefont setfont
+  Show
+} bind def
+
+% Removed
+/k {
+  0 0 0 FG
+  false BG
+  true UL
+  false BX
+  fCourier bfs scalefont setfont
+  Show
+} bind def
+
+% Added
+/K {
+  0 0 0 FG
+  0.9 0.9 0.9 true BG
+  false UL
+  false BX
+  fCourier bfs scalefont setfont
+  Show
+} bind def
+
+/c {
+  0 0 0 FG
+  0.9 0.9 0.9 true BG
+  false UL
+  false BX
+  fCourier-Oblique bfs scalefont setfont
+  Show 
+} bind def
+
+/C {
+  1.0 1.0 1.0 FG
+  false BG
+  false UL
+  false BX
+  fCourier-Bold bfs scalefont setfont
+  Show 
+} bind def
+
+/l {
+  0 0 0 FG
+  0.9 0.9 0.9 true BG
+  false UL
+  false BX
+  fCourier bfs scalefont setfont
+  Show 
+} bind def
+
+/L {
+  0 0 0 true BG
+  false UL
+  false BX
+  1.0 1.0 1.0 FG
+  fCourier-Bold bfs scalefont setfont
+  Show 
+} bind def
+
+/str {
+  0 0 0 FG
+  false BG
+  false UL
+  false BX
+  fTimes-Roman bfs scalefont setfont
+  Show
+} bind def
+
+/e{
+  0 0 0 true BG
+  false UL
+  false BX
+  1.0 1.0 1.0 FG
+  fHelvetica-Bold bfs scalefont setfont
+  Show
+} bind def
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%IncludeResource: font Courier
+%%IncludeResource: font Courier-Bold
+%%IncludeResource: font Times-Roman
+%%IncludeResource: font Symbol
+%%IncludeResource: font Courier-Oblique
+%%BeginResource: encoding ISO-8859-1Encoding
+/ISO-8859-1Encoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright 
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash 
+/zero /one /two /three /four /five /six /seven 
+/eight /nine /colon /semicolon /less /equal /greater /question 
+/at /A /B /C /D /E /F /G 
+/H /I /J /K /L /M /N /O 
+/P /Q /R /S /T /U /V /W 
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore 
+/quoteleft /a /b /c /d /e /f /g 
+/h /i /j /k /l /m /n /o 
+/p /q /r /s /t /u /v /w 
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section 
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron 
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /bullet 
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown 
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla 
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis 
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply 
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls 
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla 
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis 
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide 
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis 
+] def
+%%EndResource
+% Initialize page description variables.
+/sh 842 def
+/sw 595 def
+/llx 24 def
+/urx 571 def
+/ury 818 def
+/lly 24 def
+/#copies 1 def
+/th 20.000000 def
+/fnfs 15 def
+/bfs 11.199836 def
+/cw 6.719901 def
+
+% Dictionary for ISO-8859-1 support
+/iso1dict 7 dict begin
+  /fCourier ISO-8859-1Encoding /Courier reencode_font
+  /fCourier-Bold ISO-8859-1Encoding /Courier-Bold reencode_font
+  /fCourier-Oblique ISO-8859-1Encoding /Courier-Oblique reencode_font
+  /fHelvetica ISO-8859-1Encoding /Helvetica reencode_font
+  /fHelvetica-Bold ISO-8859-1Encoding /Helvetica-Bold reencode_font
+  /fTimes-Bold ISO-8859-1Encoding /Times-Bold reencode_font
+  /fTimes-Roman ISO-8859-1Encoding /Times-Roman reencode_font
+currentdict end def
+/bgcolor [ 0 0 0 ] def
+/bg false def
+/ul false def
+/bx false def
+% The font for line numbering
+/f# /Helvetica findfont bfs .6 mul scalefont def
+/fSymbol /Symbol findfont def
+/hm fnfs 0.25 mul def
+/pw
+   cw 81.400000 mul
+def
+/ph
+   769.428718 th add
+def
+/pmw 0 def
+/pmh 0 def
+/v 0 def
+/x [
+  0
+] def
+/y [
+  pmh ph add 0 mul ph add
+] def
+/scx sw 2 div def
+/scy sh 2 div def
+/snx urx def
+/sny lly 2 add def
+/dx llx def
+/dy sny def
+/fnx scx def
+/fny dy def
+/lx snx def
+/ly ury fnfs 0.8 mul sub def
+/sx 0 def
+/tab 8 def
+/x0 0 def
+/y0 0 def
+%%EndSetup
+
+%%Page: (1) 1
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p n
+(                GNU Free Documentation License) N
+(                 Version ) S
+(1.2,) k
+( ) p
+(1.3, 3) K
+( November ) p
+(2002) k
+( ) p
+(2008) K n
+() p n
+() N
+( Copyright \(C\) ) S
+(2000,2001,2002) k
+( ) p
+(2000, 2001, 2002, 2007, 2008) K
+( Free Software Foundat) p n
+(ion, Inc.) N
+(     ) S
+(51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA) k n
+(     ) p
+(<https://fsf.org/>) K n
+( Everyone is permitted to copy and distribute verbatim copies) p n
+( of this license document, but changing it is not allowed.) N
+() N
+(0. PREAMBLE) N
+() N
+(The purpose of this License is to make a manual, textbook, or other) N
+(functional and useful document "free" in the sense of freedom: to) N
+(assure everyone the effective freedom to copy and redistribute it,) N
+(with or without modifying it, either commercially or noncommercially.) N
+(Secondarily, this License preserves for the author and publisher a way) N
+(to get credit for their work, while not being considered responsible) N
+(for modifications made by others.) N
+() N
+(This License is a kind of "copyleft", which means that derivative) N
+(works of the document must themselves be free in the same sense.  It) N
+(complements the GNU General Public License, which is a copyleft) N
+(license designed for free software.) N
+() N
+(We have designed this License in order to use it for manuals for free) N
+(software, because free software needs free documentation: a free) N
+(program should come with manuals providing the same freedoms that the) N
+(software does.  But this License is not limited to software manuals;) N
+(it can be used for any textual work, regardless of subject matter or) N
+(whether it is published as a printed book.  We recommend this License) N
+(principally for works whose purpose is instruction or reference.) N
+() N
+() N
+(1. APPLICABILITY AND DEFINITIONS) N
+() N
+(This License applies to any manual or other work, in any medium, that) N
+(contains a notice placed by the copyright holder saying it can be) N
+(distributed under the terms of this License.  Such a notice grants a) N
+(world-wide, royalty-free license, unlimited in duration, to use that) N
+(work under the conditions stated herein.  The "Document", below,) N
+(refers to any such manual or work.  Any member of the public is a) N
+(licensee, and is addressed as "you".  You accept the license if you) N
+(copy, modify or distribute the work in a way requiring permission) N
+(under copyright law.) N
+() N
+(A "Modified Version" of the Document means any work containing the) N
+(Document or a portion of it, either copied verbatim, or with) N
+(modifications and/or translated into another language.) N
+() N
+(A "Secondary Section" is a named appendix or a front-matter section of) N
+(the Document that deals exclusively with the relationship of the) N
+(publishers or authors of the Document to the Document's overall) N
+(subject \(or to related matters\) and contains nothing that could fall) N
+(directly within that overall subject.  \(Thus, if the Document is in) N
+(part a textbook of mathematics, a Secondary Section may not explain) N
+(any mathematics.\)  The relationship could be a matter of historical) N
+(connection with the subject or with related matters, or of legal,) N
+(commercial, philosophical, ethical or political position regarding) N
+(them.) N
+() N
+(The "Invariant Sections" are certain Secondary Sections whose titles) N
+(are designated, as being those of Invariant Sections, in the notice) N
+(that says that the Document is released under this License.  If a) N
+(section does not fit the above definition of Secondary then it is not) N
+(allowed to be designated as Invariant.  The Document may contain zero) N
+() (COPYING.DOC-1.3) (COPYING.DOC-1.2) title
+border
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (2) 2
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+(Invariant Sections.  If the Document does not identify any Invariant) p n
+(Sections then there are none.) N
+() N
+(The "Cover Texts" are certain short passages of text that are listed,) N
+(as Front-Cover Texts or Back-Cover Texts, in the notice that says that) N
+(the Document is released under this License.  A Front-Cover Text may) N
+(be at most 5 words, and a Back-Cover Text may be at most 25 words.) N
+() N
+(A "Transparent" copy of the Document means a machine-readable copy,) N
+(represented in a format whose specification is available to the) N
+(general public, that is suitable for revising the document) N
+(straightforwardly with generic text editors or \(for images composed of) N
+(pixels\) generic paint programs or \(for drawings\) some widely available) N
+(drawing editor, and that is suitable for input to text formatters or) N
+(for automatic translation to a variety of formats suitable for input) N
+(to text formatters.  A copy made in an otherwise Transparent file) N
+(format whose markup, or absence of markup, has been arranged to thwart) N
+(or discourage subsequent modification by readers is not Transparent.) N
+(An image format is not Transparent if used for any substantial amount) N
+(of text.  A copy that is not "Transparent" is called "Opaque".) N
+() N
+(Examples of suitable formats for Transparent copies include plain) N
+(ASCII without markup, Texinfo input format, LaTeX input format, SGML) N
+(or XML using a publicly available DTD, and standard-conforming simple) N
+(HTML, PostScript or PDF designed for human modification.  Examples of) N
+(transparent image formats include PNG, XCF and JPG.  Opaque formats) N
+(include proprietary formats that can be read and edited only by) N
+(proprietary word processors, SGML or XML for which the DTD and/or) N
+(processing tools are not generally available, and the) N
+(machine-generated HTML, PostScript or PDF produced by some word) N
+(processors for output purposes only.) N
+() N
+(The "Title Page" means, for a printed book, the title page itself,) N
+(plus such following pages as are needed to hold, legibly, the material) N
+(this License requires to appear in the title page.  For works in) N
+(formats which do not have any title page as such, "Title Page" means) N
+(the text near the most prominent appearance of the work's title,) N
+(preceding the beginning of the body of the text.) N
+() N
+(The "publisher" means any person or entity that distributes copies of) K n
+(the Document to the public.) N
+() p n
+(A section "Entitled XYZ" means a named subunit of the Document whose) N
+(title either is precisely XYZ or contains XYZ in parentheses following) N
+(text that translates XYZ in another language.  \(Here XYZ stands for a) N
+(specific section name mentioned below, such as "Acknowledgements",) N
+("Dedications", "Endorsements", or "History".\)  To "Preserve the Title") N
+(of such a section when you modify the Document means that it remains a) N
+(section "Entitled XYZ" according to this definition.) N
+() N
+(The Document may include Warranty Disclaimers next to the notice which) N
+(states that this License applies to the Document.  These Warranty) N
+(Disclaimers are considered to be included by reference in this) N
+(License, but only as regards disclaiming warranties: any other) N
+(implication that these Warranty Disclaimers may have is void and has) N
+(no effect on the meaning of this License.) N
+() N
+(2. VERBATIM COPYING) N
+() N
+(You may copy and distribute the Document in any medium, either) N
+(commercially or noncommercially, provided that this License, the) N
+(copyright notices, and the license notice saying this License applies) N
+(to the Document are reproduced in all copies, and that you add no) N
+(other conditions whatsoever to those of this License.  You may not use) N
+(technical measures to obstruct or control the reading or further) N
+(copying of the copies you make or distribute.  However, you may accept) N
+(compensation in exchange for copies.  If you distribute a large enough) N
+(number of copies you must also follow the conditions in section 3.) N
+() (COPYING.DOC-1.3) (COPYING.DOC-1.2) title
+border
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (3) 3
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p n
+(You may also lend copies, under the same conditions stated above, and) N
+(you may publicly display copies.) N
+() N
+() N
+(3. COPYING IN QUANTITY) N
+() N
+(If you publish printed copies \(or copies in media that commonly have) N
+(printed covers\) of the Document, numbering more than 100, and the) N
+(Document's license notice requires Cover Texts, you must enclose the) N
+(copies in covers that carry, clearly and legibly, all these Cover) N
+(Texts: Front-Cover Texts on the front cover, and Back-Cover Texts on) N
+(the back cover.  Both covers must also clearly and legibly identify) N
+(you as the publisher of these copies.  The front cover must present) N
+(the full title with all words of the title equally prominent and) N
+(visible.  You may add other material on the covers in addition.) N
+(Copying with changes limited to the covers, as long as they preserve) N
+(the title of the Document and satisfy these conditions, can be treated) N
+(as verbatim copying in other respects.) N
+() N
+(If the required texts for either cover are too voluminous to fit) N
+(legibly, you should put the first ones listed \(as many as fit) N
+(reasonably\) on the actual cover, and continue the rest onto adjacent) N
+(pages.) N
+() N
+(If you publish or distribute Opaque copies of the Document numbering) N
+(more than 100, you must either include a machine-readable Transparent) N
+(copy along with each Opaque copy, or state in or with each Opaque copy) N
+(a computer-network location from which the general network-using) N
+(public has access to download using public-standard network protocols) N
+(a complete Transparent copy of the Document, free of added material.) N
+(If you use the latter option, you must take reasonably prudent steps,) N
+(when you begin distribution of Opaque copies in quantity, to ensure) N
+(that this Transparent copy will remain thus accessible at the stated) N
+(location until at least one year after the last time you distribute an) N
+(Opaque copy \(directly or through your agents or retailers\) of that) N
+(edition to the public.) N
+() N
+(It is requested, but not required, that you contact the authors of the) N
+(Document well before redistributing any large number of copies, to) N
+(give them a chance to provide you with an updated version of the) N
+(Document.) N
+() N
+() N
+(4. MODIFICATIONS) N
+() N
+(You may copy and distribute a Modified Version of the Document under) N
+(the conditions of sections 2 and 3 above, provided that you release) N
+(the Modified Version under precisely this License, with the Modified) N
+(Version filling the role of the Document, thus licensing distribution) N
+(and modification of the Modified Version to whoever possesses a copy) N
+(of it.  In addition, you must do these things in the Modified Version:) N
+() N
+(A. Use in the Title Page \(and on the covers, if any\) a title distinct) N
+(   from that of the Document, and from those of previous versions) N
+(   \(which should, if there were any, be listed in the History section) N
+(   of the Document\).  You may use the same title as a previous version) N
+(   if the original publisher of that version gives permission.) N
+(B. List on the Title Page, as authors, one or more persons or entities) N
+(   responsible for authorship of the modifications in the Modified) N
+(   Version, together with at least five of the principal authors of the) N
+(   Document \(all of its principal authors, if it has fewer than five\),) N
+(   unless they release you from this requirement.) N
+(C. State on the Title page the name of the publisher of the) N
+(   Modified Version, as the publisher.) N
+(D. Preserve all the copyright notices of the Document.) N
+(E. Add an appropriate copyright notice for your modifications) N
+(   adjacent to the other copyright notices.) N
+() (COPYING.DOC-1.3) (COPYING.DOC-1.2) title
+border
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (4) 4
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+(F. Include, immediately after the copyright notices, a license notice) p n
+(   giving the public permission to use the Modified Version under the) N
+(   terms of this License, in the form shown in the Addendum below.) N
+(G. Preserve in that license notice the full lists of Invariant Sections) N
+(   and required Cover Texts given in the Document's license notice.) N
+(H. Include an unaltered copy of this License.) N
+(I. Preserve the section Entitled "History", Preserve its Title, and add) N
+(   to it an item stating at least the title, year, new authors, and) N
+(   publisher of the Modified Version as given on the Title Page.  If) N
+(   there is no section Entitled "History" in the Document, create one) N
+(   stating the title, year, authors, and publisher of the Document as) N
+(   given on its Title Page, then add an item describing the Modified) N
+(   Version as stated in the previous sentence.) N
+(J. Preserve the network location, if any, given in the Document for) N
+(   public access to a Transparent copy of the Document, and likewise) N
+(   the network locations given in the Document for previous versions) N
+(   it was based on.  These may be placed in the "History" section.) N
+(   You may omit a network location for a work that was published at) N
+(   least four years before the Document itself, or if the original) N
+(   publisher of the version it refers to gives permission.) N
+(K. For any section Entitled "Acknowledgements" or "Dedications",) N
+(   Preserve the Title of the section, and preserve in the section all) N
+(   the substance and tone of each of the contributor acknowledgements) N
+(   and/or dedications given therein.) N
+(L. Preserve all the Invariant Sections of the Document,) N
+(   unaltered in their text and in their titles.  Section numbers) N
+(   or the equivalent are not considered part of the section titles.) N
+(M. Delete any section Entitled "Endorsements".  Such a section) N
+(   may not be included in the Modified Version.) N
+(N. Do not retitle any existing section to be Entitled "Endorsements") N
+(   or to conflict in title with any Invariant Section.) N
+(O. Preserve any Warranty Disclaimers.) N
+() N
+(If the Modified Version includes new front-matter sections or) N
+(appendices that qualify as Secondary Sections and contain no material) N
+(copied from the Document, you may at your option designate some or all) N
+(of these sections as invariant.  To do this, add their titles to the) N
+(list of Invariant Sections in the Modified Version's license notice.) N
+(These titles must be distinct from any other section titles.) N
+() N
+(You may add a section Entitled "Endorsements", provided it contains) N
+(nothing but endorsements of your Modified Version by various) N
+(parties--for example, statements of peer review or that the text has) N
+(been approved by an organization as the authoritative definition of a) N
+(standard.) N
+() N
+(You may add a passage of up to five words as a Front-Cover Text, and a) N
+(passage of up to 25 words as a Back-Cover Text, to the end of the list) N
+(of Cover Texts in the Modified Version.  Only one passage of) N
+(Front-Cover Text and one of Back-Cover Text may be added by \(or) N
+(through arrangements made by\) any one entity.  If the Document already) N
+(includes a cover text for the same cover, previously added by you or) N
+(by arrangement made by the same entity you are acting on behalf of,) N
+(you may not add another; but you may replace the old one, on explicit) N
+(permission from the previous publisher that added the old one.) N
+() N
+(The author\(s\) and publisher\(s\) of the Document do not by this License) N
+(give permission to use their names for publicity for or to assert or) N
+(imply endorsement of any Modified Version.) N
+() N
+() N
+(5. COMBINING DOCUMENTS) N
+() N
+(You may combine the Document with other documents released under this) N
+(License, under the terms defined in section 4 above for modified) N
+(versions, provided that you include in the combination all of the) N
+(Invariant Sections of all of the original documents, unmodified, and) N
+(list them all as Invariant Sections of your combined work in its) N
+() (COPYING.DOC-1.3) (COPYING.DOC-1.2) title
+border
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (5) 5
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+(license notice, and that you preserve all their Warranty Disclaimers.) p n
+() N
+(The combined work need only contain one copy of this License, and) N
+(multiple identical Invariant Sections may be replaced with a single) N
+(copy.  If there are multiple Invariant Sections with the same name but) N
+(different contents, make the title of each such section unique by) N
+(adding at the end of it, in parentheses, the name of the original) N
+(author or publisher of that section if known, or else a unique number.) N
+(Make the same adjustment to the section titles in the list of) N
+(Invariant Sections in the license notice of the combined work.) N
+() N
+(In the combination, you must combine any sections Entitled "History") N
+(in the various original documents, forming one section Entitled) N
+("History"; likewise combine any sections Entitled "Acknowledgements",) N
+(and any sections Entitled "Dedications".  You must delete all sections) N
+(Entitled "Endorsements".) N
+() N
+() N
+(6. COLLECTIONS OF DOCUMENTS) N
+() N
+(You may make a collection consisting of the Document and other) N
+(documents released under this License, and replace the individual) N
+(copies of this License in the various documents with a single copy) N
+(that is included in the collection, provided that you follow the rules) N
+(of this License for verbatim copying of each of the documents in all) N
+(other respects.) N
+() N
+(You may extract a single document from such a collection, and) N
+(distribute it individually under this License, provided you insert a) N
+(copy of this License into the extracted document, and follow this) N
+(License in all other respects regarding verbatim copying of that) N
+(document.) N
+() N
+() N
+(7. AGGREGATION WITH INDEPENDENT WORKS) N
+() N
+(A compilation of the Document or its derivatives with other separate) N
+(and independent documents or works, in or on a volume of a storage or) N
+(distribution medium, is called an "aggregate" if the copyright) N
+(resulting from the compilation is not used to limit the legal rights) N
+(of the compilation's users beyond what the individual works permit.) N
+(When the Document is included in an aggregate, this License does not) N
+(apply to the other works in the aggregate which are not themselves) N
+(derivative works of the Document.) N
+() N
+(If the Cover Text requirement of section 3 is applicable to these) N
+(copies of the Document, then if the Document is less than one half of) N
+(the entire aggregate, the Document's Cover Texts may be placed on) N
+(covers that bracket the Document within the aggregate, or the) N
+(electronic equivalent of covers if the Document is in electronic form.) N
+(Otherwise they must appear on printed covers that bracket the whole) N
+(aggregate.) N
+() N
+() N
+(8. TRANSLATION) N
+() N
+(Translation is considered a kind of modification, so you may) N
+(distribute translations of the Document under the terms of section 4.) N
+(Replacing Invariant Sections with translations requires special) N
+(permission from their copyright holders, but you may include) N
+(translations of some or all Invariant Sections in addition to the) N
+(original versions of these Invariant Sections.  You may include a) N
+(translation of this License, and all the license notices in the) N
+(Document, and any Warranty Disclaimers, provided that you also include) N
+(the original English version of this License and the original versions) N
+(of those notices and disclaimers.  In case of a disagreement between) N
+(the translation and the original version of this License or a notice) N
+(or disclaimer, the original version will prevail.) N
+() (COPYING.DOC-1.3) (COPYING.DOC-1.2) title
+border
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (6) 6
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p n
+(If a section in the Document is Entitled "Acknowledgements",) N
+("Dedications", or "History", the requirement \(section 4\) to Preserve) N
+(its Title \(section 1\) will typically require changing the actual) N
+(title.) N
+() N
+() N
+(9. TERMINATION) N
+() N
+(You may not copy, modify, sublicense, or distribute the Document) N
+(except as expressly provided ) S
+(for) k
+( under this License.  Any ) p
+(other) k
+( attempt) p n
+(otherwise) K
+( to copy, modify, ) p
+(sublicense) k
+( ) p
+(sublicense,) K
+( or distribute ) p
+(the Document) k
+( ) p
+(it) K
+( ) p n
+(is void, and) N
+(will automatically terminate your rights under this License.) N
+() N
+(However, ) S
+(if you cease all violation of this License, then your license) K n
+(from a particular copyright holder is reinstated \(a\) provisionally,) N
+(unless and until the copyright holder explicitly and finally) N
+(terminates your license, and \(b\) permanently, if the copyright holder) N
+(fails to notify you of the violation by some reasonable means prior to) N
+(60 days after the cessation.) N
+() N
+(Moreover, your license from a particular copyright holder is) N
+(reinstated permanently if the copyright holder notifies you of the) N
+(violation by some reasonable means, this is the first time you have) N
+(received notice of violation of this License \(for any work\) from that) N
+(copyright holder, and you cure the violation prior to 30 days after) N
+(your receipt of the notice.) N
+() N
+(Termination of your rights under this section does not terminate the) N
+(licenses of) S
+( parties who have received ) p
+(copies,) k
+( ) p
+(copies) K
+( or ) p
+(rights,) k
+( ) p
+(rights) K
+( from you ) p n
+(under) N
+(this) N
+(License will not) k
+( ) p
+(License.  If your rights) K
+( have ) p
+(their licenses) k
+( ) p
+(been) K
+( terminated ) p
+(so) k n
+( long as such) N
+(parties remain in full compliance.) S
+( ) p
+(and not permanently) K n
+(reinstated, receipt of a copy of some or all of the same material does) N
+(not give you any rights to use it.) N
+() p n
+() N
+(10. FUTURE REVISIONS OF THIS LICENSE) N
+() N
+(The Free Software Foundation may publish new, revised versions of the) N
+(GNU Free Documentation License from time to time.  Such new versions) N
+(will be similar in spirit to the present version, but may differ in) N
+(detail to address new problems or concerns.  See) N
+(https://www.gnu.org/licenses/.) N
+() N
+(Each version of the License is given a distinguishing version number.) N
+(If the Document specifies that a particular numbered version of this) N
+(License "or any later version" applies to it, you have the option of) N
+(following the terms and conditions either of that specified version or) N
+(of any later version that has been published \(not as a draft\) by the) N
+(Free Software Foundation.  If the Document does not specify a version) N
+(number of this License, you may choose any version ever published \(not) N
+(as a draft\) by the Free Software Foundation.  ) S
+(If the Document) K n
+(specifies that a proxy can decide which future versions of this) N
+(License can be used, that proxy's public statement of acceptance of a) N
+(version permanently authorizes you to choose that version for the) N
+(Document.) N
+() N
+(11. RELICENSING) N
+() N
+("Massive Multiauthor Collaboration Site" \(or "MMC Site"\) means any) N
+(World Wide Web server that publishes copyrightable works and also) N
+(provides prominent facilities for anybody to edit those works.  A) N
+(public wiki that anybody can edit is an example of such a server.  A) N
+("Massive Multiauthor Collaboration" \(or "MMC"\) contained in the site) N
+() (COPYING.DOC-1.3) (COPYING.DOC-1.2) title
+border
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (7) 7
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+(means any set of copyrightable works thus published on the MMC site.) K n
+() N
+("CC-BY-SA" means the Creative Commons Attribution-Share Alike 3.0 ) N
+(license published by Creative Commons Corporation, a not-for-profit ) N
+(corporation with a principal place of business in San Francisco, ) N
+(California, as well as future copyleft versions of that license ) N
+(published by that same organization.) N
+() N
+("Incorporate" means to publish or republish a Document, in whole or in ) N
+(part, as part of another Document.) N
+() N
+(An MMC is "eligible for relicensing" if it is licensed under this ) N
+(License, and if all works that were first published under this License ) N
+(somewhere other than this MMC, and subsequently incorporated in whole or ) N
+(in part into the MMC, \(1\) had no cover texts or invariant sections, and ) N
+(\(2\) were thus incorporated prior to November 1, 2008.) N
+() N
+(The operator of an MMC Site may republish an MMC contained in the site) N
+(under CC-BY-SA on the same site at any time before August 1, 2009,) N
+(provided the MMC is eligible for relicensing.) N
+() p n
+() N
+(ADDENDUM: How to use this License for your documents) N
+() N
+(To use this License in a document you have written, include a copy of) N
+(the License in the document and put the following copyright and) N
+(license notices just after the title page:) N
+() N
+(    Copyright \(c\)  YEAR  YOUR NAME.) N
+(    Permission is granted to copy, distribute and/or modify this document) N
+(    under the terms of the GNU Free Documentation License, Version 1.2) N
+(    or any later version published by the Free Software Foundation;) N
+(    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.) N
+(    A copy of the license is included in the section entitled "GNU) N
+(    Free Documentation License".) N
+() N
+(If you have Invariant Sections, Front-Cover Texts and Back-Cover Texts,) N
+(replace the "with...Texts." line with this:) N
+() N
+(    with the Invariant Sections being LIST THEIR TITLES, with the) N
+(    Front-Cover Texts being LIST, and with the Back-Cover Texts being LIST.) N
+() N
+(If you have Invariant Sections without Cover Texts, or some other) N
+(combination of the three, merge those two alternatives to suit the) N
+(situation.) N
+() N
+(If your document contains nontrivial examples of program code, we) N
+(recommend releasing these examples in parallel under your choice of) N
+(free software license, such as the GNU General Public License,) N
+(to permit their use in free software.) N
+() (COPYING.DOC-1.3) (COPYING.DOC-1.2) title
+border
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+
+%%Trailer
+end
+%%EOF

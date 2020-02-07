@@ -1,0 +1,67 @@
+-= GUNGIRL 2 v1.2 release date 03.05.2011 =-
+Made by Paul Schneider (www.paulinthenet.de)
+
+contact:
+paulinthenet@gmx.de
+
+web:
+www.gungirl2.com
+
+-= SOUNDTRACK =-
+Music Composed, Arranged, and Produced 
+by Josh Whelchel (www.jwmusic.org)
+
+v1.2 changes/fixes:
+- decreased amount of zombies that come out of grave stones on all difficulty settings.
+- grave stones now only spawn zombies if the player is not standing on top of them.
+- increased overall Energy Rifle damage.
+- Energy Rifle now does extra damage to large enemies.
+- increased base Icicle Gun rate of fire.
+- limited ice sparkles simultaneously on screen for performance reasons.
+- added chains to the invisible blocks before the final boss.
+- decreased final boss health in first form by 1/3.
+- fixed heavy rain in some marsh areas.
+- you can now kill ghosts when you have the talisman.
+- made a better hint for the shield in the city.
+- tactical shield now has a better explanation text when you pick it up.
+- some quest messages have been updated to give better information.
+- hell prison area is now a lot easier to get through.
+- fixed some areas where zombies could walk on air.
+- relocated the save game machine in the forest.
+- you now find a medikit in the first area that gives you a message about how to use it.
+- fixed a missing boss music at the upside down tower boss.
+- upside down tower boss has it's health slightly decreased.
+- some other minor modifications to tweak the overall difficulty.
+- changed an area in hell city so that it's easier to find the power orb.
+- fixed some minor visual problems in some areas.
+- added a save sign to the shotgun shack to make clear you can save the game inside.
+- changed some lights in the science lab.
+
+v1.11 changes/fixes:
+- Desert Hell Boss doesn't show up until you finish the quest properly.
+- Marsh rain does not produce ugly 'mass rain' effect on slower machines anymore.
+- All marsh areas now have clouds like any other area in the game.
+- Attempt to fix wrong colored doors in Endless Mode.
+- Attempt to fix blue doors not open anymore after leaving the area.
+- Added some ice blocks to endless ice area to make it resemble the original more.
+
+v1.1 changes:
+[NEW FEATURES]
+- ENDLESS MODE: new NPC at the Mall gives you access to randomly generated missions.
+- ONLINE HIGH SCORES: Arcade Mode now has online high scores.
+
+[FIXES/UPDATES]
+- fixed random glitch where blue key card disappears and door is still closed.
+- fixed all multiple playthrough issues.
+- fixed weapons not firing while pressing UP.
+- fixed last weapon still on player after first playthrough, even if you don't have it anymore.
+- fixed double jump effect left in air when pausing the game.
+- you have to play through Fire Temple now to get Fireball Launcher.
+- The shield and all weapons are now available from the beginning to the secret character.
+- Boss in hell desert moves a bit slower now and will despawn if player just stands on top of him for too long.
+- fixed glitch with Boss in the subway generator room.
+- fixed glitch with Hell Gate inscription not appearing correctly sometimes.
+- fixed showing level up/down sometimes when changing weapons with number keys.
+- fixed changing weapons with number keys when hanging from ledges.
+- increased Energy Rifle damage on normal enemies (not bosses).
+- on Normal mode the "impossible block jump" is now easier.

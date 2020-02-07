@@ -1,0 +1,91 @@
+Web-standards, Web 2.0+ specs & webdesign guideliness
+https://www.w3.org/TR/NOTE-datetime-970915
+https://www.w3.org/1998/.status/NOTE-datetime-970915/status
+https://www.w3.org/2019/Process-20190301/
+https://developer.mozilla.org/en-US/
+https://tc39.es/ecma262/
+https://idea.whatwg.org/
+https://spec.whatwg.org/
+https://www.sitepoint.com/
+https://www.w3schools.com/
+https://html.spec.whatwg.org/multipage/
+https://url.spec.whatwg.org/
+https://fetch.spec.whatwg.org/
+https://encoding.spec.whatwg.org/
+https://compat.spec.whatwg.org/
+https://www.mozdev.org/
+Zen CSS garden...
+
+(SmashingMagazine.com ?
+boingboing.net...
+lifehacker.com ...
+howtogeek.com
+makeuseof.com
+ubuntupit.org
+omgubuntu
+dedoimedo.com
+
+alternativeto.net ...
+howstuffworks.com
+https://www.askvg.com/ - vg vishal - windowsinternals
+https://github.com/zodiacon/WindowsInternals
+https://docs.microsoft.com/bg-bg/sysinternals/ (MS Windows Sysinternals)
+etc.)
+
+---
++ WebAssembly (wasm) + WebGL + JavaScript v6+ (v4/v5-to-v6+-transpiler) + Java & JavaME spec...
+---
++ C/C++
+https://www.boost.org/
+https://dl.bintray.com/boostorg/release/1.72.0/source/
+
+https://isocpp.org/std/the-standard
+https://github.com/cplusplus/draft
+http://www.open-std.org/jtc1/sc22/wg21/
+https://en.wikipedia.org/wiki/C%2B%2B
+http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4296.pdf
+http://www.cppreference.com/
+https://en.cppreference.com/w/cpp/experimental
+http://users.monash.edu/~damian/papers/HTML/ModestProposal.html
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.34.2481&rep=rep1&type=pdf
+
+WebGL:
+...
+OpenGLv3+:
+...
+
+OpenCL:
+https://www.khronos.org/registry/OpenCL/specs/2.2/pdf/OpenCL_Cxx.pdf
+SDL:
+...
+...
+
+---
+
+Other programming languages:
+
+Perl5:
+...
+Python3:
+...
+Julia:
+...
+Lua:
+...
+Rust:
+...
+Go (programming language):
+...
+FreePascal + LazarusIDE:
+...
+C#/.NET Core:
+...
+Elixir (programming language):
+...
+Rebol (programming language):
+...
+x85 assembly language:
+...
+
+???:
+...
