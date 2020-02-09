@@ -1,0 +1,65 @@
+[URL of this paste: http://pastebin.com/edit/nREYR3Hm ; paste author: see at the end of this text file]
+
+Best image viewers (image viewing apps; the entries in the list are in NO particular order whatsoever!) for MS Windows and Linux:
+
+[01] http://goo.gl/zkexv3 = Imagine (Very Good Image & Animation Viewer for Microsoft Windows, developed by a (Soth)Korean programmer; multilingual; I love that it uses the FAMFAMFAM.com icon set! Multilingual.)
+[02] http://goo.gl/f87Y4E = nomacs (a surpisingly good image & animation viewer; it's licensed under the GNU GPLv3 and is fucking awesome! It's available for MS Windows, Linux and even Mac OS! I FUCKING LOVE THE FRAMELESS MODE OF THIS IMAGE EDITOR, it's a godsend!!! Developed by Markus Diem, Stefan Fiel, Florian Kleber, et al.; Multilingual.)
+[03] http://goo.gl/QidhYX = ImageGlass (for MS Windows (requires Microsoft's .NET Framework 4.0+) and maybe Linux via Wine+Mono?; GNU GPL and very well-designed GUI; multilingual. Alternative link: https://github.com/d2phap/ImageGlass. )
+[04] http://mirageiv.sourceforge.net/ (Free software; I like this as an image viewer for Linux!)
+[05] https://sourceforge.net/projects/gqview/ = GQview (Nice FOSS image viewer for Linux, *BSD, Mac OS. There's also a Win32 port for MS Windows: https://sourceforge.net/projects/gqview-win/ )
+[06] https://sourceforge.net/projects/geeqie/ = Geeqie (fork of GQview mentioned above; also open-source; looks pretty good. Alternative URLs:
+http://www.geeqie.org/ & https://github.com/BestImageViewer/geeqie )
+[07] https://sourceforge.net/projects/gthumb/ = GThumb (for Linux and *BSD; multilingual. Better than EoG (Eye of GNOME) / EoM (Eye of MATE) IMHO, especially due to the neat in-app thumbnail previews! open-source)
+[08] https://sourceforge.net/projects/imgv/ = ImgV (looks great, haven't tested it myself though so give it a try if you like its description over at its website: http://imgv.sourceforge.net/ ; open-source)
+[09] https://sourceforge.net/projects/mcomix/ = MComix (A fork of the Comix comic-book-images image reader/viewer; looks great for fans of comics!)
+[10] https://sourceforge.net/projects/comical/ = Comical (another cool open-source comic images viewer!)
+[11] http://www.xnview.com/en/ = XnView by Pierre-e Gougelet (Freeware for MS Windows, extremely good; It was my top favorite before I found nomacs & Imagine. It still shares my number 1 spot along with those 2 other viewers. The developer is a fucking genius because he reads EVERY bug report / suggestion posted on the official forums of the app and ACTUALLY listens to the users of the app (tip for aspiring programmers (FOSS/volunteer or commercial/paid): this is how it should be done, folks!)! There's also a beta-quality cross-platform rewrite of it called XnViewMP by the same developer.)
+[12] http://www.irfanview.com/ = IrfanView by Irfan Skiljan (This is perhaps the modern grandfather of all the best image viewers ever, and, unsurprisingly, it's still a GREAT image viewer! It also supports quite a lot of plug-ins. Freeware for MS Windows (a 64-bit version is also available).)
+[13] http://siyanpanayotov.com/project/viewnior/ = Viewnior (a GTK+-based nice and simple free and open-source image viewer for GNU/Linux by the Bulgarian developer Siyan Panayotov; Alternative link: https://github.com/xsisqox/Viewnior )
+[14] http://lxde.sourceforge.net/gpicview/ = GPicView (extremely minimalist GTK+-based open-source image viewer for Linux, default for the LXDE desktop environment for Linux)
+[15] http://www.xiles.net/ = nexusimage (NexusImage by Xiles.net a.k.a. Junghoon Noh, a South-Korean software engineer)
+[16] http://www.bandisoft.com/honeyview/ = HoneyView (freeware for MS Windows)
+[17] http://hornil.com/products/photoviewer/ = Hornil Photo Viewer (freeware for home users, for MS Windows)
+[18] https://sourceforge.net/projects/picoviewer/ = pViewer (open-source image viewer for MS Windows that requires the .NET 4 framework)
+[19] http://contaware.com/freevimager.html = FreeVimager, freeware image viewer for Windows (review: http://www.downloadcrew.com/article/28070-freevimager )
+http://www.xworks.ca/artsage/index.html#features = ArtSage (freeware image viewer for folders/directories, for MS Windows, by Rick Xavier)
+(dead link...) = Imagina (freeware for MS Windows, requires DirectX 9.0c+ and NET Framework 2.0)
+[20] http://www.softpedia.com/get/Multimedia/Graphic/Graphic-Viewers/Roboreader.shtml = Roboreader (nice freeware comic image viewer for MS Windows)
+[21] http://www.faststone.org/FSViewerDetail.htm = FastStone image viewer (freeware for MS Windows)
+[22] http://www.cdisplayex.com/ = The CLASSIC CDisplay comic-book-formats (CBZ, CBR, ...) revived! Freeware for MS Windows. The original CDisplay repackaged = http://www.cdisplay.info/ ; Information about the original CDisplay = http://www.cdisplay.me/ - the original author of the CLASSIC CDisplay was David Ayton who died in 2003. R.I.P., great man/developer and friend to all comic/manga fans worldwide! Thanks for Derek Quenneville <techknight@techknight.com> for keeping the info and the download link for the original CDisplay online at http://www.cdisplay.me/ !
+[23] https://sourceforge.net/projects/comix/ = Comix, very good comics/manga image viewer for Linux and *BSD
+[24] http://comicrack.cyolito.com/ = ComicRack, a good freeware comic viewer for Windows, Android and recent Apple iPad's)
+[25] https://sourceforge.net/projects/cbviewer/ = Also good.
+[26] https://sourceforge.net/projects/elitecomixread/ = Also good.
+[27] https://sourceforge.net/projects/jomic/ = Good comic file-formats viewer for Linux, Mac OS, MS Windows
+[28] https://sourceforge.net/projects/quivi/ = Good comic/manga/general image viewer for Linux, Mac OS, Windows
+[29] https://sourceforge.net/projects/glmangareader/ = GL Manga Reader (OpenGL?-based Qt/C++ comic images viewer; Supports GPU hardware acceleration and is a portable app.)
+[30] https://sourceforge.net/projects/mangareader/ = Comic/manga images viewer (Its GUI is like that of online manga-reader websites!)
+[31] https://sourceforge.net/projects/java-comix/ 
+[32] http://www.yacreader.com/ = YACReader, a nice comic book viewer for MS Windows, Linux, Mac OS
+[33] http://alternativeto.net/software/mangameeya/
+
+* * *
+
+Even more image viewers (I DISCLAIM ALL DAMAGES THAT ANY APPS CAN CAUSE TO YOUR PC!):
+http://alternativeto.net/software/cdisplay-comic-reader/
+http://www.highmotionsoftware.com/products/bonaview
+http://www.softpedia.com/get/Multimedia/Graphic/Graphic-Viewers/
+http://www.softpedia.com/get/Multimedia/Graphic/Graphic-Viewers/Alternate-Pic-View.shtml
+http://www.softpedia.com/get/Multimedia/Graphic/Graphic-Viewers/GonVisor.shtml
+http://www.softpedia.com/get/Multimedia/Graphic/Graphic-Viewers/Little-Image-Viewer.shtml
+http://www.softpedia.com/get/Multimedia/Graphic/Graphic-Viewers/GIF-Viewer.shtml
+etc.
+https://sourceforge.net/projects/kujawiak/ = Looks interesting, but it may be virus-ridden...
+https://sourceforge.net/projects/cbviewer/ = Comic book viewer for Linux, Mac OS, and MS Windows
+https://sourceforge.net/projects/comictoepub/
+
+* * *
+
+P.S. What image viewers are my PERSONAL favorites? Easy. These:
+nomacs (the FRAMELESS MODE is THE BEST!!!), Imagine Image & Animation Viewer, XnView, ImageGlass, IrfanView, Mirage (Linux), GThumb (Linux), and GPicView (Linux). The rest are either too lame or not to my taste, or just too specialized (e.g. MComix & CDisplayEx are great, but are mostly for comic file-formats!).
+
+======
+Written by sahwar <ve4ernik@gmail.com> [ http://sahwar.wordpess.com ]
+Last modified on: 22 September 2016
+======

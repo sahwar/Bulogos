@@ -30,7 +30,7 @@
 * http://xml.org
 * http://png.org
 * http://bzip2.org
-* http://lzip.org
+* https://www.nongnu.org/lzip/lzip.html
 * http://7zip.org
 * http://peazip.org
 * https://github.com/adam-p/markdown-here
