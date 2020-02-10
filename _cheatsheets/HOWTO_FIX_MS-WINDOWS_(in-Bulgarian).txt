@@ -69,12 +69,94 @@ chkdsk C:\ /F /R /B
 
 или
 
-2) GParted (изтеглете я от Интернет, съществува като Linux дистрибуция, само-зареждаща се от CD/DVD или USB-флашка (за запис върху флашка: Rufus ISO; за запис на .ISO образ върху CD/DVD: Run... -> isoburn.exe (само при Windows7+), CDBurnerXP, MagicISO, cdrecord.exe / ), PartedMagic, SystemRescueCD (www.system-rescue-cd.org) и т.н.
+2) GParted (изтеглете я от Интернет, съществува като Linux дистрибуция, само-зареждаща се от CD/DVD или USB-флашка (за запис върху флашка: Rufus ISO; за запис на .ISO образ върху CD/DVD: Run... -> isoburn.exe (само при Windows7+), CDBurnerXP, MagicISO, cdrecord.exe / ); PartedMagic, Partimage, SystemRescueCD (www.system-rescue-cd.org), Rescatux, Trinity Rescue Kit Linux (TRK Linux), RIPLinuX (RecoveryIsPossible Slackware-based (GNU/)Linux distro), Hiren's BootCD, Hiren's BootCD PE, Paragon Rescue Kit, Fedora LivePower (Identifying your hardware: `lshw`, `lspci`, `lsusb`), MediCat USB, AIO Boot, Grml Debian, Dual-boot Repair, ALT Linux, Anvi Rescue Disk, Ikki Boot (SliTaz-based Linux), Finnix Debian ( https://www.finnix.org/Download ), USB/DVD DLC Boot 2019 Recovery CD, Super GRUB2 Disk, Avira AntiVir Rescue System, Hoek's Tools, AVG Rescue CD, Mondo Rescue, Winpe 10-8 Sergei Strelec (English version) (potential malware!); https://alternativeto.net/software/systemrescuecd/ ; и т.н.
 + google.com -> "windows password recovery tool" и "windows password reset tool"
 
+3) Piriform Recuva, Piriform CCleaner, Piriform Speccy, Piriform Defraggler;
+https://alternativeto.net/software/recuva/
+TestDisk, PhotoRec, `dd` (!!! DANGERZONE!), Autopsy Forensic Browser, Kickass Undelete, EaseUS Data Recovery Wizard (freemium), Lazesoft Recovery Suite (freeware personal), R-Linux, Wise Data Recovery, FreeRecover, Scrounge NTFS, Stellar Phoenix Photo Recovery (commercial), R-Linux, R-Studio (commercial), recoverjpeg, https://alternativeto.net/software/recuva/
+
+4) https://alternativeto.net/software/speccy/
+
+5) https://alternativeto.net/software/defraggler/
+
+6) https://alternativeto.net/software/everything/ + click on the 'Load more apps' button
+
+7) 
+https://alternativeto.net/software/process-hacker/
+http://processhacker.sourceforge.net/about.php
+https://alternativeto.net/software/process-monitor/
+https://alternativeto.net/software/process-explorer/
+
+https://alternativeto.net/software/windows-explorer/
+
+https://alternativeto.net/software/ufs-explorer-raid-recovery/
+https://alternativeto.net/software/notepad-plus-plus/
+https://alternativeto.net/software/babelmap/
+
+https://alternativeto.net/software/dc/
+
+https://alternativeto.net/software/xdotool/
+
+https://alternativeto.net/software/xdn-tweaker/
+
+https://alternativeto.net/browse/search?q=xdcc
+
+https://alternativeto.net/software/remmina/
+
+https://alternativeto.net/software/goldendict/
+
+https://alternativeto.net/software/ankidroid/
+
+https://alternativeto.net/software/rocket-chat/
+
+https://alternativeto.net/software/ultimate--/
+https://alternativeto.net/software/utox/
+
+https://alternativeto.net/software/matrix-org/
+
+https://alternativeto.net/software/i2p/
+
+https://alternativeto.net/software/tor-browser/
+
+https://alternativeto.net/software/qbittorrent/
+https://alternativeto.net/software/utorrent/
+
+https://alternativeto.net/software/fex/
+
+https://alternativeto.net/software/f-ex/
+https://alternativeto.net/software/zendto/
+
+https://alternativeto.net/software/filepizza/
+
+https://alternativeto.net/software/onionshare/
+https://alternativeto.net/software/shareit/
+https://alternativeto.net/software/nitroshare/about/
+
+https://alternativeto.net/software/sharedrop/
+https://alternativeto.net/software/peergos/
+https://alternativeto.net/software/roamit/
+https://alternativeto.net/software/lanxchange/
+https://alternativeto.net/software/magic-wormhole/
+https://alternativeto.net/software/instant-io/
+
+https://alternativeto.net/software/btpd/
+
+https://alternativeto.net/software/littleshoot/
+https://alternativeto.net/software/liwi/
+https://alternativeto.net/software/rapidbay/
+https://alternativeto.net/software/zget/
+https://alternativeto.net/software/opendrop/
+https://alternativeto.net/software/webtorrent/about/
+https://alternativeto.net/software/filepizza/
+https://alternativeto.net/software/retroshare/about/
+
+https://www.expressvpn.com/
 7. Инсталиране или деинсталиране или блокиране на отделни актуализации за MS Windows чрез потребителския интерфейс на Windows Update...
 Контролен панел -> Всички елементи на контролния панел -> Програми и компоненти -> Инсталирани актуализации
 (Control Panel -> All Control Panel elements -> Programs and components -> Installed updates)
+
+вкл. чрез програмата `wmic /?`, пуснати чрез/в cmd.exe / powershell.exe
 
 8. РАЗНИ
 
@@ -99,7 +181,9 @@ START menu (меню „СТАРТ“) -> Run... (Изпълнение...) [= к
 или
 TeamViewer
 или
-TigerVNC (или друг VNC client...)
+TigerVNC (или друг VNC client...) / RDP Assistant client-app... / Skype screencast screen-sharing / etc.
+или
+NX
 или
 ?!?
 

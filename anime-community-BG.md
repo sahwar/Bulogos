@@ -1024,6 +1024,15 @@ http://youjizz.com
 
 https://jav.guru/jav-studio-list/
 https://jav.guru/48586/jav-studios-official-websites/
+
+http://jav-paradise.com
+http://javhub.com
+http://javwhores.com
+http://javhd.com
+https://jav911.com/
+https://javhub.net/
+https://javhub.me/
+
 https://en.wikipedia.org/wiki/Pornography_in_Japan
 https://avn.com/porn-stars
 http://www.iafd.com/deadporn/
