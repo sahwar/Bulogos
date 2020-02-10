@@ -23,8 +23,10 @@
 * https://github.github.com/training-kit/
 * https://git-scm.com/book/en & https://git-scm.com/book/bg/v2
 * http://commonmark.org
+* https://github.com/adam-p/markdown-here
+* http://markdown-here.com/
 * http://semver.org
-* http://json.org
+* https://www.json.org/json-en.html
 * http://haml.org
 * http://yaml.org
 * http://xml.org
@@ -33,8 +35,6 @@
 * https://www.nongnu.org/lzip/lzip.html
 * http://7zip.org
 * http://peazip.org
-* https://github.com/adam-p/markdown-here
-* http://markdown-here.com/
 
 ------
 
@@ -47,19 +47,26 @@
 (OR right-click & `Save link as...` / `Save Target As` (ИЛИ щракване с десния бутон на мишката и `Запазване на връзката като...` / `Запис на препратката като...`, ...)
 
 * Изтегляне чрез [`wget`](https://www.gnu.org/software/wget/) ([`wget` за Microsoft Windows (пуска се чрез `cmd.exe` или PowerShell)](https://eternallybored.org/misc/wget/)):
+
 ````
 wget -nc -O Bulogos_master.zip https://github.com/sahwar/Bulogos/archive/master.zip
 ````
+
 ------
 * Изтегляне чрез [`wget2`](https://gitlab.com/gnuwget/wget2):
+
 ````
 wget2 -nc -O Bulogos_master.zip https://github.com/sahwar/Bulogos/archive/master.zip
 ````
+
 ------
+
 * Изтегляне чрез [`curl`](http://curl.haxx.se/):
+
 ````
 curl -nc -LO https://github.com/sahwar/Bulogos/archive/master.zip
 ````
+
 ------
 
 **БЕЛЕЖКА:** `wget`, `wget2`, `curl`, `lftp`, `aria2c` и др. са програми-команди с текстов интерфейс за пускане чрез виртуален терминал за изпълняване на текстови команди, например  като `curl64.exe` файл, задействан с `-option1 -option2 --optionN` (`{ИмеНаКомандатаБезФигурнитеСкобиОтстрани} --help` за помощни инструкции на английски + помощно търсене чрез/в google.com, Wikipedia.org и груб машинен/автоматичен превод чрез translate.google.com) вътре в `cmd.exe` (MS Windows Command Prompt) или PowerShell, ConEmu (Microsoft Windows), или като текстови команди (стига да са предварително инсталирани) вътре в shells като `bash` или `zsh` вътре в терминалите (терминалните емулатори) **xterm**, **mlterm**, rxvt, **urxvt**, cxterm, kterm, hanterm, KDE konsole, gnome-terminal, Linux console, cygwin console, mintty, PuTTY GNOME/KDE/XFCE Terminal, `GNU screen`, `tmux` (terminal multiplexer) ((GNU/)Linux, *BSD, macOS/Mac OS X). Изброените програми служат основно за изтегляне на файлове от Интернет (например `.htm/.html` уебстраница; а някои от програмите може и да качват файлове (но не като `git`...)).
@@ -69,7 +76,9 @@ cmder (MS Windows), Terminator (MS Windows), KiTTY/PuTTy/QuTTy, mosh, fish (term
 -->
 
 ------
+
 * Клониране на хранилището чрез `git` (https://git-scm.org):
+
 ````
 git clone https://github.com/sahwar/Bulogos.git
 ````
