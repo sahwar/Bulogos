@@ -28,6 +28,23 @@
 * myth & ethos
 * http://sciencedaily.com
 
+---
+
+Онлайн уроци като в училище или в университетски курсове (moodle.org + Apache Foundation web-solution for conferencing/VoIP/video-conferencing+chat+drawing-board&p2p-filesharing ... )
+
+* http://u4a.se (BG)
+* http://khanacademy.org
+* http://coursera.com
+* https://www.udemy.com/topic/english-grammar/
+* http://books.google.com
+* http://quora.com
+* http://english.stackexchange.com
+* http://
+
+'Nature always creates unique biological organism equipped with the bio-psycho-evolutionary special powers&abilities to survive&thrive in their environment, while mainstream mass-society/pop-mass-culture&formal-education&mass-media-indoctrination&sociocultural-programming&PredictiveProgramming&FakeNews+DeepFakes+BigGov/BigCorps/DeepState/ShadowElite-censorship&mad-doctors-psychiatry-mindcontrol&torture&'corrective'-brainwashing&sedation always mold insividuals into submissive zombies complacent into their 'Orwell 1984 / Huxley BraveNewWorld / transhumanist cyberpunk semi-dystopian hellish semi-nightmare... Yet the individual's congenital inborn special talents/traits & physical-bodily & mental-psycho-ESP features always overcome some of that crap & manage to survive in a lifestyle that is sorta self-imposed/self-selected-based-on-hobbies&interests&ideological-bent&fetish/kink/paraphernalia/personal-preferences mindset/autobiographical-peculiarities&idiosyncrasies&idiolect&synchronicities... Alchemical individuation shines through the cosmic-consciousness Unity [of Opposites] & sorta re-integrates into mass society BY DOING YOUR THING & FOLLOWING YOUR OWN WAY [ALMOST ALWAYS] NO MATTER WHAT (except direct physical/danger/physics/exhaustion-aging-despair-disillusionment/disenchantment/anomie/depersonalization limits/constraints)..' ~ve4ernik/sahwar
+
+---
+
 * https://rechnik.chitanka.info/
 * http://rechnik.info
 * https://slovored.com/
