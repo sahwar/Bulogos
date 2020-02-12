@@ -1,5 +1,5 @@
 # Bulogos
-> https://github.com/sahwar/Bulogos/
+> https://github.com/sahwar/Bulogos/ — project founder & main contributor: https://sites.google.com/view/ve4ernik/ (= https://github.com/sahwar/ )
 
 | Резервни копия на това хранище | , но другаде |
 | ------ | ------ |
@@ -101,6 +101,9 @@ git clone https://github.com/sahwar/Bulogos.git
 
 ## Live webchat / Уеб-чат на живо
 * Maybe later... on an IRC server or via XMPP... (EEST/EET between XY:ZA o'clock & BC:DE o'clock?...)
+
+* XMPP server provided by a friend: http://jappix.animerulezzz.org (direct your chat messages at sahwar/sahwar3; Bulgarian and/or English ONLY!);
+Information about [XMPP](https://en.wikipedia.org/wiki/XMPP)/Jabber: http://xmpp.org (I recommend the following chat clients: PidginIM, http://jitsi.im , http://tox.im (qTox or uTox), http://matrix.org , or any good free XMPP client for Google Android devices).
 
 ----
 
