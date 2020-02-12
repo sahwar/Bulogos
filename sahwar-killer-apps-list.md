@@ -1041,6 +1041,17 @@ AppInfo.xml
 App*.xml format for portable application software description
 .rss feed ; .atom feed ; etc. ...
 
+https://github.com/lpereira/hardinfo - linux tool similar to `lshw`
+http://hardinfo.org/
+
+https://github.com/monperrus/jskomment
+http://remark42.org
+posativ/isso/
+hashover
+hashover-next
+
+(GNU/)Linux OS-level clipboard: `xsel`, `xclip`; `xargs`, ...
+
 
 ---
 EXIF & ICC-color-profile & etc. info & a-script-that-adds-a-Windows-shell-menu-item-that-embeds-an-ORIGIN-URL+author+datetime-stamp-textstring-inside-PNG-metadata-block
