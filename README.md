@@ -1,7 +1,7 @@
 # Bulogos
 > Permalink: https://github.com/sahwar/Bulogos/ 
 
-> — project founder & main contributor: https://sites.google.com/view/ve4ernik/ (= https://github.com/sahwar/ )
+> Project founder & main contributor: https://sites.google.com/view/ve4ernik/ (= https://github.com/sahwar/ )
 
 > Mostly made in Bulgaria by an outcast Bulgarian
 
