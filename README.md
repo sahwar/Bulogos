@@ -1,5 +1,7 @@
 # Bulogos
-> https://github.com/sahwar/Bulogos/ — project founder & main contributor: https://sites.google.com/view/ve4ernik/ (= https://github.com/sahwar/ )
+> Permalink: https://github.com/sahwar/Bulogos/ 
+
+> — project founder & main contributor: https://sites.google.com/view/ve4ernik/ (= https://github.com/sahwar/ )
 
 | Резервни копия на това хранище | , но другаде |
 | ------ | ------ |
