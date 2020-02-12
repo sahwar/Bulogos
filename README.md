@@ -3,6 +3,8 @@
 
 > — project founder & main contributor: https://sites.google.com/view/ve4ernik/ (= https://github.com/sahwar/ )
 
+> Mostly made in Bulgaria by an outcast Bulgarian
+
 | Резервни копия на това хранище | , но другаде |
 | ------ | ------ |
 | [Mirror repository at _GitLab.com_ (always slighty not so up-to-date to this one)](https://gitlab.com/sahwar/Bulogos) (https://gitlab.com/sahwar/Bulogos.git) | [.ZIP backup of a recent version of this repository at _sahwar.animerulezzz.org_ (always slightly not so up-to-date to this one)](http://sahwar.animerulezzz.org/mirrors/Bulogos-master_[ISO8601-datetime-stamp].zip)
