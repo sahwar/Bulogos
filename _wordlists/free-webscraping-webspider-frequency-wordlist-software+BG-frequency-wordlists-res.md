@@ -41,7 +41,7 @@ http://nlp.ffzg.hr/resources/corpora/setimes/
 https://fasttext.cc/docs/en/language-identification.html
 https://fasttext.cc/docs/en/dataset.html
 ````
-* 
+* dcl-bas-bg_frequency-html___Frequency.zip
 * https://github.com/sahwar/Dictionaries/blob/master/Bulgarian.txt
 * https://github.com/sahwar/Dictionaries/blob/master/Bulgarian.aff & https://github.com/sahwar/Dictionaries/blob/master/Bulgarian.txt & https://github.com/sahwar/Dictionaries/blob/master/Bulgarian.dic
 * https://github.com/vanyog/grammar-bg

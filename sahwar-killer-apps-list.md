@@ -477,7 +477,7 @@ https://github.com/splitbrain/paypal-link-builder
 * http://man.cx is a simple web interface to a huge amount of UNIX manpages extracted the packages available in the Debian project and some other UNIXes as well. There are currently about 62.000 pages available.
 * tldr - a `man`-pages-like software tool for (GNU/)Linux (use it in conjuction with `tmux`, `screen`, `less`, `more`, `most`, etc.):
 https://isacikgoz.me/tldr/
-https://github.com/isacikgoz/tldr
+https://github.com/isacikgoz/tldr & `kmdr`
 
 ---
 
