@@ -188,15 +188,21 @@ http://hp.vector.co.jp/authors/VA033749/tips_azdw2/anim.html
 * see the invisible HTML-comment section hidden in the webpages' source-code below (e.g. just click the 'Raw' button on the GitHub page)...
 
 * [PhotoScape](http://photoscape.org/ps/main/index.php) (a FREEWARE photo-editing tool for Microsoft Windows NT/2000/XP/Vista/7/8/10; it even has a Bulgarian language pack: http://download.photoscape.org/translate/bg/lang_3_6.txt ) - http://photoscape.org/ps/main/help.php?id=translate ; http://photoscape.org/ps/main/help.php?id=anigif ; http://photoscape.org/ps/main/help.php?id=paintbrush
-[Beneton Movie GIF](https://www.benetonsoftware.com/Beneton_Movie_GIF.php) (SLOW but nice GIF animator); alternatives: gifsicle, libgif, Beneton Movie GIF, GIMP + GIMP GAP plug-in, Microsoft GIF Animator, various other online tools
+* [Beneton Movie GIF](https://www.benetonsoftware.com/Beneton_Movie_GIF.php) (SLOW but nice GIF animator); alternatives: gifsicle, libgif, Beneton Movie GIF, GIMP + GIMP GAP plug-in, Microsoft GIF Animator, emad.itch.io JPixel (freeware), various other online tools
+* EZ Paint (MS Windows)
+* miniPaint
+* EasyPaint ((GNU/)Linux)
+* rassam-paint ((GNU/)Linux)
+* SwankyPaint (commercial, has a trial version?)
+* Smooth Teddy + Chameleon (a MS Windows app for 3D-drawing&etc. by a Japanese academic scientist)
 
 Image viewers: there are too many, I recommend the following:
-* for MS Windows: [IrfanView_x64](https://www.irfanview.com/), [XnView](https://www.xnview.com/en/) (minus the Unicode-in-filenames bug), [XnViewMP](https://www.xnview.com/en/xnviewmp/), **nomacs_x64**, [Imagine Viewer_x64](http://www.nyam.pe.kr/dev/imagine/)
-* for (GNU/)Linux: **[nomacs_x64](http://nomacs.org/)**, **_GPicView_** (https://wiki.lxde.org/en/GPicView https://pkgs.org/download/gpicview ), **[GThumb](https://github.com/GNOME/gthumb)** ( https://www.google.com/search?client=avast&q=linux+cli+image+viewer ), [Viewnior](https://github.com/hellosiyan/Viewnior) ( https://www.linux-apps.com/p/1129010/ ), **[Mirage](http://mirageiv.sourceforge.net/)** (+[commandline viewing](http://mirageiv.sourceforge.net/docs-advanced.html#cli)), [Ristretto](https://docs.xfce.org/apps/ristretto/start), [Geeqie](http://geeqie.org/), [Feh](https://feh.finalrewind.org/), Enlightenment DE (desktop environment)'s in-terminal image viewer - ..., `gv` CLI image viewer, [GV](https://gv30.net/) ; https://www.google.com/search?client=avast&q=linux+cli+image+viewer
+* for MS Windows: [IrfanView_x64](https://www.irfanview.com/), [XnView](https://www.xnview.com/en/) (minus the Unicode-in-filenames bug), [XnViewMP](https://www.xnview.com/en/xnviewmp/), **nomacs_x64**, [Imagine Viewer_x64](http://www.nyam.pe.kr/dev/imagine/), FastStone Image Viewer
+* for (GNU/)Linux: **[nomacs_x64](http://nomacs.org/)**, **_GPicView_** (https://wiki.lxde.org/en/GPicView https://pkgs.org/download/gpicview ), **[GThumb](https://github.com/GNOME/gthumb)** ( https://www.google.com/search?client=avast&q=linux+cli+image+viewer ), [Viewnior](https://github.com/hellosiyan/Viewnior) ( https://www.linux-apps.com/p/1129010/ ), **[Mirage](http://mirageiv.sourceforge.net/)** (+[commandline viewing](http://mirageiv.sourceforge.net/docs-advanced.html#cli)), [Ristretto](https://docs.xfce.org/apps/ristretto/start), [Geeqie](http://geeqie.org/), [Feh](https://feh.finalrewind.org/), Enlightenment DE (desktop environment)'s in-terminal image viewer - ..., `gv` CLI image viewer, [GV](https://gv30.net/) , tuxarena.com/NeoViewer/ NeonView; https://www.google.com/search?client=avast&q=linux+cli+image+viewer
 
 ( https://opensource.com/article/17/7/4-lightweight-image-viewers-linux-desktop )
 https://softfamous.com/freevimager/
-https://softfamous.com/uniconvertor/
+https://softfamous.com/uniconvertor/ - rasterization (svg2png) & vectorization app (png2svg)
 
 https://www.linux-apps.com/browse/cat/239/order/latest
 https://github.com/Artanidos/AnimationMaker

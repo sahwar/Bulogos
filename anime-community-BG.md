@@ -956,20 +956,21 @@ https://www.reddit.com/r/Rule34
 https://www.reddit.com/r/TipOfMyPenis
 https://www.reddit.com/r/TittyDrop
 https://www.reddit.com/r/Voluptuous
+https://www.reddit.com/r/DegradationPorn
+https://www.reddit.com/r/RapeKink
 https://www.reddit.com/r/WomenOfColor
 https://www.reddit.com/r/WorkGoneWild
 https://www.reddit.com/r/strugglefucking
-https://www.reddit.com/r/DeadEyes
-https://www.reddit.com/r/Misogyny_fetish
+https://www.reddit.com/r/DeadEyes \*
+https://www.reddit.com/r/Misogyny_fetish \*
 https://www.reddit.com/r/hentai_irl
 https://www.reddit.com/r/DP
 https://www.reddit.com/r/fuckfests
 https://www.reddit.com/r/PreggoPorn
-https://www.reddit.com/r/
-https://www.reddit.com/r/incest
+https://www.reddit.com/r/incest \*
 https://www.reddit.com/r/incestgifs
-https://www.reddit.com/r/inbreeding
-https://www.reddit.com/r/breeding
+https://www.reddit.com/r/inbreeding \*
+https://www.reddit.com/r/breeding \*
 https://www.reddit.com/r/RealInbreeding
 https://www.reddit.com/r/incestgifs
 https://www.reddit.com/r/Incest_Captions
@@ -981,7 +982,10 @@ https://www.reddit/com/r/DadWouldBeProud
 https://www.reddit.com/r/DadsGoneWild/
 https://www.reddit.com/r/Amateurincest/
 https://www.reddit.com/r/xxxcaptions/
+https://www.reddit.com/r/taboocaptions/
 https://www.reddit.com/r/wincest/
+https://www.reddit.com/r/momcest
+https://www.reddit.com/r/daddykink/
 https://motherless.com
 https://theporndude.com
 http://pornhub.com
@@ -1028,10 +1032,17 @@ https://jav.guru/48586/jav-studios-official-websites/
 http://jav-paradise.com
 http://javhub.com
 http://javwhores.com
+http://javplay.me
+http://javguru.com
 http://javhd.com
 https://jav911.com/
 https://javhub.net/
 https://javhub.me/
+http://gfycat.com
+http://imgur.com
+http://imgflip.com
+http://9gag.com
+http://motifake.com
 
 https://en.wikipedia.org/wiki/Pornography_in_Japan
 https://avn.com/porn-stars

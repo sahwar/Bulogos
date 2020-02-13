@@ -683,7 +683,9 @@ https://github.com/nanomsg/nng
 
 instalki.pl
 
-nomacs (mmm, borderless mode!), XnView, XnViewMP, Imagine Image & Animation Viewer (x64 Unicode), IrfanView, , HoneyView, FastStone Image Viewer, Mirage Viewer ( https://github.com/xiongchiamiov/Mirage  ), GQView (Linux), geeqie (Linux), gThumb (Linux), Gwenview (Linux), Viewnior (Linux), Ristretto (https://docs.xfce.org/apps/ristretto/start), eog (Linux), Eye of MATE (Linux), KPhotoAlbum, Shotwell, DigiKam, feh (Linux), ImageMagick, GraphicsMagick,  . Nox app, ... 
+nomacs (mmm, borderless mode!), XnView, XnViewMP, Imagine Image & Animation Viewer (x64 Unicode), IrfanView, , HoneyView, FastStone Image Viewer, Mirage Viewer ( https://github.com/xiongchiamiov/Mirage  ), GQView (Linux), geeqie (Linux), gThumb (Linux), Gwenview (Linux), Viewnior (Linux), Ristretto (https://docs.xfce.org/apps/ristretto/start), eog (Linux), Eye of MATE (Linux), KPhotoAlbum, Shotwell, DigiKam, feh (Linux), 
+http://www.tuxarena.com/neonview/ - NeonView image-viewer , Viewnior, riv (X.org image viewer), RViewer by Rniamo; SFQuickTeX (TeX/LaTeX2image)
+, ImageMagick, GraphicsMagick,  . Nox app, ... 
 https://itsfoss.com/image-viewers-linux/
 https://www.tecmint.com/linux-pdf-viewers-and-readers-tools/amp/
 
@@ -702,7 +704,7 @@ fluxbox (?); champferwm, awesome-wm, i3 wm (window-manager), sway (window-manage
 * https://sourceforge.net/projects/readthebible/files/Version%206/Bible6.3.6.app.zip/download - [Компютърна Библия (на български език)](http://readthebible.sourceforge.net/) - https://sourceforge.net/projects/readthebible/files/
 * ``pstree`` (the MS Windows ``tree`` directory-listing command for ``cmd.exe``, but for Linux)
 * ``curl``, ``wget``, ``lftp``, ``aria2c``, PHP, MySQL (LAMP / WAMP), phpMyAdmin, Moodle, 
-* `locate`, ``friendly-find (ffind)`` & ``find``, catfish (all are file searchers!!!), ``ack`` & ``grep`` & ``awk``, `cron` (and other `cron`-like apps on GitHub...), `iconv` & http://2cyr.com
+* `locate`, ``friendly-find (ffind)`` & ``find``, catfish (all are file searchers!!!), ``ack`` & ``grep`` & ``awk``, `cron` (and other `cron`-like apps on GitHub...), `iconv` & **http://2cyr.com**
 * NTFS driver (for using MS Windows 7+ NTFS partitions as data storage partitions)
 * the new best file-system for (GNU/)Linux: https://zfsonlinux.org/
 * GNU binutils, GNU coreutils, 
@@ -731,6 +733,14 @@ http://www.catb.org/esr/writings/taoup/html/ch01s06.html
 http://www.catb.org/esr/writings/taoup/html/ch01s06.html
 
 the Heirloom Toolkit of CLI Linux apps...
+
+squeeze app
+iPod photo uploader - tripid ((GNU/)Linux)
+Zotero app + BibTeX + http://citationstyles.org
+djvuLibre .djvu viewer
+F4L (Flash4Linux) app
+FontForge ((GNU/)Linux)
+HotShots (KDE) ((GNU/)Linux)
 
 http://www.postel.org/postel.html
 
