@@ -198,6 +198,7 @@ https://idol.sankakucomplex.com/?tags=creampie
 * too many to add... this section will be updated later if I'm still alive and in good health...
 
 🔞 **(САМО ЗА ЛИЦА НАД 18 г.!!!)** [JAV](https://en.wikipedia.org/wiki/Japanese_Adult_Video) - японска порнография
+
 * http://jav-720p.com
 * http://jav.guru/
 * http://jav.watch/
@@ -212,6 +213,27 @@ https://idol.sankakucomplex.com/?tags=creampie
 * само за забавление на дамите почитателки на JAV: https://jav.guru/31561 ;P
 * https://spankbang.com
 * https://youporn.com
+* http://www.tubex6.com/cory-chase-in-breeding-mom/
+* https://spankbang.com/1gi0i/video/larkin+love+mom+and+son+taboo+creampie
+* https://www.xvideos.com/video29560345/mommy_showing_love_to_her_son
+* https://www.reddit.com/r/IncestPorn/comments/6tbelz/make_your_sis_prego_with_subtitles/
+* http://www.xvideos.com/video29250327/mommy_s_good_boy_creampie
+* https://wickedfun.tv/video/mother-cant-resist-7120.html
+* https://www.reddit.com/r/IncestPorn/comments/6rksk5/my_son_was_an_introvert_motherson/
+* https://www.sextvx.com/en/video/950273/daughter-gets-creampied-by-her-dad-against-her-wil
+* https://www.reddit.com/r/IncestPorn/comments/6tebt1/good_son_teaching_mommy_a_lesson_ms/
+* http://www.tubex6.com/i-cant-get-pregnant/
+* https://www.reddit.com/r/IncestPorn/comments/6u35ba/sex_with_my_bitches_mother_motherson_japanese/
+* https://wickedfun.tv/video/the-only-way-to-wake-him-up-is-to-make-him-cum-7388.html
+* https://spankbang.com/1fhtc/video/pristine+is+the+best+mom+in+the+whole+world
+* https://www.reddit.com/r/IncestPorn/comments/6twl34/make_sure_to_cum_deep_in_moomy_with_subtitles/
+https://www.reddit.com/r/IncestPorn/comments/6tt0pe/taboo_sex_between_family_members_game_show_d/
+* https://www.reddit.com/r/IncestPorn/comments/6s5i6p/hot_family_fuckfest_brothers_sisters_dad/ ! 
+* https://www.reddit.com/r/IncestPorn/comments/6rz5c5/bsm_lena_paul_cory_chase_daughter_saves_the_family/
+* https://www.reddit.com/r/IncestPorn/comments/6s1myo/my_mom_is_a_porn_star_ms/
+* https://www.pornhub.com/view_video.php?viewkey=ph59608ec6e761f
+* https://www.reddit.com/r/IncestPorn/comments/6ryqim/there_was_nothing_else_mother_could_do_but_do_the/
+* https://www.reddit.com/r/IncestPorn/comments/6ryc6h/ms_mother_felt_her_son_wanting_her/
 * ...
 * too many to add... this section will be updated later if I'm still alive and in good health...
 
@@ -220,11 +242,11 @@ https://idol.sankakucomplex.com/?tags=creampie
 https://www.reddit.com/r/1000ccplus
 https://www.reddit.com/r/3DSM
 https://www.reddit.com/r/announcements
-https://www.reddit.com/r/asianbabes
-https://www.reddit.com/r/AsiansWithRedHair
+https://www.reddit.com/r/asianbabes !
+https://www.reddit.com/r/AsiansWithRedHair !
 https://www.reddit.com/r/assexpansion
-https://www.reddit.com/r/bdsm
-https://www.reddit.com/r/BDSMcommunity
+https://www.reddit.com/r/bdsm !
+https://www.reddit.com/r/BDSMcommunity !
 https://www.reddit.com/r/bdsmfaq
 https://www.reddit.com/r/BeforeAndAfterBoltons
 https://www.reddit.com/r/BEGW
@@ -232,40 +254,40 @@ https://www.reddit.com/r/BellyExpansion
 https://www.reddit.com/r/BigBoobsGonewild
 https://www.reddit.com/r/BigBoobsGW
 https://www.reddit.com/r/bimbofetish
-https://www.reddit.com/r/bimbofication
+https://www.reddit.com/r/bimbofication !
 https://www.reddit.com/r/Blackmailed
 https://www.reddit.com/r/Blueberry
 https://www.reddit.com/r/bodyinflation
 https://www.reddit.com/r/bodyperfection
-https://www.reddit.com/r/BoltedOnAsians
+https://www.reddit.com/r/BoltedOnAsians !
 https://www.reddit.com/r/BoltedOnBooty
 https://www.reddit.com/r/BoltedOnMaxed
 https://www.reddit.com/r/boltedontits
 https://www.reddit.com/r/Bondage
 https://www.reddit.com/r/boobbounce
 https://www.reddit.com/r/Boobies
-https://www.reddit.com/r/BorednIgnored
+https://www.reddit.com/r/BorednIgnored !
 https://www.reddit.com/r/BreastExpansion
-https://www.reddit.com/r/Breeding
-https://www.reddit.com/r/burstingout
+https://www.reddit.com/r/Breeding !!
+https://www.reddit.com/r/burstingout !!
 https://www.reddit.com/r/BustyPetite
 https://www.reddit.com/r/cfnmfetish
 https://www.reddit.com/r/cleavage
 https://www.reddit.com/r/cumonclothes
 https://www.reddit.com/r/curvy
-https://www.reddit.com/r/DegradingHoles
-https://www.reddit.com/r/distension
+https://www.reddit.com/r/DegradingHoles !
+https://www.reddit.com/r/distension !
 https://www.reddit.com/r/enf
-https://www.reddit.com/r/EnhancedFucktoys
+https://www.reddit.com/r/EnhancedFucktoys !
 https://www.reddit.com/r/expansivewriters
 https://www.reddit.com/r/FansofBabeTrader
-https://www.reddit.com/r/FantasyIsland
-https://www.reddit.com/r/femalepov
+https://www.reddit.com/r/FantasyIsland !
+https://www.reddit.com/r/femalepov !
 https://www.reddit.com/r/freecitiesgame
 https://www.reddit.com/r/freeuse
-https://www.reddit.com/r/freeusefamily
+https://www.reddit.com/r/freeusefamily !
 https://www.reddit.com/r/freeuseFonM
-https://www.reddit.com/r/FreeuseHentai
+https://www.reddit.com/r/FreeuseHentai !
 https://www.reddit.com/r/FuckGaming
 https://www.reddit.com/r/gonewild
 https://www.reddit.com/r/gonewildcurvy
@@ -273,36 +295,35 @@ https://www.reddit.com/r/HardBoltOns
 https://www.reddit.com/r/HighMileageHoles
 https://www.reddit.com/r/holdthemoan
 https://www.reddit.com/r/hotglass
-https://www.reddit.com/r/Hugeboobshardcore
-https://www.reddit.com/r/hugeboobsjav
-https://www.reddit.com/r/Incest_Gifs
-https://www.reddit.com/r/IncestPorn
-https://www.reddit.com/r/JavDownloadCenter
-https://www.reddit.com/r/juicyasians
-https://www.reddit.com/r/ladiesinsuits
-https://www.reddit.com/r/lineups
+https://www.reddit.com/r/Hugeboobshardcore !
+https://www.reddit.com/r/hugeboobsjav !!
+https://www.reddit.com/r/JavDownloadCenter !!!!
+https://www.reddit.com/r/japanpornstars/ !!!
+https://www.reddit.com/r/juicyasians !!
+https://www.reddit.com/r/ladiesinsuits !
+https://www.reddit.com/r/lineups !
 https://www.reddit.com/r/MacroRP
 https://www.reddit.com/r/MasturbatorsAnonymous
 https://www.reddit.com/r/Morphs
 https://www.reddit.com/r/multiboob
 https://www.reddit.com/r/Multitaskers
-https://www.reddit.com/r/NSFWgaming
+https://www.reddit.com/r/NSFWgaming !
 https://www.reddit.com/r/NSFWHOF
-https://www.reddit.com/r/nsfwoutfits
+https://www.reddit.com/r/nsfwoutfits !
 https://www.reddit.com/r/NudeGifs
 https://www.reddit.com/r/Omalam
 https://www.reddit.com/r/OnStageGW
-https://www.reddit.com/r/openholes
-https://www.reddit.com/r/OppaiHentai
-https://www.reddit.com/r/OppaiLove
-https://www.reddit.com/r/OutdoorBondage
+https://www.reddit.com/r/openholes !
+https://www.reddit.com/r/OppaiHentai !
+https://www.reddit.com/r/OppaiLove !
+https://www.reddit.com/r/OutdoorBondage !
 https://www.reddit.com/r/overflowingbra
 https://www.reddit.com/r/overheardsex
 https://www.reddit.com/r/Phonejobs
-https://www.reddit.com/r/PornParody
-https://www.reddit.com/r/PreggoPorn
-https://www.reddit.com/r/ProcessPics
-https://www.reddit.com/r/ProgressiveGrowth
+https://www.reddit.com/r/PornParody !
+https://www.reddit.com/r/PreggoPorn !
+https://www.reddit.com/r/ProcessPics !
+https://www.reddit.com/r/ProgressiveGrowth !
 https://www.reddit.com/r/progresspics
 https://www.reddit.com/r/PublicHumiliation
 https://www.reddit.com/r/PussyWedgie
@@ -321,19 +342,19 @@ https://www.reddit.com/r/SleepSexKink
 https://www.reddit.com/r/SoFuckable
 https://www.reddit.com/r/Stacked
 https://www.reddit.com/r/StripHer
-https://www.reddit.com/r/StruggleFucking
-https://www.reddit.com/r/StuckPorn
-https://www.reddit.com/r/sweatermeat
+https://www.reddit.com/r/StruggleFucking !
+https://www.reddit.com/r/StuckPorn !
+https://www.reddit.com/r/sweatermeat !
 https://www.reddit.com/r/TIFT
-https://www.reddit.com/r/timestop
+https://www.reddit.com/r/timestop !
 https://www.reddit.com/r/TittyDrop
-https://www.reddit.com/r/translucent_porn
-https://www.reddit.com/r/TrueInbreeding
+https://www.reddit.com/r/translucent_porn !
+https://www.reddit.com/r/TrueInbreeding !
 https://www.reddit.com/r/whitelingerie
 https://www.reddit.com/r/wincest
 https://www.reddit.com/r/womeninprison
 https://www.reddit.com/r/womeninshirtandtie
-https://www.reddit.com/r/xxfitness
+https://www.reddit.com/r/xxfitness !
 
 http://theporndude.net
 
@@ -351,7 +372,7 @@ http://www.reddit.com/r/lineups
 http://www.reddit.com/r/sofuckable
 https://www.reddit.com/r/OnStageGW
 https://www.reddit.com/r/helgalovekaty
-https://www.reddit.com/r/BreedingMaterial/
+https://www.reddit.com/r/BreedingMaterial/ !!!
 https://www.reddit.com/r/Ifyouhadtopickone/
 https://www.reddit.com/r/bdsm
 https://www.reddit.com/r/Bondage
@@ -374,29 +395,29 @@ https://www.reddit.com/r/Bondage
 https://www.reddit.com/r/BDSM
 https://www.reddit.com/r/NotSafeforNature
 https://www.reddit.com/r/NSFW_Outdoors
-https://www.reddit.com/r/PublicFetish
+https://www.reddit.com/r/PublicFetish !
 https://www.reddit.com/r/PublicHumiliation
 https://www.reddit.com/r/PublicSpanking
 https://www.reddit.com/r/pilloryporn
-https://www.reddit.com/r/SlaveAuctions
-https://www.reddit.com/r/FuckGaming
-https://www.reddit.com/r/Multitaskers
+https://www.reddit.com/r/SlaveAuctions !
+https://www.reddit.com/r/FuckGaming !!!
+https://www.reddit.com/r/Multitaskers !
 https://www.reddit.com/r/Asshole
 https://www.reddit.com/r/Hairy
 https://www.reddit.com/r/GirlsShowering
-https://www.reddit.com/r/ShowerSex
+https://www.reddit.com/r/ShowerSex !
 https://www.reddit.com/r/AmateurPornVids
-https://www.reddit.com/r/Borednignored
+https://www.reddit.com/r/Borednignored !
 https://www.reddit.com/r/SuctionBlowjobs
 https://www.reddit.com/r/AmateurCumsluts
-https://www.reddit.com/r/Splitview
+https://www.reddit.com/r/Splitview !
 https://www.reddit.com/r/DegradingHoles
 https://www.reddit.com/r/BBWvideos
 https://www.reddit.com/r/MatureMilf
 https://www.reddit.com/r/GirlsOnTop
 https://www.reddit.com/r/OBSF (Old But Still Fuckable)
 https://www.reddit.com/r/Facial
-https://www.reddit.com/r/Bondage_Porn
+https://www.reddit.com/r/Bondage_Porn !!!
 https://www.reddit.com/r/AnalInsertions
 https://www.reddit.com/r/Anal_gifs
 https://www.reddit.com/r/PillowHumping
@@ -405,11 +426,11 @@ https://www.reddit.com/r/WetSpot
 https://www.reddit.com/r/ClothingKink
 https://www.reddit.com/r/GoodGirlsSwallow
 https://www.reddit.com/r/SloppyBlowjob
-https://www.reddit.com/r/AsianThroats
+https://www.reddit.com/r/AsianThroats !!!
 https://www.reddit.com/r/GloryholeBlowjobs
-https://www.reddit.com/r/FeedingOnCum
-https://www.reddit.com/r/JapanCensored
-https://www.reddit.com/r/JapanUncensored
+https://www.reddit.com/r/FeedingOnCum !
+https://www.reddit.com/r/JapanCensored !!!
+https://www.reddit.com/r/JapanUncensored !!!
 https://www.reddit.com/r/FuckableSplits
 https://www.reddit.com/r/BlowjobGirls
 https://www.reddit.com/r/BlackGirlBlowjobs
@@ -430,57 +451,57 @@ https://www.reddit.com/r/ThroatBarrier
 https://www.reddit.com/r/RoughAnal
 https://www.reddit.com/r/Footjobs
 https://www.reddit.com/r/PrettyLittleCumsluts
-https://www.reddit.com/r/Joymii
-https://www.reddit.com/r/Bondage_Porn
-https://www.reddit.com/r/OutdoorRecreation
+https://www.reddit.com/r/Joymii !
+https://www.reddit.com/r/Bondage_Porn !!!
+https://www.reddit.com/r/OutdoorRecreation !
 https://www.reddit.com/r/CuppingTheBalls
-https://www.reddit.com/r/FromBelowView
-https://www.reddit.com/r/iwanttobeher
+https://www.reddit.com/r/FromBelowView !
+https://www.reddit.com/r/iwanttobeher !
 https://www.reddit.com/r/PoliticsNSFW
-https://www.reddit.com/r/freeusefamily
+https://www.reddit.com/r/freeusefamily !
 https://www.reddit.com/r/Morphs (Morphs go here)
 https://www.reddit.com/r/SizeCon
 https://www.reddit.com/r/overflowingbra
 https://www.reddit.com/r/BEGW (B.E. Gonewild)
-https://www.reddit.com/r/ProgressiveGrowth
+https://www.reddit.com/r/ProgressiveGrowth !
 https://www.reddit.com/r/expansivewriters
 https://www.reddit.com/r/assexpansion
-https://www.reddit.com/r/BellyExpansion
-https://www.reddit.com/r/bodyinflation
+https://www.reddit.com/r/BellyExpansion !
+https://www.reddit.com/r/bodyinflation !
 https://www.reddit.com/r/blueberry
-https://www.reddit.com/r/OppaiLove
+https://www.reddit.com/r/OppaiLove !
 https://www.reddit.com/r/BigBoobsGW
 https://www.reddit.com/r/bigboobsgonewild
-https://www.reddit.com/r/PreggoPorn/
+https://www.reddit.com/r/PreggoPorn/ !!!
 https://www.reddit.com/r/AttributeTheft
 https://www.reddit.com/r/MacroRP
 https://www.reddit.com/r/Giantess
 https://www.reddit.com/r/BoltedOnMaxed
 https://www.reddit.com/r/boltedontits
 https://www.reddit.com/r/morphedcocks
-https://www.reddit.com/r/ProcessPics
+https://www.reddit.com/r/ProcessPics !
 https://www.reddit.com/r/holdthemoan/ (+ the 'sister subs' in the sidebar!!!)
-https://www.reddit.com/r/BodyPerfection
+https://www.reddit.com/r/BodyPerfection !
 https://www.reddit.com/r/LadiesInSuits
-https://www.reddit.com/r/LineUps
+https://www.reddit.com/r/LineUps !
 https://www.reddit.com/r/SoFuckable
 https://www.reddit.com/r/OnStageGW
 https://www.reddit.com/r/RedLingerie
 https://www.reddit.com/r/WhiteLingerie
-https://www.reddit.com/r/Paizuri
+https://www.reddit.com/r/Paizuri !!
 https://www.reddit.com/r/BreastExpansion
 https://www.reddit.com/r/Morphs
 https://www.reddit.com/r/HugeFutanari
-https://www.reddit.com/r/Hentai
-https://www.reddit.com/r/Ecchi
-https://www.reddit.com/r/Doujinshi
+https://www.reddit.com/r/Hentai !!!
+https://www.reddit.com/r/Ecchi !!
+https://www.reddit.com/r/Doujinshi !!
 
 > https://www.reddit.com/user/hentaifan11/ - Personal FAVORITE sex-fetishes subreddits:
 
 https://www.reddit.com/r/4chan/
 https://www.reddit.com/r/absolutelynotme_irl/
-https://www.reddit.com/r/ahegao/
-https://www.reddit.com/r/Amateurincest/
+https://www.reddit.com/r/ahegao/ !
+https://www.reddit.com/r/Amateurincest/ !!!
 https://www.reddit.com/r/AndroidGaming/
 https://www.reddit.com/r/AnimalRights/
 https://www.reddit.com/r/announcements/
@@ -493,28 +514,28 @@ https://www.reddit.com/r/BlackWorldOrder/
 https://www.reddit.com/r/Blonde_Bimbo_Brianna/
 https://www.reddit.com/r/Blowjobs/
 https://www.reddit.com/r/botany/
-https://www.reddit.com/r/Breeding/
-https://www.reddit.com/r/BreedingMaterial/
+https://www.reddit.com/r/Breeding/ !!!
+https://www.reddit.com/r/BreedingMaterial/ !
 https://www.reddit.com/r/bulgaria/
 https://www.reddit.com/r/changemyview/
 https://www.reddit.com/r/chubby/
-https://www.reddit.com/r/conspiracy/
-https://www.reddit.com/r/CrazyIdeas/
+https://www.reddit.com/r/conspiracy/ !
+https://www.reddit.com/r/CrazyIdeas/ !!!
 https://www.reddit.com/r/creampiepanties/
-https://www.reddit.com/r/creampies/
-https://www.reddit.com/r/cumdump/
-https://www.reddit.com/r/cumdumps/
-https://www.reddit.com/r/CumDumpsters/
-https://www.reddit.com/r/cuminsideme/
-https://www.reddit.com/r/cumsluts/
-https://www.reddit.com/r/cumtributes/
-https://www.reddit.com/r/DegradingHoles/
+https://www.reddit.com/r/creampies/ !!!!!!
+https://www.reddit.com/r/cumdump/ !!
+https://www.reddit.com/r/cumdumps/ !!
+https://www.reddit.com/r/CumDumpsters/ !!
+https://www.reddit.com/r/cuminsideme/ !!
+https://www.reddit.com/r/cumsluts/ !
+https://www.reddit.com/r/cumtributes/ !
+https://www.reddit.com/r/DegradingHoles/ !
 https://www.reddit.com/r/DirtyWritingPrompts/
-https://www.reddit.com/r/doujinshi/
+https://www.reddit.com/r/doujinshi/ !
 https://www.reddit.com/r/eroticliterature/
 https://www.reddit.com/r/europe/
 https://www.reddit.com/r/farming/
-https://www.reddit.com/r/Firtsbornunicorn/
+https://www.reddit.com/r/Firtsbornunicorn/ !!!
 https://www.reddit.com/r/forcedbreeding/
 https://www.reddit.com/r/freeuse/
 https://www.reddit.com/r/FreeuseHentai/
@@ -533,66 +554,55 @@ https://www.reddit.com/r/GoneWildAudioGay/
 https://www.reddit.com/r/GWAScriptGuild/
 https://www.reddit.com/r/hentai/
 https://www.reddit.com/r/HentaiBeast/
-https://www.reddit.com/r/hentaicaptions/
+https://www.reddit.com/r/hentaicaptions/ !
 https://www.reddit.com/r/Homebrewing/
 https://www.reddit.com/r/Hucow/
 https://www.reddit.com/r/im14andthisisdeep/
-https://www.reddit.com/r/ImpregPersonals/
+https://www.reddit.com/r/ImpregPersonals/ !
 https://www.reddit.com/r/IncelTears/
-https://www.reddit.com/r/Incest_Gifs/
-https://www.reddit.com/r/IncestComics/
-https://www.reddit.com/r/IncestCSS/
-https://www.reddit.com/r/IncestErotica/
-https://www.reddit.com/r/IncestPorn/
-https://www.reddit.com/r/IncestPornCreampies/
-https://www.reddit.com/r/incestpornvideos/
-https://www.reddit.com/r/incestpornwithplot/
-https://www.reddit.com/r/IncestPornXXX/
-https://www.reddit.com/r/IncestRoleplay/
-https://www.reddit.com/r/IncestVideos/
 https://www.reddit.com/r/interestingasfuck/
-https://www.reddit.com/r/japancirclejerk/
-https://www.reddit.com/r/jav/
-https://www.reddit.com/r/JavDownloadCenter/
+https://www.reddit.com/r/japancirclejerk/ !
+https://www.reddit.com/r/jav/ !!!!!
+https://www.reddit.com/r/JavDownloadCenter/ !!!!
 https://www.reddit.com/r/JerkOffToCelebs/
 https://www.reddit.com/r/JizzedToThis/
 https://www.reddit.com/r/jobuds/
 https://www.reddit.com/r/justneckbeardthings/
-https://www.reddit.com/r/knockmeup/
+https://www.reddit.com/r/knockmeup/ !!!!!
 https://www.reddit.com/r/legaladvice/
 https://www.reddit.com/r/LeluLove/
-https://www.reddit.com/r/lewdgames/
+https://www.reddit.com/r/lewdgames/ !
 https://www.reddit.com/r/Listening_Always/
 https://www.reddit.com/r/LittleMissAphrodite/
 https://www.reddit.com/r/MGTOW/
 https://www.reddit.com/r/mindcrack/
 https://www.reddit.com/r/MinecraftInventions/
-https://www.reddit.com/r/Misogynyfetish/
-https://www.reddit.com/r/momson/
+https://www.reddit.com/r/Misogynyfetish/ !
+https://www.reddit.com/r/momson/ !
 https://www.reddit.com/r/MonitorLizards/
 https://www.reddit.com/r/MorbidReality/
 https://www.reddit.com/r/nopullingout/
 https://www.reddit.com/r/NSFW411/
 https://www.reddit.com/r/nsfwasmr/
-https://www.reddit.com/r/NSFWgaming/
+https://www.reddit.com/r/NSFWgaming/ !!
 https://www.reddit.com/r/NSFWIAMA/
 https://www.reddit.com/r/Oviposition/
-https://www.reddit.com/r/Pareidolia/
+https://www.reddit.com/r/Pareidolia/ !
 https://www.reddit.com/r/porn/
-https://www.reddit.com/r/PornhubComments/
-https://www.reddit.com/r/pornvids/
-https://www.reddit.com/r/PreggoPorn/
+https://www.reddit.com/r/PornhubComments/ !
+https://www.reddit.com/r/pornvids/ !!!!
+https://www.reddit.com/r/PreggoPorn/ !!
 https://www.reddit.com/r/raisedbyborderlines/
 https://www.reddit.com/r/RandomActsOfBlowJob/
-https://www.reddit.com/r/Rapekink/
-https://www.reddit.com/r/reactiongifs/
+https://www.reddit.com/r/Rapekink/ !
+https://www.reddit.com/r/reactiongifs/ !
 https://www.reddit.com/r/relationship_advice/
 https://www.reddit.com/r/Roleplaykik/
 https://www.reddit.com/r/rule34/
 https://www.reddit.com/r/sex_comics/
 https://www.reddit.com/r/ShitPoliticsSays/
 https://www.reddit.com/r/StruggleFucking/
-https://www.reddit.com/r/SuddenlyIncest/
+https://www.reddit.com/r/SuddenlyIncest/ !
 https://www.reddit.com/r/thinkpad/
 https://www.reddit.com/r/Tinder/
 https://www.reddit.com/r/tipofmypenis/
@@ -600,7 +610,7 @@ https://www.reddit.com/r/tipofmytongue/
 https://www.reddit.com/r/TopMindsOfReddit/
 https://www.reddit.com/r/TotallyStraight/
 https://www.reddit.com/r/trashy/
-https://www.reddit.com/r/Triplepenetration/
+https://www.reddit.com/r/Triplepenetration/ !
 https://www.reddit.com/r/TrueInbreeding/
 https://www.reddit.com/r/TrueIncest/
 https://www.reddit.com/r/TrueOffMyChest/
@@ -609,12 +619,12 @@ https://www.reddit.com/user/pureincest/
 https://www.reddit.com/r/Unexpected/
 https://www.reddit.com/r/UnexpectedThanos/
 https://www.reddit.com/r/unitedkingdom/
-https://www.reddit.com/r/unpopularopinion/
+https://www.reddit.com/r/unpopularopinion/ !!!
 https://www.reddit.com/r/UpliftingNews/
 https://www.reddit.com/r/videos/
 https://www.reddit.com/r/wifesharing/
 https://www.reddit.com/r/wincest/
-https://www.reddit.com/r/wouldyoufuckmymom/
+https://www.reddit.com/r/wouldyoufuckmymom/ !
 https://www.reddit.com/r/xxxcaptions/
 https://www.reddit.com/r/yiffcaptions/
 ******
@@ -708,8 +718,7 @@ https://www.reddit.com/r/SlaveAuctions/
 https://www.reddit.com/r/3DSM/
 https://www.reddit.com/r/womeninprison/
 https://www.reddit.com/r/PublicHumiliation/
-https://www.reddit.com/r/PublicHumiliation/
-https://www.reddit.com/r/PublicHumiliation/
+https://www.reddit.com/r/HumiliationPorn/
 https://www.reddit.com/r/OutdoorBondage/
 https://www.reddit.com/r/lineups/
 https://www.reddit.com/r/OutdoorBondage/
@@ -767,10 +776,10 @@ https://www.reddit.com/r/womenofcolor
 https://www.reddit.com/r/1000ccplus
 https://www.reddit.com/r/3DSM/
 https://www.reddit.com/r/AlbumBabes
-https://www.reddit.com/r/asianandlovingit
+https://www.reddit.com/r/asianandlovingit !!!
 https://www.reddit.com/r/asianhotties
-https://www.reddit.com/r/AsianNSFW
-https://www.reddit.com/r/AsianPorn
+https://www.reddit.com/r/AsianNSFW !!!
+https://www.reddit.com/r/AsianPorn !!!
 https://www.reddit.com/r/assinthong
 https://www.reddit.com/r/BareMaidens
 https://www.reddit.com/r/bbw
@@ -806,7 +815,7 @@ https://www.reddit.com/r/ebonygirls
 https://www.reddit.com/r/enf/
 https://www.reddit.com/r/epiccleavage
 https://www.reddit.com/r/FTVGirls
-https://www.reddit.com/r/FuckGaming/
+https://www.reddit.com/r/FuckGaming/ !
 https://www.reddit.com/r/gifsofremoval
 https://www.reddit.com/r/ginger
 https://www.reddit.com/r/gravure
@@ -818,10 +827,12 @@ https://www.reddit.com/r/hotglass/
 https://www.reddit.com/r/Hotness
 https://www.reddit.com/r/hugeass
 https://www.reddit.com/r/hugeboobsjav
-https://www.reddit.com/r/IncestPorn/
-https://www.reddit.com/r/JapanesePorn2
+https://www.reddit.com/r/IncestPorn/ \*
+https://www.reddit.com/r/JapanesePorn2 \*
+https://www.reddit.com/r/JAV \*
+https://www.reddit.com/r/JavDownloadCenter \*
+https://www.reddit.com/r/DegradationPorn !
 https://www.reddit.com/r/JasmineLee
-https://www.reddit.com/r/JavDownloadCenter
 https://www.reddit.com/r/JoselynCano
 https://www.reddit.com/r/ladiesinsuits/
 https://www.reddit.com/r/lineups/
@@ -831,11 +842,11 @@ https://www.reddit.com/r/MPL
 https://www.reddit.com/r/Multitaskers/
 https://www.reddit.com/r/mycleavage
 https://www.reddit.com/r/naughtyinpublic
-https://www.reddit.com/r/NSFW_GIF
-https://www.reddit.com/r/NSFW_Japan
-https://www.reddit.com/r/NSFWFunny
-https://www.reddit.com/r/nsfwhardcore
-https://www.reddit.com/r/nsfwoutfits/
+https://www.reddit.com/r/NSFW_GIF \*
+https://www.reddit.com/r/NSFW_Japan \*
+https://www.reddit.com/r/NSFWFunny \*
+https://www.reddit.com/r/nsfwhardcore \*
+https://www.reddit.com/r/nsfwoutfits/ \*
 https://www.reddit.com/r/onherback
 https://www.reddit.com/r/onherknees
 https://www.reddit.com/r/OnStageGW/
@@ -848,7 +859,7 @@ https://www.reddit.com/r/Phonejobs/
 https://www.reddit.com/r/pickone
 https://www.reddit.com/r/Playboy
 https://www.reddit.com/r/plumper
-https://www.reddit.com/r/PreggoPorn
+https://www.reddit.com/r/PreggoPorn \*
 https://www.reddit.com/r/ravenhaired
 https://www.reddit.com/r/RealPublicNudity/
 https://www.reddit.com/r/redheads
@@ -859,7 +870,7 @@ https://www.reddit.com/r/sexywallpapers
 https://www.reddit.com/r/shelikesitrough
 https://www.reddit.com/r/ShinyBimbo/
 https://www.reddit.com/r/SizeCon/
-https://www.reddit.com/r/SlaveAuctions/
+https://www.reddit.com/r/SlaveAuctions/ \*
 https://www.reddit.com/r/slightcellulite
 https://www.reddit.com/r/slightlychubby
 https://www.reddit.com/r/slimandstacked
@@ -880,15 +891,15 @@ https://www.reddit.com/r/Twistys
 https://www.reddit.com/r/w4b
 https://www.reddit.com/r/whitelingerie/
 https://www.reddit.com/r/WomenInBras
-https://www.reddit.com/r/womeninprison/
+https://www.reddit.com/r/womeninprison/ \*
 https://www.reddit.com/r/womenofcolor
 https://www.reddit.com/r/xart
-https://www.reddit.com/r/holdthemoan
+https://www.reddit.com/r/holdthemoan \*
 https://www.reddit.com/r/RealGirls
 https://www.reddit.com/r/OnOff
 https://www.reddit.com/r/Amateur
 http://reddit.com/r/bustypetite
-http://reddit.com/r/rotationgirls
+http://reddit.com/r/rotationgirls \*
 http://reddit.com/r/nsfwoutfits
 http://reddit.com/r/curvy
 http://www.reddit.com/r/porninfifteenseconds
@@ -896,7 +907,7 @@ http://www.reddit.com/r/lineups
 http://www.reddit.com/r/sofuckable
 https://www.reddit.com/r/OnStageGW
 https://www.reddit.com/r/helgalovekaty
-https://www.reddit.com/r/BreedingMaterial/
+https://www.reddit.com/r/BreedingMaterial/ \*
 https://www.reddit.com/r/Ifyouhadtopickone/
 
 https://www.reddit.com/r/cumsluts/
@@ -911,11 +922,11 @@ https://www.reddit.com/r/deepthroat
 https://www.reddit.com/cumcoveredfucking
 https://www.reddit.com/FacialFun
 https://www.reddit.com/thickloads
-https://www.reddit.com/r/creampie
+https://www.reddit.com/r/creampie \*
 https://www.reddit.com/r/dirtysmall
 https://www.reddit.com/r/HugeDickTinyChick
-https://www.reddit.com/r/SheLikesItRough
-https://www.reddit.com/r/NSFW_HTML5
+https://www.reddit.com/r/SheLikesItRough \*
+https://www.reddit.com/r/NSFW_HTML5 \*
 https://www.reddit.com/r/omgbeckylookathiscock
 https://www.reddit.com/r/O_Faces
 https://www.reddit.com/r/porninfifteenseconds
@@ -931,12 +942,12 @@ https://www.reddit.com/r/Boobies
 https://www.reddit.com/r/Bottomless_Vixens
 https://www.reddit.com/r/BurstingOut
 https://www.reddit.com/r/CollegeAmateurs
-https://www.reddit.com/r/cumsluts
+https://www.reddit.com/r/cumsluts \*
 https://www.reddit.com/r/DatGap
 https://www.reddit.com/r/FaceDownAssUp
 https://www.reddit.com/r/Ginger
 https://www.reddit.com/r/GirlsFinishingTheJob
-https://www.reddit.com/r/girlsinyogapants
+https://www.reddit.com/r/girlsinyogapants \*
 https://www.reddit.com/r/GIRLSWITHNEONHAIR
 https://www.reddit.com/r/GoneWild
 https://www.reddit.com/r/gonewildaudio
@@ -945,52 +956,81 @@ https://www.reddit.com/r/Grool
 https://www.reddit.com/r/Jilling
 https://www.reddit.com/r/LegalTeens
 https://www.reddit.com/r/nsfw
-https://www.reddit.com/r/NSFW_GIF
-https://www.reddit.com/r/NSFW_Gifs
-https://www.reddit.com/r/NSFW_Wallpapers
-https://www.reddit.com/r/NSFW_WTF
-https://www.reddit.com/r/NSFWOutfits
+https://www.reddit.com/r/NSFW_GIF \*
+https://www.reddit.com/r/NSFW_Gifs \*
+https://www.reddit.com/r/NSFW_Wallpapers \*
+https://www.reddit.com/r/NSFW_WTF \*
+https://www.reddit.com/r/NSFWOutfits \*
 https://www.reddit.com/r/OnOff
 https://www.reddit.com/r/RealGirls
 https://www.reddit.com/r/Rule34
 https://www.reddit.com/r/TipOfMyPenis
 https://www.reddit.com/r/TittyDrop
 https://www.reddit.com/r/Voluptuous
-https://www.reddit.com/r/DegradationPorn
-https://www.reddit.com/r/RapeKink
 https://www.reddit.com/r/WomenOfColor
 https://www.reddit.com/r/WorkGoneWild
-https://www.reddit.com/r/strugglefucking
-https://www.reddit.com/r/DeadEyes \*
-https://www.reddit.com/r/Misogyny_fetish \*
-https://www.reddit.com/r/hentai_irl
+
+https://www.reddit.com/r/strugglefucking \*
+https://www.reddit.com/r/DeadEyes \* !
+https://www.reddit.com/r/Misogyny_fetish \* !
+https://www.reddit.com/r/DegradingHoles/
+https://www.reddit.com/r/DegradationPorn \*
+https://www.reddit.com/r/RapeKink
+https://www.reddit.com/r/hentai_irl !
 https://www.reddit.com/r/DP
 https://www.reddit.com/r/fuckfests
-https://www.reddit.com/r/PreggoPorn
-https://www.reddit.com/r/incest \*
-https://www.reddit.com/r/incestgifs
-https://www.reddit.com/r/inbreeding \*
-https://www.reddit.com/r/breeding \*
-https://www.reddit.com/r/RealInbreeding
-https://www.reddit.com/r/incestgifs
-https://www.reddit.com/r/Incest_Captions
-https://www.reddit.com/r/taboocaptions
-https://www.reddit.com/r/momson/
-https://www.reddit.com/r/IncestVideos/
-https://www.reddit.com/r/daddaughter
+https://www.reddit.com/r/PreggoPorn !
+https://www.reddit.com/r/incest \* !
+https://www.reddit.com/r/incestgifs !
+https://www.reddit.com/r/inbreeding \* !
+https://www.reddit.com/r/breeding \* !
+https://www.reddit.com/r/TrueBreeding !
+https://www.reddit.com/r/RealInbreeding !
+https://www.reddit.com/r/TrueInbreeding !
+https://www.reddit.com/r/IncestPorn
+https://www.reddit.com/r/Incest_Gifs/ !
+https://www.reddit.com/r/IncestComics/
+https://www.reddit.com/r/IncestCSS/ !
+https://www.reddit.com/r/IncestErotica/ !
+https://www.reddit.com/r/IncestPorn/ !
+https://www.reddit.com/r/IncestPornCreampies/ !
+https://www.reddit.com/r/incestpornvideos/ !
+https://www.reddit.com/r/incestpornwithplot/ !
+https://www.reddit.com/r/IncestPornXXX/ !
+https://www.reddit.com/r/IncestRoleplay/ !
+https://www.reddit.com/r/IncestVideos/ !
+https://www.reddit.com/r/incestgifs !
+https://www.reddit.com/r/Incest_Gifs/
+https://www.reddit.com/r/Incest_Captions !
+https://www.reddit.com/r/taboocaptions !
+https://www.reddit.com/r/momson/ !
+https://www.reddit.com/r/IncestVideos/ !
+https://www.reddit.com/r/IncestPorn/
+https://www.reddit.com/r/daddydaughter
 https://www.reddit/com/r/DadWouldBeProud
+https://www.reddit.com/r/freeusefamily
 https://www.reddit.com/r/DadsGoneWild/
-https://www.reddit.com/r/Amateurincest/
+https://www.reddit.com/r/Amateurincest/ !
 https://www.reddit.com/r/xxxcaptions/
 https://www.reddit.com/r/taboocaptions/
 https://www.reddit.com/r/wincest/
 https://www.reddit.com/r/momcest
+https://www.reddit.com/r/IncestNSFW/
+https://www.reddit.com/r/NSFWGifsWithPlots/
 https://www.reddit.com/r/daddykink/
+https://www.reddit.com/r/SiswithBenefits/
+https://www.reddit.com/r/bukkake
+https://www.reddit.com/r/shibari
+https://www.reddit.com/r/orgy
+https://captionedincest.tumblr.com
 https://motherless.com
+http://milfmoza.com
+http://javincest.com
 https://theporndude.com
 http://pornhub.com
 http://xvideos.com
 http://youporn.com
+https://youjizz.com
 
 
 --------------------------------------------------------------------------------
@@ -1080,7 +1120,7 @@ List of definitions for sexual fetishes & kinks:
 * https://rekink.com/guides/kinks/ (http://archive.is/xCwfh)
 * https://ru.lovense.com/bdsm-blog/list-of-kinks (http://archive.is/H28md)
 * http://urbandictionary.org
-* Glossary of JAV and hentai and Japanese porn terms (several backups available online...)
+* Glossary/Dictionary of JAV and hentai and Japanese porn (JAV) terms (several backups available online...)
 
 ---
 
