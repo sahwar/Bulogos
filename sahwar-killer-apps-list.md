@@ -10,21 +10,22 @@
 
 ---
 ## My major favorite apps for MS Windows (MS Windows 7&up, some apps also work under MS Windows XP SP3...)
-[ClassicShell](http://www.classicshell.net/) ([ClassicShell at GitHub](https://github.com/coddec/Classic-Shell), [Open-Shell (Classic Shell reborn, for Windows 10, too](https://github.com/Open-Shell), [Spencer (WindowsXP-like menu for Windows7+](http://www.the-sz.com/products/spencer/)), `explorer.exe` (Windows Explorer file-manager), `taskmgr.exe` (Task Manager), `calc.exe` (Calculator), (`cmd.exe` / PowerShell), **[Wox (speed-launcher)](https://github.com/Wox-launcher/Wox)** (other [launchers](https://github.com/topics/launcher), e.g. ULauncher on GitHub), **_ResourceHacker_** (_it lets you disassemble and edit/hack `.exe` file - i.e. the internals of executable files for MS Windows - it edits the internals of apps & video-games!!! Use it in conjuction with a HexEditor app and a Unicode-able text-editor; it may even disassemble many packed binary files, like video-game saves savestates files, levels map files, etc. --- enable (WITH CAUTION!!!) `explorer.exe`'s 'Show hidden files' and 'Show system files' to see many such files BUT make sure NOT to fuck up system files!!!_), **[Notepad2-mod](https://github.com/XhmikosR/notepad2-mod/releases/)** / (**[Notepad3](https://github.com/rizonesoft/Notepad3/)** (_**[download](https://www.rizonesoft.com/downloads/notepad3/)**_) / **[Notepadqq](https://notepadqq.com/s/)** ([Notepadqq at GitHub](https://github.com/notepadqq/notepadqq)), **[notepad2e](https://github.com/ProgerXP/Notepad2e)**, [notepad2 mods by Code.Kliu.org](http://code.kliu.org/misc/notepad2/), [Notepad2, the original (by Florian Balmer)](http://www.flos-freeware.ch/notepad2.html)), **[Notepad++](https://notepad-plus-plus.org/) (_+add-ons, see below, e.g. DSpellCheck, TextFX Characters, MarkdownViewer++_)**, [spacemacs text editor](https://github.com/syl20bnr/spacemacs) (http://spacemacs.org/), [NeoVim text-editor](https://github.com/neovim/neovim) (https://neovim.io/), **[SpaceVim](https://spacevim.org)**, Emacsen, **[Cream Vim](http://cream.sourceforge.net/)**, medit+`sort | uniq`, Kakoune, KDE Kate, Oni, CudaText, Howl, Eclipse Che, LightTable, SynWrite; Slap, Syntaxic, **jEdit**, SlickEdit (+its on-the-fly code beautifier), `micro`, `nano`, Yi (Haskell); **GitHub Atom text editor**, Adobe Brackets, **gEdit** (+add-ons&snippets - e.g. snipplr.com & commandlinefu.com ), **gVim**, [qemacs](https://bellard.org/qemacs/), Femto Emacs, GNU Emacs GUI (>v23.2); GNU coreutils + awk & sed & ls & grep & pcre & iconv & wget & curl & lftp & aria2-cli, $pandoc, etc. GNU&bash/zsh CLI commands; **MS VSCode**, **Geany IDE**, [super-emacs](https://github.com/myTerminal/super-emacs), medit (Linux), FreeMind, LibreOffice, Scribus (alternative to Adobe InDesign), 
+[ClassicShell](http://www.classicshell.net/) ([ClassicShell at GitHub](https://github.com/coddec/Classic-Shell), [Open-Shell (Classic Shell reborn, for Windows 10, too](https://github.com/Open-Shell), [Spencer (WindowsXP-like menu for Windows7+](http://www.the-sz.com/products/spencer/)), `explorer.exe` (Windows Explorer file-manager), `taskmgr.exe` (Task Manager), `calc.exe` (Calculator), (`cmd.exe` / PowerShell), **[Wox (speed-launcher)](https://github.com/Wox-launcher/Wox)** (other [launchers](https://github.com/topics/launcher), e.g. ULauncher on GitHub), **_ResourceHacker_** (_it lets you disassemble and edit/hack `.exe` file - i.e. the internals of executable files for MS Windows - it edits the internals of apps & video-games!!! Use it in conjuction with a HexEditor app and a Unicode-able text-editor; it may even disassemble many packed binary files, like video-game saves savestates files, levels map files, etc. --- enable (WITH CAUTION!!!) `explorer.exe`'s 'Show hidden files' and 'Show system files' to see many such files BUT make sure NOT to fuck up system files!!!_), **[Notepad2-mod](https://github.com/XhmikosR/notepad2-mod/releases/)** / (**[Notepad3](https://github.com/rizonesoft/Notepad3/)** (_**[download](https://www.rizonesoft.com/downloads/notepad3/)**_) / **[Notepadqq](https://notepadqq.com/s/)** ([Notepadqq at GitHub](https://github.com/notepadqq/notepadqq)), **[notepad2e](https://github.com/ProgerXP/Notepad2e)**, [notepad2 mods by Code.Kliu.org](http://code.kliu.org/misc/notepad2/), [Notepad2, the original (by Florian Balmer)](http://www.flos-freeware.ch/notepad2.html)), **[Notepad++](https://notepad-plus-plus.org/) (_+add-ons, see below, e.g. DSpellCheck, TextFX Characters, MarkdownViewer++_)**, [spacemacs text editor](https://github.com/syl20bnr/spacemacs) (http://spacemacs.org/), [NeoVim text-editor](https://github.com/neovim/neovim) (https://neovim.io/), **[SpaceVim](https://spacevim.org)**, Emacsen, **[Cream Vim](http://cream.sourceforge.net/)**, medit+`sort | uniq`, Kakoune, KDE Kate, Oni, CudaText, Howl, Eclipse Che, LightTable, SynWrite; Slap, Syntaxic, **jEdit**, SlickEdit (+its on-the-fly code beautifier), `micro`, `nano`, Yi (Haskell); **GitHub Atom text editor**, Adobe Brackets, **gEdit** (+add-ons&snippets - e.g. snipplr.com & commandlinefu.com ), **gVim**, [qemacs](https://bellard.org/qemacs/), Femto Emacs, GNU Emacs GUI (>v23.2); GNU coreutils + awk & sed & ls & grep & pcre & iconv & wget & curl & lftp & aria2-cli, `$ pandoc`, etc. GNU&bash/zsh CLI commands; **MS VSCode**, **Geany IDE**, [super-emacs](https://github.com/myTerminal/super-emacs), medit (Linux), FreeMind, LibreOffice, Scribus (alternative to Adobe InDesign), 
 [FocusWriter novel-writing app](https://gottcode.org/focuswriter/), [yWriter6 (novel-writing text editor app!](http://www.spacejock.com/yWriter6.html) & [other useful apps from Spacejock Software (Simon Haynes)](http://www.spacejock.com/Software.html) & http://www.spacejock.com/Utils.html , [TeXWorks](https://www.tug.org/texworks/) ([translate/localize TeXWorks!](https://github.com/TeXworks/texworks/wiki/Translating)); [BabelMap](http://www.babelstone.co.uk/Software/BabelMap.html) (Unicode character map), graphemica.co, [(VoidTools) Search Everything](https://www.voidtools.com/) (file-searching-by-filename&regex engine for Windows), `AEDict.exe` ([AEDictionary](http://www.kamburov.net/aleksandar/projects/aedict/), an old but FAST Bulgarian<->English dictionary), [Megadict-BG](http://www.megadict-bg.com/) dictionary, [GoldenDict](http://goldendict.org/), [bgEngDictionary](), [IDI Spellchecker&Dictionary](http://www.freeplace.info/ididictionary/bulgarian_spell_checker/) (v2.44/v4.??, buy the latest best version from [here](http://www.freeplace.info/ididictionary/bulgarian_spell_checker/)!), [paint.net](https://www.getpaint.net/), [GifCam](http://blog.bahraniapps.com/gifcam/) (bahraniapps.net), [ShareX](https://getsharex.com/), [nomacs](http://nomacs.org/) (image viewer), [Imagine](http://www.nyam.pe.kr/dev/imagine/) (image viewer), IrfanView, (GPicView&etc. for Linux), [NexusFont](http://www.xiles.net/) (font-manager), [Audacity](https://www.audacityteam.org/), [Mozilla Firefox](https://www.mozilla.org/bg/firefox/new/) (v56+, x64 as of 2018), [Google Chrome](https://www.google.com/chrome/), [MPC-HC](https://mpc-hc.org/) (Media Player Classic - Home Cinema), [VLC](https://www.videolan.org/), [Baka MPlayer](http://bakamplayer.u8sand.net/) ([mpv](https://mpv.io/)-based), [SMPlayer](https://www.smplayer.info/), Daum PotPlayer (freeware), The KMPlayer (freeware), Oracle VM [VirtualBox](https://www.virtualbox.org/) (OS virtualization), [PidginIM](http://pidgin.im/) (XMPP/Jabber IM client), [Skype](https://www.skype.com/en/get-skype/), [Viber](https://www.viber.com/), [Facebook Messenger](https://www.messenger.com), [EiskaltDC++](https://sourceforge.net/projects/eiskaltdcpp/) ([2](https://github.com/eiskaltdcpp/eiskaltdcpp))/[ApexDC](https://www.apexdc.net/)/[DC++](http://dcplusplus.sourceforge.net/index.html), [qBitTorrent](https://www.qbittorrent.org/), [youtube-dl.exe](http://youtube-dl.org/) ( https://ytdl-org.github.io/youtube-dl/download.html , latest for MS Windows: https://yt-dl.org/downloads/latest/youtube-dl.exe ), [wget64.exe](https://eternallybored.org/misc/wget/), **wget2** (https://gitlab.com/gnuwget/wget2), **_[cURL / curl64.exe](https://curl.haxx.se/download.html)_** (**https://curl.haxx.se/docs/comparison-table.html**) (`-Z` & `libcurl` - https://curl.haxx.se/docs/manpage.html ), [lftp](https://lftp.yar.ru/) ([lftp on GitHub.com](https://github.com/lavv17/lftp)), [aria2/Aria2c](https://aria2.sourceforge.io/), ugetdm, [snarf](https://www.xach.com/snarf/), [wget](https://www.gnu.org/software/wget/), [pavuk](http://www.pavuk.org/), [fget](https://www.fefe.de/fget/), [Axel (CLI download manager)](https://github.com/axel-download-accelerator/axel) (old: http://axel.alioth.debian.org/ ) (**NOT to be confused with** https://axel.org/sharing or https://axel.org/transfer !), [hget](https://github.com/huydx/hget), [httrack](https://www.httrack.com/), [HTTPie](https://httpie.org/), [nugget](https://github.com/maxogden/nugget), [pget](https://github.com/Code-Hex/pget), [dl - 5ko.free.fr (dl : Сваляне на последователно номерирани файлове)](http://archive.is/2U3pA), `get_words_data_v5.php` (by [OmegaKO](http://animerulezzz.org)), [AWGG (wget/curl GUI](https://github.com/Nenirey/AWGG) ( https://sourceforge.net/projects/awgg/files/latest/download ; https://sites.google.com/site/awggproject/file-cabinet ; https://wiki.freepascal.org/images/f/fa/Pantallazo-AWGG_0.3.0_ALPHA_BUILD_2002.png ), **[ffmpeg.exe](https://ffmpeg.org/) ([ffmpeg MS-Windows builds](https://ffmpeg.zeranoe.com/builds/))** / **[libav](https://www.libav.org/)**... [7-ZIP](https://www.7-zip.org/) / [PeaZip](http://www.peazip.org/), [Krita](https://krita.org/en/), [MyPaint](http://mypaint.org/), [Medibang Paint Pro](https://medibangpaint.com/en/), [SpeedyPainter](http://speedypainter.altervista.org/), [JPixel](https://emad.itch.io/jpixel), `pdf2htmlEX` ( https://github.com/coolwanglu/pdf2htmlEX ; https://coolwanglu.github.io/pdf2htmlEX/demo/cheat.html ), `img2pdf` ( https://github.com/josch/img2pdf ), [Rufus (ISO-writing-to-USB-flashstick tool)](https://github.com/pbatard/rufus) / [Etcher](https://github.com/balena-io/etcher) + 
-https://web.archive.org/web/20180411033142/https://wiki.gnome.org/Apps/MultiWriter + MultiBootISO & YUMI + ... RepubISO... / PrepISO... + unetbootin + USU USB ISO-writing app + `md5sum.exe` , [FilePizza](https://github.com/kern/filepizza), [waifu2x](http://waifu2x.udp.jp/index.html), ..., [Shortcut (video-editor)](https://shotcut.org/), [Open Shot (video-editor)](https://www.openshot.org/) ([(translations over at LaunchPad.net)](https://translations.launchpad.net/openshot/2.0/+translations)), [Kdenlive](https://kdenlive.org/en/), [OBS (Open Broadcaster Software) Studio](https://obsproject.com/) (Free and open source software for video recording and live streaming - for Windows, Linux, macOS), [LibreCAD](https://librecad.org/), [Blender3D](https://www.blender.org/), [Greenfish Subtitle Player](http://greenfishsoftware.org/gfsp.php#apage) (FREEWARE, Windows-only), [Aegieub](http://aegisub.org), http://subworkshop.sourceforge.net/ , Jubler, Open Subtitle Editor, Subtitle Creator, SubMagic, https://lintut.com/best-subtitle-editors-for-linux/ , (datetime-stamp еditing forensic software), etc.
+https://web.archive.org/web/20180411033142/https://wiki.gnome.org/Apps/MultiWriter + MultiBootISO & YUMI + ... RmpubISO?... / PrepISO... + unetbootin + USU USB ISO-writing app + `md5sum.exe` , [FilePizza](https://github.com/kern/filepizza), [waifu2x](http://waifu2x.udp.jp/index.html), ..., [Shortcut (video-editor)](https://shotcut.org/), [Open Shot (video-editor)](https://www.openshot.org/) ([(translations over at LaunchPad.net)](https://translations.launchpad.net/openshot/2.0/+translations)), [Kdenlive](https://kdenlive.org/en/), [OBS (Open Broadcaster Software) Studio](https://obsproject.com/) (Free and open source software for video recording and live streaming - for Windows, Linux, macOS), [LibreCAD](https://librecad.org/), [Blender3D](https://www.blender.org/), [Greenfish Subtitle Player](http://greenfishsoftware.org/gfsp.php#apage) (FREEWARE, Windows-only), [Aegieub](http://aegisub.org), http://subworkshop.sourceforge.net/ , Jubler, Open Subtitle Editor, Subtitle Creator, SubMagic, https://lintut.com/best-subtitle-editors-for-linux/ , (datetime-stamp еditing forensic software), etc.
+`nircmd.exe` (MS Windows) ( http://nirsoft.com )
 
 * [DSpeech TTS](http://dimiodati.altervista.org/zip/dspeech.zip), DTaskManager, Deep Explorer, DSynchronize (freeware MS Windows apps by Dimio Software / Dimitrios Coutsoumbas): 
 http://dimio.altervista.org/eng/ (backup HTML: http://archive.is/nM3aV )
 https://www.kaldata.com/%d1%81%d0%be%d1%84%d1%82%d1%83%d0%b5%d1%80/dspeech-268550.html
-* GPU Caps Viewer, Process Hacker 2, Sysinternals Process Explorer, Sysinternals ProcessMonitor (ProcMon), process manager from {guy with useful freeware&open-source MS Windows apps}, CPU-Z, GPU-Z, CPUCores, Graphics Gale, KDE Lokalize, Qt Linguist, KBabel/QtBabel, *Weblate, Translate Toolkit, Mozilla Pantoon, WebRTC, https://mastodon.social/@ownclouders (Twitter clone), https://owncloud.com/ (DropBox clone), https://identi.ca/, http://pump.io/, SyncThing, FreeFileSync..., etc...
+* GPU Caps Viewer, Process Hacker 2, Sysinternals Process Explorer, Sysinternals ProcessMonitor (ProcMon), process manager from {guy with useful freeware&open-source MS Windows apps}, CPU-Z, GPU-Z, CPUCores, Graphics Gale (now freeware!), KDE Lokalize, Qt Linguist, KBabel/QtBabel, **Weblate**, Translate Toolkit, Mozilla Pantoon, WebRTC, https://mastodon.social/@ownclouders (Twitter clone), https://owncloud.com/ (DropBox clone), https://identi.ca/, http://pump.io/, SyncThing, FreeFileSync... , etc...
 * etc.
 
 * https://bg.wikipedia.org/w/index.php?title=%D0%9A%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0_%D0%BF%D0%BE%D0%B4%D1%80%D0%B5%D0%B4%D0%B1%D0%B0&oldid=9628002
 https://www.urbandictionary.com/define.php?term=Cancel%20Culture
-* FilePizza, OwnCloud, screencasting&webcasting&screensharing&live-webstreaming/live-webcam (e.g. ChatRoulette-like); (article about surveillance-secured/self-hosted-on-TorNetwork-onion-URL or self-hosted encrypted at specific times of the day/week app for gonzo journalism / civil-disobedience anti-totalitarianism file&folders&hard-drives-filesystems-sharing apps; p2p (.torrent, metalinks, magnet-links, edonkey/Shareeza/edonkey2 p2p, DC++/ADC, etc.); SynchThing, 
-F*EX (Frams' Fast File EXchange) is a service to send big (large, huge, giant, ...) files from a user A to a user B. --- mirror/clone http://fex.rus.uni-stuttgart.de/ , https://github.com/nwtgck/piping-server ,
-AppImageKit, SystemImageKit, YUMI
+* FilePizza (p2p filesharing via a modern standards-compliant Acid2test-certified web-browser), OwnCloud, SyncThing, _FreedomBox_, **OnionShare**, http://matrix.org, http://tox.im, http://xmpp.org + Jingle VoIP+p2p-filesharing extension, screencasting&webcasting&screensharing&live-webstreaming/live-webcam (e.g. ChatRoulette-like); (article about surveillance-secured/self-hosted-on-TorNetwork-onion-URL or self-hosted encrypted at specific times of the day/week app for gonzo journalism / civil-disobedience anti-totalitarianism file&folders&hard-drives-filesystems-sharing apps; p2p (.torrent, metalinks, magnet-links, edonkey/Shareeza/edonkey2 p2p, DC++/ADC, etc.); 
+**F*EX (Frams' Fast File EXchange) is a service to send big (large, huge, giant, ...) files from a user A to a user B. --- mirror/clone http://fex.rus.uni-stuttgart.de/ ***, https://github.com/nwtgck/piping-server , github.com - `wdt`
+AppImageKit, SystemImageKit, YUMI; Ubuntu `snap`s, source `tar.gz` / `tar.lz2` / `tar.bzip` `.tar.xz`, etc....
 https://www.pling.com/s/ALL/search/projectSearchText/keyboard%20layout%20editor
 *
 https://sites.google.com/site/kdekorte2/gnomemplayer (its comprehensive Playlist window design is very much needed in MPC-HC, mpv & BakaMplayer)
@@ -33,7 +34,7 @@ https://sites.google.com/site/kdekorte2/gnomemplayer (its comprehensive Playlist
 ---
 * https://github.com/basildane/WakeOnLAN ( https://wol.aquilatech.com/ )
 * https://nirsoft.net/utils/wake_on_lan.html , https://nirsoft.net/utils/product_cd_key_viewer.html
-* UltraVNC, Reminna (Linux), ssh, mosh, remote-desktop (RTP), screen-sharing (Skype, qTox, etc.), oekaki/oakeki online multiplayer board, Japanese-style 4chan-like imageboards & imageboard software, etc.; web-forum software packages, lightweight online comments-section software, etc.
+* UltraVNC, Reminna/Remmina (Linux VNC&RDP app), NX app, ssh, mosh, remote-desktop (RTP), screen-sharing (Skype, qTox, etc.), oekaki/oakeki online multiplayer board, Japanese-style 4chan-like imageboards & imageboard software, etc.; web-forum software packages, lightweight online comments-section software, etc.
 * _**for DirectX/Direct 3D video games compatibility:**_ **[DxWnd](https://sourceforge.net/projects/dxwnd/)** ( https://sourceforge.net/p/dxwnd/home/Home/ , https://sourceforge.net/projects/dxwnd/files/ ) (  , https://www.play-old-pc-games.com/compatibility-tools/using-dxwnd/ , https://softradar.com/dxwnd/ , https://www.majorgeeks.com/files/details/dxwnd.html , + 
 
 ````
@@ -44,8 +45,7 @@ _DxWnd_ - https://sourceforge.net/projects/dxwnd/ + https://www.pcgamingwiki.com
 https://sourceforge.net/projects/dxglwrap/
 https://sourceforge.net/projects/gldirect/
 
-
-ScummVM, DOSbox, FreeDOS, qemu, Oracle VirtualBox, MAMEx64+MAME-GUIs + Wine & Wine-staging / PlayOnLinux / CedegaForSteam (WineX) + Valve SteamOS Linux - Valve Proton compatibility app...
+ScummVM, DOSbox, FreeDOS, qemu, _**Oracle VirtualBox**_, MAMEx64+MAME-GUIs + **Wine & Wine-staging** / PlayOnLinux / CedegaForSteam (WineX) + Valve SteamOS Linux - Valve Proton compatibility app for Valve SteamOS Linux...
 
 -------
 
@@ -292,7 +292,7 @@ https://georgi.unixsol.org/programs/X11/xkb.sh = xkb = https://bg.wikipedia.org/
 * [...] NeoVim, Spacemacs, SpaceVim, Kakoune, KDE Kate, Notepad++ (MS Windows), Notepad2-mod, Notepad3, Notepadqq, Oni, CudaText, Howl, Eclipse Che, 
  LightTable, qemacs, Femto Emacs, SynWrite, Emacs (>v23.2); Slap, Syntaxic, jEdit, SlickEdit (+its on-the-fly code beautifier), micro, nano, Yi (Haskell); GitHub Atom, Brackets, gEdit, gVim, 
 
-Spacemacs, NeoVim или Notepad3, Notepadqq, Notepad2-mod + awk & sed & ls & grep & pcre & iconv & wget & curl & lftp & aria2-cli, $pandoc, etc CLI commands, GitHub Atom, MS VSCode, Geany IDE, даже Notepad++ (Windows).
+Spacemacs, NeoVim или Notepad3, Notepadqq, Notepad2-mod, Notepad++&addons (run via Wine/wine-staging) + awk & sed & ls & grep & pcre & iconv & wget & curl & lftp & aria2-cli, $pandoc, etc CLI commands, GitHub Atom, MS VSCode, Geany IDE, даже Notepad++ (Windows).
 
 Освен Spacemacs или NeoVim, друго няма читаво като GUI за emacs или vi(m), освен old-school GVim и GNU Emacs GUI, и разни експериментални нови разработки надстройки-mods на vim & emacs в GitHub и GitLab...
 https://github.com/myTerminal/super-emacs
@@ -457,7 +457,7 @@ https://xyne.archlinux.ca/repos/
 * https://www.voidtools.com/
 * **http://copy.sh/** (e.g. http://copy.sh/lcd/ )
 * **https://bellard.org/** (absolutely amazing software projects and DIY ideas!!!) (e.g. https://bellard.org/jslinux/ )
-* **https://invisible-island.net** ( https://invisible-island.net/luit.html - `iconv` ) (amazing software!); `luit`, `iconv`, `libiconv`,
+* **https://invisible-island.net** ( https://invisible-island.net/luit.html - `iconv` ) (amazing software!); `luit`, `iconv`, `libiconv`, http://2cyr.com
 * http://fex.rus.uni-stuttgart.de/ ( http://archive.fo/48UNY ) & **http://fex.belwue.de/fstools/** ( http://archive.is/OskCS ) = absolutely amazing software for UNIX/Linux written in Perl by Ulli Horlacher, especially F\*EX!!!
 * http://www.infodrom.org/projects/gerstensaft/ , http://www.infodrom.org/projects/manpages-de/ , http://www.infodrom.org/projects/cfingerd/ , http://www.infodrom.org/projects/sysklogd/ , http://www.infodrom.org/linx/ , http://www.infodrom.org/projects/webgraph/ , http://www.infodrom.org/projects/webtomail/ , http://www.infodrom.org/projects/uucpsend/ , http://www.infodrom.org/projects/calendar/ , http://www.infodrom.org/projects/sqllib/ , http://www.infodrom.org/projects/ticket/
 * http://newyork.mashke.org/Conv/lat-koi.html = nice examples of _Perl scripts_ for **Cyrillic transliteration**!
@@ -739,8 +739,8 @@ iPod photo uploader - tripid ((GNU/)Linux)
 Zotero app + BibTeX + http://citationstyles.org
 djvuLibre .djvu viewer
 F4L (Flash4Linux) app
-FontForge ((GNU/)Linux)
-HotShots (KDE) ((GNU/)Linux)
+FontForge ((GNU/)Linux) & Birdfont font editor
+HotShots (KDE) ((GNU/)Linux); RecordMyDesktop, vokoscreen; bahraniapps.org GifCam & VClip
 
 http://www.postel.org/postel.html
 
@@ -752,14 +752,15 @@ http://www.compciv.org/bash-guide/
 
 https://curl.haxx.se/docs/manpage.html
 https://curl.haxx.se/docs/
+`curl`, `wget`, `wget2`, `aria2c`, `lftp`, `httpie`, 
 
-http://pwmt.org - Zathura, Jumanji, ... apps
-http://suckless.org - amazing Linux apps
-http://ezix.org - pukcab file-backuping
+http://pwmt.org - Zathura, Jumanji, ... apps - amazing apps!
+http://suckless.org - amazing Linux apps!!!
+http://ezix.org - `pukcab` file-backuping similar but not identical to `rsync`, FreeFileSync, etc.
 
 ElementaryOS apps
 PuppyLinux Ubuntu apps
-Best file-managers for (GNU/)Linux: SpaceFM, sunflower-fm.org, Dolphin FM (KDE5+), Nemo FM + fork, PuppyLinux FLTK file-browser, conqueror, Konqueror, etc.
+Best file-managers for (GNU/)Linux: PCManFM, ThunarFM, _SpaceFM_, _sunflower-fm.org_, *Dolphin FM (KDE5+)*, Nemo FM + fork, PuppyLinux FLTK file-browser, conqueror, Konqueror, etc.; JWM
 
 ***
 
@@ -819,7 +820,7 @@ https://www.ibiblio.org/catalog/items/browse/tag/Software+Mirrors
 https://core.suckless.org/
 https://tools.suckless.org/
 https://surf.suckless.org/ (lightweight web-browser) + https://tools.suckless.org/tabbed/
-[st](https://st.suckless.org/), [uzbl](http://uzbl.org/) (lightweight web-browser), [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) and [xterm](http://invisible-island.net/xterm/)
+[st](https://st.suckless.org/), [uzbl](http://uzbl.org/) (amazing lightweight web-browser!!!), [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) and [xterm](http://invisible-island.net/xterm/)
 https://tools.suckless.org/sent/
 https://tools.suckless.org/farbfeld/
 https://core.suckless.org/
@@ -996,20 +997,20 @@ http://alternativeto.net/software/disqus/?license=opensource
 
 **https://github.com/LazyZhu/wdt** (!!!!!!!!!!!!!!!!!!!!)
 https://github.com/github/archive-program/
-https://www.solarus-games.org/
-FlairRPG
+https://www.solarus-games.org/ (2D jRPG)
+FlairRPG (the best open-source clone of Blizzard Entertainment's Diablo I!)
 https://www.boost.org/
 https://dl.bintray.com
 https://dl.bintray.com/boostorg/release/1.72.0/source/
 https://sdl.org
 https://opengl.org
-https://fltk.org
+https://fltk.org & JWM & OpenBox (!) (BlackBox - for MS Windows)
 https://gnome.org
 https://kde.org
 https://xfce.org
 https://lxqt.org
 https://lxde.org
-https://xmonad.org
+https://xmonad.org !!! i3, etc.
 https://x.org
 https://wayland.org
 https://ubuntu.com
@@ -1053,21 +1054,23 @@ App*.xml format for portable application software description
 
 https://github.com/lpereira/hardinfo - linux tool similar to `lshw`
 http://hardinfo.org/
+CLI apps for hardware information: `lshw`, `inxi`, `lscpu`; `uname -a`; `scrot -d 3` (CLI screenshot tool), `lsb_release -a`; `hwinfo`, `hardinfo`, `hwnfo` (???); `nano` CLI text editor
+`$ dpkg --list | grep linux-image`
+`$ rpm -qa kernel`, `yum list installed kernel`; `nugget` file downloader; `httpie` (???)
 
 https://github.com/monperrus/jskomment
-http://remark42.org
+http://remark42.org (!!! self-hosted open-source comment system for embedding into your website!)
 posativ/isso/
 hashover
 hashover-next
 
 (GNU/)Linux OS-level clipboard: `xsel`, `xclip`; `xargs`, ...
 
-
 ---
 EXIF & ICC-color-profile & etc. info & a-script-that-adds-a-Windows-shell-menu-item-that-embeds-an-ORIGIN-URL+author+datetime-stamp-textstring-inside-PNG-metadata-block
 ````
 
-* http://www.webdav.org/ (`Briefly: WebDAV stands for "Web-based Distributed Authoring and Versioning". It is a set of extensions to the HTTP protocol which allows users to collaboratively edit and manage files on remote web servers.`) + WebDAV + LDAP + WebAssembly (wasm) + JavaScript (ECMAScript v6+) + + XDCC p2p file-sharing over IRC + DC++/ADC hub+client... + .Onion http shares, + http://matrix.org + http://xmpp.org + Jingle VoIP + p2p-filesharing-over-NAT-and-proxy, etc. ... + http://xmpp.org + Jingle VoIP+p2p-filesharing, http://matrix.org , http://tox.im ; http://conversations.im ; http://jitsi.im ; http://telegram.com ; http://whatsapp.com ; http://viber.com ; http://skype.com ; http://gajim.im ; http://pidgin.im ; DC++ + linux-dc++ + EistaltDC++ + ... Tor web-browser .onion shares + cryptocurrencies & blockchain + p2p DHT & `magnet:` links & .torrent trackers + FilePizza + WebRTC + f*ex/sexxx (Fram's...) + `ssh` / `mosh`, OpenSSL, GnuPG (GPG) + cryptographic hash keys, passwords&keyring-storage-app (KeyPassX / KeePassX, etc.), etc.
+* LDAP & http://matrix.org & http://retroshare.org & **http://www.webdav.org/** (`Briefly: **WebDAV** stands for "Web-based Distributed Authoring and Versioning". It is a set of extensions to the HTTP protocol which allows users to collaboratively edit and manage files on remote web servers.`) + WebDAV + LDAP + WebAssembly (wasm) + JavaScript (ECMAScript v6+) + + XDCC p2p file-sharing over IRC + DC++/ADC hub+client... + .Onion http shares, + http://matrix.org + http://xmpp.org + Jingle VoIP + p2p-filesharing-over-NAT-and-proxy, etc. ... + http://xmpp.org + Jingle VoIP+p2p-filesharing, http://matrix.org , http://tox.im ; http://conversations.im ; http://jitsi.im ; http://telegram.com ; http://whatsapp.com ; http://viber.com ; http://skype.com ; http://gajim.im ; http://pidgin.im ; DC++ + linux-dc++ + EistaltDC++ + ... Tor web-browser .onion shares + cryptocurrencies & blockchain + p2p DHT & `magnet:` links & .torrent trackers + FilePizza + WebRTC + f*ex/sexxx (Fram's...) + `ssh` / `mosh`, OpenSSL, GnuPG (GPG) + cryptographic hash keys, passwords&keyring-storage-app (KeyPassX / KeePassX, etc.), etc.
 * https://github.com/sabre-io/dav
 * https://github.com/sabre-io/Baikal
 * https://gitlab.com/bitfireAT/davx5-ose
@@ -1077,7 +1080,7 @@ https://old.reddit.com/r/stylus/wiki/index
 ### `grep`-like search apps & `awk`-like text-processing apps for (GNU/)Linux
 
 * https://pdfgrep.org/ , https://github.com/phiresky/ripgrep-all , **https://github.com/cboxdoerfer/fsearch** (similar to the MS Windows tool voidtools.com _Search Everything_ (x64 + localization file), https://github.com/mptre/pick , https://github.com/Canop/broot , https://github.com/BurntSushi/ripgrep , https://github.com/nlamirault/ripgrep.el , https://github.com/monochromegane/the_platinum_searcher , https://github.com/sampson-chen/sack , https://github.com/gvansickle/ucg , https://github.com/svent/sift ( https://sift-tool.org/ , https://sift-tool.org/docs ) ,  https://github.com/shepmaster/jetscii , https://github.com/tkisason/gcrack , https://github.com/Wilfred/ag.el , https://github.com/p-e-w/plotinus (A searchable command palette in every modern GTK+ application), https://github.com/omaciel/pipsearch ,   https://github.com/k-takata/the_silver_searcher-win32 , https://github.com/antirez/kilo , https://github.com/KirillOsenkov/QuickInfo , https://github.com/syohex/emacs-helm-ag , https://github.com/cliffordfajardo/cato , https://github.com/MarioVilas/googlesearch , https://github.com/learnbyexample/Command-line-text-processing , https://github.com/radiantearth/stac-spec , https://github.com/quasoft/postgres-tsearch-bulgarian , https://github.com/jonbakerfish/TweetScraper , https://github.com/appbaseio/dejavu , https://github.com/prakharchoudhary/TwitterAdvSearch , https://github.com/eugeneware/replacestream , https://github.com/vividvilla/csvtotable , https://github.com/eisenbraun/columns , https://github.com/jarun/googler , https://github.com/ggreer/the_silver_searcher , https://github.com/sematext/related-searches , https://github.com/xanderdunn/twitter-scraper , https://github.com/derekeder/csv-to-html-table , https://github.com/tmux-plugins/tmux-copycat , https://github.com/A/go-search-me , https://github.com/btdig/dhtcrawler2 , https://github.com/learnbyexample/learn_gnugrep_ripgrep , https://github.com/ProgerXP/Notepad2e ; https://github.com/onetrueawk/awk , https://github.com/lotabout/rargs (extended `xargs`, https://github.com/TheMozg/awk-raycaster , https://github.com/KirillOsenkov/QuickInfo , https://github.com/ahefner/shuffletron , https://github.com/shepmaster/jetscii , https://github.com/tkisason/gcrack , https://github.com/eugeneware/replacestream , https://github.com/sematext/related-searches , https://github.com/xanderdunn/twitter-scraper , https://github.com/derekeder/csv-to-html-table , https://github.com/tmux-plugins/tmux-copycat , https://github.com/A/go-search-me , https://github.com/m-ender/retina , https://github.com/IonicaBizau/regex-escape.js , https://github.com/rust-lang/regex , https://github.com/firasdib/Regex101 , https://github.com/fitzgen/glob-to-regexp , https://github.com/javallone/regexper-static ; `mlocate`, `locate`, `find`, `ffind`, catfish (GUI frontend for `locate` and `find`), etc. + file launcher + desktop omnilaunchers (similar to Wox for MS Windows, Alfred app for macOS, etc.), ...
-* nmap, iptables, hwls, hpt, `htop`, `top`, etc.
+* `nmap`, iptables, hwls, hpt, `htop`, `top`, etc.
 
 https://blog.p2pfoundation.net/proposal-percloud-permanent-personal-cloud-really-usable-one-alternative-facebook-gmail-flickr-dropbox/2018/01/31
 https://gizmodo.com/delete-never-the-digital-hoarders-who-collect-tumblrs-1832900423
@@ -1135,6 +1138,18 @@ https://twitter.com/EsotericExposal/status/1216861244138770433
 
 https://www.csdesignworks.com/blog/2015/06/attention-span-of-a-goldfish-sounds-fishy (attention deficit 'disorder', Alan Watts on the (self-)forgetfulness of the God(head) as a seemingly sepatate human organism individual with a persona/personality (mask), the Forgetting Curve & individual variations (proof of how human memory works & understanding of semi-amnesia (PTSD), moksha (personality disintegration - multiplicity AND concreteness & (secret inherent YinYang-y) UNITY (Indra's web, quantum mechanics, ecology, etc.), etc.
 
+OCRFeeder Studio ((GNU)Linux) + Google's `tessaractOCR` (+Bulgarian OCR pack); AWWG/Pantalazzo (GUI for `wget`, `curl`, `aria2c`, etc.)
+
+````
+Okapi Tikal (translation Toolset), QTranslator/Qt Translator, KDE KBabel; GNU GetText editor;
+Galculator, Klipper, Parcellite, SpaceFM, GPRename, Terminator terminal emulator, XArchiver, XArchive Manager, luckyBackup, Leafpad, HexChat, WorldDate; PCLinuxOS ((GNU/)Linux distro)
+ObarunLinux; SpaceFM; Sunflower-fm ((GNU/)Linux), Dolphin ((GNU/)Linux KDE file-manager); Orage calendar (for (GNU/)Linux), chamfer-wm (Vulkan-powered wm for (GNU)Linux), i3, http://suckless.org , etc.
+Nestopia (NES/SNES emulator app with OpenGL renderer), MeOCR (MS Windows), PDark (Perfect dark) (Japanese p2p filesharing app), splitbrain.org Crocofile web-app, spectrumizer (graphics dithering app), ASCII-art apps; frequency-generator apps;
+.
+MeOCR (MS Windows), OpenGL Extensions Viewer v5+ (MS Windows); NexusImage (freeware image viewer for MS Windows); NexusFont (freeware font-manager for MS Windows); NexusFile (freeware file-manager for MS Windows);
+````
+
+
 ## Under `Apple macOS` ##
 _I don't use macOS..._ In my opinion, it's only good for art/designer/webdev professionals... I only like some MacBook Pro's and the newer pressure-sensitive iPad's with a Wacom-like graphics stylus.
 Alfred launcher, PixelPicker, Pixen pixel-art app, Pixelmator Pro, PixelStyle Free, Adobe InDesign, Adobe Photoshop, etc.
@@ -1142,10 +1157,11 @@ Alfred launcher, PixelPicker, Pixen pixel-art app, Pixelmator Pro, PixelStyle Fr
 ## Under `Google Android` ##
 * (TO ADD from apps-list-generating apps & my own Google Play Favorited apps)
 * https://github.com/stevesoltys/seedvault (Google Android backup)
-* `adb` commandline tool (for backuping the apps list of a Google Android smartphone/tablet) + Android Studio + Android Studio (Commandline) Tools
+* `adb` commandline tool (for backuping the apps list of a Google Android smartphone/tablet) + **Android Studio + Android Studio (Commandline) Tools**
 
 ## Under `Apple iOS` ##
 _I don't use iOS..._
+nexusdiary (iOS), nexusmoney (smartphone app for Google Android devices ONLY?)
 
 -----
 
