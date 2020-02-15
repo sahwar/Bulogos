@@ -213,6 +213,7 @@ https://idol.sankakucomplex.com/?tags=creampie
 * само за забавление на дамите почитателки на JAV: https://jav.guru/31561 ;P
 * https://spankbang.com
 * https://youporn.com
+* http://youjizz.com
 * http://www.tubex6.com/cory-chase-in-breeding-mom/
 * https://spankbang.com/1gi0i/video/larkin+love+mom+and+son+taboo+creampie
 * https://www.xvideos.com/video29560345/mommy_showing_love_to_her_son
@@ -1079,10 +1080,20 @@ https://jav911.com/
 https://javhub.net/
 https://javhub.me/
 http://gfycat.com
-http://imgur.com
+http://imgur.com (image upload - list of free online image hosting websites & list of free online video hosting websites & list of free online file-sharing websites/platforms)
 http://imgflip.com
 http://9gag.com
 http://motifake.com
+http://streamable.com - for free sharing of short videos
+
+http://youtube.com
+http://vimeo.com
+http://d.tube
+http://fosstodon.org (a Mastodon instance; Mastodon is an open-source clone of Twitter.com)
+http://twitch.tv & OBS (open broadcaster software), 
+http://steamcommunity.com
+http://origin.com
+http://patreon.com
 
 https://en.wikipedia.org/wiki/Pornography_in_Japan
 https://avn.com/porn-stars
@@ -1098,9 +1109,11 @@ http://hentai2read.com
 http://luscious.net
 http://doujin.me
 http://doujin.com
+http://doujins.com
+http://doujin.com
 http://rule43.xxx
 
-http://watchseries.tv
+http://watchseries.tv + http://opensubtitles.org
 https://www.bgfilmi.net/
 https://www.seirsanduk.com/gledajteleviziq
 http://kolibka.bg

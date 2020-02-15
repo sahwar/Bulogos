@@ -407,6 +407,7 @@ https://www.makeuseof.com/tag/fix-mbr-windows-guide/
 https://www.makeuseof.com/tag/refresh-reset-restore-reinstall-windows/
 https://www.makeuseof.com/tag/3-check-system-restore-working/
 https://www.ubuntupit.com/top-15-best-embedded-systems-programming-languages/
+http://omgubuntu.co.uk
 
 ...
 
@@ -1071,6 +1072,38 @@ EXIF & ICC-color-profile & etc. info & a-script-that-adds-a-Windows-shell-menu-i
 ````
 
 * LDAP & http://matrix.org & http://retroshare.org & **http://www.webdav.org/** (`Briefly: **WebDAV** stands for "Web-based Distributed Authoring and Versioning". It is a set of extensions to the HTTP protocol which allows users to collaboratively edit and manage files on remote web servers.`) + WebDAV + LDAP + WebAssembly (wasm) + JavaScript (ECMAScript v6+) + + XDCC p2p file-sharing over IRC + DC++/ADC hub+client... + .Onion http shares, + http://matrix.org + http://xmpp.org + Jingle VoIP + p2p-filesharing-over-NAT-and-proxy, etc. ... + http://xmpp.org + Jingle VoIP+p2p-filesharing, http://matrix.org , http://tox.im ; http://conversations.im ; http://jitsi.im ; http://telegram.com ; http://whatsapp.com ; http://viber.com ; http://skype.com ; http://gajim.im ; http://pidgin.im ; DC++ + linux-dc++ + EistaltDC++ + ... Tor web-browser .onion shares + cryptocurrencies & blockchain + p2p DHT & `magnet:` links & .torrent trackers + FilePizza + WebRTC + f*ex/sexxx (Fram's...) + `ssh` / `mosh`, OpenSSL, GnuPG (GPG) + cryptographic hash keys, passwords&keyring-storage-app (KeyPassX / KeePassX, etc.), etc.
+* website downloaders & file download apps `--->` [curl](https://curl.haxx.se/docs/comparison-table.html) (official MS Windows builds: https://curl.haxx.se/windows/ ), [snarf](https://www.xach.com/snarf/), [wget](https://www.gnu.org/software/wget/) ([MS Windows port of wget](https://eternallybored.org/misc/wget/)),  [wget2](https://gitlab.com/gnuwget/wget2), [pavuk](http://www.pavuk.org/), [fget](https://www.fefe.de/fget/), [fetch (integral part of the FreeBSD OS)](https://www.freebsd.org/), [lftp](https://lftp.yar.ru/), [aria2](https://aria2.sourceforge.io/),
+ [httrack](https://www.httrack.com/), [HTTPie](https://httpie.org/); F*EX & sexxx; https://curl.haxx.se/libcurl/competitors.html ; https://whoshuu.github.io/cpr/ ;
+* Facebook/Instagram/FB Messenger, WhatsApp, Viber, Google Hangouts, (IRC/XDCC, XMPP+Jingle-XEP, Bonjour, ICQ, Telegram.com, matrix.org, OnionShare, DC++/ADC p2p+hubs, online (open-source-software-based) torrent-trackers, magnet-links, (Docker.com & Kubernetes&ElasticSearch&-search), MHT torrent, metalink = metalinker.org, Tox.im, Jitsi.org, KDE Kopete
+* Kermit p2p protocol/app; F\*EX & `sexxx` apps, `wdt` (GitHub), FilePizza, OwnCloud, SyncThing, rsync + cron jobs (Task Scheduler), FreeFileSync, ; ntp.org time-synchronization-servers, etc.
+* BitTorrent Download (recommended); If you can spare the bytes, please leave the client open after your download is finished, so you can seed it back to others. A web-seed capable client is recommended for fastest download speeds.; Netboot;
+* https://transfer.sh/
+
+````
+https://news.ycombinator.com/item?id=17352839
+https://github.com/gmendonca/simple-p2p-file-sharing
+https://www.ostechnix.com/iwant-decentralized-peer-peer-file-sharing-commandline-application/
+https://en.wikipedia.org/wiki/Peer-to-peer_file_sharing
+https://www.addictivetips.com/ubuntu-linux-tips/share-files-from-the-linux-terminal-transfer-sh/
+https://www.tecmint.com/file-sharing-from-linux-commandline/
+http://tuxdiary.com/tag/transfer-large-file/
+https://www.hongkiat.com/blog/file-sharing-command-line-transfer-sh/
+https://www.geckoandfly.com/23662/p2p-intranet-home-office-network/
+http://yatu.storycosmos.de/p2p-file-sharing.html
+https://www.sciencedirect.com/topics/computer-science/peer-to-peer-file-sharing
+https://www.researchgate.net/publication/220956059_Architectural_model_for_Wireless_Peer-to-Peer_WP2P_file_sharing_for_ubiquitous_mobile_devices
+https://ieeexplore.ieee.org/document/7982250
+https://en.wikibooks.org/wiki/Sidux/Useable_applications/P2P_file_sharing
+https://fastest.fish/ !!! ( http://archive.is/HdAtK ) - a list of p2p filesharing apps&websites
+https://www.filetopia.org/
+https://thevpn.guru/p2p-file-sharing-explained/
+http://MediaFire.com , http://drive.google.com (Google Drive - Гугъл Диск), DropBox, OneDrive: http://onedrive.microsoft.com, wetransfer.com, mega.com, http://file.pizza, , Firefox Send (p2p WebRTC/HTTP-based?), snapdrop.net, sharedrop.io, justbeamit.com, linshare.org
+Apple AirDrop ( https://support.apple.com/en-us/HT204144 ), Android Beam: https://www.androidauthority.com/how-to-use-android-beam-699961/ ; https://send-anywhere.com/
+https://www.dropbox.com & https://www.dropbox.com/transfer/about
+https://fastest.fish/peer-to-peer
+````
+
+* UNetbootin (liveISO-installing/setup app); 
 * https://github.com/sabre-io/dav
 * https://github.com/sabre-io/Baikal
 * https://gitlab.com/bitfireAT/davx5-ose
