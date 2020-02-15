@@ -116,7 +116,7 @@ Gamedev, game-art, open typography, and open-fonts making:
 * https://nhentai.net/ (top-secret: https://nhentai.net/users/1548271/breeder117 )
 * https://hentai2read.com/
 * https://hitomi.la/
-* https://hbrowse.com/
+* https://hbrowse.com/ (!)
 * https://www.hentairules.net/
 * https://www.fakku.net/
 * https://www.simply-hentai.com/tags
@@ -154,11 +154,12 @@ Gamedev, game-art, open typography, and open-fonts making:
 * https://doujins.com/hentai-manga/
 * https://www.simply-hentai.com/
 * https://animedbhentai.com
-* http://nhentai.net
+* http://nhentai.net (!!!)
 * https://hentai2read.com
 * https://https://www.tsumino.com
 * https://hitomi.la
 * https://luscious.net
+* http://doujin-us.moe / http://doujins-us.moe
 * http://www.e-hentai.org/
 * http://www.chounyuu.com/
 * http://www.hentai-foundry.com/
@@ -1077,6 +1078,7 @@ http://javplay.me
 http://javguru.com
 http://javhd.com
 https://jav911.com/
+http://jav-720p.com
 https://javhub.net/
 https://javhub.me/
 http://gfycat.com
@@ -1109,15 +1111,35 @@ http://hentai2read.com
 http://luscious.net
 http://doujin.me
 http://doujin.com
-http://doujins.com
+http://doujins.com (!)
 http://doujin.com
 http://rule43.xxx
 
-http://watchseries.tv + http://opensubtitles.org
+https://jav.guru/
+http://GravureTube.com
+http://Javloli.com
+http://Jav18.org
+http://CosplayPorn.me
+( http://nutaku.com - Nutaku - Free H games )
+
+http://watchseries.tv + http://opensubtitles.org (Zamunda Subs, arenabg Subs, subs.unacs Subtitles, etc. + Aegisub / Subtitle Workshop v5+/6+) + Greenfish Subtitle Player (gsp)
 https://www.bgfilmi.net/
 https://www.seirsanduk.com/gledajteleviziq
 http://kolibka.bg
 http://spiralata.bg
+http://parallelreality-bg.com
+http://skybooksusa.com
+http://bibliothecapleyades.net & http://trufax.org (WARNING: batshit insane, it may end you up in a 'psychiatric ward' for a while!)
+http://sacred-texts.com
+http://levity.com & http://alchemywebsite.com
+http://hermetics.org
+http://lawsoftheuniverse.weebly.com
+http://kybalion.org
+http://openlibrary.org
+http://archive.org
+http://panlex.org
+NESI (the Non-English Scripts Initiative)
+http://unicode.org
 
 --------------------------------------------------------------------------------
 
@@ -1133,15 +1155,15 @@ List of definitions for sexual fetishes & kinks:
 * https://rekink.com/guides/kinks/ (http://archive.is/xCwfh)
 * https://ru.lovense.com/bdsm-blog/list-of-kinks (http://archive.is/H28md)
 * http://urbandictionary.org
-* Glossary/Dictionary of JAV and hentai and Japanese porn (JAV) terms (several backups available online...)
+* (to do by https://github.com/sahwar/ - https://sites.google.com/view/ve4ernik/ : compile&translate a Glossary/Dictionary of JAV and hentai and Japanese porn (JAV) terms (several backups available online... from JWWWDICT & tatoeba.org & from other online Japanese dictionaries & print dictionaries... & from the tags subpage of hentai&JAV porn websites & from urbandictionary.com & from fetlife.com & from online lists of sexual fetishes/kinks/paraphernalia &sexual poses & Pornography in Japan & List of Japanese/JAV/hentai sexual terms..., etc.)
 
 ---
 
 **Joke:**
 Question: What do men really want from women?
 
-Answer: This thing - https://www.scrolller.com/media/293a9f.mp4 (https://scrolller.com/r/cumsluts) - or this thing: https://b.thumbs.redditmedia.com/6m642y5RSCSHkiu6yL7-p3UYrm3pdpzAUVsGXsYHgHU.png - or this thing: becoming a strong and intelligent and fast-adapting man who has and supports his own harem of young women who are kept as breeding&inbreeding cumdumpster BDSM sex-slave housewives (but some of the women are dominatrices and are very skilled and very smart!).
+Answer: This thing - https://www.scrolller.com/media/293a9f.mp4 (https://scrolller.com/r/cumsluts) - or this thing: https://b.thumbs.redditmedia.com/6m642y5RSCSHkiu6yL7-p3UYrm3pdpzAUVsGXsYHgHU.png - or this thing: becoming a strong and intelligent and fast-adapting man who has and supports his own harem of young women who are kept as breeding&inbreeding cumdumpster BDSM sex-slave housewives (but some of the women are dominatrices and/or are very skilled and very smart, so they help you earn (more) money & take care of the kids as mostly stay-at-home wives-moms!).
 
 Question: And what are the best women like?
 
-Answer: (THIS IS JUST [ve4ernik](https://sites.google.com/view/ve4ernik/)'s personal opinion!) The best woman is a mix of a sex-goddess (but with a fertility-goddess complex and sex-obsessed!), [Pythia](https://en.wikipedia.org/wiki/Pythia) (wise), and [Catherine of Siena (1347–1380)](http://en.wikipedia.org/wiki/Catherine_of_siena) (saintlihood undertones and adamant loyalty), is versed in modern&contemporary pop-culture&pop-culture references (including American&European&Asian cultural products), and, the most important, is also a great mother of several kids.
+Answer: (THIS IS JUST [ve4ernik](https://sites.google.com/view/ve4ernik/)'s personal opinion!) The best woman is a mix of an intellectual/artist/scientist/philosopher, has average beauty (but beautiful face!), is a sex-goddess (but with a fertility-goddess complex and sex-obsessed!), [Pythia](https://en.wikipedia.org/wiki/Pythia) (wise), and [Catherine of Siena (1347–1380)](http://en.wikipedia.org/wiki/Catherine_of_siena) (saintlihood undertones and adamant loyalty), is versed in modern&contemporary pop-culture&pop-culture references (including American&European&Asian cultural products), and, the most important, is also a great mother of several kids (due to being sexually compatible with/identical to her man's sexual desires/tempo&sexual fetishes/kinks/paraphernalia & participating in regular roleplaying sex with him till old age...)
