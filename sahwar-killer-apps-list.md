@@ -1182,6 +1182,89 @@ Nestopia (NES/SNES emulator app with OpenGL renderer), MeOCR (MS Windows), PDark
 MeOCR (MS Windows), OpenGL Extensions Viewer v5+ (MS Windows); NexusImage (freeware image viewer for MS Windows); NexusFont (freeware font-manager for MS Windows); NexusFile (freeware file-manager for MS Windows);
 ````
 
+````
+A list of lightweight web-browsers:
+
+SlimJet
+Palemoon
+Firefox-ESR
+Chromium + uBlock Origin
+Yandex Browser
+Brave
+Falkon
+Opera
+Vivaldi
+Epiphany
+Midori
+Yandex Browser
+Waterfox
+SeaMonkey
+Netrider
+suckless.org surf+dwm+panel+...
+uzbl.org - 
+link2
+dillo
+kazahakse
+Chromium + Vimium extension/add-on
+https://otter-browser.org (fork of older release versions of the Opera web-browser)
+modern QT5+-based webbrowser
+I use the "otter-browser-weekly-300" version, which is to say the October 6, 2019 version:
+https://sourceforge.net/projects/otter-browser/files/otter-browser-weekly300/
+https://otter-browser.org
+
+dwm, herbluftsdm; SpaceFM; Sunflower-FM
+ROX-IceWM
+
+bookmarks, synching, remembering passwords, cookies, sessions, JavaScript v6+ (ECMAScript), export as PDF/md-via-pandoc/MAFF/MHT/title_folder+.htm(l) + 
+
+
+VPN, anonymizer server, Wippien / LogMeIn Hamachi LAN-gaming-over-Ethernet-WAN/Internet, etc. ; RetroShare; VNC/RDP/NX app (Remmina, TigerVNC, etc.)
+
+space-icewm
+space-jwm
+jwm desktop
+
+croc-webbrowser (?!?)
+
+wicd, ceni, _RedHat Network Manager_, connman GUI (that currently sucks on MX Linux 19...)
+
+MX Linux 17 > MX Linux 19 < MX Linux 20
+
+Netrider (used in NanoLinux; can be used from source), Fifth web-browser (in TinyCore Linux)
+
+Q4os, Lubuntu, VoidLinux
+
+133 :RootMenu" (key 133 is the code for me windows-key ........ use 'xev' in terminal to find key codes).
+
+SliTaZ Linux
+
+---
+
+Milton Fudgewell
+in ~/.fluxbox have added to the "keys" file (image below) to get my volume keys to work and also (personal preference) make the "windows" key launch the menu (so do not have to keep finding a bit of desktop to right-click on!).
+
+$ df -h
+NAS server-computer
+
+Working on kvm paravirtualization as well , with a system with vt-x off. It is great!!!
+
+Thierry Le Tallec
+
+Andy Lobb SlitaZ 5.0 RC4 is used in this Tools Compilation :
+https://ikkiboot.tuxfamily.org/en/index_en.html
+
+$ grep -i rootmenu  ~/.fluxbox/keys
+
+OnDesktop Mouse3 :RootMenu
+Mod1 r :RootMenu 
+
+133 :RootMenu" (key 133 is the code for me windows-key ........ use 'xev' in terminal to find key codes).
+
+$ grep -i rootmenu ~/.icewm/keys ).
+Must be taken care of by the 'Rox' part of ROX-ICEWM.  
+
+
+````
 
 ## Under `Apple macOS` ##
 _I don't use macOS..._ In my opinion, it's only good for art/designer/webdev professionals... I only like some MacBook Pro's and the newer pressure-sensitive iPad's with a Wacom-like graphics stylus.
