@@ -12,6 +12,7 @@
 - https://www.animenfo.com
 - https://anime-planet.com
 - http://greenfishsoftware.org/gfsp.php (примерна програма за наслагване на полупрозрачен текст (например субтитри от файл със субтитри) върху части от екрана, полезна за гледане на филми, сериали, анимета, хентай и всякакво видео - от онлайн уебсайтове за поточно видео (web-streaming) (не много легално...))
+- http://youtube-dl.org & http://youtube-dl.org/downloads/latest/youtube-dl.exe
 
 **Законно гледане на анимета директно от Япония**, с платен план за най-ранно **гледане с английски субтитри**:
 * https://crunchyroll.com
@@ -82,6 +83,9 @@ RPG/РПГ, фентъзи литература и настолни ролеви
 
 PC/video/console gaming (гейминг; компютърни и видео игри) и merchandising (свързани артикули за продажба):
 * http://pcmania.bg/
+* http://pcgamer.com
+* http://kotaku.com
+* http://polygon.com
 * https://www.pulsar.bg/
 * https://www.ozone.bg/
 * https://www.natamno.com/
@@ -1142,6 +1146,118 @@ NESI (the Non-English Scripts Initiative)
 http://unicode.org
 
 --------------------------------------------------------------------------------
+https://www.reddit.com/r/momson/
+https://www.reddit.com/r/sonmom/
+https://www.reddit.com/r/Mother_son_incest/
+https://www.reddit.com/r/MomSonIncest/
+https://www.reddit.com/r/jerkofftomymom/
+https://www.reddit.com/r/IncestPorn
+https://www.reddit.com/r/IncestGifs
+https://www.reddit.com/r/wincest/
+https://www.reddit.com/r/taboocaptions/
+https://www.reddit.com/r/IncestErotica/
+https://www.reddit.com/search/?q=mom%20son
+https://www.reddit.com/search?q=mom%20son&type=sr%2Cuser
+https://www.reddit.com/r/hentaicaptions/
+
+https://www.reddit.com/r/WeLove2Explore/
+---
+https://www.tabooporn.tv/ (!!!) - amazing incest porn
+https://familyporn.tv/videos/?sort_by=video_viewed
+https://familyporn.tv/videos/mom-son-porn-is-beautiful/ (25:25)
+https://familysinners.com/
+---
+https://gfycat.com/gifs/search/momsonsex
+https://gfycat.com/angelicplayfularrowworm
+---
+https://rule34.xxx/index.php?page=post&s=view&id=1669491
+https://discord.gg/gfECt92
+---
+https://www.reddit.com/r/LovingFamily/
+https://www.reddit.com/r/entitledparents/
+---
+https://de.spankbang.com/1ptan/video/photos
+https://www.xvideos.com/video43029149/but_son_i_belong_to_your_dad-_momson
+https://www.xvideos.com/video46705975/i_belong_to_your_father_son
+https://www.xvideos.com/video45889021/why_dont_you_come_inside_the_room_and_take_your_dads_place
+https://spankbang.com/3hxjs/video/mom+son+taboo
+https://www.xnxx.com/video-rrge1e4/mother_welcomes_her_son_home_from_prison_-_shiny_cock_films
+https://spankbang.com/3aaxu/video/dad+and+son+trick+mom+part+1+2
+https://spankbang.com/3fft6/video/mommy+satisfies+son+s+needs
+https://i.imgur.com/y5wpVBl.gif
+https://spankbang.com/39ym5/video/son+all+you+need+is+me+your+mom+not+a+gf
+https://spankbang.com/1lijh/video/family
+https://spankbang.com/3hi0o/video/mom+and+sons+first+porno+together
+https://i.imgur.com/sA5Gz11.gif
+https://www.pornhub.com/view_video.php?viewkey=ph58998d4ed2cb5&pkey=122151691
+https://spankbang.com/3ib94/video/mom+son+taboo+night+in
+https://i.imgur.com/wNYA1wy.gif
+https://www.reddit.com/r/Mother_son_incest/comments/euu5aw/thought_id_send_a_little_tease_from_work_working/ - baking mom is incest&inbreeding addict with her son(s)
+https://www.reddit.com/r/WeLove2Explore/comments/f1t943/a_boy_in_a_while/?utm_source=share&utm_medium=ios_app&utm_name=iossmf
+---
+https://familyporn.tv/videos/mom-son-porn-is-beautiful/
+https://familyporn.tv/videos/mom-being-dominated-by-bad-son/
+https://familyporn.tv/videos/mom-happy-with-her-messy-son/
+https://familyporn.tv/videos/my-first-week-with-mom-after-a-long-time/
+https://familyporn.tv/videos/a-little-more-practice-with-mom-makes-it-perfect/
+https://familyporn.tv/videos/a-little-more-practice-with-mom-makes-it-perfect/
+
+sexy momson incest/inbreeding sex:
+https://familyporn.tv/videos/mom-happy-with-her-messy-son/
+
+
+spunk semen splurting into your fertile babymaking-factory womb
+semen tank; semen bath; multiple creampie gangbang @ xvideos.com
+https://www.reddit.com/user/-I-N-V-E-R-S-I-O-N-/
+https://www.reddit.com/r/momson/comments/afe28w/best_mom_son_porn_site/
+
+https://soundgasm.net
+https://soundgasm.net/u/Yknikyhslrig/Mom-Has-The-Talk-With-Her-Son
+https://www.reddit.com/r/gonewildaudio/comments/9et9mg/f4m_script_fill_mom_has_the_talk_with_her_son/
+
+http://spankbang.com - includes incest porn videos
+http://xvideos.com - includes incest porn videos
+http://motherless.com - includes incest porn videos
+http://xhamster.com
+http://xnxx.com
+http://Milfzr.com - includes incest porn videos
+http://incestflix.com (Use ad-blocker)
+http://Mytaboo.net
+
+````
+-I-N-V-E-R-S-I-O-N-
+3 points
+·
+1 year ago
+Nudevista pulls results from a bunch of different sites. It's a decent one stop shopping sorta thing. I don't know any streaming sites that are exclusively mom-son, and the free options for general incest porn sites typically aren't too good.
+
+If you don't mind mosaic censoring or scrolling past a fuck-ton of really shady ads, I've seen some Japanese sites that focus on mom-son Japanese adult videos (JAVs). I don't remember the urls and they can be hit or miss, but they'll usually have names like boshi soukan or boshi sōkan. That's for "母子相姦," which translates to something like maternal incest. I know just enough Japanese for this to work well enough for my porn addict needs, but it's definitely not for everyone.
+
+Give Award
+Share
+Report
+Save
+````
+
+https://de.spankbang.com/1ptan/video/photos
+https://www.xvideos.com/video43029149/but_son_i_belong_to_your_dad-_momson
+https://www.xvideos.com/video46705975/i_belong_to_your_father_son
+https://www.xvideos.com/video45889021/why_dont_you_come_inside_the_room_and_take_your_dads_place
+https://spankbang.com/3hxjs/video/mom+son+taboo
+https://www.xnxx.com/video-rrge1e4/mother_welcomes_her_son_home_from_prison_-_shiny_cock_films
+https://spankbang.com/3aaxu/video/dad+and+son+trick+mom+part+1+2
+https://spankbang.com/3fft6/video/mommy+satisfies+son+s+needs
+https://i.imgur.com/y5wpVBl.gif
+https://spankbang.com/39ym5/video/son+all+you+need+is+me+your+mom+not+a+gf
+https://spankbang.com/1lijh/video/family
+https://spankbang.com/3hi0o/video/mom+and+sons+first+porno+together
+https://i.imgur.com/sA5Gz11.gif
+https://www.pornhub.com/view_video.php?viewkey=ph58998d4ed2cb5&pkey=122151691
+https://spankbang.com/3ib94/video/mom+son+taboo+night+in
+https://i.imgur.com/wNYA1wy.gif
+https://www.reddit.com/r/Mother_son_incest/comments/euu5aw/thought_id_send_a_little_tease_from_work_working/ - baking mom is incest&inbreeding addict with her son(s)
+https://www.reddit.com/r/WeLove2Explore/comments/f1t943/a_boy_in_a_while/?utm_source=share&utm_medium=ios_app&utm_name=iossmf
+--------------------------------------------------------------------------------
 
 ---
 
@@ -1149,13 +1265,21 @@ List of definitions for sexual fetishes & kinks:
 * https://en.wikipedia.org/wiki/List_of_paraphilias
 * https://en.wikipedia.org/wiki/Category:Sexual_fetishism
 * https://badgirlsbible.com/list-of-kinks-and-fetishes (Enkuopoiphilia is a festish for the act of impregnation, as opposed to maiesiophilia which is a fetish for pregnant women.) (The Complete List of 239 Sexual Fetishes and Kinks - http://archive.is/9V13G)
-* https://imgur.com/gallery/AErVX (A "Comprehensive" List of Paraphilias [=sexual fetishes]. 547 Entries. Just pick a letter and run with it.)
+* https://imgur.com/gallery/AErVX (A "Comprehensive" List of Paraphilias \[=sexual fetishes\]. 547 Entries. Just pick a letter and run with it.)
 * https://www.huffpost.com/entry/sexual-fetish_n_4144418?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAH4gNZwCyXwR9ZDn5fE2HhmHDnwQtaiSuqC1m48fqlgIT1VZIRofx1leSV0NGteIGpNdwN2RAJA18-_hnB-4PC5Lx8wMXQc5OdGzbPVWmDlpwpQlbs4UzkuZVz6rbLTl0McfFYjfI77sdt3YEUK7MB4rPWSS1_E4nyOO08rTBpAf
 * https://www.askmen.com/dating/vanessa/25_love_secrets.html (sexual fetish about 'water, thunder, lightning') (http://archive.is/oxido)
 * https://rekink.com/guides/kinks/ (http://archive.is/xCwfh)
 * https://ru.lovense.com/bdsm-blog/list-of-kinks (http://archive.is/H28md)
+* an anime website with a dictionary of Japanese porn (JAV) and hentai terms - a v3 edition (still online) and a v2.5 (recovered from archive.org): ??? ... (TO ADD LATER ON...)
 * http://urbandictionary.org
 * (to do by https://github.com/sahwar/ - https://sites.google.com/view/ve4ernik/ : compile&translate a Glossary/Dictionary of JAV and hentai and Japanese porn (JAV) terms (several backups available online... from JWWWDICT & tatoeba.org & from other online Japanese dictionaries & print dictionaries... & from the tags subpage of hentai&JAV porn websites & from urbandictionary.com & from fetlife.com & from online lists of sexual fetishes/kinks/paraphernalia &sexual poses & Pornography in Japan & List of Japanese/JAV/hentai sexual terms..., etc.)
+Example:
+'If you don't mind mosaic censoring or scrolling past a fuck-ton of really shady ads, 
+I've seen _some Japanese sites that focus on mom-son Japanese adult videos (JAVs)_. I 
+don't remember the urls and they can be hit or miss, but they'll usually have names 
+like _boshi soukan_ or _boshi sōkan_. That's for _"母子相姦,"_ which translates to something 
+like _maternal incest_. I know just enough Japanese for this to work well enough for my 
+porn addict needs, but it's definitely not for everyone.'
 
 ---
 
