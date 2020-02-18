@@ -14,6 +14,8 @@
 [FocusWriter novel-writing app](https://gottcode.org/focuswriter/), [yWriter6 (novel-writing text editor app!](http://www.spacejock.com/yWriter6.html) & [other useful apps from Spacejock Software (Simon Haynes)](http://www.spacejock.com/Software.html) & http://www.spacejock.com/Utils.html , [TeXWorks](https://www.tug.org/texworks/) ([translate/localize TeXWorks!](https://github.com/TeXworks/texworks/wiki/Translating)); [BabelMap](http://www.babelstone.co.uk/Software/BabelMap.html) (Unicode character map), graphemica.co, [(VoidTools) Search Everything](https://www.voidtools.com/) (file-searching-by-filename&regex engine for Windows), `AEDict.exe` ([AEDictionary](http://www.kamburov.net/aleksandar/projects/aedict/), an old but FAST Bulgarian<->English dictionary), [Megadict-BG](http://www.megadict-bg.com/) dictionary, [GoldenDict](http://goldendict.org/), [bgEngDictionary](), [IDI Spellchecker&Dictionary](http://www.freeplace.info/ididictionary/bulgarian_spell_checker/) (v2.44/v4.??, buy the latest best version from [here](http://www.freeplace.info/ididictionary/bulgarian_spell_checker/)!), [paint.net](https://www.getpaint.net/), [GifCam](http://blog.bahraniapps.com/gifcam/) (bahraniapps.net), [ShareX](https://getsharex.com/), [nomacs](http://nomacs.org/) (image viewer), [Imagine](http://www.nyam.pe.kr/dev/imagine/) (image viewer), IrfanView, (GPicView&etc. for Linux), [NexusFont](http://www.xiles.net/) (font-manager), [Audacity](https://www.audacityteam.org/), [Mozilla Firefox](https://www.mozilla.org/bg/firefox/new/) (v56+, x64 as of 2018), [Google Chrome](https://www.google.com/chrome/), [MPC-HC](https://mpc-hc.org/) (Media Player Classic - Home Cinema), [VLC](https://www.videolan.org/), [Baka MPlayer](http://bakamplayer.u8sand.net/) ([mpv](https://mpv.io/)-based), [SMPlayer](https://www.smplayer.info/), Daum PotPlayer (freeware), The KMPlayer (freeware), Oracle VM [VirtualBox](https://www.virtualbox.org/) (OS virtualization), [PidginIM](http://pidgin.im/) (XMPP/Jabber IM client), [Skype](https://www.skype.com/en/get-skype/), [Viber](https://www.viber.com/), [Facebook Messenger](https://www.messenger.com), [EiskaltDC++](https://sourceforge.net/projects/eiskaltdcpp/) ([2](https://github.com/eiskaltdcpp/eiskaltdcpp))/[ApexDC](https://www.apexdc.net/)/[DC++](http://dcplusplus.sourceforge.net/index.html), [qBitTorrent](https://www.qbittorrent.org/), [youtube-dl.exe](http://youtube-dl.org/) ( https://ytdl-org.github.io/youtube-dl/download.html , latest for MS Windows: https://yt-dl.org/downloads/latest/youtube-dl.exe ), [wget64.exe](https://eternallybored.org/misc/wget/), **wget2** (https://gitlab.com/gnuwget/wget2), **_[cURL / curl64.exe](https://curl.haxx.se/download.html)_** (**https://curl.haxx.se/docs/comparison-table.html**) (`-Z` & `libcurl` - https://curl.haxx.se/docs/manpage.html ), [lftp](https://lftp.yar.ru/) ([lftp on GitHub.com](https://github.com/lavv17/lftp)), [aria2/Aria2c](https://aria2.sourceforge.io/), ugetdm, [snarf](https://www.xach.com/snarf/), [wget](https://www.gnu.org/software/wget/), [pavuk](http://www.pavuk.org/), [fget](https://www.fefe.de/fget/), [Axel (CLI download manager)](https://github.com/axel-download-accelerator/axel) (old: http://axel.alioth.debian.org/ ) (**NOT to be confused with** https://axel.org/sharing or https://axel.org/transfer !), [hget](https://github.com/huydx/hget), [httrack](https://www.httrack.com/), [HTTPie](https://httpie.org/), [nugget](https://github.com/maxogden/nugget), [pget](https://github.com/Code-Hex/pget), [dl - 5ko.free.fr (dl : Сваляне на последователно номерирани файлове)](http://archive.is/2U3pA), `get_words_data_v5.php` (by [OmegaKO](http://animerulezzz.org)), [AWGG (wget/curl GUI](https://github.com/Nenirey/AWGG) ( https://sourceforge.net/projects/awgg/files/latest/download ; https://sites.google.com/site/awggproject/file-cabinet ; https://wiki.freepascal.org/images/f/fa/Pantallazo-AWGG_0.3.0_ALPHA_BUILD_2002.png ), **[ffmpeg.exe](https://ffmpeg.org/) ([ffmpeg MS-Windows builds](https://ffmpeg.zeranoe.com/builds/))** / **[libav](https://www.libav.org/)**... [7-ZIP](https://www.7-zip.org/) / [PeaZip](http://www.peazip.org/), [Krita](https://krita.org/en/), [MyPaint](http://mypaint.org/), [Medibang Paint Pro](https://medibangpaint.com/en/), [SpeedyPainter](http://speedypainter.altervista.org/), [JPixel](https://emad.itch.io/jpixel), `pdf2htmlEX` ( https://github.com/coolwanglu/pdf2htmlEX ; https://coolwanglu.github.io/pdf2htmlEX/demo/cheat.html ), `img2pdf` ( https://github.com/josch/img2pdf ), [Rufus (ISO-writing-to-USB-flashstick tool)](https://github.com/pbatard/rufus) / [Etcher](https://github.com/balena-io/etcher) + 
 https://web.archive.org/web/20180411033142/https://wiki.gnome.org/Apps/MultiWriter + MultiBootISO & YUMI + ... RmpubISO?... / PrepISO... + unetbootin + USU USB ISO-writing app + `md5sum.exe` , [FilePizza](https://github.com/kern/filepizza), [waifu2x](http://waifu2x.udp.jp/index.html), ..., [Shortcut (video-editor)](https://shotcut.org/), [Open Shot (video-editor)](https://www.openshot.org/) ([(translations over at LaunchPad.net)](https://translations.launchpad.net/openshot/2.0/+translations)), [Kdenlive](https://kdenlive.org/en/), [OBS (Open Broadcaster Software) Studio](https://obsproject.com/) (Free and open source software for video recording and live streaming - for Windows, Linux, macOS), [LibreCAD](https://librecad.org/), [Blender3D](https://www.blender.org/), [Greenfish Subtitle Player](http://greenfishsoftware.org/gfsp.php#apage) (FREEWARE, Windows-only), [Aegieub](http://aegisub.org), http://subworkshop.sourceforge.net/ , Jubler, Open Subtitle Editor, Subtitle Creator, SubMagic, https://lintut.com/best-subtitle-editors-for-linux/ , (datetime-stamp еditing forensic software), etc.
 `nircmd.exe` (MS Windows) ( http://nirsoft.com )
+* https://github.com/ethanhs/WSL-Programs (a list of (GNU/)Linux apps that work well with the Microsoft Windows 10 WSL (Windows Subsystem for Linux)
+https://github.com/Biswa96/wslbridge2
 
 * [DSpeech TTS](http://dimiodati.altervista.org/zip/dspeech.zip), DTaskManager, Deep Explorer, DSynchronize (freeware MS Windows apps by Dimio Software / Dimitrios Coutsoumbas): 
 http://dimio.altervista.org/eng/ (backup HTML: http://archive.is/nM3aV )
@@ -299,7 +301,7 @@ https://georgi.unixsol.org/programs/X11/xkb.sh = xkb = https://bg.wikipedia.org/
 * [...] NeoVim, Spacemacs, SpaceVim, Kakoune, KDE Kate, Notepad++ (MS Windows), Notepad2-mod, Notepad3, Notepadqq, Oni, CudaText, Howl, Eclipse Che, 
  LightTable, qemacs, Femto Emacs, SynWrite, Emacs (>v23.2); Slap, Syntaxic, jEdit, SlickEdit (+its on-the-fly code beautifier), micro, nano, Yi (Haskell); GitHub Atom, Brackets, gEdit, gVim, 
 
-Spacemacs, NeoVim или Notepad3, Notepadqq, Notepad2-mod, Notepad++&addons (run via Wine/wine-staging) + awk & sed & ls & grep & pcre & iconv & wget & curl & lftp & aria2-cli, $pandoc, etc CLI commands, GitHub Atom, MS VSCode, Geany IDE, даже Notepad++ (Windows).
+Spacemacs, NeoVim, (Neomacs), (Vimium), Cream или Notepad3, Notepadqq, Notepad2-mod, Notepad++&addons (run via Wine/wine-staging) + awk & sed & ls & grep & pcre & iconv & wget & curl & lftp & aria2-cli, $pandoc, etc CLI commands, GitHub Atom, MS VSCode, Geany IDE, даже Notepad++ (Windows).
 
 Освен Spacemacs или NeoVim, друго няма читаво като GUI за emacs или vi(m), освен old-school GVim и GNU Emacs GUI, и разни експериментални нови разработки надстройки-mods на vim & emacs в GitHub и GitLab...
 https://github.com/myTerminal/super-emacs
@@ -1272,6 +1274,46 @@ Must be taken care of by the 'Rox' part of ROX-ICEWM.
 
 
 ````
+
+(!!!) https://github.com/ethanhs/WSL-Programs (a list of (GNU/)Linux apps that work well with the Microsoft Windows 10 WSL (Windows Subsystem for Linux)
+https://github.com/Biswa96/wslbridge2
+
+**https://github.com/aleksandar-todorovic/awesome-linux**
+
+https://fishshell.com/
+https://github.com/fish-shell/fish-shell (powerful nee shell for Linux!)
+https://tmux.github.io/ (tiled shell)
+http://i3wm.org/ (tiled window manager for (GNU/)Linux)
+`pastel` (CLI color-codes app for Linux shell)
+http://kakoune.org (GUI text editor)
+https://www.nano-editor.org/ (CLI text editor)
+https://github.com/laurent22/joplin (free multiplatform notetaking app!)
+
+https://github.com/Tomas-M/linux-live
+http://www.linux-live.org/
+https://github.com/TheAssassin/AppImageLauncher
+
+https://github.com/ktgw0316/LightZone (open-source alternarive to Adobe's DarkRoom for photography professionals)
+
+https://github.com/square/retrofit
+
+http://www.chaos.org.uk/~pdh/software/intergif.htm
+
+http://gitter.im (chat rooms for GitHub.com projects)
+
+https://github.com/square/retrofit (Type-safe HTTP client for Android and Java by Square, Inc.)
+
+https://github.com/square/okhttp/wiki/Interceptors
+
+https://github.com/google/gson
+http://wiki.fasterxml.com/JacksonHome
+https://github.com/square/moshi/
+https://developers.google.com/protocol-buffers/
+https://github.com/square/wire
+http://simple.sourceforge.net/
+https://oss.sonatype.org/content/repositories/snapshots/
+
+
 
 ## Under `Apple macOS` ##
 _I don't use macOS..._ In my opinion, it's only good for art/designer/webdev professionals... I only like some MacBook Pro's and the newer pressure-sensitive iPad's with a Wacom-like graphics stylus. But still, I'll list some notable apps for macOS/Mac OS/Mac OS X, too:
