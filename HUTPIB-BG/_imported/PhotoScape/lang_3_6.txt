@@ -1,0 +1,1078 @@
+photoscape = PhotoScape
+yes = Да
+no = Не
+ok = OK
+cancel = Отмяна
+default = По Подразбиране
+initialize = Калибрирай
+close = Затвори
+mydocuments = Моите Документи
+desktop = Десктоп
+refresh = Обнови
+refreshcache = Обнови кеша
+refreshtooltip = Обнови(F5)\nОбнови индекси папки и фотографии
+save = Запиши
+saveas = Запиши като ...
+saveinfolder = Запиши в папка...
+modify = Модифицирай
+round = Овал
+background = Фон
+bgcolor = Цвят на фона
+name = Име
+filename = Име на файла
+folder = Папка
+preview = Предварителен изглед
+copy = Копирай
+convert = Конвертирай
+second = Секунди
+width = Ширина
+height = Височина
+longaxis = по Височина
+shortaxis = по Ширина
+longaxisinshort = скъсяване по Височина
+shortaxisinshort = скъсяване по Ширина
+pixel = Пиксел
+resize = Преоразмери
+ratio = Завъртане
+size = Размер
+cell = Клетка
+row = Ред
+col = Колона
+column = Колони
+rows = Редове
+columns = Колони
+photo = Фото
+image = Образ
+picture = Картинка
+clipboard = Клипборд
+clipboardphoto = Клипборд фотобуфер
+text = Текст
+balloon = Фигура
+apply = Приложи
+queryapply =  да се Приложи ли
+landscapephoto = Пейзаж
+portraitphoto = Портрет
+prevphoto = Назад
+nextphoto = Напред
+next = Следващ
+up = Нагоре
+down = Надолу
+add = Добави
+delete = Изтрий 
+deleteall = Изтрий всичко
+deleteallphotos = Изтрий всички фотоси
+favorites = Избрани
+addtofavorites = Добави в фаворити
+copytoclipboard = Копирай в клипборда
+copyselectedtoclipboard = Копирай избраното в клипборда
+bgpatterntooltip = Фон 1\nnФон2
+photoedit = Редакция на фотоси
+home = Домашна страница
+object = Обект
+crop = Изрежи
+region = Област
+tools = Инструменти
+drophere = Завлечи тук
+opacity = Прозрачност
+explorer = explorer
+shadow = Сянка
+configload = Зареди конфигурацията
+configsave = Запиши конфигурацията
+level = Ниво
+original = Оригинал
+radius = Радиус
+amount = Количество
+range = Диапазон
+direction = Направление
+directiondiagonal = Диагонал
+directionvertical = Вертикал
+directionhorizontal = Хоризонтал
+regionradial = regionradial
+regionhorizontal = regionhorizontal
+regionvertical = Вертикално
+regionhorizontal2 = Хоризонтално(2)
+regionvertical2 = Вертикално(2)
+type = Тип
+interval = Интервал
+number = Номер
+length = Дължина
+thickness = Дебелина
+penthickness = Дебелина на четката/молива
+angle = Ъгъл
+degrees = Градуси
+feather = Перо
+processing = Обработка
+menu = Меню
+explorertooltip = Windows Explorer\nRun explorer в папке
+copytooltip = Копирай(Ctrl-C)\nКопирай в клипборда
+completed = Завършено
+failed = Провалено
+
+[update]
+title = Обновение
+message = Доступно е обновление на PhotoScape\nОбнови?\nПосети http://photoscape.org/
+skip = Не проверявай за обновление на Photoscape в следващите 7 дни
+
+[intro]
+title = PhotoScape
+photorefresh = обновяване на снимка/Получаване и показване на изображение в flickr.com 
+photoswitch = Вкл/Изкл. фото
+
+[viewer]
+title = Преглед
+tooltip = Разглеждане на снимки
+
+[editor]
+title = Редактор
+tooltip = Прозорец за избор и редакция на снимка
+savetooltip = Запази/Запиши(Ctrl-S)
+roundtooltip = Оформете снимка със заоблени ъгли и създайте празен участък около нея.
+margintooltip = Направете снимка с закръглени краища.
+framelinetooltip = Добави рамка около картинката.
+mergeframetooltip = Съедини снимката с рамката.\nАко го направите рамката става част от снимката.
+croptooltip = Изпълни изрязване(Enter)
+cropsavetooltip = Съхрани областта на изрязване.
+scrolltooltip = Прозорец Scroll Mode\nnКликнете и влачете с мишката, за да преместите изображението в желания от вас прозеорец.\nДаже и без режима Scroll Mode, Вие можете да местите ваши фотографий, задържайки клавиш "спейс" и отместване на мишката.
+selecttooltip = Режим избор на обект\nМожете да изберете, преместите и промените размера на обектите (фото, иконки, рисунки).\nМожете да извикате плаващо меню на обекта с десен клик на мишката.\nМожете да промените обект или статуса му, задръжте натиснат левия бутон на  мишката и местете. 
+redeyetooltip = Режим премахване червени очи\nОпределете област в която да се премахне ефекта Червени очи. 
+spottooltip = Премахване неравности и дефекти\nОпределете област около дефекта и го премахнете.
+mosaictooltip = Мозайка\nПриложете ефект мозайка в областта очертана с мишката.
+clonestamptooltip = Режим на клониране
+paintbrushtooltip = Режим на четка за рисуване
+effectbrushtooltip = Effect Brush Mode
+linetooltip = Линия\nИзберете линия.\nМожете да правите вертикални или хоризонтални линии, задържайки клавиш SHIFT и извлачване.\nНачертаите линия между две точки задържайки клавиш SHIFT и щракнете.
+straightlinetooltip = Права линия\nРисуване на права линия\nМожете да правите вертикални или хоризонтални линии, задържайки клавиш SHIFT и преместване на мишката.
+boxtooltip = Квадрат\nЧертае квадрат или правоъгълник.\nМожете да извлечете/измъкнете/област, задържайки клавиш SHIFT и преместване на мишката.
+roundboxtooltip = Закръгление\nЗакръгляване на ъгли.\nМожете да закръглявате ъгли, задържайки клавиш SHIFT и преместване на мишката.
+circletooltip = Кръг\nЕлипса.Кръг се рисува чрез задържайки клавиш SHIFT и преместване на мишката.
+polygontooltip = Многоъгълник\nМожете да начертаете многоъгълник чрез задържайки клавиш SHIFT и преплъзване на мишката с провлачване .
+startooltip = Звезда\nРисуваме звезда.
+round = Кръг
+frameline = Линия на рамката
+mergeframe = Фото+Рамка
+cropsave = Запази изрязаната област 
+cropcircle = Обрежи овал
+scroll = Превъртане
+redeyeremoval = Червени очи
+moleremoval = Премахни
+clonestamp = Клониране 
+paintbrush = Четка за настройка
+effectbrush = Effect Brush
+cropcomment = Изберете областта, която искате да изрежете. \nМожете да движите маркера на екрана чрез задържане на десен бутон и преплъзване на мишката.Така избирате областа за изрязване и натискате бутон изрежи.
+redeyeremovalcomment = Маркирай област около всяко око, за да премахнете ефекта на Червени очи\nМаркирайте област около всяко око,после отпуснете мишката, за да завършите премахването на ефекта червени очи
+moleremovalcomment = Изберете област около дефекта\nИзберете област около дефекта с мишката и отпусни, за да се премахне 
+mosaiccomment = Приложи ефекта мозайка в маркираната с мишката област.\nЗаградете блок с мишката и отпуснете за да се приложи филтъра Мозайка 
+clonestampcomment = Позволява да се дублира част от изображението. \nЩракнете за да изберете полето, в изображението, а след това натиснете отново за клониране на района. \nЗадръжте клавиш SHIFT ако искате по слабо клониране
+paintbrushcomment = Кликнете върху четката и изберете боя.\nЗадръжте клавиш SHIFT ако искате потънка черта.\nОтказ\nКолелцето на мишката, Нагоре, Надолу: Контрол върху размера на четката\nИзберете цвят
+effectbrushcomment = Click to paint with effect brush.\nHold the shift key to paint dimly.\nEsc: Cancel\nMouse Wheel, Up, Down: Control the brush size\nCtrl-Click: Pick a color
+currentfolder = Текуща папка
+editfolder = Промени папката
+querysave = Запази резултата \n Не запазвай?
+failtoloadfile = Файла е празен или не се чете от източника
+failtoloadbitmap = Неуспех при четене на растерна графика 
+failtocreatenew = Неуспех при създаване на ново изображение
+noballoon = Фигурата не е намерена
+newphoto = Нова снимка
+newphototoobig = Размерите на снимката са прекалено големи.\nИскате ли нова снимка?
+loadclipboard = Зареди фото изображение от буфера
+explorertexture = Покажи текстурите (Папка текстури)
+cropfreely = Свободно изрязване
+cropsetratio = Ротация/Размер
+croporiginalratio = Оригинални фото-размери
+
+[save]
+savecomment = Запази изображението. В случай на необходимост, оригиналната снимка се копира в папка 'Оригинал'.
+saveinfoldercomment = Запази изображението в папка.
+saveascomment = Запази под името.
+selectsavefolder = Избор на папка за съхранение
+queryextrename = Използвай само %s като разширение. \nЗапази под ново име?
+queryreadonly = Файла е само за четене "read only".\nИскате ли да промените това?
+failtosavereadonly = Запази\nАтрибут"read only", Не променяй
+
+[object]
+richedit = Обект
+symbol = Символ
+phototooltip = Фото\nВмъкнете фото от клипборда
+balloontooltip = Фигура\nВъведете фигура
+texttooltip = Текст\nВъведете сянка от думи.
+richedittooltip = редактиране\nшрифт и цвят
+symboltooltip = Символ\nИзберете символ от шрифтовете на вашето PC
+mergetooltip = Комбиниране на обект със снимка.\nАко ги комбинирате заедно, обектите ще станат част от вашата фотография
+propertytooltip = Смяна на атрибута(A)\nСмяна атрибутите на обекта.\nЩракнете два пъти с мишката за да изберете метод за смяна на атрибута
+backtooltip = Назад\nПоставяне на избрания обект зад останалете\nИзбраният обект може да бъде блокиран за проверка
+fronttooltip = Напред\nоставяне на избрания обект пред другите обекти\nИзбраният обект може да бъде  блокиран за филтриране
+copytooltip = Клонирай\nСъздай още веднъж същия обект
+deletetooltip = Изтрий(Del)\nИзтрий обекта
+merge = Слей Фото+Обект
+mergeinside = Комбинирай фото+обект
+mergeoutside = Обекта е недостъпен за тази фотография или рамка. За да се покаже обекта, вашата фотография трябва да бъде разширена.
+mergecolor = Цвят на фона при сливане
+hide = Скрий
+properties = Свойства
+anchor = закрепване
+rotatedegree = Завърти %s градуси
+front = Напред
+back = Назад
+thickness = Дебелина
+fill = Запълване
+outline = Съдържание
+
+[history]
+undoall = Отмени всичко 
+undo = Отмяна
+redo = Връщане
+undoalltooltip = Отмени всичко(Ctrl-Alt-Z)\nВръщане към оригинала
+undotooltip = Отмени(Ctrl-Z)
+redotooltip = Връщане(Ctrl-Y,Ctrl-Shift-Z)
+
+[cropdlg]
+sizesetting = Задаване на Размера
+width = Ширина
+height = Височина
+maxvalue = Max %d pixels
+x = X
+y = Y
+ratiosetting = Пропорции
+ratio = Width : Височина
+outofwidthrange = Височина  между 1 and %d
+outofheightrange = Ширина между 1 and %d
+invalidratio = Пропорции повече от 1
+
+[batch]
+title = Групово редактиране
+tooltip = Прозорец за групово редактиране едновременно на няколко снимки
+convertall = Конвертирай
+convertcurrent = Конвертирай това което е в момента
+processing = Обработи
+savetitle = Запази включително заглавието
+destination = Запази като в папка...
+destinationfirst = Създай папка за дестинация
+destinationeach = Създай папка за всяко променено изображение
+destinationfolder = Съхрани като в папка...
+naming = Преименувай
+namingoriginal = Запази с оргиналното име 
+namingnew = Запази с ново име
+format = Формат 
+formatcomment = Качество PNG е по-добро от JPG, но  размера му е по-голям. Формат BMP е без компресиране и с отлично качество, но размера става  прекалено голям.
+originalformat = Оригинален формат
+etc = и така нататък/т.д.
+keepexif = информация
+keepfmtime =  Не изменяй формата на датата и часа
+picproptooltip = Промени свойствата на картина\nПромени свойствата на картината
+txtproptooltip = Променимени свойствата на текста\nПромени свойствата на текста
+currentfolder = Текуща папка
+savefolder = Папка за съхранение 
+savefoldernotexist = Не създавай нова папка
+original = Оригинал
+converted = Конвертирай
+marginround = Използвай Поле и& Овал
+margin = Поле: T %d, B %d, L %d, R %d
+round = Радиус:
+photonotassigned = Фото-файл няма избран
+failtoread = Файлът не може да се чете
+failtosave = Файлът не е съхранен 
+failed = Файлът е не конвертируем
+completed = Конвертирането приключи
+canceled = Отмяна на конвертирането 
+noconfigfile = без конфигурация
+explorerconfigfolder = Покажи конфигурация
+enterconfigname = Въведите име на файл конфигурация.
+queryconfiginit = Премахни конфигурация? 
+configread = ConfigОтвори
+configsave = ConfigЗапази
+configinit = Определение
+
+[jpgquality]
+title = JPEG Качество  
+quality = Качество
+low = НизкоКачество
+high = Високо Качество
+comment = Препоръчва се да съхраните вашия файл в  много високо качество (повече от 95%) .\nАко, запазите снимката в низко качество, размерът ще е малък, но с сходно  разширение
+
+[overwritedlg]
+title = Потвърди замяната и го презапиши
+comment = Файл с това име вече съществува.\n\nДа го презапиша ли върху стария?
+applyall = Приложи промяната върху всички файлове 
+yes = Да приложи промяната
+no = Не записвай върху него
+stop = Стоп
+
+[margin]
+title = Поле
+outer = Външно поле
+inside = Интервал(-)
+color = Цвят на Интервала
+assignsame = Задай Интервал
+
+[page]
+title = Страница
+tooltip = Направете една снимка от сливането на множество снимки на една страница в рамка
+savetooltip = Съхрани страницата.(Ctrl-S)
+edit = Редактиране
+edittooltip = Отвори в фоторедактора.
+sizetooltip = Задай размер
+pastephoto = Постави фото
+pasteclipboard = Постави от клипборда
+deletephoto = Изтрий фото
+resetcoordinates = Нулиране на координатите
+assignsize = Задай формат и размер
+originalsize = Оригинален размер
+assignratio = Задай съотношение на височина и ширина
+originalratio = Промяна на оригинала
+openpspage = Отвори файл/страница 
+savepspage = Запази файл/страница  като
+ratiovaluerestriction = Ограничения и повече изменения  1
+
+[combine]
+title = Комбиниране
+tooltip = Прозорец, където можете да съберете няколко снимки хоризонтално, вертикално или в шахматен модел за създаване на една снимка  
+savetooltip = Съхрани файл.(Ctrl-S)
+edit = Редактирай
+edittooltip = Редактирай резултата
+down = Хоризонтално/надолу
+side = Вертикална страна
+tile = 4 снимки каре
+referencesize = Референтен /базисен размер
+canvassize = Размер на работното платно
+resizeratio = Размер %
+interval = Интервал
+column = Колонка
+refuserset = Базисен размер
+reforiginal = Променен размер
+reffirst = Първоначален размер на снимката
+refbiggest = Max размер фото
+refsmallest = Min размер фото
+openpscombine = Отвори файл
+savepscombine = Запази резултата
+
+[combinesizedlg]
+title = Задайте базисен размер на изображението
+width = Ширина(Pix)
+height = Височина(Pix)
+help = Необходимата дължина за закрепване надолу\nВисочина за странично закрепване\nДължина  за присъединяване с проверка 
+outofrange = От %d до %d, коррекция на размера
+
+[anigif]
+title = Анимирани изображения
+tooltip = Използвайте няколко снимки, за да създадете анимация
+savetooltip = Запази като анимиран Gif.(Ctrl-S)
+preview = Web преглед
+previewtooltip = Разглеждане на анимация в браузера\nРазглеждане на анимация
+starttooltip = Старт анимация
+stoptooltip = Стоп анимация
+changetimeinshort = Промяна Време
+changetime = Време
+changeeffect = Смяна на ефекта
+changetimetooltip = Смяна времената на всички рамки.
+changeeffecttooltip = Смяна на ефекта: Смяна ефект върху всички рамки.
+setthecanvassize = Задаване размер на платното за рисуване
+canvassize = Размер платно за рисуване
+resizeratio = Завъртане - преоразмеряване
+reffirst = Първичен размер фото
+refbiggest = Max размер фото
+refsmallest = Min размер фото
+refuserset = Задай размер на платното за рисуване
+effectnone = Няма разместване или ефект
+effectup = Премести рамката нагоре за преход към следващия.
+effectdown = Премести рамката надолу за преход към следващия.
+effectleft = Премести рамката в ляво за преход към следващия.
+effectright = Премести рамката вдясно за преход към следващия.
+effectbgcolor = Приближи цетъра на рамка и фон.
+effectblack = Затъмни рамката.
+effectwhite = Осветли рамката.
+querylongtime = Заради голямото работно платно времето за обработка ще се увеличи значително. (%dx%d)\nАко намалите размера на работното платно времето за обработка ще се намали.\nЩе продължите ли?
+changingnow = Конвентиране....
+changingprogress = Размер на работното платно %dx%d, е само %d от рамката.
+savingnow = Съхрани.
+outofdisplaytimerange = Време за показване на рамката между %d и %d
+savesuccess = Съхранен успешно\nФайл размер: %s
+htmlcreationfail = Създай предварителен преглед /изглед/на HTML файла.
+gifcreationfail = Създай предварителен преглед /изглед/на GIF файла.  
+displaytime = Покажи време
+displaytimecomment = Време, '1', равно 1/100 sec.\n'100' равно 1 sec.
+changetimeselected = Смяна времената на избраната рамка
+changetimeall = Смяна времената на всички рамки
+
+[print]
+title = Печат
+tooltip = Отпечатване на избраното изображение
+setup = Настройка за печат
+portraitprint = Печат портретно
+thumbnailprint = Печат пеизажно
+printer = Принтер
+paper = Хартия
+printingarea = Зона на принтирането 
+photosize = Фото Размер
+rpp = Преглед
+cpp = Колонки в страница
+ppp = %d Фото на странице
+interval = Интервал
+titleon = Размер надпис 
+titleoff = Надпис Изключено
+drawborder = Очертаване Граница
+autorotate = Автосмяна автозавъртане
+printrange = Диапазон за печат
+printallpages = Отпечатване на всички страници
+printcurrentpage = Отпечатване на текущата страница
+setprintrange = Диапазон на печата
+copies = брой копия
+wrongpagenumber = № страница не е верен
+wrongcopynumber = № копията не е верен
+accessfail = Грешка в свързването с принтера
+
+[paper]
+title = Отпечатване
+tooltip = Печат на облицована хартия, милиметрова хартия, нотни листове, календари и други.
+
+[printpicsizedlg]
+title = Преоразмеряване на снимки
+outofrange = Размерът на снимката трябва да е от %d до %d (mm)
+
+[howmanycopiesdlg]
+title = Копиране и тиражиране
+comment = Колко копия да се направят?
+outofrange = Добави от %d до %d
+
+[splitter]
+title = Разделяне на изображения
+tooltip = Раздели изображението на части
+load = Зареди
+split = Раздели
+colrowmode = Колона,Ред
+widthheightmode = Ширина, Всочина
+cellsize = Клетка размер
+colrow = Колона x Ред
+destinationoutput = Създай папка под оригиналното фото
+destinationfolder = Съхрани резултата в папката
+
+[screencapture]
+title = Снимка на екрана
+tooltip = Снимане на екрана и запазване на снимката
+fullscreencapture = скрийншот
+windowcapture = Прозорец за снимане на екрана
+rectcapture = Област на захващане
+repeatlastcapture = Повтори захващане
+process = Процес на захващане на екрана
+clipboard = Копирай в буфер/клипборда
+edit = Отвори в Редактора за редактиране
+rect = Координати
+size = Размер
+sound = Звук
+clipboardcomplete = Копиране в клипборда
+
+[colorpicker]
+title = Избор на цветове
+tooltip = Избор на цвят
+copytooltip = Копирай значение RGB  в клипборда.\nМожете да копирате стойностите на цветовете като щракнете в zoom прозореца.
+copytooltip2 = Копирай значение RGB  в клипборда 2.
+comment = с ляв клик по пипетката и задържане натиснатия бутон на мишката можете да преместите лупата в нужната ви област. Щракане в прозореца zoom помага за определяне параметрите на цвета.
+currentcolor = Текущ  цвят
+pickedcolor = История Избиране на цвета
+sound = Звук
+
+[rename]
+title = Преименуване
+tooltip = Прозорец за преименуване на няколко снимки едновременно
+comment = Можете да преместите фото в индексния прозорец.
+converttooltip = Преименувай.
+rollback = Връщане/възстановяване
+rollbacktooltip = Възстанови конвертирания файл.
+naming = Име на файла
+todaydate = Днешна дата
+filedate = Дата на файла
+photographydate = Дата фото
+startingnumber = Стартово число
+separator = Separator
+space = Space
+example = Ex) %s измени до %s
+original = Оригинал
+newname = Ново име
+digits = %d Цифра(и)
+alreadyexist = Името на файла, %s, Вече съществува.\nИзползвайте друго име.
+completed = Завърши
+failed = Невъзможна промяна %d на файла в листа.
+rollbackcompleted = Възстанови конвертирания файл.
+rollbackfailed = Не възстановявай %d файл между %d
+query = Променете името?
+queryrollback = Възстанови конвертирания файл?
+invalid = Невъзможни за използване %s в името на файла
+naming_name = Оригинално име 
+naming_namenumber = Оригинално име-Номер
+naming_namedate = Оригинално име-Дата
+naming_namedatetime = Оригинално име-Дата-Време
+naming_number = Номер
+naming_numbername = Номер-Оригинално име
+naming_numberdate = Номер-Дата
+naming_numberdatetime = Номер-Дата-Време
+naming_datename = Дата-Оригинално име
+naming_datenumber = Дата-Номер
+naming_datetimename = Дата-Време-Оригинално име
+naming_datetimenumber = Дата-Време-Номер
+naming_datetime = Дата-Време
+
+[rawconverter]
+title = RAW Конвертор 
+tooltip = Конвертиране RAW в JPG
+comment = Конвертиране RAW в JPG от видеокамера DSLR 
+options = Опции/Свойства
+halfsize = 1/2 размер (Ускорение)
+autowb = Автобаланс на бялото
+camerawb = Баланс на бялото в видеокамерата.
+stop = Стоп
+converttooltip = Превръщане Raw в JPG
+previewtooltip = Избор RAW в прозорец/Изглед/.
+previewsavetooltip = Съхрани фото-прегледа.
+previewedittooltip = Редактирай фото-прегледа.
+previewcopytooltip = Копиране предварителен прегледа в буфер.
+queryconvert = RAW в JPG?
+result = Конверт %d фото между %d
+
+[facesearch]
+title = Търсене на образи
+tooltip = Намери подобно в мрежата или Интернет
+howto = Заредете фото и натиснете бутон "Търсене на образи".
+failtofind = Невъзможно е да се намери образ.
+failtoconnect = Връзка с "Търсене на образи" е невъзможно.
+noface = Съответствия не са намерени.\nОпитайте с други фотоси.
+
+[onlineprint]
+title = Интернет обработка
+tooltip = Обработване на изображения в Интернет  
+
+[photobookmark]
+title = Водни знаци на фотоси
+tooltip = Хипервръзки на фотосайтове
+
+[homepage]
+title = PhotoScape
+
+[help]
+title = Помощ
+tooltip = Помощ\nВижте помоща от сайта на PhotoScape
+
+[icons]
+cartoon = Аппликация
+face = Лица
+makeup = Гримиране
+heart = Сърце
+office = Офис 
+pencil = Молив
+realpicture = Реални цветове
+stamp = Печат
+effect = Ефект
+sign = Знаци/символи
+number = Номера
+illust = Летящи
+logo = Лого
+christmas = Рождество Христово
+travel = Пътуване
+etc = Повече
+
+[options]
+title = Опций
+tooltip = Опций\nИзбор на опций
+viewerdblclick = Два клика с мишка водят до пълноекранен режим
+multiresize = Включи разширена функция за размер
+windowsfileopen = Използване базовия прозорец за добавяне на изображение
+thumbnailcache = Включи кеша за пейзажни изображения (повишение на ефективноста)
+circularmenu = Кръгово меню
+backup = Създава резервно копие на оригиналната снимка в папка "Оригинал". 
+
+[folder]
+new = Нова папка
+delete = Премахни
+favorites = Папка избрани
+favoritestooltip = Папка избрани\nДобавяне в избрани за бърз достъп  
+addtofavorites = Добави папка в избрани
+managefavorites = Управление папка избрани...
+addsuccess = Добави в избрани
+alreadyadded = Вече е добавена в избрани
+notexist = Тази папка, не съществува.\nПремахни от избрани?
+queryclear = Вие действително ли искате да премахнете всички папки в списъка?
+shortcut = Бързо извикване
+
+[photo]
+delete = Премахни
+deletetooltip = Изтриване фото(Del)\nНе премахвай в кошницата.
+
+[wallpaper]
+title = Тапет
+paperfull = Лист 
+center = Център
+tile = Заглавие
+stretch = Разпъни
+query = Съхрани като цвят?
+
+[slideshow]
+title = Слайд-шоу
+menuzoomoriginal = Оригинален размер
+menurestore = Възстанови
+menupause = Пауза
+menurestart = Рестарт
+menuduration = Показване на време (%dsec)
+menusec = %dsec
+menunoeffect = Без ефекти
+menuoverlap = Препокриване
+menuoverlapslow = Препокриване (Бавно)
+menubgmopen = BGM Отвори
+menubgmplay = BGM Play
+menubgmpause = BGM Пауза
+menubgmstop = BGM Стоп
+menubgmautoplay = BGM AutoPlay
+menucolor = Избери цвят на фона
+menutitle = Покажи заглавие
+menuexif = Покажи инфо
+
+[fullscreen]
+title = Цял екран
+
+[fill]
+stretch = Разпъни
+paperfull = Лист
+imagefull = Пълен образ
+imagefullfine = Пълен образ финно (Все)
+72dpi = 72 DPI
+96dpi = 96 DPI
+120dpi = 120 DPI
+300dpi = 300 DPI
+
+[zoom]
+zoomin = Zoom +
+zoomout = Zoom  -
+preview = Изглед/preview/ Zoom
+originaltooltip = Zoom 1:1(Ctrl-Alt-0)Оргинален размер
+windowfittooltip = Прозорец (Ctrl-0)\n побиране на изображение в пределите на прозореца 
+zoomintooltip = Zoom In(Ctrl +)
+zoomouttooltip = Zoom Out(Ctrl -)
+
+[rotate]
+title = Завъртане
+right = Завъртане на дясно
+left = Завъртане на ляво
+leveloff = Ниво(-)
+fail = Невозможно е завъртане на изображението
+righttooltip = Завъртане 90 CW надясно
+lefttooltip = Завъртане 90 CCW наляво
+mirrortooltip = Огледално обръщане
+fliptooltip = Отражение
+degreetooltip = Завъртане на Произволен ъгъл
+previewrighttooltip = preview Завъртане 90 CW надясно 
+previewlefttooltip = preview Завъртане 90 CCW наляво
+previewmirrortooltip = Огледално обръщане
+previewfliptooltip = Отражение
+overflowmethod = Метод заливки 
+bgcolor00 = Цвят фона (0,0)
+bgcolorblack = Фон (Черен)
+bgcolorwhite = Фон (Бял)
+wrap = Обхващане
+repeat = Повтори
+mirror = Огледално
+keeporiginalsize = Запази размера на оригинала
+
+[losslessrotate]
+right = Завъртане 90 CW надясно
+left = Завъртане 90 СCW наляво
+180 = Завъртане 180
+mirror = Верт.отражение
+flip = Хориз.отражение
+
+[filter]
+title = Филтър
+assigntooltip = Избор филтър за цялата снимка
+restore = Връщане в състояние преди прилагане на филтъра
+restoreinshort = Изчистване/restore/
+apply = Приложи
+low = Нисък
+mid = Близък
+midstar = Близък *
+middefault = Среден (по подразбиране.)
+high = Висок
+lowgray = (Сив тон) Ниско
+midgray = (Сив тон)Средно
+highgray = (Сив тон) Високо
+lowgrayinshort = (Сиво) Ниско
+midgrayinshort = (Сиво)Средно
+highgrayinshort = (Сиво)Високо
+whitebalance = Баланс на бялото
+whitebalancecomment = Оправя жълтия или синия тон на снимката, заснета в стая или тъмнина.\nКлик с мишката над бялата област възстановява първоначалния цвят.\nНамерете каквото и да е бяло и кликнете на него.
+colorbalance = Баланс на цветовете
+removecolorcast = Премахване на цветовия баланс
+removecolorcastcomment = Премахване на цветопредаването и корекция баланс на бялото.\nВисоките нива предаващи цветовете ще бъдат изтрити.  
+colorize = Разкраси
+colorizecomment = Добави цвят и наситеност на оригиналното фото.\nАко наситеноста е малка, снимката ще стане черно-бяла.\nПовече наситеност, сильни цветове.
+colorenhance = наситеност
+autolevel = Автониво
+autocontrast = Автоконтраст
+brighten = Осветли
+darken = Затъмни
+deepen = Задълбочи
+grayscale = Полутон
+sepia = Сепия
+negative = Смяна черно/бяло
+negativeinshort = Негатив
+gammacorrection = Гама коррекция 
+gammacorrectioninshort = Гама
+gammabright = Гама яркост
+exposure = Експозиция
+sharpen = Резкост/изостряме/
+sharpencomment = Избор на радиус между 0.1 и 1.0\nи корекция между 10% и 100%
+blur = Блур
+bright = Яркост
+contrast = Контраст
+decolor = Деколор
+bloom = Наситеност
+bloomregion = Област насищане
+lce = Конраст разширен
+lceinshort = Сила на контраста
+smartblur = Smart Blur
+noisereduction = Намаляване на шумовете
+film = Ефект кинофилм
+filmcinema = Кинофилм
+filmcrossprocess = Пресичане
+filmprovia = Provia
+filmvelvia = Velvia
+filmportra = Portra
+filmagfa = Agfa
+old = Пожълтели стари снимки
+dilate = Разшири
+erode = Разруши
+mosaic = Мозайка
+regionfilter = Разфокусирана област
+regionfilterreverse = Разфокусирана област на обръщане(Промени всичко)
+lineargradient = Линеен Градиент
+graduatedtint = Тон на градиента
+graduatedtintcomment = Направи горната част на изображението по дълбок. За снимки с ярък хоризонт
+graduatedtintfeather = Перо
+graduatedtintshade = Отенък
+faketiltshift = Промени наклона
+faketiltshiftcomment = Въздушност в фото
+lensflare = Отблясъци
+lensflareshape = Нова форма
+lensflarenegative = Негатив
+fadestyle = Обезцвети
+contrastmasking = Балансиране осветеността /контраст/
+contrastmaskinginshort = Осветеност
+texture = Текстура
+noise = Шум
+jitter = Вибрация
+crystallize = Кристализация
+edge = Край
+embossing = Стесняване
+cellophane = Целофан
+pictorialization = Илюстрация
+impressionistic = Импресионизъм
+pastel = Пастел
+pen = Писалка/Перо
+waterpainting = Акварел
+waterpaintingbrushsize = Размер четка
+oilpainting = Масло
+pencil = Молив
+colorpencil = Colored Pencil
+watercolorpencil = Watercolor Pencil
+cartoon = Анимация
+colorengraving = Гравировка
+monochromeengraving = Монохром
+distorts = Деформация
+glasstile = Стъкло
+doublefacedglasstile = Стъкло2
+verticalglasstile = Вертикал стъкло
+horizontalglasstile = Хоризонтал стъкло
+window = Прозорец
+illusion = Илюзия
+fisheye = Рибешки очи
+fisheyelensvalue = Лупа
+motionblur = Размазване на границата
+motionblurstep = Стъпка
+zoomblur = Мащаб размазване на границата
+radialblur = Радиално размазване
+wave = Вълна
+wavelength = Дължина на вълната
+waveamplitude = Амплитуда
+swirl = Вихър
+box = Квадрат/Правоъгълник
+boxrightside = Блок десностранен
+boxleftside = Блок лявостранен
+reflection = Reflection
+perspective = Perspective
+newsprint = Newsprint
+sepiatooltip = Сепия\nСъздава ефект "състаряване" , изменяйки цвета на снимката в червено-кафяв тон.
+grayscaletooltip = Степени на сивото \nПолутон трябва да обърне вашите изображения в черно-бели. 
+thresholdtooltip = Праг\nСмяна цвета на снимката в черно-бяло.
+negativetooltip = Инвертиране на негатив\nСмяна всички цветове.
+bloomtooltip = Разцвет(Ctrl-G)
+autoleveltooltip = Автониво отенък\nАвтокорекция отенъка
+autocontrasttooltip = Авто контраст\nАвтокорекция на контраста 
+brightpacktooltip = Регулировка яркост, контрастност, отенъка, наситеност... 
+sharpentooltip = Резкост\nКрайщата на обектите са по-малко размити.
+blurtooltip = Размитост\nПрави фотоса размит и сложен.
+contrastmaskingtooltip = Корекция на осветеност на фона\nТъмните участъци стават ярки.
+brightpack = Яркост,Цвят
+applygraytone = Използване на сиво
+hue = Отенък
+saturation = Наситеност
+colorconversion = Цветоконверсия
+normalmode = Нормален режим
+brightmode = Режим яркост
+deepmode = Дълбок режим
+lighter = Осветяване
+stronger = Силно
+stroke = Щрих
+threshold = Праг
+previewnotreal = Преглед на изображение, обикновено филтрирано за бързо възпроизвеждане, за да се различава от действителния образ.
+
+[color]
+title = Цвят
+apply = Промяна на цвета
+black = Черен
+white = Бял
+red = Червен
+green = Зелен
+blue = Син
+red2 = Червен 2
+green2 = Зелен
+blue2 = Син 2
+cyan2 = морско Синьо2
+magenta2 = Сив 2
+yellow2 = Жълт 2
+
+[curves]
+title = Криви линии
+rgb = Крива на цвета
+saturation = Крива на наситеността
+luminance = Крива на осветеността
+rgbinshort = Цвят
+saturationinshort = Наситеност
+luminanceinshort = Осветяване
+load = Зареждане на криви
+save = Съхраняване на криви
+
+[resize]
+portrait = Корекция по вертикала на снимка
+original = Оригинален размер
+adjustwidth = Оправи по ширина
+adjustheight = Оправи по височина
+adjustlonger = Увеличи височина
+adjustshorter = Увеличи ширина
+reducewidth = Възстанови дължината
+reduceheight = Възстанови височината
+reducelonger = Възстанови Max височината  
+reduceshorter = Възстанови Min височината  
+stretch = Разстегни
+crop = Резултат
+nearestneighbor = Близък
+bilinear = Билинеен
+bicubic = Бикубически
+bicubicbest = Бикубически (по-добър)
+interpolation = Интерполация
+preserveaspectratio = Увеличи завъртането
+excludingframe = Корекция фото без рамки.
+includingframe =  Корекция фото с рамки.
+adjustautomatically = "%s" автокорекция "%s".
+outofwidthrange = Диапазонът е извън дължината
+outofheightrange = Диапазонът е извън височината
+widthnotvalid = Не допустим диапазон дължина 
+morethan = Трябва да е повече от %d
+lessthan = Трябва да е по-малко от %d
+adjust = Корекция %s
+
+[file]
+name = Име на файла
+ext = Още
+size = Размер
+ctime = Създаден
+mtime = Променен
+atime = Обръщане
+propreadfail = Невъзможно прочитане свойства\nфайл (F5) провери 
+enter = Първо име на файла 
+queryoverwrite = Такова име на файла вече существува. Искате ли да запишете върху него? 
+
+[photolist]
+add = Добави
+delete = Премахни
+forward = Напред
+backward = Назад
+addtooltip = Вмъкване на картина
+deletetooltip = Премахни избраното(Del)
+cleartooltip = Изтрий всичко(Ctrl-Del)
+addphoto = Добави снимка
+addclipboard = Добави от буфера
+addblank = Добави ...
+insertphoto = Вмъкване фото
+insertclipboard = Вмъкни фото от буфера
+queryclear = Премахни всички снимки?
+multiselection = Добавяйте снимки натискайки  Ctrl или Shift +клик.
+
+[frame]
+title = Фрейм
+assign = Задаване рамки
+favorites = Избрани рамки
+assigntooltip = Задай рамка на цялата фотография
+favoritestooltip = Рамки Предпочитани\nЗадава рамка на цялата фотография
+empty = Няма рамки
+addtofavorites = Добави фрейм в избрани
+managefavorites = Управление на рамки в избрани
+addsuccess = Добавен в избрани
+alreadyadded = Вече е добавен в избрани
+notexist = Избраната рамка не существува \nИскате ли да я изтриете от избрани?
+all = Всички рамки
+
+[align]
+title = Подравняване
+photo = Подравни
+horizontal = Хориз.изравн.
+vertical = Верт.изравн.
+left = Вляво
+right = В дясноо
+top = Връх
+bottom = Основа
+center = Център
+topleft = Нагоре и в ляво
+topright = Нагоре и надясно
+bottomleft = Основа вляво
+bottomright = Основа в дясно
+outofrange = ако са недостъпни координатите,\nИзтрийте X и Y. 
+
+[vignetting]
+title = Винетки
+no = без винетки
+comment = Няколко винетки\nПри избора 'Бял', при винетиране ще бъде избран той вместо 'Черен'.
+
+[text]
+leftalign = Вляво Подравняване
+centeralign = Центрирано
+rightalign = Дясно подравняване
+bold = Удебелен
+italic = Наклонен
+underline = Подчертан
+vertical = Вертикално
+antialiasing = Антиалиянс
+outline = Контур
+outlineplustext = Контур+Текст
+outlineonly = Контур
+outlineminustext = Контур-Текст
+thickness = Дебелина
+blur = Размазано
+outofpointrange = Размер шрифта недостъпен. 
+notext = Въведи текст.
+
+[balloon]
+color = Избор на цвят 
+rotate0 = Оригинал
+rotate1 = Огледало
+rotate2 = Огледало+Отражение
+rotate3 = Отрази
+rotate4 = Завъртане CW наляво
+rotate5 = *+Отражение
+rotate6 = Завъртане CW наляво
+rotate7 = *+Отражение
+
+[exifshortcut]
+photodate = Дата в снимката
+phototime = Время в снимката
+photoyear = Година в снимката
+photomonth = Месец в снимката
+photoday = Ден в снимката
+shutterspeed = Скорост на затвора
+fnumber = Апертура(F Номер)
+ev = Погрешност при експозиция(EV)
+focallength = Фокусно разстояние
+iso = Значение ISO светлочувствителност 
+flash = Светкавица
+make = Камера 
+makeuppercase = Камера(Горе)
+makelowercase = Камера(Долу)
+model = Модел Видеокамера
+modeluppercase = Модел Видеокамера(Горе)
+modellowercase = Модел Видеокамера(Долу)
+filename = Име на файла
+filenameuppercase = Име на файла(Горе)
+filenamelowercase = Име на файла(Долу)
+
+[exif]
+tooltip = Exif Info\nПоказва Производител , Модел, Флеш и т.н.
+info = Exif Info
+delete = Премахни Exif info
+querydelete = Желаете ли да премахнете Exif info?
+deletefail = EXIF info не може да се премахне.
+deletesuccess = Exif info премахнат
+make = Производител
+model = Модел
+datetime = Ден
+software = Софтуер
+artist = Артист
+copyright = Копиране
+editor = Редактор
+resolution = Резолюция 
+orientation = Ориентация
+flash = Флеш/Светкавица/
+focallength = Фокусно расстояние
+digitalzoom = Цифров Zoom
+ccdwidth = CCD период
+exposuretime = Задръжка експозиция
+aperturefnumber = Апертура
+isoequiv = Светлочувствителност
+exposurebias = Погрешност  Експозиция
+whitebalance = Баланс на бялото
+lightsource = Източник на светлина
+meteringmode = Режим измерване
+exposure = Експозиция
+exposuremode = Режим снимане
+description = Описание
+comment = Коментар
+
+[association]
+title = Асоциации
+comment = Посочи асоциация на форматите
+
+[expandsize]
+title = Увеличи снимката
+comment = Искате ли да се разширява освен снимката и обекти извън нея?
+expandcolor = Цвят на фона на разширената зона
+
+[phone]
+title = Изпрати към телефона
+tooltip = Изпрати изображение към телефона
+failtoconnect = Провал за връзка към сървъра
+
+[language]
+title = Език
+comment = Избор на език
+langfile = Language File
+alert = За този език е нужен рестарт на Photoscape.\nЩе продължите ли?
+english = Английски
+korean = Корейски
+chinese = Китайски (Опростен)
+traditional_chinese = Китайски (Традиционен)
+german = Немски
+dutch = Dutch
+spanish = Испански
+spanishmx = Есперанто (Mexico, Latin America)
+french = Френски
+japanese = Японски
+russian = Руски
+polish = Полски
+italian = Италиански
+portugesebr = Португалски (Бразилия)
+thai = Thai
+hungarian = Унгарски
+turkish = Турски
+catalan = Catalan
+slovak = Словашки
+czech = Чешки
+norwegian = Норвежки
+bulgarian = Български
+ukrainian = Украйнски
+greek = Гръцки
+swedish = Шведски
+estonian = Естонски
+danish = Датски
+romanian = Ромънски
+portugesept = Португалски (типичен) 
+hebrew = Hebrew
+galician = Galician
+finnish = Finnish
+indonesian = Indonesian
+spanishcb = Spanish (Colombia, Latin America)
+arabic = Арабски
+serbianlatin = Serbian Latin
+serbiancyrillic = Serbian Cyrillic

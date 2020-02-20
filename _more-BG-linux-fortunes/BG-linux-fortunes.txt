@@ -1,0 +1,47 @@
+Още `fortunes` за Линукс за българи...!
+Това е програма за shell (като bash), която изписва произволен цитат или текст от инсталирани бази от данни с такива цитати, афоризми, сентенции,
+народни поговорки, математически формули, геометрични аксиоми и физични формули, съвети, готварски рецепти, шеги и т.н.
+
+ ~bash/CLI GNU `fortunes`, `fortunes` sayings/aphorisms/Latin sentencesetc., etc. ~to add to Bulogos:
+
+CLI_fortunes_quotes.md ~to add to Bulogos:
+
+http://man.cx/fortune
+https://www.splitbrain.org/projects/fortunes
+http://man.cx/strfile
+jf2cookie .tar.gz
+
+http://plf.zarb.org/
+
+Quote from http://splitbrain.org :
+
+It is meant for use with the fortune program.
+To install these fortunes, copy the .dat file to your fortunes directory (possibly `/usr/games/lib/fortunes`). 
+To use it, simply type: `$ fortune starwars` (without the leading `$`)
+
+Download: fortune-starwars.tgz
+https://liternet.bg/publish30/ivanka-pavlova/aforizmi-3.htm ~to add to bash/CLI GNU `fortunes`, `fortunes` sayings/aphorisms/Latin sentencesetc., etc.
+
+English Translation Practicum - народните поговорки накрая ~to add to BG-linux-fortunes
+
+frazite.com
+
+~групи на преводачите във Facebook със списъци-речници с думи...
+
+~to webscrape the .htm/.htmls of liternet.bg & spisanie.liternet.bg & to do a `sort | uniq` on all the files... and thus generate a new wordlist
+~to webscrape the .htm/.htmls of http://parallelreality-bg.com & to do a `sort | uniq` on all the files... and thus generate a new wordlist
+~to webscrape the .htm/.htmls of dv.government.bg (*) & to do a `sort | uniq` on all the files... and thus generate a new wordlist
+
+* = 
+Доста от по-старите .pdf броеве на ДВ на РБ са сканирани и без OCR са нечетими, а доста от по-новите пък са със сгрешена кодировка или със стара кодировка, което води до проблеми при копирането на текст от там поради разбъркани или пропуснати букви, думи и изречения...
+
+1. http://2cyr.com/decode/?lang=bg
+2. regex (например чрез Notepad++):
+-\r\n -> (empty) = премахване на късото тире (дефиса) за пренасяне на думи на нов ред (сричкопренасяне) и слепване на частта на думите преди дефиса с останалата част от думите на новите редове.
+3. премахване на пунктуацията (без „-“ поради употребата на дефиса в полусля/Е?тия правопис)
+4. sort | uniq (Unicode-aware) + add a number afterwards with a count of occurrences of the string on the line
+
+* TO DO: превърни в US-ASCII/UTF-8/.tex моите .pdf файлове с компилации от взети от книги математически формули от https://github.com/sahwar/Bulogos/_cheatsheets --- в пакет за BG-linux-fortunes !!!
+* TO DO: препиши и добави и готварски рецепти от книги и от хвърчащи листове - пак за такива `fortune` пакети...
+* същото, но с OCR-нати книги с компилации с цитати, афоризми, поговорки и сентеции, вкл. онлайн речници със списъци с цитати (например List of Latin phrases (full)...)
+

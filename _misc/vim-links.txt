@@ -1,0 +1,198 @@
+encoding: utf-8
+
+General
+=======
+http://www.vim.org (≡ http://vim.sf.net)
+    Vim home page
+
+http://vimdoc.sf.net
+    user and reference manuals and other documentation
+
+http://vimhelp.appspot.com
+    a version of the Vim help pages, kept up-to-date from the Vim source repository;
+    + the Vim FAQ from its github repository
+
+http://vim.wikia.com
+    ‘Vim tips wiki’: tips and tricks about how to use Vim
+
+http://www.rayninfo.co.uk/vimtips.html
+    the ‘Best of Vim Tips’ page
+
+http://thomer.com/vi
+    vi lovers page
+
+http://www.math.bas.bg/bantchev/pew/gvim73-win.tbz
+    gvim for Windows, with CRefVim, stlrefvim, Side-C, the ‘clue’ colour scheme and other goodies
+    – no installation required (only unarchiving)
+
+Quick References
+================
+http://tnerual.eriogerg.free.fr/vim.html
+    Laurent Grégoire's Vim Quick Reference Card
+
+http://ls10-www.cs.uni-dortmund.de/~menge/private
+    Sebastian Menge's version of Vim reference card
+
+http://www.math.bas.bg/bantchev/vim/qref
+    my improvement on Menge's q.r. card
+
+On-line Books
+=============
+ftp://ftp.vim.org/pub/vim/doc/book/vimbook-OPL.pdf
+http://www.math.bas.bg/bantchev/vim/vimbook(qualline)-toc.pdf
+http://www.oualline.com/vim-book.html
+    a book on Vim – old but useful;
+    ToC for the book;
+    a draft of a next edition
+
+http://www.swaroopch.com/notes/Vim
+    ‘A Byte of Vim’
+
+http://www.thegeekstuff.com/vim-101-hacks-ebook
+    ‘Vim 101 hacks’: practical examples (non-free)
+
+Tutorials
+=========
+http://ex-vi.sourceforge.net/viin/paper.html
+    ‘An introduction to display editing with vi’ by William Joy (vi's creator) & Mark Horton
+    – an introductory tutorial
+
+http://www.eecs.harvard.edu/~cduan/technical/vi
+    ‘Vi(m): The one true text editor’: a tutorial from someone in Harvard
+
+http://linuxgazette.net/152/srinivasan.html
+    ‘A slightly advanced introduction to Vim’
+
+http://www.linuxconfig.org/Vim_Tutorial
+    a Vim tutorial with each small piece explained through a short video
+
+http://jmcpherson.org/editing.html
+    ‘Efficient editing with Vim’: a short introductory tutorial
+
+http://research.iiit.ac.in/~smr/data/advanced_vim_tutorial.pdf
+    A 15-page introduction
+
+http://www.ibm.com/developerworks/edu/l-dw-linuxvi-i.html
+    ‘vi intro – the cheat sheet method’: an introductory tutorial to vi
+
+http://www.ibm.com/developerworks/aix/library/au-speakingunix_vim
+    ‘Speaking UNIX: The new and improved Vim editor’: an introductory tutorial
+
+http://cybertiggyr.com/gene/15-vim
+    ‘Lisp with Vim’: a short tutorial from a lisper who prefers Vim over Emacs!
+
+http://www.viemu.com/a-why-vi-vim.html
+    motivating examples for using Vim
+
+http://www.oualline.com/vim/vim-cook.html
+    ‘Vim Cookbook’ by Steve Oualline
+
+http://www.zinkwazi.com/unix/notes/tricks.vim.html
+    a brief cookbook
+
+http://www.math.bas.bg/bantchev/vim/vim-why.txt
+    reasons for using Vim (in Bulgarian)
+
+Articles
+========
+http://oreilly.com/pub/a/oreilly/ask_tim/1999/unix_editor.html
+    Tim O'Reilly on using Vim
+
+http://www.free-soft.org/FSM/english/issue01/vim.html
+    An article on Vim by its creator Bram Moolenaar: history, features, charity
+
+http://www.moolenaar.net/habits.html
+    ‘Seven habits of effective text editing’ by Bram Moolenaar
+
+http://www.oreillynet.com/pub/a/oreilly/news/zenclavier_1299.html
+    ‘Zenclavier: extreme keyboarding’
+
+Scripting, Scripts & Configuration
+==================================
+http://www.ibm.com/developerworks/views/linux/libraryview.jsp?search_by=scripting+the+vim+editor
+    ‘Scripting the Vim editor’: a five-part tutorial on scripting Vim
+
+http://www.vim.org/scripts/script.php?script_id=1075
+    netrw: a script for reading and writing files across networks (as well as from local directories)
+    – now distributed with Vim
+
+http://www.vim.org/scripts/script.php?script_id=173
+    a box drawing script
+
+http://www.vim.org/scripts/script.php?script_id=1440
+    winmanager: a Windows-style file/buffer explorer for Vim
+
+http://www.vim.org/scripts/script.php?script_id=213
+    c.vim: a C/C++ IDE
+
+http://www.math.bas.bg/bantchev/vim/side-c.vim
+http://www.vim.org/scripts/script.php?script_id=2434
+http://www.math.bas.bg/bantchev/pew/about-vim.html#ide (in Bulgarian)
+    Side-C: a plug-in implementing basic IDE functionality for developing one-file C or C++ programs
+
+http://www.vim.org/scripts/script.php?script_id=614
+http://www.math.bas.bg/bantchev/pew/about-vim.html#help (in Bulgarian)
+    CRefVim : a C and Clib reference manual in Vim help format
+
+http://www.vim.org/scripts/script.php?script_id=2353
+http://www.math.bas.bg/bantchev/pew/about-vim.html#help (in Bulgarian)
+    stlrefvim : the ‘STL programmer's guide’ (http://www.sgi.com/tech/stl) from SGI, in Vim help format
+
+http://www.math.bas.bg/bantchev/vim/clue.vim
+http://www.vim.org/scripts/script.php?script_id=2359
+    clue: a dark-background colour scheme
+
+http://www.vim.org/scripts/script.php?script_id=233
+    print_bw.vim: a black & white colour scheme (with bold, italic, and underline), to be used for printing
+
+http://www.math.bas.bg/bantchev/vim/bulgarian-bds.vim
+http://www.math.bas.bg/bantchev/vim/bulgarian-phonetic.vim
+http://www.math.bas.bg/bantchev/vim/kbdbul.html
+    bulgarian-bds.vim & bulgarian-phonetic.vim: keymaps for typing in Bulgarian, Russian, English
+    and more (standardly available since Vim 7.3)
+
+http://www.vim.org/scripts/script.php?script_id=172
+    the game of Tetris as a Vim script
+
+http://www.vim.org/scripts/script.php?script_id=211
+    the game of Sokoban as a Vim script
+
+http://www.vim.org/scripts/script.php?script_id=916
+    the game of Nibbles (Snake) as a Vim script
+
+http://wyw.dcweb.cn/vim/_vimrc.html
+    a vimrc file
+
+http://www.math.bas.bg/bantchev/vim/vimrc
+    my vimrc (both Linux and Windows)
+
+Other Software
+==============
+http://gpl.internetconnection.net/vi
+    jsvi: vi-like editing within the browser (in JavaScript)
+
+http://apvlv.googlecode.com
+    apvlv: a PDF viewer for Linux behaving like Vim
+
+http://mozex.mozdev.org
+    MozEX: a Firefox extension which allows using external programs for editing, viewing etc.
+    (incl. attaching Vim as an editor)
+
+https://addons.mozilla.org/en-US/firefox/addon/4125
+    ‘It's All Text!’: edit any textarea within Firefox using an external editor (incl. Vim)
+
+http://www.viemu.com
+    ViEmu: vi/Vim emulation for Microsoft Visual Studio, Word, Outlook and SQL Server
+
+Other Resources
+===============
+http://www.vim.org/account/profile.php?user_id=579
+http://users.skynet.be/antoine.mechelynck/vim
+    Антон Андреевич Михаленко's (Antoine Mechelynck's) Vim user profile and web page
+
+http://www.vim.org/account/profile.php?user_id=96
+http://www.drchip.org
+    Charles Campbell's (a.k.a. Dr Chip) Vim user profile and web page
+
+http://www.vim.org/account/profile.php?user_id=15060
+    my Vim user profile

@@ -1,0 +1,60 @@
+Hello, and welcome to Poly-p-ux. This is version 0.20, codename Caffeine Powered
+
+Any problems, suggestions, bugs, feature requests, comments, etc. go to pyrophobicman@gmail.com
+
+First, some prerequisites:
+
+* A 486 - Don't worry, you don't need an FPU, but it is suggested :D . PCI is not supported, ISA, EISA, MCA, PCMCIA are. This can be done in as little as ~8mb of hard drive space, as long as you install from a different computer. That 8mb (about 7.9) may seem big, but it gives you full network support AND snailage!. NOTE: It seems that the kernel modules take up the most space. Now, there are more than ever before. If you're REALLY experimental, you can try to get a bit more streamlined in terms of hard drive space if you delete some of them.
+
+* A LOAF. Linux-on-a-floppy. Must have basic unix tools, ext2 tools, tar, gz support, *fdisk, and a support for...
+
+* A means of getting a ~3.7mb file (a tarball) on your system. You could drop it there beforehand, use the network, use minicom over a nullmodem cable, etc.
+
+* A floppy drive and a few floppies (obviously). You can try finding a loaf for 5.25" floppies, but you're better off upgrading :D .
+
+* At least some knowledge of *nix.
+
+* Patience. The install is (somewhat) hard, and I have only a few extra packages (at the time of writing). Tough cookies, you'll have to wait.
+
+~~~~~~~~~~~~~~~~~~~
+
+How to install:
+
+1. Write your LOAF, boot your LOAF. I'm using the slackware 11.0 install disks (bare.i, install.1, install.2, and others). I will get to work on official disks, but that'll come eventually.
+
+2. Partition your disk. WARNINGS!!!!! Make sure that if your drive is more than 1024 cylinders, you have at least one partition that ends at 1023 or earlier. Also, make sure that all the grub stuff and the kernel (basically at least /boot) is there. I put / on that partition, then /usr fills up the rest. SWAP: You NEED swap. If you're not careful, you'll oom (out-of-memory). If you do oom, do a swapon early. For the examples (and all the config files as they are), my /dev/hda1 is /, my /dev/hda3 is /usr and my /dev/hda2 is swap.
+
+3. Make filesystems. I'd STRONGLY suggest ext2 - I don't believe my kernels can boot anything else. mke2fs for the filesystem partitions, and mkswap -v1 for swap.
+
+4. Mount filesystems. Just make sure they're all in the same tree, i.e. my /dev/hda1 is mounted under /mount (slackware doesn't like you to use /mnt :roll: ), and my /dev/hda3 is mounted under /mount/usr.
+
+5. Grab the tarball. Now only .tar.gz. It's in ftp://distro.ibiblio.org/pub/linux/distributions/polypux/0.20/486/ . Somehow put it on your disk.
+
+6. Unpack the tarball to where you mounted the filesystem. MAKE ABSOLUTELY SURE that you're using the 'p' option with tar - retain permissions. BTW, after this, it's safe to remove the tarball.
+
+7. Fix the files you need to. This includes (relative to the mounted directory) /boot/grub/menu.lst, /etc/fstab and /etc/mdev.conf (prolly not). The rest can be done while in the system, so do them there. MAKE SURE that stuff you have to mount on boot doesn't have the "noauto" flag in fstab - I've done this before :D .Whatever your root device is for grub (almost definitely / , *might* be /boot ) should be noauto. Oh, and swap doesn't seem to apply - put that in S10swap	
+
+8. Write the grub floppy (grub0.20.img) directly to a floppy. Use rawrite, dd, etc.
+
+9. Reboot with the grub floppy in.
+
+10. Install grub. Basically 'root (hd0,0)' (or where the correct disk is), then 'setup (hd0)' will do it, but see http://www.gnu.org/software/grub/manual/html_node/Installing-GRUB-natively.html#Installing-GRUB-natively for directions.
+
+11. Reboot into your system. If you did everything right, you can log in as root with no password.
+
+12. Change your password with passwd, and add a user with adduser.
+
+13. Make your network work on boot (if you've got one - make an init.d script called, say, S40network and put it in there), grab extra packages (from ftp://distro.ibiblio.org/pub/linux/distributions/polypux/packages), and more.
+
+14. Have fun, and just wait until I actually get more packages ready!!!
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+NOTES:
+
+To install a package, run ./install from inside the directory. It'll unpack the tarball within the tarball, don't worry about it.
+
+To uninstall, you can use any version of the correct package and run ./uninstall.
+
+To upgrade a package, run ./uninstall then ./install.
+

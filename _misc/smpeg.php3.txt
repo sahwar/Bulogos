@@ -1,0 +1,30 @@
+<?php
+
+// The first two lines should not be changed.
+
+$version = '0.9b';
+$pagetype = 'overview';
+
+// Enter a title for the page here.
+// This is what appears in the title bar of the window.
+
+$title = 'SDL MPEG Player Library (SMPEG)';
+
+// Enter the IMG SRC tag for the title graphic (if there is one),
+// or otherwise enter a string of plain text.
+// This will appear above the page content and acts as the headline.
+
+$headline_pic = '';
+$headline_text = 'SDL MPEG Player Library (SMPEG)';
+
+// Keywords and description are optional.
+
+$keywords = '';
+
+$description = '';
+
+// DO NOT change this last line on pain of excommunication!
+
+require '/webspace/lokigames.com//_global/_php/tmpl_'.$pagetype.'.phps';
+
+?>
