@@ -820,3 +820,10 @@ Record TTS from whole file: Start / Pause / Cancel
 (**Other app names considered:**
 
 IzrechitelBG-ss, GlasitelkoBG, GlasnostBG-ss, GlasoveBG-ss, GlasilkaBG-ss, HortuvayBG-ss,  QSDIzrechilkaBG_SpeechSynth (QSD='quick, simple, and dirty), IzrechilkaBG, ProiznositelBGSpeechSynth, Govoritel(che)BGSpeechSynth, IzgovoritelBG, HortuvayNaBG_SpeechSynth, fossBGSpeechSynth, IzgovoriNaBG_SpechSynth, IzrechilkoBG, KazhiBG, ProiznositelBG_SpeechSynth, BGSpeechSynth, BulgSynth, etc.)
+
+````
+http://bezmonitor.com/ - <bezmonitor@gmail.com> (Viktor) (useful information for blind Bulgarians working with computers - полезна информация за слепи българи, работещи с компютри: http://bezmonitor.com/news.htm , http://bezmonitor.com/other.htm , http://bezmonitor.com/speechlab.htm)
+Вижте още: NVDA, Festival TTS, CMU Sphinx TTS, gespeaker/espeak/espeak-ng+MBROLA, FreeTTS, Balabolka TTS, JAWS screen reader (екранен четец), Toshko2 TTS <twenkid@gmail.com>, Google Translate speech-synthesis, )
+* https://github.com/zzw922cn/awesome-speech-recognition-speech-synthesis-papers
+* https://github.com/topic/tts
+````
