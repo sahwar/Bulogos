@@ -1,0 +1,11 @@
+THIS FILE:
+https://github.com/sahwar/Bulogos/blob/master/HOWTO-losslessly-rotate-digital-photos-imOWTO-losslessly-rotate-digital-photos-images.txt
+
+Please check the hyperlinks provided below...
+
+https://photo.stackexchange.com/questions/104337/how-i-can-losslessly-rotate-photos
+
+https://photo.stackexchange.com/questions/12361/are-windows-photo-viewer-rotations-lossless
+
+Quote:
+@TrevorBoydSmith every camera I've seen has image dimensions that are a multiple of 8 or 16. Rotation isn't necessarily the reason, it may just allow some optimization of the JPEG pipeline. – Mark Ransom Oct 10 '19 at 22:47
