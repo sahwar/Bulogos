@@ -2,7 +2,7 @@
 > *Последна актуализация:* 19:28 ч. 02 декември 2019 г.
 > *Източник:* https://github.com/sahwar/Bulogos/_cheatsheets/
 
-0. ЗА УЛЕСНЕНИЕ: предварително да имате подръка свой втори компютър (например лаптоп) с достъп до Интернет и USB портове и/или CD/DVD-записвачка/четячка... Така може да потърсите чрез google.com (или yahoo.com, bing.com, duckduckgo.com, ixquick.com) или в youtube.com за по-особен проблем с основния си компютър и чрез цитиране в кавички ("ERROR whatever" или "ms windows 7 problem (explanation of the problem)") да намерите в Интернет упътване на английски за това как да си решите проблема... И така и можете да записвате разни полезни отделни операционни системи, биващи самостартиращи се .ISO образи върху CD/DVD или върху USB-флашка (ТОВА ИЗИСКВА ДА СЕ ВКЛЮЧИЛИ ОПЦИЯТА В BIOS/UEFI ДА СЕ BOOT-ВА (т.е. стартира) от съответното устройство (USB порт или CD/DVD-устройство) вместо от подразбиращия се вътрешен твърд диск (впоследствие, след като си решите проблема, върнете настройката на BIOS/UEFI, така че да се стартира MS Windows по обичайния начин, т.е. от първичния вътрешен твърд диск)!!!
+0. ЗА УЛЕСНЕНИЕ: предварително да имате подръка свой втори компютър (например лаптоп) с достъп до Интернет и USB портове и/или CD/DVD-записвачка/четячка... Така може да потърсите чрез google.com (или yahoo.com, bing.com, duckduckgo.com, ixquick.com) или в youtube.com за по-особен проблем с основния си компютър и чрез цитиране в кавички ("ERROR whatever" или "ms windows 7 problem (explanation of the problem)") да намерите в Интернет упътване на английски за това как да си решите проблема... И така и можете да записвате разни полезни отделни операционни системи, биващи самостартиращи се .ISO образи върху CD/DVD или върху USB-флашка (ТОВА ИЗИСКВА ДА СТЕ ВКЛЮЧИЛИ ОПЦИЯТА В BIOS/UEFI ДА СЕ BOOT-ВА (т.е. стартира) от съответното устройство (USB порт или CD/DVD-устройство) вместо от подразбиращия се вътрешен твърд диск (впоследствие, след като си решите проблема, върнете настройката на BIOS/UEFI, така че да се стартира MS Windows по обичайния начин, т.е. от първичния вътрешен твърд диск)!!!
 
 1. Ако проблемът не пречи на стартирането на MS Windows и е само въпрос на настройка
 или второстепенна промяна на дадена системна опция:
@@ -152,6 +152,7 @@ https://alternativeto.net/software/filepizza/
 https://alternativeto.net/software/retroshare/about/
 
 https://www.expressvpn.com/
+
 7. Инсталиране или деинсталиране или блокиране на отделни актуализации за MS Windows чрез потребителския интерфейс на Windows Update...
 Контролен панел -> Всички елементи на контролния панел -> Програми и компоненти -> Инсталирани актуализации
 (Control Panel -> All Control Panel elements -> Programs and components -> Installed updates)
@@ -188,5 +189,5 @@ NX
 ?!?
 
 * в Skype има опция за screensharing (споделяне на какво виждате на екрана), както и p2p filesharing (P2P споделяне на файлове)
-* Други варианти за споделяне на файлове: DC++, EiskaltDC++, qBittorrent + .torrent файлове/magnet файлове/.meta(4) файлове, FilePizza, OwnCloud, SyncThing, rsync, F*EX, ... и т.н.
+* Други варианти за споделяне на файлове: DC++, EiskaltDC++, qBittorrent + .torrent файлове/magnet файлове/.meta(4) файлове, FilePizza, FTP, http://tox.im, XMPP+Jingle p2p-filesharing-over-NAT, matrix.org, I2P, eDonkey, XDCC-IRC, .onion links + Tor Browser + RetroShare, percloud (concept + FreedomBox + olimex.com + Raspberry Pi 4+, OLPC 4+),  OwnCloud, SyncThing, rsync, F*EX, ... и т.н.
 * ... 
