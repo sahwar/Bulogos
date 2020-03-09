@@ -31,7 +31,8 @@ AppImageKit, SystemImageKit, YUMI; Ubuntu `snap`s, source `tar.gz` / `tar.lz2` /
 https://www.pling.com/s/ALL/search/projectSearchText/keyboard%20layout%20editor
 *
 https://sites.google.com/site/kdekorte2/gnomemplayer (its comprehensive Playlist window design is very much needed in MPC-HC, mpv & BakaMplayer)
-
+* https://github.com/Wohlstand/Destroy-Windows-10-Spying
+* omgubuntu.co.uk , 
 * https://www.groovypost.com/howto/bios-uefi-setup-guide-boot-from-cd-dvd-usb-drive-sd-card/
 ---
 * https://github.com/basildane/WakeOnLAN ( https://wol.aquilatech.com/ )
