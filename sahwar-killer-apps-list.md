@@ -567,6 +567,7 @@ These projects are no longer actively maintained, but their code may be of inter
 **http://roxlu.com/**
 * https://bellard.org/dvbt/
   https://bellard.org/qemacs/
+* http://cr.yp.to & http://pobox.com/~djb/primegen.html --- a very useful set of free Linux apps and IT projects
 * https://meyerweb.com/eric/tools/
 ---
 Zen CSS Garden
@@ -800,6 +801,26 @@ http://ezix.org - `pukcab` file-backuping similar but not identical to `rsync`, 
 ElementaryOS apps
 PuppyLinux Ubuntu apps
 Best file-managers for (GNU/)Linux: PCManFM, ThunarFM, _SpaceFM_, _sunflower-fm.org_, *Dolphin FM (KDE5+)*, Nemo FM + fork, PuppyLinux FLTK file-browser, conqueror, Konqueror, etc.; JWM
+
+
+````
+https://m.facebook.com/groups/1401603840076709?view=permalink&id=2649279295309151
+Ivan Kurdov
+
+There is already a Linux program for generating prime numbers, just do a websearch (i.e. google) for 'primegen-0.97.tar.gz by D. J. Bernstein
+http://pobox.com/~djb/primegen.html
+http://cr.yp.to '. 😀👍
+
+P.S. And I am sure that there are other such programs for Linux for generating prime numbers, including built-in libraries and functions in various programming languages, e.g. Python, C/C++, Java, PHP, etc.
+
+primegen-0.97.tar.gz by D. J. Bernstein
+http://pobox.com/~djb/primegen.html
+http://cr.yp.to
+
+https://www.facebook.com/groups/programmer.nullposting/permalink/891175411347381/
+
+````
+
 
 ***
 
@@ -1391,5 +1412,5 @@ http://americangirlscouts.org/agsresources/fonts.html
 http://americangirlscouts.org/agsresources/Links.html
 
 http://www.abstractfonts.com/
-https://blambot.com/ = comic & webcomic fonts & comic lettering terminology (all by Nate Piekos)
+https://blambot.com/ = comic & webcomic fonts & comic lettering terminology (all by Nate Piekos) - check out its archive.org/web/ & archive.today old backups for the image with the dictionary of graphics-comic lettering terminology!
 
