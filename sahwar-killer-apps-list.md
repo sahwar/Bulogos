@@ -481,6 +481,7 @@ https://www.splitbrain.org/_static/ico/
 https://splitbrain.github.io/paypal-link-builder/
 https://www.splitbrain.org/projects
 https://www.splitbrain.org/projects/makewordlist
+
 https://man.cx/
 https://github.com/splitbrain/paypal-link-builder
 
@@ -490,6 +491,8 @@ https://isacikgoz.me/tldr/
 https://github.com/isacikgoz/tldr & `kmdr`
 
 ---
+
+https://splitbrain.org
 
 # Projects
 
@@ -561,7 +564,32 @@ These projects are no longer actively maintained, but their code may be of inter
 * http://copy.sh/v86/
 **https://vfsync.org/**
 **http://roxlu.com/**
+* https://bellard.org/dvbt/
+  https://bellard.org/qemacs/
+* https://meyerweb.com/eric/tools/
+---
+Zen CSS Garden
+css-garden.com
+AUtist -> Au-tist (GOLD?!?)
 
+https://meyerweb.com/eric/tools/
+https://meyerweb.com/eric/css/
+https://eternallybored.org/misc/netcat/ ( https://eternallybored.org/misc/netcat/netcat-win32-1.12.zip )
+https://eternallybored.org/misc/gifsicle/
+https://eternallybored.org/misc/netcat/
+https://eternallybored.org/misc/pciutils/
+https://eternallybored.org/misc/wget/
+gnu.org/sw/wget
+https://www.gnu.org/software/wget/
+https://www.gnu.org/software/wget/manual/wget.html#Advanced-Usage
+http://wget.addictivecode.org/FrequentlyAskedQuestions.html#download
+https://gitlab.com/gnuwget/wget2
+https://eternallybored.org/misc/AHK/ (AutoHotKey scripts)
+https://eternallybored.org/misc/xchat/
+https://eternallybored.org/misc/vmware/
+https://eternallybored.org/misc/gimp/
+http://gimp.org
+---
 * http://www.charlesrosenberg.com/
 http://www.chuckrosenberg.com/workpg/
 http://www.chuckrosenberg.com/resumepg/restext.txt
