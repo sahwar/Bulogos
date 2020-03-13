@@ -40,6 +40,9 @@ https://sites.google.com/site/kdekorte2/gnomemplayer (its comprehensive Playlist
 * UltraVNC, Reminna/Remmina (Linux VNC&RDP app), NX app, ssh, mosh, remote-desktop (RTP), screen-sharing (Skype, qTox, etc.), oekaki/oakeki online multiplayer board, Japanese-style 4chan-like imageboards & imageboard software, etc.; web-forum software packages, lightweight online comments-section software, etc.
 * _**for DirectX/Direct 3D video games compatibility:**_ **[DxWnd](https://sourceforge.net/projects/dxwnd/)** ( https://sourceforge.net/p/dxwnd/home/Home/ , https://sourceforge.net/projects/dxwnd/files/ ) (  , https://www.play-old-pc-games.com/compatibility-tools/using-dxwnd/ , https://softradar.com/dxwnd/ , https://www.majorgeeks.com/files/details/dxwnd.html , + 
 
+* https://freenetproject.org/philosophy.html = censorship-resistant p2p publishing ; + RetroShare & Tor Browser + http://matrix.org & http://xmpp.org (+Jingle VoIP&video-conferencing&p2p-filesharing-over-WiFi extension) + https://freenetproject.org/ ; Gnutella, Ares Galaxy, eMule, etc. + new email concept over special addresses with a specialized hash web-address...
+* (paste the DWeb/decentralized Web/decentralized Internet) poll here, to list the major DWeb innovative tech projects & tech stacks/platforms/tools...
+
 ````
 https://www.pcgamingwiki.com/wiki/Home
 https://www.pcgamingwiki.com/wiki/Pekka_Kana_2
