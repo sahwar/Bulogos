@@ -4,6 +4,7 @@ https://github.com/sahwar/Bulogos/edit/master/HUTPIB-BG/TODO.md
 
 **VERY IMPORTANT A.S.A.P.**
 * [paint.net](http://getpaint.net) (freeware) - @sahwar IS ALREADY WORKING ON IT - 
+* the **OpenCamera** & **ColorNote** apps for Google Android
 * MediBang PaintPro (FREEWARE)
 * Krita (F(L)OSS)
 https://docs.krita.org/en/
