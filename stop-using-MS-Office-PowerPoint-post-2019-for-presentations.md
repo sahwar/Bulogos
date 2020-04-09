@@ -32,3 +32,30 @@ PowerPoint или безплатната (freeware) програма PowerPoint 
 
 Пример:
 https://opensource.com/article/20/4/create-web-tutorial-git (`reveal.js` + `git`)...
+
+----
+
+http://downloads.tonicsystems.com/viewer/TonicPointViewer-1.4-OSX.zip
+
+https://github.com/WhyNotHugo/aur-packages/tree/master/tonicpoint-viewer
+
+https://blog.indezine.com/2006/05/free-java-based-powerpoint-viewer.html/amp
+
+https://blog.indezine.com/2006/05/free-java-based-powerpoint-viewer.html/amp
+
+https://forums.gentoo.org/viewtopic-t-500935-start-0.html
+
+http://www.apfelwiki.de/Main/TonicPointViewer
+
+http://tonicsystems.com/products/viewer/
+
+https://www.oldapps.com/forum/software-support/563-office.html
+https://www.oldapps.com/forum/software-support/563-office.html#post2168
+https://www.oldapps.com/forum/software-support/563-office.html#post2168
+
+https://bbs.archlinux.org/viewtopic.php?id=22894
+https://bbs.archlinux.org/viewtopic.php?id=22894
+
+http://www.filehorse.com/download-powerpoint-viewer/%3famp
+https://download.cnet.com/PowerPoint-Viewer/3000-2075_4-75450958.html
+https://support.office.com/en-us/article/view-a-presentation-without-powerpoint-2f1077ab-9a4e-41ba-9f75-d55bd9b231a6
