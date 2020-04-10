@@ -33,6 +33,20 @@ BUGS = БЪГОВЕ (ПРОГРАМНИ ГРЕШКИ)
 COLOPHON = КОЛОФОН (КРАЙ/ЗАВЪРШЕК НА КНИГАТА...)
 ...
 
+---
+SYNOPSIS=РЕЗЮМЕ, ОБЩ ПРЕГЛЕД
+DESCRIPTION=ОПИСАНИЕ
+USAGE=УПОТРЕБА, ИЗПОЛЗВАНЕ, КАК ДА ИЗПОЛЗВАТЕ ПРОГРАМАТА
+OPTIONS=ОПЦИИ
+EXAMPLES=ПРИМЕРИ
+FILES=ФАЙЛОВЕ
+ORIGIN=ПРОИЗХОД
+BUGS=БЪГОВЕ, ПРОГРАМНИ ГРЕШКИ
+WEBSITE=УЕБСАЙТ
+AUTHORS AND CONTACT [INFORMATION]=АВТОРИ И ИНФОРМАЦИЯ ЗА КОНТАКТИ
+---
+As a fan of FIGlet, Christiaan Keet revised the official FIGlet docu- mentation and set up the new FIGlet website at http://www.figlet.org/ (and the corresponding ftp://ftp.figlet.org/pub/figlet/), v2.2.5, 31 May 2012, FIGLET(6) 
+
 -----------------------------------------------------------------------
 | РЕЧНИК - DICTIONARY:                                                |
 -----------------------------------------------------------------------
