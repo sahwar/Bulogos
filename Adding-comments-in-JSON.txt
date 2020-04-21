@@ -1,0 +1,207 @@
+********************************************************************************
+********************************************************************************
+Adding comments in JSON // Добавяне на коментари в/към JSON
+A compilation summary from other sources by https://github.com/sahwar/Bulogos
+02:07 EEST - 20 April 2020
+********************************************************************************
+********************************************************************************
+
+================================================================================
+1. How to add comments in JSON pre-JSONv5:
+
+SOURCES:
+
+https://stackoverflow.com/questions/244777/can-comments-be-used-in-json
+https://www.quora.com/How-do-I-write-comments-inside-a-JSON-document
+https://commentjson.readthedocs.io/en/latest/
+https://tecadmin.net/comments-in-json/
+https://coderwall.com/p/pxkbfa/adding-comments-to-json
+https://www.oreilly.com/content/adding-comments-in-json/
+https://www.w3schools.com/js/js_comments.asp
+https://www.w3schools.com/js/js_json_syntax.asp
+https://stackoverflow.com/questions/244777/can-comments-be-used-in-json/50930429#50930429
+https://www.google.com/search?&q=json+comments+syntax&channel=trow2
+
+..., etc.
+
+https://gist.github.com/MoOx/5271067 (+ the comments there)
+
+================================================================================
+
+ MoOx/comments-trick.json
+Last active 5 hours ago • Report abuse
+
+3
+
+    0
+
+Code
+Revisions 3
+Stars 3
+How to make comment in JSON file
+comments-trick.json
+{
+    "//field": "These 'double quote' 'double quote' are used as comments, because JSON doesnt' allow comment",
+    "field": {},
+    "#another-field": "Another comment",
+    "another-field": {},
+    "/*stuff": "Be careful to use them when you have full control of the content :)",
+    "stuff": [],
+    "bla": "bla"
+}
+@usrrname
+usrrname commented on 2 Feb 2018
+
+Aww damn! I landed on this page from a google search looking for an easy workaround
+@VishwaJay
+VishwaJay commented on 22 Apr 2018 •
+
+Another way, if you have a context checker that doesn't allow empty quote strings for declarations:
+
+{
+    "_comment":  "Comments with // or /**/ are NEVER used in a JSON file!!!",
+    "regulardata": "stuff"
+}
+
+Hope that helps. Just have your processing code lack processing for it, and it works fine.
+@twome
+twome commented on 15 Dec 2018
+
+JSON (& strictly-linted JS) don't allow duplicate keys of objects, so add a unique letter or number to make it validate. This is a trick I've seen somewhere in popular code but can't remember where, sorry. I think the convention of using a "//" as the basis for comment names seems fairly sensible & terse, and should make it easy to programmatically update current JSON configs to some better format in future.
+
+{
+    "//a": "This is the first comment."
+    "//b": "...and this is the second." 
+}
+
+@nikesh9220
+nikesh9220 commented on 24 Jan 2019
+
+The JSON should all be data, and if you include a comment, then it will be data too.
+
+You could have a designated data element called "_comment" (or something) that would be ignored by apps that use the JSON data.
+
+You would probably be better having the comment in the processes that generates/receives the JSON, as they are supposed to know what the JSON data will be in advance, or at least the structure of it.
+
+{
+"_comment": "comment text goes here...",
+"Key":"value"
+}
+@lsloan
+lsloan commented on 5 Jun 2019
+
+@twome's comment here is the best suggestion. I'd give it a +1 if I could!
+@volandku
+volandku commented on 20 Nov 2019
+
+nothing works in php (json_decode) - all comments are still in data
+@MoOx
+Owner Author
+MoOx commented on 20 Nov 2019
+
+Yeah because it's a trick, not real comment. JSON specs just don't have comments...
+@LarsHLunde
+LarsHLunde commented on 23 Jan •
+
+None of these is how I would have done it,
+I would have gone for something like this instead:
+
+{
+    "Comments": [
+        "Lorem ipsum dolor sit amet,",
+        "consectetur adipiscing elit.",
+        "Suspendisse vitae risus ligula.",
+        "Fusce vel urna turpis."
+    ]
+}
+
+Then you won't have to think about making identifiers for every line, and it validates.
+@lurkie
+lurkie commented on 10 Feb
+
+JSON 5 (https://json5.org/) does support comments. However, support for it is limited. E.g. PHP does not support it yet.
+@mbaetaoliveira
+mbaetaoliveira commented on 17 Mar
+
+You can use:
+
+/*
+{
+"Comments": [
+"Lorem ipsum dolor sit amet,",
+"consectetur adipiscing elit.",
+"Suspendisse vitae risus ligula.",
+"Fusce vel urna turpis."
+]
+}
+*/
+
+================================================================================
+2. How to add comments in JSON5:
+
+SOURCES:
+JSON5 — JSON for humans: http://json5.org/
+https://spec.json5.org/ 
+https://spec.json5.org/#comments
+
+================================================================================
+
+Example (Informative)
+
+// This is a single line comment.
+
+/* This is a multi-
+   line comment. */
+
+8White Space
+
+White space may appear before and after any JSON5Token.
+Table 3: White space
+Code Points	Description
+U+0009	Horizontal tab
+U+000A	Line feed
+U+000B	Vertical tab
+U+000C	Form feed
+U+000D	Carriage return
+U+0020	Space
+U+00A0	Non-breaking space
+U+2028	Line separator
+U+2029	Paragraph separator
+U+FEFF	Byte order mark
+Unicode Zs category	Any other character in the Space Separator Unicode category
+
+================================================================================
+3. Alternatives to hacks/tricks to adding comments in JSON & 
+alternatives to JSON5
+
+YAML = https://yaml.org/ & https://github.com/yaml/www.yaml.org
+HAML
+.ini files, .config files, etc. ; Also check out: .netrc, .vimrc, # EditorConfig is awesome: http://EditorConfig.org
+TOML = https://github.com/toml-lang/toml
+JSONP.php = https://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=
+https://en.wikipedia.org/wiki/JSONP
+https://github.com/sindresorhus/strip-json-comments = Write sorta invalid-JSON-with-comments, then use this to just remove the comments for production-use JSON files...
+JSON fork with comments = https://github.com/eyalev/jsoc
+https://hjson.github.io/ & https://github.com/hjson/hjson = Hjson, a user interface for JSON
+https://github.com/garycourt/JSV
+https://github.com/open-source-parsers/jsoncpp
+Parse JSON with comments: https://www.npmjs.com/package/jsonc
+https://github.com/onury/jsonc
+https://jsonlint.com/
+https://github.com/circlecell/jsonlint.com
+https://github.com/zaach/jsonlint
+
+
+Remove comments from JSON (MAY BE BROKEN, test it before production): https://gist.github.com/WizKid/1170297
+
+https://github.com/getify/JSON.minify
+https://github.com/getify/JSON.minify/blob/master/minify_json.py
+https://github.com/getify/JSON.minify/commit/f626f3dbe343321e019a1f176107d48fd94f33ae
+https://github.com/getify/JSON.minify/commit/f626f3dbe343321e019a1f176107d48fd94f33ae#diff-d437a64a5901ee0232b3ba2fc7edff7a
+
+And, ugh, XML & SGML... but those are less human-friendly to read and longer 
+than JSON, HAML, TOML, JSONP, _BUT_ XML is better in some other cases!
+
+http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf
+
+================================================================================
