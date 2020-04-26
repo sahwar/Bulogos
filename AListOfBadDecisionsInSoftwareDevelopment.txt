@@ -1,0 +1,16 @@
+AListOfBadDecisionsInSoftwareDevelopment.txt
+
+* Mozilla Firefox v76+(?) will remove support for the FTP/FTPS/SFTP protocol?!? 😢🤮 But why? Even if it is an insecure protocol by contemporary (2020) standards, you can just still include FTP support in the browser BUT have a WARNING page about insecure protocol&a disclaimer of warranty if the user still wishes to open the FTP webpage. And also add a switch in Mozilla Firefox's `about:config` to even remove the warning pre-webpage for people who are okay with using a sorta insecure connection. Don't just remove support for FTP completely!!! I mean, a web-browser is about browsing HTTP/HTTPS & FTP/FTPS/SFTP webpages!!!
+However, I mostly really love the new Firefox UI/GUI/UX, inspired by Google Chrome BUT still offering the most features and much more customization that that found in Google Chrome! Kudos (Congratulations) to the Firefox UI-revamp team!
+I also greatly enjoy the new multi-process Firefox having a task-manager for tabs&windows(&private such) like Google Chrome does!
+I also greatly enjoy the availability of Firefox ESR (extended support release, like Ubuntu Linux's LTS (Long-term support) release - in contrast with rolling-release distros!).
+I also greatly enjoy stable x64 releases of Firefox (Quantum) and the cutting-edge 2 separate branches of Firefox (one for webdev professionals and th latest-git unstable edition for testing!)
+The only minus is that Firefox is a memory hog for too much RAM if you have more than 5 tabs simultaneously opened,
+and so users of older PCs are forced to use OLDER versions of Firefox or more lightweight web-browsers like uzbl or suckless.org's webkit-based browser or other browsers (e.g. inspired by the Vimperator add-on plus Firefox's v65+(?) new UI).
+* Debian Linux will remove support for older drivers?!?
+ https://www.facebook.com/groups/89717832488/permalink/10157818391107489/
+But why?!?
+Just put those drivers in a package in the `non-free` or `contrib` repositories and add instructions on how to automagically include those by using a simple CLI commmandline switch at install time (which may require Internet access to download the drivers!).
+* JSON NOT officially supporting comments so people are forced to use various hacks or mods of JSON...
+* ?
+* to add more later on...
