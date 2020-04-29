@@ -1,4 +1,5 @@
 AListOfBadDecisionsInSoftwareDevelopment.txt
+https://github.com/sahwar/Bulogos/blob/master/AListOfBadDecisionsInSoftwareDevelopment.txt
 
 * Mozilla Firefox v60+/v67+(?) will remove support for the FTP/FTPS/SFTP protocol?!? 😢🤮 But why? Even if it is an insecure protocol by contemporary (2020) standards, you can just still include FTP support in the browser BUT have a WARNING page about insecure protocol&a disclaimer of warranty if the user still wishes to open the FTP webpage. And also add a switch in Mozilla Firefox's `about:config` to even remove the warning pre-webpage for people who are okay with using a sorta insecure connection. Don't just remove support for FTP completely!!! I mean, a web-browser is about browsing HTTP/HTTPS & FTP/FTPS/SFTP webpages!!!
 
