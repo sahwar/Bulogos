@@ -792,6 +792,9 @@ TTS:
 MaryTTS, eSpeak, gESpeaker, FestivalTTS, Merlin, Mimic, BalabolkaTTS
 STT (speech-to-text):
 CMU Sphinx, Julius, HTK, Kaldi
+SpeechLab2 (paid but cheap, for Google Android - available at the Google Play web-store) = 
+SpeechLab1 - freeware, freely given to blind people, see: 
+
 
 https://www.slant.co/topics/9395/~open-source-speech-to-text-stt-engines
 
@@ -801,11 +804,11 @@ https://www.slant.co/topics/9395/~open-source-speech-to-text-stt-engines
 Some ideas borrowed from:...
 
 TTS Engine: 
-Language+Voice+male/female[+age+dialect/accent] pack:
+Language+Voice+male/female[+age+dialect/accent/geographic-location+datetime-stamp-year] pack:
 Speed:
 Pitch:
 Volume:
-Expressive breaks: ?? ms (e.g. 350)
+Expressive breaks: ?? ms (e.g. 350) {and/or when you supply a .txt file, you can place SPECIAL IPA&orthography-altering-the-pronunciation HTML/XML/SGML/JSON/HAML/CommonMark tags + |like|this|+more| special regex/regexp that supply the wordform paradigm (словообразувателната парадигма + неотговарящи на нея различаващи се отделни словоформи, примерно речетатив като „пека /пекЪ/ -> пеЧен, изпечени, запичам, изпичам“ и т.н.!) ~added 01-May-2020 by https://github.com/sahwar/Bulogos }
 Reading ends in: xxx hh yyy min zzz sec
 [?] Resume from last punctuation mark: '[]()...'
 Read punctuation in full: '[]()...'
@@ -815,11 +818,39 @@ Pause TTS-reading on incoming calls, messages, SMSs, etc.
 Pause TTS-reading on incoming new Android notifications (DANGEROUS!): ...
 Enable remote bookmarks (Start/Stop button): ...
 Record TTS from whole file: Start / Pause / Cancel
+{ + exact-frequency-or-frequency-span-band speech-synthesizer sound-generator app! Frequencies below 7.9Hz(Earth's natural Schummann resonance)-20 Hz are HARMFUL to humans and above 20kHz could be deadly to humans; these are used by psychotronics weapons/devices like HAARP, GWEN towers, number(s) stations, military/police LRAD & V-MADs (there are YouTube videos about those actually existing!), 5G towers, possibly by Elon Musk's Starlink satellites (unless those satellites are just for beaming cheap/free Internet to remote areas, and for military/GoogleEarth/GoogleMaps/openstreetmap.org geo-spying/surveillance/observation/&MIA-rescuing-retrieval-missions, and for laser-cutting&destroying/crumbling/deflecting big asteroids which pose a threat to planet Earth (also by using atomic bombs & hydrogen bombs (even of newer designs!)! HOWEVER, if these satellites are used to do electronic electromagnetic harassment, heatwave-torturing, mind-control remote brain-scanning/earworm-putting-audio/video-playback-for-MKULTRA/Monarch-mind-control consciousness/brain/neural-system-harming or for laser-incineration of people or for destroying objects on Earth via lasers or bombs, then ve4ernik/sahwar does NOT support said Starlink satellites...}
 ````
 
 (**Other app names considered:**
 
 IzrechitelBG-ss, GlasitelkoBG, GlasnostBG-ss, GlasoveBG-ss, GlasilkaBG-ss, HortuvayBG-ss,  QSDIzrechilkaBG_SpeechSynth (QSD='quick, simple, and dirty), IzrechilkaBG, ProiznositelBGSpeechSynth, Govoritel(che)BGSpeechSynth, IzgovoritelBG, HortuvayNaBG_SpeechSynth, fossBGSpeechSynth, IzgovoriNaBG_SpechSynth, IzrechilkoBG, KazhiBG, ProiznositelBG_SpeechSynth, BGSpeechSynth, BulgSynth, etc.)
+
+````
+
+https://www.google.com/inputtools/help/languages.html - Google Translate IME Input Tools + handwriting-recognition sketchpad-panel
+https://www.google.com/inputtools/try/
+https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/shape/sc_digits.html ( http://archive.is/O8kL0 )
+http://shapecatcher.com/index.html ( http://archive.is/Ndf1l )
+
+https://translate.google.com/intl/en/about/languages/
+https://support.google.com/translate/#googtrans/en/bg&topic=7011755
+https://translate.google.com/intl/en/about/
+https://translate.google.com/intl/en/about/forbusiness/
+https://cloud.google.com/translate/
+https://translate.google.com/?hl=bg&tab=TT&authuser=0
+'Dattebayo!' (Naruto Shippuuden catchprase often used by Naruto; it was translated as '... Believe it!' in the official Naruto English-dub for English-language TV; first released as https://horriblesubs.info/ ( https://horriblesubs.info/images/b/covid19.png ) & as http://dattebayo.com/ - it later emerged as official English-subtitles via paid web-streaming platform http://crunchyroll.com ): https://translate.google.com/?hl=bg&tab=TT&authuser=0#view=home&op=translate&sl=bg&tl=en&text=%D0%9C%D1%80%D0%B0%D0%B7%D1%8F%20%D1%82%D0%BE%D0%B2%D0%B0%20%D1%88%D0%B8%D0%B1%D0%B0%D0%BD%D0%BE%20%D0%B3%D0%BE%D0%B2%D0%B5%D0%B4%D0%BE!%20%D0%94%D0%B5%D0%B9%D0%B1%D0%B0%20%D0%B8%20%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%B0%2C%20%D0%B4%D0%B5%D0%B9%D0%B1%D0%B0!
+
+
+Download & use Google Translate
+
+You can translate text, handwriting, photos, and speech in over 100 languages with the Google Translate app. You can also use Translate on the web.
+Computer AndroidiPhone & iPad
+
+To translate text, speech, and websites in more than 100 languages, go to Google Translate page.
+
+Предоставено от Google ПреводачПреводач
+
+````
 
 ````
 http://bezmonitor.com/ - <bezmonitor@gmail.com> (Viktor) (useful information for blind Bulgarians working with computers - полезна информация за слепи българи, работещи с компютри: http://bezmonitor.com/news.htm , http://bezmonitor.com/other.htm , http://bezmonitor.com/speechlab.htm)
