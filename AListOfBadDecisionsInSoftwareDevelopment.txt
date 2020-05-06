@@ -26,4 +26,16 @@ However, it is nice that Google Chrome (desktop&mobile) supports saving webpages
 * Mozilla Firefox & Google Chrome NOT including a local .html (English+other locale language) of their help pages with the list of keyboard shortcuts, computer-mouse&mouse-gestures shortcuts, and list of about:{something} internal web-browser settings webpages... and also NOT including the Keyboard Shortcuts Editor by default inside the web-browser... and NOT including a DONATE button in the web-browser, and NOT shipping by default the Ctrl+Shift+D 'Save all opened tabs as {user-typed_datetime}' folder + export all saved bookmarks as .html/.commonmark/.json + Copy All Opened Tab URIs/URLs (&/titles) to clipboard/.txt/.json/.html/.commonmark - for both desktop&mobile web-browsers.
 * modern smartphones NOT having a replaceable (rechargable) battery & NOT supporting file-sharing/synching to USB-connected HDDs/SSDs/USB-flashsticks and NOT supporting USB3toSATA connection...
 * newer non-smartphone dumbphones/feature phones NOT supporting basic VoIP/video-conferencing/UTF-8+color-emoji live-messaging chatting&p2p-filesharing&access to remote FTP/WebDAV/HTTP/p2p servers, and NOT supporting voice-input, extensible speech-synthesis app, advanced multilingual updateable IME inputting (keyboard layouts, handwriting recognition, voice-input/speech-recognition/voice-control), and NOT supporting live webcast broadcasting, and USB&Bluetooth connections, and LAN-p2p-filesharing/chatting/videoconferencing-audio-VoIP, and NOT shipping by default with a basic HTML5 web-browser with synching options... AND NOT having dual-language GSM keyboard layouts on the physical keys of the featurephone, and NOT being mod-ready&modular... , etc.
+* Not necessarily a bad software decision, but just bad software:
+Windows 8 (before Windows 8.1 kinda fixed it),
+and Windows 10X ( https://www.theverge.com/platform/amp/2020/5/4/21246561/microsoft-windows-10x-single-screens-windows-usage-demand-coronavirus-pandemic ) :
+Windows10 sucks unless you are into AAA-gaming and want an improved/changed/revamped Windows Explorer and Task Manager,
+and some newer hardware drivers; Only go for Windows10 Pro (x64), ditch/forget about Windows10 Home, and
+also, Windows10X is mostly crap (like Google ChromeOS netbooks but supporting Win32/WUP apps!) made just for the low-powered netbook devices...
+* Google Android M - it will only be usable after it is made into a lightweight clone of macOS and Ubuntu/Debian Linux, otherwise it is
+just a Google Android (based on&running a Linux kernel) with a Win98/XP/7/8.1/10 START menu and capable of running Google Android apps from Google Play storeb& from f-droid.org ...
+* Debian Linux & Arch Linux removing 32-bit builds upon which people with older hardware depended - sucks ass - they should just release 32-bit builds as unofficial forks of their main 64-bit amd64&ARM-v6+-x64 builds...
+* people NOT knowing about NTP online time-synchronization servers & about THAT freeware MS-Windows app that lets you modify the datetime stamps of files&folders... 😁😜👍
+* etc.
+* useful .bat scripts for MS-Windows cmd.exe and cmdlets for MS-Windows PowerShellCore, similar to Linux/*NIX shell-scripting (mainly for bash&zsh).
 * to add more later on...
