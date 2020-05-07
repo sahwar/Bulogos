@@ -13,6 +13,14 @@ Bulogos поради свързаността си с целите на прое
 https://en.wikipedia.org/wiki/Fair_use :
 
 * (ЗА ВЪРШЕНЕ: копирай имената на съответните файлове тук...)
+cmd.exe (MS Windows):
+	> tree {dir-fullpath} .. more > {generated file1}.txt
+	> {generated file1}.txt
+bash (Linux):
+	$ ls {dir-fullpath} .. less / more / most
+	$ sort | uniq {generated file2}.txt
+	$ {OPEN/VIEW} {generated file}.txt 
+	$ {open-check each file manually & then add the FAIR-USE ones to the above list}
 
 БЕЛЕЖКА: В случай че намерите сред гореизброените файлове своя творба, която не
 е упомената като Ваша разработка, можете да се свържите с нас, за да добавим
