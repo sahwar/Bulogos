@@ -86,6 +86,10 @@ https://www.reddit.com/r/bulgaria/comments/gebo7l/wanting_to_learn_bulgarian_lan
 * http://directory.fsf.org 
 * http://opensource.com
 * http://kernel.org
+* http:///tldp.org (The Linux Documentation Project)
+* http://catb.org/~esr/jargon/ (the Jargon File)
+* http://toec.com / toeclc.info (The Online Encyclopedia of Computing) + Речник на компютърните термини.exe + http://slovnik.bg + Wikipedia + http://abbreviations.com + http://acronyms.com + http://dictionary.com + http://etymonline.com
+* http://man.dice.de (Linux man-pages compilations)
 * http://omgubuntu.org
 * http://dedoimedo.com
 * http://listverse.co
@@ -101,52 +105,11 @@ https://www.reddit.com/r/bulgaria/comments/gebo7l/wanting_to_learn_bulgarian_lan
 'Nature always creates unique biological organism equipped with the bio-psycho-evolutionary special powers&abilities to survive&thrive in their environment, while mainstream mass-society/pop-mass-culture&formal-education&mass-media-indoctrination&sociocultural-programming&PredictiveProgramming&FakeNews+DeepFakes+BigGov/BigCorps/DeepState/ShadowElite-censorship&mad-doctors-psychiatry-mindcontrol&torture&'corrective'-brainwashing&sedation always mold insividuals into submissive zombies complacent into their 'Orwell 1984 / Huxley BraveNewWorld / transhumanist cyberpunk semi-dystopian hellish semi-nightmare... Yet the individual's congenital inborn special talents/traits & physical-bodily & mental-psycho-ESP features always overcome some of that crap & manage to survive in a lifestyle that is sorta self-imposed/self-selected-based-on-hobbies&interests&ideological-bent&fetish/kink/paraphernalia/personal-preferences mindset/autobiographical-peculiarities&idiosyncrasies&idiolect&synchronicities... Alchemical individuation shines through the cosmic-consciousness Unity [of Opposites] & sorta re-integrates into mass society BY DOING YOUR THING & FOLLOWING YOUR OWN WAY [ALMOST ALWAYS] NO MATTER WHAT (except direct physical/danger/physics/exhaustion-aging-despair-disillusionment/disenchantment/anomie/depersonalization limits/constraints)..' ~ve4ernik/sahwar
 https://www.reddit.com/r/bulgaria/comments/gebo7l/wanting_to_learn_bulgarian_language/?utm_medium=android_app&utm_source=share
 
-* http://coursera.org
-* khanacademy.org
-* udemy.org
-* softuni.bg
-* GitHub.com books & reference lists + http://gitlab.org + Gitea
-* _Anki_ flash-cards repetition-rote-memorization-testing app; GoldenDict; dicts.info/uddl.php ; onelook.com ; dict.cc ; dict.org ; mdbg.net ; WJDICT ; online Japanese dictionaries
-* Perapera add-on for Mozilla Firefox (+mods with different user-made/contributed/compiled-or-OCR-print dictionaries)
-* slovo.bg
-* chitanka.info
-* https://www.e-prosveta.bg/
-* https://www.bulgaro.io/learn-bulgarian
-* tatoeba.org
-* http://youtube.com
-* http://vimeo.com
-* http://d.tube
-* http://dailymotion.com
-* http://soundcloud.com
-* http://patreon.com
-* http://kickstarter.com
-* http://gogofundme.com
-* http://ebay.com
-* http://amazon.com
-* http://ebay-kleinanzeigungen.de
-* http://deviantart.com
-* http://cgsociety.org
-* http://pixeljoint.com
-* ( http://rpgmaker.net )
-* http://creativeasylum.com
+* 
+*
 
-* http://sourceforge.net
-* http://fosshub.com
-* http://freshcode.com
-* http://directory.fsf.org 
-* http://opensource.com
-* http://kernel.org
-* http://omgubuntu.org
-* http://dedoimedo.com
-* http://listverse.co
-* http://alternativeto.net
-* http://oldapps.com
-* http://old-games.com
-* http://hotud.org (Home of the Underdogs - abandonware video-games & software)
-* http://en.wikipedia.org/Lists_of_software
-* http://pcgamingwiki.org
-* http://wikia.com
-* http://tvtropes.org (& forks)
+@
+
 ---
 
 * https://rechnik.chitanka.info/
@@ -168,7 +131,7 @@ https://www.reddit.com/r/bulgaria/comments/gebo7l/wanting_to_learn_bulgarian_lan
 http://vanyog.com/index.php?pid=8
 http://www.physics-bg.org/z/index.php?pid=2
 http://vanyog.com/_new/index.php?pid=9
-Речникът съдържа 73018 думи с 1011594 форми.
+Речникът съдържа 73018 думи с(ъс) 1011594 (слово)форми (словообразувателна парадигма на думата или multiword expression (MWE))
 
 А ав аз ал ана анц ар ау Бак бар безв безп безч биб бич бл Бой бох бр бу бъ Ва Вел вет Вик виш вн вп вс възв възр вър Га ге гл го гра гро гъ Да деб дел дес дж ди доб док дон дос Др ду дъ Ед ек ел Ен ет Же Жъ Зав зад зай зак зам зап зар зас зат заш зе зн Иг изв изд изк изм изо изп изр изт изц им ин ир Каб Кал кан кар кат киб ких кл кок ком конк конф кор Кра Кри кръ ку кю Ла Ле ли ло Лю Маз мам Мар мащ мер меч мин Мих мн мо му мъ Нав наг над нак нам нап нар нас нау ная нев нед нез нек Нен нео непо непр нер нес неу ни но Обв обз обо объ од ок ом опи Опъ оса ост отг отл отр отъ Пав Пан пар пек пес Пик пию пл поб пог подк подп подс поз пои пок пол пом пон поо Поп пор посв пост поу поя преб предв преду прек прео прес прет прив Прил прип прит пров прои проп прот прош пу пъ Рад разб разг разк разн разп разт разч рац рез рес ри ро ръ Само саму Сва свл сд се сиз сит ск сла сля см со сп ср Ста сти стр сту су съв сън със Та тек тер ти То тра три ту тъ Ув ук ун ус уч Фа фи фо Ха хв хи Хо Хъ Це Цъ Чер чет чо Ша ши шу Ю Я
 * http://bgjargon.com
@@ -402,7 +365,7 @@ https://ctan.org/pkg/etex/
 http://www.pragma-ade.com/
 https://www.tug.org/tex4ht/
 http://para.inria.fr/~maranget/hevea/
-https://www.mathjax.org/
+https://www.mathjax.org/ + MathML + online tex2png equations + paper handwriting scribblings/drawings + photoshooting that + sending an email with the image
 http://www.winedt.com/
 http://www.micropress-inc.com/fonts.htm
 https://www.canva.com/learn/typography-terms/
