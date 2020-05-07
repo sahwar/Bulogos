@@ -14,6 +14,8 @@
 * https://liternet.bg/ (например http://archive.is/Ol3vk )
 * http://www.myschoolbel.info/ 
 * https://www.booksbg.org/ 
+* http://ibl.bas.bg/rbe/
+* http://bacl.org
 
 * http://www.kultura.bg/bg/home
 * http://kweekly.bg/
@@ -25,8 +27,14 @@
 * http://arxiv.org
 * http://academia.eu
 * https://journals.plos.org/plosbiology/
-* myth & ethos
+* myth & ethos vs. Chad&Thyrone/alpha-bitch timelessness a-historical mostlt unconscious living... (Voxiversity - the Socio-sexual Hierarchy, + sigma-male + reddit.com/r/TheRedPill + MGTOW + http://therationalmale.com + http://rooshv.com + Better Bachelor on YouTube, etc. )
 * http://sciencedaily.com
+
+* http://plato.stanford.edu
+* http://oep.edu (Online Encyclopedia of Philosophy)
+* http://mythica.org (Project Perseus)
+* http://libraryofcongress.gov.us
+* http://dumps.wikimedia.org
 
 ---
 
@@ -37,12 +45,108 @@
 * http://coursera.com
 * https://www.udemy.com/topic/english-grammar/
 * http://books.google.com
-* http://quora.com
+* http://quora.com (!!!)
 * http://english.stackexchange.com
-* http://
+* http://zak.bg & http://kaksepishe.com + ibl.bas.bg + групата "КАКВО ЗНАЧИ?" във http://facebook.com + http://idispellchecker.freeplace.info + http://sfera.zone.bg (+ клуб "Ефремов" + http://sharkanh.blogspot.com + http://choveshkata.net + http://zmeyche.zavinagi.org + http://blog.bg + http://otkrovenia.com + http://spodeli.info (!!!) + http://teenproblem.com
+moodle.bg & e-courses in Bulgarian universities&colleges&online school courses ...
+https://www.reddit.com/r/bulgaria/comments/gebo7l/wanting_to_learn_bulgarian_language/?utm_medium=android_app&utm_source=share
+
+* http://coursera.org
+* khanacademy.org
+* udemy.org
+* softuni.bg
+* GitHub.com books & reference lists + http://gitlab.org + Gitea
+* _Anki_ flash-cards repetition-rote-memorization-testing app; GoldenDict; dicts.info/uddl.php ; onelook.com ; dict.cc ; dict.org ; mdbg.net ; WJDICT ; online Japanese dictionaries
+* Perapera add-on for Mozilla Firefox (+mods with different user-made/contributed/compiled-or-OCR-print dictionaries)
+* slovo.bg
+* chitanka.info
+* https://www.e-prosveta.bg/
+* https://www.bulgaro.io/learn-bulgarian
+* tatoeba.org
+* http://youtube.com
+* http://vimeo.com
+* http://d.tube
+* http://dailymotion.com
+* http://soundcloud.com
+* http://patreon.com
+* http://kickstarter.com
+* http://gogofundme.com
+* http://ebay.com
+* http://amazon.com
+* http://ebay-kleinanzeigungen.de
+* http://deviantart.com
+* http://cgsociety.org
+* http://pixeljoint.com
+* ( http://rpgmaker.net )
+* http://creativeasylum.com
+
+* http://sourceforge.net
+* http://fosshub.com
+* http://freshcode.com
+* http://directory.fsf.org 
+* http://opensource.com
+* http://kernel.org
+* http://omgubuntu.org
+* http://dedoimedo.com
+* http://listverse.co
+* http://alternativeto.net
+* http://oldapps.com
+* http://old-games.com
+* http://hotud.org (Home of the Underdogs - abandonware video-games & software)
+* http://en.wikipedia.org/Lists_of_software
+* http://pcgamingwiki.org
+* http://wikia.com
+* http://tvtropes.org (& forks)
 
 'Nature always creates unique biological organism equipped with the bio-psycho-evolutionary special powers&abilities to survive&thrive in their environment, while mainstream mass-society/pop-mass-culture&formal-education&mass-media-indoctrination&sociocultural-programming&PredictiveProgramming&FakeNews+DeepFakes+BigGov/BigCorps/DeepState/ShadowElite-censorship&mad-doctors-psychiatry-mindcontrol&torture&'corrective'-brainwashing&sedation always mold insividuals into submissive zombies complacent into their 'Orwell 1984 / Huxley BraveNewWorld / transhumanist cyberpunk semi-dystopian hellish semi-nightmare... Yet the individual's congenital inborn special talents/traits & physical-bodily & mental-psycho-ESP features always overcome some of that crap & manage to survive in a lifestyle that is sorta self-imposed/self-selected-based-on-hobbies&interests&ideological-bent&fetish/kink/paraphernalia/personal-preferences mindset/autobiographical-peculiarities&idiosyncrasies&idiolect&synchronicities... Alchemical individuation shines through the cosmic-consciousness Unity [of Opposites] & sorta re-integrates into mass society BY DOING YOUR THING & FOLLOWING YOUR OWN WAY [ALMOST ALWAYS] NO MATTER WHAT (except direct physical/danger/physics/exhaustion-aging-despair-disillusionment/disenchantment/anomie/depersonalization limits/constraints)..' ~ve4ernik/sahwar
+https://www.reddit.com/r/bulgaria/comments/gebo7l/wanting_to_learn_bulgarian_language/?utm_medium=android_app&utm_source=share
 
+* http://coursera.org
+* khanacademy.org
+* udemy.org
+* softuni.bg
+* GitHub.com books & reference lists + http://gitlab.org + Gitea
+* _Anki_ flash-cards repetition-rote-memorization-testing app; GoldenDict; dicts.info/uddl.php ; onelook.com ; dict.cc ; dict.org ; mdbg.net ; WJDICT ; online Japanese dictionaries
+* Perapera add-on for Mozilla Firefox (+mods with different user-made/contributed/compiled-or-OCR-print dictionaries)
+* slovo.bg
+* chitanka.info
+* https://www.e-prosveta.bg/
+* https://www.bulgaro.io/learn-bulgarian
+* tatoeba.org
+* http://youtube.com
+* http://vimeo.com
+* http://d.tube
+* http://dailymotion.com
+* http://soundcloud.com
+* http://patreon.com
+* http://kickstarter.com
+* http://gogofundme.com
+* http://ebay.com
+* http://amazon.com
+* http://ebay-kleinanzeigungen.de
+* http://deviantart.com
+* http://cgsociety.org
+* http://pixeljoint.com
+* ( http://rpgmaker.net )
+* http://creativeasylum.com
+
+* http://sourceforge.net
+* http://fosshub.com
+* http://freshcode.com
+* http://directory.fsf.org 
+* http://opensource.com
+* http://kernel.org
+* http://omgubuntu.org
+* http://dedoimedo.com
+* http://listverse.co
+* http://alternativeto.net
+* http://oldapps.com
+* http://old-games.com
+* http://hotud.org (Home of the Underdogs - abandonware video-games & software)
+* http://en.wikipedia.org/Lists_of_software
+* http://pcgamingwiki.org
+* http://wikia.com
+* http://tvtropes.org (& forks)
 ---
 
 * https://rechnik.chitanka.info/
