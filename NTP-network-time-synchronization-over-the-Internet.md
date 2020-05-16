@@ -42,6 +42,14 @@ Inside a Linux terminal & its `bash` shell:
 
 ` ... `
 
+````
+Our day and time is right now: Saturday 12:20:09 PM EDT   —— 6 days until next meeting
+Run this terminal program in a GNU/Linux system terminal to see the meeting start time in your time zone:
+
+$ date --date='TZ="America/New_York" 12:00 this Fri'
+````
+(SOURCE: https://directory.fsf.org/wiki/Main_Page )
+
 * Алтернатива за хора с модерни ГПИ/GUI уеб-браузъри, поддържащи добре HTML5:
 
 http://timeanddate.com
