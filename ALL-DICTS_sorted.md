@@ -899,3 +899,36 @@
 * Известни OPEN (отворени) проекти и инициативи:
 * Световноизвестни списания за изкуство:
 * Съвременна българска журналистика, култура, литература и култура:
+
+
+
+
+NEW, you need to resort the whole file & then manually edit it to fix some parts of it like in the current text-corpus model...
+
+
+List of laws named after people
+List of laws
+List of Latin phrases
+List of Greek phrases
+List of aphorisms
+Списък с български народни пословици, поговорки, афоризми, сентеции, крилати фрази, скоропоговорки, каламбури (езикови игри) и т.н. --- tangrabg.wordpress.com
+---
+
+https://bg.wikibooks.org/wiki/%D0%91%D0%BE%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5 (Богословие)
+https://bg.wikibooks.org/
+
+http://slovo.bg
+http://chitanka.bg
+http://gramofonche.chitanka.bg
+http://slovored.com
+http://rechnik.info
+
+slovio.bg
+znam.bg
+
+
+http://glosbe.com
+https://www.dict.com/bulgarian-english
+
+http://dict.cc
+https://www.google.com/search?q=enbg4dic&oq=enbg4dic&aqs=chrome..69i57j0l5.3589j0j4&sourceid=chrome&ie=UTF-8
