@@ -1,6 +1,6 @@
 free-online-filesharing-website-web-services_LISTS.md
 
-pages and provide technical assistance publicly in the channel. All users are welcome.
+
 
 https://www.gnu.org/server/irc-rules.en.html
 
