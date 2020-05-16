@@ -1,6 +1,6 @@
 > Source: https://web.archive.org/web/20191209171152/http://www.pravoslavieto.com/1/use.htm
 
-### Koнвертори, дешифратори, речници, преводачки ![](https://web.archive.org/web/20191209171152im_/http://www.pravoslavieto.com/images/felles/external_link.gif)
+### Koнвертори, дешифратори, речници, програми - машинни преводачки ![](https://web.archive.org/web/20191209171152im_/http://www.pravoslavieto.com/images/felles/external_link.gif)
 
 > Дешифратори на нечетлив текст, напр. текст със странни, нечетливи знаци, който сте получили по електронната поща. Online конвертори от кирилица на латиница (и обратно).
 >
