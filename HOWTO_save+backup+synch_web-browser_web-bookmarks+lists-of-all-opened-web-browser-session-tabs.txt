@@ -1,0 +1,12 @@
+HOWTO_save+backup+synch_web-browser_web-bookmarks+lists-of-all-opened-web-browser-session-tabs.txt
+######
+
+Webbookmarks:
+* https://github.com/jarun/buku
+* Mozilla Firefox -> Ctrl+Shift+D -> save datetime+titled folder of all opened tabs as new web-bookmarks
+* Mozilla Firefox -> Bookmarks -> Export to .html & Export to .json ; Import from .html & Import from .json
+* Mozilla Sync (syncs open tabs & webbookmarks, and maybe passwords & session-cookies&offline-web-cache-datafiles; WARNING: backup your list or opened tabs (Settings -> Set current open tabs as homepage & copy&paste to a {datetime}_{your-nickname}_my-Mozilla-Firefox_all-opened-tabs-URLs-session.txt file , and then remember to delete all the text in the 'Set homepage' text-box!!! ; OR install & use 'Copy all tab URLs' web-browser add-on & 'Session Manager' web-browser add-on, and then manually backup the files that you generate with these add-ons) & your web-bookmarks
+(Saving & backuping / synching your opened tabs & all your web-bookmarks is similar in Google Chrome / Chromium!!!)
+* http://del.icio.us
++ THEN copy all these files to a web-server that you have access to from anywhere with an Internet connection!!! And maybe add an ElasticSearch regexp-based HTML5 web-interface to search through all your saved URLs/web-bookmarks/lists-of-opened-web-browser-tabs, but DO NOT FORGET THE DANGERS OF HYPERLINK-ROT ('404 NOT FOUND') & WEBPAGE CHANGES/UPDATES (WITHOUT SOME VERSION-CONTROL-SYSTEM LIKE WITH GIT OR MEDIAWIKI, YOU CAN'T GET THE OLDER VERSIONS OF A WEBPAGE, ONLY THE LATEST VERSION!)...
+
