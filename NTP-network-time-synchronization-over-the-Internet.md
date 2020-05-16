@@ -50,7 +50,13 @@ $ date --date='TZ="America/New_York" 12:00 this Fri'
 ````
 (SOURCE: https://directory.fsf.org/wiki/Main_Page )
 
-* Алтернатива за хора с модерни ГПИ/GUI уеб-браузъри, поддържащи добре HTML5:
+## Google Android / CyanogenMod / LineageOS ; Google ChromeOS; Google Android M; Google FuchsiaOS
+... (automated if online or mobile-carrier set or manually set...)
+
+## Apple iOS
+...
+
+# Алтернатива за хора с модерни ГПИ/GUI уеб-браузъри, поддържащи добре HTML5:
 
 http://timeanddate.com
 http://wit.tr
