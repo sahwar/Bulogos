@@ -4,7 +4,13 @@ NTP-network-time-synchronization-over-the-Internet.md
 
 ## Microsoft Windows:
 
-... -> ... -> Време от Интернет" -> Смяна на настройките... -> изберете NTP-сървър и натиснете "Актуализирай сега" след като изчакате, вижте за потвърждение, че синхронизацията на часа и датата са успешни.
+ENGLISH/НА АНГЛИЙСКИ:
+(For Microsoft Windows7)
+Right-click on the 14:45 (datetime applet notification space/icon on the Microsof Windows (XP SP3)/7/8.1/10 taskbar, in the notifications area) -> Date/time synchronization -> Internet time -> Change settings...
+
+НА БЪЛГАРСКИ/BULGARIAN
+(за Microsoft Windows7)
+Натиснете с десния бутон на компютърната си мишка (или тъчпад или който физически бутон сте нагласили да отговаря на десния бутон на компютърната мишка) върху полето с часа: примерно „14:45“  (datetime applet в лентата за задачи на Microsof Windows (XP SP3)/7/8.1/10; намира се в областта за уведомления (полето за известия)) -> Date/time synchronization -> Време от Интернет" -> Смяна на настройките... -> изберете NTP-сървър и натиснете "Актуализирай сега" след като изчакате, вижте за потвърждение, че синхронизацията на часа и датата са успешни.
 
 `pool.ntp.org`
 (препоръчително!)
@@ -39,6 +45,12 @@ Inside a Linux terminal & its `bash` shell:
 `$ date --help`
 
 `$ calendar --help`
+
+(въвеждат се в командния ред БЕЗ началните „ `$ ` “
+
+````
+...
+````
 
 ` ... `
 
