@@ -1,0 +1,18 @@
+Linux-distro-OSs-release-models.txt
+
+1. incremental Internet-based/Internet-downloaded-and-updated-offline-with-the-diff-updates updates via ROLLING RELEASE model
+
+2. Ubuntu-Linux-like LTS (long-term-support) mostly-static-except-security-bugfixes & 1-or-2-per-year non-LTS releases with the latest stable-OR-bleeding-edge appication software & 
+latest stable Linux kernel. The online Internet HTTP/HTTPS/FTP/SFTP/DC++&ADC/XDCC/ONIONSHARE/TORRENT-OR-MAGNET-URI/etc. downloads & the software development uses version-control-systems, e.g. git, github.com, gitlab.org, gitea, etc. & utilizes IRC/IM chat-systems & email lists for development of the distro/OS programming source-code, and for feedback from end-users, etc + live meetup hackathon events with prizes, collaborations, etc. ...
+
+3. Static OSs (downloaded as Docker or Virtual box package for virtualization, or run from a physical media - CD/DVD/BluRay/USB-flashsttick/magnetic-tape-drives/HDDs/SSDs/etc.), intended to be mostly used offline due to 'frozen' release with no security patches.
+
+These may still be updated manually by the end-user BY WRITING YOUR OWN DAMN PROGRAMMING CODE, BUGFIX-TESTING/TROUBLSESHOOTING IT, IMPLEMENTING IT, COMPILING IT, AND SUCCESSFULLY RUNNING IT, OR BY ASKING OTHER PEOPLE TO WRITE THE CODE FOR YOU, either for free, or for money/gphysical-goods-exchange&=bartering/OR for sex, services, information, teaching/tutoring!!!, etc.
+
+Quote:
+'Musix, a GNU+Linux distribution based on Knoppix, with special emphasis on audio production. __This is a “static” distro, normally run from a live CD. Since it will not receive security updates, it should be used offline.__Removed March 2019. Removed at the request of the maintainer, as they had stopped maintaining it.
+'
+
+4. ???
+
+5. ??????
