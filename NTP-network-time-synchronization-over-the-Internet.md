@@ -11,7 +11,7 @@ NTP-network-time-synchronization-over-the-Internet.md
 
 `time.windows.com`
 
-`time.nist.gov
+`time.nist.gov`
 
 `time-nw.nist.gov`
 
