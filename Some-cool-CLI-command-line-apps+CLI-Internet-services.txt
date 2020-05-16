@@ -1,0 +1,41 @@
+Some-cool-CLI-command-line-apps+CLI-Internet-services.txt
+by https://github.com/sahwar/Bulogos
+Списък с някои яки програми за команден ред (CLI), за използване например bash или zsh вътре в Linux Terminal (GUI app) (за/под Linux/*NIX/UNIX/*BSD/GNU HURD Terminal/...) или вътре в cmd.exe или в PowerShell или в WSL terminal (за/под Microsoft Windows (XP SP3/Vista SP1+/)____7/8.1/10+____)
+
+https://github.com/sahwar?tab=repositories&q=terminal&type=&language=
+
+https://github.com/sahwar?tab=stars&q=&q=terminal
+
+https://github.com/herrbischoff/awesome-command-line-apps
+https://github.com/herrbischoff/awesome-macos-command-line
+
+https://github.com/sahwar?q=terminal&tab=stars&q=terminal&q=awesome
+
+https://github.com/sahwar?q=CLI+OR+cli&tab=stars&q=CLI+OR+cli&q=CLI+cli+command+commandline+command-line+bash+shell+cmd+zsh+PowerShell+client+app (remove most keywords in the URL/URI-address to view results)
+
+https://github.com/schachmat/wego
+https://github.com/chubin/wttr.in
+
+======
+######
+* * *
+
+Great to use in terminal :-)
+
+curl http://wttr.in/
+
+or
+
+curl http://wttr.in/moon
+
+Gordon Wong write city name after slash, e.g. http://wttr.in/london
+
+Paul Banham
+I prefer inxi  inxi -xxx -W Thessaloniki,Greece
+Weather:   Temperature: 27.2 C (81 F) Conditions: Clear sky Wind: from SSE at 1.3 m/s (5 km/h, 3 mph) Cloud Cover: 0% 
+           Humidity: 40% Dew Point: 12.4 C (54 F) Pressure: 1004.5 mb (34 in) Location: Thessaloniki, Greece 
+           Current Time: Tue 12 May 2020 07:25:43 PM EEST Observation Time: 2020-05-12 19:10:00 (Europe/Athens +0300) 
+           Source: WeatherBit.io
+
+Extracted/Copied from this SOURCE:
+https://m.facebook.com/groups/89717832488?view=permalink&id=10157891841432489
