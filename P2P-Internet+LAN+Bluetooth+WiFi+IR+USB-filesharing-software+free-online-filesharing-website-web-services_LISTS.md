@@ -1,0 +1,23 @@
+free-online-filesharing-website-web-services_LISTS.md
+
+pages and provide technical assistance publicly in the channel. All users are welcome.
+
+https://www.gnu.org/server/irc-rules.en.html
+
+https://directory.fsf.org/wiki?title=Special:Ask&offset=10&limit=500&q=%5B%5BChat%3A%3Airc%5D%5D&p=mainlabel%3D%2Fformat%3Dtemplate%2Flink%3Dnone%2Ftemplate%3DGetlist-2Drow%2Fintrotemplate%3DGetlist-2Dintro%2Foutrotemplate%3DGetlist-2Doutro&po=%3FFull+description%3DDescription%0A%3FHomepage+URL%3DHomepage%0A%3FLicense%0A%3FIs+GNU%23%5B%5BFile%3AHeckert_gnu.tiny.png%5D%5D%2C%0A
+
+https://www.gnu.org/server/irc-rules.en.html
+
+https://xmpp.org/software/clients.html
+
+https://www.google.com/search?q=retroshare&oq=retroshare&aqs=chrome..69i57.4373j0j4&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8
+
+https://en.wikipedia.org/wiki/RetroShare
+https://en.wikipedia.org/wiki/Comparison_of_file-sharing_applications
+
+https://retroshare.cc/
+https://github.com/RetroShare
+https://en.wikipedia.org/w/index.php?title=Template_talk:File_sharing_sidebar&oldid=721899951
+https://en.wikipedia.org/w/index.php?title=Template:File_sharing&oldid=952910090
+https://en.wikipedia.org/wiki/RetroShare
+https://retroshare.cc/
