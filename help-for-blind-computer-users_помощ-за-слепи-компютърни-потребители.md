@@ -2,6 +2,7 @@
 
 http://bezmonitor.com/ (специализиран софтуер за слепи; Полезни статии за слепи (незрящи) хора и работа с компютър и телефон; Как четат синтезаторите на реч на глас текст на български; Какво е необходимо на един компютър, за да работи с него човек без зрение? ; Най-необходимите програми за слепите потребители; скрийн рийдър, синтезатор на реч и т. н.)https://knigi.nllb.bg/login.php (Национално читалище на слепите "Луи Брайл 1928" - Електронна библиотека)http://k-kolev1985.blogspot.com/2016/01/jaws.html 
 http://bezmonitor.com/chetene/
+
 (TODO (ОСТАВА ДА СЕ НАПРАВИ): add http://archive.org/web & http://archive.today & wget .WARC archives of these webpages from http://bezmonitor.com for the purposes of reddit.com/r/DataHoarder web-(data)archival & Internet/Web archaeology!!!
 
 Local organizations for disabled people and anti-government parents-children's cooperatives (alternative to state-operated kindergartens/schools)
@@ -12,6 +13,48 @@ http://bezmonitor.com/ - <bezmonitor@gmail.com> (Viktor) (useful information for
 
 * изобретение 1: специални принтери за отпечатване на по-дебела гланцирана хартия (или на преизползваем чрез многократно претопяване и пре-скулптиране-чрез-cheap-3D-printer) на релефни писмени текстове С ВКЛЮЧЕН ПОД/НАД/ДО всяка буква (или Unicode codepoint знак) на съответнатия еквивалентен нему знак от българската/американската/английската/руската Брайлова азбука И/ИЛИ баркод И/ИЛИ QR-code И/ИЛИ Морзов код (за съответния език, с прилежащата му писменост и официалия му горе-долу стандартизиран правопис (ортография))... ( multi-modality, multi-modal modular 'teletype-like' hypertext-like relief/embossed/3D-tactile printed text ... see also: multi-modal text ...)
 * изобретение 2: https://www.reddit.com/r/bulgaria/comments/gesl3j/търся_някого_с_когото_да_общувам_в_някое_чат/?utm_medium=android_app&utm_source=share
+
+````
+SOURCE: 
+https://github.com/sahwar/Bulogos/blob/master/phonemic-IPA-IMEs-and-Unicode-charmaps+other-useful-free-online-webapp-services.txt
+
+IX. Local organizations for disabled people and anti-government parents-children's cooperatives (alternative to state-operated kindergartens/schools)
+
+http://bezmonitor.com/ - <bezmonitor@gmail.com> (Viktor) (useful information for blind Bulgarians working with computers - полезна информация за слепи българи, работещи с компютри: http://bezmonitor.com/news.htm , http://bezmonitor.com/other.htm , http://bezmonitor.com/speechlab.htm)
+Вижте още: NVDA, Festival TTS, CMU Sphinx TTS, gespeaker/espeak/espeak-ng+MBROLA, FreeTTS, Balabolka TTS, JAWS screen reader (екранен четец), Toshko2 TTS <twenkid@gmail.com>, Google Translate speech-synthesis, )
+http://sgbbg.com/ (Union of the Deaf in Bulgaria)
+http://www.seeinginthedark.eu/bg/za-proekta/suiuz-na-slepite-v-bulgariya/ + http://ssb-bg.net/ + http://ssb-bg.net/phono.html (Union of the Blind in Bulgaria)
+http://priateli.info/?page_id=2839
+http://horizonti.bg/ (Фондация "Хоризонти" подпомага хора със зрителни увреждания в образованието и професионалната им реализация)
+https://knigi.nllb.bg/login.php (Национално читалище на слепите "Луи Брайл 1928" - Електронна библиотека) (backup: http://archive.is/zp9PS)
+http://e4p-bg.com/stani-krastnik/ ("Българските граждани с увреждания получават куче-водач (своя четириног помощник) срещу 1 (един) български лев")
+
+-> Online job hunting in Bulgaria (търсене на работа в България по обяви на работодатели в Интернет)
+http://www.labourforblind.bg/ (Бюрото по труда за лица със зрителни увреждания)
+http://nfri.bg/ (National Federation of Employers of Disabled People)
+https://ahu.mlsp.government.bg/home/ (Агенция на хората с увреждания към Министерството на труда и социалната политика на Република България)
+http://rabotosposobni.bg/ 
+
+https://www.jobs.bg/ 
+https://www.rabota.bg/ 
+https://bgrabotodatel.com/ 
+http://rating.bia-bg.com/ 
+https://www.az.government.bg/contacts/offices/ (свободни работни места, обявени в Бюрата по труда на България)
+https://www.az.government.bg/bg/ejobs/view_prl/ (свободни работни места, обявени в Бюрата по труда на България)
+
+http://labourforblind.bg/index.php?option=com_content&view=article&id=94&Itemid=69&view=article&id=94&Itemid=69 (Метроводител за незрящи - помощно указание за слепи хора, със подробни текстови инструкции и със записани звукови файлове с указания за придвижване и ориентиране в метрото на град София, България - +359) 2 921 2001, (+359) 2 987 2244, metro@metropolitan.bg) + карти на метрото в София (за зрящи): https://www.metropolitan.bg/shema/karta-metro & https://www.metrosofia.com/bg/maps 
+
+Audio books:
+http://zaknigi.com/ (Уебсайт с много безплатни аудио книги за слепи (т.е. книги като аудио файлове - записани, четени с човешки говор). Аудио книгите качени на този сайт са записани в студио на ССБ или със синтетичен говор и са за ползване от слепи потребители. Сайтът разполага с 887 произведения от 509 автори)
+https://librivox.org/ (free audio books)
+http://www.openculture.com/freeaudiobooks
+http://www.loyalbooks.com/
+https://www.audiobooks.com/
+https://www.audible.co.uk/ (buy audio books)
+https://tatoeba.org/eng/ (free sentence translations)
+
+END-OF-SOURCE
+````
 
 ````
 r/bulgaria
@@ -108,7 +151,6 @@ http://bezmonitor.com/chetene/
 Reply
 maniana012
 38m
-	
 
 По принцип мога да си поръчам брайлови книги и съм го правила, но са много тежки, а баба ми не трябва да вдига тежести, ама тя пак го прави.
 1

@@ -1,14 +1,21 @@
 VIII. Some useful online tools and IT-industry standards
 
 https://www.google.com/maps
+http://maps.google.com
 https://www.openstreetmap.org/
+
+http://microformats.org/hGeo
 
 https://textmechanic.com/
 https://regex101.com/
 https://2cyr.com/
 https://tools.chitanka.info/specialchar/ 
+https://www.google.com/inputtools/
+https://www.google.com/inputtools/try/ (English - handwrite & Bulgarian - handwrite - български език - ръкописно въвеждане)
+stock Google Android v6/v7/v8/v9 Google Voice voice-control-assistant & Microsoft Siri virtual-assistant & its Google Translate photoshoot&wait-to-machine-OCR&auto-machine-translation ... +QR-reader apps for Google Translate...
+(+ Linux IMEs for Asian languages + handwriting-recognition apps (for Linux & MS Windows) & Wacom-drivers & Wacom-graphics-tablet recalibration apps & GitHub non-Wacom graphics-tablets drivers project - {I forgot the name} + GIMP(+MyPaint brushes), Krita (+MyPaint brushes) + MyPaint + SpeedyPainter + paint.net (+MyPaint brushes-engine added-in!) + MediBang Paint Pro + ChasysDraw IES, +Scribus & Inkscape, +GraphicsGale (now FREEWARE!), AzPainter / PaintTool SAI (+English langpack), qAquarelle, mtPaint, iDraw3, LazPaint (!), TP Paint Studio, rossam-paint, etc., ms-paint.js , MS paint.exe (for Windows XP SP3, copied & imported for use with MS Windows7 + MS paint tricks articles!)..., etc. ...)
 
-http://shapecatcher.com/ (Unicode [Handwriting] Character Recognition engine - 'find the most similar unicode character; currently supports 11817 Unicode character glyphs in the database. Japanese, Korean and Chinese characters are currently not supported.' By Benjamin Milde <bmilde@gmail.com>)
+http://shapecatcher.com/ (Unicode [Handwriting] Character Recognition engine - 'find the most similar unicode character; currently supports 11817 Unicode character glyphs in the database. Japanese, Korean and Chinese characters are currently not supported.' By Benjamin Milde <bmilde@gmail.com> --- for Chinese Mandarin, see http://mdbg.net 's handwriting-recognition applet & dictionary; also check out online Japanese dictionaries with handwriting-recognition support + WWWJDICT/JWWWDICT + Common errors in English by Mr. Brian/Brians!!!)
 http://detexify.kirelabs.org/classify.html (Another [Handwriting] Character Recognition engine, but for LaTeX --- 'draw the symbol you are looking for into the square area AND you will get the TeX/LaTeX code for that symbol/glyph!) (source-code: https://github.com/kirel/detexify , https://github.com/kirel/detexify-hs-backend , https://github.com/kirel/detexify-data )
 https://ctan.org/tex-archive/info/symbols/comprehensive/ (http://mirrors.nxthost.com/ctan/info/symbols/comprehensive/symbols-a4.pdf - The Com­pre­hen­sive LaTeX Sym­bol List – Sym­bols ac­ces­si­ble from LaTeX)
 https://www.onlineocr.net/ 
@@ -17,7 +24,9 @@ https://graphemica.com/
 http://www.babelstone.co.uk/Unicode/whatisit.html 
 http://www.babelstone.co.uk/Unicode/unicode.html (Unicode 12.0 Slide Show [Unicode is the international standard for computer text encoding - 137,928 characters in 294 blocks covering 150 scripts])
 http://www.babelstone.co.uk/Unicode/babelmap.html 
-http://www.babelstone.co.uk/Unicode/text.html 
+http://www.babelstone.co.uk/Unicode/text.html
+( http://bezmonitor.com/chetene/ )
+(visual orgasms: https://twitter.com/archillect )
 
 http://ipa.typeit.org/full/ (IPA IME (Input method editor for adding IPA (International Phonetic Alphabet) characters)
 https://github.com/westonruter/ipa-chart/ (http://westonruter.github.io/ipa-chart/)
@@ -62,6 +71,9 @@ time-b.nist.gov (NTP service by the USA government)
 https://faq.tuxfamily.org/Games/En (NTP service by the USA government)
 
 IX. Local organizations for disabled people and anti-government parents-children's cooperatives (alternative to state-operated kindergartens/schools)
+организации за слепи, незрящи хора в България, за българи, за българоговорящи, организации на хора с увреждания, синдроми, генетични синдроми, вродени (congenital) дефекти - в България
+софтуер за слепи
+компютърни програми за слепи българи, в България, на български език, софтуер за компютърно машинно синтезиране на човекоподобна/„човешка“ реч
 
 http://bezmonitor.com/ - <bezmonitor@gmail.com> (Viktor) (useful information for blind Bulgarians working with computers - полезна информация за слепи българи, работещи с компютри: http://bezmonitor.com/news.htm , http://bezmonitor.com/other.htm , http://bezmonitor.com/speechlab.htm)
 Вижте още: NVDA, Festival TTS, CMU Sphinx TTS, gespeaker/espeak/espeak-ng+MBROLA, FreeTTS, Balabolka TTS, JAWS screen reader (екранен четец), Toshko2 TTS <twenkid@gmail.com>, Google Translate speech-synthesis, )
@@ -94,7 +106,8 @@ http://www.openculture.com/freeaudiobooks
 http://www.loyalbooks.com/
 https://www.audiobooks.com/
 https://www.audible.co.uk/ (buy audio books)
-https://tatoeba.org/eng/ (free sentence translations)
+https://tatoeba.org/eng/ (free bilingual sentence translations)
+??? (free audio recordings of short speech and free word pronunciations!)
 
 ================================================================================
 

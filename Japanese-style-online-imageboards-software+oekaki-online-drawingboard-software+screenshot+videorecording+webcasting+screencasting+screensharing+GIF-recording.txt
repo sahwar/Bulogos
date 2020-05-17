@@ -1,0 +1,57 @@
+Japanese-style-online-imageboards-software+oekaki-online-drawingboard-software+screenshot+videorecording+webcasting+screencasting+screensharing+GIF-recording.txt
+
+https://sahwar.wordpress.com/2015/03/16/creation-of-an-animated-gif-from-video-or-via-screencast-of-part-of-the-desktop-area/
+
+http://en.wikipedia.org/wiki/List_of_imageboard_software
+Examples:
+http://4chan.org (partially NSFW!)
+http://8chan.org (partially NSFW!)
+http://gelbooru.com (NSFW!)
+http://danbooru.donmau.us (NSFW!)
+http://chan.senkakucomplex.com (partially NSFW!)
+( http://nhentai.net )
+etc.
+
+Example of screencasting software:
+	OBS (Open Broadcast(ing) Studio)
+	http://twitch.tv
+
+Examples of screensharing-capable software:
+	Skype
+	Jitsi (not tested?)
+	qTox (not tested?)
+	
+GIF recording apps:
+http://bahraniapps.com - GifCam & VCap
++ #GIF-recorder topic on http://github.com (one also uses ffmpeg to record OS desktop-activity as a video file but this puts CPU&GPU stress and introduces lagging & screen-jitter & screen-glitches & skipped-frames-effect & VSync-issues, and 2D-redrawing slow-downs, and may introduce visual artificats due to that... also see: MPC-HC+madVR+etc.)
+VokoScreen
+open-recording-studio (???) [for Linux]
+FRAPS (for recording a video of your video-gaming session)
+
+List of online drawing-board software: ?
+oekaki/oakeki software ... : ?!? (requires Java JVM installed into the web-browser for full support, it's not a(n) HTML5 app...)
+deviantart.com 's 
+medibang pro's online editor... (?!?)
+Japanese & Chinese websites with online drawing applets and leaderboards (HALL OF FAME & HALL OF SHAME & HALL OF FAIL, etc. ; WALL OF TEXT existential Western webcomic - to google it...)
+
+For video-recording:
+ffmpeg
+libav
+ffmpeg-GUIs
+latest version of VLC (with the RECORD button added via Settings...) --- http://videolan.org/vlc/
+a hardware webcam or a smartphone with a good-enough camera that supports AF (auto-focus(ing))
+record-video-to-animated-GIF-clip apps on Google Play for Google-Android devices (smartphones, phablets, smartwatches, smartTVs, smart-TV-boxes+hooking-to-non-smart-8-bit-IPS-TVs/display-monitors, etc.)
+
+Screenshotting:
+* press PrtSc (Print Screen) button on your QWERTY/etc. laptop keyboard, etc.
+* various advanced screeshotting apps for Linux, MS Windows, macOS, Google Android (PRESS volume-down+power on/off simultaneously! OR in Google Android v8 - press power-screen & select 'Screenshot' menu item!, etc.
+* various CLI screenshotting apps for Linux --- search on http://github.com , http://gitlab.org, gitea, etc.
+
+--------------------------------------------------------------------------------
+Not related to the topic of  this file, ahem... :
+`$ hg ???`
+mercurial
+git
+launchpad.net Bazaar version-control system
+fossil.org
+etc.

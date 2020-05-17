@@ -673,8 +673,13 @@ https://alternativeto.net/software/gimp/
 * https://github.com/kitao/pyxel - A retro game engine for Python. (It is) written in C++.
 * https://github.com/jackschaedler/goya - Pixel art editor built on Clojurescript + Om. (It is) written in Clojurescript+Om&JavaScript.
 * https://github.com/cloudhead/rx - space_invader Modern and minimalist pixel editor implemented in the Rust programming language.
+
+
+(+ Linux IMEs for Asian languages + handwriting-recognition apps (for Linux & MS Windows) & Wacom-drivers & Wacom-graphics-tablet recalibration apps & GitHub non-Wacom graphics-tablets drivers project - {I forgot the name} + GIMP(+MyPaint brushes), Krita (+MyPaint brushes) + MyPaint + SpeedyPainter + paint.net (+MyPaint brushes-engine added-in!) + MediBang Paint Pro + ChasysDraw IES, +Scribus & Inkscape, +GraphicsGale (now FREEWARE!), AzPainter / PaintTool SAI (+English langpack), qAquarelle, mtPaint, iDraw3, LazPaint (!), TP Paint Studio, rossam-paint, etc., ms-paint.js , MS paint.exe (for Windows XP SP3, copied & imported for use with MS Windows7 + MS paint tricks articles!)..., etc. ...)
+
 https://github.com/collections/text-editors
 https://github.com/collections/learn-to-code
+https://github.com/topics/
 
 https://www.creativebloq.com/advice/the-best-software-for-digital-artists ( [Rebelle (commercial)](https://www.escapemotions.com/products/rebelle/), [Serif.com Affinity Designer](https://affinity.serif.com/en-gb/), [Procreate (only for iPad (iOS 11.1+), commercial)](https://itunes.apple.com/us/app/procreate-sketch-paint-create./id425073498?mt=8&at=1001lnRX&ct=cbq-1186402469428160894), [Clip Studio Paint Pro](https://www.clipstudio.net/en), [Artweaver 7+ (commercial)](https://www.artweaver.de/en), [Artrage 6+ (commercial)](https://www.artrage.com/artrage/), [Krita (OPEN-SOURCE FREE SOFWARE, HIGHLY RECOMMENDED)](https://krita.org/en/download/krita-desktop/), [CorelDRAW Suite 2019 (commercial)](https://www.coreldraw.com/en/product/coreldraw/mac/#v3main), [Pixarra TwistedBrush Pro Studio (commercial)](http://www.pixarra.com/pro_studio.html), [MediBang Paint Pro (FREEWARE, for MS Windows&macOS, HIGHLY RECOMMENDED](https://medibangpaint.com/en/pc/), [Black Ink (commercial, for MS Windows only)](http://blackink.bleank.com/), [Paintstorm Studio (commercial, Windows, macOS, Linux, iPad)](http://www.paintstormstudio.com/index.html), ... )
 * https://www.creativebloq.com/features/the-best-tablets-with-a-stylus-for-drawing-and-note-taking

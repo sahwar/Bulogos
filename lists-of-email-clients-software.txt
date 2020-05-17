@@ -1,0 +1,57 @@
+https://directory.fsf.org/wiki/Category/Email-software
+
+https://directory.fsf.org/wiki/Category/Email-software/mail-client
+http://en.wikipedia.org/wiki/List_of_email_clients
+
+Mozilla Thunderbird (full-featured GUI email client, can easily be used with gmail.com with Yahoo! Mail, outlook.com/microsoft.com email, with abv.bg, etc.!!!)
+Evolution Email (software)
+alpine email
+https://directory.fsf.org/wiki/Mutt
+````
+http://www.mutt.org/
+Text based mail reader
+
+Mutt is a text based mail user agent that supports MIME, PGP/MIME, POP3, IMAP, threading, and color. Its default keybindings are much like elm, but keybindings are fully configurable; Mush and PINE-like ones are provided as examples. It handles MMDF, MH, and maildir in addition to regular mbox format. Messages may be indefinitely postponed. The program overall is configurable through an rc file.
+
+Documentation
+User manual available in HTML format from http://www.mutt.org/doc/manual/; User manual available in text format from http://www.mutt.org/doc/manual.txt; sssser FAQ available in HTML format from http://www.fefe.de/muttfaq/faq.html
+
+Related Projects (to mutt email client):
+BIABAM
+Cone
+Icedove
+Abook
+Elm
+Elmo
+Fetchmail
+Isync
+Popper
+SendEmail
+Spruce
+Balsa
+Pmc
+Mu
+````
+
+fetchmail
+GNU emacs email module
+vim/NeoVim/emacsen/Cream-emacs email modules ...
+(GNU nano (CLI text-editor...))
+
+================================================================================
+Email file-formats:
+* MH
+* .eml (electronic mail)
+* mbox (GMail with text-labels)
+* .msg?
+* ???
+
+================================================================================
+
+OK TO HTML/HTML5-formatted (rich-text) emails?
+
+MAYBE. I actually don't mind those as long as the spam emails & nasty binary-files
+virus attachment-files ARE NOT fucking up my email inbox! ---https://github.com/sahwar/Bulogos & http://sites.google.com/view/ve4ernik
+BUT MOST SECURITY-ORIENTED PEOPLE PREFER PLAINTEXT TXT-ONLY EMAILS & .asc-signed
+with GnuPG, etc.
+

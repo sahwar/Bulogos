@@ -33,6 +33,18 @@ Right-click on the 14:45 (datetime applet notification space/icon on the Microso
 Информация за протокола/уеб-сървърния софтуер/UNIX-CLI-daemon NTP:
 http://en.wikipedia.org/wiki/NTP
 
+````
+-> Free online NTP servers (servers for over-the-Internet datetime-stamp synchronization, including time-zone awareness&national-changes-to-time-zones (часови пояси)):
+pool.ntp.org
+ntp.tuxfamily.net
+time.windows.com (Microsoft Windows servers)
+time.nist.gov (NTP service by the USA government)
+time-nw.nist.gov (NTP service by the USA government)
+time-a.nist.gov (NTP service by the USA government)
+time-b.nist.gov (NTP service by the USA government)
+https://faq.tuxfamily.org/Games/En (NTP service by the USA government)
+````
+
 ## Linux, \*NIX, UNIX, \*BSD, macOS
 
 * Подобно е като прв/под MS Windows. Дясно щракване върху полето с дата&час в лентата със задачи на работния плот и избиране на опцията за настройване на часа&датата, и оттам избор на частта със синхронизиране на часовото време и календарната дата чрез синхронизация по Интернет по NTP-сървър...

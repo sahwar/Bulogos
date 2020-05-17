@@ -31,6 +31,8 @@
 * https://github.com/mpalmer/jekyll-static-comments
 * https://github.com/pvorb/node-comments
 * https://github.com/thoughtbot/carnival
+* see: https://sahwar.wordpress.com/2014/09/10/4-open-source-alternatives-to-the-disqus-commenting-system/
+* etc.
 
 # Web-forum software systems (Софтуерни системи за уеб-форуми)
 
@@ -51,6 +53,14 @@ Recommended by https://github.com/sahwar/Bulogos :
 * FluxBB = 
 * PunBB = http://punbb.informer.com/
 * Syndie = 
+````
+http://flarum.org (!!!)
+http://discourse.org
+http://mybb.org (!!!!)
+http://phpbb.org
+http://yabb.org (it was used by http://animerulezzz.org )
+http://punbb.org
+````
 * Open VanillaForums = https://open.vanillaforums.com/
 * some super-lightweight web-forum software written in assembly language (!!!): ...
 

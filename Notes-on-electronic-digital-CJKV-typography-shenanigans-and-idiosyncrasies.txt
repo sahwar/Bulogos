@@ -1,0 +1,233 @@
+Notes-on-electronic-digital-CJKV-typography-shenanigans-and-idiosyncrasies.txt
+***DRAFT*** (ЧЕРНОВА)
+Last updated: 17-May-2020 ; $06:57 ч. 17 май 2020 г.
+https://github.com/sahwar/Bulogos
+
+Бележки по странностите, тънкостите, идиосинкразиите и ексцентричните, чудати 
+аспекти на азиатската електронна цифрова типография, полиграфия, калиграфия, 
+ръкопис и оформление и форматиране на текстове, написани на китайски, японски, 
+корейски, виетнамски и тай(ланд)ски...
+
+
+
+
+Unlike the 20th-century-era writing in Western scripts (like the modern Greek
+alphabet, the Latin & Latin-derived alphabets (e.g. the English alphabet), the 
+Cyrillic alphabet, and maybe the Armenian alphabet), Asian scripts (Asian 
+writing systems) are usually far more complex, which poses difficulty in writing
+ with them on physical paper or in electronic digital format. Gladly, Unicode 
+ (now in its 10th-13th edition as of the year 2020) and its Han unification and 
+ CLDR projects - have achieved quite a lot toward making this basic task much 
+ more convenient for every computer user of a fairly new PC (desktop PC or 
+ laptop/netbook/nettop/etc.; or a smartphone/phablet/digital electronic 
+ smart-tablet/smartwatch/smartTV/Android-TV-box/ SBC (single-board computer), 
+ low-powered embedded devices, and via Linux - even on fairly old hardware which
+  meet certain hardware requirements; etc.).
+
+Most modern Western/European languages are written left-to-right and 
+top-to-bottom (RTL-TTB), but they can also be written top-to-bottom in a 
+vertical line (one or more characters per line, with or without a 
+hyphenation-dash or another glyph used as a hyphenation character!). Ancient 
+Western texts, however, were somtimes written in a special way called 
+http://en.wikipedia.org/wiki/Boustrophon .
+(in this way of writing, you can start writing left-to-right top-to-bottom BUT
+you switch to writing right-to-left top-to-bottom on the NEXT line...)
+This manner of writing direction is largely non-existent in modern 
+Western/European(-derived) texts except for decorative, artistic, 
+advertisement/PR, and special visual effects, and in some 
+esoteric&secret-languages and in ad-hoc secret coded-languages for communication
+ between spies & to avoid man-in-the-middle plaintext cryptographic attacks that
+  will expose your private [written] communication to unwelcomed 3rd-parties, 
+  etc.
+
+On the other hand, many Asian scripts are often written in a top-to-bottom 
+vertical way even to this way, while some curious cases are (modern?) Hebrew 
+(which is written right-to-left top-to-bottom), and the Sumerian cuneiforms and 
+Scandinavian runes, etc.
+
+
+The primary difference between writing in most Western scripts (Western writing 
+systems) lies in the extensive use of whitespace (blanks, or empty intervals 
+between letters/glyphs) and on the complex use of punctuation characters/glyphs.
+
+CJKVTM (Chinese, Japanese, Korean, and possibly Vietnamese and Thai and 
+Mongolian) typography DOES NOT use much whitespace, and in the case of written 
+Mandarin Chinese, whitespaces are almost non-existant, while punctuation was 
+imported from its use in Western scripts BUT in a much more restricted and 
+crude, grammatical-emphatic-oriented manner (according to my fairly crude 
+understanding of basic contemporary Mandarin-Chinese grammar and formal writing
+ and typography).
+
+The following example/sample text illustrates the lack of whitespaces in Chinese
+ texts (the contents of the text are NOT important, this is just pasted below as
+  a VISUAL EXAMPLE OF HOW MANDARIN CHINESE IS WRITTEN, ESPECIALLY in the format 
+  of electronic digital text (in the Unicode UTF-8 text(ual) encoding):
+
+
+我信
+我信，拼音wǒ xìn，英文iTrust，顾名思义，“我相信”或“我们相信”的意思。
+
+我信，是一个”服务消费比较平台”。通过海量的大数据分析，以简洁清晰的信息图(infographic)或者表格形式，为用户提供深度的产品或服务的综合比较，让用户能更方便的选出最好的产品或服务。我们能提供给消费者的对比项目可谓包罗万象，从餐馆到度假村，从律师到理发师，从狗粮到化妆品，甚至金融公司和理财产品我们也不放过。
+
+我信，是一家"消费者权益倡导组织"，准确地给消费者提供公平和中立的消费情报。我信的数据来源包括公共数据资源（如自政府、媒体、研究机构）及第三方数据库(如生产商、供货商、零售商网站)，还有专家或用户评级等。数据来源透明，数据选取、分割、处理的工具都非常可靠，因此用户大可对我信提供的信息准确度放心。
+
+我信，结合了数据过滤算法和人力管理方式： 向消费者提供“没有偏见的、由数据驱动的”比较意见，但产品和服务的类别是由人工界定的。对用户来说，我们认为以决策为动机的建议才是有价值的建议。对商家来说，我信的用户都是优质的潜在顾客，这些用户之所以寻求获得比较信息，目的就是存有想要购买产品或服务的想法，而不仅仅是浏览。
+
+我信，从成立开始，从不刊登广告，也不看任何企业或商家的脸色行事，只把对评估报告的信誉放在第一位。我信是对技术与产品有着纯粹的信仰，对广告充满警惕的典型极客。我信决定从一开始就要让用户为产品付费，我信之所以能对用户收费，是因为我信为用户创建了”强大、简洁、专注、无广告”的产品。
+
+我信数据有限公司，即将启航。
+
+Source:
+http://woxin.com/
+
+* * *
+
+================================================================================
+WHAT'S THE CATCH??? WHAT TO TAKE INTO ACCOUNT WHEN WRITING 
+IN CJKV(TM) SCRIPTS (WRITING SYSTEMS)
+================================================================================
+
+ALWAYS REMEMBER to put the typography of Asian scripts in mixed-scripts texts 
+--- to a higher (1.8x to 3-4x bigger) pt typographic size in comparison to the 
+Western-scripts text!!!
+And use a UNIFORM (i.e. mostly just one digital font!!!) good-enough 
+complete-enough Asian-scripts-supporting digital electronic font for the main 
+body of Asian-scripts text!!!
+HTML also supports special Ruby-characters HTML-tags as a way to add 
+Hiragana/Katakana phonetic-guides to Japanese kanji text, etc. (but this can 
+also be used as a sort of 'hot-trick hack' so as to utilize it to include 
+phonetic transcriptions or transliteration or some witty remarks to texts 
+written in ANY Unicode script... If you want fancier pop-up/ToolTip 
+metadata-revealing extra text, I suggest you try the qTip2 JavaScript software 
+(or similar HTML5+CSS3+JSv6+ stuff) by including it in your HTML code, or just 
+use <abbr title="World Health Organization">WHO</abbr> instead of 
+<acronym></acronym>, etc.).
+
+(((NOTE-1: There are also several attempts to ease the work of manga comics 
+scanlators, translators, QA, lettering, lazy typesetters & layout editors, image 
+cleaners, image deconsors (using digital retouching, rescans from print copies, 
+and raster2vector (png2svg) software & using Image-Super-resolution 
+artificial-neural-networks software) and fan translators by adding&showing 
+HTML5+CSS3+JSv6+-powered translucent (semi-transparent) overlay 
+boxes/rectangles/dots (usually of the light-yellow or light-blue color) over 
+non-translated foreign texts in some digital image (like comic/manga 
+speech-bubbles & text labels on objects in a comic panel), thus enabling the 
+end-user to view possible translations & comments via the technology of showing 
+(the translation of the) texts via ToolTip on-mouse-over/on-hover/or on-tap 
+(for touchscreen smartphones, etc.).
+Examples of this technology idea can be found on some NSFW (not safe for work,
+i.e. pornographic, graphic, nude, sex-showing, nudity-showing, RTA (restricted
+to adults) / 18+-ONLY, content) online imageboards, e.g.
+http://rule34.xxx
+http://gelbooru.com
+http://danbooru.donmai.us
+http://4chan.org
+http://8chan.org
+https://chan.sankakucomplex.com/?tags=original
+https://chan.sankakucomplex.com/?tags=has_audio
+https://chan.sankakucomplex.com/?tags=animated
+https://chan.sankakucomplex.com/?tags=translated
+https://chan.sankakucomplex.com/post/show/20718209
+https://chan.sankakucomplex.com/?tags=japanese_text
+https://chan.sankakucomplex.com/?tags=speech_bubble
+etc.
+This tech is especially useful for integration into open-source manga-reader
+HTML5-powered software packages which power websites like http://hbrowse.com
+and http://nhentai.net , http://hentai2read.com , http://hentairules.com ,
+http://luscious.net , etc.)
+It can also be integrated with using HTML <abbr></abbr>&<acronym></acronym>
+tags and by using HTML-entities, _HTML ruby-characters tags_ (for adding 
+transcription and/or transliteration over some other electronic digital text),
+via CSS3+JSv6+-complex-typography&complex-webpage-layout+the-latest-color-
+digital-web-fonts-fileformats-as-supported-by-Acid3-passing-modern-HTML5-web-
+browsers, and also integrated with JavaScript libraries like _jQuery_, node.js, 
+amber.js, vue.js, and CSS-expanders like SASS&LESS & keyword-autocompletion
+software for text-editor apps; headless web-browsers triggered over ssh/MOSH,
+etc.; + speech-synthesis CC (closed-captions) screen-readers software for the
+blind or the visually impaired (and you can even add HTML5 media tags that
+include fandubs audio reading/audio-recording of 1 person or several people 
+reading the written texts from some manga comic or Western webcomic! See
+http://blambot.com for a short dictionary of Western comic typography terms...)
+In addition, unless it is a videoclip that already has audio built-in, one can
+add a separate audio-track (e.g. for fandubs of what is written/said in a static
+manga page or in an animated GIF image, or in a video-clip) file via the HTML5 
+media tag, and make it play on a static raster image or on an animated GIF 
+file, etc.
+This can even be combined with adding a subtitles-file track that is written
+in a popular subtitles file-format and edited in e.g. subtitle-editing app like
+Aegisub, SubtitleWorkshop v5+, Gnome Subtitle Editor, Jubler, etc.
+There is also a WebVTT (??) HTML file-format as a digital subtitle file-format
+for CC (CLOSED CAPTIONS), but .srt and .ass/.ssa remain the most popular 
+& most widely used subtitle file-formats... (VTT = virtual teletext)
+This can also be used by professional trained linguists & by hobbyist 
+philologists to put overlay translation suggestions, transcriptions,
+and transliterations - to publically available online Internet galleries of 
+scanned high-resolution ancient manuscripts (e.g. recently made public scans of
+old Cyrillic & old Bulgarian books & scrolls & historical newspapers, etc.!), 
+artifacts with writing on them, scrolls, as well as to aid in proofreading & 
+fan-scanlating manga & webcomics, etc.
+
+NOTE-2: The above NOTE-1 describes a sorta novel 'hack' trick which is just a 
+useful piece of tech, but IRL (real-life) sex and real-life living is 
+infinitely more ineffable and much more amazing & painful & scary & pleasurable 
+and is perceptual-experiential-experimental-existential...
+Don't remain a total Internet addict or a VR-porn/online-Internet-porn addict,
+you fool! Mingle with all sorts of different people IRL (in-real-life) and do
+banter-flirting after having done enough self-improvement & body training, etc.
+)))
+
+This is essential for print dictionaries and for electronic digital 
+(offline or online Internet) dictionaries, too! An example is my print copy of 
+the pocket-size 'Oxford Dictionary of Mandarin Chinese' (by the Oxford 
+University Press; it has a red cover and includes the essential extended list of
+ basic calligraphic shapes (brushstrokes) that when combined in some 
+ limited&specific ways - together constitute 99% of all Chinese (Mandarin) 
+ characters).
+Other examples include [specialized?] monolingual&bilingual online Internet 
+dictionaries of Japanese, of Chinese, etc.
+
+GNU Unifont, Google Noto fonts, and some other fonts seem to be a good fit for 
+nice such fonts.
+Also see CJK/CJKVTM fonts on GitHub.com, GitLab.org, SourceForge.net, 
+Freecode.net, etc. and do google.com web-searches for more free digital 
+electronic fonts.
+It is also strongly recommended to do searches for such Asian-scripts-supporting
+ fonts on Wikipedia.org , http://openfontlibrary.org , and on/via other 
+ font/typography websites.
+
+================================================================================
+[1] NOTE: In some styles of writing Western scripts, various different glyphs 
+(now different Unicode codepoints) were used to write some punctuation 
+characters, e.g. `text' in UNIX CLI-commandline apps.
+In addition, in some Western texts, people used DOUBLE-WHITESPACE to indicate 
+the division between SENTENCES. While this usage is largely obsolete as of 2020,
+it is now finding support when perfoming automated algorithm-driven NLP (natural
+language processing) on electronic digital texts --- just because this extra
+whitespace neatly indicates the boundaries between sentences and is written by
+the writer himself/herself. NLP in that sense also includes electronic digital 
+textual corpus-linguistics studies and corpus datasets and wordlist datasets 
+used for research&development purposes, e.g. as citations that give real-life
+examples of word usage & MWE (multi-word expression) usage IN CONTEXT - in the 
+body of some (e.g. online Internet) more comprehensive (monolingual or 
+bilingual, or multilingual) dictionaries.
+
+	Also, print text-formatting still carries with it some different styles of 
+formatting the boundaries between text paragraphs, which include the use of
+empty lines or tabs (or multiple whitespaces characters one after another), or
+a combination of both. This very paragraph and the paragraph below are examples
+of this usage.
+
+   This paragraph uses several whitespace characters AND also an empty line 
+between the paragraph above! And it also includes a visually hidden BUT still 
+there whitespace last trailing character at the end of each line so as to aid
+with performing regex/regexp-based substitutions via regexp-based 
+Search&REPLACE in advanced text-editor application-software programs. 
+Isn't that freaky!?! 
+
+P.S. There are several slightly different ways to text-format paragraph
+boundaries. The above is just one of them. One can also use HTML5 HTML-entities
+(and/or Unicode whitespace-like codepoint characters) as well as utilize CSSv3
+& even JavaScript-v6+ to add more visual awesomeness or to achieve culturjamming
+artistic effects, e.g. WALL-OF-TEXT, or whatever...
+
+

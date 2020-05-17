@@ -1,0 +1,45 @@
+https://en.wikipedia.org/w/index.php?title=Portable_Application_Description&oldid=950391083
+
+.PAD files = portable application description
+(the app-metadata HTML-structure of http://softpedia.com & etc. app-download file-hosting websites...)
+
+https://www.nirsoft.net/utils/installed_app_view.html
+https://www.google.com/search?q=xml+appdescriptor&oq=xml+appDescr&aqs=chrome.1.69i57j33l2.27965j0j4&sourceid=chrome&ie=UTF-8
+https://www.google.com/search?q=xml-based+app+metadata+fileformat&nfpr=1&sa=X&ved=2ahUKEwjArqyw4LnpAhVoURUIHcNYA9YQvgUoAXoECA0QKQ&biw=1366&bih=634
+
+.xml sitemap files (webpages-filesystem-structure of websites...)
+
+http://microformats.org/
+http://microformats.org/wiki/Main_Page
+
+http://metalinker.org
+https://mirrorbrain.org/
+
+http://microformats.org/wiki/hmedia
+http://microformats.org/wiki/hproduct
+
+http://microformats.org/wiki/hresume
+http://microformats.org/wiki/hreview
+http://microformats.org/wiki/adr
+http://microformats.org/wiki/geo
+http://microformats.org/wiki/rel-payment
+http://microformats.org/wiki/datetime-design-pattern
+
+hAtom - blog posts and other date-stamped content
+hCalendar - events
+hCard - people, organizations, contacts
+hListing - listings for products or services
+http://microformats.org/wiki/h-card
+
+archlinux.dyna . --- archLinux packages metadata AppDescription file-format (XML structure / SGML/XML schema)...
+The http://en.wikipedia.org/wiki/Semantic_Web HTML5 metadata tags:
+og:
+(see http://facebook.com 's HTML-source-code via Mozilla Firefox & its 'View page info')
+etc.
+
+FOAF
+XFN
+XOXO
+HackerCode cryptographic acronym system...
+GeekCode , etc.
+http://fetlife.com , etc.

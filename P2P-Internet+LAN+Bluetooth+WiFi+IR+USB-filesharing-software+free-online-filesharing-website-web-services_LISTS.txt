@@ -7,23 +7,71 @@ https://www.gnu.org/server/irc-rules.en.html
 
 https://directory.fsf.org/wiki?title=Special:Ask&offset=10&limit=500&q=%5B%5BChat%3A%3Airc%5D%5D&p=mainlabel%3D%2Fformat%3Dtemplate%2Flink%3Dnone%2Ftemplate%3DGetlist-2Drow%2Fintrotemplate%3DGetlist-2Dintro%2Foutrotemplate%3DGetlist-2Doutro&po=%3FFull+description%3DDescription%0A%3FHomepage+URL%3DHomepage%0A%3FLicense%0A%3FIs+GNU%23%5B%5BFile%3AHeckert_gnu.tiny.png%5D%5D%2C%0A
 
+https://directory.fsf.org/wiki/Main_Page
+List of IRC clients: https://directory.fsf.org/wiki?title=Special:Ask&offset=10&limit=500&q=%5B%5BChat%3A%3Airc%5D%5D&p=mainlabel%3D%2Fformat%3Dtemplate%2Flink%3Dnone%2Ftemplate%3DGetlist-2Drow%2Fintrotemplate%3DGetlist-2Dintro%2Foutrotemplate%3DGetlist-2Doutro&po=%3FFull+description%3DDescription%0A%3FHomepage+URL%3DHomepage%0A%3FLicense%0A%3FIs+GNU%23%5B%5BFile%3AHeckert_gnu.tiny.png%5D%5D%2C%0A
+http://en.wikipedia.org/wiki/List_of_IRC_clients
 https://www.gnu.org/server/irc-rules.en.html
 
 https://xmpp.org/software/clients.html
-
+http://tox.im (e.g. qTox)
+http://matrix.org
+http://fossil.org (fossil-scm, similar to http://git-scm.org )
++ FilePizza WebRTC/HTML-http & `f*ex`&`sexxx`
 https://www.google.com/search?q=retroshare&oq=retroshare&aqs=chrome..69i57.4373j0j4&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8
 
-https://en.wikipedia.org/wiki/RetroShare
-https://en.wikipedia.org/wiki/Comparison_of_file-sharing_applications
+https://en.wikipedia.org/wiki/RetroShare (!!!)
+https://en.wikipedia.org/wiki/OnionShare + Tor + Tor web-browser + Darknet&Dark Web&Deep Web&Deep Internet&Black-market-Internet + woxim.org ? (!!!)
 
-https://retroshare.cc/
-https://github.com/RetroShare
+https://www.whonix.org/ (!!!!!!!) = Software That Can Anonymize Everything You Do Online = a seemingly very secure Linux distro based on Debian Linux & the Tor-browser + OnionShare, etc. !!!
+Applications are reviewed and pre-configured: Tor Browser, OnionShare, Thunderbird, KeePassXC, HexChat, VLC, Terminal, Electrum, Bitcoin, Monero (, blockchain.info ; http://coinbase.io )
+https://www.whonix.org/wiki/FAQ (+ its many donation options & webbanners!)
+https://www.whonix.org/wiki/Tor_Myths_and_Misconceptions
+http://directory.fsf.org
+
+IPFS, I2P, ( blockchain/bitcoin&related-cryptocurrencies/'ForEx'/'stock-(shares-)markets/binary-options-Ponzi-scheme-scams) ); I2P hashed encrypted distributed/decentralized GnuPG-.asc-signed emailing maillists, etc.; read-only filesystem-on-FUSE via USB-flashstick/big-SD-card/hotpluggable-HDD/SSD-hard-disk-data-storage-external-backup-physical-media, etc.
+https://en.wikipedia.org/wiki/Comparison_of_file-sharing_applications
 https://en.wikipedia.org/w/index.php?title=Template_talk:File_sharing_sidebar&oldid=721899951
 https://en.wikipedia.org/w/index.php?title=Template:File_sharing&oldid=952910090
+
+http://metalinker.org
+https://mirrorbrain.org/
+https://mirrorbrain.org/features/
+https://mirrorbrain.org/donations/
+https://mirrorbrain.org/links/
+( http://links.org :DDD )
+
+http://en.wikipedia.org/wiki/Torrent_files
+http://github.com/q?=torrent+web-server
+http://github.com/q?=dc+adc+hub-online-web-server+or+daemon-software
+http://en.wikipedia.org/wiki/XDCC (IRC p2p-filesharing system)
+rsync.org , zsync, magnet:hash (MHT ; UTX?) ; 
+.WARC web-archive file-format for http://reddit.com/r/DataHoarder purposes & web-archaelogy ... ( http://archive.org/web/ & http://archive.today + Google.com (web-)Cache , etc.)
++ curl mirror-archive full-HTML-webpage + wget / wget2 mirror+full-archive + http://httrack.org ( http://www.httrack.com/ + its Linux port) + Webtooth Extractor + JAWS (Just another webscraper).exe + Python Scrapy, webspider-software, [list of web-browser ID vendor-client-strings; norobots.txt , CGI-scripts, ], etc.
+OwnCloud, NextCloud + WebDAV + MediaWiki + Debian FreedomBox (on SBMC (single-board mini-/micro-computers), e.g. RaspberryPie, Pinebox, etc., http://system76.org, http://puri.sm, http://ryf.fsf.org (+ http://h-node.org ) +++ <<<<<<< http://sites.google.com/view/ve4ernik/publication --- P2P decentralized/distributed ISP GeoCache-like durable rugged boxes (also used for long-term data-storage with minimal electricity & maintenance/repairs/replacements/remote-control&remote-diagnosis/analysis/remote-(status-)monitoring needs/requirements + http://reddit.com/r/DataHoarder - longer/longest-term durable data-storage ideas/concepts & state-of-the-art proof-of-concept working-protypes/or-just-working-verified-patent-blueprints tech-stack... DWeb/Web 3.0 tech-stack (to paste here from my email that lists those... (see the file sahwar-killer-apps in http://github.com/sahwar/Bulogos , etc.) >>>>>>>
+
+https://directory.fsf.org/wiki/Category/Works-with/bitcoin
+http://www.mediawiki.org/ + http://semantic-mediawiki.org/ + GraphQL + Neo4j mathematical-graphs-database, NoSQL, MySQL/MariaDB, flat-files-filesystem-hierarchy-directory-structure-tree, TinySQL, sqlite.org , .jsonp / .json / JSONfs / xmlfs-on-FUSE, .ISO(9660+extensions)-file(s)-mounted-filesystem-on-Linux-FUSE, etc. ; AppImageKit, SystemImageKit, AppVeyor, Docker files, VirtualBox&QEMU virtualization images; Microsoft Windows7+-generated .VHD full-disk backup files(???), etc.; app-jail(no-brake) virtualization software, etc. ; http://wikidata.org + http://encyclopediaoflife.org (Biopedia?)
+
+DC++/ADC/linux-dc++&dc-linux, ApexDC(++), EiskaltDC++, etc. Gnutella, eDonkey2, AresGalaxy, Azureus, http://nyaa.eu , etc.
+https://retroshare.cc/
+https://github.com/RetroShare
 https://en.wikipedia.org/wiki/RetroShare
 https://retroshare.cc/
 
+https://www.google.com/search?q=list+of+torrent+clients&oq=list+of+torrent+clients&aqs=chrome..69i57.9480j0j4&sourceid=chrome&ie=UTF-8
+https://en.wikipedia.org/wiki/Comparison_of_BitTorrent_clients
+https://www.vpnmentor.com/blog/best-torrent-clients/
 
+
+See also:
+Anonymous P2P
+BitTorrent tracker
+Comparison of BitTorrent sites
+Comparison of BitTorrent tracker software
+Comparison of file sharing applications
+File sharing
+Open Music Model
+Timeline of file sharing
 
 ***
 www.torproject.org/
@@ -42,4 +90,13 @@ https://www.whonix.org/wiki/RetroShare
 
 https://www.whonix.org/wiki/RetroShare
 
-WARNING: RetroShare packages are signed with weak [archive] 1024 bit keys. Until this is fixed we rRicochetIM+OnionShare
+WARNING: RetroShare packages are signed with weak [archive] 1024 bit keys. Until this is fixed we recommend using RicochetIM + OnionShare.
+
+
+---
+
+http://masstodon.org ( http://fosstodon.org )
+http://remark42.org
+http://discourse.org
+(ElasticSearch & other huge-datasets regexp-based multiple-sort(ing)-algorithms-utilizing HTML5+CSS+JS WebUI strings&substrings-indexing interactive Unicode-capable search-engine systems?)
+
