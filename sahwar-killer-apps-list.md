@@ -1247,28 +1247,29 @@ MeOCR (MS Windows), OpenGL Extensions Viewer v5+ (MS Windows); NexusImage (freew
 ````
 A list of lightweight web-browsers:
 
-SlimJet
+SlimJet !
 Palemoon
-Firefox-ESR
-Chromium + uBlock Origin
+latest Mozilla Firefox & Firefox-ESR !!! Mozilal Firefox (older versions, more lightweight, less latest tech support, still renders most HTML5+CSSv3+JavaScript-v6+ webpages mostly okay), Mozilla Firefox Developer Edition & Firefox unstable nightly builds, etc.
+Chromium + uBlock Origin !
 Yandex Browser
 Brave
-Falkon
+Falkon !!
+Qupzilla !!
 Opera
 Vivaldi
 Epiphany
 Midori
 Yandex Browser
 Waterfox
-SeaMonkey
+SeaMonkey !
 Netrider
-suckless.org surf+dwm+panel+...
-uzbl.org - 
+suckless.org surf+dwm+panel+... !!
+uzbl.org - !!
 link2
 dillo
-kazahakse
-Chromium + Vimium extension/add-on
-https://otter-browser.org (fork of older release versions of the Opera web-browser)
+kazahakse ?
+Chromium + Vimium extension/add-on !!
+https://otter-browser.org (fork of older release versions of the Opera web-browser) !!
 modern QT5+-based webbrowser
 I use the "otter-browser-weekly-300" version, which is to say the October 6, 2019 version:
 https://sourceforge.net/projects/otter-browser/files/otter-browser-weekly300/
@@ -1366,6 +1367,25 @@ https://github.com/square/wire
 http://simple.sourceforge.net/
 https://oss.sonatype.org/content/repositories/snapshots/
 
+`$ udisksctl` with tab-completion & http://learnfree.eu --- automatic media-mounting&detection (+GUI-notification with metadata-info & specific media icon-representation!)
+learnfree.eu - MIME-filetypes editor for 'Open with...'-like-menu (like in MS Windows 7/8.1/10); regex/regexp-tester (like http://regex101.com , http://textmechanic.com , etc.!)
+
+`
+automatic setup attempts of complex block device layouts have been removed in favor of management via udisksctl with tab-completion; other legacy features and boot modes have been discontinued or are no longer supported, in favor of core USB/CD booting....
+`
+
+Microsoft Windows _PowerShell / PowerShellCore_ for Linux, e.g. Kali Linux (!!!): `$ sudo apt install -y powershell` / `pwsh` or `powershell`
+`'sudo apt install -y powershell'. We now have put PowerShell into one of our (primary) metapackages, kali-linux-large. This means, if you choose to install this metapackage during system setup, or once Kali is up and running (sudo apt install -y kali-linux-large), if PowerShell is compatible with your architecture, you can just jump straight into it (pwsh). PowerShell isn't in the default metapackage (that's kali-linux-default), but it is in the one that includes the default and many extras, and can be included during system setup`
+
+````
+2020-05-12	NEW • Distribution Release: Kali Linux 2020.2
+Kali Linux
+
+
+Rate this project	Kali Linux is a Debian-based distribution with a collection of security and forensics tools. The project's latest release makes it easier for users to access PowerShell, updates themes for KDE Plasma, and the size requirements for the distribution's ARM-build SD cards has been increased from 8GB to 16GB. "A while ago, we put PowerShell into Kali Linux's network repository. This means if you wanted PowerShell, you had to install the package as a one off by doing 'sudo apt install -y powershell'. We now have put PowerShell into one of our (primary) metapackages, kali-linux-large. This means, if you choose to install this metapackage during system setup, or once Kali is up and running (sudo apt install -y kali-linux-large), if PowerShell is compatible with your architecture, you can just jump straight into it (pwsh). PowerShell isn't in the default metapackage (that's kali-linux-default), but it is in the one that includes the default and many extras, and can be included during system setup." Additional information and screenshots of the new KDE Plasma themes can be found in the distribution's release announcement. Download (SHA256) (pkglist): kali-linux-2020.2-installer-amd64.iso (3,681MB, torrent), kali-linux-2020.2-live-amd64.iso (2,881MB, torrent), kali-linux-2020.2-installer-netinst-amd64.iso (420MB, torrent).
+````
+
+`___National keyboard layout configuration___ has been enhanced. In addition to the above`
 
 
 ## Under `Apple macOS` ##

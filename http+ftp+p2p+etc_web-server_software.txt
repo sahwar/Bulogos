@@ -1,0 +1,33 @@
+
+Apache http server
+nginx web-server
+lighttpd
+httpd
+http servers on http://GitHub.com, http://gitlab.com / http://gitlab.org, Gitea, http://sourceforge.net , http://freecode.net , http://fosshub.com , http://launchpad.net , http://directory.fsf.org , http://gnu.org, http://nongnu.org, http://sourceware.org, etc.
+
+MySQL/MariaDB database
+PostgreSQL database
+Neo4j graphQL database
+noSQL
+noDB??? :D
+SQLite
+.json/.jzonp-like databases
+JSON, HAML, TOML, YAML, .YML, XML/SGML/etc
+flat-files no-DB static-HTML-website generator , etc. - cargo.org - etc. --- also see in http://github.com , gitlab.org , etc.
+
+phpMyAdmin
+cgi-scripts
+.httaccess
+Clean-URLs/Clean-URIs mod_rewrite rules & PHP URL-rewriting scripts (?!?), etc.
+website management admin-panel software, etc.
+Roundcube webmail (GMail-like, self-hosted, etc.)
+
+MediaWiki
+other wiki software, e.g. MoinMoin, etc.
+TikiWiki
+http://en.wikipedia.org/wiki/List_of_wiki_software
+
+etc.
+(to add more later on...)
+
+The ISO image includes a free license for the 3CX PBX edition. The ISO image contains the standard Debian installer which installs a minimal system with the nginx web server, PostgreSQL database, iptables firewall and Secure Shell. Options not relevant to 3CX have been removed from the distribution. Download the installation ISO image from here: debian-amd64-netinst-3cx.iso (372MB).

@@ -1,15 +1,24 @@
-https://directory.fsf.org/wiki/Category/Email-software
+lists-of-email-clients-software.txt
+by https://github.com/sahwar/Bulogos
 
-https://directory.fsf.org/wiki/Category/Email-software/mail-client
+
+THE BEST:
+
 http://en.wikipedia.org/wiki/List_of_email_clients
+https://directory.fsf.org/wiki/Category/Email-software
+https://directory.fsf.org/wiki/Category/Email-software/mail-client
+http://alternativeto.net
+http://listverse.co
+http://slant.co
 
-Mozilla Thunderbird (full-featured GUI email client, can easily be used with gmail.com with Yahoo! Mail, outlook.com/microsoft.com email, with abv.bg, etc.!!!)
-Evolution Email (software)
-alpine email
-https://directory.fsf.org/wiki/Mutt
+* Mozilla Thunderbird (full-featured GUI email client, can easily be used with gmail.com with Yahoo! Mail, outlook.com/microsoft.com email, with abv.bg, etc.!!!)
+* Evolution Email (software)
+* Claws Mail
+* alpine email (fork of the older `pine` email client)
+* https://directory.fsf.org/wiki/Mutt
 ````
 http://www.mutt.org/
-Text based mail reader
+Text based mail reader (but it DOES support Unicode (UTF-8)-encoded emails, BUT I am not sure about HTML-/HTML5-based emails since that requires a non-headless web-browser to display/render it like a webpage...)
 
 Mutt is a text based mail user agent that supports MIME, PGP/MIME, POP3, IMAP, threading, and color. Its default keybindings are much like elm, but keybindings are fully configurable; Mush and PINE-like ones are provided as examples. It handles MMDF, MH, and maildir in addition to regular mbox format. Messages may be indefinitely postponed. The program overall is configurable through an rc file.
 
@@ -35,8 +44,18 @@ Mu
 
 fetchmail
 GNU emacs email module
-vim/NeoVim/emacsen/Cream-emacs email modules ...
-(GNU nano (CLI text-editor...))
+vim/NeoVim/emacsen/Cream-emacs email modules/3rd-party packages ...
+(GNU nano (this is a CLI text-editor...))
+
+================================================================================
+
+Self-hosted webmail solutions:
+
+* Roundcube
+* SOGo version (4.3.2+)
+* ... + search for more PHP-based (like the software phpMyAdmin) WebUI self-hosted
+webmail solutions on http://sourceforge.net & on http://github.com & on
+http://gitlab.com / http://gitlab.org & self-hosted Gitea/git-scm-http instances.
 
 ================================================================================
 Email file-formats:
@@ -48,10 +67,9 @@ Email file-formats:
 
 ================================================================================
 
-OK TO HTML/HTML5-formatted (rich-text) emails?
+SAY _OKAY_ TO HTML/HTML5-formatted (rich-text) emails?
 
 MAYBE. I actually don't mind those as long as the spam emails & nasty binary-files
 virus attachment-files ARE NOT fucking up my email inbox! ---https://github.com/sahwar/Bulogos & http://sites.google.com/view/ve4ernik
 BUT MOST SECURITY-ORIENTED PEOPLE PREFER PLAINTEXT TXT-ONLY EMAILS & .asc-signed
-with GnuPG, etc.
-
+with GnuPG, etc. (This is the personal opinion of https://github.com/sahwar/Bulogos , also known as http://sites.google.com/view/ve4ernik )

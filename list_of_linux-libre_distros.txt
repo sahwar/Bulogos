@@ -1,0 +1,705 @@
+list_of_linux-libre_distros.txt
+(supposedly mostly binary-blobs-free...)
+
+ 
+* *Dragora*: https://www.dragora.org/ <dragora-users@nongnu.org> - https://en.wikipedia.org/wiki/Dragora_GNU/Linux-Libre - https://distrowatch.com/dragora - https://sourceforge.net/projects/dragora/files/ - https://www.gnu.org/graphics/distros-dragora.html - https://www.wikiwand.com/no/Dragora_GNU/Linux-Libre (Метод на актуализиране: pkgsystem ; Мениджър на пакети: pkgsystem)
+* *Dynebolic*: https://github.com/dyne/dynebolic/ ; https://github.com/dyne/dynebolic/issues
+* *gNewSense*: ; https://savannah.nongnu.org/bugs/?group=gnewsense
+* *Hyperbola*: http://hyperbola.info/ ; https://issues.hyperbola.info/
+* *Guix System Distribution*: http:// <bug-guix@gnu.org>
+* *libreCMC*: https://gogs.librecmc.org/ ; https://gogs.librecmc.org/libreCMC/libreCMC/issues
+* *Musix GNU+Linux*: https://ourproject.org/pm/ ; https://ourproject.org/pm/task.php?group_project_id=138&group_id=191&%20func=browse
+* *Parabola*: http://parabola.nu/ ; https://labs.parabola.nu/
+* *ProteanOS*: http://proteanos.com ; http://proteanos.com/contact/
+* *Trisquel*: http://trisquel.info ; http://trisquel.info/en/project/issues - https://en.wikipedia.org/wiki/Trisquel - https://distrowatch.com/trisquel - https://wiki.sugarlabs.org/go/Trisquel - https://en.wikiversity.org/wiki/Trisquel - https://www.crunchbase.com/organization/trisquel-gnu-linux - https://archiveos.org/trisquel/
+* *PureOS (Debian-based)*: https://pureos.net/ ; https://tracker.pureos.net/ - https://en.wikipedia.org/wiki/PureOS - https://distrowatch.com/pureos - https://puri.sm/products/librem-5/pureos-mobile/
+* *Ututo*: http://ututo.org <ututo@ututo.org>
+
+================================================================================
+
+THE SECTION BELOW SHOULD BE REORGANIZED & ADDED TO THE FOLLOWING FILE:
+https://github.com/sahwar/Bulogos/blob/master/OSs-worth-using-in-2019+.md
+
+
+
+Mozilla Firefox - script not responding: chrome://browser/content/browser.js:3441
+
+debian.org
+devuan.org
+
+archlinux.org
+
+https://archiveos.org/trisquel/
+
+LuneOS
+PostmarketOS
+Qubes OS
+Trisquel
+Tizen
+
+Puppy Linux (especially Ubuntu-based editions & Debian-based editions) & EasyOS (!!!)
+Bodhi Linux
+Porteus
+Linux Lite
+Ubuntu / Lubuntu / Xubuntu / Kubuntu / Ubuntu MATE / Ubuntu Unity (!!!)
+Linux Mint (!!!)
+ArchLinux (!!)
+MX Linux (Debian-based?) & antiX Linux (!!!!!!)
+TinyCore Linux (TCL)
+Linux from Scratch (LFS)
+Minimal Linux Live (MLL) (!!!)
+StotinkaOS (Bulgarian Linux distro)
+USU Linux (Bulgarian Linux distro, Ubuntu-based) (!!!)
+herbsfurtwm
+SliTaz Linux (!!!)
+
+ZorinOS (!) & Deepin Linux (!)
+LXLE Linux (!)
+Slax Linux
+Sparky Linux
+PCLinuxOS (!!!)
+Manjaro Linux
+Knoppix Linux (!!!)
+CrunchBang Linux (!)
+Macpup Linux (!)
+
+ElementaryOS (!!!)
+RedHat Linux (commercial) & CentOS & Fedora (!!!)
+
+---
+The most popular (GNU/)Linux distros according to - for 18-May-2020 (interval range of statistics: top distros for the last 6 months):
+
+Позиция на Страницата по Брой Преглеждания
+ Интервал от време:
+ 
+Поз.	Дистрибуция	HPD*
+1	MX Linux	4550<
+2	Manjaro	3102=
+3	Mint	2615>
+4	Ubuntu	1829>
+5	Debian	1688<
+6	elementary	1598=
+7	Solus	1290=
+8	Zorin	1169>
+9	Fedora	1079>
+10	deepin	1014=
+11	KDE neon	949>
+12	Pop!_OS	921>
+13	antiX	854>
+14	Arch	747>
+15	CentOS	734=
+16	ArcoLinux	725>
+17	PCLinuxOS	722<
+18	openSUSE	705=
+19	Ubuntu Kylin	635>
+20	Kali	627>
+21	EndeavourOS	529>
+22	Puppy	522=
+23	Lite	477=
+24	Peppermint	469=
+25	SparkyLinux	467=
+26	Lubuntu	436=
+27	EasyOS	432=
+28	ReactOS	417<
+29	Tails	412>
+30	FreeBSD	403>
+31	Q4OS	373>
+32	Archman	372<
+33	Xubuntu	366=
+34	Slackware	361=
+35	Android-x86	358<
+36	Kubuntu	355>
+37	Parrot	328=
+38	Endless	313=
+39	Devuan	312>
+40	Void	309<
+41	Mageia	306=
+42	Ubuntu MATE	302=
+43	Alpine	297=
+44	Feren	275=
+45	Bluestar	268<
+46	Bodhi	268=
+47	Gentoo	267=
+48	GhostBSD	265=
+49	Trident	264<
+50	PureOS	256=
+51	KNOPPIX	253=
+52	OpenMandriva	252<
+53	NomadBSD	251>
+54	KaOS	239=
+55	Red Hat	237=
+56	4MLinux	233>
+57	ClearOS	229=
+58	Elive	228>
+59	Clear	223>
+60	Simplicity	223>
+61	SmartOS	222<
+62	Tiny Core	220=
+63	Ubuntu Budgie	217=
+64	NixOS	213=
+65	Voyager	213=
+66	AV Linux	212=
+67	LXLE	211=
+68	Nitrux	209=
+69	Qubes	207=
+70	Netrunner	206=
+71	Emmabuntüs	203=
+72	ExTiX	203=
+73	Ultimate	202<
+74	Robolinux	196=
+75	BlackArch	188=
+76	DragonFly	188=
+77	ALT	187=
+78	Ubuntu Studio	186>
+79	Volumio	185<
+80	Artix	177=
+81	Arya	165=
+82	AUSTRUMI	162=
+83	FuryBSD	162>
+84	OpenBSD	161=
+85	Obarun	160=
+86	SteamOS	160=
+87	ArchBang	159=
+88	MakuluLinux	159=
+89	Trisquel	157=
+90	BunsenLabs	156=
+91	Raspbian	156=
+92	Septor	154=
+93	ArchLabs	152=
+94	Sabayon	152=
+95	Lakka	151=
+96	ROSA	150>
+97	Slax	150=
+98	Haiku	149=
+99	LibreELEC	149=
+100	Oracle	149<
+*H.P.D = преглеждания за ден
+Обовявано Всекидневно
+More statistics...
+
+Sidebar Sponsor
+
+---
+
+Clonezilla Live (2.6.6-15) (Debian-based)
+Parsix Linux
+Tails Linux
+3CX Phone System
+SparkyLinux
+Elive Linux (3.8.12 (beta) - development release)
+Zentyal Server 6.2
+Ubuntu Studio (!!! ; plans to move to KDE Plasma desktop)
+Medibuntu (!!)
+SteamOS Linux (!!!!!!)
+openSUSE (!!!) ; berlinos.de
+Gentoo Linux (!!!; resumes Bugday event)
+Debian (!!!!!! ; publishes new install media; rolling-release distribution)
+
+EndeavourOS 2020.04.11
+Turnkey Linux 16.0
+OpenIndiana 2020.04
+Tails 4.6
+ArchLabs
+Clonezilla
+Debian
+DragonFlyBSD
+KDE neon
+Linuxfx
+NethServer
+OpenIndiana
+PCLinuxOS
+RebeccaBlackOS
+SparkyLinux
+Tails
+Ufficio Zero
+Volumio
+Zentyal Server
+instantOS
+BlueOS
+* Kali Linux (! '2020-05-12	NEW • Distribution Release: Kali Linux 2020.2
+Rate this project	Kali Linux is a Debian-based distribution with a collection of security and forensics tools. The project's latest release makes it easier for users to access PowerShell, updates themes for KDE Plasma, and the size requirements for the distribution's ARM-build SD cards has been increased from 8GB to 16GB. "A while ago, we put PowerShell into Kali Linux's network repository. This means if you wanted PowerShell, you had to install the package as a one off by doing 'sudo apt install -y powershell'. We now have put PowerShell into one of our (primary) metapackages, kali-linux-large. This means, if you choose to install this metapackage during system setup, or once Kali is up and running (sudo apt install -y kali-linux-large), if PowerShell is compatible with your architecture, you can just jump straight into it (pwsh). PowerShell isn't in the default metapackage (that's kali-linux-default), but it is in the one that includes the default and many extras, and can be included during system setup." Additional information and screenshots of the new KDE Plasma themes can be found in the distribution's release announcement. Download (SHA256) (pkglist): kali-linux-2020.2-installer-amd64.iso (3,681MB, torrent), kali-linux-2020.2-live-amd64.iso (2,881MB, torrent), kali-linux-2020.2-installer-netinst-amd64.iso (420MB, torrent)')
+* Q4OS Linux (a Debian-based desktop Linux distribution designed to offer classic-style user interface (Trinity) or the more modern Plasma desktop)
+* Finnix Linux ('2020-05-14	NEW • Distribution Release: Finnix 120
+Finnix
+Rate this project	After a 5-year hiatus, the Finnix distribution has come to life once more with a release of version 120. Finnix is a Debian-based live Linux CD made for system administrators and designed to manipulate hard drives and partitions, monitor networks, and rebuild boot records. The new version is the project's first release for the x86_64 architecture: "Finnix 120 released. That's right: after a 5-year hiatus, Finnix - the live CD for system administrators and the oldest live CD in production - is back to celebrate its 20-year anniversary in 2020 with Finnix 120. Finnix 120 is a complete overhaul, with a number of major changes (as well as too many minor changes to enumerate): Finnix 120 is now a native 64-bit amd64 userland and kernel system; both BIOS and UEFI booting are now available, with Secure Boot; hundreds of new utility packages have been added; automatic setup attempts of complex block device layouts have been removed in favor of management via udisksctl with tab-completion; other legacy features and boot modes have been discontinued or are no longer supported, in favor of core USB/CD booting...." Read the release announcement and release notes for more information. Download: finnix-120.iso (477MB, signature, torrent, pkglist).'
+* 2020-05-14	NEW • Distribution Release: UBports 16.04 OTA-12
+UBports
+* UBports 16.04 OTA-12
+* BackBox Linux (an Ubuntu-based distribution developed to perform penetration tests and security assessments. The distribution's latest release is BackBox 7 which is based on Ubuntu's 20.04 long-term support release. The distribution now features version 5.4 of the Linux kernel and Xfce 4.14)
+* https://devices.ubuntu-touch.io/
+* 
+
+Rate this project	The UBports team has published an update to their mobile operating system. The new version, 16.04 OTA-12 introduces a new version of the Lomiri (formerly Unity8) user interface and Mir now supports working with Wayland clients. "The headline feature of this new release is our import of Canonical's final changes to Unity8. This is a transition that started in April of 2019 and has brought many new features. As an Ubuntu Touch user, you'll be seeing the effects of the revision right away -- the Ubuntu Touch 'home screen', the Unity8 Dash, has now been replaced by a blank background, with the Drawer serving as the new app list. The new version of Unity8 performs extensive self-tests, helping us to avoid introducing new bugs or triggering old ones again. Unity8 is now called Lomiri, though the code naming is only being updated slowly to reflect this. Most importantly for us, we upgraded from Mir 0.24, released back in 2015, to Mir 1.2, released in 2019. This newer version of Mir features support for Wayland clients!" Further details can be found in the project's release announcement. A list of supported devices and download options can be found on the project's Devices page)
+* 
+
+---
+opinion poll (анкета, анкетно проучване - „респонденти“ - отговорили на списъка с въпросите от въпросника...)
+How to share a terminal session:
+https://distrowatch.com/weekly.php?issue=20200511#qa
+Opinion poll: sharing screens and terminals: https://distrowatch.com/weekly.php?issue=20200511#poll
+https://distrowatch.com/table.php?distribution=proxmox&pkglist=true&version=6.2#pkglist
+
+------
+NEW • Distribution Release: Finnix 120
+Finnix
+Rate this project	After a 5-year hiatus, the Finnix distribution has come to life once more with a release of version 120. Finnix is a Debian-based live Linux CD made for system administrators and designed to manipulate hard drives and partitions, monitor networks, and rebuild boot records. The new version is the project's first release for the x86_64 architecture: "Finnix 120 released. That's right: after a 5-year hiatus, Finnix - the live CD for system administrators and the oldest live CD in production - is back to celebrate its 20-year anniversary in 2020 with Finnix 120. Finnix 120 is a complete overhaul, with a number of major changes (as well as too many minor changes to enumerate): Finnix 120 is now a native 64-bit amd64 userland and kernel system; both BIOS and UEFI booting are now available, with Secure Boot; hundreds of new utility packages have been added; automatic setup attempts of complex block device layouts have been removed in favor of management via udisksctl with tab-completion; other legacy features and boot modes have been discontinued or are no longer supported, in favor of core USB/CD booting...." Read the release announcement and release notes for more information. Download: finnix-120.iso (477MB, signature, torrent, pkglist).
+
+------
+````
+This release fixes many security vulnerabilities. You should upgrade as soon as possible. Changes and updates: update Tor Browser to 9.0.10; add support for Universal 2nd Factor USB security keys; update the list of applications in the Favorites applications submenu; to make it easier for new users to discover some of the core features of Tails, we added Configure persistent volume, Tails documentation, WhisperBack Error Reporting and Tails Installer
+````
+
+
+------
+
+------
+We are proud to announce the general availability of our virtualization management platform Proxmox VE 6.2. It's built on Debian Buster 10.4 and a 5.4 long-term Linux kernel, QEMU 5.0, LXC 4.0, ZFS 0.8.3, Ceph 14.2.9 (Nautilus), and ZFS 0.8.3. This release brings a built-in validation of domains for Let's Encrypt TLS certificates via the DNS-based challenge mechanism, full support for up to eight corosync network links, support for Zstandard for Backup/Restore, and a new LDAP sync for users and groups and full support for API tokens. Countless bugfixes and smaller improvements are included as well, see the full release notes.
+------
+
+---
+ Последни Новини и Подобрения
+Опции за Филтриране на Новини
+Дистрибуция:  Release:  Месец:  Година:  
+2020-05-15	NEW • Distribution Release: BackBox Linux 7
+BackBox Linux
+
+
+Rate this project	BackBox Linux is an Ubuntu-based distribution developed to perform penetration tests and security assessments. The distribution's latest release is BackBox 7 which is based on Ubuntu's 20.04 long-term support release. The distribution now features version 5.4 of the Linux kernel and Xfce 4.14. "The BackBox Team, ten years after its first release, is happy to announce the new major release of BackBox Linux, version 7. As usual, this major release includes many updates. These include new kernel, updated tools and some structural changes with a focus on maintaining stability and compatibility with Ubuntu 20.04 LTS. What's new: Updated Linux Kernel 5.4. Updated desktop environment. Updated hacking tools. Updated ISO Hybrid with UEFI support." Further details, including minimal system requirements, can be found in the project's release announcement. Download (SHA256): backbox-7-desktop-amd64.iso (2,528MB, torrent, pkglist).
+2020-05-14	NEW • Distribution Release: UBports 16.04 OTA-12
+UBports
+
+
+Rate this project	The UBports team has published an update to their mobile operating system. The new version, 16.04 OTA-12 introduces a new version of the Lomiri (formerly Unity8) user interface and Mir now supports working with Wayland clients. "The headline feature of this new release is our import of Canonical's final changes to Unity8. This is a transition that started in April of 2019 and has brought many new features. As an Ubuntu Touch user, you'll be seeing the effects of the revision right away -- the Ubuntu Touch 'home screen', the Unity8 Dash, has now been replaced by a blank background, with the Drawer serving as the new app list. The new version of Unity8 performs extensive self-tests, helping us to avoid introducing new bugs or triggering old ones again. Unity8 is now called Lomiri, though the code naming is only being updated slowly to reflect this. Most importantly for us, we upgraded from Mir 0.24, released back in 2015, to Mir 1.2, released in 2019. This newer version of Mir features support for Wayland clients!" Further details can be found in the project's release announcement. A list of supported devices and download options can be found on the project's Devices page.
+2020-05-14	NEW • Distribution Release: Finnix 120
+Finnix
+Rate this project	After a 5-year hiatus, the Finnix distribution has come to life once more with a release of version 120. Finnix is a Debian-based live Linux CD made for system administrators and designed to manipulate hard drives and partitions, monitor networks, and rebuild boot records. The new version is the project's first release for the x86_64 architecture: "Finnix 120 released. That's right: after a 5-year hiatus, Finnix - the live CD for system administrators and the oldest live CD in production - is back to celebrate its 20-year anniversary in 2020 with Finnix 120. Finnix 120 is a complete overhaul, with a number of major changes (as well as too many minor changes to enumerate): Finnix 120 is now a native 64-bit amd64 userland and kernel system; both BIOS and UEFI booting are now available, with Secure Boot; hundreds of new utility packages have been added; automatic setup attempts of complex block device layouts have been removed in favor of management via udisksctl with tab-completion; other legacy features and boot modes have been discontinued or are no longer supported, in favor of core USB/CD booting...." Read the release announcement and release notes for more information. Download: finnix-120.iso (477MB, signature, torrent, pkglist).
+2020-05-12	NEW • Distribution Release: Kali Linux 2020.2
+Kali Linux
+
+
+Rate this project	Kali Linux is a Debian-based distribution with a collection of security and forensics tools. The project's latest release makes it easier for users to access PowerShell, updates themes for KDE Plasma, and the size requirements for the distribution's ARM-build SD cards has been increased from 8GB to 16GB. "A while ago, we put PowerShell into Kali Linux's network repository. This means if you wanted PowerShell, you had to install the package as a one off by doing 'sudo apt install -y powershell'. We now have put PowerShell into one of our (primary) metapackages, kali-linux-large. This means, if you choose to install this metapackage during system setup, or once Kali is up and running (sudo apt install -y kali-linux-large), if PowerShell is compatible with your architecture, you can just jump straight into it (pwsh). PowerShell isn't in the default metapackage (that's kali-linux-default), but it is in the one that includes the default and many extras, and can be included during system setup." Additional information and screenshots of the new KDE Plasma themes can be found in the distribution's release announcement. Download (SHA256) (pkglist): kali-linux-2020.2-installer-amd64.iso (3,681MB, torrent), kali-linux-2020.2-live-amd64.iso (2,881MB, torrent), kali-linux-2020.2-installer-netinst-amd64.iso (420MB, torrent).
+2020-05-12	NEW • Distribution Release: Q4OS 3.11
+Q4OS
+
+
+Rate this project	Q4OS is a Debian-based desktop Linux distribution designed to offer classic-style user interface (Trinity) or the more modern Plasma desktop. The project's latest version, Q4OS 3.11, offers several package upgrades and introduces new dedicated installers for the Firefox and Palemoon web browsers. The release announcement offers further details: "A significant update to Q4OS 3 Centaurus LTS is immediately available for download. The new 3.11 series receives all the fixes and goodies from the recent Debian Buster 10.4 update, critical security and bug fixes and brings several Q4OS specific improvements. Most importantly, the Q4OS Software centre applications list has got a bunch of new items. National keyboard layout configuration has been enhanced. In addition to the above, Q4OS 3.11 brings other exciting enhancements, such as dedicated installers for Firefox 76 and Palemoon browsers as well as cumulative upgrade covering all changes since the previous stable version of Q4OS 3 Centaurus." Download (MD5, pkglist): q4os-3.11-x64.r1.iso (904MB), q4os-3.11-x64-tde.r1.iso (711MB).
+------------------------
+---
+2020-05-12	NEW • Distribution Release: Proxmox 6.2 "Virtual Environment"
+Proxmox
+
+
+Rate this project	Proxmox is a commercial company which offers specialized products based on Debian. The company has launched Proxmox Virtual Environment version 6.2 which is based on Debian 10.4 "Buster". The release announcement covers the highlights of the new version which include updates to the kernel and ZFS support. "We are proud to announce the general availability of our virtualization management platform Proxmox VE 6.2. It's built on Debian Buster 10.4 and a 5.4 long-term Linux kernel, QEMU 5.0, LXC 4.0, ZFS 0.8.3, Ceph 14.2.9 (Nautilus), and ZFS 0.8.3. This release brings a built-in validation of domains for Let's Encrypt TLS certificates via the DNS-based challenge mechanism, full support for up to eight corosync network links, support for Zstandard for Backup/Restore, and a new LDAP sync for users and groups and full support for API tokens. Countless bugfixes and smaller improvements are included as well, see the full release notes." Further information on the new version and upgrade instructions can be found in the release announcement. Download: proxmox-ve_6.2-1.iso (862MB, SHA256, pkglist).
+---
+
+---
+https://www.3cx.com/blog/voip-howto/linux-command-line/
+oIP / WebRTC HowTos by 3CX
+2019	Video Conferencing-101: Your DIY Virtual Meeting Room
+2019	Common Mistakes Which Lead to Call Fraud
+---
+'nuts and bolts', 'bells and whistles', visual candy / gimmick; gadget (джажда) vs. GUI widget (джиджавка, контрола)
+---
+NEW • Distribution Release: Zentyal Server 6.2
+Zentyal Server
+
+
+Rate this project	Zentyal Server is a unified network server that offers easy and efficient computer network administration for small and medium-size businesses. The company's latest release is Zentyal Server 6.2 which is based on Ubuntu 18.04.4, offers several package upgrades, improved DNS management, and updated anti-virus tools. "Important enhancements to Zentyal Server Development Edition 6.2 include: Based on Ubuntu 18.04.4 LTS. DNS - Improved management of the DNS records. CA - Improved management of CRLs. Webmail - Integration of the latest SOGo version (4.3.2). Antivirus - Integration of latest version of ClamAV (0.102.2) available for Ubuntu 18.04, updated collection of signatures. AppArmor - Installed by default. Virt - Improved management of hard disks. DHCP - Improved management of network interfaces. See the full changelog for all the details." Further information on Zentyal Server 6.2 can be found in the distribution's release announcement. Commercial options for Zentyal Server users are expected to be available later this month. Download: zentyal-6.2-development-amd64.iso (1,086MB, MD5, pkglist).
+---
+The new version reportedly offers the ability to create usernames with non-ASCII characters at install time, improved support for Broadcom wireless cards, and better disk accessing performance.
+---
+The SparkyLinux team has published a new snapshot of the distribution's semi-rolling branch. The new snapshot, SparkyLinux 2020.05, is based on Debian Testing and features updates to both the kernel and the system installer
+---
+Further details can be found in the distribution's release announcement. Download (pkglist): sparkylinux-2020.05-x86_64-xfce.iso (1,258MB, SHA512, signature, torrent), sparkylinux-2020.05-x86_64-lxqt.iso (1,389MB, SHA512, signature, torrent), sparkylinux-2020.05-x86_64-mate.iso (1,583MB, SHA512, signature, torrent),
+Parsix GNU/Linux (Debian-based) (no longer maintained)
+Tails (Amnesic Incognito Live System = a Debian-based live DVD/USB with the goal of providing complete Internet anonymity for the user)
+3CX Phone System (a specialist, Debian-based Linux distribution designed to run a complete unified communications platform)
+
+https://downloads-global.3cx.com/downloads/debian9iso/debian-amd64-netinst-3cx.iso
+
+
+
+---
+Further details can be found in the distribution's release announcement. Download (pkglist): sparkylinux-2020.05-x86_64-xfce.iso (1,258MB, SHA512, signature, torrent), sparkylinux-2020.05-x86_64-lxqt.iso (1,389MB, SHA512, signature, torrent), sparkylinux-2020.05-x86_64-mate.iso (1,583MB, SHA512, signature, torrent),
+2020-05-06	NEW • Distribution Release: Clonezilla Live 2.6.6-15
+Clonezilla Live
+
+
+Rate this project	Steven Shiau has announced the release of Clonezilla Live 2.6.6-15, a new stable version of the project's Debian-based utility live CD designed for partitioning, backups and disk-cloning: "Stable Clonezilla Live 2.6.6-15 released. This release of Clonezilla live includes major enhancements and bug fixes. Enhancements and changes from 2.6.4-10: the underlying GNU/Linux operating system has been upgraded - this release is based on the Debian 'Sid' repository as of 2020-04-28; Linux kernel has been updated to 5.5.17; neglect the 'last-lba:...' line for the GPT partition table - this allows cloning of something like a 64 GB disk with a 20 GB NTFS to a 20 GB disk; the pax package has been included; add scdaemon; the ufsutils package has been removed since it's not available from the Debian Sid repository; the pxz package has been removed and replaced by pixz; add batch mode - instead of countdown, pause it when rc is not 0 for ocs-run-boot-param; add ocs-live-swap-kernel program which can be used to swap Linux kernel and modules in Clonezilla Live; add -z9p in the TUI menu of beginner mode - pzstd is now replaced by zstdmt when the option -z9p is chosen..." Here is the complete release announcement. Download (SHA512, signature, pkglist): clonezilla-live-2.6.6-15-amd64.iso (288MB), clonezilla-live-2.6.6-15-i686.iso (274MB), clonezilla-live-2.6.6-15-i686-pae.iso (274MB)
+---
+
+Tips, Tricks, Myths and Q&As
+Tips and tricks: Transitioning from PC-BSD to TrueOS
+Questions and answers: Recovering open files, starting a new Linux distro
+Questions and answers: Desktop-friendly Debian and systemd boot times
+Questions and answers: Trademarks and open source projects
+Tips and tricks: How to check the licenses of kernel modules
+Questions and answers: Finding text in files and Debian's many flavours
+Questions and answers: WINE and Mono on live media
+Questions and answers: The number and diversity of Linux distributions
+Questions and answers: E-book management
+Tips and tricks: Package compression compared
+More Tips & Tricks and Questions & Answers
+
+---
+~~~persistent-over-shutdown/rebooting LiveUSB / LiveCD / LiveDVD & Network-based Installation & Running + ... Winox/Wonix Linux
+
+Known issues: none specific to this release. Tails 4.7 is scheduled for June 2." Further details and screenshots can be found in the distribution's release announcement. Download: tails-amd64-4.6.iso (1,129MB, signature, torrent, pkglist).
+---
+
+Extra software packages are available for installation from the distribution's own software repositories.
+---
+---
+http://ryf.fsf.org & http://h-node.org & _ http://kernel.org & ... 
+http://system76.org
+http://puri.sm
+http://jolla.com
+https://starlabs.systems/
+http://cyanogenmod.org - http://lineageos.org + Samsung Tizen
+http://android.google.com (Google Android + Google Android M) + FuchsiaOS
+http://olimex.bg
+http://raspberrypie.com
+http://wiki.olpc.org (OLPC - One Laptop Per Child project)
+http://pinelabs.org - Pinebook, Pinetop, Pinebox,
+Debian FreedomBox + OwnCloud / NextCloud + SyncThing / rsync&zsync / etc.
+
+Windows10/Windows8.1 ~=GNOME3.3+; Cinnamon, MATE / Gnome2, LXDE/LXQT are better.
+
+https://distrowatch.com/dwres.php?resource=glossary
+https://distrowatch.com/dwres.php?resource=major
+
+--
+https://distrowatch.com/dwres.php?resource=bittorrent
+--
+
+Version: 9.0
+Rating: 9
+Date: 2020-05-05
+Votes: 1
+
+
+Using this on desktop across a 10 person team. The best of the FSF-approved distros, having tried them all out. Because of the big jump in Debian Buster it is really quite up-to-date, and very solid as it's based on Debian stable. We eventually selected this over other distros because of (a) its focus on privacy and security (great integration with Purism's Pureboot/Heads system and Librem/Nitrokey); (b) the additional QA that has clearly gone in over stock Debian; and (c) the simplicity of the Gnome system (useful across an office with few tech-savvy people). It's a pity that Debian stable is stuck on Gnome 3.30, which to my mind is just a bit before Gnome started getting better from an efficiency standpoint, and a bit silly that the installer won't boot immediately on libreboot systems given the FSF-certification (though the fix is easy). But those two nits aside (for which I dock a point), this is a great system and one that is serving my team very well.
+
+
+Was this review helpful?  Yes  No 
+Version: 9.0
+Rating: 9
+Date: 2020-02-18
+Votes: 0
+
+
+Pure OS is a copied / pasted from Debian, very stable, it comes with a Gnome 3 graphics environment that I don't like, like most people do.
+
+Microsoft tried to copy this environment under Windows 10 with its tiles, users of this OS did not like this type of environment like those of Gnome...
+
+Cinnamon, Mate, Gnome 2, LXDE is better.
+
+
+Was this review helpful?  Yes  No 
+Version: 8.0
+Rating: 5
+Date: 2020-02-17
+Votes: 80
+
+
+It use 889Mb of RAM on desktop after boot, and ~1.2Gb with 1 blank page in Purebrouser!!!
+For compare Miyo (Devuan based) is 69Mb on desktop/190Mb with new FF (67.0.2?). Ye, OB vs Gnome, nor...
+
+Pseudo privasy: Purebrouser run Mozilla studies, and NO setting to disable it!
+GEOlocation in Purebrouser is ENABLED by default!
+Telemetry partly disabled,
+
+No, thanks.
+
+
+Was this review helpful?  Yes  No 
+
+------
+Copyright (C) 2001 - 2020 Atea Ataroa Limited. All rights reserved. All trademarks are the property of their respective owners. Privacy policy. Change privacy settings.
+DistroWatch.com is hosted at Copenhagen.
+
+Връзки, корекции и предложения: Jesse Smith
+Tips: BTC 1J5s35r7v8L3k2zmr3JmUfydzvdnsiNXm2 • LTC LTjM4KAN5unwWSgcAtGRH2x6HQ8894MrwL • PayPal.me/distrowatchweekly • Try Brave Browser
+
+---
+https://distrowatch.com/bpqybzierozxyk
+---
+
+
+============================================================================
+DistroWatch.com: PureOS
+PureOS
+PureOS
+Последно Обновяване: 2019-12-03 23:52 UTC
+
+PureOS
+OS Type: Linux
+Based on: Debian
+Произход: France
+Архитектура: x86_64
+Работен Плот: GNOME
+Категория: Desktop, Free Software, Live Medium
+Състояние: Активен
+Популярност: 50 (256 преглеждания за ден)
+PureOS is a GNU/Linux distribution based on Debian. It is a desktop distribution that can be used as live media (CD or USB) or as full-featured operating systems installed on a hard disk. PureOS uses free and open source software exclusively and is endorsed by the Free Software Foundation. It ships with some privacy features enabled by default such as using DuckDuckGo as the search engine and the HTTPS Everywhere browser extension is enabled.
+
+Популярност (преглеждания за ден): 12 месеца: 60 (210), 6 месеца: 50 (256), 3 месеца: 54 (268), 4 седмици: 60 (265), 1 седмица: 55 (250)
+
+Average visitor rating: 8.79/10 from 14 review(s).
+
+
+PureOS Summary
+Дистрибуция	PureOS
+Начална страница	https://pureos.net/
+Мейлинг Листа	--
+Потребителски Форуми	--
+Alternative User Forums	
+Документация	--
+Снимки	DistroWatch Gallery
+Screencasts	
+Алтернативни мирори	https://pureos.net/download/
+Bug Tracker	https://tracker.pureos.net/
+Сайтове	 
+Ревюта	 
+Откъде да Купим	
+
+Последни Новини
+  Releases announcements with download links and checksums:
+ • 2013-03-03: Distribution Release: PureOS 7.0
+ • 2012-09-09: Distribution Release: PureOS 6.0
+ • 2012-06-24: Distribution Release: PureOS 5.0
+ • 2011-08-04: Distribution Release: PureOS 4.0
+ • 2011-02-13: Distribution Release: PureOS 3.0
+ • 2010-03-30: Distribution Release: PureOS 2.0
+ • 2009-09-01: Development Release: PureOS 2.0 Beta 2
+ • 2009-06-20: Development Release: PureOS 2.0 Beta 1
+ • More PureOS releases...
+
+  Headlines:
+ •2019-09-26 Librem 5 phones shipping
+ •2019-07-30 Librem 5 hardware finalized
+ •2018-12-18 Librem 5 dev kits shipping
+ •2018-03-13 Running Plasma Mobile on Librem 5
+ •2017-12-21 PureOS endorsed by FSF
+ • More PureOS headlines...
+
+Таблица Бележки и Обяснения
+
+(Please refer to the table below.)
+Изберете Изглед: Само Важни Пакети (52) Всички следени пакети (226) 
+To compare the software in this project to the software available in other distributions, please see our Compare Packages page.
+Notes: In case where multiple versions of a package are shipped with a distribution, only the default version appears in the table. For indication about the GNOME version, please check the "nautilus" and "gnome-shell" packages. The Apache web server is listed as "httpd" and the Linux kernel is listed as "linux". The KDE desktop is represented by the "plasma-desktop" package and the Xfce desktop by the "xfdesktop" package.
+Цветова схема: green text = latest stable version, red text = в процес на развитие или БЕТА версия. The function determining beta versions is not 100% reliable due to a wide variety of versioning schemes.
+Star Labs
+
+Star Labs Systems | Laptops designed for Linux
+
+Star Labs - Laptops built for Linux.
+View our range including the Star Lite, Star LabTop and more. Available with a choice of Ubuntu, Linux Mint or Zorin OS pre-installed with many more distributions supported. Visit Star Labs for information, to buy and get support.
+
+
+Free Tech Guides
+
+NEW! Bash Special Characters
+
+Bash Special Characters
+
+NEW! 15 special characters you should know
+
+
+
+Особеност	9.0	8.0	7.0	6.0	5.0	4.0	3.0	2.0	1.1	Особеност
+Дата на Излизане	2019-09-26	2019-08-30	2013-03-03	2012-09-09	2012-06-24	2011-08-04	2011-02-13	2010-03-29	2009-01-15	Дата на Излизане
+End Of Life	 	 	 	 	 	 	 	 	 	End Of Life
+Цена (USD)	Free	Free	Free	Free	Free	Free	Free	Free	Free	Цена (USD)
+Image Size (MB)	1400-1500	1400-1500	 	 	 	 	 	 	 	Image Size (MB)
+Безплатно сваляне	ISO	ISO	ISO	ISO	ISO	ISO	ISO	ISO	ISO	Безплатно сваляне
+Инсталация	Graphical	Graphical	Graphical	Graphical	Graphical	Graphical	Graphical	Graphical	Graphical	Инсталация
+Начален Работен Плот	GNOME	GNOME	GNOME	GNOME	GNOME	GNOME	GNOME	KDE	KDE	Начален Работен Плот
+Настройки на Пакетите	DEB	DEB	DEB	DEB	DEB	DEB	DEB	DEB	DEB	Настройки на Пакетите
+Release Model	Fixed	Fixed	Fixed	Fixed	Fixed	Fixed	Fixed	Fixed	Fixed	Release Model
+Офис пакет	LibreOffice	LibreOffice	--	--	LibreOffice	OO.o	OO.o	OO.o	OO.o	Офис пакет
+Процесорна Архитектура	x86_64	x86_64	i386	i386	i386	i386	i386	i386	i386	Процесорна Архитектура
+Init Software	systemd	systemd	SysV	SysV	SysV	SysV	SysV	SysV	SysV	Init Software
+Журнални Файлови Системи	ext3, ext4, JFS, ReiserFS, XFS	ext3, ext4, JFS, ReiserFS, XFS	ext3, ext4, JFS, ReiserFS, XFS	ext3, ext4, JFS, ReiserFS, XFS	ext3, ext4, JFS, ReiserFS, XFS	ext3, ext4, JFS, ReiserFS, XFS	ext3, ext4, JFS, ReiserFS, XFS	ext3, JFS, ReiserFS, XFS	ext3, JFS, ReiserFS, XFS	Журнални Файлови Системи
+Многоезичен	Yes	Yes	Yes	Yes	Yes	Yes	en, fr	en, fr	en, fr	Многоезичен
+Поддръжка на азиатски език	--	--	--	--	--	--	--	--	--	Поддръжка на азиатски език
+Full Package List	9.0	8.0	7.0	6.0	5.0	4.0	3.0	2.0	1.1	Full Package List
+Пакети	9.0	8.0	7.0	6.0	5.0	4.0	3.0	2.0	1.1	Пакети
+abiword (3.0.4)	--	--	--	--	--	--	--	--	--	abiword (3.0.4)
+alsa-lib (1.2.2)	1.1.8	1.1.8	1.0.25	1.0.25	1.0.25	1.0.24.1	1.0.23	1.0.22	1.0.16	alsa-lib (1.2.2)
+ati-driver (18.30)	--	--	--	--	--	--	--	--	--	ati-driver (18.30)
+bash (5.0)	5.0	5.0	4.2	4.2	4.2	4.1	4.1	4.1	3.2	bash (5.0)
+bind (9.17.1)	--	--	--	--	--	--	--	--	--	bind (9.17.1)
+chromium (81.0.4044.138)	--	--	24.0.1312.68	--	--	--	--	--	--	chromium (81.0.4044.138)
+cups (2.3.3)	2.2.10	2.2.10	1.5.3	1.5.3	1.5.3	1.4.7	1.4.4	1.4.2	1.3.8	cups (2.3.3)
+dhcp (4.4.2)	4.4.1	4.4.1	4.2.2	4.2.2	4.2.2	4.1.1-P1	4.1.1-P1	3.1.3	3.1.1	dhcp (4.4.2)
+e2fsprogs (1.45.6)	1.44.5	1.44.5	1.42.5	1.42.5	1.42.4	1.42WIP	1.41.12	1.41.11	1.41.3	e2fsprogs (1.45.6)
+firefox (76.0.1)	--	--	--	--	13.0	5.0	3.6.13	3.5.8	3.0.5	firefox (76.0.1)
+freetype (2.10.2)	2.9.1	2.9.1	2.4.9	2.4.9	2.4.9	2.4.4	2.4.2	2.3.11	2.3.7	freetype (2.10.2)
+gcc (10.1.0)	8.3.0	8.3.0	4.7.2	4.7.1	--	--	--	--	--	gcc (10.1.0)
+gimp (2.10.18)	--	--	--	--	2.8.0	2.6.11	2.6.10	2.6.8	2.4.7	gimp (2.10.18)
+glibc (2.31)	2.28	2.28	2.13	2.13	2.13	2.13	2.11.2	2.10.2	2.7	glibc (2.31)
+gnome-shell (3.36.2)	3.30.2	3.30.2	3.4.2	3.4.2	3.4.1	--	--	--	--	gnome-shell (3.36.2)
+gnucash (3.10)	--	--	--	--	--	--	--	--	--	gnucash (3.10)
+gnumeric (1.12.47)	--	--	--	--	--	--	--	--	--	gnumeric (1.12.47)
+grub (2.04)	2.02	2.02	1.99	1.99	1.99	1.99	1.98	1.98	0.97	grub (2.04)
+gtk (3.24.20)	--	3.22.18	3.4.2	3.4.2	3.4.2	2.24.4	2.20.1	2.18.9	2.12.11	gtk (3.24.20)
+httpd (2.4.43)	--	--	--	--	--	--	--	--	--	httpd (2.4.43)
+inkscape (1.0)	--	--	--	--	--	--	--	--	0.46	inkscape (1.0)
+k3b (20.04.1)	--	--	--	--	--	--	--	1.90.0rc1	1.0.5	k3b (20.04.1)
+kmod (27)	26	26	9	9	8	--	--	--	--	kmod (27)
+krita (4.2.9)	--	--	--	--	--	--	--	--	--	krita (4.2.9)
+libreoffice (6.4.3)	6.1.5	6.1.5	--	--	3.5.4	3.3.3	3.3.0	3.2.0	2.4.1	libreoffice (6.4.3)
+linux (5.6.13)	4.19.37	4.19.37	3.6.11	3.5.3	3.3.6	2.6.39.3	2.6.37	2.6.33	2.6.27	linux (5.6.13)
+Пакети	9.0	8.0	7.0	6.0	5.0	4.0	3.0	2.0	1.1	Пакети
+lxpanel (0.10.0)	--	--	--	--	--	--	--	--	--	lxpanel (0.10.0)
+mariadb (10.4.13)	--	--	--	--	--	--	--	--	--	mariadb (10.4.13)
+mate-desktop (1.24.0)	--	--	--	--	--	--	--	--	--	mate-desktop (1.24.0)
+mesa (20.0.7)	18.3.6	18.3.6	8.0.5	8.0.4	8.0.2	7.10.3	7.7.1	7.7	7.0.3	mesa (20.0.7)
+mysql (8.0.20)	--	--	--	--	--	--	--	--	--	mysql (8.0.20)
+nautilus (3.36.2)	3.30.5	3.30.5	3.4.2	3.4.2	3.4.2	2.30.1	2.30.1	--	--	nautilus (3.36.2)
+NVIDIA (440.82)	--	--	--	--	--	--	--	--	--	NVIDIA (440.82)
+openbox (3.6.1)	--	--	3.5.0	--	--	--	--	--	--	openbox (3.6.1)
+openjdk (14)	--	--	7u3	7u3	6b24	--	6b18	--	--	openjdk (14)
+openssh (8.2p1)	7.9p1	7.9p1	--	--	6.0p1	5.5p1	5.5p1	5.3p1	5.1p1	openssh (8.2p1)
+openssl (1.1.1g)	1.1.1c	1.1.1c	1.0.1c	1.0.1c	1.0.1c	1.0.0d	0.9.8o	0.9.8m	0.9.8g	openssl (1.1.1g)
+perl (5.30.2)	5.28.1	5.28.1	5.14.2	5.14.2	5.14.2	5.12.4	5.10.1	5.10.1	5.10.0	perl (5.30.2)
+php (7.4.6)	--	--	--	--	--	--	--	--	--	php (7.4.6)
+plasma-desktop (5.18.5)	--	--	--	--	--	--	--	--	--	plasma-desktop (5.18.5)
+postfix (3.5.2)	--	--	--	--	--	--	--	--	--	postfix (3.5.2)
+postgresql (12.3)	--	--	--	--	--	--	--	--	--	postgresql (12.3)
+Python (3.8.3)	2.7.16	3.7.3	2.7.3	2.7.3rc2	2.7.3rc2	2.6.7	2.6.6	2.5.4	2.5.2	Python (3.8.3)
+qt (5.14.2)	5.11.3	5.11.3	--	--	4.8.2	4.7.3	4.6.3	4.5.3	3.3.8b	qt (5.14.2)
+samba (4.12.2)	4.9.5	--	--	--	--	--	--	--	--	samba (4.12.2)
+systemd (245)	240	240	--	--	--	--	--	--	--	systemd (245)
+thunderbird (68.8.0)	60.8.0	60.8.0	--	--	10.0.4	3.1.11	3.0.11	2.0.0.22	2.0.0.19	thunderbird (68.8.0)
+vim (8.2)	8.1	8.1	7.3	7.3	7.3	7.3	7.2	7.2	--	vim (8.2)
+vlc (3.0.9.2)	--	--	--	2.0.1	2.0.1	1.1.10	1.1.3	1.0.5	0.9.4	vlc (3.0.9.2)
+xfdesktop (4.14.2)	--	--	--	--	--	--	--	--	--	xfdesktop (4.14.2)
+xorg-server (1.20.8)	1.20.4	1.20.4	1.12.4	1.12.3	1.12.1.902	1.10.2.909	1.7.7	1.7.5	1.4.2	xorg-server (1.20.8)
+
+Reader Ratings
+
+ Reader supplied reviews for PureOS
+
+Average rating
+8.8
+from 14 review(s)
+
+
+What are your thoughts on PureOS?
+Please include a few pros and a few cons, along with your overall impression of the operating system.
+Our FAQ page has tips on writing a good mini-review.
+
+Version: 
+
+Rating:    out of 10
+
+Comments (maximum 2,040 characters):
+
+
+
+Past reviews - sort by:  
+
+Version: 9.0
+Rating: 9
+Date: 2020-05-05
+Votes: 1
+
+
+Using this on desktop across a 10 person team. The best of the FSF-approved distros, having tried them all out. Because of the big jump in Debian Buster it is really quite up-to-date, and very solid as it's based on Debian stable. We eventually selected this over other distros because of (a) its focus on privacy and security (great integration with Purism's Pureboot/Heads system and Librem/Nitrokey); (b) the additional QA that has clearly gone in over stock Debian; and (c) the simplicity of the Gnome system (useful across an office with few tech-savvy people). It's a pity that Debian stable is stuck on Gnome 3.30, which to my mind is just a bit before Gnome started getting better from an efficiency standpoint, and a bit silly that the installer won't boot immediately on libreboot systems given the FSF-certification (though the fix is easy). But those two nits aside (for which I dock a point), this is a great system and one that is serving my team very well.
+
+
+Was this review helpful?  Yes  No 
+Version: 9.0
+Rating: 9
+Date: 2020-02-18
+Votes: 0
+
+
+Pure OS is a copied / pasted from Debian, very stable, it comes with a Gnome 3 graphics environment that I don't like, like most people do.
+
+Microsoft tried to copy this environment under Windows 10 with its tiles, users of this OS did not like this type of environment like those of Gnome...
+
+Cinnamon, Mate, Gnome 2, LXDE is better.
+
+
+Was this review helpful?  Yes  No 
+Version: 8.0
+Rating: 5
+Date: 2020-02-17
+Votes: 80
+
+
+It use 889Mb of RAM on desktop after boot, and ~1.2Gb with 1 blank page in Purebrouser!!!
+For compare Miyo (Devuan based) is 69Mb on desktop/190Mb with new FF (67.0.2?). Ye, OB vs Gnome, nor...
+
+Pseudo privasy: Purebrouser run Mozilla studies, and NO setting to disable it!
+GEOlocation in Purebrouser is ENABLED by default!
+Telemetry partly disabled,
+
+No, thanks.
+
+
+Was this review helpful?  Yes  No 
+
+See all 14 reader reviews of PureOS...
+
+
+Copyright (C) 2001 - 2020 Atea Ataroa Limited. All rights reserved. All trademarks are the property of their respective owners. Privacy policy. Change privacy settings.
+DistroWatch.com is hosted at Copenhagen.
+
+Връзки, корекции и предложения: Jesse Smith
+Tips: BTC 1J5s35r7v8L3k2zmr3JmUfydzvdnsiNXm2 • LTC LTjM4KAN5unwWSgcAtGRH2x6HQ8894MrwL • PayPal.me/distrowatchweekly • Try Brave Browser
+=============================================================================
+https://distrowatch.com/bpqybzierozxyk
+
+---
+3CX Links
+	IP-Telefonanlage
+	IP-telefooncentrale
+	IP мини-АТС
+	Centralino
+	PABX
+	Central Telefónica
+
+3CX FAQs
+	What is FXS and FXO?
+	What different types of codecs are there?
+	VoIP Definitions
+	What is RTCP?
+	A list of the most common SIP Responses
+	What is FoIP
+
+
+
+Sponsored message If you're looking for free, high quality Excel tutorials, check out Excel Easy. They have a great collection of resources over an incredibly large variety of topics, including formulas and functions, charts, the Analysis ToolPak and 300 easy to follow examples.
+
+Copyright (C) 2001 - 2020 Atea Ataroa Limited. All rights reserved. All trademarks are the property of their respective owners. Privacy policy. Change privacy settings.
+DistroWatch.com is hosted at Copenhagen.
+
+Връзки, корекции и предложения: Jesse Smith
+Tips: BTC 1J5s35r7v8L3k2zmr3JmUfydzvdnsiNXm2 • LTC LTjM4KAN5unwWSgcAtGRH2x6HQ8894MrwL • PayPal.me/distrowatchweekly • Try Brave Browser
+
+
+3CX FAQs
+	What is FXS and FXO?
+	What different types of codecs are there?
+	VoIP Definitions
+	What is RTCP?
+	A list of the most common SIP Responses
+	What is FoIP
+
+
+
+Sponsored message If you're looking for free, high quality Excel tutorials, check out Excel Easy. They have a great collection of resources over an incredibly large variety of topics, including formulas and functions, charts, the Analysis ToolPak and 300 easy to follow examples.
+
+Copyright (C) 2001 - 2020 Atea Ataroa Limited. All rights reserved. All trademarks are the property of their respective owners. Privacy policy. Change privacy settings.
+DistroWatch.com is hosted at Copenhagen.
+
+Връзки, корекции и предложения: Jesse Smith
+Tips: BTC 1J5s35r7v8L3k2zmr3JmUfydzvdnsiNXm2 • LTC LTjM4KAN5unwWSgcAtGRH2x6HQ8894MrwL • PayPal.me/distrowatchweekly • Try Brave Browser
+
+3cx.com - PBX, FXS & FXO, VoIP definitions, RTCP, WebRTC, RTMP & RTPM (.m3u), IP мини-ATC, PABX, 'Central Telefo`nica...'
+

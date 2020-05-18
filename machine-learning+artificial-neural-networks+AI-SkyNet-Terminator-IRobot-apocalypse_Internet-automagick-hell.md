@@ -4,3 +4,5 @@ machine-learning+artificial-neural-networks+AI-SkyNet-Terminator-IRobot-apocalyp
 * https://github.com/benedekrozemberczki/MixHop-and-N-GCN
 * https://github.com/benedekrozemberczki/AttentionWalk
 * ...
+
+NO to TOO MUCH of Elon Musk's Neuralink R&D!!! OTHERWISE => high-tech dystopia

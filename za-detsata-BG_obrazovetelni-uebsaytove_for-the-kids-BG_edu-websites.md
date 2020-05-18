@@ -16,6 +16,7 @@
 * https://www.booksbg.org/ 
 * http://ibl.bas.bg/rbe/
 * http://bacl.org
+* http://znam.bg (българската енциклопедия на издателство „Труд“ и БАН)
 
 * http://www.kultura.bg/bg/home
 * http://kweekly.bg/

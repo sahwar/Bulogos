@@ -1,5 +1,7 @@
 > unified_BG-bg_keyboard-layouts_for-all-OSs.md
 
+( `advanced national keyboard layout configuration & IME input-method software systems (e.g. SCM/SCIM on Linux, the input method for Japanese from Anthy OR Mozc, etc.; Google InputTools demo, etc.)` )
+
 **Уеднаквен набор от кирилски клавиатурни подредби за българския език (за Microsoft (Windows XP SP3,) Windows7 SP1+, Win8, Win8.1, Win10+; Linux v(2.2+)/v3.4+/v4.2+/v5+; macOS 10.10+) — 32-bit (x86) & 64-bit (x86_64, amd64) :**
 
 ## MS Windows (WinXP SP3,) Win7 SP1+, Win8/8.1 и Win10+:
