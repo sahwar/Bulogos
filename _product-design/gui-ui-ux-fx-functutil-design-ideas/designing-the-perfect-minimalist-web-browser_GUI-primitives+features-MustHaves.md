@@ -1,16 +1,26 @@
+designing-the-perfect-minimalist-web-browser_GUI-primitives+features-MustHaves.md
+by https://github.com/sahwar/Bulogos
+
+
+
+
 * first and foremost = lightweight web-browser
 * 2nd most important = lightweight and minimalistic UI/GUI and excellent QA-tested tried-and-true UX, and support for
 light&dark GUI/UI modes & for .json modification of web-browser skins/visual styles
 
 
-SUPORT FOR vimium-like vim-like keyboard-navigation + computer-mouse control
-+ uzbl / suckless.org/surf -like semi-translucent dialog-window with side-by-side
+SUPORT FOR vimium-like vim-like keyboard-navigation MODE (possibly the DEFAULT + computer-mouse/pointing-device support) + computer-mouse control
+
++ (!!!) uzbl / suckless.org/surf( / that-great-lightweight-web-browser-hosted-on-GitHub.com/GitLab)-like semi-translucent dialog-window with side-by-side
 2-language-versions (plus a dropdown-selector to swap/switch the 2nd language to
 another or to supply your own datetime-stamped/git-diff'd localization file), 
 (USA) English (default) and {your local primary/mother/native language} - with
 short instructions on how to use the web-browser, and with hyperlinks to Wikipedia
 articles on the major Internet technologies, and with a static/configurable-via-configfile
 keyboard shortcuts list & mouse-shortcuts/mouse-accelerator-gestures (or complex combo-gestures shortcuts with keyboard+mouse simultaneously or one after the one being triggered!)...
+
+* SUPPORTS MUI language packs for the interface and restartless-or-restart-requiring switching between those; also SUPPORTS user editing of said langpacks & using that instead of the English-default &/or instead of the default updated-to-latest-git-diff-version/transifexORWeblate-version language packs for other languages
+
 
 optional websearch-engines text-field-box bar, since the main URL/URI address-bar
 also supports 'g {query}' (etc.) direct websearches via a dropdown Wox-like menu...
@@ -97,5 +107,39 @@ SUPPORT for Firefox-like internal about:config pages...
 SUPPORT for making 1 full .bckp copy of the whole user web-browser PROFILE data & support for exporting/importing the whole web-browser PROFILE-data (THIS IS TOO COMPLEX and requires auto-backuping of the current profile BEFORE making such a move, plus THEN triggering the web-browser to ask the user to make his/her own manual web-browser-assisted backup-archive of his/her WHOLE _PROFILE_... ?!? Hmmm...
 
 basic support for microformats.org microformats
+
+* SUPPORTS self-signed Let's Encrypt ID&security-validation certificates
+* SUPPORTS favicons, including animated ones
+* SUPPORTS the most popular raster file-formats plus the .svg & .svgz vector file-formats...
+* SUPPORTS hooking up to Tor/TorBrowser/Tor-network '.onion' hyperlinks & OnionShare+???-IM / RetroShare
+* Supports secure encrypted WebRTC-powered p2p-filesharing (like FilePizza, f*ex/sexxx, DC++/ADC, XDCC-IRC, OwnCloud/NextCloud/SyncThing/rsync/zsync/Zstandard/webfs, WebDAV&LDAP, etc.)
+* SUPPORTS 'Greenfish Subtitle Player'-like playing of .WebTT, .srt, .ass, .ssa subtitle files overlaid on any media file embedded in a webpage or an offline file opened with the web-browser 
+* SUPPORTS passwords-saving and usernames&passwords management (including export individual/all, import individual/batch, full deletion with a nice 'Action can't be undone. Please make sure you first backup these BEFORE deleting them all.' WARNING
+* SUPPORTS 'Recently visited/opened' lists (including in about:blank and about:home, about:settings, about:config, about:tabmanagement/GoogleChrome-like-tabs-RAM-usage-monitoring-management-window/console)
+* SUPPORTS the manual user-editing
+* SUPPORTS web-bookmarklet code-snippets (and basic export indiviual/all, import individual/batch, shown-order-rearranging, etc.)
+* SUPPORTS keyboard shortcuts/keyboard-combo+computer-mouse/touchpad/ThinkPad-red-'tit'-mouse-button & PrintScreen & NumPad-buttons & right-click/context-menu-triggering keyboard buttons, etc. ...
+* SUPPORTS proxies, NAT traversal, port-forwarding, TCP/IP, UDP, etc.
+* SUPPORTS advanced translucent/single-color web-browser notifications popups
+* SUPPORTS button and CLI command to take a partial or full webpage screenshot, datetimestamped+auto-titled (yet user-editable before saving via OS 'Save as...' context-triggered dialog-window)
+* SUPPORTS editing the right-click context menu of the web-browser, including adding an omnibox/Wox-like/CLI-commandline launcher-accelerator in-webpage-regexp-searching & searching&opening/closing of a tab based on its HTML-title or URI/URL or its number (left-to-right tab order)
+* SUPPORTS advanced web-browser (per-/batch-)tab(/window)-manipulation (clone, close, search URL / title and close each individually, close all taba leftwards from this tab, close all tabs rightwards from this tab, close all tabs (with a big WARNING with 2-3-step 'OK' confirmation with 'Type 'ok' in the textbox below and click 'Confirm' button to finalize closing all tabs in the current web-browser windows' (and then load a new empty tab - e.g. about:home or about:tab / about:blank
+* SUPPORTS user-customized 
+* SUPPORTS latest-Firefox (v56/65+/75(+)?))-like UI/GUI/UX (which is a lot GoogleChrome-like)
+* SUPPORTS sending bug-reports & SUPPORTS bugzilla.org MozillaFirefox-like public (registration, email confirmation/validation, settings-editing, and login required to post more than 1 dimmed-in-comparison-to-the-official-posts directory-tree [-]-collapsed anonymous-post per-IP)
+* SUPPORTS media-extensions & popular royalty-free patented and libre/FOSS/FLOSS/open audio+video(-with-audio) multimedia-filetypes/codecs...
+* NO (barebones lightweight minimalist(ic) web-browser) or basic SUPPORT for Firefox-like add-ons, including favelets/bookmarklets
+* SUPPORT for RSS-feeds & Atom/Atom2.0 web-syndication web-feeds, including management (add
+* SUPPORT for RTMP, RTSP, WebRTC, and for web .m8u playlists
+* SUPPORT for entering UTF-8-Unicode http/https/Tor-network hyperlinks and SUPPORT for cut/copy/paste/delete of URL/URIs in the address-bar (and everywhere in/on a webpage, via right-click context-menu entries/menu-items)
+* UI/GUI: support for Qtip2-like advanced ToolTips aside from the standard tooltips
+* Firefox-like GUI/UI/UX, with context-menu that activates showing/hiding of GUI elements - OS-title-bar+URL/URI, menu-bar, bookmarks-bar, main-icons-taskbar, status-bar (permanently shown or about:config-configured N-seconds-duration contextual showing up; support for fullscreen mode
+* SUPPORTS several styles of (horizontal&vertical web-browser/OS-supplied & in-weboage) scrollbars (classic, auto-hideable, or Ubuntu GNOME3/Unity8-like, etc. CSSv3-editable)
+* SUPPORT for HTML/XML/SGML entities & HTML ruby tag(s)
+* SUPPORT for OTF, TTF, and webfonts (.woff, .woff2), including the several different tech implementations of color(ed) web-typography fonts...
+* SUPPORTS AJAX, DHTML, online&offline single-webpage 'apps', and supports running Java/open-Java-JRE web-applets
+* maybe NO support for Adobe Flash?!? (or via fsf.org open Flash plug-in?)
+* SUPPORTS mobile-view & desktop-view, and also Firefox-Reader-mode/userstyles.org&GreaseMonkey-scripts
+---
 
 * etc. ... TO ADD MORE LATER ON...
