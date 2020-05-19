@@ -1,0 +1,46 @@
+Linux multi-monitor/display heads-setup
+Linux multi-keyboard setup
+Linux multi-computer-mouse setup
+Linux multi-USB-dongle setup
+Linux multi-touchpad setup
+Linux multi-video&audio-input/output setup, etc.
+etc.
+
+Synergy!  https://symless.com/synergy
+
+James Doepp
+I used this method with the keyboard, using pipes and redirects to the COM port
+
+computer-mice with a specialized USB-flashstick for p2p data-streaming via a cable connecting to another PC
+
+======
+
+ve4ernik's fused idea:
+
+THE FUTURE COMPUTER MOUSE
+
+copying files between 2 different PCs:
+https://www.facebook.com/groups/linux.fans.group/permalink/3888044524570634/
+
+#TheFutureIsNow
+
+Big brain time!
+
+The future of computer mice!!!
+
+We will soon see computer mice/mouses with built-in USB-stick/mini-HDD/SSD storage-space and with 2 USB-ports&USB-cables coming out of the computer mouse - so that you can easily transfer files (Cut/Copy/Paste) between different computers (or a computer and any USB-storage-port device):
+
+computer-mice with a specialized USB-flashstick for p2p binary-/$dd-like-/ASCII-/UnicodeUTF-8-noBOM-modes data-streaming via a cable connecting to another PC.
+
+This adds a contextual item in the right-click-menu/context-menu of the desktop of the OS - or it adds these options to an icon in the notifications area of your OS/linux-desktop-environment taskbar panel/applet/desktop-gadget!!! 😮
+And the computer mouse may even have 4 LED indicators: blue = on, operation, on standby, no filesharing; green (blinking) = active filesharing in progress (green, not blinking = filesharing completed successfully, switches to blue afterwards; yellow = some error message or faulty hardware, or unable to load drivers to establish connection; red = filesharing error after a green (blinking) or yellow LED got activated)!!! 🤔
+
+P.S. There is also a USBoverEthernetInternet tech that had been very controversial due to online security risks, but has been available for many years now and also demonstrated on its respective website! 😮🤔
+
+#TechMovesForward
+
+(cc) 2020 ve4ernik
+
+======
+https://www.facebook.com/groups/linux.fans.group/permalink/3888044524570634/
+
