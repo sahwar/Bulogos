@@ -1,0 +1,22 @@
+What is missing from vim/gVim, NeoVim, Emacsen, Cream Emacs, GNU Emacs, GNU nano, etc.?
+Какво липсва в/на класическите текстови редактори vim/gVim, NeoVim, Emacsen, Cream Emacs, GNU Emacs, GNU nano и т.н.?
+by https://github.com/sahwar/Bulogos
+
+* Wox-like autocompletion suggestions (and number accelerators & displayed keyboard/mouse/keyboard-shortcuts+mouse-gestures-combo info - for the dropdown-menu items) for text-editor's text commands, AND a built-in regexp-based substring+etc.-matching searchbar to search through ALL text-editor commands, modes, actions, installed&activated plug-ins, etc. (!!!)
+* Bash 'alias'-like option to assign new keywords for the text-editor's CLI text commands
+* advanced pcre2/etc.-based regexp engine, and super-friendly http://regex101.com-like GUI for the text-editor's Search&Replace dialog window / sidebar / closeable/showable footer status-bar
+* HTML(5)/CSS(3)/JavaScript(v6+)/Python3+/etc. reserved syntax words auto-completion (and number accelerators with mini-summary of their use from the Python manuals/references...)
+* interface localization & side-by-side viewable locale files
+* terminal multiplexer - like several tiled terminals viewed simultaneously on one screen or on several displays/monitors
+* Notepad2-mod/Notepad3/Notepadqq/Notepad++/Atom/SublimeText-like GUI frontend, with a built-in searchbar to see through and activate ANY of the items from the GUI menu-bar (with shown keyboard-shortcuts & short explanation + GIF-animation/MP4-tutorial for each command being used, and with numbers-/ASCII-codeword-accelerators keyboard-shortcuts for each entry
+* multi-clipboard
+* visually-seen-text-buffer algorithm that enables the gVim-like opening of HUGE, EXTREMELY BIG text files... while still keeping the text-editor VERY lightweight & responsive
+* support for multiple search algorithms and a binary index DB like an SQLite, or JSON, or XML, or ElasticSearch-like searching through all the contents of an open file (or all opened files... but with a warning that all opened files have been auto-saved a new backup due to possible lag or crashing of the text-editor from the use of too much CPU & RAM to execute the multi-file searching...)
+* (there are already many package managers on GitHub.com / GitLab / etc. that help you download&manage&install plug-ins for your text-editor (vim, Emacs, and forks, and new remakes of those, etc.), including self-hosted specific settings files: .vimrc & Emacs settings-file, etc.
+* user-contributed syntax-highlighting files for historical editions and for the latest editions of MANY programming languages, scripting languages, text-based file-formats, etc.
+* UTF-8-BOMless encoding by default, but with keeping the original codepage of a newly opened file BUT showing an 'iconv'-based guessing & http://2cyr.com -based guessing of wrong codepages, etc.
+* etc.
+
+366421
+366421
+42

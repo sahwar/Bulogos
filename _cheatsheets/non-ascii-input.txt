@@ -1,0 +1,231 @@
+ASCII or Unicode characters can be entered by their numeric values, in decimal,
+octal or hex form.  E.g. (in insert mode):
+
+    <Ctrl-v>ddd       (3 dec digits, 1 byte)
+    <Ctrl-v>xhh       (2 hex digits, 1 byte)
+    <Ctrl-v>uhhhh     (4 hex digits, 2 byte)
+
+Some useful shortcuts:
+
+    <Ctrl-v><Enter>
+        <CR> (byte = 13)
+
+    <Ctrl-v><Esc>
+        <Esc> (byte = 27)
+
+    <Ctrl-v><Ctrl-j>
+        <NL>
+
+    <Ctrl-@>
+        <Nul>
+
+Consult (in particular, about <NL> being represented as <Nul>)
+
+    :he i_ctrl-v
+    :he i_ctrl-v_digit
+
+--------------------------------------------------------------------------------
+
+Control, math, Cyrillic, Greek, Hebrew, Hiragana/Katakana, drawing, ideographic,
+etc Unicode characters can be entered via digraphs.  There are two ways to enter
+a character using a digraph (cc are the two characters that represent the
+digraph):
+
+    <Ctrl-k>cc
+    c<BS>c          only when ‘:set dg’
+
+Consult
+
+    :he digraphs
+    :he dg
+    :digraph
+    rfc 1345 (http://tools.ietf.org/html/rfc1345)
+
+Some digraphs that might be useful to know (consult also the relevant Unicode
+pages, basically 2xxx and 30xx, at http://www.fileformat.info/info/unicode/block):
+
+  NU               null
+  BL               bell
+  BS               backspace
+  HT               horizontal tabulation
+  LF               line feed
+  FF               form feed
+  CR               (or <Enter><Enter>) carriage return
+  EC               escape
+  DT               delete (ascii 127)
+  BB               broken bar (¦)
+  NS               non-breakable space
+  --               soft hyphen
+
+  ss               ß (sharp s)
+  n? N?            ñ Ñ
+  l/ L/            ł Ł
+  ff fi fl ft      ﬀ ﬁ ﬂ ﬅ
+  ij IJ            ĳ Ĳ
+  z/ Z/            ƶ Ƶ
+  ', ': 'm         ¸(cedilla) ¨(diaeresis) ¯(macron)
+  '-               ‾ (overline)
+  !I ?I            ¡ ¿
+  '6 '9 9'         ‘ ’ ‛
+  "6 "9 :9         “ ” „
+  << >>            « »
+  -1 -N -M         ‐ (hyphen) – (en dash) — (em dash)
+  ..               ‥ (two dot leader)
+  Vs               ␣ (visual space; officially ‘open box’)
+  %0               ‰ (per mille)
+  ae AE oe OE      æ Æ œ Œ
+
+  Eu Ct Pd Ye Cu   € ¢ £ ¥ ¤
+  SE N0 PI         § № ¶
+  /- /=            † ‡
+  -X               ✠ (Maltese cross)
+  Co Rg TM         © ® ™
+  OK               ✓
+
+  +- -+            ± ∓
+  -2 *X *- -: RT   − × ∗ ÷ √
+  :R ::            ∶ (ratio) ∷ (proportion)
+  Sb .P Ob 0. 02   ∙ (bullet) ⋅ (dot) ∘ (ring) ⊙ (circled dot) ⊚ (circled ring)
+  *2               ★
+  .3               ⋯ (midline horizontal ellipsis)
+  =< >= 3=         ≤ ≥ ≡
+  !< !> !=         ≮ ≯ ≠
+  <* >*            ≪ ≫ (much less, greater)
+  -? CG 0(         〜 (wave dash) ∾ (inverted lazy s) ∝ (proportional)
+  ?1 ?2 ?-         ∼ ≈ (almost equal) ≃ (asymptotically equal)
+  PP               ∥ (parallel)
+  -T               ⊥ (perpendicular; officially ‘up tack’)
+  DG '0            ° (degree) ˚ (ring above)
+  -V -L            ∠ (angle) ∟ (right angle)
+  00               ∞
+  (no digraph)     ∢ (spherical angle)
+  +Z *P            ∑ (summation) ∏ (product)
+  dP DE NB         ∂ ∆ ∇
+  Om               Ω (Ohm sign)
+  In DI Iu Il      ∫ ∬ ⌠ ⌡
+  /0               ∅ (empty set; not the same as ⌀)
+  (- -)            ∈ ∋
+  (C )C (_ )_      ⊂ ⊃ ⊆ ⊇
+  (U )U            ∩ ∪
+  NO AN OR         ¬ ∧ ∨
+  FA TE            ∀ ∃
+  .: :.            ∴ (therefore) ∵ (because)
+
+  12 13 14 16 18   ½ ⅓ ¼ ⅙ ⅛
+  34               ¾
+  15 25 35 45      ⅕ ⅖ ⅗ ⅘
+  38 58 78         ⅜ ⅝ ⅞
+
+  0s 1s … 9s       ₀ ₁ … ₉
+  0S 1S … 9S nS    ⁰ ¹ … ⁹ ⁿ
+  1r … cr          ⅰ … ⅻ
+  1R … cR          Ⅰ … Ⅻ
+  1. … 9.          ⒈ … ⒐
+
+  <+ >+            《 》
+  (I )I (" )"      〖 〗 【 】 (lenticular brackets)
+  <' >' <" >"      「 」 『 』
+  (note: ⌜ ⌝ ⌞ ⌟ are available in Unicode but not in rfc1345)
+
+  Db Dw LZ         ◆ ◇ ◊
+  PL PR Dt UT      ◀ ▶ ▼ ▲
+  Tl Tr dT uT      ◁ ▷ ▽ △
+  FB fS SR sB      █ ■ ▬ ▪
+  lB RB LB TB      ▌ ▐ ▄ ▀
+  Fd Bd            ◢ ◣  (digraphs for ◤ and ◥ are not available)
+  0M 0L 0R 0m OS   ● ◐ ◑ ○ □
+  0_               〇 (ideographic number zero)
+
+  ul uL Ul UL …    ┘ ┙ ┚ ┛ …
+  hh HH vH uh …    ─ ━ ┿ ┴ …
+  
+  <- -> -! -v      ← → ↑ ↓
+  <> UD            ↔ ↕
+  <= => ==         ⇐ ⇒ ⇔
+
+  cC cD cH cS      ♣ ♢ ♡ ♠
+
+  M8 M2 Mb MX      ♪ ♫ ♭ ♯
+
+  Fm Ml            ♀ ♂
+  0U               ☻
+  (no digraph)     ℯ
+
+  c* c+ c=         Greek Hebrew (and Arabic) Cyrillic (where ‘c’ is a Latin character)
+                   (e.g. a* and A+ produce α and א)
+
+--------------------------------------------------------------------------------
+
+Accents and diacritical marks in Unicode are code points that modify the
+preceding letter (consult http://unicode.org/charts/PDF/U0300.pdf).
+
+  ò U+0300 combining grave accent
+  ó U+0301 combining accute accent
+  ȍ U+030F combining double grave accent
+  ő U+030B combining double accute accent
+
+  ô U+0302 combining circumflex accent
+  ǒ U+030C combining caron
+  ȯ U+0307 combining dot above
+  ö U+0308 combining diaeresis
+  õ U+0303 combining tilde
+  ŏ U+0306 combining breve
+  ȏ U+0311 combining inverted breve
+  o̊ U+030A combining ring above
+
+  o̬ U+032C combining caron below
+  o̭ U+032D combining circumflex accent below
+  ọ U+0323 combining dot below
+  o̤ U+0324 combining diaeresis below
+  o̰ U+0330 combining tilde below
+  o̮ U+032E combining breve below
+  o̯ U+032F combining inverted breve below
+  o̥ U+0325 combining ring below
+
+  o̦ U+0326 combining comma below
+  o̧ U+0327 combining cedilla
+
+  ō U+0304 combining macron
+  o̅ U+0305 combining overline
+  o̿ U+033F combining double overline
+  o̱ U+0331 combining macron below
+  o̲ U+0332 combining low line
+  o̳ U+0333 combining double low line
+  o̵ U+0335 combining short stroke overlay
+  o̶ U+0336 combining long stroke overlay
+  o̷ U+0337 combining short solidus overlay
+  o̸ U+0338 combining long solidus overlay
+
+  o̽ U+033D combining x above
+
+  o̪ U+032A combining bridge below
+  o̺ U+033A combining inverted bridge below
+  o͆ U+0346 combining bridge above
+
+--------------------------------------------------------------------------------
+
+Example of Greek ρ (digraph ‘r*’), root (digraph ‘RT’), overline diacritic
+(character-by-numeric ‘u0305’), and upper index ² (digraph ‘2S’):
+
+    ρ = √x̅²̅+̅y̅²̅
+
+--------------------------------------------------------------------------------
+
+Other:
+
+The code(s) representing an individual character can be displayed by typing ‘ga’
+while over that character.
+
+The whole file can be displayed (and edited) in hex, in parallel to the text, by
+issuing ‘:%!xxd’.  For reversing back to text editing mode, ‘:%!xxd -r’.
+
+Also consult :he edit-binary.
+
+  \Z            ignore differences in Unicode combining characters (in regexes)
+
+  <Ctrl-r>r     paste & interpret the contents of register ‘r’ (insert mode)
+
+--------------------------------------------------------------------------------
+
+For some utf-8 samples, see also http://www.cl.cam.ac.uk/~mgk25/ucs/examples
+and particularly http://www.cl.cam.ac.uk/~mgk25/ucs/examples/UTF-8-demo.txt .

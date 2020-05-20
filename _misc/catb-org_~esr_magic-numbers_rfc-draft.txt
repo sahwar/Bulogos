@@ -1,0 +1,231 @@
+This is preliminary draft version $Id: rfc-draft,v 1.2 1996/11/20 23:21:07 esr Exp $.
+
+INTRODUCTION
+
+Cross-platform file export through means like public FTP directories has long
+been an important mechanism of Internet information sharing.  More recently,
+the growth of the Internet has been driven by technologies such as the 
+World Wide Web, which give it (among other things) the aspect of a single
+huge distributed file store.
+
+In such an environment, it is very desirable that files should
+generally present themselves as self-describing objects from which an
+application launcher or navigation tool can readily deduce both their
+uses and at least some of the semantics of their contents. An
+effective set of such conventions can enable tools such as Web
+browsers to inform users according to such deductions, and to dispatch
+to appropriate sub-interpreters and user agents on the file object's
+semantic type.
+
+The Internet's major operating systems have traditionally shared two
+means of ad-hoc semantic typing for files.  The better known is the
+quasi-systematic use of file name "extensions" to carry semantic
+information (most Internet habitues, for example would feel
+justifiably surprised if a file with extension ".gif" were not to
+contain picture data in the well-known Graphic Interchange Format).
+Standardization of such file name extensions would be a desirable goal,
+but is beyond the scope of this RFC.
+
+The other, prevalent especially under Unix, is the quasi-systematic
+use of "magic numbers" in binary-format files.  Many Unix binary 
+formats have an initial segment of fixed pattern intended to uniquely
+identify the file type for the purposes of loaders, linkers, graphics
+viewers, and other tools.
+
+The purpose of this RFC is threefold:
+
+(1) To enunciate guidelines and design principles appropriate when choosing 
+    magic numbers for a new file type.
+ 
+(2) To advertise a central Internet registry of "magic numbers" (initially 
+    based on Unix prior art but intended to be platform-independent), with
+    procedures for checking candidate segment patterns against the registry
+    and for claiming new patterns.
+
+(3) To define a new standards-compliance category of MAGIC programs (MAGIC =
+    "Magic Against Galloping Internet Complexity") which are required to 
+    be aware, in certain well-defined ways, of registered magic numbers.
+
+The goal of encouraging MAGIC compliance is to formalize existing practice in
+a way which creates a uniform semantic file type system for the Internet.
+
+HOW TO PICK MAGIC NUMBERS
+
+GLOSSARY
+
+Primary magic:
+
+  Magic numbers used to identify the type of data stream or file. Any given
+  file has only one primary magic block.
+
+  (Some files, such as archives, may be composed of multiple files, each
+  containing a primary magic block, but the archive itself still only has
+  one primary magic -- the rest is data in the file.)
+
+Secondary magic
+
+  Magic numbers used to identify characteristics of the data stream
+  of file such as version, sub-type, etc.  A file may have more than
+  one secondary magic block.  And secondary magic can be composed of
+  multiple levels of tests.
+
+REQUIREMENTS
+
+The first and third are required for compatibility with both
+traditional and POSIX versions of file(1).  To be eligible for
+inclusion in the Registry, a new file format MUST have these properties:
+
+1. The primary and all secondary magic blocks must be located at fixed
+   constant offsets from the beginning of the data stream.  (The purpose of
+   this requirement is to permit tests for magic to be expressed in the 
+   simple, rapidly-interpretable notation of file(1)).
+
+2. The primary magic block must be located within 1K bytes of the beginning
+   of the file or stream.  (The purpose of this requirement is to limit the
+   amount of data which MAGIC-compliant programs must read to determine a
+   file's type.)
+
+3. Both primary and secondary magic must consist of single, contiguous
+   octet-aligned blocks of octets.
+
+RECOMMENDATIONS
+
+1. Both primary and secondary magic blocks should be 4 or more bytes in
+   length.  (Primary magic shorter than this is too likely to collide
+   with random data patterns.)
+
+2. Primary magic blocks should not contain continuous blocks of repeated
+   characters, especially NULs or FFs. (Again, this is too likely to collide
+   with random data patterns.)
+
+3. Magic should be not composed solely of characters in ASCII, ISO Latin-1,
+   or other standard character sets unless the file type is a text format
+   with characters limited to that set.
+
+4. For binary files, magic should be a random mix of text and non-text
+   characters, preferably including characters in each of these ranges:
+   ASCII, Latin-1 extensions to ASCII, and everything else.
+
+5. The primary magic should be constant for a particular application or data
+   type.  Only secondary magic should change depending on the version of
+   an application or data type.
+
+REGISTRY ATTRIBUTES
+
+Each registry entry includes the following attributes:
+
+(1) Recipe
+
+    This is a pattern, expressed in a recipe notation compatible with
+that of Unix file(1), describing the primary and/or secondary magic
+numbers and their offsets.
+
+(2) Contact
+
+    Contact information for the person(s) responsible for the format.
+    The contact may be a single person, a committe or development group,
+    or a company.  Contact information fields will include
+
+	Name of Responsible Party
+	Email address(es) of Responsible Party
+	URL of Responsible Party (optional)
+	Postal address of Responsible Party (optional)
+
+(3) Status
+
+    One of: Experimental, Maintained, Unmaintained, Obsolete, Unknown.
+
+(4) Code
+
+    A code of at most 8 ASCII characters intended for use as a type
+representation icon in text-only and Braille navigation tools.
+
+(5) Icons
+
+    One or more 32x32 PNG icons intended for use as a type representation
+icon in graphic navigation tools.
+
+(5) Class
+
+    One of a set of semantic-class codes including but not limited to the
+    following:
+
+	SOURCE-CODE                  C, Pascal, Lisp etc.
+	BINARY-EXECUTABLE            executable machine code
+	TEXT-EXECUTABLE              shellscripts, Perl, anything with #!
+        IMAGE                        still graphics
+	ANIMATION                    animation graphics, MPEG, etc
+	AUDIO                        pure sound                        
+	MULTIMEDIA                   autio plus animation
+	FILE-ARCHIVE                 tar, cpio, zoo, arc, zip, etc.
+	COMPRESSED-DATA              gz, Z, etc
+
+(6) Description
+
+    Text description of the format (in the style of Unix file(1)).
+
+(7) Resources
+
+    Zero or more quadruples consisting of
+       (a) A name
+       (b) A resource type
+             Resource types may include Documentation, Viewer, Library, 
+             Browser, Toolkit, Editor.
+       (c) An URL
+       (d) Comments
+
+(8) Timestamp
+
+    Date of last update.
+
+(9) Entered By
+
+    Email address of person responsible for entry.
+
+(10) Comments
+
+    Registry maintainer's comments.
+
+MAGIC COMPLIANCE
+
+The purpose of MAGIC-compliance is to enable programs such as Web
+browsers, Macintosh-style program launchers, etc. to benefit from an
+Internet-standard file semantic type system.
+
+A program may be MAGIC-compliant in one of two ways.  Either the
+program itself contains information equivalent to (a subset of) the
+magic-number registry, or it is able to reference an external resource
+(such as the Unix /usr/lib/magic file or the master Registry itself)
+which is presumed to be a snapshot of appropriate portions of the
+Registry contents.
+
+In the former case, a program may describe itself as being conformant
+with the particular release version of the registry (i.e "MAGIC 1.00
+compliant") abstracted in its code.  In the latter case, it may simply
+describe itself as MAGIC-compliant.
+
+Certain requirements are placed on MAGIC-compliant programs:
+
+1. A MAGIC-compliant program MUST be able to recognize (automatically
+   or on user query) every file type marked Maintained in its registry
+   version.  It SHOULD be able to recognize every Experimental and
+   Unmaintained type. It MAY recognize every Obsolete and Unknown type.
+
+2. A MAGIC-compliant program MUST allow users to see or request
+   the Description field of a file's type, once it has been recognized.
+
+3. A MAGIC-compliant program's interface SHOULD present for each recognized
+   file at least one of the  following:
+      (a) The type's Code field (recommended for text-only interfaces)
+      (b) Text or icon representing the Class field
+      (c) Icon from the Icons list (recommended for graphical interfaces).
+
+REFERENCE CODE
+
+A documented C library implementing an API for querying the /usr/lib/magic
+file will be made available at the Registry site.  This code is freely
+reusable, and developers are encouraged to incorporate it as a way of
+making their programs minimally MAGIC-compliant.
+
+Freely redistributable C sources of the MAGIC-compliant Unix utility file(1) 
+will be made available along with the library.
