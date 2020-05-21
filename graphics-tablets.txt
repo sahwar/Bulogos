@@ -18,7 +18,7 @@
 * и други...
 
 Аксесоари за графичния таблет:
-* различни видове писалки и заместители на писалки и специални гумени/пластмасови чувствителни и остри (или не?) върхове/пера за писалки
+* различни видове писалки (stylus, мн. ч.: styli/styluses) и заместители на писалки и специални гумени/пластмасови чувствителни и остри (или не?) върхове/пера за писалки (nibs)
 
 Търсете за покупка от:
 
@@ -28,17 +28,20 @@ http://ebay-kleinanzeigen.de
 http://olx.bg
 http://bazar.bg
 http://retropcmania.bg
-(уебсайтовр на местни за България физически или само онлайн магазини за нова или втора употреба компютърна техника)
+(уебсайтовете на местни за България физически или само онлайн магазини за нова или втора употреба компютърна техника)
 
 Полезни програми за графични таблети:
 
-* официалните драйвери от производителя,
+* официалните драйвери от OEM производителя,
 например драйверите на Wacom с прилежащите CLI & GUI програми:
 http://wacom.com
 * драйверите за Wacom за Linux kernel (ядрото Linux)
+* Linux: CLI настройки за графични таблети Wacom:
+[пример.png]
 * драйверите за не-Wacom модели графични таблети за Linux:
 
-* `$ randr`, `$ xrandr` & Desktop environment -> Display Settings ; tiling-window-managers for Linux - list & tweaks & settings & supported features
+* Linux: `$ randr`, `$ xrandr` & Desktop environment -> Display Settings ; tiling-window-managers for Linux - list & tweaks & settings & supported features
 * http://reddit.com/r/stylus - вижте wiki-тата със списъци с модели графични таблети
-* ... за прерисуване: whitescreen LED-light outline screens with supporting legs and a second screen below the outliner screen
+* ... за прерисуване на очертания на изображение:
+whitescreen LED-light outline screens with supporting legs and a second screen below the outliner screen
 * програмата ... за графични таблети на Wacom 
