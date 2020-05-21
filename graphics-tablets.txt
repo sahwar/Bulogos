@@ -36,12 +36,24 @@ http://retropcmania.bg
 например драйверите на Wacom с прилежащите CLI & GUI програми:
 http://wacom.com
 * драйверите за Wacom за Linux kernel (ядрото Linux)
+https://linuxwacom.github.io/
+https://github.com/linuxwacom
++ вградените в Linux kernel драйвери за графични таблети Wacom
 * Linux: CLI настройки за графични таблети Wacom:
 [пример.png]
 * драйверите за не-Wacom модели графични таблети за Linux:
-
++ вградените в Linux kernel
++ http://digimend.github.io/
+https://github.com/DIGImend/digimend-kernel-drivers
+https://github.com/DIGImend
 * Linux: `$ randr`, `$ xrandr` & Desktop environment -> Display Settings ; tiling-window-managers for Linux - list & tweaks & settings & supported features
 * http://reddit.com/r/stylus - вижте wiki-тата със списъци с модели графични таблети
 * ... за прерисуване на очертания на изображение:
 whitescreen LED-light outline screens with supporting legs and a second screen below the outliner screen
-* програмата ... за графични таблети на Wacom 
+* безплатната програма за допълнително наглася(ва)не на нивата на чувствителност на графични таблети на/от Wacom:
+ https://blackink.cz/tablet-pressure-curve-tool/
+
+Tablet Pressure Curve Tool (for Wacom tablets, 3rd-party app NOT AN IMAGE EDITOR, FREEWARE (useful for fine-tuning the pressure sensitivity of Wacom Tablets if the Wacom tablet-settings apps aren't enough for your needs)
+* wintab драйвера, вграден в Windows7 & по-новия различен драйвер за графични таблети в Windows10
+* за хора с устройства с Google Android + лаптоп/настолен компютър с Linux:
+
