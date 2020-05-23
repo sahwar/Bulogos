@@ -1,4 +1,7 @@
 https://github.com/sahwar/Bulogos/blob/master/TODO-original-ideas-to-later-work-on.txt
+written by https://github.com/sahwar (ve4ernik - http://sites.google.com/view/ve4ernik )
+
+## PRIMARY
 
 * put my personal website in a self-hosted locally-hosted git-changelog:
 http://sites.google.com/view/ve4ernik
@@ -7,9 +10,14 @@ http://facebook.com & http://instagram.com , http://pastebin.com , http://imgur.
 http://motifake.com , http://4chan.org , http://8chan.org , http://danbooru.donmai.us , http://reddit.com/r/'s , etc.
 
 * open the last 50-200 .txt files (via voidtools.com Search Everything -> Sort by Modified) and extract the information needed to be added to Bulogos & to ve4ernik's website & ve4ernik's podcast (including my GMail/abv.bg emails + my .txt notes from my smartphones' Note-taking apps + the synched/copied .txt lists of my webbookmarks & opened tabs from the mobile web-browsers of my Google Android devices, etc. )
-* buy new HDDs/SSDs/USB-flashsticks & rsync/FreeFileSync/.VHD-image/.ISO image _backup_ the full contents of my older, towards-failing HDDs... and finish compiling my information posted on http://reddit.com/r/DataHoarder , etc.
+* buy new HDDs/SSDs/USB-flashsticks & rsync/zsync/Zstandard/.vhd-or-.iso-or-.vbox (VirtualBox) files/full-HDD/SSD compilations (packed via 7-ZIP self-extracting archive filefortmat, or as .zip/.7z/.lzip/.bzip2/.xz, and also by utilizing file-splitting&file-merging apps + email attachments (base64-encoded binary files as MIME-multipart .mht-like?) (Usenet) of up to 20-25MB-max-filesize-per-file)/FreeFileSync/.VHD-image/.ISO image _backup_ the full contents of my older, towards-failing HDDs... and finish compiling my information posted on http://reddit.com/r/DataHoarder , etc.
 
----
+* setup SAMBA (&maybe CUPS for USB/Ethernet/network-printers?) network shares to share in an WebDAV-like/LDAP-like/MS-Windows-network-shares & RetroShare/OnionShare+RicochetIM/wonix-linux / http://matrix.org+xmpp&jingle/GoogleMeet&GoogleHangouts-or-Google-Talk + http:/tox.im & Conversations + SecureChat (Google Android apps for chatting via XMPP) + self-hosted IRC+IRC-XDCC & torrent/magnet-URI/metatracker.org online web-trackers websites (& OwnCloud/NextCloud/SyncThing/fosstodon.org-like & http://d.tube-like)--- so as to share MOST of all of my files on ALL of my computers (MINUS the mission-critical single-point-of-failure private/confidential files!) publicly online on my
+own websites - for anyone to download, regexp (sub)string-search the names+filetypes+datetime-modified of, and see the .git changelogs thereof!!!
+
+--------------------------------------------------------------------------------
+
+## SECONDARY
 
 * finish writing up the list of my ideas about how to fix the GUI text-cutting issues in paint.net & its MS-Windows GUI-engine - 
 those related to properly displaying the full text of localized text strings in the GUI/UI; this also applies to any GUIs in
@@ -20,7 +28,14 @@ to the OS's/desktop-environment/file-manager's 'Open.../Save as.../Browse.../Sel
 ovals set by entering a number in a floating text-field), implementing MyPaint's&Krita's brush engines as additional brush engines
 parallel to the classic paint.net Brush tool; adding some GUI ideas from other image-editing apps, like ibisPaintX / MediBang Paint Pro 
 (Google Android apps), SpeedyPainter + the search-in-all-menus'-text searchbar (searching through English+localized text+keyboard 
-shortcuts) similar to that found in Wox &  & in `plotinus` app on GitHub.com, etc.
+shortcuts) similar to that found in Wox & ulauncher (GitHub) & in `plotinus` app (on GitHub.com) & in Notepad++'s menu-searching-plugin + in XYZ digital image-editing app, etc.
+* suggest a feature request to Notepad++ - to improve its 'Search...'&'Search and Replace' GUI dialog-window by borrowing GUI/UI/UX ideas from http://regex101.com and from Atom (text editor) and from some other text-editors (Notepad2-mod, Notepad3, Notepadqq, CudaText, Babelpad, unicode-text-editors, etc.)
+* add my idea for INTERNATIONALIZED/LOCALIZED parallel-side-by-side-or-one-atop-the-other-OR-split-view-original-English-strings+localized-strings-in-another-language string/substring/programming-language keywords auto-completing/regexp-like-bash-like-globbing+search/entering-historylog-file --- for the HTML5/CSS3/JavaScript-v6+-etc. autocompletion-via-abbreviations engine found online (+ for LESS & SASS CSS-extension languages!): ...
+Check out & add my http://gist.github.com .php/.js scripts (AND BACKUP THEM TO MY PC & to the Bulogos tree of files!!!) primarily written by my pals Aleksandar Kamburov and/or OmegaKO (&later modified by me, ve4ernik) --- which enables the
+semi-functional automatic replacement of these keywords in source-code files on-the-fly or after a user-triggered Undo-able action, etc.
++ check out the Bulgarianized/Cyrillic-ized version of Python (Smok, Смок, смок) written by a Bulgarian programmer - the one behind http://gramofonche.chitanka.info
+* to code a CLI app for Linux that lists & writes summaries of 'математически формули, геометрични аксиоми и физични формули' from the .pdf's & images found in https://github.com/sahwar/Bulogos/blob/master/_cheatsheets/
+* (grex/ungrep?!?) add Linux binary file-editors found on the Ubuntu+Debian+Linux Mint+launchpad.net+github.com+gitlab.org / etc. repositories, etc. ; + ResourceHacker (MS-Windows app to edit e.g. `paint.exe` or even video-game .exe files, etc.!), 
 * suggest my ingenious idea about how to (GUI/UI/UX ways) show text-ToolTips (<abbr> & <acronym> and qTip2) in the GUI in mobile web-browsers like
 Mozilla Firefox mobile for Google Android & Google Chrome mobile for Google Android... Currently, almost no mobile web-browser
 supports showing these on mobile touchscreen devices...
@@ -42,5 +57,56 @@ metadata fields when opening a file --- to my (ve4ernik's) fused idea about havi
 such metadata for modern camera-produced .jpg/.jpeg/.RAW & .mp4/.m4a digital-photograph & digital-videoclip videocamera fileformats;
 * write an explanatory article about the following apps found on GitHub: latex2html5 & pdf2html5 & lossless-img2pdf & waifu2x (and similar image super-resolution) on GitHub 
 * write some basic apps on algorithmic music composition inspired by the excellent work of http://twitter.com/bozhobg
-* 
+* write my article on an engineering project for a specialized very-well-thought-out extendable roof for the football stadiums in Plovdiv, Bulgaria (!!!), as well as for the improvement of the water sinkholes & the water-torrent-draining of the tunnel under the Central Square in Plovdiv, Bulgaria ...
+* copy my posts from http://reddit.com/r/Bulgaria about the specialized new/rediscovered tech that aids in writing books&printing texts for the blind & visually impaired (of the disabled people) in Bulgaria (!!!)
+* get my paper notes from my mother's house - those documenting the blueprints of my 'New systems for 1-hand & 2-hand & 2-hands+torso+head body-language hand-gestures for the expression of contemporary Bulgarian, contemporary ASCII-alphabet-using languages (e.g. modern English), and for Unicode UTF-8 hex/dec-codepoints-expressing glyphs (&accompanying smartphone Unicode-lookup app - like those free ones for Google Android, + those open-source ones on GitHub.com + BabelMap-online/graphemica.com/!!! 
+* make a v2 of the `ascii` CLI app for Linux & make such an app for `viewunicode/vunicode`
+* borrow ideas for other Terminal-apps & bash-/zsh-like shells - from the Enlightenment-DE terminal app & from WindowMakerDE, and from BusyBox/BusyBox-fork-for-Android, from the GNU toolchain, and from the Heirloom project, etc.
+* write a Unicode glyphs-viewing alternating-images/FreeType+OTF-based+color-webfonts-based+emoji-iconsets-based screensaver app for GNU CLI terminals... possibly write it in Python3, Rust, Go, Julia, or in LazarusIDE+FreePascal, or with the ncurses library, etc.
+* write a better CLI web-browser by borrowing ideas from suckless.org's surf + ratpoison + netsurf + JetSlim + Qupzilla + Konqueror (KDE3/KDE4+) qt-web-browsers-on-github/gitlab/gitea/sourceforge/etc. + etc. (more are mentioned in the 'MX Linux' facebook.com group!) & from the original current CLI (&low-powered slim non-Acid3-test-passing minimalist web-browsers like ???) web-browsers for Linux/*NIX & for MS-Windows; lewebb (the le voila-a la` web-browser, 'monseneur'! :PPP Aha!)
+* write an article about the alternative desktop-environments for MS-Windows - BlackBox, etc. + for the latest features of the WSL-on-Windows10Pro_x64 + for the ORIGINAL Linux distro that sits atop MS-Windows and acts as a dual-kernel with full bidirectional clipboard support!
+* download, install & use multi-clipboard apps & battery-indicator apps for both my Windows7/Windows10 & for my Linux machines/laptops/desktop-PCs ...
+* Internet memes, fiction, and unrealistic endless dukkha-like desires are destroying us... the illuminati are using fiction to mold the global mindsets of people & to PredictiveProgramming guide/direct the future of the human race + to steer it in their direction + 'mind your own business & follow your own goals, etc.' --- via government-/corporations-owned mass-media & via Hollywood & the USA-/Canada-/Anglosphere-/Japanese-/China-made 'entertainment/entrainment-priming-Pavlovian-Skinnerian-behavioriosm/MK-ULTRA/Monarch-project/etc.' industry
+* add Bulgarian-language keyboard layouts & PinebookPro review'-derived 
+* improve the KBabel, Qt Linguist, Qt Lokalize, GNU POEditor GetText-editor apps + borrow ideas from some of my starred/faved/favorited/cloned repositories on http://github.com (!!!);
+* improve and add new voices for the KDE-app for alphabet learning & picture-dictionary non-free-associations for kids (for the Bulgarian language pack!!!)
+* + visual-notes-on-the-desktop notetaking apps for MS-Windows7+, Linux, etc., calculator (`galculator`, `xcalc`, `xclock`, etc.?) apps & GUI calendar+datetime-clock+.ical/.vcard personal-timetable-organizer apps (including for Google Android devices), etc.
+* write a short article on the online Internet startup websites with configurable moveable web-widgets panels - before the rise of modern about:start webpages for the major web-browser players (latest versions of Mozilla Firefox ; Google Chrome / Chromium, Vivaldi, old-Opera/Opera-fork, Apple Safari, etc.)
+* add these 3 legends to the video-gaming journalism section in the Friends/Links/Blogroll/Linkback-'you-scratch-my-back-I-scratch-yours/favor-for-favor/capi di tuti(?!?)' webpage of ve4ernik's website:
+	Jimquisition
+	Yahtzee
+	the http://escapistmagazine.com webcomic
+	+ that old weird Western webcomic about sex & incest sex ; + that existential webcomic with THE WALL OF TEXT strips + that webcomic with futurism/tropes themes/light-motives (borrowed from trvtropes.org & its forks! + wikia.com wikis!) + that webcomic about transhumanist topics, etc.
+
++ Add these to ve4ernik's website:
+	polygon.com + pcgamer, (pcgamingwiki.org/game/PekkaKana2), pcmania.bg + TheRivalry + the 2nd major video-gaming magazine in Bulgaria + http://animeinn.net + http://joystick - bg + ozone.bg / pulsar.bg / etc. , etc. .....................
+	(also see: Gamergate + #MeToo vs. #BelieveAllWomen controversies (I mostly side with the #BelieveAllWomen camp and Johnny Depp, but I also kinda agree with the youtube.com/channel/BetterBachelor video on this topic - we need evidence or proof or INNOCENT UNTIL PROVEN GUILTY!!!...)
+* KaliLinux, GParted, SystemRescueCD, RecoveryIsPossible (RIP Linux) Ubuntu-based distro, digital forensics & diagnostics & multimedia center + more , etc. ; Miro (app); etc.; QMMP (sorta clone of the old popular WinAmp music-player!; Quintessential-player, etc. ; BakaPlayer/mpv.io / vlc + more ... )
+* clone, fork, and modify the Perapera add-on for Mozilla Firefox (& similar tools like http://mdbg.net + online Bulgarian Chinese dictionary website, etc.), http://karakoJ(r)u.net/karakonjul.bg?!?) and modify it to view/import&export dictionaries entries (in multiple dictionary fileformats, e.g. GoldenDict, dict.org, new XML-based dictionary file formats, etc.) - including <iframe>+regexp-HTML5_client-side-JavaScript/Python3-script/Rust-script/.C/C++-code)_on-the-fly/on-request/on-AJAX-(/WebRTC?!?)-based---webscraping-based contextual 'popup-like' web-bookmarklet-looking qTip2-based dictionary entry explanation (with a searchbar with dropdown menu of searching through multiple online dictionaries or offline dictionaries!!!) ;
+add Bulgarian-language learning databases (partially extracted from http://tatoeba.org, wordlists-datasets, live-speech-recordings, and especially from Bulgarian-language corpus/corpora of text datasets , etc.) and especially from Bulgarian online news articles + online news media portals & personal websites & personal weblogs/blogs) to the Anki flashcards app for MS-Windows, Linux, and for Google Android, etc.
+* work to improve http://bgoffice.sourceforge.net & IDI Spellchecker (+its useful Webster's 1913? English dictionary) , Megadict-BG (Bulgarian dictionary for MS Windows7+), BgEngDictionary (Bulgarian dictionary for MS-Windows hosted on http://sourceforge.net ), AEDict (AEnglishDictionary by http://kamburov.net ), BulNet + related projects ; BACL projects & BAS-IBL projects, etc.
 * etc.
+
+Side note:
+(Selenium , node.js , headless WebKit-based web-browser/web-crawler/webspider/regexp-based+visual-scraping(AutoHotKey-scripts+visual-desktop-scripting(+.bat-batch-files/.sh-shell-scripts!)-OCR-screenshotting+artificial-neural-network-based, etc. ...) data-webscraper???!!!)
+
+'you are co-creator with the divine/Source/Source-energy/quantum field of potential(itie)s!!!' / LawOfAttraction / ManifestingVibes ManifestingGuide, (+Aaron Doughty, Dan RadioStyle, Infinite Waters (Diving Deep, 'Ralph Smart', etc.), 'Abraham Hicks', Bob Proctor/Procter, LawOfAttractionSolutions, TreniusHenderson, etc. guys on YouTube.com + 'the rise of dark gurus on YouTube' video on Youtube.com ... ) :P
+'free spirit', 'wild (at) heart', 'crazy future organ donor / biology-musuem skeleton-exhibit', 'spiritual but not religious' rascal/emotional-deep guru philosopher-mystic ve4ernik :PPP
+
+NMAP? iptables, NAT traversal & NAT-overcoming/over-NAT-via-DC++/ADC/etc., port-forwarding, list of all open ports & their assigned usual uses/apps/protocols, UPnP, p2p, etc. ; Linux WRT (open computer router/modem/комутатор (?!?) OS based on Linux - for embedded and low-resource devices ?!? --- see also http://olimex.bg )
+
+---
+люк на космически кораб, каюта и т.н.
+отворен музей подводница и военен кораб в пристанище на България (!!!)
+---
++ idea - to buy from London/Amsterdam, have it transported & put in the Plovdiv Maritsa river - ferryboats - for living & for leisure-cruises-for-fun&for-photos + river-restaurants & binocular/telescope
++ idea - put food&drinks vending machines (+maybe install a semi-walled tennis-court!) on the Plovdiv tepeta/tepes, Bulgaria (!!!)
++ idea - put durable/rugged binocular/telescope-on-a-column on a semi-high rotating-base foundation (similar to those atop the Napoleon-era Partheon in Paris, France!!!) atop/on some of the hills/tepeta/tepes/тепета in Plovdiv, Bulgaria (това може да се препоръча като идея към Градския съвет на Пловдив и някои от политическите групировки там, например „Съюз за Пловдив“ и „НФСБ“ или „ВМРО“ или по линия на независими кандидати и т.н.)...
++ put some secret treehouses on the Mladezhki halm (Youth Hill) in Plovdiv, Bulgaria, some of which are linked by hanging staircase-pathway (a la` Indiana Jones!!! :P :D :D :D ) + организирай бойскаутски групи с преспиване под звездите и философски разговори и медитации и ъндърграунд бебеправещи BDSM секс-култове в парковете и в изоставени постройки в Пловдив, България (!!!) ;) :DDD :DDD
+
++ put hidden geocaches (with canned food, clothes, tools, tech, tent + rough sleeping-bag, etc.) around Plovdiv, Bulgaria - in case of emergencies...
++ regularly put some small ration of food supplies in some semi-secluded public-park and see who will regularly check for stuff left at/after a specific clock time... etc. + put text-labels mini-posters around town & see who will visit/call/email/Internet-chat-IM you!!!
+
+
+
+(creatively play around with concepts, conceptual modelling, etc. :PPP )

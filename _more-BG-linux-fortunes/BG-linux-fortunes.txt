@@ -1,17 +1,17 @@
 Още `fortunes` за Линукс за българи...!
-Това е програма за shell (като bash), която изписва произволен цитат или текст от инсталирани бази от данни с такива цитати, афоризми, сентенции,
-народни поговорки, математически формули, геометрични аксиоми и физични формули, съвети, готварски рецепти, шеги и т.н.
+Това е програма за shell (като bash) в GUI Terminal app, която изписва произволен цитат или текст от инсталирани бази от данни с такива цитати, афоризми, сентенции,
+народни поговорки, крилати фрази, математически формули, геометрични аксиоми и физични формули, съвети, готварски рецепти, шеги и т.н.
 
  ~bash/CLI GNU `fortunes`, `fortunes` sayings/aphorisms/Latin sentencesetc., etc. ~to add to Bulogos:
 
 CLI_fortunes_quotes.md ~to add to Bulogos:
 
 http://man.cx/fortune
-https://www.splitbrain.org/projects/fortunes
+https://www.splitbrain.org/projects/fortunes !!!
 http://man.cx/strfile
-jf2cookie .tar.gz
+jf2cookie .tar.gz !!!
 
-http://plf.zarb.org/
+http://plf.zarb.org/ !!! + to google-websearch: archLinux 'dyn' (keyword) website with CLI-apps repositories & webpages, etc.
 
 Quote from http://splitbrain.org :
 
@@ -25,11 +25,12 @@ https://liternet.bg/publish30/ivanka-pavlova/aforizmi-3.htm ~to add to bash/CLI 
 English Translation Practicum - народните поговорки накрая ~to add to BG-linux-fortunes
 
 frazite.com
+rechnik-bg.com , etc.
 
 ~групи на преводачите във Facebook със списъци-речници с думи...
 
 ~to webscrape the .htm/.htmls of liternet.bg & spisanie.liternet.bg & to do a `sort | uniq` on all the files... and thus generate a new wordlist
-~to webscrape the .htm/.htmls of http://parallelreality-bg.com & to do a `sort | uniq` on all the files... and thus generate a new wordlist
+~to webscrape the .htm/.htmls of http://parallelreality-bg.com ( & http://sega.bg , http://dnevnik.bg , kultura.bg & http://liternet.bg , http://uni-plovdiv.bg , etc. ) & to do a `sort | uniq` on all the files... and thus generate a new wordlist
 ~to webscrape the .htm/.htmls of dv.government.bg (*) & to do a `sort | uniq` on all the files... and thus generate a new wordlist
 
 * = 
@@ -44,4 +45,5 @@ frazite.com
 * TO DO: превърни в US-ASCII/UTF-8/.tex моите .pdf файлове с компилации от взети от книги математически формули от https://github.com/sahwar/Bulogos/_cheatsheets --- в пакет за BG-linux-fortunes !!!
 * TO DO: препиши и добави и готварски рецепти от книги и от хвърчащи листове - пак за такива `fortune` пакети...
 * същото, но с OCR-нати книги с компилации с цитати, афоризми, поговорки и сентеции, вкл. онлайн речници със списъци с цитати (например List of Latin phrases (full)...)
+
 
