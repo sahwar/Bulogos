@@ -6,14 +6,16 @@ http://sites.google.com/view/ve4ernik
 http://facebook.com & http://instagram.com , http://pastebin.com , http://imgur.com, http://9gag.com , http://dailymotion.com , 
 http://motifake.com , http://4chan.org , http://8chan.org , http://danbooru.donmai.us , http://reddit.com/r/'s , etc.
 
+* open the last 50-200 .txt files (via voidtools.com Search Everything -> Sort by Modified) and extract the information needed to be added to Bulogos & to ve4ernik's website & ve4ernik's podcast (including my GMail/abv.bg emails + my .txt notes from my smartphones' Note-taking apps + the synched/copied .txt lists of my webbookmarks & opened tabs from the mobile web-browsers of my Google Android devices, etc. )
+* buy new HDDs/SSDs/USB-flashsticks & rsync/FreeFileSync/.VHD-image/.ISO image _backup_ the full contents of my older, towards-failing HDDs... and finish compiling my information posted on http://reddit.com/r/DataHoarder , etc.
+
+---
+
 * finish writing up the list of my ideas about how to fix the GUI text-cutting issues in paint.net & its MS-Windows GUI-engine - 
 those related to properly displaying the full text of localized text strings in the GUI/UI; this also applies to any GUIs in
 general - including Linux/*NIX desktop-environments & window-managers, and to MS-Windows-7/8.1/10's GUI (especially the taskbar,
 the START menu & its items, the OS/system context (right-click) menus, and the 3rd-party-apps-specific context menus, and even
-to the OS's/desktop-environment/file-manager's 'Open.../Save as.../Browse.../Select folder/directory...' dialog windows and to the
-file-managers and desktop-view in general (some borrowed from Windows7's file-manager & from SpaceFM & Nautilus-fork & to Qt4+-based
-alternative file-managers (also see http://distrowatch.com about the better mounting mechanism in newer versions of some Linux apps),
-etc.)...
+to the OS's/desktop-environment/file-manager's 'Open.../Save as.../Browse.../Select folder/directory...' dialog windows and to the file-managers and desktop-view in general (some borrowed from Windows7's file-manager & from SpaceFM & Nautilus-fork & to Qt4+-based alternative file-managers (also see http://distrowatch.com about the better mounting mechanism in newer versions of some Linux apps), etc.)...
 * also suggest some improvements to paint.net - like icon-packs, some advanced shapes-drawing adjustments (like diameter/radius of
 ovals set by entering a number in a floating text-field), implementing MyPaint's&Krita's brush engines as additional brush engines
 parallel to the classic paint.net Brush tool; adding some GUI ideas from other image-editing apps, like ibisPaintX / MediBang Paint Pro 
