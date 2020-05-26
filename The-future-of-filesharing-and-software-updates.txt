@@ -1,0 +1,19 @@
+https://github.com/sahwar/Bulogos/blob/master/The-future-of-filesharing-and-software-updates.txt
+(originally posted on Facebook: 
+https://m.facebook.com/story.php?story_fbid=2916980481755183&id=100003297800205 )
+
+Last modified: 26-May-2020
+
+
+
+
+The future of filesharing & software updates
+
+🤣 Sandboxed version-controlled self-encapsulated self-contained atomic updates & upgrades ((1) adds new folder with the new version with all its dependencies inside, or (2) just replaces the only version with the new version, or (3) attempts to keep dependencies while trying to automagickally mitigate dependecy hell / DLL hell) are the future of software & OS-kernel updates... 😉
+AppImage's, flatpaks, Ubuntu snaps, and self-extracting 7-ZIP archives, and sourcecode-compressed-archives-for-compiling-with-all-dependencies-bundled-out-of-the-box distributed via p2p-filesharing technologies and as http(s)/(s)ftp download mirrors/repositories, and also via using failproof bulletproof big-files binary self-merging-if-all-split-files-are-fully-downloaded file-split&file-merge software killer-apps... 😉🙄 + Virtualization packaged OSs pack-files & Kerberos & Docker images, and .VHDs, and .ISO archives (+hashes for file-integrity validation)... 🙄 + Internet online & local-LAN/WAN & LANoverEthernet, and offline-via-USB-flashsticks/CD&DVD&BluRay/Wi-Fi-Direct file distribution channels... 🙄 + long-term storage tech as explained in http://reddit.com/r/DataHoarder posts (including my posts there, posted under a username different from 've4ernik', my usual nickname)... 🙄 + DWeb/Web3.0 (decentralized/distributed Internet v3.0).
+
+(+ compilation meta-websearch-engines that crawl & list all versions of all software on all Internet software/package repositories hosting the [version-controlled&datetime-stamped+filesize+description+tags+category+screenshots+screencasts+animatedGIFs(&user-generated version-controlled translations thereof into multiple languages)] software of the Linux-kernel-(GNU/)Linux-distros+derivative-kernels/Windows/macOS/GoogleAndroid/iOS/etc. 🙄 Some examples: pkgs.org , flathub.com , appimages.org , Fedora COPR repositories, ArchLinux AUR, Ubuntu snaps repositories & OpenSUSE app-building online service, AppVeyor/GitHub/GitLab/etc. ...)
+
+(&telepathy)
+
+(cc) 2020 ve4ernik
