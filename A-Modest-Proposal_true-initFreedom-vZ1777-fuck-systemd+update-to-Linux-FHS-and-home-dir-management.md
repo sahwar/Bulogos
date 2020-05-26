@@ -16,8 +16,10 @@
 
 4. systemd is taking over Linux like a feature-overbloat/feature-creepism&overengineering&
 
-5. https://www.techrepublic.com/google-amp/article/linux-home-directory-management-is-about-to-undergo-major-change/
+https://www.techrepublic.com/google-amp/article/linux-home-directory-management-is-about-to-undergo-major-change/
 
-6. https://www.techrepublic.com/article/beyond-the-pc-lenovos-ambitious-plan-for-the-future-of-computing/#ftag=CAD-00-10aag7f
+5. https://www.techrepublic.com/article/beyond-the-pc-lenovos-ambitious-plan-for-the-future-of-computing/#ftag=CAD-00-10aag7f
+
+6. ...
 
 7. ...
