@@ -1409,6 +1409,61 @@ some decent Unicode character app for macOS
 _I don't use iOS..._
 nexusdiary (iOS), nexusmoney (smartphone app for Google Android devices ONLY?)
 
+
+## Free video-editor apps
+
+````
+multimedia players:VLC Media Player, MPV.io, BakaMPlayer, SMPlayer, (Daum PotPlayer), (The KMPlayer), MPC-HC / MPC-BE + nyaa.se PLAYBACK.txt ; K-Lite Codec Pack + MPC-HC (x64) + madVR (EVR, etc.); KDE media players; XMMP (Linux), foobar2000, (WinAmp), Modi/XBMC; Miro, ; 
+
+free video-editor apps: Davinci Resolve (FREEWARE video-editor), Hitfilm Express (FREEWARE video-editor, mainly for VFX & video-compositions), Shortcut.org (open-source/F(L)OSS, for MS Windows 7+, macOS, Linux, 32-bit or 64-bit), OpenShot, Kdenlive, Xinerama+Hugin, ffmpeg/libav (RTFM & man-pages&FAQs&superuser.com), WinFF-GUI, Lightworks Free (FREEWARE, MS Windows), VideoPad Video Editor (FREEWARE video editor for Windows 7+ (64-bit), Mac OS 10.5+, Google Android)
+
+
+======
+
+Free video editors for Google Android: FilmoraGo, Adobe Premiere Clip, VivaVideo, KineMaster, 
+
+https://www.digital.bg/nay-dobrite-bezplatni-video-redaktori-za-android-article630761.html
+
+---
+
+https://www.digital.bg/kakvo-trqbva-da-znaem-za-populqrnite-video-formati-i-kodeci-article577720.html
+
+.avi, .mkv, .MP4 (MPEG-4 Version 2, reworked in 2003) (can contain H.263/H.264 за видео и AAC за аудио. Освен това поддържа канали със субтитри), .wmv, .Xvid (H.263/MPEG-4 Part 2), .x264 (H.264/MPEG-4 AVC), .x265 (H.265/MPEG-H HEVC)
+
+deprecated, obsolete
+
+
+
+---
+
+sub(title(s)) track = писта(/и) със субтитри, канал(и) със субтитри
+
+
+
+======
+
+https://www.digital.bg/nay-dobrite-bezplatni-video-redaktori-za-android-article630761.html
+
+всички обичайни опции за оптимизиране на цветовете (яркост, контраст, насищане и т.н.),
+
+slide transition effects = забавни преходи
+
+картина в картината (PiP), PoP, PtP, 
+
+Можете дори да решите кога да се появява и да приложите преход, така че да се завърта, плъзга или избледнява на мястото си
+Filters&effects = филтри и ефекти
+
+
+
+https://www.digital.bg/nay-dobrite-bezplatni-video-redaktori-za-android-article630761.html
+======
+
+K-Lite Codec Pack
+
+езикови опции за субтитри и надписи
+
+````
+
 -----
 
 ## Free resources & free gamedev (video-game development) resource files under liberal licenses: ##
