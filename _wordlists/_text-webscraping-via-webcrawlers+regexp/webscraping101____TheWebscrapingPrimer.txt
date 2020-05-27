@@ -1,0 +1,38 @@
+https://www.facebook.com/groups/programmer.nullposting/permalink/947820912349497/
+
+* Python3 Scrapy
+
+Besnik Nuro -> Programmer NULLposting :
+wait, how much better is js at webscraping than python? have i been doing it all wrong w/ selenium and bs4?!1
+
+* JavaScript (v6+): Selenium (headless web-browser) + requests + bs4 + Node.js npm package '' (WARNING: "web scraping with js? wouldnt same origin policy block get requests?")
+* BeautifulSoup
+* Python3 requests + use web-browser cookies
+* Puppeteer (it has generally the same interface as Selenium. It's not bad, but debugging is a pain since I'm xpath illiterate) + install chropath
+* Node.js + promises
+* Casper.js
+* NightmareJS (npm package) ('I got by with NightmareJS for a project. SO much easier to set up than Selenium, and more performant too. It just wasn't quite as robust when I used it, but it did the job well' —Jonny Petraglia
+* Node.js - Pupeteer (saves everything as JSON, clean it by using Python3, then throw that JSON back in on React.js ('Pupeteer is where the games really at. NodeJS - Pupeteer save everything as Json - clean it using python cause and then throw that Json back in on React. Fight me.' —Khalil Mohsin) 
+
+Khalil Mohsin:
+At the end of the day if you have any javascript interaction needed, you need to use Selenium. 
+* WasiUllah Khan:
+One advice that I give to a lot of people that are scraping sites is, study the website that you're trying to scrape, reverse engineer it. You'll be surprised to find the type of data that is coming in
+
+WasiUllah Khan:
+Besnik Nuro a lot of times the sites are actually internally calling APIs in the form of AJAX and what not. Just see which API is authenticating the user and directly hit that and store the session
+
+Besnik Nuro
+I was using it to do automated actions (logins & clicks), but then I learned I could use cookies w/ requests
+
+Miles Bardon
+
+I've been using Puppeteer recently and it has generally the same interface as Selenium. It's not bad, but debugging is a pain since I'm xpath illiterate
+
+======
+
+* wget, wget2, curl + libcurl (PHPv5.3+ + libcurl + related libs/dependencies + .php webscraping scripts) (latest versions)
+* lftp, aria2c, httpie; etc.
+* WebArchive (GitHub.com repository) + .WARC archives + http://archive.org/web/ (technical info + developed tech) & http://archive.today / http://archive.is
+* Webtooth Extractor + TextSTAT + YAWS Webscraper.exe
+* etc.
