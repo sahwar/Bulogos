@@ -1409,6 +1409,16 @@ some decent Unicode character app for macOS
 _I don't use iOS..._
 nexusdiary (iOS), nexusmoney (smartphone app for Google Android devices ONLY?)
 
+~to add to Bulogos :
+Procreate (drawing app for iOS & the latest pressure-sensitive-screen+sstylus iPad), example:
+https://www.instagram.com/p/CAnHfR-oJUd/?igshid=oq155qqr2gju
+---
+Adobe Photoshop
+COREL Painter
+
+https://www.instagram.com/p/CAgE0heHK4T/?igshid=7ebn353plswd
+
+https://www.instagram.com/p/CAK-fHZhJAW/?igshid=vji51cgyl2uz
 
 ## Free video-editor apps
 
@@ -1416,7 +1426,8 @@ nexusdiary (iOS), nexusmoney (smartphone app for Google Android devices ONLY?)
 multimedia players:VLC Media Player, MPV.io, BakaMPlayer, SMPlayer, (Daum PotPlayer), (The KMPlayer), MPC-HC / MPC-BE + nyaa.se PLAYBACK.txt ; K-Lite Codec Pack + MPC-HC (x64) + madVR (EVR, etc.); KDE media players; XMMP (Linux), foobar2000, (WinAmp), Modi/XBMC; Miro, ; 
 
 free video-editor apps: Davinci Resolve (FREEWARE video-editor), Hitfilm Express (FREEWARE video-editor, mainly for VFX & video-compositions), Shortcut.org (open-source/F(L)OSS, for MS Windows 7+, macOS, Linux, 32-bit or 64-bit), OpenShot, Kdenlive, Xinerama+Hugin, ffmpeg/libav (RTFM & man-pages&FAQs&superuser.com), WinFF-GUI, Lightworks Free (FREEWARE, MS Windows), VideoPad Video Editor (FREEWARE video editor for Windows 7+ (64-bit), Mac OS 10.5+, Google Android)
-
+commercial video-editor apps: Sony Vegas, Adobe Premiere Pro, 
+commercial 3D-editors: Amaya3D, Cinema4D, 3D-sculpting editors, open-source & freeware 3D editors & 3D-viewers; MagicaVoxel, Blender3D, POVRay, etc.
 
 ======
 
