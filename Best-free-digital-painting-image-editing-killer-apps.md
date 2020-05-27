@@ -88,7 +88,7 @@ http://hp.vector.co.jp/authors/VA033749/tips_azdw2/anim.html
 * [ImagePlay](https://github.com/cpvrlab/ImagePlay) OPEN-SOURCE
 * [Inkscape](https://inkscape.org/) (vector-images editor) OPEN-SOURCE _(HIGHLY RECOMMENDED)_
 * [iPaint (based on Paintbrush above, macOS)](https://sourceforge.net/projects/ipaint/) [2](http://ipaint.sourceforge.net/), [3](http://macfun.svn.beanstalkapp.com/ipaint/)
-* [JPixel (by emad.itch.io)](https://emad.itch.io/jpixel) _(HIGHLY RECOMMENDED)_
+* [JPixel (by emad.itch.io)](https://emad.itch.io/jpixel) _(HIGHLY RECOMMENDED)_ - 2D pixelart editor & animated-GIF editor, suitable for editing 2D gamedev jRPG-like sprites, tilesets, backgrounds, triangle-imposed vertices meshes, etc. + also see Croco3D/Crocodile3D 2D-to-3D pixelart voxel-gamedev editor + the latest AGS (Adventure Games Studio)&other free 2D/3D gamedev engines&IDEs..., etc.
 * [JS Paint (MS Paint for Windows98/XP remade using JavaScript!)](https://github.com/1j01/jspaint/) ([online](http://jspaint.app/))
 * [JugiPaint](http://jugipaint.com/) (commercial) _(RECOMMENDED)_
 * [JumpPaint by MediBang, official ShonenJump manga-drawing app!](https://medibangpaint.com/en/jumppaint/) [2](https://medibangpaint.com/en/app-download/#medibangpaint) + BRUSHES = https://medibangpaint.com/en/brush/ + MATERIALS = https://medibangpaint.com/en/material/ _(HIGHLY RECOMMENDED)_
@@ -179,7 +179,7 @@ http://hp.vector.co.jp/authors/VA033749/tips_azdw2/anim.html
 * [Unity UPA Toolkit (pixel-art editor)](https://assetstore.unity.com/packages/tools/painting/upa-toolkit-pixel-art-editor-27680)
 * [Verve Painter (OpenGLv3.2+, by Taron (Timur Baysal), comparable to SpeedyPainter!)](https://www.taron.de/verve/verve_download.html) [2](http://www.taron.de/forum/viewtopic.php?f=4&t=4&sid=07a35f6881f428464a8cb44b300a8d81), look@taron.de _(HIGHLY RECOMMENDED)_
 * [Wacintaki Poteto (oekaki)](http://www.ninechime.com/products/) [2](http://ninechime.com/deep/faq.php)
-* [WnSoft PixBuilder Studio](https://www.wnsoft.com/en/pixbuilder/) FREEWARE
+* [WnSoft PixBuilder Studio v2.2+](https://www.wnsoft.com/en/pixbuilder/) FREEWARE (has a cool Notepad++-menus-search-like Wox/Ulauncher-like menu search&launcher button/searchbar-hotkeys/keboard-shortcuts/keyboard-combinations/keyboard&/computer-mouse-gestures accelerator(-keys) for faster navigation...)
 * [XPaint](http://sf-xpaint.sourceforge.net/) [2](https://sourceforge.net/projects/sf-xpaint/) OPEN-SOURCE
 * [YellowBites WonderBrush (ONLY for BeOS and HaikuOS!)](http://yellowbites.com/wonderbrush.html)
 * [](?) (?)
@@ -614,7 +614,12 @@ https://amp.reddit.com/r/photography/comments/a6alpu/the_ultimate_list_of_photo_
 https://alternativeto.net/software/gimp/
 )
 
-#### Add the below entries:
+#### Add the below entries to the list above & re-sort the list alphabetically:
+
+* Procreate (drawing app for iOS & the latest pressure-sensitive-screen+sstylus iPad), example:
+Video-screencast example: https://www.instagram.com/p/CAnHfR-oJUd/?igshid=oq155qqr2gju
+* Adobe Photoshop (v6+, CC, ...)
+COREL Painter (v8–10+)
 
 * [Adobe Photshop (commercial, versions CC and up)](http://www.photoshop.com/), 
 * [Alchemy](http://al.chemy.org/)
