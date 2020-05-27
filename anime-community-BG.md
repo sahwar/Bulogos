@@ -54,21 +54,22 @@ https://www.natamno.com/
 * http://animemag.animerulezzz.org/ (defunct)
 
 Българоезични уебсайтове за анимета, манги, косплей, J-pop, K-pop, и съвременни азиатски култури:
-* http://animes.bg/
+* http://animes.bg/ & 
 * https://otaku.bg/
-* http://fridaychopsticks.reakcia.net/animes-bg.html (https://twitter.com/fridaychopstick)
+* http://fridaychopsticks.reakcia.net/animes-bg.html (https://twitter.com/fridaychopstick ) - Bulgarian podcast about Asian culture & arts (български подкаст за азиатска култура и изкуства)
 * http://animerulezzz.org/
 * http://forum.animes-bg.com/ (https://www.facebook.com/animesbg)
 * https://animes-portal.info/
 * https://www.facebook.com/nakamabg
 * https://www.utsukushii-bg.com/ (https://www.facebook.com/utsukushiiteam/?ref=hl (отбор за превод на манга))
 * http://sdc-bg.com/
-* http://cosplay-bg.com/
+* http://cosplay-bg.com/ (!)
 * https://anime.ludost.net/forum/
 * http://chise.ludost.net/ & https://anime.ludost.net/ (http://archive.is/OA47M) - "български откачен аниме и манга портал" - [Форуми](https://anime.ludost.net/forum) | [Оекаки (oekaki - онлайн дъска за рисуване в аниме/манга стил)](https://anime.ludost.net/forum/oekaki) | [Chise](http://chise.ludost.net/); включва и "OpenDC - An OpenDC Hub for unlicensed (e.g. legal) anime content - maintained by Vasil Kolev"; http://phoebe.ludost.net - Phoebe.ludost.net, anime storage (bg IP space only); Ако имате проект с не-стопанска цел и се чудите къде да го приютите, пратете ни e-mail на <requests[at]ludost.net>. Ние ще направим всичко, което е по силите ни, за да ви помогнем; https://marla.ludost.net/hosted/ (http://archive.is/Pcxgu)
 * http://ww1.anibg.info/ (404 Not found... ;( )
 * https://www.vbox7.com/playlist:2245635
 * анимета в торент тракери - arenabg.com, zamunda.net, zamunda.ch & etc.
+
 * http://bg.wondershare.com/download-streaming-media/top-anime-sites.html
 * http://aniboxin.blogspot.com/
 * https://www.anime-planet.com/
@@ -88,26 +89,63 @@ RPG/РПГ, фентъзи литература и настолни ролеви
 * https://www.shadowdance.info/forum/viewtopic.php?t=3170
 * https://www.shadowdance.info/forum/viewtopic.php?f=13&t=4079
 * http://king-cr.jp/special/slayers_revolution/
-* 
+* >>> http://powerofdragons by http://animeinn.net main founder&main editor (after ve4ernik left as main editor-in-chief!)
+
+
 
 PC/video/console gaming (гейминг; компютърни и видео игри) и merchandising (свързани артикули за продажба):
-* http://pcmania.bg/
+* http://pcmania.bg/ (!)
+the rivalry BG
+?!?
+PC!?! друго списание в България
+* http://gplay.bg
+* http://gaminggear.bg & http://ardes.bg & http://rmania.bg & http://plesio.bg & http://erabg.com & etc.
+* https://m.offnews.bg/tags/%D0%B3%D0%B5%D0%B9%D0%BC%D0%B8%D0%BD%D0%B3/
+
 * http://pcgamer.com
 * http://kotaku.com
-* http://polygon.com
+* http://polygon.com (!)
+* http://gameshack.us
+
 * https://www.pulsar.bg/
 * https://www.ozone.bg/
 * https://www.natamno.com/
 * https://pcworld.bg/
 * https://www.download.bg/
-* https://www.gog.com/
-* https://steamcommunity.com/
+
+* https://www.gog.com/ (!)
+* https://steamcommunity.com/ + SteamOS Linux + Valve Proton software + PlayOnLinux/Wine-staging + Mono/.NET
 * https://store.steampowered.com/
+* http://epicgames.com (!)
+* http://blizzard.com
+* http://dota2.com
+* Origin game platform
+* The Elder Scrolls III Morrowind & the TES games platform/web-store app
+* TeamSpeak VoIP app & Mumble/Mumbler chat + OBS & twitch.tv & FRAPS & bahraniapps.com GifCam&VClip + recordMyDesktop & MyDesktopRecorder + simpleDesktopRecorder & _ShareX_ + ... (.NET animated-GIF screenrecording), etc.
 * https://itch.io/ (пример с pixel-art editor app - https://emad.itch.io/jpixel)
 * https://gamicus.gamepedia.com/Codex_Gamicus
-* https://pcgamingwiki.com/wiki/Home
+* https://pcgamingwiki.com/wiki/Home (!!! - Pekka Kana 2 article!)
+* http://wikia.com
+* LAN-over-Ethernet-Internet video-gaming & video-games .ISO-mounter: LogMeIn Hamachi, Wippien, Tunngle; DAEMON Tools, http://fosshub.com -  , Alcohol 120%, magicISO, Linux ISO-as-FUSE-mounter, etc.
 
-Gamedev, game-art, open typography, and open-fonts making:
+* http://oldapps.com & http://old-games.com (!) & http://hotud.org (Home of the Underdogs - abandonwaria video-games & software)
+* http://caiman.us - directory of free video-games
+* http://adventuregamestudio.co.uk (AGS-latest; BlueCup)
+* http://creativeasylum.net
+* http://rpgmaker.net
+* http://aldorleagames.net (video-games by the author of Laxius Power I&II&III)
+* Debian Games Archive ; http://getdeb.org & http://launchpad.net & Medibuntu & Ubuntu Studio & Linux video-gaming distros
+* Wikipedia - List of freeware video games & List of open-source video games & free video-games on GitHub.com , gitlab.org , their own personal websites , etc.
+
+### Тропи и фигури и (мета)наративи и архетипи и лайтмотиви и сюжетни шаблони ввъв фикциите/измислените светове:
+* http://tvtropes.org
+* http://tropepedia.com (fork of TVtropes.org )
+* http://worldbuilding.stackexchange.com
+* http://en.wikipedia.org/wiki/Narratology & Template:Tropes & Template:Archetypes
+* + YouTube.com videos about The Hero's Journey & Marshall McLuhan's 'the medium is the message'
+* + group bubbles in sociobiology, social dynamics, cultural paradigm shifts, and socio-sexual hierarchy videos on YouTube.com + sexology research + ve4ernik's compilation sexology diagrams
+
+## Gamedev, game-art, open typography, and open-fonts making:
 * https://opengameart.org/
 * https://fontlibrary.org/
 * https://fontstruct.com/
@@ -1280,6 +1318,8 @@ https://www.pornhub.com/view_video.php?viewkey=ph58998d4ed2cb5&pkey=122151691
 https://spankbang.com/3ib94/video/mom+son+taboo+night+in
 https://i.imgur.com/wNYA1wy.gif
 https://www.reddit.com/r/Mother_son_incest/comments/euu5aw/thought_id_send_a_little_tease_from_work_working/ - baking mom is incest&inbreeding addict with her son(s)
+http://reddit.com/r/firstbornunicorn/
+http://reddit.com/r/cosplayporn
 https://www.reddit.com/r/WeLove2Explore/comments/f1t943/a_boy_in_a_while/?utm_source=share&utm_medium=ios_app&utm_name=iossmf
 --------------------------------------------------------------------------------
 
