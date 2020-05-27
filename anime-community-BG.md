@@ -1,3 +1,11 @@
+https://github.com/sahwar/Bulogos/blob/master/anime-community-BG.md
+
+Tags/етикети:
+аниме общност в България; аниме/анимета, манга/мангата/манги, хентай/hentai&eroge&ecchi, JAV (Japanese adult video) porn(ography)/pr0n, cosplay/косплей, K-pop/К-поп, Я-поп/джей-поп/J-pop, video-gaming/видео-гейминг, fandom merch/merchandise items, AnimeCon, MangaCon, HentaiCon, JAVcon, AVN Awards/porn Oscars, video-gaming convention (EEE, E3 = Electronic Entertainment Expo), anime/manga/hentai/JAV/cosplay figurines, fleshlights, 4chan.org/8chan.org/gelbooru.com Japanese-style imageboards, online oekaki/oakeki image-drawing whiteboards/applets/HTML5-powered user-submitted online art galleries, collabs, collaborative online Internet digital drawing/painting/image-editing/graphics-editing
+fan ezine, fandom ezine (ezine = e-magazine with multiple issues; Scribus & Adobe InDesign & pdf2htmlEX & img2pdf@GitHub (lossless), waifu2x image-super-resolution rescaler, pixelart rescaling/resampling/dithering/resizing algorithms, http://github.com/topics/hentai & etc.)
+
+------
+
 Определения (дефиниции) и теория
 - https://bg.wikipedia.org/wiki/Аниме
 - https://bg.wikipedia.org/wiki/Манга
@@ -11,6 +19,7 @@
 - http://animenewsnetwork.com
 - https://www.animenfo.com
 - https://anime-planet.com
+- http://anilist.co & MAL Updater (freeware software) + MAL auto-generated web-banner image
 - http://greenfishsoftware.org/gfsp.php (примерна програма за наслагване на полупрозрачен текст (например субтитри от файл със субтитри) върху части от екрана, полезна за гледане на филми, сериали, анимета, хентай и всякакво видео - от онлайн уебсайтове за поточно видео (web-streaming) (не много легално...))
 - http://youtube-dl.org & http://youtube-dl.org/downloads/latest/youtube-dl.exe
 
@@ -1010,6 +1019,10 @@ https://www.reddit.com/r/Incest_Gifs/
 https://www.reddit.com/r/Incest_Captions !
 https://www.reddit.com/r/taboocaptions !
 https://www.reddit.com/r/momson/ !
+/r/momcest
+/r/wincest
+/r/MILF_hentai
+/r/hentai_MILFs
 https://www.reddit.com/r/IncestVideos/ !
 https://www.reddit.com/r/IncestPorn/
 https://www.reddit.com/r/daddydaughter
@@ -1031,12 +1044,12 @@ https://www.reddit.com/r/orgy
 https://captionedincest.tumblr.com
 https://motherless.com
 http://milfmoza.com
-http://javincest.com
+http://javincest.com (!)
 https://theporndude.com
-http://pornhub.com
-http://xvideos.com
-http://youporn.com
-https://youjizz.com
+http://pornhub.com (!!!)
+http://xvideos.com (!)
+http://youporn.com (!) 
+https://youjizz.com (!)
 
 
 --------------------------------------------------------------------------------
@@ -1044,6 +1057,8 @@ https://youjizz.com
 https://javplay.me/
 http://javguru.com
 https://javplay.me/starring/shibuya-kaho/
+https://javfree.video/starring/shibuya-kaho/
+
 https://incest-hd.net/mom-is-sons-sex-slave-son-impregnates-mom-to-remind-her-who-she-belongs-to-pov-inbreeding-impregnation-hd-1080p-carmen-valentina-fifi-foxx-fantasies/
 https://incest-hd.net/mom-and-son-get-married-start-a-family-together-pov-impregnation-hd-1080p-carmen-valentina-fifi-foxx-fantasies/
 https://incest-hd.net/son-becomes-a-dad-mom-sons-family-pov-pregnant-mom-impregnation-inbred-hd-1080p-carmen-valentina-fifi-foxx-fantasies/
@@ -1064,15 +1079,15 @@ https://twitter.com/jyura777 = hentai
 
 https://www.reddit.com/r/AskReddit/comments/tt6gg/is_there_site_equivalent_to_imdb_but_for_porn/
 imdb for porn = http://www.iafd.com/
-Freeones.com
-chickepedia.com
+http://Freeones.com
+http://chickepedia.com
 
 http://pornhub.com
 http://youporn.com
 http://xvideos.com
 http://youjizz.com
 
-https://jav.guru/jav-studio-list/
+https://jav.guru/jav-studio-list/ (!!!)
 https://jav.guru/48586/jav-studios-official-websites/
 
 http://jav-paradise.com
@@ -1082,48 +1097,55 @@ http://javplay.me
 http://javguru.com
 http://javhd.com
 https://jav911.com/
-http://jav-720p.com
+http://jav-720p.com (!)
 https://javhub.net/
-https://javhub.me/
+https://javhub.me/ (!)
 http://gfycat.com
+http://redgif.com
 http://imgur.com (image upload - list of free online image hosting websites & list of free online video hosting websites & list of free online file-sharing websites/platforms)
 http://imgflip.com
 http://9gag.com
 http://motifake.com
-http://streamable.com - for free sharing of short videos
+http://pornifake.com
+
+http://streamable.com (!!!) & http://vcloud.com (?!?) - for free sharing of short videos
 
 http://youtube.com
 http://vimeo.com
 http://d.tube
+http://dailymotion.com
+
 http://fosstodon.org (a Mastodon instance; Mastodon is an open-source clone of Twitter.com)
 http://twitch.tv & OBS (open broadcaster software), 
 http://steamcommunity.com
 http://origin.com
 http://patreon.com
+( http://onlyfans.com , etc.)
 
 https://en.wikipedia.org/wiki/Pornography_in_Japan
-https://avn.com/porn-stars
+https://avn.com/porn-stars (!!!)
 http://www.iafd.com/deadporn/
 https://www.adultdvdtalk.com/price_search/release_calendar.asp
 
 http://theporndude.com
 
 http://hentairules.net
-http://hbrowse.com
-http://nhentai.net
+http://hbrowse.com (!)
+http://nhentai.net (!)
 http://hentai2read.com
 http://luscious.net
 http://doujin.me
 http://doujin.com
 http://doujins.com (!)
 http://doujin.com
-http://rule43.xxx
+http://rule34.xxx
 
 https://jav.guru/
 http://GravureTube.com
 http://Javloli.com
 http://Jav18.org
 http://CosplayPorn.me
+http://reddit.com/r/CosplayPorn
 ( http://nutaku.com - Nutaku - Free H games )
 
 http://watchseries.tv + http://opensubtitles.org (Zamunda Subs, arenabg Subs, subs.unacs Subtitles, etc. + Aegisub / Subtitle Workshop v5+/6+) + Greenfish Subtitle Player (gsp)
@@ -1166,6 +1188,8 @@ https://www.tabooporn.tv/ (!!!) - amazing incest porn
 https://familyporn.tv/videos/?sort_by=video_viewed
 https://familyporn.tv/videos/mom-son-porn-is-beautiful/ (25:25)
 https://familysinners.com/
+
+http://fetlife.com (!!!) - fetish online community online social network/media
 ---
 https://gfycat.com/gifs/search/momsonsex
 https://gfycat.com/angelicplayfularrowworm
@@ -1211,7 +1235,7 @@ semen tank; semen bath; multiple creampie gangbang @ xvideos.com
 https://www.reddit.com/user/-I-N-V-E-R-S-I-O-N-/
 https://www.reddit.com/r/momson/comments/afe28w/best_mom_son_porn_site/
 
-https://soundgasm.net
+https://soundgasm.net (!!! porn sex sounds!)
 https://soundgasm.net/u/Yknikyhslrig/Mom-Has-The-Talk-With-Her-Son
 https://www.reddit.com/r/gonewildaudio/comments/9et9mg/f4m_script_fill_mom_has_the_talk_with_her_son/
 
@@ -1286,8 +1310,9 @@ porn addict needs, but it's definitely not for everyone.'
 **Joke:**
 Question: What do men really want from women?
 
-Answer: This thing - https://www.scrolller.com/media/293a9f.mp4 (https://scrolller.com/r/cumsluts) - or this thing: https://b.thumbs.redditmedia.com/6m642y5RSCSHkiu6yL7-p3UYrm3pdpzAUVsGXsYHgHU.png - or this thing: becoming a strong and intelligent and fast-adapting man who has and supports his own harem of young women who are kept as breeding&inbreeding cumdumpster BDSM sex-slave housewives (but some of the women are dominatrices and/or are very skilled and very smart, so they help you earn (more) money & take care of the kids as mostly stay-at-home wives-moms!).
+Answer: This thing - https://www.scrolller.com/media/293a9f.mp4 (https://scrolller.com/r/cumsluts) - or this thing: https://b.thumbs.redditmedia.com/6m642y5RSCSHkiu6yL7-p3UYrm3pdpzAUVsGXsYHgHU.png - or this thing: becoming a strong and intelligent and fast-adapting man who has and supports his own harem of young women who are kept as breeding&inbreeding cumdumpster BDSM sex-slave housewives (but some of the women are dominatrices and/or are very skilled and very smart, so they help you earn (more) money & take care of the kids as mostly stay-at-home wives-moms of your biological kids!).
 
 Question: And what are the best women like?
 
 Answer: (THIS IS JUST [ve4ernik](https://sites.google.com/view/ve4ernik/)'s personal opinion!) The best woman is a mix of an intellectual/artist/scientist/philosopher, has average beauty (but beautiful face!), is a sex-goddess (but with a fertility-goddess complex and sex-obsessed!), [Pythia](https://en.wikipedia.org/wiki/Pythia) (wise), and [Catherine of Siena (1347–1380)](http://en.wikipedia.org/wiki/Catherine_of_siena) (saintlihood undertones and adamant loyalty), is versed in modern&contemporary pop-culture&pop-culture references (including American&European&Asian cultural products), and, the most important, is also a great mother of several kids (due to being sexually compatible with/identical to her man's sexual desires/tempo&sexual fetishes/kinks/paraphernalia & participating in regular roleplaying sex with him till old age...)
+(to paste some hyperlinks to ve4ernik's website & ve4ernik's facebook.com/iikurdov10 sex-related posts with his compilation images with commentaries within ... )
