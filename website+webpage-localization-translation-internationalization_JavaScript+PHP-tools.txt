@@ -1,0 +1,35 @@
+# THIS FILE IS IN DEVELOPMENT... There are some rough edges here and there...
+
+JavaScript-localization+PHP-and-HTML5+CSSv3-webpage-difflangs-localization.txt
+
+1. localize.js
+* https://alternativeto.net/software/localizejs/
+* https://www.npmjs.com/package/localize-js
+* https://localizejs.com/ = 'Localize - Website and App Translation - localizejs.com - Localize integrates with websites and applications to deliver multilingual experiences. Easily automate and translate your digital content with Localize.'
+2. https://dzone.com/articles/a-step-by-step-guide-to-javascript-localization-2
+3. https://github.com/coderifous/jquery-localize = 'query.localize.js. Build Status. A jQuery plugin that makes it easy to i18n your static web site. Synopsis. Lazily loads JSON translation files based on a simple ...'
+4. https://wordpress.org/plugins/localizejs/
+5. 
+https://www.wikidata.org/wiki/Q20760340
+https://stats.wikimedia.org/#/wikidata.org
+https://wikitech.wikimedia.org/wiki/Analytics/Systems/Wikistats_2#Localization
+
+## MAJOR JavaScript web frameworks:
+* jQuery
+* vuejs.org & https://vuejs.org/v2/guide/filters.html
+* react.js
+* amber.js
+* etc. (older: Yahoo!GUI)
+* SemanticUI library
+* (different) Google Material Design visual-language & Google Android GUI components
+* npm
+* Grunt (JavaScript)
+* Composer (PHP packages manager)
+* processing.js
+* (WebGL)
+* d3.js - 3D-Web WebGL library?!? WebGUI?!?
+* HTML5+CSSv3(+JavaScript) PowerPoint-alternatives for web slides & presentations - like http:/slideshare.com - but locally hosted & self-contained... Just customize & put on an USB-flashstick or email it, and then launch the files on a modern Acid2/Acid3-passing HTML5-capable web-browser (like Mozilla Firefox, Google Chrome / Chromium, Vivaldi, (Opera-old-fork?), etc.)
+* Dimensional Charting JavaScript Library (dc.js) - (Source)
+* https://github.com/crossfilter/crossfilter = Fast n-dimensional filtering and grouping of records. http://crossfilter.github.io/crossfil…
+* https://github.com/crossfilter/crossfilter
+* 
