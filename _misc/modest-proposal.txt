@@ -1,0 +1,68 @@
+A modest proposal for reducing mail traffic
+19961213
+D. J. Bernstein, djb@pobox.com
+
+It is depressing for those who travel through the world, from the
+heights of the Jungfraujoch to the depths of the Dead Sea, from the
+busy streets of New York through the old villages of Europe to the
+untamed jungles of Africa, to see that so many people must pay by the
+byte to surf the Internet. Parents who fetch a few files through FTP, a
+mere 50 or 100 terabytes of information, find that they can no longer
+afford to send their children, Dave and Virginia, to college. Dave and
+Virginia, unable to obtain honest work, are forced into lives of drug
+dealing and prostitution, at first sucking the blood of society and
+later taking up precious prison space that should be dedicated to
+international arms traffickers and other violent criminals.
+
+Surely, therefore, the reader will agree that every byte is sacred; that
+bandwidth must not be wasted. I therefore propose a few modest changes
+in how mail messages are transferred through the Internet.
+
+The fields "Received: ", "From: ", "Message-ID: ", "Subject: ", and
+"To: " may be abbreviated "R:", "F:", "M:", "S:", and "T:" respectively.
+A message has, on average, more than one Received field and nearly one
+of each of the other fields. Savings: over 31 bytes per message.
+
+Dates, normally written in the form "Thu, 25 May 1995 22:36:22 +0000",
+may easily be packed into ten symbols such as "801441382Z" measured in a
+standard epoch. A message has, on average, more than two dates. Savings:
+over 42 bytes per message.
+
+Received lines may omit the string "with SMTP " and repeated host names
+in comments. The strings "from", "by", "id", and "for" may be
+abbreviated "f", "b", "i", and "t"; bracketed IP addresses in comments
+may be squished down to 6 base64-encoded bytes; version numbers in
+comments may be easily encoded in three bytes by a common translation
+table. Savings: over 48 bytes per message.
+
+In SMTP, all greeting-line text past the host name and "ESMTP", and the
+similar text in response to HELO or EHLO, may be deleted. Successful
+responses to MAIL, RCPT, and QUIT may also be truncated, as they carry
+no useful information. Savings: over 301 bytes per message.
+
+The SMTP commands "HELO", "EHLO", "MAIL FROM:<", "RCPT TO:<", and "QUIT"
+may be abbreviated "H", "E", "M ", "R ", and "Q" respectively. Savings:
+22 bytes per message.
+
+ESMTP announcements in EHLO responses may be packed onto one line, such
+as "+EV8DT". Savings: over 36 bytes per message.
+
+8 bytes of a 7-bit message may be encoded straightforwardly into 7 8-bit
+bytes, saving 328 bytes of an average-sized message. Note that this does
+not apply to 8-bit messages, and it loses some of the 121 bytes
+previously gained in the message header. Savings: over 307 bytes per
+message, not counting headers of packets saved.
+
+This modest proposal adds up to a whopping 787 bytes per message---
+approximately 1/4 of all SMTP traffic. Of course, more sophisticated
+compression techniques are available, but I fear that they would scare
+away most implementors.
+
+There are a few who may object to my proposal, saying that mail traffic
+is under 5% of Internet traffic, and that any savings in mail traffic
+will be wiped out in a matter of days by growth in Web use. In response
+I implore them to remember Dave and Virginia, preying on the drug
+addicts of the next generation and the sexually dissatisfied men of the
+previous generation. How different their careers could have been if
+their parents had not downloaded so many terabytes of data! We must not
+abandon our children to such a fate.
