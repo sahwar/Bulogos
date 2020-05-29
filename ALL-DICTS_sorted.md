@@ -906,11 +906,13 @@
 NEW, you need to resort the whole file & then manually edit it to fix some parts of it like in the current text-corpus model...
 
 
-List of laws named after people
+Wikipedia - List of laws named after people
 List of laws
-List of Latin phrases
+List of Latin phrases (full)
 List of Greek phrases
 List of aphorisms
+List of occult terms
+List of philosophy terms
 Списък с български народни пословици, поговорки, афоризми, сентеции, крилати фрази, скоропоговорки, каламбури (езикови игри) и т.н. --- tangrabg.wordpress.com
 ---
 
@@ -929,6 +931,58 @@ znam.bg
 
 http://glosbe.com
 https://www.dict.com/bulgarian-english
+http://bab.la
+http://linguee.com
+http://tatoeba.org
+http://goldendict.sourceforge.net
+http://dict.org
+http://dicts.info (!!!)
 
-http://dict.cc
+http://josho.org
+http://mdbg.net
+http://rbe.bas.bg
+http://ibl.bas.bg
+http://thefreedictionary.com by Farlex (!)
+http://onelook.com (!)
+http://catb.org/~esr/jargon/
+http://tfodoc.com ?? (The Free Online/Internet Dictionary of Computing)
+http://urbandictionary.com
+http://bgjargon.com
+прикачени файлове с компилативни речници във Facebook групи на БГ преводачи и Фейсбук групата "КАКВО ОЗНАЧАВА"
+JWWWDICT - monash
+Artha dictionary app & WordNet + BulNet
+http://wordnik.com (!)
+
+http://talkoven.com
+http://t-rechnik.com
+http://
+( http://znam.bg )
+articles remived from Wikipedia & from YouTube & from Vimeo.com & from DailyMotion.com & from soundcloud.com & from wikia.com & from http://tvtropes.org & from Google.com & Google Cache & archive.org & loc.gov.us & from archive.today / archive.to
+http://onlinerechnik.com
+http://rechnik-bg.com
+http://t-rechnik.bg
+http://m.onlinerechnik.com/duma/%D0%B2%D0%B5%D1%87%D0%B5%D1%80%D0%BD%D0%B8%D0%BA
+http://rechnik-bg.com/
+https://frazite.com/
+http://rebusi.com/
+http://www.imenata.com/
+http://www.freelance.bg/
+http://fakturirane.eu/
+http://fakturirane.com/
+http://www.rebusi.com/izvestni-bylgari/
+http://rimichka.com
+http://slovored.com
+http://liternet.bg
+http://slovo.bg
+http://chitanka.info
+http://gramofonche.chitanka.info
+
+Translation Toolkit + Weblate + Mozilla Pantoon + SumatraPDF translation platform + Pylyglot & launchpad.net + github.com/ .tx/ & /contrib/locales/ & /po/ , gitlab.org & Gitea, & http://transifex.com & http://crowdin.com & http://translateproject.org & http://panlex.com & GitHub Archive Program & non-English Text Initiative + unicode.org + `iconv` (+BOM add-in) & `fefe` (charset convertor for Linux Terminal console shell), http://2cyr.com , etc.
+
+http://dict.cc (English<->German and multilingual online dictionary!!!)
+http://duden.de
+http://pons.bg
+http://gaberoff.bg
+http://bulgariandictionary.com & http://eurodict.com (the older UI was sorta better to webscrape!!!)
+
 https://www.google.com/search?q=enbg4dic&oq=enbg4dic&aqs=chrome..69i57j0l5.3589j0j4&sourceid=chrome&ie=UTF-8
