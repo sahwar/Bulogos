@@ -986,3 +986,104 @@ http://gaberoff.bg
 http://bulgariandictionary.com & http://eurodict.com (the older UI was sorta better to webscrape!!!)
 
 https://www.google.com/search?q=enbg4dic&oq=enbg4dic&aqs=chrome..69i57j0l5.3589j0j4&sourceid=chrome&ie=UTF-8
+
+---
+
+http://cl.bas.bg/hosted-journals-of-the-bulgarian-academy-of-sciences/philosophical-alternatives/philosophical-alternatives-basic-information
+философски речник на 
+
+http://projectoria.org/
+Списание "Философски алтернативи"
+Кратък философски речник на http://philosophy.evgenidinev.com/ 
+
+http://www.beinsadouno.com/board/forums/topic/15043-%D0%BA%D1%80%D0%B0%D1%82%D1%8A%D0%BA-%D1%84%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84%D1%81%D0%BA%D0%B8-%D1%80%D0%B5%D1%87%D0%BD%D0%B8%D0%BA/
+https://www.iep.utm.edu/ = Internet Encyclopedia of philosophy
+https://en.m.wikipedia.org/wiki/Stanford_Encyclopedia_of_Philosophy
+
+https://en.m.wikipedia.org/wiki/Philosophy_of_space_and_time
+
+http://dictcorrect.com/ = Корективен речник на чужди думи в българския език
+
+https://mobile.twitter.com/Philosophy2030
+https://www.gcls.org/internet-encyclopedia-philosophy
+https://plato.stanford.edu/
+https://pantheon.org/ (Encyclopedia Mythica)
+https://eol.org/ (Biology - Encyclopedia Of Life)
+https://openlibrary.org/
+http://archive.org/web/ & WebArchivePack (ArchiveBox project on github.com)
+https://openlibrary.org/
+https://www.dokuwiki.org/localization
+https://www.loc.gov/standards/iso639-2/php/English_list.php
+http://lib.ru
+
+https://www.congress.gov/bill/110th-congress/senate-bill/43?q=%7B%22search%22%3A%5B%22actionCode%3A%5C%2214000%5C%22+and+%28billIsReserved%3A%5C%22N%5C%22+or+type%3A%5C%22AMENDMENT%5C%22%29%22%5D%7D&s=1&r=1909
+https://www.congress.gov/bill/110th-congress/senate-bill/43?q=%7B%22search%22%3A%5B%22actionCode%3A%5C%2214000%5C%22+and+%28billIsReserved%3A%5C%22N%5C%22+or+type%3A%5C%22AMENDMENT%5C%22%29%22%5D%7D&s=1&r=1909
+
+https://libre.fm/
+http://last.fm
+http://soundcloud.com
+http://fosstodon.org
+https://libre.fm/
+https://libre.fm/
+https://libre.fm/
+https://podcloud.fr/
+http://buyuu.org
+https://podcloud.fr/
+https://personal-homepages.mis.mpg.de/kahle/
+https://help.goodreads.com/s/topic/0TO1H000000gjH3WAI/librarian-manual
+https://www.librarything.com/
+https://www.definitions.net/definition/gatch
+https://www.merriam-webster.com/
+http://dictionary.com
+https://etymonline.com
+http://alchemywebsite.com
+
+http://omnidictionary.com/
+https://www.hugedomains.com/domain_profile.cfm?d=omnidict&e=com
+http://www.britannica.com
+https://www.loc.gov/ (the USA Library of Congress)
+http://dumps.wikimedia.org
+http://wikipedia.org
+http://wikia.com
+http://tvtropes.org
+
+https://www.usa.gov/federal-agencies/library-of-congress
+http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+https://webarchive.nationalarchives.gov.uk/*/www.becta.org.uk/
+http://europarchive.org/?PHPSESSID=ab45df663819560de536874e0cea22a2
+nationallibrary.org
+http://www.esmis.government.bg/
+http://dv.government.bg
+http://parliament.bg
+http://www.esmis.government.bg/
+https://euralex.org/
+https://elex.is/euralex2020/
+https://eur-lex.europa.eu/homepage.html?locale=bg
+https://europa.eu/european-union/about-eu/agencies/cdt_bg (Център за преводи за органите на Европейския съюз (CdT))
+http://old.europe.bg/htmls/page.php?id=16290&category=230
+https://www.google.com/amp/s/m.dnes.bg/eu/2019/02/15/krai-na-apostilite-i-prevodite-na-dokumenti-v-es.402246/amp
+https://ec.europa.eu/info/departments/translation_bg (ГД „Писмени преводи“
+
+Генерална дирекция „Писмени преводи“ предоставя на Комисията писмен превод на текстове на и от 24-те официални езика на ЕС, а при необходимост — и на някои други езици. Това ведомство се занимава само и единствено с писмени текстове.
+
+Генерална дирекция „Писмени преводи“ (ГДПП))
+https://ec.europa.eu/info/publications/translation_bg
+https://ec.europa.eu/info/resources-partners/translation-and-drafting-resources_bg
+http://unicode.org/charts/
+https://www.google.com/search?q=%D0%BC%D0%B5%D0%B6%D0%B4%D1%83%D0%B8%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%BE+%D1%80%D1%8A%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE&oq=%D0%BC%D0%B5%D0%B6%D0%B4%D1%83%D0%B8%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%BE+&aqs=chrome.1.69i57j0l3.7396j0j4&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8
+https://publications.europa.eu/code/bg/bg-000100.htm
+( Brexit
+Във връзка с оттеглянето на Обединеното кралство от Европейския съюз в момента Службата за публикации на ЕС актуализира част от съдържанието на този уебсайт. Ако на уебсайта има съдържание, което все още не отразява оттеглянето на Обединеното кралство от Съюза, това не е умишлено и ще бъде коригирано в бъдеще.
+
+Последна актуализация: 30.4.2012 г.)
+https://publications.europa.eu/code/bg/bg-000100.htm
+(to add to BLSG Bulogos )
+https://www.google.com/url?sa=t&source=web&rct=j&url=http://publications.europa.eu/resource/genpub/PUB_OA3110655BGC_PDFX.1.4&ved=2ahUKEwji8aafi9jpAhXx-yoKHdoiDYkQFjABegQIBBAB&usg=AOvVaw0kom4kMYswxquigYe8Owmr&cshid=1590721560427
+https://op.europa.eu/bg/publication-detail/-/publication/e774ea2a-ef84-4bf6-be92-c9ebebf91c1b
+spotify
+netflix
+audible.com
+librivox.org & Mozilla Voice & Speech speech recordings website + MBROLA project + gespeaker + MBROLA + Toshko2 + FestivalTTS + espeak + GovoritelBG-ss + bacl.bg & BGSpeech2/BG SpeakLab2 + Balabolka TTS + etc.
+https://localfonts.eu/shop/cyrillic-script/munich-abecedarium/
+
+https://github.com/freenet/wiki/wiki/Projects
