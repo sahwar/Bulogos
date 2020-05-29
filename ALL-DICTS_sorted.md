@@ -1087,3 +1087,37 @@ librivox.org & Mozilla Voice & Speech speech recordings website + MBROLA project
 https://localfonts.eu/shop/cyrillic-script/munich-abecedarium/
 
 https://github.com/freenet/wiki/wiki/Projects
+
+https://en.m.wikipedia.org/wiki/Text_Encoding_Initiative
+http://tei-c.org
+panlex
+http://en.wikipedia.org/wiki/British_National_Corpus
+
+
+http://arxiv.org
+http://jstor.org
+http://academia.edu
+http://plos.com / plon ?
+http://en.wikipedia.org/wiki/Open_access
+https://en.m.wikipedia.org/wiki/Text_Encoding_Initiative.  & 
+
+http://tldp.org (The Linux Documentation Project)
+Shellscripting HOWTO
+pandoc.org & etc. ...
+http://textmechanic.com
+http://textpattern.org
+http://snipplr.com
+http://commandlinefu.com
+http://pastebin.com
+http://0bin.com
+dict.org
+regexp / PCRE2 & Boost.org regexp engine & Comparison of regex(p) engines
+http://caniuse.com
+http://mdn.mozilla.org
+Microsoft Localization
+Apple macOS & iOS localization
+SASS & LESS CSS-extending languages
+
+     
+http://sciencedaily.com
+http://newscientist.con
