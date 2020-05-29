@@ -1,0 +1,8 @@
+datetime-textformatting-formats-and-specifications.txt
+
+ISO8660 , etc.
++ българоезични формати за изписване на дати, часове, месеци и дни от седмицата - виж дискусията по темата в Уикипедия
+localize.js
+Windows7+ locale datetime/regional settings (possibly borrowed from Unicode's CLDR?)
+Linux's locale/localized datetime formats
+
