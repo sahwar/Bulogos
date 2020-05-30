@@ -44,7 +44,7 @@
 * http://venmo.com (собственост на _PayPal_)
 * **[TransferWise.com](https://transferwise.com/)**
 * _http://Revolut.com_
-* (ApplePay, GooglePlay store, phyre, Apple iTunes gift cards from Amazon.com, etc.)
+* (ApplePay, GooglePlay store & Google Pay, phyre, Apple iTunes gift cards from Amazon.com, etc.)
 * **[Patreon.com](https://www.patreon.com/)**
 * **[LiberaPay.com](LiberaPay.com)** (e.g. https://liberapay.com/Lutris/ ) (плащане на пари за разработчици (програмисти) на свободен софтуер и софтуер с отворен код)
 * **[Flattr.com](https://flattr.com/)**
@@ -53,16 +53,18 @@
 * ***SALT.bountysource.com*** - https://salt.bountysource.com/ (for open-source software projects, etc.) = 
 https://salt.bountysource.com/ (SALT - A crowdfunding platform that helps developers earn a monthly salary from open-source software) (e.g. https://salt.bountysource.com/teams/neovim)
 * https://opencollective.com
+* FSF GNU cash & cryptocurrencies ; etc.
+* http://cash.app (CashApp; MoneyApp); 
 * https://beerpay.io/ (e.g. https://beerpay.io/b3by/atom-clock?focus=wish )
 * https://www.fiverr.com/ , http://freelancer.com , https://utip.io/ ( https://utip.io/abandonwarefrance )
-* https://info.tellonym.me/ , http://ko-fi.com , Instagram PrestaShop / other free mart/online-personal-website-shop software и т.н.
+* https://info.tellonym.me/ , http://ko-fi.com , Instagram PrestaShop / other free mart/online-personal-website-shop software / crypto-paying websites ; и т.н.
 * за покупки и продажби: http://ebay.com (и другите домейни на ebay... тарифи: 
 https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4364 ), http://olx.bg , http://bazar.bg , http://wish.com и т.н.
-* Income Ideas (free Google Android app)
+* Income Ideas (free Google Android app) & Survival Manual app/guide for Google Android devices from Google Play : ' The app is based on the FM 3-05.70 Field Manual - but now it is a wiki (think of it as the Wikipedia of survival) ' ; 'https://imgflip.com/i/43cp3c
 
 * **Western Union (? Sorta reliable, mixed reviews.)** - https://www.westernunion.com/bg/en/terms-conditions-bg.html
 * **MoneyGram (? Sorta reliable, mixed reviews. Seems a bit more reliable than Western Union (?))** - http://moneygram.bg/
-* bitcoin (BTC) & other cryptocurrencies (???) (e.g. Etherium ETH, Litecoin LTC, etc.) [I PERSONALLY **DO NOT** RECOMMEND CRYPTOCURRENCIES AS A VIABLE ALTERNATIVE TO REGULAR CURRENCIES DUE TO Ponzi-scheme-like CONCERNS OVER THE NATURE&AIMS OF CRYPTOCURRENCIES/binary-options/ForEx (like casino gambling & lottary tickets...), but if you can buy/sell physical goods&services with cryptocurrencies at your current country (or some other target countries), then go for it!]
+* bitcoin (BTC) & other cryptocurrencies (???) (e.g. Etherium ETH, Litecoin LTC, --- see blockchain.info & do your own websearching via google.com, etc. etc.) [I PERSONALLY **DO NOT** RECOMMEND CRYPTOCURRENCIES AS A VIABLE ALTERNATIVE TO REGULAR CURRENCIES DUE TO Ponzi-scheme-like CONCERNS OVER THE NATURE&AIMS OF CRYPTOCURRENCIES/binary-options/ForEx (like casino gambling & lottary tickets...), but if you can buy/sell physical goods&services with cryptocurrencies at your current country (or some other target countries), then go for it!]
 http://cryptocompare.com/
 https://99bitcoins.com/ethereum/ethereum-mining/
 https://www.blockchain.com/btc/address/
