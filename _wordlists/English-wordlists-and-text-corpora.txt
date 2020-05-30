@@ -1,3 +1,6 @@
+http://en.wikipedia.org/wiki/British_National_Corpus
+BulNet by http://ibl.bas.bg & by http://bacl.bg & independent-researcher&private-consultant contributors working with scanned&OCR'd print books & in/at big local & national libraries&reading-room book-clubs (читалища)
+
 https://www.ssa.gov/OACT/babynames/
 https://www.ssa.gov/oact/babynames/limits.html
 https://www.ssa.gov/agency/plain-language/
@@ -17,6 +20,11 @@ https://github.com/collections/open-journalism
 (VARIOUS, EN, BG, NON-DICT, WORDLIST_GENERATE_FROM) https://dumps.wikimedia.org/ + https://dumps.wikimedia.org/other/pagecounts-raw/ + https://old.datahub.io/organization/wikimedia
 
 ...
+text corpuses pasted on http://github.com & http://gitlab.org & on private self-hosted overseas (Ireland, France, the Netherlands, Switzerland, etc.) Gitea git-repositories, etc.
+http://ngram.google.com (Google Ngrams & Google.com dictionary)
+http://en.wikiquote.org
+http://en.wiktionary.org
+http://dumps.wikimedia.org
 
 ------
 
