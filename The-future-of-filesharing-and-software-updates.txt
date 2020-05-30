@@ -2,7 +2,7 @@ https://github.com/sahwar/Bulogos/blob/master/The-future-of-filesharing-and-soft
 (originally posted on Facebook: 
 https://m.facebook.com/story.php?story_fbid=2916980481755183&id=100003297800205 )
 
-Last modified: 26-May-2020
+Last modified: 30-May-2020
 
 
 
@@ -14,6 +14,28 @@ AppImage's, flatpaks, Ubuntu snaps, and self-extracting 7-ZIP archives, and sour
 
 (+ compilation meta-websearch-engines that crawl & list all versions of all software on all Internet software/package repositories hosting the [version-controlled&datetime-stamped+filesize+description+tags+category+screenshots+screencasts+animatedGIFs(&user-generated version-controlled translations thereof into multiple languages)] software of the Linux-kernel-(GNU/)Linux-distros+derivative-kernels/Windows/macOS/GoogleAndroid/iOS/etc. 🙄 Some examples: pkgs.org , flathub.com , appimages.org , Fedora COPR repositories, ArchLinux AUR, Ubuntu snaps repositories & OpenSUSE app-building online service, AppVeyor/GitHub/GitLab/etc. ...)
 
-(&telepathy)
+(&[natural] telepathy)
 
 (cc) 2020 ve4ernik
+
+======
+
+TO ADD to the above list:
+
+OnionShare + RicochetIM; qTox - http://tox.im ; http://matrix.org ; xmpp.org XMPP-XEP + Jingle-XEP (implemented in Google Talk, Google Hangout(s), Google Meet, etc.)
+OwnCloud, NextCloud, SyncThing, Debian FreedomBox; the percloud concept + DWeb emerging tech-stack list pasted from an email poll that was sent to me & also quote(d)-pasted in(to?) the file sahwar-s-list-of-killer-apps.md .
+FilePizza, WebRTC, RTMP, RTTP(?), etc.
+.torrent technology, IRC-XDCC, magnet-links & DHT (&torrent technology extensions); DC++/ADC seeding hubs, etc. ; http(s)/(s)ftp diwnload mirrors hosted on the Internet ;
+AppImageKit, SystemImageKit; 
+freenode.net
+freeNAS (?)
+rackspace...
+whonix.org (Whonix Linux distro)
+http://identi.ca ; GNU Social ; *diaspora/diaspora* Facebook-clone ; 
+http://fosstodon.org ( http://mastodon.org ) - open-source Twitter clone
+http://d.tube - http://youtube.com clone , http://vimeo.com ; http://dailymotion.com
+etc.
+
+tech ecosystem ; tech stack;
+software (&OS-drivers & OS & hardware-technology) lifecycle , etc.
+
