@@ -1,0 +1,99 @@
+D:\___GitHub\Bulogos\_product-design\some-notable-differences-between-Microsoft-Windows-and-Linux-UNIX-like-OSs.txt
+
+I. Differences in the character being used to delimit parts of a filepath:
+
+SUMMARY: MS Windows uses `\` (backward(s) slash character) while Linux/UNIX/*NIX/UNIX-like OSs use `/` (forward(s) slash character) which is also used on the WWW (World Wide Web) of the Internet, e.g. `http://example.com/page.html`. These differences are usually automagickally adjusted in the recent versions of Linux Terminal/commandline-emulator/VT100-compatible-console apps and shells (like `bash`, `zsh`, etc.) BUT you must usually still use either escaping via 2 single-quote characters (e.g. `'...'`) or via 2 double-quote characters (e.g. `"..."`) when some filename and/or filepath contains any non-ASCII Unicode characters or when it contains non-printable ASCII characters (which are usually DISALLOWED for filenames and filepaths!) or whitespace(s) or tab(s) characters or just has too many punctuation characters which beg to be escaped via quotes for the purposes of purely visual readability...
+
+1. The filepath syntax in/under/on MS Windows (Microsoft Windows):
+
+````
+> D:\___GitHub\Bulogos\_product-design 
+````
+
+(Possible error scenarios:
+
+a) The filename contains invalid characters:
+
+"The filename cannot contain any of these [invalid] characters:"
+("Името на файл не може да съдържа никои от следните знаци: 
+` \ / : * ? " < > | ` " \[except whitespaces but these are usually discouraged and it is advised that they be replaced with some other substitute characters - like punctuation marks like '_' or '-', or shorthand/abbreviated ASCII names of some punctuation characters, etc.])
+
+b) The filename is too long for the NTSF filesystem's limits/constraints:
+
+"255-256-UTF-8-filename-length
+
+Целевият път е прекалено дълъг
+Имената на файловете ще бъдат твърде дълги за целевата папка.
+Опитайте отново с по-къси имена на файловете или опитайте
+местоположението с по-къс път."
+
+"Unable to open file D:\___GitHub\Bulogos\_misc\_IMAGES-collection\Singularity-software-build_and_run_example-screenshot_someone-who-you-reject-today-will-reject-you-tomorrow_linux-killerapps_to-add-to-Bulogos_philosophy-talkshow_to-add-to-Bulogos_to-add-to-ve4ernik's-podcast-ve4ernik-website.png in an external program. Please check you have a program associated with this file extension'
+explorer.exe
+Дължината на името или разширението на файла е твърде голяма."
+
+c) The file can't be opened for some reason...
+
+Example:
+"Unable to open file D:\___GitHub\Bulogos\_misc\_IMAGES-collection\Singularity-software-build_and_run_example-screenshot_someone-who-you-reject-today-will-reject-you-tomorrow_linux-killerapps_to-add-to-Bulogos_philosophy-talkshow_to-add-to-Bulogos_to-add-to-ve4ernik's-podcast-ve4ernik-website.png in an external program. Please check you have a program associated with this file extension"
+(This example is from the GitHub Desktop app, v.) 
+
+d) The maximum permissable filename length and the maximum permissable filepath length&depth, only in ASCII/Unicode UTF-8/UCS-2?/Unicode UTF-16LE character encoding ?
+
+Maybe it is 255 or 256 Unicode characters ( = 255-256-UTF-8-filename-length )
+or 8.3 (8+3 shorthand MS-DOS(-compatible)/`cmd.exe`-compatible shorthand filenames...)
+
+Maximum permissable filepath length&depth:
+???
+Maybe it is up to ?? (sub)folders depth...?
+
+(See:
+* http://en.wikipedia.org/wiki/NTFS
+for details!)
+
+NOTE:
+File associations management usually uses 2-5 characters after the `.` at the end of the filename so as to indicate the file format (filetype, the file('s) extension, the filetype extension).
+See e.g. http://fileformat.info
+
+2. The filepath syntax in/under/on Linux & UNIX-like OSs:
+
+````
+$ /home/dir/subdir/subsubdir/subsubsubdirectory/some-file.txt
+````
+(NOTE:
+It is usually a good idea to escape filenames that contain non-ASCII characters and whitespace(s) or tab(s) via single-quotes (e.g. '\home\some file.png') or double-quotes (e.g. "\home\some file.png").
+
+(similar to website URIs/URLs which you open with/via a modern [HTML5-capable Acid2-test-/Acid3-test-passing] web-browser...)
+
+Caveats/Limitations for Linux/UNIX/UNIX-like/macOS-MacOSX filenames and filepaths:
+
+These depend on the filesystem being used for the specific virtual partition of a physical hardware disk (HDD or SSD, etc.) which is/was virtually split into partitions via GParted or via GNOME Disk Management/Manager or via MS Windows7+'s `compmgmt.msc` app (you can run it via START -> Run... -> compmgmt.msc)...
+
+See:
+
+* http://en.wikipedia.org/wiki/ext2
+* http://en.wikipedia.org/wiki/ext3
+* http://en.wikipedia.org/wiki/ext4
+* http://en.wikipedia.org/wiki/btfs
+* http://en.wikipedia.org/wiki/reiser4
+* http://en.wikipedia.org/wiki/ZFS
+* http://en.wikipedia.org/wiki/XFS
+* http://en.wikipedia.org/wiki/Macintosh_filesystem
+* http://gparted.org & GNOME Disk Manager & MS Windows7(+)'s %windir%\system32\compmgmt.msc (starts/launches in `%HOMEDRIVE%%HOMEPATH%`)
+(Storage -> Disk Management)
+* http://kalilinux.org
+* http://systemrescuecd.org
+* http://en.wikipedia.org/wiki/Comparison_of_filesystems
+* http://wiki.archlinux.org - pages for filesystems
+
+II. Init scripts in Linux/UNIX/*NIX/UNIX-like OSs vs. the boot init-script system of the MS Windows7+ OSs:
+
+1. MS Windows7+ has its own boot manager... Check `compmgmt.msc` via START -> Run... - for more details... There is also a Boot Options in MS Windows7+'s Control Panel (also search for "стартиране" or "зареждане" via the MS Windows7's START menu searchbar)...
+
+2. Linux distros & UNIX OSs & UNIX-like OSs have their own different init-scripts:
+
+* for multiboot setups:
+- GNU `GRUB2` or some other multiboot launcher (like those supplied by http://rufus.akeo.io or by MultibootUSB or by the YUMI app for MS Windows or via  the RMSetupUSB app for MS Windows and by the HP USB Tool, etc.).
+See the online documentation on GNU GRUB2 on the Internet via doing a simple websearch/googling, etc.
+- http://initFreedom.org - a project run by the http://devuan.org developers; Devuan is a direct fork of Debian which removes the `systemd` initScript and uses other initScripts...
+- SysV, etc.
+* etc.
