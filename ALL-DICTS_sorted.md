@@ -913,7 +913,7 @@ List of Greek phrases
 List of aphorisms
 List of occult terms
 List of philosophy terms
-Списък с български народни пословици, поговорки, афоризми, сентеции, крилати фрази, скоропоговорки, каламбури (езикови игри) и т.н. --- tangrabg.wordpress.com
+Списък с български народни пословици, поговорки, афоризми, сентенции, крилати фрази, скоропоговорки, каламбури (езикови игри) и т.н. --- tangrabg.wordpress.com
 ---
 
 https://bg.wikibooks.org/wiki/%D0%91%D0%BE%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5 (Богословие)
