@@ -109,6 +109,11 @@ git clone https://github.com/sahwar/Bulogos.git
 * XMPP server provided by a friend: http://jappix.animerulezzz.org (direct your chat messages at sahwar/sahwar3; Bulgarian and/or English ONLY!);
 Information about [XMPP](https://en.wikipedia.org/wiki/XMPP)/Jabber: http://xmpp.org (I recommend the following chat clients: PidginIM, http://jitsi.im , http://tox.im (qTox or uTox), http://matrix.org , or any good free XMPP client for Google Android devices).
 
+## NOTE / БЕЛЕЖКА
+:us: :gb:  Some files are sometimes renamed, or removed, or moved around the folders, so in case you are looking for such a file, just see the git diffs log or download the entire project as a .zip and use these apps to find the file (while also randomly opening and quickly inspecting almost all files to find a specific renamed file): use http://voidtools.com Search Everything or `cmd.exe -> tree` (inside the unpacked folder of the .zip - under MS Windows), or FSearch (under Linux), or `ls` + `ffind` / `mlocate` (under Linux).
+
+🇧🇬 &#x1F1E7;&#x1F1EC;  Понякога някои файлове биват преименувани, или изтрити, или преместени из папките, та в случай, че търсите такъв файл, просто вижте дневника/хронологията с git diffs, или изтеглете целия проект като .zip файл и използвайте следните компютърни програми, за да намерите файла (като също така налучквате случайно напосоки в търсенето на файла като отворите и разгледате почти всички файлове, за да намерите даден конкретен преименуван файл): използвайте http://voidtools.com Search Everything или `cmd.exe -> tree` (вътре в папката с разархивирания .zip - за/под MS Windows), или използвайте FSearch (за/под Linux), или `ls` + `ffind` / `mlocate` (за/под Linux).
+
 ----
 
 :us: :gb:  This website is open-source. <a href="https://github.com/sahwar/Bulogos/edit/master/README.md">Propose edits to this webpage</a> ([GFM syntax](https://github.github.com/gfm/)).

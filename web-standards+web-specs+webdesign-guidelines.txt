@@ -16,6 +16,54 @@ https://compat.spec.whatwg.org/
 https://www.mozdev.org/
 Zen CSS garden...
 
++ this HTML5+CSS3+JavaScript-v6+-autocompletion-via-abbreviations tool/plug-in for text-editor apps (like Notepad++, Notepad2-mod, Notepad3, Notepadqq, Spacemacs, NeoVim, Emacsen, Cream Emacs/Vim, SublimeText2, CUDA Text, GitHub Atom, Adobe Brackets, BabelPad, etc. & for computer-programming/sofware-engineering IDEs) --- see also: the .php/.js script (hosted on my http://gist.github.org and also use SearchEverything to scan my PCs for those files...) written by Aleksandar Kamburov ( http://kamburov.net ) for me, by OmegaKO@animerulezzz.org & modified by me ( https://github.com/sahwar/Bulogos ) to do the same as https://docs.emmet.io/cheat-sheet/ does - but localized to the Bulgarian language (you can also do your own forks if you don't like my Bulgarian abbreviations of the HTML5/CSS3/JavaScript tags/keywords, etc.)!):
+
+````
+https://docs.emmet.io/
+https://docs.emmet.io/cheat-sheet/
+More developer tools:
+
+Emmet LiveStyle
+Real-time bi-directional edit tool for CSS, LESS and SCSS.
+Emmet Re:view
+Fast and easy way to test responsive design side-by-side.
+Emmet — the essential toolkit for web-developers
+Emmet is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow:
+
+Play demoTry it yourself
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Demo</title>
+</head>
+<body>
+    
+</body>
+</html>
+“Expand Abbreviation” (Tab key)
+“Next Edit Point” (Ctrl+Alt+→)
+“Previous Edit Point” (Ctrl+Alt+←)
+“Balance” (Ctrl+D)
+“Select Next Item” (Shift+Ctrl+.)
+“Select Previous Item” (Shift+Ctrl+,)
+“Toggle Comment” (Ctrl+/)
+▶ Watch demo
+Basically, most text editors out there allow you to store and re-use commonly used code chunks, called “snippets”. While snippets are a good way to boost your productivity, all implementations have common pitfalls: you have to define the snippet first and you can’t extend them in runtime.
+
+Emmet takes the snippets idea to a whole new level: you can type CSS-like expressions that can be dynamically parsed, and produce output depending on what you type in the abbreviation. Emmet is developed and optimised for web-developers whose workflow depends on HTML/XML and CSS, but can be used with programming languages too.
+
+Start learning Emmet with the abbreviation syntax and available actions.
+
+Download
+plugin for your favourite editor
+
+Support: info@emmet.io
+Created with DocPad and Gulp.js
+Minimal theme by orderedlist
+
+View page source on GitHub
+````
+
 (SmashingMagazine.com ?
 boingboing.net...
 lifehacker.com ...

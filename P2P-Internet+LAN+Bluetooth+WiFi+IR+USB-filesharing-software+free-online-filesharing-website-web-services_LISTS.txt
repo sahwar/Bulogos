@@ -3,6 +3,48 @@ free-online-filesharing-website-web-services_LISTS.md
 See:
 https://github.com/sahwar/Bulogos/blob/master/_cheatsheets/Digital%20Communications%20Protocols.pdf
 
+See also (the text after this quote below...):
+
+http://archive.is/HdAtK (backup of https://fastest.fish/ ) =
+````
+How to transfer large files online
+Comparison of the top file transfer tools & services based on customer reviews and usage insights.
+Fastest.Fish logo
+You can still use Fastest.Fish as a file transfer service for a limited time here.
+Our top picks
+Transferring large files is an age old issue. File transfer tools come and go and so do the best choices.
+Below is our curated list of the best tools to transfer large files online. You can help us improve our suggestions by giving us feedback and suggesting tools 😊
+Firefox Send preview	Firefox Send	2.5GB with sign in (1GB without)	No	Yes	Mozilla promotes their products via this tool
+Mega preview	Mega	50GB	No	Yes	Privacy focused service
+WeTransfer preview	WeTransfer	2GB	No	Yes	
+File pizza preview	File pizza	Unlimited	No	No	Peer to peer
+Google drive preview	Google drive	15GB	No	Yes	Lengthy signup required
+MiDrive Transfer preview	MiDrive Transfer	10GB	No	No	Download link is sent via email
+Swiss Transfer preview	Swiss Transfer	50GB	No	No	Run by a hosting company to promote their services
+MediaFire preview	MediaFire	1GB (4GB with signup)	Yes	No	Popular file sharing site
+
+Peer to peer file transfer tools
+Peer to peer tools can be very useful for transfering large files due to their generally high or non-existent file size limits. This is due to these tools not requiring an intermediary server which uses lots of expensive network bandwidth.
+The downside being that most of these tools require both parties to be online at the same time to use.
+Find out more about how peer-to-peer file transfers work
+Snapdrop preview	Snapdrop	Unlimited	No	No	Peer to peer file transfers with devices on the same network
+File pizza preview	File pizza	Unlimited	No	No	Peer to peer
+ShareDrop preview	ShareDrop	Unlimited	No	No	Peer to peer file transfers with devices on the same network
+Justbeamit preview	Justbeamit	Unlimited	No	No	Peer to peer file transfers with devices on the same network
+LinShare preview	LinShare	Unlimited	No	No	Peer to peer file transfers with devices on the same network
+App based file transfer techniques
+These tools either already come with your device or need to be installed as an app.
+AirDrop preview	AirDrop	Unlimited	No	Yes	Apple only. Wi-fi / Bluetooth based
+Android Beam preview	Android Beam	Unlimited	No	Yes	Android only. Not very reliable & very slow
+Send Anywhere preview	Send Anywhere	10GB	No	Yes	Android & Apple
+Other notable mentions
+Tools here are worth a mention but we don't include them in our top choice lists.
+Dropbox preview	Dropbox	2GB	No	Yes	Signup required
+Dropbox Transfer preview	Dropbox Transfer	100MB	No	No	Premium required for any reasonable file sizes
+transfer.sh preview	transfer.sh	10GB	No	Yes	Technical knowledge of command line tools recommended
+
+````
+
 https://www.gnu.org/server/irc-rules.en.html
 
 https://directory.fsf.org/wiki?title=Special:Ask&offset=10&limit=500&q=%5B%5BChat%3A%3Airc%5D%5D&p=mainlabel%3D%2Fformat%3Dtemplate%2Flink%3Dnone%2Ftemplate%3DGetlist-2Drow%2Fintrotemplate%3DGetlist-2Dintro%2Foutrotemplate%3DGetlist-2Doutro&po=%3FFull+description%3DDescription%0A%3FHomepage+URL%3DHomepage%0A%3FLicense%0A%3FIs+GNU%23%5B%5BFile%3AHeckert_gnu.tiny.png%5D%5D%2C%0A
@@ -102,3 +144,12 @@ http://remark42.org
 http://discourse.org
 (ElasticSearch & other huge-datasets regexp-based multiple-sort(ing)-algorithms-utilizing HTML5+CSS+JS WebUI strings&substrings-indexing interactive Unicode-capable search-engine systems?)
 
+to add:
+MediaTemple + more - add that text from my .txt hyperlinks + from my smartphone text-notetaking apps...
+
+================================================================================
+Etherpad2 (open-source app to collaboratively edit texts via a self-hosted HTML5 website)
+MediaTemple
+list of open-source oakaki/oakeki/oakeki imageboard software (like http://4chan.org or http://8chan.org , or http://gelbooru.com , etc.);
+http://git-scm.org
+---

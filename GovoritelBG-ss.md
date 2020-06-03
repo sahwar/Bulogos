@@ -24,7 +24,8 @@ _Theoretical foundations of this Bulgarian-language TTS (text-to-speech) engine/
 https://en.wikipedia.org/w/index.php?title=Bulgarian_phonology&oldid=880623002, https://bg.wikipedia.org/w/index.php?title=%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8_%D0%B5%D0%B7%D0%B8%D0%BA&oldid=8897355#%D0%A4%D0%BE%D0%BD%D0%B5%D1%82%D0%B8%D1%87%D0%BD%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0.
 
 _**Approximate letter-to-IPA-phoneme correspondence table for the contemporary Bulgarian language (for Standard [literary] Bulgarian)**_
-(the total number of phonemes is considered to be 45–48):
+(the total number of phonemes is considered to be 45–48; add them to this file: 
+https://github.com/sahwar/Bulogos/blob/master/diphones-combinations-bg.txt ):
 
 **Vowel phonemes** (theoretically considered to be 8 in total — /i/, /u/, /o/, /ɤ/, /ɛ/, /ɔ/, /ɐ/, /a/):
 

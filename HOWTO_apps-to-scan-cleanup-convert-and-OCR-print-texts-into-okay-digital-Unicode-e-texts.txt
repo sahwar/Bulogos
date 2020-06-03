@@ -1,0 +1,31 @@
+
+
+* ScanTailor: cleanup-scanned images app for OCR'ing = on sourceforge.net/p/scantailor/
+* I forget the name of that app: OCRoreader / OCRfeeder / OctoreaderOCR??? or something like that... it's an open-source OCR app with a GUI frontend and it has a Wikipedia article about/on it...
+* OCR apps hosted on http://github.com & on http://gitlab.org
+* pdf2htmlEX & img2pdf (both are on http://github.org or on http://gitlab.org) ; http://
+* Google/IBM/HP? `tesseract-ocr` + langpacks
+* `iconv` (it doesn't support Unicode-BOM last time I checked...) + `fluif`?
+* http://tools.chitanka.info - for .FB2 ... + http://calibre.org (Calibre eBook Reader) + google for freeware/open-source MS-Windows apps to make JavaME ebooks from .txt files with pixel-fonts - for use as apps on old dumbphones/feature-phones (NOT smartphones/phablets/tablets/smartwatches - which usually run Google Android, Apple, Inc. iOS, or even JollaOS or TizenOS, or http://puri.sm OS, etc.)...
+* http://pandoc.org (fileformats-convertor) --- e.g. conversion to .txt/.html (HTML5), and to ePub(v2/v3+?)
+* http://commonmark.org & GitHub-flavored Markdown
+* basic HTML5 skills...
+* a good text-editor app: e.g. Notepad++ (64-bit?), Notepad2-mod, Notepad3, Notepadqq, medit, NeoVim, Emacsen, Spacemacs, gVim, GNU Emacs, GeanyIDE, `nano`, `ed`, `fled`(???), GitHub Atom, Adobe Brackets, Microsoft VSCode, etc.
+* http://voidtools.com (Search Everything for MS Windows) - or FSearch under Linux
+* Unicode character maps:
+BabelMap, BabelMap online, gucharmap, KCharSelect; http://unicode.org/CHARTS/ & ftp://ftp.unicode.org/Public/UNIDATA/ & http://unicode.org/CLDR/ ; http://graphemi.ca
+* save your files as .txt or .html (Unicode UTF-8-noBOM/BOM)
+* if it's an OCR of a book with food-recipes, try using hRecipe from http://microformats.org
+* when saving a file with MS Office Word or with LibreOffice/OpenOffice.org, always use 'Embed all fonts and all glyphs' and when saving as a .pdf file, later use Adobe Acrobat Reader to embed/attach the original editable file... (similar to how LibreOffice does it with a special option, or how https://europass.cedefop.europa.eu/editors/bg/cv/upload ( https://europass.cedefop.europa.eu/editors/bg ; https://europass.cedefop.europa.eu/bg/taxonomy/term/86 ; https://europass.cedefop.europa.eu/bg/documents ; https://europass.cedefop.europa.eu/bg/resources/downloads ; https://europass.cedefop.europa.eu/bg/education-and-training-glossary ; https://europass.cedefop.europa.eu/europass2spreadsheet/ ; https://europass.cedefop.europa.eu/documents/curriculum-vitae/examples ) does it with their HTML5 online editor for CVs...)...
+* ocroread OCR artificial-neural-network (see http://github.com/advanced-search / )
+* PDF viewer: http://pdfreaders.org - e.g. SumatraPDF, FoxitReader, Adobe Acrobat DC PDF-reader, XpdfReader, muPDF, Okular, GNOME3/MATE PDF-reader, etc.
+
+
+
+* Scribus (F(L)OSS alternative to commercial Adobe InDesign)
+* Inkscape (F(L)OSS alternative to commercial Adobe Photoshop/Elements/etc.?)
+* Krita, paint.net (v?.??), GIMPv2, SpeedyPainter, Chasys Draw IES, azPainter/azPainter2/etc., etc. - see the article in http://animeinn.net - issue 10 + see the file:
+
+https://github.com/sahwar/Bulogos/blob/master/Best-free-digital-painting-image-editing-killer-apps.md
+
+...

@@ -1,0 +1,27 @@
+ArchiveOS+GitHub-ArchiveProgram+code-google-com-Archives+Microsoft-archives.txt
+
+(Следната идея е насочена към мафиотските „държавни институции“ на България, както и към университети и като идея за частни лица и корпорации, които разполагат с data-center/collocation уеб-сървъри с достатъчно празно пространство за използване за общественополезни цели...
+Думата „ArchiveOS“ е по идея на http://archiveos.org / .com - проект за съхраняване на вече изчезнали или неактивни Linux distros/distributions чрез кратка информация за тях, скрийншот на уебсайта им преди да паднат от Интернет, плюс download mirrors за последните версии на съответните премахнати/изчезнали/изоставени (abandonware) Linux дистрибуции... Това наподобява abandonware Internet portals като http://hotud.org ...)
+
+------
+
+ИДЕЯ:
+
+Всеки голям университет в България следва да има и да поддържа уеб-сървър, който подобно на http://ibiblio.org и на Университета на Крит, Гърция, да включва и download mirrors (HTTP/HTTP(S)/FTP/SFTP, .metalink/.meta4, .torrent tracker, DC++/ADC hubs, etc.) за свободно изттегляне на .iso/file-split&merge .zip-файлове - с последните 10 (главни) издания на top 25-100 Linux distros (примерно списъкът може да бъде взет от http://distrowatch.com & List of Linux distributions + GitHub&GitLab searching...) + Linux kernel versions ( http://kernel.org ) + http://dumps.wikimedia.org (архиви на bg.wikipedia.org / bg.wiktionary.org / bg.wikiquotes.org / bg.wikidata.org / etc. + en.wikipedia.org + en.wiktionary.org , etc.), плюс речници на българския език...
+
+Следва да му се сложи и лепенка кога последно са сменяни твърдите му дискове и дали им е направена S.M.A.R.T. проверка за хардуерни проблеми... и също лепенка със срока на годност на твърдите дискове - за да се прави на 1 месец или през 3-6-12 месеца диагностика дали са наред данните в твърдия диск - както и за да сменят с нови твърди дискове, когато трябва, и за да се копира цялото им съдържание на новите твърди дискове (примерно чрез rsync, zsync, Zstandard, FreeFileSync, .vhd / .iso архиви, или VirtualBox/Kubernetes/Docker архиви, или като checksum+files-splitting&merge (примерно чрез стабилна версия на http://7zip.org или друга стабилна и проверена за добра работа безплатна/open-source програма за file-split&merge?) на нацепен цял твърд диск, разцепен на много отделни файлове (с файлово разширение / filetype / fileformat от типа: .zip/.tar.lzip2/.tar.bzip/.7z/7-zip-self-extracting-archive/etc.), които файлова са именувани с поредни числа (подобно на текстовата commandline команда `split` в/под/за Linux/UNIX) като част от еднотипното име на всичките тези файлове...
+
+ВАЖНО УТОЧНЕНИЕ: С цел да не прегреят от изтегляния тези уеб-сървъри с download mirrors, следва да се сложат ограничения като максимум до 5 файла изцяло изтеглени от един IP address в рамките на 1 / 5 / 10 минути и максимум до 10 файла едновременно теглени от уеб-сървъра според unique IPv4/IPv6 address...
+Възможно е и уеб-хостинг чрез OnionShare + RicochetIM (Tor web-browser) / RetroShare, или като self-hosted git-хранилище (например gitea, или non-self-hosted: в github.com, gitlab.org, sourceforge.net, code.google.com, ... и т.н.)...
+
+http://librivox.org & Mozilla Voice?
+http://tatoeba.org
+http://jisho.org
+http://onelook.com
+http://dict.org
+http://dicts.info
+http://dict.cc
+http://eurodict.com
+
+
+
