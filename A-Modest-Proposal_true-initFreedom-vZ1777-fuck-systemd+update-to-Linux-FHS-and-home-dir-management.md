@@ -4,7 +4,7 @@
 'A modest proposal for reducing mail traffic
 19961213
 D. J. Bernstein, djb@pobox.com' ...
-However, this proposal here is about an extensing update to how the LINUX/UNIX/*NIX FHS (filesystem hierarchy standard) is implemented in the Linux kernel and all Linux-derived kernels.)
+However, this proposal here is about an extending update to how the LINUX/UNIX/*NIX FHS (filesystem hierarchy standard) is implemented in the Linux kernel and all Linux-derived kernels.)
 
 
 
