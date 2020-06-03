@@ -1,6 +1,8 @@
 datetime-textformatting-formats-and-specifications.txt
 
-ISO8660 = NO, it is actually ISO8601 :
+Формати и технически спецификации за текстово форматиране на щампи/щемпели/блокове с часовниковия час и календарната дата...
+
+ISO8660 = NO, it is actually __ ISO8601 __:
 https://en.m.wikipedia.org/w/index.php?title=ISO_8601&oldid=913163505
 , etc.
 + българоезични формати за изписване на дати, часове, месеци и дни от седмицата - виж дискусията по темата (стари дискусионни подстраници, споменаващи форматите за дати и часове от преди 1989 г. и с римски числа за означаване на месеца в датата) в българоизичната Уикипедия
@@ -10,27 +12,33 @@ Linux's locale/localized datetime formats
 http://kaksepishe.com & http://pavlinav.wordpress.com - мнението на Павлина Върбанова по темата
 http://neolog & http://ibl.bas.bg - мнението на "Написаното остава" от ИБЕ към/при БАН - една конкретна уебстраница от онлайн справочника им...
 
-Example 1 (from http://en.wikipedia.org ):
+Example 1 (from http://en.wikipedia.org footer & from diff/oldid sub-webpages ):
 
 
 
-Example 2 (from http://bg.wikipedia.org ):
+Example 2 (from http://bg.wikipedia.org footer & from diff/oldid sub-webpages):
 
 
 
-Example 3 (from http://bgoffice.sourceforge.net ):
+Example 3 (from http://bgoffice.sourceforge.net - the HTML datetime-stamp footer?):
 
 
 
-Example 4 (from ... )
+Example 4 (from https://github.com/sahwar/Bulogos/blob/master/_cheatsheets/README.Debian )
 
+````
+README.debian
+
+flare for Debian ---------------- You need bgtex-v2 from http://lml.bas.bg/~anton/ftp/ in order to build the pdf output.
+-- George Danchev <danchev@spnet.net>, Tue, 5 Oct 2004 11:06:15 +0300
+````
 
 
 Example 5 (from http://fsf.org & http://stallman.org & from http://eff.org ):
 
 
 
-Example 6 (from http://kernel.org ):
+Example 6 (from http://kernel.org - the footer & the mailing list MIME email datetime stamps?):
 
 
 
@@ -45,3 +53,12 @@ Last edited: 2020-04-25T09:03+03:00UTC EEST <strike(through)>~~EET~~~</strike(th
 Example 9 (from the MoinMoin wiki & from the TikiWiki wiki websites):
 
 ...
+
+Example 10 (the UNIX epoch datetime notation  ):
+
+'modest-proposal.txt' by http://cr.yp.to
+UNIX (used in Linux, too) epoch datetime notation, UNIX time:
+
+An example:
+
+https://github.com/sahwar/Bulogos/blob/master/_misc/TIME.txt
