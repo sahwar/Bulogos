@@ -1,8 +1,47 @@
 datetime-textformatting-formats-and-specifications.txt
 
-ISO8660 , etc.
-+ българоезични формати за изписване на дати, часове, месеци и дни от седмицата - виж дискусията по темата в Уикипедия
+ISO8660 = NO, it is actually ISO8601 :
+https://en.m.wikipedia.org/w/index.php?title=ISO_8601&oldid=913163505
+, etc.
++ българоезични формати за изписване на дати, часове, месеци и дни от седмицата - виж дискусията по темата (стари дискусионни подстраници, споменаващи форматите за дати и часове от преди 1989 г. и с римски числа за означаване на месеца в датата) в българоизичната Уикипедия
 localize.js
 Windows7+ locale datetime/regional settings (possibly borrowed from Unicode's CLDR?)
 Linux's locale/localized datetime formats
+http://kaksepishe.com & http://pavlinav.wordpress.com - мнението на Павлина Върбанова по темата
+http://neolog & http://ibl.bas.bg - мнението на "Написаното остава" от ИБЕ към/при БАН - една конкретна уебстраница от онлайн справочника им...
 
+Example 1 (from http://en.wikipedia.org ):
+
+
+
+Example 2 (from http://bg.wikipedia.org ):
+
+
+
+Example 3 (from http://bgoffice.sourceforge.net ):
+
+
+
+Example 4 (from ... )
+
+
+
+Example 5 (from http://fsf.org & http://stallman.org & from http://eff.org ):
+
+
+
+Example 6 (from http://kernel.org ):
+
+
+
+Example 7 (from MIME email-headers):
+
+
+
+Example 8 (from http://sites.google.com/view/ve4ernik ):
+
+Last edited: 2020-04-25T09:03+03:00UTC EEST <strike(through)>~~EET~~~</strike(through)> (EEST after 03:00 a.m. on 31st March 2019; (2019-09-19_T08:02:35. In 2020, the EEST summer time in Bulgaria begins at 03:00 a.m. on the 29th March 2020. EET is the normal winter-time East-European Time)(ISO 8601 datetime stamp format/notation style)
+
+Example 9 (from the MoinMoin wiki & from the TikiWiki wiki websites):
+
+...
