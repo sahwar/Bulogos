@@ -1,0 +1,15 @@
+animated-GIF-timestop-webcam-refreshable-image-every-xy-secs_+ftp-upload-via-shell-script-to-html-page_+WebRTC-audio+html5-AJAX-webchat.txt
+
+
+I read about this idea somewhere on the Internet and it is true! A girl was doing IRL-sexcam weblog/blogging/journaling life-/room-recording/surveiilance all the way back in the 1990s Web1.0 era via a similar hack method, no YouTube livestreams or twitch.tv or OBS or a modern ffmpeg/libav back then!!!
+
+This also be emulated via AHK (AutoHotKey.org) visual-programming scripts using headless-webbrowsers or http://bahraniapps.com GifCam/VClip or vokoscreen or refordMyDesktop/simpleScreenRecorder, VLC-video-capturing, etc. - to provide a sorta similar effect instead of an RTMP/RTSP live webstream for lectures & conferences,
+etc.
+
+There are also webcam apps for that for Linux like Cheese cam app, KDE/Qt webcam app, wxWidgets timestop-webcam app, etc.
+
+I also saw a similar GUI-frontend
+
+timestop-webcam app with ftp uploading to an html on a web-server on the Internet - in the software repositories of HaikuOS...
+
+And I was very impressed by a similar project that utilizes MPEG-1, MPEG-TS, MPEG-2 video, amd MJPEG - it had its own website but I forget the Internet address and the name of the project but it could have been something like mpeg1-live-webcady-webstream.js or something like that, I forgot...
