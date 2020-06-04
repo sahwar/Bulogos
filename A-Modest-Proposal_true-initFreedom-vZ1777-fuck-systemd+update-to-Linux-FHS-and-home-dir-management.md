@@ -9,7 +9,7 @@ However, this proposal here is about an extending update to how the LINUX/UNIX/*
 
 
 # A Modest Proposal For An Extending Update to the Default Linux kernel filesystem-hierarchy, by ve4ernik@gmail.com :
-> v2.1-BETA
+> v0.2.2-BETA
 
  Add a built-in (&later backward-compatible, forwards-compatible, and even backported to older releases/versions/editions of the Linux kernel!) Linux kernel module that sets the user-preferred FHS/FSHS (LSB) - filesystem hierarchy (dir tree structure): 
 
@@ -73,6 +73,30 @@ https://www.techrepublic.com/google-amp/article/linux-home-directory-management-
 9. ...
 
 10. ...
+
+https://www.google.com/search?q=can+a+linux+kernel+module+load+before+the+OS+init+script&oq=can+a+linux+kernel+module+load+before+the+OS+init+script&aqs=chrome..69i57.24136j0j4&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8
+
+https://en.wikipedia.org/w/index.php?title=Linux_startup_process&oldid=947770059
+
+https://www.google.com/search?q=can+a+linux+kernel+module+load+before+the+OS+init+script&oq=can+a+linux+kernel+module+load+before+the+OS+init+script&aqs=chrome..69i57.24136j0j4&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8
+
+https://opensource.com/article/18/5/how-load-or-unload-linux-kernel-module
+
+https://stackoverflow.com/questions/23741843/force-linux-kernel-to-load-before-processing-init
+
+https://wiki.archlinux.org/index.php/Kernel_module
+
+https://www.cyberciti.biz/faq/linux-how-to-load-a-kernel-module-automatically-at-boot-time/
+
+https://unix.stackexchange.com/questions/342417/explicit-kernel-module-load-at-startup
+
+https://www.oreilly.com/library/view/linux-device-drivers/0596005903/ch02.html
+
+https://www.tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
+
+https://books.google.bg/books?id=RpFf5yXdXu0C&pg=PA320&lpg=PA320&dq=can+a+linux+kernel+module+load+before+the+OS+init+script&source=bl&ots=FT8heJ8f-O&sig=ACfU3U0tmoycnWDJQIrEtWd4xcMmBWq9lw&hl=bg&sa=X&ved=2ahUKEwj36cqV8efpAhXUlFwKHbdcBHAQ6AEwEXoECAkQAQ#v=onepage&q=can%20a%20linux%20kernel%20module%20load%20before%20the%20OS%20init%20script&f=false
+
+
 
 ...
 
