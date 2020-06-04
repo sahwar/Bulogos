@@ -9,7 +9,7 @@ However, this proposal here is about an extending update to how the LINUX/UNIX/*
 
 
 # A Modest Proposal For An Extending Update to the Default Linux kernel filesystem-hierarchy, by ve4ernik@gmail.com :
-> v0.2.2-BETA
+> v0.2.2-BETA (this whole article is to be read as a semi-joke to be considered seriously...)
 
  Add a built-in (&later backward-compatible, forwards-compatible, and even backported to older releases/versions/editions of the Linux kernel!) Linux kernel module that sets the user-preferred FHS/FSHS (LSB) - filesystem hierarchy (dir tree structure): 
 
@@ -23,6 +23,7 @@ However, this proposal here is about an extending update to how the LINUX/UNIX/*
 	7 (same as 5) but with the 2) filesystem hierarchy), 
 	8-999999 = placeholders for user-specified, user-programmed (user-supplied, user-(in-)added) init scripts & user-supplied custom/mod Linux filesystem hierarchies (different from the default Linux FHS)...)...
 	(NOTICE: Should a user need more than 999999 init-scripts/FHS-alternatives, they/one/he/she may just hook one of these 9-999999 files to a bash Terminal shellscripting script that loads a table list of EVEN MORE deeper 'directory-depth-traversal' files that are symlinks to further datetime-stamped/custom-filetitles-format still-ASCII-alphanumeric-numbered files which contain even more init-scripts/FHS-alternatives...
+	
 	
 IMPORTANT NOTE:
 
@@ -49,6 +50,13 @@ always includes some universally-compatible .sh script that (re)translates the f
 combos of 'FHS-alternatives + init-scripts (& /home/ dir(rectory) management mechanisms also added there - like with the 2020 `systemd` bloatware hacks that we are seeing being added in...)'. That .sh script must also utilize quotes in the absolute/relative filepath (re)translation mechanism that it represents - so as to avoid any CLI problems due to filepaths including non-standard or not-okay text characters (like whitespaces, tabs, Unicode characters, non-printable ASCII control characters, etc.)...
 
 The last four pieces of recommended advice is to ensure backward(s)-compatibility and forward(s)-compatibility!!!
+
+POSSIBLE CAVEATS:
+* Can this kernel module load before the init script itself?
+* Performance metrics in comparison to systemd and other init scripts from http://initfreedom.org , etc.
+* Implement this as a small linux kernel module with an editable .conf/.sh script OR hardcore it into the Linux FHS???
+* Is it a good idea to consider at all? If it is implemented, what are some possible problems beside synchronous vs. asynchronous, and parallelism & parallel computing, and how it plays with process scheduling and background processes and active foreground processes, easy of use as an editable .conf/.sh script or a C-script, all with a default read-only original copy existing beside the used rwx active editable copy, etc. Do I even know what the fuck I am trying to say with all this??? 😅🤣 Are you at least not mildly interested and are you not at least mildly entertained by reading all of this spaghetti-code-like idea that I pulled out of my ass because systemd has gone too far and so they forked Debian as http://devuan.org ? 🤣 Do you not like MX Linux, ArtiX Linux, Debian/Ubuntu/Linux Mint, ArchLinux, Gentoo, Slackware, SliTaZ Linux, Puppy Linux (Ubuntu/Debian-based editions) & EasyOS, MinimalLinuxLive, LFS, BusyBox/Hairloom toolkit, etc.? 
+When will we get a subcommand to 'LC=bg_BG_variant009.UTF8' each of our CLI commands' `man` and `info` pages? 😅
 
 ## Relevant hyperlinks/references:
 
@@ -77,6 +85,13 @@ https://www.techrepublic.com/google-amp/article/linux-home-directory-management-
 https://www.google.com/search?q=can+a+linux+kernel+module+load+before+the+OS+init+script&oq=can+a+linux+kernel+module+load+before+the+OS+init+script&aqs=chrome..69i57.24136j0j4&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8
 
 https://en.wikipedia.org/w/index.php?title=Linux_startup_process&oldid=947770059
+
+````
+Linux startup process is the multi-stage initialization process performed during booting a Linux installation. It is in many ways similar to the BSD and other Unix-style boot processes, from which it derives.
+
+Booting a Linux installation involves multiple stages and software components, including firmware initialization, execution of a boot loader, loading and startup of a Linux kernel image, and execution of various startup scripts and daemons. For each of these stages and components there are different variations and approaches; for example, GRUB, LILO, SYSLINUX or Loadlin can be used as boot loaders, while the startup scripts can be either traditional init-style, or the system configuration can be performed through modern alternatives such as systemd or Upstart.
+
+````
 
 https://www.google.com/search?q=can+a+linux+kernel+module+load+before+the+OS+init+script&oq=can+a+linux+kernel+module+load+before+the+OS+init+script&aqs=chrome..69i57.24136j0j4&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8
 
