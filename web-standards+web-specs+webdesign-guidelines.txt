@@ -17,6 +17,28 @@ https://www.mozdev.org/
 Zen CSS garden...
 
 + this HTML5+CSS3+JavaScript-v6+-autocompletion-via-abbreviations tool/plug-in for text-editor apps (like Notepad++, Notepad2-mod, Notepad3, Notepadqq, Spacemacs, NeoVim, Emacsen, Cream Emacs/Vim, SublimeText2, CUDA Text, GitHub Atom, Adobe Brackets, BabelPad, etc. & for computer-programming/sofware-engineering IDEs) --- see also: the .php/.js script (hosted on my http://gist.github.org and also use SearchEverything to scan my PCs for those files...) written by Aleksandar Kamburov ( http://kamburov.net ) for me, by OmegaKO@animerulezzz.org & modified by me ( https://github.com/sahwar/Bulogos ) to do the same as https://docs.emmet.io/cheat-sheet/ does - but localized to the Bulgarian language (you can also do your own forks if you don't like my Bulgarian abbreviations of the HTML5/CSS3/JavaScript tags/keywords, etc.)!):
+http://emmet.io
+
+http://commandlinefu.com
+http://snipplr.com
+http://unix.stackexchange.com
+http://superuser.com
+http://askubuntu.com
+http://ubuntuforums.org
+http://omgubuntu.co.uk
+http://caniuse.com
+http://w3.org
+http://w3c.org
+http://whatwg.com - the HTML5 Living Standard
+http://unicode.org
+http://ieee.org
+http://ietf.org
+http://iso.org
+http://ipu.com (International Postal Union)
+http://bas.bg
+
+HTML5+CSS3+JS-abbreviations system - see online & add to Notepad++ --- http://emmet.io , etc.; CSS, SASS, SACS, LESS - CSS-extension languages, etc.
+
 
 ````
 https://docs.emmet.io/

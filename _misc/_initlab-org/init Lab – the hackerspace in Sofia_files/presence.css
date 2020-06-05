@@ -1,0 +1,14 @@
+.initlab_presence_widget_container > .row {
+	display: flex;
+	align-items: center;
+	margin-top: 1em;
+}
+
+.initlab_presence_widget_container > .row:first-child {
+	margin-top: 0;
+}
+
+.initlab_presence_widget_container > .row > .name {
+	margin-left: 1em;
+	font-weight: bold;
+}

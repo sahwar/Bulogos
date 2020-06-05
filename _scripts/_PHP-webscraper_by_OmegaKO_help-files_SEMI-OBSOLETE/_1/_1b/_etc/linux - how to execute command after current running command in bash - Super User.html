@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/QAPage">
+<head>
+
+<title>linux - how to execute command after current running command in bash? - Super User</title>
+    <link rel="shortcut icon" href="//cdn.sstatic.net/superuser/img/favicon.ico?v=29b26120d2c5">
+    <link rel="apple-touch-icon image_src" href="//cdn.sstatic.net/superuser/img/apple-touch-icon.png?v=0ad5b7a83e49">
+    <link rel="search" type="application/opensearchdescription+xml" title="Super User" href="/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@super_user" />
+    <meta name="twitter:domain" content="superuser.com"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="http://cdn.sstatic.net/superuser/img/apple-touch-icon@2.png?v=e869e4459439&a" />
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="how to execute command after current running command in bash?" />
+    <meta name="twitter:description" property="og:description" itemprop="description" content="I&#39;m downloading file with wget, and I want to turn off my computer after downloading will be finished, but I need to go somewhere now :) Is it possible to execute command in bash exacly when proces..." />
+    <meta property="og:url" content="http://superuser.com/questions/35179/how-to-execute-command-after-current-running-command-in-bash"/>
+    <link rel="canonical" href="http://superuser.com/questions/35179/how-to-execute-command-after-current-running-command-in-bash" />
+
+    
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="//cdn.sstatic.net/Js/stub.en.js?v=448dec9988d9"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.sstatic.net/superuser/all.css?v=57b9f4301030">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;how to execute command after current running command in bash?&#39;" href="/feeds/question/35179">
+            <meta name="twitter:app:country" content="US" />
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:iphone" content="871299723" />
+            <meta name="twitter:app:url:iphone" content="se-zaphod://superuser.com/questions/35179/how-to-execute-command-after-current-running-command-in-bash" />
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:ipad" content="871299723" />
+            <meta name="twitter:app:url:ipad" content="se-zaphod://superuser.com/questions/35179/how-to-execute-command-after-current-running-command-in-bash" />
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://superuser.com/questions/35179/how-to-execute-command-after-current-running-command-in-bash">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:1,shownCommentCount:1,highlightColor:'#BEB013',backgroundColor:'#FFF',questionId:35179});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('3', '35179');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text'); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.ready(function () {
+            StackExchange.realtime.init('wss://qa.sockets.stackexchange.com,ws://qa.sockets.stackexchange.com');
+            StackExchange.realtime.subscribeToReputationNotifications('3');
+                StackExchange.realtime.subscribeToTopBarNotifications('3');
+        });
+    </script>
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","serverTime":1445674316,"networkMetaHostname":"meta.stackexchange.com","routeName":"Questions/Show","styleCode":true,"enableUserHovercards":true,"snippets":{"enabled":false,"domain":"stacksnippets.net"},"site":{"name":"Super User","description":"Q&A for computer enthusiasts and power users","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LcDNwYAAAAAAG_X1rC8kTtLBP6XS2Ym1N0n9kSY","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"globalAuthDisabled":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"1bcbe1f47a0516cd756b6806bc1e8b8b","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"f2c817cce7d8","js/moderator.en.js":"322c4d17ca2c","js/full-anon.en.js":"e2c620f77356","js/full.en.js":"3648385182e4","js/wmd.en.js":"8919390a9d5e","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"4bbfbc475a1e","js/help.en.js":"79fd6664be3b","js/tageditor.en.js":"84750e4a4944","js/tageditornew.en.js":"c66980ab4dff","js/inline-tag-editing.en.js":"0d46482340f9","js/revisions.en.js":"df3cb25dfabf","js/review.en.js":"cf8d53a698db","js/tagsuggestions.en.js":"b278f9a0b23b","js/post-validation.en.js":"1bf673a32772","js/explore-qlist.en.js":"d33e3ab2f2e0","js/events.en.js":"551cd5386f3c","js/keyboard-shortcuts.en.js":"cf9f82256c33","js/external-editor.en.js":"798d36840831"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+    
+    
+</head>
+<body class="question-page new-topbar">
+    <noscript><div id="noscript-padding"></div></noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+
+<div class="topbar-dialog siteSwitcher-dialog dno">
+    <div class="header">
+        <h3><a href="//superuser.com">current community</a></h3>
+    </div>
+    <div class="modal-content current-site-container">
+        <ul class="current-site">
+                <li>
+                        <div class="related-links">
+            <a href="http://blog.superuser.com/" class="js-gps-track"     data-gps-track="site_switcher.click({ item_type:7 })"
+>blog</a>
+                    <a href="http://chat.stackexchange.com" class="js-gps-track"     data-gps-track="site_switcher.click({ item_type:6 })"
+>chat</a>
+            </div>
+
+
+
+
+    <a href="//superuser.com"
+       class="current-site-link site-link js-gps-track"
+       data-id="3"
+       data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-superuser" title="Super User"></div>
+        Super User
+    </a>
+
+                </li>
+                <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    
+
+
+
+    <a href="http://meta.superuser.com"
+       class="site-link js-gps-track"
+       data-id="77"
+       data-gps-track="
+            site.switch({ target_site:77, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-superusermeta" title="Meta Super User"></div>
+        Meta Super User
+    </a>
+
+                </li>
+                    </ul>
+    </div>
+    
+    <div class="header" id="your-communities-header">
+        <h3>
+your communities        </h3>
+            
+    </div>
+    <div class="modal-content" id="your-communities-section">
+            
+            <div class="call-to-login">
+<a href="https://superuser.com/users/signup?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fsuperuser.com%2fquestions%2f35179%2fhow-to-execute-command-after-current-running-command-in-bash" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:10 })"
+>Sign up</a> or <a href="https://superuser.com/users/login?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fsuperuser.com%2fquestions%2f35179%2fhow-to-execute-command-after-current-running-command-in-bash" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:11 })"
+>log in</a> to customize your list.
+            </div>
+    </div>
+    
+    <div class="header">
+        <h3><a href="//stackexchange.com/sites">more stack exchange communities</a></h3>
+        <a href="http://blog.stackoverflow.com" class="fr">company blog</a>
+    </div>
+    <div class="modal-content">
+            <div class="child-content"></div>
+    </div>
+</div>
+        </div>
+
+        <div class="network-items">
+
+            <a href="//stackexchange.com"
+               class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track"
+               data-gps-track="site_switcher.show"
+               title="A list of all 150 Stack Exchange sites">
+                <span class="hidden-text">Stack Exchange</span>
+            </a>
+
+    <a href="#"
+       class="topbar-icon icon-inbox yes-hover js-inbox-button"
+       title="Recent inbox messages">
+        <span class="hidden-text">Inbox</span>
+        <span class="unread-count" style="display:none"></span>
+    </a>
+    <a href="#"
+       class="topbar-icon icon-achievements yes-hover js-achievements-button "
+       data-unread-class=""
+       title="Recent achievements: reputation, badges, and privileges earned">
+        <span class="hidden-text">Reputation and Badges</span>
+        <span class="unread-count" style="display:none">
+            
+        </span>
+    </a>
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                    <a href="https://superuser.com/users/signup?ssrc=head&returnurl=http%3a%2f%2fsuperuser.com%2fquestions%2f35179%2fhow-to-execute-command-after-current-running-command-in-bash" class="login-link">sign up</a>
+                                <a href="https://superuser.com/users/login?ssrc=head&returnurl=http%3a%2f%2fsuperuser.com%2fquestions%2f35179%2fhow-to-execute-command-after-current-running-command-in-bash" class="login-link">log in</a>
+
+                        <a href="/tour">tour</a>
+                            <a href="#" class="icon-help js-help-button" title="Help Center and other resources">
+        help
+        <span class="triangle"></span>
+    </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                    <li>
+                        <a href="//meta.superuser.com" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                            Meta
+                            <span class="item-summary">
+                                Discuss the workings and policies of this site
+                            </span>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+                    </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="/search" method="get" autocomplete="off">
+                    <input name="q" type="text" placeholder="search" value="" tabindex="1" autocomplete="off" maxlength="240" />
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="/" >
+                    Super User
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                        <li class="youarehere"><a id="nav-questions" href="/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="/tags">Tags</a></li>
+                        <li><a id="nav-users" href="/users">Users</a></li>
+                        <li><a id="nav-badges" href="/help/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion"  href="/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content">
+            
+
+<div itemscope itemtype="http://schema.org/Question">
+    <link itemprop="image" href="//cdn.sstatic.net/superuser/img/apple-touch-icon.png?v=0ad5b7a83e49">
+			<!--googleoff: all-->
+
+<div id="herobox-mini">
+    <div id="hero-content">
+        <span id="controls">
+                <a href="/users/signup?ssrc=hero&amp;returnurl=http%3a%2f%2fsuperuser.com%2fquestions%2f35179%2fhow-to-execute-command-after-current-running-command-in-bash" id="tell-me-more" class="button">Sign up</a>
+            <span id="close"><a title="click to dismiss">&times;</a></span>
+        </span>
+        <div id="blurb">
+            Super User is a question and answer site for computer enthusiasts and power users. It&#39;s 100% free, no registration required.
+        </div>        
+    </div>
+    <script>
+        StackExchange.ready(function() {
+            var clickSource = $("body").attr("class") + '-mini';
+            var location = 0;
+            if ($("body").hasClass("questions-page")) {
+                clickSource = 'questionpagemini';
+                location = 2;
+            } else if ($("body").hasClass("question-page")) {
+                clickSource = 'questionpagemini';
+                location = 2;
+            } else if ($("body").hasClass("home-page")) {
+                clickSource = 'homepagemini';
+                location = 4;
+            }
+
+            $('#tell-me-more').click(function () {
+                StackExchange.using("gps", function () {
+                    StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+                });
+            });
+            $('#herobox-mini #close').click(function () {
+                StackExchange.using("gps", function () {
+                    StackExchange.gps.track("hero.action", { hero_action_type: "close", location: location }, true);
+                });
+                $.cookie("hero", "none", { path: "/", expires: 365 });
+                var $hero = $("#herobox-mini");
+                $hero.slideUp('fast', function () { $hero.remove(); });
+                return false;
+            });
+        });
+    </script>
+</div>
+			<!--googleon: all-->
+			<div id="question-header">
+                <h1 itemprop="name"><a href="/questions/35179/how-to-execute-command-after-current-running-command-in-bash" class="question-hyperlink">how to execute command after current running command in bash?</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="35179"  id="question">
+
+    <script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8476,"adzerk410741852",4).setZone(46); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk410741852">
+            </div>    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="35179">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">13</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="#" title="This is a favorite question (click again to undo)">favorite</a>
+        <div class="favoritecount"><b>9</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>I'm downloading file with wget, and I want to turn off my computer after downloading will be finished, but I need to go somewhere now :) Is it possible to execute command in bash exacly when process will be finished?</p>
+
+<p>I know that this works:</p>
+
+<pre>wget http://example.com/file.rar; shutdown now</pre>
+
+<p>But what if I type only:</p>
+
+<pre>wget http://example.com/file.rar</pre>
+    </div>
+    <div class="post-taglist">
+        <a href="/questions/tagged/linux" class="post-tag" title="show questions tagged &#39;linux&#39;" rel="tag">linux</a> <a href="/questions/tagged/bash" class="post-tag" title="show questions tagged &#39;bash&#39;" rel="tag">bash</a> 
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/q/35179" title="short permalink to this question" class="short-link" id="link-post-35179">share</a><span class="lsep">|</span><a href="/posts/35179/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2009-09-03 19:06:15Z" class="relativetime">Sep 3 '09 at 19:06</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/8756/inothemo"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/077dcbf17231e42113b4f708d0dee4df?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/8756/inothemo">inothemo</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">469</span><span title="3 gold badges"><span class="badge1"></span><span class="badgecount">3</span></span><span title="7 silver badges"><span class="badge2"></span><span class="badgecount">7</span></span><span title="13 bronze badges"><span class="badge3"></span><span class="badgecount">13</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</div>
+</td>
+        </tr>
+                
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-35179" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-37642" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Consider using &amp;&amp; and || instead of ;.  &amp;&amp; and || check the return value of the previous command before executing the next command...just in case wget fails, you may not want to shutdown.</span>
+                    &ndash;&nbsp;<a href="/users/10013/kfro"
+                       title="287 reputation"
+                       class="comment-user">KFro</a>
+                <span class="comment-date" dir="ltr"><span title="2009-09-08 00:27:20Z" class="relativetime-clean">Sep 8 '09 at 0:27</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-35179" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>        </table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								5 Answers
+                                <span style="display:none;" itemprop="answerCount">5</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="/questions/35179/how-to-execute-command-after-current-running-command-in-bash?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active">active</a>
+        <a href="/questions/35179/how-to-execute-command-after-current-running-command-in-bash?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest">oldest</a>
+        <a class="youarehere" href="/questions/35179/how-to-execute-command-after-current-running-command-in-bash?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes">votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="35190"></a>
+<div id="answer-35190" class="answer accepted-answer" data-answerid="35190"  itemscope itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="35190">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">27</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You can do something like this:</p>
+
+<ol>
+<li>stop execution of wget with ctrl-z (it's not stopped, it's suspended)</li>
+<li>put it into background (bg)</li>
+<li>run: wait; shutdown -h now</li>
+</ol>
+
+<p>wait will wait for all programs ran in background from current shell - i.e. this wget.</p>
+
+<p>After wait will finish - shutdown will go on.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/35190" title="short permalink to this answer" class="short-link" id="link-post-35190">share</a><span class="lsep">|</span><a href="/posts/35190/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2009-09-03 19:30:25Z" class="relativetime">Sep 3 '09 at 19:30</span>
+    </div>
+    <div class="user-gravatar32">
+        <span class="anonymous-gravatar"></span>
+    </div>
+    <div class="user-details">
+        user7385<br>
+        
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-35190" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-35309" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">don&#39;t forget to foreground (fg) your wget instance when done.  If wget is already running, you can put it into the foreground with ^z (control-z).</span>
+                    &ndash;&nbsp;<a href="/users/3128/andrew-scagnelli"
+                       title="1657 reputation"
+                       class="comment-user">Andrew Scagnelli</a>
+                <span class="comment-date" dir="ltr"><span title="2009-09-03 19:31:39Z" class="relativetime-clean">Sep 3 '09 at 19:31</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-35313" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">4</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">No need unless you really want to see the progress bar.</span>
+                    &ndash;&nbsp;<a href="/users/1711/dmckee"
+                       title="6017 reputation"
+                       class="comment-user">dmckee</a>
+                <span class="comment-date" dir="ltr"><span title="2009-09-03 19:32:30Z" class="relativetime-clean">Sep 3 '09 at 19:32</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-41047" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">No need since he is leaving the machine to itself and then shut down.</span>
+                    &ndash;&nbsp;<a href="/users/10150/wolf"
+                       title="2025 reputation"
+                       class="comment-user">Wolf</a>
+                <span class="comment-date" dir="ltr"><span title="2009-09-13 13:54:15Z" class="relativetime-clean">Sep 13 '09 at 13:54</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-35190" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8476,"adzerk1804651160",4).setZone(48); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk1804651160">
+            </div>
+  
+<a name="35191"></a>
+<div id="answer-35191" class="answer" data-answerid="35191"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="35191">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">10</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>In another shell, use</p>
+
+<pre><code>ps -u &lt;your username&gt; | grep wget
+</code></pre>
+
+<p>to find the PID of the command you want to wait on, then</p>
+
+<pre><code>wait &lt;PID&gt;; shutdown -h now
+</code></pre>
+
+<p>so that shutdown will not run until process  has terminated. See also <a href="http://superuser.com/questions/35179/how-to-execute-command-after-current-running-command-in-bash/35190#35190">depesz's answer</a>.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/35191" title="short permalink to this answer" class="short-link" id="link-post-35191">share</a><span class="lsep">|</span><a href="/posts/35191/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/35191/revisions" title="show all edits to this post">edited <span title="2009-09-03 19:44:08Z" class="relativetime">Sep 3 '09 at 19:44</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2009-09-03 19:30:25Z" class="relativetime">Sep 3 '09 at 19:30</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1711/dmckee"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/9100fb18460057e68cadc6132add0f7f?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1711/dmckee">dmckee</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">6,017</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="14 silver badges"><span class="badge2"></span><span class="badgecount">14</span></span><span title="34 bronze badges"><span class="badge3"></span><span class="badgecount">34</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-35191" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-1299478" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">+1, just a note: <code>wait</code> will only work for commands started from the same shell</span>
+                    &ndash;&nbsp;<a href="/users/216900/chriki"
+                       title="182 reputation"
+                       class="comment-user">Chriki</a>
+                <span class="comment-date" dir="ltr"><span title="2015-08-07 07:11:49Z" class="relativetime-clean">Aug 7 at 7:11</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-35191" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="36916"></a>
+<div id="answer-36916" class="answer" data-answerid="36916"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="36916">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">3</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>My solutions is this: suspend your long-running task with Control+Z, then type something like:</p>
+
+<pre><code>fg; echo "Done!"
+</code></pre>
+
+<p>If you want to run react differently based on the success or failure of your command, use &amp;&amp; and || as short-circuit operators.</p>
+
+<pre><code>fg &amp;&amp; echo "Success!" || echo "Failure!"
+</code></pre>
+
+<p>EDIT: This won't work with sudo, because it will ask for your password. I have, accordingly, removed the examples using sudo. If you need sudo for the second task, use another of the methods posted here.</p>
+
+<p>On the other hand, I believe that both GNOME and KDE offer ways to trigger a shutdown/reboot without using sudo, by sending an appropriate D-Bus signal or something.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/36916" title="short permalink to this answer" class="short-link" id="link-post-36916">share</a><span class="lsep">|</span><a href="/posts/36916/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/36916/revisions" title="show all edits to this post">edited <span title="2009-09-08 00:18:38Z" class="relativetime">Sep 8 '09 at 0:18</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2009-09-07 04:16:19Z" class="relativetime">Sep 7 '09 at 4:16</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/9121/ryan-thompson"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/fc668f00cde2d067aa7726bfb7a6ab33?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/9121/ryan-thompson">Ryan Thompson</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">5,199</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="25 silver badges"><span class="badge2"></span><span class="badgecount">25</span></span><span title="53 bronze badges"><span class="badge3"></span><span class="badgecount">53</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-36916" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-37130" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">+1 for <code>fg</code>..., but <code>sudo</code> could be a problem if it prompts you for a password</span>
+                    &ndash;&nbsp;<a href="/users/2087/mark4o"
+                       title="3584 reputation"
+                       class="comment-user">mark4o</a>
+                <span class="comment-date" dir="ltr"><span title="2009-09-07 07:56:52Z" class="relativetime-clean">Sep 7 '09 at 7:56</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-37636" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Hmm. Yes, I haven&#39;t used this trick for sudoing things when something finishes. For sudo, you&#39;d need a different trick. I&#39;ll edit my post accordingly.</span>
+                    &ndash;&nbsp;<a href="/users/9121/ryan-thompson"
+                       title="5199 reputation"
+                       class="comment-user">Ryan Thompson</a>
+                <span class="comment-date" dir="ltr"><span title="2009-09-08 00:13:53Z" class="relativetime-clean">Sep 8 '09 at 0:13</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-608414" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">For my purpose this answer is superior as it puts the process automatically back into the foreground</span>
+                    &ndash;&nbsp;<a href="/users/96252/cookie"
+                       title="319 reputation"
+                       class="comment-user">Cookie</a>
+                <span class="comment-date" dir="ltr"><span title="2012-11-20 17:35:35Z" class="relativetime-clean">Nov 20 '12 at 17:35</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-608417" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Also, passwords for sudo can be disabled (per user and per command) - if the user is allowed to shutdown via sudo this once, he might be allowed to do so always. A hostile shutdown might not be that dangerous in some cases - certainly not as dangerous as a compromised guest access on a running machine.</span>
+                    &ndash;&nbsp;<a href="/users/96252/cookie"
+                       title="319 reputation"
+                       class="comment-user">Cookie</a>
+                <span class="comment-date" dir="ltr"><span title="2012-11-20 17:37:12Z" class="relativetime-clean">Nov 20 '12 at 17:37</span></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-36916" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="35180"></a>
+<div id="answer-35180" class="answer" data-answerid="35180"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="35180">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Yes, just type out your second command and press enter. If your current program is scrolling text you can't see what you're typing correctly so watch your keys so you do it right.</p>
+
+<p>A smarter way is to switch to another TTY (CTRL+ALT+F1 through F6) and run the command simultaneously, or if you're using a command-line program like screen you could create a new window in it.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/35180" title="short permalink to this answer" class="short-link" id="link-post-35180">share</a><span class="lsep">|</span><a href="/posts/35180/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2009-09-03 19:10:33Z" class="relativetime">Sep 3 '09 at 19:10</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/9666/tom-wijsman"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/d3b75bb3bda58d5d4a7d31b820f856c9?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/9666/tom-wijsman">Tom Wijsman</a><br>
+        <span class="reputation-score" title="reputation score 43362" dir="ltr">43.4k</span><span title="17 gold badges"><span class="badge1"></span><span class="badgecount">17</span></span><span title="130 silver badges"><span class="badge2"></span><span class="badgecount">130</span></span><span title="209 bronze badges"><span class="badge3"></span><span class="badgecount">209</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-35180" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-35289" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">+1 for the first option. I&#39;m afraid I don&#39;t understand how the second option is supposed to work.</span>
+                    &ndash;&nbsp;<a href="/users/591/innam"
+                       title="6304 reputation"
+                       class="comment-user">innaM</a>
+                <span class="comment-date" dir="ltr"><span title="2009-09-03 19:16:19Z" class="relativetime-clean">Sep 3 '09 at 19:16</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-35574" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Pressing for example CTRL+ALT+F2 will switch you to a new second console where you can login and type a command, in this way you can run a second command there. Second, if you download screen (a program to use your console in a more fancy way) you can open up a second tab/window where you can again type commands, without having to login again. But as you need it simultaneously, you can stay with option 1, I don&#39;t think there is another way to achieve the same effect. Unless you use another TTY/window to check through a script if the process is still running. :-P</span>
+                    &ndash;&nbsp;<a href="/users/9666/tom-wijsman"
+                       title="43362 reputation"
+                       class="comment-user">Tom Wijsman</a>
+                <span class="comment-date" dir="ltr"><span title="2009-09-04 07:34:11Z" class="relativetime-clean">Sep 4 '09 at 7:34</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-608420" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Use the wait PID from dmckee&#39;s answer</span>
+                    &ndash;&nbsp;<a href="/users/96252/cookie"
+                       title="319 reputation"
+                       class="comment-user">Cookie</a>
+                <span class="comment-date" dir="ltr"><span title="2012-11-20 17:39:02Z" class="relativetime-clean">Nov 20 '12 at 17:39</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-35180" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="35185"></a>
+<div id="answer-35185" class="answer" data-answerid="35185"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="35185">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>If you want to get fancy, check the return status of the wget and only shutdown if it was successful.</p>
+
+<pre><code>% wget http://example.com/file.rar
+% if [ $? -eq 0 ]
+&gt; then
+&gt; shutdown now
+&gt; fi
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/35185" title="short permalink to this answer" class="short-link" id="link-post-35185">share</a><span class="lsep">|</span><a href="/posts/35185/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2009-09-03 19:22:52Z" class="relativetime">Sep 3 '09 at 19:22</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1048/doug-harris"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/731e7de87c241fce562d03b23770b5cf?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1048/doug-harris">Doug Harris</a><br>
+        <span class="reputation-score" title="reputation score 16071" dir="ltr">16.1k</span><span title="9 gold badges"><span class="badge1"></span><span class="badgecount">9</span></span><span title="51 silver badges"><span class="badge2"></span><span class="badgecount">51</span></span><span title="96 bronze badges"><span class="badge3"></span><span class="badgecount">96</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-35185" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-35317" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This is a good approach when scripting, but while <code>wget</code> runs you don&#39;t get a prompt back to build the test.</span>
+                    &ndash;&nbsp;<a href="/users/1711/dmckee"
+                       title="6017 reputation"
+                       class="comment-user">dmckee</a>
+                <span class="comment-date" dir="ltr"><span title="2009-09-03 19:35:43Z" class="relativetime-clean">Sep 3 '09 at 19:35</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-37639" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">You can combine this with my Control-Z and fg trick to get around that.</span>
+                    &ndash;&nbsp;<a href="/users/9121/ryan-thompson"
+                       title="5199 reputation"
+                       class="comment-user">Ryan Thompson</a>
+                <span class="comment-date" dir="ltr"><span title="2009-09-08 00:20:27Z" class="relativetime-clean">Sep 8 '09 at 0:20</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-35185" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+									<a name='new-answer'></a>
+						<form id="post-form" action="/questions/35179/answer/submit" method="post"  class="post-form">
+						    <input type="hidden" id="post-id" value="35179" />
+                            <input type="hidden" id="qualityBanWarningShown" name="qualityBanWarningShown" value="false" />
+                            <input type="hidden" name="referrer" value=""/>
+							<h2 class="space">Your Answer</h2>
+
+
+        
+
+<script>
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+       
+        StackExchange.using("externalEditor", function() {
+                // Have to fire editor after snippets, if snippets enabled
+                if (StackExchange.options.snippets.enabled) {
+                    StackExchange.using("snippets", function() {
+                        createEditor();
+                    });
+                }
+                else {
+                    createEditor();
+                }
+            });
+
+            function createEditor() {
+                prepareEditor({
+                    heartbeatType: 'answer',
+                convertImagesToLinks: true,
+                reputationToPostImages: 10,
+                bindNavPrevention: true,
+                postfix: "",
+                    onDemand: true,
+                    discardSelector: ".discard-answer"
+                    ,immediatelyShowMarkdownHelp:true
+                    });
+                
+
+        }
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor js-post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="1bcbe1f47a0516cd756b6806bc1e8b8b">
+        <input id="author" name="author" type="text">
+    </div>
+
+
+
+</div>
+							<div style="position: relative;">
+								
+								            <div class="form-item dno new-post-login">
+        
+                <div class="new-login-form">
+                    <div class="new-login-left">
+                        <h3>Sign up or <a id="login-link" href="/users/login?ssrc=question_page&returnurl=http%3a%2f%2fsuperuser.com%2fquestions%2f35179%2fhow-to-execute-command-after-current-running-command-in-bash%23new-answer">log in</a></h3>
+                        <script>
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        </script>
+                        <div class="preferred-login google-login">
+                            <p><span class="icon"></span><span>Sign up using Google</span></p>
+                        </div>
+                        <div class="preferred-login facebook-login">
+                            <p><span class="icon"></span><span>Sign up using Facebook</span></p>
+                        </div>
+                        <div class="preferred-login stackexchange-login">
+                            <p><span class="icon"></span><span>Sign up using Email and Password</span></p>
+                        </div>
+                    </div>
+                    <input type="hidden" name="manual-openid" class="manual-openid" />
+                    <input type="hidden" name="use-facebook" class="use-facebook" value="false" />
+                    <input type="hidden" name="use-google" class="use-google" value="false" />
+                    <input type="button" class="submit-openid" value="Submit" style="display:none" />
+                    <div class="new-login-right">
+                                <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tr>
+                    <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown" />
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', 'http%3a%2f%2fsuperuser.com%2fquestions%2f35179%2fhow-to-execute-command-after-current-running-command-in-bash%23new-answer', 'question_page');
+                    }
+                );
+            </script>
+            <noscript>
+                        <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tr>
+                    <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown" />
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+
+            </noscript>
+
+							</div>
+           
+															<div class="form-submit cbt">
+									<input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+									<a href="#" class="discard-answer dno">discard</a>
+
+<p class="privacy-policy-agreement">
+By posting your answer, you agree to the <a href='http://stackexchange.com/legal/privacy-policy' target='_blank'>privacy policy</a> and <a href='http://stackexchange.com/legal/terms-of-service' target='_blank'>terms of service</a>.</p>
+<input type="hidden" name="legalLinksShown" value="1" />								</div>
+						</form>
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you&#39;re looking for?							Browse other questions tagged <a href="/questions/tagged/linux" class="post-tag" title="show questions tagged &#39;linux&#39;" rel="tag">linux</a> <a href="/questions/tagged/bash" class="post-tag" title="show questions tagged &#39;bash&#39;" rel="tag">bash</a>  or <a href="/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2009-09-03 19:06:15Z"><b>6 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>16123 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="?lastactivity" class="lastactivity-link" title="2011-02-23 11:23:41Z">4 years ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </table>
+			    </div>
+						
+			<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8476,"adzerk2133428995",17).setZone(47); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk2133428995">
+            </div>
+			  
+    
+            
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer">
+<a href="/q/82421" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">14
+    </div>
+</a><a href="/questions/82421/how-to-execute-a-bash-script" class="question-hyperlink">How to execute a bash script?</a>
+</div>
+<div class="spacer">
+<a href="/q/344478" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">9
+    </div>
+</a><a href="/questions/344478/bash-execute-command-given-in-commandline-and-dont-exit" class="question-hyperlink">bash: execute command given in commandline and don&#39;t exit</a>
+</div>
+<div class="spacer">
+<a href="/q/361902" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">18
+    </div>
+</a><a href="/questions/361902/continuously-re-execute-a-command-when-it-finishes-in-bash" class="question-hyperlink">Continuously re-execute a command when it finishes in Bash</a>
+</div>
+<div class="spacer">
+<a href="/q/739457" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="/questions/739457/how-do-i-identify-shell-script-execution-vs-dot-execution" class="question-hyperlink">How do I identify shell script execution vs dot execution</a>
+</div>
+<div class="spacer">
+<a href="/q/756962" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">0
+    </div>
+</a><a href="/questions/756962/execute-the-shell-command-in-subshell-or-in-background" class="question-hyperlink">Execute the shell command in subshell or in background?</a>
+</div>
+<div class="spacer">
+<a href="/q/795837" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="/questions/795837/how-to-execute-a-command-within-a-bash-script" class="question-hyperlink">How to execute a command within a bash script?</a>
+</div>
+<div class="spacer">
+<a href="/q/823501" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="/questions/823501/can-bash-script-be-used-to-execute-sequential-and-event-driven-task" class="question-hyperlink">Can bash script be used to execute sequential and event-driven task?</a>
+</div>
+<div class="spacer">
+<a href="/q/866335" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">4
+    </div>
+</a><a href="/questions/866335/execute-command-in-between-a-bash-pipe-row" class="question-hyperlink">Execute command in-between a bash pipe row &hellip;?</a>
+</div>
+<div class="spacer">
+<a href="/q/871854" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="/questions/871854/does-bash-have-cache-of-executables" class="question-hyperlink">Does Bash have cache of executables?</a>
+</div>
+<div class="spacer">
+<a href="/q/949143" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="/questions/949143/this-bash-command-runs-on-osx-but-not-on-busybox-why" class="question-hyperlink">This bash command runs on OSX but not on Busybox ..why?</a>
+</div>
+
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="//stackexchange.com/questions?tab=hot" 
+           class="js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li >
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/33305574/why-does-removing-the-const-keyword-result-in-segmentation-fault-here" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why does removing the const keyword result in segmentation fault here?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-aviation" title="Aviation Stack Exchange"></div><a href="http://aviation.stackexchange.com/questions/22316/why-do-turbofan-blade-tips-exceed-the-speed-of-sound-while-prop-tips-should-not" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:528 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why do turbofan blade tips exceed the speed of sound while prop tips should not?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-space" title="Space Exploration Stack Exchange"></div><a href="http://space.stackexchange.com/questions/12402/why-are-there-so-few-lunar-rovers" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:508 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why are there so few lunar rovers?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/282114/is-there-a-single-word-that-means-strange-object" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is there a single word that means &quot;strange object&quot;?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/33266420/why-cant-dead-code-detection-be-fully-solved-by-a-compiler" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why can&#39;t dead code detection be fully solved by a compiler?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/105467/what-is-hermione-grangers-ethnicity" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What is Hermione Granger&#39;s ethnicity?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-unix" title="Unix &amp; Linux Stack Exchange"></div><a href="http://unix.stackexchange.com/questions/237221/why-do-i-have-to-use-sudo-for-almost-everything" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:106 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why do I have to use sudo for almost everything?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-history" title="History Stack Exchange"></div><a href="http://history.stackexchange.com/questions/26039/what-was-the-cleanest-war-ever-fought" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:324 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What was the cleanest war ever fought?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/61115/make-your-language-unusable" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Make your language unusable
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/282227/the-term-for-singing-in-a-very-sad-way" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    The Term for Singing in a Very Sad Way
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-photo" title="Photography Stack Exchange"></div><a href="http://photo.stackexchange.com/questions/70297/can-i-make-commercial-use-of-an-image-which-is-readily-available-but-with-unclea" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:61 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can I make commercial use of an image which is readily available but with unclear licensing?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/56727/is-academia-really-just-a-huge-competition" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is Academia really just a huge competition?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1494625/unconventional-mathematics-books" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Unconventional mathematics books
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-parenting" title="Parenting Stack Exchange"></div><a href="http://parenting.stackexchange.com/questions/22657/too-many-languages" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:228 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Too many languages?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/56749/how-to-quiet-noisy-undergrads-students-during-lecture" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to quiet noisy undergrads students during lecture
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-blender" title="Blender Stack Exchange"></div><a href="http://blender.stackexchange.com/questions/40453/creating-a-mesh-similar-to-the-image" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:502 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    creating a mesh similar to the image:
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/70192/casting-spells-at-close-range-as-a-cleric" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Casting Spells at close range as a Cleric
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/61574/coin-tossing-time-travelers" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Coin Tossing Time Travelers
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-travel" title="Travel Stack Exchange"></div><a href="http://travel.stackexchange.com/questions/57822/pedestrian-guide-to-cross-the-road-in-london" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:273 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Pedestrian guide to cross the road in London?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-gamedev" title="Game Development Stack Exchange"></div><a href="http://gamedev.stackexchange.com/questions/110109/how-can-i-stop-players-from-cheating-on-puzzle-levels-by-finding-solutions-on-th" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:53 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How can I stop players from cheating on puzzle levels by finding solutions on the web?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-unix" title="Unix &amp; Linux Stack Exchange"></div><a href="http://unix.stackexchange.com/questions/238180/execute-shell-commands-in-python" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:106 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Execute shell commands in Python
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-salesforce" title="Salesforce Stack Exchange"></div><a href="http://salesforce.stackexchange.com/questions/97030/where-is-a-good-starting-place-for-a-salesforce-crm-online-training-qualificatio" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:459 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Where is a good starting place for a Salesforce CRM online training qualification?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-crypto" title="Cryptography Stack Exchange"></div><a href="http://crypto.stackexchange.com/questions/30050/one-time-pads-and-reuse-of-the-decrypted-message" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:281 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    One Time Pads and reuse of the decrypted message?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/28211/how-can-i-get-my-delorean-to-88-miles-per-hour-without-a-train" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How can I get my DeLorean to 88 miles per hour without a train?
+                </a>
+
+            </li>
+    </ul>
+
+        <a href="#" 
+           class="show-more js-show-more js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:3, location:11 })">
+            more hot questions
+        </a>
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="/feeds/question/35179" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/35179/ivc/8315');});
+</script>
+<noscript>
+    <div><img src="/posts/35179/ivc/8315" class="dno" alt="" width="0" height="0"></div>
+</noscript><div style="display:none" id="prettify-lang">lang-bsh</div></div>
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                        <a href="/tour">tour</a>
+                    <a href="/help">help</a>
+                    <a href="http://blog.superuser.com/?blb=1">blog</a>
+                        <a href="http://chat.stackexchange.com">chat</a>
+                    <a href="http://data.stackexchange.com">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackexchange.com/work-here">work here</a>
+                    <a href="http://stackexchange.com/mediakit">advertising info</a>
+
+                    <a onclick='StackExchange.switchMobile("on")'>mobile</a>
+                    <b><a href="/contact">contact us</a></b>
+                        <b><a href="http://meta.superuser.com">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tr>
+            <th colspan=3>
+                Technology
+            </th>
+            <th >
+                Life / Arts
+            </th>
+            <th >
+                Culture / Recreation
+            </th>
+            <th >
+                Science
+            </th>
+            <th >
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="//stackoverflow.com" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="//serverfault.com" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="//superuser.com" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="//webapps.stackexchange.com" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="//askubuntu.com" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="//webmasters.stackexchange.com" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="//gamedev.stackexchange.com" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="//tex.stackexchange.com" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="//programmers.stackexchange.com" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="//unix.stackexchange.com" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="//apple.stackexchange.com" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="//wordpress.stackexchange.com" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="//gis.stackexchange.com" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="//electronics.stackexchange.com" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="//android.stackexchange.com" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="//security.stackexchange.com" title="information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="//dba.stackexchange.com" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="//drupal.stackexchange.com" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="//sharepoint.stackexchange.com" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="//ux.stackexchange.com" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="//mathematica.stackexchange.com" title="users of Mathematica">Mathematica</a></li>
+                        <li><a href="//salesforce.stackexchange.com" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="//expressionengine.stackexchange.com" title="administrators, end users, developers and designers for ExpressionEngine&#174; CMS">ExpressionEngine&#174; Answers</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (13)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//photo.stackexchange.com" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="//scifi.stackexchange.com" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="//graphicdesign.stackexchange.com" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="//movies.stackexchange.com" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="//cooking.stackexchange.com" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="//diy.stackexchange.com" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="//money.stackexchange.com" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="//academia.stackexchange.com" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (9)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//english.stackexchange.com" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="//skeptics.stackexchange.com" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="//judaism.stackexchange.com" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="//travel.stackexchange.com" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="//christianity.stackexchange.com" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="//gaming.stackexchange.com" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="//bicycles.stackexchange.com" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="//rpg.stackexchange.com" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (21)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//math.stackexchange.com" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="//stats.stackexchange.com" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="//cstheory.stackexchange.com" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="//physics.stackexchange.com" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="//mathoverflow.net" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="//chemistry.stackexchange.com" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="//biology.stackexchange.com" title="biology researchers, academics, and students">Biology</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (5)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//stackapps.com" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="//meta.stackexchange.com" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="//area51.stackexchange.com" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="//careers.stackoverflow.com">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</table>
+                </div>
+            </div>
+
+            <div id="copyright">
+                site design / logo &#169; 2015 Stack Exchange Inc; user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2015.10.23.2901
+            </div>
+            
+        </div>
+    </div>
+    <noscript>
+        <div id="noscript-warning">Super User works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    ados.run.push(function () { ados_setKeywords('linux,bash');; ados_load(); });         
+</script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-5620270-3');
+                        ga('set', 'dimension2', '|linux|bash|');         ga('send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+            qc.async=true;
+            qc.src=(ssl?'https://secure':'http://edge')+'.quantserve.com/quant.js';
+            s.parentNode.insertBefore(qc, s);
+            var sc=document.createElement('script');
+            sc.async=true;
+            sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+            s.parentNode.insertBefore(sc, s);
+        })();
+        _comscore.push({ c1: "2", c2: "17440561" });
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>
+            
+    </body>
+</html>

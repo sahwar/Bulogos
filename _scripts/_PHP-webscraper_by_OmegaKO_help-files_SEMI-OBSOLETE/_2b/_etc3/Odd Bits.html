@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Odd Bits</title>
+    <meta name="description" content="">
+    <meta name="author" content="Lars Kellogg-Stedman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://blog.oddbit.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="http://blog.oddbit.com/theme/bootstrap.min.css" rel="stylesheet">
+    <link href="http://blog.oddbit.com/theme/bootstrap.min.responsive.css" rel="stylesheet">
+    <link href="http://blog.oddbit.com/theme/local.css" rel="stylesheet">
+    <link href="http://blog.oddbit.com/theme/pygments.css" rel="stylesheet">
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+        <link href="http://blog.oddbit.com/atom.xml" rel="alternate" title="Odd Bits" type="application/atom+xml">
+        <link href="http://blog.oddbit.com/rss.xml" rel="alternate" title="Odd Bits" type="application/rss+xml">
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="navbar-inner">
+    <div class="container">
+
+         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+         </a>
+
+        <a class="brand" href="http://blog.oddbit.com">Odd Bits</a>
+
+        <div class="nav-collapse">
+        <ul class="nav">
+            <li><a href="/archives.html">Archive</a></li>
+            
+            <li><a href="http://blog.oddbit.com/pages/gpg.html">GPG</a></li>
+        </ul>
+        </div>
+        
+    </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content">
+    <div class="row">
+
+        <div class="span9">
+    <div class='article'>
+        <div class="content-title">
+            <h1>Converting HTML to Markdown</h1>
+Tue 06 November 2012
+
+by <a class="url fn" href="http://blog.oddbit.com/author/lars-kellogg-stedman.html">Lars Kellogg-Stedman</a>
+ 
+
+
+        </div>
+	
+        <div><p>In order to import posts from <a href="http://blogger.com/">Blogger</a> into <a href="http://scriptogr.am/">Scriptogr.am</a> I needed to convert all the HTML formatting into Markdown.  Thankfully there are a number of tools out there that can help with this task.</p>
+<ul>
+<li>
+<p><a href="http://markdownrules.com/">MarkdownRules</a>. This is an online service build around
+  <a href="http://milianw.de/projects/markdownify/">Markdownify</a>.  It's a slick site with a nice API, but the backend
+  wasn't able to correctly render <code>&lt;pre&gt;</code> blocks.  Since I'm often
+  writing about code, my posts are filled with things like embedded
+  XML and <code>#include &lt;stdio.h&gt;</code>, so this was a problem.</p>
+</li>
+<li>
+<p><a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>.  This is a general purpose tool that can convert between
+  a variety of markup formats.  Unfortunately, it <em>also</em> had similar
+  problems with <code>&lt;pre&gt;</code> blocks.</p>
+</li>
+<li>
+<p><a href="https://github.com/aaronsw/html2text">html2text</a>.  This a Python tool that converts HTML to Markdown.
+  It seems to do a better job at handling the <code>&lt;pre&gt;</code> blocks, although
+  it doesn't always get the indent level correct when the <code>&lt;pre&gt;</code>
+  blocks are embedded in lists.</p>
+</li>
+</ul>
+<p>I ultimately ended up using <a href="https://github.com/aaronsw/html2text">html2text</a>, combined with a <a href="https://gist.github.com/4022537">simple
+script</a> to read the <a href="http://www.dataliberation.org/takeout-products/blogger">export from Blogger</a> and feed each document to
+the converter.</p></div>
+	
+        <hr>
+
+        <h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'oddbit'; 
+    var disqus_title = 'Converting HTML to Markdown';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+        </div>
+        
+        <div class="span3">
+
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                Site
+                </li>
+            
+                <li><a href="http://blog.oddbit.com/archives.html">Archives</a>
+                <li><a href="http://blog.oddbit.com/tags.html">Tags</a>
+
+
+
+                <li><a href="http://blog.oddbit.com/atom.xml" rel="alternate">Atom feed</a></li>
+                <li><a href="http://blog.oddbit.com/rss.xml" rel="alternate">RSS feed</a></li>
+
+            </ul>
+            </div>
+
+
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                Categories
+                </li>
+                
+                <li><a href="http://blog.oddbit.com/category/misc.html">misc</a></li>
+                   
+            </ul>
+            </div>
+
+
+
+
+            <div class="social">
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                Social
+                </li>
+           
+                <li><a href="http://twitter.com/larsks">larsks@twitter</a></li>
+                <li><a href="http://github.com/larsks">larsks@github</a></li>
+                <li><a href="https://webchat.freenode.net/">larsks@freenode</a></li>
+            </ul>
+            </div>
+            </div>
+
+        </div>  
+    </div>     </div> 
+<footer>
+<br />
+<p><a href="http://blog.oddbit.com">Odd Bits</a> &copy; Lars Kellogg-Stedman 2015</p>
+</footer>
+
+</div> <!-- /container -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://blog.oddbit.com/theme/bootstrap-collapse.js"></script>
+<script>var _gaq=[['_setAccount','UA-45791426-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+ 
+</body>
+</html>

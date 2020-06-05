@@ -1,0 +1,57 @@
+/**
+ * @package   Dominion Template - RocketTheme
+ * @version   1.5.5 January 19, 2010
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2010 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+/* Core Styles */
+.rt-image {padding: 10px;margin-bottom: 15px;}
+
+/* Bullet Styles */
+ul.bullet-1, ul.bullet-2, ul.bullet-3, ul.bullet-4, ul.bullet-5, ul.bullet-6 {padding: 0 0 0 15px;margin-left: 0;}
+ul.bullet-1 li, ul.bullet-2 li, ul.bullet-3 li, ul.bullet-4 li, ul.bullet-5 li, ul.bullet-6 li {list-style: none;padding: 0 0 3px 15px;margin: 0 0 5px;background-repeat: no-repeat;background-position: 0 4px;}
+ul.bullet-1 li a, ul.bullet-2 li a, ul.bullet-3 li a, ul.bullet-4 li a, ul.bullet-5 li a, ul.bullet-6 li a {font-size: 100%;line-height: 1.7;}
+
+/* Emphasis Styles*/
+em.color {font-style: italic;font-weight: bold;}
+em.bold {font-size: 120%;font-weight: bold;line-height: 135%;font-style: normal;}
+
+/* Drop Cap */
+p.dropcap {overflow: hidden;}
+span.dropcap {font-size: 400%;margin: 0 5px 0 0;line-height: 100%;float: left;display: block;}
+
+/* Notice Styles */
+pre {font-style:italic;overflow: auto;padding: 10px;margin-bottom: 15px;}
+.alert, .approved, .attention, .camera, .cart, .doc, .download, .media, .note, .notice {display: block;margin: 15px 0;background-repeat: repeat-x;background-position: 0 100%;}
+.typo-icon {display: block;padding: 8px 10px 0px 36px;margin: 15px 0;background: no-repeat 10px 12px;}
+.approved .typo-icon {background-image: url(../images/typography/approved-icon.png);}
+.alert .typo-icon {background-image: url(../images/typography/alert-icon.png);}
+.attention .typo-icon {background-image: url(../images/typography/attention-icon.png);}
+.camera .typo-icon {background-image: url(../images/typography/camera-icon.png);}
+.cart .typo-icon {background-image: url(../images/typography/cart-icon.png);}
+.doc .typo-icon {background-image: url(../images/typography/doc-icon.png);}
+.download .typo-icon {background-image: url(../images/typography/download-icon.png);}
+.media .typo-icon {background-image: url(../images/typography/media-icon.png);}
+.note .typo-icon {background-image: url(../images/typography/note-icon.png);}
+.notice .typo-icon {background-image: url(../images/typography/notice-icon.png);}
+
+/* Important Style*/
+.important {padding: 15px;margin: 25px 0 10px 0;position: relative;}
+span.important-title {position: absolute;display: block;top: -0.8em;left: 10px;padding: 3px 8px;font-size: 120%;font-weight: bold;}
+
+/* Inset Styles */
+span.inset-left {float: left;margin-right: 20px;margin-bottom:20px;}
+span.inset-right {float: right;margin-left: 20px;margin-bottom:20px;}
+span.inset-right-title, span.inset-left-title {position: absolute;display: block;top: -12px;left: 10px;padding: 3px 8px;font-size: 100%;font-weight: bold;}
+span.inset-left, span.inset-right {display: block;padding: 12px 8px 8px 8px;width: 20%;font-size: 100%;font-style: italic;margin-top: 25px;position: relative;text-align: center;}
+
+/* RTL Stuff */
+.rtl ul.bullet-1, .rtl ul.bullet-2, .rtl ul.bullet-3, .rtl ul.bullet-4, .rtl ul.bullet-5, .rtl ul.bullet-6 {padding: 0 15px 0 0;margin-right: 0 !important;}
+.rtl ul.bullet-1 li, .rtl ul.bullet-2 li, .rtl ul.bullet-3 li, .rtl ul.bullet-4 li, .rtl ul.bullet-5 li, .rtl ul.bullet-6 li {padding: 0 15px 3px 0;background-position: 100% 4px;}
+.rtl span.dropcap {margin: 0 0 0 5px;float: right;}
+.rtl .typo-icon {padding: 8px 36px 0px 10px;margin: 15px 0;background-position: 99% 12px;}
+.rtl span.important-title {right: 10px;left: inherit;}
+.rtl span.inset-left {float: right;margin-left: 20px;margin-right: 0;}
+.rtl span.inset-right {float: left;margin-right: 20px;margin-left: 0;}
+.rtl span.inset-right-title, .rtl span.inset-left-title {right: 10px;left: inherit;}

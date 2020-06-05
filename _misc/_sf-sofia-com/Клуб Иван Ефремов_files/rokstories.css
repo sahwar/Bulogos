@@ -1,0 +1,63 @@
+/* Layout 1 */
+.feature-block {overflow: hidden;position: relative;}
+.feature-block .feature-pad {margin-left: 15px;}
+.feature-block .rokstories-spinner {background: transparent url(../../images/spinner.gif) no-repeat scroll 50% 50%}
+.feature-block .image-container .image-full {position:relative;overflow: hidden;}
+.feature-block .image-container .image-full img {position:absolute;top: 0;left: 0;visibility: hidden;}
+.feature-block .image-container .image-small img {cursor: pointer;}
+.feature-block .desc-container {overflow: hidden;position: relative;}
+.feature-block .desc-container .description {position: absolute;top: 0; left: 0;visibility: hidden;}
+.feature-block img.feature-main {display: block;}
+.feature-block img.feature-sub {margin: 7px 7px 0 0;}
+.feature-block .feature-title {display: block;font-size: 200%;line-height: 130%;margin:10px 0 0 0;}
+.feature-block .created-date {display:block;font-size:90%;margin: 0px 0 20px 0;color:#999;}
+.feature-block .feature-desc {font-size: 120%;line-height: 130%;}
+.feature-block .moduletable h3 {font-size: 180%;}
+.feature-block .readon-wrap1 {margin-top: 15px;position:relative;float:left;}
+.feature-block .readon-wrap1 span {display:block;height: 24px;line-height: 24px;}
+.feature-block a.readon {font-weight: bold;}
+.feature-block a.readon-main {font-size: 12px;cursor: pointer;}
+.feature-block a.readon-main:hover {text-decoration: none;}
+.feature-block .readon1-l {position:absolute;width: 7px;height: 24px;left:0;top:0;}
+.feature-block .readon1-m {margin-left: 7px;text-align: center;padding-left:2px;}
+.feature-block .readon1-r {margin-right: -7px;padding-right: 10px;}
+
+/* Layout 2 */
+.rokstories-layout2 .image-container {position:relative;overflow: hidden;} 
+.rokstories-tip {background: url(../../images/thumbs-bg.png) bottom center;padding: 10px 10px 25px;text-align: center;}
+.rokstories-layout2 .image-small {display: none;}
+.rokstories-layout2 .feature-block-tl, .rokstories-layout2 .feature-block-tr, .rokstories-layout2 .feature-block-bl, .rokstories-layout2 .feature-block-br {}
+.rokstories-layout2 .feature-arrow-r {background: url(../../images/arrows.png) 100% 0 no-repeat;cursor: pointer;height: 50px;position: absolute;right: 0;top: 35%;width: 42px;}
+.rokstories-layout2 .feature-arrow-l {background: url(../../images/arrows.png) 0 0 no-repeat;cursor: pointer;height: 50px;left: 0;position: absolute;top: 35%;width: 42px;}
+.rokstories-layout2 .arrowleft-hover {background-position: 0 50%;}
+.rokstories-layout2 .arrowleft-down {background-position: 0 100%;}
+.rokstories-layout2 .arrowright-hover {background-position: 100% 50%;}
+.rokstories-layout2 .arrowright-down {background-position: 100% 100%;}
+.rokstories-layout2 .labels-title {position:relative;padding:0.7em;font-size: 120%;height:15px;background: #222;color:#fff;font-weight: bold;}
+.rokstories-layout2 .feature-block-title {position: absolute;}
+
+/* Layout 3 */
+.rokstories-layout3 .image-container {position:relative;overflow: hidden;} 
+.rokstories-tip {background: url(../../images/thumbs-bg.png) bottom center;padding: 10px 10px 25px;text-align: center;}
+.rokstories-layout3 .image-small {display: none;}
+.rokstories-layout3 .description {left:0px;font-size:90%;padding: 5px;}
+.rokstories-layout3 .description .feature-title {margin: 0;font-size: 140%;line-height:170%}
+.rokstories-layout3 .description .feature-desc {font-size:90%;}
+.rokstories-layout3 .desc-container {bottom:0px;left:0px;width:100%;background:#333;color:#f3f3f3;}
+.rokstories-layout3 .feature-circles {text-align: center;margin: 15px 0;}
+.rokstories-layout3 .feature-circles-sub {cursor:pointer;display:inline-block;height:10px;margin:0 5px;width:10px;background:url(../../images/circles.gif) top left no-repeat;}
+.rokstories-layout3 .feature-circles .active {background:url(../../images/circles.gif) bottom left no-repeat;}
+.rokstories-layout3 .feature-circles-sub span {display:none;}
+
+/* Layout 3 */
+.rokstories-layout4 .image-container {position:relative;overflow: hidden;} 
+.rokstories-tip {background: url(../../images/thumbs-bg.png) bottom center;padding: 10px 10px 25px;text-align: center;}
+.rokstories-layout4 .image-small {display: none;}
+.rokstories-layout4 .description {left:0px;font-size:90%;padding: 5px;}
+.rokstories-layout4 .description .feature-title {margin: 0;font-size: 140%;line-height:170%}
+.rokstories-layout4 .description .feature-desc {font-size:90%;}
+.rokstories-layout4 .desc-container {bottom:30px;left:0px;width:100%;background:#333;color:#f3f3f3;}
+.rokstories-layout4 .feature-number {text-align: center;margin: 15px 0;}
+.rokstories-layout4 .feature-number-sub {background: #2a81ea;cursor:pointer;display:inline-block;height:10px;margin:0 2px;padding: 5px;text-align:center;line-height:10px;}
+.rokstories-layout4 .feature-numbers {bottom:5px;left:5px;position:absolute;z-index:5;}
+.rokstories-layout4 .feature-numbers .active {background: #2c4b70;}

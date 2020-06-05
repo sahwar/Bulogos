@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en"><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+                    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope" content="profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award">
+    <meta property="og:site_name" content="Android Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#3ddc84">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="https://developer.android.com/_pwa/android/manifest.json" crossorigin="use-credentials">
+    <link rel="preconnect" href="https://www.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
+    <link rel="preconnect" href="https://apis.google.com/" crossorigin="">
+    <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin="">
+          <link rel="stylesheet" href="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/css.css">
+            <link rel="stylesheet" href="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/app.css">
+    
+    <noscript>
+            <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/vbbb6dd37c071e57dbfce1249762e4d342b93b36af15e7676b1059db22e43eb43/android/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/vbbb6dd37c071e57dbfce1249762e4d342b93b36af15e7676b1059db22e43eb43/android/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/vbbb6dd37c071e57dbfce1249762e4d342b93b36af15e7676b1059db22e43eb43/android/images/touchicon-180.png"><link rel="canonical" href="https://developer.android.com/preview/features/conversations?hl=bg"><link rel="search" type="application/opensearchdescription+xml" title="Android Developers" href="https://developer.android.com/s/opensearch.xml">      
+<title>Conversations &nbsp;|&nbsp; Android Developers</title>
+
+<meta property="og:title" content="Conversations &nbsp;|&nbsp; Android Developers">
+
+
+  <meta property="og:url" content="https://developer.android.com/preview/features/conversations?hl=bg">
+
+  <meta property="og:image" content="https://developer.android.com/images/social/android-developers.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+
+  
+
+  
+
+  
+
+
+    <script type="text/javascript" async="" src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/linkid.js"></script><script async="" src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/gtm.js"></script><script src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/webcomponents-lite.js"></script><script src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_app.js"></script><script src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/analytics.js"></script><script src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_badger_module.js"></script><link rel="stylesheet" type="text/css" href="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_badger.css"><script src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_heading_link_module.js"></script><link rel="stylesheet" type="text/css" href="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_heading_link.css"><script src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_page_rating_module.js"></script><link rel="stylesheet" type="text/css" href="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_page_rating.css"><script src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_snackbar_module.js"></script><link rel="stylesheet" type="text/css" href="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_snackbar.css"><script src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_tooltip_module.js"></script><link rel="stylesheet" type="text/css" href="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_tooltip.css"><link rel="stylesheet" type="text/css" href="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_content_footer.css"><style type="text/css"></style><script src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_badge_awarded_module.js"></script><link rel="stylesheet" type="text/css" href="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_badge_awarded.css"><script src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/hafez_client.js"></script></head>
+  <body type="article" theme="android-theme" class="" layout="docs" ready="">
+    <devsite-progress id="app-progress"></devsite-progress>
+      <section class="devsite-wrapper"><devsite-header top-row--height="48" bottom-row--height="104" bottom-tabs--height="48" fixed="" offset="104" bottom-row--hidden="">
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu" class="devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Navigation menu button" aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+  <a href="https://developer.android.com/" class="devsite-site-logo-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Site logo" track-type="globalNav" track-name="androidDevelopers" track-metadata-position="nav" track-metadata-eventdetail="nav">
+  <img src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/lockup.svg" class="devsite-site-logo" alt="Android Developers">
+</a>
+
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                            <devsite-tabs class="upper-tabs" connected="">
+    
+  <div class="devsite-tabs-wrapper">
+                        <tab active="">
+            <a href="https://developer.android.com/about" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="platform" aria-label="Platform, selected" data-category="Site-Wide Custom Events" data-label="Tab: Platform">
+  Platform
+</a>
+
+          </tab>
+                                <tab>
+            <a href="https://developer.android.com/studio" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="androidStudio" data-category="Site-Wide Custom Events" data-label="Tab: Android Studio">
+  Android Studio
+</a>
+
+          </tab>
+                                <tab>
+            <a href="https://developer.android.com/distribute" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="googlePlay" data-category="Site-Wide Custom Events" data-label="Tab: Google Play">
+  Google Play
+</a>
+
+          </tab>
+                                
+                                
+                                
+                                
+                  <tab overflow-tab=""><a href="#" class="devsite-icon devsite-icon-arrow-drop-down">More</a><div class="devsite-tabs-overflow-menu" scrollbars="" hidden=""><tab>
+            <a href="https://developer.android.com/jetpack" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="jetpack" data-category="Site-Wide Custom Events" data-label="Tab: Jetpack">
+  Jetpack
+</a>
+
+          </tab><tab>
+            <a href="https://developer.android.com/kotlin" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="kotlin" data-category="Site-Wide Custom Events" data-label="Tab: Kotlin">
+  Kotlin
+</a>
+
+          </tab><tab>
+            <a href="https://developer.android.com/docs" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="docs" data-category="Site-Wide Custom Events" data-label="Tab: Docs">
+  Docs
+</a>
+
+          </tab><tab>
+            <a href="https://developer.android.com/news" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="news" data-category="Site-Wide Custom Events" data-label="Tab: News">
+  News
+</a>
+
+          </tab></div></tab></div></devsite-tabs>
+
+                       </div>
+          <devsite-search enable-signin="" enable-search="" enable-suggestions="" enable-query-completion="" project-name="Android Developers" tenant-name="Android Developers">
+  <form class="devsite-search-form" action="https://developer.android.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="Search" type="text" class="devsite-search-field devsite-search-query" name="q" autocomplete="off" aria-label="Search box">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button" search-open="" class="devsite-search-button devsite-header-icon-button button-flat material-icons" aria-label="Open search box"></button>
+    </div>
+  <div class="devsite-popout"><div class="devsite-popout-result devsite-suggest-results-container" devsite-hide="" aria-haspopup="true"></div></div></form>
+  <button type="button" search-close="" class="devsite-search-button devsite-header-icon-button button-flat material-icons" aria-label="Close search box"></button>
+</devsite-search>
+
+        <div class="devsite-search-background" style="opacity: 1;"></div></div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+
+    <select aria-label="            Select your language preference." class="devsite-language-selector-select" name="language" track-name="click" track-type="languageSelector">
+                <option selected="selected">Language</option>
+              <option value="en" track-metadata-original-language="bg" track-metadata-selected-language="en" track-name="changed" track-type="languageSelector">
+        English
+      </option>
+          <option value="id" track-metadata-original-language="bg" track-metadata-selected-language="id" track-name="changed" track-type="languageSelector">
+        Bahasa Indonesia
+      </option>
+          <option value="de" track-metadata-original-language="bg" track-metadata-selected-language="de" track-name="changed" track-type="languageSelector">
+        Deutsch
+      </option>
+          <option value="es" track-metadata-original-language="bg" track-metadata-selected-language="es" track-name="changed" track-type="languageSelector">
+        Español
+      </option>
+          <option value="es_419" track-metadata-original-language="bg" track-metadata-selected-language="es_419" track-name="changed" track-type="languageSelector">
+        Español – América Latina
+      </option>
+          <option value="fr" track-metadata-original-language="bg" track-metadata-selected-language="fr" track-name="changed" track-type="languageSelector">
+        Français
+      </option>
+          <option value="pt_br" track-metadata-original-language="bg" track-metadata-selected-language="pt_br" track-name="changed" track-type="languageSelector">
+        Português – Brasil
+      </option>
+          <option value="vi" track-metadata-original-language="bg" track-metadata-selected-language="vi" track-name="changed" track-type="languageSelector">
+        Tiếng Việt
+      </option>
+          <option value="tr" track-metadata-original-language="bg" track-metadata-selected-language="tr" track-name="changed" track-type="languageSelector">
+        Türkçe
+      </option>
+          <option value="ru" track-metadata-original-language="bg" track-metadata-selected-language="ru" track-name="changed" track-type="languageSelector">
+        Русский
+      </option>
+          <option value="th" track-metadata-original-language="bg" track-metadata-selected-language="th" track-name="changed" track-type="languageSelector">
+        ภาษาไทย
+      </option>
+          <option value="zh_cn" track-metadata-original-language="bg" track-metadata-selected-language="zh_cn" track-name="changed" track-type="languageSelector">
+        中文 – 简体
+      </option>
+          <option value="zh_tw" track-metadata-original-language="bg" track-metadata-selected-language="zh_tw" track-name="changed" track-type="languageSelector">
+        中文 – 繁體
+      </option>
+          <option value="ja" track-metadata-original-language="bg" track-metadata-selected-language="ja" track-name="changed" track-type="languageSelector">
+        日本語
+      </option>
+          <option value="ko" track-metadata-original-language="bg" track-metadata-selected-language="ko" track-name="changed" track-type="languageSelector">
+        한국어
+      </option>
+        </select>
+  <div class="devsite-select"><label id="devsite-select-16517615648448619-label" style="display:none;" aria-label="            Select your language preference.">Select an option</label><button type="button" class="devsite-select-toggle" id="devsite-select-16517615648448619-button" aria-haspopup="listbox" aria-labelledby="devsite-select-16517615648448619-label devsite-select-16517615648448619-button">Language</button><ul class="devsite-select-list" tabindex="-1" role="listbox" aria-expanded="false" scrollbars="" aria-labelledby="devsite-select-16517615648448619-button"><li role="option" id="devsite-select-16517615648448619-0" class="devsite-select-item" data-index="0" aria-selected="false">Language</li><li role="option" id="devsite-select-16517615648448619-1" class="devsite-select-item" data-index="1" aria-selected="false">English</li><li role="option" id="devsite-select-16517615648448619-2" class="devsite-select-item" data-index="2" aria-selected="false">Bahasa Indonesia</li><li role="option" id="devsite-select-16517615648448619-3" class="devsite-select-item" data-index="3" aria-selected="false">Deutsch</li><li role="option" id="devsite-select-16517615648448619-4" class="devsite-select-item" data-index="4" aria-selected="false">Español</li><li role="option" id="devsite-select-16517615648448619-5" class="devsite-select-item" data-index="5" aria-selected="false">Español – América Latina</li><li role="option" id="devsite-select-16517615648448619-6" class="devsite-select-item" data-index="6" aria-selected="false">Français</li><li role="option" id="devsite-select-16517615648448619-7" class="devsite-select-item" data-index="7" aria-selected="false">Português – Brasil</li><li role="option" id="devsite-select-16517615648448619-8" class="devsite-select-item" data-index="8" aria-selected="false">Tiếng Việt</li><li role="option" id="devsite-select-16517615648448619-9" class="devsite-select-item" data-index="9" aria-selected="false">Türkçe</li><li role="option" id="devsite-select-16517615648448619-10" class="devsite-select-item" data-index="10" aria-selected="false">Русский</li><li role="option" id="devsite-select-16517615648448619-11" class="devsite-select-item" data-index="11" aria-selected="false">ภาษาไทย</li><li role="option" id="devsite-select-16517615648448619-12" class="devsite-select-item" data-index="12" aria-selected="false">中文 – 简体</li><li role="option" id="devsite-select-16517615648448619-13" class="devsite-select-item" data-index="13" aria-selected="false">中文 – 繁體</li><li role="option" id="devsite-select-16517615648448619-14" class="devsite-select-item" data-index="14" aria-selected="false">日本語</li><li role="option" id="devsite-select-16517615648448619-15" class="devsite-select-item" data-index="15" aria-selected="false">한국어</li></ul></div></devsite-select>
+</devsite-language-selector>
+
+
+        
+                                      <devsite-user enable-profiles="" id="devsite-user" sign-in-url="https://developer.android.com/_d/signin?continue=https%3A%2F%2Fdeveloper.android.com%2Fpreview%2Ffeatures%2Fconversations&amp;prompt=select_account" sign-out-url="https://developer.android.com/_d/signout?continue=https%3A%2F%2Fdeveloper.android.com%2Fpreview%2Ffeatures%2Fconversations" url="https://developer.android.com/_d/signout?continue=https%3A%2F%2Fdeveloper.android.com%2Fpreview%2Ffeatures%2Fconversations"><div class="ogb-wrapper ogb-si"><a href="https://developer.android.com/_d/signin?continue=https%3A%2F%2Fdeveloper.android.com%2Fpreview%2Ffeatures%2Fconversations&amp;prompt=select_account" class="devsite-user-signin button devsite-top-button">
+  Вход
+</a></div></devsite-user>
+                         </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+    " style="transform: translate3d(0px, -104px, 0px);">
+    <div class="devsite-header-background">
+                        <div class="devsite-product-id-row">
+            <div class="devsite-product-description-row">
+                                                <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="https://developer.android.com/about" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Lower Header" data-value="1">
+            About the platform
+      
+  </a>
+        </li>
+  </ul>
+                                                        </div>
+                      </div>
+                                      <div class="devsite-doc-set-nav-row">
+                                  <devsite-tabs class="lower-tabs" connected="">
+    
+  <div class="devsite-tabs-wrapper">
+                        <tab>
+            <a href="https://developer.android.com/about" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="overview" data-category="Site-Wide Custom Events" data-label="Tab: Overview">
+  Overview
+</a>
+
+          </tab>
+                                <tab active="">
+            <a href="https://developer.android.com/preview" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="releases" aria-label="Releases, selected" data-category="Site-Wide Custom Events" data-label="Tab: Releases">
+  Releases
+</a>
+
+          </tab>
+                                <tab>
+            <a href="https://developer.android.com/guide/platform" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="technology" data-category="Site-Wide Custom Events" data-label="Tab: Technology">
+  Technology
+</a>
+
+          </tab>
+                                <tab>
+            <a href="https://developer.android.com/topic/libraries/support-library" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="libraries" data-category="Site-Wide Custom Events" data-label="Tab: Libraries">
+  Libraries
+</a>
+
+          </tab>
+                                <tab>
+            <a href="https://developer.android.com/games" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="games" data-category="Site-Wide Custom Events" data-label="Tab: Games">
+  Games
+</a>
+
+          </tab>
+                                <tab>
+            <a href="https://developer.android.com/ml" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="machineLearning" data-category="Site-Wide Custom Events" data-label="Tab: Machine Learning">
+  Machine Learning
+</a>
+
+          </tab>
+                                <tab>
+            <a href="https://developer.android.com/privacy" class="gc-analytics-event " track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="privacy" data-category="Site-Wide Custom Events" data-label="Tab: Privacy">
+  Privacy
+</a>
+
+          </tab>
+                  <tab overflow-tab="" hidden=""><a href="#" class="devsite-icon devsite-icon-arrow-drop-down">More</a><div class="devsite-tabs-overflow-menu" scrollbars="" hidden=""></div></tab></div></devsite-tabs>
+
+                            </div>
+          </div>  </div></div>
+  
+
+  </devsite-header>      <div class="devsite-book-nav-bg" fixed=""></div><devsite-book-nav scrollbars="" animatable="" fixed="" style="top: 152px; max-height: 558px; transform: translate3d(0px, -104px, 0px);">
+                  
+
+
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button" id="devsite-close-nav" class="devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Close navigation" aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+  <a href="https://developer.android.com/" class="devsite-site-logo-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Site logo" track-type="globalNav" track-name="androidDevelopers" track-metadata-position="nav" track-metadata-eventdetail="nav">
+  <img src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/lockup.svg" class="devsite-site-logo" alt="Android Developers">
+</a>
+        <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+                  <a href="https://developer.android.com/about" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Platform" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="platform">
+      <span class="devsite-nav-text" tooltip="">
+      Platform
+   </span>
+        </a>
+  
+  
+                              <ul class="devsite-nav-responsive-tabs">
+                                                                                                  <li class="devsite-nav-item">
+                          <a href="https://developer.android.com/about" class="devsite-nav-title gc-analytics-event
+                            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Overview" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="overview">
+      <span class="devsite-nav-text" tooltip="">
+      Overview
+   </span>
+        </a>
+  
+  
+                    </li>
+                                                                                                  <li class="devsite-nav-item">
+                          <a href="https://developer.android.com/preview" class="devsite-nav-title gc-analytics-event devsite-nav-has-children" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Releases" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="releases">
+      <span class="devsite-nav-text" tooltip="" menu="_book">
+      Releases
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward" menu="_book">
+    </span>
+        </a>
+  
+  
+                    </li>
+                                                                                                  <li class="devsite-nav-item">
+                          <a href="https://developer.android.com/guide/platform" class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Technology" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="technology">
+      <span class="devsite-nav-text" tooltip="" menu="_book">
+      Technology
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward" menu="_book">
+    </span>
+        </a>
+  
+  
+                    </li>
+                                                                                                  <li class="devsite-nav-item">
+                          <a href="https://developer.android.com/topic/libraries/support-library" class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Libraries" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="libraries">
+      <span class="devsite-nav-text" tooltip="" menu="_book">
+      Libraries
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward" menu="_book">
+    </span>
+        </a>
+  
+  
+                    </li>
+                                                                                                  <li class="devsite-nav-item">
+                          <a href="https://developer.android.com/games" class="devsite-nav-title gc-analytics-event
+                            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Games" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="games">
+      <span class="devsite-nav-text" tooltip="">
+      Games
+   </span>
+        </a>
+  
+  
+                    </li>
+                                                                                                  <li class="devsite-nav-item">
+                          <a href="https://developer.android.com/ml" class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Machine Learning" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="machineLearning">
+      <span class="devsite-nav-text" tooltip="" menu="_book">
+      Machine Learning
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward" menu="_book">
+    </span>
+        </a>
+  
+  
+                    </li>
+                                                                                                  <li class="devsite-nav-item">
+                          <a href="https://developer.android.com/privacy" class="devsite-nav-title gc-analytics-event
+                            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Privacy" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="privacy">
+      <span class="devsite-nav-text" tooltip="">
+      Privacy
+   </span>
+        </a>
+  
+  
+                    </li>
+                                  </ul>
+                          </li>
+                      <li class="devsite-nav-item">
+                  <a href="https://developer.android.com/studio" class="devsite-nav-title gc-analytics-event
+                            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Android Studio" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="androidStudio">
+      <span class="devsite-nav-text" tooltip="">
+      Android Studio
+   </span>
+        </a>
+  
+  
+                          </li>
+                      <li class="devsite-nav-item">
+                  <a href="https://developer.android.com/distribute" class="devsite-nav-title gc-analytics-event
+                            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Play" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="googlePlay">
+      <span class="devsite-nav-text" tooltip="">
+      Google Play
+   </span>
+        </a>
+  
+  
+                          </li>
+                      <li class="devsite-nav-item">
+                  <a href="https://developer.android.com/jetpack" class="devsite-nav-title gc-analytics-event
+                            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Jetpack" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="jetpack">
+      <span class="devsite-nav-text" tooltip="">
+      Jetpack
+   </span>
+        </a>
+  
+  
+                          </li>
+                      <li class="devsite-nav-item">
+                  <a href="https://developer.android.com/kotlin" class="devsite-nav-title gc-analytics-event
+                            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Kotlin" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="kotlin">
+      <span class="devsite-nav-text" tooltip="">
+      Kotlin
+   </span>
+        </a>
+  
+  
+                          </li>
+                      <li class="devsite-nav-item">
+                  <a href="https://developer.android.com/docs" class="devsite-nav-title gc-analytics-event
+                            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Docs" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="docs">
+      <span class="devsite-nav-text" tooltip="">
+      Docs
+   </span>
+        </a>
+  
+  
+                          </li>
+                      <li class="devsite-nav-item">
+                  <a href="https://developer.android.com/news" class="devsite-nav-title gc-analytics-event
+                            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: News" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="news">
+      <span class="devsite-nav-text" tooltip="">
+      News
+   </span>
+        </a>
+  
+  
+                          </li>
+                    
+                  </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                            <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip="">Versions</span></div></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav connected="" animatable="" aria-expanded="true">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Android 11 Developer Preview</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/preview" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Home</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/overview" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Overview &amp; timeline</span></a></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Privacy updates</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/preview/privacy" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Overview</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/privacy/storage" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Storage</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/privacy/permissions" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Permissions</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/privacy/location" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Location</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/privacy/package-visibility" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Package visibility</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/privacy/data-access-auditing" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Data access auditing</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/privacy/foreground-service-types" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Foreground service types</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav connected="" animatable="" aria-expanded="true">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Features and APIs</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/preview/features" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Overview</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/features/shared-datasets" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Secure sharing of large datasets</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/features/conversations" class="devsite-nav-title devsite-nav-active"><span class="devsite-nav-text" tooltip="">Conversations</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/work" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android in the Enterprise</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/features/angle" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Using ANGLE for OpenGL ES</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/features/toasts" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Toasts</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Behavior changes for apps</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/preview/behavior-changes-all" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">All apps</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/behavior-changes-11" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Apps targeting Android 11</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/non-sdk-11" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Non-SDK restrictions</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Get started with Android 11</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/preview/get" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Get Android 11</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/download" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Downloads for Pixel</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/setup-sdk" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Set up the SDK</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/migration" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Migrate your apps</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/test-changes" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Test app compatibility</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/release-notes" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Release notes</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/preview/feedback" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Feedback and issues</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Android 10</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/10" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Home</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/10/highlights" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 10 highlights</span></a></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Privacy and location</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/10/privacy" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Overview</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/10/privacy/changes" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Privacy changes</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Behavior changes for apps</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/10/behavior-changes-all" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">All apps</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/10/behavior-changes-10" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Apps targeting API 29+</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/10/non-sdk-q" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Non-SDK restrictions</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/10/features" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Features and APIs</span></a></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Get started with Android 10</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/10/migration" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Migration guide</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/10/setup-sdk" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Set up the SDK</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/10/get" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Get Android 10</span></a></li></ul></devsite-expandable-nav></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Pie</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/pie" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Overview</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/pie/android-9.0" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Features and APIs</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/pie/android-9.0-changes-all" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Behavior changes for all apps</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/pie/android-9.0-changes-28" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Behavior changes for apps targeting API 28+</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/pie/android-9.0-migration" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Migrating to Android 9</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/pie/power" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Power management</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Oreo</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/oreo" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Overview</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/oreo/android-8.0" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 8.<wbr>0 Features and APIs</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/oreo/android-8.0-changes" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 8.<wbr>0 Behavior Changes</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/oreo/android-8.0-migration" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Migrating to Android 8.<wbr>0</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/oreo/android-8.0-samples" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 8.<wbr>0 Samples</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/oreo/background" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Background Execution Limits</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/oreo/background-location-limits" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Background Location Limits</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/oreo/android-8.1" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 8.<wbr>1 Features and APIs</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Nougat</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/nougat" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Overview</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/nougat/android-7.0" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 7.<wbr>0 for Developers</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/nougat/android-7.0-changes" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 7.<wbr>0 Behavior Changes</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/nougat/android-7.0-samples" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 7.<wbr>0 Samples</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/nougat/android-7.1" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 7.<wbr>1 for Developers</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/nougat/android-7.1-samples" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 7.<wbr>1 Samples</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Marshmallow</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/marshmallow" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Overview</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/marshmallow/android-6.0" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 6.<wbr>0 APIs</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/marshmallow/android-6.0-changes" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 6.<wbr>0 Changes</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/marshmallow/android-6.0-samples" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 6.<wbr>0 Samples</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/marshmallow/android-6.0-testing" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 6.<wbr>0 Testing</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Lollipop</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/lollipop" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Overview</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/android-5.1" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 5.<wbr>1 APIs</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/android-5.0" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 5.<wbr>0 APIs</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/android-5.0-changes" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 5.<wbr>0 Changes</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">KitKat</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/kitkat" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Overview</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/about/versions/android-4.4" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android 4.<wbr>4 APIs</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item"><a href="https://developer.android.com/about/dashboards" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Dashboards</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip="">Devices</span></div></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Wear OS</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/wear" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Overview</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/wear/releases" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Release Notes</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item"><a href="https://developer.android.com/tv" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android TV</span></a></li>
+  <li class="devsite-nav-item"><a href="https://developer.android.com/cars" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android for Cars</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed="" connected="" animatable="" aria-expanded="false">
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip="">Android Things</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developer.android.com/things" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Overview</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/things/faq" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">FAQ</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/things/versions/things-1.0" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Android Things 1.<wbr>0 Features and APIs</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/things/versions/releases" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Release Notes</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item"><a href="https://developer.android.com/chrome-os" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Chrome OS devices</span></a></li>
+          </ul>
+                                                                    
+                                                                    
+              </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper" style="margin-top: 152px;">
+        <main role="main" class="devsite-main-content" has-book-nav="">
+          <devsite-toc class="devsite-nav devsite-toc" fixed="" max-height="0" offset="104" visually-hidden="" hidden=""></devsite-toc>
+          <devsite-content>
+                          
+
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="https://developer.android.com/" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="1">
+            Android Developers
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="https://developer.android.com/about" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="2">
+            Platform
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="https://developer.android.com/preview" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="3">
+            Releases
+      
+  </a>
+        </li>
+  </ul>
+                  <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+    <div class="devsite-rating-stars"><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="1" track-metadata-score="1" track-type="feedback" track-name="rating" track-metadata-position="header" role="button" tabindex="0" data-title="Unusable documentation" aria-label="Unusable documentation, with a rating of 1 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="2" track-metadata-score="2" track-type="feedback" track-name="rating" track-metadata-position="header" role="button" tabindex="0" data-title="Poor documentation" aria-label="Poor documentation, with a rating of 2 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="3" track-metadata-score="3" track-type="feedback" track-name="rating" track-metadata-position="header" role="button" tabindex="0" data-title="OK documentation" aria-label="OK documentation, with a rating of 3 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="4" track-metadata-score="4" track-type="feedback" track-name="rating" track-metadata-position="header" role="button" tabindex="0" data-title="Good documentation" aria-label="Good documentation, with a rating of 4 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="5" track-metadata-score="5" track-type="feedback" track-name="rating" track-metadata-position="header" role="button" tabindex="0" data-title="Excellent documentation" aria-label="Excellent documentation, with a rating of 5 out of 5"></div></div></devsite-page-rating>
+  
+          </div>
+
+              <h1 class="devsite-page-title">Conversations</h1>
+    
+    <devsite-toc class="devsite-nav devsite-toc-embedded" devsite-toc-embedded="" hidden=""></devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Android&nbsp;11 makes a number of improvements to the way <em>conversations</em> are handled. Conversations are communications that:</p>
+
+<ul>
+<li>Are in real-time.</li>
+<li>Are bidirectional or multidirectional, not one-way.</li>
+<li>Are among two or more people (not bots).</li>
+</ul>
+
+<p>These conversations are now presented in their own area, and notifications for
+these conversations are highlighted and given extra functionality:</p>
+
+<ul>
+<li>If the user long-presses on a conversation notification, the system offers
+them several choices:
+<ul>
+<li>Promote the conversation to a <a href="https://developer.android.com/guide/topics/ui/bubbles">bubble</a>, if the
+app supports bubbles.</li>
+<li>Create a shortcut for this conversation and add it to the home screen.</li>
+<li>Silence or snooze notifications for this conversation.</li>
+<li>Mark this conversation as very important.</li>
+</ul></li>
+<li>The notification's design uses a new version of
+<a href="https://developer.android.com/reference/android/app/Notification.MessagingStyle"><code translate="no" dir="ltr">MessagingStyle</code></a> that
+emphasizes an avatar representing people, combined with the icon for the app
+carrying on the conversation.</li>
+</ul>
+
+<p>To identify a conversation so it gets this special handling, your app needs to
+publish a <a href="https://developer.android.com/reference/android/content/pm/ShortcutInfo">shortcut</a> to the
+conversation by calling
+<a href="https://developer.android.com/reference/android/content/pm/ShortcutManager"><code translate="no" dir="ltr">ShortcutManager</code></a> methods.
+Call
+<a href="https://developer.android.com/reference/android/content/pm/ShortcutManager#setDynamicShortcuts(java.util.List%3Candroid.content.pm.ShortcutInfo%3E)"><code translate="no" dir="ltr">setDynamicShortcuts()</code></a>
+to replace all the existing shortcuts,
+or <a href="https://developer.android.com/reference/android/content/pm/ShortcutManager#addDynamicShortcuts(java.util.List%3Candroid.content.pm.ShortcutInfo%3E)"><code translate="no" dir="ltr">addDynamicShortcuts()</code></a>
+ to add new shortcuts without removing the existing ones. You can also call
+ the new method <a href="https://developer.android.com/reference/android/content/pm/ShortcutManager#pushDynamicShortcut(android.content.pm.ShortcutInfo)"><code translate="no" dir="ltr">pushDynamicShortCut()</code></a>
+to add a single shortcut.
+Conversation shortcuts must be long-lived and have
+<a href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.Builder#setPersons(android.app.Person%5B%5D)">persons</a>
+data attached, identifying the other participants in the
+conversation. We also recommend that you set the
+<a href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.Builder#setLocusId(android.content.LocusId)"><code translate="no" dir="ltr">LocusId</code></a>
+for the shortcut and annotate the in-app activities and fragments with that
+<code translate="no" dir="ltr">LocusId</code>. Doing so helps the system to accurately rank conversations based on app
+usage.</p>
+
+<p>If a conversation no longer exists, the app can delete the shortcut with
+<a href="https://developer.android.com/reference/android/content/pm/ShortcutManager#removeLongLivedShortcuts(java.util.List%3Cjava.lang.String%3E)"><code translate="no" dir="ltr">ShortcutManager.removeLongLivedShortcuts()</code></a>;
+doing so causes the system to
+delete all data associated with the conversation.</p>
+
+<p>When your app sends a notification related to a conversation, you must use
+<a href="https://developer.android.com/reference/android/app/Notification.MessagingStyle"><code translate="no" dir="ltr">MessagingStyle</code></a>
+and <a href="https://developer.android.com/reference/androidx/core/app/NotificationCompat.Builder#setShortcutId(java.lang.String)">include a link to the conversation shortcut</a>.
+Doing so enables the system to give your notification the special conversation handling.</p>
+
+<p>Based on user behavior, the system may designate certain conversations as being
+especially important and <em>cache</em> them, displaying them more prominently. Your
+app cannot influence whether your conversations get this priority treatment, but
+you can find out which conversations are currently cached by calling the new
+method
+<a href="https://developer.android.com/reference/android/content/pm/ShortcutManager#getShortcuts(int)"><code translate="no" dir="ltr">ShortcutManager.getShortcuts()</code></a>
+and passing
+<a href="https://developer.android.com/reference/android/content/pm/ShortcutManager#FLAG_MATCH_CACHED"><code translate="no" dir="ltr">FLAG_MATCH_CACHED</code></a>.</p>
+
+          </div>
+
+    
+                      <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+    <div><div class="devsite-rating-caption">Was this page helpful?</div><div class="devsite-rating-stars"><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="1" track-metadata-score="1" track-type="feedback" track-name="rating" track-metadata-position="footer" role="button" tabindex="0" data-title="Unusable documentation" aria-label="Unusable documentation, with a rating of 1 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="2" track-metadata-score="2" track-type="feedback" track-name="rating" track-metadata-position="footer" role="button" tabindex="0" data-title="Poor documentation" aria-label="Poor documentation, with a rating of 2 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="3" track-metadata-score="3" track-type="feedback" track-name="rating" track-metadata-position="footer" role="button" tabindex="0" data-title="OK documentation" aria-label="OK documentation, with a rating of 3 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="4" track-metadata-score="4" track-type="feedback" track-name="rating" track-metadata-position="footer" role="button" tabindex="0" data-title="Good documentation" aria-label="Good documentation, with a rating of 4 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="5" track-metadata-score="5" track-type="feedback" track-name="rating" track-metadata-position="footer" role="button" tabindex="0" data-title="Excellent documentation" aria-label="Excellent documentation, with a rating of 5 out of 5"></div></div></div></devsite-page-rating>
+  
+                   
+          </article>
+</article>
+
+<devsite-content-footer class="nocontent">
+  <p>Content and code samples on this page are subject to the licenses described in the <a href="https://developer.android.com/license">Content License</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>  <p>Last updated 2020-06-03.</p></devsite-content-footer>
+
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      <nav class="devsite-footer-promos nocontent">
+  <ul class="devsite-footer-promos-list">
+        <li class="devsite-footer-promo">
+      <a href="https://twitter.com/AndroidDev" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Twitter Promo">
+                        <img class="devsite-footer-promo-icon" src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/logo-twitter.svg" alt="Twitter">
+                Twitter
+      </a>
+      <div class="devsite-footer-promo-description">Follow @AndroidDev on Twitter</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="https://www.youtube.com/user/androiddevelopers" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer YouTube Promo">
+                        <img class="devsite-footer-promo-icon" src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/youtube_48dp.png" alt="YouTube">
+                YouTube
+      </a>
+      <div class="devsite-footer-promo-description">Check out Android Developers on YouTube</div>
+    </li>
+      </ul>
+</nav>
+
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">More Android</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://www.android.com/" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)">
+                      Android
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://www.android.com/enterprise/" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)">
+                      Enterprise
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://www.android.com/security-center/" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)">
+                      Security
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://source.android.com/" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)">
+                      Source
+                    </a>
+                  </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Support</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://issuetracker.google.com/issues/new?component=190923&amp;template=841312" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)">
+                      Report platform bug
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://issuetracker.google.com/issues/new?component=192697" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)">
+                      Report documentation bug
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://support.google.com/googleplay/android-developer" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)">
+                      Google Play support
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://google.qualtrics.com/jfe/form/SV_ewWXIoEVLBcyp7f??reserved=1&amp;utm_source=FooterLink&amp;Q_Language=en&amp;utm_medium=own_srch&amp;utm_campaign=developer.android.com&amp;utm_term=0&amp;utm_content=0&amp;productTag=reg&amp;campaignDate=may19&amp;pType=devel&amp;referral_code=gV420370" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)">
+                      Join research studies
+                    </a>
+                  </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Documentation</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://developer.android.com/guide" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)">
+                      Developer guides
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://developer.android.com/design" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)">
+                      Design guides
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://developer.android.com/reference" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)">
+                      API reference
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://developer.android.com/samples" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)">
+                      Samples
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://developer.android.com/studio/intro" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 5)">
+                      Android Studio
+                    </a>
+                  </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.com/" class="devsite-footer-sites-logo-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo" src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/lockup-developers.svg" alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="https://developer.android.com/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Android Link">
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://developer.chrome.com/home" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Chrome Link">
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://firebase.google.com/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Firebase Link">
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://cloud.google.com/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Cloud Platform Link">
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://developers.google.com/products/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer All products Link">
+          All products
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event" href="https://policies.google.com/privacy" data-category="Site-Wide Custom Events" data-label="Footer Privacy link">
+          Privacy
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event" href="https://developer.android.com/license" data-category="Site-Wide Custom Events" data-label="Footer License link">
+          License
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event" href="https://developer.android.com/distribute/marketing-tools/brand-guidelines" data-category="Site-Wide Custom Events" data-label="Footer Brand guidelines link">
+          Brand guidelines
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">Get news and tips by email</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event" href="https://developer.android.com/updates" data-category="Site-Wide Custom Events" data-label="Footer Subscribe link">
+          Subscribe
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+
+    <select aria-label="            Select your language preference." class="devsite-language-selector-select" name="language" track-name="click" track-type="languageSelector">
+                <option selected="selected">Language</option>
+              <option value="en" track-metadata-original-language="bg" track-metadata-selected-language="en" track-name="changed" track-type="languageSelector">
+        English
+      </option>
+          <option value="id" track-metadata-original-language="bg" track-metadata-selected-language="id" track-name="changed" track-type="languageSelector">
+        Bahasa Indonesia
+      </option>
+          <option value="de" track-metadata-original-language="bg" track-metadata-selected-language="de" track-name="changed" track-type="languageSelector">
+        Deutsch
+      </option>
+          <option value="es" track-metadata-original-language="bg" track-metadata-selected-language="es" track-name="changed" track-type="languageSelector">
+        Español
+      </option>
+          <option value="es_419" track-metadata-original-language="bg" track-metadata-selected-language="es_419" track-name="changed" track-type="languageSelector">
+        Español – América Latina
+      </option>
+          <option value="fr" track-metadata-original-language="bg" track-metadata-selected-language="fr" track-name="changed" track-type="languageSelector">
+        Français
+      </option>
+          <option value="pt_br" track-metadata-original-language="bg" track-metadata-selected-language="pt_br" track-name="changed" track-type="languageSelector">
+        Português – Brasil
+      </option>
+          <option value="vi" track-metadata-original-language="bg" track-metadata-selected-language="vi" track-name="changed" track-type="languageSelector">
+        Tiếng Việt
+      </option>
+          <option value="tr" track-metadata-original-language="bg" track-metadata-selected-language="tr" track-name="changed" track-type="languageSelector">
+        Türkçe
+      </option>
+          <option value="ru" track-metadata-original-language="bg" track-metadata-selected-language="ru" track-name="changed" track-type="languageSelector">
+        Русский
+      </option>
+          <option value="th" track-metadata-original-language="bg" track-metadata-selected-language="th" track-name="changed" track-type="languageSelector">
+        ภาษาไทย
+      </option>
+          <option value="zh_cn" track-metadata-original-language="bg" track-metadata-selected-language="zh_cn" track-name="changed" track-type="languageSelector">
+        中文 – 简体
+      </option>
+          <option value="zh_tw" track-metadata-original-language="bg" track-metadata-selected-language="zh_tw" track-name="changed" track-type="languageSelector">
+        中文 – 繁體
+      </option>
+          <option value="ja" track-metadata-original-language="bg" track-metadata-selected-language="ja" track-name="changed" track-type="languageSelector">
+        日本語
+      </option>
+          <option value="ko" track-metadata-original-language="bg" track-metadata-selected-language="ko" track-name="changed" track-type="languageSelector">
+        한국어
+      </option>
+        </select>
+  <div class="devsite-select"><label id="devsite-select-222593089434984015-label" style="display:none;" aria-label="            Select your language preference.">Select an option</label><button type="button" class="devsite-select-toggle" id="devsite-select-222593089434984015-button" aria-haspopup="listbox" aria-labelledby="devsite-select-222593089434984015-label devsite-select-222593089434984015-button">Language</button><ul class="devsite-select-list" tabindex="-1" role="listbox" aria-expanded="false" scrollbars="" aria-labelledby="devsite-select-222593089434984015-button"><li role="option" id="devsite-select-222593089434984015-0" class="devsite-select-item" data-index="0" aria-selected="false">Language</li><li role="option" id="devsite-select-222593089434984015-1" class="devsite-select-item" data-index="1" aria-selected="false">English</li><li role="option" id="devsite-select-222593089434984015-2" class="devsite-select-item" data-index="2" aria-selected="false">Bahasa Indonesia</li><li role="option" id="devsite-select-222593089434984015-3" class="devsite-select-item" data-index="3" aria-selected="false">Deutsch</li><li role="option" id="devsite-select-222593089434984015-4" class="devsite-select-item" data-index="4" aria-selected="false">Español</li><li role="option" id="devsite-select-222593089434984015-5" class="devsite-select-item" data-index="5" aria-selected="false">Español – América Latina</li><li role="option" id="devsite-select-222593089434984015-6" class="devsite-select-item" data-index="6" aria-selected="false">Français</li><li role="option" id="devsite-select-222593089434984015-7" class="devsite-select-item" data-index="7" aria-selected="false">Português – Brasil</li><li role="option" id="devsite-select-222593089434984015-8" class="devsite-select-item" data-index="8" aria-selected="false">Tiếng Việt</li><li role="option" id="devsite-select-222593089434984015-9" class="devsite-select-item" data-index="9" aria-selected="false">Türkçe</li><li role="option" id="devsite-select-222593089434984015-10" class="devsite-select-item" data-index="10" aria-selected="false">Русский</li><li role="option" id="devsite-select-222593089434984015-11" class="devsite-select-item" data-index="11" aria-selected="false">ภาษาไทย</li><li role="option" id="devsite-select-222593089434984015-12" class="devsite-select-item" data-index="12" aria-selected="false">中文 – 简体</li><li role="option" id="devsite-select-222593089434984015-13" class="devsite-select-item" data-index="13" aria-selected="false">中文 – 繁體</li><li role="option" id="devsite-select-222593089434984015-14" class="devsite-select-item" data-index="14" aria-selected="false">日本語</li><li role="option" id="devsite-select-222593089434984015-15" class="devsite-select-item" data-index="15" aria-selected="false">한국어</li></ul></div></devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar type="cookie-notification" data-cookie-notice="0"></devsite-snackbar>
+    <devsite-tooltip></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script async="" src="Conversations%20%C2%A0%20%C2%A0%20Android%20Developers_files/app_loader.js"></script><script type="application/json" analytics="">[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Android Developers", "dimension5": "bg", "dimension3": false, "dimension1": "Signed out"}, "gaid": "UA-5831155-1"}, {"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Android Developers", "dimension5": "bg", "dimension3": false, "dimension1": "Signed out"}, "gaid": "UA-49880327-2"}]</script>
+<script type="application/json" gtm="">{"parameters": {"freeTrialEligibleUser": "False", "language": {"requested": "bg", "served": "en"}, "projectName": "Android Developers", "scriptsafe": null, "signedIn": "False", "internalUser": "False"}, "tags": ["GTM-KMSWPCJ"]}</script>
+          </devsite-analytics>
+          <devsite-badger></devsite-badger>
+            <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/vbbb6dd37c071e57dbfce1249762e4d342b93b36af15e7676b1059db22e43eb43/js/app_loader.js', '[3,"en",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/vbbb6dd37c071e57dbfce1249762e4d342b93b36af15e7676b1059db22e43eb43","https://www.gstatic.com/devrel-devsite/prod/vbbb6dd37c071e57dbfce1249762e4d342b93b36af15e7676b1059db22e43eb43/android","https://android-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/android/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/vbbb6dd37c071e57dbfce1249762e4d342b93b36af15e7676b1059db22e43eb43/android/images/favicon.png","https://www.gstatic.com/devrel-devsite/prod/vbbb6dd37c071e57dbfce1249762e4d342b93b36af15e7676b1059db22e43eb43/android/images/lockup.svg","https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  
+</body></html>

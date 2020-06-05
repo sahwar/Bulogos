@@ -1,0 +1,8 @@
+/media/mint/AAE078EFE078C35D
+
+php "get_words_data_v5_01_dict_BG_talkoven.php" "input_01_dict_BG_talkoven.txt" "output_01_dict_BG_talkoven.txt"
+php "get_words_data_v5_02_dict_BG_EN.php" "input_02_dict_BG_EN.txt" "output_02_dict_BG_EN.txt"
+
+---
+
+/media/mint/AAE078EFE078C35D/0webscraping/eurodict-dicts/alldictfiles_line-separated.txt

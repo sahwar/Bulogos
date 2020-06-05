@@ -1,0 +1,339 @@
+/*
+Theme Name:		Cutline
+Theme URI:		http://pearsonified.com
+Description:	A squeaky clean, feature-rich theme for WordPress designed and coded by <a href="http://pearsonified.com">Chris Pearson</a>.
+Version:		1.03
+Author:			Chris Pearson
+Author URI:		http://pearsonified.com/
+*/
+
+body { background: #fff; color: #333; font: 62.5%  Georgia, "Times New Roman", Times, serif; text-align: center; }
+
+* { padding: 0; margin: 0; }
+
+
+
+/*---:[ global elements ]:---*/
+
+a { color: blue; text-decoration: underline; }
+
+	a:visited { color: purple; text-decoration: underline; }
+
+	a:hover { color: #0060ff; text-decoration: underline; }
+	
+	a img { border: none; }
+	
+blockquote {  font-style: normal; font-family: "Trebuchet MS", Georgia, "Times New Roman", Times, serif; color: #555; margin: 0 30px 0.5em 30px; padding: 0 0 0 10px; border-left: 1px solid #aaa; }
+
+abbr, acronym { border-bottom: 1px dotted #333; text-transform: uppercase; cursor: help; }
+	
+code { color: #090; font-family: Monaco, "Courier New", Courier, monospace; }
+
+pre { width: 500px; margin: 0 0 1.5em 0; overflow: auto; font-size: 1.3em; float: left; clear: both; }
+
+* html pre { font-size: 1.0em; }
+
+p.center { text-align: center !important; }
+
+p.bottom { margin: 0 !important; }
+
+p.unstyled { font-size: 1.4em; }
+
+.flickr_blue { color: #007ae4; text-transform: lowercase; }
+
+.flickr_pink { color: #ff2a96; text-transform: lowercase; }
+
+
+
+/*---:[ headlines ]:---*/
+
+h1, h2, h3 { font-weight: bold; font-family: "Trebuchet MS", Georgia, "Times New Roman", Times, serif; color: #000; }
+
+h1 { font-size: 3.6em; letter-spacing: -0.03em; }
+
+* html h1 { letter-spacing: -0.1em; }
+
+	#masthead h1 { font-family: "Trebuchet MS", Georgia, "Times New Roman", Times, serif;  padding: 0.4em 0; /* border-top: 1px solid #ccc;*/ text-align: left; clear: both; }
+	
+	h1 a, h1 a:visited, h1 a:hover { color: #000; text-decoration: none; }
+	
+h2 { font-size: 2.0em; }
+
+	h2 a { color: #000; text-decoration: none; }
+	
+	h2 a:visited { color: #555; text-decoration: none; }
+	
+	h2 a:hover { color: #000; text-decoration: underline; }
+	
+	.posts h2 { margin: 0 0 0.1em 0; line-height: 1.2em; margin-bottom: 10px; }
+	
+	.pages h2, h2.page_header { margin: 0 0 0.75em 0; padding: 0 0 0.6em 0; background: url('images/hr_title_sep.gif') 0 100% no-repeat; margin-bottom: 10px; }
+	
+	h2.archive_head { font-weight: bold !important; font-size: 1.4em !important; text-transform: uppercase !important; letter-spacing: normal !important; margin: 0 0 1.8em 0 !important; padding: 0.4em 2px !important; border-top: 3px solid #000 !important; background: url('images/hr_dot_black.gif') 0 100% repeat-x !important; }
+	
+h3 { font-size: 1.0em; text-transform: uppercase; }
+
+	.entry h3 { margin: 2.5em 0 0.5em 0; }
+	
+	.entry h3.top { margin: 1.5em 0 0.5em 0 !important; }
+	
+	h3.comments_headers { font-size: 1.4em; }
+
+h4 { font: italic 1.2em Georgia, "Times New Roman", Times, serif; color: #888; }
+
+	h4 a, h4 a:visited { color: #888; text-decoration: none; }
+	
+	h4 a:hover { color: #888; text-decoration: underline; }
+	
+	.posts h4 { margin: 0 0 1.25em 0; padding: 0 0 1.0em 0; background: url('images/hr_title_sep.gif') 0 100% no-repeat; }
+	
+	.pages h4 { font-size: 1.2em; line-height: 1.6em; margin: 0 0 4.0em 0; padding: 0.4em 0 0 0; background: url('images/hr_tag_sep.gif') no-repeat; clear: both; }
+	
+
+
+/*---:[ core layout elements ]:---*/
+
+#container { width: 770px; margin: 15px auto 0 auto; }
+					
+	#content_box { width: 770px; text-align: left; float: left; clear: both; }
+	
+		#content { width: 500px; padding: 0 40px 0 0; float: left; }
+		
+		* html #content { overflow: hidden; }
+		
+		#sidebar { width: 230px; float: left; }
+		
+		* html #sidebar { overflow: hidden; }
+		
+	#footer { width: 770px; padding: 1.0em 0; border-top: 1px solid red; font: bold 1.2em/1.4em "Trebuchet MS", Georgia, "Times New Roman", Times, serif; text-transform: none; float: left; clear: both; }
+		
+
+
+/*---:[ header styles ]:---*/
+
+#masthead { width: 770px; /*height: 100px; background: url('images/logo.gif') no-repeat;*/ /* uncomment the height and background declarations here if you intend to use a graphic in the header instead of the h1 */ }
+
+/* #masthead a { display: block; width: 770px; height: 100px; } */ /* uncomment this line if you use a graphic in the header - make sure the height of your header graphic is equal to the height declared in this line of code! */
+
+ul#nav { list-style: none; width: 770px; padding: 0px; background: url('images/hr_dot_black.gif') repeat-x; margin-bottom: 10px; border-bottom: 1px solid red; float: left; clear: both; }
+
+	ul#nav li { padding: 0.85em 40px 0.7em 0; font: bold 1.4em  "Trebuchet MS", Georgia, "Times New Roman", Times, serif; text-transform: uppercase; float: left; }
+	
+		ul#nav li a, ul#nav li a:visited { color: #000; text-decoration: none; }
+	
+		ul#nav li a:hover { color: #000; text-decoration: underline; }
+		
+		ul#nav li a.current, ul#nav li a.current:visited, ul#nav li a.current:hover { color: #000; text-decoration: none; }
+		
+	ul#nav li.rss { padding: 0.85em 0 0.7em 0; float: right; }
+			
+		ul#nav li.rss a { padding: 0 18px 0 0; background: url('images/icon_rss.gif') 100% 50% no-repeat; }
+
+/*--- Navigation Search Form ---*/
+	ul#nav li.search { padding: 0.5em 0px 0.2em 0px; float: right; }
+/*--- / Navigation Search Form ---*/		
+
+#header_img { margin: 0 0 3.0em 0; border-bottom: 1px solid #000; float: left; clear: both; }
+
+	#header_img img { display: block; } /* this is really just an IE 6 and 7 hack in disguise */
+
+
+
+/*---:[ content styles ]:---*/
+
+.entry { font-family: Verdana, Arial, Tahoma, sans-serif;  font-size: 12px /* 1.4em*/; line-height: 1.5em; text-align: left; } /* 1.65 em*/
+		
+	.entry blockquote { font-size: 1.0em; }
+	
+		.entry blockquote.right { width: 200px; font-style: normal !important; font-size: 1.3em !important; margin: 0.3em 0 0.3em 5px !important; padding: 0.3em 0 !important; border: 3px double #aaa; border-width: 3px 0; text-align: center; float: right; }
+		
+		.entry blockquote.left { width: 200px; font-style: normal !important; font-size: 1.3em !important; margin: 0.3em 5px 0.3em 0 !important; padding: 0.3em 0 !important; border: 3px double #aaa; border-width: 3px 0; text-align: center; float: left; }
+	
+			.entry blockquote.right p, .entry blockquote.left p { margin: 0 !important; line-height: 1.5em !important; }
+	
+	.entry p { margin: 0 0 1.3em 0; } /* 1.5 em*/
+
+	.entry ul, .entry ol { margin: 0 0 1.5em 40px; }
+	
+	.entry ul { list-style-type: square; }
+	
+		.entry li { margin: 0 0 0.5em 0; }
+		
+			.entry ul li ul, .entry ul li ol, .entry ol li ul, .entry ol li ol { margin: 0.5em 0 0.5em 30px; }
+	
+	.entry dl { margin: 0 0 1.5em 0; }
+			
+		.entry dt { font-weight: bold; margin: 0 0 0.5em 0; }
+		
+		.entry dd { margin: 0 0 1.5em 20px; }
+		
+	.entry .ad { margin: 0 0 0.5em 15px; float: right; clear: right; }
+	
+		.entry .ad_left { margin: 0 15px 0.5em 0; float: left; clear: left; }
+
+	.entry img { }
+
+		.entry img.left { padding: 3px; margin: 0.5em 15px 0.5em 0; border: 1px double #bbb; float: left;  clear: left;} /**/
+		.entry img.alignleft { padding: 3px; margin: 0.5em 15px 0.5em 0; border: 1px double #bbb; float: left; } /* clear: left;*/		
+
+		.entry img.right { padding: 3px; margin: 0.5em 0 0.5em 15px; border: 1px double #bbb; float: right; clear: right; } /**/
+		.entry img.alignright { padding: 3px; margin: 0.5em 0 0.5em 15px; border: 1px double #bbb; float: right; } /*clear: right; */
+		
+		.entry img.center { display: block; padding: 3px; margin: 0 auto 1.5em auto; border: 3px double #bbb; float: none; clear: both; }
+	
+		.entry img.off { padding: 0 !important; border: none !important; }
+		
+		.entry img.stack { clear: none !important; }
+
+.tagged { margin: 0 0 4.0em 0; padding: 0.4em 0 0 0; background: url('images/hr_tag_sep.gif') no-repeat; font-size: 1.2em; line-height: 1.6em; color: #888; clear: both; }
+
+	.tagged a, .tagged a:visited { padding: 3px; color: #333; text-decoration: none; }
+	
+	.tagged a:hover { color: #fff; background: #333; text-decoration: none; }
+	
+	.add_comment { display: block; padding: 0 0 0 20px; font-weight: bold; float: right; }
+	
+		.add_comment a, .add_comment a:visited { padding: 0; color: #333; text-decoration: none; }
+
+		.add_comment a:hover { color: #df0000; background: none; text-decoration: underline; }
+
+.navigation { width: 500px; margin: 0 0 3.0em 0; font-size: 1.4em; float: left; }
+
+* html .navigation { margin: 0 0 2.5em 0; }
+	
+	.previous { padding: 0 20px 0 0; float: left; }
+	
+	.next { float: right; }
+	
+.clear { width: 500px; height: 1px; clear: both; }
+
+
+
+/*---:[ sidebar styles ]:---*/
+
+ul.sidebar_list { list-style: none; }
+
+	ul.sidebar_list li.widget { width: 230px; margin: 0 0 2.5em 0; font-size: 1.3em; line-height: 1.4em; float: left; }
+
+		li.widget h2 { font-weight: bold; font-size: 1.1em; text-transform: uppercase; letter-spacing: normal; margin: 0 0 0.8em 0; padding: 0.4em 2px; border-top: 0px solid #000; background: url('images/hr_dot_black.gif') 0 100% repeat-x; }
+
+		li.widget p { margin: 0 0 1.5em 0; padding: 0 10px; }
+		
+		li.widget ul { list-style: square; margin: 0 0 0.5em 20px; }
+		
+		li.widget ol { margin: 0 0 0.5em 20px; }
+		
+			li.widget li { margin: 0 0 0.7em 0; }
+			
+				li.widget li a, li.widget li a:visited { text-decoration: none; }
+				
+				li.widget li a:hover { text-decoration: underline; }
+			
+				li.widget li .recent_date { padding: 0 0 0 8px; font-weight: bold; color: #888; }
+		
+		/*--- Notes addon ----*/
+		li.widget ul.notes { list-style: none; margin: 0;}
+			li.widget ul.notes li { margin: 0; padding: 0; }
+			li.widget ul.notes blockquote { margin-left: 5px; padding-left: 5px; }
+			a.notes {text-decoration: underline;}		
+		/*---End of Notes addon ----*/
+		
+		/*--- RSS Emissions addon ---*/	
+        	li.widget ul.rss { list-style-image: url('images/icon_rss.gif'); }
+		/*--- End of RSS Emissions addon ---*/	
+
+		li.widget ul.flickr_stream { list-style: none; margin: 0; padding: 0 10px; }
+		
+			li.widget ul.flickr_stream li { margin: 0; padding: 0 5px 5px 0; display: inline; }
+			
+				li.widget ul.flickr_stream li a img { padding: 3px; }
+				
+				li.widget ul.flickr_stream li a:hover img { background: #ff2a96; }
+		
+			/*---< FlickrRSS styles for the widget only >---*/
+		
+			li.widget_flickrrss { }
+			
+				li.widget_flickrrss a img { margin: 0 5px 5px 0; padding: 3px; }
+				
+				li.widget_flickrrss a:hover img { background: #ff2a96; }
+				
+		/*---< Calendar widget styles >---*/
+		
+		#calendar_wrap { font-size: 1.3em; }
+				
+	/*---< This collection of lines is only here to make widget link categories work. I realize that it's ridiculous, and believe me when I say that I hate it more than you do. >---*/
+
+	ul.sidebar_list li#linkcat-1, ul.sidebar_list li#linkcat-2, ul.sidebar_list li#linkcat-3, ul.sidebar_list li#linkcat-4, ul.sidebar_list li#linkcat-5, ul.sidebar_list li#linkcat-6, ul.sidebar_list li#linkcat-7, ul.sidebar_list li#linkcat-8, ul.sidebar_list li#linkcat-9 { width: 230px; margin: 0 0 2.5em 0; font-size: 1.3em; line-height: 1.4em; float: left; }
+
+		ul.sidebar_list li#linkcat-1 h2, ul.sidebar_list li#linkcat-2 h2, ul.sidebar_list li#linkcat-3 h2, ul.sidebar_list li#linkcat-4 h2, ul.sidebar_list li#linkcat-5 h2, ul.sidebar_list li#linkcat-6 h2, ul.sidebar_list li#linkcat-7 h2, ul.sidebar_list li#linkcat-8 h2, ul.sidebar_list li#linkcat-9 h2 { font-weight: bold; font-size: 1.1em; text-transform: uppercase; letter-spacing: normal; margin: 0 0 0.8em 0; padding: 0.4em 2px; border-top: 3px solid #000; background: url('images/hr_dot_black.gif') 0 100% repeat-x; }
+
+		ul.sidebar_list li#linkcat-1 ul, ul.sidebar_list li#linkcat-2 ul, ul.sidebar_list li#linkcat-3 ul, ul.sidebar_list li#linkcat-4 ul, ul.sidebar_list li#linkcat-5 ul, ul.sidebar_list li#linkcat-6 ul, ul.sidebar_list li#linkcat-7 ul, ul.sidebar_list li#linkcat-8 ul, ul.sidebar_list li#linkcat-9 ul { list-style: square; margin: 0 0 0.5em 20px; }
+			
+			ul.sidebar_list li#linkcat-1 li, ul.sidebar_list li#linkcat-2 li, ul.sidebar_list li#linkcat-3 li, ul.sidebar_list li#linkcat-4 li, ul.sidebar_list li#linkcat-5 li, ul.sidebar_list li#linkcat-6 li, ul.sidebar_list li#linkcat-7 li, ul.sidebar_list li#linkcat-8 li, ul.sidebar_list li#linkcat-9 li	{ margin: 0 0 0.7em 0; }
+		
+				ul.sidebar_list li#linkcat-1 li a, ul.sidebar_list li#linkcat-2 li a, ul.sidebar_list li#linkcat-3 li a, ul.sidebar_list li#linkcat-4 li a, ul.sidebar_list li#linkcat-5 li a, ul.sidebar_list li#linkcat-6 li a, ul.sidebar_list li#linkcat-7 li a, ul.sidebar_list li#linkcat-8 li a, ul.sidebar_list li#linkcat-9 li a { text-decoration: none; }
+		
+				ul.sidebar_list li#linkcat-1 li a:hover, ul.sidebar_list li#linkcat-2 li a:hover, ul.sidebar_list li#linkcat-3 li a:hover, ul.sidebar_list li#linkcat-4 li a:hover, ul.sidebar_list li#linkcat-5 li a:hover, ul.sidebar_list li#linkcat-6 li a:hover, ul.sidebar_list li#linkcat-7 li a:hover, ul.sidebar_list li#linkcat-8 li a:hover, ul.sidebar_list li#linkcat-9 li a:hover { text-decoration: underline; }
+	
+
+
+/*---:[ footer styles ]:---*/
+
+#footer a, #footer a:visited, #footer a:hover { color: #333; text-decoration: none; }
+
+
+
+/*---:[ comment styles ]:---*/
+
+#comments { width: 500px; float: left; clear: both; }
+
+	ul#comment_list { list-style: none; margin: 0 0 4.0em 0; border-top: 1px solid #bbb; float: left; }
+		
+		ul#comment_list li.comment { width: 500px; padding: 2.1em 0 0 0; border-bottom: 1px dotted #bbb; float: left; }
+			
+		ul#comment_list li.trackback { width: 470px; padding: 2.1em 15px 0 15px; background: url('images/trackback_bg.gif'); }
+				
+			.comment_meta { margin: 0 0 1.5em 0; }
+				
+				.comment_meta strong { font-size: 1.6em; }
+					
+				.comment_time { font: normal 1.1em Verdana, Helvetica, Arial, sans-serif; color: #888; }
+				
+					.comment_time a, .comment_time a:visited, .comment_time a:hover { color: #888; text-decoration: none; }
+		
+			.comment .entry { padding: 0 15px; }
+			
+
+
+/*---:[ comment form styles ]:---*/
+
+#comment_form { width: 500px; padding: 1.0em 0; float: left; }
+
+	#comment_form p { padding: 0.6em 0; }
+	
+		#comment_form label { padding: 0 0 0 10px; font-size: 1.2em; }
+
+		#comment_form .text_input { width: 191px; padding: 3px; color: #444; font: normal 1.4em Georgia, "Times New Roman", Times, serif; border-top: 2px solid #999; border-left: 2px solid #999; border-right: 1px solid #fff; border-bottom: 1px solid #fff; }
+		
+		#comment_form .text_area { width: 450px !important; }
+	
+			#comment_form .text_input:focus { border-top: 2px solid #666; border-left: 2px solid #666; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+	
+		#comment_form .form_submit { padding: 0.4em 4px; background: url('images/submit_bg.gif'); border: 3px double #666; font: bold 1.4em Georgia, "Times New Roman", Times, serif; cursor: pointer; }
+		
+		#comment_form p.subscribe-to-comments { font-size: 1.4em; }
+		
+			#comment_form p.subscribe-to-comments label { font-size: 1.0em; }
+			
+
+
+/*---:[ search form styles ]:---*/
+
+#search_form { }
+
+	#search_form .search_input { width: 221px; padding: 3px; color: gray; font: normal 1.0em Georgia, "Times New Roman", Times, serif; border-top: 1px solid #999; border-left: 1px solid #999; border-right: 1px solid #f5f5f5; border-bottom: 1px solid #f5f5f5; }
+	
+	li.widget .search_input { font-size: 1.1em !important; }
+	
+		#search_form .search_input:focus { border-top: 1px solid #666; border-left: 1px solid #666; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; }

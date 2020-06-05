@@ -1,0 +1,535 @@
+<!DOCTYPE html><html
+dir="ltr" lang="en-US"><head><meta
+charset="UTF-8" /><meta
+name="viewport" content="width=device-width, initial-scale=1" /><link
+rel="stylesheet" type="text/css" href="http://www.cyberciti.biz/tips/wp-content/thesis/skins/classic-r/css.css" media="screen, projection" /><title>Howto: Shutdown Linux Box Automatically</title><link
+rel="canonical" href="http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html" /><link
+rel="alternate" type="application/rss+xml" title="nixCraft feed" href="http://www.cyberciti.biz/tips/feed" /><link
+rel="pingback" href="http://www.cyberciti.biz/tips/xmlrpc.php" /><link
+rel="author" href="https://plus.google.com/+CybercitiBiz?prsrc=5" /><link
+rel="alternate" type="application/rss+xml" title="nixCraft &raquo; Howto: Shutdown Linux Box Automatically Comments Feed" href="http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html/feed" /><link
+rel='stylesheet' id='crp-style-rounded-thumbs-css'  href='http://www.cyberciti.biz/tips/wp-content/plugins/contextual-related-posts/css/default-style.css?ver=4.3.1' type='text/css' media='all' /><style id='crp-style-rounded-thumbs-inline-css' type='text/css'>.crp_related a {
+  width: 150px;
+  height: 150px;
+  text-decoration: none;
+}
+.crp_related img {
+  max-width: 150px;
+  margin: auto;
+}
+.crp_related .crp_title {
+  width: 144px;
+}</style><link
+rel="shortcut icon" href="http://www.cyberciti.biz/tips/wp-content/themes/thesis/lib/images/favicon.ico" /></head><body
+class="template-single"><div
+class="container"><center><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>  <ins
+class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-7825705102693166"
+data-ad-slot="4167943066"
+data-ad-format="auto"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </center> <br/> <span
+class="menu_control">≡ Menu</span><ul
+id="menu-menu-1" class="menu"><li
+id="menu-item-113451" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113451"><a
+href="http://www.cyberciti.biz/">Home</a></li><li
+id="menu-item-113453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113453"><a
+href="http://www.cyberciti.biz/tips/about-us">About</a></li><li
+id="menu-item-113459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113459"><a
+href="http://www.cyberciti.biz/tips/contact-us">Contact / Email us</a></li></ul><div
+id="header" class="header"><div
+id="site_title"><a
+href="http://www.cyberciti.biz/tips">nixCraft</a></div><div
+id="site_tagline">Linux Tips, Hacks, Tutorials, And Ideas In Blog Format</div></div><div
+class="columns"><div
+class="content"><div
+id="post-713" class="post_box grt top" itemscope itemtype="http://schema.org/Article"><div
+class="headline_area"><h1 class="headline" itemprop="name">Howto: Shutdown Linux Box Automatically</h1><div
+class="byline small"> <span
+class="post_author_intro">by</span> <span
+class="post_author" itemprop="author">Vivek Gite</span><meta
+itemprop="datePublished" content="2005-10-02" /><meta
+itemprop="dateModified" content="2010-01-09" /> <span
+class="post_date_intro">on</span> <span
+class="post_date" title="2005-10-02">October 2, 2005</span><div
+class="post_cats" itemprop="keywords"> <span
+class="post_cats_intro">in</span> <a
+href="http://www.cyberciti.biz/tips/category/centos" rel="category tag">CentOS</a>, <a
+href="http://www.cyberciti.biz/tips/category/debian-linux" rel="category tag">Debian Linux</a>, <a
+href="http://www.cyberciti.biz/tips/category/gentoo-linux" rel="category tag">Gentoo Linux</a>, <a
+href="http://www.cyberciti.biz/tips/category/howto" rel="category tag">Howto</a>, <a
+href="http://www.cyberciti.biz/tips/category/linux" rel="category tag">Linux</a>, <a
+href="http://www.cyberciti.biz/tips/category/suse-linux" rel="category tag">Suse Linux</a>, <a
+href="http://www.cyberciti.biz/tips/category/sys-admin" rel="category tag">Sys admin</a>, <a
+href="http://www.cyberciti.biz/tips/category/tips" rel="category tag">Tips</a>, <a
+href="http://www.cyberciti.biz/tips/category/unix" rel="category tag">UNIX</a></div></div></div><div
+class="post_content" itemprop="articleBody"><div
+style='float:right;margin-top:0px;margin-left:5px;'><a
+href='http://www.cyberciti.biz/tips/category/linux/' title='See all GNU/Linux related tips/articles'><img
+src='http://figs.cyberciti.biz/3rdparty/linux-logo.png' border='0' /></a></div><p><span
+class="drop_cap">Y</span>ou may wonder - why should I shutdown the Linux box  automatically? It depends upon your situation. For example, you are downloading couple of tar balls and you want to go home early. You can schedule a job to shutdown Linux after downloading is completed. Linux/UNIX/BSD/OS X comes with at and cron commands to automate task. Almost all common task  can be automated using at command.<br
+/> <span
+id="more-713"></span></p><h2>Common Tasks For at Command</h2><ol><li>Shutdown/reboot the system</li><li>Email yourself files</li><li>Send birthday remainders</li></ol><h3>Commands</h3><ul><li><b>at</b>- Execute a task at a specific time. For example, shutdown computer, send birthday remainder etc. Useful to schedule one job at a time or a single future event.</li><li><b>cron</b> – If you want to shutdown Linux box automatically everyday 8 pm then you need to use cron instead of at command (see below for examples). Useful to schedule recurring events or daily events such as backup data, or check system security etc.</li></ul><h2>at Command Examples</h2><p>Let us see how to shutdow a Linux automatically at 8 pm, type the command at 8pm and press [enter] key, then type halt followed by enter key. To save your job press CTRL+D.</p><p><code># at 8pm</code><br
+/> Sample outputs:</p><pre>at&gt; halt</pre><p>(Press CTRL+D)</p><p>Try out the following utilities:</p><ul><li><b>atq</b> - List the current at jobs pending.</li><li><b>atrm</b> - Used to remove pending at jobs.</li></ul><p>at command accept fairly complex time specifications, for example:<br
+/> Run job at 6am on monday:</p><pre>at 6am monday</pre><p>Run job in 5 minutes time:</p><pre>at now + 5 minutes</pre><p>Run job at 4pm but 3 days later:</p><pre>at 4pm + 3 days</pre><p>Run job at 10am on 31st July:</p><pre>at 10am Jul 31</pre><p>See the file /usr/share/doc/at/timespec for complete time specifications and read man pages of at, atq, atrm. Make sure you have atd service running, if not start it using the following command:<br
+/> <code># /etc/init.d/atd start</code></p><h2>Linux Cron job to Shutdown Linux server/Desktop system</h2><p>First, login as the root user and at a shell prompt type crontab -e command so that you can add cronjob:</p><pre># crontab -e</pre><p>OR</p><pre># crontab -e -u root</pre><p> Append the following entry to it to shutdown box at 20:00 hrs [24 hour close format]:</p><pre>0 20 * * * /sbin/shutdown -h now</pre><p>Save and close the file.</p><h4>References:</h4><ul><li>man pages crond, crontab, at</li></ul> <a
+class="btn btn-tweet" href="https://twitter.com/intent/tweet?text=Howto%3A+Shutdown+Linux+Box+Automatically&url=http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html&via=nixcraft" title="Tweet this tutorial/page">Tweet it</a><a
+class="btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html" title="Share this page/tutorial on Facebook">Facebook it</a><a
+class="btn btn-google" href="https://plus.google.com/share?url=http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html" title="Share this page/tutorial on Google+">Google+ it</a><a
+class="btn btn-pdf" href="http://www.cyberciti.biz/view/pdf/tips/713.php" title="Download this tutorial/faq as a free pdf">PDF it</a><a
+class="btn btn-typoerr" href="https://nixcraft.wufoo.com/forms/give-us-feedback-for-nixcraft/def/Field209=http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html&Field211=Howto: Shutdown Linux Box Automatically" target="_blank" title="Click here to report Typo/Grammer and other Incorrect information">Found an error/typo on this page?</a><div
+id="crp_related" class="crp_related"><h3>Related Posts:</h3><ul><li><a
+href="http://www.cyberciti.biz/tips/linux-shutdown-command-and-logfile.html"    ><img
+src="http://files.cyberciti.biz/cbzcache/3rdparty/linux-logo.png" alt="Linux Shutdown Command and Logfile" title="Linux Shutdown Command and Logfile" width="150" height="150" class="crp_thumb" /></a><a
+href="http://www.cyberciti.biz/tips/linux-shutdown-command-and-logfile.html"     class="crp_title">Linux Shutdown Command and Logfile</a></li><li><a
+href="http://www.cyberciti.biz/tips/schedule-windows-server-to-reboot-or-shutdown-automatically.html"    ><img
+src="http://figs.cyberciti.biz/3rdparty/wine.png" alt="Schedule Windows server to reboot or shutdown automatically" title="Schedule Windows server to reboot or shutdown automatically" width="150" height="150" class="crp_thumb" /></a><a
+href="http://www.cyberciti.biz/tips/schedule-windows-server-to-reboot-or-shutdown-automatically.html"     class="crp_title">Schedule Windows server to reboot or shutdown automatically</a></li><li><a
+href="http://www.cyberciti.biz/tips/howto-linux-allow-users-to-shutdown-server.html"    ><img
+src="http://c.cyberciti.biz/cbzcache/3rdparty/linux-logo.png" alt="How to: Allow Any User To Shutdown a Linux Server" title="How to: Allow Any User To Shutdown a Linux Server" width="150" height="150" class="crp_thumb" /></a><a
+href="http://www.cyberciti.biz/tips/howto-linux-allow-users-to-shutdown-server.html"     class="crp_title">How to: Allow Any User To Shutdown a Linux Server</a></li><li><a
+href="http://www.cyberciti.biz/tips/linux-disable-the-ctrl-alt-del-shutdown.html"    ><img
+src="http://figs.cyberciti.biz/3rdparty/linux-logo.png" alt="Linux Disable the Ctrl-Alt-Delete shutdown keys" title="Linux Disable the Ctrl-Alt-Delete shutdown keys" width="150" height="150" class="crp_thumb" /></a><a
+href="http://www.cyberciti.biz/tips/linux-disable-the-ctrl-alt-del-shutdown.html"     class="crp_title">Linux Disable the Ctrl-Alt-Delete shutdown keys</a></li><li><a
+href="http://www.cyberciti.biz/tips/shutdown-account-to-shutdown-linux-server.html"    ><img
+src="http://c.cyberciti.biz/cbzcache/3rdparty/rhlogo.gif" alt="Shutdown Linux Server With Shutdown Account" title="Shutdown Linux Server With Shutdown Account" width="150" height="150" class="crp_thumb" /></a><a
+href="http://www.cyberciti.biz/tips/shutdown-account-to-shutdown-linux-server.html"     class="crp_title">Shutdown Linux Server With Shutdown Account</a></li><li><a
+href="http://www.cyberciti.biz/tips/linux-last-reboot-time-and-date-find-out.html"    ><img
+src="http://s0.cyberciti.org/images/misc/related-post-default.png" alt="Linux last Reboot Time and Date Find Out Command" title="Linux last Reboot Time and Date Find Out Command" width="150" height="150" class="crp_thumb" /></a><a
+href="http://www.cyberciti.biz/tips/linux-last-reboot-time-and-date-find-out.html"     class="crp_title">Linux last Reboot Time and Date Find Out Command</a></li><li><a
+href="http://www.cyberciti.biz/tips/freebsd-init-to-reboot-or-shutdown-system.html"    ><img
+src="http://s0.cyberciti.org/images/misc/related-post-default.png" alt="FreeBSD &gt; Init to reboot or shutdown system" title="FreeBSD &gt; Init to reboot or shutdown system" width="150" height="150" class="crp_thumb" /></a><a
+href="http://www.cyberciti.biz/tips/freebsd-init-to-reboot-or-shutdown-system.html"     class="crp_title">FreeBSD &gt; Init to reboot or shutdown system</a></li><li><a
+href="http://www.cyberciti.biz/tips/linux-desktop-how-to-shutdown-restart-or-logoff-gnome-via-commandlauncher.html"    ><img
+src="http://figs.cyberciti.biz/3rdparty/gnome_apps.png" alt="Linux Desktop How to shutdown, restart or logoff gnome via command / Launcher" title="Linux Desktop How to shutdown, restart or logoff gnome via command / Launcher" width="150" height="150" class="crp_thumb" /></a><a
+href="http://www.cyberciti.biz/tips/linux-desktop-how-to-shutdown-restart-or-logoff-gnome-via-commandlauncher.html"     class="crp_title">Linux Desktop How to shutdown, restart or logoff gnome via&hellip;</a></li><li><a
+href="http://www.cyberciti.biz/tips/can-i-use-crontab-command-with-sys-account.html"    ><img
+src="http://figs.cyberciti.biz/3rdparty/unix-logo.gif" alt="Use Crontab Command With sys account" title="Use Crontab Command With sys account" width="150" height="150" class="crp_thumb" /></a><a
+href="http://www.cyberciti.biz/tips/can-i-use-crontab-command-with-sys-account.html"     class="crp_title">Use Crontab Command With sys account</a></li></ul><div
+class="crp_clear"></div></div></div><p
+class="post_tags" itemprop="keywords"> <span
+class="post_tags_intro">Tagged as:</span> <a
+href="http://www.cyberciti.biz/tips/tag/at-command" rel="tag">at command</a>, <a
+href="http://www.cyberciti.biz/tips/tag/cron" rel="tag">cron</a>, <a
+href="http://www.cyberciti.biz/tips/tag/crontab-command" rel="tag">crontab command</a>, <a
+href="http://www.cyberciti.biz/tips/tag/future-event" rel="tag">future event</a>, <a
+href="http://www.cyberciti.biz/tips/tag/job" rel="tag">job</a>, <a
+href="http://www.cyberciti.biz/tips/tag/reboot-command" rel="tag">reboot command</a>, <a
+href="http://www.cyberciti.biz/tips/tag/reboot-system" rel="tag">reboot system</a>, <a
+href="http://www.cyberciti.biz/tips/tag/recurring-events" rel="tag">recurring events</a>, <a
+href="http://www.cyberciti.biz/tips/tag/remainders" rel="tag">remainders</a>, <a
+href="http://www.cyberciti.biz/tips/tag/shutdow-command" rel="tag">shutdow command</a>, <a
+href="http://www.cyberciti.biz/tips/tag/shutdown-computer" rel="tag">shutdown computer</a>, <a
+href="http://www.cyberciti.biz/tips/tag/shutdown-linux" rel="tag">shutdown linux</a>, <a
+href="http://www.cyberciti.biz/tips/tag/system-security" rel="tag">system security</a>, <a
+href="http://www.cyberciti.biz/tips/tag/unix-bsd" rel="tag">unix bsd</a></p></div><div
+id="comments"><p
+class="comments_intro"><span
+class="bracket">{</span> <span
+class="num_comments">30</span> comments&#8230; <a
+href="#commentform" rel="nofollow">add one</a> <span
+class="bracket">}</span></p><ul
+class="comment_list"><li
+class="comment even thread-even depth-1" id="comment-140828"><div
+class="comment_head"> <span
+class="comment_author"><a
+href='http://bnura.blogspot.com' rel='external nofollow' class='url'>arun</a></span> <span
+class="comment_date">August 17, 2007, 6:52 am</span></div><div
+class="comment_text grt" id="comment-body-140828"><p>Thank you.</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=140828#commentform' onclick='return addComment.moveForm( "comment-body-140828", "140828", "commentform", "713" )' aria-label='Reply to arun'>Reply</a> <a
+class="comment_permalink" href="#comment-140828" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="comment-141364"><div
+class="comment_head"> <span
+class="comment_author">Ganesh</span> <span
+class="comment_date">October 11, 2007, 12:33 pm</span></div><div
+class="comment_text grt" id="comment-body-141364"><p>Good Explanation..</p><p>continue putting information like this&#8230;!!</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=141364#commentform' onclick='return addComment.moveForm( "comment-body-141364", "141364", "commentform", "713" )' aria-label='Reply to Ganesh'>Reply</a> <a
+class="comment_permalink" href="#comment-141364" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment even thread-even depth-1" id="comment-142921"><div
+class="comment_head"> <span
+class="comment_author">seren6ipity</span> <span
+class="comment_date">February 17, 2008, 8:46 pm</span></div><div
+class="comment_text grt" id="comment-body-142921"><p>Thanks. I just scheduled my first cron job.</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=142921#commentform' onclick='return addComment.moveForm( "comment-body-142921", "142921", "commentform", "713" )' aria-label='Reply to seren6ipity'>Reply</a> <a
+class="comment_permalink" href="#comment-142921" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="comment-143331"><div
+class="comment_head"> <span
+class="comment_author">kana</span> <span
+class="comment_date">March 31, 2008, 12:55 pm</span></div><div
+class="comment_text grt" id="comment-body-143331"><p>Thanks for explanation! Can you tell me what is command for just restarting system? By the way, do I have to always put this commands to root or I can also make cron from my account? (sorry, I am quite new in all this..)</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=143331#commentform' onclick='return addComment.moveForm( "comment-body-143331", "143331", "commentform", "713" )' aria-label='Reply to kana'>Reply</a> <a
+class="comment_permalink" href="#comment-143331" title="permalink to this comment" rel="nofollow">Link</a></div><ul
+class="children"><li
+class="comment even depth-2" id="comment-170703"><div
+class="comment_head"> <span
+class="comment_author">Ron</span> <span
+class="comment_date">April 19, 2011, 7:00 pm</span></div><div
+class="comment_text grt" id="comment-body-170703"><p>0 20 * * * /sbin/shutdown -r now</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=170703#commentform' onclick='return addComment.moveForm( "comment-body-170703", "170703", "commentform", "713" )' aria-label='Reply to Ron'>Reply</a> <a
+class="comment_permalink" href="#comment-170703" title="permalink to this comment" rel="nofollow">Link</a></div></li></ul></li><li
+class="comment byuser comment-author-administrator bypostauthor odd alt thread-even depth-1" id="comment-143333"><div
+class="comment_head"> <span
+class="comment_author"><a
+href='http://www.cyberciti.biz/tips/about-us' rel='external nofollow' class='url'>nixCraft</a></span> <span
+class="comment_date">March 31, 2008, 1:00 pm</span></div><div
+class="comment_text grt" id="comment-body-143333"><p>Use Login as root user and type reboot to reboot box:<br
+/> <code>reboot</code></p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=143333#commentform' onclick='return addComment.moveForm( "comment-body-143333", "143333", "commentform", "713" )' aria-label='Reply to nixCraft'>Reply</a> <a
+class="comment_permalink" href="#comment-143333" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment even thread-odd thread-alt depth-1" id="comment-143367"><div
+class="comment_head"> <span
+class="comment_author">Rahul Hulawale</span> <span
+class="comment_date">April 3, 2008, 11:01 am</span></div><div
+class="comment_text grt" id="comment-body-143367"><p>I have to shutdown the ubuntu server at midnight but before shutdown the user get 5 minites before interrupt and if the user have permission to discard the shutdown and continue if working</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=143367#commentform' onclick='return addComment.moveForm( "comment-body-143367", "143367", "commentform", "713" )' aria-label='Reply to Rahul Hulawale'>Reply</a> <a
+class="comment_permalink" href="#comment-143367" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment odd alt thread-even depth-1" id="comment-143784"><div
+class="comment_head"> <span
+class="comment_author">kai</span> <span
+class="comment_date">May 14, 2008, 5:51 pm</span></div><div
+class="comment_text grt" id="comment-body-143784"><p>I personally wouldn&#8217;t <i>schedule</i> a shutdown if i was downloading a few tarballs and the system needed to be off when it was complete, unattended.<br
+/> what if the speed decreases and it doesn&#8217;t finish in time?<br
+/> Sure, you could expect it to take long and give it lots of time&#8230; But what if it gets done early, wouldn&#8217;t it be better if it shut down after it was complete, and not wait for the set time?<br
+/> best to do something like this, chain commands. so you tell it to download the file and then when its done, shutdown.<br
+/> <code>wget http://somehwere.com/path/to/some.file &amp;&amp; halt</code><br
+/> note: it has to be double &amp; signs. single one will cause both commands to execute at the same time. double causes it to wait for the first one to exit (clean exit or not) before continuing.<br
+/> i personally would probably use more along the lines of<br
+/> <code>wget http://somehwere.com/path/to/some.file 2&gt;/home/kai/wget.log &amp;&amp; halt</code><br
+/> so level 2 outputs (errors) are logged. if the file stopped downloading before it was done, i would then know why by reading the output of wget.log</p><p>scheduled shutdowns with at or cron are better for just having a system shutdown _nomatter what_ at said time. if you want your tasks to finish first, chain them.</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=143784#commentform' onclick='return addComment.moveForm( "comment-body-143784", "143784", "commentform", "713" )' aria-label='Reply to kai'>Reply</a> <a
+class="comment_permalink" href="#comment-143784" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment even thread-odd thread-alt depth-1" id="comment-144178"><div
+class="comment_head"> <span
+class="comment_author">saroj</span> <span
+class="comment_date">June 26, 2008, 11:16 am</span></div><div
+class="comment_text grt" id="comment-body-144178"><p>Thank u for information. I have one RHAS4 server.</p><p>For this morning 8 am it should switched on and late night 11 pm it should shut down automatically. Using crontab we can easily shut down the system. But switch on and shutdown the linux system in different time , i could not find any commands or script.</p><p>please reply</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=144178#commentform' onclick='return addComment.moveForm( "comment-body-144178", "144178", "commentform", "713" )' aria-label='Reply to saroj'>Reply</a> <a
+class="comment_permalink" href="#comment-144178" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment odd alt thread-even depth-1" id="comment-145063"><div
+class="comment_head"> <span
+class="comment_author">peachy</span> <span
+class="comment_date">September 20, 2008, 4:55 pm</span></div><div
+class="comment_text grt" id="comment-body-145063"><p>@ saroj Waking up the computer is beyond the OS, its at the BIOS Level and needs an ATX Power supply too.</p><p>Some BIOS s dont have that capability (Old/some OEM)</p><p>but if found its usually under power management.</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=145063#commentform' onclick='return addComment.moveForm( "comment-body-145063", "145063", "commentform", "713" )' aria-label='Reply to peachy'>Reply</a> <a
+class="comment_permalink" href="#comment-145063" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment even thread-odd thread-alt depth-1" id="comment-148566"><div
+class="comment_head"> <span
+class="comment_author"><a
+href='http://www.guideseeq.com/portfolio_profile.htm' rel='external nofollow' class='url'>Anshul Shrivastava</a></span> <span
+class="comment_date">May 15, 2009, 8:41 am</span></div><div
+class="comment_text grt" id="comment-body-148566"><p>I didn&#8217;t come across usage of shutdown but I have seen examples of user logged off from a machine at particular time. Like in computer training institutes, they used to fix machines for users for a certain duration of time. User comes and uses available machine and once his or her time gets over, it logs off.</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=148566#commentform' onclick='return addComment.moveForm( "comment-body-148566", "148566", "commentform", "713" )' aria-label='Reply to Anshul Shrivastava'>Reply</a> <a
+class="comment_permalink" href="#comment-148566" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment odd alt thread-even depth-1" id="comment-148940"><div
+class="comment_head"> <span
+class="comment_author"><a
+href='http://martijn.coppoolse.com' rel='external nofollow' class='url'>Martijn</a></span> <span
+class="comment_date">June 12, 2009, 7:28 pm</span></div><div
+class="comment_text grt" id="comment-body-148940"><p>Thanks!  I was having trouble wrapping my head around the crontab thing.  This showed how to do it (and by extension, how it works).</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=148940#commentform' onclick='return addComment.moveForm( "comment-body-148940", "148940", "commentform", "713" )' aria-label='Reply to Martijn'>Reply</a> <a
+class="comment_permalink" href="#comment-148940" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment even thread-odd thread-alt depth-1" id="comment-149019"><div
+class="comment_head"> <span
+class="comment_author"><a
+href='http://www.stajl.biz' rel='external nofollow' class='url'>Jan van Leeuwen</a></span> <span
+class="comment_date">June 19, 2009, 11:03 am</span></div><div
+class="comment_text grt" id="comment-body-149019"><p>Thank you,</p><p>untill now didn&#8217;t need crontabs, coming from VMS I could not get a hold on this crontab, since this Howto I understand at last, I have read loads of internetsites, man pages, books about it. I must say how can something so simple be described so complex.<br
+/> I will visit your website more often!</p><p>Jan</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=149019#commentform' onclick='return addComment.moveForm( "comment-body-149019", "149019", "commentform", "713" )' aria-label='Reply to Jan van Leeuwen'>Reply</a> <a
+class="comment_permalink" href="#comment-149019" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment odd alt thread-even depth-1" id="comment-149404"><div
+class="comment_head"> <span
+class="comment_author">mr tran</span> <span
+class="comment_date">July 9, 2009, 3:31 am</span></div><div
+class="comment_text grt" id="comment-body-149404"><p>excuse me!<br
+/> i am doing project in university i am understanding about linux but i don&#8217;t know it<br
+/> who i know it can you help me<br
+/> thanks<br
+/> and who can i have document about centos , install dns and public mail dns<br
+/> hiii</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=149404#commentform' onclick='return addComment.moveForm( "comment-body-149404", "149404", "commentform", "713" )' aria-label='Reply to mr tran'>Reply</a> <a
+class="comment_permalink" href="#comment-149404" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment even thread-odd thread-alt depth-1" id="comment-149651"><div
+class="comment_head"> <span
+class="comment_author">Saleh Mansour</span> <span
+class="comment_date">July 23, 2009, 11:07 am</span></div><div
+class="comment_text grt" id="comment-body-149651"><p>Thanx for you all :-)</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=149651#commentform' onclick='return addComment.moveForm( "comment-body-149651", "149651", "commentform", "713" )' aria-label='Reply to Saleh Mansour'>Reply</a> <a
+class="comment_permalink" href="#comment-149651" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment odd alt thread-even depth-1" id="comment-150285"><div
+class="comment_head"> <span
+class="comment_author">Sagar Mhatre</span> <span
+class="comment_date">August 21, 2009, 6:06 pm</span></div><div
+class="comment_text grt" id="comment-body-150285"><p>Its really Good, simple &amp; useful information. i would like to learn useful admin level command from this website or any. Please link me if you have some more stuff like this. &#8230;. Thankss.</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=150285#commentform' onclick='return addComment.moveForm( "comment-body-150285", "150285", "commentform", "713" )' aria-label='Reply to Sagar Mhatre'>Reply</a> <a
+class="comment_permalink" href="#comment-150285" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment even thread-odd thread-alt depth-1" id="comment-150443"><div
+class="comment_head"> <span
+class="comment_author"><a
+href='http://questier.com/' rel='external nofollow' class='url'>Frederik Questier</a></span> <span
+class="comment_date">August 31, 2009, 7:47 pm</span></div><div
+class="comment_text grt" id="comment-body-150443"><p>Or if you want to schedule a shutdown in the next 24 hours:</p><p><code>shutdown -h time</code><br
+/> e.g:<br
+/> <code>shutdown -h 06:45</code></p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=150443#commentform' onclick='return addComment.moveForm( "comment-body-150443", "150443", "commentform", "713" )' aria-label='Reply to Frederik Questier'>Reply</a> <a
+class="comment_permalink" href="#comment-150443" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment odd alt thread-even depth-1" id="comment-151950"><div
+class="comment_head"> <span
+class="comment_author">Harish</span> <span
+class="comment_date">November 30, 2009, 12:11 pm</span></div><div
+class="comment_text grt" id="comment-body-151950"><p>i was trying to shutdown the SUSE from command promt using poweroff and shutdown but both command was not working???</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=151950#commentform' onclick='return addComment.moveForm( "comment-body-151950", "151950", "commentform", "713" )' aria-label='Reply to Harish'>Reply</a> <a
+class="comment_permalink" href="#comment-151950" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment even thread-odd thread-alt depth-1" id="comment-152338"><div
+class="comment_head"> <span
+class="comment_author">kamal</span> <span
+class="comment_date">December 17, 2009, 6:09 pm</span></div><div
+class="comment_text grt" id="comment-body-152338"><p>Thank&#8217;s&#8230;&#8230;&#8230;&#8230;&#8230;.  good tips  verry help full to me.</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=152338#commentform' onclick='return addComment.moveForm( "comment-body-152338", "152338", "commentform", "713" )' aria-label='Reply to kamal'>Reply</a> <a
+class="comment_permalink" href="#comment-152338" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment odd alt thread-even depth-1" id="comment-153410"><div
+class="comment_head"> <span
+class="comment_author">Aaqib</span> <span
+class="comment_date">February 8, 2010, 7:44 pm</span></div><div
+class="comment_text grt" id="comment-body-153410"><p>Thanks it was very help full&#8230;.  and smart job .</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=153410#commentform' onclick='return addComment.moveForm( "comment-body-153410", "153410", "commentform", "713" )' aria-label='Reply to Aaqib'>Reply</a> <a
+class="comment_permalink" href="#comment-153410" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment even thread-odd thread-alt depth-1" id="comment-158972"><div
+class="comment_head"> <span
+class="comment_author">pranay</span> <span
+class="comment_date">August 17, 2010, 12:55 am</span></div><div
+class="comment_text grt" id="comment-body-158972"><p>hi, how can one find the command name? like for shutdown ,it&#8217;s /sbin/shutdown ?</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=158972#commentform' onclick='return addComment.moveForm( "comment-body-158972", "158972", "commentform", "713" )' aria-label='Reply to pranay'>Reply</a> <a
+class="comment_permalink" href="#comment-158972" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment odd alt thread-even depth-1" id="comment-159824"><div
+class="comment_head"> <span
+class="comment_author">Vishnu</span> <span
+class="comment_date">September 24, 2010, 5:42 am</span></div><div
+class="comment_text grt" id="comment-body-159824"><p>Hi,<br
+/> Can anybody suggest , How to restart/reboot a Linux machine from another machine?</p><p>Thanks,</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=159824#commentform' onclick='return addComment.moveForm( "comment-body-159824", "159824", "commentform", "713" )' aria-label='Reply to Vishnu'>Reply</a> <a
+class="comment_permalink" href="#comment-159824" title="permalink to this comment" rel="nofollow">Link</a></div><ul
+class="children"><li
+class="comment even depth-2" id="comment-161682"><div
+class="comment_head"> <span
+class="comment_author">carlos</span> <span
+class="comment_date">December 6, 2010, 11:53 pm</span></div><div
+class="comment_text grt" id="comment-body-161682"><p>about shutting down another machine.</p><p>You can do it with ssh.</p><p>First of all. create a script in the machine you want to shutdown. Giving the instructions to shutdown.<br
+/> Test it.</p><p>Now you can type the instruction:</p><p>ssh &#8220;name/ip of the other machine name-of-the-script&#8221;</p><p>and &#8230; that&#8217;s all.</p><p>of course you can put the instruction for ssh in your own crontab.<br
+/> so, you can shutdown automagically one  machine or  several at your own desire.</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=161682#commentform' onclick='return addComment.moveForm( "comment-body-161682", "161682", "commentform", "713" )' aria-label='Reply to carlos'>Reply</a> <a
+class="comment_permalink" href="#comment-161682" title="permalink to this comment" rel="nofollow">Link</a></div></li></ul></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="comment-171980"><div
+class="comment_head"> <span
+class="comment_author">a.gaurav</span> <span
+class="comment_date">June 17, 2011, 5:44 am</span></div><div
+class="comment_text grt" id="comment-body-171980"><p>good work , Thanks, very helpful to me.</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=171980#commentform' onclick='return addComment.moveForm( "comment-body-171980", "171980", "commentform", "713" )' aria-label='Reply to a.gaurav'>Reply</a> <a
+class="comment_permalink" href="#comment-171980" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment even thread-even depth-1" id="comment-174156"><div
+class="comment_head"> <span
+class="comment_author">Siva</span> <span
+class="comment_date">September 20, 2011, 5:25 am</span></div><div
+class="comment_text grt" id="comment-body-174156"><p>How can I shutdown my ubuntu system at 10:53 am.Please write the briefly.<br
+/> ThankQ.</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=174156#commentform' onclick='return addComment.moveForm( "comment-body-174156", "174156", "commentform", "713" )' aria-label='Reply to Siva'>Reply</a> <a
+class="comment_permalink" href="#comment-174156" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="comment-174157"><div
+class="comment_head"> <span
+class="comment_author">Syam</span> <span
+class="comment_date">September 20, 2011, 5:28 am</span></div><div
+class="comment_text grt" id="comment-body-174157"><p>How can I shutdown others system. Please give reply.</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=174157#commentform' onclick='return addComment.moveForm( "comment-body-174157", "174157", "commentform", "713" )' aria-label='Reply to Syam'>Reply</a> <a
+class="comment_permalink" href="#comment-174157" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment even thread-even depth-1" id="comment-174212"><div
+class="comment_head"> <span
+class="comment_author">carlos</span> <span
+class="comment_date">September 21, 2011, 9:45 pm</span></div><div
+class="comment_text grt" id="comment-body-174212"><p>two cents.</p><p>for turning on at the appropriate hour. restart your machine and goto to the bios.</p><p>normally you can find something in &#8220;power control&#8221; or something like that. Here you can write the time you want your machine on. and voila! (ok, ok, &#8230; close the menu, probably F10 to save the changes and let the machine restart)</p><p>in my case, my machine starts 07:45, so, when I arrive at 08:00 my sistem is ready. And in some cases some work is done in scripts.</p><p>For delay an instruction, like shutdown, you can do it in several ways.</p><p>only with shutdown, (rtfm) or consult a few lines above this one.</p><p>with at</p><p>with cron</p><p>in both cases, please read the manual, man.!! In fact, you can consult several blogs and web pages to do that. I recommend you thegeeksutff.com, here you can find a brief tutorial and &#8230;. examples!</p><p>Good luck.</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=174212#commentform' onclick='return addComment.moveForm( "comment-body-174212", "174212", "commentform", "713" )' aria-label='Reply to carlos'>Reply</a> <a
+class="comment_permalink" href="#comment-174212" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="comment-176874"><div
+class="comment_head"> <span
+class="comment_author">Fersu</span> <span
+class="comment_date">December 12, 2011, 11:34 pm</span></div><div
+class="comment_text grt" id="comment-body-176874"><p>Is it possible to schedule a reboot to boot to live usb instead to take automated disk images?</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=176874#commentform' onclick='return addComment.moveForm( "comment-body-176874", "176874", "commentform", "713" )' aria-label='Reply to Fersu'>Reply</a> <a
+class="comment_permalink" href="#comment-176874" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment even thread-even depth-1" id="comment-179056"><div
+class="comment_head"> <span
+class="comment_author"><a
+href='http://www.facebook.com/profile.php?id=100003405398683' rel='external nofollow' class='url'>Daniel</a></span> <span
+class="comment_date">February 7, 2012, 12:44 pm</span></div><div
+class="comment_text grt" id="comment-body-179056"><p>Hi, I poetsd a comment on Toni Anicic&#8217;s blog about cron.He&#8217;s  been very kind and tried to help, but maybe you are the right person for this topic.We are experiencing strange behavior with cron-based.After the two comments in Toni&#8217;s blog, we re-queued the newsletter, launched cron via wget and are observing the mail server&#8217;s behaviour.Current batch size ($countOfSubscritions) is 20.Right after the cron run, the mail server received 105 e-mails for delivery.How&#8217;s it that 20 becomes 105 with a single cron run?</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=179056#commentform' onclick='return addComment.moveForm( "comment-body-179056", "179056", "commentform", "713" )' aria-label='Reply to Daniel'>Reply</a> <a
+class="comment_permalink" href="#comment-179056" title="permalink to this comment" rel="nofollow">Link</a></div></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="comment-181029"><div
+class="comment_head"> <span
+class="comment_author">Rakesh</span> <span
+class="comment_date">July 19, 2012, 7:10 am</span></div><div
+class="comment_text grt" id="comment-body-181029"><p>its nice u can use crontab -e -u root</p></div><div
+class="comment_footer"> <a
+rel='nofollow' class='comment-reply-link' href='http://www.cyberciti.biz/tips/howto-shutdown-linux-box-automatically.html?replytocom=181029#commentform' onclick='return addComment.moveForm( "comment-body-181029", "181029", "commentform", "713" )' aria-label='Reply to Rakesh'>Reply</a> <a
+class="comment_permalink" href="#comment-181029" title="permalink to this comment" rel="nofollow">Link</a></div></li></ul><form
+id="commentform" method="post" action="http://www.cyberciti.biz/tips/wp-comments-post.php"> <a
+rel="nofollow" id="cancel-comment-reply-link" href="/tips/howto-shutdown-linux-box-automatically.html#respond" style="display:none;">Cancel reply</a><p
+class="comment_form_title">Leave a Comment</p><p
+id="comment_form_name"> <label
+for="author">Name <span
+class="required" title="Required">*</span></label> <input
+type="text" id="author" class="input_text" name="author" value="" tabindex="1" aria-required="true" /></p><p
+id="comment_form_email"> <label
+for="email">Email <span
+class="required" title="Required">*</span></label> <input
+type="text" id="email" class="input_text" name="email" value="" tabindex="2" aria-required="true" /></p><p
+id="comment_form_comment"> <label
+for="comment">Comment</label><textarea name="comment" id="comment" class="input_text" tabindex="4" rows="6"></textarea></p><p
+id="comment_form_submit"> <input
+type="submit" id="submit" class="input_submit" name="submit" tabindex="5" value="Submit" /></p><p
+style="display: none;"><input
+type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="158d9eaceb" /></p><p
+style="display: none;"><input
+type="hidden" id="ak_js" name="ak_js" value="203"/></p><input
+type='hidden' name='comment_post_ID' value='713' id='comment_post_ID' /> <input
+type='hidden' name='comment_parent' id='comment_parent' value='0' /></form></div><div
+class="prev_next"><p
+class="next_post">Next post: <a
+href="http://www.cyberciti.biz/tips/how-do-i-improve-dns-performance-on-linuxwindows-desktop.html" rel="next">Improve DNS performance for Linux / Windows desktop using DNS caching software</a></p><p
+class="previous_post">Previous post: <a
+href="http://www.cyberciti.biz/tips/book-review-pro-dns-and-bind.html" rel="prev">Book review: Pro DNS and BIND</a></p></div></div><div
+class="sidebar"><div
+class="widget widget_text" id="text-23"><div
+class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>  <ins
+class="adsbygoogle"
+style="display:inline-block;width:300px;height:250px"
+data-ad-client="ca-pub-7825705102693166"
+data-ad-slot="7895531150"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div><div
+class="widget search-form" id="thesis-search-widget-5"><form
+class="search_form" method="get" action="http://www.cyberciti.biz/tips"><p> <input
+class="input_text" type="text" id="s" name="s" value="To search, type and hit enter" onfocus="if (this.value == 'To search, type and hit enter') {this.value = '';}" onblur="if (this.value == '') {this.value = 'To search, type and hit enter';}" /> <input
+type="hidden" id="searchsubmit" value="Search" /></p></form></div><div
+class="widget widget_text" id="text-24"><div
+class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>  <ins
+class="adsbygoogle"
+style="display:inline-block;width:300px;height:600px"
+data-ad-client="ca-pub-7825705102693166"
+data-ad-slot="3521177162"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div><div
+class="widget widget_text" id="text-25"><p
+class="widget_title">Featured Articles:</p><div
+class="textwidget"><ul><li><a
+href="http://www.cyberciti.biz/open-source/30-cool-best-open-source-softwares-of-2013/">30 Cool Open Source Software I Discovered in 2013</a></li><li><a
+href="http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html">30 Handy Bash Shell Aliases For Linux / Unix / Mac OS X</a></li><li><a
+href="http://www.cyberciti.biz/networking/nmap-command-examples-tutorials/">Top 30 Nmap Command Examples For Sys/Network Admins</a></li><li><a
+href="http://www.cyberciti.biz/tips/php-security-best-practices-tutorial.html">25 PHP Security Best Practices For Sys Admins</a></li><li><a
+href="http://www.cyberciti.biz/tips/top-linux-monitoring-tools.html">20 Linux System Monitoring Tools Every SysAdmin Should Know</a></li><li><a
+href="http://www.cyberciti.biz/tips/linux-security.html">20 Linux Server Hardening Security Tips</a></li><li><a
+href="http://www.cyberciti.biz/tips/linux-iptables-examples.html">Linux: 20 Iptables Examples For New SysAdmins</a></li><li><a
+href="http://www.cyberciti.biz/tips/linux-unix-bsd-openssh-server-best-practices.html">Top 20 OpenSSH Server Best Security Practices </a></li><li><a
+href="http://www.cyberciti.biz/tips/linux-unix-bsd-nginx-webserver-security.html">Top 20 Nginx WebServer Best Security Practices</a><li><A
+href="http://www.cyberciti.biz/tips/check-unix-linux-configuration-file-for-syntax-errors.html">20 Examples: Make Sure Unix / Linux Configuration Files Are Free From Syntax Errors</a><li><a
+href="http://www.cyberciti.biz/open-source/best-terminal-applications-for-linux-unix-macosx/">15 Greatest Open Source Terminal Applications Of 2012</a></li><li><a
+href="http://www.cyberciti.biz/tips/my-10-unix-command-line-mistakes.html">My 10 UNIX Command Line Mistakes</a></li><li><a
+href="http://www.cyberciti.biz/tips/open-source-project-management-software.html">Top 10 Open Source Web-Based Project Management Software</a></li><li><a
+href="http://www.cyberciti.biz/tips/download-email-client-for-linux-mac-osx-windows.html">Top 5 Email Client For Linux, Mac OS X, and Windows Users</a></li><li><a
+href="http://www.cyberciti.biz/tips/linux-laptop.html">The Novice Guide To Buying A Linux Laptop</a></li></ul></div></div><div
+class="widget widget_text" id="text-26"><div
+class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>  <ins
+class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-7825705102693166"
+data-ad-slot="6779656665"
+data-ad-format="auto"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div><div
+class="widget widget_rss" id="rss-4"><p
+class="widget_title"><a
+class='rsswidget' href='http://www.cyberciti.biz/faq/feed/'><img
+style='border:0' width='14' height='14' src='http://www.cyberciti.biz/tips/wp-includes/images/rss.png' alt='RSS' /></a> <a
+class='rsswidget' href='http://www.cyberciti.biz/faq'>Linux/Unix Howtos &#038; Tutorials</a></p><ul><li><a
+class='rsswidget' href='http://www.cyberciti.biz/faq/unix-find-if-32-or-64-bit-os-is-installed-on-server/'>How To Find Out If 32 or 64 bit Unix OS Installed On Server</a></li><li><a
+class='rsswidget' href='http://www.cyberciti.biz/faq/how-to-install-freebsd-on-raspberry-pi-2-model-b/'>How To Install FreeBSD on Raspberry Pi 2 Model B</a></li><li><a
+class='rsswidget' href='http://www.cyberciti.biz/faq/how-to-create-disk-image-on-mac-os-x-with-dd-command/'>How To Create Disk Image on Mac OS X With dd Command</a></li><li><a
+class='rsswidget' href='http://www.cyberciti.biz/faq/linux-change-user-group-uid-gid-for-all-owned-files/'>How to Change a USER and GROUP ID on Linux For All Owned Files</a></li><li><a
+class='rsswidget' href='http://www.cyberciti.biz/faq/freebsd-command-to-find-sata-link-speed/'>How To Find Hard Disk SATA Link Speed On FreeBSD</a></li><li><a
+class='rsswidget' href='http://www.cyberciti.biz/faq/how-to-install-apc-ups-on-freenas-server/'>How To FreeNAS Install And Configure APC UPS For Power Management</a></li><li><a
+class='rsswidget' href='http://www.cyberciti.biz/faq/linux-unix-howto-find-out-hp-printer-serial-number-command/'>How To Find Out HP Network Printer Serial Number Remotely Using Bash Shell On Linux or Unix</a></li><li><a
+class='rsswidget' href='http://www.cyberciti.biz/faq/how-to-wakeup-backup-nas-server-and-mirror-files-using-rsync-in-linux/'>How To Wakeup Backup Nas Server and Mirror Files Using Rsync in Linux</a></li><li><a
+class='rsswidget' href='http://www.cyberciti.biz/faq/how-to-set-locales-i18n-on-a-linux-unix/'>How to Set Locales (i18n) On a Linux or Unix</a></li><li><a
+class='rsswidget' href='http://www.cyberciti.biz/faq/linux-unix-osx-bsd-ssh-run-command-on-remote-machine-server/'>How To SSH Run Multiple Command On Remote Machine And Exit Safely</a></li></ul></div><div
+class="widget widget_text" id="text-27"><p
+class="widget_title">Follow us</p><div
+class="textwidget"><ul><li> <script src="https://apis.google.com/js/platform.js" async defer></script> <div
+class="g-page" data-width="273" data-href="//plus.google.com/u/0/104257421720370350735" data-layout="landscape" data-rel="publisher"></div></li><li><a
+href="https://twitter.com/nixcraft" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @nixcraft</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> </li><li><div
+id="fb-root"></div> <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> <div
+class="fb-like" data-href="https://facebook.com/nixcraft" data-layout="standard" data-action="like" data-show-faces="true"></div></li></ul></div></div></div></div><div
+class="footer"> &copy;2000-2015 nixCraft. All rights reserved. <a
+href="/tips/privacy">Privacy Policy</a> - <a
+href="/tips/disclaimer">Terms of Service</a> - <a
+href="/tips/contact-us">Questions or Comments</a><br/> The content is <a
+href="/tips/copyright">copyrighted to nixCraft</a> and may not be reproduced on other websites.</div></div><script type='text/javascript' src='http://www.cyberciti.biz/tips/wp-content/plugins/akismet/_inc/form.js?ver=3.1.5'></script>
+<script type='text/javascript' src='http://www.cyberciti.biz/tips/wp-includes/js/comment-reply.min.js?ver=4.3.1'></script>
+<script type="text/javascript">
+(function(){
+	var classes = document.getElementsByClassName('menu_control');
+	for (i = 0; i < classes.length; i++) {
+		classes[i].onclick = function() {
+			var menu = this.nextElementSibling;
+			if (/show_menu/.test(menu.className))
+				menu.className = menu.className.replace('show_menu', '').trim();
+			else
+				menu.className += ' show_menu';
+		};
+	}
+})();
+</script>
+<noscript><style type="text/css" scoped>.menu { display: block; }</style></noscript>
+<script src="http://www.cyberciti.biz/mint/?js" type="text/javascript"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-108650-1']);
+  _gaq.push(['_setDomainName', 'www.cyberciti.biz']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
+<!-- Dynamic page generated in 0.199 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2015-10-23 21:33:58 -->

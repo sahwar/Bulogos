@@ -24,7 +24,7 @@ However, this proposal here is about an extending update to how the LINUX/UNIX/*
 	8-999999 = placeholders for user-specified, user-programmed (user-supplied, user-(in-)added) init scripts & user-supplied custom/mod Linux filesystem hierarchies (different from the default Linux FHS)...)...
 	(NOTICE: Should a user need more than 999999 init-scripts/FHS-alternatives, they/one/he/she may just hook one of these 9-999999 files to a bash Terminal shellscripting script that loads a table list of EVEN MORE deeper 'directory-depth-traversal' files that are symlinks to further datetime-stamped/custom-filetitles-format still-ASCII-alphanumeric-numbered files which contain even more init-scripts/FHS-alternatives...
 	
-	
+	(Thus may potentially require extensive use of rewrite rules such as use of many safe `alias`es & (rsynced-like git-diff-like) symlinks compiled in 1 master-file and dir-filepath rewrites to the standard Linux FHS via `ls`, `awk`, `sed`, or even... nah, no `perl5+`/ `python3` + `pcre2` in the pre-boot pre-init new Linux kernel module / kernel built-in hardcoded, etc. ...???)
 	
 IMPORTANT NOTE:
 

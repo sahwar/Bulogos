@@ -1,0 +1,1023 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div><head>
+<title>Mibbit</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<meta name="viewport" content="width=640, height=800" />-->
+<meta name="description" content="Mibbit is a fully featured IRC and IM Client. Allowing you to interact realtime with your friends. Chat, play games, colaborate on projects together and more.">
+<meta name="keywords" content="mibbit, ajax irc chat, ajax chat, irc chat, online irc, online im, im client, yahoo messenger, irc client">
+
+<style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><style>
+* { margin: 0; padding: 0; border: 0; }
+
+html,body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: black;
+    font-family: Arial, Sans-Serif;
+}
+
+#tabs {
+    text-align: left;
+    padding-top: 6px;
+    height: 20px;
+    overflow: hidden;
+}
+
+#chats {
+    clear: both;
+    z-index: 100;
+}
+
+#mibbitapp {
+	display: none;
+}
+
+#loading {
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	padding: 8px;
+	background: #eee;
+	border: 8px solid #888;
+	border-radius: 16px;
+	-moz-border-radius: 16px;
+	-webkit-border-radius: 16px;
+	font-size: 25px;
+	color: #000;
+	text-align: center;
+}
+
+#loadingmsg {
+	color: #aaa;
+}
+
+.abutton {
+    border: 1px solid #484;
+    background: #ded;
+    padding: 2px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 13px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+</style>
+<style type="text/css">.emoji-picker {
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  background: #FFFFFF;
+  width: 23rem;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0;
+  transition: opacity 0.3s;
+  overflow: hidden;
+}
+
+.emoji-picker.dark {
+  background: #333333;
+  color: #FFFFFF;
+  border-color: #666666;
+}
+
+.emoji-picker.visible {
+  opacity: 1;
+}
+
+.emoji-picker__content {
+  padding: 0.5em;
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.emoji-picker__preview {
+  height: 2em;
+  padding: 0.5em;
+  border-top: 1px solid #CCCCCC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.emoji-picker.dark .emoji-picker__preview {
+  border-top-color: #666666;
+}
+
+.emoji-picker__preview-emoji {
+  font-size: 2em;
+  margin-right: 0.25em;
+  font-family: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "EmojiOne Color", "Android Emoji";
+}
+
+.emoji-picker__preview-emoji img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+}
+
+.emoji-picker__preview-name {
+  color: #666666;
+  font-size: 0.85em;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.emoji-picker.dark .emoji-picker__preview-name {
+  color: #FFFFFF;
+}
+
+.emoji-picker__tabs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.emoji-picker__tab {
+  font-size: 1.1rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-grow: 1;
+  text-align: center;
+  color: #666666;
+  border-radius: 3px;
+  transition: background 0.25s;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.emoji-picker__tab:focus {
+  border: 1px dashed #FFFFFF;
+}
+
+.emoji-picker.dark .emoji-picker__tab {
+  color: #CCCCCC;
+}
+
+.emoji-picker__tab:hover {
+  background: #E8F4F9;
+}
+
+.emoji-picker.dark .emoji-picker__tab:hover {
+  color: #000000;
+}
+
+.emoji-picker__tab svg {
+  padding: 0.5rem;
+  box-sizing: content-box;
+}
+
+.emoji-picker__tab.active {
+  background: #4F81E5;
+  color: #FFFFFF;
+}
+
+.emoji-picker__tab-body {
+  margin-top: 0.5em;
+  transform: translateX(25rem);
+  transition: transform 0.25s;
+  position: absolute;
+}
+
+.emoji-picker__tab-body h2 {
+  font-size: 0.85rem;
+  color: #333333;
+  margin: 0;
+  text-align: left;
+}
+
+.emoji-picker.dark .emoji-picker__tab-body h2 {
+  color: #FFFFFF;
+}
+
+.emoji-picker__tab-body.active {
+  display: block;
+  transform: translateX(0);
+}
+
+.emoji-picker__emojis {
+  height: 16.5rem;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: calc((1.8rem * 1.5 * 8) + 0.5rem);
+  margin: auto;
+}
+
+.emoji-picker__emojis.search-results {
+  height: 21rem;
+}
+
+.emoji-picker__emoji {
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "EmojiOne Color", "Android Emoji";
+}
+
+.emoji-picker__emoji img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+}
+
+.emoji-picker__emoji:focus, .emoji-picker__emoji:hover {
+  background: #E8F4F9;
+}
+
+.emoji-picker.dark .emoji-picker__emoji:focus, .emoji-picker.dark .emoji-picker__emoji:hover {
+  background: #666666;
+}
+
+.emoji-picker__search-container {
+  margin: 0.5em;
+  position: relative;
+  height: 2em;
+  display: flex;
+}
+
+.emoji-picker__search {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #CCCCCC;
+  padding-right: 2em;
+  padding: 0.5em 2.25em 0.5em 0.5em;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.emoji-picker.dark .emoji-picker__search {
+  background: #666666;
+  color: #FFFFFF;
+  border-color: #999999;
+}
+
+.emoji-picker.dark .emoji-picker__search::placeholder {
+  color: #FFFFFF;
+}
+
+.emoji-picker__search:focus {
+  border: 1px solid #4F81E5;
+}
+
+.emoji-picker.dark .emoji-picker__search:focus {
+  border-color: #DBE5f9;
+}
+
+.emoji-picker__search-icon {
+  position: absolute;
+  color: #CCCCCC;
+  width: 1em;
+  height: 1em;
+  right: 0.75em;
+  top: calc(50% - 0.5em);
+}
+
+.emoji-picker__search-not-found {
+  color: #666666;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.emoji-picker.dark .emoji-picker__search-not-found {
+  color: #999999;
+}
+
+.emoji-picker__search-not-found-icon {
+  font-size: 3em;
+}
+
+.emoji-picker__search-not-found h2 {
+  margin: 0.5em 0;
+  font-size: 1em;
+}
+
+.emoji-picker__variant-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23rem;
+  height: 27.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.emoji-picker__variant-popup {
+  background: #FFFFFF;
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.emoji-picker.dark .emoji-picker__variant-popup {
+  background: #333333;
+}
+
+.emoji-picker__variant-popup-close-button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 0.5em;
+  padding: 0;
+  top: calc(50% - 0.75em);
+  height: 1.5em;
+  width: 1.5em;
+  font-size: 1.5em;
+}
+
+.emoji-picker.dark .emoji-picker__variant-popup-close-button {
+  color: #666666;
+}
+
+@media (prefers-color-scheme: dark) {
+  .emoji-picker.auto {
+    background: #333333;
+    color: #FFFFFF;
+    border-color: #666666;
+  }
+
+  .emoji-picker.auto .emoji-picker__preview {
+    border-top-color: #666666;
+  }
+
+  .emoji-picker.auto .emoji-picker__preview-name {
+    color: #FFFFFF;
+  }
+
+  .emoji-picker.auto .emoji-picker__tab {
+    color: #CCCCCC;
+  }
+
+  .emoji-picker.auto .emoji-picker__tab:hover {
+    color: #000000;
+  }
+
+  .emoji-picker.auto .emoji-picker__tab-body h2 {
+    color: #FFFFFF;
+  }
+
+  .emoji-picker.auto .emoji-picker__emoji:focus, .emoji-picker.auto .emoji-picker__emoji:hover {
+    background: #666666;
+  }
+
+  .emoji-picker.auto .emoji-picker__search {
+    background: #666666;
+    color: #FFFFFF;
+    border-color: #999999;
+  }
+  
+  .emoji-picker.auto .emoji-picker__search::placeholder {
+    color: #FFFFFF;
+  }
+
+  .emoji-picker.auto .emoji-picker__search:focus {
+    border-color: #DBE5f9;
+  }
+
+  .emoji-picker.auto .emoji-picker__search-not-found {
+    color: #999999;
+  }
+
+  .emoji-picker.auto .emoji-picker__variant-popup {
+    background: #333333;
+  }
+
+  .emoji-picker.auto .emoji-picker__variant-popup-close-button {
+    color: #666666;
+  }
+}</style><script src="irc-ludost-net_initLab_Mibbit_files/osd.js"></script><script src="irc-ludost-net_initLab_Mibbit_files/show_ads_impl_fy2019.js" id="google_shimpl"></script><script async="" type="text/javascript" src="irc-ludost-net_initLab_Mibbit_files/adsbygoogle.js" id="nitroads-abgs"></script><script async="" type="text/javascript" src="irc-ludost-net_initLab_Mibbit_files/ncmp-2014.js"></script><style type="text/css">.ncmp__normalise{line-height:1.15;-webkit-text-size-adjust:100%;margin:0}.ncmp__normalise main{display:block}.ncmp__normalise h1{font-size:2em;margin:0.67em 0}.ncmp__normalise h1,.ncmp__normalise h2,.ncmp__normalise h3,.ncmp__normalise h4,.ncmp__normalise h5,.ncmp__normalise h6{color:#000;font-family:'Roboto', Arial, Helvetica, sans-serif;text-transform:none !important}.ncmp__normalise span{color:#444}.ncmp__normalise p{color:#444}.ncmp__normalise ul{color:#444;font-size:14px}.ncmp__normalise ul li{color:#444}.ncmp__normalise hr{box-sizing:content-box;height:0;overflow:visible}.ncmp__normalise pre{font-family:monospace, monospace;font-size:1em}.ncmp__normalise a{background-color:transparent}.ncmp__normalise abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}.ncmp__normalise b,.ncmp__normalise strong{color:#000;font-weight:bolder}.ncmp__normalise code,.ncmp__normalise kbd,.ncmp__normalise samp{font-family:monospace, monospace;font-size:1em}.ncmp__normalise small{font-size:80%}.ncmp__normalise sub,.ncmp__normalise sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}.ncmp__normalise sub{bottom:-0.25em}.ncmp__normalise sup{top:-0.5em}.ncmp__normalise img{margin:0;border-style:none}.ncmp__normalise button,.ncmp__normalise input,.ncmp__normalise optgroup,.ncmp__normalise select,.ncmp__normalise textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}.ncmp__normalise button,.ncmp__normalise input{overflow:visible}.ncmp__normalise button,.ncmp__normalise select{text-transform:none}.ncmp__normalise button,.ncmp__normalise [type='button'],.ncmp__normalise [type='reset'],.ncmp__normalise [type='submit']{-webkit-appearance:button}.ncmp__normalise button::-moz-focus-inner,.ncmp__normalise [type='button']::-moz-focus-inner,.ncmp__normalise [type='reset']::-moz-focus-inner,.ncmp__normalise [type='submit']::-moz-focus-inner{border-style:none;padding:0}.ncmp__normalise button:-moz-focusring,.ncmp__normalise [type='button']:-moz-focusring,.ncmp__normalise [type='reset']:-moz-focusring,.ncmp__normalise [type='submit']:-moz-focusring{outline:1px dotted ButtonText}.ncmp__normalise fieldset{padding:0.35em 0.75em 0.625em}.ncmp__normalise legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}.ncmp__normalise progress{vertical-align:baseline}.ncmp__normalise textarea{overflow:auto}.ncmp__normalise [type='checkbox'],.ncmp__normalise [type='radio']{box-sizing:border-box;padding:0}.ncmp__normalise [type='number']::-webkit-inner-spin-button,.ncmp__normalise [type='number']::-webkit-outer-spin-button{height:auto}.ncmp__normalise [type='search']{-webkit-appearance:textfield;outline-offset:-2px}.ncmp__normalise [type='search']::-webkit-search-decoration{-webkit-appearance:none}.ncmp__normalise ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}.ncmp__normalise details{display:block}.ncmp__normalise summary{display:list-item}.ncmp__normalise template{display:none}.ncmp__normalise [hidden]{display:none}#ncmp__tool,#ncmp__modal{font-family:'Roboto', Arial, Helvetica, sans-serif;font-weight:400;font-size:14px;line-height:22px;position:relative;z-index:2147483647}@media (max-width: 1024px){#ncmp__tool,#ncmp__modal{padding:10px;box-sizing:border-box}}#ncmp__tool a,#ncmp__modal a{color:#2196f3;text-decoration:none}#ncmp__tool a:hover,#ncmp__modal a:hover{color:#0069c0}#ncmp__tool button.ncmp__btn,#ncmp__tool a.ncmp__btn,#ncmp__modal button.ncmp__btn,#ncmp__modal a.ncmp__btn{cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:inline-block;background-image:none;outline:0;outline-offset:0;border:0;border-radius:2px;transition:all 0.15s ease-in-out;min-width:88px;padding:0 14px;-webkit-appearance:button;background-color:#2196f3;font-weight:400;letter-spacing:inherit;color:rgba(255,255,255,0.87);margin-bottom:0;text-align:center;white-space:nowrap;vertical-align:middle;line-height:32px;height:32px}#ncmp__tool button.ncmp__btn:hover,#ncmp__tool a.ncmp__btn:hover,#ncmp__modal button.ncmp__btn:hover,#ncmp__modal a.ncmp__btn:hover{background-color:#2196f3;color:#fff;text-decoration:none}#ncmp__tool button.ncmp__btn.ncmp__btn-danger,#ncmp__tool a.ncmp__btn.ncmp__btn-danger,#ncmp__modal button.ncmp__btn.ncmp__btn-danger,#ncmp__modal a.ncmp__btn.ncmp__btn-danger{background-color:#f44336}#ncmp__tool button.ncmp__btn.ncmp__btn-border,#ncmp__tool a.ncmp__btn.ncmp__btn-border,#ncmp__modal button.ncmp__btn.ncmp__btn-border,#ncmp__modal a.ncmp__btn.ncmp__btn-border{border:1px solid #2196f3;background-color:#fff;color:#2196f3}#ncmp__tool button.ncmp__btn.ncmp__btn-border:hover,#ncmp__tool a.ncmp__btn.ncmp__btn-border:hover,#ncmp__modal button.ncmp__btn.ncmp__btn-border:hover,#ncmp__modal a.ncmp__btn.ncmp__btn-border:hover{background-color:#fff;color:#2196f3}.ncmp__active{opacity:1 !important;pointer-events:all !important}
+</style><style type="text/css">.ncmp__banner{position:fixed;bottom:20px;right:20px;max-width:750px;background:#fff;box-shadow:0 0 8px rgba(0,0,0,0.2);transition:opacity 0.25s ease-in;overflow:auto;max-height:100%;box-sizing:border-box;opacity:0;pointer-events:none;display:flex}@media (max-width: 1023px) and (min-height: 380px){.ncmp__banner{margin-top:10px;max-height:100vh;box-sizing:border-box;left:8px;bottom:8px;right:8px;max-width:100%;overflow:initial;background:#fff}}@media (max-width: 1023px) and (max-height: 379px){.ncmp__banner{top:20px;left:20px;max-width:100%}}.ncmp__banner .ncmp__banner-updated{padding:5px 10px;background:#ffdda9;color:#af3800;margin-bottom:15px;font-size:13px}@media (max-width: 1023px){.ncmp__banner .ncmp__banner-updated{font-size:11px;font-weight:500;line-height:16px;margin-bottom:10px}}.ncmp__banner .ncmp__banner-sections .ncmp__banner-section-1{margin-bottom:8px}.ncmp__banner .ncmp__banner-sections .ncmp__banner-section-1 p{margin:0;font-size:13px;line-height:20px;color:#666}@media (max-width: 1023px){.ncmp__banner .ncmp__banner-sections .ncmp__banner-section-1 p{font-size:11px;line-height:16px}}.ncmp__banner .ncmp__banner-sections .ncmp__banner-section-2 h4,.ncmp__banner .ncmp__banner-sections .ncmp__banner-section-3 h4{margin:0 0 5px 0;font-weight:400;font-size:13px;line-height:20px}@media (max-width: 1023px){.ncmp__banner .ncmp__banner-sections .ncmp__banner-section-2 h4,.ncmp__banner .ncmp__banner-sections .ncmp__banner-section-3 h4{font-size:11px;line-height:16px}}.ncmp__banner .ncmp__banner-sections .ncmp__banner-section-2 h4 strong,.ncmp__banner .ncmp__banner-sections .ncmp__banner-section-3 h4 strong{font-weight:500}.ncmp__banner .ncmp__banner-sections .ncmp__banner-section-2 p,.ncmp__banner .ncmp__banner-sections .ncmp__banner-section-3 p{margin:0;font-size:13px;line-height:20px;color:#666}@media (max-width: 1023px){.ncmp__banner .ncmp__banner-sections .ncmp__banner-section-2 p,.ncmp__banner .ncmp__banner-sections .ncmp__banner-section-3 p{font-size:11px;line-height:16px}}.ncmp__banner .ncmp__banner-inner{padding:20px;flex:1 1 auto;min-width:1px}@media (max-width: 1023px) and (min-height: 380px){.ncmp__banner .ncmp__banner-inner{padding:0;box-sizing:border-box}}@media (max-width: 1023px) and (max-height: 379px){.ncmp__banner .ncmp__banner-inner{padding:0;display:flex;flex-direction:column;height:100%;box-sizing:border-box}}.ncmp__banner .ncmp__banner-info{flex:1;display:flex}@media (max-width: 1023px){.ncmp__banner .ncmp__banner-info{flex:1 1 auto;overflow:auto;box-sizing:border-box;padding:12px 12px 0 12px;display:block;margin-bottom:12px}}.ncmp__banner .ncmp__banner-info h2{font-weight:600;font-size:16px;margin:0 0 10px 0;line-height:22px}@media (max-width: 1023px){.ncmp__banner .ncmp__banner-info h2{font-size:14px;margin-bottom:6px}}.ncmp__banner .ncmp__banner-info a.ncmp__toggle{font-weight:500}.ncmp__banner .ncmp__banner-info a.ncmp__toggle svg{vertical-align:middle;margin-right:5px;position:relative;top:-1px;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);transition:0.5s ease;fill:#2196f3}.ncmp__banner .ncmp__banner-info .ncmp__expand{max-height:0;transition:all 0.15s linear;overflow:hidden}.ncmp__banner .ncmp__banner-info h3{margin-left:25px;font-size:14px;font-weight:500;margin:10px 0 10px 25px;line-height:22px}.ncmp__banner .ncmp__banner-info ul{margin:0;margin-bottom:0;color:#666}.ncmp__banner .ncmp__banner-info #ncmp__banner-features.ncmp__active a.ncmp__toggle,.ncmp__banner .ncmp__banner-info #ncmp__banner-information.ncmp__active a.ncmp__toggle,.ncmp__banner .ncmp__banner-info #ncmp__banner-purposes.ncmp__active a.ncmp__toggle{display:inline-block;margin-bottom:5px}.ncmp__banner .ncmp__banner-info #ncmp__banner-features.ncmp__active a.ncmp__toggle svg,.ncmp__banner .ncmp__banner-info #ncmp__banner-information.ncmp__active a.ncmp__toggle svg,.ncmp__banner .ncmp__banner-info #ncmp__banner-purposes.ncmp__active a.ncmp__toggle svg{-webkit-transform:rotate(0deg);transform:rotate(0deg)}.ncmp__banner .ncmp__banner-info #ncmp__banner-features.ncmp__active .ncmp__expand,.ncmp__banner .ncmp__banner-info #ncmp__banner-information.ncmp__active .ncmp__expand,.ncmp__banner .ncmp__banner-info #ncmp__banner-purposes.ncmp__active .ncmp__expand{max-height:370px}.ncmp__banner .ncmp__banner-info #ncmp__banner-features{margin-bottom:10px}.ncmp__banner .ncmp__banner-info #ncmp__banner-information,.ncmp__banner .ncmp__banner-info #ncmp__banner-purposes{margin-bottom:5px}.ncmp__banner .ncmp__banner-info #ncmp__banner-information.ncmp__active,.ncmp__banner .ncmp__banner-info #ncmp__banner-purposes.ncmp__active{margin-bottom:20px}.ncmp__banner .ncmp__banner-actions{margin-top:20px;box-sizing:border-box;text-align:right}@media (max-width: 1023px){.ncmp__banner .ncmp__banner-actions{text-align:left;margin-top:-6px;padding:0 12px 8px 12px}}.ncmp__banner .ncmp__banner-actions .ncmp__banner-btns{display:flex;margin:-2px}.ncmp__banner .ncmp__banner-actions .ncmp__banner-btns button{margin:5px;font-size:12px;font-weight:500 !important;line-height:20px;flex:1 1 40%}@media (max-width: 1023px){.ncmp__banner .ncmp__banner-actions .ncmp__banner-btns button{font-size:11px;margin:2px;height:28px !important;line-height:28px !important}}.ncmp__banner .ncmp__banner-actions .ncmp__banner-consent{display:flex;align-items:center;margin-top:10px}.ncmp__banner .ncmp__banner-actions .ncmp__banner-consent .ncmp__banner-branding-btn{display:flex;flex:0 0 26px;font-size:0;margin:0 2px 0 0;align-items:center}.ncmp__banner .ncmp__banner-actions .ncmp__banner-consent .ncmp__banner-branding-btn a{display:flex;align-items:center;height:26px}.ncmp__banner .ncmp__banner-actions .ncmp__banner-consent .ncmp__banner-branding-btn img{height:14px;margin:0;position:relative;vertical-align:middle}.ncmp__banner .ncmp__banner-actions .ncmp__banner-consent p{font-size:13px;line-height:16px;color:#2196f3;font-weight:400;margin:0}@media (max-width: 1023px){.ncmp__banner .ncmp__banner-actions .ncmp__banner-consent p{display:inline-block;font-size:11px;line-height:12px}}@media (max-width: 1023px) and (min-height: 380px){.ncmp__banner .ncmp__banner-actions{width:100%}}
+</style><style type="text/css">#ncmp__modal{position:fixed;top:0;left:0;right:0;bottom:0;opacity:0;pointer-events:none;transition:opacity 0.25s ease-in;display:flex;justify-content:center;align-items:center}#ncmp__modal .ncmp__shadow{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.2);z-index:1}#ncmp__modal .ncmp__modal{width:1100px;height:85vh;z-index:2;background:#fff;box-shadow:0 11px 15px -7px rgba(0,0,0,0.2),0 24px 38px 3px rgba(0,0,0,0.14),0 9px 46px 8px rgba(0,0,0,0.12);display:flex;flex-direction:column;position:relative;overflow:hidden}@media (max-width: 1150px){#ncmp__modal .ncmp__modal{width:900px}}@media (max-width: 1024px){#ncmp__modal .ncmp__modal{width:100%;height:100%;box-sizing:border-box}}#ncmp__modal .ncmp__modal .ncmp__modal-content{display:flex;flex:1 1 auto;height:0}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__modal-content{flex-direction:column-reverse}}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav-hamburger{display:none}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav-hamburger{position:absolute;top:20px;left:15px;z-index:40;display:block;cursor:pointer}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav-hamburger svg{width:24px;height:24px}}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav{flex:0 0 240px;background:#2196f3;color:#fff;overflow:auto}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav{position:absolute;top:0;left:-240px;bottom:0;width:240px;z-index:50;transition:all 0.15s ease-in;overflow:auto}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav.ncmp__nav-active{left:0}}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav .ncmp__nav-top{height:66px;background:#1e83d4}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav ul{margin:0;padding:0;list-style:none}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav ul li{border-bottom:1px solid #35a5ff}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav ul li.ncmp__nav-header{color:#fff;height:42px;line-height:42px;padding:0 20px;font-size:15px;font-weight:500;background:#248ee2}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav ul li.ncmp__nav-item.ncmp__nav-item-active a{cursor:default;background:#0f74c3 !important}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav ul li.ncmp__nav-item a{display:flex;font-size:13px;font-weight:300;text-decoration:none;color:#fff;padding:6px 20px;line-height:18px;align-items:center}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav ul li.ncmp__nav-item a:hover{background:#1481d8}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav ul li.ncmp__nav-item a .ncmp__purpose-status{display:block;flex:0 0 8px;width:8px;height:8px;border-radius:50%;background:#59b5ff;margin-right:10px}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav ul li.ncmp__nav-item a .ncmp__purpose-status.ncmp__purpose-status-on{background:#6fff34}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__nav ul li.ncmp__nav-purpose a em{font-style:normal}#ncmp__modal .ncmp__modal .ncmp__modal-content .ncmp__router{flex:1 1 auto}#ncmp__modal .ncmp__modal h2{display:flex;align-items:center;position:-webkit-sticky;position:sticky;top:0;margin:0;padding:0 30px;background:#fff;font-weight:500;font-size:20px;z-index:10;height:66px;line-height:22px;text-transform:none}@media (max-width: 1023px){#ncmp__modal .ncmp__modal h2{font-size:16px;padding:0 15px 0 50px}}#ncmp__modal .ncmp__modal .ncmp__back{border:none;background:#fff;border-radius:50%;cursor:pointer;width:26px;height:26px;align-items:center;justify-content:center;display:flex;vertical-align:middle;font-size:0 !important;margin-right:10px;transition:all 0.1s ease-in}#ncmp__modal .ncmp__modal .ncmp__back svg{width:16px;height:16px;fill:#2196f3;transition:all 0.1s ease-in}#ncmp__modal .ncmp__modal .ncmp__back:hover{background:#2196f3}#ncmp__modal .ncmp__modal .ncmp__back:hover svg{fill:#fff}#ncmp__modal .ncmp__modal .ncmp__vendor-info{position:absolute;top:0;bottom:66px;right:-40%;z-index:30;background:#ececec;box-sizing:border-box;width:40%;transition:all 0.15s ease-in;overflow:auto}#ncmp__modal .ncmp__modal .ncmp__vendor-info.ncmp__vendor-active{right:0}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__vendor-info{width:100%;right:-100%}#ncmp__modal .ncmp__modal .ncmp__vendor-info.ncmp__vendor-active{right:0}}#ncmp__modal .ncmp__modal .ncmp__vendor-info .ncmp__vendor-body{padding:30px}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__vendor-info .ncmp__vendor-body{padding:15px}}#ncmp__modal .ncmp__modal .ncmp__vendor-info .ncmp__vendor-body h3{margin:0 0 10px 0;font-size:16px;font-weight:500;line-height:22px}#ncmp__modal .ncmp__modal .ncmp__vendor-info .ncmp__vendor-body .ncmp__vendor-section{margin-bottom:30px}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__vendor-info .ncmp__vendor-body .ncmp__vendor-section{margin-bottom:15px}}#ncmp__modal .ncmp__modal .ncmp__vendor-info .ncmp__vendor-body .ncmp__vendor-section a{word-break:break-all}#ncmp__modal .ncmp__modal .ncmp__vendor-info .ncmp__vendor-body .ncmp__vendor-section table{width:100%;border-collapse:collapse;box-sizing:border-box}#ncmp__modal .ncmp__modal .ncmp__vendor-info .ncmp__vendor-body .ncmp__vendor-section table tr td{border-bottom:1px solid #ccc;padding:10px;background:#f8f8f8;font-size:13px;color:#444}#ncmp__modal .ncmp__modal .ncmp__vendor-info .ncmp__vendor-body .ncmp__vendor-section table tr td strong{display:block;font-weight:500;font-size:14px}#ncmp__modal .ncmp__modal .ncmp__vendor-info .ncmp__vendor-body .ncmp__vendor-section table tr:last-child td{border:none}#ncmp__modal .ncmp__modal .ncmp__nav-shadow{position:absolute;top:0;left:0;bottom:0;right:0;z-index:45;pointer-events:none;background:rgba(0,0,0,0);transition:all 0.15s ease-in}#ncmp__modal .ncmp__modal .ncmp__nav-shadow.ncmp__nav-shadow-active{pointer-events:all;background:rgba(0,0,0,0.2)}#ncmp__modal .ncmp__modal .ncmp__vendor-shadow{position:absolute;top:0;left:0;bottom:66px;right:0;z-index:25;pointer-events:none;background:rgba(0,0,0,0);transition:all 0.15s ease-in}#ncmp__modal .ncmp__modal .ncmp__vendor-shadow.ncmp__vendor-active{pointer-events:all;background:rgba(0,0,0,0.2)}#ncmp__modal .ncmp__modal .ncmp__router{flex:1 1 auto;overflow:auto;position:relative}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__col-toggle{width:74px}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__col-name{text-align:left}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-purposes,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-table,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-features{text-align:right;margin-top:10px;margin-bottom:-10px}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-purposes,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-table,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-features{text-align:left;margin-top:15px;margin-bottom:10px}}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-purposes a,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-table a,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-features a{text-decoration:underline;color:#222}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-purposes a:hover,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-table a:hover,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-features a:hover{color:#222}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-purposes a.ncmp__toggle-purposes-off,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-purposes a.ncmp__toggle-vendors-off,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-purposes a.ncmp__toggle-legint-purposes-off,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-purposes a.ncmp__toggle-legint-vendors-off,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-table a.ncmp__toggle-purposes-off,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-table a.ncmp__toggle-vendors-off,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-table a.ncmp__toggle-legint-purposes-off,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-table a.ncmp__toggle-legint-vendors-off,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-features a.ncmp__toggle-purposes-off,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-features a.ncmp__toggle-vendors-off,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-features a.ncmp__toggle-legint-purposes-off,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-features a.ncmp__toggle-legint-vendors-off{color:#555;font-weight:400}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__reject-table{text-align:left;margin-bottom:10px}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__information .ncmp__information-body,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__information .ncmp__object-body,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__object .ncmp__information-body,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__object .ncmp__object-body{padding:30px;background:#efefef;position:relative}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__router .ncmp__information .ncmp__information-body,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__information .ncmp__object-body,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__object .ncmp__information-body,#ncmp__modal .ncmp__modal .ncmp__router .ncmp__object .ncmp__object-body{padding:15px}}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__section .ncmp__description-legal{margin-bottom:30px}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__router .ncmp__section .ncmp__description-legal{margin-bottom:15px}}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__section .ncmp__description-legal strong{margin-bottom:5px;display:block;font-weight:500}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__section .ncmp__description-legal h3{margin:0 0 5px 0;font-size:14px;font-weight:500;line-height:22px}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__section .ncmp__description-legal p{margin:0;white-space:pre-wrap;font-size:14px}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__section .ncmp__section-body{padding:30px;background:#efefef;position:relative}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__router .ncmp__section .ncmp__section-body{padding:15px}}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__section table{width:100%;border-collapse:collapse;box-sizing:border-box}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__section table tr td{border-bottom:1px solid #ccc;padding:5px 10px;font-size:13px;color:#444}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__section table tr td p{margin:0;font-size:13px}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__section table tr th{position:-webkit-sticky;position:sticky;top:66px;z-index:9;padding:5px;font-weight:400;font-size:13px;background:#2d2d2d;color:#fff;border:none}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__section table tr:nth-child(even) td{background:#e4e4e4}#ncmp__modal .ncmp__modal .ncmp__router section{margin-bottom:30px}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__router section{margin-bottom:15px}}#ncmp__modal .ncmp__modal .ncmp__router section .ncmp__section-title{margin-bottom:15px}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__router section .ncmp__section-title{margin-bottom:5px}}#ncmp__modal .ncmp__modal .ncmp__router section .ncmp__section-title h3{font-weight:500;font-size:15px;margin:0;line-height:22px}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__router section .ncmp__section-title h3{font-size:16px}}#ncmp__modal .ncmp__modal .ncmp__router section .ncmp__section-details p{margin-top:0;font-size:14px}#ncmp__modal .ncmp__modal .ncmp__router section .ncmp__section-details p:last-child{margin:0}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__list{display:grid;grid-template-columns:1fr;grid-gap:20px;flex-wrap:wrap}@media (max-width: 1024px){#ncmp__modal .ncmp__modal .ncmp__router .ncmp__list{grid-template-columns:1fr}}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__list .ncmp__list-item{flex:1 0 30%;background:#fbfbfb;padding:15px;display:flex;flex-direction:column}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__list .ncmp__list-item .ncmp__toggle{flex:0 0 72px;float:right;margin-left:15px;margin-bottom:15px}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__list .ncmp__list-item .ncmp__list-info{flex:1 1 auto}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__list .ncmp__list-item .ncmp__list-info strong{display:block;font-weight:500;font-size:15px;margin-bottom:5px}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__list .ncmp__list-item .ncmp__list-info p{margin:0;color:#444;font-weight:400;font-size:13px}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__list .ncmp__list-item .ncmp__list-action{flex:0 0 auto;font-size:13px;padding-top:5px}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__list .ncmp__list-item .ncmp__list-action a{color:#888;border-bottom:1px solid #ccc;font-weight:300}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__list .ncmp__list-item .ncmp__list-action a:hover{color:#444}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__toggle{width:56px;height:24px;position:relative;display:inline-block;vertical-align:middle}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__toggle label{width:56px;height:24px;display:block;border-radius:34px;background-color:#cecece;transition:background-color 0.4s;cursor:pointer}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__toggle label:before{content:'';display:block;background-color:#fff;bottom:3px;height:18px;left:3px;position:absolute;transition:0.4s;width:18px;z-index:5;border-radius:100%}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__toggle label:after{display:block;line-height:24px;text-transform:uppercase;font-size:12px;font-weight:bold;content:'off';color:#484848;padding-left:26px;transition:all 0.4s}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__toggle input{position:absolute;opacity:0}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__toggle input:checked+label{background-color:#2196f3}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__toggle input:checked+label:before{-webkit-transform:translateX(32px);transform:translateX(32px)}#ncmp__modal .ncmp__modal .ncmp__router .ncmp__toggle input:checked+label:after{content:'on';color:#ffffff;padding-left:8px}#ncmp__modal .ncmp__modal .ncmp__modal-actions{flex:0 0 auto;padding:0 15px;height:66px;display:flex;align-items:center}#ncmp__modal .ncmp__modal .ncmp__modal-actions .ncmp__branding{flex:1 1 auto;display:flex;align-items:center;color:#8e8e8e}#ncmp__modal .ncmp__modal .ncmp__modal-actions .ncmp__branding .ncmp__branding-logo{flex:0 0 auto;margin-right:10px;display:flex;align-items:center}@media (max-width: 320px){#ncmp__modal .ncmp__modal .ncmp__modal-actions .ncmp__branding .ncmp__branding-logo{display:none}}#ncmp__modal .ncmp__modal .ncmp__modal-actions .ncmp__branding .ncmp__branding-logo a{display:flex;align-items:center}#ncmp__modal .ncmp__modal .ncmp__modal-actions .ncmp__branding .ncmp__branding-version{flex:1 1 auto;font-size:11px;line-height:14px}@media (max-width: 1023px){#ncmp__modal .ncmp__modal .ncmp__modal-actions .ncmp__branding .ncmp__branding-version{display:none}}#ncmp__modal .ncmp__modal .ncmp__modal-actions .ncmp__branding .ncmp__branding-version span{display:block}#ncmp__modal .ncmp__modal .ncmp__modal-actions .ncmp__branding .ncmp__branding-version span a{border-bottom:1px solid #dedede;color:#777}#ncmp__modal .ncmp__modal .ncmp__modal-actions .ncmp__branding .ncmp__branding-version span a:hover{color:#666}#ncmp__modal .ncmp__modal .ncmp__modal-actions .ncmp__buttons{flex:0 0 auto}#ncmp__modal .ncmp__modal .ncmp__modal-actions .ncmp__buttons button{margin-left:5px}
+</style><link rel="preload" href="irc-ludost-net_initLab_Mibbit_files/integrator_002.js" as="script"><script type="text/javascript" src="irc-ludost-net_initLab_Mibbit_files/integrator_002.js"></script><link rel="preload" href="irc-ludost-net_initLab_Mibbit_files/integrator.js" as="script"><script type="text/javascript" src="irc-ludost-net_initLab_Mibbit_files/integrator.js"></script><script src="irc-ludost-net_initLab_Mibbit_files/jsapi" type="text/javascript"></script></head>
+
+<body onload="init()" onunload="shutdown()">
+
+<!-- Loading -->
+<div id="loading" style="display: none;">
+<table width="100%" height="100%">
+	<tbody><tr>
+		<td valign="middle" align="center">
+<div><noscript><b>NOT</b> </noscript>Loading...</div>
+<img src="irc-ludost-net_initLab_Mibbit_files/loading.gif">
+<div><span id="loadingmsg">Your call is very important to us....</span><noscript>Please enable javascript.</noscript></div>
+<script>
+
+var statuses = ["Turning up the volume",
+                "Creating iPad version",
+                "Wrapping presents",
+                "Loading loading loading",
+                "Working out how best display stuff",
+                "Fixing bugs",
+				"Adding a pinch of salt",
+				"Please hold while we connect you to an operative",
+				"Your call is very important to us.",
+				"Upgrading to version 50,000",];
+
+var loadingtimer = window.setInterval(function() {
+	var status = statuses[Math.floor(Math.random() * statuses.length)];
+    var m = document.getElementById("loadingmsg");
+    while(m.firstChild) m.removeChild(m.firstChild);
+    m.appendChild(document.createTextNode(status+"..."));
+}, 500);
+
+</script>
+		</td>
+	</tr>
+</tbody></table>
+</div>
+<!-- End of loading -->
+
+<div id="mibbitapp" style="display: block;">
+
+<!-- Start of Header -->
+<div id="header" style="text-align: left; background: rgba(0, 0, 0, 0) url(&quot;https://s3.amazonaws.com/mibbit/gradg.png&quot;) repeat-x scroll 0% 0%; overflow: hidden; height: 94px;"><table style="height: 90px; width: 100%;" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td rowspan="2" style="width: 170px;" valign="top"><img style="margin: 2px 2px 2px 8px; height: 86px; width: 166px;" src="irc-ludost-net_initLab_Mibbit_files/minifrog.png" title="Mibbit version 5003"></td><td rowspan="2" valign="middle" align="center"><div id="adHolder" style="width: 728px; height: 90px; overflow: hidden;"><div id="NitroChat728x90" style="border: 0px none; overflow: hidden; margin: 0px; width: 728px; height: 90px; text-align: center; font-size: 0px;" framespacing="0" frameborder="no" scrolling="no" data-bidder="adx" data-creative-id="" data-request-id="33489bca-9c21-47dd-a264-0968ade1bc16"><ins class="adsbygoogle" style="display: inline-block; width: 728px; height: 90px;" data-ad-client="ca-pub-9872233689689746" data-ad-slot="nitroadsPassbackNR" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:728px;height:90px;" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9872233689689746&amp;output=html&amp;h=90&amp;slotname=nitroadsPassbackNR&amp;adk=1553738469&amp;adf=140968445&amp;w=728&amp;lmt=1591271160&amp;psa=1&amp;guci=1.2.0.0.2.2.0.0&amp;us_privacy=1---&amp;format=728x90&amp;url=https%3A%2F%2Fclient00.chat.mibbit.com%2F%3Furl%3Dircs%253A%252F%252Firc.ludost.net%253A6697%252Finitlab&amp;flash=32.0.0&amp;wgl=1&amp;adsid=NT&amp;dt=1591271160282&amp;bpp=10&amp;bdt=69344&amp;idt=18&amp;shv=r20200601&amp;cbv=r20190131&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=728x90%2C0x0&amp;nras=1&amp;correlator=7279056289946&amp;frm=20&amp;pv=1&amp;ga_vid=155903546.1577076630&amp;ga_sid=1591271112&amp;ga_hid=804806582&amp;ga_fc=0&amp;icsg=2762752&amp;dssz=13&amp;mdo=0&amp;mso=0&amp;u_tz=180&amp;u_his=2&amp;u_java=0&amp;u_h=768&amp;u_w=1366&amp;u_ah=738&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=1&amp;u_nmime=2&amp;adx=267&amp;ady=2&amp;biw=1366&amp;bih=606&amp;scr_x=0&amp;scr_y=0&amp;eid=42530451%2C42530453%2C26835105&amp;oid=3&amp;psts=AGkb-H_R7DQ2UTju605MDT820fBXt__4R0acslhJbNbg8bgJjyCP4HHAPA%2CAGkb-H_R7DQ2UTju605MDT820fBXt__4R0acslhJbNbg8bgJjyCP4HHAPA&amp;pvsid=2174606866583549&amp;pem=354&amp;rx=0&amp;eae=0&amp;fc=896&amp;brdim=-8%2C-8%2C-8%2C-8%2C1366%2C0%2C1382%2C754%2C1366%2C606&amp;vis=1&amp;rsz=%7C%7CeoE%7C&amp;abl=CS&amp;pfx=0&amp;fu=8208&amp;bc=29&amp;ifi=2&amp;uci=a!2&amp;xpc=LKqwOhvPhA&amp;p=https%3A//client00.chat.mibbit.com&amp;dtd=59" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!2" title="advertisement" data-google-query-id="CIj05oGL6OkCFQjiGwod6ekIjA" width="728" height="90" frameborder="0"></iframe></ins></ins></ins></div></div></td><td style="width: 280px;" valign="top" nowrap="nowrap"><div style="background: rgb(34, 36, 35) url(&quot;https://s3.amazonaws.com/mibbit/blackpanel.png&quot;) no-repeat scroll left top; border: 2px solid rgb(136, 136, 136); border-radius: 8px; padding: 4px; margin-right: 4px; margin-top: 4px; height: 60px; overflow: hidden;" id="statusbox"><img id="connlogo" style="width: 17px; height: 17px; display: inline;" src="irc-ludost-net_initLab_Mibbit_files/online-small.png"><span style="font-size: 11px; padding: 0px; color: rgb(170, 170, 170);" id="serverstatus">2917 users</span> <span id="laginfo" title="Lag between you and Mibbit." style="font-size: 11px; color: rgb(102, 102, 102); cursor: pointer; padding: 0px;">lag: 66ms</span><br><span id="clientstatus" style="font-size: 11px; color: rgb(204, 204, 0); margin-left: 17px; padding: 0px;"><span id="clientstatusirc"></span></span><br><span id="loginstatus" style="font-size: 11px; color: rgb(170, 170, 170); margin-left: 17px; padding: 0px;"><span style="cursor: pointer; font-weight: bold; color: rgb(170, 170, 170);">Login</span><span style="color: rgb(102, 102, 102);"> | </span><span style="cursor: pointer; font-weight: bold; color: rgb(170, 170, 170);">Create an account</span></span></div></td></tr><tr><td valign="bottom"><ul style="display: inline; list-style-type: none; font-family: sansSerif; font-size: 11px; color: rgb(102, 102, 102);" id="usermenu1"></ul></td></tr></tbody></table></div>
+<!-- End of header -->
+
+<!-- Start of tabs -->
+<div id="tabs" style="text-align: left; height: 18px; overflow: hidden; width: auto; position: static; padding-top: 6px; background: rgb(0, 0, 0) none repeat scroll 0% 0%;"><div style="position: relative;"><div style="overflow: hidden; z-index: 90; margin-right: 40px; height: 18px;"><ul style="list-style: outside none none; margin: 0px; padding: 0px; vertical-align: bottom; overflow: hidden; height: 18px;"><li style="list-style-type: none; margin: 0px 4px 0px 0px; padding: 0px 0px 0px 4px; display: block; position: relative; white-space: nowrap; cursor: pointer; user-select: none; height: 18px; background: transparent url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAASCAYAAAAe/ZHXAAAAqUlEQVRoge3XoY3EQBBE0Q7EaRWYWByLHYAt2Whow0GTUx04LVs1taX94PEiH1REhD9aa962zZnpOSfw09Z1dUSEl2Xxfd8eY7j37uu6fBwH8NMk/Qdynqcz8/FBwJtIcrTWPMZ4fAzwNpIc+7679/74GOBtJDkyk88BfCHJMed8fAjwRgQCFAgEKBAIUCAQoEAgQIFAgAKBAAUCAQoEAhQIBCgQCFCQ5D8qDzxwnSZOPAAAAABJRU5ErkJggg==&quot;) no-repeat scroll left top; float: left; text-align: center;" title="Mibbit Home"><span style="display: block; position: relative; padding-right: 4px; height: 18px; font-size: 11px; line-height: 11px; background: transparent url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAASCAYAAAAe/ZHXAAAAqElEQVRoge3TsQmEQBRF0QEbsQo7mRbMTE1swUpmVETQRBAMhd/TM1xY9DfgDU4JJ3RdJzMDPuu6LuWc1batyrJUCOEnxqiUEvBZOWfN86xlWXSep+q6VlEUBAH+jeOobdvUNA1BgCfDMOg4DlVVRRDgybqu6vueIMCTaZq07ztBgDdmRhDgDUEAB0EAB0EAB0EAB0EAB0EAB0EAB0EAB0EAB0EAh5npBiKAOFaOAoWaAAAAAElFTkSuQmCC&quot;) no-repeat scroll right top; float: left;"><span style="text-decoration: none; vertical-align: top; position: relative; font-size: 11px; line-height: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin-left: 3px; margin-right: 3px; top: 3px; color: rgb(0, 0, 0);">Home</span></span></li></ul></div></div><div style="position: absolute; right: 0px; top: 94px; width: 40px; height: 20px; text-align: right; padding-top: 6px; background: rgb(0, 0, 0) none repeat scroll 0% 0%; display: block;"><div style="display: none;"><span style="color: rgb(170, 170, 170); font-size: 15px; font-weight: bold; cursor: pointer; text-decoration: none;">&lt;</span> <a style="color: rgb(170, 170, 170); font-size: 15px; font-weight: bold; cursor: pointer; text-decoration: none;">&gt;</a></div></div></div>
+<!-- End of tabs -->
+
+<div id="chats">
+
+<!-- Start of connect specific -->
+
+<!-- End of connect specific -->
+
+<div style="background: rgb(170, 170, 170) none repeat scroll 0% 0%; border: 0px none; font-size: 13px; position: absolute; text-align: left; overflow: auto; inset: 118px 0px 0px; display: block;"><div style="position: absolute; inset: 8px; overflow: hidden;"><iframe style="width: 100%; height: 100%; min-height: 100%;" src="irc-ludost-net_initLab_Mibbit_files/home.htm"></iframe></div></div></div>
+<!-- End of chats -->
+
+</div>
+<!-- End of mibbitapp -->
+
+<script type="text/javascript">
+window['nitroAds'] = window['nitroAds'] || { createAd: function () { window.nitroAds.queue.push(["createAd", arguments]) }, queue: [] };
+</script>
+<script async="" src="irc-ludost-net_initLab_Mibbit_files/ads-316.js"></script>
+
+<script src="irc-ludost-net_initLab_Mibbit_files/index.js"></script>
+
+<script src="irc-ludost-net_initLab_Mibbit_files/mibbitclient_5003_gz.js"></script><iframe style="display: none;" name="__uspapiLocator"></iframe><iframe style="display: none;" name="__tcfapiLocator"></iframe>
+
+
+<script type="text/javascript" src="irc-ludost-net_initLab_Mibbit_files/languages_2.js"></script>
+
+
+
+<div id="ncmp__tool" class="ncmp__normalise"><div class="ncmp__banner">
+    <div class="ncmp__banner-inner">
+        <div class="ncmp__banner-info">
+            <div class="ncmp__banner-sections">
+                <div class="ncmp__banner-section-1">
+                    
+                    <h2>You control your privacy</h2>
+                    <p>
+                        When you use this site, we and our
+                        <a href="javascript:;" onclick="__cmp('showModal').navigate('vendors')">vendors</a> process data
+                        from you and your device. This data can include your type of browser, settings, cookies, unique
+                        identifiers, IP address, and geo location. Some partners process data without consent on a basis
+                        of legitimate business interest (<a href="javascript:;" onclick="__cmp('showModal').navigate('object')">more info</a>). It's your right to withdraw consent at any time, and your choice won't impact site
+                        functionality. Once dismissed, these settings can be accessed again from the link in our privacy
+                        policy or footer.
+                    </p>
+                </div>
+
+                <div class="ncmp__banner-section-2">
+                    <h4>
+                        We're requesting consent to offer
+                        <strong>Personalised ads and content, ad and content measurement, audience insights and product development</strong>
+                    </h4>
+
+                    <p>
+                        Ads and content can be personalised based on a 
+profile. More data can be added to better personalise ads and content. 
+Ad and content performance can be measured. Insights about audiences who
+ saw the ads and content can be derived. Data can be used to build or 
+improve user experience, systems and software.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ncmp__banner-actions">
+            <div class="ncmp__banner-btns">
+                <button onclick="__cmp('showModal')" class="ncmp__btn ncmp__btn-border">Advanced Settings</button>
+                <button onclick="__cmp('save')" class="ncmp__btn">Accept</button>
+            </div>
+
+            <div class="ncmp__banner-consent">
+                <div class="ncmp__banner-branding-btn">
+                    <a href="https://nitropay.com/" target="_blank">
+                        <img src="irc-ludost-net_initLab_Mibbit_files/np-cmp-n2.png" alt="NitroPay">
+                    </a>
+                </div>
+                <p>
+                    Your consents are specific to this site &amp; device.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div><div id="errorlog"><div style="display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index: 1001; opacity: 0.66;"></div><div style="display: none; position: absolute; top: 25%; left: 25%; width: 50%; height: 50%; padding: 8px; border: 14px solid rgb(0, 0, 0); background-color: white; border-radius: 12px; z-index: 1002; overflow: auto;"></div></div><ins class="adsbygoogle adsbygoogle-noablate" style="display: none !important;" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" src="irc-ludost-net_initLab_Mibbit_files/ads_002.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-load-complete="true" frameborder="0"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_2602617599094" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body><iframe id="google_esf" name="google_esf" src="irc-ludost-net_initLab_Mibbit_files/zrt_lookup.htm" style="display: none;" data-ad-client="ca-pub-9872233689689746"></iframe></html>

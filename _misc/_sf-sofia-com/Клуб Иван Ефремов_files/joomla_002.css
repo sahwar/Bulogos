@@ -1,0 +1,258 @@
+/**
+ * @package   Dominion Template - RocketTheme
+ * @version   1.5.5 January 19, 2010
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2010 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+/* Article */
+.rt-joomla .rt-article {margin-bottom: 35px;}
+.rt-joomla .rt-articleinfo {margin: 15px -12px 0 -12px;padding: 5px 11px 5px 0;overflow: hidden;}
+.bodylevel-low .rt-joomla .rt-articleinfo {padding-bottom: 15px !important;}
+.rt-joomla .rt-articleinfo2 {float: left;height: 24px;padding: 0 15px 0 12px;line-height: 24px;}
+.rt-author, .rt-date-posted, .rt-date-modified {display: inline;text-align: right;font-weight: bold;margin-bottom: 15px;letter-spacing: 0.1em;margin-right: 6px;font-size: 12px;}
+.rt-date-posted, .rt-date-modified {padding-left: 8px;}
+.rt-author span, .rt-date-posted span, .rt-date-modified span {display: inline;font-weight: normal;font-size: 12px;line-height: 1.2em;text-transform: none;letter-spacing: normal;}
+.rt-joomla .rt-article-cat {margin-top: 10px;margin-bottom: 15px;}
+.rt-joomla .rt-headline {margin: 0 0 15px 0;}
+.rt-comment-block {display: block;float: right;}
+.rt-comment-badge {display: block;width: 44px;height: 32px;margin: -4px 0;float: left;font-weight: bold;}
+.rt-comment-badge:hover {background-position: 0 -37px;}
+.bodylevel-low .rt-comment-badge {background-position: -56px 0;width: 36px;margin: -4px 5px -4px 0;text-shadow: none;font-weight: normal;}
+.bodylevel-low .rt-comment-badge:hover {background-position: -56px -37px;}
+.rt-comment-badge span {display: block;line-height: 32px;font-size: 14px;text-align: center;padding-right: 4px;}
+.rt-comment-text {text-align: right;display: block;float: left;line-height: 24px;font-size: 12px;}
+.rt-joomla .rt-article-bg {border-bottom: none;padding: 0;}
+.rt-joomla .rt-pagetitle {margin-top: 0;margin-bottom: 30px;}
+body .rt-joomla .rt-blog .rt-description {border-bottom: none;}
+
+/* Typography */
+.rt-joomla .rt-article-icons {width: 75px;height: 21px;margin-top: 10px;padding: 1px 5px 0 4px;}
+.rt-joomla .icon {display:block;width:22px;height:19px;float: right;}
+.rt-joomla .pdf {background-position: -83px 0;background-repeat: no-repeat;margin-left: 3px;}
+.rt-joomla .print {background-position: -40px 0;background-repeat: no-repeat;margin-left: 3px;}
+.rt-joomla .email {background-position: 0 0;background-repeat: no-repeat;}
+.rt-joomla .edit {background-position: -122px 0;margin-top: 6px;margin-left: 0 !important;margin-right: 0;float: right !important;}
+.rt-joomla a:hover .pdf {background-position: -83px -23px;}
+.rt-joomla a:hover .print {background-position: -40px -23px;}
+.rt-joomla a:hover .email {background-position: 0 -23px;}
+.rt-joomla .edit:hover {background-position: -122px -23px;}
+.bodylevel-low .rt-article-icons {padding:1px 5px 0 0;width:77px;}
+.bodylevel-low .rt-joomla .pdf {background-position: -83px -47px;background-repeat: no-repeat;margin-left: 4px;}
+.bodylevel-low .rt-joomla .print {background-position: -40px -47px;background-repeat: no-repeat;margin-left: 3px;}
+.bodylevel-low .rt-joomla .email {background-position: 0 -47px;background-repeat: no-repeat;}
+.bodylevel-low .rt-joomla a:hover .pdf {background-position: -83px -74px;}
+.bodylevel-low .rt-joomla a:hover .print {background-position: -40px -74px;}
+.bodylevel-low .rt-joomla a:hover .email {background-position: 0 -74px;}
+#form-login ul li, #com-form-login ul li, ul.rt-more-articles li, .rt-section-list ul li {list-style: none;}
+#form-login ul li a, #com-form-login ul li a, ul.rt-more-articles li a, .rt-section-list ul li a {padding-left: 15px;font-size: 110%;}
+#form-login .inputbox, .rt-joomla .user input#email, .rt-joomla .user input#name, .rt-joomla .user input#username, .rt-joomla .user input#password, .rt-joomla .user input#password2 {border: 0;background-color: transparent;padding: 5px 10px;height: 18px;outline: none;}
+#rt-main-surround .rt-grid-2 .inputbox {background-position: 0 0;}
+#rt-main-surround .rt-grid-3 .inputbox {background-position: 0 -33px;}
+#rt-main-surround .rt-grid-4 .inputbox {background-position: 0 -66px;}
+.bodylevel-low #rt-main-surround .inputbox {background-position: 0 -226px;}
+.bodylevel-low #rt-main-surround .rt-grid-2 .inputbox {background-position: 0 -130px;}
+.bodylevel-low #rt-main-surround .rt-grid-3 .inputbox {background-position: 0 -162px;}
+.bodylevel-low #rt-main-surround .rt-grid-4 .inputbox {background-position: 0 -194px;}
+.col12 .rt-grid-2 #form-login .inputbox {width: 90px;}
+.col12 .rt-grid-3 #form-login .inputbox, .col12 .rt-grid-4 #form-login .inputbox, .col12 .rt-grid-5 #form-login .inputbox, .col12 .rt-grid-6 #form-login .inputbox, .col12 .rt-grid-7 #form-login .inputbox, .col12 .rt-grid-8 #form-login .inputbox, .col12 .rt-grid-9 #form-login .inputbox, .col12 .rt-grid-10 #form-login .inputbox, .col12 .rt-grid-12 #form-login .inputbox, #com-form-login .inputbox, .rt-joomla .user input#email {width: 170px;}
+.col12 .rt-grid-4 #form-login .inputbox, .col12 .rt-grid-5 #form-login .inputbox, .col12 .rt-grid-6 #form-login .inputbox, .col12 .rt-grid-7 #form-login .inputbox, .col12 .rt-grid-8 #form-login .inputbox, .col12 .rt-grid-9 #form-login .inputbox, .col12 .rt-grid-10 #form-login .inputbox, .col12 .rt-grid-12 #form-login .inputbox, #com-form-login .inputbox, .rt-joomla .user input#email, .rt-joomla .user input#name, .rt-joomla .user input#username, .rt-joomla .user input#password, .rt-joomla .user input#password2 {width: 250px;}
+#com-form-login .inputbox {border: 0;background-color: transparent;padding: 5px 10px;height: 18px;outline: none;}
+
+#com-form-login ul {margin-top: 15px;}
+.rt-joomla .results ol.list {margin-top: 0;}
+.rt-joomla .results ol.list h4 {border: 0;margin-top: 0;margin-bottom: 0;display: inline;}
+.rt-joomla .results ol.list li {padding: 10px 5px;margin-bottom: 5px;}
+.rt-joomla .results ol.list li p {margin-top: 0;font-size: 90%;}
+.rt-joomla .results ol.list .description {margin-bottom: 15px;}
+.rt-joomla .results ol.list li span.small {font-size: 90%;}
+.rt-joomla .user legend, .rt-joomla .contact legend {text-transform: uppercase;font-weight: bold;font-size: 260%;line-height: 120%;}
+.rt-joomla .user {margin-top: 15px;}
+.rt-joomla .user legend {text-transform: none;margin-top: 15px;}
+
+/* RokTwittie Module */
+.roktwittie ul {list-style:none;margin:0;padding:0;text-indent:0;}
+.roktwittie li {padding-left:30px;background:url(../images/typography/quotes.png) 0 0 no-repeat;margin:0 0 10px 0;list-style:none;}
+.roktwittie li .roktwittie-text {background:url(../images/typography/quotes.png) 100% 100% no-repeat;padding-right:30px;}
+.roktwittie-text .roktwittie-date {font-size:95%;font-weight:bold;float:right;display:block;padding-left:10px;padding-top:4px;margin-right:-30px;}
+.roktwittie-text span {font-style:italic;}
+
+/* JComments Module */
+.rt-block ul.jclist {margin:0;padding:0;list-style:none;}
+.rt-block ul.jclist li {background:url(../images/typography/speach-bubble.png) 100% 0 no-repeat;padding:5px 60px 5px 10px !important;margin: 0 0 5px 0 !important;position:relative;}
+.rt-block ul.jclist li img {position:absolute;padding:5px;top:2px;right:-5px;}
+.rt-block ul.jclist .jcl_comment {line-height:130%;text-indent:0;padding:0;}
+
+/* RokTabs */
+.roktabs-wrapper {margin: -12px 0 0 -12px;padding: 0;position: relative; }
+.roktabs {position: relative;z-index: 3; }
+.roktabs-wrapper .roktabs-container-inner {position:relative; overflow: hidden; }
+.roktabs-wrapper .roktabs-container-wrapper {clear: both;position: relative;overflow:hidden;width:50000px; }
+.roktabs-wrapper .roktabs-container-wrapper div {float: left; }
+.roktabs-wrapper .roktabs-container-wrapper div.wrapper {padding: 12px 0;width: auto;float: none; }
+.roktabs-wrapper .roktabs-links {margin: 0;padding: 0;height: 58px;overflow: hidden;}
+.roktabs-wrapper .active-arrows .roktabs-links {margin: 0 18px 0 38px;padding: 0;height: 58px;}
+.roktabs-wrapper .roktabs-links ul {text-align: left;list-style-type: none;overflow:hidden;margin: 0;padding: 0;height: 42px;}
+.roktabs-wrapper .roktabs-links ul li {float: left;padding: 0;margin: 0 35px;text-decoration: none;position: relative;height: 42px;line-height: 42px;font-size: 110%;}
+.bodylevel-low .roktabs-wrapper .roktabs-links ul li, .bodylevel-high .low .roktabs-wrapper .roktabs-links ul li, .bodylevel-med .low .roktabs-wrapper .roktabs-links ul li {margin: 0;}
+.roktabs-wrapper .roktabs-links ul li span.tab1 {display: block;height: 42px;margin-left: -35px;}
+.bodylevel-low .roktabs-wrapper .roktabs-links ul li span.tab1, .bodylevel-high .low .roktabs-wrapper .roktabs-links ul li span.tab1, .bodylevel-med .low .roktabs-wrapper .roktabs-links ul li span.tab1 {margin: 0;background: none;}
+.roktabs-wrapper .roktabs-links ul li span.tab2 {display: block;height: 42px;padding: 0 10px;margin-right: -35px;}
+.bodylevel-low .roktabs-wrapper .roktabs-links ul li span.tab2, .bodylevel-high .low .roktabs-wrapper .roktabs-links ul li span.tab2, .bodylevel-med .low .roktabs-wrapper .roktabs-links ul li span.tab2 {margin: 0;background: none;}
+.roktabs-wrapper .roktabs-scroller {position: absolute;bottom: 0;right: 0;height: 42px;}
+.roktabs-wrapper .arrow-next, .roktabs-wrapper .arrow-prev {line-height: 20px;text-align: center;cursor: pointer;z-index: 2;position: absolute;top: 8px;height:28px;width: 28px;}
+.roktabs-wrapper .arrow-prev span, .roktabs-wrapper .arrow-next span {display: none;}
+.roktabs-wrapper .arrow-next {background-position: 0 -32px;background-repeat: no-repeat;right: 0;}
+.roktabs-wrapper .arrow-next:hover {background-position: 0 -96px;background-repeat: no-repeat;}
+.roktabs-wrapper .arrow-prev {background-position: 0 0;background-repeat: no-repeat;left: 0;}
+.roktabs-wrapper .arrow-prev:hover {background-position: 0 -64px;background-repeat: no-repeat;}
+.bodylevel-med .roktabs-wrapper .arrow-next, .bodylevel-high .med .roktabs-wrapper .arrow-next, .bodylevel-low .med .roktabs-wrapper .arrow-next {background-position: -32px -32px;background-repeat: no-repeat;}
+.bodylevel-med .roktabs-wrapper .arrow-prev, .bodylevel-high .med .roktabs-wrapper .arrow-prev, .bodylevel-low .med .roktabs-wrapper .arrow-prev {background-position: -32px 0;background-repeat: no-repeat;}
+
+.bodylevel-med .roktabs-wrapper .arrow-next:hover, .bodylevel-high .med .roktabs-wrapper .arrow-next:hover, .bodylevel-low .med .roktabs-wrapper .arrow-next:hover {background-position: -32px -96px;background-repeat: no-repeat;}
+.bodylevel-med .roktabs-wrapper .arrow-prev:hover, .bodylevel-high .med .roktabs-wrapper .arrow-prev:hover, .bodylevel-low .med .roktabs-wrapper .arrow-prev:hover {background-position: -32px -64px;background-repeat: no-repeat;}
+.bodylevel-low .roktabs-wrapper .arrow-next, .bodylevel-high .low .roktabs-wrapper .arrow-next, .bodylevel-med .low .roktabs-wrapper .arrow-next {background-position: 0 -160px;background-repeat: no-repeat;}
+.bodylevel-low .roktabs-wrapper .arrow-prev, .bodylevel-high .low .roktabs-wrapper .arrow-prev, .bodylevel-med .low .roktabs-wrapper .arrow-prev {background-position: 0 -128px;background-repeat: no-repeat;}
+.bodylevel-high .low .roktabs-topbar2, .bodylevel-high .low .roktabs-topbar3, .bodylevel-med .low .roktabs-topbar2, .bodylevel-med .low .roktabs-topbar3 {background: none;}
+.bodylevel-high .roktabs-topbar2, .bodylevel-med .high .roktabs-topbar2, .bodylevel-low .high .roktabs-topbar2 {background: url(../images/body/dark/module-title2-r.png) 100% 2px no-repeat;}
+.bodylevel-high .roktabs-topbar3, .bodylevel-med .high .roktabs-topbar3, .bodylevel-low .high .roktabs-topbar3 {background: url(../images/body/dark/module-title2-l.png) 0 2px no-repeat;}
+
+/* RokAjaxSearch */
+#rokajaxsearch {overflow: hidden;margin-left: -13px;}
+#rokajaxsearch .inputbox {float: left;width: 245px;height: 17px;line-height: 12px;margin-right: 10px;padding: 6px 8px 5px 40px;border: 0;font-size: 13px;outline: none;background: none;}
+#rokajaxsearch .roksearch-wrapper {height: 28px;display: inline-block;float: left;}
+.search_options {float: left;margin-top: 5px;}
+.search_options label {margin-right:8px;}
+#roksearch_results {border-bottom: 0;}
+#roksearch_search_str {width: auto;padding: 4px;}
+#roksearch_search_str.loading {background: transparent url(../images/spinner.gif) no-repeat scroll 97% 50% !important}
+#roksearch_results {z-index: 10000;position: absolute;width: 400px;float: right;margin-top: -1px;text-align: left;visibility: hidden;}
+#roksearch_results a#roksearch_link {float: right;padding-right: 5px;margin-top: 10px;display: block;height: 12px;width: 12px;background-position: 0 -50px;}
+#roksearch_results h3 {margin-top: 0;margin-bottom: 0;line-height: 110%;font-size: 120%;padding-bottom: 0;}
+#roksearch_results span {display: block;line-height: 130%;font-size: 90%;}
+#roksearch_results .container-wrapper {overflow: hidden;}
+#roksearch_results .page {float: left;}
+#roksearch_results .roksearch_header, #roksearch_results .roksearch_row_btm {padding: 10px;line-height: 100%;text-transform: uppercase;font-weight: normal;font-size: 100%;}
+#roksearch_results .roksearch_row_btm {overflow: hidden;}
+#roksearch_results .roksearch_row_btm span {line-height: 140%;}
+#roksearch_results span.small {display: inline-block;margin-top: 2px;margin-bottom: 7px;font-size: 10px;}
+#roksearch_results span.highlight {display: inline;}
+#roksearch_results a.clr {font-size: 100%;}
+#roksearch_results a:hover {text-decoration: none;}
+#roksearch_results .roksearch_odd {padding: 15px;position: relative;}
+#roksearch_results .roksearch_even {padding: 15px;position: relative;}
+#roksearch_results .container-arrows {height: 12px;width: 30px;float: left;margin-right: 5px;position: relative;}
+#roksearch_results .arrow-left, #roksearch_results .arrow-left-disabled, #roksearch_results .arrow-right, #roksearch_results .arrow-right-disabled {width: 12px;height: 12px;position: absolute;top: 0;}
+#roksearch_results .arrow-left {left: 0;cursor: pointer;background-position: 0 2px;}
+#roksearch_results .arrow-left-disabled {left: 0;background-position: 0 -33px;}
+#roksearch_results .arrow-right {left: 18px;cursor: pointer;background-position: 0 -15px;}
+#roksearch_results .arrow-right-disabled {left: 18px;background-position: 0 -33px;}
+#roksearch_results .viewall span {line-height: 100%;}
+#roksearch_results a.viewall {float: left;margin-right: 5px;}
+#roksearch_results .estimated_res, #roksearch_results .pagination_res {font-size: 9px;font-style: italic;text-transform: none;float:left;}
+#roksearch_results .pagination_res {font-style: normal;float: right;font-size: 11px;margin-top: -1px;}
+#roksearch_results .powered-by-google {text-transform: lowercase;font-style: italic;font-size: 9px;}
+#roksearch_results .google-search a#roksearch_link {margin-top: 5px;}
+
+#roksearch_results .readon {display: inline-block;margin-left: 10px;height: 34px;margin-top: 15px;}
+#roksearch_results .readon span, .readon .button {display: block;margin-left: -10px;padding: 0 15px 3px 15px;border: 0;font-size: 13px;cursor: pointer;height: 34px;line-height: 32px;float: left;font-weight: bold;}
+
+/* RokNewsPager */
+body ul.roknewspager {border: 0;padding: 0;}
+body ul.roknewspager li {margin-bottom: 0;}
+body #rt-main-surround ul.roknewspager li {padding-bottom: 20px;}
+body #rt-showcase ul.roknewspager li {margin-bottom: 0;}
+body .roknewspager-title {line-height: 1.3em;}
+body #rt-showcase ul.roknewspager .roknewspager-div {padding: 16px 20px;}
+body ul.roknewspager .roknewspager-div {padding: 0;}
+body .roknewspager-div .author {font-size: 90%;display: inline;float: left;margin-right: 5px;margin-bottom: 15px;}
+body .roknewspager-div .published-date {font-size: 90%;margin-bottom: 15px;}
+body .roknewspager-div a img {float: left;margin-right: 15px;margin-top: 4px;}
+
+body .article-rating .rating-bar {float:left;height:19px;width:124px;text-align:left;padding-left: 5px;padding-right: 5px;}
+body .article-rating .rating-bar div {height:19px;overflow:hidden;}
+
+/* RokStories */
+#rt-showcase .rokstories-layout3 .feature-block .desc-container {width:97%;left:10px;bottom: 10px;font-size: 140%;background-color:transparent;}
+#rt-showcase .rokstories-layout3 .feature-block .desc-container .description {left:15px;}
+#rt-showcase .feature-circles-sub span {display: none;}
+#rt-showcase .feature-circles-sub {width:10px;height:10px;margin: 0 5px;cursor:pointer;display:inline-block;}
+#rt-showcase .rokstories-layout3 .description .feature-title { line-height: 130%; height: 130%; margin-bottom: 5px;}
+#rt-showcase .image-full {margin: 0px auto;}
+.rokstories-tip {z-index: 1000;}
+body .rokstories-layout2 .feature-arrow-r {background: url(../images/rokstories-arrows.png) 100% 0 no-repeat;}
+body .rokstories-layout2 .feature-arrow-l {background: url(../images/rokstories-arrows.png) 0 0 no-repeat;}
+body .rokstories-layout2 .arrowleft-hover {background-position: 0 50%;}
+body .rokstories-layout2 .arrowleft-down {background-position: 0 100%;}
+body .rokstories-layout2 .arrowright-hover {background-position: 100% 50%;}
+body .rokstories-layout2 .arrowright-down {background-position: 100% 100%;}
+
+/* JComments */
+.rok-comment-entry span.comments-vote a {background-image: url(../images/comments/comments-sprite.png);}
+#comments-form .readon span {display: block;margin-left: -10px;padding: 0 15px 3px 15px;border: 0;font-size: 13px;cursor: pointer;height: 34px;line-height: 32px;float: left;font-weight: bold;}
+#comments-form .readon {float: left;margin-right: 5px;}
+#comments-form .roksubscribe {padding: 1px 5px 7px 24px;}
+#rt-main-surround #jc h2.title {height: 34px;}
+
+/* Editing */
+.rt-joomla .edit-article fieldset legend {text-transform: uppercase;font-weight: bold;font-size: 160%;}
+.rt-joomla .edit-article fieldset div {overflow: visible;}
+#system-message dd.notice {border: 0;background: none;}
+/* Buttons */
+#editor-xtd-buttons {padding: 5px 0;}
+.button2-left, .button2-right, .button2-left div, .button2-right div {float: left;}
+.button2-left a, .button2-right a, .button2-left span, .button2-right span {display: block;height: 22px;float: left;line-height: 22px;font-size: 11px;cursor: pointer;margin-bottom: 5px;}
+.button2-left span, .button2-right span {cursor: default;}
+.button2-left .page a, .button2-right .page a, .button2-left .page span, .button2-right .page span {padding: 0 6px;}
+.button2-left a:hover, .button2-right a:hover {text-decoration: none;}
+.button2-left a, .button2-left span {padding: 0 24px 0 6px;}
+.button2-right a, .button2-right span {padding: 0 6px 0 24px;}
+.button2-left .blank a {padding-right: 6px;}
+.img_caption.left {float: left;margin-right: 1em;}
+.img_caption.right {float: right;margin-left: 1em;}
+.img_caption.left p {clear: left;text-align: center;}
+.img_caption.right p {clear: right;text-align: center;}
+.img_caption {text-align: center!important;}
+.edit-article fieldset div input {padding: 2px;}
+.edit-article fieldset div .label-left {padding: 2px 0;}
+.edit-article fieldset div img.calendar {vertical-align: middle;margin-left: 5px;}
+
+/* RTL */
+body.rtl .rokajaxsearch {direction: ltr;text-align: right;}
+body.rtl .rokajaxsearch .inputbox {text-align: right;}
+body.rtl #roksearch_results {direction: ltr;text-align: right;}
+body.rtl #rokajaxsearch {margin-right: -13px;margin-left: 0;}
+body.rtl #rokajaxsearch .inputbox {float: right;margin-right: 0;margin-left: 10px;padding: 6px 8px 5px 40px;}
+body.rtl #rokajaxsearch .roksearch-wrapper {float: right;}
+body.rtl .search_options {float: right;}
+body.rtl .search_options label {margin-left:8px;margin-right: 0;}
+body.rtl .rt-pollbuttons .readon {float: right;}
+body.rtl #form-login ul li a, body.rtl #com-form-login ul li a, body.rtl ul.rt-more-articles li a, body.rtl .rt-section-list ul li a {padding-left: 0;padding-right: 15px;}
+body.rtl .rt-joomla .rt-articleinfo2 {float: right;}
+body.rtl .rt-joomla .rt-articleinfo {padding: 5px 0 5px 11px;}
+body.rtl .rt-comment-block {float: left;}
+body.rtl .rt-joomla .rt-article-icons {float: left;}
+body.rtl .article-rating {float: right;}
+body.rtl .article-rating .rating-bar {float: right;text-align: right;}
+.bodylevel-high.rtl #rokajaxsearch .roksearch-wrapper, .bodylevel-med.rtl #rokajaxsearch .roksearch-wrapper, .bodylevel-low.rtl #rokajaxsearch .roksearch-wrapper {background-position: 100% 0;float: right;}
+.rtl #rokajaxsearch #roksearch_search_str.loading {background-position: 40px 50% !important;}
+body.rtl #roksearch_results a#roksearch_link {float: left;padding-right: 0;padding-left: 5px;background-position: 100% -50px;}
+body.rtl #roksearch_results .container-arrows {float: right;margin-right: 0;margin-left: 5px;}
+body.rtl #roksearch_results a.viewall {float: right;}
+body.rtl .rt-joomla .search_result fieldset.word label {float: right;}
+body.rtl .roktabs-wrapper {direction: ltr;text-align: right;}
+body.rtl .roktabs-wrapper .roktabs-links ul li {float: right;}
+body.rtl .rt-joomla .label-left {float: right;}
+body.rtl .rt-author, body.rtl .rt-date-posted, body.rtl .rt-date-modified {float: right;}
+body.rtl .rt-date-posted span {line-height: 24px;}
+body.rtl .rt-date-posted, body.rtl .rt-date-modified {padding-left: 0;padding-right: 8px;}
+body.rtl #comments-form p {text-align: right;}
+body.rtl #comments-form p span a {float: right;}
+body.rtl #comments-form-buttons .readon {float: right;}
+body.rtl #comments-list-footer {float: left;}
+body.rtl #jc #comments h2.comments-title, body.rtl #rt-main-surround #jc h2.comments-title {text-align: right;background-position: 100% 0;}
+body.rtl #comments-footer a {float: left;}
+body.rtl .rokradios, body.rtl .rokradios-active, body.rtl .rokchecks, body.rtl .rokchecks-active {display: inline-block;}
+body.rtl .button2-left, body.rtl .button2-right, body.rtl .button2-left div, body.rtl .button2-right div {float: right;}
+body.rtl #editor-xtd-buttons {float: right;}
+body.rtl .edit-article fieldset table {float: right;}

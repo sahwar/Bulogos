@@ -1,0 +1,55 @@
+<div class="post">
+...
+<h3 id="comments">
+
+or
+
+<div class="post">
+...
+<h3 id="respond">Leave a Reply</h3>
+
+comments-only:
+<h3 id="comments">
+...
+<h3 id="respond">Leave a Reply</h3>
+
+======
+
+sudo apt-get install php5-cli php5-common php5-curl php5-json curl libcurl3 libcurl3-dev php5-mcrypt
+
+======
+
+gatchev.info/blog
+<h2
+...
+<ol class="commentlist">
+
+<h2
+...
+<h3 id="respond">Leave a Reply</h3>
+
+======
+
+http://www.gatchev.info/blog/?p=1
+http://textmechanic.com/Generate-List-of-Numbers.html
+https://startpage.com/row/search
+https://www.commentics.org/download
+http://tildehash.com/?blog=the-popularity-of-firefox-is-definitely-waning
+http://www.webcodo.net/comments-system-using-php-ajax/#.VbEAmI_8sjj
+http://www.webcodo.net/comments-system-using-php-ajax/#.VbEA_o_8sji
+http://stackoverflow.com/questions/4412637/adding-a-comment-system-to-my-website
+http://intensedebate.com/home
+http://tutorialzine.com/2010/06/simple-ajax-commenting-system/
+http://demo.tutorialzine.com/2010/06/simple-ajax-commenting-system/demo.php
+http://tutorialzine.com/2014/12/learn-regular-expressions-in-20-minutes/
+https://regex101.com/
+https://jex.im/regulex/#!embed=false&flags=&re=%5E(a%7Cb)*%3F%24
+http://tutorialzine.com/2014/04/10-mistakes-javascript-beginners-make/
+https://github.com/MikeMcl/bignumber.js
+http://stackoverflow.com/questions/588004/is-floating-point-math-broken
+http://tutorialzine.com/2013/08/simple-registration-system-php-mysql/
+http://drawmyba.se/
+http://codecanyon.net/item/ajax-comment-system/5299460
+http://demo.hazzardweb.net/comments/index.php
+
+https://startpage.com/do/search|http://anyremote.sourceforge.net/|http://askubuntu.com/questions/254794/how-can-i-share-my-internet-connection-via-bluetooth|http://telecomtalk.info/review-mts-mblaze-power-wifi-dongle-with-power-bank/121062/|http://www.makeuseof.com/tag/three-secret-ways-to-create-your-own-portable-wi-fi-hotspot-for-tethering-in-north-america/|http://joyofandroid.com/use-old-android-phone-as-wifi-only-device/|http://www.howtogeek.com/213329/how-to-share-your-smartphones-internet-connection-hotspots-and-tethering-explained/|http://www.alibaba.com/showroom/wifi-adapter-for-mobile.html|http://www.alibaba.com/showroom/wifi-adapter-for-mobile.html|https://startpage.com/row/search|http://247wallst.com/special-report/2013/12/04/eight-countries-where-people-suffer-the-most/|http://www.therichest.com/rich-list/poorest-list/the-12-countries-that-suffer-the-most/|http://www.gallup.com/poll/166076/suffering-bulgaria-armenia-highest-worldwide.aspx|http://www.quora.com/What-prevents-the-countries-of-Africa-from-growing-into-significant-world-powers-instead-of-suffering-for-the-most-part-from-violent-anarchy|http://www.alibaba.com/showroom/wifi-adapter-for-mobile.html|https://startpage.com/row/search|http://www.therichest.com/rich-list/poorest-list/the-12-countries-that-suffer-the-most/12/|http://www.gallup.com/poll/166076/suffering-bulgaria-armenia-highest-worldwide.aspx|http://www.quora.com/What-prevents-the-countries-of-Africa-from-growing-into-significant-world-powers-instead-of-suffering-for-the-most-part-from-violent-anarchy

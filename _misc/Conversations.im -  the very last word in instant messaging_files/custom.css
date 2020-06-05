@@ -1,0 +1,28 @@
+body {
+  padding-top: 90px;
+  position: relative;
+}
+
+.offsetanchor:before {
+  display: block;
+  content: " ";
+  margin-top: -70px;
+  height: 70px;
+  visibility: hidden;
+}
+
+.drop-shadow {
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+}
+
+@media (max-width: 1200px) {
+  [class*="col-"] {
+    margin-bottom: 70px;
+  }
+}
+
+.partners {
+  float: left;
+  margin-right: 15px;
+}

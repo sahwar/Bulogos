@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html class="js" lang="bg-BG"><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://initlab.org/xmlrpc.php">
+	
+	<title>Гейм сървъри – init Lab</title>
+<link rel="alternate" hreflang="bg-bg" href="https://initlab.org/6387/%d0%b3%d0%b5%d0%b9%d0%bc-%d1%81%d1%8a%d1%80%d0%b2%d1%8a%d1%80%d0%b8/">
+	<!-- BEGIN: Simple Google Analytics Tracking Code -->
+	<script async="" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/analytics.js"></script><script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', {"cookieDomain":"auto","trackingId":"UA-18158223-1"} );
+		ga('send', 'pageview');
+		
+	</script>
+	<!-- END: Simple Google Analytics Tracking Code -->
+	<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="init Lab » Хранилка" href="https://initlab.org/feed/">
+<link rel="alternate" type="application/rss+xml" title="init Lab » Хранилка за коментари" href="https://initlab.org/comments/feed/">
+<link href="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/css.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="init Lab » Хранилка за коментари на Гейм сървъри" href="https://initlab.org/6387/%d0%b3%d0%b5%d0%b9%d0%bc-%d1%81%d1%8a%d1%80%d0%b2%d1%8a%d1%80%d0%b8/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/initlab.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.1"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/wp-emoji-release.js" type="text/javascript" defer="defer"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/style_003.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="events-manager-css" href="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/events_manager.css" type="text/css" media="all">
+<link rel="stylesheet" id="responsive-lightbox-swipebox-css" href="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/swipebox.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpml-legacy-dropdown-0-css" href="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/style_004.css" type="text/css" media="all">
+<style id="wpml-legacy-dropdown-0-inline-css" type="text/css">
+.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {border-color:#cdcdcd;}.wpml-ls-statics-shortcode_actions a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions a:hover,.wpml-ls-statics-shortcode_actions a:focus {color:#000000;background-color:#eeeeee;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a, .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus {color:#000000;background-color:#eeeeee;}
+</style>
+<link rel="stylesheet" id="wpml-menu-item-0-css" href="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/style_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="responsive-css" href="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="custom-css" href="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/custom.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/font-awesome.css" type="text/css" media="all">
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/jquery_005.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/jquery-migrate.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/core.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/widget.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/position.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/mouse.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/sortable.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/datepicker.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"\u0417\u0430\u0442\u0432\u0430\u0440\u044f\u043d\u0435","currentText":"\u0414\u043d\u0435\u0441","monthNames":["\u044f\u043d\u0443\u0430\u0440\u0438","\u0444\u0435\u0432\u0440\u0443\u0430\u0440\u0438","\u043c\u0430\u0440\u0442","\u0430\u043f\u0440\u0438\u043b","\u043c\u0430\u0439","\u044e\u043d\u0438","\u044e\u043b\u0438","\u0430\u0432\u0433\u0443\u0441\u0442","\u0441\u0435\u043f\u0442\u0435\u043c\u0432\u0440\u0438","\u043e\u043a\u0442\u043e\u043c\u0432\u0440\u0438","\u043d\u043e\u0435\u043c\u0432\u0440\u0438","\u0434\u0435\u043a\u0435\u043c\u0432\u0440\u0438"],"monthNamesShort":["\u044f\u043d.","\u0444\u0435\u0432\u0440.","\u043c\u0430\u0440.","\u0430\u043f\u0440.","\u043c\u0430\u0439","\u044e\u043d\u0438","\u044e\u043b\u0438","\u0430\u0432\u0433.","\u0441\u0435\u043f.","\u043e\u043a\u0442.","\u043d\u043e\u0435.","\u0434\u0435\u043a."],"nextText":"\u041d\u0430\u043f\u0440\u0435\u0434","prevText":"\u041f\u0440\u0435\u0434\u0438\u0448\u043d\u0438","dayNames":["\u043d\u0435\u0434\u0435\u043b\u044f","\u043f\u043e\u043d\u0435\u0434\u0435\u043b\u043d\u0438\u043a","\u0432\u0442\u043e\u0440\u043d\u0438\u043a","\u0441\u0440\u044f\u0434\u0430","\u0447\u0435\u0442\u0432\u044a\u0440\u0442\u044a\u043a","\u043f\u0435\u0442\u044a\u043a","\u0441\u044a\u0431\u043e\u0442\u0430"],"dayNamesShort":["\u043d\u0434","\u043f\u043d","\u0432\u0442","\u0441\u0440","\u0447\u0442","\u043f\u0442","\u0441\u0431"],"dayNamesMin":["\u041d","\u041f","\u0412","\u0421","\u0427","\u041f","\u0421"],"dateFormat":"dd.mm.yy","firstDay":1,"isRTL":false});});
+</script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/menu.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/wp-polyfill.js"></script>
+<script type="text/javascript">
+( 'fetch' in window ) || document.write( '<script src="https://initlab.org/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://initlab.org/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://initlab.org/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://initlab.org/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://initlab.org/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://initlab.org/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/dom-ready.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/a11y.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"\u041d\u0435 \u0441\u0430 \u043e\u0442\u043a\u0440\u0438\u0442\u0438 \u0440\u0435\u0437\u0443\u043b\u0442\u0430\u0442\u0438.","oneResult":"\u041d\u0430\u043c\u0435\u0440\u0435\u043d \u0435 1 \u0440\u0435\u0437\u0443\u043b\u0442\u0430\u0442. \u0412\u044a\u0437\u043c\u043e\u0436\u043d\u0430 \u0435 \u043d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f \u0441\u044a\u0441 \u0441\u0442\u0440\u0435\u043b\u043a\u0438\u0442\u0435 \u043d\u0430\u0433\u043e\u0440\u0435 \u0438 \u043d\u0430\u0434\u043e\u043b\u0443.","manyResults":"%d \u0440\u0435\u0437\u0443\u043b\u0442\u0430\u0442\u0430. \u0418\u0437\u043f\u043e\u043b\u0437\u0432\u0430\u0439\u0442\u0435 \u0441\u0442\u0440\u0435\u043b\u043a\u0438\u0442\u0435 \u0437\u0430 \u043d\u0430\u0433\u043e\u0440\u0435 \u0438 \u043d\u0430\u0434\u043e\u043b\u0443, \u0437\u0430 \u0434\u0430 \u043d\u0430\u0432\u0438\u0433\u0438\u0440\u0430\u0442\u0435.","itemSelected":"\u0418\u0437\u0431\u0440\u0430\u043d \u0435\u043b\u0435\u043c\u0435\u043d\u0442."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/autocomplete.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/resizable.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/draggable.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/button.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/dialog.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var EM = {"ajaxurl":"https:\/\/initlab.org\/wp-admin\/admin-ajax.php?em_lang=bg_BG&lang=bg","locationajaxurl":"https:\/\/initlab.org\/wp-admin\/admin-ajax.php?action=locations_search&em_lang=bg_BG&lang=bg","firstDay":"1","locale":"bg","dateFormat":"dd.mm.yy","ui_css":"https:\/\/initlab.org\/wp-content\/plugins\/events-manager\/includes\/css\/jquery-ui.min.css","show24hours":"1","is_ssl":"1","bookingInProgress":"Please wait while the booking is being submitted.","tickets_save":"Save Ticket","bookingajaxurl":"https:\/\/initlab.org\/wp-admin\/admin-ajax.php?em_lang=bg_BG&lang=bg","bookings_export_save":"Export Bookings","bookings_settings_save":"Save Settings","booking_delete":"Are you sure you want to delete?","booking_offset":"30","bb_full":"Sold Out","bb_book":"Book Now","bb_booking":"Booking...","bb_booked":"Booking Submitted","bb_error":"Booking Error. Try again?","bb_cancel":"Cancel","bb_canceling":"Canceling...","bb_cancelled":"Cancelled","bb_cancel_error":"Cancellation Error. Try again?","txt_search":"Search","txt_searching":"Searching...","txt_loading":"Loading..."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/events-manager.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/jquery_003.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/infinite-scroll.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activeGalleries":"1","animation":"1","hideCloseButtonOnMobile":"0","removeBarsOnMobile":"0","hideBars":"1","hideBarsDelay":"5000","videoMaxWidth":"1080","useSVG":"1","loopAtEnd":"0","woocommerce_gallery":"0","ajaxurl":"https:\/\/initlab.org\/wp-admin\/admin-ajax.php","nonce":"142384dc47"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/front.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/script.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/jquery_004.js"></script>
+<link rel="https://api.w.org/" href="https://initlab.org/wp-json/">
+<link rel="prev" title="Поръчване на филамент за 3D принтера" href="https://initlab.org/6217/%d0%bf%d0%be%d1%80%d1%8a%d1%87%d0%b2%d0%b0%d0%bd%d0%b5-%d0%bd%d0%b0-%d1%84%d0%b8%d0%bb%d0%b0%d0%bc%d0%b5%d0%bd%d1%82-%d0%b7%d0%b0-3d-%d0%bf%d1%80%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d0%b0/">
+<link rel="next" title="Мерки на безопасност по време на COVID-19 пандемията" href="https://initlab.org/6435/%d0%bc%d0%b5%d1%80%d0%ba%d0%b8-%d0%bd%d0%b0-%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82-%d0%bf%d0%be-%d0%b2%d1%80%d0%b5%d0%bc%d0%b5-%d0%bd%d0%b0-covid-19-%d0%bf%d0%b0%d0%bd/">
+<meta name="generator" content="WordPress 5.4.1">
+<link rel="canonical" href="https://initlab.org/6387/%d0%b3%d0%b5%d0%b9%d0%bc-%d1%81%d1%8a%d1%80%d0%b2%d1%8a%d1%80%d0%b8/">
+<link rel="shortlink" href="https://initlab.org/?p=6387">
+<link rel="alternate" type="application/json+oembed" href="https://initlab.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finitlab.org%2F6387%2F%25d0%25b3%25d0%25b5%25d0%25b9%25d0%25bc-%25d1%2581%25d1%258a%25d1%2580%25d0%25b2%25d1%258a%25d1%2580%25d0%25b8%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://initlab.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finitlab.org%2F6387%2F%25d0%25b3%25d0%25b5%25d0%25b9%25d0%25bc-%25d1%2581%25d1%258a%25d1%2580%25d0%25b2%25d1%258a%25d1%2580%25d0%25b8%2F&amp;format=xml">
+<meta name="generator" content="WPML ver:4.2.1 stt:7,1;">
+<!--[if lt IE 9]>
+<script src="https://initlab.org/wp-content/themes/typecore-master/js/ie/html5.js"></script>
+<script src="https://initlab.org/wp-content/themes/typecore-master/js/ie/selectivizr.js"></script>
+<![endif]-->
+<link rel="icon" href="https://initlab.org/wp-content/uploads/2019/08/cropped-1-150x150.png" sizes="32x32">
+<link rel="icon" href="https://initlab.org/wp-content/uploads/2019/08/cropped-1-300x300.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://initlab.org/wp-content/uploads/2019/08/cropped-1-300x300.png">
+<meta name="msapplication-TileImage" content="https://initlab.org/wp-content/uploads/2019/08/cropped-1-300x300.png">
+<style type="text/css">
+/* Dynamic CSS: For no styles in head, copy and put the css below in your custom.css or child theme's style.css, disable dynamic styles */
+body { font-family: "Roboto Condensed", Arial, sans-serif; }
+.site-title a img { max-height: 128px; }
+img { -webkit-border-radius: 3px; border-radius: 3px; }
+</style>
+<style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+<body class="post-template-default single single-post postid-6387 single-format-standard col-3cm full-width s1-collapse s2-collapse">
+
+<div id="wrapper">
+
+	<header id="header" class="group">
+	
+				
+		<div class="container group">
+			<div class="container-inner">
+								<div class="group pad">
+					<p class="site-title"><a href="https://initlab.org/" rel="home"><img src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/logo-web-nobg-1.png" alt="init Lab"></a></p>
+														</div>
+								
+			</div><!--/.container-inner-->
+		</div><!--/.container-->
+		
+					<nav class="nav-container group" id="nav-header">
+				<div class="nav-toggle"><i class="fa fa-bars"></i></div>
+				<div class="nav-text"><!-- put your mobile menu text here --></div>
+				<div class="nav-wrap container"><ul id="menu-main-menu-bg" class="nav container-inner group"><li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-67"><a href="https://initlab.org/">Начало</a></li>
+<li id="menu-item-838" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-838"><a href="https://initlab.org/category/news/">Новини</a></li>
+<li id="menu-item-803" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-803"><a href="https://initlab.org/events/">Събития</a>
+<ul class="sub-menu" style="display: none;">
+	<li id="menu-item-986" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-986"><a href="https://initlab.org/events/%d0%be%d1%80%d0%b3%d0%b0%d0%bd%d0%b8%d0%b7%d0%b8%d1%80%d0%b0%d0%b9-%d1%81%d1%8a%d0%b1%d0%b8%d1%82%d0%b8%d0%b5/">Организирай събитие</a></li>
+</ul>
+</li>
+<li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-71"><a href="https://initlab.org/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/">За нас</a>
+<ul class="sub-menu" style="display: none;">
+	<li id="menu-item-839" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-839"><a href="https://initlab.org/category/%d1%87%d0%b7%d0%b2/">ЧЗВ</a></li>
+	<li id="menu-item-1988" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1988"><a href="http://wiki.initlab.org/">Wiki</a></li>
+	<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://initlab.org/%d1%85%d0%b0%d0%ba%d0%b5%d1%80%d1%81%d0%bf%d0%b5%d0%b9%d1%81/">Хакерспейс</a></li>
+	<li id="menu-item-1894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1894"><a href="https://initlab.org/coworking/">Coworking</a></li>
+	<li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="https://initlab.org/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/%d0%be%d1%82%d1%87%d0%b5%d1%82%d0%b8/">Отчети</a></li>
+	<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://initlab.org/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/%d0%bf%d1%80%d0%b0%d0%b2%d0%b8%d0%bb%d0%bd%d0%b8%d0%ba/">Правилник</a></li>
+	<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://initlab.org/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/%d0%b4%d0%b0%d1%80%d0%b5%d0%bd%d0%b8%d1%8f/">Дарения</a></li>
+</ul>
+</li>
+<li id="menu-item-1987" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1987"><a href="http://wiki.initlab.org/index.php/Category:Project">Проекти</a></li>
+<li id="menu-item-72" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-72"><a href="https://initlab.org/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/">Контакти</a>
+<ul class="sub-menu" style="display: none;">
+	<li id="menu-item-990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-990"><a href="https://initlab.org/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/%d1%87%d0%be%d0%b2%d0%b5%d1%86%d0%b8/">Човеци</a></li>
+	<li id="menu-item-5777" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5777"><a href="https://initlab.org/%d0%bc%d0%b5%d0%b9%d0%bb-%d1%81%d0%bf%d0%b8%d1%81%d1%8a%d1%86%d0%b8/">Мейл списъци</a></li>
+	<li id="menu-item-904" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-904"><a href="https://initlab.org/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/%d0%bf%d1%80%d0%b8%d1%81%d1%8a%d0%b5%d0%b4%d0%b8%d0%bd%d0%b8-%d1%81%d0%b5/">Присъедини се!</a></li>
+</ul>
+</li>
+<li id="menu-item-wpml-ls-3-bg" class="menu-item-language menu-item-language-current menu-item wpml-ls-slot-3 wpml-ls-item wpml-ls-item-bg wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-3-bg"><a title="Bulgarian" href="https://initlab.org/6387/%d0%b3%d0%b5%d0%b9%d0%bc-%d1%81%d1%8a%d1%80%d0%b2%d1%8a%d1%80%d0%b8/"><img class="wpml-ls-flag" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/bg.png" alt="bg" title="Bulgarian"><span class="wpml-ls-native">Bulgarian</span></a></li>
+</ul></div>
+			</nav><!--/#nav-header-->
+				
+	</header><!--/#header-->
+	
+	<div class="container" id="page">
+		<div class="container-inner">			
+			<div class="main">
+				<div class="sidebar s3 group"></div>
+				<div class="main-inner group">
+<div class="content">
+	
+	<div class="page-title pad group">
+
+			<ul class="meta-single group">
+			<li class="category"><a href="https://initlab.org/category/news/" rel="category tag">Новини</a></li>
+					</ul>
+		
+	
+</div><!--/.page-title-->	
+	<div class="pad group">
+		
+					<article class="post-6387 post type-post status-publish format-standard hentry category-news">	
+				<div class="post-inner group">
+					
+					<h1 class="post-title">Гейм сървъри</h1>
+					<p class="post-byline">от <a href="https://initlab.org/author/slackware/" title="Публикации от Slackware" rel="author">Slackware</a> · 17.04.2020</p>
+					
+										
+					<div class="clear"></div>
+					
+					<div class="entry themeform share">	
+						<div class="entry-inner">
+							<p>Здравейте!</p>
+<p>Тъй като по време на карантина, нашите членове и приятели обичат да 
+цъкат игри в мрежа, сме пуснали няколко публични сървъра. Предлагаме ви:</p>
+<ul>
+<li>Half-Life</li>
+<li>Counter-Strike 1.6 (по желание с ботове)</li>
+<li>Half-Life 2 Deathmatch</li>
+<li>Xonotic</li>
+<li>OpenRA (Red Alert)</li>
+<li>OpenRA (Command &amp; Conquer)</li>
+<li>OpenRA (Dune 2000)</li>
+</ul>
+<p>Хостинга е любезно предоставен от <strong>hackman</strong>. Благодарим!</p>
+<p>Актуални адреси на сървърите можете да намерите на <a href="http://g.1h.cx/" target="_blank" rel="noopener noreferrer" save_image_to_download="true">http://g.1h.cx</a></p>
+<p>Текущо състояние на first person shooter сървърите можете да намерите:</p>
+<ul>
+<li>В IRC сървър <a href="ircs://irc.ludost.net:6697/initlab" rel="noopener noreferrer">irc.ludost.net канал #initlab</a> (<a href="https://webirc.ludost.net/?channels=initlab" target="_blank" rel="noopener noreferrer">webchat</a>) чрез команда <strong>!games</strong></li>
+<li>В Телеграм, като изпратите команда <strong>/games</strong> на <a href="https://t.me/init_Lab_Bot" target="_blank" rel="noopener noreferrer">@init_Lab_Bot</a></li>
+</ul>
+<p>Приятно цъкане!</p>
+													</div>
+						<div class="sharrre-container">
+	<span>Сподели</span>
+	<div id="twitter" data-url="https://initlab.org/6387/%d0%b3%d0%b5%d0%b9%d0%bc-%d1%81%d1%8a%d1%80%d0%b2%d1%8a%d1%80%d0%b8/" data-text="Гейм сървъри" data-title="Tweet" class="sharrre"><a class="box" href="#"><div class="count" href="#"><i class="fa fa-plus"></i></div><div class="share"><i class="fa fa-twitter"></i></div></a></div>
+	<div id="facebook" data-url="https://initlab.org/6387/%d0%b3%d0%b5%d0%b9%d0%bc-%d1%81%d1%8a%d1%80%d0%b2%d1%8a%d1%80%d0%b8/" data-text="Гейм сървъри" data-title="Харесай" class="sharrre"><a class="box" href="#"><div class="count" href="#">0</div><div class="share"><i class="fa fa-facebook-square"></i></div></a></div>
+	<div id="googleplus" data-url="https://initlab.org/6387/%d0%b3%d0%b5%d0%b9%d0%bc-%d1%81%d1%8a%d1%80%d0%b2%d1%8a%d1%80%d0%b8/" data-text="Гейм сървъри" data-title="+1" class="sharrre"><a class="box" href="#"><div class="count" href="#">0</div><div class="share"><i class="fa fa-google-plus-square"></i></div></a></div>
+	<div id="pinterest" data-url="https://initlab.org/6387/%d0%b3%d0%b5%d0%b9%d0%bc-%d1%81%d1%8a%d1%80%d0%b2%d1%8a%d1%80%d0%b8/" data-text="Гейм сървъри" data-title="Pin it" class="sharrre"><a class="box" href="#" rel="nofollow"><div class="count" href="#">0</div><div class="share"><i class="fa fa-pinterest"></i></div></a></div>
+</div><!--/.sharrre-container-->
+
+<script type="text/javascript">
+	// Sharrre
+	jQuery(document).ready(function(){
+		jQuery('#twitter').sharrre({
+			share: {
+				twitter: true
+			},
+			template: '<a class="box" href="#"><div class="count" href="#"><i class="fa fa-plus"></i></div><div class="share"><i class="fa fa-twitter"></i></div></a>',
+			enableHover: false,
+			enableTracking: true,
+			buttons: { twitter: {via: '@initlab'}},
+			click: function(api, options){
+				api.simulateClick();
+				api.openPopup('twitter');
+			}
+		});
+		jQuery('#facebook').sharrre({
+			share: {
+				facebook: true
+			},
+			template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-facebook-square"></i></div></a>',
+			enableHover: false,
+			enableTracking: true,
+			buttons:{layout: 'box_count'},
+			click: function(api, options){
+				api.simulateClick();
+				api.openPopup('facebook');
+			}
+		});
+		jQuery('#googleplus').sharrre({
+			share: {
+				googlePlus: true
+			},
+			template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-google-plus-square"></i></div></a>',
+			enableHover: false,
+			enableTracking: true,
+			buttons:{size: 'tall'},
+			urlCurl: 'https://initlab.org/wp-content/themes/typecore-master/js/sharrre.php',
+			click: function(api, options){
+				api.simulateClick();
+				api.openPopup('googlePlus');
+			}
+		});
+		jQuery('#pinterest').sharrre({
+			share: {
+				pinterest: true
+			},
+			template: '<a class="box" href="#" rel="nofollow"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-pinterest"></i></div></a>',
+			enableHover: false,
+			enableTracking: true,
+			buttons: {
+			pinterest: {
+				description: 'Гейм сървъри'				}
+			},
+			click: function(api, options){
+				api.simulateClick();
+				api.openPopup('pinterest');
+			}
+		});
+		
+				
+	});
+</script>						<div class="clear"></div>				
+					</div><!--/.entry-->
+					
+				</div><!--/.post-inner-->	
+			</article><!--/.post-->				
+				
+		<div class="clear"></div>
+		
+				
+				
+				
+				
+		
+<div id="comments" class="themeform">
+	
+	
+					<!-- comments open, no comments -->
+			
+		
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Вашият коментар <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://initlab.org/6387/%d0%b3%d0%b5%d0%b9%d0%bc-%d1%81%d1%8a%d1%80%d0%b2%d1%8a%d1%80%d0%b8/#respond" style="display:none;">Отказ</a></small></h3><form action="https://initlab.org/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Вашият имейл адрес няма да бъде публикуван.</span> Задължителните полета са отбелязани с <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Коментар:</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><input name="wpml_language_code" type="hidden" value="bg"><p class="comment-form-author"><label for="author">Име <span class="required">*</span></label> <input id="author" name="author" type="text" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Имейл <span class="required">*</span></label> <input id="email" name="email" type="text" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Интернет страница</label> <input id="url" name="url" type="text" size="30" maxlength="200"></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Запазване на името, имейл адреса и уебсайта ми в този браузър за следващия път когато коментирам.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Публикуване"> <input type="hidden" name="comment_post_ID" value="6387" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5924e4f849"></p><p style="display: none;"></p><input type="hidden" id="ak_js" name="ak_js" value="1591270980724"></form>	</div><!-- #respond -->
+	
+</div><!--/#comments-->		
+	</div><!--/.pad-->
+	
+</div><!--/.content-->
+
+	
+	<div class="sidebar s1 dark">
+		
+		<a class="sidebar-toggle" title="Разширение на страничното поле"><i class="fa icon-sidebar-toggle"></i></a>
+		
+		<div class="sidebar-content">
+			
+				<ul class="post-nav group">
+		<li class="next"><a href="https://initlab.org/6435/%d0%bc%d0%b5%d1%80%d0%ba%d0%b8-%d0%bd%d0%b0-%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82-%d0%bf%d0%be-%d0%b2%d1%80%d0%b5%d0%bc%d0%b5-%d0%bd%d0%b0-covid-19-%d0%bf%d0%b0%d0%bd/" rel="next"><i class="fa fa-chevron-right"></i><strong>Следващата статия</strong> <span>Мерки на безопасност по време на COVID-19 пандемията</span></a></li>
+		<li class="previous"><a href="https://initlab.org/6217/%d0%bf%d0%be%d1%80%d1%8a%d1%87%d0%b2%d0%b0%d0%bd%d0%b5-%d0%bd%d0%b0-%d1%84%d0%b8%d0%bb%d0%b0%d0%bc%d0%b5%d0%bd%d1%82-%d0%b7%d0%b0-3d-%d0%bf%d1%80%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d0%b0/" rel="prev"><i class="fa fa-chevron-left"></i><strong>Предишната статия</strong> <span>Поръчване на филамент за 3D принтера</span></a></li>
+	</ul>
+			
+						
+			<div id="alxposts-2" class="widget widget_alx_posts">
+<h3>Новини</h3>
+			
+	<ul class="alx-posts group ">
+				<li>
+			
+						
+			<div class="post-item-inner group">
+								<p class="post-item-title"><a href="https://initlab.org/6435/%d0%bc%d0%b5%d1%80%d0%ba%d0%b8-%d0%bd%d0%b0-%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82-%d0%bf%d0%be-%d0%b2%d1%80%d0%b5%d0%bc%d0%b5-%d0%bd%d0%b0-covid-19-%d0%bf%d0%b0%d0%bd/" rel="bookmark" title="Мерки на безопасност по време на COVID-19 пандемията">Мерки на безопасност по време на COVID-19 пандемията</a></p>
+				<p class="post-item-date">май 12, 2020</p>			</div>
+			
+		</li>
+				<li>
+			
+						
+			<div class="post-item-inner group">
+								<p class="post-item-title"><a href="https://initlab.org/6387/%d0%b3%d0%b5%d0%b9%d0%bc-%d1%81%d1%8a%d1%80%d0%b2%d1%8a%d1%80%d0%b8/" rel="bookmark" title="Гейм сървъри">Гейм сървъри</a></p>
+				<p class="post-item-date">апр. 17, 2020</p>			</div>
+			
+		</li>
+				<li>
+			
+						
+			<div class="post-item-inner group">
+								<p class="post-item-title"><a href="https://initlab.org/6217/%d0%bf%d0%be%d1%80%d1%8a%d1%87%d0%b2%d0%b0%d0%bd%d0%b5-%d0%bd%d0%b0-%d1%84%d0%b8%d0%bb%d0%b0%d0%bc%d0%b5%d0%bd%d1%82-%d0%b7%d0%b0-3d-%d0%bf%d1%80%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d0%b0/" rel="bookmark" title="Поръчване на филамент за 3D принтера">Поръчване на филамент за 3D принтера</a></p>
+				<p class="post-item-date">февр. 11, 2020</p>			</div>
+			
+		</li>
+				<li>
+			
+						
+			<div class="post-item-inner group">
+								<p class="post-item-title"><a href="https://initlab.org/6035/lab-newsletter-12-2019/" rel="bookmark" title="Лабов бюлетин – декември 2019">Лабов бюлетин – декември 2019</a></p>
+				<p class="post-item-date">дек. 9, 2019</p>			</div>
+			
+		</li>
+					</ul><!--/.alx-posts-->
+
+</div>
+<div id="initlab_presence_widget-2" class="widget widget_initlab_presence"><h3>Кой е в Лаба?</h3>		<div class="initlab_presence_widget_container" data-avatar-size="64" data-refresh-time="60">Всички ги е хванала липсата :(</div>
+		</div>			
+		</div><!--/.sidebar-content-->
+		
+	</div><!--/.sidebar-->
+
+	
+<div class="sidebar s2">
+	
+	<a class="sidebar-toggle" title="Разширение на страничното поле"><i class="fa icon-sidebar-toggle"></i></a>
+	
+	<div class="sidebar-content">
+			
+				
+		<div id="search-3" class="widget widget_search"><h3>Търсене</h3><form method="get" class="searchform themeform" action="https://initlab.org/">
+	<div>
+		<input type="text" class="search" name="s" onblur="if(this.value=='')this.value='Въведете търсения низ и натиснете Enter';" onfocus="if(this.value=='Въведете търсения низ и натиснете Enter')this.value='';" value="Въведете търсения низ и натиснете Enter">
+	</div>
+<input type="hidden" name="lang" value="bg"></form></div><div id="em_widget-2" class="widget widget_em_widget"><h3>Предстоящи събития</h3><ul><li><strong><a href="https://initlab.org/events/10-%d0%b3%d0%be%d0%b4%d0%b8%d0%bd%d0%b8-init-lab/">10 години init Lab</a></strong><ul><li>08/08/2020 - 14:00</li><li>init Lab – лекционната</li></ul><hr></li><li class="all-events-link"><a href="https://initlab.org/events/" title="Всички събития">Всички събития</a></li></ul></div>		
+	</div><!--/.sidebar-content-->
+	
+</div><!--/.sidebar-->	
+
+				</div><!--/.main-inner-->
+			</div><!--/.main-->			
+		</div><!--/.container-inner-->
+	</div><!--/.container-->
+
+	<footer id="footer">
+		
+				
+				
+				
+		<div class="container" id="footer-bottom">
+			<div class="container-inner">
+				
+				<a id="back-to-top" href="#"><i class="fa fa-angle-up"></i></a>
+				
+				<div class="pad group">
+					
+					<div class="grid one-half">
+						
+												
+						<div id="copyright">
+															<p>init Lab © 2020. Всички права запазени.</p>
+													</div><!--/#copyright-->
+						
+												<div id="credit">
+							<p>Задвижван от  <a href="http://wordpress.org/" rel="nofollow">WordPress</a>. Темата е разработена от  <a href="http://alxmedia.se/" rel="nofollow">Alx</a>.</p>
+						</div><!--/#credit-->
+												
+					</div>
+					
+					<div class="grid one-half last">	
+											</div>
+				
+				</div><!--/.pad-->
+				
+			</div><!--/.container-inner-->
+		</div><!--/.container-->
+		
+	</footer><!--/#footer-->
+
+</div><!--/#wrapper-->
+
+<link rel="stylesheet" id="initlab-presence-css" href="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/presence.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/initlab.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/scripts_002.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/jquery.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/scripts.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/jquery_002.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/comment-reply.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/wp-embed.js"></script>
+<script async="async" type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/form.js"></script>
+<script type="text/javascript" src="%D0%93%D0%B5%D0%B9%D0%BC%20%D1%81%D1%8A%D1%80%D0%B2%D1%8A%D1%80%D0%B8%20%E2%80%93%20init%20Lab_files/presence.js"></script>
+<!--[if lt IE 9]>
+<script src="https://initlab.org/wp-content/themes/typecore-master/js/ie/respond.js"></script>
+<![endif]-->
+
+<div id="a11y-speak-polite" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="polite" aria-relevant="additions text" aria-atomic="true"></div><div id="a11y-speak-assertive" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="assertive" aria-relevant="additions text" aria-atomic="true"></div></body></html>

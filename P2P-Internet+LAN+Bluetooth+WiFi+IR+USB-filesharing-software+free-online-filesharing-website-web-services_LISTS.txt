@@ -152,4 +152,71 @@ Etherpad2 (open-source app to collaboratively edit texts via a self-hosted HTML5
 MediaTemple
 list of open-source oakaki/oakeki/oakeki imageboard software (like http://4chan.org or http://8chan.org , or http://gelbooru.com , etc.);
 http://git-scm.org
+
+````
+https://docs.emmet.io/cheat-sheet/
+
+~to add to Bulogos:
+Etherpad2 (open-source app to collaboratively edit texts via a self-hosted HTML5 website)
+MediaTemple
+list of open-source oakaki/oakeki/oakeki imageboard software (like http://4chan.org or http://8chan.org , or http://gelbooru.com , etc.)
+
+~to add to Bulogos :
+MediaTomb, Bubble UPnP Server, p2p_OwnCloud_NextCloud_SyncThing_rsync_zsync_Zstandard___working-media-server-with-Linux_from_linux-bg-org___b-510416803gal__MediaTomb__linux-killer-apps
+google-drive-ocaml-fuse
+( ---
+~to add to Bulogos :
+$ dd
+$ fd -h ???
+$ uname -a
+$ lshw
+$ hwinfo
+$ lsusb
 ---
+MTP
+USB Composite Device)
+````
+
+---
+
+https://soundcloud.com/p2p_foundation
+ETP/FTP/SFTP-webserver for http://voidtools.com Search Everything (or its Linux clone: FSearch & ffind & mlocate, find, locate, etc. + more on http://github.com/sahwar/Bulogos/ )
+NTFS, ReFS, HTTP/HTTPS server, _storj_ (), Neo4j graphs-database, GraphQL/GraphDB, MariaDB/MySQL, SQLite, .jsonp, etc.
+WebDAV, LDAP, ssh/mosh, 
+http://matrix.org
+http://fosstodon.org
+http://tox.im - qTox
+http://jitsi.org
+Slack clone on http://github.com + DiscordChatExporter + (!!!) Discord 
+http://d.tube
+f*ex & sexxx - Fram's Fast File Transfer of big, huge files over the Internet - also used by CERN.ch to transfer large volumes of files, etc.
+FilePizza; http://share.sh ; WebRTC/RTMP/RTSP, WebRTC; (mosh/)ssh-tunneling over NAT-traversal-'firewall'/iptables/opened-numeric-ports, ; , etc.
+( http://foldoc.org/ )
+---
+
+Docker images + Kubernetes + Appveyor + AppImageKit + SystemImageKit + persistent LiveUSB-.iso-image or persistent DVD-RW or whatever, etc.
+Fedora COPR AppImage's ; http://appimage.org & http://snapcraft.io & compressed-archived-source-code-for-self-compilation (like Gentoo and maybe Slackware, LFS, MinimalLinuxLive, TinyOS, BusyBox/Hairloom-toolkig/gnu-binutils+gnu-toolchain, etc.
+http://launchpad.net - PPAs & bzr:/bazaar version-control
+mercurial + TortoiseSVN vs. git-scm.org / github.com / gitlab.org / self-hosted gitea git-repositories, fossil.org , etc; SQLite, MariaDB/MySQL, etc. ...
+	RANDOM THOUGHTS:
+file-split & file-merge GUI apps (e.g. RJSplit & others - including from http://sourceforge.net , http://freecode.com , http://code.google.com & http://softpedia.org & http://majorgeeks.com ; http://oldapps.net & http://old-games.com & http://hotud.org + more ... ) & Linux CLI-apps, 7-zip.org / http://7zip.org (PeaZip, etc.) .sfx (7-zip self-extracting archive - can be split in later merge-able parts, etc.), .iso & .vhd & .vbox (VirtualBox images), QEMU images, HP hypervisor, VMWare virtualization, x86.js, http://bellard.org ; http://png.org ; http://gifsicle.org ; http://ffmpeg.org / http://libav.org ; QEmacs ; etc. etc. etc.
+binary comparison ; bitwise/bit operations, bits switching, etc. ... ; hex editor app; binary editor app; ResourceHacker v5.1.7 from http://angusj.com (resource viewer, decompiler & recompiler - for MS Windows - for opening .res (! but maybe not .resx for .NET apps?), _ .mui _ (so you can edit your .mui langpack files for Windows7+ if you don't like Microsoft's translation style but prefer the other styles outlined in http://github.com/sahwar/Bulogos/ !!!!), .dll (!), .exe (!!!), etc. + *.*/any-file ; save as .rc, .res, .dll;); ... .
+sorting algorithms
+Markov chains (linguistics), ??? transform, Lagrangians, integrals, maths matrixes, etc. ..., Platonic solid, etc,
+Turing machine
+Turing-complete
+Goedell/Go:ddel's incompleteness theorem
+quantum Heisenberg(ian) uncertainty principle, etc. ...
+creative remixology, etc.
+---
+conceptual modelling, a play of ideas, a play of words, etc. ...
+the mystical experience, satori, moksha, nirvana(-is-samsara), mystical psychosis, cosmic consciousness, the adult's oceanic feeling (Freud/Jung term cited by Alan Watts, etc.; crazy wisdom (Daoism), Zen laughing fat Buddha, etc.)
+the game of hide&seek - 'now you see me, now you don't', etc.
+--------------------------------------------------------------------------------
+
+Conversations 2.8.5+fcr for Google Android
+https://github.com/iNPUTmice/Conversations/releases
+qTox - http://tox.im
+http://matrix.org
+http://git-scm.org
+http://fossil.org

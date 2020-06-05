@@ -1,0 +1,267 @@
+https://github.com/sahwar/Bulogos/HUTPIB-BG/Jappix/2-ideas-to-do-a-github-com_pull-request-for_feature-request_for_Jappix.txt
+
+Some ideas to improve http://github.com/jappix/jappix even though that project is kinda abandoned but is still mostly
+functional for setting up your own personal XMPP/Jabber (  ) node with a GUI like Mebbit.com-IRC or PidginIM!!!
+
+1. 
+jappix mobile web-browser offline automagickal chatlogs ~to add to Bulogos
+
+http://jappix.animerulezzz.org
+
+Настройки ---> Редакция на настройките
+Общи | Канал | Потребителска сметка (акаунт)
+
+Поверителност
+Геолокация [ ] Премахване на всички архиви
+
+Приложение
+Звуци [V]
+Показване на всички приятели [V]
+Groupchat presence messages [V]
+No chat images auto-load [ ]
+Медийна интеграция [V]
+Пазене на локални архиви на чата [V] <--- !!!
+
+---> Потребителска сметка
+Канал
+
+Празно Празен канал
+Натрапчивост/постоянство [V]
+Максимален брой съобщения: 1000000 (1, 100, 1000, 10000, 100000)
+Запазване | Отказ
+
+2. add the http://discord.com-like emoji-entering searchbar pop-up menu... like pidginIM-emoji, pidginIM-twitter, Psi+/Gajim/etc. ; etc.
+
+SIDENOTE:
+
+http://blackbox.net - MS Windows - alternative desktop shells for Microsoft Windows - similar to FluxBox for Linux/UNIX/*NIX/UNIX-like OSs/Linux distro-OSs...
+PuppyLinux GUI-library & EasyOS Debian-/Ubuntu-/LinuxMint/MX-Linux/AntiX-Linux-based edition, etc.
+Wikipedia - `iconv` & `flif` ?
+
+================================================================================
+
+````
+
+Conversations
+An encrypted, user friendly XMPP instant messaging client optimized for mobile
+New in version 2.8.5+fcr
+* Reduce echo during calls on some devices
+* Fix login when passwords contains special characters
+* Play dial and busy tones on speaker during video calls
+Easy to use, reliable, battery friendly. With built-in support for images, group chats and e2e encryption.
+
+Design principles:
+
+* Be as beautiful and easy to use as possible without sacrificing security or privacy
+* Rely on existing, well established protocols
+* Do not require a Google Account or specifically Google Cloud Messaging (GCM)
+* Require as few permissions as possible
+
+Features:
+
+* End-to-end encryption with either OMEMO or OpenPGP
+* Sending and receiving images
+* Encrypted audio and video calls (DLTS-SRTP)
+* Intuitive UI that follows Android Design guidelines
+* Pictures / Avatars for your Contacts
+* Syncs with desktop client
+* Conferences (with support for bookmarks)
+* Address book integration
+* Multiple accounts / unified inbox
+* Very low impact on battery life
+
+Conversations makes it very easy to create an account on the conversations.im server. Using that server comes with an annual fee of 8 Euro after a 6 month trial period. However Conversations will work with any other XMPP server as well. A lot of XMPP servers are run by volunteers and are free of charge.
+
+XMPP Features:
+
+Conversations works with every XMPP server out there. However XMPP is an extensible protocol. These extensions are standardized as well in so called XEP’s. Conversations supports a couple of those to make the overall user experience better. There is a chance that your current XMPP server does not support these extensions. Therefore to get the most out of Conversations you should consider either switching to an XMPP server that does or - even better - run your own XMPP server for you and your friends.
+
+These XEPs are - as of now:
+
+* XEP-0065: SOCKS5 Bytestreams (or mod_proxy65). Will be used to transfer files if both parties are behind a firewall (NAT).
+* XEP-0163: Personal Eventing Protocol for avatars
+* XEP-0191: Blocking command lets you blacklist spammers or block contacts without removing them from your roster.
+* XEP-0198: Stream Management allows XMPP to survive small network outages and changes of the underlying TCP connection.
+* XEP-0280: Message Carbons which automatically syncs the messages you send to your desktop client and thus allows you to switch seamlessly from your mobile client to your desktop client and back within one conversation.
+* XEP-0237: Roster Versioning mainly to save bandwidth on poor mobile connections
+* XEP-0313: Message Archive Management synchronize message history with the server. Catch up with messages that were sent while Conversations was offline.
+* XEP-0352: Client State Indication lets the server know whether or not Conversations is in the background. Allows the server to save bandwidth by withholding unimportant packages.
+* XEP-0363: HTTP File Upload allows you to share files in conferences and with offline contacts. Requires an additional component on your server.
+
+    License:GNU General Public License v3.0 only Website Issue Tracker Translation Source Code Changelog Build Metadata Technical info 
+
+Donate
+
+    app screenshot app screenshot app screenshot app screenshot app screenshot app screenshot app screenshot 
+
+Packages
+
+Although APK downloads are available below to give you the choice, you should be aware that by installing that way you will not receive update notifications and it's a less secure way to download. We recommend that you install the F-Droid client and use that.
+Download F-Droid
+
+    Version 2.8.5+fcr (388) suggested Added on 2020-06-02
+
+    This version requires Android 4.1 or newer.
+
+    It is built and signed by F-Droid, and guaranteed to correspond to this source tarball.
+    Permissions
+        modify or delete the contents of your shared storage
+        Allows the app to write the contents of your shared storage.
+        read the contents of your shared storage
+        Allows the app to read the contents of your shared storage.
+        read your contacts
+        Allows the app to read data about your contacts stored on your phone, including the frequency with which you've called, emailed, or communicated in other ways with specific individuals. This permission allows apps to save your contact data, and malicious apps may share contact data without your knowledge.
+        have full network access
+        Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet.
+        view network connections
+        Allows the app to view information about network connections such as which networks exist and are connected.
+        prevent phone from sleeping
+        Allows the app to prevent the phone from going to sleep.
+        run at startup
+        Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the phone and allow the app to slow down the overall phone by always running.
+        control vibration
+        Allows the app to control the vibrator.
+        ask to ignore battery optimizations
+        Allows an app to ask for permission to ignore battery optimizations for that app.
+        access approximate location (network-based) only in the foreground
+        This app can get your location based on network sources such as cell towers and Wi-Fi networks, but only when the app is in the foreground. These location services must be turned on and available on your phone for the app to be able to use them.
+        access precise location only in the foreground
+        This app can get your exact location only when it is in the foreground. These location services must be turned on and available on your phone for the app to be able to use them. This may increase battery consumption.
+        view Wi-Fi connections
+        Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-Fi devices.
+        run foreground service
+        Allows the app to make use of foreground services.
+        request install packages
+        Allows an application to request installation of packages.
+        take pictures and videos
+        This app can take pictures and record videos using the camera at any time.
+        record audio
+        This app can record audio using the microphone at any time.
+        pair with Bluetooth devices
+        Allows the app to view the configuration of the Bluetooth on the phone, and to make and accept connections with paired devices.
+        change your audio settings
+        Allows the app to modify global audio settings such as volume and which speaker is used for output.
+        android.permission.USE_FULL_SCREEN_INTENT
+        This app can appear on top of other apps
+        This app can appear on top of other apps or other parts of the screen. This may interfere with normal app usage and change the way that other apps appear.
+        com.sec.android.provider.badge.permission.READ
+        com.sec.android.provider.badge.permission.WRITE
+        com.htc.launcher.permission.READ_SETTINGS
+        com.htc.launcher.permission.UPDATE_SHORTCUT
+        com.sonyericsson.home.permission.BROADCAST_BADGE
+        com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+        com.anddoes.launcher.permission.UPDATE_COUNT
+        com.majeur.launcher.permission.UPDATE_BADGE
+        com.huawei.android.launcher.permission.CHANGE_BADGE
+        com.huawei.android.launcher.permission.READ_SETTINGS
+        com.huawei.android.launcher.permission.WRITE_SETTINGS
+        android.permission.READ_APP_BADGE
+        com.oppo.launcher.permission.READ_SETTINGS
+        com.oppo.launcher.permission.WRITE_SETTINGS
+        me.everything.badger.permission.BADGE_COUNT_READ
+        me.everything.badger.permission.BADGE_COUNT_WRITE
+
+    Download APK 28 MiB PGP Signature
+    Version 2.8.4+fcr (387) - Added on 2020-05-26
+
+    This version requires Android 4.1 or newer.
+
+    It is built and signed by F-Droid, and guaranteed to correspond to this source tarball.
+    Permissions
+
+    Download APK 28 MiB PGP Signature
+    Version 2.8.3+fcr (383) - Added on 2020-05-13
+
+    This version requires Android 4.1 or newer.
+
+    It is built and signed by F-Droid, and guaranteed to correspond to this source tarball.
+    Permissions
+
+    Download APK 28 MiB PGP Signature
+
+Find Apps
+Last Updated
+Tux Paint
+A drawing program for children.
+NewPipe
+Lightweight YouTube frontend
+GitNex
+Client for Gitea
+Latest Apps
+usageDirect
+Display system usage statistics
+Home
+A little smart home app for Philips Hue, Arduino and other devices
+Greentooth
+Automatic Bluetooth disabler
+
+© 2010-2020 F-Droid Limited and Contributors (F-Droid 2020-06-04, fdroid-website 2.8) Edit on GitLab
+
+````
+
+Conversations 2.8.5+fcr for Google Android
+https://github.com/iNPUTmice/Conversations/releases
+
+https://f-droid.org/en/packages/eu.siacs.conversations/ - ConversationsIM - XMPP/Jabber IM-chat app for Google Android; see also: http://jitsi.org & http://tox.im (qTox) & Slack-clones & Twitter.com-clones & discord.com-clones on http://github.com & on http://gitlab.org & on http://gitea.org , http://git-scm.org , etc.
+https://f-droid.org/en/packages/org.schabi.newpipe/ - lightweight app to view YouTube.com videos!!!
+https://f-droid.org/en/packages/org.mian.gitnex/ - gitea for Google Android
+
+https://gitea.com/gitnex/GitNex/wiki
+
+https://f-droid.org/en/packages/godau.fynn.usagedirect/
+https://f-droid.org/en/packages/com.smilla.greentooth/
+
+https://conversations.im/omemo/
+
+
+https://github.com/jappix/jappix = speech_balloon Jappix, a full-featured XMPP web-client (Jappix Desktop, Jappix Mobile & Jappix Mini).
+https://github.com/jappix/jappix/tree/master/i18n
+https://github.com/jappix/jappix/blob/master/i18n/bg/LC_MESSAGES/main.po
+https://github.com/jappix/jappix/tree/master/i18n/bg/LC_MESSAGES
+https://github.com/sahwar/jappix
+
+Testbench - example Jappix server node:
+
+http://jappix.animerulezzz.org/
+
+'Notice: the Jappix project is no longer maintained. We still accept PR (Pull Requests) though.'
+
+https://github.com/OpenPGP/openpgp.org
+
+## Web\-Based Tools
+
+*   [Pipefile](https://pipefile.com) (Secure File Sharing)
+*   [Cryptonomica](https://cryptonomica.net/#!/openPGPOnline) (Identity Verification)
+
+https://www.openpgp.org/software/misc/
+https://www.openpgp.org/about/standard/
+
+https://tools.ietf.org/html/rfc4880
+https://tools.ietf.org/rfc/rfc4880.txt
+
+https://www.theverge.com/2014/12/28/7458159/encryption-standards-the-nsa-cant-crack-pgp-tor-otr-snowden
+https://www.theverge.com/good-deals/2020/6/4/21279129/resident-evil-3-ps4-xbox-one-ipad-nintendo-deal-sale-best-buy-walmart
+
+
+
+https://www.theverge.com/ethics-statement
+
+https://moderncrypto.org/mailman/listinfo/messaging
+
+--------------------------------------------------------------------------------
+
+3. Add server-side chatlog archives similar to the GUI of GNU mailman but only the
+admin(istrator) has access to those unless he/she opens the mailing-list archives to everyone or to specific people
+via a secret hyperlink for access or via giving more rights to an already registered user/account/profile, etc.
+
+https://moderncrypto.org/mail-archive/messaging/
+About Messaging 	
+English (USA)
+
+To see the collection of prior postings to the list, visit the Messaging Archives.
+Using Messaging
+To post a message to all the list members, send email to messaging@moderncrypto.org.
+
+You can subscribe to the list, or change your existing subscription, in the sections below. 
+https://moderncrypto.org/mailman/listinfo/messaging
+

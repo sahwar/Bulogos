@@ -1,0 +1,36 @@
+/* Light Theme */
+
+ul.roknewspager {margin: 0;padding: 15px;border: 1px solid #ddd;}
+ul.roknewspager li {list-style: none;padding-left: 12px;margin-bottom: 12px;}
+ul.roknewspager .roknewspager-title {display: block;font-size: 120%;font-weight: bold;cursor: pointer;margin-bottom: 10px;}
+ul.roknewspager .roknewspager-div {display: block;padding-bottom: 12px;}
+.roknewspager-wrapper {position:relative;overflow:hidden;}
+.roknewspager-pages {margin: 0;padding: 8px 15px;overflow: hidden;}
+.roknewspager-pages2 {float: right;width: auto;height: 18px;text-align: center;position: relative;padding: 0;}
+.roknewspager-spinner {width: 16px; height: 16px; background: transparent url(images/spinner.gif) no-repeat scroll 100% 50%; float: left;display: none;}
+ul.roknewspager-numbers {margin: 0;padding: 0 24px;text-align: right;overflow: hidden;height: 18px;text-align: center;}
+ul.roknewspager-numbers li {list-style: none;display: inline;padding: 0 3px;cursor: pointer;margin-bottom: 0;line-height: 18px;}
+ul.roknewspager-numbers li.active {cursor: default;}
+.roknewspager-prev, .roknewspager-prev-disabled {width: 16px;height: 18px;position: absolute;top: 0;left: 0;cursor: pointer;}
+.roknewspager-next, .roknewspager-next-disabled {width: 16px;height: 18px;position: absolute;top: 0;right: 0;cursor: pointer;}
+.roknewspager-prev-disabled, .roknewspager-next-disabled {cursor: default;}
+ul.roknewspager-numbers li.active {font-weight: bold;}
+ul.roknewspager li {overflow:auto;padding: 0;background: url(images/light-arrow.png) 0 4px no-repeat;}
+ul.roknewspager-numbers li.active {color: #000;}
+ul.roknewspager .roknewspager-div {padding-left: 15px;}
+.roknewspager-pages {background: #D6D6D6;}
+ul.roknewspager-numbers {background: url(images/light-page-m.png) 0 0 repeat-x;}
+.roknewspager-prev {background: url(images/light-page-controls.png) 0 0 no-repeat;}
+.roknewspager-prev-disabled {background: url(images/light-page-controls.png) 0 -18px no-repeat;}
+.roknewspager-next {background: url(images/light-page-controls.png) -16px 0 no-repeat;}
+.roknewspager-next-disabled {background: url(images/light-page-controls.png) -16px -18px no-repeat;}
+.roknewspager-overlay {background: #fff;z-index:2;}
+
+.roknewspager-h3 {font-size:14px;font-weight:bold;margin:0;background:#e9e9e9;padding:5px;position:relative;line-height:120%;border-bottom:1px solid #ccc;padding-right:20px;}
+.roknewspager-content {padding: 5px;}
+.roknewspager-toggle {background:#ccc;width:10px;height:10px;position:absolute;right: 4px;top:4px;cursor:pointer;}
+.roknewspager-toggle-active {background:#666;}
+
+.article-rating {float: left;margin: 10px 0;white-space:nowrap;}
+.article-rating .rating-bar {float:left;height:14px;width:104px;background:url(images/light-ratingbar.png);text-align:left;}
+.article-rating .rating-bar div {height:14px;background:url(images/light-ratingbar.png) 0 -15px;overflow:hidden;}

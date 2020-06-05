@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div><head profile="http://gmpg.org/xfn/11">
+	<title>Grigor Gatchev – A Weblog   » Откритата фирма – идеи и съвети</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="WordPress 4.7.3"> <!-- leave this for stats -->
+
+	<link rel="stylesheet" href="Grigor%20Gatchev%20%E2%80%93%20A%20Weblog%20%C2%BB%20%D0%9E%D1%82%D0%BA%D1%80%D0%B8%D1%82%D0%B0%D1%82%D0%B0%20%D1%84%D0%B8%D1%80%D0%BC%D0%B0%20%E2%80%93%20%D0%B8%D0%B4%D0%B5%D0%B8%20%D0%B8%20%D1%81%D1%8A%D0%B2%D0%B5%D1%82%D0%B8_files/style.css" type="text/css" media="screen">
+
+	<style type="text/css" media="screen">
+
+		/* BEGIN IMAGE CSS */
+			/*	To accomodate differing install paths of WordPress, images are referred only here,
+				and not in the wp-layout.css file. If you prefer to use only CSS for colors and what
+				not, then go right ahead and delete the following lines, and the image files. */
+			
+		body	 	{ background: url("http://www.gatchev.info/blog/wp-content/themes/grigor/images/kubrickbgcolor.jpg"); }				#page		{ background: url("http://www.gatchev.info/blog/wp-content/themes/grigor/images/kubrickbgwide.jpg") repeat-y top; border: none; } 			#header 	{ background: url("http://www.gatchev.info/blog/wp-content/themes/grigor/images/kubrickheader.jpg") no-repeat bottom center; }
+			#footer 	{ background: url("http://www.gatchev.info/blog/wp-content/themes/grigor/images/kubrickfooter.jpg") no-repeat bottom; border: none;}
+			
+			
+			/*	Because the template is slightly different, size-wise, with images, this needs to be set here
+				If you don't want to use the template's images, you can also delete the following two lines. */
+			
+/*
+			#header 	{ margin: 0 !important; margin: 0 0 0 1px; padding: 1px; height: 198px; width: 758px; }
+			#headerimg 	{ margin: 7px 9px 0; height: 192px; width: 740px; } 
+*/
+ 			/* END IMAGE CSS */
+		
+
+		/* 	To ease the insertion of a personal header image, I have done it in such a way,
+			that you simply drop in an image called 'personalheader.jpg' into your /images/
+			directory. Dimensions should be at least 760px x 200px. Anything above that will
+			get cropped off of the image. */
+		
+		#headerimg 	{ background: url('http://www.gatchev.info/blog/wp-content/themes/grigor/images/kubrickheader.jpg') no-repeat top;}
+		
+	</style>
+	
+	<link rel="stylesheet" type="text/css" media="print" href="Grigor%20Gatchev%20%E2%80%93%20A%20Weblog%20%C2%BB%20%D0%9E%D1%82%D0%BA%D1%80%D0%B8%D1%82%D0%B0%D1%82%D0%B0%20%D1%84%D0%B8%D1%80%D0%BC%D0%B0%20%E2%80%93%20%D0%B8%D0%B4%D0%B5%D0%B8%20%D0%B8%20%D1%81%D1%8A%D0%B2%D0%B5%D1%82%D0%B8_files/print.htm">
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.gatchev.info/blog/?feed=rss2">
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://www.gatchev.info/blog/?feed=rss">
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://www.gatchev.info/blog/?feed=atom">
+	<link rel="pingback" href="http://www.gatchev.info/blog/xmlrpc.php">
+    
+    	<link rel="archives" title="June 2020" href="http://www.gatchev.info/blog/?m=202006">
+	<link rel="archives" title="May 2020" href="http://www.gatchev.info/blog/?m=202005">
+	<link rel="archives" title="April 2020" href="http://www.gatchev.info/blog/?m=202004">
+	<link rel="archives" title="March 2020" href="http://www.gatchev.info/blog/?m=202003">
+	<link rel="archives" title="February 2020" href="http://www.gatchev.info/blog/?m=202002">
+	<link rel="archives" title="January 2020" href="http://www.gatchev.info/blog/?m=202001">
+	<link rel="archives" title="November 2019" href="http://www.gatchev.info/blog/?m=201911">
+	<link rel="archives" title="October 2019" href="http://www.gatchev.info/blog/?m=201910">
+	<link rel="archives" title="September 2019" href="http://www.gatchev.info/blog/?m=201909">
+	<link rel="archives" title="July 2019" href="http://www.gatchev.info/blog/?m=201907">
+	<link rel="archives" title="June 2019" href="http://www.gatchev.info/blog/?m=201906">
+	<link rel="archives" title="May 2019" href="http://www.gatchev.info/blog/?m=201905">
+	<link rel="archives" title="April 2019" href="http://www.gatchev.info/blog/?m=201904">
+	<link rel="archives" title="March 2019" href="http://www.gatchev.info/blog/?m=201903">
+	<link rel="archives" title="February 2019" href="http://www.gatchev.info/blog/?m=201902">
+	<link rel="archives" title="January 2019" href="http://www.gatchev.info/blog/?m=201901">
+	<link rel="archives" title="December 2018" href="http://www.gatchev.info/blog/?m=201812">
+	<link rel="archives" title="November 2018" href="http://www.gatchev.info/blog/?m=201811">
+	<link rel="archives" title="October 2018" href="http://www.gatchev.info/blog/?m=201810">
+	<link rel="archives" title="September 2018" href="http://www.gatchev.info/blog/?m=201809">
+	<link rel="archives" title="August 2018" href="http://www.gatchev.info/blog/?m=201808">
+	<link rel="archives" title="June 2018" href="http://www.gatchev.info/blog/?m=201806">
+	<link rel="archives" title="May 2018" href="http://www.gatchev.info/blog/?m=201805">
+	<link rel="archives" title="April 2018" href="http://www.gatchev.info/blog/?m=201804">
+	<link rel="archives" title="March 2018" href="http://www.gatchev.info/blog/?m=201803">
+	<link rel="archives" title="February 2018" href="http://www.gatchev.info/blog/?m=201802">
+	<link rel="archives" title="January 2018" href="http://www.gatchev.info/blog/?m=201801">
+	<link rel="archives" title="December 2017" href="http://www.gatchev.info/blog/?m=201712">
+	<link rel="archives" title="November 2017" href="http://www.gatchev.info/blog/?m=201711">
+	<link rel="archives" title="October 2017" href="http://www.gatchev.info/blog/?m=201710">
+	<link rel="archives" title="September 2017" href="http://www.gatchev.info/blog/?m=201709">
+	<link rel="archives" title="August 2017" href="http://www.gatchev.info/blog/?m=201708">
+	<link rel="archives" title="July 2017" href="http://www.gatchev.info/blog/?m=201707">
+	<link rel="archives" title="June 2017" href="http://www.gatchev.info/blog/?m=201706">
+	<link rel="archives" title="May 2017" href="http://www.gatchev.info/blog/?m=201705">
+	<link rel="archives" title="April 2017" href="http://www.gatchev.info/blog/?m=201704">
+	<link rel="archives" title="March 2017" href="http://www.gatchev.info/blog/?m=201703">
+	<link rel="archives" title="February 2017" href="http://www.gatchev.info/blog/?m=201702">
+	<link rel="archives" title="January 2017" href="http://www.gatchev.info/blog/?m=201701">
+	<link rel="archives" title="December 2016" href="http://www.gatchev.info/blog/?m=201612">
+	<link rel="archives" title="November 2016" href="http://www.gatchev.info/blog/?m=201611">
+	<link rel="archives" title="October 2016" href="http://www.gatchev.info/blog/?m=201610">
+	<link rel="archives" title="September 2016" href="http://www.gatchev.info/blog/?m=201609">
+	<link rel="archives" title="August 2016" href="http://www.gatchev.info/blog/?m=201608">
+	<link rel="archives" title="July 2016" href="http://www.gatchev.info/blog/?m=201607">
+	<link rel="archives" title="June 2016" href="http://www.gatchev.info/blog/?m=201606">
+	<link rel="archives" title="May 2016" href="http://www.gatchev.info/blog/?m=201605">
+	<link rel="archives" title="April 2016" href="http://www.gatchev.info/blog/?m=201604">
+	<link rel="archives" title="March 2016" href="http://www.gatchev.info/blog/?m=201603">
+	<link rel="archives" title="February 2016" href="http://www.gatchev.info/blog/?m=201602">
+	<link rel="archives" title="January 2016" href="http://www.gatchev.info/blog/?m=201601">
+	<link rel="archives" title="December 2015" href="http://www.gatchev.info/blog/?m=201512">
+	<link rel="archives" title="November 2015" href="http://www.gatchev.info/blog/?m=201511">
+	<link rel="archives" title="October 2015" href="http://www.gatchev.info/blog/?m=201510">
+	<link rel="archives" title="September 2015" href="http://www.gatchev.info/blog/?m=201509">
+	<link rel="archives" title="August 2015" href="http://www.gatchev.info/blog/?m=201508">
+	<link rel="archives" title="July 2015" href="http://www.gatchev.info/blog/?m=201507">
+	<link rel="archives" title="June 2015" href="http://www.gatchev.info/blog/?m=201506">
+	<link rel="archives" title="May 2015" href="http://www.gatchev.info/blog/?m=201505">
+	<link rel="archives" title="April 2015" href="http://www.gatchev.info/blog/?m=201504">
+	<link rel="archives" title="March 2015" href="http://www.gatchev.info/blog/?m=201503">
+	<link rel="archives" title="February 2015" href="http://www.gatchev.info/blog/?m=201502">
+	<link rel="archives" title="January 2015" href="http://www.gatchev.info/blog/?m=201501">
+	<link rel="archives" title="December 2014" href="http://www.gatchev.info/blog/?m=201412">
+	<link rel="archives" title="November 2014" href="http://www.gatchev.info/blog/?m=201411">
+	<link rel="archives" title="October 2014" href="http://www.gatchev.info/blog/?m=201410">
+	<link rel="archives" title="September 2014" href="http://www.gatchev.info/blog/?m=201409">
+	<link rel="archives" title="August 2014" href="http://www.gatchev.info/blog/?m=201408">
+	<link rel="archives" title="July 2014" href="http://www.gatchev.info/blog/?m=201407">
+	<link rel="archives" title="June 2014" href="http://www.gatchev.info/blog/?m=201406">
+	<link rel="archives" title="May 2014" href="http://www.gatchev.info/blog/?m=201405">
+	<link rel="archives" title="April 2014" href="http://www.gatchev.info/blog/?m=201404">
+	<link rel="archives" title="March 2014" href="http://www.gatchev.info/blog/?m=201403">
+	<link rel="archives" title="February 2014" href="http://www.gatchev.info/blog/?m=201402">
+	<link rel="archives" title="January 2014" href="http://www.gatchev.info/blog/?m=201401">
+	<link rel="archives" title="December 2013" href="http://www.gatchev.info/blog/?m=201312">
+	<link rel="archives" title="November 2013" href="http://www.gatchev.info/blog/?m=201311">
+	<link rel="archives" title="October 2013" href="http://www.gatchev.info/blog/?m=201310">
+	<link rel="archives" title="September 2013" href="http://www.gatchev.info/blog/?m=201309">
+	<link rel="archives" title="August 2013" href="http://www.gatchev.info/blog/?m=201308">
+	<link rel="archives" title="July 2013" href="http://www.gatchev.info/blog/?m=201307">
+	<link rel="archives" title="June 2013" href="http://www.gatchev.info/blog/?m=201306">
+	<link rel="archives" title="May 2013" href="http://www.gatchev.info/blog/?m=201305">
+	<link rel="archives" title="April 2013" href="http://www.gatchev.info/blog/?m=201304">
+	<link rel="archives" title="March 2013" href="http://www.gatchev.info/blog/?m=201303">
+	<link rel="archives" title="February 2013" href="http://www.gatchev.info/blog/?m=201302">
+	<link rel="archives" title="January 2013" href="http://www.gatchev.info/blog/?m=201301">
+	<link rel="archives" title="December 2012" href="http://www.gatchev.info/blog/?m=201212">
+	<link rel="archives" title="November 2012" href="http://www.gatchev.info/blog/?m=201211">
+	<link rel="archives" title="October 2012" href="http://www.gatchev.info/blog/?m=201210">
+	<link rel="archives" title="September 2012" href="http://www.gatchev.info/blog/?m=201209">
+	<link rel="archives" title="August 2012" href="http://www.gatchev.info/blog/?m=201208">
+	<link rel="archives" title="July 2012" href="http://www.gatchev.info/blog/?m=201207">
+	<link rel="archives" title="June 2012" href="http://www.gatchev.info/blog/?m=201206">
+	<link rel="archives" title="May 2012" href="http://www.gatchev.info/blog/?m=201205">
+	<link rel="archives" title="April 2012" href="http://www.gatchev.info/blog/?m=201204">
+	<link rel="archives" title="March 2012" href="http://www.gatchev.info/blog/?m=201203">
+	<link rel="archives" title="February 2012" href="http://www.gatchev.info/blog/?m=201202">
+	<link rel="archives" title="January 2012" href="http://www.gatchev.info/blog/?m=201201">
+	<link rel="archives" title="December 2011" href="http://www.gatchev.info/blog/?m=201112">
+	<link rel="archives" title="November 2011" href="http://www.gatchev.info/blog/?m=201111">
+	<link rel="archives" title="October 2011" href="http://www.gatchev.info/blog/?m=201110">
+	<link rel="archives" title="September 2011" href="http://www.gatchev.info/blog/?m=201109">
+	<link rel="archives" title="August 2011" href="http://www.gatchev.info/blog/?m=201108">
+	<link rel="archives" title="July 2011" href="http://www.gatchev.info/blog/?m=201107">
+	<link rel="archives" title="June 2011" href="http://www.gatchev.info/blog/?m=201106">
+	<link rel="archives" title="May 2011" href="http://www.gatchev.info/blog/?m=201105">
+	<link rel="archives" title="April 2011" href="http://www.gatchev.info/blog/?m=201104">
+	<link rel="archives" title="March 2011" href="http://www.gatchev.info/blog/?m=201103">
+	<link rel="archives" title="February 2011" href="http://www.gatchev.info/blog/?m=201102">
+	<link rel="archives" title="January 2011" href="http://www.gatchev.info/blog/?m=201101">
+	<link rel="archives" title="December 2010" href="http://www.gatchev.info/blog/?m=201012">
+	<link rel="archives" title="November 2010" href="http://www.gatchev.info/blog/?m=201011">
+	<link rel="archives" title="October 2010" href="http://www.gatchev.info/blog/?m=201010">
+	<link rel="archives" title="September 2010" href="http://www.gatchev.info/blog/?m=201009">
+	<link rel="archives" title="August 2010" href="http://www.gatchev.info/blog/?m=201008">
+	<link rel="archives" title="July 2010" href="http://www.gatchev.info/blog/?m=201007">
+	<link rel="archives" title="June 2010" href="http://www.gatchev.info/blog/?m=201006">
+	<link rel="archives" title="May 2010" href="http://www.gatchev.info/blog/?m=201005">
+	<link rel="archives" title="April 2010" href="http://www.gatchev.info/blog/?m=201004">
+	<link rel="archives" title="March 2010" href="http://www.gatchev.info/blog/?m=201003">
+	<link rel="archives" title="February 2010" href="http://www.gatchev.info/blog/?m=201002">
+	<link rel="archives" title="January 2010" href="http://www.gatchev.info/blog/?m=201001">
+	<link rel="archives" title="December 2009" href="http://www.gatchev.info/blog/?m=200912">
+	<link rel="archives" title="November 2009" href="http://www.gatchev.info/blog/?m=200911">
+	<link rel="archives" title="October 2009" href="http://www.gatchev.info/blog/?m=200910">
+	<link rel="archives" title="September 2009" href="http://www.gatchev.info/blog/?m=200909">
+	<link rel="archives" title="August 2009" href="http://www.gatchev.info/blog/?m=200908">
+	<link rel="archives" title="July 2009" href="http://www.gatchev.info/blog/?m=200907">
+	<link rel="archives" title="June 2009" href="http://www.gatchev.info/blog/?m=200906">
+	<link rel="archives" title="May 2009" href="http://www.gatchev.info/blog/?m=200905">
+	<link rel="archives" title="April 2009" href="http://www.gatchev.info/blog/?m=200904">
+	<link rel="archives" title="March 2009" href="http://www.gatchev.info/blog/?m=200903">
+	<link rel="archives" title="February 2009" href="http://www.gatchev.info/blog/?m=200902">
+	<link rel="archives" title="January 2009" href="http://www.gatchev.info/blog/?m=200901">
+	<link rel="archives" title="December 2008" href="http://www.gatchev.info/blog/?m=200812">
+	<link rel="archives" title="November 2008" href="http://www.gatchev.info/blog/?m=200811">
+	<link rel="archives" title="October 2008" href="http://www.gatchev.info/blog/?m=200810">
+	<link rel="archives" title="September 2008" href="http://www.gatchev.info/blog/?m=200809">
+	<link rel="archives" title="August 2008" href="http://www.gatchev.info/blog/?m=200808">
+	<link rel="archives" title="July 2008" href="http://www.gatchev.info/blog/?m=200807">
+	<link rel="archives" title="June 2008" href="http://www.gatchev.info/blog/?m=200806">
+	<link rel="archives" title="May 2008" href="http://www.gatchev.info/blog/?m=200805">
+	<link rel="archives" title="April 2008" href="http://www.gatchev.info/blog/?m=200804">
+	<link rel="archives" title="March 2008" href="http://www.gatchev.info/blog/?m=200803">
+	<link rel="archives" title="February 2008" href="http://www.gatchev.info/blog/?m=200802">
+	<link rel="archives" title="January 2008" href="http://www.gatchev.info/blog/?m=200801">
+	<link rel="archives" title="December 2007" href="http://www.gatchev.info/blog/?m=200712">
+	<link rel="archives" title="November 2007" href="http://www.gatchev.info/blog/?m=200711">
+	<link rel="archives" title="October 2007" href="http://www.gatchev.info/blog/?m=200710">
+	<link rel="archives" title="September 2007" href="http://www.gatchev.info/blog/?m=200709">
+	<link rel="archives" title="August 2007" href="http://www.gatchev.info/blog/?m=200708">
+	<link rel="archives" title="July 2007" href="http://www.gatchev.info/blog/?m=200707">
+	<link rel="archives" title="June 2007" href="http://www.gatchev.info/blog/?m=200706">
+	<link rel="archives" title="May 2007" href="http://www.gatchev.info/blog/?m=200705">
+	<link rel="archives" title="April 2007" href="http://www.gatchev.info/blog/?m=200704">
+	<link rel="archives" title="March 2007" href="http://www.gatchev.info/blog/?m=200703">
+	<link rel="archives" title="February 2007" href="http://www.gatchev.info/blog/?m=200702">
+	<link rel="archives" title="January 2007" href="http://www.gatchev.info/blog/?m=200701">
+	<link rel="archives" title="December 2006" href="http://www.gatchev.info/blog/?m=200612">
+	<link rel="archives" title="November 2006" href="http://www.gatchev.info/blog/?m=200611">
+	<link rel="archives" title="October 2006" href="http://www.gatchev.info/blog/?m=200610">
+	<link rel="archives" title="September 2006" href="http://www.gatchev.info/blog/?m=200609">
+	<link rel="archives" title="August 2006" href="http://www.gatchev.info/blog/?m=200608">
+	<link rel="archives" title="July 2006" href="http://www.gatchev.info/blog/?m=200607">
+	<link rel="archives" title="June 2006" href="http://www.gatchev.info/blog/?m=200606">
+	<link rel="archives" title="May 2006" href="http://www.gatchev.info/blog/?m=200605">
+	<link rel="archives" title="April 2006" href="http://www.gatchev.info/blog/?m=200604">
+	<link rel="archives" title="March 2006" href="http://www.gatchev.info/blog/?m=200603">
+	<link rel="archives" title="February 2006" href="http://www.gatchev.info/blog/?m=200602">
+	<link rel="archives" title="January 2006" href="http://www.gatchev.info/blog/?m=200601">
+	<link rel="archives" title="December 2005" href="http://www.gatchev.info/blog/?m=200512">
+	<link rel="archives" title="November 2005" href="http://www.gatchev.info/blog/?m=200511">
+	<link rel="archives" title="October 2005" href="http://www.gatchev.info/blog/?m=200510">
+	<link rel="archives" title="September 2005" href="http://www.gatchev.info/blog/?m=200509">
+	<link rel="archives" title="August 2005" href="http://www.gatchev.info/blog/?m=200508">
+	<link rel="archives" title="July 2005" href="http://www.gatchev.info/blog/?m=200507">
+	<link rel="archives" title="June 2005" href="http://www.gatchev.info/blog/?m=200506">
+	<link rel="archives" title="May 2005" href="http://www.gatchev.info/blog/?m=200505">
+	<link rel="archives" title="April 2005" href="http://www.gatchev.info/blog/?m=200504">
+	<link rel="archives" title="March 2005" href="http://www.gatchev.info/blog/?m=200503">
+	<link rel="archives" title="February 2005" href="http://www.gatchev.info/blog/?m=200502">
+	<link rel="archives" title="January 2005" href="http://www.gatchev.info/blog/?m=200501">
+	
+	<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Grigor Gatchev - A Weblog » Откритата фирма – идеи и съвети Comments Feed" href="http://www.gatchev.info/blog/?feed=rss2&amp;page_id=409">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.gatchev.info\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.3"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="Grigor%20Gatchev%20%E2%80%93%20A%20Weblog%20%C2%BB%20%D0%9E%D1%82%D0%BA%D1%80%D0%B8%D1%82%D0%B0%D1%82%D0%B0%20%D1%84%D0%B8%D1%80%D0%BC%D0%B0%20%E2%80%93%20%D0%B8%D0%B4%D0%B5%D0%B8%20%D0%B8%20%D1%81%D1%8A%D0%B2%D0%B5%D1%82%D0%B8_files/wp-emoji-release.js" type="text/javascript" defer="defer"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="https://api.w.org/" href="http://www.gatchev.info/blog/?rest_route=/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.gatchev.info/blog/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.gatchev.info/blog/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.7.3">
+<link rel="canonical" href="http://www.gatchev.info/blog/?page_id=409">
+<link rel="shortlink" href="http://www.gatchev.info/blog/?p=409">
+<link rel="alternate" type="application/json+oembed" href="http://www.gatchev.info/blog/?rest_route=%2Foembed%2F1.0%2Fembed&amp;url=http%3A%2F%2Fwww.gatchev.info%2Fblog%2F%3Fpage_id%3D409">
+<link rel="alternate" type="text/xml+oembed" href="http://www.gatchev.info/blog/?rest_route=%2Foembed%2F1.0%2Fembed&amp;url=http%3A%2F%2Fwww.gatchev.info%2Fblog%2F%3Fpage_id%3D409&amp;format=xml">
+</head>
+<body>
+<div id="page">
+
+
+<div id="header">
+	<div id="headerimg">
+		<h1><a href="http://www.gatchev.info/blog" title="Grigor Gatchev – A Weblog">Grigor Gatchev – A Weblog</a></h1>
+		<div class="description">(Personal – mostly in Bulgarian. English readers, please check the “In English” category.)</div>
+	</div>
+</div>
+
+	<div id="content" class="narrowcolumn">
+
+    		<div class="post" id="post-409">
+		<h2>Откритата фирма – идеи и съвети</h2>
+			<div class="entrytext">
+				<p align="center">Тази страница е посветена на модела “открита 
+фирма”. Тя е в процес на непрекъсната разработка, и подлежи на промени 
+във всеки момент, без предупреждение.</p>
+<p><strong>Дефиниция на модела</strong></p>
+<p>“Открита фирма” ще рече фирма, в която цялата информация е достъпна 
+като минимум за всички служители на фирмата, за кандидатстващите за 
+работа в нея, а по възможност и публично. (Това включва всички приходи и
+ разходи на фирмата, точния размер на заплатата и бонусите на всеки, 
+печалбата на собствениците, и т.н.)</p>
+<p>Целта на модела е да създаде условия за висока мотивация и фирмена 
+лоялност на служителите (а и на собствениците) на фирмата. Идеята е това
+ да се постигне, като чрез общодостъпността на информацията за приходи, 
+разходи и свършена работа се създадат условия за справедливо 
+разпределение на приходите.</p>
+<p>Принципно, всеки фирмен модел на теория цели това. На практика обаче 
+фирмената йерархия (обикновено строг команден модел, и ограничен достъп 
+до информацията за реалното възмездяване) създава условия за изкривяване
+ на модела, и нарушаване на справедливостта му от по-високите нива в 
+ущърб на по-ниските. Но-ниските нива (които реално вършат фирмената 
+работа) свикват да очакват и подозират изкривяването, и мотивацията им 
+спада.</p>
+<p>Сама по себе си прозрачността не създава справедливо и мотивиращо 
+разпределение. Тя просто прави добре видими некоректностите в него. По 
+този начин тя премахва безпочвените очаквания за некоректност у 
+изпълнителските нива, и засилва стимулите за ръководните нива да 
+премахват реалните некоректности.</p>
+<p>В зависимост от ситуацията, за постигането на целта може да бъдат 
+необходими и други мерки. Такива биха могли да бъдат например юридически
+ гаранции от страна на фирмата, внасяне на демократичност в командния 
+модел, внасяне на икономическа самостоятелност и модулност при ясни 
+правила, и др.</p>
+<p>Откритата фирма цели не <em>равно</em>, а <em>справедливо и мотивиращо</em>
+ разпределение на приходите: икономически тя е не социален, а либертарен
+ модел. Който не работи, не яде, независимо колко нуждаещ се е. 
+(Допълнителни правила могат да променят това, но те не са част от 
+основния модел.) Също така, справедливо ще рече не <em>премерено според труда</em> разпределение, а разпределение, което <em>удовлетворява участниците в него</em>.
+ Постигането на взаимно удовлетворително разпределение е много 
+по-реалистично от постигането на обективно отговарящо на труда 
+разпределение, и води до повече лоялност и мотивация. (Вероятно е 
+механизмите за постигане на съгласие да включват някакви механизми за 
+преценка на положения труд; това обаче не влиза в обхвата на основния 
+модел.)</p>
+<p>Както всеки фирмен модел, този има предимства и недостатъци. Някои 
+типове служители или собственици са подходящи за него, други – не. Някои
+ предмети на дейност са по-подходящи за него от други. Тези 
+характеристики е нужно да се отчитат при преценката дали този модел да 
+бъде предпочетен. Ако той бъде избран, е нужно съобразяване с него, 
+точно както с всеки друг модел.</p>
+<p>Важно качество на модела е неговата “некомпромисност”. Фирми, 
+изградени по този модел, имат някои недостатъци, които изградените по 
+класически модели фирми нямат. Правилният подход срещу тези недостатъци 
+обаче почти винаги е не чрез намаляването на откритостта, с цел да се 
+доближи до класически модел, а увеличаването й.</p>
+<p><strong>Предпоставки и реализации</strong></p>
+<p>Моделът създава предпоставки за мотивация и производителност. За да 
+заработят те обаче е нужно да бъдат реализирани предпоставките на 
+практика. Реализирането им, както с всеки друг фирмен модел, има своята 
+специфика.</p>
+<p>Пример: Нищо не пречи откритостта да се съчетае със строг команден 
+модел: едното е достъпност на информация, другото – режим на 
+вътрефирмени отношения. Под строг команден модел обаче достъпността на 
+информация за некоректност при разпределението е по-малко вероятно да 
+води до коригиране на некоректностите, отколкото при не толкова строг 
+модел; предимствата на откритостта намаляват, тъй като реализацията на 
+създадените от нея предпоставки куца. (Разбира се, определени сфери на 
+дейност може да изискват строг команден модел; в такива случаи се 
+преценява доколко моделът “открита фирма” е подходящ и съвместим.)</p>
+<p>Пълен списък на полезните методи за реализация е невъзможно да се 
+състави. От една страна, разнообразието на реалния свят е твърде голямо,
+ а за фирмите е от ключова важност да са адекватни на реалността. От 
+друга страна, всеки съвет може да е подходящ или неподходящ в зависимост
+ от много фактори – сфера на дейност, традиции на фирмата, вътрефирмени 
+отношения, национални и социални особености, лични качества на 
+собствениците и ръководството, и т.н. Всеки съвет трябва да се преценява
+ отделно, съгласно конкретната фирма.</p>
+<p>С тези уговорки, следва списък възможни съвети:</p>
+<p>Най-важното за успешната фирма са не парите или клиентите, а 
+персоналът й. Лошият персонал пропилява парите и прогонва клиентите, 
+дори ако са много; добрият персонал печели пари и клиенти, дори ако са 
+малко. Пазете добрия персонал повече от всичко друго.</p>
+<p>Търсете децентрализиране на фирмените решения. То има финансови 
+предимства и недостатъци. Недостатъците се виждат лесно, предимствата – 
+трудно, така че лесно се допуска финансово вредна централизираност. 
+Правилността на решенията се вижда най-добре отдолу.</p>
+<p>Бъдете не командири, а посредници във вътрефирмените отношения. Да си
+ феодал е много по-лесно, отколкото да си демократичен министър, но 
+демокрацията е много по-продуктивна от феодализма.</p>
+<p>Създайте и поддържайте ясни правила без изключения – за вас наравно с
+ другите. Законът е закон когато е еднакъв за всички, без изключение.</p>
+<p>Традиционната фирма постановява, че подчинените са длъжни да са 
+честни към началниците си, а началниците – да мамят подчинените. 
+Най-естествено е тази схема да не работи: тя е погрешна. Правилната е 
+началниците да дават пример за честност на подчинените със своята 
+честност към тях, дори ако не получават същата в отговор. Лъжата на 
+подчинения подкопава авторитета на подчинен; лъжата на началника обаче 
+подкопава авторитета на началник, и затова е много по-опасна и 
+недопустима.</p>
+<p>Традиционната фирма изисква началникът да предава заповеди отгоре 
+надолу, но да изолира от искания отдолу нагоре. Резултатът е демотивация
+ на подчинените. Правилно е началникът да е посредник между подчинени и 
+ръководители, и да балансира интересите им чрез преценяване на базата на
+ обективните необходимости: тогава се постига най-добро съотношение на 
+мотивираност и продуктивност на подчинени и спазване на интереса на 
+ръководители.</p>
+<p>Основната част от приходите трябва да е за служителите, собственикът 
+не трябва да търси лъвски пай. Високият процент печалба дава ниска 
+сигурност на начинанието; в този случай – чрез демотивиране на персонала
+ (“аз блъскам да пълня чужда гуша”). За по-малки фирми съотношение от 
+90% от печалбата за персонала към 10% за собственика е добро начало. За 
+по-големи частта за собственика може да слезе и под 1%. (Има много 
+варианти как точно да се изчислява разпределението; търсете такива, 
+които служителите преценяват като честни и справедливи.)</p>
+<p>Подобряването на резултатите трябва абсолютно задължително да води до
+ подобряване на възнаграждението, съобразно подобрението в резултатите. 
+Най-добре е да има максимално обективни критерии за това; нарушаването 
+им е престъпление номер 1 срещу фирмата. Колкото по-децентрализирана е 
+преценката, и колкото повече разчита на обективни изчисления и правила 
+(правило “10% по-висока печалба на отдела – 10% по-високи премии”), а не
+ на субективна намеса (нареждане от началник за премии по негова 
+преценка, била тя дори по приети правила), толкова по-добре.</p>
+<p>Лошият служител може да прогони десетки клиенти: той е вреден. Лошият
+ мениджър обаче може да прогони (или “повреди” като мотивация) десетки 
+добри служители: той е много по-вреден. Лошият служител може при крайна 
+нужда да бъде търпян; лошият мениджър следва да се освобождава или 
+прехвърля на изпълнителска длъжност незабавно.</p>
+<p>След като мениджърът не е “кучето на собственика, което пази овцете”,
+ е нормално изискванията към него да са повече, а възнаграждението за 
+тях – по-скромно, отколкото често са. Правилното съотношение изисквания 
+към възнаграждение е това, при което напливът към мениджърски места е 
+приблизително равен с отлива от тях. Манталитетът “шеф се става за 
+придобивки” е отрова за откритата фирма; там трябва да важи манталитетът
+ “шеф се става за повече и по-тежка работа”.</p>
+<p>Основният проблем пред откритата фирма е манталитетът и социалният 
+климат, създавани от опит от класически фирми. Нова фирма може да бъде 
+реализирана като отворена, макар да не е никак лесно (за това вероятно 
+има нужда от цял раздел съвети). Съществуваща фирма е изключително 
+трудно да бъде превърната в открита; това може да има нужда не само от 
+още един раздел съвети, но и от много интелект, енергия и решителност от
+ ръководството й.</p>
+	
+					
+			</div>
+		</div>
+	  		</div>
+
+	<div id="sidebar">
+		<ul>
+			
+			<li>
+				<form method="get" id="searchform" action="/blog/index.php">
+<div><input type="text" name="s" id="s">
+<input type="submit" id="searchsubmit" name="Submit" value="Go!">
+</div>
+</form>			</li>
+
+			<!-- Author information is disabled per default. Uncomment and fill in your details if you want to use it.
+			<li><h2>Author</h2>
+			<p>A little something about you, the author. Nothing lengthy, just an overview.</p>
+			</li>
+			-->
+
+			<li>
+						</li>
+
+			<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-689"><a href="http://www.gatchev.info/blog/?page_id=689">Free Technology License – Draft 1</a></li>
+<li class="page_item page-item-409 current_page_item"><a href="http://www.gatchev.info/blog/?page_id=409">Откритата фирма – идеи и съвети</a></li>
+</ul></li>
+			<li><h2>Archives</h2>
+				<ul>
+					<li><a href="http://www.gatchev.info/blog/?m=202006">June 2020</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=202005">May 2020</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=202004">April 2020</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=202003">March 2020</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=202002">February 2020</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=202001">January 2020</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201911">November 2019</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201910">October 2019</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201909">September 2019</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201907">July 2019</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201906">June 2019</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201905">May 2019</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201904">April 2019</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201903">March 2019</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201902">February 2019</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201901">January 2019</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201812">December 2018</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201811">November 2018</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201810">October 2018</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201809">September 2018</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201808">August 2018</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201806">June 2018</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201805">May 2018</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201804">April 2018</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201803">March 2018</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201802">February 2018</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201801">January 2018</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201712">December 2017</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201711">November 2017</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201710">October 2017</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201709">September 2017</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201708">August 2017</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201707">July 2017</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201706">June 2017</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201705">May 2017</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201704">April 2017</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201703">March 2017</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201702">February 2017</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201701">January 2017</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201612">December 2016</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201611">November 2016</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201610">October 2016</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201609">September 2016</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201608">August 2016</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201607">July 2016</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201606">June 2016</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201605">May 2016</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201604">April 2016</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201603">March 2016</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201602">February 2016</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201601">January 2016</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201512">December 2015</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201511">November 2015</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201510">October 2015</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201509">September 2015</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201508">August 2015</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201507">July 2015</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201506">June 2015</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201505">May 2015</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201504">April 2015</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201503">March 2015</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201502">February 2015</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201501">January 2015</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201412">December 2014</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201411">November 2014</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201410">October 2014</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201409">September 2014</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201408">August 2014</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201407">July 2014</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201406">June 2014</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201405">May 2014</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201404">April 2014</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201403">March 2014</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201402">February 2014</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201401">January 2014</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201312">December 2013</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201311">November 2013</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201310">October 2013</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201309">September 2013</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201308">August 2013</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201307">July 2013</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201306">June 2013</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201305">May 2013</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201304">April 2013</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201303">March 2013</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201302">February 2013</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201301">January 2013</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201212">December 2012</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201211">November 2012</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201210">October 2012</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201209">September 2012</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201208">August 2012</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201207">July 2012</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201206">June 2012</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201205">May 2012</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201204">April 2012</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201203">March 2012</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201202">February 2012</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201201">January 2012</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201112">December 2011</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201111">November 2011</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201110">October 2011</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201109">September 2011</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201108">August 2011</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201107">July 2011</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201106">June 2011</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201105">May 2011</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201104">April 2011</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201103">March 2011</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201102">February 2011</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201101">January 2011</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201012">December 2010</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201011">November 2010</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201010">October 2010</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201009">September 2010</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201008">August 2010</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201007">July 2010</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201006">June 2010</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201005">May 2010</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201004">April 2010</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201003">March 2010</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201002">February 2010</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=201001">January 2010</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200912">December 2009</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200911">November 2009</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200910">October 2009</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200909">September 2009</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200908">August 2009</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200907">July 2009</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200906">June 2009</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200905">May 2009</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200904">April 2009</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200903">March 2009</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200902">February 2009</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200901">January 2009</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200812">December 2008</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200811">November 2008</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200810">October 2008</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200809">September 2008</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200808">August 2008</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200807">July 2008</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200806">June 2008</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200805">May 2008</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200804">April 2008</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200803">March 2008</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200802">February 2008</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200801">January 2008</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200712">December 2007</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200711">November 2007</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200710">October 2007</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200709">September 2007</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200708">August 2007</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200707">July 2007</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200706">June 2007</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200705">May 2007</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200704">April 2007</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200703">March 2007</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200702">February 2007</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200701">January 2007</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200612">December 2006</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200611">November 2006</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200610">October 2006</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200609">September 2006</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200608">August 2006</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200607">July 2006</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200606">June 2006</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200605">May 2006</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200604">April 2006</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200603">March 2006</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200602">February 2006</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200601">January 2006</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200512">December 2005</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200511">November 2005</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200510">October 2005</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200509">September 2005</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200508">August 2005</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200507">July 2005</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200506">June 2005</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200505">May 2005</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200504">April 2005</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200503">March 2005</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200502">February 2005</a></li>
+	<li><a href="http://www.gatchev.info/blog/?m=200501">January 2005</a></li>
+				</ul>
+			</li>
+
+			<li><h2>Categories</h2>
+				<ul>
+					<li class="cat-item cat-item-11"><a href="http://www.gatchev.info/blog/?cat=11" title="Company-related stuff">Corporate</a> (5)
+</li>
+	<li class="cat-item cat-item-14"><a href="http://www.gatchev.info/blog/?cat=14" title="About the human creativity (be it talented or mediocre)">Creativity</a> (50)
+</li>
+	<li class="cat-item cat-item-12"><a href="http://www.gatchev.info/blog/?cat=12" title="What if...? What about...? What the hell...!">Curiosity</a> (26)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://www.gatchev.info/blog/?cat=3" title="We've got an ocean of bits and bytes here... The Internet is a small part of it.
+Most is inside our minds. And souls.">Cyberpunk</a> (150)
+</li>
+	<li class="cat-item cat-item-1"><a href="http://www.gatchev.info/blog/?cat=1" title="The life goes by... and some things stick here.">Daily</a> (1,025)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.gatchev.info/blog/?cat=6" title="Things I have dreamed on some night... :-)">Dreams</a> (21)
+</li>
+	<li class="cat-item cat-item-2"><a href="http://www.gatchev.info/blog/?cat=2" title="The best fun is... whatever is funny.">Fun</a> (145)
+</li>
+	<li class="cat-item cat-item-9"><a href="http://www.gatchev.info/blog/?cat=9" title="Others invite guests home, I do it in my blog...">Guests</a> (11)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.gatchev.info/blog/?cat=4" title="Things in the modern Latin.">In English</a> (44)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://www.gatchev.info/blog/?cat=7" title="Security research for a particular type of computers - wet ones.">Neuromancery</a> (5)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.gatchev.info/blog/?cat=5" title="Those who impressed me, with what they are.">People</a> (18)
+</li>
+	<li class="cat-item cat-item-13"><a href="http://www.gatchev.info/blog/?cat=13" title="We are social animals - and politics is what shapes our society.">Politics</a> (278)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://www.gatchev.info/blog/?cat=10" title="Dreams awake, gray zones of consciousness...">Semi-dreams</a> (4)
+</li>
+	<li class="cat-item cat-item-17"><a href="http://www.gatchev.info/blog/?cat=17" title="Space-related posts">Space</a> (4)
+</li>
+	<li class="cat-item cat-item-8"><a href="http://www.gatchev.info/blog/?cat=8" title="Useful stuff, hints, tips and tricks.">Useful</a> (18)
+</li>
+				</ul>
+			</li>
+
+							
+				  <li id="linkcat-15" class="linkcat"><h2>Blogs</h2>
+	<ul>
+<li><a href="http://daggerstab.wordpress.com/">Daggerstab</a></li>
+<li><a href="http://www.leeneeann.info/blog">Lee Nee Ann</a></li>
+<li><a href="http://www.xpucmo.com/">Left &amp; Right</a></li>
+<li><a href="http://wankata.ivanovi.net/blog/">Ванката</a></li>
+<li><a href="http://vasil.ludost.net/blog/">Васил Колев – Maniax</a></li>
+<li><a href="http://www.velkomiloev.com/">Велко Милоев</a></li>
+<li><a href="http://delian.blogspot.com/">Делян Делчев</a></li>
+<li><a href="http://blog.doncho.net/">Дончо Ангелов</a></li>
+<li><a href="http://www.yovko.net/" rel="friend">Йовко Ламбрев</a></li>
+<li><a href="http://kal.zavinagi.org/" rel="friend met" target="_blank">Калин Ненов</a></li>
+<li><a href="http://doganov.org/" rel="friend">Калоян Доганов</a></li>
+<li><a href="http://narvi.zavinagi.org/" title="Блогът на Любомир Николов – Нарви" target="_blank">Книжна трапеза</a></li>
+<li><a href="http://semkiibonbonki.blogspot.com/">Невяна Гюрова</a></li>
+<li><a href="http://blog.peio.org/">Пейо Попов</a></li>
+<li><a href="http://akartchinski79.blogspot.com/">Сашо Карчински</a></li>
+<li><a href="http://nqmani6toslu4ajno.blogspot.com/">Случайна</a></li>
+<li><a href="http://dzver.com/blog">Чорба от греховете на dzver</a></li>
+<li><a href="http://sharkannht.blogspot.com/">Шаркан</a></li>
+
+	</ul>
+</li>
+  <li id="linkcat-19" class="linkcat"><h2>Fun</h2>
+	<ul>
+<li><a href="http://biseri.zavinagi.org/">Бисери на глупостта</a></li>
+
+	</ul>
+</li>
+  <li id="linkcat-18" class="linkcat"><h2>Honeypots</h2>
+	<ul>
+<li><a href="http://honeywiki.zavinagi.org/">Honeywiki</a></li>
+
+	</ul>
+</li>
+  <li id="linkcat-16" class="linkcat"><h2>Links</h2>
+	<ul>
+<li><a href="http://open-culture.net/">Open-Culture.Net</a></li>
+<li><a href="http://www.tvto.info/" title="The TV site!" target="_blank">TV-то :-)</a></li>
+<li><a href="http://bgf.zavinagi.org/" title="Уики-енциклопедия на българската фантастика">БГ-Фантастика</a></li>
+<li><a href="http://bezmonitor.com/">Виктор Кирилов</a></li>
+<li><a href="http://bulgaria.indymedia.org/">Индимедия – България</a></li>
+<li><a href="http://6lyokavitza.org/">Инициатива “Шльокавица”</a></li>
+<li><a href="http://infoholicite.zavinagi.org/">Сайтът на инфохолиците</a></li>
+<li><a href="http://www.sivosten.com/">Сивостен</a></li>
+<li><a href="http://www.speshno.info/" title="Полезна при спешни случаи информация.">Спешно.Инфо</a></li>
+<li><a href="http://rodoslovie.zavinagi.org/">Уики Родословие</a></li>
+<li><a href="http://bg.wikipedia.org/">Уикипедия</a></li>
+<li><a href="http://glasuvane.zavinagi.org/">Учебник по гласуване</a></li>
+<li><a href="http://www.chitanka.info/">Читанка :-)</a></li>
+<li><a href="http://www.choveshkata.net/" rel="friend" title="Издателство “Човешката библиотека” – книги за Хора" target="_blank">Човешката библиотека</a></li>
+
+	</ul>
+</li>
+				
+				<li><h2>Meta</h2>
+				<ul>
+										<li><a href="http://www.gatchev.info/blog/wp-login.php">Log in</a></li>
+					<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+					<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+					<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+									</ul>
+				</li>
+						
+		</ul>
+	</div>
+
+
+
+<hr>
+<div id="footer">
+	<p>
+		Grigor Gatchev – A Weblog is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br><a href="feed:http://www.gatchev.info/blog/?feed=rss2">Entries (RSS)</a>
+		and <a href="feed:http://www.gatchev.info/blog/?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 20 queries. 0.172 seconds. -->
+	</p>
+</div>
+</div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+<script type="text/javascript" src="Grigor%20Gatchev%20%E2%80%93%20A%20Weblog%20%C2%BB%20%D0%9E%D1%82%D0%BA%D1%80%D0%B8%D1%82%D0%B0%D1%82%D0%B0%20%D1%84%D0%B8%D1%80%D0%BC%D0%B0%20%E2%80%93%20%D0%B8%D0%B4%D0%B5%D0%B8%20%D0%B8%20%D1%81%D1%8A%D0%B2%D0%B5%D1%82%D0%B8_files/wp-embed.js"></script>
+
+
+</body></html>

@@ -1,0 +1,2738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+    <title>Bug 24457 &ndash; allow saving terminal content</title>
+
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<link rel="Top" href="https://bugzilla.gnome.org/">
+
+  
+
+
+  
+    <link rel="Show" title="Dependency Tree"
+          href="showdependencytree.cgi?id=24457&amp;hide_resolved=1">
+
+      <link rel="Show" title="Bug Activity"
+            href="show_activity.cgi?id=24457">
+      <link rel="Show" title="Printer-Friendly Version"
+            href="show_bug.cgi?format=multiple&amp;id=24457">
+
+
+
+    
+    <link href="skins/standard/global.css?1445287852"
+          rel="alternate stylesheet" 
+          title="Classic"><link href="js/yui/assets/skins/sam/autocomplete.css?1445287852" rel="stylesheet"
+        type="text/css" ><link href="js/yui/assets/skins/sam/calendar.css?1445287852" rel="stylesheet"
+        type="text/css" ><link href="skins/standard/global.css?1445287852" rel="stylesheet"
+        type="text/css" ><link href="skins/standard/show_bug.css?1445287853" rel="stylesheet"
+        type="text/css" ><!--[if lte IE 7]>
+      
+
+
+  <link href="skins/standard/IE-fixes.css?1445287852" rel="stylesheet"
+        type="text/css" >
+<![endif]-->
+
+    <link href="skins/contrib/Gnome/global.css?1445287839" rel="stylesheet"
+        type="text/css" title="Gnome">
+
+    
+
+    
+
+    
+<script type="text/javascript" src="js/yui/yahoo-dom-event/yahoo-dom-event.js?1445287852"></script><script type="text/javascript" src="js/yui/cookie/cookie-min.js?1445287852"></script><script type="text/javascript" src="js/yui/datasource/datasource-min.js?1445287852"></script><script type="text/javascript" src="js/yui/connection/connection-min.js?1445287852"></script><script type="text/javascript" src="js/yui/json/json-min.js?1445287852"></script><script type="text/javascript" src="js/yui/autocomplete/autocomplete-min.js?1445287852"></script><script type="text/javascript" src="js/yui/calendar/calendar-min.js?1445287852"></script><script type="text/javascript" src="js/global.js?1445287852"></script>
+
+    <script type="text/javascript">
+    <!--
+        YAHOO.namespace('bugzilla');
+        YAHOO.util.Event.addListener = function (el, sType, fn, obj, overrideContext) {
+               if ( ("onpagehide" in window || YAHOO.env.ua.gecko) && sType === "unload") { sType = "pagehide"; };
+               var capture = ((sType == "focusin" || sType == "focusout") && !YAHOO.env.ua.ie) ? true : false;
+               return this._addListener(el, this._getType(sType), fn, obj, overrideContext, capture);
+         };
+        if ( "onpagehide" in window || YAHOO.env.ua.gecko) {
+            YAHOO.util.Event._simpleRemove(window, "unload", 
+                                           YAHOO.util.Event._unload);
+        }
+        
+        function unhide_language_selector() { 
+            YAHOO.util.Dom.removeClass(
+                'lang_links_container', 'bz_default_hidden'
+            ); 
+        } 
+        YAHOO.util.Event.onDOMReady(unhide_language_selector);
+
+        
+        var BUGZILLA = {
+            param: {
+                cookiepath: '\/',
+                maxusermatches: 50
+            },
+            constant: {
+                COMMENT_COLS: 80
+            },
+            string: {
+                
+
+                attach_desc_required:
+                    'You must enter a Description for this attachment.',
+                component_required:
+                    'You must select a Component for this bug.',
+                description_required:
+                    'You must enter a Description for this bug.',
+                short_desc_required:
+                    'You must enter a Summary for this bug.',
+                version_required:
+                    'You must select a Version for this bug.'
+            }
+        };
+
+    if (history && history.replaceState) {
+      if(!document.location.href.match(/show_bug\.cgi/)) {
+        history.replaceState( null, 
+                             "Bug 24457 – allow saving terminal content",  
+                             "show_bug.cgi?id=24457" );
+        document.title = "Bug 24457 – allow saving terminal content";
+      }
+      if (document.location.href.match(/show_bug\.cgi\?.*list_id=/)) {
+        var href = document.location.href;
+        href = href.replace(/[\?&]+list_id=(\d+|cookie)/, '');
+        history.replaceState(null, "Bug 24457 – allow saving terminal content", href);
+      }
+    }
+    YAHOO.util.Event.onDOMReady(function() {
+      initDirtyFieldTracking();
+    });
+    // -->
+    </script>
+<script type="text/javascript" src="js/util.js?1445287852"></script><script type="text/javascript" src="js/field.js?1445287852"></script>
+
+    
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+                       title="GNOME Bugzilla" href="./search_plugin.cgi">
+    <link rel="shortcut icon" href="images/favicon.ico" ><link rel="stylesheet" type="text/css"
+      href="extensions/TraceParser/web/style.css">
+  </head>
+
+
+
+  <body onload=""
+        class="bugzilla-gnome-org bz_bug bz_status_RESOLVED bz_product_gnome-terminal bz_component_general bz_bug_24457 yui-skin-sam">
+
+
+
+<div id="header">
+<div id="banner">
+  </div>
+
+<table border="0" cellspacing="0" cellpadding="0" id="titles">
+<tr>
+    <td id="title">
+      <p>GNOME Bugzilla &ndash; Bug&nbsp;24457</p>
+    </td>
+
+    <td id="subtitle">
+      <p class="subheader">allow saving terminal content</p>
+    </td>
+
+    <td id="information">
+      <p class="header_addl_info">Last modified: 2014-09-22 15:08:50 UTC</p>
+    </td>
+</tr>
+</table>
+
+<table id="lang_links_container" cellpadding="0" cellspacing="0"
+       class="bz_default_hidden"><tr><td>
+</td></tr></table>
+<ul class="links">
+  <li><a href="./">Home</a></li>
+  <li><span class="separator">| </span><a href="enter_bug.cgi">New</a></li>
+    <li><span class="separator">| </span><a href="page.cgi?id=browse.html&amp;product=gnome-terminal">Browse</a></li>
+  <li><span class="separator">| </span><a href="query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="buglist.cgi" method="get"
+        onsubmit="if (this.quicksearch.value == '')
+                  { alert('Please enter one or more search terms first.');
+                    return false; } return true;">
+    <input type="hidden" id="no_redirect_top" name="no_redirect" value="0">
+    <script type="text/javascript">
+      if (history && history.replaceState) {
+        var no_redirect = document.getElementById("no_redirect_top");
+        no_redirect.value = 1;
+      }
+    </script>
+    <input class="txt" type="text" id="quicksearch_top" name="quicksearch" 
+           title="Quick Search" value="">
+    <input class="btn" type="submit" value="Search" 
+           id="find_top"></form>
+  <a href="page.cgi?id=quicksearch.html" title="Quicksearch Help">[?]</a></li>
+
+  <li><span class="separator">| </span><a href="page.cgi?id=reports.html">Reports</a></li>
+
+  <li>
+        <span class="separator">| </span>
+        <a href="http://www.bugzilla.org/docs/4.4/en/html/bug_page.html" target="_blank">Help</a>
+      </li>
+    
+      <li id="new_account_container_top">
+        <span class="separator">| </span>
+        <a href="createaccount.cgi">New&nbsp;Account</a>
+      </li>
+
+    <li id="mini_login_container_top">
+  <span class="separator">| </span>
+  <a id="login_link_top" href="show_bug.cgi?id=24457&amp;GoAheadAndLogIn=1"
+     onclick="return show_mini_login_form('_top')">Log In</a>
+
+  
+  <form action="show_bug.cgi?id=24457" method="POST" 
+        class="mini_login bz_default_hidden"
+        id="mini_login_top"
+        onsubmit="return check_mini_login_fields( '_top' );"
+  >
+    <input id="Bugzilla_login_top" 
+           class="bz_login"
+           name="Bugzilla_login"
+           title="Login"
+           onfocus="mini_login_on_focus('_top')"
+    >
+    <input class="bz_password" 
+           id="Bugzilla_password_top" 
+           name="Bugzilla_password"
+           type="password"
+           title="Password"
+    >
+    <input class="bz_password bz_default_hidden bz_mini_login_help" type="text" 
+           id="Bugzilla_password_dummy_top" value="password"
+           title="Password"
+           onfocus="mini_login_on_focus('_top')"
+    >
+      <input type="checkbox" id="Bugzilla_remember_top" 
+             name="Bugzilla_remember" value="on" class="bz_remember"
+                 checked>
+      <label for="Bugzilla_remember_top">Remember</label>
+    <input type="hidden" name="Bugzilla_login_token"
+           value="1445677452-7AA28T8OafwDhxHebb3112nD1pDVz1sFJhMHMh0OdZ0">
+    <input type="submit" name="GoAheadAndLogIn" value="Log in"
+            id="log_in_top">
+    <script type="text/javascript">
+      mini_login_constants = {
+          "login" : "login",
+          "warning" : "You must set the login and password before logging in."
+      };
+      
+      if (YAHOO.env.ua.gecko || YAHOO.env.ua.ie || YAHOO.env.ua.opera) {
+          YAHOO.util.Event.onDOMReady(function() {
+              init_mini_login_form('_top');
+          });
+      }
+      else {
+          YAHOO.util.Event.on(window, 'load', function () {
+              window.setTimeout(function() {
+                  init_mini_login_form('_top');
+              }, 200);
+          });
+    }
+    </script>
+    <a href="#" onclick="return hide_mini_login_form('_top')">[x]</a>
+  </form>
+</li>
+<li id="forgot_container_top">
+  <span class="separator">| </span>
+  <a id="forgot_link_top" href="show_bug.cgi?id=24457&amp;GoAheadAndLogIn=1#forgot"
+     onclick="return show_forgot_form('_top')">Forgot Password</a>
+  <form action="token.cgi" method="post" id="forgot_form_top"
+        class="mini_forgot bz_default_hidden">
+    <label for="login_top">Login:</label>
+    <input type="text" name="loginname" size="20" id="login_top">
+    <input id="forgot_button_top" value="Reset Password" 
+           type="submit">
+    <input type="hidden" name="a" value="reqpw">
+    <input type="hidden" id="token_top" name="token" value="1445677452--NNjUnmsudBznNS-HrspIo4mVLSe9uPb6oIBEJf5xRU">
+    <a href="#" onclick="return hide_forgot_form('_top')">[x]</a>
+  </form>
+</li>
+</ul>
+</div> 
+
+<div id="bugzilla-body">
+
+
+<script type="text/javascript">
+<!--
+
+//-->
+</script>
+
+<form name="changeform" id="changeform" method="post" action="process_bug.cgi">
+
+  <input type="hidden" name="delta_ts" value="2014-09-22 15:08:50">
+  <input type="hidden" name="longdesclength" value="48">
+  <input type="hidden" name="id" value="24457">
+  <input type="hidden" name="token" value="1445677452-fjXUrSZcbVQaI8CRMD9NOVPW5Q1yO6Nk6a3Thfjtyg8">
+<div class="bz_alias_short_desc_container edit_form">
+     <a href="show_bug.cgi?id=24457"><b>Bug&nbsp;24457</b></a> -<span id="summary_alias_container" class="bz_default_hidden"> 
+      <span id="short_desc_nonedit_display">allow saving terminal content</span>
+     </span>
+  
+       
+    <div id="summary_alias_input">
+      <table id="summary"> 
+        <tr>
+            <td colspan="2">
+          </td>
+        </tr>
+        
+        <tr><th class="field_label "
+    id="field_label_short_desc">
+
+    <label for="short_desc" accesskey="s">
+
+  <a 
+      title="The bug summary is a short sentence which succinctly describes what the bug is about."
+      class="field_help_link"
+      href="page.cgi?id=fields.html#short_desc"
+  >Summary:</a>
+</label>
+</th>
+          <td>allow saving terminal content
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script type="text/javascript">
+    hideAliasAndSummary('allow saving terminal content', '');
+  </script>
+  <table class="edit_form">
+    <tr>
+      
+      <td id="bz_show_bug_column_1" class="bz_show_bug_column">     
+        <table>
+          <tr>
+    <th class="field_label">
+      <a href="page.cgi?id=fields.html#bug_status">Status</a>:
+    </th>
+    <td id="bz_field_status">
+      <span id="static_bug_status">RESOLVED
+          FIXED
+      </span>
+    </td>
+  </tr>
+          <tr>
+    <td colspan="2" class="bz_section_spacer"></td>
+  </tr>
+          <tr><th class="field_label "
+    id="field_label_product">
+
+
+  <a 
+      title="Bugs are categorised into Products and Components. Select a Classification to narrow down this list."
+      class="field_help_link"
+      href="describecomponents.cgi"
+  >Product:</a>
+
+</th>
+  <td class="field_value "
+      id="field_container_product" >gnome-terminal</td>
+    </tr>
+
+    
+    <tr class="bz_default_hidden"><th class="field_label "
+    id="field_label_classification">
+
+
+  <a 
+      title="Bugs are categorised into Classifications, Products and Components. classifications is the top-level categorisation."
+      class="field_help_link"
+      href="page.cgi?id=fields.html#classification"
+  >Classification:</a>
+
+</th>
+  <td class="field_value "
+      id="field_container_classification" >Core</td>
+    </tr>
+        
+    
+    
+    <tr><th class="field_label "
+    id="field_label_component">
+
+
+  <a 
+      title="Components are second-level categories; each belongs to a particular Product. Select a Product to narrow down this list."
+      class="field_help_link"
+      href="describecomponents.cgi?product=gnome-terminal"
+  >Component:</a>
+
+</th>
+  <td class="field_value "
+      id="field_container_component" >general</td>
+    </tr>
+    <tr><th class="field_label "
+    id="field_label_version">
+
+    <label for="version">
+
+  <a 
+      title="The version field defines the version of the software the bug was found in."
+      class="field_help_link"
+      href="page.cgi?id=fields.html#version"
+  >Version:</a>
+</label>
+</th>
+        <td>unspecified
+  </td>
+    </tr>
+        
+    
+        
+    <tr><th class="field_label "
+    id="field_label_rep_platform">
+
+    <label for="rep_platform" accesskey="h">
+
+  <a 
+      title="The hardware platform the bug was observed on. Note: When searching, selecting the option &quot;All&quot; only finds bugs whose value for this field is literally the word &quot;All&quot;."
+      class="field_help_link"
+      href="page.cgi?id=fields.html#rep_platform"
+  >Hardware:</a>
+</label>
+</th>
+      <td class="field_value">Other
+       Linux
+      </td>
+    </tr>
+          <tr>
+    <td colspan="2" class="bz_section_spacer"></td>
+  </tr>
+          
+          <tr>
+      <th class="field_label">
+        <label for="priority" accesskey="i">
+          <a href="page.cgi?id=fields.html#importance"><u>I</u>mportance</a></label>:
+      </th>
+      <td>Normal
+       enhancement
+      </td>
+    </tr>
+
+      <tr>
+        <th class="field_label">
+          <label for="target_milestone">
+            <a href="page.cgi?id=fields.html#target_milestone">
+            Target&nbsp;Milestone</a></label>:
+        </th><td>---
+  </td>
+      </tr>            
+          
+          <tr>
+      <th class="field_label">
+        <a href="page.cgi?id=fields.html#assigned_to">Assigned To</a>:
+      </th>
+      <td><span class="vcard"><span class="fn">GNOME Terminal Maintainers</span>
+</span>
+      </td>
+    </tr>
+
+    <tr><th class="field_label "
+    id="field_label_qa_contact">
+
+    <label for="qa_contact" accesskey="q">
+
+  <a 
+      title="The person responsible for confirming this bug if it is unconfirmed, and for verifying the fix once the bug has been resolved."
+      class="field_help_link"
+      href="page.cgi?id=fields.html#qa_contact"
+  >QA Contact:</a>
+</label>
+</th>
+      <td><span class="vcard"><span class="fn">GNOME Terminal Maintainers</span>
+</span>
+      </td>
+    </tr>
+    <script type="text/javascript">
+      assignToDefaultOnChange(['product', 'component'],
+        'gnome-terminal-maint\x40gnome.bugs',
+        'gnome-terminal-maint\x40gnome.bugs');
+    </script>
+          <tr>
+    <td colspan="2" class="bz_section_spacer"></td>
+  </tr>
+          <tr><th class="field_label "
+    id="field_label_bug_file_loc">
+
+    <label for="bug_file_loc" accesskey="u">
+
+  <a 
+      title="Bugs can have a URL associated with them - for example, a pointer to a web site where the problem is seen."
+      class="field_help_link"
+      href="page.cgi?id=fields.html#bug_file_loc"
+  >URL:</a>
+</label>
+</th>
+    <td>
+      <span id="bz_url_input_area">
+      </span>
+    </td>
+  </tr>
+  
+    <tr><th class="field_label "
+    id="field_label_status_whiteboard">
+
+    <label for="status_whiteboard" accesskey="w">
+
+  <a 
+      title="Each bug has a free-form single line text entry box for adding tags and status information."
+      class="field_help_link"
+      href="page.cgi?id=fields.html#status_whiteboard"
+  >Whiteboard:</a>
+</label>
+</th><td colspan="2">  
+  </td>
+    </tr>
+  
+    <tr>
+      <th class="field_label">
+        <label for="keywords" accesskey="k">
+          <a href="describekeywords.cgi"><u>K</u>eywords</a></label>:
+      </th>
+      <td class="field_value" colspan="2"><div id="keywords_container">
+         <input type="text" id="keywords" size="40"
+                class="text_input" name="keywords"
+                value="">
+         <div id="keywords_autocomplete"></div>
+       </div>
+       <script type="text/javascript" defer="defer">
+         if (typeof YAHOO.bugzilla.field_array === "undefined")
+           YAHOO.bugzilla.field_array = [];
+         YAHOO.bugzilla.field_array["keywords"] = ["accessibility","API","bisected","BLOCKED_BY_FREEZE","build","documentation","gnome-love","HELPWANTED","HIG","I18N","keynav","L10N","memory","mozilla","multihead","perf","portability","pref","printing","probabledup","qa","regression_test_needed","relnote","security","sm","STACKTRACE","string","sun_patches","ui-review","usability"];
+         YAHOO.bugzilla.fieldAutocomplete.init('keywords',
+                                               'keywords_autocomplete');
+       </script>
+      </td>
+    </tr>
+          <tr>
+    <td colspan="2" class="bz_section_spacer"></td>
+  </tr>
+
+          <tr>
+    <th class="field_label">
+      <label for="duplicates">Duplicates</label>:
+    </th>
+    <td class="field_value" colspan="2">
+      <span id="duplicates"><a class="bz_bug_link 
+          bz_status_RESOLVED  bz_closed"
+   title="RESOLVED DUPLICATE - Request for adding a save menu option in profterm"
+   href="show_bug.cgi?id=73272">73272</a> <a class="bz_bug_link 
+          bz_status_RESOLVED  bz_closed"
+   title="RESOLVED DUPLICATE - There should be a way to save the current buffer."
+   href="show_bug.cgi?id=91550">91550</a> <a class="bz_bug_link 
+          bz_status_RESOLVED  bz_closed"
+   title="RESOLVED DUPLICATE - [RFE] allow saving buffer"
+   href="show_bug.cgi?id=120583">120583</a> <a class="bz_bug_link 
+          bz_status_RESOLVED  bz_closed"
+   title="RESOLVED DUPLICATE - gnome-terminal: ability to save scrollback to a file"
+   href="show_bug.cgi?id=349973">349973</a> <a class="bz_bug_link 
+          bz_status_RESOLVED  bz_closed"
+   title="RESOLVED DUPLICATE - add a logging facility"
+   href="show_bug.cgi?id=556791">556791</a> 
+      </span>
+      (<a href="buglist.cgi?bug_id=73272,91550,120583,349973,556791">view as bug list</a>)
+    </td>
+  </tr>
+<tr><th class="field_label "
+    id="field_label_dependson">
+
+
+  <a 
+      title="The bugs listed here must be resolved before this bug can be resolved."
+      class="field_help_link"
+      href="page.cgi?id=fields.html#dependson"
+  >Depends on:</a>
+
+</th>
+
+  <td>
+    <span id="dependson_input_area">
+    </span>
+    
+  </td>
+  </tr>
+  
+  <tr><th class="field_label "
+    id="field_label_blocked">
+
+
+  <a 
+      title="This bug must be resolved before the bugs listed in this field can be resolved."
+      class="field_help_link"
+      href="page.cgi?id=fields.html#blocked"
+  >Blocks:</a>
+
+</th>
+
+  <td>
+    <span id="blocked_input_area">
+    </span>
+    <a class="bz_bug_link 
+          bz_status_RESOLVED  bz_closed"
+   title="RESOLVED INVALID - [tracker] list of UI enhancement requests"
+   href="show_bug.cgi?id=94452">94452</a> 
+  </td>
+  </tr>
+  
+  <tr>
+    <th>&nbsp;</th>
+  
+    <td colspan="2" align="left" id="show_dependency_tree_or_graph">
+      Show dependency <a href="showdependencytree.cgi?id=24457&amp;hide_resolved=1">tree</a>
+  
+    </td>
+  </tr>
+          
+        </table>
+      </td>
+      <td>
+        <div class="bz_column_spacer">&nbsp;</div>
+      </td>
+      
+      <td id="bz_show_bug_column_2" class="bz_show_bug_column">
+        <table cellpadding="3" cellspacing="1">
+        <tr>
+    <th class="field_label">
+      Reported:
+    </th>
+    <td>2000-09-14 11:40 UTC by <span class="vcard"><span class="fn">Frederic Detienne</span>
+</span>
+    </td>
+  </tr>
+  
+  <tr>
+    <th class="field_label">
+      Modified:
+    </th>
+    <td>2014-09-22 15:08 UTC 
+      (<a href="show_activity.cgi?id=24457">History</a>)
+    </td>
+  
+  </tr>
+         <tr>
+      <th class="field_label">
+        <label for="newcc" accesskey="a">CC List:</label>
+      </th>
+      <td>14 
+          users
+          <span id="cc_edit_area_showhide_container" class="bz_default_hidden">
+            (<a href="#" id="cc_edit_area_showhide">show</a>)
+          </span>
+        <div id="cc_edit_area">
+          <br>
+            <select id="cc" multiple="multiple" size="5">
+                <option value="behdad">behdad</option>
+                <option value="bkorb">bkorb</option>
+                <option value="bradleelandis">bradleelandis</option>
+                <option value="bugzilla">bugzilla</option>
+                <option value="code">code</option>
+                <option value="g11024342">g11024342</option>
+                <option value="harrisonmetz">harrisonmetz</option>
+                <option value="jaebird">jaebird</option>
+                <option value="jpr">jpr</option>
+                <option value="mariano.suarezalvarez+bugzilla">mariano.suarezalvarez+bugzilla</option>
+                <option value="menthos">menthos</option>
+                <option value="mm-bugs">mm-bugs</option>
+                <option value="pachoramos1">pachoramos1</option>
+                <option value="stu.axon">stu.axon</option>
+            </select>
+        </div>
+          <script type="text/javascript">
+            hideEditableField( 'cc_edit_area_showhide_container', 
+                               'cc_edit_area', 
+                               'cc_edit_area_showhide', 
+                               '', 
+                               '');  
+          </script>
+      </td>
+    </tr>
+         <tr>
+    <td colspan="2" class="bz_section_spacer"></td>
+  </tr>
+<tr><th class="field_label "
+    id="field_label_see_also">
+
+
+  <a 
+      title="This allows you to refer to bugs in other installations. You can enter a URL to a bug in the 'Add Bug URLs' field to note that that bug is related to this one. You can enter multiple URLs at once by separating them with a comma. You should normally use this field to refer to bugs in other installations. For bugs in this installation, it is better to use the Depends on and Blocks fields."
+      class="field_help_link"
+      href="page.cgi?id=fields.html#see_also"
+  >See Also:</a>
+
+</th>
+  <td class="field_value "
+      id="field_container_see_also" ></td>
+    </tr> 
+         <tr><th class="field_label "
+    id="field_label_cf_gnome_target">
+
+
+  <a 
+      title="A custom Drop Down field in this installation of GNOME Bugzilla."
+      class="field_help_link"
+      href="page.cgi?id=fields.html#cf_gnome_target"
+  >GNOME target:</a>
+
+</th>
+  <td class="field_value "
+      id="field_container_cf_gnome_target"  colspan="2">---</td>
+    </tr>
+    <tr><th class="field_label "
+    id="field_label_cf_gnome_version">
+
+
+  <a 
+      title="A custom Drop Down field in this installation of GNOME Bugzilla."
+      class="field_help_link"
+      href="page.cgi?id=fields.html#cf_gnome_version"
+  >GNOME version:</a>
+
+</th>
+  <td class="field_value "
+      id="field_container_cf_gnome_version"  colspan="2">Unversioned Enhancement</td>
+    </tr>
+         <tr>
+    <td colspan="2" class="bz_section_spacer"></td>
+  </tr>
+         
+                
+
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+          <hr id="bz_top_half_spacer">
+      </td>
+    </tr>
+  </table>
+
+  <table id="bz_big_form_parts" cellspacing="0" cellpadding="0"><tr>
+  <td>
+
+    
+<script type="text/javascript">
+<!--
+function toggle_display(link) {
+    var table = document.getElementById("attachment_table");
+    var view_all = document.getElementById("view_all");
+    var hide_obsolete_url_parameter = "&hide_obsolete=1";
+    // Store current height for scrolling later
+    var originalHeight = table.offsetHeight;
+    var rows = YAHOO.util.Dom.getElementsByClassName(
+        'bz_tr_obsolete', 'tr', table);
+
+    for (var i = 0; i < rows.length; i++) {
+        bz_toggleClass(rows[i], 'bz_default_hidden');
+    }
+
+    if (YAHOO.util.Dom.hasClass(rows[0], 'bz_default_hidden')) {
+        link.innerHTML = "Show Obsolete";
+        view_all.href = view_all.href + hide_obsolete_url_parameter 
+    }
+    else {
+        link.innerHTML = "Hide Obsolete";
+        view_all.href = view_all.href.replace(hide_obsolete_url_parameter,"");
+    }
+
+    var newHeight = table.offsetHeight;
+    // This scrolling makes the window appear to not move at all.
+    window.scrollBy(0, newHeight - originalHeight);
+
+    return false;
+}
+//-->
+</script>
+
+<br>
+<table id="attachment_table" cellspacing="0" cellpadding="4">
+  <tr id="a0">
+    <th colspan="3" align="left">
+      Attachments
+    </th>
+  </tr>
+
+
+      <tr id="a1" class="bz_contenttype_text_plain bz_patch bz_tr_obsolete bz_default_hidden">
+        <td valign="top">
+            <a href="attachment.cgi?id=38173"
+               title="View the content of the attachment">
+          <b><span class="bz_obsolete">add &quot;save scrollback to file&quot;</span></b></a>
+
+          <span class="bz_attach_extra_info">
+              (7.86 KB,
+                patch)
+
+            <br>
+            <a href="#attach_38173"
+               title="Go to the comment associated with the attachment">2005-03-02 22:40 UTC</a>,
+
+            <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+          </span>
+        </td>
+
+          <td class="bz_attach_status" valign="top">none
+          </td>
+
+
+        <td valign="top">
+          <a href="attachment.cgi?id=38173&amp;action=edit">Details</a>
+            | <a href="attachment.cgi?id=38173&amp;action=diff">Diff</a>&#x0020; |
+    <a href='review?bug=24457&amp;attachment=38173'>Review</a>
+        </td>
+      </tr>
+      <tr id="a2" class="bz_contenttype_text_plain bz_patch bz_tr_obsolete bz_default_hidden">
+        <td valign="top">
+            <a href="attachment.cgi?id=38174"
+               title="View the content of the attachment">
+          <b><span class="bz_obsolete">add accessor funtcion to vte</span></b></a>
+
+          <span class="bz_attach_extra_info">
+              (1.09 KB,
+                patch)
+
+            <br>
+            <a href="#attach_38174"
+               title="Go to the comment associated with the attachment">2005-03-02 22:41 UTC</a>,
+
+            <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+          </span>
+        </td>
+
+          <td class="bz_attach_status" valign="top">none
+          </td>
+
+
+        <td valign="top">
+          <a href="attachment.cgi?id=38174&amp;action=edit">Details</a>
+            | <a href="attachment.cgi?id=38174&amp;action=diff">Diff</a>&#x0020; |
+    <a href='review?bug=24457&amp;attachment=38174'>Review</a>
+        </td>
+      </tr>
+      <tr id="a3" class="bz_contenttype_text_plain bz_patch bz_tr_obsolete bz_default_hidden">
+        <td valign="top">
+            <a href="attachment.cgi?id=57028"
+               title="View the content of the attachment">
+          <b><span class="bz_obsolete">Updated patch with schema, rediff against current gnome cvs</span></b></a>
+
+          <span class="bz_attach_extra_info">
+              (9.16 KB,
+                patch)
+
+            <br>
+            <a href="#attach_57028"
+               title="Go to the comment associated with the attachment">2006-01-09 14:08 UTC</a>,
+
+            <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+          </span>
+        </td>
+
+          <td class="bz_attach_status" valign="top">needs-work
+          </td>
+
+
+        <td valign="top">
+          <a href="attachment.cgi?id=57028&amp;action=edit">Details</a>
+            | <a href="attachment.cgi?id=57028&amp;action=diff">Diff</a>&#x0020; |
+    <a href='review?bug=24457&amp;attachment=57028'>Review</a>
+        </td>
+      </tr>
+      <tr id="a4" class="bz_contenttype_text_plain bz_patch">
+        <td valign="top">
+            <a href="attachment.cgi?id=101483"
+               title="View the content of the attachment">
+          <b>(Incomplete) Start of a logging patch</b></a>
+
+          <span class="bz_attach_extra_info">
+              (351.95 KB,
+                patch)
+
+            <br>
+            <a href="#attach_101483"
+               title="Go to the comment associated with the attachment">2007-12-23 03:24 UTC</a>,
+
+            <span class="vcard"><span class="fn">Harrison Metzger</span>
+</span>
+          </span>
+        </td>
+
+          <td class="bz_attach_status" valign="top">needs-work
+          </td>
+
+
+        <td valign="top">
+          <a href="attachment.cgi?id=101483&amp;action=edit">Details</a>
+            | <a href="attachment.cgi?id=101483&amp;action=diff">Diff</a>&#x0020; |
+    <a href='review?bug=24457&amp;attachment=101483'>Review</a>
+        </td>
+      </tr>
+      <tr id="a5" class="bz_contenttype_text_plain bz_patch bz_tr_obsolete bz_default_hidden">
+        <td valign="top">
+            <a href="attachment.cgi?id=118559"
+               title="View the content of the attachment">
+          <b><span class="bz_obsolete">save scrollback patch</span></b></a>
+
+          <span class="bz_attach_extra_info">
+              (5.87 KB,
+                patch)
+
+            <br>
+            <a href="#attach_118559"
+               title="Go to the comment associated with the attachment">2008-09-12 00:09 UTC</a>,
+
+            <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+          </span>
+        </td>
+
+          <td class="bz_attach_status" valign="top">needs-work
+          </td>
+
+
+        <td valign="top">
+          <a href="attachment.cgi?id=118559&amp;action=edit">Details</a>
+            | <a href="attachment.cgi?id=118559&amp;action=diff">Diff</a>&#x0020; |
+    <a href='review?bug=24457&amp;attachment=118559'>Review</a>
+        </td>
+      </tr>
+      <tr id="a6" class="bz_contenttype_text_plain bz_patch bz_tr_obsolete bz_default_hidden">
+        <td valign="top">
+            <a href="attachment.cgi?id=135449"
+               title="View the content of the attachment">
+          <b><span class="bz_obsolete">save terminals scrollback content</span></b></a>
+
+          <span class="bz_attach_extra_info">
+              (7.64 KB,
+                patch)
+
+            <br>
+            <a href="#attach_135449"
+               title="Go to the comment associated with the attachment">2009-05-27 16:46 UTC</a>,
+
+            <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+          </span>
+        </td>
+
+          <td class="bz_attach_status" valign="top">needs-work
+          </td>
+
+
+        <td valign="top">
+          <a href="attachment.cgi?id=135449&amp;action=edit">Details</a>
+            | <a href="attachment.cgi?id=135449&amp;action=diff">Diff</a>&#x0020; |
+    <a href='review?bug=24457&amp;attachment=135449'>Review</a>
+        </td>
+      </tr>
+      <tr id="a7" class="bz_contenttype_text_plain bz_patch">
+        <td valign="top">
+            <a href="attachment.cgi?id=135821"
+               title="View the content of the attachment">
+          <b>save terminals scrollback content</b></a>
+
+          <span class="bz_attach_extra_info">
+              (7.87 KB,
+                patch)
+
+            <br>
+            <a href="#attach_135821"
+               title="Go to the comment associated with the attachment">2009-06-02 15:49 UTC</a>,
+
+            <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+          </span>
+        </td>
+
+          <td class="bz_attach_status" valign="top">none
+          </td>
+
+
+        <td valign="top">
+          <a href="attachment.cgi?id=135821&amp;action=edit">Details</a>
+            | <a href="attachment.cgi?id=135821&amp;action=diff">Diff</a>&#x0020; |
+    <a href='review?bug=24457&amp;attachment=135821'>Review</a>
+        </td>
+      </tr>
+
+  <tr class="bz_attach_footer">
+    <td colspan="3">
+        <span class="bz_attach_view_hide">
+            <a href="#a0" onclick="return toggle_display(this);">Show
+              Obsolete</a> (5)
+            <a id="view_all" href="attachment.cgi?bugid=24457&amp;action=viewall&amp;hide_obsolete=1">View All</a>
+        </span>
+        <a href="attachment.cgi?bugid=24457&amp;action=enter">Add an attachment</a>
+        (proposed patch, testcase, etc.)
+    </td>
+  </tr>
+</table>
+<br>
+
+  </td>
+  <td>
+  </td>
+  </tr></table>
+
+  
+  <div id="comments"><script src="js/comments.js?1445287852" type="text/javascript">
+</script>
+
+<script type="text/javascript">
+<!--
+  /* Adds the reply text to the `comment' textarea */
+  function replyToComment(id, real_id, name) {
+      var prefix = "(In reply to " + name + " from comment #" + id + ")\n";
+      var replytext = "";
+        /* pre id="comment_name_N" */
+        var text_elem = document.getElementById('comment_text_'+id);
+        var text = getText(text_elem);
+        replytext = prefix + wrapReplyText(text);
+
+
+      /* <textarea id="comment"> */
+      var textarea = document.getElementById('comment');
+      if (textarea.value != replytext) {
+          textarea.value += replytext;
+      }
+
+      textarea.focus();
+  } 
+//-->
+</script>
+
+
+
+
+
+
+<!-- This auto-sizes the comments and positions the collapse/expand links 
+     to the right. -->
+<table class="bz_comment_table" cellpadding="0" cellspacing="0"><tr>
+<td>
+<div id="c0" class="bz_comment bz_first_comment">
+
+      <div class="bz_first_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c0">Description</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Frederic Detienne</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2001-01-27 20:18:10 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Package:  gnome-terminal
+Severity: normal
+Version:  1.2.1
+Synopsis: gnome-terminal should allow logging to a file
+Class:    change-request
+
+Distribution: Red Hat Linux release 6.0 (Hedwig)
+System: Linux 2.4.0-test7 i686 unknown
+C library: glibc-2.1.3-15
+C compiler: egcs-2.91.66
+glib: 1.2.8
+GTK+: 1.2.8
+ORBit: ORBit 0.5.3
+gnome-libs: gnome-libs 1.2.4
+libxml: 1.8.9
+gnome-print: gnome-print-0.20
+gnome-core: gnome-core 1.2.1
+
+
+Description:
+I regularly have to log what I am doing into a file. It is not always
+possible/convenient to stop the telnet session and lanch tee.
+
+(because you do not know in advance when you will need logging and you
+can not log everything).
+
+This used to be a much appreciated XTerm feature. It is very widely used
+withinCisco.
+
+Thanks.
+
+
+
+
+------- Bug moved to this database by <a href="mailto:debbugs-export&#64;bugzilla.gnome.org">debbugs-export&#64;bugzilla.gnome.org</a> 2001-01-27 15:18 -------
+This bug was previously known as <a class="bz_bug_link 
+          bz_status_RESOLVED  bz_closed"
+   title="RESOLVED FIXED - allow saving terminal content"
+   href="show_bug.cgi?id=24457">bug 24457</a> at <a href="http://bugs.gnome.org/">http://bugs.gnome.org/</a>
+<a href="http://bugs.gnome.org/show_bug.cgi?id=24457">http://bugs.gnome.org/show_bug.cgi?id=24457</a>
+Originally filed under the gnome-core product and gnome-terminal component.
+
+Unknown version 1.2.x in product gnome-core. Setting version to the default, &quot;unspecified&quot;.
+The original reporter (<a href="mailto:fd&#64;cisco.com">fd&#64;cisco.com</a>) of this bug does not have an account here.
+Reassigning to the exporter, <a href="mailto:debbugs-export&#64;bugzilla.gnome.org">debbugs-export&#64;bugzilla.gnome.org</a>.
+Reassigning to the default owner of the component, <a href="mailto:gnome-core-maint&#64;bugzilla.gnome.org">gnome-core-maint&#64;bugzilla.gnome.org</a>.
+
+</pre>
+    </div><div id="c1" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c1">Comment 1</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Havoc Pennington</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2002-02-14 02:50:43 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Seems reasonable, but post-2.0 at this point due to release
+engineering freeze</pre>
+    </div><div id="c2" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c2">Comment 2</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Havoc Pennington</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2002-03-03 14:44:44 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >*** <a class="bz_bug_link 
+          bz_status_RESOLVED  bz_closed"
+   title="RESOLVED DUPLICATE - Request for adding a save menu option in profterm"
+   href="show_bug.cgi?id=73272">Bug 73272</a> has been marked as a duplicate of this bug. ***</pre>
+    </div><div id="c3" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c3">Comment 3</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Havoc Pennington</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2002-03-03 14:49:39 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >#73272 points out that you want to be able to save to file in addition 
+to preplanned logging.</pre>
+    </div><div id="c4" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c4">Comment 4</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Heath Harrelson</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2002-11-08 19:22:29 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >*** <a class="bz_bug_link 
+          bz_status_RESOLVED  bz_closed"
+   title="RESOLVED DUPLICATE - There should be a way to save the current buffer."
+   href="show_bug.cgi?id=91550">Bug 91550</a> has been marked as a duplicate of this bug. ***</pre>
+    </div><div id="c5" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c5">Comment 5</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mariano Suárez-Alvarez</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2003-08-24 16:45:55 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >*** <a class="bz_bug_link 
+          bz_status_RESOLVED  bz_closed"
+   title="RESOLVED DUPLICATE - [RFE] allow saving buffer"
+   href="show_bug.cgi?id=120583">Bug 120583</a> has been marked as a duplicate of this bug. ***</pre>
+    </div><div id="c6" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c6">Comment 6</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mariano Suárez-Alvarez</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2003-08-24 16:48:31 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Changing the version, as this is not yet there.</pre>
+    </div><div id="c7" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c7">Comment 7</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Bryan W Clark</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2004-10-05 19:49:21 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >re-titling and creating 'gnome-terminal UI improvements dependency tree of doom!'</pre>
+    </div><div id="c8" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c8">Comment 8</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2005-03-02 22:40:04 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Created <span class="bz_obsolete"><a href="attachment.cgi?id=38173&amp;action=diff" name="attach_38173" title="add &quot;save scrollback to file&quot;">attachment 38173</a> <a href="attachment.cgi?id=38173&amp;action=edit" title="add &quot;save scrollback to file&quot;">[details]</a></span> <a href='review?bug=24457&amp;attachment=38173'>[review]</a>
+add &quot;save scrollback to file&quot;
+
+Maybe this is a start.</pre>
+    </div><div id="c9" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c9">Comment 9</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2005-03-02 22:41:17 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Created <span class="bz_obsolete"><a href="attachment.cgi?id=38174&amp;action=diff" name="attach_38174" title="add accessor funtcion to vte">attachment 38174</a> <a href="attachment.cgi?id=38174&amp;action=edit" title="add accessor funtcion to vte">[details]</a></span> <a href='review?bug=24457&amp;attachment=38174'>[review]</a>
+add accessor funtcion to vte
+
+Unfortunately I don't know how to get the current number of lines in the
+scrollback without patching vte too.</pre>
+    </div><div id="c10" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c10">Comment 10</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2006-01-09 14:08:03 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Created <span class="bz_obsolete"><a href="attachment.cgi?id=57028&amp;action=diff" name="attach_57028" title="Updated patch with schema, rediff against current gnome cvs">attachment 57028</a> <a href="attachment.cgi?id=57028&amp;action=edit" title="Updated patch with schema, rediff against current gnome cvs">[details]</a></span> <a href='review?bug=24457&amp;attachment=57028'>[review]</a>
+Updated patch with schema, rediff against current gnome cvs
+
+I have been using this patch for the last few month. I want to get rid of the need to patch vte for this one, but I have no idea how.</pre>
+    </div><div id="c11" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c11">Comment 11</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Olav Vitters</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2006-08-04 21:14:16 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >*** <a class="bz_bug_link 
+          bz_status_RESOLVED  bz_closed"
+   title="RESOLVED DUPLICATE - gnome-terminal: ability to save scrollback to a file"
+   href="show_bug.cgi?id=349973">Bug 349973</a> has been marked as a duplicate of this bug. ***</pre>
+    </div><div id="c12" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c12">Comment 12</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2006-08-05 02:52:33 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >I created a separate bug for the vte dependency (#348342).</pre>
+    </div><div id="c13" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c13">Comment 13</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mariano Suárez-Alvarez</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2006-10-17 04:50:58 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >This patch takes saves what's in the terminal buffer. Wouldn't it be more useful to actually log the output of the child to a file? (together with the contents of the text buffer at the time the user decides to start logging, maybe?) Otherwise, it is quite hard to save long outputs, like the one produced by jhbuild, say. 
+
+I have no idea what the UI for such a thing might look like.</pre>
+    </div><div id="c14" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c14">Comment 14</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2006-10-17 08:39:38 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >If I know before that i need to log the output i would use the 'script' or 'tee' command. 
+
+But most often something happened way back in the buffer which I need and this patch saves me from selecting a few thousand lines with the mouse and pasting them into a text file. 
+Since there is no way to search the buffers content in g-t this comes in handy as a workaround, too.
+
+Other times I need to store an important sessions output, like a filesystem check for example.
+
+Adding realtime logging would be a different issue, since you know before that you want to log. How about adding a checkbox menuitem 'Log to file' which opens a filedialog to receive the logfile name and afterwards writes input/output to the file until unchecked?</pre>
+    </div><div id="c15" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c15">Comment 15</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2006-11-02 19:40:25 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >(In reply to <a href="show_bug.cgi?id=24457#c14">comment #14</a>)
+
+<span class="quote">&gt; Adding realtime logging would be a different issue, since you know before that
+&gt; you want to log. How about adding a checkbox menuitem 'Log to file' which opens
+&gt; a filedialog to receive the log file name and afterwards writes input/output to
+&gt; the file until unchecked?</span >
+
+Maybe someone with more experience could comment this, but isn't this a vte issue?
+It's no problem to add another menu entry to g-t, but as far as i understand the api the real-time logging has to go into the vte widget, right?</pre>
+    </div><div id="c16" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c16">Comment 16</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Behdad Esfahbod</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2006-11-02 20:09:54 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >(In reply to <a href="show_bug.cgi?id=24457#c15">comment #15</a>)
+<span class="quote">&gt; (In reply to <a href="show_bug.cgi?id=24457#c14">comment #14</a>)
+&gt; 
+&gt; &gt; Adding realtime logging would be a different issue, since you know before that
+&gt; &gt; you want to log. How about adding a checkbox menuitem 'Log to file' which opens
+&gt; &gt; a filedialog to receive the log file name and afterwards writes input/output to
+&gt; &gt; the file until unchecked?
+&gt; 
+&gt; Maybe someone with more experience could comment this, but isn't this a vte
+&gt; issue?
+&gt; It's no problem to add another menu entry to g-t, but as far as i understand
+&gt; the api the real-time logging has to go into the vte widget, right?</span >
+
+I think vte emits enough signals that this can be entirely done in g-t. text-modified, text-inserted, text-deleted signals for example.</pre>
+    </div><div id="c17" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c17">Comment 17</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2006-11-03 21:37:48 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >(In reply to <a href="show_bug.cgi?id=24457#c16">comment #16</a>)
+<span class="quote">&gt; I think vte emits enough signals that this can be entirely done in g-t.
+&gt; text-modified, text-inserted, text-deleted signals for example.</span >
+
+Thanks, I hadn't thought about the accessibility api. These signals are used internally for communication with the accessibility peer.
+So basically g-t has to register itself as a peer and use the atk api to write to a file?</pre>
+    </div><div id="c18" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c18">Comment 18</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2006-11-04 14:47:20 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >I looked into atk and wrote a little test terminal. The desired events only get emitted if accessibility is enabled at log in. Maybe there is a way to enable them from gnome-terminal itself, but honestly this looks like a crude hack to me.
+
+I'd say vte has to implement real time logging, unless there are any other ideas?
+
+I don't need real time logging in g-t anyway, i would be happy if vte just implemented something like <a class="bz_bug_link 
+          bz_status_RESOLVED  bz_closed"
+   title="RESOLVED INVALID - Add function to get current lines from scrollback buffer"
+   href="show_bug.cgi?id=348342">Bug 348342</a>, which is a dependency for the scrollback save patch i attached.</pre>
+    </div><div id="c19" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c19">Comment 19</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Harrison Metzger</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2007-12-18 03:38:56 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >The current patch (2006-01-09 14:08 UTC 9.16 KB) methodology seems to work, but a more sophisticated approach would be better. Have you ever used Trilian? (I used it for AIM back in my windows days - gosh its over now.) Each session would be logged automatically to files which had dates, or you could explicitly save a session.
+
+I think a good idea is there will be a logging directory, some dot directory off the ~ directory. Each time one opens a tab, it would create a file with the name &lt;current date&gt;.log. (If desireible, instead of a flat logging directory, there would be a setting to have it log as &lt;year&gt;/&lt;month&gt;/&lt;current date&gt;.log). Every 64k (or what turns out to be an efficient buffer size) that is written on the terminal screen, the file would open and be appended. There would be an option such as &quot;off the record&quot; where any input or output would not be logged. I use tee sometimes to record the output of my command, but sometimes I like to know what I actually typed, so this logging method would record whats on the terminal screen (which is both input and output). There should be another switch to explicit log any keybord input so you can see where you hit &lt;ctrl&gt; + c, or any other key, or if you typed a password. (Of course, for security, this option probably should be off as its default state.) Finally, it should make a note of when a program like nano or vi is opened since you can't really save the &quot;text&quot; of that program.
+
+I'd be happy to try and write this. But, I'm wondering if people think it is a good idea, or does anyone else want to write it so we don't waist each others' time? Let me know what you think.</pre>
+    </div><div id="c20" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c20">Comment 20</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Johannes Berg</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2007-12-18 13:16:53 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >That logging directory would *definitely* have to be optional, otherwise I'd fill up my ~ directory ever so quickly with how much I work on the console and how often I type &quot;dmesg&quot; and stuff like that. And then, I think it'd be fairly useless because it'd have to default to *off* and people would only remember to turn it on when it's too late already...</pre>
+    </div><div id="c21" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c21">Comment 21</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Harrison Metzger</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2007-12-18 17:19:25 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Thats is true. I Imagine that I would fill up my ~ too. You could have three options: Log everything (described in my last post), Log session(s)/tab(s) if requested, absolutely no logging.
+
+Log if requested: each open session/tab would write to a file (same way above off the ~), but if the user did not tell it to log this session, the log would be discarded on a successful exit gnome-terminal. This is good too in case something crashes, then you still have logs of what happened prior to the crash. This way, as long as you did not close the session its not &quot;too late.&quot; Your dmesging or catting a log may get up to a few megs per session, but as soon as you exit (assuming you didnt specify to log it) will just be purged.</pre>
+    </div><div id="c22" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c22">Comment 22</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard">lsof
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2007-12-19 19:35:23 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Sorry to put a spanner in the works, but I myself only need one thing:
+ save everything in the scrollback buffer to disk.
+
+The alternative is a long slow laborious copy and paste.</pre>
+    </div><div id="c23" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c23">Comment 23</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Harrison Metzger</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2007-12-23 03:24:34 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Created <span class=""><a href="attachment.cgi?id=101483&amp;action=diff" name="attach_101483" title="(Incomplete) Start of a logging patch">attachment 101483</a> <a href="attachment.cgi?id=101483&amp;action=edit" title="(Incomplete) Start of a logging patch">[details]</a></span> <a href='review?bug=24457&amp;attachment=101483'>[review]</a>
+(Incomplete) Start of a logging patch
+
+This incomplete patch is to enabled logging for each terminal session. There are 2 logging modes: Enabled, and On Request. Enabled, will log everything as text comes out. On Request means that you have to click &quot;Start Logging&quot; to begin logging. On either method, you can choose to &quot;Pause Logging&quot; and &quot;Resume Logging&quot; (incase you have sensitive material or for any reason you choose). If you choose the On Request option, there is a sub option to log anyway, but unless you choose to keep the log, it will be discarded on exit. This is here for two reasons: 1) if you start something and later on decide you need it to be logged all you have to do his click &quot;Keep log on exit&quot;. 2) If your system crashes, you have a log of the last thing that terminal was doing. 
+
+This patch is incomplete. I'm wondering if anyone can offer suggestions or help with the code. The biggest problem is that It can't handle backspaces when you erase what you've typed, or alter text of already typed stuff. This code is in the terminal-screen.c file in the function terminal_screen_logging_ti_callback, which is a callback for &quot;contents-changed&quot; on a VteTerminal.</pre>
+    </div><div id="c24" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c24">Comment 24</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">g11024342&#64;trbvm.com</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2008-09-11 13:10:35 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Any chance this over 8 year old request can get done? This seems like a very basic function. Please consider adding it for future releases!
+
+I have used konsole for a few years just because it can log your session. This can be used as a workaround.</pre>
+    </div><div id="c25" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c25">Comment 25</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2008-09-12 00:09:16 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Created <span class="bz_obsolete"><a href="attachment.cgi?id=118559&amp;action=diff" name="attach_118559" title="save scrollback patch">attachment 118559</a> <a href="attachment.cgi?id=118559&amp;action=edit" title="save scrollback patch">[details]</a></span> <a href='review?bug=24457&amp;attachment=118559'>[review]</a>
+save scrollback patch
+
+Updated patch against r3036, no longer requires patched vte</pre>
+    </div><div id="c26" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c26">Comment 26</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Christian Persch</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2008-10-18 18:43:08 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >*** <a class="bz_bug_link 
+          bz_status_RESOLVED  bz_closed"
+   title="RESOLVED DUPLICATE - add a logging facility"
+   href="show_bug.cgi?id=556791">Bug 556791</a> has been marked as a duplicate of this bug. ***</pre>
+    </div><div id="c27" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c27">Comment 27</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Jae Stutzman</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2009-02-09 22:38:50 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Any more news on this bug? It is sorely needed, patching it in everywhere is not ideal :)</pre>
+    </div><div id="c28" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c28">Comment 28</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Christian Persch</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2009-05-26 20:00:52 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Reviewing <span class="bz_obsolete"><a href="attachment.cgi?id=118559&amp;action=diff" name="attach_118559" title="save scrollback patch">attachment 118559</a> <a href="attachment.cgi?id=118559&amp;action=edit" title="save scrollback patch">[details]</a></span> <a href='review?bug=24457&amp;attachment=118559'>[review]</a>:
+
++      { &quot;FileSaveTab&quot;, GTK_STOCK_SAVE, N_(&quot;Save Tab&quot;), &quot;&quot;,
++        NULL,
++        G_CALLBACK (file_save_tab_callback) },
+
+This doesn't very clearly express the purpose of this menu item; maybe &quot;Save Terminal Text&quot; or something...
+
++  if (gtk_dialog_run (GTK_DIALOG(dialog)) == GTK_RESPONSE_ACCEPT)
+
+No. Absolutely not. gtk_dialog_run() is not allowed in g-t. Just connect as response handler and show the dialogue, and do the work on response.
+
++    filename = gtk_file_chooser_get_filename (GTK_FILE_CHOOSER (dialog));
+
+What about non-local files? Should use uri here, and use GIO to save the file.
+
+       &lt;separator /&gt;
++      &lt;menuitem action=&quot;FileSaveTab&quot; /&gt;
+       &lt;menuitem action=&quot;FileCloseTab&quot; /&gt;
+
+I wouldn't group this item with Close, they're unrelated and this just invites accidents.</pre>
+    </div><div id="c29" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c29">Comment 29</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Christian Persch</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2009-05-26 20:04:23 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >About <span class=""><a href="attachment.cgi?id=101483&amp;action=diff" name="attach_101483" title="(Incomplete) Start of a logging patch">attachment 101483</a> <a href="attachment.cgi?id=101483&amp;action=edit" title="(Incomplete) Start of a logging patch">[details]</a></span> <a href='review?bug=24457&amp;attachment=101483'>[review]</a>:
+
+Clearly doesn't apply, has too much code style issues and is too outdated to make it worth reviewing. I just want to note that it implements a different thing than <span class="bz_obsolete"><a href="attachment.cgi?id=118559&amp;action=diff" name="attach_118559" title="save scrollback patch">attachment 118559</a> <a href="attachment.cgi?id=118559&amp;action=edit" title="save scrollback patch">[details]</a></span> <a href='review?bug=24457&amp;attachment=118559'>[review]</a>, logging instead of just saving the text that's currently in the vteterminal's buffer. I think for logging, we should add API to vte to do this there, and just put the enabling code in g-t.</pre>
+    </div><div id="c30" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c30">Comment 30</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2009-05-27 16:46:34 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Created <span class="bz_obsolete"><a href="attachment.cgi?id=135449&amp;action=diff" name="attach_135449" title="save terminals scrollback content">attachment 135449</a> <a href="attachment.cgi?id=135449&amp;action=edit" title="save terminals scrollback content">[details]</a></span> <a href='review?bug=24457&amp;attachment=135449'>[review]</a>
+save terminals scrollback content
+
+Thanks for the review. I hope this new patches fixes most issues. Is it ok to move the callback to terminal-utils.c?</pre>
+    </div><div id="c31" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c31">Comment 31</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Brad Landis</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2009-05-27 20:42:29 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >+1 for getting this completed, and added to the current version of gnome if possible.</pre>
+    </div><div id="c32" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c32">Comment 32</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Christian Persch</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2009-06-01 19:44:02 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >(In reply to <a href="show_bug.cgi?id=24457#c30">comment #30</a>)
+<span class="quote">&gt; Created an attachment (id=135449) [edit]</span >
+
++  if (filename_uri == NULL)
++      return;
+
+wrong ident.
+
++  file = g_file_new_for_uri (filename_uri);
++  stream = g_file_replace (file, NULL, FALSE, G_FILE_CREATE_NONE, NULL, NULL);
++  
++  if (stream != NULL)
++    g_output_stream_write (G_OUTPUT_STREAM (stream), terminal_text, strlen (terminal_text), NULL, NULL);
++  else
++    g_warning (&quot;Could not write: %s\n&quot;, filename_uri);
+
+Tell the use about it, I think, using terminal_util_show_error_dialog.
+
++  g_free(filename_uri);
++  g_free(terminal_text);
+
+You're leaking the GFile, and the GFileOutputStream.
+
++  terminal_text = vte_terminal_get_text_range (VTE_TERMINAL (terminal),
++      0, 0,
++      row, col,
++      vte_terminal_always_selected,
++      NULL,
++      array);
+
+As a follow-up bug for vte, maybe we should add some vte API that writes the text directly to a GOutputStream instead...
+
+<span class="quote">&gt; Is it ok to
+&gt; move the callback to terminal-utils.c?</span >
+
+I think it's better to move this callback to where all the other action callbacks are, in terminal-window.c
+
++  dialog = gtk_file_chooser_dialog_new ( _(&quot;Save as...&quot;),
++      NULL,
+
+Don't pass NULL as parent, use the terminal window.
+
++  gtk_file_chooser_set_current_folder (GTK_FILE_CHOOSER (dialog), g_get_user_special_dir (G_USER_DIRECTORY_DOCUMENTS));
+
+Not sure this is the right dir...
+
++  g_signal_connect (dialog, &quot;response&quot;, G_CALLBACK (terminal_util_save_term_text_cb), terminal);
+
+What happens if the terminal closes before the dialogue is dismissed? I think in this case the dialogue should close too, and the dialogue should also be modal to the window.
+
++  g_signal_connect (dialog, &quot;delete_event&quot;, G_CALLBACK (gtk_true), NULL);
+
+Definitely not!
+</pre>
+    </div><div id="c33" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c33">Comment 33</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Mario Manno</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2009-06-02 15:49:10 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Created <span class=""><a href="attachment.cgi?id=135821&amp;action=diff" name="attach_135821" title="save terminals scrollback content">attachment 135821</a> <a href="attachment.cgi?id=135821&amp;action=edit" title="save terminals scrollback content">[details]</a></span> <a href='review?bug=24457&amp;attachment=135821'>[review]</a>
+save terminals scrollback content
+
+The file chooser is now a modal dialog.</pre>
+    </div><div id="c34" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c34">Comment 34</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Behdad Esfahbod</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2009-06-02 20:49:40 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Should we also add a &quot;Save Selection&quot;?</pre>
+    </div><div id="c35" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c35">Comment 35</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Christian Persch</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2009-10-28 17:42:05 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Yes.</pre>
+    </div><div id="c36" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c36">Comment 36</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Behdad Esfahbod</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2010-01-14 01:28:06 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Implemented vte api and the &quot;Save Contents&quot; menu item.</pre>
+    </div><div id="c37" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c37">Comment 37</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Victor Engmark</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2012-08-30 13:55:59 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Any news about which release this will be included in? It's been set as RESOLVED for almost three years.</pre>
+    </div><div id="c38" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c38">Comment 38</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Behdad Esfahbod</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2012-08-30 14:11:19 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Been in Fedora / Red Hat for over two years.</pre>
+    </div><div id="c39" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c39">Comment 39</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Christian Persch</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2012-08-30 14:47:36 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Actually, it's still disabled in stable releases (because of the sync issue).</pre>
+    </div><div id="c40" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c40">Comment 40</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Behdad Esfahbod</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2012-08-30 14:49:05 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Ah.  I think you should enable it.  Not going to fix itself magically, but it's not a huge deal either.</pre>
+    </div><div id="c41" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c41">Comment 41</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Bruce Korb</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2014-02-03 17:32:02 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Okay, so this bug (it is sufficiently deficient that it is a design bug) is *THIRTEEN YEARS OLD*, and was finally fixed *FOUR* years ago, but nobody can use the fix because it was rigged in a way that makes it *DISABLED* for normal users.  Closing the bug was premature.  Please re-open it until such time as there is a release that has this *CRUCIAL* feature enabled by default.  Thank you.</pre>
+    </div><div id="c42" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c42">Comment 42</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Behdad Esfahbod</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2014-02-03 17:43:56 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Shouting on bugzilla doesn't fix bugs.</pre>
+    </div><div id="c43" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c43">Comment 43</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard">lsof
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2014-02-03 21:25:02 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Looks like nothing else does either. You'll just rewrite it again and discard the bugs anyway.</pre>
+    </div><div id="c44" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c44">Comment 44</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Christian Persch</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2014-02-17 22:04:31 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Stop it.
+
+I think I've made it clear previously that I consider fixing the sync issue a blocker to enabling this; I stand by that.</pre>
+    </div><div id="c45" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c45">Comment 45</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Bruce Korb</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2014-02-18 01:52:06 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >The description might be edited to reference whatever the &quot;sync issue&quot; is.  (Is there a bug number for it? Your <a href="show_bug.cgi?id=24457#c39">Comment #39</a> merely says, &quot;Actually, it's still disabled in stable releases (because of the sync issue).&quot; and is not very informative.)  This bug report shows up high in the Google results.  With the reference, folks could go sign up for that status.
+
+Still, after 13 years, I'd sort of expect issues blocking critical functionality to get worked out.
+
+Thank you for following up!</pre>
+    </div><div id="c46" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c46">Comment 46</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Behdad Esfahbod</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2014-02-18 17:20:26 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Christian.  The sync saving is definitely not worse than the fact that 1. we store history on disk, and 2. line rewrapping is sync also.  For a menu feature, I really don't think being sync should be an issue...  Definitely your decision though.</pre>
+    </div><div id="c47" class="bz_comment">
+
+      <div class="bz_comment_head">
+
+
+
+        <span class="bz_comment_number">
+          <a 
+             href="show_bug.cgi?id=24457#c47">Comment 47</a>
+        </span>
+
+        <span class="bz_comment_user">
+          <span class="vcard"><span class="fn">Stuart Axon</span>
+</span>
+        </span>
+
+        <span class="bz_comment_user_images">
+        </span>
+
+        <span class="bz_comment_time">
+          2014-09-22 15:08:50 UTC
+        </span>
+      </div>
+
+
+
+<pre class="bz_comment_text" >Hi,
+   Would it be possible to link to the bug for the sync issue, I'm curious to see what it actually entails.
+
+I'm guessing in order to be able to try the feature + see what it's like with the sync issue, I should build an unstable build with jhbuild or similar?
+
+Cheers
+S</pre>
+    </div>
+
+
+  <script type="text/javascript">
+  function traceparser_toggle_trace(link, trace_id) {
+    var trace = document.getElementById('trace_' + trace_id);
+    bz_toggleClass(trace, 'bz_default_hidden');
+    if (link.innerHTML == '+') { link.innerHTML = '&mdash;'; }
+    else { link.innerHTML = '+'; }
+  }
+</script>
+
+</td>
+<td>
+</td>
+</tr></table>
+  </div>
+
+    <hr><div id="add_comment" class="bz_section_additional_comments">
+      <table>
+        <tr>
+          <td>
+            <fieldset>
+              <legend>Note</legend>
+              You need to
+              <a href="show_bug.cgi?id=24457&amp;GoAheadAndLogIn=1">log in</a>
+              before you can comment on or make changes to this bug.
+            </fieldset>
+          </td>
+        </tr> 
+      </table>
+  </div>        
+
+</form>
+
+<hr>
+<ul class="related_actions">
+    <li><a href="show_bug.cgi?format=multiple&amp;id=24457">Format For Printing</a></li>
+    <li>&nbsp;-&nbsp;<a href="show_bug.cgi?ctype=xml&amp;id=24457">XML</a></li>
+    <li>&nbsp;-&nbsp;<a href="enter_bug.cgi?cloned_bug_id=24457">Clone This Bug</a></li>
+    
+    <li>&nbsp;-&nbsp;<a href="#">Top of page </a></li>
+    </ul>
+
+<br>
+</div>
+
+
+
+<div id="footer">
+  <div class="intro"></div>
+
+
+
+
+<ul id="useful-links">
+  <li id="links-actions"><ul class="links">
+  <li><a href="./">Home</a></li>
+  <li><span class="separator">| </span><a href="enter_bug.cgi">New</a></li>
+    <li><span class="separator">| </span><a href="page.cgi?id=browse.html&amp;product=gnome-terminal">Browse</a></li>
+  <li><span class="separator">| </span><a href="query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="buglist.cgi" method="get"
+        onsubmit="if (this.quicksearch.value == '')
+                  { alert('Please enter one or more search terms first.');
+                    return false; } return true;">
+    <input type="hidden" id="no_redirect_bottom" name="no_redirect" value="0">
+    <script type="text/javascript">
+      if (history && history.replaceState) {
+        var no_redirect = document.getElementById("no_redirect_bottom");
+        no_redirect.value = 1;
+      }
+    </script>
+    <input class="txt" type="text" id="quicksearch_bottom" name="quicksearch" 
+           title="Quick Search" value="">
+    <input class="btn" type="submit" value="Search" 
+           id="find_bottom"></form>
+  <a href="page.cgi?id=quicksearch.html" title="Quicksearch Help">[?]</a></li>
+
+  <li><span class="separator">| </span><a href="page.cgi?id=reports.html">Reports</a></li>
+
+  <li>
+        <span class="separator">| </span>
+        <a href="http://www.bugzilla.org/docs/4.4/en/html/bug_page.html" target="_blank">Help</a>
+      </li>
+    
+      <li id="new_account_container_bottom">
+        <span class="separator">| </span>
+        <a href="createaccount.cgi">New&nbsp;Account</a>
+      </li>
+
+    <li id="mini_login_container_bottom">
+  <span class="separator">| </span>
+  <a id="login_link_bottom" href="show_bug.cgi?id=24457&amp;GoAheadAndLogIn=1"
+     onclick="return show_mini_login_form('_bottom')">Log In</a>
+
+  
+  <form action="show_bug.cgi?id=24457" method="POST" 
+        class="mini_login bz_default_hidden"
+        id="mini_login_bottom"
+        onsubmit="return check_mini_login_fields( '_bottom' );"
+  >
+    <input id="Bugzilla_login_bottom" 
+           class="bz_login"
+           name="Bugzilla_login"
+           title="Login"
+           onfocus="mini_login_on_focus('_bottom')"
+    >
+    <input class="bz_password" 
+           id="Bugzilla_password_bottom" 
+           name="Bugzilla_password"
+           type="password"
+           title="Password"
+    >
+    <input class="bz_password bz_default_hidden bz_mini_login_help" type="text" 
+           id="Bugzilla_password_dummy_bottom" value="password"
+           title="Password"
+           onfocus="mini_login_on_focus('_bottom')"
+    >
+      <input type="checkbox" id="Bugzilla_remember_bottom" 
+             name="Bugzilla_remember" value="on" class="bz_remember"
+                 checked>
+      <label for="Bugzilla_remember_bottom">Remember</label>
+    <input type="hidden" name="Bugzilla_login_token"
+           value="1445677452-7AA28T8OafwDhxHebb3112nD1pDVz1sFJhMHMh0OdZ0">
+    <input type="submit" name="GoAheadAndLogIn" value="Log in"
+            id="log_in_bottom">
+    <script type="text/javascript">
+      mini_login_constants = {
+          "login" : "login",
+          "warning" : "You must set the login and password before logging in."
+      };
+      
+      if (YAHOO.env.ua.gecko || YAHOO.env.ua.ie || YAHOO.env.ua.opera) {
+          YAHOO.util.Event.onDOMReady(function() {
+              init_mini_login_form('_bottom');
+          });
+      }
+      else {
+          YAHOO.util.Event.on(window, 'load', function () {
+              window.setTimeout(function() {
+                  init_mini_login_form('_bottom');
+              }, 200);
+          });
+    }
+    </script>
+    <a href="#" onclick="return hide_mini_login_form('_bottom')">[x]</a>
+  </form>
+</li>
+<li id="forgot_container_bottom">
+  <span class="separator">| </span>
+  <a id="forgot_link_bottom" href="show_bug.cgi?id=24457&amp;GoAheadAndLogIn=1#forgot"
+     onclick="return show_forgot_form('_bottom')">Forgot Password</a>
+  <form action="token.cgi" method="post" id="forgot_form_bottom"
+        class="mini_forgot bz_default_hidden">
+    <label for="login_bottom">Login:</label>
+    <input type="text" name="loginname" size="20" id="login_bottom">
+    <input id="forgot_button_bottom" value="Reset Password" 
+           type="submit">
+    <input type="hidden" name="a" value="reqpw">
+    <input type="hidden" id="token_bottom" name="token" value="1445677452--NNjUnmsudBznNS-HrspIo4mVLSe9uPb6oIBEJf5xRU">
+    <a href="#" onclick="return hide_forgot_form('_bottom')">[x]</a>
+  </form>
+</li>
+</ul>
+  </li>
+
+  
+    
+
+
+  
+</ul>
+
+  <div class="outro"></div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Mibbit.com Webchat client</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<meta name="viewport" content="width=640, height=800" />-->
+<meta name="description" content="Mibbit is a fully featured IRC and IM Client. Allowing you to interact realtime with your friends. Chat, play games, colaborate on projects together and more.">
+<meta name="keywords" content="mibbit, ajax irc chat, ajax chat, irc chat, online irc, online im, im client, yahoo messenger, irc client">
+
+<style>
+* { margin: 0; padding: 0; border: 0; }
+
+html,body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: black;
+    font-family: Arial, Sans-Serif;
+}
+
+#tabs {
+    text-align: left;
+    padding-top: 6px;
+    height: 20px;
+    overflow: hidden;
+}
+
+#chats {
+    clear: both;
+    z-index: 100;
+}
+
+#mibbitapp {
+	display: none;
+}
+
+#loading {
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	padding: 8px;
+	background: #eee;
+	border: 8px solid #888;
+	border-radius: 16px;
+	-moz-border-radius: 16px;
+	-webkit-border-radius: 16px;
+	font-size: 25px;
+	color: #000;
+	text-align: center;
+}
+
+#loadingmsg {
+	color: #aaa;
+}
+
+.abutton {
+    border: 1px solid #484;
+    background: #ded;
+    padding: 2px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 13px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+</style>
+</head>
+
+<body onload="init()" onunload="shutdown()">
+
+<!-- Loading -->
+<div id=loading>
+<table width="100%" height="100%">
+	<tr>
+		<td valign=middle align=center>
+<div><noscript><b>NOT</b> </noscript>Loading...</div>
+<img src="https://s3.amazonaws.com/mibbit/gfx/loading.gif">
+<div><span id=loadingmsg>Wait...</span><noscript>Please enable javascript.</noscript></div>
+<script>
+
+var statuses = ["Turning up the volume",
+                "Creating iPad version",
+                "Wrapping presents",
+                "Loading loading loading",
+                "Working out how best display stuff",
+                "Fixing bugs",
+				"Adding a pinch of salt",
+				"Please hold while we connect you to an operative",
+				"Your call is very important to us.",
+				"Upgrading to version 50,000",];
+
+var loadingtimer = window.setInterval(function() {
+	var status = statuses[Math.floor(Math.random() * statuses.length)];
+    var m = document.getElementById("loadingmsg");
+    while(m.firstChild) m.removeChild(m.firstChild);
+    m.appendChild(document.createTextNode(status+"..."));
+}, 500);
+
+</script>
+		</td>
+	</tr>
+</table>
+</div>
+<!-- End of loading -->
+
+<div id=mibbitapp>
+
+<!-- Start of Header -->
+<div id=header></div>
+<!-- End of header -->
+
+<!-- Start of tabs -->
+<div id=tabs></div>
+<!-- End of tabs -->
+
+<div id=chats>
+
+<!-- Start of connect specific -->
+<div id=connectspecific style="display:none">
+<div style="width: 640px; font-size: 17px; margin: auto; margin-top:10px; text-align: center">To connect please choose a nickname, and click on [GO]! Happy chatting.</div>
+<div id=ircconnectform2></div>
+</div>
+<!-- End of connect specific -->
+
+</div>
+<!-- End of chats -->
+
+</div>
+<!-- End of mibbitapp -->
+
+<script type="text/javascript">
+window['nitroAds'] = window['nitroAds'] || { createAd: function () { window.nitroAds.queue.push(["createAd", arguments]) }, queue: [] };
+</script>
+<script async src="https://s.nitropay.com/ads-316.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@2.12.1/dist/index.min.js"></script>
+
+<script src="https://s3.amazonaws.com/mibbit/mibbitclient_5003_gz.js"></script>
+
+
+<script type="text/javascript" src="https://s3.amazonaws.com/mibbit/languages_2.js"></script>
+
+</body>
+</html>

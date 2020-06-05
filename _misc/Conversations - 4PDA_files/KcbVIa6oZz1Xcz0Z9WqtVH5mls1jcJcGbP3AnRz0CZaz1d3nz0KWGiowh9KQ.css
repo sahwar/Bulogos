@@ -1,0 +1,277 @@
+/* ============================================================== */
+/* RTE STYLES
+/* ============================================================== */
+
+.rte-cb-bg
+{
+	background-color: #94CAF4;
+	background-image: url("rte-cb-top-bg.gif");
+	background-repeat: repeat-x;
+	border-bottom: 1px solid #4373C3;
+	letter-spacing: 0;
+	height:11px;
+	text-align: left;
+	padding:0px;
+	margin:0px;
+}
+
+.rte-option-panel,
+.rte-buttonbar
+{
+	background-color: #C3DDFF;
+	border: 1px solid #4373C3;
+	letter-spacing: 0;
+}
+
+.rte-option-panel
+{
+	display: none;
+	float: left;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.rte-option-emo-box
+{
+	background-color: #FFFFFF;
+	border:1px solid #4373C3;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.rte-buttonbar tbody tr td,
+.rte-buttonbar tr td,
+.rteBack tbody tr td,
+.rteBack tr td
+{
+	padding: 0;
+}
+
+.rte-iframe
+{
+	border:2px inset #4373C3;
+	background-color:#FFF;
+	margin-top:4px;
+}
+
+.rte-menu-button,
+.rte-selected-menubutton,
+.rte-hover-menubutton,
+.rte-normal-menubutton
+{
+/*	border: 1px solid #7585B8;*/
+/*	-moz-border-radius: 3px;*/
+/*	padding: 2px 1px 2px 4px;*/
+	margin:0px;
+	font-size: 11px;
+/*	overflow: hidden;*/
+/*	background-color: #FFFFFF;*/
+/*	background-image: url("rte-dd-bg.gif");*/
+/*	background-repeat: no-repeat;*/
+	width:auto;
+}
+
+.rte-selected-menubutton,
+.rte-hover-menubutton
+{
+/*	border: 1px solid #95C4F7;*/
+	background-color: #FFFFFF;
+}
+
+.rte-menu-face,
+.rte-menu-size,
+.rte-selected-menu,
+.rte-hover-menu,
+.rte-normal-menu
+{
+	background-color: #EFF3F7;
+	border-bottom:1px dotted #999;
+	padding: 1px 1px 4px 1px;
+	width:100%;
+	clear: all;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.rte-menu-size
+{
+	padding-top: 12px;
+	padding-bottom: 12px;
+}	
+
+.rte-selected-menu-color,
+.rte-hover-menu-color,
+.rte-normal-menu-color,
+.rte-menu-color
+{
+	width: 10px;
+	border: 1px solid #FFFFFF;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.rte-selected-menu-emo,
+.rte-hover-menu-emo,
+.rte-normal-menu-emo,
+.rte-menu-emo,
+.rte-menu-emo-box
+{
+	width: auto;
+	border:1px solid #EFF3F7;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.rte-selected-menu-emo div,
+.rte-hover-menu-emo div,
+.rte-normal-menu-emo div,
+.rte-menu-emo  div
+{
+	padding: 4px;
+}
+
+.rte-menu-emo-box div
+{
+	padding: 1px;
+}
+
+.rte-menu-emo-box
+{
+	border:1px solid #FFFFFF;
+}
+
+.rte-menu-emo-header
+{
+	text-align: center;
+	font-weight: bold;
+	background-color: #94CAF4;
+	color: #FFFFFF;
+	background-image: url("rte_tile.gif");
+	background-repeat: repeat-x;
+	padding:4px;
+	margin: 0px;
+}
+
+.rte-hover-menu-color
+{
+	border:1px solid black;
+}
+
+.rte-hover-menu-emo
+{
+	border:1px solid black;
+}
+
+.rte-popupmenu
+{
+	background-color: #EFF3F7;
+	border: 1px solid #999;
+	text-align: left;
+	font-size: 11px;
+	padding: 3px 5px 3px 3px;
+}
+
+.rte-selected,
+.rte-hover,
+.rte-normal
+{
+	cursor: pointer;
+	cursor: hand;
+	padding:1px;
+}
+
+.rte-selected-menu,
+.rte-hover-menu
+{
+	background: #D3D3D3;
+}
+
+.rte-selected
+{
+	border: 1px outset;
+	padding:0px;
+}
+
+.rte-hover
+{
+	background: #EBEBEB;
+}
+
+.attach-menubutton
+{
+	border: 1px solid #7585B8;
+	-moz-border-radius: 3px;
+	padding: 2px 1px 2px 4px;
+	margin:0px;
+	font-size: 11px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	background-image: url("//s.4pda.to/KcbVGuDlcsQBTyQaKpSMZg6DsKADJ29qqVVkTp1hjib1lH9NTpnBmNRvoDYVhbLqSVlCDJ5H.gif");
+	background-repeat: no-repeat;
+	width:auto;
+}
+
+.attachfiles-dropdown
+{
+	border: 1px solid #7585B8;
+	-moz-border-radius: 3px;
+	padding: 2px 1px 2px 4px;
+	margin:0px;
+	font-size: 11px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	width:auto;
+}
+
+.attach-parentdiv
+{
+/*	background-color: #C3DDFF;*/
+	letter-spacing: 0;
+	padding:3px;
+	text-align:left;
+}
+
+.attach-messagediv
+{
+	background: #FFF;
+	color: #000000;
+	text-align:center;
+	border: 1px solid #4373C3;
+}
+.attach-msg-span
+{
+	padding-top: 3px;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.attach-iframe
+{
+	border: 0px;
+	background-color:transparent;
+}
+
+.attach-popupmenu
+{
+	background-color: #EFF3F7;
+	border: 1px solid #999;
+	text-align: left;
+	font-size: 11px;
+	padding: 3px 5px 3px 3px;
+}
+
+.attach-menu-row-over,
+.attach-menu-row
+{
+	padding:1px 1px 4px 1px;
+	width:100%;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.attach-menu-row-over
+{
+	background: #D3D3D3;
+}

@@ -1,0 +1,68 @@
+﻿Q: How to open a local .SQL file using HeidiSQL?
+
+A: No, HeidiSQL can connect to servers only. I never came across a tool which reads out .myd files, apart from the mysql server itself. (You can't.) But you could install a mysql server and place your files in some test database directory, and then connect via HeidiSQL. 
+
+Source: http://www.heidisql.com/forum.php?t=13811
+
+Q: How do I open an SQL file?
+
+I'm trying to restore a backup for a website which is all in one sql file. so far the only thing that can open it is notepad. I've tried downloading and installing xampp with mysql, apache, and all that stuff, but I can't figure out how to use those programs to open this file. Has anyone worked with these programs before?
+Best Answer
+
+A: doyler78 answered 8 years ago:
+
+Xampp will have phpmyadmin installed.
+
+Type
+
+http://localhost/phpmyadmin (or whatever phpmyadmin is named in your configuration) into your web browser
+
+Log into phpmyadmin with your username and password.
+
+This will connect you to mysql. Choose databases. In the tabs along the top you will see one for imports. Browse to the sql file and hit go.
+
+All should import. If there are any problems with the import it may be because client version of phpmyadmin may be too low for the sql file being imported in which case you will have to run sql file directly from a command line in the mysql client itself.
+
+Source: https://answers.yahoo.com/question/index?qid=20060827114730AAdf78b
+
+Q: How to open sql file as a table?
+
+A: 
+
+.sql files are not tables per se. They're an exported database. Basically code for the database software to create the tables and such. CREATE TABLE, etc. The very same code you would use if you wanted to create a similar database/table(s).
+
+This means the file is not a table, and the only thing that can make a table out of it is SQL software such as MySQL.
+
+To compare, it's as if your friend sent you a macro/script that automatically creates a series of files, and you wanted to view the files without launching the macro and actually creating the files. Not really possible unless you have a very specific tool that emulates Windows creating files.
+
+So I think your only solution is to install SQL and to import the database, effectively creating it anew on your own computer. To do this, I think the simplest way is to install and run WAMPserver ( http://www.wampserver.com/en/ ) , then to type "localhost" in your Web browser's address bar. Then you click phpMyAdmin, and click import to, well, import the file. Make sure the file encodings match.
+
+Note that WAMP (and, therefore, MySQL) is probably only going to work if the file was exported in the MySQL format. That is, if the original database was in MySQL or if the other SQL engine (such as Microsoft SQL Server) has an option for exportation compatible with MySQL. And if the option was used, of course. If not, you'll need to find what database software's format the .sql file is in and install the appropriate software.
+
+Oh, just before posting I did a quick search, and I think I might have found a tool that possibly allows you to simulate SQL and just view the table(s) without having to have the actual database. Maybe. Up to you to test it. Might not do what you want at all, but if it does, it might be simpler than WAMP. I'm sure installing the appropriate SQL software works, though.
+
+http://www.digitalcoding.com/free-software/database/SQL-Preview-and-Export-Tool.html
+share|improve this answer
+	
+edited Jun 15 '13 at 20:50
+
+	
+answered Jan 8 '13 at 7:13
+Ariane
+1,098624
+	
+3 	 
+	
+Note that SQL syntaxes differ slightly between database engines. In the simplest cases the same script will work across a number of engines, but as soon as you do anything non-trivial, you are going to run into various implementation-specific things. Take name quoting for example; MySQL uses backticks, whereas MS SQL and Access use square brackets. Some field names can be treated as reserved keywords in one database engine but be valid in another. So to be certain, you need to run the script in the same database engine software that was used to create it. Otherwise it may or may not work. –  Michael Kjörling Jan 8 '13 at 9:11
+   	 
+	
+Yes uhm. Just that I figured that it would -probably- work this way, and/or that most people use MySQL anyway, to the best of my knowledge. And well, the OP doesn't seem to be so knowledgeable in this. I feel giving too much detail would've been, maybe, dizzying. :p –  Ariane Jan 8 '13 at 16:18
+   	 
+	
+Good answer, just wanted to note that going by the name of the tool (Preview and Export) and its description ("First select the data provider from the dropdown menu. And provide the database connection string to connect to database."), it won't help in this case. –  Karan Jan 8 '13 at 17:05
+   	 
+	
+The OP is hardly going to be helped when the database engine gives an error along the lines of invalid identifier or the likes. No need to go into every detail, but I do feel that it is important to note that different RDBMSs have different syntaxes. –  Michael Kjörling Jan 8 '13 at 20:03
+1 	 
+	
+And depending on context, "most people" definitely do not use MySQL. For example, MySQL is reasonably common in Linux environments, but virtually unheard of in Windows hosting. –  Michael Kjörling Jan 8 '13 at 20:06

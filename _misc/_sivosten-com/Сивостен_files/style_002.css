@@ -1,0 +1,430 @@
+body {
+	color: #E4E0E0;
+	font: 13px tahoma, verdana, arial, sans-serif;
+	background-repeat: repeat-all; background-image: url(images/back.jpg);
+	margin:0px; text-align:left;
+}
+a {
+	color: #353535;
+	text-decoration: none;
+}
+a:hover {
+	color: #353535;
+	text-decoration: underline;
+}
+.smalltext {
+	font: 11px verdana, tahoma, arial, helvetica, sans-serif;
+	color:#b2b2b2;
+}
+.smallblacktext {
+	font: normal 11px tahoma, verdana, arial, helvetica, sans-serif;
+	color:#E4E0E0;
+}
+.indent{
+	padding: 3px 3px 3px 3px;
+	margin: 5px;
+	font: 12px verdana, tahoma, arial, sans-serif;
+	font-weight: bold;
+	color:#000060;
+	border: 1px solid;
+	background-repeat: repeat-all; background-image: url(images/back.jpg);
+	border-bottom: #f87300 3px solid;
+	border-left: #f87300 3px solid;
+	border-right: #f87300 3px solid;
+	border-top: #f87300 3px solid;
+}
+.defaulttext {
+	font: 12px verdana, tahoma, arial, helvetica, sans-serif;
+	color:#353535;
+}
+td {
+	font:11px verdana, tahoma, arial, helvetica, sans-serif;
+	color:#353535;
+	padding: 0px;
+	text-align:left;
+}
+
+blockquote {
+	font: italic 12px verdana, tahoma, arial, helvetica, sans-serif;
+	color:#7e96ac;
+}
+.mediumtext {
+	font: 12px verdana, tahoma, arial, helvetica, sans-serif;
+	color:#353535;
+}
+.captiontext {
+	font: 15px verdana, tahoma, arial, helvetica, sans-serif;
+	color:#353535;
+}
+.tbox{
+	background-color: #ffffff;
+	background-repeat: repeat-all; background-image: url(images/back.jpg);
+	border: #2c8531 1px solid;
+	color: #353535;
+	font: 11px verdana, tahoma, arial, helvetica, sans-serif;
+}
+.nextprev{
+	background-repeat: repeat-all; background-image: url(images/back.jpg);
+	border: transparent;
+	color: #353535;
+	font: normal 10px verdana, tahoma, arial, helvetica, sans-serif;
+	text-align:center;
+	padding : 2px, 2px, 2px, 2px;
+
+}
+.button{
+	background-color: #eaeef2;
+	border: #000 1px solid;
+	color: #103821;
+	font: 10px verdana, tahoma, arial, helvetica, sans-serif;
+	text-align:center;
+	background-image : url(images/button.png);
+}
+.np{
+	background-color: #eaeef2;
+	border: transparent;
+	color: #353535;
+	font: 10px verdana, tahoma, arial, helvetica, sans-serif;
+	text-align:center;
+	padding : 2px;
+}
+form {
+	margin: 2px 0px 0px 0px;
+}
+.spacer{
+	padding: 2px 0px 2px 0px;
+}
+hr {
+	border-top: transparent;
+	border-bottom: transparent;
+	height: 2px;
+	width: 92%;
+	text-align:center;
+}
+.border {
+	border: transparent;
+}
+.border2 {
+	border: #D5D5D5 1px solid;
+}
+
+.border3 {
+	border: transparent;
+}
+.helpbox {
+	border: transparent;
+	background-color: transparent;
+	color:#353535;
+	font: 10px tahoma, verdana, arial, helvetica, sans-serif;
+}
+.caption {
+	padding: 0px 4px 0px 4px;
+	border-bottom: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-top: transparent;
+	background-repeat: repeat-all; background-image: url(images/back.jpg);
+	color: #353535;
+	font: 15px tahoma, arial, verdana, helvetica, sans-serif;
+	weight: bold;
+}
+.caption2 {
+	padding: 0px 4px 0px 4px;
+	color: #353535;
+	font: 15px tahoma, arial, verdana, helvetica, sans-serif;
+	text-align:center;
+}
+.caption3 {
+	padding: 0px 4px 0px 4px;
+	border-bottom: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-top: transparent;
+	background-repeat: repeat-all; background-image: url(images/back.jpg);
+	color: #353535;
+	font: 14px tahoma, arial, verdana, helvetica, sans-serif;
+}
+.bodytable {
+	padding: 8px;
+	font: 11px verdana, tahoma, arial, helvetica, sans-serif;
+	color: #353535;
+}
+.bodytable2 {
+	border: #D5D5D5 1px solid;
+	padding: 8px;
+	font: 12px verdana, tahoma, arial, helvetica, sans-serif;
+	color: #353535;
+}
+.bodytable3 {
+	padding: 8px;
+	font: 11px verdana, tahoma, arial, helvetica, sans-serif;
+	color: #353535;
+}
+p {
+	margin-top: 0px;
+	margin-bottom: 0px
+}
+.fborder {
+	border: transparent;
+	background-repeat: repeat-all; background-image: url(images/back.jpg);
+	
+}
+.forumheader{
+	background-color: #EBEFF2;
+	font: 13px verdana, tahoma, arial, helvetica, sans-serif;
+	color:#353535;
+	font-weight: bold;
+	padding: 4px;
+	background-image : url(images/back.jpg);
+	border: #C3BDBD 1px solid;
+}
+.forumheader2{
+	background-color: transparent;
+	font: 14px verdana, tahoma, arial, helvetica, sans-serif;
+	color:#353535;
+	padding: 4px;
+	border: #C3BDBD 1px solid;
+}
+.forumheader3{
+	background-repeat: repeat-all; background-image: url(images/back.jpg);
+	font: 11px verdana, tahoma, arial, helvetica, sans-serif;
+	color:#353535;
+	padding: 4px;
+	border: #C3BDBD 1px solid;
+}
+.forumborder{
+	border: #000080 1px solid;
+}
+.fcaption {
+	border: #000 1px solid;
+	padding: 2px 0px 2px 8px;
+	background-color: #C9C7C7;
+	font: 12px verdana, tahoma, arial, helvetica, sans-serif;
+	background-image : url(images/fcap.png);
+	color:#fff;
+}
+.captiontopleft{ width: 24px; background-image: url(images/topleft.png); }
+.captiontopmiddle{ width: 100%; background-repeat: repeat-x; background-image: url(images/top.png); }
+.captiontopright{ width: 11px; background-image: url(images/topright.png); }
+.captionleft{ width: 24px; background-image: url(images/capleft.png); }
+.captionbar{ background-repeat: repeat-x; padding-right:10px; font-size: 11px; font-weight:bold; color: #fff; font-family: verdana, tahoma, arial, sans-serif; background-image: url(images/capdark.png);}
+.captionend{ width: 12px; background-image: url(images/captransition.png); }
+.captionmain{ width: 100%; background-repeat: repeat-x; background-image: url(images/caplight.png); }
+.captionright{ width: 11px; background-image: url(images/capright.png); }
+.bodyleft{ width: 3px; background-repeat: repeat-y; background-image: url(images/left.png); }
+.bodymain{ width: 100%; background-repeat: repeat-all; background-image: url(images/back.jpg); padding: 4px 5px 5px 4px; font-size: 11px; color: #353535; font-family: verdana, tahoma, arial, sans-serif; vertical-align:top; }
+.bodyright{ width: 3px; background-repeat: repeat-y; background-image: url(images/right.png); }
+.bottomleft{ width: 10px; background-image: url(images/bottomleft.png); }
+.bottommain{ width: 100%; background-repeat: repeat-x; background-image: url(images/bottom.png);}
+.bottomright{ width: 10px; background-image: url(images/bottomright.png); }
+.finfobar{
+	background-color: #DBE5F5;
+	font: 15px verdana, tahoma, arial, helvetica, sans-serif;
+	color:#353535;
+	padding: 4px;
+	border: #C3BDBD 1px solid;
+	background-image : url(forum/finfobar.png);
+}
+
+a.forumlink{
+	color: #fff;
+}
+
+.topborder {
+	border-bottom: #000 1px solid;
+}
+
+.bottomborder {
+	border-top: #000 1px solid;
+	border-bottom: #000 1px solid;
+}
+.alttd{
+	background-repeat: repeat-all; background-image: url(images/back.jpg);
+	font: 11px verdana, tahoma, arial, helvetica, sans-serif;
+	color: #353535;
+}
+.code{
+	border: #9F9F9F 1px solid;
+	padding: 8px;
+	background-color: #EEECEC;
+	font: 13px courier, arial, verdana, tahoma, helvetica, sans-serif;
+	color:#353535;
+}
+
+.nforumholder {
+	border: transparent;
+	padding: 0px;
+	background-color: #fff;
+}
+
+.nforumcaption {
+	background-image: url(images/nforumcaption.png);
+	padding: 8px 4px 8px 4px;
+	font: 12px verdana, tahoma, arial, helvetica, sans-serif;
+	color: #fff;
+}
+
+.nforumcaption2 {
+	background-image: url(images/nforumcaption2.png);
+	padding: 8px 0px 8px 4px;
+	font: 10px verdana, tahoma, arial, helvetica, sans-serif;
+	color: #000;
+	font-weight: bold;
+}
+
+.nforumcaption3 {
+	border: 1px solid #fff;
+	padding: 4px;
+	background-color: transparent;
+	font: 12px verdana, tahoma, arial, helvetica, sans-serif;
+}
+
+.nforumthread {
+	border: 1px solid #fff;
+	padding: 4px;
+	background-color: #EEF2F7;
+	font: 10px verdana, tahoma, arial, helvetica, sans-serif;
+}
+
+.nforumthread2 {
+	border: 1px solid #fff;
+	padding: 4px;
+	background-color: #D1DCEB;
+	font: 10px verdana, tahoma, arial, helvetica, sans-serif;
+}
+
+.nforumreplycaption {
+	border: 1px solid #fff;
+	padding: 4px;
+	background-color: #E2EDF2;
+	font: 12px verdana, tahoma, arial, helvetica, sans-serif;
+}
+
+.nforumreply {
+	border: 1px solid #fff;
+	padding: 4px;
+	background-color: #EDF4F7;
+	font: 10px verdana, tahoma, arial, helvetica, sans-serif;
+}
+
+.nforumreply2 {
+	border: 1px solid #fff;
+	padding: 4px;
+	background-color: #CFE0EB;
+	font: 10px verdana, tahoma, arial, helvetica, sans-serif;
+}
+.nforumdisclaimer {
+	font: 9px verdana, tahoma, arial, helvetica, sans-serif;
+	color:#5d6e75;
+}
+
+.nforumview1 {
+	border: 1px solid #fff;
+	padding: 4px;
+	background-color: transparent;
+	font: 10px verdana, tahoma, arial, helvetica, sans-serif;
+}
+
+.nforumview2 {
+	border: 1px solid #fff;
+	padding: 4px;
+	background-repeat: repeat-all; background-image: url(images/back.jpg);
+	font: 10px verdana, tahoma, arial, helvetica, sans-serif;
+}
+
+.nforumview3 {
+	padding: 4px;
+	background-color: #BCD0ED;
+	font: 10px verdana, tahoma, arial, helvetica, sans-serif;
+	color: #263448;
+}
+
+.nforumview4 {
+	padding: 4px;
+	background-color: transparent;
+	font: 9px verdana, tahoma, arial, helvetica, sans-serif;
+	color: #3A4F6C;
+}
+
+.sliderwrapper{
+position: relative;
+overflow: hidden;
+border: 0px;
+border-bottom-width: 6px;
+width: 99%;
+height: 215px;
+}
+
+
+.sliderwrapper .contentdiv{
+visibility: hidden;
+position: absolute;
+left: 0;
+top: 0;
+padding: 0px;
+background: #dfede7;
+width: 100%;
+height: 100%;
+filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);
+-moz-opacity: 1;
+opacity: 1;
+}
+
+.pagination{
+width: 99%;
+text-align: right;
+background: url(../../gfx/smalls/bk.png) top repeat-x;
+padding: 4px 4px;
+}
+
+.pagination a{
+padding: 0px 5px;
+text-decoration: none; 
+color: #00007D;
+}
+
+.pagination a:hover, .pagination a.selected{
+color: #000;
+background-color: #bbccc5;
+}
+
+.tblrow{
+position: relative;
+overflow: hidden;
+border: 0px;
+border-bottom-width: 0px;
+width: 100%;
+height: 19px;
+}
+
+.listh{
+position: relative;
+overflow: hidden;
+border: 0px;
+border-bottom-width: 0px;
+height: 17px;
+}
+
+.listbh{
+position: relative;
+overflow: hidden;
+text-align: right;
+border: 0px;
+border-bottom-width: 0px;
+height: 32px;
+}
+
+.listbb{
+position: relative;
+overflow: hidden;
+text-align: justify;
+border: 0px;
+border-bottom-width: 0px;
+height: 50px;
+}
+
+.menuoption a:hover, .menuoption a.selected{
+{
+color:red; 
+background-color:bbccc5; 
+}

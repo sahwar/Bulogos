@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="chylex">
+    <meta name="description" content="Discord History Tracker - Browser script to save history of Discord servers and private conversations">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Discord History Tracker</title>
+    
+    <link href="Discord%20History%20Tracker_files/style.css" type="text/css" rel="stylesheet">
+  </head><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div>
+  <body>
+    <div class="inner">
+      <h1>Discord History Tracker <span class="version">v.23</span>&nbsp;<span class="bar">|</span>&nbsp;<span class="notes"><a href="https://github.com/chylex/Discord-History-Tracker/wiki/Release-Notes">Release&nbsp;Notes</a></span></h1>
+      <p>Discord History Tracker is a browser script that lets you 
+locally save chat history in your servers, groups, and private 
+conversations.</p>
+      <p>When the script is active, it will load history of the selected
+ text channel up to the first message, and let you download it for 
+offline viewing in your browser.</p>
+      
+      <img src="Discord%20History%20Tracker_files/tracker.png" class="dht bordered" width="851">
+      
+      <h2>How to Save History</h2>
+      <h3>Running the Script</h3>
+      
+      <h4>Option 1: Userscript</h4>
+      <div class="quote">
+        <p><strong>Preferred option.</strong> Requires a browser addon, but DHT will stay up-to-date and be easily accessible on the Discord website.</p>
+        
+        <ol>
+          <li>Install a userscript manager addon:
+            <ul>
+              <li><a href="https://violentmonkey.github.io/get-it/">Violentmonkey</a> (Chrome)</li>
+              <li><a href="https://tampermonkey.net/">Tampermonkey</a> (Firefox, Edge, Chrome, Opera)</li>
+              <li>Due to browser bugs / limitations, DHT will not work in <strong>Firefox</strong> with Greasemonkey / Violentmonkey, and in <strong>Safari</strong> at all</li>
+            </ul>
+          </li>
+          <li>Click <a href="https://dht.chylex.com/build/track.user.js">Install Userscript</a> to prompt an installation into the userscript manager</li>
+          <li>Open <a href="https://discord.com/channels/@me" rel="noreferrer">Discord</a>, and view any server, group, or private conversation (it will not appear in Friends list)</li>
+          <li>Click <strong>DHT</strong> in the top right corner:<br><img src="Discord%20History%20Tracker_files/button.png" class="bordered"></li>
+        </ol>
+      </div>
+      
+      <h4>Option 2: Browser Console</h4>
+      <div class="quote">
+        <p>The console is the only way to use DHT directly in the desktop app.</p>
+        
+        <ol>
+          <li>Click <a href="javascript:" id="tracker-copy-button" onauxclick="return false;">Copy to Clipboard</a> to copy the script<noscript> (requires JavaScript)</noscript></li>
+          <li>Press <strong>Ctrl</strong>+<strong>Shift</strong>+<strong>I</strong> in your browser or the Discord app, and select the <strong>Console</strong> tab</li>
+          <li>Paste the script into the console, and press <strong>Enter</strong> to run it</li>
+          <li>Press <strong>Ctrl</strong>+<strong>Shift</strong>+<strong>I</strong> again to close the console</li>
+        </ol>
+        
+        <p id="tracker-copy-issue" style="display: none;">Your browser may not support copying to clipboard, please try copying the script manually:</p>
+        <textarea id="tracker-copy-contents" style="display: none;">javascript:(function(){var
+ e=function(){var n=function(){return 
+t.id("messages")||document.querySelector("[data-ref-id='messages']")},s=function(){return
+ n().closest("[class*='scroller-']")},i=function(e,t){const 
+n=`[class*="${t=`${t}-`}"]`;for(let s of e.children){let 
+e=s.className;if(e.includes(t)||s.querySelector(n))return!0;if(e.includes("message-"))break}return!1},r=0,a=0;return{s:function(e){var
+ o=function(){let r=n();if(r)if(i(r,"loadingMore"))l(25);else{let 
+o=n().children.length;o&lt;100&amp;&amp;(a=0),a&gt;0?(--a,l(750)):(o&gt;300&amp;&amp;(a=6,t.i(()=&gt;{let
+ e=s();e.scrollTop=e.scrollHeight/2},1)),e(i(r,"hasMore")),l(200))}else 
+l(500)},l=function(e){r=t.i(o,e)};o(),window.o.push(()=&gt;window.clearInterval(r))},l:function(e){var
+ 
+t=Object.keys(e||{}).find(e=&gt;e.startsWith("__reactInternalInstance"));return
+ t?e[t].memoizedProps:null},h:function(){try{var 
+n,s=t.g("privateChannels");if(s){if(!((l=t.g("selected",s))&amp;&amp;"href"in
+ l&amp;&amp;l.href.includes("/@me/")))return null;var 
+i=l.href.split("/"),r=i[i.length-1];if(!/^\d+$/.test(r))return null;var 
+a;for(let e of l.querySelectorAll("[class^='name']")){let 
+t=Array.prototype.find.call(e.childNodes,e=&gt;e.nodeType===Node.TEXT_NODE);if(t){a=t.nodeValue;break}}if(!a)return
+ null;var 
+o=l.querySelector("img[class*='avatar']");n={server:a,channel:a,id:r,type:o&amp;&amp;(o.src.includes("/channel-icons/")||o.src.includes("/assets/"))?"GROUP":"DM"}}else{var
+ l=(s=document.querySelector("div[class*='sidebar'] &gt; 
+nav[class*='container']")).querySelector("div[class*='scrollerWrap'] 
+&gt; div[class*='scroller'] 
+[class*='modeSelected']").parentElement,c=e.l(l);if(!c)return null;var 
+d=c.children.props.channel;if(!d)return 
+null;n={server:s.querySelector("header &gt; 
+h1").innerText,channel:d.name,id:d.id,type:"SERVER"}}return 
+0===n.channel.length?null:n}catch(e){return 
+console.error(e),null}},p:function(){try{var 
+t=e.l(n()).children.find(e=&gt;e&amp;&amp;e.length),s=[];for(let e of 
+t){let t=e.props;t&amp;&amp;t.message&amp;&amp;s.push(t.message)}return 
+s}catch(e){return 
+console.error(e),null}},v:()=&gt;!!n(),S:function(){let e=n();return 
+i(e,"hasMore")||i(e,"loadingMore")},C:function(){let 
+e=s();e.scrollTop&gt;0&amp;&amp;(e.scrollTop=0)},T:function(){var 
+e=t.g("privateChannels");if(e){var 
+n=t.g("selected",e);return!!((l=n&amp;&amp;n.nextElementSibling)&amp;&amp;l.getAttribute("class").includes("channel-")&amp;&amp;"href"in
+ 
+l&amp;&amp;l.href.includes("/@me/"))&amp;&amp;(l.click(),l.scrollIntoView(!0),!0)}var
+ 
+s=e=&gt;e.includes("wrapper-")&amp;&amp;!e.includes("clickable-"),i=e=&gt;!!e.querySelector('path[d="M5.88657
+ 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449
+ 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 
+2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 
+8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 
+4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 
+3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 
+7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 
+3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 
+7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 
+8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 
+15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 
+16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209
+ 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 
+13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21
+ 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 
+9H9.41045Z"]')||!!e.querySelector('path[d="M14 8C14 7.44772 13.5523 7 13
+ 7H9.76001L10.3657 3.58738C10.4201 3.28107 10.1845 3 9.87344 
+3H8.88907C8.64664 3 8.43914 3.17391 8.39677 3.41262L7.76001 
+7H4.18011C3.93722 7 3.72946 7.17456 3.68759 7.41381L3.51259 
+8.41381C3.45905 8.71977 3.69449 9 4.00511 9H7.41001L6.35001 
+15H2.77011C2.52722 15 2.31946 15.1746 2.27759 15.4138L2.10259 
+16.4138C2.04905 16.7198 2.28449 17 2.59511 17H6.00001L5.39427 
+20.4126C5.3399 20.7189 5.57547 21 5.88657 21H6.87094C7.11337 21 7.32088 
+20.8261 7.36325 20.5874L8.00001 17H14L13.3943 20.4126C13.3399 20.7189 
+13.5755 21 13.8866 21H14.8709C15.1134 21 15.3209 20.8261 15.3632 
+20.5874L16 17H19.5799C19.8228 17 20.0306 16.8254 20.0724 16.5862L20.2474
+ 15.5862C20.301 15.2802 20.0655 15 19.7549 15H16.35L16.6758 
+13.1558C16.7823 12.5529 16.3186 12 15.7063 12C15.2286 12 14.8199 12.3429
+ 14.7368 12.8133L14.3504 15H8.35045L9.41045 9H13C13.5523 9 14 8.55228 14
+ 
+8Z"]'),r=e=&gt;e.childElementCount&gt;0&amp;&amp;s(e.children[0].className)&amp;&amp;i(e),a=document.querySelector("div[class*='sidebar']
+ &gt; nav[class*='container'] &gt; div[class*='scrollerWrap'] &gt; 
+div[class*='scroller']");if(!a)return!1;for(var 
+o=Array.prototype.filter.call(a.querySelectorAll("[class*='containerDefault']"),r),l=null,c=0;c&lt;o.length-1;c++)if(o[c].children[0].className.includes("modeSelected")){l=o[c+1];break}return
+ 
+null!==l&amp;&amp;(l.children[0].click(),l.scrollIntoView(!0),!0)}}}(),t=function(){var
+ e=(e,t,n,s)=&gt;{var 
+i=document.createElement(e);i.id=n||"";i.innerHTML=s||"";t.appendChild(i);return
+ 
+i};return{id:(e,t)=&gt;(t||document).getElementById(e),g:(e,t)=&gt;(t||document).querySelector(`[class*="${e}-"]`),createElement:(t,n,s,i)=&gt;e(t,n,s,i),O:e=&gt;e.parentNode.removeChild(e),L:t=&gt;e("style",document.head,"",t),i:(e,t)=&gt;window.setTimeout(e,t),A:(e,t,n)=&gt;e.addEventListener(t,n),k:(e,t,n)=&gt;{var
+ s=new 
+Date(Date.now()+1e3*n).toUTCString();document.cookie=e+"="+encodeURIComponent(JSON.stringify(t))+";path=/;expires="+s},M:e=&gt;{var
+ t=document.cookie.replace(new 
+RegExp("(?:(?:^|.*;\\s*)"+e+"\\s*\\=\\s*([^;]*).*$)|^.*$"),"$1");return 
+t.length?JSON.parse(decodeURIComponent(t)):null},_:(t,n)=&gt;{var s=new 
+Blob([n],{type:"octet/stream"});if("msSaveBlob"in 
+window.navigator)return window.navigator.msSaveBlob(s,t);var 
+i=window.URL.createObjectURL(s);var 
+r=e("a",document.body);r.href=i;r.download=t;r.style.display="none";r.click();document.body.removeChild(r);window.URL.revokeObjectURL(i)}}}(),n=function(){var
+ 
+e,n,r=()=&gt;{o.N()?(e.H.U.disabled=!0,e.H.R.disabled=!0,e.H.D.disabled=!0):(e.H.U.disabled=!1,e.H.R.disabled=!1,e.H.I.disabled=e.H.D.disabled=!o.F())},l=(t,s)=&gt;{if(e){var
+ 
+i="gui"===t&amp;&amp;"controller"===s;if(("data"===t||i)&amp;&amp;r(),("tracking"===t||i)&amp;&amp;(r(),e.H.q.innerHTML=o.N()?"Pause
+ Tracking":"Start Tracking"),"data"===t||i){var 
+l=0,c=0;o.F()&amp;&amp;(l=o.j().P(),c=o.j().W()),e.H.V.innerHTML=[l," 
+message",1===l?"":"s"," from ",c," 
+channel",1===c?"":"s"].join("")}}if(n&amp;&amp;((i="gui"===t&amp;&amp;"settings"===s)&amp;&amp;(n.H.G.checked=a.autoscroll,n.H.J[a.afterFirstMsg].checked=!0,n.H.B[a.afterSavedMsg].checked=!0),"setting"===t||i)){var
+ 
+d=!a.autoscroll;Object.values(n.H.J).forEach(e=&gt;e.disabled=d),Object.values(n.H.B).forEach(e=&gt;e.disabled=d)}},c=!1,d=function(e){c||(o.$(l),a.Z(l),c=!0),l("gui",e)},u={X:function(){(e={}).K=t.L(`\r\n#app-mount
+ &gt; div[class*="app-"] { margin-bottom: 48px !important; 
+}\r\n#dht-ctrl { position: absolute; bottom: 0; width: 100%; height: 
+48px; background-color: #FFF; }\r\n#dht-ctrl button { height: 32px; 
+margin: 8px 0 8px 8px; font-size: 16px; padding: 0 12px; 
+background-color: #7289DA; color: #FFF; text-shadow: 1px 1px 2px rgba(0,
+ 0, 0, 0.75); }\r\n#dht-ctrl button:disabled { background-color: 
+#7A7A7A; cursor: default; }\r\n#dht-ctrl-close { margin: 8px 8px 8px 0 
+!important; float: right; }\r\n#dht-ctrl p { display: inline-block; 
+margin: 14px 12px; }\r\n#dht-ctrl input { display: none; }`);var 
+n=(e,t)=&gt;"&lt;button 
+id='dht-ctrl-"+e+"'&gt;"+t+"&lt;/button&gt;";e.Y=t.createElement("div",document.body,"dht-ctrl",`\r\n${n("upload","Upload
+ &amp;amp; 
+Combine")}\r\n${n("settings","Settings")}\r\n${n("track","")}\r\n${n("download","Download")}\r\n${n("reset","Reset")}\r\n&lt;p
+ id='dht-ctrl-status'&gt;&lt;/p&gt;\r\n&lt;input 
+id='dht-ctrl-upload-input' type='file' 
+multiple&gt;\r\n${n("close","X")}`),e.H={U:t.id("dht-ctrl-upload"),R:t.id("dht-ctrl-settings"),q:t.id("dht-ctrl-track"),I:t.id("dht-ctrl-download"),D:t.id("dht-ctrl-reset"),ee:t.id("dht-ctrl-close"),V:t.id("dht-ctrl-status"),ne:t.id("dht-ctrl-upload-input")},t.A(e.H.U,"click",()=&gt;{e.H.ne.click()}),t.A(e.H.R,"click",()=&gt;{u.se()}),t.A(e.H.q,"click",()=&gt;{o.ie(!o.N())}),t.A(e.H.I,"click",()=&gt;{o.re()}),t.A(e.H.D,"click",()=&gt;{o.ae()}),t.A(e.H.ee,"click",()=&gt;{u.oe();window.o.forEach(e=&gt;e());window.DHT_LOADED=!1}),t.A(e.H.ne,"change",()=&gt;{Array.prototype.forEach.call(e.H.ne.files,e=&gt;{var
+ t=new FileReader;t.onload=function(){var 
+n={};try{n=JSON.parse(t.result)}catch(t){return alert("Could not parse 
+'"+e.name+"', see console for details."),void 
+console.error(t)}s.le(n)?o.ce(e.name,new s(n)):alert("File '"+e.name+"' 
+has an invalid 
+format.")};t.readAsText(e,"UTF-8")});e.H.ne.value=null}),d("controller")},oe:function(){e&amp;&amp;(t.O(e.Y),t.O(e.K),e=null)},se:function(){(n={}).K=t.L(`\r\n#dht-cfg-overlay
+ { position: absolute; left: 0; top: 0; width: 100%; height: 100%; 
+background-color: #000; opacity: 0.5; display: block; z-index: 1000; 
+}\r\n#dht-cfg { position: absolute; left: 50%; top: 50%; width: 800px; 
+height: 262px; margin-left: -400px; margin-top: -131px; padding: 8px; 
+background-color: #fff; z-index: 1001; }\r\n#dht-cfg-note { margin-top: 
+22px; }\r\n#dht-cfg sub { color: #666; font-size: 13px; 
+}`),n.de=t.createElement("div",document.body,"dht-cfg-overlay"),t.A(n.de,"click",()=&gt;{u.ue()});var
+ e=(e,t,n)=&gt;"&lt;label&gt;&lt;input id='dht-cfg-"+e+"-"+t+"' 
+name='dht-"+e+"' type='radio'&gt; 
+"+n+"&lt;/label&gt;&lt;br&gt;";n.Y=t.createElement("div",document.body,"dht-cfg",`\r\n&lt;label&gt;&lt;input
+ id='dht-cfg-autoscroll' type='checkbox'&gt; 
+Autoscroll&lt;/label&gt;&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;label&gt;After 
+reaching the first message in 
+channel...&lt;/label&gt;&lt;br&gt;\r\n${e("afm","nothing","Do 
+Nothing")}\r\n${e("afm","pause","Pause 
+Tracking")}\r\n${e("afm","switch","Switch to Next 
+Channel")}\r\n&lt;br&gt;\r\n&lt;label&gt;After reaching a previously 
+saved message...&lt;/label&gt;&lt;br&gt;\r\n${e("asm","nothing","Do 
+Nothing")}\r\n${e("asm","pause","Pause 
+Tracking")}\r\n${e("asm","switch","Switch to Next Channel")}\r\n&lt;p 
+id='dht-cfg-note'&gt;\r\nIt is recommended to disable link and image 
+previews to avoid putting unnecessary strain on your 
+browser.&lt;br&gt;&lt;br&gt;\r\n&lt;sub&gt;v.23, released 19 May 
+2020&lt;/sub&gt;\r\n&lt;/p&gt;`),n.H={G:t.id("dht-cfg-autoscroll"),J:{},B:{}},n.H.J[i.fe]=t.id("dht-cfg-afm-nothing"),n.H.J[i.he]=t.id("dht-cfg-afm-pause"),n.H.J[i.ge]=t.id("dht-cfg-afm-switch"),n.H.B[i.fe]=t.id("dht-cfg-asm-nothing"),n.H.B[i.he]=t.id("dht-cfg-asm-pause"),n.H.B[i.ge]=t.id("dht-cfg-asm-switch"),n.H.G.addEventListener("change",()=&gt;{a.autoscroll=n.H.G.checked}),Object.keys(n.H.J).forEach(e=&gt;{t.A(n.H.J[e],"click",()=&gt;{a.afterFirstMsg=e})}),Object.keys(n.H.B).forEach(e=&gt;{t.A(n.H.B[e],"click",()=&gt;{a.afterSavedMsg=e})}),d("settings")},ue:function(){n&amp;&amp;(t.O(n.de),t.O(n.Y),t.O(n.K),n=null)}};return
+ u}();class s{constructor(e){var 
+t=this;s.le(e)||(e={meta:{},data:{}}),t.meta=e.meta,t.data=e.data,t.meta.users=t.meta.users||{},t.meta.userindex=t.meta.userindex||[],t.meta.servers=t.meta.servers||[],t.meta.channels=t.meta.channels||{},t.me={pe:{},ve:new
+ Set,Se:new Set,Ce:new Set}}static le(e){return 
+e&amp;&amp;"object"==typeof e.meta&amp;&amp;"object"==typeof 
+e.data}Te(e,t){return e in this.meta.users?e in 
+this.me.pe?this.me.pe[e]:this.me.pe[e]=this.meta.userindex.findIndex(t=&gt;t==e):(this.meta.users[e]={name:t},this.meta.userindex.push(e),this.me.pe[e]=this.meta.userindex.length-1)}ye(e,t){var
+ 
+n=this.meta.servers.findIndex(n=&gt;n.name===e&amp;&amp;n.type===t);return-1===n?(this.meta.servers.push({name:e,type:t}),this.meta.servers.length-1):n}Oe(e,t,n){return
+ this.meta.servers[e]?!(t in 
+this.meta.channels)&amp;&amp;(this.meta.channels[t]={server:e,name:n},this.me.ve.add(t),!0):void
+ 0}Le(e,t,n){var s=this.data[e]||(this.data[e]={}),i=t in s;return 
+s[t]=n,this.me.Se.add(t),!i}be(e){var 
+t={u:this.Te(e.author.id,e.author.username),t:e.timestamp.toDate().getTime()};return
+ 
+e.content.length&gt;0&amp;&amp;(t.m=e.content),null!==e.editedTimestamp&amp;&amp;(t.te=e.editedTimestamp.toDate().getTime()),e.embeds.length&gt;0&amp;&amp;(t.e=e.embeds.map(e=&gt;{let
+ 
+t={url:e.url,type:e.type};"rich"===e.type&amp;&amp;Array.isArray(e.title)&amp;&amp;1===e.title.length&amp;&amp;"string"==typeof
+ 
+e.title[0]&amp;&amp;(t.t=e.title[0],Array.isArray(e.description)&amp;&amp;1===e.description.length&amp;&amp;"string"==typeof
+ e.description[0]&amp;&amp;(t.d=e.description[0]));return 
+t})),e.attachments.length&gt;0&amp;&amp;(t.a=e.attachments.map(e=&gt;({url:e.url}))),t}Ae(e){return
+ this.me.Ce.has(e)}we(e,t){var n=!1;for(var s of 
+t)0===s.type&amp;&amp;"SENT"===s.state&amp;&amp;this.Le(e,s.id,this.be(s))&amp;&amp;(this.me.Ce.add(s.id),n=!0);return
+ n}W(){return this.me.ve.size}P(){return this.me.Se.size}ke(e){var 
+t={},n=!1;for(var s in 
+e.meta.users)t[e.meta.userindex.findIndex(e=&gt;e==s)]=this.Te(s,e.meta.users[s].name);for(var
+ i in e.meta.channels){var 
+r=e.meta.servers[e.meta.channels[i].server];this.Oe(this.ye(r.name,r.type),i,e.meta.channels[i].name)}for(var
+ i in e.data){var a=e.data[i];for(var o in a){var l=a[o],c=l.u;c in 
+t?(l.u=t[c],this.Le(i,o,l)):(n||(n=!0,alert("The uploaded archive 
+appears to be corrupted, some messages will be skipped. See console for 
+details."),console.error("User list:",e.meta.users),console.error("User 
+index:",e.meta.userindex),console.error("Generated 
+mapping:",t),console.error("Missing user for the following 
+messages:")),console.error(l))}}}Me(){return 
+JSON.stringify({meta:this.meta,data:this.data})}}var 
+i={fe:"optNothing",he:"optPause",ge:"optSwitch"},r=!1,a=function(){var 
+e={},n=[],s=function(){t.k("DHT_SETTINGS",e,15768e4)},a=function(e,t){for(var
+ i of n)i(e,t);s()},o=function(e,t,n){var 
+s="_"+t;Object.defineProperty(e,t,{get:()=&gt;e[s],set:n=&gt;{e[s]=n;a("setting",t)}}),e[s]=n},l=t.M("DHT_SETTINGS");return
+ 
+l||(l={_autoscroll:!0,_afterFirstMsg:i.he,_afterSavedMsg:i.he},r=!0),o(e,"autoscroll",l._autoscroll),o(e,"afterFirstMsg",l._afterFirstMsg),o(e,"afterSavedMsg",l._afterSavedMsg),e.Z=function(e){n.push(e)},r&amp;&amp;s(),e}(),o=function(){var
+ e=[],n=function(t,n){for(var s of e)s(t,n)};class 
+i{constructor(){this.ae()}ae(){this._e=null,this.Ne=!1,this.Ue=null,n("data","reset")}j(){return
+ this._e||(this._e=new s),this._e}F(){return null!=this._e}N(){return 
+this.Ne}ie(e){this.Ne=e,n("tracking",e)}ce(e,t){this.Ue=e,this.j().ke(t),n("data","upload")}re(){this.F()&amp;&amp;t._(this.Ue||"dht.txt",this._e.Me())}He(e,t,s,i){var
+ 
+r=this.j().ye(e,t);!0===this.j().Oe(r,s,i)&amp;&amp;n("data","channel")}Re(e,t){return!!this.j().we(e,t)&amp;&amp;(n("data","messages"),!0)}Ae(e){return
+ this.j().Ae(e)}$(t){e.push(t)}}return new 
+i}();if(!window.location.href.includes("discord.com/")&amp;&amp;!confirm("Could
+ not detect Discord in the URL, do you want to run the script 
+anyway?"))return;if(window.DHT_LOADED)return void alert("Discord History
+ Tracker is already loaded.");window.DHT_LOADED=!0,window.o=[];let l=new
+ 
+Set,c=function(e){l.add("stopping"),t.i(()=&gt;{o.ie(!1);l.delete("stopping");e&amp;&amp;e()},200)};e.s(n=&gt;{if(o.N()&amp;&amp;0===l.size){let
+ s=e.h();if(!s)return void c();o.He(s.server,s.type,s.id,s.channel);let 
+r=e.p();if(null==r)return void c();if(!r.length)return void e.C();let 
+d=o.Re(s.id,r);if(a.autoscroll){let 
+c=null;d||o.Ae(r[0].id)?n||(c=a.afterFirstMsg):c=a.afterSavedMsg,null===c?e.C():(l.add("stalling"),t.i(()=&gt;{l.delete("stalling");let
+ t=e.h();if(t&amp;&amp;t.id===s.id){let 
+t=e.p();null!=t&amp;&amp;o.Re(s.id,t)}(c===i.ge&amp;&amp;!e.T()||c===i.he)&amp;&amp;o.ie(!1)},250))}}}),o.$((t,n)=&gt;{if("tracking"===t&amp;&amp;n){let
+ t=e.h();if(!t)return void c(()=&gt;alert("The selected channel is not 
+visible in the channel list."));{let n=e.p();if(null==n)return void 
+c(()=&gt;alert("Cannot see any 
+messages."));o.He(t.server,t.type,t.id,t.channel),o.Re(t.id,n)}if(a.autoscroll&amp;&amp;e.v())if(e.S())e.C();else{let
+ 
+t=a.afterFirstMsg;(t===i.ge&amp;&amp;!e.T()||t===i.he)&amp;&amp;c()}}}),n.X(),r&amp;&amp;n.se();})()</textarea>
+      </div>
+      
+      <h4>Option 3: Bookmarklet</h4>
+      <div class="quote">
+        <p>Requires Firefox 69 or newer.</p>
+        
+        <ol>
+          <li>Right-click <a href="javascript:(function(){var e=function(){var n=function(){return t.id(&quot;messages&quot;)||document.querySelector(&quot;[data-ref-id='messages']&quot;)},s=function(){return n().closest(&quot;[class*='scroller-']&quot;)},i=function(e,t){const n=`[class*=&quot;${t=`${t}-`}&quot;]`;for(let s of e.children){let e=s.className;if(e.includes(t)||s.querySelector(n))return!0;if(e.includes(&quot;message-&quot;))break}return!1},r=0,a=0;return{s:function(e){var o=function(){let r=n();if(r)if(i(r,&quot;loadingMore&quot;))l(25);else{let o=n().children.length;o<100&amp;&amp;(a=0),a>0?(--a,l(750)):(o>300&amp;&amp;(a=6,t.i(()=>{let e=s();e.scrollTop=e.scrollHeight/2},1)),e(i(r,&quot;hasMore&quot;)),l(200))}else l(500)},l=function(e){r=t.i(o,e)};o(),window.o.push(()=>window.clearInterval(r))},l:function(e){var t=Object.keys(e||{}).find(e=>e.startsWith(&quot;__reactInternalInstance&quot;));return t?e[t].memoizedProps:null},h:function(){try{var n,s=t.g(&quot;privateChannels&quot;);if(s){if(!((l=t.g(&quot;selected&quot;,s))&amp;&amp;&quot;href&quot;in l&amp;&amp;l.href.includes(&quot;/@me/&quot;)))return null;var i=l.href.split(&quot;/&quot;),r=i[i.length-1];if(!/^\d+$/.test(r))return null;var a;for(let e of l.querySelectorAll(&quot;[class^='name']&quot;)){let t=Array.prototype.find.call(e.childNodes,e=>e.nodeType===Node.TEXT_NODE);if(t){a=t.nodeValue;break}}if(!a)return null;var o=l.querySelector(&quot;img[class*='avatar']&quot;);n={server:a,channel:a,id:r,type:o&amp;&amp;(o.src.includes(&quot;/channel-icons/&quot;)||o.src.includes(&quot;/assets/&quot;))?&quot;GROUP&quot;:&quot;DM&quot;}}else{var l=(s=document.querySelector(&quot;div[class*='sidebar'] > nav[class*='container']&quot;)).querySelector(&quot;div[class*='scrollerWrap'] > div[class*='scroller'] [class*='modeSelected']&quot;).parentElement,c=e.l(l);if(!c)return null;var d=c.children.props.channel;if(!d)return null;n={server:s.querySelector(&quot;header > h1&quot;).innerText,channel:d.name,id:d.id,type:&quot;SERVER&quot;}}return 0===n.channel.length?null:n}catch(e){return console.error(e),null}},p:function(){try{var t=e.l(n()).children.find(e=>e&amp;&amp;e.length),s=[];for(let e of t){let t=e.props;t&amp;&amp;t.message&amp;&amp;s.push(t.message)}return s}catch(e){return console.error(e),null}},v:()=>!!n(),S:function(){let e=n();return i(e,&quot;hasMore&quot;)||i(e,&quot;loadingMore&quot;)},C:function(){let e=s();e.scrollTop>0&amp;&amp;(e.scrollTop=0)},T:function(){var e=t.g(&quot;privateChannels&quot;);if(e){var n=t.g(&quot;selected&quot;,e);return!!((l=n&amp;&amp;n.nextElementSibling)&amp;&amp;l.getAttribute(&quot;class&quot;).includes(&quot;channel-&quot;)&amp;&amp;&quot;href&quot;in l&amp;&amp;l.href.includes(&quot;/@me/&quot;))&amp;&amp;(l.click(),l.scrollIntoView(!0),!0)}var s=e=>e.includes(&quot;wrapper-&quot;)&amp;&amp;!e.includes(&quot;clickable-&quot;),i=e=>!!e.querySelector('path[d=&quot;M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z&quot;]')||!!e.querySelector('path[d=&quot;M14 8C14 7.44772 13.5523 7 13 7H9.76001L10.3657 3.58738C10.4201 3.28107 10.1845 3 9.87344 3H8.88907C8.64664 3 8.43914 3.17391 8.39677 3.41262L7.76001 7H4.18011C3.93722 7 3.72946 7.17456 3.68759 7.41381L3.51259 8.41381C3.45905 8.71977 3.69449 9 4.00511 9H7.41001L6.35001 15H2.77011C2.52722 15 2.31946 15.1746 2.27759 15.4138L2.10259 16.4138C2.04905 16.7198 2.28449 17 2.59511 17H6.00001L5.39427 20.4126C5.3399 20.7189 5.57547 21 5.88657 21H6.87094C7.11337 21 7.32088 20.8261 7.36325 20.5874L8.00001 17H14L13.3943 20.4126C13.3399 20.7189 13.5755 21 13.8866 21H14.8709C15.1134 21 15.3209 20.8261 15.3632 20.5874L16 17H19.5799C19.8228 17 20.0306 16.8254 20.0724 16.5862L20.2474 15.5862C20.301 15.2802 20.0655 15 19.7549 15H16.35L16.6758 13.1558C16.7823 12.5529 16.3186 12 15.7063 12C15.2286 12 14.8199 12.3429 14.7368 12.8133L14.3504 15H8.35045L9.41045 9H13C13.5523 9 14 8.55228 14 8Z&quot;]'),r=e=>e.childElementCount>0&amp;&amp;s(e.children[0].className)&amp;&amp;i(e),a=document.querySelector(&quot;div[class*='sidebar'] > nav[class*='container'] > div[class*='scrollerWrap'] > div[class*='scroller']&quot;);if(!a)return!1;for(var o=Array.prototype.filter.call(a.querySelectorAll(&quot;[class*='containerDefault']&quot;),r),l=null,c=0;c<o.length-1;c++)if(o[c].children[0].className.includes(&quot;modeSelected&quot;)){l=o[c+1];break}return null!==l&amp;&amp;(l.children[0].click(),l.scrollIntoView(!0),!0)}}}(),t=function(){var e=(e,t,n,s)=>{var i=document.createElement(e);i.id=n||&quot;&quot;;i.innerHTML=s||&quot;&quot;;t.appendChild(i);return i};return{id:(e,t)=>(t||document).getElementById(e),g:(e,t)=>(t||document).querySelector(`[class*=&quot;${e}-&quot;]`),createElement:(t,n,s,i)=>e(t,n,s,i),O:e=>e.parentNode.removeChild(e),L:t=>e(&quot;style&quot;,document.head,&quot;&quot;,t),i:(e,t)=>window.setTimeout(e,t),A:(e,t,n)=>e.addEventListener(t,n),k:(e,t,n)=>{var s=new Date(Date.now()+1e3*n).toUTCString();document.cookie=e+&quot;=&quot;+encodeURIComponent(JSON.stringify(t))+&quot;;path=/;expires=&quot;+s},M:e=>{var t=document.cookie.replace(new RegExp(&quot;(?:(?:^|.*;\\s*)&quot;+e+&quot;\\s*\\=\\s*([^;]*).*$)|^.*$&quot;),&quot;$1&quot;);return t.length?JSON.parse(decodeURIComponent(t)):null},_:(t,n)=>{var s=new Blob([n],{type:&quot;octet/stream&quot;});if(&quot;msSaveBlob&quot;in window.navigator)return window.navigator.msSaveBlob(s,t);var i=window.URL.createObjectURL(s);var r=e(&quot;a&quot;,document.body);r.href=i;r.download=t;r.style.display=&quot;none&quot;;r.click();document.body.removeChild(r);window.URL.revokeObjectURL(i)}}}(),n=function(){var e,n,r=()=>{o.N()?(e.H.U.disabled=!0,e.H.R.disabled=!0,e.H.D.disabled=!0):(e.H.U.disabled=!1,e.H.R.disabled=!1,e.H.I.disabled=e.H.D.disabled=!o.F())},l=(t,s)=>{if(e){var i=&quot;gui&quot;===t&amp;&amp;&quot;controller&quot;===s;if((&quot;data&quot;===t||i)&amp;&amp;r(),(&quot;tracking&quot;===t||i)&amp;&amp;(r(),e.H.q.innerHTML=o.N()?&quot;Pause Tracking&quot;:&quot;Start Tracking&quot;),&quot;data&quot;===t||i){var l=0,c=0;o.F()&amp;&amp;(l=o.j().P(),c=o.j().W()),e.H.V.innerHTML=[l,&quot; message&quot;,1===l?&quot;&quot;:&quot;s&quot;,&quot; from &quot;,c,&quot; channel&quot;,1===c?&quot;&quot;:&quot;s&quot;].join(&quot;&quot;)}}if(n&amp;&amp;((i=&quot;gui&quot;===t&amp;&amp;&quot;settings&quot;===s)&amp;&amp;(n.H.G.checked=a.autoscroll,n.H.J[a.afterFirstMsg].checked=!0,n.H.B[a.afterSavedMsg].checked=!0),&quot;setting&quot;===t||i)){var d=!a.autoscroll;Object.values(n.H.J).forEach(e=>e.disabled=d),Object.values(n.H.B).forEach(e=>e.disabled=d)}},c=!1,d=function(e){c||(o.$(l),a.Z(l),c=!0),l(&quot;gui&quot;,e)},u={X:function(){(e={}).K=t.L(`\r\n#app-mount%20>%20div[class*=&quot;app-&quot;]%20{%20margin-bottom:%2048px%20!important;%20}\r\n#dht-ctrl%20{%20position:%20absolute;%20bottom:%200;%20width:%20100%;%20height:%2048px;%20background-color:%20#FFF;%20}\r\n#dht-ctrl%20button%20{%20height:%2032px;%20margin:%208px%200%208px%208px;%20font-size:%2016px;%20padding:%200%2012px;%20background-color:%20#7289DA;%20color:%20#FFF;%20text-shadow:%201px%201px%202px%20rgba(0,%200,%200,%200.75);%20}\r\n#dht-ctrl%20button:disabled%20{%20background-color:%20#7A7A7A;%20cursor:%20default;%20}\r\n#dht-ctrl-close%20{%20margin:%208px%208px%208px%200%20!important;%20float:%20right;%20}\r\n#dht-ctrl%20p%20{%20display:%20inline-block;%20margin:%2014px%2012px;%20}\r\n#dht-ctrl%20input%20{%20display:%20none;%20}`);var%20n=(e,t)=>&quot;<button%20id='dht-ctrl-&quot;+e+&quot;'>&quot;+t+&quot;</button>&quot;;e.Y=t.createElement(&quot;div&quot;,document.body,&quot;dht-ctrl&quot;,`\r\n${n(&quot;upload&quot;,&quot;Upload%20&amp;amp;%20Combine&quot;)}\r\n${n(&quot;settings&quot;,&quot;Settings&quot;)}\r\n${n(&quot;track&quot;,&quot;&quot;)}\r\n${n(&quot;download&quot;,&quot;Download&quot;)}\r\n${n(&quot;reset&quot;,&quot;Reset&quot;)}\r\n<p%20id='dht-ctrl-status'></p>\r\n<input%20id='dht-ctrl-upload-input'%20type='file'%20multiple>\r\n${n(&quot;close&quot;,&quot;X&quot;)}`),e.H={U:t.id(&quot;dht-ctrl-upload&quot;),R:t.id(&quot;dht-ctrl-settings&quot;),q:t.id(&quot;dht-ctrl-track&quot;),I:t.id(&quot;dht-ctrl-download&quot;),D:t.id(&quot;dht-ctrl-reset&quot;),ee:t.id(&quot;dht-ctrl-close&quot;),V:t.id(&quot;dht-ctrl-status&quot;),ne:t.id(&quot;dht-ctrl-upload-input&quot;)},t.A(e.H.U,&quot;click&quot;,()=>{e.H.ne.click()}),t.A(e.H.R,&quot;click&quot;,()=>{u.se()}),t.A(e.H.q,&quot;click&quot;,()=>{o.ie(!o.N())}),t.A(e.H.I,&quot;click&quot;,()=>{o.re()}),t.A(e.H.D,&quot;click&quot;,()=>{o.ae()}),t.A(e.H.ee,&quot;click&quot;,()=>{u.oe();window.o.forEach(e=>e());window.DHT_LOADED=!1}),t.A(e.H.ne,&quot;change&quot;,()=>{Array.prototype.forEach.call(e.H.ne.files,e=>{var%20t=new%20FileReader;t.onload=function(){var%20n={};try{n=JSON.parse(t.result)}catch(t){return%20alert(&quot;Could%20not%20parse%20'&quot;+e.name+&quot;',%20see%20console%20for%20details.&quot;),void%20console.error(t)}s.le(n)?o.ce(e.name,new%20s(n)):alert(&quot;File%20'&quot;+e.name+&quot;'%20has%20an%20invalid%20format.&quot;)};t.readAsText(e,&quot;UTF-8&quot;)});e.H.ne.value=null}),d(&quot;controller&quot;)},oe:function(){e&amp;&amp;(t.O(e.Y),t.O(e.K),e=null)},se:function(){(n={}).K=t.L(`\r\n#dht-cfg-overlay%20{%20position:%20absolute;%20left:%200;%20top:%200;%20width:%20100%;%20height:%20100%;%20background-color:%20#000;%20opacity:%200.5;%20display:%20block;%20z-index:%201000;%20}\r\n#dht-cfg%20{%20position:%20absolute;%20left:%2050%;%20top:%2050%;%20width:%20800px;%20height:%20262px;%20margin-left:%20-400px;%20margin-top:%20-131px;%20padding:%208px;%20background-color:%20#fff;%20z-index:%201001;%20}\r\n#dht-cfg-note%20{%20margin-top:%2022px;%20}\r\n#dht-cfg%20sub%20{%20color:%20#666;%20font-size:%2013px;%20}`),n.de=t.createElement(&quot;div&quot;,document.body,&quot;dht-cfg-overlay&quot;),t.A(n.de,&quot;click&quot;,()=>{u.ue()});var%20e=(e,t,n)=>&quot;<label><input%20id='dht-cfg-&quot;+e+&quot;-&quot;+t+&quot;'%20name='dht-&quot;+e+&quot;'%20type='radio'>%20&quot;+n+&quot;</label><br>&quot;;n.Y=t.createElement(&quot;div&quot;,document.body,&quot;dht-cfg&quot;,`\r\n<label><input%20id='dht-cfg-autoscroll'%20type='checkbox'>%20Autoscroll</label><br>\r\n<br>\r\n<label>After%20reaching%20the%20first%20message%20in%20channel...</label><br>\r\n${e(&quot;afm&quot;,&quot;nothing&quot;,&quot;Do%20Nothing&quot;)}\r\n${e(&quot;afm&quot;,&quot;pause&quot;,&quot;Pause%20Tracking&quot;)}\r\n${e(&quot;afm&quot;,&quot;switch&quot;,&quot;Switch%20to%20Next%20Channel&quot;)}\r\n<br>\r\n<label>After%20reaching%20a%20previously%20saved%20message...</label><br>\r\n${e(&quot;asm&quot;,&quot;nothing&quot;,&quot;Do%20Nothing&quot;)}\r\n${e(&quot;asm&quot;,&quot;pause&quot;,&quot;Pause%20Tracking&quot;)}\r\n${e(&quot;asm&quot;,&quot;switch&quot;,&quot;Switch%20to%20Next%20Channel&quot;)}\r\n<p%20id='dht-cfg-note'>\r\nIt%20is%20recommended%20to%20disable%20link%20and%20image%20previews%20to%20avoid%20putting%20unnecessary%20strain%20on%20your%20browser.<br><br>\r\n<sub>v.23,%20released%2019%20May%202020</sub>\r\n</p>`),n.H={G:t.id(&quot;dht-cfg-autoscroll&quot;),J:{},B:{}},n.H.J[i.fe]=t.id(&quot;dht-cfg-afm-nothing&quot;),n.H.J[i.he]=t.id(&quot;dht-cfg-afm-pause&quot;),n.H.J[i.ge]=t.id(&quot;dht-cfg-afm-switch&quot;),n.H.B[i.fe]=t.id(&quot;dht-cfg-asm-nothing&quot;),n.H.B[i.he]=t.id(&quot;dht-cfg-asm-pause&quot;),n.H.B[i.ge]=t.id(&quot;dht-cfg-asm-switch&quot;),n.H.G.addEventListener(&quot;change&quot;,()=>{a.autoscroll=n.H.G.checked}),Object.keys(n.H.J).forEach(e=>{t.A(n.H.J[e],&quot;click&quot;,()=>{a.afterFirstMsg=e})}),Object.keys(n.H.B).forEach(e=>{t.A(n.H.B[e],&quot;click&quot;,()=>{a.afterSavedMsg=e})}),d(&quot;settings&quot;)},ue:function(){n&amp;&amp;(t.O(n.de),t.O(n.Y),t.O(n.K),n=null)}};return%20u}();class%20s{constructor(e){var%20t=this;s.le(e)||(e={meta:{},data:{}}),t.meta=e.meta,t.data=e.data,t.meta.users=t.meta.users||{},t.meta.userindex=t.meta.userindex||[],t.meta.servers=t.meta.servers||[],t.meta.channels=t.meta.channels||{},t.me={pe:{},ve:new%20Set,Se:new%20Set,Ce:new%20Set}}static%20le(e){return%20e&amp;&amp;&quot;object&quot;==typeof%20e.meta&amp;&amp;&quot;object&quot;==typeof%20e.data}Te(e,t){return%20e%20in%20this.meta.users?e%20in%20this.me.pe?this.me.pe[e]:this.me.pe[e]=this.meta.userindex.findIndex(t=>t==e):(this.meta.users[e]={name:t},this.meta.userindex.push(e),this.me.pe[e]=this.meta.userindex.length-1)}ye(e,t){var%20n=this.meta.servers.findIndex(n=>n.name===e&amp;&amp;n.type===t);return-1===n?(this.meta.servers.push({name:e,type:t}),this.meta.servers.length-1):n}Oe(e,t,n){return%20this.meta.servers[e]?!(t%20in%20this.meta.channels)&amp;&amp;(this.meta.channels[t]={server:e,name:n},this.me.ve.add(t),!0):void%200}Le(e,t,n){var%20s=this.data[e]||(this.data[e]={}),i=t%20in%20s;return%20s[t]=n,this.me.Se.add(t),!i}be(e){var%20t={u:this.Te(e.author.id,e.author.username),t:e.timestamp.toDate().getTime()};return%20e.content.length>0&amp;&amp;(t.m=e.content),null!==e.editedTimestamp&amp;&amp;(t.te=e.editedTimestamp.toDate().getTime()),e.embeds.length>0&amp;&amp;(t.e=e.embeds.map(e=>{let%20t={url:e.url,type:e.type};&quot;rich&quot;===e.type&amp;&amp;Array.isArray(e.title)&amp;&amp;1===e.title.length&amp;&amp;&quot;string&quot;==typeof%20e.title[0]&amp;&amp;(t.t=e.title[0],Array.isArray(e.description)&amp;&amp;1===e.description.length&amp;&amp;&quot;string&quot;==typeof%20e.description[0]&amp;&amp;(t.d=e.description[0]));return%20t})),e.attachments.length>0&amp;&amp;(t.a=e.attachments.map(e=>({url:e.url}))),t}Ae(e){return%20this.me.Ce.has(e)}we(e,t){var%20n=!1;for(var%20s%20of%20t)0===s.type&amp;&amp;&quot;SENT&quot;===s.state&amp;&amp;this.Le(e,s.id,this.be(s))&amp;&amp;(this.me.Ce.add(s.id),n=!0);return%20n}W(){return%20this.me.ve.size}P(){return%20this.me.Se.size}ke(e){var%20t={},n=!1;for(var%20s%20in%20e.meta.users)t[e.meta.userindex.findIndex(e=>e==s)]=this.Te(s,e.meta.users[s].name);for(var%20i%20in%20e.meta.channels){var%20r=e.meta.servers[e.meta.channels[i].server];this.Oe(this.ye(r.name,r.type),i,e.meta.channels[i].name)}for(var%20i%20in%20e.data){var%20a=e.data[i];for(var%20o%20in%20a){var%20l=a[o],c=l.u;c%20in%20t?(l.u=t[c],this.Le(i,o,l)):(n||(n=!0,alert(&quot;The%20uploaded%20archive%20appears%20to%20be%20corrupted,%20some%20messages%20will%20be%20skipped.%20See%20console%20for%20details.&quot;),console.error(&quot;User%20list:&quot;,e.meta.users),console.error(&quot;User%20index:&quot;,e.meta.userindex),console.error(&quot;Generated%20mapping:&quot;,t),console.error(&quot;Missing%20user%20for%20the%20following%20messages:&quot;)),console.error(l))}}}Me(){return%20JSON.stringify({meta:this.meta,data:this.data})}}var%20i={fe:&quot;optNothing&quot;,he:&quot;optPause&quot;,ge:&quot;optSwitch&quot;},r=!1,a=function(){var%20e={},n=[],s=function(){t.k(&quot;DHT_SETTINGS&quot;,e,15768e4)},a=function(e,t){for(var%20i%20of%20n)i(e,t);s()},o=function(e,t,n){var%20s=&quot;_&quot;+t;Object.defineProperty(e,t,{get:()=>e[s],set:n=>{e[s]=n;a(&quot;setting&quot;,t)}}),e[s]=n},l=t.M(&quot;DHT_SETTINGS&quot;);return%20l||(l={_autoscroll:!0,_afterFirstMsg:i.he,_afterSavedMsg:i.he},r=!0),o(e,&quot;autoscroll&quot;,l._autoscroll),o(e,&quot;afterFirstMsg&quot;,l._afterFirstMsg),o(e,&quot;afterSavedMsg&quot;,l._afterSavedMsg),e.Z=function(e){n.push(e)},r&amp;&amp;s(),e}(),o=function(){var%20e=[],n=function(t,n){for(var%20s%20of%20e)s(t,n)};class%20i{constructor(){this.ae()}ae(){this._e=null,this.Ne=!1,this.Ue=null,n(&quot;data&quot;,&quot;reset&quot;)}j(){return%20this._e||(this._e=new%20s),this._e}F(){return%20null!=this._e}N(){return%20this.Ne}ie(e){this.Ne=e,n(&quot;tracking&quot;,e)}ce(e,t){this.Ue=e,this.j().ke(t),n(&quot;data&quot;,&quot;upload&quot;)}re(){this.F()&amp;&amp;t._(this.Ue||&quot;dht.txt&quot;,this._e.Me())}He(e,t,s,i){var%20r=this.j().ye(e,t);!0===this.j().Oe(r,s,i)&amp;&amp;n(&quot;data&quot;,&quot;channel&quot;)}Re(e,t){return!!this.j().we(e,t)&amp;&amp;(n(&quot;data&quot;,&quot;messages&quot;),!0)}Ae(e){return%20this.j().Ae(e)}$(t){e.push(t)}}return%20new%20i}();if(!window.location.href.includes(&quot;discord.com/&quot;)&amp;&amp;!confirm(&quot;Could%20not%20detect%20Discord%20in%20the%20URL,%20do%20you%20want%20to%20run%20the%20script%20anyway?&quot;))return;if(window.DHT_LOADED)return%20void%20alert(&quot;Discord%20History%20Tracker%20is%20already%20loaded.&quot;);window.DHT_LOADED=!0,window.o=[];let%20l=new%20Set,c=function(e){l.add(&quot;stopping&quot;),t.i(()=>{o.ie(!1);l.delete(&quot;stopping&quot;);e&amp;&amp;e()},200)};e.s(n=>{if(o.N()&amp;&amp;0===l.size){let%20s=e.h();if(!s)return%20void%20c();o.He(s.server,s.type,s.id,s.channel);let%20r=e.p();if(null==r)return%20void%20c();if(!r.length)return%20void%20e.C();let%20d=o.Re(s.id,r);if(a.autoscroll){let%20c=null;d||o.Ae(r[0].id)?n||(c=a.afterFirstMsg):c=a.afterSavedMsg,null===c?e.C():(l.add(&quot;stalling&quot;),t.i(()=>{l.delete(&quot;stalling&quot;);let%20t=e.h();if(t&amp;&amp;t.id===s.id){let%20t=e.p();null!=t&amp;&amp;o.Re(s.id,t)}(c===i.ge&amp;&amp;!e.T()||c===i.he)&amp;&amp;o.ie(!1)},250))}}}),o.$((t,n)=>{if(&quot;tracking&quot;===t&amp;&amp;n){let%20t=e.h();if(!t)return%20void%20c(()=>alert(&quot;The%20selected%20channel%20is%20not%20visible%20in%20the%20channel%20list.&quot;));{let%20n=e.p();if(null==n)return%20void%20c(()=>alert(&quot;Cannot%20see%20any%20messages.&quot;));o.He(t.server,t.type,t.id,t.channel),o.Re(t.id,n)}if(a.autoscroll&amp;&amp;e.v())if(e.S())e.C();else{let%20t=a.afterFirstMsg;(t===i.ge&amp;&amp;!e.T()||t===i.he)&amp;&amp;c()}}}),n.X(),r&amp;&amp;n.se();})()" onclick="return false;" onauxclick="return false;" save_image_to_download="true">Discord History Tracker</a></li>
+          <li>Select «Bookmark This Link» and save the bookmark</li>
+          <li>Open <a href="https://discord.com/channels/@me" rel="noreferrer">Discord</a> and click the bookmark to run the script</li>
+        </ol>
+      </div>
+      
+      <h4>Old Versions</h4>
+      <div class="quote">
+        <p>Whenever DHT is fixed to work with a recent Discord update, it will no longer work on the previous version of Discord.</p>
+        <p>If you haven't received that Discord update yet, see <a href="https://github.com/chylex/Discord-History-Tracker/wiki/Release-Notes">Release Notes</a> for information about recent updates, and <a href="https://github.com/chylex/Discord-History-Tracker/wiki/Old-Versions">Old Versions</a> if you need to use an older version of DHT.</p>
+      </div>
+      
+      <h3>Using the Script</h3>
+      <p>When running for the first time, you will see a <strong>Settings</strong>
+ dialog where you can configure the script. These settings will be 
+remembered as long as you don't delete cookies in your browser.</p>
+      <p>By default, Discord History Tracker is set to pause tracking 
+after it reaches a previously saved message to avoid unnecessary history
+ loading. You may also set it to load all channels in the server or your
+ friends list by selecting <strong>Switch to Next Channel</strong>.</p>
+      <p>Once you have configured everything, upload your previously saved archive (if you have any), click <strong>Start Tracking</strong>, and let it run. After the script saves all messages, download the archive.</p>
+      
+      <h2>How to View History</h2>
+      <p>Download the <a href="https://dht.chylex.com/build/viewer.html">Viewer</a>,
+ open it in your browser, and load the archive. By downloading it to 
+your computer, you can view archives offline, and allow the browser to 
+load image previews that might otherwise not load if the remote server 
+prevents embedding them.</p>
+      
+      <h2>External Links</h2>
+      <p class="links">
+        <a href="https://github.com/chylex/Discord-History-Tracker/issues">Issues&nbsp;&amp;&nbsp;Suggestions</a>&nbsp;&nbsp;—&nbsp;
+        <a href="https://github.com/chylex/Discord-History-Tracker">Source&nbsp;Code</a>&nbsp;&nbsp;—&nbsp;
+        <a href="https://twitter.com/chylexmc">Follow&nbsp;Dev&nbsp;on&nbsp;Twitter</a>&nbsp;&nbsp;—&nbsp;
+        <a href="https://www.patreon.com/chylex">Support&nbsp;via&nbsp;Patreon</a>&nbsp;&nbsp;—&nbsp;
+        <a href="https://ko-fi.com/chylex">Support&nbsp;via&nbsp;Ko-fi</a>
+      </p>
+      
+      <h2>Disclaimer</h2>
+      <p>Discord History Tracker and the viewer are fully client-side 
+and do not communicate with any servers – the terms 'Upload' and 
+'Download' only refer to your browser. If you close your browser while 
+the script is running, all unsaved progress will be lost.</p>
+      <p>Please, do not use this script for large or public servers. The
+ script was made as a convenient way of keeping a local copy of private 
+and group chats, as Discord is currently lacking this functionality.</p>
+    </div>
+    
+    <script async="" src="Discord%20History%20Tracker_files/analytics.js"></script><script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create','UA-48632978-5','auto');ga('send','pageview');
+      
+      var contents = document.getElementById("tracker-copy-contents");
+      var issue = document.getElementById("tracker-copy-issue");
+      var button = document.getElementById("tracker-copy-button");
+      
+      if (document.queryCommandSupported("copy")){
+        contents.style.display = "none";
+        issue.style.display = "none";
+      }
+      
+      button.addEventListener("click", function(){
+        contents.style.display = "block";
+        issue.style.display = "block";
+        
+        contents.select();
+        document.execCommand("copy");
+        
+        button.innerHTML = "Copied to Clipboard";
+        contents.style.display = "none";
+        issue.style.display = "none";
+      });
+      
+      contents.addEventListener("click", function(){
+        contents.select();
+      })
+    </script>
+  
+
+</body></html>

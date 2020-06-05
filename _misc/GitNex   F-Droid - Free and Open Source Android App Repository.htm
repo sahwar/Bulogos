@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en"><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GitNex | F-Droid - Free and Open Source Android App Repository</title>
+  <meta name="description" content="© 2010-2020 F-Droid Limited and Contributors">
+
+  <link rel="preload" href="https://f-droid.org/assets/roboto.ttf" as="font" type="font/ttf">
+  <link rel="dns-prefetch" href="https://search.f-droid.org/">
+  <link rel="dns-prefetch" href="https://fdroid.gitlab.io/">
+  <link rel="stylesheet" href="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/main.css">
+  <link rel="canonical" href="https://f-droid.org/en/packages/org.mian.gitnex/">
+  <link rel="alternate" type="application/rss+xml" title="F-Droid - Free and Open Source Android App Repository" href="https://f-droid.org/feed.xml">
+
+  <link href="https://f-droid.org/en/osd.xml" rel="search" title="F-Droid" type="application/opensearchdescription+xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://f-droid.org/assets/apple-touch-icon.png?v=8j6PKzW9Mk">
+  <link rel="icon" type="image/png" sizes="48x48" href="https://f-droid.org/assets/favicon.png?v=8j6PKzW9Mk">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://f-droid.org/assets/favicon-32x32.png?v=8j6PKzW9Mk">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://f-droid.org/assets/favicon-16x16.png?v=8j6PKzW9Mk">
+  <link rel="manifest" href="https://f-droid.org/assets/site.webmanifest?v=8j6PKzW9Mk">
+  <link rel="mask-icon" href="https://f-droid.org/assets/safari-pinned-tab.svg?v=8j6PKzW9Mk" color="#5bbad5">
+  <link rel="shortcut icon" href="https://f-droid.org/assets/favicon.ico?v=8j6PKzW9Mk">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/assets/browserconfig.xml?v=8j6PKzW9Mk">
+  <meta name="theme-color" content="#ffffff">
+
+
+  
+  <link rel="alternate" hreflang="bo" href="https://f-droid.org/en/bo">
+  
+
+  
+  <link rel="alternate" hreflang="de" href="https://f-droid.org/en/de">
+  
+
+  
+  <link rel="alternate" hreflang="es" href="https://f-droid.org/en/es">
+  
+
+  
+  <link rel="alternate" hreflang="fa" href="https://f-droid.org/en/fa">
+  
+
+  
+  <link rel="alternate" hreflang="fr" href="https://f-droid.org/en/fr">
+  
+
+  
+  <link rel="alternate" hreflang="he" href="https://f-droid.org/en/he">
+  
+
+  
+  <link rel="alternate" hreflang="hu" href="https://f-droid.org/en/hu">
+  
+
+  
+  <link rel="alternate" hreflang="is" href="https://f-droid.org/en/is">
+  
+
+  
+  <link rel="alternate" hreflang="it" href="https://f-droid.org/en/it">
+  
+
+  
+  <link rel="alternate" hreflang="ko" href="https://f-droid.org/en/ko">
+  
+
+  
+  <link rel="alternate" hreflang="pl" href="https://f-droid.org/en/pl">
+  
+
+  
+  <link rel="alternate" hreflang="pt-BR" href="https://f-droid.org/en/pt_BR">
+  
+
+  
+  <link rel="alternate" hreflang="ru" href="https://f-droid.org/en/ru">
+  
+
+  
+  <link rel="alternate" hreflang="sq" href="https://f-droid.org/en/sq">
+  
+
+  
+  <link rel="alternate" hreflang="tr" href="https://f-droid.org/en/tr">
+  
+
+  
+  <link rel="alternate" hreflang="uk" href="https://f-droid.org/en/uk">
+  
+
+  
+  <link rel="alternate" hreflang="zh-Hans" href="https://f-droid.org/en/zh_Hans">
+  
+
+  
+  <link rel="alternate" hreflang="zh-Hant" href="https://f-droid.org/en/zh_Hant">
+  
+
+</head>
+
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <header class="site-header">
+
+  <a class="site-title" href="https://f-droid.org/en/">
+    <img src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/fdroid-logo-text.svg" alt="F-Droid">
+  </a>
+
+  <nav class="site-nav">
+    
+      
+        
+        
+          <a class="page-link  current " href="https://f-droid.org/en/packages/">Apps</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link" href="https://forum.f-droid.org/">Forum</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="https://f-droid.org/en/docs/">Docs</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="https://f-droid.org/en/news/">News</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="https://f-droid.org/en/issues/">Issues</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="https://f-droid.org/en/contribute/">Contribute</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="https://f-droid.org/en/about/">About</a>
+        
+      
+    
+  </nav>
+
+</header>
+
+
+      <div class="main-content with-sidebar">
+
+
+        <div class="article-area">
+
+          
+
+<article class="package">
+	<header class="package-header">
+		
+		<img class="package-icon" src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/org_003.png" alt="package icon">
+		
+		<div class="package-title">
+			<h3 class="package-name">
+				GitNex
+			</h3>
+			<div class="package-summary">
+				Client for Gitea
+			</div>
+		</div>
+	</header>
+	
+	<div class="package-whats-new">
+		
+		<div class="new-in-version">New in version 3.0.0-rc1</div>
+		3.0.0-rc1<br><br>Release notes will be published with the stable release.<br>In the mean time check the milestone for pull requests and issues that are merged/closed.<br><br>https://gitea.com/gitnex/GitNex/milestone/172?state=closed<br>
+	</div>
+	
+	<div class="package-description">
+		<p>GitNex is an Android client for Gitea. Gitea is a community managed
+ fork of Gogs, lightweight code hosting solution written in Go.</p><p>Wiki: <a href="https://gitea.com/gitnex/GitNex/wiki" save_image_to_download="true">Wiki</a></p><p>Screenshots: <a href="https://gitea.com/gitnex/GitNex/src/branch/master/fastlane/metadata/android/en-US/images/phoneScreenshots">Screenshots</a></p><p>Release notes: <a href="https://gitea.com/gitnex/GitNex/releases">Release-notes</a></p><p>Features:</p><ul><li> My Repositories</li><li> Repositories list</li><li> Organizations list</li><li> Create new repository</li><li> Create new organization</li><li> Search/filter repositories and organizations</li><li> Profile view</li><li> Repository stars, watchers, issues count</li><li> Issues list</li><li> Issue comments</li><li> Comment on issues</li><li> Search issues in issues list</li><li> Create new issue with multiple assignees, labels, milestone, due date</li><li> Create label</li><li> Repository information</li><li> Milestones list</li><li> Create new milestone</li><li> Branches list</li><li> Releases with source download</li><li> Collaborators view for repository</li><li> Markdown support</li><li> Emoji support</li><li> Settings: Pretty and Normal time format, language change</li><li> Option to access local non https installs</li></ul>
+	</div>
+	
+	<ul class="package-links">
+		
+		<li class="package-link">
+			License:<a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html">GNU General Public License v3.0 only</a>
+		</li>
+		
+		<li class="package-link">
+			<a href="https://gitnex.com/">Website</a>
+		</li>
+		
+		
+		<li class="package-link">
+			<a href="https://gitea.com/gitnex/GitNex/issues">Issue Tracker</a>
+		</li>
+		
+		
+		<li class="package-link">
+			<a href="https://crowdin.com/project/GitNex">Translation</a>
+		</li>
+		
+		
+		<li class="package-link">
+			<a href="https://gitea.com/gitnex/GitNex/src/branch/master">Source Code</a>
+		</li>
+		
+		
+		<li class="package-link">
+			<a href="https://gitea.com/gitnex/GitNex/src/branch/master/CHANGELOG.md">Changelog</a>
+		</li>
+		
+		<li class="package-link">
+			<a href="https://gitlab.com/fdroid/fdroiddata/tree/master/metadata/org.mian.gitnex.yml">Build Metadata</a>
+		</li>
+		<li class="package-link">
+			<a href="https://f-droid.org/wiki/page/org.mian.gitnex">Technical info</a>
+		</li>
+	</ul>
+
+	
+	<h3>Donate</h3>
+	<ul class="package-links donate-options">
+		
+		
+		<li class="package-link">
+			<a href="https://liberapay.com/~1547671"><img src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/liberapay_donate_button.svg" alt=""></a>
+		</li>
+		
+		
+		
+		
+		
+		<li class="package-link">
+			
+			<a href="https://www.patreon.com/mmarif">Donate: https://www.patreon.com/mmarif</a>
+			
+		</li>
+		
+	</ul>
+	
+
+	
+	<div id="screenshots" class="js_slides screenshots slider">
+		<div class="frame js_frame">
+			<ul class="slides js_slides gallery" style="transition-timing-function: ease; transition-duration: 300ms; transform: translate3d(-10px, 0px, 0px);">
+				
+				<li class="js_slide screenshot active"><img src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/001.png" alt="app screenshot"></li>
+				
+				<li class="js_slide screenshot"><img src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/002.png" alt="app screenshot"></li>
+				
+				<li class="js_slide screenshot"><img src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/003.png" alt="app screenshot"></li>
+				
+				<li class="js_slide screenshot"><img src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/004.png" alt="app screenshot"></li>
+				
+				<li class="js_slide screenshot"><img src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/005.png" alt="app screenshot"></li>
+				
+				<li class="js_slide screenshot"><img src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/006.png" alt="app screenshot"></li>
+				
+				<li class="js_slide screenshot"><img src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/007.png" alt="app screenshot"></li>
+				
+				<li class="js_slide screenshot"><img src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/008.png" alt="app screenshot"></li>
+				
+			</ul>
+		</div>
+		<span class="js_prev slider_nav prev disabled" style="display: block;">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"></path></g></svg>
+		</span>
+		<span class="js_next slider_nav next" style="display: block;">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"></path></g></svg>
+		</span>
+	</div>
+	
+
+	<div class="package-versions">
+		<h3>Packages</h3>
+		<p>
+			Although APK downloads are available below to give you the choice, 
+you should be aware that by installing that way you will not receive 
+update notifications and it's a less secure way to download. We 
+recommend that you install the F-Droid client and use that.
+		</p>
+		<a href="https://f-droid.org/F-Droid.apk" class="material-button">Download F-Droid</a>
+		<ul class="package-versions-list">
+			
+			<li class="package-version" id="latest">
+			<a name="suggested"></a>
+				<div class="package-version-header">
+					
+					
+					<a name="3.0.0-rc1"></a>
+					<a name="295"></a>
+					
+					
+					<b>Version 3.0.0-rc1</b> (295)
+					<span class="suggested-badge">suggested</span>
+					
+					Added on 2020-06-04
+				</div>
+				<p class="package-version-requirement">
+					
+					
+					This version requires Android 5.0 or newer.
+				</p>
+
+				<p class="package-version-source">
+					
+					
+					
+					It is built and signed by F-Droid, and guaranteed to correspond to <a href="https://f-droid.org/repo/org.mian.gitnex_295_src.tar.gz">this source tarball</a>.
+					
+				</p>
+
+				
+
+				
+				<div class="package-version-permissions">
+					<details open="">
+						<summary class="package-version-permissions-summary">
+							Permissions
+						</summary>
+						<ul class="package-version-permissions-list">
+							
+
+							<li class="permission">
+
+							
+								
+								<div class="permission-label">have full network access</div>
+								<div class="permission-description">Allows the app to create 
+network sockets and use custom network protocols. The browser and other 
+applications provide means to send data to the internet, so this 
+permission is not required to send data to the internet.</div>
+							
+
+							
+
+							</li>
+							
+
+							<li class="permission">
+
+							
+								
+								<div class="permission-label">view network connections</div>
+								<div class="permission-description">Allows the app to view information about network connections such as which networks exist and are connected.</div>
+							
+
+							
+
+							</li>
+							
+						</ul>
+					</details>
+				</div>
+				
+
+				
+				<p class="package-version-download">
+					<b>
+						<a href="https://f-droid.org/repo/org.mian.gitnex_295.apk">
+							
+							Download APK
+						</a>
+					</b>
+					24 MiB
+					<a href="https://f-droid.org/repo/org.mian.gitnex_295.apk.asc">PGP Signature</a>
+				</p>
+
+			</li>
+
+			
+			<li class="package-version">
+			
+				<div class="package-version-header">
+					
+					
+					<a name="2.5.1"></a>
+					<a name="251"></a>
+					
+					
+					<b>Version 2.5.1</b> (251)
+					 - 
+					
+					Added on 2020-05-02
+				</div>
+				<p class="package-version-requirement">
+					
+					
+					This version requires Android 5.0 or newer.
+				</p>
+
+				<p class="package-version-source">
+					
+					
+					
+					It is built and signed by F-Droid, and guaranteed to correspond to <a href="https://f-droid.org/repo/org.mian.gitnex_251_src.tar.gz">this source tarball</a>.
+					
+				</p>
+
+				
+
+				
+				<div class="package-version-permissions">
+					<details>
+						<summary class="package-version-permissions-summary">
+							Permissions
+						</summary>
+						<ul class="package-version-permissions-list">
+							
+
+							<li class="permission">
+
+							
+								
+								<div class="permission-label">have full network access</div>
+								<div class="permission-description">Allows the app to create 
+network sockets and use custom network protocols. The browser and other 
+applications provide means to send data to the internet, so this 
+permission is not required to send data to the internet.</div>
+							
+
+							
+
+							</li>
+							
+
+							<li class="permission">
+
+							
+								
+								<div class="permission-label">view network connections</div>
+								<div class="permission-description">Allows the app to view information about network connections such as which networks exist and are connected.</div>
+							
+
+							
+
+							</li>
+							
+
+							<li class="permission">
+
+							
+								
+								<div class="permission-label">modify or delete the contents of your shared storage</div>
+								<div class="permission-description">Allows the app to write the contents of your shared storage.</div>
+							
+
+							
+
+							</li>
+							
+
+							<li class="permission">
+
+							
+								
+								<div class="permission-label">read the contents of your shared storage</div>
+								<div class="permission-description">Allows the app to read the contents of your shared storage.</div>
+							
+
+							
+
+							</li>
+							
+						</ul>
+					</details>
+				</div>
+				
+
+				
+				<p class="package-version-download">
+					<b>
+						<a href="https://f-droid.org/repo/org.mian.gitnex_251.apk">
+							
+							Download APK
+						</a>
+					</b>
+					24 MiB
+					<a href="https://f-droid.org/repo/org.mian.gitnex_251.apk.asc">PGP Signature</a>
+				</p>
+
+			</li>
+
+			
+			<li class="package-version">
+			
+				<div class="package-version-header">
+					
+					
+					<a name="2.5.0"></a>
+					<a name="250"></a>
+					
+					
+					<b>Version 2.5.0</b> (250)
+					 - 
+					
+					Added on 2020-04-23
+				</div>
+				<p class="package-version-requirement">
+					
+					
+					This version requires Android 5.0 or newer.
+				</p>
+
+				<p class="package-version-source">
+					
+					
+					
+					It is built and signed by F-Droid, and guaranteed to correspond to <a href="https://f-droid.org/repo/org.mian.gitnex_250_src.tar.gz">this source tarball</a>.
+					
+				</p>
+
+				
+
+				
+				<div class="package-version-permissions">
+					<details>
+						<summary class="package-version-permissions-summary">
+							Permissions
+						</summary>
+						<ul class="package-version-permissions-list">
+							
+
+							<li class="permission">
+
+							
+								
+								<div class="permission-label">have full network access</div>
+								<div class="permission-description">Allows the app to create 
+network sockets and use custom network protocols. The browser and other 
+applications provide means to send data to the internet, so this 
+permission is not required to send data to the internet.</div>
+							
+
+							
+
+							</li>
+							
+
+							<li class="permission">
+
+							
+								
+								<div class="permission-label">view network connections</div>
+								<div class="permission-description">Allows the app to view information about network connections such as which networks exist and are connected.</div>
+							
+
+							
+
+							</li>
+							
+
+							<li class="permission">
+
+							
+								
+								<div class="permission-label">modify or delete the contents of your shared storage</div>
+								<div class="permission-description">Allows the app to write the contents of your shared storage.</div>
+							
+
+							
+
+							</li>
+							
+
+							<li class="permission">
+
+							
+								
+								<div class="permission-label">read the contents of your shared storage</div>
+								<div class="permission-description">Allows the app to read the contents of your shared storage.</div>
+							
+
+							
+
+							</li>
+							
+						</ul>
+					</details>
+				</div>
+				
+
+				
+				<p class="package-version-download">
+					<b>
+						<a href="https://f-droid.org/repo/org.mian.gitnex_250.apk">
+							
+							Download APK
+						</a>
+					</b>
+					24 MiB
+					<a href="https://f-droid.org/repo/org.mian.gitnex_250.apk.asc">PGP Signature</a>
+				</p>
+
+			</li>
+
+			
+
+		</ul>
+
+	</div>
+
+</article>
+
+<script src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/lory.js"></script>
+<script src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/package.js"></script>
+
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar-widget language">
+            
+
+
+
+<form action="/packages/org.mian.gitnex/index.html" method="get">
+
+  <select id="language-chooser-select" name="lang" autocomplete="off">
+    
+      <option value="bo">
+        བོད་སྐད་
+      </option>
+    
+      <option value="en" selected="selected">
+        English
+      </option>
+    
+      <option value="de">
+        Deutsch
+      </option>
+    
+      <option value="es">
+        español
+      </option>
+    
+      <option value="fa">
+        فارسی
+      </option>
+    
+      <option value="fr">
+        français
+      </option>
+    
+      <option value="he">
+        עברית
+      </option>
+    
+      <option value="hu">
+        magyar
+      </option>
+    
+      <option value="is">
+        íslenska
+      </option>
+    
+      <option value="it">
+        italiano
+      </option>
+    
+      <option value="ko">
+        한국어
+      </option>
+    
+      <option value="pl">
+        polski
+      </option>
+    
+      <option value="pt_BR">
+        português do Brasil
+      </option>
+    
+      <option value="ru">
+        русский
+      </option>
+    
+      <option value="sq">
+        shqip
+      </option>
+    
+      <option value="tr">
+        Türkçe
+      </option>
+    
+      <option value="uk">
+        українська
+      </option>
+    
+      <option value="zh_Hans">
+        简体中文
+      </option>
+    
+      <option value="zh_Hant">
+        繁體中文
+      </option>
+    
+  </select>
+
+  <script src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/sidebar-lang.js"></script>
+
+  <noscript>
+    <input id="language-chooser-submit" type="submit" value="Change" />
+  </noscript>
+
+</form>
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Find Apps</h3>
+
+<div>
+  <form method="get" class="search-form" action="https://search.f-droid.org/">
+    <div class="search-input-wrp">
+      <input type="search" class="search-input" name="q">
+    </div>
+    <input type="hidden" name="lang" value="en">
+    <input type="submit" value="Search" class="material-button">
+  </form>
+</div>
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Last Updated</h3>
+
+
+
+
+
+
+
+
+<a class="package-header" href="https://f-droid.org/en/packages/org.tuxpaint">
+    
+	<img class="package-icon" src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/org.png">
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Tux Paint
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">A drawing program for children.</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="https://f-droid.org/en/packages/org.schabi.newpipe">
+    
+	<img class="package-icon" src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/org_002.png">
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			NewPipe
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Lightweight YouTube frontend</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+<a class="package-header" href="https://f-droid.org/en/packages/org.mian.gitnex">
+    
+	<img class="package-icon" src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/org_003.png">
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			GitNex
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Client for Gitea</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+<!-- no nice ones found, failing back to any -->
+
+
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Latest Apps</h3>
+
+
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="https://f-droid.org/en/packages/godau.fynn.usagedirect">
+    
+	<img class="package-icon" src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/icon_AeFumVCZ1nFbkxiA9x1Ui-6g0BCAYC2On7ubTFYzQQE.png">
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			usageDirect
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Display system usage statistics</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="https://f-droid.org/en/packages/io.github.domi04151309.home">
+    
+	<img class="package-icon" src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/icon_dGuq6xh4f063hcgWzaxvdzmR01IdkWDvMhfoZUFkicE.png">
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Home
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">A little smart home app for Philips Hue, Arduino and other devices</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="https://f-droid.org/en/packages/com.smilla.greentooth">
+    
+	<img class="package-icon" src="GitNex%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/icon_8WaREJ2f7uFLdL9QGDL4xSqsIRB7wgdwv9BY_ET0WEg.png">
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Greentooth
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Automatic Bluetooth disabler</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+<!-- no nice ones found, failing back to any -->
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="site-description">
+      <p>
+        © 2010-2020 F-Droid Limited and Contributors
+        <span class="version">
+          (F-Droid 2020-06-04, fdroid-website <a href="https://gitlab.com/fdroid/fdroid-website/tree/ce4280d421">2.8</a>)
+        </span>
+	<span class="edit-this-page-area"><a href="https://gitlab.com/fdroid/fdroid-website/edit/master/" target="_blank">
+	    Edit on GitLab
+	  </a></span>
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+
+    </div>
+
+  
+
+
+<span style="border-radius: 3px !important; text-indent: 20px !important; width: auto !important; padding: 0px 4px 0px 0px !important; text-align: center !important; font: bold 11px / 20px &quot;Helvetica Neue&quot;, Helvetica, sans-serif !important; color: rgb(255, 255, 255) !important; background: rgb(230, 0, 35) url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) no-repeat scroll 3px 50% / 14px 14px !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: medium none !important; top: 1679.75px; left: 484.5px;">Save</span><span style="width: 24px !important; height: 24px !important; background: rgba(0, 0, 0, 0.4) url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxtYXNrIGlkPSJtIj48cmVjdCBmaWxsPSIjZmZmIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHJ4PSI2IiByeT0iNiIvPjxyZWN0IGZpbGw9IiMwMDAiIHg9IjUiIHk9IjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgcng9IjEiIHJ5PSIxIi8+PHJlY3QgZmlsbD0iIzAwMCIgeD0iMTAiIHk9IjAiIHdpZHRoPSI0IiBoZWlnaHQ9IjI0Ii8+PHJlY3QgZmlsbD0iIzAwMCIgeD0iMCIgeT0iMTAiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0Ii8+PC9tYXNrPjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9IiNmZmYiIG1hc2s9InVybCgjbSkiLz48L3N2Zz4=&quot;) no-repeat scroll 50% 50% / 14px 14px !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: medium none !important; border-radius: 12px; top: 1679.75px; left: 692.5px;"></span></body></html>

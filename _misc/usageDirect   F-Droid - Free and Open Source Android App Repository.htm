@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en"><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>usageDirect | F-Droid - Free and Open Source Android App Repository</title>
+  <meta name="description" content="© 2010-2020 F-Droid Limited and Contributors">
+
+  <link rel="preload" href="https://f-droid.org/assets/roboto.ttf" as="font" type="font/ttf">
+  <link rel="dns-prefetch" href="https://search.f-droid.org/">
+  <link rel="dns-prefetch" href="https://fdroid.gitlab.io/">
+  <link rel="stylesheet" href="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/main.css">
+  <link rel="canonical" href="https://f-droid.org/en/packages/godau.fynn.usagedirect/">
+  <link rel="alternate" type="application/rss+xml" title="F-Droid - Free and Open Source Android App Repository" href="https://f-droid.org/feed.xml">
+
+  <link href="https://f-droid.org/en/osd.xml" rel="search" title="F-Droid" type="application/opensearchdescription+xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://f-droid.org/assets/apple-touch-icon.png?v=8j6PKzW9Mk">
+  <link rel="icon" type="image/png" sizes="48x48" href="https://f-droid.org/assets/favicon.png?v=8j6PKzW9Mk">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://f-droid.org/assets/favicon-32x32.png?v=8j6PKzW9Mk">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://f-droid.org/assets/favicon-16x16.png?v=8j6PKzW9Mk">
+  <link rel="manifest" href="https://f-droid.org/assets/site.webmanifest?v=8j6PKzW9Mk">
+  <link rel="mask-icon" href="https://f-droid.org/assets/safari-pinned-tab.svg?v=8j6PKzW9Mk" color="#5bbad5">
+  <link rel="shortcut icon" href="https://f-droid.org/assets/favicon.ico?v=8j6PKzW9Mk">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/assets/browserconfig.xml?v=8j6PKzW9Mk">
+  <meta name="theme-color" content="#ffffff">
+
+
+  
+  <link rel="alternate" hreflang="bo" href="https://f-droid.org/en/bo">
+  
+
+  
+  <link rel="alternate" hreflang="de" href="https://f-droid.org/en/de">
+  
+
+  
+  <link rel="alternate" hreflang="es" href="https://f-droid.org/en/es">
+  
+
+  
+  <link rel="alternate" hreflang="fa" href="https://f-droid.org/en/fa">
+  
+
+  
+  <link rel="alternate" hreflang="fr" href="https://f-droid.org/en/fr">
+  
+
+  
+  <link rel="alternate" hreflang="he" href="https://f-droid.org/en/he">
+  
+
+  
+  <link rel="alternate" hreflang="hu" href="https://f-droid.org/en/hu">
+  
+
+  
+  <link rel="alternate" hreflang="is" href="https://f-droid.org/en/is">
+  
+
+  
+  <link rel="alternate" hreflang="it" href="https://f-droid.org/en/it">
+  
+
+  
+  <link rel="alternate" hreflang="ko" href="https://f-droid.org/en/ko">
+  
+
+  
+  <link rel="alternate" hreflang="pl" href="https://f-droid.org/en/pl">
+  
+
+  
+  <link rel="alternate" hreflang="pt-BR" href="https://f-droid.org/en/pt_BR">
+  
+
+  
+  <link rel="alternate" hreflang="ru" href="https://f-droid.org/en/ru">
+  
+
+  
+  <link rel="alternate" hreflang="sq" href="https://f-droid.org/en/sq">
+  
+
+  
+  <link rel="alternate" hreflang="tr" href="https://f-droid.org/en/tr">
+  
+
+  
+  <link rel="alternate" hreflang="uk" href="https://f-droid.org/en/uk">
+  
+
+  
+  <link rel="alternate" hreflang="zh-Hans" href="https://f-droid.org/en/zh_Hans">
+  
+
+  
+  <link rel="alternate" hreflang="zh-Hant" href="https://f-droid.org/en/zh_Hant">
+  
+
+</head>
+
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <header class="site-header">
+
+  <a class="site-title" href="https://f-droid.org/en/">
+    <img src="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/fdroid-logo-text.svg" alt="F-Droid">
+  </a>
+
+  <nav class="site-nav">
+    
+      
+        
+        
+          <a class="page-link  current " href="https://f-droid.org/en/packages/">Apps</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link" href="https://forum.f-droid.org/">Forum</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="https://f-droid.org/en/docs/">Docs</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="https://f-droid.org/en/news/">News</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="https://f-droid.org/en/issues/">Issues</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="https://f-droid.org/en/contribute/">Contribute</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="https://f-droid.org/en/about/">About</a>
+        
+      
+    
+  </nav>
+
+</header>
+
+
+      <div class="main-content with-sidebar">
+
+
+        <div class="article-area">
+
+          
+
+<article class="package">
+	<header class="package-header">
+		
+		<img class="package-icon" src="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/icon_AeFumVCZ1nFbkxiA9x1Ui-6g0BCAYC2On7ubTFYzQQE.png" alt="package icon">
+		
+		<div class="package-title">
+			<h3 class="package-name">
+				usageDirect
+			</h3>
+			<div class="package-summary">
+				Display system usage statistics
+			</div>
+		</div>
+	</header>
+	
+	<div class="package-whats-new">
+		
+		<div class="new-in-version">New in version 0.1</div>
+		Changes compared to the sample provided by the AOSP:<br><br>* Display time used<br>* Sort by time used<br>* Display last time used relative to current time<br>* Filter unused apps<br>* Don't block main thread when loading icons<br>* Improved initial startup<br>* Prettyfied layout<br>
+	</div>
+	
+	<div class="package-description">
+		Since Android 5.0, the Android system collects usage statistics, like 
+how long applications are in foreground, in the background. This simple 
+application allows viewing this information similar to the view present 
+in stock Android in the INFO debug menu.<br><br>It a fork of the Android sample "AppUsageStatistics".<br>
+	</div>
+	
+	<ul class="package-links">
+		
+		<div class="package-link">
+			Author:
+			<a href="mailto:fynngodau@mailbox.org?subject=F-Droid - Free and Open Source Android App Repository%20on%20">
+				
+				Fynn Godau
+				
+			</a>
+		</div>
+		
+		<li class="package-link">
+			License:<a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+		</li>
+		
+		
+		<li class="package-link">
+			<a href="https://codeberg.org/fynngodau/usageDirect/issues">Issue Tracker</a>
+		</li>
+		
+		
+		
+		<li class="package-link">
+			<a href="https://codeberg.org/fynngodau/usageDirect">Source Code</a>
+		</li>
+		
+		
+		<li class="package-link">
+			<a href="https://gitlab.com/fdroid/fdroiddata/tree/master/metadata/godau.fynn.usagedirect.yml">Build Metadata</a>
+		</li>
+		<li class="package-link">
+			<a href="https://f-droid.org/wiki/page/godau.fynn.usagedirect">Technical info</a>
+		</li>
+	</ul>
+
+	
+
+	
+	<div id="screenshots" class="js_slides screenshots slider">
+		<div class="frame js_frame">
+			<ul class="slides js_slides gallery" style="transition-timing-function: ease; transition-duration: 600ms; transform: translate3d(-10px, 0px, 0px);">
+				
+				<li class="js_slide screenshot active"><img src="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/0.png" alt="app screenshot"></li>
+				
+				<li class="js_slide screenshot"><img src="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/1.png" alt="app screenshot"></li>
+				
+			</ul>
+		</div>
+		<span class="js_prev slider_nav prev disabled" style="display: block;">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"></path></g></svg>
+		</span>
+		<span class="js_next slider_nav next" style="display: block;">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"></path></g></svg>
+		</span>
+	</div>
+	
+
+	<div class="package-versions">
+		<h3>Packages</h3>
+		<p>
+			Although APK downloads are available below to give you the choice, 
+you should be aware that by installing that way you will not receive 
+update notifications and it's a less secure way to download. We 
+recommend that you install the F-Droid client and use that.
+		</p>
+		<a href="https://f-droid.org/F-Droid.apk" class="material-button">Download F-Droid</a>
+		<ul class="package-versions-list">
+			
+			<li class="package-version" id="latest">
+			<a name="suggested"></a>
+				<div class="package-version-header">
+					
+					
+					<a name="0.1"></a>
+					<a name="1"></a>
+					
+					
+					<b>Version 0.1</b> (1)
+					<span class="suggested-badge">suggested</span>
+					
+					Added on 2020-06-02
+				</div>
+				<p class="package-version-requirement">
+					
+					
+					This version requires Android 5.0 or newer.
+				</p>
+
+				<p class="package-version-source">
+					
+					
+					
+					It is built and signed by F-Droid, and guaranteed to correspond to <a href="https://f-droid.org/repo/godau.fynn.usagedirect_1_src.tar.gz">this source tarball</a>.
+					
+				</p>
+
+				
+
+				
+				<div class="package-version-permissions">
+					<details open="">
+						<summary class="package-version-permissions-summary">
+							Permissions
+						</summary>
+						<ul class="package-version-permissions-list">
+							
+
+							<li class="permission">
+
+							
+								
+								<div class="permission-label"></div>
+								<div class="permission-description"></div>
+							
+
+							
+
+							</li>
+							
+						</ul>
+					</details>
+				</div>
+				
+
+				
+				<p class="package-version-download">
+					<b>
+						<a href="https://f-droid.org/repo/godau.fynn.usagedirect_1.apk">
+							
+							Download APK
+						</a>
+					</b>
+					2.3 MiB
+					<a href="https://f-droid.org/repo/godau.fynn.usagedirect_1.apk.asc">PGP Signature</a>
+				</p>
+
+			</li>
+
+			
+
+		</ul>
+
+	</div>
+
+</article>
+
+<script src="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/lory.js"></script>
+<script src="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/package.js"></script>
+
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar-widget language">
+            
+
+
+
+<form action="/packages/godau.fynn.usagedirect/index.html" method="get">
+
+  <select id="language-chooser-select" name="lang" autocomplete="off">
+    
+      <option value="bo">
+        བོད་སྐད་
+      </option>
+    
+      <option value="en" selected="selected">
+        English
+      </option>
+    
+      <option value="de">
+        Deutsch
+      </option>
+    
+      <option value="es">
+        español
+      </option>
+    
+      <option value="fa">
+        فارسی
+      </option>
+    
+      <option value="fr">
+        français
+      </option>
+    
+      <option value="he">
+        עברית
+      </option>
+    
+      <option value="hu">
+        magyar
+      </option>
+    
+      <option value="is">
+        íslenska
+      </option>
+    
+      <option value="it">
+        italiano
+      </option>
+    
+      <option value="ko">
+        한국어
+      </option>
+    
+      <option value="pl">
+        polski
+      </option>
+    
+      <option value="pt_BR">
+        português do Brasil
+      </option>
+    
+      <option value="ru">
+        русский
+      </option>
+    
+      <option value="sq">
+        shqip
+      </option>
+    
+      <option value="tr">
+        Türkçe
+      </option>
+    
+      <option value="uk">
+        українська
+      </option>
+    
+      <option value="zh_Hans">
+        简体中文
+      </option>
+    
+      <option value="zh_Hant">
+        繁體中文
+      </option>
+    
+  </select>
+
+  <script src="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/sidebar-lang.js"></script>
+
+  <noscript>
+    <input id="language-chooser-submit" type="submit" value="Change" />
+  </noscript>
+
+</form>
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Find Apps</h3>
+
+<div>
+  <form method="get" class="search-form" action="https://search.f-droid.org/">
+    <div class="search-input-wrp">
+      <input type="search" class="search-input" name="q">
+    </div>
+    <input type="hidden" name="lang" value="en">
+    <input type="submit" value="Search" class="material-button">
+  </form>
+</div>
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Last Updated</h3>
+
+
+
+
+
+
+
+
+<a class="package-header" href="https://f-droid.org/en/packages/org.tuxpaint">
+    
+	<img class="package-icon" src="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/org.png">
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Tux Paint
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">A drawing program for children.</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="https://f-droid.org/en/packages/org.schabi.newpipe">
+    
+	<img class="package-icon" src="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/org_003.png">
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			NewPipe
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Lightweight YouTube frontend</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+<a class="package-header" href="https://f-droid.org/en/packages/org.mian.gitnex">
+    
+	<img class="package-icon" src="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/org_002.png">
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			GitNex
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Client for Gitea</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+<!-- no nice ones found, failing back to any -->
+
+
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Latest Apps</h3>
+
+
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="https://f-droid.org/en/packages/godau.fynn.usagedirect">
+    
+	<img class="package-icon" src="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/icon_AeFumVCZ1nFbkxiA9x1Ui-6g0BCAYC2On7ubTFYzQQE.png">
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			usageDirect
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Display system usage statistics</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="https://f-droid.org/en/packages/io.github.domi04151309.home">
+    
+	<img class="package-icon" src="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/icon_dGuq6xh4f063hcgWzaxvdzmR01IdkWDvMhfoZUFkicE.png">
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Home
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">A little smart home app for Philips Hue, Arduino and other devices</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="https://f-droid.org/en/packages/com.smilla.greentooth">
+    
+	<img class="package-icon" src="usageDirect%20%20%20F-Droid%20-%20Free%20and%20Open%20Source%20Android%20App%20Repository_files/icon_8WaREJ2f7uFLdL9QGDL4xSqsIRB7wgdwv9BY_ET0WEg.png">
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Greentooth
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Automatic Bluetooth disabler</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+<!-- no nice ones found, failing back to any -->
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="site-description">
+      <p>
+        © 2010-2020 F-Droid Limited and Contributors
+        <span class="version">
+          (F-Droid 2020-06-04, fdroid-website <a href="https://gitlab.com/fdroid/fdroid-website/tree/ce4280d421">2.8</a>)
+        </span>
+	<span class="edit-this-page-area"><a href="https://gitlab.com/fdroid/fdroid-website/edit/master/" target="_blank">
+	    Edit on GitLab
+	  </a></span>
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+
+    </div>
+
+  
+
+
+</body></html>

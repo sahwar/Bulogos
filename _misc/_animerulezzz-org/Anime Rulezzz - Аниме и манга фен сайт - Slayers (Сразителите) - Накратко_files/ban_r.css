@@ -1,0 +1,50 @@
+div#bot_desk{
+	position:relative;
+	top:-20px;
+	background-color:#fafaff;
+	text-align:center;
+	width:110px;
+	height:290px;
+	padding:5px;
+	border:1px;
+	margin-bottom:20px;
+}
+img#body{
+	position:relative;top:80px;
+}
+img#balloon{
+	position:relative;
+	top:-110px;
+	visibility:hidden;
+}
+div#bot_talk{
+	width:80px;
+	height:58px;
+	padding:0px;
+	position:relative;
+	top:-205px;
+	left:13px;
+	font-family:Verdana,Arial,Sans-serif;
+	font-size:11px;
+	text-align:center;
+	overflow:hidden;
+	visibility:hidden;
+}
+div#bot_face_box{
+	padding:0px;
+	width:80px;height:64px;
+	position:relative;
+	top:-182px;
+	left:13px;
+}
+textarea#talk_text{
+	position:relative;
+	top:-140px;
+	background:lightgreen;
+	width:80%;
+	height:50px;
+}
+input#talk_button{
+	position:relative;
+	top:-130px;
+}

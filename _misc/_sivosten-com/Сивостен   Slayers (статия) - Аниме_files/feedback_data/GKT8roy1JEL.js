@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["BS14j"]); }
+
+__d("requestAnimationFrame",["TimerStorage","TimeSlice","requestAnimationFrameAcrossTransitions"],(function(a,b,c,d,e,f){function a(a,c){function d(c){b("TimerStorage").unset(b("TimerStorage").ANIMATION_FRAME,e),a(c)}b("TimeSlice").copyGuardForWrapper(a,d);d.__originalCallback=a;var e=b("requestAnimationFrameAcrossTransitions")(d,c);b("TimerStorage").set(b("TimerStorage").ANIMATION_FRAME,e);return e}e.exports=a}),null);

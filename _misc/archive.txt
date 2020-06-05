@@ -1,0 +1,2 @@
+cd /copy-path
+tar -cj * > archive-$(date +%a).tar.bz2

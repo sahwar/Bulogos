@@ -1,0 +1,39 @@
+/*!
+
+Main file:
+
+https://github.com/sahwar/Bulogos/blob/master/inlinetooltip.1.0(_like-qTip2).js
+This is just the accompanying CSS stylesheet (Department of Redundant Redundancy vibes, yeah... :P ) file!
+
+https://gist.github.com/nickolasreynolds/9305955
+https://gist.github.com/sahwar/60e6a740f2656abd6337
+
+    Stylesheet for use with Simple Inline Tooltips v1.0
+    http://www.infinitegyre.com/2014/03/simple-inline-tooltips.html
+
+*/
+
+
+[id^="iltt_child"] {
+
+    /* Styling for the tooltips when visible. This is all safe to
+       edit. */
+
+    background:     #f3f3f3;
+    box-sizing:     border-box;
+    border-radius:  0.4em;
+    border:         1px solid #d3d3d3;
+    box-shadow:     0px 0px 9px rgba(0, 0, 0, 0.3);
+    padding:        9px;
+
+}
+
+.iltt {
+
+    /* DO NOT REMOVE THIS. It's to ensure the tooltips are hidden
+       by default, as they should be, even for users with scripts
+       disabled. */
+
+    display: none;
+
+}

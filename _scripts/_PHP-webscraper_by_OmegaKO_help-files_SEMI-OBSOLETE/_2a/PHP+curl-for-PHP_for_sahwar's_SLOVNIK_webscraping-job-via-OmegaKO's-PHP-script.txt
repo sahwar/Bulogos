@@ -1,0 +1,72 @@
+﻿On Ubuntu/Debian:
+1. Install all prerequisite packages (dependencies):
+$ sudo apt-get install php5-cli php5-common curl libcurl3 libcurl3-dev php5-mcrypt php5-curl php5-json
+2. Find the folder where OmegaKO's .php web-scraping script is located.
+3. Copy the .php script and modify it as needed to suit the corpus (online dictionary) that you want to download.
+4. Run the .php script (you may open multiple terminals or terminal tabs and run multiple versions of the .php script simultaneously to download more things at the same time) from the GNU/Linux GUI terminal or from the choco command of cmd.exe if you have Chocalatey installed on Windows (and you have installed php and http://curl.haxx.se/libcurl/php/install.html#windows from it). You may want to use proxies with CURL as to not get blocked by IP because of multiple successive or simultaneous downloads from a particular website...
+5. Use Notepad++ and sahwar's regexes listed [here] to clean up the downloaded dictionary date and prepare it for use or for converting into a specific dictionary formats, or a general format.
+
+---
+
+PHP installation in Windows - Please make sure you have CGI installed in IIS for local hosting
+ Downloading php 64 bit
+   from 'http://windows.php.net/downloads/releases/archives/php-5.6.3-nts-Win32-VC11-x64.zip'
+ Extracting C:\Users\Aspire\AppData\Local\Temp\chocolatey\php\phpInstall.zip to C:\tools\php...
+ Mode                LastWriteTime     Length Name
+ ----                -------------     ------ ----
+ d----        06/13/2015     05:49            php
+ C:\tools\php
+ PHP installed in C:\tools\php
+ The install of php was successful.
+
+
+C:\tools\php
+
+php-win.exe
+
+
+
+http://eurodict.com/A+searchid-9498-ed_en_bg.html
+http://eurodict.com/searchid-32260-ed_en_bg.html
+http://eurodict.com/searchid-70874-ed_en_bg.html = embus
+----
+USE THIS RANGE:
+http://eurodict.com/searchid-70874-ed_en_bg.html
+-
+http://eurodict.com/searchid-101645-ed_en_bg.htm
+
+---
+
+php-win.exe get_words_data_v4.php input3_en_bg.txt output_eurodict_en_bg_part3.txt
+
+---
+
+1. Open file1.txt
+2. Search for stringN in file1.txt ("(word) [")
+3. Open file2.txt
+4. Search for stringB in file2.txt ("(word) /$")
+5. Copy everything after that string 4. from file2.txt UNTIL the end of the line of that stringB
+6. Replace stringN in file1.txt with the string captured by step 5. / Append the string captured by step 5. after stringN in file1.txt and save the file.
+
+How to provide a list of newline-delimited strings as input for step 1.-6. so that after applying 1.-6. for each string in this list, the algorithm is performed on the next string in the list UNTIL there are no more strings left in the newline-delimited list?
+
+======
+php-win.exe get_words_data_v5.php input3_en_bg.txt output_eurodict_en_bg_part3.txt
+Linux terminal: php get_words_data_v5.php input3_en_bg.txt output_eurodict_en_bg_part3.txt
+
+======
+
+GET: http://eurodict.com/searchid-101641-ed_en_bg.html - OK
+Saving data in 'output_eurodict_en_bg_part3.txt'...
+GET: http://eurodict.com/searchid-101642-ed_en_bg.html - OK
+Saving data in 'output_eurodict_en_bg_part3.txt'...
+GET: http://eurodict.com/searchid-101643-ed_en_bg.html - OK
+Saving data in 'output_eurodict_en_bg_part3.txt'...
+GET: http://eurodict.com/searchid-101644-ed_en_bg.html - OK
+Saving data in 'output_eurodict_en_bg_part3.txt'...
+GET: http://eurodict.com/searchid-101645-ed_en_bg.html - OK
+Saving data in 'output_eurodict_en_bg_part3.txt'...
+Complete
+
+======
+

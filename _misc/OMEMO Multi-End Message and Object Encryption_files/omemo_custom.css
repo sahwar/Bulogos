@@ -1,0 +1,15 @@
+body {
+  padding-top: 25px;
+  position: relative;
+}
+
+.footnotes p {
+  margin: 0.5em 0px;
+  line-height: 120%;
+}
+
+@media (max-width: 1200px) {
+  [class*="col-"]{
+      margin-bottom: 70px;
+  }
+}

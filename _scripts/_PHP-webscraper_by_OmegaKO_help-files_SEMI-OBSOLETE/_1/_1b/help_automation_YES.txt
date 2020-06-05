@@ -1,0 +1,200 @@
+sudo su (in each or the last (MASTER) commandline terminal opened)
+sudo history | grep -v history >> ~/master_history.txt
+
+php get_words_data_v5_01.php "/media/mint/Mind 2.0/wordlists_and_TMs/outputs/eurodict-dicts/01_dict_BG_talkoven/input_01_dict_BG_talkoven.txt" "/media/mint/Mind 2.0/wordlists_and_TMs/outputs/eurodict-dicts/01_dict_BG_talkoven/output_01_dict_BG_talkoven.txt"
+php get_words_data_v5_02.php "input.txt" "output_.txt"
+
+
+ ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ;  ; wait; sudo shutdown -h now
+ ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ;  ; wait; exit
+
+~/.bash_history
+history -a
+history -w
+ ; sudo history | grep -v history >> ~/master_history.txt
+
+~/.bash_history
+pluma ~/.bash_history
+pluma /home/mint/.bash_history
+
+
+sudo cp /home/mint/.bash_history "/media/mint/Mind 2.0/wordlists_and_TMs/outputs/eurodict-dicts/"
+
+mechanization & conditioning of humanity via technologization, algorithmization and their automation
+
+'automate everything'
+
+; wait; exit
+wget http://animerulezzz.org -O animerulezzz-org.html; wait; exit = IT WORKS (no "="!)
+
+---
+
+https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131
+
+---
+
+save all bash_history commands and all scrollback content/buffer to files after each new scrollback line/command or after all commands of a particular bash shell  Terminal tab are complete or before/after exiting all or a number of bash Terminal tabs
+
+---
+https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131
+Merger of ... &
+Rafał Błaszczyk (rblaszczyk) said on 2009-03-22: 	#7, in reply to tebeka (miki-tebeka) said on 2008-06-06 & tebeka (miki-tebeka) said on 2008-06-06: 
+
+-
+
+Just a follow-up, I've added the following lines to the top of my .bashrc, this way I have a log file for each session:
+
+It saves log to file with date, time and pid (for example 2009-03-22_20:48:09.23139.log) and compresses old logs when opening new bash shell.
+
+if [ -z "$UNDER_SCRIPT" ]; then
+        logdir=$HOME/terminal-logs
+        if [ ! -d $logdir ]; then
+                mkdir $logdir
+        fi
+        gzip -q $logdir/*.log
+        logfile=$logdir/$(date +%F_%T).$$.log
+        export UNDER_SCRIPT=$logfile
+        script -f -q $logfile
+        exit
+fi
+
+---
+
+tebeka (miki-tebeka) said on 2008-06-06: 	#6
+
+Just a follow-up, I've added the following lines to the top of my .bashrc, this way I have a log file for each session:
+
+Ooops, remove the wrong path, should be
+
+if [ -z "$UNDER_SCRIPT" ]; then
+    if [ ! -d /tmp/terminal-logs ]; then
+        mkdir /tmp/terminal-logs
+    fi
+    export UNDER_SCRIPT=1
+    script -f -q /tmp/terminal-logs/$$.log
+    exit
+fi
+
+The log for each session is under /tmp/terminal-logs/<pid>.log
+
+---
+If you want to make sure that they're always written immediately, you can put that command into your PROMPT_COMMAND variable:
+
+export PROMPT_COMMAND='history -a'
+
+======
+
+ls -a / | grep ".bashrc"
+ls -a $HOME /etc/skel | grep ".bashrc"
+
+======
+
+ls -a / && wait ; exit
+
+---
+
+mkdir /home/mint/terminal-logs/copy/ && cp /home/mint/terminal-logs/* /home/mint/terminal-logs/copy/ = WORKING
+
+======
+
+sudo su
+sudo cp /home/mint/terminal-logs/* /media/mint/Mind 2.0/wordlists_and_TMs/outputs/eurodict-dicts/terminal-logs && sudo cp /home/mint/.bash_history /media/mint/Mind 2.0/wordlists_and_TMs/outputs/eurodict-dicts
+
+======
+http://unix.stackexchange.com/questions/120506/how-to-shutdown-linux-at-a-specific-datetime-from-terminal
+
+The easiest is to use the at command:
+
+echo "shutdown -r now" | at 10am Jul 31
+
+but if you don't mind using you calculator and want to shutdown in say 24hours (24*60=1440):
+
+shutdown -r +1440
+
+SOURCE: 
+
+======
+
+You can do this directly from the shutdown command, see man shutdown:
+
+SYNOPSIS
+   /sbin/shutdown [-akrhPHfFnc] [-t sec] time [warning message]
+
+[...]
+
+   time   When to shutdown.
+
+So, for example:
+
+shutdown -h 21:45
+
+That will run shutdown -h at 21:45.
+
+For commands that don't offer this functionality, you can try one of:
+A. Using at
+
+The at daemon is designed for precisely this. Depending on your OS, you may need to install it. On Debian based systems, this can be done with:
+
+sudo apt-get install at
+
+There are three ways of giving a command to at:
+
+    Pipe it:
+
+1.    $ echo "ls > a1.txt" | at now + 1 min
+    warning: commands will be executed using /bin/sh
+    job 3 at Thu Apr  4 20:16:00 2013
+
+2.    Save the command you want to run in a text file, and then pass that file to at:
+
+    $ echo "ls > a.txt" > cmd.txt
+    $ at now + 1 min < cmd.txt
+    warning: commands will be executed using /bin/sh
+    job 3 at Thu Apr  4 20:16:00 2013
+
+3.    You can also pass at commands from STDIN:
+
+    $ at now + 1 min
+    warning: commands will be executed using /bin/sh
+    at> ls
+
+    Then, press CtrlD to exit the at shell. The ls command will be run in one minute.
+
+You can give very precise times in the format of [[CC]YY]MMDDhhmm[.ss], as in
+
+$ at -t 201403142134.12 < script.sh
+
+This will run the script script.sh at 21:34 and 12 seconds on the 14th of March 2014.
+B. Using cron (though this not a good idea for shutdown)
+
+The other approach is using the cron scheduler which is designed to perform tasks at specific times. It is usually used for tasks that will be repeated but you can also give a specific time. Each user has their own "crontabs" which control what jobs are executed and when. The general format of a crontab is:
+
+*     *     *     *     *  command to be executed
+-     -     -     -     -
+|     |     |     |     |
+|     |     |     |     +----- day of week (0 - 6) (Sunday=0)
+|     |     |     +------- month (1 - 12)
+|     |     +--------- day of month (1 - 31)
+|     +----------- hour (0 - 23)
++------------- min (0 - 59)
+
+So, for example, this will run ls every day at 14:04:
+
+04 14 * * * ls
+
+To set up a cronjob for a specific date:
+
+    Create a new crontab by running crontab -e. This will bring up a window of your favorite text editor.
+
+    Add this line to the file that just opened. This particular example will run at 14:34 on the 15th of March 2014 if that day is a Friday (so, OK, it might run more than once):
+
+    34 14 15 5  /path/to/command        
+
+    Save the file and exit the editor.
+
+=====
+
+sudo apt-get install at atd medit editra
+
+
+

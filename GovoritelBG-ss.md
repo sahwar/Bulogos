@@ -858,4 +858,37 @@ http://bezmonitor.com/ - <bezmonitor@gmail.com> (Viktor) (useful information for
 Вижте още: NVDA, Festival TTS, CMU Sphinx TTS, gespeaker/espeak/espeak-ng+MBROLA, FreeTTS, Balabolka TTS, JAWS screen reader (екранен четец), Toshko2 TTS <twenkid@gmail.com>, Google Translate speech-synthesis, )
 * https://github.com/zzw922cn/awesome-speech-recognition-speech-synthesis-papers
 * https://github.com/topic/tts
+
+https://gist.github.com/erogol/97516ad65b44dbddb8cd694953187c5b
+Hands-on example for TTS https://github.com/mozilla/TTS
+This notebook trains Tacotron model on LJSpeech dataset.
+https://gist.github.com/sahwar/8eae919103915aed718d03af75b0d1e7
+
+https://archive.is/62c.hit.bg
+https://yovko.net/initsiativa-shlokavitsa/
+
+http://archive.is/BaQTS#selection-787.28-799.60
+https://archive.is/o/BaQTS/zver.fsa-bg.org/pipermail/dict/2011-March/005151.html
+---
+регистрирах следния пощенски списък:
+espeak-bg@freelists.org
+Можете да се запишете като изпратите писмо на:
+espeak-bg-request@freelists.org със subject ‘subscribe’
+или от страницата на списъка:
+http://www.freelists.org/list/espeak-bg
+Всеки на когото му допада този проект и иска да се ангажира в развитието му е добре дошъл.
+Списъка има и публичен архив чрез който всеки може да следи как се движат нещата.
+Новите постове може да се следят и чрез RSS.
+
+https://archive.is/o/BaQTS/fsa-bg.org/project/gtp/wiki/ToDo
+http://archive.is/BaQTS
+http://www.gatchev.info/blog/?p=1163
+http://gatchev.info/articles/articles_bg.html
+
+http://www.gatchev.info/blog/
+http://www.gatchev.info/blog/?p=2302
+http://www.gatchev.info/blog/?page_id=409
+
+etc.
+
 ````

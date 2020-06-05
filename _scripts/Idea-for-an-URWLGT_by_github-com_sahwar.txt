@@ -1,0 +1,62 @@
+$ urwlgt --help
+
+URWLGT (Universal Random-Word List Generation Tool)
+https://gist.github.com/sahwar/e4a90a5748f3b76a12a5
+Idea-for-an-URWLGT_by_github-com_sahwar.txt
+
+---------------
+DESCRIPTION
+---------------
+
+This command-line program generates words (or more precisely put: strings) with random characters in them (most of the words will be gibberish in English and a lot of other languages), 1 word string per line. The different options provide settings that
+will be used as simple rules for the generation of the words/strings. It is mandatory to declare the character set that is to be used as the base from which the strings will be formed. The character set is expected to be a simple UTF-8 (Unicode) encoded .txt file with a single textual character per line (the maximum number of characters that is supported is 50,000 and generating words from an input character set larger than 100 characters is EXTREMELY heavy on your system's resources), the end-of-line format of the input .txt file should be the Windows one (i.e. CR+LF (\r\n)). A whitespace 'character' may also be used as a 'character' that is parts of the generated 'words'/strings.
+
+URWLGT supports Unicode input characters.
+
+URWLGT is written in bash and Python 3 and also has versions that are written in PHP or C.
+
+NOTE: URWLGT assumes that the generated 'words' are in a fully phonemic orthography, even though this may not be used in practice by the people attempting to pronounce the generated words! A lot of the generated 'words' may be unpronounceable!
+
+---------------
+USAGE
+---------------
+
+   urwlgt [options]
+
+---------------
+OPTIONS
+---------------
+
+   -n, --numWords    The number of words to generate. Use '-n all' when -x is set to <=500 to generate all possible variants.
+   -m, --minLength   Minimum string length of the words chosen for generation (OPTIONAL, if not set, the default minimum length of the generated word is set to 1 character).
+   -x, --maxLength   Maximum string length of each of the words chosen for generation (MANDATORY).
+   -i, --input    The newline-delimited list of 1-character-per-lines strings to be used as the source. The end-of-line character SHOULD be in the Windows format, i.e. CR+LF (\r\n)!!!
+   -s, --script   The script to be used (USE THIS INSTEAD OF -i IF YOU JUST WANT TO USE THE BASIC ENGLISH ALPHABET OR
+   THE BASIC BULGARIAN CYRILLIC ALPHABET).
+   -o, --output   The newline-delimited list of generated words to be produced. If none is selected, the program will print to the standard console output.
+   -f, --firstCharacter   Sets a character to be used as the first character in all of the generated words.
+   -l, --lastCharacter   Sets a character to be used as the last character in all of the generated words.
+   -r, --rules   A special rule to be used: it could be in the form of vocals (V) and consonant (C) abbreviations, e.g. CVVC (like in the English word 'room'). Vocals are vowels, consonants are consonants.
+   -h, --help   Shows this help file.
+
+---------------
+EXAMPLES OF USAGE
+---------------
+
+   urwlgt -s Latin/Cyrillic i /root-directory/input.txt -n 100/all -m 1 -x 25 -f a -l c --help
+
+   urwlgt -fc a -lc c -n 100/all -m 1 -x 25 -i collated-list-of-unique-1-character-per-line-strings.txt -o output.txt
+
+---------------
+CREDITS
+---------------
+
+   Copyright (c) 2015 sahwar and OmegaKO
+   Idea by http://github.com/user/sahwar, programming by OmegaKO <omegako@animerulezzz.org>.
+
+---------------
+LICENSE
+---------------
+
+   URWLGT is licensed under the GNU GPL v2+ license. See http://gnu.org/licenses/old for more information. A copy of the license
+   is included with the resources of this program for reference.

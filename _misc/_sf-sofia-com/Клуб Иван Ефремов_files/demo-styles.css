@@ -1,0 +1,53 @@
+/**
+ * @package   Dominion Template - RocketTheme
+ * @version   1.5.5 January 19, 2010
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2010 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+/* Frontpage Content */
+.demo-img h4 {margin-bottom: 10px;}
+h3.demo-title {margin-top: 0px;}
+.demo-img .rt-image {padding: 2px;margin-right: 10px;float: left;}
+.demo-img-tab {width: 33%;}
+.demo-img-tab .rt-image {float: none;}
+.demo-img-tab h4 {margin-top: 0;}
+.demo-img-padding {float: none;padding-left: 10px;padding-right: 9px;}
+.demo-tab .roktabs-wrapper .roktabs-container-wrapper div.wrapper {padding-top: 2px;}
+
+/* Gantry */
+.demo-img .rt-image.rt-image-right {float: right;margin-right: 0;}
+.gantry-logo {float: right;}
+
+/* Extensions */
+.rt-ext-col1 {float: left;width: 47%;}
+.rt-ext-col2 {float: right;width: 47%;}
+.rt-ext-block {margin-bottom: 30px;overflow: hidden;}
+.rt-ext-img {float: left;margin-right: 20px;margin-bottom: 25px;}
+.rt-ext-divider {height: 10px;display: block;}
+.rt-ext-links {text-align: right;display: block;}
+
+/* Style Variations */
+.demo-sv-title {width: 181px;float: left;margin-right: 10px;padding-left: 3px;}
+.demo-img .demo-sv-img {float: none;}
+
+/* Tutorials */
+.demo-tut-list {float: left;width: 30%;}
+.demo-tut-list2 {float: left;width: 40%;}
+.demo-tut-video-img {margin-right: 15px;width: 123px;float: left;}
+.demo-tut-divider {width: 15px;}
+
+/* RTL Stuff */
+.rtl .demo-img .rt-image {margin-left: 10px;float: right;margin-right: 0;}
+.rtl .demo-img-vid.demo-img-right {float: left;}
+.rtl .demo-img-vid .rt-tab-overlay {right: 85px;}
+.rtl .demo-img-padding {padding-right: 10px;padding-left: 9px;}
+.rtl .demo-img .rt-image.rt-image-right {float: left;margin-left: 0;}
+.rtl .gantry-logo {float: left;}
+.rtl .demo-tut-list, .rtl .demo-tut-list2 {float: right;}
+.rtl .demo-tut-video-img {margin-right: 0px;margin-left: 15px;float: right;}
+.rtl .demo-sv-title {float: right;margin-left: 10px;margin-right: 0;padding-right: 3px;padding-left: 0;}
+.rtl .rt-ext-col1 {float: right;}
+.rtl .rt-ext-col2 {float: left;}
+.rtl .rt-ext-img {float: right;margin-right: 0px;margin-left: 20px;}
+.rtl .rt-ext-links {text-align: right;}

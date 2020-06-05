@@ -1,0 +1,292 @@
+============
+
+---I.---
+
+On Ubuntu/Debian:
+1. Install all prerequisite packages (dependencies):
+$ sudo apt-get install php5-cli php5-common curl libcurl3 libcurl3-dev php5-mcrypt php5-curl php5-json
+2. Find the folder where OmegaKO's .php web-scraping script is located.
+3. Copy the .php script and modify it as needed to suit the corpus (online dictionary) that you want to download.
+4. Run the .php script (you may open multiple terminals or terminal tabs and run multiple versions of the .php script simultaneously to download more things at the same time) from the GNU/Linux GUI terminal or from the choco command of cmd.exe if you have Chocalatey installed on Windows (and you have installed php and http://curl.haxx.se/libcurl/php/install.html#windows from it).
+5. Use Notepad++ and sahwar's regexes listed [here] to clean up the downloaded dictionary data and prepare it for use or for converting into a specific dictionary formats (AEDictionaryXP .dic), or a general format.
+
+---
+
+$ php get_words_data_v5.php input3_en_bg.txt output_eurodict_en_bg_part3.txt
+
+---
+
+Ranges test:
+http://eurodict.com/searchid-70874-ed_en_bg.html
+-
+http://eurodict.com/searchid-101645-ed_en_bg.htm
+----
+
+
+============
+
+---II.---
+
+How to clean up the generated dump using Notepad++'s Search & Replace
+
+1. Regex to use with [latest stable version of] Notepad++ (Regular expression replace mode activated, don't check ". matches newline")
+
+
+<DIV class="errreport"><IMG alt="err" title="error report" src="images/profile.gif"><DIV class="errorform"><FORM method="POST">Thank you for reporting! We really appreciate your help! We will contact you only if we have any questions about your report!<BR><INPUT type="hidden" name="words_id" value=".*"><INPUT type="hidden" name="dictions_id" value="5">e-mail:<BR><INPUT type="text" name="email" value=""><BR>Comment:<BR><TEXTAREA name="comment" cols=40 rows=5></TEXTAREA><BR><INPUT type="submit" name="report" value="Report"></FORM></DIV></DIV>
+
+(
+<h([45])>.*?<\/h\1>
+)
+
+2. Extended search mode ("Wrap around" activated)"
+
+2.1.
+replace
+<hr>
+with
+\r\n\r\n<br><br>\r\n\r\n
+•
+
+2.2.
+
+Replace
+<div class="googa">
+with
+\r\n\r\n<hr>\r\n
+•
+
+---
+
+How to extract all words (just as a simple line-delimited wordlist):
+
+(regex search mode on, ". matches newline" checked)
+
+Search for:
+</span>.*?<hr>
+
+Replace with:
+\r\n
+
+Then
+search for:
+
+replace with:
+(nothing)
+
+Then
+Edit -> Line operations -> Remove empty lines
+
+Then
+search for:
+&#0768
+replace with:
+(nothing)
+
+============
+
+---III.---
+
+.html HTML5 for the regexp-cleaned .txt files with the dictionary entries:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Eurodict-com bg_en dictionary (8-9 April 2015 snapshot) - part 01</title>
+</head>
+
+<body>
+...
+</body>
+
+</html>
+
+============
+
+$ split -l 5000 filename.txt
+
+============
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Eurodict-com bg_en dictionary (8-9 April 2015 snapshot) - part 01</title>
+</head>
+
+<body>
+
+<p>
+
+123822 lines
+to split:
+
+
+On a Mac or Ubuntu box the split command does exactly what you want. The easiest way to use it is with the -l (lines) argument.
+
+    Open a terminal window.
+    cd to the directory where your giant file lives.
+
+    Type:
+
+    split -l 5000 filename
+
+    where "filename" is the name of your file and 5000 is the number of lines you want in each piece of the file.
+    Your files will be named xaa, xab, etc. by default.
+
+source: http://superuser.com/questions/273777/how-to-open-a-huge-html-file
+
+split -l 10000 en_bg_dict_copy.html
+
+split -l 5000 en_bg_dict_copy.html
+
+number + G = go to line in gvim
+
+</p>
+
+</body>
+
+</html>
+
+======
+
+
+
+======
+
+gatchev.info/blog
+<h2
+...
+<ol class="commentlist">
+
+<h2
+...
+<h3 id="respond">Leave a Reply</h3>
+
+node-schedule
+
+http://pcmania.bg?go=games&p=detail&articleId=1636
+http://pcmania.bg?go=games&p=detail&articleId=1964
+http://pcmania.bg?go=games&p=detail&articleId=4652
+http://pcmania.bg?go=games&p=detail&articleId=5059
+http://pcmania.bg?go=games&p=detail&articleId=7914
+
+======
+
+Çà èçòåãëÿíå íà http://pcmania.bg?go=news&p=detail&newsId=20 - http://pcmania.bg?go=news&p=detail&newsId=12108
+
+<td class="content topPad" colspan="3">
+...
+</table>
+
+Ñ êîìåíòàðèòå:
+<td class="content topPad" colspan="3">
+...
+<table width="316" border="0" cellpadding="0" cellspacing="0" class="mainTable">
+
+---
+
+http://pcmania.bg?go=opinion&p=detail&articleId=1371 - http://pcmania.bg?go=opinion&p=detail&articleId=7813
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="detailedTable">
+...
+
+
+---
+
+http://pcmania.bg?go=markets&p=detail&articleId=5098 - http://pcmania.bg?go=markets&p=detail&articleId=7829
+
+
+...
+
+
+---
+
+http://pcmania.bg?go=hardware&p=detail&articleId=1883 - http://pcmania.bg?go=hardware&p=detail&articleId=7832
+
+
+...
+
+
+---
+
+http://pcmania.bg?go=gadjets&p=detail&articleId=1547 - http://pcmania.bg?go=gadjets&p=detail&articleId=7835
+
+
+...
+
+
+---
+
+============
+
+
+
+======
+
+---
+
+PHP installation in Windows - Please make sure you have CGI installed in IIS for local hosting
+ Downloading php 64 bit
+   from 'http://windows.php.net/downloads/releases/archives/php-5.6.3-nts-Win32-VC11-x64.zip'
+ Extracting C:\Users\Aspire\AppData\Local\Temp\chocolatey\php\phpInstall.zip to C:\tools\php...
+ Mode                LastWriteTime     Length Name
+ ----                -------------     ------ ----
+ d----        06/13/2015     05:49            php
+ C:\tools\php
+ PHP installed in C:\tools\php
+ The install of php was successful.
+
+
+C:\tools\php
+
+php-win.exe
+
+
+
+http://eurodict.com/A+searchid-9498-ed_en_bg.html
+http://eurodict.com/searchid-32260-ed_en_bg.html
+http://eurodict.com/searchid-70874-ed_en_bg.html = embus
+----
+USE THIS RANGE:
+http://eurodict.com/searchid-70874-ed_en_bg.html
+-
+http://eurodict.com/searchid-101645-ed_en_bg.htm
+
+---
+
+php-win.exe get_words_data_v4.php input3_en_bg.txt output_eurodict_en_bg_part3.txt
+
+---
+
+1. Open file1.txt
+2. Search for stringN in file1.txt ("(word) [")
+3. Open file2.txt
+4. Search for stringB in file2.txt ("(word) /$")
+5. Copy everything after that string 4. from file2.txt UNTIL the end of the line of that stringB
+6. Replace stringN in file1.txt with the string captured by step 5. / Append the string captured by step 5. after stringN in file1.txt and save the file.
+
+How to provide a list of newline-delimited strings as input for step 1.-6. so that after applying 1.-6. for each string in this list, the algorithm is performed on the next string in the list UNTIL there are no more strings left in the newline-delimited list?
+
+============
+php-win.exe get_words_data_v5.php input3_en_bg.txt output_eurodict_en_bg_part3.txt
+Linux terminal: php get_words_data_v5.php input3_en_bg.txt output_eurodict_en_bg_part3.txt
+
+
+======
+
+GET: http://eurodict.com/searchid-101641-ed_en_bg.html - OK
+Saving data in 'output_eurodict_en_bg_part3.txt'...
+GET: http://eurodict.com/searchid-101642-ed_en_bg.html - OK
+Saving data in 'output_eurodict_en_bg_part3.txt'...
+GET: http://eurodict.com/searchid-101643-ed_en_bg.html - OK
+Saving data in 'output_eurodict_en_bg_part3.txt'...
+GET: http://eurodict.com/searchid-101644-ed_en_bg.html - OK
+Saving data in 'output_eurodict_en_bg_part3.txt'...
+GET: http://eurodict.com/searchid-101645-ed_en_bg.html - OK
+Saving data in 'output_eurodict_en_bg_part3.txt'...
+Complete
+
+======
+

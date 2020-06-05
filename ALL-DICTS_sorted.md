@@ -1097,7 +1097,7 @@ http://en.wikipedia.org/wiki/British_National_Corpus
 http://arxiv.org
 http://jstor.org
 http://academia.edu
-http://plos.com / plon ?
+http://plos.com / plon ? plons.com & http://openaccess.org
 http://en.wikipedia.org/wiki/Open_access
 https://en.m.wikipedia.org/wiki/Text_Encoding_Initiative.  & 
 
@@ -1110,14 +1110,95 @@ http://snipplr.com
 http://commandlinefu.com
 http://pastebin.com
 http://0bin.com
-dict.org
+http://dict.org
 regexp / PCRE2 & Boost.org regexp engine & Comparison of regex(p) engines
 http://caniuse.com
 http://mdn.mozilla.org
 Microsoft Localization
 Apple macOS & iOS localization
 SASS & LESS CSS-extending languages
-
+http://emmet.io - HTML+CSS+JS abbreviaiton-autocompletion engine for many text-editor apps
      
 http://sciencedaily.com
 http://newscientist.con
+http://scientificamerican.com
+http://newscientist.com
+http://royalsociety.uk
+http://bas.bg
+http://aas.us
+http://howstuffworks.com
+http::/wikihow.com
+http://dumps.wikimedia.org
+http://wikia.com
+http://tvtropes.org
+http://tropepedia.org
+
+vs. alt-news, alt-media, indymedia, open-culture.net, creative commons ('tragedy of the commons', Malthusian catastrophe, ecological catastrophe, 'overpopulation' in some parts of the world, etc. ...)
+http://bibliotecapleyades.net
+http://rexresearch.com
+http://parallelreality-bg.com
+http://spectatorbg.blogspot.com
+http://skybooksusa.com
+http://timetravelresearchcenter.com
+http://slrstone.blogspot.com
+
+
+http://python.org
+http://perl.org
+http://julia.org
+http://ocaml.org
+http://json.org
+http://freepascal.lazaruside.org
+
+
+http://arxiv.org
+http://jstor.org
+http://plon.org
+http://academia.edu
+
+Linux manuals & tutorials & Linux documentation:
+http://foldoc.org/
+http://tldp.org + tldr CLI app + `man`-pages, `info` pages, etc.
+http://catb.org/~esr/jargon
+unix.pl
+http://man.die.de
+http://man7.com
+http://tldr.org
+http://explainthistome.com
+Sphinux Documentation
+pandoc-generated documentation; MoinMoin wiki, TikiWiki, _MediaWiki_ wiki-syntax, http://commonmark.org & GFM (GitHub-flavored Markdown), etc.
+http://abbreviations.com
+http://acronyms.com
+http://itterms.com
+http://itterminology.com
+'cludge', 'globbing', 'grokking', \`\`..'', `This is great.  It sure is!` (double-whitespace between sentences - older text-formatting style (we now how HTML-entities non-breaking-space & many Unicode whitespace&tab-like characters, etc. ...)
+Web-safe colors vs. 256-colors-palette vs. sRGB (LCD IPS/MVA/etc. true real 8-bit - TrueColor @ 24-bit/32-bit... etc.)
+http://usenet.com (???)
+irc://
+stream://
+bitcoin:// (BTC)
+bitcash://
+mailto:usernameemailinboxname@example.com
+
+--------------------------------------------------------------------------------
+
+RANDOM CRAP:
+
+A list of some shorthand terms popular in 2018-2020+ as seen on http://twitter.com/kamaelSH & http://twitter.com/cataphractus , etc.
+and from http://urbandictionary.com & http://bgjargon.com + napelmeni + 'Macedonian dictionary', etc.
+
+`$ catfish ` (sexual slang for a (usually solipsist self-absorbed sexual-reproductive-biological-imperative-denying golddigging whore/slut)
+
+simp, simping
+nazbols
+feminazis vs. manly masculine man
+femboy vs. tomboy woman/girl
+BDSM sexual-roles dominance&submission socio-sexual & psychodynamics-Jungian-archetypes-Freudian-sexology+sociobology-dynamics, cultural shifts, etc.
+racial slurs
+derogatory terms
+phishing vs. whistleblowing
+scamming / outtricking, outplaying, overwhelming, etc.
+
+He finally found lasting peace within and without, and had wild sex and had cool biologically his kids, and raises them, and lived happily ever after until he one day died, etc. ...
+But it was tough as hell to achieve and to do the proper self-work/self-development to get there with divine grace & by his own wits & by 'bootstrapping himself' like a Hofstadter-ian 'strange loop' (G.E.B. book), etc. and like Baron Munchenhausen or like Don Quixote or like Gulliver, etc.
+

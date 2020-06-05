@@ -1,0 +1,159 @@
+wget -np -E --user-agent="Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:28.0) Gecko/20100101 Firefox/28.0" http://eurodict.com/searchid-226-ed_bg_en.html
+
+wget -input.txt -np -E --user-agent="Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:28.0) Gecko/20100101 Firefox/28.0" -O something.html
+
+---
+
+https://www.tweet.im/content/faq/
+http://www.opensubtitles.org/en/downloads
+directorylister.js
+http://blog.opensubtitles.org/opensubtitlesorg/downloading-subtitles-using-mpc
+
+info shuf
+shuf --help
+
+= urwgt by sahwar
+
+---
+
+GNU/Linux text-mode web browsers:
+
+links, links2, lynx-cur, xxxterm, 
+
+PHP:
+
+$html = preg_replace('#<h3 class="hdr">(.*?)</h3>#', '', $html);
+
+interesting HTML+JavaScript code to copy from eurodict.com: gibox, gi, defbox; gvbox, gi, devbox
+
+> unhtml
+
+---
+
+JavaScript, PHP, Python, Perl; HTML, class, string
+
+======
+
+
+
+---
+
+>>> http://textmechanic.com/Generate-List-of-Numbers.html
+
+A) eurodict.com:
+
+1. Remove everything before 
+<span class="wordtitle">
+2. Then remove all <h4></h4> and <h5></h5> HTML tags and their contents, beginning with
+<span class="wordtitle">
+and ending with (without including this):
+<div class="googa">
+3. Then delete everything after 
+<div class="googa">
+
+B)
+
+rechnik.info:
+
+<h2><a href="/разкаяние">разкая&#0768;ние
+
+<div id="gibox">
+
+C)
+
+onlinerechnik.com:
+
+<div id="maintext">
+...
+<h2>Полезно</h2>
+
+
+D)
+
+slovored.com:
+
+<td class="translation">
+...
+<span class="found">
+
+=======================================================
+
+---------
+
+>>> wget64.exe -i C:\Users\Aspire\Desktop\test3\input.txt -np -E --execute robots=off --user-agent=Mozilla
+
+wget64.exe -i C:/Users/Aspire/Desktop/test3/input.txt -np -E --execute robots=off --user-agent=Mozilla
+
+wget64.exe -i ./input.txt -np -E --execute robots=off --user-agent=Mozilla
+
+wget.lnk -i C:\Users\Aspire\Desktop\test3\input.txt -np -E --execute robots=off --user-agent=Mozilla
+
+>>>>>> http://stackoverflow.com/questions/29358626/file-path-to-input-txt-file-with-multiple-urls-for-download-reported-as-non-exis
+
+-i input.txt -np -E --execute robots=off --user-agent=Mozilla
+https://dribbble.com/shots/1996194--CSS-Meta-loader?list=shots&sort=popular&timeframe=now&offset=11
+-o
+
+wget -r -l1 --no-parent --adjust-extension --execute robots=off --user-agent=Mozilla -A.html http://www.server.com/dir/
+
+>>> http://nadeausoftware.com/articles/2007/09/php_tip_how_strip_html_tags_web_page
+
+---------
+
+Благодаря ти много за идеята да махна паразитната дума за адресите речниковите статии на Eurodict и да оставя само номера! За съжаление, нищо не знам за програмиране, т.е. „цикъл“ не ми говори нищо. :D
+
+Следвайки твоя съвет, чрез проба и грешка намерих настоящите граници на поредицата за -ed_bg_en.html (и за другите лесно ще ги открия):
+
+http://eurodict.com/searchid-226-ed_bg_en.html
+http://eurodict.com/searchid-54573-ed_bg_en.html
+
+И използвах следния онлайн инструмент, за да генерирам поредицата:
+http://textmechanic.com/Generate-List-of-Numbers.html. :D
+Но пък за другите онлайн речници въпросът е по-сложен, но мога да търся с уебтърсачки и ето какво намерих: :)
+
+т.нар. „globbing“ (ползването на ограничени wildcards в bash, с които bash сам добавя всичко пред/след тях):
+
+http://en.wikipedia.org/wiki/Glob_%28programming%29
+http://tldp.org/LDP/abs/html/globbingref.html
+https://www.google.bg/search?q=url+globbing+parser&ie=utf-8&oe=utf-8
+http://gruntjs.com/configuring-tasks#globbing-patterns
+http://www.linuxjournal.com/content/bash-extended-globbing
+bash pathname expansion (globbing)
+https://github.com/isaacs/node-glob
+https://github.com/isaacs/minimatch
+https://github.com/mixu/wildglob
+https://github.com/wearefractal/glob2base
+https://docs.python.org/2/library/glob.html
+
+http://linux-hints.blogspot.com/2011/12/wildcards-in-wget-in-http.html
+https://myblb.wordpress.com/2013/03/30/wget-wildcards/
+
+Решението:
+http://stackoverflow.com/questions/3618533/how-to-wget-a-file-when-the-filename-isnt-known
+
+
+
+    Assuming the file type is constant then from the wget man page:
+
+        You want to download all the GIFs from a directory on an HTTP server. You tried wget http://www.server.com/dir/*.gif, but that didn't work because HTTP retrieval does not support globbing. In that case, use:
+
+    wget -r -l1 --no-parent -A.html http://www.site.com/dir/
+    (to download all *.html files from http://www.site.com/dir/ to level 1 in subdirectories tree).
+     
+    Of course this will only work if the server answers with a file listing of the requested directory, if it doesn't, you can only guess the sequentially numbered filenames as shown by shamittomar (http://linux-hints.blogspot.com/2011/12/wildcards-in-wget-in-http.html).
+
+    Another way to do it (ONLY for FTP downloads!):
+
+    wget -r -np -nd --glob=on ftp://ftp.ncbi.nlm.nih.gov/blast/db/*html
+
+
+Още по темата:
+http://stackoverflow.com/questions/18107236/using-wildcards-in-wget-or-curl-query
+
+http://stackoverflow.com/questions/1426522/bash-script-downloading-consecutive-numbered-files-with-wget
+http://unix.stackexchange.com/questions/117988/wget-with-wildcards-in-http-downloads
+http://stackoverflow.com/questions/19527915/is-there-a-way-to-use-wget-on-a-wildcard
+http://unix.stackexchange.com/questions/17604/wget-recursive-for-only-files-that-pass-a-regexp
+http://stackoverflow.com/questions/273743/using-wget-to-recursively-fetch-a-directory-with-arbitrary-files-in-it?rq=1
+http://curl.haxx.se/docs/manpage.html
+http://en.wikipedia.org/wiki/Lftp

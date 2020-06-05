@@ -1,0 +1,3462 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/QAPage">
+<head>
+
+<title>Preserve bash history in multiple terminal windows - Unix & Linux Stack Exchange</title>
+    <link rel="shortcut icon" href="//cdn.sstatic.net/unix/img/favicon.ico?v=546c52892feb">
+    <link rel="apple-touch-icon image_src" href="//cdn.sstatic.net/unix/img/apple-touch-icon.png?v=5cf7fe716a89">
+    <link rel="search" type="application/opensearchdescription+xml" title="Unix &amp; Linux Stack Exchange" href="/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@StackUnix" />
+    <meta name="twitter:domain" content="unix.stackexchange.com"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="http://cdn.sstatic.net/unix/img/apple-touch-icon@2.png?v=32fb07f7ce26&a" />
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="Preserve bash history in multiple terminal windows" />
+    <meta name="twitter:description" property="og:description" itemprop="description" content="I consistently have more than one terminal open. Anywhere from two to ten, doing various bits and bobs. Now let&#39;s say I restart and open up another set of terminals. Some remember certain things, s..." />
+    <meta property="og:url" content="http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows"/>
+    <link rel="canonical" href="http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows" />
+
+    
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="//cdn.sstatic.net/Js/stub.en.js?v=448dec9988d9"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.sstatic.net/unix/all.css?v=7928197894bf">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;Preserve bash history in multiple terminal windows&#39;" href="/feeds/question/1288">
+            <meta name="twitter:app:country" content="US" />
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:iphone" content="871299723" />
+            <meta name="twitter:app:url:iphone" content="se-zaphod://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows" />
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:ipad" content="871299723" />
+            <meta name="twitter:app:url:ipad" content="se-zaphod://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows" />
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:10,shownCommentCount:5,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:1288});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('106', '1288');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text'); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.ready(function () {
+            StackExchange.realtime.init('wss://qa.sockets.stackexchange.com,ws://qa.sockets.stackexchange.com');
+            StackExchange.realtime.subscribeToReputationNotifications('106');
+                StackExchange.realtime.subscribeToTopBarNotifications('106');
+        });
+    </script>
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","serverTime":1445674732,"networkMetaHostname":"meta.stackexchange.com","routeName":"Questions/Show","styleCode":true,"enableUserHovercards":true,"snippets":{"enabled":false,"domain":"stacksnippets.net"},"site":{"name":"Unix & Linux Stack Exchange","description":"Q&A for users of Linux, FreeBSD and other Un*x-like operating systems","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdsB7sSAAAAAAzjgEF_Hd8vXv-C42sa_KyofaGR","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"globalAuthDisabled":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"1bcbe1f47a0516cd756b6806bc1e8b8b","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"f2c817cce7d8","js/moderator.en.js":"322c4d17ca2c","js/full-anon.en.js":"e2c620f77356","js/full.en.js":"3648385182e4","js/wmd.en.js":"8919390a9d5e","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"4bbfbc475a1e","js/help.en.js":"79fd6664be3b","js/tageditor.en.js":"84750e4a4944","js/tageditornew.en.js":"c66980ab4dff","js/inline-tag-editing.en.js":"0d46482340f9","js/revisions.en.js":"df3cb25dfabf","js/review.en.js":"cf8d53a698db","js/tagsuggestions.en.js":"b278f9a0b23b","js/post-validation.en.js":"1bf673a32772","js/explore-qlist.en.js":"d33e3ab2f2e0","js/events.en.js":"551cd5386f3c","js/keyboard-shortcuts.en.js":"cf9f82256c33","js/external-editor.en.js":"798d36840831"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+    
+    
+</head>
+<body class="question-page new-topbar">
+    <noscript><div id="noscript-padding"></div></noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+
+<div class="topbar-dialog siteSwitcher-dialog dno">
+    <div class="header">
+        <h3><a href="//unix.stackexchange.com">current community</a></h3>
+    </div>
+    <div class="modal-content current-site-container">
+        <ul class="current-site">
+                <li>
+                        <div class="related-links">
+                    <a href="http://chat.stackexchange.com" class="js-gps-track"     data-gps-track="site_switcher.click({ item_type:6 })"
+>chat</a>
+            </div>
+
+
+
+
+    <a href="//unix.stackexchange.com"
+       class="current-site-link site-link js-gps-track"
+       data-id="106"
+       data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-unix" title="Unix &amp; Linux"></div>
+        Unix &amp; Linux
+    </a>
+
+                </li>
+                <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    
+
+
+
+    <a href="http://meta.unix.stackexchange.com"
+       class="site-link js-gps-track"
+       data-id="108"
+       data-gps-track="
+            site.switch({ target_site:108, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-unixmeta" title="Unix &amp; Linux Meta"></div>
+        Unix &amp; Linux Meta
+    </a>
+
+                </li>
+                    </ul>
+    </div>
+    
+    <div class="header" id="your-communities-header">
+        <h3>
+your communities        </h3>
+            
+    </div>
+    <div class="modal-content" id="your-communities-section">
+            
+            <div class="call-to-login">
+<a href="https://unix.stackexchange.com/users/signup?ssrc=site_switcher&amp;returnurl=http%3a%2f%2funix.stackexchange.com%2fquestions%2f1288%2fpreserve-bash-history-in-multiple-terminal-windows" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:10 })"
+>Sign up</a> or <a href="https://unix.stackexchange.com/users/login?ssrc=site_switcher&amp;returnurl=http%3a%2f%2funix.stackexchange.com%2fquestions%2f1288%2fpreserve-bash-history-in-multiple-terminal-windows" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:11 })"
+>log in</a> to customize your list.
+            </div>
+    </div>
+    
+    <div class="header">
+        <h3><a href="//stackexchange.com/sites">more stack exchange communities</a></h3>
+        <a href="http://blog.stackoverflow.com" class="fr">company blog</a>
+    </div>
+    <div class="modal-content">
+            <div class="child-content"></div>
+    </div>
+</div>
+        </div>
+
+        <div class="network-items">
+
+            <a href="//stackexchange.com"
+               class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track"
+               data-gps-track="site_switcher.show"
+               title="A list of all 150 Stack Exchange sites">
+                <span class="hidden-text">Stack Exchange</span>
+            </a>
+
+    <a href="#"
+       class="topbar-icon icon-inbox yes-hover js-inbox-button"
+       title="Recent inbox messages">
+        <span class="hidden-text">Inbox</span>
+        <span class="unread-count" style="display:none"></span>
+    </a>
+    <a href="#"
+       class="topbar-icon icon-achievements yes-hover js-achievements-button "
+       data-unread-class=""
+       title="Recent achievements: reputation, badges, and privileges earned">
+        <span class="hidden-text">Reputation and Badges</span>
+        <span class="unread-count" style="display:none">
+            
+        </span>
+    </a>
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                    <a href="https://unix.stackexchange.com/users/signup?ssrc=head&returnurl=http%3a%2f%2funix.stackexchange.com%2fquestions%2f1288%2fpreserve-bash-history-in-multiple-terminal-windows" class="login-link">sign up</a>
+                                <a href="https://unix.stackexchange.com/users/login?ssrc=head&returnurl=http%3a%2f%2funix.stackexchange.com%2fquestions%2f1288%2fpreserve-bash-history-in-multiple-terminal-windows" class="login-link">log in</a>
+
+                        <a href="/tour">tour</a>
+                            <a href="#" class="icon-help js-help-button" title="Help Center and other resources">
+        help
+        <span class="triangle"></span>
+    </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                    <li>
+                        <a href="//meta.unix.stackexchange.com" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                            Meta
+                            <span class="item-summary">
+                                Discuss the workings and policies of this site
+                            </span>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+                    </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="/search" method="get" autocomplete="off">
+                    <input name="q" type="text" placeholder="search" value="" tabindex="1" autocomplete="off" maxlength="240" />
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="/" >
+                    Unix &amp; Linux
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                        <li class="youarehere"><a id="nav-questions" href="/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="/tags">Tags</a></li>
+                        <li><a id="nav-users" href="/users">Users</a></li>
+                        <li><a id="nav-badges" href="/help/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion"  href="/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content">
+            
+
+<div itemscope itemtype="http://schema.org/Question">
+    <link itemprop="image" href="//cdn.sstatic.net/unix/img/apple-touch-icon.png?v=5cf7fe716a89">
+			<!--googleoff: all-->
+
+<div id="herobox-mini">
+    <div id="hero-content">
+        <span id="controls">
+                <a href="/users/signup?ssrc=hero&amp;returnurl=http%3a%2f%2funix.stackexchange.com%2fquestions%2f1288%2fpreserve-bash-history-in-multiple-terminal-windows" id="tell-me-more" class="button">Sign up</a>
+            <span id="close"><a title="click to dismiss">&times;</a></span>
+        </span>
+        <div id="blurb">
+            Unix &amp; Linux Stack Exchange is a question and answer site for users of Linux, FreeBSD and other Un*x-like operating systems. It&#39;s 100% free, no registration required.
+        </div>        
+    </div>
+    <script>
+        StackExchange.ready(function() {
+            var clickSource = $("body").attr("class") + '-mini';
+            var location = 0;
+            if ($("body").hasClass("questions-page")) {
+                clickSource = 'questionpagemini';
+                location = 2;
+            } else if ($("body").hasClass("question-page")) {
+                clickSource = 'questionpagemini';
+                location = 2;
+            } else if ($("body").hasClass("home-page")) {
+                clickSource = 'homepagemini';
+                location = 4;
+            }
+
+            $('#tell-me-more').click(function () {
+                StackExchange.using("gps", function () {
+                    StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+                });
+            });
+            $('#herobox-mini #close').click(function () {
+                StackExchange.using("gps", function () {
+                    StackExchange.gps.track("hero.action", { hero_action_type: "close", location: location }, true);
+                });
+                $.cookie("hero", "none", { path: "/", expires: 365 });
+                var $hero = $("#herobox-mini");
+                $hero.slideUp('fast', function () { $hero.remove(); });
+                return false;
+            });
+        });
+    </script>
+</div>
+			<!--googleon: all-->
+			<div id="question-header">
+                <h1 itemprop="name"><a href="/questions/1288/preserve-bash-history-in-multiple-terminal-windows" class="question-hyperlink">Preserve bash history in multiple terminal windows</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="1288"  id="question">
+
+    <script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,0,"adzerk331415921",4).enableDynamicSiteSelection().setZone(29); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk331415921">
+            </div>    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1288">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">210</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="#" title="This is a favorite question (click again to undo)">favorite</a>
+        <div class="favoritecount"><b>157</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>I consistently have more than one terminal open. Anywhere from two to ten, doing various bits and bobs. Now let's say I restart and open up another set of terminals. Some remember certain things, some forget.</p>
+
+<p>I want a history that:</p>
+
+<ul>
+<li>Remembers everything from every terminal</li>
+<li>Is instantly accessible from every terminal (eg if I <code>ls</code> in one, switch to another already-running terminal and then press up, <code>ls</code> shows up)</li>
+<li>Doesn't forget random things if there are spaces at the front of the command.</li>
+</ul>
+
+<p>Anything I can do to make bash work more like that?</p>
+    </div>
+    <div class="post-taglist">
+        <a href="/questions/tagged/bash" class="post-tag" title="show questions tagged &#39;bash&#39;" rel="tag">bash</a> <a href="/questions/tagged/command-history" class="post-tag" title="show questions tagged &#39;command-history&#39;" rel="tag">command-history</a> 
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/q/1288" title="short permalink to this question" class="short-link" id="link-post-1288">share</a><span class="lsep">|</span><a href="/posts/1288/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/1288/revisions" title="show all edits to this post">edited <span title="2011-11-25 23:41:09Z" class="relativetime">Nov 25 '11 at 23:41</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/885/gilles"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/Xdc7f.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/885/gilles">Gilles</a><br>
+        <span class="reputation-score" title="reputation score 297681" dir="ltr">298k</span><span title="43 gold badges"><span class="badge1"></span><span class="badgecount">43</span></span><span title="497 silver badges"><span class="badge2"></span><span class="badgecount">497</span></span><span title="903 bronze badges"><span class="badge3"></span><span class="badgecount">903</span></span>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info user-hover">
+    <div class="user-action-time">
+        asked <span title="2010-08-26 13:04:56Z" class="relativetime">Aug 26 '10 at 13:04</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/880/oli"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/f0af40756420859b5b63cbceb6d30505?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/880/oli">Oli</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">3,460</span><span title="6 gold badges"><span class="badge1"></span><span class="badgecount">6</span></span><span title="15 silver badges"><span class="badge2"></span><span class="badgecount">15</span></span><span title="42 bronze badges"><span class="badge3"></span><span class="badgecount">42</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</div>
+</td>
+        </tr>
+                
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1288" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="5"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-1251" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I know zsh handles the first point fine, but I&#39;ve never seen anything handle the second point. What do you mean by the last one? I&#39;m not sure I understand what you want.</span>
+                    &ndash;&nbsp;<a href="/users/137/durin42"
+                       title="188 reputation"
+                       class="comment-user">durin42</a>
+                <span class="comment-date" dir="ltr"><span title="2010-08-26 13:38:48Z" class="relativetime-clean">Aug 26 '10 at 13:38</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-1252" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="hot">21</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I can see the advantage of that, but personally i would HATE that in my shell. I usually keep 3 or 4 tabs open in my terminal for very specific uses: one for running &#39;make&#39;, one with vi, one to run stuff, etc. So when I compile, I go to tab 1, hit up and &#39;make&#39; comes up, and so on. This is extremely productive to me. So if suddenly I go to my &#39;make&#39; tab and hit up and some random grep command shows up, I&#39;d get really pissed off! Just a personal note though</span>
+                    &ndash;&nbsp;<a href="/users/659/axel-c"
+                       title="497 reputation"
+                       class="comment-user">axel_c</a>
+                <span class="comment-date" dir="ltr"><span title="2010-08-26 13:42:00Z" class="relativetime-clean">Aug 26 '10 at 13:42</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-29373" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Oli wrote, &quot;I can&#39;t think of an intelligent way to do it where existing terminals only see their own history but new ones see a chronologically accurate list of commands.&quot; How about (untried): <code>export PROMPT_COMMAND=&quot;history -a; $PROMPT_COMMAND&quot;</code>. Existing shells will add each command to the history file for new shells to see, but only show their own histories.</span>
+                    &ndash;&nbsp;<a href="/users/7814/chris-page"
+                       title="175 reputation"
+                       class="comment-user">Chris Page</a>
+                <span class="comment-date" dir="ltr"><span title="2011-09-28 08:34:04Z" class="relativetime-clean">Sep 28 '11 at 8:34</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-34140" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Do you want the history all stored separately or all merged into a single history file?</span>
+                    &ndash;&nbsp;<a href="/users/26/kbyrd"
+                       title="713 reputation"
+                       class="comment-user">kbyrd</a>
+                <span class="comment-date" dir="ltr"><span title="2011-11-25 15:11:37Z" class="relativetime-clean">Nov 25 '11 at 15:11</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-289034" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Short answer is: it&#39;s not intended by bash developers. Solutions based on flushing then re-reading the history probably do work, but beware of <a href="http://c2.com/cgi/wiki?ShlemielThePainter" rel="nofollow">Shlemiel The Painter</a>. In plain words: amount of processing work between each command is proportional to history size.</span>
+                    &ndash;&nbsp;<a href="/users/19643/st%c3%a9phane-gourichon"
+                       title="278 reputation"
+                       class="comment-user">St&#233;phane Gourichon</a>
+                <span class="comment-date" dir="ltr"><span title="2014-12-19 09:47:31Z" class="relativetime-clean">Dec 19 '14 at 9:47</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1288" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>5</b> more comments</a>
+        </div>         
+    </td>
+</tr>        </table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								14 Answers
+                                <span style="display:none;" itemprop="answerCount">14</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="/questions/1288/preserve-bash-history-in-multiple-terminal-windows?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active">active</a>
+        <a href="/questions/1288/preserve-bash-history-in-multiple-terminal-windows?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest">oldest</a>
+        <a class="youarehere" href="/questions/1288/preserve-bash-history-in-multiple-terminal-windows?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes">votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="1292"></a>
+<div id="answer-1292" class="answer accepted-answer" data-answerid="1292"  itemscope itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1292">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">119</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<pre class="lang-sh prettyprint-override"><code># Avoid duplicates
+export HISTCONTROL=ignoredups:erasedups  
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+
+# After each command, append to the history file and reread it
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/1292" title="short permalink to this answer" class="short-link" id="link-post-1292">share</a><span class="lsep">|</span><a href="/posts/1292/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/1292/revisions" title="show all edits to this post">edited <span title="2014-12-15 22:00:36Z" class="relativetime">Dec 15 '14 at 22:00</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2729/tobu"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/b2bf04b72b1fb6cd6b70321bdd2539eb?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2729/tobu">Tobu</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">2,053</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="9 silver badges"><span class="badge2"></span><span class="badgecount">9</span></span><span title="15 bronze badges"><span class="badge3"></span><span class="badgecount">15</span></span>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2010-08-26 14:37:49Z" class="relativetime">Aug 26 '10 at 14:37</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/348/user348"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/d4b50f507cda0948a5e1be8d2b61f061?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/348/user348">user348</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,306</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="7 silver badges"><span class="badge2"></span><span class="badgecount">7</span></span><span title="2 bronze badges"><span class="badge3"></span><span class="badgecount">2</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1292" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="1"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-1278" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">9</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">here is a more elaborate way to share history between bash sessions: <a href="http://stackoverflow.com/questions/103944/real-time-history-export-amongst-bash-terminal-windows/3055135#3055135" title="real time history export amongst bash terminal windows">stackoverflow.com/questions/103944/&hellip;</a></span>
+                    &ndash;&nbsp;<a href="/users/1170/lesmana"
+                       title="7192 reputation"
+                       class="comment-user">lesmana</a>
+                <span class="comment-date" dir="ltr"><span title="2010-08-27 00:19:06Z" class="relativetime-clean">Aug 27 '10 at 0:19</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-75601" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">The problem with this PROMPT_COMMAND solution is that the numbers for each history item changes after each command :(. For example if you type history and 1) ls 2) rm, then you do !1 to repeat 1, the history number might change and might run the rm command...</span>
+                    &ndash;&nbsp;<a href="/users/26946/chris-kimpton"
+                       title="101 reputation"
+                       class="comment-user">Chris Kimpton</a>
+                <span class="comment-date" dir="ltr"><span title="2012-11-07 12:28:28Z" class="relativetime-clean">Nov 7 '12 at 12:28</span></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-81067" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">When I do this, other already-open terminals don&#39;t have the last entered command when I press &#39;Up&#39; until after I issue a command in <i>that</i> terminal - is this expected? If so, is there a way to truly modify other terminals&#39; history instantly?</span>
+                    &ndash;&nbsp;<a href="/users/28970/suan"
+                       title="101 reputation"
+                       class="comment-user">Suan</a>
+                <span class="comment-date" dir="ltr"><span title="2012-12-19 02:15:35Z" class="relativetime-clean">Dec 19 '12 at 2:15</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-104196" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Suan, this seems right to me based on the commands.  I found that we can issue a null command (just press enter key) to get the history to update.</span>
+                    &ndash;&nbsp;<a href="/users/17300/sage"
+                       title="101 reputation"
+                       class="comment-user">sage</a>
+                <span class="comment-date" dir="ltr"><span title="2013-04-10 18:13:10Z" class="relativetime-clean">Apr 10 '13 at 18:13</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-300268" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I don&#39;t think it&#39;s necessary to set ignoredups, if you already do erasedups?</span>
+                    &ndash;&nbsp;<a href="/users/37356/tommy-carstensen"
+                       title="101 reputation"
+                       class="comment-user">tommy.carstensen</a>
+                <span class="comment-date" dir="ltr"><span title="2015-01-22 12:37:24Z" class="relativetime-clean">Jan 22 at 12:37</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1292" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>1</b> more comment</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,0,"adzerk126125514",4).enableDynamicSiteSelection().setZone(30); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk126125514">
+            </div>
+  
+<a name="48113"></a>
+<div id="answer-48113" class="answer" data-answerid="48113"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="48113">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">131</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>So, this is all my history-related <code>.bashrc</code> thing:</p>
+
+<pre><code>export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
+export HISTSIZE=100000                   # big big history
+export HISTFILESIZE=100000               # big big history
+shopt -s histappend                      # append to history, don't overwrite it
+
+# Save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+</code></pre>
+
+<p>Tested with bash 3.2.17 on Mac OS X 10.5, bash 4.1.7 on 10.6.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/48113" title="short permalink to this answer" class="short-link" id="link-post-48113">share</a><span class="lsep">|</span><a href="/posts/48113/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/48113/revisions" title="show all edits to this post">edited <span title="2014-06-21 20:52:10Z" class="relativetime">Jun 21 '14 at 20:52</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/39456/dawud"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/3720da056d3c76b6c91af6d76b973527?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/39456/dawud">dawud</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,525</span><span title="7 silver badges"><span class="badge2"></span><span class="badgecount">7</span></span><span title="19 bronze badges"><span class="badge3"></span><span class="badgecount">19</span></span>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2008-09-19 17:49:41Z" class="relativetime">Sep 19 '08 at 17:49</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/3689/kch"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/3b2b4aa0cbbb6bf3e3abc51becd918d6?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/3689/kch">kch</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,411</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="6 silver badges"><span class="badge2"></span><span class="badgecount">6</span></span><span title="4 bronze badges"><span class="badge3"></span><span class="badgecount">4</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-48113" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="11"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-67038" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">The PS1 trick didn&#39;t work on AIX either, but this did! +1</span>
+		            &ndash;&nbsp;<span class="comment-user">Davide</span>
+                <span class="comment-date" dir="ltr"><span title="2009-10-13 17:39:31Z" class="relativetime-clean">Oct 13 '09 at 17:39</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-67039" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">See my note on my answer; this answer works better.</span>
+		            &ndash;&nbsp;<span class="comment-user">Schof</span>
+                <span class="comment-date" dir="ltr"><span title="2009-10-13 22:28:44Z" class="relativetime-clean">Oct 13 '09 at 22:28</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-67040" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Hmm.. This kills the ability to use $ !34, as the command numbers change every prompt.  Is there a workaround @Davide @Schof @kch?</span>
+		            &ndash;&nbsp;<span class="comment-user">Charles Merriam</span>
+                <span class="comment-date" dir="ltr"><span title="2010-03-17 19:33:29Z" class="relativetime-clean">Mar 17 '10 at 19:33</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-67044" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">FYI None of the solutions mentioned here can solve the following problem. I have two shell windows A and B. In shell window A, I run <code>sleep 9999</code>, and (without waiting for the sleep to finish) in shell window B, I want to be able to see <code>sleep 9999</code> in the bash history.</span>
+                    &ndash;&nbsp;<a href="/users/3054/pts"
+                       title="285 reputation"
+                       class="comment-user">pts</a>
+                <span class="comment-date" dir="ltr"><span title="2011-03-25 13:43:23Z" class="relativetime-clean">Mar 25 '11 at 13:43</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-72685" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@pts I too was aiming for live behavior, but then I realized it is more convenient to have terminal specific histories which make working on different things in different terminals easier. I found this to be very useful: <a href="http://stackoverflow.com/questions/338285/#answer-7449399">stackoverflow.com/questions/338285/#answer-7449399</a> Based on that, I made myself an alias called <code>href</code> that refreshes the history of my current terminal instantly and cleans up the history file in the process. Whenever I open a new terminal, that cleanup/sync is executed in my bashrc file so the new terminal has the latest history. I&#39;m using that along with <code>history -a</code></span>
+                    &ndash;&nbsp;<a href="/users/5536/trusktr"
+                       title="605 reputation"
+                       class="comment-user">trusktr</a>
+                <span class="comment-date" dir="ltr"><span title="2012-10-16 15:56:02Z" class="relativetime-clean">Oct 16 '12 at 15:56</span></span>
+                    <span class="edited-yes" title="this comment was edited 2 times"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-48113" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>11</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="48116"></a>
+<div id="answer-48116" class="answer" data-answerid="48116"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="48116">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">62</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Here is my attempt at Bash session history sharing. This will enable history sharing between bash sessions in a way that the history counter does not get mixed up and history expansion like <code>!number</code> will work (with some constraints).</p>
+
+<p>Using Bash version 4.1.5 under Ubuntu 10.04 LTS (Lucid Lynx).</p>
+
+<pre><code>HISTSIZE=9000
+HISTFILESIZE=$HISTSIZE
+HISTCONTROL=ignorespace:ignoredups
+
+_bash_history_sync() {
+  builtin history -a         #1
+  HISTFILESIZE=$HISTSIZE     #2
+  builtin history -c         #3
+  builtin history -r         #4
+}
+
+history() {                  #5
+  _bash_history_sync
+  builtin history "$@"
+}
+
+PROMPT_COMMAND=_bash_history_sync
+</code></pre>
+
+<h2>Explanation:</h2>
+
+<ol>
+<li><p>Append the just entered line to the <code>$HISTFILE</code> (default is <code>.bash_history</code>). This will cause <code>$HISTFILE</code> to grow by one line.</p></li>
+<li><p>Setting the special variable <code>$HISTFILESIZE</code> to some value will cause Bash to truncate <code>$HISTFILE</code> to be no longer than <code>$HISTFILESIZE</code> lines by removing the oldest entries.</p></li>
+<li><p>Clear the history of the running session. This will reduce the history counter by the amount of <code>$HISTSIZE</code>.</p></li>
+<li><p>Read the contents of <code>$HISTFILE</code> and insert them in to the current running session history. this will raise the history counter by the amount of lines in <code>$HISTFILE</code>. Note that the line count of <code>$HISTFILE</code> is not necessarily <code>$HISTFILESIZE</code>.</p></li>
+<li><p>The <code>history()</code> function overrides the builtin history to make sure that the history is synchronised before it is displayed. This is necessary for the history expansion by number (more about this later).</p></li>
+</ol>
+
+<h2>More explanation:</h2>
+
+<ul>
+<li><p>Step 1 ensures that the command from the current running session gets written to the global history file.</p></li>
+<li><p>Step 4 ensures that the commands from the other sessions gets read in to the current session history.</p></li>
+<li><p>Because step 4 will raise the history counter, we need to reduce the counter in some way. This is done in step 3.</p></li>
+<li><p>In step 3 the history counter is reduced by <code>$HISTSIZE</code>. In step 4 the history counter is raised by the number of lines in <code>$HISTFILE</code>. In step 2 we make sure that the line count of <code>$HISTFILE</code> is exactly <code>$HISTSIZE</code> (this means that <code>$HISTFILESIZE</code> must be the same as <code>$HISTSIZE</code>).</p></li>
+</ul>
+
+<h2>About the constraints of the history expansion:</h2>
+
+<p>When using history expansion by number, you should <strong>always</strong> look up the number <strong>immediately</strong> before using it. That means no bash prompt display between looking up the number and using it. That usually means no enter and no ctrl+c.</p>
+
+<p>Generally, once you have more than one Bash session, there is no guarantee whatsoever that a history expansion by number will retain its value between two Bash prompt displays. Because when <code>PROMPT_COMMAND</code> is executed the history from all other Bash sessions are integrated in the history of the current session. If any other bash session has a new command then the history numbers of the current session will be different.</p>
+
+<p>I find this constraint reasonable. I have to look the number up every time anyway because I can't remember arbitrary history numbers.</p>
+
+<p>Usually I use the history expansion by number like this</p>
+
+<pre><code>$ history | grep something #note number
+$ !number
+</code></pre>
+
+<p>I recommend using the following Bash options.</p>
+
+<pre><code>## reedit a history substitution line if it failed
+shopt -s histreedit
+## edit a recalled history line before executing
+shopt -s histverify
+</code></pre>
+
+<h2>Strange bugs:</h2>
+
+<p>Running the history command piped to anything will result that command to be listed in the history twice. For example:</p>
+
+<pre><code>$ history | head
+$ history | tail
+$ history | grep foo
+$ history | true
+$ history | false
+</code></pre>
+
+<p>All will be listed in the history twice. I have no idea why.</p>
+
+<h2>Ideas for improvements:</h2>
+
+<ul>
+<li><p>Modify the function <code>_bash_history_sync()</code> so it does not execute every time. For example it should not execute after a <code>CTRL+C</code> on the prompt. I often use <code>CTRL+C</code> to discard a long command line when I decide that I do not want to execute that line. Sometimes I have to use <code>CTRL+C</code> to stop a Bash completion script.</p></li>
+<li><p>Commands from the current session should always be the most recent in the history of the current session. This will also have the side effect that a given history number keeps its value for history entries from this session.</p></li>
+</ul>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/48116" title="short permalink to this answer" class="short-link" id="link-post-48116">share</a><span class="lsep">|</span><a href="/posts/48116/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/48116/revisions" title="show all edits to this post">edited <span title="2015-08-05 20:52:14Z" class="relativetime">Aug 5 at 20:52</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2010-06-16 16:11:47Z" class="relativetime">Jun 16 '10 at 16:11</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1170/lesmana"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/aed1b37bc11c126adfcfb028d8bd9916?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1170/lesmana">lesmana</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">7,192</span><span title="5 gold badges"><span class="badge1"></span><span class="badgecount">5</span></span><span title="31 silver badges"><span class="badge2"></span><span class="badgecount">31</span></span><span title="50 bronze badges"><span class="badge3"></span><span class="badgecount">50</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-48116" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="3"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-67049" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Why not &quot;history -n&quot; (reload lines not already loaded) instead of &quot;history -c; history -r&quot; ?</span>
+                    &ndash;&nbsp;<a href="/users/12260/graham"
+                       title="151 reputation"
+                       class="comment-user">Graham</a>
+                <span class="comment-date" dir="ltr"><span title="2011-09-14 20:40:02Z" class="relativetime-clean">Sep 14 '11 at 20:40</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-67050" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Graham: I did not want to use <code>history -n</code> because it messes up the history counter. Also, I found <code>history -n</code> to be too unreliable.</span>
+                    &ndash;&nbsp;<a href="/users/1170/lesmana"
+                       title="7192 reputation"
+                       class="comment-user">lesmana</a>
+                <span class="comment-date" dir="ltr"><span title="2011-09-16 12:02:58Z" class="relativetime-clean">Sep 16 '11 at 12:02</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-67051" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">One disadvantage: Commands with multi-line strings are normally still preserved in the current session. With this trick, they are split into individual lines instantly. Using -n for -c -r does not help, neither does cmdhist or lithist. I don&#39;t think there is a workaround at this point.</span>
+                    &ndash;&nbsp;<a href="/users/9281/jo-liss"
+                       title="101 reputation"
+                       class="comment-user">Jo Liss</a>
+                <span class="comment-date" dir="ltr"><span title="2012-02-01 12:30:08Z" class="relativetime-clean">Feb 1 '12 at 12:30</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-67052" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">10</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">After trying this for a bit, I&#39;ve actually found that running only <code>history -a</code>, without <code>-c</code> and <code>-r</code>, is better usability-wise (though it&#39;s not what the question asked). It means commands you run are available instantly in new shells even before exiting the current shell, but not in concurrently running shells. This way Arrow-Up still always selects the last-run commands <i>of the current session</i>, which I find much less confusing.</span>
+                    &ndash;&nbsp;<a href="/users/9281/jo-liss"
+                       title="101 reputation"
+                       class="comment-user">Jo Liss</a>
+                <span class="comment-date" dir="ltr"><span title="2012-02-04 15:15:49Z" class="relativetime-clean">Feb 4 '12 at 15:15</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-85748" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">outstandingly good answer, this works reliably unlike the more common &quot;history -a; history -n&quot;</span>
+                    &ndash;&nbsp;<a href="/users/17681/richvel"
+                       title="101 reputation"
+                       class="comment-user">RichVel</a>
+                <span class="comment-date" dir="ltr"><span title="2013-01-12 22:07:22Z" class="relativetime-clean">Jan 12 '13 at 22:07</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-48116" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>3</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="1289"></a>
+<div id="answer-1289" class="answer" data-answerid="1289"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1289">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">25</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I'm not aware of any way using <code>bash</code>. But it's one of the most popular features of <a href="http://www.zsh.org/"><code>zsh</code></a>.<br>
+Personally I prefer <code>zsh</code> over <code>bash</code> so I recommend trying it.</p>
+
+<p>Here's the part of my <code>.zshrc</code> that deals with history:</p>
+
+<pre><code>SAVEHIST=10000 # Number of entries
+HISTSIZE=10000
+HISTFILE=~/.zsh/history # File
+setopt APPEND_HISTORY # Don't erase history
+setopt EXTENDED_HISTORY # Add additional data to history like timestamp
+setopt INC_APPEND_HISTORY # Add immediately
+setopt HIST_FIND_NO_DUPS # Don't show duplicates in search
+setopt HIST_IGNORE_SPACE # Don't preserve spaces. You may want to turn it off
+setopt NO_HIST_BEEP # Don't beep
+setopt SHARE_HISTORY # Share history between session/terminals
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/1289" title="short permalink to this answer" class="short-link" id="link-post-1289">share</a><span class="lsep">|</span><a href="/posts/1289/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/1289/revisions" title="show all edits to this post">edited <span title="2014-05-08 22:40:57Z" class="relativetime">May 8 '14 at 22:40</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1290/polemon"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/fb7188d8be002ece64870dffe9ec6fa7?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1290/polemon">polemon</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">3,238</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="23 silver badges"><span class="badge2"></span><span class="badgecount">23</span></span><span title="51 bronze badges"><span class="badge3"></span><span class="badgecount">51</span></span>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2010-08-26 13:20:33Z" class="relativetime">Aug 26 '10 at 13:20</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/305/maciej-piechotka"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/1e8f141e7857d397d8020ed3b759e88a?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/305/maciej-piechotka">Maciej Piechotka</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">8,774</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="31 silver badges"><span class="badge2"></span><span class="badgecount">31</span></span><span title="61 bronze badges"><span class="badge3"></span><span class="badgecount">61</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1289" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1289" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="25335"></a>
+<div id="answer-25335" class="answer" data-answerid="25335"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="25335">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">9</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>To do this, you'll need to add two lines to your <code>~/.bashrc</code>:</p>
+
+<pre><code>shopt -s histappend
+PROMPT_COMMAND="history -a;history -c;history -r;$PROMPT_COMMAND"
+</code></pre>
+
+<p>From <code>man bash</code>:</p>
+
+<blockquote>
+  <p>If the histappend shell option is enabled (see the description of shopt under SHELL BUILTIN COMMANDS below), the lines are appended to the history file, otherwise the history file is over-written.</p>
+</blockquote>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/25335" title="short permalink to this answer" class="short-link" id="link-post-25335">share</a><span class="lsep">|</span><a href="/posts/25335/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/25335/revisions" title="show all edits to this post">edited <span title="2011-11-25 15:51:40Z" class="relativetime">Nov 25 '11 at 15:51</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-11-25 15:46:04Z" class="relativetime">Nov 25 '11 at 15:46</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/10762/chris-down"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/1GnIN.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/10762/chris-down">Chris Down</a><br>
+        <span class="reputation-score" title="reputation score 46784" dir="ltr">46.8k</span><span title="6 gold badges"><span class="badge1"></span><span class="badgecount">6</span></span><span title="107 silver badges"><span class="badge2"></span><span class="badgecount">107</span></span><span title="143 bronze badges"><span class="badge3"></span><span class="badgecount">143</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-25335" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-34145" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">was just going to say the exact same thing, just not as well. :)</span>
+                    &ndash;&nbsp;<a href="/users/4721/tim-kennedy"
+                       title="7180 reputation"
+                       class="comment-user">Tim Kennedy</a>
+                <span class="comment-date" dir="ltr"><span title="2011-11-25 15:48:37Z" class="relativetime-clean">Nov 25 '11 at 15:48</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-25335" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="48114"></a>
+<div id="answer-48114" class="answer" data-answerid="48114"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="48114">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">7</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You can edit your BASH prompt to run the "history -a" and "history -r" that Muerr suggested:</p>
+
+<pre><code>savePS1=$PS1
+</code></pre>
+
+<p>(in case you mess something up, which is almost guaranteed)</p>
+
+<pre><code>PS1=$savePS1`history -a;history -r`
+</code></pre>
+
+<p>(note that these are back-ticks; they'll run history -a and history -r on every prompt. Since they don't output any text, your prompt will be unchanged.</p>
+
+<p>Once you've got your PS1 variable set up the way you want, set it permanently it in your ~/.bashrc file.</p>
+
+<p>If you want to go back to your original prompt while testing, do:</p>
+
+<pre><code>PS1=$savePS1
+</code></pre>
+
+<p>I've done basic testing on this to ensure that it sort of works, but can't speak to any side-effects from running <code>history -a;history -r</code> on every prompt.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/48114" title="short permalink to this answer" class="short-link" id="link-post-48114">share</a><span class="lsep">|</span><a href="/posts/48114/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2008-09-19 19:38:22Z" class="relativetime">Sep 19 '08 at 19:38</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/122296/schof"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/10e37442232ec308f482ba9f200f274b?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/122296/schof">Schof</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">171</span><span title="3 bronze badges"><span class="badge3"></span><span class="badgecount">3</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-48114" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-67048" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">kch&#39;s solution works better than mine does. I&#39;m now using his solution in my .bashrc.</span>
+		            &ndash;&nbsp;<span class="comment-user">Schof</span>
+                <span class="comment-date" dir="ltr"><span title="2009-10-13 22:28:06Z" class="relativetime-clean">Oct 13 '09 at 22:28</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-48114" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="1290"></a>
+<div id="answer-1290" class="answer" data-answerid="1290"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="1290">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">5</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I can offer a fix for that last one: make sure the env variable HISTCONTROL does not specify "ignorespace" (or "ignoreboth").</p>
+
+<p>But I feel your pain with multiple concurrent sessions. It simply isn't handled well in bash.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/1290" title="short permalink to this answer" class="short-link" id="link-post-1290">share</a><span class="lsep">|</span><a href="/posts/1290/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2010-08-26 13:59:58Z" class="relativetime">Aug 26 '10 at 13:59</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/396/jmanning2k"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/baf994c6383acbf3fc1ec4f646cdada8?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/396/jmanning2k">jmanning2k</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">381</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="4 bronze badges"><span class="badge3"></span><span class="badgecount">4</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1290" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-1290" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="48117"></a>
+<div id="answer-48117" class="answer" data-answerid="48117"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="48117">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">5</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>If you need a bash or zsh history synchronizing solution which also solves the problem below, then see it at <a href="http://ptspts.blogspot.com/2011/03/how-to-automatically-synchronize-shell.html">http://ptspts.blogspot.com/2011/03/how-to-automatically-synchronize-shell.html</a></p>
+
+<p>The problem is the following: I have two shell windows A and B. In shell window A, I run <code>sleep 9999</code>, and (without waiting for the sleep to finish) in shell window B, I want to be able to see <code>sleep 9999</code> in the bash history.</p>
+
+<p>The reason why most other solutions here won't solve this problem is that they are writing their history changes to the the history file using <code>PROMPT_COMMAND</code> or <code>PS1</code>, both of which are executing too late, only after the <code>sleep 9999</code> command has finished.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/48117" title="short permalink to this answer" class="short-link" id="link-post-48117">share</a><span class="lsep">|</span><a href="/posts/48117/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2011-03-25 17:40:35Z" class="relativetime">Mar 25 '11 at 17:40</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/3054/pts"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/d891ba8bd448f11617333f8642870262?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/3054/pts">pts</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">285</span><span title="2 silver badges"><span class="badge2"></span><span class="badgecount">2</span></span><span title="9 bronze badges"><span class="badge3"></span><span class="badgecount">9</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-48117" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="1"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-67053" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This is a nice solution, but I got a few questions though.  1. Can I use the original .bash_history file, I do not want another bash history file existed in my $HOME 2. May be you should consider set a github repo for this.</span>
+                    &ndash;&nbsp;<a href="/users/13276/techlive-zheng"
+                       title="158 reputation"
+                       class="comment-user">Techlive Zheng</a>
+                <span class="comment-date" dir="ltr"><span title="2012-08-15 10:23:58Z" class="relativetime-clean">Aug 15 '12 at 10:23</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-67054" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">It seems the debug hook is conflicted with bashdb, the follow output every time I start a bash session.  ``` bash debugger, bashdb, release 4.2-0.8  Copyright 2002, 2003, 2004, 2006, 2007, 2008, 2009, 2010, 2011 Rocky Bernstein This is free software, covered by the GNU General Public License, and you are welcome to change it and/or distribute copies of it under certain conditions.  ** Internal debug error _Dbg_is_file(): file argument null bash: _Dbg_filenames[$fullname]: bad array subscript ```</span>
+                    &ndash;&nbsp;<a href="/users/13276/techlive-zheng"
+                       title="158 reputation"
+                       class="comment-user">Techlive Zheng</a>
+                <span class="comment-date" dir="ltr"><span title="2012-08-15 10:28:53Z" class="relativetime-clean">Aug 15 '12 at 10:28</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-67055" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Techlive Zheng: 1. The original .bash_history is deliberately not supported, because .merged_bash_history uses a different file format, so in case .merged_bash_history fails to load properly, bash won&#39;t accidentally clobber the accumulated history. Robustness by design, will be kept as is. 2. A github repo is a good idea in general, but I don&#39;t have time to maintain that for this project, so I&#39;m not doing it. -- Yes, it conflicts with bashdb, and there is no easy solution (they use the same hooks). I&#39;m not planning to work on a fix, but I&#39;m accepting patches.</span>
+                    &ndash;&nbsp;<a href="/users/3054/pts"
+                       title="285 reputation"
+                       class="comment-user">pts</a>
+                <span class="comment-date" dir="ltr"><span title="2012-08-15 10:45:00Z" class="relativetime-clean">Aug 15 '12 at 10:45</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-67056" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Okay, thank you. I have come up with a much simple and better sulotion.</span>
+                    &ndash;&nbsp;<a href="/users/13276/techlive-zheng"
+                       title="158 reputation"
+                       class="comment-user">Techlive Zheng</a>
+                <span class="comment-date" dir="ltr"><span title="2012-08-17 09:33:38Z" class="relativetime-clean">Aug 17 '12 at 9:33</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-67057" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@TechliveZheng: Would you share your simple and better solution with us, so we all can learn from it? (If so, please add an answer to the question.)</span>
+                    &ndash;&nbsp;<a href="/users/3054/pts"
+                       title="285 reputation"
+                       class="comment-user">pts</a>
+                <span class="comment-date" dir="ltr"><span title="2012-08-17 12:21:21Z" class="relativetime-clean">Aug 17 '12 at 12:21</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-48117" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>1</b> more comment</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="48112"></a>
+<div id="answer-48112" class="answer" data-answerid="48112"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="48112">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">5</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You can use <code>history -a</code> to append the current session's history to the histfile, then use <code>history -r</code> on the other terminals to read the histfile.&nbsp;</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/48112" title="short permalink to this answer" class="short-link" id="link-post-48112">share</a><span class="lsep">|</span><a href="/posts/48112/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/48112/revisions" title="show all edits to this post">edited <span title="2014-08-23 16:46:10Z" class="relativetime">Aug 23 '14 at 16:46</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/18668/nakilon"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/dce43cb8158a14c3fed02bea797becd7?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/18668/nakilon">Nakilon</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">114</span><span title="6 bronze badges"><span class="badge3"></span><span class="badgecount">6</span></span>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2008-09-19 17:38:26Z" class="relativetime">Sep 19 '08 at 17:38</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/30875/jtimberman"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/4eb6098fc8de5a5f37199c3668b11590?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/30875/jtimberman">jtimberman</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">151</span><span title="3 bronze badges"><span class="badge3"></span><span class="badgecount">3</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-48112" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-48112" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="169053"></a>
+<div id="answer-169053" class="answer" data-answerid="169053"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="169053">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">4</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Here's an alternative that I use.  It's cumbersome but it addresses the issue that @axel_c mentioned where sometimes you may want to have a separate history instance in each terminal (one for make, one for monitoring, one for vim, etc).  </p>
+
+<p>I keep a separate appended history file that I constantly update.  I have the following mapped to a hotkey:</p>
+
+<pre><code>history | grep -v history &gt;&gt; ~/master_history.txt
+</code></pre>
+
+<p>This appends all history from the current terminal to a file called master_history.txt in your home dir.  </p>
+
+<p>I also have a separate hotkey to search through the master history file:</p>
+
+<pre><code>cat /home/toby.walker/master_history.txt | grep -i
+</code></pre>
+
+<p>I use cat | grep because it leaves the cursor at the end to enter my regex.  A less ugly way to do this would be to add a couple of scripts to your path to accomplish these tasks, but hotkeys work for my purposes.  I also periodically will pull history down from other hosts I've worked on and append that history to my master_history.txt file.  </p>
+
+<p>It's always nice to be able to quickly search and find that tricky regex you used or that weird perl one-liner you came up with 7 months ago.  </p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/169053" title="short permalink to this answer" class="short-link" id="link-post-169053">share</a><span class="lsep">|</span><a href="/posts/169053/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/169053/revisions" title="show all edits to this post">edited <span title="2014-11-24 22:01:23Z" class="relativetime">Nov 24 '14 at 22:01</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-11-20 14:53:01Z" class="relativetime">Nov 20 '14 at 14:53</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/92245/toby"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/e01096c5471ff95ff8908bdc37f1a81f?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/92245/toby">Toby</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">41</span><span title="3 bronze badges"><span class="badge3"></span><span class="badgecount">3</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-169053" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-278435" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Welcome to U&amp;L.SE.  Keep providing concise answers like this, and your reputation will rise quickly.</span>
+                    &ndash;&nbsp;<a href="/users/64157/eyoung100"
+                       title="3393 reputation"
+                       class="comment-user">eyoung100</a>
+                <span class="comment-date" dir="ltr"><span title="2014-11-20 15:20:43Z" class="relativetime-clean">Nov 20 '14 at 15:20</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-169053" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="133912"></a>
+<div id="answer-133912" class="answer" data-answerid="133912"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="133912">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I have written a script for setting a history file per session or task its based off the following.</p>
+
+<pre><code>        # write existing history to the old file
+        history -a
+
+        # set new historyfile
+        export HISTFILE="$1"
+        export HISET=$1
+
+        # touch the new file to make sure it exists
+        touch $HISTFILE
+        # load new history file
+        history -r $HISTFILE
+</code></pre>
+
+<p>It doesn't necessary save every history command but it saves the ones that i care about and its easier to retrieve them then going through every command. My version also lists all history files and provides the ability to search through them all.</p>
+
+<p>Full source: <a href="https://github.com/simotek/scripts-config/blob/master/hiset.sh" rel="nofollow">https://github.com/simotek/scripts-config/blob/master/hiset.sh</a>   </p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/133912" title="short permalink to this answer" class="short-link" id="link-post-133912">share</a><span class="lsep">|</span><a href="/posts/133912/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-06-01 06:02:03Z" class="relativetime">Jun 1 '14 at 6:02</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/67477/simotek"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/nGi9i.png?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/67477/simotek">simotek</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">60</span><span title="8 bronze badges"><span class="badge3"></span><span class="badgecount">8</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-133912" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-133912" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="217828"></a>
+<div id="answer-217828" class="answer" data-answerid="217828"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="217828">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Right, So finally this annoyed me to find a decent solution:</p>
+
+<pre><code># Write history after each command
+_bash_history_append() {
+    builtin history -a
+}
+PROMPT_COMMAND="_bash_history_append; $PROMPT_COMMAND"
+</code></pre>
+
+<p>What this does is sort of amalgamation of what was said in this thread, except that I don't understand why would you reload the global history after every command. I very rarely care about what happens in other terminals, but I always run series of commands, say in one terminal:</p>
+
+<pre><code>make
+ls -lh target/*.foo
+scp target/artifact.foo vm:~/
+</code></pre>
+
+<p>(Simplified example)</p>
+
+<p>And in another:</p>
+
+<pre><code>pv ~/test.data | nc vm:5000 &gt;&gt; output
+less output
+mv output output.backup1
+</code></pre>
+
+<p>No way I'd want the command to be shared</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/217828" title="short permalink to this answer" class="short-link" id="link-post-217828">share</a><span class="lsep">|</span><a href="/posts/217828/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2015-07-23 09:05:30Z" class="relativetime">Jul 23 at 9:05</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/124644/yarek-t"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/15306e53a05006b5a1c4fed5b1bf4633?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/124644/yarek-t">Yarek T</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">111</span><span title="3 bronze badges"><span class="badge3"></span><span class="badgecount">3</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-217828" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-370013" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">The reason you&#39;d reload the history after every command is that it&#39;s the behaviour required by the question (and so this doesn&#39;t actually answer the question as posed).</span>
+                    &ndash;&nbsp;<a href="/users/73093/michael-homer"
+                       title="18723 reputation"
+                       class="comment-user">Michael Homer</a>
+                <span class="comment-date" dir="ltr"><span title="2015-07-23 09:42:04Z" class="relativetime-clean">Jul 23 at 9:42</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-370055" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@MichaelHomer Fair point. Feel free to downvote so the answer stays at the bottom, however, I would chalk this up to the OP not realising how bad the requested behaviour would be, and the fact that this is very googlable question.</span>
+                    &ndash;&nbsp;<a href="/users/124644/yarek-t"
+                       title="111 reputation"
+                       class="comment-user">Yarek T</a>
+                <span class="comment-date" dir="ltr"><span title="2015-07-23 10:46:31Z" class="relativetime-clean">Jul 23 at 10:46</span></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-370084" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Op here, yeah, that&#39;s a fair compromise. My main complaint is that I was losing history. This should stop that, even if it doesn&#39;t mean instant updates across simultaneous sessions.</span>
+                    &ndash;&nbsp;<a href="/users/880/oli"
+                       title="3460 reputation"
+                       class="comment-user owner">Oli</a>
+                <span class="comment-date" dir="ltr"><span title="2015-07-23 12:44:38Z" class="relativetime-clean">Jul 23 at 12:44</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-217828" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="222407"></a>
+<div id="answer-222407" class="answer" data-answerid="222407"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="222407">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I chose to put history in a file-per-tty, as multiple people can be working on the same server - separating each session's commands makes it easier to audit.</p>
+
+<pre><code># Convert /dev/nnn/X or /dev/nnnX to "nnnX"
+HISTSUFFIX=`tty | sed 's/\///g;s/^dev//g'`
+# History file is now .bash_history_pts0
+HISTFILE=".bash_history_$HISTSUFFIX"
+HISTTIMEFORMAT="%y-%m-%d %H:%M:%S "
+HISTCONTROL=ignoredups:ignorespace
+shopt -s histappend
+HISTSIZE=1000
+HISTFILESIZE=5000
+</code></pre>
+
+<p>History now looks like:</p>
+
+<pre><code>user@host:~# test 123
+user@host:~# test 5451
+user@host:~# history
+1  15-08-11 10:09:58 test 123
+2  15-08-11 10:10:00 test 5451
+3  15-08-11 10:10:02 history
+</code></pre>
+
+<p>With the files looking like:</p>
+
+<pre><code>user@host:~# ls -la .bash*
+-rw------- 1 root root  4275 Aug 11 09:42 .bash_history_pts0
+-rw------- 1 root root    75 Aug 11 09:49 .bash_history_pts1
+-rw-r--r-- 1 root root  3120 Aug 11 10:09 .bashrc
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/222407" title="short permalink to this answer" class="short-link" id="link-post-222407">share</a><span class="lsep">|</span><a href="/posts/222407/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2015-08-11 00:15:21Z" class="relativetime">Aug 11 at 0:15</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/94018/litch"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/c86801262d823e33d58efd77cbb3bf7f?s=32&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/94018/litch">Litch</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">273</span><span title="5 bronze badges"><span class="badge3"></span><span class="badgecount">5</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-222407" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-222407" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="203084"></a>
+<div id="answer-203084" class="answer" data-answerid="203084"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="203084">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Here is the snippet from my .bashrc and short explanations wherever needed:</p>
+
+<pre><code># The following line ensures that history logs screen commands as well
+shopt -s histappend
+
+# This line makes the history file to be rewritten and reread at each bash prompt
+PROMPT_COMMAND="$PROMPT_COMMAND;history -a; history -n"
+# Have lots of history
+HISTSIZE=100000         # remember the last 100000 commands
+HISTFILESIZE=100000     # start truncating commands after 100000 lines
+HISTCONTROL=ignoreboth  # ignoreboth is shorthand for ignorespace and     ignoredups
+</code></pre>
+
+<p>The HISTFILESIZE and HISTSIZE are personal preferences and you can change them as per your tastes.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/203084" title="short permalink to this answer" class="short-link" id="link-post-203084">share</a><span class="lsep">|</span><a href="/posts/203084/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2015-05-13 04:48:07Z" class="relativetime">May 13 at 4:48</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/79890/hopping-bunny"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/3835ea8a5b12cc6fd66a3ec135b15ae6?s=32&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/79890/hopping-bunny">Hopping Bunny</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">51</span><span title="1 bronze badge"><span class="badge3"></span><span class="badgecount">1</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-203084" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-203084" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+									<a name='new-answer'></a>
+						<form id="post-form" action="/questions/1288/answer/submit" method="post"  class="post-form">
+						    <input type="hidden" id="post-id" value="1288" />
+                            <input type="hidden" id="qualityBanWarningShown" name="qualityBanWarningShown" value="false" />
+                            <input type="hidden" name="referrer" value=""/>
+							<h2 class="space">Your Answer</h2>
+
+
+        
+
+<script>
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+       
+        StackExchange.using("externalEditor", function() {
+                // Have to fire editor after snippets, if snippets enabled
+                if (StackExchange.options.snippets.enabled) {
+                    StackExchange.using("snippets", function() {
+                        createEditor();
+                    });
+                }
+                else {
+                    createEditor();
+                }
+            });
+
+            function createEditor() {
+                prepareEditor({
+                    heartbeatType: 'answer',
+                convertImagesToLinks: false,
+                reputationToPostImages: null,
+                bindNavPrevention: true,
+                postfix: "",
+                    onDemand: true,
+                    discardSelector: ".discard-answer"
+                    ,immediatelyShowMarkdownHelp:true
+                    });
+                
+
+        }
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor js-post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="1bcbe1f47a0516cd756b6806bc1e8b8b">
+        <input id="author" name="author" type="text">
+    </div>
+
+
+
+</div>
+							<div style="position: relative;">
+								
+								            <div class="form-item dno new-post-login">
+        
+                <div class="new-login-form">
+                    <div class="new-login-left">
+                        <h3>Sign up or <a id="login-link" href="/users/login?ssrc=question_page&returnurl=http%3a%2f%2funix.stackexchange.com%2fquestions%2f1288%2fpreserve-bash-history-in-multiple-terminal-windows%23new-answer">log in</a></h3>
+                        <script>
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        </script>
+                        <div class="preferred-login google-login">
+                            <p><span class="icon"></span><span>Sign up using Google</span></p>
+                        </div>
+                        <div class="preferred-login facebook-login">
+                            <p><span class="icon"></span><span>Sign up using Facebook</span></p>
+                        </div>
+                        <div class="preferred-login stackexchange-login">
+                            <p><span class="icon"></span><span>Sign up using Email and Password</span></p>
+                        </div>
+                    </div>
+                    <input type="hidden" name="manual-openid" class="manual-openid" />
+                    <input type="hidden" name="use-facebook" class="use-facebook" value="false" />
+                    <input type="hidden" name="use-google" class="use-google" value="false" />
+                    <input type="button" class="submit-openid" value="Submit" style="display:none" />
+                    <div class="new-login-right">
+                                <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tr>
+                    <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown" />
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', 'http%3a%2f%2funix.stackexchange.com%2fquestions%2f1288%2fpreserve-bash-history-in-multiple-terminal-windows%23new-answer', 'question_page');
+                    }
+                );
+            </script>
+            <noscript>
+                        <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tr>
+                    <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown" />
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+
+            </noscript>
+
+							</div>
+           
+															<div class="form-submit cbt">
+									<input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+									<a href="#" class="discard-answer dno">discard</a>
+
+<p class="privacy-policy-agreement">
+By posting your answer, you agree to the <a href='http://stackexchange.com/legal/privacy-policy' target='_blank'>privacy policy</a> and <a href='http://stackexchange.com/legal/terms-of-service' target='_blank'>terms of service</a>.</p>
+<input type="hidden" name="legalLinksShown" value="1" />								</div>
+						</form>
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you&#39;re looking for?							Browse other questions tagged <a href="/questions/tagged/bash" class="post-tag" title="show questions tagged &#39;bash&#39;" rel="tag">bash</a> <a href="/questions/tagged/command-history" class="post-tag" title="show questions tagged &#39;command-history&#39;" rel="tag">command-history</a>  or <a href="/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2010-08-26 13:04:56Z"><b>5 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>64023 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="?lastactivity" class="lastactivity-link" title="2015-08-11 00:15:21Z">2 months ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </table>
+			    </div>
+						
+			<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,0,"adzerk419355641",17).enableDynamicSiteSelection().setZone(56016); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk419355641">
+            </div>
+			  
+    
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+<div class="spacer">
+	<a href="/q/99325" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">2</div>
+	</a>
+	<a href="/questions/99325/automatically-save-bash-command-history-in-screen-session" class="question-hyperlink">Automatically save bash command history in screen session</a>
+</div><div class="spacer">
+	<a href="/q/25334" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">4</div>
+	</a>
+	<a href="/questions/25334/how-to-preserve-bash-history-in-multiple-terminal-windows" class="question-hyperlink">How to preserve bash history in multiple terminal windows</a>
+</div><div class="spacer">
+	<a href="/q/29939" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">3</div>
+	</a>
+	<a href="/questions/29939/what-do-you-use-to-manage-your-shell-history" class="question-hyperlink">What do you use to manage your shell history?</a>
+</div><div class="spacer">
+	<a href="/q/18212" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">23</div>
+	</a>
+	<a href="/questions/18212/bash-history-ignoredups-and-erasedups-setting-conflict-with-common-history" class="question-hyperlink">Bash history: &ldquo;ignoredups&rdquo; and &ldquo;erasedups&rdquo; setting conflict with common history across sessions</a>
+</div><div class="spacer">
+	<a href="/q/32460" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">16</div>
+	</a>
+	<a href="/questions/32460/excluding-some-of-the-commands-from-being-getting-stored-in-bash-history" class="question-hyperlink">Excluding some of the commands from being getting stored in bash history</a>
+</div><div class="spacer">
+	<a href="/q/6501" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">14</div>
+	</a>
+	<a href="/questions/6501/why-would-anyone-not-set-histappend-in-bash" class="question-hyperlink">Why would anyone not set &#39;histappend&#39; in bash?</a>
+</div><div class="spacer">
+	<a href="/q/3330" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">5</div>
+	</a>
+	<a href="/questions/3330/how-to-get-a-persistent-history-file-even-after-a-non-clean-shutdown" class="question-hyperlink">How to get a persistent &ldquo;history&rdquo;-file even after a non-clean shutdown?</a>
+</div><div class="spacer">
+	<a href="/q/212646" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">13</div>
+	</a>
+	<a href="/questions/212646/update-bash-history-on-others-terminals-on-exit-of-one" class="question-hyperlink">Update bash history on others terminals on exit of one</a>
+</div><div class="spacer">
+	<a href="/q/47614" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">9</div>
+	</a>
+	<a href="/questions/47614/saving-bash-history-from-multiple-konsole-not-working-correctly" class="question-hyperlink">Saving bash history from multiple Konsole not working correctly</a>
+</div><div class="spacer">
+	<a href="/q/75316" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">1</div>
+	</a>
+	<a href="/questions/75316/different-history-command-output-after-reconnecting-via-ssh" class="question-hyperlink">Different &ldquo;history&rdquo; command output after reconnecting via SSH</a>
+</div>					<div class="spacer more">
+				<a href="/questions/linked/1288">see more linked questions…</a>
+			</div>
+	</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer">
+<a href="/q/3146" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">13
+    </div>
+</a><a href="/questions/3146/mangled-history" class="question-hyperlink">Mangled history</a>
+</div>
+<div class="spacer">
+<a href="/q/25334" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">4
+    </div>
+</a><a href="/questions/25334/how-to-preserve-bash-history-in-multiple-terminal-windows" class="question-hyperlink">How to preserve bash history in multiple terminal windows</a>
+</div>
+<div class="spacer">
+<a href="/q/47614" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">9
+    </div>
+</a><a href="/questions/47614/saving-bash-history-from-multiple-konsole-not-working-correctly" class="question-hyperlink">Saving bash history from multiple Konsole not working correctly</a>
+</div>
+<div class="spacer">
+<a href="/q/88838" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">3
+    </div>
+</a><a href="/questions/88838/preserve-tcsh-history-in-multiple-terminal-windows" class="question-hyperlink">Preserve tcsh history in multiple terminal windows</a>
+</div>
+<div class="spacer">
+<a href="/q/131504" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="/questions/131504/how-to-sync-terminal-session-command-history-in-bash" class="question-hyperlink">How to sync terminal session command history in bash?</a>
+</div>
+<div class="spacer">
+<a href="/q/199249" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">2
+    </div>
+</a><a href="/questions/199249/execute-commands-from-history-that-match-regex-or-grep" class="question-hyperlink">Execute commands from history that match regex or grep</a>
+</div>
+<div class="spacer">
+<a href="/q/203290" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">2
+    </div>
+</a><a href="/questions/203290/how-do-i-clear-the-terminal-history" class="question-hyperlink">How do I clear the terminal History?</a>
+</div>
+<div class="spacer">
+<a href="/q/206939" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">1
+    </div>
+</a><a href="/questions/206939/cross-session-duplicate-removal-in-bash-command-history" class="question-hyperlink">Cross-session duplicate removal in bash command history</a>
+</div>
+<div class="spacer">
+<a href="/q/209495" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="/questions/209495/bash-incremental-history-search-ctrlr-matching-multiple-non-adjacent-word" class="question-hyperlink">Bash - incremental history search (ctrl+r) - matching multiple non-adjacent words</a>
+</div>
+<div class="spacer">
+<a href="/q/214324" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="/questions/214324/using-only-in-memory-command-history" class="question-hyperlink">Using only in-memory command history</a>
+</div>
+
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="//stackexchange.com/questions?tab=hot" 
+           class="js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li >
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/282114/is-there-a-single-word-that-means-strange-object" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is there a single word that means &quot;strange object&quot;?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-photo" title="Photography Stack Exchange"></div><a href="http://photo.stackexchange.com/questions/70297/can-i-make-commercial-use-of-an-image-which-is-readily-available-but-with-unclea" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:61 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can I make commercial use of an image which is readily available but with unclear licensing?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/56749/how-to-quiet-noisy-undergrads-students-during-lecture" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to quiet noisy undergrads students during lecture
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/105802/why-didnt-voldemort-use-the-ministry-to-rise-to-power-and-instead-chose-to-beco" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why didn&#39;t Voldemort use the ministry to rise to power and instead chose to become a criminal?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-cs" title="Computer Science Stack Exchange"></div><a href="http://cs.stackexchange.com/questions/48622/is-there-an-algorithm-for-converting-turing-machines-into-equivalent-lambda-expr" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:419 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is there an algorithm for converting Turing machines into equivalent Lambda expressions?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-graphicdesign" title="Graphic Design Stack Exchange"></div><a href="http://graphicdesign.stackexchange.com/questions/62262/how-can-i-protect-my-job-from-a-client-publishing-it-elsewhere" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:174 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How can I protect my job from a client publishing it elsewhere?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-programmers" title="Programmers Stack Exchange"></div><a href="http://programmers.stackexchange.com/questions/300682/is-a-function-immediately-impure-if-it-takes-a-function-as-a-parameter" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:131 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is a function immediately impure if it takes a function as a parameter?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-space" title="Space Exploration Stack Exchange"></div><a href="http://space.stackexchange.com/questions/12402/why-are-there-so-few-lunar-rovers" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:508 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why are there so few lunar rovers?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-hsm" title="History of Science and Mathematics Stack Exchange"></div><a href="http://hsm.stackexchange.com/questions/2940/what-famous-theorem-or-results-were-proven-by-female-mathematicians" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:587 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What famous theorem or results were proven by female mathematicians?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="http://tex.stackexchange.com/questions/274618/draw-lines-in-front-of-nodes-rather-than-behind-them" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    draw lines in front of nodes rather than behind them
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/28211/how-can-i-get-my-delorean-to-88-miles-per-hour-without-a-train" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How can I get my DeLorean to 88 miles per hour without a train?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-aviation" title="Aviation Stack Exchange"></div><a href="http://aviation.stackexchange.com/questions/22316/why-do-turbofan-blade-tips-exceed-the-speed-of-sound-while-prop-tips-should-not" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:528 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why do turbofan blade tips exceed the speed of sound while prop tips should not?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/28094/how-does-one-prove-ruler-ship-in-a-rural-illiterate-world" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How does one prove ruler-ship in a rural illiterate world
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-security" title="Information Security Stack Exchange"></div><a href="http://security.stackexchange.com/questions/103088/is-there-any-way-to-safely-examine-the-contents-of-a-usb-memory-stick" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:162 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is there any way to safely examine the contents of a USB memory stick?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-gamedev" title="Game Development Stack Exchange"></div><a href="http://gamedev.stackexchange.com/questions/110109/how-can-i-stop-players-from-cheating-on-puzzle-levels-by-finding-solutions-on-th" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:53 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How can I stop players from cheating on puzzle levels by finding solutions on the web?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1493694/question-about-the-derivative-definition" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Question about the derivative definition
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-ell" title="English Language Learners Stack Exchange"></div><a href="http://ell.stackexchange.com/questions/71644/whats-the-name-for-face-side-view-of-face" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:481 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What&#39;s the name for face side view of face
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-outdoors" title="The Great Outdoors Stack Exchange"></div><a href="http://outdoors.stackexchange.com/questions/9674/should-i-run-if-i-see-wild-dogs" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:395 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Should I run if I see wild dogs?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/56220/what-to-do-when-your-student-is-convinced-that-he-will-be-the-next-einstein" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What to do when your student is convinced that he will be the next Einstein?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/56727/is-academia-really-just-a-huge-competition" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is Academia really just a huge competition?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/61552/no-one-please" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    No one, please!
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-mathoverflow" title="MathOverflow"></div><a href="http://mathoverflow.net/questions/221635/finite-sets-of-vectors-closed-under-an-orthogonality-property" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:504 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Finite sets of vectors closed under an orthogonality property
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-travel" title="Travel Stack Exchange"></div><a href="http://travel.stackexchange.com/questions/57822/pedestrian-guide-to-cross-the-road-in-london" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:273 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Pedestrian guide to cross the road in London?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/33305574/why-does-removing-the-const-keyword-result-in-segmentation-fault-here" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why does removing the const keyword result in segmentation fault here?
+                </a>
+
+            </li>
+    </ul>
+
+        <a href="#" 
+           class="show-more js-show-more js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:3, location:11 })">
+            more hot questions
+        </a>
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="/feeds/question/1288" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/1288/ivc/8315');});
+</script>
+<noscript>
+    <div><img src="/posts/1288/ivc/8315" class="dno" alt="" width="0" height="0"></div>
+</noscript><div style="display:none" id="prettify-lang">lang-bsh</div></div>
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                        <a href="/tour">tour</a>
+                    <a href="/help">help</a>
+                    <a href="http://blog.stackoverflow.com?blb=1">blog</a>
+                        <a href="http://chat.stackexchange.com">chat</a>
+                    <a href="http://data.stackexchange.com">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackexchange.com/work-here">work here</a>
+                    <a href="http://stackexchange.com/mediakit">advertising info</a>
+
+                    <a onclick='StackExchange.switchMobile("on")'>mobile</a>
+                    <b><a href="/contact">contact us</a></b>
+                        <b><a href="http://meta.unix.stackexchange.com">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tr>
+            <th colspan=3>
+                Technology
+            </th>
+            <th >
+                Life / Arts
+            </th>
+            <th >
+                Culture / Recreation
+            </th>
+            <th >
+                Science
+            </th>
+            <th >
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="//stackoverflow.com" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="//serverfault.com" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="//superuser.com" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="//webapps.stackexchange.com" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="//askubuntu.com" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="//webmasters.stackexchange.com" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="//gamedev.stackexchange.com" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="//tex.stackexchange.com" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="//programmers.stackexchange.com" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="//unix.stackexchange.com" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="//apple.stackexchange.com" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="//wordpress.stackexchange.com" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="//gis.stackexchange.com" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="//electronics.stackexchange.com" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="//android.stackexchange.com" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="//security.stackexchange.com" title="information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="//dba.stackexchange.com" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="//drupal.stackexchange.com" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="//sharepoint.stackexchange.com" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="//ux.stackexchange.com" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="//mathematica.stackexchange.com" title="users of Mathematica">Mathematica</a></li>
+                        <li><a href="//salesforce.stackexchange.com" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="//expressionengine.stackexchange.com" title="administrators, end users, developers and designers for ExpressionEngine&#174; CMS">ExpressionEngine&#174; Answers</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (13)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//photo.stackexchange.com" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="//scifi.stackexchange.com" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="//graphicdesign.stackexchange.com" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="//movies.stackexchange.com" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="//cooking.stackexchange.com" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="//diy.stackexchange.com" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="//money.stackexchange.com" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="//academia.stackexchange.com" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (9)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//english.stackexchange.com" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="//skeptics.stackexchange.com" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="//judaism.stackexchange.com" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="//travel.stackexchange.com" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="//christianity.stackexchange.com" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="//gaming.stackexchange.com" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="//bicycles.stackexchange.com" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="//rpg.stackexchange.com" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (21)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//math.stackexchange.com" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="//stats.stackexchange.com" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="//cstheory.stackexchange.com" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="//physics.stackexchange.com" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="//mathoverflow.net" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="//chemistry.stackexchange.com" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="//biology.stackexchange.com" title="biology researchers, academics, and students">Biology</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (5)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//stackapps.com" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="//meta.stackexchange.com" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="//area51.stackexchange.com" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="//careers.stackoverflow.com">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</table>
+                </div>
+            </div>
+
+            <div id="copyright">
+                site design / logo &#169; 2015 Stack Exchange Inc; user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2015.10.23.2901
+            </div>
+                <div id="additional-notices">
+                    Linux is a registered trademark of Linus Torvalds. UNIX is a registered trademark of The Open Group. <br>This site is not affiliated with Linus Torvalds or The Open Group in any way.
+                </div>
+            
+        </div>
+    </div>
+    <noscript>
+        <div id="noscript-warning">Unix &amp; Linux Stack Exchange works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    ados.run.push(function () { ados_setKeywords('bash,command-history,x-community,x-host-unix.stackexchange.com');; ados_load(); });         
+</script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-5620270-24', {'cookieDomain': 'stackexchange.com'});
+                        ga('set', 'dimension2', '|bash|command-history|');         ga('send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+            qc.async=true;
+            qc.src=(ssl?'https://secure':'http://edge')+'.quantserve.com/quant.js';
+            s.parentNode.insertBefore(qc, s);
+            var sc=document.createElement('script');
+            sc.async=true;
+            sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+            s.parentNode.insertBefore(sc, s);
+        })();
+        _comscore.push({ c1: "2", c2: "17440561" });
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>
+            
+    </body>
+</html>

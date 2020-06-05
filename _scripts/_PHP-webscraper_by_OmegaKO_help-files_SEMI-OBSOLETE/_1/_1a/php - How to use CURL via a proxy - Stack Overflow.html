@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/QAPage">
+<head>
+
+<title>php - How to use CURL via a proxy? - Stack Overflow</title>
+    <link rel="shortcut icon" href="//cdn.sstatic.net/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+    <link rel="apple-touch-icon image_src" href="//cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded&a" />
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="How to use CURL via a proxy?" />
+    <meta name="twitter:description" property="og:description" itemprop="description" content="I am looking to set curl to use a proxy server. The url is provided by an html form, which has not been a problem. Without the proxy it works fine. I have found code on this and other sites, but th..." />
+    <meta property="og:url" content="http://stackoverflow.com/questions/5211887/how-to-use-curl-via-a-proxy"/>
+    <link rel="canonical" href="http://stackoverflow.com/questions/5211887/how-to-use-curl-via-a-proxy" />
+
+    
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="//cdn.sstatic.net/Js/stub.en.js?v=4e67e00a5514"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.sstatic.net/stackoverflow/all.css?v=f29b1dcb2836">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;How to use CURL via a proxy?&#39;" href="/feeds/question/5211887">
+            <meta name="twitter:app:country" content="US" />
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:iphone" content="871299723" />
+            <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/5211887/how-to-use-curl-via-a-proxy" />
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:ipad" content="871299723" />
+            <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/5211887/how-to-use-curl-via-a-proxy" />
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/5211887/how-to-use-curl-via-a-proxy">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+                    
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.initSnippetRenderer();
+                    });
+                    
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:6,shownCommentCount:5,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:5211887});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('1', '5211887');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text'); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","serverTime":1445097644,"networkMetaHostname":"meta.stackexchange.com","routeName":"Questions/Show","styleCode":true,"enableUserHovercards":true,"snippets":{"enabled":true,"domain":"stacksnippets.net"},"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"globalAuthDisabled":true,"nonAsciiTags":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"1bcbe1f47a0516cd756b6806bc1e8b8b","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true,"ab":{"anon_popups":{"v":"d","g":2},"profile_integration_signup":{"v":"b","g":2}}}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"f3d53dad4c22","js/moderator.en.js":"fa05d92dbab5","js/full-anon.en.js":"3d170576686f","js/full.en.js":"72265ec4d33b","js/wmd.en.js":"93bf4b8da915","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"f9007a314275","js/help.en.js":"69b2e9e77696","js/tageditor.en.js":"c84618a71b61","js/tageditornew.en.js":"3c95b8b827f4","js/inline-tag-editing.en.js":"de80429b1816","js/revisions.en.js":"9e897f24d78d","js/review.en.js":"07004bafa2a0","js/tagsuggestions.en.js":"d1ff9b84abe5","js/post-validation.en.js":"cdaae4616a26","js/explore-qlist.en.js":"cd6e5274146c","js/events.en.js":"56d31cc69b44","js/keyboard-shortcuts.en.js":"a8f86d8a32bb","js/external-editor.en.js":"6484cd83ad12","js/external-editor.en.js":"6484cd83ad12","js/snippet-javascript.en.js":"ad6b3ff5e697","js/snippet-javascript-codemirror.en.js":"bf736facf21d"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+    
+    
+</head>
+<body class="question-page new-topbar">
+    <noscript><div id="noscript-padding"></div></noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+
+<div class="topbar-dialog siteSwitcher-dialog dno">
+    <div class="header">
+        <h3><a href="//stackoverflow.com">current community</a></h3>
+    </div>
+    <div class="modal-content current-site-container">
+        <ul class="current-site">
+                <li>
+                        <div class="related-links">
+                    <a href="http://chat.stackoverflow.com" class="js-gps-track"     data-gps-track="site_switcher.click({ item_type:6 })"
+>chat</a>
+            </div>
+
+
+
+
+    <a href="//stackoverflow.com"
+       class="current-site-link site-link js-gps-track"
+       data-id="1"
+       data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                </li>
+                <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    
+
+
+
+    <a href="http://meta.stackoverflow.com"
+       class="site-link js-gps-track"
+       data-id="552"
+       data-gps-track="
+            site.switch({ target_site:552, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                </li>
+                            <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    <a class="site-link js-gps-track"
+                       href="//careers.stackoverflow.com?utm_source=stackoverflow.com&amp;utm_medium=site-ui&amp;utm_campaign=multicollider"
+                            data-gps-track="site_switcher.click({ item_type:9 })"
+>
+                        <div class="site-icon favicon favicon-careers" title="Stack Overflow Careers"></div>
+                        Stack Overflow Careers
+                    </a>
+                </li>
+        </ul>
+    </div>
+    
+    <div class="header" id="your-communities-header">
+        <h3>
+your communities        </h3>
+            
+    </div>
+    <div class="modal-content" id="your-communities-section">
+            
+            <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f5211887%2fhow-to-use-curl-via-a-proxy" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:10 })"
+>Sign up</a> or <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f5211887%2fhow-to-use-curl-via-a-proxy" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:11 })"
+>log in</a> to customize your list.
+            </div>
+    </div>
+    
+    <div class="header">
+        <h3><a href="//stackexchange.com/sites">more stack exchange communities</a></h3>
+        <a href="http://blog.stackoverflow.com" class="fr">company blog</a>
+    </div>
+    <div class="modal-content">
+            <div class="child-content"></div>
+    </div>
+</div>
+        </div>
+
+        <div class="network-items">
+
+            <a href="//stackexchange.com"
+               class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track"
+               data-gps-track="site_switcher.show"
+               title="A list of all 150 Stack Exchange sites">
+                <span class="hidden-text">Stack Exchange</span>
+            </a>
+
+    <a href="#"
+       class="topbar-icon icon-inbox yes-hover js-inbox-button"
+       title="Recent inbox messages">
+        <span class="hidden-text">Inbox</span>
+        <span class="unread-count" style="display:none"></span>
+    </a>
+    <a href="#"
+       class="topbar-icon icon-achievements yes-hover js-achievements-button "
+       data-unread-class=""
+       title="Recent achievements: reputation, badges, and privileges earned">
+        <span class="hidden-text">Reputation and Badges</span>
+        <span class="unread-count" style="display:none">
+            
+        </span>
+    </a>
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                    <a href="https://stackoverflow.com/users/signup?ssrc=head&returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f5211887%2fhow-to-use-curl-via-a-proxy" class="login-link">sign up</a>
+                                <a href="https://stackoverflow.com/users/login?ssrc=head&returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f5211887%2fhow-to-use-curl-via-a-proxy" class="login-link">log in</a>
+
+                        <a href="/tour">tour</a>
+                            <a href="#" class="icon-help js-help-button" title="Help Center and other resources">
+        help
+        <span class="triangle"></span>
+    </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                    <li>
+                        <a href="//meta.stackoverflow.com" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                            Meta
+                            <span class="item-summary">
+                                Discuss the workings and policies of this site
+                            </span>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+                            <a href="//careers.stackoverflow.com?utm_source=stackoverflow.com&amp;utm_medium=site-ui&amp;utm_campaign=anon-topbar">stack overflow careers</a>
+                    </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="/search" method="get" autocomplete="off">
+                    <input name="q" type="text" placeholder="search" value="" tabindex="1" autocomplete="off" maxlength="240" />
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="/" >
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                        <li class="youarehere"><a id="nav-questions" href="/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="/tags">Tags</a></li>
+                        <li><a id="nav-users" href="/users">Users</a></li>
+                        <li><a id="nav-badges" href="/help/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion"  href="/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content" class="snippet-hidden">
+            
+
+<div itemscope itemtype="http://schema.org/Question">
+    <link itemprop="image" href="//cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+			<!--googleoff: all-->
+
+<div id="herobox-mini">
+    <div id="hero-content">
+        <span id="controls">
+                <a href="/users/signup?ssrc=hero&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f5211887%2fhow-to-use-curl-via-a-proxy" id="tell-me-more" class="button">Sign up</a>
+            <span id="close"><a title="click to dismiss">&times;</a></span>
+        </span>
+        <div id="blurb">
+            Stack Overflow is a question and answer site for professional and enthusiast programmers. It&#39;s 100% free.
+        </div>        
+    </div>
+    <script>
+        StackExchange.ready(function() {
+            var clickSource = $("body").attr("class") + '-mini';
+            var location = 0;
+            if ($("body").hasClass("questions-page")) {
+                clickSource = 'questionpagemini';
+                location = 2;
+            } else if ($("body").hasClass("question-page")) {
+                clickSource = 'questionpagemini';
+                location = 2;
+            } else if ($("body").hasClass("home-page")) {
+                clickSource = 'homepagemini';
+                location = 4;
+            }
+
+            $('#tell-me-more').click(function () {
+                StackExchange.using("gps", function () {
+                    StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+                });
+            });
+            $('#herobox-mini #close').click(function () {
+                StackExchange.using("gps", function () {
+                    StackExchange.gps.track("hero.action", { hero_action_type: "close", location: location }, true);
+                });
+                $.cookie("hero", "none", { path: "/", expires: 365 });
+                var $hero = $("#herobox-mini");
+                $hero.slideUp('fast', function () { $hero.remove(); });
+                return false;
+            });
+        });
+    </script>
+</div>
+			<!--googleon: all-->
+			<div id="question-header">
+                <h1 itemprop="name"><a href="/questions/5211887/how-to-use-curl-via-a-proxy" class="question-hyperlink">How to use CURL via a proxy?</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="5211887"  id="question">
+
+    <script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk185784208",4).setZone(43); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk185784208">
+            </div>    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="5211887">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">52</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="#" title="This is a favorite question (click again to undo)">favorite</a>
+        <div class="favoritecount"><b>32</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>I am looking to set curl to use a proxy server. The url is provided by an html form, which has not been a problem. Without the proxy it works fine. I have found code on this and other sites, but they do not work. Any help in finding the correct solution would be much appreciated. I feel that the bellow are close, but that I am missing something. Thank You.</p>
+
+<p>The bellow code I adapted from here <a href="http://www.webmasterworld.com/forum88/10572.htm">http://www.webmasterworld.com/forum88/10572.htm</a> but it returns an error message about a missing T_VARIABLE on line 12.</p>
+
+<pre><code>&lt;?
+
+$url = '$_POST[1]';
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL,$url);
+curl_setopt($ch, CURLOPT_HTTPPROXYTUNNEL, 0);
+curl_setopt($ch, CURLOPT_PROXY, '66.96.200.39:80');
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 0);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST,'GET');
+curl_setopt ($ch, CURLOPT_HEADER, 1)
+curl_exec ($ch); 
+$curl_info = curl_getinfo($ch);
+curl_close($ch);
+echo '&lt;br /&gt;';
+print_r($curl_info);
+?&gt;
+</code></pre>
+
+<p>The bellow is from <a href="http://stackoverflow.com/questions/4802816/curl-through-proxy-returns-no-content">curl through proxy returns no content</a></p>
+
+<pre><code>&lt;?
+
+$proxy = "66.96.200.39:80";
+$proxy = explode(':', $proxy);
+$url = "$_POST[1]";
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_PROXY, $proxy[0]);
+curl_setopt($ch, CURLOPT_PROXYPORT, $proxy[1]);
+curl_setopt($ch, CURLOPT_HEADER, 1);
+
+$exec = curl_exec($ch);
+
+echo curl_error($ch);
+print_r(curl_getinfo($ch));
+echo $exec;
+?&gt;
+</code></pre>
+
+<p>is currently live on pelican-cement.com but also does not work.</p>
+
+<p>UPDATE:
+Thank you for all your help, I made the above changes. Now it only returns a blank screen.</p>
+
+<pre><code>&lt;?
+
+$url = $_POST['1'];
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL,$url);
+curl_setopt($ch, CURLOPT_HTTPPROXYTUNNEL, 0);
+curl_setopt($ch, CURLOPT_PROXY, '66.96.200.39:80');
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 0);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST,'GET');
+curl_setopt ($ch, CURLOPT_HEADER, 1);
+curl_exec ($ch); 
+$curl_scraped_page = curl_exec($ch);
+curl_close($ch);
+
+echo $curl_scraped_page;
+?&gt; 
+</code></pre>
+
+<p>@Pekka @yoavmatchulsky @MT</p>
+    </div>
+    <div class="post-taglist">
+        <a href="/questions/tagged/php" class="post-tag" title="show questions tagged &#39;php&#39;" rel="tag">php</a> <a href="/questions/tagged/curl" class="post-tag" title="show questions tagged &#39;curl&#39;" rel="tag">curl</a> <a href="/questions/tagged/proxy" class="post-tag" title="show questions tagged &#39;proxy&#39;" rel="tag">proxy</a> 
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/q/5211887" title="short permalink to this question" class="short-link" id="link-post-5211887">share</a><span class="lsep">|</span><a href="/posts/5211887/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/5211887/revisions" title="show all edits to this post">edited <span title="2012-07-12 17:35:09Z" class="relativetime">Jul 12 '12 at 17:35</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/367456/hakre"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/MGhY2.png?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/367456/hakre">hakre</a><br>
+        <span class="reputation-score" title="reputation score 120880" dir="ltr">121k</span><span title="19 gold badges"><span class="badge1"></span><span class="badgecount">19</span></span><span title="168 silver badges"><span class="badge2"></span><span class="badgecount">168</span></span><span title="329 bronze badges"><span class="badge3"></span><span class="badgecount">329</span></span>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2011-03-06 16:54:01Z" class="relativetime">Mar 6 '11 at 16:54</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/586011/user586011"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/7fab9f1e1483365348c4a15a08b3ee27?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/586011/user586011">user586011</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">407</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="6 silver badges"><span class="badge2"></span><span class="badgecount">6</span></span><span title="17 bronze badges"><span class="badge3"></span><span class="badgecount">17</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</div>
+</td>
+        </tr>
+                
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-5211887" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="1"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-5861716" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">You are missing a semicolon on line 12</span>
+                    &ndash;&nbsp;<a href="/users/187606/pekka-%ec%9b%83"
+                       title="280936 reputation"
+                       class="comment-user">Pekka 웃</a>
+                <span class="comment-date" dir="ltr"><span title="2011-03-06 16:56:30Z" class="relativetime-clean">Mar 6 '11 at 16:56</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-5861789" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">also, you need to change $url = &#39;$_POST[1]&#39; to $url = $_POST[1] - otherwise, $url will be a string instead of the URL you want</span>
+                    &ndash;&nbsp;<a href="/users/374262/yoavmatchulsky"
+                       title="2240 reputation"
+                       class="comment-user">yoavmatchulsky</a>
+                <span class="comment-date" dir="ltr"><span title="2011-03-06 17:06:21Z" class="relativetime-clean">Mar 6 '11 at 17:06</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-5861892" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Also, the key in the $_POST array is a string not an integer so you&#39;d want it to say <code>$_POST[&#39;1&#39;]</code></span>
+                    &ndash;&nbsp;<a href="/users/327150/mt"
+                       title="840 reputation"
+                       class="comment-user">MT.</a>
+                <span class="comment-date" dir="ltr"><span title="2011-03-06 17:20:24Z" class="relativetime-clean">Mar 6 '11 at 17:20</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-5864245" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">The form on pelican-cement.com has inputs named &quot;firstname&quot; and &quot;lastname&quot;, but none named &quot;1&quot;.</span>
+                    &ndash;&nbsp;<a href="/users/331137/john-flatness"
+                       title="17206 reputation"
+                       class="comment-user">John Flatness</a>
+                <span class="comment-date" dir="ltr"><span title="2011-03-06 22:15:31Z" class="relativetime-clean">Mar 6 '11 at 22:15</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-15122729" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@user586011: Please add your solution as an answer below and accept it. Don&#39;t put the solution into the question, that does not work well.</span>
+                    &ndash;&nbsp;<a href="/users/367456/hakre"
+                       title="120880 reputation"
+                       class="comment-user">hakre</a>
+                <span class="comment-date" dir="ltr"><span title="2012-07-12 17:35:47Z" class="relativetime-clean">Jul 12 '12 at 17:35</span></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-5211887" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>1</b> more comment</a>
+        </div>         
+    </td>
+</tr>        </table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								2 Answers
+                                <span style="display:none;" itemprop="answerCount">2</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="/questions/5211887/how-to-use-curl-via-a-proxy?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active">active</a>
+        <a href="/questions/5211887/how-to-use-curl-via-a-proxy?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest">oldest</a>
+        <a class="youarehere" href="/questions/5211887/how-to-use-curl-via-a-proxy?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes">votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="9247672"></a>
+<div id="answer-9247672" class="answer" data-answerid="9247672"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="9247672">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">115</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Here is a working version with your bugs removed.</p>
+
+<pre><code>$url = 'http://dynupdate.no-ip.com/ip.php';
+$proxy = '127.0.0.1:8888';
+//$proxyauth = 'user:password';
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL,$url);
+curl_setopt($ch, CURLOPT_PROXY, $proxy);
+//curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyauth);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_HEADER, 1);
+$curl_scraped_page = curl_exec($ch);
+curl_close($ch);
+
+echo $curl_scraped_page;
+</code></pre>
+
+<p>I have added <code>CURLOPT_PROXYUSERPWD</code> in case any of your proxies require a user name and password.
+I set <code>CURLOPT_RETURNTRANSFER</code> to 1, so that the data will be returned to <code>$curl_scraped_page</code> variable.</p>
+
+<p>I removed a second extra <code>curl_exec($ch);</code> which would stop the variable being returned.
+I consolidated your proxy IP and port into one setting.</p>
+
+<p>I also removed <code>CURLOPT_HTTPPROXYTUNNEL</code> and <code>CURLOPT_CUSTOMREQUEST</code> as it was the default.</p>
+
+<p>If you don't want the headers returned, comment out <code>CURLOPT_HEADER</code>.</p>
+
+<p>To disable the proxy simply set it to null.</p>
+
+<pre><code>curl_setopt($ch, CURLOPT_PROXY, null);
+</code></pre>
+
+<p>Any questions feel free to ask, I work with <code>cURL</code> every day.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/9247672" title="short permalink to this answer" class="short-link" id="link-post-9247672">share</a><span class="lsep">|</span><a href="/posts/9247672/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/9247672/revisions" title="show all edits to this post">edited <span title="2014-12-03 10:00:19Z" class="relativetime">Dec 3 '14 at 10:00</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/632524/bodi0"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/2CqJo.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/632524/bodi0">bodi0</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">5,865</span><span title="3 gold badges"><span class="badge1"></span><span class="badgecount">3</span></span><span title="19 silver badges"><span class="badge2"></span><span class="badgecount">19</span></span><span title="32 bronze badges"><span class="badge3"></span><span class="badgecount">32</span></span>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2012-02-12 09:16:05Z" class="relativetime">Feb 12 '12 at 9:16</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1200032/gravycode"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/134f14dde6121f885cff284f232c243e?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1200032/gravycode">GravyCode</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,181</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="5 silver badges"><span class="badge2"></span><span class="badgecount">5</span></span><span title="6 bronze badges"><span class="badge3"></span><span class="badgecount">6</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-9247672" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-20422062" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">nice to know that you work with CURL everyday. I tried setting a socks proxy and it works on my local machine but doesn&#39;t work on my linux dedicated server. Any idea ?</span>
+                    &ndash;&nbsp;<a href="/users/566092/coding-idiot"
+                       title="5729 reputation"
+                       class="comment-user">coding_idiot</a>
+                <span class="comment-date" dir="ltr"><span title="2013-01-31 09:44:20Z" class="relativetime-clean">Jan 31 '13 at 9:44</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-28159133" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@coding_idiot Most web hosts block ports that aren&#39;t 80 or 443 for security reasons.</span>
+                    &ndash;&nbsp;<a href="/users/2691729/fricker"
+                       title="96 reputation"
+                       class="comment-user">Fricker</a>
+                <span class="comment-date" dir="ltr"><span title="2013-09-27 14:39:15Z" class="relativetime-clean">Sep 27 '13 at 14:39</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-28167470" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I already solved it though. I&#39;m sure others will benefit from this.</span>
+                    &ndash;&nbsp;<a href="/users/566092/coding-idiot"
+                       title="5729 reputation"
+                       class="comment-user">coding_idiot</a>
+                <span class="comment-date" dir="ltr"><span title="2013-09-27 19:03:27Z" class="relativetime-clean">Sep 27 '13 at 19:03</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-33956669" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@GravyCode: if we get proxy from some services in that case do i required to pass username/password?</span>
+                    &ndash;&nbsp;<a href="/users/1307530/pragnesh-chauhan"
+                       title="4548 reputation"
+                       class="comment-user">Pragnesh Chauhan</a>
+                <span class="comment-date" dir="ltr"><span title="2014-03-12 05:13:46Z" class="relativetime-clean">Mar 12 '14 at 5:13</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-51981047" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">How i should know if proxy port is blocked by the webhost ?</span>
+                    &ndash;&nbsp;<a href="/users/1788736/user1788736"
+                       title="553 reputation"
+                       class="comment-user">user1788736</a>
+                <span class="comment-date" dir="ltr"><span title="2015-08-16 21:47:37Z" class="relativetime-clean">Aug 16 at 21:47</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-9247672" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk1556717037",4).setZone(44); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk1556717037">
+            </div>
+  
+<a name="19487882"></a>
+<div id="answer-19487882" class="answer" data-answerid="19487882"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="19487882">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">-2</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Here is a well tested function which i used for my projects with detailed self explanatory comments </p>
+
+<hr>
+
+<p>There are many times when the ports other than 80 are blocked by server firewall so the code appears to be working fine on localhost but not on the server  </p>
+
+<pre><code>function get_page($url){
+
+global $proxy;
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+//curl_setopt($ch, CURLOPT_PROXY, $proxy);
+curl_setopt($ch, CURLOPT_HEADER, 0); // return headers 0 no 1 yes
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // return page 1:yes
+curl_setopt($ch, CURLOPT_TIMEOUT, 200); // http request timeout 20 seconds
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); // Follow redirects, need this if the url changes
+curl_setopt($ch, CURLOPT_MAXREDIRS, 2); //if http server gives redirection responce
+curl_setopt($ch, CURLOPT_USERAGENT,
+    "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.7) Gecko/20070914 Firefox/2.0.0.7");
+curl_setopt($ch, CURLOPT_COOKIEJAR, "cookies.txt"); // cookies storage / here the changes have been made
+curl_setopt($ch, CURLOPT_COOKIEFILE, "cookies.txt");
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // false for https
+curl_setopt($ch, CURLOPT_ENCODING, "gzip"); // the page encoding
+
+$data = curl_exec($ch); // execute the http request
+curl_close($ch); // close the connection
+return $data;
+}
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/19487882" title="short permalink to this answer" class="short-link" id="link-post-19487882">share</a><span class="lsep">|</span><a href="/posts/19487882/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-10-21 06:49:13Z" class="relativetime">Oct 21 '13 at 6:49</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2397135/hammad1238"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/ec0887e3472a7c46f10a6492155eb2a9?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2397135/hammad1238">hammad1238</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1</span><span title="1 bronze badge"><span class="badge3"></span><span class="badgecount">1</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+            
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-19487882" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-19487882" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+				    <div class="question-status">
+        <h2>                    <b>protected</b> by <a href="/users/-1/community">Community</a><span class="mod-flair" title="moderator">&#9830;</span> <span dir="ltr"><span title="2013-11-26 13:47:42Z" class="relativetime">Nov 26 '13 at 13:47</span></span>
+</h2>
+        <p>
+Thank you for your interest in this question. 
+Because it has attracted low-quality answers, posting an answer now requires 10 <a href="/help/whats-reputation">reputation</a> on this site.
+<br /><br />
+Would you like to answer one of these <a href="/unanswered?fromProtectedNotice=true">unanswered questions</a> instead?
+</p>
+    </div>
+
+
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you&#39;re looking for?							Browse other questions tagged <a href="/questions/tagged/php" class="post-tag" title="show questions tagged &#39;php&#39;" rel="tag">php</a> <a href="/questions/tagged/curl" class="post-tag" title="show questions tagged &#39;curl&#39;" rel="tag">curl</a> <a href="/questions/tagged/proxy" class="post-tag" title="show questions tagged &#39;proxy&#39;" rel="tag">proxy</a>  or <a href="/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2011-03-06 16:54:01Z"><b>4 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>114026 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="?lastactivity" class="lastactivity-link" title="2014-12-03 10:00:19Z">10 months ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </table>
+			    </div>
+						
+			<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk379304432",[17,2221]).setZone(45); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk379304432">
+            </div>
+        <div id="hireme">
+            <script>
+(function(){function f(t,r,f,e){var s=(r.cl||[]).join(" "),o=i.getElementById(t);o&&(s&&(o.className+=" "+s),o.innerHTML=r.cn.replace("&pt=0","&pt="+(e||"0")),o.onmousedown=function(t){var i,s,e,h,c,l;for(console.log(),i=t.target;i.tagName!=="A"&&i!==o;)i=i.parentNode;if(i!=o){for(s=n.enc,e=f,r.an&&(e+="?an="+r.an),h=0;h<i.attributes.length;++h)c=i.attributes[h],l=c.name.match(/^data-(.*)$/),l&&(e+="&"+s(l[1])+"="+s(c.value));e+="&utm="+s(u+r.utm);i.href=e}})}function e(){return[].map.call(n.qsa(".post-taglist .post-tag"),function(n){return n.innerText}).join(";")||null}if(!window.clc){var t=window,i=document,r=i.getElementsByTagName("head")[0],u="&utm_source="+location.hostname+"&utm_medium=ad&utm_campaign=",n={doc:i,head:r,enc:encodeURIComponent,dec:decodeURIComponent,se:t.StackExchange,ts:function(){return(new Date).getTime()},st:setTimeout,ct:clearTimeout,qsa:function(n){return document.querySelectorAll(n)}};n.as=function(n){var t=i.createElement("link");t.type="text/css";t.rel="stylesheet";t.href=n;r.appendChild(t)};n.ls=function(n,t,u){var f=i.createElement("script"),e=!1;f.async=!0;f.src=n;t&&(f.onload=f.onreadystatechange=function(){e||this.readyState&&this.readyState!=="loaded"&&this.readyState!=="complete"||(e=!0,t(f),f.onload=f.onreadystatechange=null,u&&f.parentNode.removeChild(f))});r.appendChild(f)};n.init=function(i){function o(){i.st.forEach(n.as);u.forEach(function(n){f(n,i.cr[n],r,e)});typeof t.clc_after_init=="function"&&t.clc_after_init()}var u=Object.keys(i.cr),r="//"+i.h+i.ct,e=n.cps?n.ts()-n.cps:0;i.an&&(r+="?an="+i.an);o()};n.lo=function(i){var u,f=t.location.hash,s=n.dec,r=n.se,o;i=i||{};switch(f){case"#large":opts.l=1;break;case"#abort":opts.abort=1;break;default:f.length>0&&f.substr(1).split("&").forEach(function(n){var t=n.split("=",2);this[s(t[0])]=s(t[1])},i)}return o=i.ac||i.accountid||r&&r.options&&r.options.user&&r.options.user.accountId,o&&(i.ac=o),i.tags||(u=e(),u&&(i.tags=u)),i};n.o2q=function(t,i){var r=n.enc;return Object.keys(t).filter(function(n){return i.indexOf(n)!==-1}).map(function(n){return r(n)+"="+r(t[n])}).join("&")};n.load=function(i,r,u){n.ls(i+"?"+n.o2q(r,u),function(){typeof t.clc_loaded=="function"&&t.clc_loaded()});n.cps=n.ts()};n.el=function(t){var i=n.qsa(t);return i.length>0?i[0]:null};n.hc=function(n){return n&&n.innerHTML&&n.innerHTML.replace(/\s+/g,"").length>0};n.wfc=function(t,i,r,u){function c(){n.hc(s)?(f(o),f(e),u(!0)):e=h(c,i)}function l(){f(e);u(!1)}var s=n.el(t),h=n.st,f=n.ct,o,e;if(s!==null)return c(),r&&(o=h(l,r)),function(){e&&f(e);o&&f(o)}};t.clc=n}})();;(function(n){function c(){var n=t.el(f);t.hc(n)||(n.parentNode.removeChild(n),typeof u=="function"&&u())}function l(u){if(!e){e=!0;var f=t.qsa("#"+i.d);f.length!==0&&(u||(i.azt=!0),i.lw=t.ts()-s,i.l||document.getElementById("careersadsdoublehigh")===null||(i.l=1),typeof r.innerWidth=="number"&&(i.bw=r.innerWidth),t.load(n.adurl,i,["d","l","ip","ac","eng","prov","tags","theme","remote","seed","lw","azt","sysadmin","fresh","bw"]))}}var r=window,t=r.clc,s=t.ts(),h=t.st,v=t.ct,f="#sidebar [id^='adzerk'].everyonelovesstackoverflow",i=t.lo({d:"hireme"}),e,u,o,a;i.abort||(o=null,u=t.wfc(f,20,o,l),a=h(c,2e3))}).call(null, {"bg":false,"adurl":"//clc.stackoverflow.com/j/p.js"});            </script>
+        </div>
+			<div class="module" id="chat-feature">
+    
+
+    
+<h4><a href="http://chat.stackoverflow.com" id="h-chat-link">Visit Chat</a></h4>
+
+<div class="related" id="ad502-rooms"></div>
+<script>
+// <!--
+    StackExchange.ready(
+    function () {
+        var options = {
+            chatUrl: 'http://chat.stackoverflow.com',
+            reloadUrl: '/api/recent-chat',
+            preloadData: {"activeUsers":79,"activeRooms":38,"rooms":[{"name":"Lounge\u003cC++\u003e","id":10,"lastPost":1445092174,"posts":4127240,"users":[{"name":"Ell","id":303662,"emailhash":"e4fe5511c802ce89b7e95c8173a7a17a","lastPost":1445092137},{"name":"Mr. kbok","id":361535,"emailhash":"072972927ced123af3164764258ec186","lastPost":1445092127},{"name":"Elyse","id":1804599,"emailhash":"!https://i.stack.imgur.com/f6OAt.png?s=128\u0026g=1","lastPost":1445092102},{"name":"Elim Garak","id":5253689,"emailhash":"!https://i.stack.imgur.com/p2LmO.jpg?s=128\u0026g=1","lastPost":1445092042},{"name":"Johan Larsson","id":1069200,"emailhash":"4c033488b80a25de7c6adf976b10ba25","lastPost":1445092039},{"name":"Luc Danton","id":726300,"emailhash":"b671ab6df2741db2c2eaf3b5755a2797","lastPost":1445091955},{"name":"wilx","id":341065,"emailhash":"8e57fe4b0f7381288a8e1e4c6cd77a8e","lastPost":1445091636}],"messages":[{"date":1445092174,"user":"bluefog","userid":3986235}],"singleImage":false,"tags":["c++","c++11","c++14","c++-faq"]},{"name":"PHP","id":11,"lastPost":1445092165,"posts":2108285,"users":[{"name":"tereško","id":727208,"emailhash":"40de750233b3ce8268f235ba0b6a489b","lastPost":1445092165},{"name":"Félix Gagnon-Grenier","id":576767,"emailhash":"7b30843578e5daecaa12b25536801c96","lastPost":1445092133},{"name":"Sajad","id":2805376,"emailhash":"!https://i.stack.imgur.com/ROWF7.jpg?s=128\u0026g=1","lastPost":1445092029},{"name":"bwoebi","id":2153758,"emailhash":"3659fff22e890aaa5d7b03e799f9047f","lastPost":1445092008},{"name":"Paul Crovella","id":3942918,"emailhash":"!https://i.stack.imgur.com/Rup3Y.jpg?s=128\u0026g=1","lastPost":1445091764},{"name":"Danack","id":778719,"emailhash":"!https://i.stack.imgur.com/01t5l.jpg?s=128\u0026g=1","lastPost":1445091596},{"name":"Elyse","id":1804599,"emailhash":"!https://i.stack.imgur.com/f6OAt.png?s=128\u0026g=1","lastPost":1445091429}],"messages":[{"date":1445092165,"user":"tereško","userid":727208}],"singleImage":false,"tags":["php"]}]} 
+        };
+
+        StackExchange.chatAd.init(options);
+    });
+// -->
+</script>
+
+</div>  
+    
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+<div class="spacer">
+	<a href="/q/4802816" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">4</div>
+	</a>
+	<a href="/questions/4802816/curl-through-proxy-returns-no-content" class="question-hyperlink">curl through proxy returns no content</a>
+</div><div class="spacer">
+	<a href="/q/11281904" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="/questions/11281904/retrieving-cross-domain-data-php" class="question-hyperlink">Retrieving cross-domain data php</a>
+</div><div class="spacer">
+	<a href="/q/22612946" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="/questions/22612946/curl-returns-failed-connect-to-url80" class="question-hyperlink">Curl returns Failed connect to &lt;url&gt;:80</a>
+</div><div class="spacer">
+	<a href="/q/20278664" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="/questions/20278664/cant-parse-any-data-from-a-web-page-using-curl" class="question-hyperlink">Can&#39;t parse any data from a web page using curl</a>
+</div><div class="spacer">
+	<a href="/q/16087931" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="/questions/16087931/use-file-get-contents-for-connet-to-url-with-another-server" class="question-hyperlink">Use file_get_contents for connet to url with another server</a>
+</div><div class="spacer">
+	<a href="/q/8660211" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="/questions/8660211/are-there-any-hosting-servers-enables-mutable-ip-addresses" class="question-hyperlink">are there any hosting servers enables mutable ip addresses?</a>
+</div><div class="spacer">
+	<a href="/q/30183895" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">-1</div>
+	</a>
+	<a href="/questions/30183895/php-how-to-use-curl-with-proxy" class="question-hyperlink">php - how to use curl with proxy</a>
+</div><div class="spacer">
+	<a href="/q/32358688" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="/questions/32358688/attaching-get-fields-to-url-using-curl-in-php" class="question-hyperlink">attaching get fields to URL using Curl in php</a>
+</div><div class="spacer">
+	<a href="/q/30687650" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="/questions/30687650/vat-number-validation-function-not-working" class="question-hyperlink">VAT Number Validation Function Not Working</a>
+</div><div class="spacer">
+	<a href="/q/24901850" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="/questions/24901850/run-azure-hosted-website-through-proxy" class="question-hyperlink">Run azure hosted website through proxy</a>
+</div>					<div class="spacer more">
+				<a href="/questions/linked/5211887">see more linked questions…</a>
+			</div>
+	</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer">
+<a href="/q/3066732" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">4
+    </div>
+</a><a href="/questions/3066732/php-curl-download-bandwidth-limiting" class="question-hyperlink">PHP- Curl Download Bandwidth Limiting</a>
+</div>
+<div class="spacer">
+<a href="/q/4182451" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="/questions/4182451/php-curl-returns-400-bad-request-if-does-in-a-loop" class="question-hyperlink">php curl returns 400 Bad Request if does in a loop</a>
+</div>
+<div class="spacer">
+<a href="/q/5800918" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">5
+    </div>
+</a><a href="/questions/5800918/how-curl-login-with-captcha-and-session" class="question-hyperlink">How CURL Login with Captcha and Session</a>
+</div>
+<div class="spacer">
+<a href="/q/12306378" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">0
+    </div>
+</a><a href="/questions/12306378/make-a-curl-request-to-a-url-having-no-file-extension" class="question-hyperlink">Make a curl request to a url having no file extension?</a>
+</div>
+<div class="spacer">
+<a href="/q/14614504" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="/questions/14614504/php-curl-posting-to-phpbb" class="question-hyperlink">php Curl posting to PHPBB</a>
+</div>
+<div class="spacer">
+<a href="/q/15445285" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes large">162
+    </div>
+</a><a href="/questions/15445285/how-can-i-connect-to-a-tor-hidden-service-using-curl-in-php" class="question-hyperlink">How can I connect to a Tor hidden service using curl in php?</a>
+</div>
+<div class="spacer">
+<a href="/q/19067856" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">0
+    </div>
+</a><a href="/questions/19067856/how-to-implement-cache-system-in-php-for-json-api" class="question-hyperlink">How to implement cache system in php for json api</a>
+</div>
+<div class="spacer">
+<a href="/q/20835919" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">0
+    </div>
+</a><a href="/questions/20835919/get-data-from-asp-net-page-using-curl" class="question-hyperlink">Get data from asp.net page using curl</a>
+</div>
+<div class="spacer">
+<a href="/q/26486090" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">1
+    </div>
+</a><a href="/questions/26486090/facing-issue-while-using-tor-with-curl" class="question-hyperlink">Facing issue while using Tor with Curl</a>
+</div>
+<div class="spacer">
+<a href="/q/30666213" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">1
+    </div>
+</a><a href="/questions/30666213/curl-not-working-sometimes-and-gives-empty-result" class="question-hyperlink">cURL not working sometimes and gives empty result</a>
+</div>
+
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="//stackexchange.com/questions?tab=hot" 
+           class="js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li >
+                <div class="favicon favicon-electronics" title="Electrical Engineering Stack Exchange"></div><a href="http://electronics.stackexchange.com/questions/195751/why-stop-bit-in-uart" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:135 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why stop bit in UART?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1484452/is-there-a-way-to-calculate-the-definite-integral-of-inverse-of-a-5th-degree-pol" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is there a way to calculate the definite integral of inverse of a 5th degree polynomial?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-security" title="Information Security Stack Exchange"></div><a href="http://security.stackexchange.com/questions/102894/strange-payment-gateway" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:162 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Strange Payment Gateway
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-vi" title="Vi and Vim Stack Exchange"></div><a href="http://vi.stackexchange.com/questions/5145/can-i-select-and-edit-specific-positions-in-lines-while-in-visual-block-mode" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:599 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can I select and edit specific positions in lines while in visual block mode?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-money" title="Personal Finance &amp; Money Stack Exchange"></div><a href="http://money.stackexchange.com/questions/54947/how-to-value-a-bonus-when-evaluating-a-job-offer" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:93 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to value a bonus when evaluating a job offer?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-mathoverflow" title="MathOverflow"></div><a href="http://mathoverflow.net/questions/221085/when-is-curvature-given-by-a-connection" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:504 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    When is curvature given by a connection?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/280468/shelf-under-sloped-rear-window-of-a-car" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Shelf under sloped rear window of a car
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-superuser" title="Super User"></div><a href="http://superuser.com/questions/987929/file-command-yields-ascii-text-with-no-line-terminators-unless-i-first-edi" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:3 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    &quot;file&quot; command yields &quot;ASCII text, with no line terminators&quot;, unless I first edit the file in vim
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/56220/what-to-do-when-your-student-is-convinced-that-he-will-be-the-next-einstein" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What to do when your student is convinced that he will be the next Einstein?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/33187086/c-ifstream-object-equals-nullptr-but-it-isnt-a-pointer" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    C++ Ifstream object equals nullptr but it isn&#39;t a pointer?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-space" title="Space Exploration Stack Exchange"></div><a href="http://space.stackexchange.com/questions/12353/why-wont-jwst-deploy-in-leo-where-it-is-potentially-serviceable" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:508 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why won&#39;t JWST deploy in LEO where it is potentially serviceable?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-electronics" title="Electrical Engineering Stack Exchange"></div><a href="http://electronics.stackexchange.com/questions/195616/why-is-it-good-to-slow-down-digital-lines-with-resistors" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:135 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why is it good to slow down digital lines with resistors?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/60901/calculate-standard-deviation" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Calculate Standard Deviation
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1483038/a-king-has-n-children-at-least-one-of-them-is-a-daughter-what-s-the-probabilit" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    A king has n children, at least one of them is a daughter. What’s the probability that all of them are daughters?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-unix" title="Unix &amp; Linux Stack Exchange"></div><a href="http://unix.stackexchange.com/questions/236805/searching-for-occurrences-of-before-specific-word" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:106 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Searching for occurrences of , before specific word
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-aviation" title="Aviation Stack Exchange"></div><a href="http://aviation.stackexchange.com/questions/22078/can-a-uav-defend-itself" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:528 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can a UAV defend itself?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-physics" title="Physics Stack Exchange"></div><a href="http://physics.stackexchange.com/questions/213045/confusion-with-fluid-pressure" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:151 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Confusion with Fluid pressure
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/61008/seamless-conversion-from-square-to-hexagon" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Seamless conversion from square to hexagon
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-unix" title="Unix &amp; Linux Stack Exchange"></div><a href="http://unix.stackexchange.com/questions/236659/what-is-the-point-of-mv-f" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:106 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What is the point of mv -f
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-mathematica" title="Mathematica Stack Exchange"></div><a href="http://mathematica.stackexchange.com/questions/97239/weaklyconnectedgraphq-evaluates-to-false-is-this-the-expected-result" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:387 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    WeaklyConnectedGraphQ evaluates to False. Is this the expected result?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/60942/find-a-multiple-of-a-given-number-whose-decimal-representation-looks-like-binary" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Find a multiple of a given number whose decimal representation looks like binary
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-blender" title="Blender Stack Exchange"></div><a href="http://blender.stackexchange.com/questions/40163/find-commands-by-name" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:502 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Find commands by name
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-space" title="Space Exploration Stack Exchange"></div><a href="http://space.stackexchange.com/questions/12365/whats-so-hard-about-creating-hydrazine" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:508 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What&#39;s so hard about creating hydrazine?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/56331/leaving-out-unhelpful-advisor-from-acknowledgements" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Leaving out unhelpful advisor from acknowledgements?
+                </a>
+
+            </li>
+    </ul>
+
+        <a href="#" 
+           class="show-more js-show-more js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:3, location:11 })">
+            more hot questions
+        </a>
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="/feeds/question/5211887" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/5211887/ivc/dd91');});
+</script>
+<noscript>
+    <div><img src="/posts/5211887/ivc/dd91" class="dno" alt="" width="0" height="0"></div>
+</noscript><div style="display:none" id="prettify-lang">lang-php</div></div>
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                        <a href="/tour">tour</a>
+                    <a href="/help">help</a>
+                    <a href="http://blog.stackoverflow.com?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com">chat</a>
+                    <a href="http://data.stackexchange.com">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackexchange.com/work-here">work here</a>
+                    <a href="http://stackexchange.com/mediakit">advertising info</a>
+
+                    <a onclick='StackExchange.switchMobile("on")'>mobile</a>
+                    <b><a href="/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tr>
+            <th colspan=3>
+                Technology
+            </th>
+            <th >
+                Life / Arts
+            </th>
+            <th >
+                Culture / Recreation
+            </th>
+            <th >
+                Science
+            </th>
+            <th >
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="//stackoverflow.com" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="//serverfault.com" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="//superuser.com" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="//webapps.stackexchange.com" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="//askubuntu.com" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="//webmasters.stackexchange.com" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="//gamedev.stackexchange.com" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="//tex.stackexchange.com" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="//programmers.stackexchange.com" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="//unix.stackexchange.com" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="//apple.stackexchange.com" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="//wordpress.stackexchange.com" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="//gis.stackexchange.com" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="//electronics.stackexchange.com" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="//android.stackexchange.com" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="//security.stackexchange.com" title="information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="//dba.stackexchange.com" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="//drupal.stackexchange.com" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="//sharepoint.stackexchange.com" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="//ux.stackexchange.com" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="//mathematica.stackexchange.com" title="users of Mathematica">Mathematica</a></li>
+                        <li><a href="//salesforce.stackexchange.com" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="//expressionengine.stackexchange.com" title="administrators, end users, developers and designers for ExpressionEngine&#174; CMS">ExpressionEngine&#174; Answers</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (13)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//photo.stackexchange.com" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="//scifi.stackexchange.com" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="//graphicdesign.stackexchange.com" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="//movies.stackexchange.com" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="//cooking.stackexchange.com" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="//diy.stackexchange.com" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="//money.stackexchange.com" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="//academia.stackexchange.com" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (9)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//english.stackexchange.com" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="//skeptics.stackexchange.com" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="//judaism.stackexchange.com" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="//travel.stackexchange.com" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="//christianity.stackexchange.com" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="//gaming.stackexchange.com" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="//bicycles.stackexchange.com" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="//rpg.stackexchange.com" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (21)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//math.stackexchange.com" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="//stats.stackexchange.com" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="//cstheory.stackexchange.com" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="//physics.stackexchange.com" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="//mathoverflow.net" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="//chemistry.stackexchange.com" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="//biology.stackexchange.com" title="biology researchers, academics, and students">Biology</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (5)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//stackapps.com" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="//meta.stackexchange.com" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="//area51.stackexchange.com" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="//careers.stackoverflow.com">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</table>
+                </div>
+            </div>
+
+            <div id="copyright">
+                site design / logo &#169; 2015 Stack Exchange Inc; user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2015.10.13.2885
+            </div>
+            
+        </div>
+    </div>
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    ados.run.push(function () { ados_setKeywords('php,curl,proxy');; ados_load(); });         
+</script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-5620270-1');
+                        ga('set', 'dimension2', '|php|curl|proxy|');         ga('send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+            qc.async=true;
+            qc.src=(ssl?'https://secure':'http://edge')+'.quantserve.com/quant.js';
+            s.parentNode.insertBefore(qc, s);
+            var sc=document.createElement('script');
+            sc.async=true;
+            sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+            s.parentNode.insertBefore(sc, s);
+        })();
+        _comscore.push({ c1: "2", c2: "17440561" });
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>
+            
+    </body>
+</html>

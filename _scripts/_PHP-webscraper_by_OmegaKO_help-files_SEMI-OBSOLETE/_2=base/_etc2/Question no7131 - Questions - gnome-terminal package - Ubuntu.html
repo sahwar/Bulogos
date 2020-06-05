@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en" dir="ltr">
+  <head>
+<base href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+index" />
+
+    <meta charset="UTF-8" />
+    <title>Question #7131 : Questions : gnome-terminal package : Ubuntu</title>
+    <link rel="shortcut icon" href="/@@/launchpad.png" />
+    
+    
+    
+
+    
+  
+  <link type="text/css" rel="stylesheet"
+        media="screen, print"
+        href="/+icing/rev17812/combo.css" />
+
+
+    
+
+    
+      <meta name="description"
+            content="I converted to my Ubuntu laptop for work and am missing one key feature.  I often capture ssh session logs for support reasons (dumps from routers/switches/hosts) to text files.  How do I do that with gnome-terminal?  All I want to do is turn logging on... capture text... turn it off... have the text file to manipulate/email etc...
+
+Thanks in advance
+
+John" />
+    
+
+    
+  
+
+  
+  
+  <script type="text/javascript">
+    var LP = {
+        cache: {},
+        links: {}
+    };
+  </script>
+
+  
+
+  <script type="text/javascript">var cookie_scope = '; Path=/; Secure; Domain=.launchpad.net';</script>
+
+   <script type="text/javascript"
+           src="/+combo/rev17812/?yui/yui/yui-min.js&amp;lp/meta.js&amp;yui/loader/loader-min.js"></script>
+   <script type="text/javascript">
+        var raw = null;
+        if (LP.devmode) {
+           raw = 'raw';
+        }
+        YUI.GlobalConfig = {
+            combine: true,
+            comboBase: '/+combo/rev17812/?',
+            root: 'yui/',
+            filter: raw,
+            debug: false,
+            fetchCSS: false,
+            maxURLLength: 2000,
+            groups: {
+                lp: {
+                    combine: true,
+                    base: '/+combo/rev17812/?lp/',
+                    comboBase: '/+combo/rev17812/?',
+                    root: 'lp/',
+                    // comes from including lp/meta.js
+                    modules: LP_MODULES,
+                    fetchCSS: false
+                }
+            }
+        }</script>
+
+  <script type="text/javascript">
+      // we need this to create a single YUI instance all events and code
+      // talks across. All instances of YUI().use should be based off of
+      // LPJS instead.
+      LPJS = new YUI();
+  </script>
+
+
+
+    <script id="base-layout-load-scripts" type="text/javascript">
+        //<![CDATA[
+        LPJS.use('base', 'node', 'console', 'event',
+            'oop', 'lp', 'lp.app.foldables','lp.app.sorttable',
+            'lp.app.inlinehelp', 'lp.app.links', 'lp.app.longpoll',
+            'lp.bugs.bugtask_index', 'lp.bugs.subscribers',
+            'lp.app.ellipsis', 'lp.code.branchmergeproposal.diff',
+            'lp.views.global',
+             function(Y) {
+
+            Y.on("domready", function () {
+                var global_view = new Y.lp.views.Global();
+                global_view.render();
+
+                Y.lp.app.sorttable.SortTable.init();
+                Y.lp.app.inlinehelp.init_help();
+                Y.lp.activate_collapsibles();
+                Y.lp.app.foldables.activate();
+                Y.lp.app.links.check_valid_lp_links();
+                // Longpolling will only start if
+                // LP.cache.longpoll is populated.
+                // We use Y.later to work around a Safari/Chrome 'feature':
+                // The mouse cursor stays 'busy' until all the requests started during
+                // page load are finished.  Hence we want the long poll request to start
+                // right *after* the page has loaded.
+                Y.later(0, Y.lp.app.longpoll, Y.lp.app.longpoll.setupLongPollManager);
+
+            });
+
+            Y.on('lp:context:web_link:changed', function(e) {
+                  window.location = e.new_value;
+            });
+        });
+        //]]>
+    </script>
+    <script id="base-helper-functions" type="text/javascript">
+         //<![CDATA[
+        // This code is pulled from lp.js that needs to be available on every
+        // request. Pulling here to get it outside the scope of the YUI block.
+        function setFocusByName(name) {
+            // Focus the first element matching the given name which can be focused.
+            var nodes = document.getElementsByName(name);
+            var i, node;
+            for (i = 0; i < nodes.length; i++) {
+                node = nodes[i];
+                if (node.focus) {
+                    try {
+                        // Trying to focus a hidden element throws an error in IE8.
+                        if (node.offsetHeight !== 0) {
+                            node.focus();
+                        }
+                    } catch (e) {
+                        LPJS.use('console', function(Y) {
+                            Y.log('In setFocusByName(<' +
+                                node.tagName + ' type=' + node.type + '>): ' + e);
+                        });
+                    }
+                    break;
+                }
+            }
+        }
+
+        function selectWidget(widget_name, event) {
+          if (event && (event.keyCode === 9 || event.keyCode === 13)) {
+              // Avoid firing if user is tabbing through or simply pressing
+              // enter to submit the form.
+              return;
+          }
+          document.getElementById(widget_name).checked = true;
+        }
+        //]]>
+    </script>
+
+    
+      
+    <style type="text/css" media="screen">
+  div.confirmBox {
+    margin: 0;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: right;
+  }
+    </style>
+    <script type="text/javascript">
+        LPJS.use('base', 'node', 'event',
+                'lp.app.comment', 'lp.answers.subscribers',
+            function(Y) {
+        Y.on('domready', function() {
+            LP.cache.comment_context = LP.cache.context;
+            var first_comment = Y.one('.boardComment');
+            if (first_comment !== null) {
+              var cl = new Y.lp.app.comment.CommentList({
+                  comment_list_container: first_comment.get('parentNode')
+              });
+            cl.render();
+            }
+            new Y.lp.answers.subscribers.createQuestionSubscribersLoader();
+        });
+      });
+    </script>
+    
+    
+
+    
+      <script type='text/javascript'>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-12833497-1']);
+        _gaq.push(['_setDomainName', '.launchpad.net']);
+        _gaq.push(['_setAllowHash', false]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script');
+          ga.type = 'text/javascript';
+          ga.async = true;
+          ga.src = 'https://launchpad.net/+icing/rev17812/google-analytics/ga.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    
+  </head>
+
+  <body id="document" itemscope=""
+        itemtype="http://schema.org/WebPage"
+        class="tab-answers
+      main_side
+      public
+      yui3-skin-sam">
+          
+          
+    <div class="yui-d0">
+      <div id="locationbar" class="login-logout">
+        
+
+<div id="logincontrol"><a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+login">Log in / Register</a></div>
+
+
+
+      </div><!--id="locationbar"-->
+
+      <div id="watermark" class="watermark-apps-portlet">
+        <div>
+          <a href="https://launchpad.net/ubuntu"><img alt="" width="64" height="64" src="https://launchpadlibrarian.net/49558155/64_logo.png" /></a>
+        </div>
+        <div class="wide">
+          <h2 id="watermark-heading"><a href="https://launchpad.net/ubuntu">Ubuntu</a><br /><a href="https://launchpad.net/ubuntu/+source/gnome-terminal">gnome-terminal package</a></h2>
+        </div>
+        
+  <!-- Application Menu -->
+  <ul class="facetmenu">
+    
+      
+      <li class="overview"><a
+    href="https://launchpad.net/ubuntu/+source/gnome-terminal">Overview</a></li>
+      
+    
+    
+      
+      <li class="branches"><a
+    href="https://code.launchpad.net/ubuntu/+source/gnome-terminal">Code</a></li>
+      
+    
+    
+      
+      <li class="bugs"><a href="https://bugs.launchpad.net/ubuntu/+source/gnome-terminal">Bugs</a></li>
+      
+    
+    
+      
+      
+      <li class="specifications disabled-tab"><span>Blueprints</span></li>
+    
+    
+      
+      <li class="translations"><a
+    href="https://translations.launchpad.net/ubuntu/+source/gnome-terminal">Translations</a></li>
+      
+    
+    
+      <li class="answers active"><a
+    href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal">Answers</a></li>
+      
+      
+    
+  </ul>
+
+      </div>
+
+      <div class="yui-t4">
+        <div id="maincontent" class="yui-main">
+          <div class="yui-b" lang="en" xml:lang="en"
+               dir="ltr">
+            <div class="context-publication">
+              <h1>How do I log a gnome-terminal session to a file?</h1>
+              
+
+              <div id="registration" class="registering">
+                
+        Asked by
+        <a href="https://launchpad.net/~john-gruber" class="sprite person">John Gruber</a>
+        <span title="2007-05-24 18:39:49 UTC">on 2007-05-24</span>
+
+    
+              </div>
+            </div>
+
+            
+            <div id="request-notifications">
+              
+            </div>
+
+            
+              <div>
+      
+
+      <div class="report"><p>I converted to my Ubuntu laptop for work and am missing one key feature.  I often capture ssh session logs for support reasons (dumps from routers/<wbr />switches/<wbr />hosts) to text files.  How do I do that with gnome-terminal?  All I want to do is turn logging on... capture text... turn it off... have the text file to manipulate/email etc...</p>
+<p>Thanks in advance</p>
+<p>John</p></div>
+
+      <div class="portlet">
+        <h2>Question information</h2>
+
+        <div class="yui-g">
+          <div class="yui-u first">
+             
+
+<div id="portlet-details" xml:lang="en" lang="en" dir="ltr">
+  <div class="two-column-list">
+    <dl id="question-lang">
+      <dt>Language:</dt>
+      <dd>
+        English
+        <a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+edit"
+   class="menu-link-edit sprite edit action-icon">Edit question</a>
+      </dd>
+    </dl>
+
+    <dl id="question-status">
+      <dt>Status:</dt>
+      <dd>
+        <span class="questionstatusANSWERED">Answered</span>
+        
+      </dd>
+    </dl>
+
+    <dl>
+      <dt>For:</dt>
+      <dd>
+        
+        <a href="https://launchpad.net/ubuntu" class="bg-image" style="background-image: url(https://launchpadlibrarian.net/49558154/14_logo.png)">Ubuntu</a>
+        <a href="/ubuntu/+source/gnome-terminal">gnome-terminal</a>
+        <a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+edit"
+   class="menu-link-edit sprite edit action-icon">Edit question</a>
+      </dd>
+    </dl>
+
+    <dl>
+      <dt>Assignee:</dt>
+      <dd>
+        
+        
+          No assignee
+        
+        <a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+edit"
+   class="menu-link-edit sprite edit action-icon">Edit question</a>
+      </dd>
+    </dl>
+
+    
+
+    
+
+    <dl style="clear: both;">
+      <dt>Last query:</dt>
+      <dd>
+        <span title="2007-05-25 16:40:35 UTC">2007-05-25</span>
+      </dd>
+    </dl>
+
+    <dl>
+      <dt>Last reply:</dt>
+      <dd>
+        <span title="2012-09-18 15:09:07 UTC">2012-09-18</span>
+      </dd>
+    </dl>
+  </div>
+
+  
+</div>
+
+
+          </div>
+
+          <div class="yui-u">
+            <div id="related-bugs">
+  <h3>Related bugs</h3>
+
+  <ul>
+    <li>
+      <a class="sprite bug"
+         href="https://bugs.launchpad.net/bugs/62711">Bug #62711:
+      Feature Request: Save Scrollback buffer to file</a>
+    </li>
+  </ul>
+</div>
+
+
+            
+
+            <ul class="horizontal">
+              <li><a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+linkbug"
+        class="menu-link-linkbug sprite add">Link existing bug</a></li>
+              <li><a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+unlinkbug"
+        class="menu-link-unlinkbug sprite modify remove">Remove bug link</a></li>
+            </ul>
+
+            <div id="related-faq" style="margin-top: 1em;">
+              <h3>Related FAQ:</h3>
+
+              <p>
+                
+                
+                  None
+                
+                <a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+linkfaq"
+   class="menu-link-linkfaq sprite add action-icon"
+   title="Link this question to a FAQ.">Link to a FAQ</a>
+               </p>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-0">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~txwikinger" class="sprite person">Ralph Janke (txwikinger)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2007-05-24T19:08:15.771755+00:00"
+          title="2007-05-24 19:08:15 UTC">on 2007-05-24</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #1</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>Thanks for the question.</p>
+<p>You can use the command &#x27;script&#x27; for this. Use &#x27;man script&#x27; for the full options.</p>
+<p>You can just start it with script &lt;logfilename&gt;, and end it with ctrl-d</p>
+<p>I hope this helps.</p></div>
+
+  
+
+  
+</div>
+
+
+      
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-1">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~john-gruber" class="sprite person">John Gruber (john-gruber)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2007-05-25T16:40:35.268005+00:00"
+          title="2007-05-25 16:40:35 UTC">on 2007-05-25</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #2</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>Thanks so much for your answer!</p>
+<p>script is ok as log as you can afford to run it locally before you open a session.  What happens if you don&#x27;t need (didn&#x27;t know you needed to) log a session until after you have connected to a device/host?  How do you run script locally after the fact?</p>
+<p>That&#x27;s why I was interested in logging in gnome-terminal itself so logging could be turned on/off at will at the client side, not matter what you are currently connected to.</p>
+<p>Is there a way to do this in gnome-terminal?  Does gnome-terminal support any kind of plugin architecture so I could considering writing this myself?</p>
+<p>Thanks,</p>
+<p>John</p></div>
+
+  
+
+  
+</div>
+
+
+      
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-2">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~txwikinger" class="sprite person">Ralph Janke (txwikinger)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2007-05-25T22:36:06.716988+00:00"
+          title="2007-05-25 22:36:06 UTC">on 2007-05-25</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #3</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>If you use konsole, you can save the history as Edit-&gt;Save History as.</p>
+<p>You could also just cut &amp; paste.</p>
+<p>If you want to make sure everything stays in the history change the settings of the history with: Settings-&gt;History and set unlimited.</p></div>
+
+  
+
+  
+</div>
+
+
+      
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-3">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~jbmadsen" class="sprite person">Jens Bech Madsen (jbmadsen)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2007-07-19T11:23:57.102626+00:00"
+          title="2007-07-19 11:23:57 UTC">on 2007-07-19</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #4</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>I don&#x27;t believe this is really answered. The answer at the moment would have to be that &quot;You can&#x27;t do that in Gnome Terminal&quot;.</p>
+<p>The bug I linked is a similar feature (save scrollback buffer to file). That is in turn linked to <a rel="nofollow" href="http://bugzilla.gnome.org/show_bug.cgi?id=24457">http://<wbr />bugzilla.<wbr />gnome.org/<wbr />show_bug.<wbr />cgi?id=<wbr />24457</a> which is really about having an option to start logging to file.</p>
+<p><a rel="nofollow" href="http://bugzilla.gnome.org/show_bug.cgi?id=348342">http://<wbr />bugzilla.<wbr />gnome.org/<wbr />show_bug.<wbr />cgi?id=<wbr />348342</a> is about saving the scrollback buffer to file.</p></div>
+
+  
+
+  
+</div>
+
+
+      
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-4">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~miki-tebeka" class="sprite person">tebeka (miki-tebeka)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2008-06-06T18:04:19.051451+00:00"
+          title="2008-06-06 18:04:19 UTC">on 2008-06-06</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #5</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>Just a follow-up, I&#x27;ve added the following lines to the top of my .bashrc, this way I have a log file for each session:</p>
+<p>if [ -z &quot;$UNDER_SCRIPT&quot; ]; then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if [ ! -d /tmp/terminal-logs ]; then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mkdir /tmp/terminal-logs<br />
+&nbsp;&nbsp;&nbsp;&nbsp;fi<br />
+&nbsp;&nbsp;&nbsp;&nbsp;export UNDER_SCRIPT=1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;script -f -a -q /terminal-<wbr />logs/$$<wbr />.log<br />
+&nbsp;&nbsp;&nbsp;&nbsp;exit<br />
+fi</p>
+<p>The log for each session is under /tmp/terminal-<wbr />logs/&lt;pid&gt;<wbr />.log</p>
+<p>HTH.</p></div>
+
+  
+
+  
+</div>
+
+
+      
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-5">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~miki-tebeka" class="sprite person">tebeka (miki-tebeka)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2008-06-06T18:13:18.834239+00:00"
+          title="2008-06-06 18:13:18 UTC">on 2008-06-06</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #6</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>Ooops, remove the wrong path, should be</p>
+<p>if [ -z &quot;$UNDER_SCRIPT&quot; ]; then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if [ ! -d /tmp/terminal-logs ]; then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mkdir /tmp/terminal-logs<br />
+&nbsp;&nbsp;&nbsp;&nbsp;fi<br />
+&nbsp;&nbsp;&nbsp;&nbsp;export UNDER_SCRIPT=1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;script -f -q /tmp/terminal-<wbr />logs/$$<wbr />.log<br />
+&nbsp;&nbsp;&nbsp;&nbsp;exit<br />
+fi</p></div>
+
+  
+
+  
+</div>
+
+
+      
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-6">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~rblaszczyk" class="sprite person">Rafał Błaszczyk (rblaszczyk)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2009-03-22T19:52:34.786816+00:00"
+          title="2009-03-22 19:52:34 UTC">on 2009-03-22</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #7</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>Here is my impoved version. It saves log to file with date, time and pid (for example 2009-03-<wbr />22_20:48:<wbr />09.23139.<wbr />log) and compresses old logs when opening new bash shell.</p>
+<p>if [ -z &quot;$UNDER_SCRIPT&quot; ]; then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr />&nbsp;logdir=<wbr />$HOME/terminal-<wbr />logs<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if [ ! -d $logdir ]; then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr />&nbsp;&nbsp;mkdir $logdir<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fi<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gzip -q $logdir/*.log<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr />&nbsp;logfile=<wbr />$logdir/<wbr />$(date +%F_%T).$$.log<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;export UNDER_SCRIPT=<wbr />$logfile<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;script -f -q $logfile<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit<br />
+fi</p></div>
+
+  
+
+  
+</div>
+
+
+      
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-7">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~michal-borsuk" class="sprite person">Michał Borsuk (michal-borsuk)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2010-01-05T18:18:13.251446+00:00"
+          title="2010-01-05 18:18:13 UTC">on 2010-01-05</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #8</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>For future users running into the same problem: there is a build of PuTTY for Linux (GTK+), and it supports this feature (as well as many others, e.g. serial connections)</p>
+<p>So here&#x27;s the command:</p>
+<p>sudo apt-get install putty</p>
+<p>Good luck!</p></div>
+
+  
+
+  
+</div>
+
+
+      
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-8">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~bart-brobertson" class="sprite person">pottedmeat (bart-brobertson)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2010-02-09T21:57:00.045673+00:00"
+          title="2010-02-09 21:57:00 UTC">on 2010-02-09</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #9</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>This trick makes use of the script utility. Whenever a new gnome-terminal session is opened:<br />
+- A prompt will be displayed to enter the hostname for a ssh connection.<br />
+- The tab title is set to the hostname just in case your profile on the remote host does not properly set the PROMPT_COMMAND or PS1 variables.<br />
+- The hostname is used along with a date stamp to create a filename that is used for logging the output of the script session (hostname.<wbr />sessionlog.<wbr />date.txt)<wbr />.<br />
+- The connection is made via &quot;ssh $hostname&quot;.</p>
+<p>This method could easily be modified to include a username in case you use ssh like &quot;ssh user@host&quot;.</p>
+<p>In gnome-terminal, click Edit, Profile Preferences, Title and Command tab, and put the following command into the &quot;Custom command&quot; field:</p>
+<p>bash -l -c &#x27;dt=`date &quot;+%Y%m%dx%H%M%S&quot;`; read -p &quot;Hostname&gt; &quot; host; echo -ne &quot;\033]0;$host\007&quot;; script -a -f -q -c &quot;bash -l -c \&quot;ssh $host\&quot;&quot; $HOME/sessionlo<wbr />gs/$host.<wbr />sessionlog.<wbr />$dt.txt&#x27;</p>
+<p>The above example assumes that the $HOME/sessionlogs directory already exists.</p>
+<p>You will try it, and you will like it.</p></div>
+
+  
+
+  
+</div>
+
+
+      
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-9">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~michal-borsuk" class="sprite person">Michał Borsuk (michal-borsuk)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2010-02-09T22:27:33.637696+00:00"
+          title="2010-02-09 22:27:33 UTC">on 2010-02-09</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #10</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>For ssh use putty, it&#x27;s now available as a deb package. What some users want is to be able to save the output for further reference, so your solution does not apply.</p></div>
+
+  
+
+  
+</div>
+
+
+      
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-10">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~bart-brobertson" class="sprite person">pottedmeat (bart-brobertson)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2010-02-10T22:16:21.385562+00:00"
+          title="2010-02-10 22:16:21 UTC">on 2010-02-10</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #11</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>The original question was &quot;How do I log a gnome-terminal session to a file?&quot;  Not &quot;when will putty be avialable?&quot;<br />
+So, some clarification.  If you want automatic session logging for gnome-terminal, then my solution absolutely applies, as I&#x27;ve been using it for awhile and it stores every session log into a separate file.  This has proven extremely useful.  If you want to enable/disable logging on the fly with a built-in feature of gnome-terminal, then the answer is &quot;no&quot;.  I can see the benefit of this, but some would argue that this is no quicker or easier than cut-and-paste.  My solution is to simply log everything all the time.</p>
+<p># begin rant<br />
+People will have different preferences.  Some people don&#x27;t like putty because they prefer a terminal emulator with tabbed sessions.  Putty does not have tabbed sessions unless you&#x27;re using it under Windows along with one of the additional &quot;wrapper&quot; apps.  I personally dislike putty for this very reason.  I do like the background transparency and tabbed session features of gnome-terminal.<br />
+# end rant</p></div>
+
+  
+
+  
+</div>
+
+
+      
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-11">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~michal-borsuk" class="sprite person">Michał Borsuk (michal-borsuk)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2010-02-10T23:40:17.819238+00:00"
+          title="2010-02-10 23:40:17 UTC">on 2010-02-10</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #12</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>pottedmeat: I may have misunderstood your original post: it seems that your solution does not *only* work with SSL sessions. Thanks for the script!</p>
+<p>Nevertheless, I vote for a full and proper solution within gnome-terminal.</p></div>
+
+  
+
+  
+</div>
+
+
+      
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-12">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~harrykar" class="sprite person">harrykar (harrykar)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2010-10-23T10:47:23.784078+00:00"
+          title="2010-10-23 10:47:23 UTC">on 2010-10-23</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #13</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>from <a rel="nofollow" href="http://en.wikipedia.org/wiki/Terminator_%28terminal_emulator%29">http://<wbr />en.wikipedia.<wbr />org/wiki/<wbr />Terminator_<wbr />%28terminal_<wbr />emulator%<wbr />29</a><br />
+&quot;Automatic Logging - Complete logs are automatically generated of all of the user&#x27;s terminal sessions.&quot;</p></div>
+
+  
+
+  
+</div>
+
+
+      
+      
+      
+<div itemscope="" itemtype="http://schema.org/UserComments"
+     class="boardComment" id="comment-13">
+  <div class="boardCommentDetails">
+    <table>
+      <tbody>
+        <tr>
+    <td>
+    
+    
+      <a href="https://launchpad.net/~of-trash" class="sprite person">ZTiK (of-trash)</a>
+    
+    said
+    <time itemprop="commentTime"
+          datetime="2012-09-18T15:09:07.677709+00:00"
+          title="2012-09-18 15:09:07 UTC">on 2012-09-18</time>:
+    </td>
+    <td class="bug-comment-index">
+      <a> #14</a>
+    </td>
+  </tr></tbody></table>
+  </div>
+
+  <div class="boardCommentBody" itemprop="commentText"><p>I just registered to reply on an old thread just for the wanderers like me who are looking for a way to log an ENTIRE gnome-terminal session :</p>
+<p>start the gnome-terminal as such :</p>
+<p>script -q /pathto/logfile/ -c &quot;gnome-terminal (+whatever options you want to set)&quot;</p>
+<p>sorry for posting in an old/closed thread, but it helped me very much :)</p></div>
+
+  
+
+  
+</div>
+
+
+      
+
+      <div id="question" lang="en" xml:lang="en" dir="en">
+        <div id="can-you-help-with-this-problem">
+          <h2>
+            Can you help with this problem?
+          </h2>
+
+          <p>
+            Provide an answer of your own, or ask
+            John Gruber
+            for more information if necessary.
+          </p>
+        </div>
+        <div class="yui-g">
+          <ul class="horizontal" id="horizontal-menu">
+            <li><a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+history"
+        class="menu-link-history sprite list">History</a></li>
+            <li><a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+linkbug"
+        class="menu-link-linkbug sprite add">Link existing bug</a></li>
+            
+            <li><a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+linkfaq"
+        class="menu-link-linkfaq sprite add"
+        title="Link this question to a FAQ.">Link to a FAQ</a></li>
+            <li><a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+createfaq"
+        class="menu-link-createfaq sprite add"
+        title="Create a new FAQ from this question.">Create a new FAQ</a></li>
+          </ul>
+        </div>
+
+        
+
+        
+          <div align="center">
+            To post a message you must <a href="+login">log in</a>.
+          </div>
+        
+      </div>
+    </div>
+            
+            
+          </div><!-- yui-b -->
+        </div><!-- yui-main -->
+
+        
+          <div id="side-portlets" class="yui-b side">
+            
+      <div id="involvement" class="portlet">
+        <ul class="involvement">
+          <li class="single">
+            <a class="sprite answers"
+               href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+addquestion">
+              Ask a question
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="global-actions" class="portlet vertical">
+  <ul>
+    <li>
+      <a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+edit"
+        class="menu-link-edit sprite modify edit">Edit question</a>
+    </li>
+  </ul>
+</div>
+
+      
+
+<div class="portlet" id="subscribers">
+  <h2>Subscribers</h2>
+  <div id="current_user_subscription">
+    <div><a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+subscribe"
+        class="menu-link-subscription sprite add"
+        title="You will receive email notifications about updates to this question">Subscribe</a></div>
+  </div>
+  <div>
+    <div><a href="https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131/+addsubscriber"
+        class="menu-link-addsubscriber sprite add"
+        title="Launchpad will email that person whenever this question changes">Subscribe someone else</a></div>
+  </div>
+  <div id="other-question-subscribers"></div>
+</div>
+
+
+    
+          </div><!-- yui-b side -->
+        
+      </div><!-- yui-t4 -->
+
+      
+  <div id="footer" class="footer">
+    <div class="lp-arcana">
+        <div class="lp-branding">
+          <a href="https://launchpad.net/"><img src="/@@/launchpad-logo-and-name-hierarchy.png" alt="Launchpad" /></a>
+          &nbsp;&bull;&nbsp;
+          <a href="https://launchpad.net/+tour">Take the tour</a>
+          &nbsp;&bull;&nbsp;
+          <a href="https://help.launchpad.net/">Read the guide</a>
+          &nbsp;
+          <form id="globalsearch" method="get"
+                accept-charset="UTF-8"
+                action="https://launchpad.net/+search">
+            <input type="search" id="search-text" name="field.text" />
+            <input type="image" src="/@@/search" style="vertical-align:5%" alt="Search Launchpad" />
+          </form>
+        </div>
+        
+  
+
+    </div>
+
+    <div class="colophon">
+      &copy; 2004-2015
+      <a href="http://canonical.com/">Canonical&nbsp;Ltd.</a>
+      &nbsp;&bull;&nbsp;
+      <a href="https://launchpad.net/legal">Terms of use</a>
+      &nbsp;&bull;&nbsp;
+      <a href="/feedback">Contact Launchpad Support</a>
+      
+      &nbsp;&bull;&nbsp;
+      <a href="http://blog.launchpad.net/">Blog</a>
+      
+	&nbsp;&bull;&nbsp;
+	<a href="http://www.canonical.com/about-canonical/careers">Careers</a>
+      
+      &nbsp;&bull;&nbsp;
+      <a href="http://identi.ca/launchpadstatus">System status</a>
+      <span id="lp-version">
+      &nbsp;&bull;&nbsp;
+        r17812
+        
+        
+        (<a href="https://dev.launchpad.net/">Get the code!</a>)
+      </span>
+    </div>
+  </div>
+
+    </div><!-- yui-d0-->
+
+    
+  
+  
+  <script id="json-cache-script">LP.cache = {"related_features": {}, "context": {"status": "Answered", "date_due": null, "description": "I converted to my Ubuntu laptop for work and am missing one key feature.  I often capture ssh session logs for support reasons (dumps from routers/switches/hosts) to text files.  How do I do that with gnome-terminal?  All I want to do is turn logging on... capture text... turn it off... have the text file to manipulate/email etc...\n\nThanks in advance\n\nJohn", "title": "How do I log a gnome-terminal session to a file?", "assignee_link": null, "answer_link": null, "date_solved": null, "web_link": "https://answers.launchpad.net/ubuntu/+source/gnome-terminal/+question/7131", "date_created": "2007-05-24T18:39:49.215652+00:00", "language_link": "https://answers.launchpad.net/api/devel/+languages/en", "owner_link": "https://answers.launchpad.net/api/devel/~john-gruber", "messages_collection_link": "https://answers.launchpad.net/api/devel/ubuntu/+source/gnome-terminal/+question/7131/messages", "http_etag": "\"b2776050ff4f2a2447dcdad202757e8b62a9b965-bb8153da8c1150db7e214ba35015dc52ada0b9ee\"", "answerer_link": null, "date_last_response": "2012-09-18T15:09:07.677709+00:00", "self_link": "https://answers.launchpad.net/api/devel/ubuntu/+source/gnome-terminal/+question/7131", "date_last_query": "2007-05-25T16:40:35.268005+00:00", "resource_type_link": "https://answers.launchpad.net/api/devel/#question", "id": 7131, "target_link": "https://answers.launchpad.net/api/devel/ubuntu/+source/gnome-terminal"}};</script>
+
+    
+  
+
+    
+  </body>
+
+
+  <!--
+    Facet name: answers
+    Page type: main_side
+    Has global search: True
+    Has application tabs: True
+    Has side portlets: True
+
+    At least 101 queries/external actions issued in 0.61 seconds
+
+    Features: {'app.mainsite_only.canonical_url': None, 'baselayout.careers_link.disabled': None, 'hard_timeout': u'5000', 'profiling.enabled': None, 'js.yui_version': None, 'visible_render_time': None}
+
+    r17812
+
+    -->
+
+</html>
+
+

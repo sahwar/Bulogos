@@ -1,0 +1,439 @@
+@font-face {
+  font-family: 'Stag Sans LC';
+  src: url('//cdn.economedia.bg/fonts/StagSansLC-Book.eot');
+  src: url('//cdn.economedia.bg/fonts/StagSansLC-Book.woff2') format('woff2'),
+       url('//cdn.economedia.bg/fonts/StagSansLC-Book.woff') format('woff'),
+       url('//cdn.economedia.bg/fonts/StagSansLC-Book.ttf') format('truetype'),
+       url('//cdn.economedia.bg/fonts/StagSansLC-Book.svg#StagSansLC-Book') format('svg'),
+       url('//cdn.economedia.bg/fonts/StagSansLC-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+@font-face {
+  font-family: 'Stag Sans LC';
+  src: url('//cdn.economedia.bg/fonts/StagSans-Medium-Cy-Web.woff2') format('woff2'),
+       url('//cdn.economedia.bg/fonts/StagSans-Medium-Cy-Web.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+*/
+@font-face {
+	font-family: 'StagBGAppBold';
+	src: url('//cdn.economedia.bg/fonts/StagBGApp-Bold.eot');
+	src: url('//cdn.economedia.bg/fonts/StagBGApp-Bold.eot?#iefix') format('embedded-opentype'),
+		url('//cdn.economedia.bg/fonts/StagBGApp-Bold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* unsetting the karieri.bg insanity */
+.idAuth img,
+.idAuth div,
+.idAuth ul,
+.idAuth li {
+	float: initial;
+}
+/* micro clearfix */
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.idAuth .form-group:before,
+.idAuth .form-group:after {
+	content: " ";
+	display: table;
+}
+.idAuth .form-group:after {
+	clear: both;
+}
+.idAuth .form-group {
+	*zoom: 1; /* For IE 6/7 only */
+}
+
+/* unsetting some pesky default.css styles */
+.idAuth .idAuth__form .custom-checkbox,
+.idAuth .idAuth__form .custom-checkbox input {
+	width: initial;
+	top: initial;
+	left: initial;
+	min-height: initial;
+	display: initial;
+	min-height: initial;
+	margin-right: initial;
+	padding: initial;
+	position: initial;
+	color: initial;
+	cursor: initial;
+	vertical-align: initial;
+}
+.idAuth .idAuth__form input[type=tel],
+.idAuth .idAuth__form input[type=number],
+.idAuth .idAuth__form input[type=text],
+.idAuth .idAuth__form input[type=email],
+.idAuth .idAuth__form input[type=tel],
+.idAuth .idAuth__form input[type=search],
+.idAuth .idAuth__form input[type=password],
+.idAuth .idAuth__form textarea {
+	max-height: initial;
+	padding-left: initial;
+	padding-right: initial;
+}
+
+/* common styles */
+.idAuth a {
+	color: #27A9E5;
+	text-decoration: none;
+}
+.idAuth .idAuth__form .form-group {
+	margin-top: 30px;
+}
+.idAuth .idAuth__form .form-group.required label span:after {
+	content: '*';
+	margin-left: 5px;
+}
+.idAuth .idAuth__form .form-group-header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+}
+.idAuth .idAuth__form .form-text {
+	font: 15px/1.4 'Stag Sans LC';
+	color: #333;
+}
+.idAuth .idAuth__form .btn,
+.idAuth .idAuth__form a.btn {
+	cursor: pointer;
+}
+.idAuth .idAuth__form .btn {
+	width: 100%;
+	height: auto;
+	padding-top: 14px;
+	padding-bottom: 13px;
+	border: 0;
+	border-radius: 3px;
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 13px;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.idAuth .idAuth__form a.btn {
+	display: inline-block;
+	text-align: center;
+}
+.idAuth .idAuth__form {
+	font: 15px/1 'Stag Sans LC';
+	color: #333;
+}
+.idAuth .idAuth__form label {
+	font: 15px/1 'Stag Sans LC';
+	color: #333;
+	margin-bottom: 6px;
+}
+.idAuth .idAuth__form input[type=tel],
+.idAuth .idAuth__form input[type=number],
+.idAuth .idAuth__form input[type=text],
+.idAuth .idAuth__form input[type=email],
+.idAuth .idAuth__form input[type=tel],
+.idAuth .idAuth__form input[type=search],
+.idAuth .idAuth__form input[type=password],
+.idAuth .idAuth__form textarea {
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border: 0;
+	border-bottom: 2px solid #333;
+	background-color: transparent;
+	font: 24px/1 'Stag Sans LC';
+	color: #333;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+.idAuth .idAuth__form input[type=password] {
+	font-size: 24px; /* mitko: 60px; */
+	line-height: 0;
+	max-height: 46px;
+}
+.idAuth .idAuth__form .custom-checkbox input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.idAuth .idAuth__form .custom-checkbox label {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0;
+}
+.idAuth .idAuth__form .custom-checkbox label:before,
+.idAuth .idAuth__form .custom-checkbox label:after {
+	width: 26px;
+	height: 26px;
+	top: 5px;
+	content: "";
+	box-sizing: border-box;
+}
+.idAuth .idAuth__form .custom-checkbox label:before {
+	margin-right: 10px;
+	pointer-events: none;
+	user-select: none;
+	background-color: white;
+	border: 2px solid #333;
+	border-radius: 3px;
+	flex: 0 0 auto;
+}
+.idAuth .idAuth__form .custom-checkbox label:after {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 5px;
+	opacity: 0;
+}
+.idAuth .idAuth__form .custom-checkbox input:checked ~ label:after {
+	background-color: #333;
+	opacity: 1;
+}
+.idAuth .idAuth__form .facebook_blue {
+	background-color: #3B5998;
+}
+.idAuth .idAuth__form .google_red {
+	background-color: #EA4335;
+}
+.idAuth .idAuth__primaryBtn.btn {
+	background-color: #333;
+}
+.idAuth .idAuth__secondaryBtn.btn {
+	color: #333;
+	border: 2px solid #333;
+	background-color: white;
+}
+/* validation styles */
+.idAuth .idAuth__form .invalid-feedback {
+	max-width: 100%;
+	color: #EA4335;
+	margin-bottom: 6px;
+}
+.idAuth .idAuth__form .invalid-feedback a {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+.idAuth .idAuth__form.was-validated input:invalid {
+	border-color: #EA4335;
+}
+
+/* specific elements */
+.idAuth .idAuth__heading {
+	font: normal 24px/1 'StagBGAppBold';
+	text-align: center;
+	margin-bottom: 50px;
+}
+.idAuth .idAuth__socialLogins,
+.idAuth .idAuth__tools {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.idAuth .idAuth__socialLogins:before,
+.idAuth .idAuth__tools:before,
+.idAuth .idAuth__socialLogins:after,
+.idAuth .idAuth__tools:after {
+	display: none;
+}
+.idAuth .idAuth__socialLogins a + a {
+	margin-left: 10px;
+}
+.idAuth .idAuth__tools label,
+.idAuth .idAuth__tools a,
+.idAuth .idAuth__form .invalid-feedback {
+	text-decoration: none;
+}
+.idAuth .idAuth__terms {
+	font-size: 12px;
+	line-height: 15px;
+	color: #8E8C85;
+	text-align: center;
+}
+
+/* modal structure */
+body.idAuth--open {
+    overflow: hidden;
+}
+body.idAuth--open .idAuth__modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+	display: flex;
+}
+.idAuth__overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1040;
+	background-color: #000;
+}
+.idAuth__overlay--visible {
+	visibility: visible;
+	opacity: 0.5;
+}
+.idAuth__modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	overflow: hidden;
+	outline: 0;
+}
+.idAuth__modalDialog {
+	position: relative;
+	width: 100%;
+	pointer-events: none;
+	padding: 70px 15px 15px;
+	pointer-events: auto;
+	box-sizing: border-box;
+	background-color: white;
+}
+.idAuth__modalCloseButton {
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background: url(/images/btn_close.svg) no-repeat center center;
+	border: 0;
+	cursor: pointer;
+	pointer-events: auto;
+}
+.idAuth__skeleton {
+	display: none;
+}
+.idAuth__skeleton--visible {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.idAuth__skeletonElement {
+	width: 100%;
+	background: linear-gradient(270deg, #e6e6e6, #d4d4d4);
+	background-size: 400% 400%;
+	-webkit-animation: waveShimmer 1500ms ease infinite;
+	-moz-animation: waveShimmer 1500ms ease infinite;
+	animation: waveShimmer 1500ms ease infinite;
+}
+.idAuth__skeletonElement + .idAuth__skeletonElement {
+	margin-top: 10px;
+}
+.idAuth__skeletonInput {
+	height: 40px;
+}
+.idAuth__skeletonCheckbox {
+	display: inline-block;
+	max-width: 48%;
+	height: 30px;
+	background: linear-gradient(270deg, #f2f2f2, #e1e1e1);
+	background-size: 400% 400%;
+}
+.idAuth__skeletonButton {
+	height: 50px;
+	background: linear-gradient(270deg, #c9c9c9, #aaaaaa);
+	background-size: 400% 400%;
+}
+.idAuth__skeletonFooter {
+	width: 100%;
+	margin-top: 60px;
+}
+
+@media screen and (max-width: 375px) {
+	.idAuth__modal {
+		background-color: white;
+	}
+	.idAuth__modalDialog {
+		background-color: transparent;
+	}
+}
+
+@media screen and (min-width: 375px) {
+	.idAuth__modalDialog {
+		max-width: 345px;
+		margin: auto;
+	}
+	.idAuth .idAuth__form {
+		max-width: 375px;
+		margin: auto;
+	}
+}
+
+
+.cookies-banner-wrapper {
+	width: 100%;
+	background: #f0f0f0;
+}
+.cookies-banner {
+	width: auto;
+	padding: 8px 0;
+	font-family: Tahoma, sans-serif;
+	margin: 0 auto;
+	color: #555555;
+	position: relative;
+	float: none;
+	font-size: 11px;
+}
+.cookies-banner a {
+	color: #555555;
+	text-decoration: underline;
+}
+.cookies-banner a:hover {
+	color: #999999 !important;
+	text-decoration: underline !important;
+}
+.cookies-banner a.cookies-banner-button {
+	padding: 0 10px;
+	margin: 0 0 0 20px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 10px;
+	font-family: Tahoma, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFFFFF;
+	background: #555555;
+	display: inline-block;
+}
+.cookies-banner a.cookies-banner-button:hover {
+	background: #777777;
+	color: #FFFFFF !important;
+	text-decoration: none !important;
+}
+
+
+@-webkit-keyframes waveShimmer {
+	0%{background-position:1% 0%}
+	50%{background-position:99% 100%}
+	100%{background-position:1% 0%}
+}
+@-moz-keyframes waveShimmer {
+	0%{background-position:1% 0%}
+	50%{background-position:99% 100%}
+	100%{background-position:1% 0%}
+}
+@keyframes waveShimmer { 
+	0%{background-position:1% 0%}
+	50%{background-position:99% 100%}
+	100%{background-position:1% 0%}
+}

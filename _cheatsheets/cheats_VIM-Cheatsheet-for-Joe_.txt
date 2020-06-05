@@ -1,0 +1,90 @@
+SOURCE: https://gist.github.com/joejag/2362518
+joejag/cheats.txt
+Created 8 years ago • Report abuse
+1
+3
+ Code Revisions 15 Stars 1 Forks 3
+<script src="https://gist.github.com/joejag/2362518.js"></script>
+  
+VIM Cheatsheet for Joe
+<time-ago datetime="2012-04-11T20:56:08Z" class="no-wrap" title="11.04.2012 г., 23:56 ч. Гринуич+3">8 years ago</time-ago>
+======================================================================================
+
+MOVEMENT
+
+ * Basic movement: h j k l (left, down,up, right)
+ * Word movement: w b (next, back) W B (ignore punct)
+ * Number powered movement: 3w
+ * Start of line: 0, end $
+ * Start doc: gg, end: G, line: 6G
+ * Next page: CTRL+f, Back page: CTRL+b, 1/2 versions: CTRL+d, CTRL+u
+ * Last postion in another file jumping: CTRL+0, CTRL+TAB (back, forward)
+
+SEARCH
+
+ * Search /text, n and N to move
+ * Find a character: f[char] F[char] (next, previous), ; and , to repeat
+ * Matching parens: %
+ * Find word under cursor * and #
+
+INSERT/DELETE
+
+ * Insert/Append start/end: I A
+ * Delete to end of line: D
+ * Clear current line; to insert mode: S
+ * Insert new line: o and O (below or above)
+ * Delete x, backspace X 
+ * Replace under cursor: r
+ * Delete word with: d (like d2w for deleting 2 words)
+
+VISUAL
+
+ * Visual mode: v (character orientated)
+ * Visual mode: V (line orientated)
+ * Visual mode: CTRL+V (Block visual select rectangles of text)
+
+COPY/PASTE
+
+ * Copy current line: yy
+ * Paste copied text after cursor: p
+
+COMMENTING OUT CODE
+
+ * Comment: CTRL+V (select lines) I#
+ * Uncomment: CTRL+V (select lines) X
+
+MISC
+
+ * Repeat command with: .
+ * Undo: u, redo: CTRL+R
+ * Autocomplete word: CTRL+P
+ * open file: :e [file]
+
+TABS
+
+ * New tab: :tabnew
+ * Switch tabs (forward): gt
+ * Switch tabs (backwards): gT 
+ * Switch tabs (to tab number): {i}gt 
+ * Open files: tab -p *.log
+
+WINDOWS
+
+ * Ctrl-W s for horizontal splitting
+ * Ctrl-W v for vertical splitting
+ * Ctrl-w q to close one
+ * Change window: CTRL+W [direction]
+
+
+LINKS
+
+ * Intro: http://blog.interlinked.org/tutorials/vim_tutorial.html
+ * Official: http://vimdoc.sourceforge.net/htmldoc/usr_toc.html
+ * Plugins: http://spf13.com/post/ultimate-vim-config
+ * Keyboard cheat sheet: http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png
+ * Highest rated plugins: http://vim.sourceforge.net/scripts/script_search_results.php?order_by=rating
+ * Poster Cheatsheet: https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
+
+VIMRC FOR INSPIRATION
+
+ * https://github.com/spf13/spf13-vim/blob/3.0/.vimrc

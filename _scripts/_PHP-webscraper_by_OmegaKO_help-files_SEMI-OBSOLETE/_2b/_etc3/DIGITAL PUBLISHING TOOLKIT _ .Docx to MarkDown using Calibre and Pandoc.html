@@ -1,0 +1,315 @@
+<!doctype html>
+
+<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js"><!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>DIGITAL PUBLISHING TOOLKIT | .Docx to MarkDown using Calibre and Pandoc</title>
+				<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				<link rel="apple-touch-icon" href="http://networkcultures.org/digitalpublishing/wp-content/themes/inc-single/library/images/apple-icon-touch.png">
+		<link rel="icon" href="http://networkcultures.org/digitalpublishing/wp-content/themes/inc-single/favicon.png">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="http://networkcultures.org/digitalpublishing/wp-content/themes/inc-single/favicon.ico">
+		<![endif]-->
+				<meta name="msapplication-TileColor" content="#f01d4f">
+		<meta name="msapplication-TileImage" content="http://networkcultures.org/digitalpublishing/wp-content/themes/inc-single/library/images/win8-tile-icon.png">
+		<link rel="pingback" href="http://networkcultures.org/digitalpublishing/xmlrpc.php">
+				<link rel="alternate" type="application/rss+xml" title="DIGITAL PUBLISHING TOOLKIT &raquo; Feed" href="http://networkcultures.org/digitalpublishing/feed/" />
+<link rel="alternate" type="application/rss+xml" title="DIGITAL PUBLISHING TOOLKIT &raquo; Comments Feed" href="http://networkcultures.org/digitalpublishing/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="DIGITAL PUBLISHING TOOLKIT &raquo; .Docx to MarkDown using Calibre and Pandoc Comments Feed" href="http://networkcultures.org/digitalpublishing/2013/08/30/docx-to-markdown-using-calibre-and-pandoc/feed/" />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://networkcultures.org/digitalpublishing/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ai-core-style-css'  href='http://networkcultures.org/digitalpublishing/wp-content/plugins/aesop-story-engine/public/assets/css/ai-core.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bones-stylesheet-css'  href='http://networkcultures.org/digitalpublishing/wp-content/themes/inc-single/library/css/style.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='bones-ie-only-css'  href='http://networkcultures.org/digitalpublishing/wp-content/themes/inc-single/library/css/ie.css' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='ms_global_search_css_style-css'  href='http://networkcultures.org/digitalpublishing/wp-content/plugins/multisite-global-search/style.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://networkcultures.org/digitalpublishing/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='http://networkcultures.org/digitalpublishing/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='http://networkcultures.org/digitalpublishing/wp-content/themes/inc-single/library/js/libs/modernizr.custom.min.js'></script>
+<link rel='canonical' href='http://networkcultures.org/digitalpublishing/2013/08/30/docx-to-markdown-using-calibre-and-pandoc/' />
+<link rel='shortlink' href='http://networkcultures.org/digitalpublishing/?p=751' />
+<script type="text/javascript" src="http://networkcultures.org/digitalpublishing/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.6"></script>
+<script type="text/javascript">AudioPlayer.setup("http://networkcultures.org/digitalpublishing/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.6", {width:"290",animation:"yes",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"E5E5E5",text:"333333",leftbg:"CCCCCC",lefticon:"333333",volslider:"666666",voltrack:"FFFFFF",rightbg:"B4B4B4",rightbghover:"999999",righticon:"333333",righticonhover:"FFFFFF",track:"FFFFFF",loader:"009900",border:"CCCCCC",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<link rel='https://github.com/WP-API/WP-API' href='http://networkcultures.org/digitalpublishing/wp-json' />
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>				<!-- Google Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-7714345-30', 'networkcultures.org');
+		  ga('send', 'pageview');
+
+		</script>
+		<!-- fonts and icons -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<script src="http://networkcultures.org/digitalpublishing/wp-content/themes/inc-single/library/js/libs/jquery.infinitescroll.js"></script>
+		<!-- FitVids -->
+		<script type="text/javascript" src="http://networkcultures.org/digitalpublishing/wp-content/themes/inc-single/library/js/libs/jquery.fitvids.js"></script>
+		<!-- ScrollTo -->
+		<script type="text/javascript" src="http://networkcultures.org/digitalpublishing/wp-content/themes/inc-single/library/js/libs/jquery.scrollTo.min.js"></script>
+		<script type="text/javascript" src="http://networkcultures.org/digitalpublishing/wp-content/themes/inc-single/library/js/libs/jquery.localScroll.min.js"></script>
+			</head>
+	<body class="single single-post postid-751 single-format-standard browser-chrome os-windows aesop-core aesop-on-inc-single">
+		<div id="container">
+			<header class="header" role="banner">
+				<div id="inner-header" class="wrap clearfix">
+					<p id="logo" class="h1">
+						<a href="http://new.networkcultures.org/" rel="nofollow">
+							<img src="http://networkcultures.org/digitalpublishing/wp-content/themes/inc-single/library/images/inc-logos/inc_logo1@2x.png" alt="DIGITAL PUBLISHING TOOLKIT" />
+						</a>
+					</p>
+					<div id="search">
+						<!-- 				
+						<form method="get" id="searchform" action="http://www.google.com/search">
+							<input type="text" class="inputbox" alt="search" maxlength="20" name="q" id="s" size="15">
+							<input type="radio" name="sitesearch" value="http://networkcultures.org" checked="" style="display:none;">
+			       </form> 
+			     	-->
+			      <form class="ms-global-search_form" method="get" action="http://networkcultures.org/globalsearch/">
+							<input class="ms-global-search_hbox inputbox" name="mssearch" alt="search" maxlength="20" id="s" size="15" placeholder="Search">
+		    		</form> 
+					</div>
+				</div>
+			</header>
+			<a href="http://networkcultures.org/digitalpublishing">
+				<div id="banner">
+					<div class="wrap">
+													<img src="http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2014/10/banner_DPT_03.jpg" />
+											</div>
+				</div>
+			</a>
+			<div id="main-nav">
+				<nav role="navigation" class="wrap" id="burger">
+					<div id="navicon">
+						<span>MENU</span>
+					</div>
+					<ul id="menu-menu-1" class="nav top-nav clearfix"><li id="menu-item-1983" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1983"><a href="http://networkcultures.org/digitalpublishing/">Home</a></li>
+<li id="menu-item-2156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2156"><a href="http://networkcultures.org/digitalpublishing/aboutus/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-2149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2149"><a href="http://networkcultures.org/digitalpublishing/consortium/">Consortium</a></li>
+	<li id="menu-item-2152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2152"><a href="http://networkcultures.org/digitalpublishing/consortium/project-description/">Project Descriptions</a></li>
+</ul>
+</li>
+<li id="menu-item-2158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2158"><a href="http://networkcultures.org/digitalpublishing/event-showcases-dpt/">Event: Showcases DIgital Publishing Toolkit</a></li>
+<li id="menu-item-2153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2153"><a href="http://networkcultures.org/digitalpublishing/events/">Past Events</a>
+<ul class="sub-menu">
+	<li id="menu-item-2215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2215"><a href="http://networkcultures.org/digitalpublishing/events/28-november-2013/">Event: Valt er nog iets te ontwerpen?</a></li>
+	<li id="menu-item-2214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2214"><a href="http://networkcultures.org/digitalpublishing/events/22-23-may-2014/">Conference: Off the Press</a></li>
+</ul>
+</li>
+<li id="menu-item-2151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2151"><a href="http://networkcultures.org/digitalpublishing/inspirations/">Resources</a></li>
+<li id="menu-item-2254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2254"><a href="http://networkcultures.org/digitalpublishing/publication/">Publication</a></li>
+<li id="menu-item-2157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2157"><a href="http://networkcultures.org/digitalpublishing/github/">GitHub</a></li>
+<li id="menu-item-2150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2150"><a href="http://networkcultures.org/digitalpublishing/contact/">Contact</a></li>
+</ul>				</nav>
+				<nav role="navigation" class="wrap" id="baguette">
+					<ul id="menu-menu-2" class="nav top-nav clearfix"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1983"><a href="http://networkcultures.org/digitalpublishing/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2156"><a href="http://networkcultures.org/digitalpublishing/aboutus/">About</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2149"><a href="http://networkcultures.org/digitalpublishing/consortium/">Consortium</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2152"><a href="http://networkcultures.org/digitalpublishing/consortium/project-description/">Project Descriptions</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2158"><a href="http://networkcultures.org/digitalpublishing/event-showcases-dpt/">Event: Showcases DIgital Publishing Toolkit</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2153"><a href="http://networkcultures.org/digitalpublishing/events/">Past Events</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2215"><a href="http://networkcultures.org/digitalpublishing/events/28-november-2013/">Event: Valt er nog iets te ontwerpen?</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2214"><a href="http://networkcultures.org/digitalpublishing/events/22-23-may-2014/">Conference: Off the Press</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2151"><a href="http://networkcultures.org/digitalpublishing/inspirations/">Resources</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2254"><a href="http://networkcultures.org/digitalpublishing/publication/">Publication</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2157"><a href="http://networkcultures.org/digitalpublishing/github/">GitHub</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2150"><a href="http://networkcultures.org/digitalpublishing/contact/">Contact</a></li>
+</ul>				</nav>
+			</div>			<div id="content">
+				<div id="inner-content" class="wrap clearfix">
+					<div id="main" class="clearfix" role="main">
+													<article id="post-751" class="post-751 post type-post status-publish format-standard hentry category-development category-inc category-standards category-tools tag-calibre tag-conversion tag-docx tag-pandoc tag-process tag-tutorial clearfix" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+								<header class="article-header">
+									<p id="breadcrumb">Blog:</p>
+									<h1 class="entry-title single-title" itemprop="headline">.Docx to MarkDown using Calibre and Pandoc</h1>
+									<p class="byline vcard">By <span class="author"><a href="http://networkcultures.org/digitalpublishing/author/silviolorusso/" title="Posts by Silvio Lorusso" rel="author">Silvio Lorusso</a></span>, <time class="updated" datetime="2013-08-30" pubdate>August 30, 2013 at 2:30 pm</time>.</p>
+								</header>
+								<section class="entry-content clearfix" itemprop="articleBody">
+									<p>This post documents the outcomes of a new feature of <a href="http://calibre-ebook.com/">Calibre</a> available in version 1.0: docx conversion. The docx file is firstly converted to HTMLZ in order to be converted again to MarkDown through <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>. An automated version of the process (bash script) is available at the bottom.</p>
+<p>We are going to use a test document provided by <strong>Calibre</strong> team, downloadable <a href="http://calibre-ebook.com/downloads/demos/demo.docx">here</a>. The document has the following features:</p>
+<div id="attachment_752" style="width: 786px" class="wp-caption alignnone"><a href="http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2013/08/Screen-Shot-2013-08-30-at-12.26.17-PM.png"><img class="size-full wp-image-752" alt="Test Document in .docx, shown in LibreOffice" src="http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2013/08/Screen-Shot-2013-08-30-at-12.26.17-PM.png" width="776" height="666" /></a><p class="wp-caption-text">Test Document in .docx, shown in LibreOffice</p></div>
+<ul>
+<li>Inline formatting</li>
+<li>Fonts</li>
+<li>Paragraph level formatting</li>
+<li>Tables</li>
+<li>Footnotes &amp; Endnotes</li>
+<li>Dropcaps</li>
+<li>Links</li>
+<li>Table of Contents</li>
+<li>Images</li>
+<li>Lists</li>
+</ul>
+<p>First, we convert the .docx to HTMLZ using <strong>Calibre</strong>. To do so add the test document to Calibre and right-click to convert it individually.</p>
+<a href="http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2013/08/Screen-Shot-2013-08-30-at-12.34.33-PM.png"><img class="alignnone size-full wp-image-754" alt="Screen Shot 2013-08-30 at 12.34.33 PM" src="http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2013/08/Screen-Shot-2013-08-30-at-12.34.33-PM.png" width="822" height="502" /></a>
+<p>Choose HTMLZ as output format click OK. You will then find your .htmlz in the containing folder of your document (right-click on the element &gt; Open containing folder).</p>
+<a href="http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2013/08/Screen-Shot-2013-08-30-at-12.39.21-PM.png"><img class="alignnone size-large wp-image-755" alt="Screen Shot 2013-08-30 at 12.39.21 PM" src="http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2013/08/Screen-Shot-2013-08-30-at-12.39.21-PM-1024x730.png" width="625" height="445" /></a>
+<p>The HTMLZ is a <a href="http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2013/08/DOCX-Demo-Kovid-Goyal.zip">zip</a> file containing an HTML file along with images, style, etc. Therefore in order to access those files simply change the extensions from .htmlz to .zip and uncompress.</p>
+<p>The result of the conversion is pretty decent: except for &#8220;Paragraph level formatting&#8221;, everything else is preserved, especially footnotes (that were the most labour intensive issue in the <a href="http://networkcultures.org/digitalpublishing/2013/07/notes-on-converting-a-doc-to-multimarkdown/">previous processes</a> and still not solved).</p>
+<div id="attachment_762" style="width: 635px" class="wp-caption alignnone"><a href="http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2013/08/Screen-Shot-2013-08-30-at-12.46.02-PM.png"><img class="size-large wp-image-762" alt="The HTML document" src="http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2013/08/Screen-Shot-2013-08-30-at-12.46.02-PM-1024x488.png" width="625" height="297" /></a><p class="wp-caption-text">The HTML document</p></div>
+<p>Let&#8217;s now use <strong>Pandoc</strong> to convert the .html to MarkDown.</p>
+<pre><code>pandoc -f html -t markdown -o output.html your_forlder/index.html 
+</code></pre>
+<p>Here you can download the <a href="http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2013/08/output.md">output MarkDown file</a>.</p>
+<div id="attachment_766" style="width: 635px" class="wp-caption alignnone"><a href="http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2013/08/Screen-Shot-2013-08-30-at-1.02.25-PM.png"><img class="size-large wp-image-766" alt="The MarkDown output as shown in Mou" src="http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2013/08/Screen-Shot-2013-08-30-at-1.02.25-PM-1024x736.png" width="625" height="449" /></a><p class="wp-caption-text">The MarkDown output as shown in Mou</p></div>
+<p>Let&#8217;s now go through the features.</p>
+<p><strong>Inline formatting</strong></p>
+<ul>
+<li>Bold and italic are preserved, even though there are problems when they are one next to each other;</li>
+<li>Underlined, struck out, superscript, subscript, colors, highlight are not preserved.</li>
+</ul>
+<p><strong>Fonts</strong><br />
+Fonts are not preserved.</p>
+<p><strong>Paragraph level formatting</strong><br />
+Paragraph level formatting is not preserved.</p>
+<p><strong>Tables</strong><br />
+Tables are not preserved.</p>
+<p><strong>Footnotes &amp; Endnotes</strong><br />
+Footnotes and endnotes are preserved as links, even though the syntax is not correct. This in any case would be solved quickly with a find &amp; replace or regular expression.</p>
+<p><strong>Dropcaps</strong><br />
+Dropcaps are not preserved.</p>
+<p><strong>Links</strong><br />
+Links are preserved.</p>
+<p><strong>Table of Contents</strong><br />
+Table of Contents are preserved as sets of links.</p>
+<p><strong>Images</strong><br />
+Images are preserved.</p>
+<p><strong>Lists</strong><br />
+Both ordered and unordered lists are preserved.<br />
+Multi-level lists and continued lists have problems.</p>
+<h3>Automated version of the process (bash script)</h3>
+<p>In order to use the automated version you need:</p>
+<ol>
+<li>Calibre&#8217;s Command Line Interface activated: On OS X you have to go to Preferences-&gt;Advanced-&gt;Miscellaneous and click install command line tools to make the command line tools available. On other platforms, just start a terminal and type the command.</li>
+<li>An unzip tool: on OS X I use &#8220;unzip&#8221;.</li>
+</ol>
+<pre><code>#!/bin/bash
+mkdir temp
+cp $1 temp
+cd temp
+ebook-convert $1 output.htmlz
+unzip output.htmlz
+cd ..
+pandoc -f html -t markdown -o output.md temp/index.html
+rm -R temp
+</code></pre>
+								</section>
+								<footer class="article-footer">
+									<p class="tags"><span class="tags-title">Tags:</span> <a href="http://networkcultures.org/digitalpublishing/tag/calibre/" rel="tag">Calibre</a>, <a href="http://networkcultures.org/digitalpublishing/tag/conversion/" rel="tag">conversion</a>, <a href="http://networkcultures.org/digitalpublishing/tag/docx/" rel="tag">docx</a>, <a href="http://networkcultures.org/digitalpublishing/tag/pandoc/" rel="tag">pandoc</a>, <a href="http://networkcultures.org/digitalpublishing/tag/process/" rel="tag">process</a>, <a href="http://networkcultures.org/digitalpublishing/tag/tutorial/" rel="tag">tutorial</a></p>									<div id="share">
+										<span>Share</span>
+										<script>function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script>
+        <a href="http://www.facebook.com/share.php?u=<full page url to share>" onClick="return fbs_click()" target="_blank" title="Share This on Facebook"><i class="fa fa-facebook"></i></a>
+										<a href="https://twitter.com/share?text=.Docx to MarkDown using Calibre and Pandoc%20-" target="_blank"><i class="fa fa-twitter"></i></a>
+										<a href="mailto:?subject=.Docx to MarkDown using Calibre and Pandoc&amp;body=http://networkcultures.org/digitalpublishing/2013/08/30/docx-to-markdown-using-calibre-and-pandoc/." title="Share by Email"><i class="fa fa-envelope"></i></a>
+									</div>
+								</footer>
+							</article>
+																	</div>
+					<div id="next" class="clearfix">
+						<p id="next-read">Most Recent Readings</p>
+														<div class="box clearfix">
+									<a href="http://networkcultures.org/digitalpublishing/2015/01/27/a-leap-into-the-future-of-digital-reading/">
+																					<div class="box-left single" style="background-image:url('http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2015/01/Reinier-Gerritsen.jpg')">
+											</div>
+																				<div class="box-right">
+											<h1>A leap into the future of (digital) reading</h1>
+											<p class="byline">By haroldkonickx, January 27, 2015</p>
+											<p class="content">On the past event Showcases Digital Publishing Toolkit I read the following text: The Canadian mediatheorist Marshall McLuhan said in his famous Playboy interview in 1969: &#8216;Most people, as I indicated, still cling to what I call the rearview-mirror view of their world. By this I mean to say that because of the invisibility of any environment during the period [...]</p>
+										</div>
+									</a>
+								</div>
+															<div class="box clearfix">
+									<a href="http://networkcultures.org/digitalpublishing/2014/12/23/out-now-from-print-to-ebooks-a-hybrid-publishing-toolkit-for-the-arts/">
+											
+											<div class="box-left single" style="background-image:url('http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2014/12/0419-HVA_DPT_from_print_to_ebooks_OS_epub-e1419344387128.png')">
+											</div>
+																				<div class="box-right">
+											<h1>Out Now: From Print to Ebooks: a Hybrid Publishing Toolkit for the Arts</h1>
+											<p class="byline">By margreet riphagen, December 23, 2014</p>
+											<p class="content">The last year within the Digital Publishing Toolkit research project, Hogeschool van Amsterdam and Hogeschool Rotterdam together with various designers and developers, collaboratively worked on the EPUB From Print to Ebooks: a Hybrid Publishing Toolkit for the Arts. This Toolkit is meant for everyone working in art and design publishing. No specific expertise of digital [...]</p>
+										</div>
+									</a>
+								</div>
+															<div class="box clearfix">
+									<a href="http://networkcultures.org/digitalpublishing/2014/12/18/marije-ten-brink-blendle-is-a-promising-idea/">
+																					<div class="box-left single" style="background-image:url('http://networkcultures.org/digitalpublishing/wp-content/uploads/sites/26/2014/12/Blendle-1.png')">
+											</div>
+																				<div class="box-right">
+											<h1>Marije ten Brink: &#8216;Blendle is a promising idea&#8217;</h1>
+											<p class="byline">By haroldkonickx, December 18, 2014</p>
+											<p class="content">HvA-teacher and designer Marije ten Brink wonders why Dutch entrepeneur Alexander Klöpping has come up with the invention of Blendle; a platform that combines &#8216;the best of newspapers and magazines&#8217; as it claims. The video is in Dutch.</p>
+										</div>
+									</a>
+								</div>
+																		</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer" role="contentinfo">
+			<div id="inner-footer" class="wrap">
+				<div id="hva">
+				</div>
+				<div id="cqcounter">
+					 <!-- CQ Counter code start -->
+					<script type="text/javascript" language="javascript"><!-- 
+					_d=document; _n=navigator; _t=new Date(); function t() { _d.write( 
+					"<img src=\"http://nl.2.cqcounter.com/cgi-bin/c?_id=networkc&_z=0&_r="+
+					_r+"&_c="+_c+"&_j="+_j+"&_t="+(_t.getTimezoneOffset())+"&_k="+_k+
+					"&_l="+escape(_d.referrer)+"\" width=70 height=15 "+
+					"border=0>");} _c="0"; _r="0"; _j="U"; _k="U"; _d.cookie="_c=y";
+					_d.cookie.length>0?_k="Y":_k="N";//--></script>
+					<script type="text/javascript" language="javascript1.2"><!-- 
+					_n.javaEnabled()?_j="Y":_j="N";_b=screen; _r=_b.width; 
+					_n.appName!="Netscape"?_c=_b.colorDepth : _c=_b.pixelDepth;//--></script>
+
+					<a title="Free Web Counter" style="display:none" href="http://cqcounter.com/?_id=networkc&_lo=nl2" 
+					target="_top">
+					<script type="text/javascript" language="javascript"><!-- 
+					t(); //--></script>
+					</a>
+					<noscript>
+					<img width="70" height="15" border="0" 
+					alt="Counter" src="http://nl.2.cqcounter.com/cgi-bin/c?_id=networkc&_z=0"><br>
+					<a title="Web Site Counter" href="http://cqcounter.com/">Free Hit Counter</a>
+					</noscript>
+				</div>
+				<div id="social">
+					<a href="https://www.facebook.com/networkcultures"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/INCAmsterdam"><i class="fa fa-twitter"></i></a>
+					<a href="https://vimeo.com/networkcultures"><i class="fa fa-vimeo-square"></i></a>
+					<a href="http://www.flickr.com/photos/networkcultures/"><i class="fa fa-flickr"></i></a>
+				</div>
+				<p id="credits">Design and development by <a href="http://robertopicerno.it/">Roberto Picerno</a> &amp; <a href="http://silviolorusso.com">Silvio Lorusso</a>.</p>
+			</div>
+		</footer>
+				<script type='text/javascript' src='http://networkcultures.org/digitalpublishing/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/networkcultures.org\/digitalpublishing\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://networkcultures.org/digitalpublishing/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript' src='http://networkcultures.org/digitalpublishing/wp-content/plugins/aesop-story-engine/public/assets/js/ai-core.min.js'></script>
+<script type='text/javascript' src='http://networkcultures.org/digitalpublishing/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='http://networkcultures.org/digitalpublishing/wp-content/themes/inc-single/library/js/scripts.js'></script>
+	</body>
+</html>

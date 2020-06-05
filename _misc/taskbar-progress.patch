@@ -1,0 +1,508 @@
+Original patch by Case from #foobar2000 on Freenode
+
+diff -Naur wget-1.16.1/configure.ac wget-1.16.1-new/configure.ac
+--- wget-1.16.1/configure.ac	2014-12-07 20:52:24.000000000 +0100
++++ wget-1.16.1-new/configure.ac	2014-12-17 18:26:35.113374700 +0100
+@@ -163,6 +163,7 @@
+ 
+ AC_PROG_CC
+ AM_PROG_CC_C_O
++AC_PROG_CXX
+ AC_AIX
+ 
+ gl_EARLY
+@@ -295,7 +296,7 @@
+ dnl Deal with specific hosts
+ case $host_os in
+   *mingw32* )
+-    LIBS+=' -lws2_32'
++    LIBS+=' -lws2_32 -lole32'
+     AC_LIBOBJ([mswindows])
+     ;;
+ esac
+@@ -368,7 +369,7 @@
+           AC_MSG_ERROR([openssl not found: shared lib eay32 found but ssl32 not found]))
+ 
+         else
+-          LIBS+=' -lgdi32'
++          LIBS+=' -lgdi32 -lcrypt32'
+           dnl fallback and test static libs
+         fi
+         dnl add zdll lib as dep for above tests?
+diff -Naur wget-1.16.1/doc/Makefile.in wget-1.16.1-new/doc/Makefile.in
+--- wget-1.16.1/doc/Makefile.in	2014-12-08 11:33:00.000000000 +0100
++++ wget-1.16.1-new/doc/Makefile.in	2014-12-17 18:36:49.900977791 +0100
+@@ -323,6 +323,9 @@
+ CONFIG_INCLUDE = @CONFIG_INCLUDE@
+ CPP = @CPP@
+ CPPFLAGS = @CPPFLAGS@
++CXX = @CXX@
++CXXDEPMODE = @CXXDEPMODE@
++CXXFLAGS = @CXXFLAGS@
+ CYGPATH_W = @CYGPATH_W@
+ DEFS = @DEFS@
+ DEPDIR = @DEPDIR@
+@@ -1223,6 +1226,7 @@
+ abs_top_builddir = @abs_top_builddir@
+ abs_top_srcdir = @abs_top_srcdir@
+ ac_ct_CC = @ac_ct_CC@
++ac_ct_CXX = @ac_ct_CXX@
+ am__include = @am__include@
+ am__leading_dot = @am__leading_dot@
+ am__quote = @am__quote@
+diff -Naur wget-1.16.1/lib/Makefile.in wget-1.16.1-new/lib/Makefile.in
+--- wget-1.16.1/lib/Makefile.in	2014-12-08 11:33:00.000000000 +0100
++++ wget-1.16.1-new/lib/Makefile.in	2014-12-17 18:36:50.240970078 +0100
+@@ -379,6 +379,9 @@
+ CONFIG_INCLUDE = @CONFIG_INCLUDE@
+ CPP = @CPP@
+ CPPFLAGS = @CPPFLAGS@
++CXX = @CXX@
++CXXDEPMODE = @CXXDEPMODE@
++CXXFLAGS = @CXXFLAGS@
+ CYGPATH_W = @CYGPATH_W@
+ DEFS = @DEFS@
+ DEPDIR = @DEPDIR@
+@@ -1279,6 +1282,7 @@
+ abs_top_builddir = @abs_top_builddir@
+ abs_top_srcdir = @abs_top_srcdir@
+ ac_ct_CC = @ac_ct_CC@
++ac_ct_CXX = @ac_ct_CXX@
+ am__include = @am__include@
+ am__leading_dot = @am__leading_dot@
+ am__quote = @am__quote@
+diff -Naur wget-1.16.1/Makefile.in wget-1.16.1-new/Makefile.in
+--- wget-1.16.1/Makefile.in	2014-12-08 11:32:59.000000000 +0100
++++ wget-1.16.1-new/Makefile.in	2014-12-17 18:36:49.733981580 +0100
+@@ -352,6 +352,9 @@
+ CONFIG_INCLUDE = @CONFIG_INCLUDE@
+ CPP = @CPP@
+ CPPFLAGS = @CPPFLAGS@
++CXX = @CXX@
++CXXDEPMODE = @CXXDEPMODE@
++CXXFLAGS = @CXXFLAGS@
+ CYGPATH_W = @CYGPATH_W@
+ DEFS = @DEFS@
+ DEPDIR = @DEPDIR@
+@@ -1252,6 +1255,7 @@
+ abs_top_builddir = @abs_top_builddir@
+ abs_top_srcdir = @abs_top_srcdir@
+ ac_ct_CC = @ac_ct_CC@
++ac_ct_CXX = @ac_ct_CXX@
+ am__include = @am__include@
+ am__leading_dot = @am__leading_dot@
+ am__quote = @am__quote@
+diff -Naur wget-1.16.1/src/Makefile.am wget-1.16.1-new/src/Makefile.am
+--- wget-1.16.1/src/Makefile.am	2014-12-07 20:52:24.000000000 +0100
++++ wget-1.16.1-new/src/Makefile.am	2014-12-17 18:27:25.771911112 +0100
+@@ -53,12 +53,13 @@
+ 		http.h http-ntlm.h init.h log.h mswindows.h netrc.h	\
+ 		options.h progress.h ptimer.h recur.h res.h retr.h	\
+ 		spider.h ssl.h sysdep.h url.h warc.h utils.h wget.h iri.h	\
+-		exits.h version.h
++		exits.h version.h tbprogress.cc tbprogress.h
+ nodist_wget_SOURCES = version.c
+ EXTRA_wget_SOURCES = iri.c
+ LDADD = $(LIBOBJS) ../lib/libgnu.a
+ AM_CPPFLAGS = -I$(top_builddir)/lib -I$(top_srcdir)/lib
+ 
++CXXCOMPILE = $(CXX) $(DEFS) $(AM_CXXFLAGS) $(CXXFLAGS)
+ 
+ ../lib/libgnu.a:
+ 	cd ../lib && $(MAKE) $(AM_MAKEFLAGS)
+diff -Naur wget-1.16.1/src/Makefile.in wget-1.16.1-new/src/Makefile.in
+--- wget-1.16.1/src/Makefile.in	2014-12-08 11:33:00.000000000 +0100
++++ wget-1.16.1-new/src/Makefile.in	2014-12-17 18:36:50.594962047 +0100
+@@ -113,8 +113,8 @@
+ bin_PROGRAMS = wget$(EXEEXT)
+ subdir = src
+ DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
+-	$(srcdir)/config.h.in mswindows.c http-ntlm.c ftp-opie.c \
+-	gnutls.c openssl.c $(top_srcdir)/build-aux/depcomp ChangeLog
++	$(srcdir)/config.h.in http-ntlm.c mswindows.c openssl.c \
++	ftp-opie.c gnutls.c $(top_srcdir)/build-aux/depcomp ChangeLog
+ ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
+ am__aclocal_m4_deps = $(top_srcdir)/m4/00gnulib.m4 \
+ 	$(top_srcdir)/m4/absolute-header.m4 $(top_srcdir)/m4/alloca.m4 \
+@@ -236,7 +236,7 @@
+ 	html-url.h http.h http-ntlm.h init.h log.h mswindows.h netrc.h \
+ 	options.h progress.h ptimer.h recur.h res.h retr.h spider.h \
+ 	ssl.h sysdep.h url.h warc.h utils.h wget.h iri.h exits.h \
+-	version.h test.c test.h
++	version.h tbprogress.cc tbprogress.h test.c test.h
+ @IRI_IS_ENABLED_TRUE@am__objects_1 = libunittest_a-iri.$(OBJEXT)
+ am__objects_2 = libunittest_a-connect.$(OBJEXT) \
+ 	libunittest_a-convert.$(OBJEXT) \
+@@ -255,7 +255,8 @@
+ 	libunittest_a-spider.$(OBJEXT) libunittest_a-url.$(OBJEXT) \
+ 	libunittest_a-warc.$(OBJEXT) libunittest_a-utils.$(OBJEXT) \
+ 	libunittest_a-exits.$(OBJEXT) \
+-	libunittest_a-build_info.$(OBJEXT) $(am__objects_1)
++	libunittest_a-build_info.$(OBJEXT) $(am__objects_1) \
++	libunittest_a-tbprogress.$(OBJEXT)
+ am_libunittest_a_OBJECTS = $(am__objects_2) \
+ 	libunittest_a-test.$(OBJEXT) \
+ 	libunittest_a-build_info.$(OBJEXT)
+@@ -273,7 +274,7 @@
+ 	html-url.h http.h http-ntlm.h init.h log.h mswindows.h netrc.h \
+ 	options.h progress.h ptimer.h recur.h res.h retr.h spider.h \
+ 	ssl.h sysdep.h url.h warc.h utils.h wget.h iri.h exits.h \
+-	version.h
++	version.h tbprogress.cc tbprogress.h
+ @IRI_IS_ENABLED_TRUE@am__objects_3 = iri.$(OBJEXT)
+ am_wget_OBJECTS = connect.$(OBJEXT) convert.$(OBJEXT) \
+ 	cookies.$(OBJEXT) ftp.$(OBJEXT) css_.$(OBJEXT) \
+@@ -283,7 +284,8 @@
+ 	main.$(OBJEXT) netrc.$(OBJEXT) progress.$(OBJEXT) \
+ 	ptimer.$(OBJEXT) recur.$(OBJEXT) res.$(OBJEXT) retr.$(OBJEXT) \
+ 	spider.$(OBJEXT) url.$(OBJEXT) warc.$(OBJEXT) utils.$(OBJEXT) \
+-	exits.$(OBJEXT) build_info.$(OBJEXT) $(am__objects_3)
++	exits.$(OBJEXT) build_info.$(OBJEXT) $(am__objects_3) \
++	tbprogress.$(OBJEXT)
+ nodist_wget_OBJECTS = version.$(OBJEXT)
+ wget_OBJECTS = $(am_wget_OBJECTS) $(nodist_wget_OBJECTS)
+ wget_LDADD = $(LDADD)
+@@ -320,6 +322,17 @@
+ am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
+ am__v_CCLD_0 = @echo "  CCLD    " $@;
+ am__v_CCLD_1 = 
++AM_V_CXX = $(am__v_CXX_@AM_V@)
++am__v_CXX_ = $(am__v_CXX_@AM_DEFAULT_V@)
++am__v_CXX_0 = @echo "  CXX     " $@;
++am__v_CXX_1 = 
++CXXLD = $(CXX)
++CXXLINK = $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) \
++	-o $@
++AM_V_CXXLD = $(am__v_CXXLD_@AM_V@)
++am__v_CXXLD_ = $(am__v_CXXLD_@AM_DEFAULT_V@)
++am__v_CXXLD_0 = @echo "  CXXLD   " $@;
++am__v_CXXLD_1 = 
+ SOURCES = $(libunittest_a_SOURCES) $(nodist_libunittest_a_SOURCES) \
+ 	$(wget_SOURCES) $(EXTRA_wget_SOURCES) $(nodist_wget_SOURCES)
+ DIST_SOURCES = $(am__libunittest_a_SOURCES_DIST) \
+@@ -376,6 +389,9 @@
+ CONFIG_INCLUDE = @CONFIG_INCLUDE@
+ CPP = @CPP@
+ CPPFLAGS = @CPPFLAGS@
++CXX = @CXX@
++CXXDEPMODE = @CXXDEPMODE@
++CXXFLAGS = @CXXFLAGS@
+ CYGPATH_W = @CYGPATH_W@
+ 
+ # The following line is losing on some versions of make!
+@@ -1278,6 +1294,7 @@
+ abs_top_builddir = @abs_top_builddir@
+ abs_top_srcdir = @abs_top_srcdir@
+ ac_ct_CC = @ac_ct_CC@
++ac_ct_CXX = @ac_ct_CXX@
+ am__include = @am__include@
+ am__leading_dot = @am__leading_dot@
+ am__quote = @am__quote@
+@@ -1347,12 +1364,13 @@
+ 		http.h http-ntlm.h init.h log.h mswindows.h netrc.h	\
+ 		options.h progress.h ptimer.h recur.h res.h retr.h	\
+ 		spider.h ssl.h sysdep.h url.h warc.h utils.h wget.h iri.h	\
+-		exits.h version.h
++		exits.h version.h tbprogress.cc tbprogress.h
+ 
+ nodist_wget_SOURCES = version.c
+ EXTRA_wget_SOURCES = iri.c
+ LDADD = $(LIBOBJS) ../lib/libgnu.a
+ AM_CPPFLAGS = -I$(top_builddir)/lib -I$(top_srcdir)/lib
++CXXCOMPILE = $(CXX) $(DEFS) $(AM_CXXFLAGS) $(CXXFLAGS)
+ ESCAPEQUOTE = sed -e 's/[\\"]/\\&/g' -e 's/\\"/"/' -e 's/\\";$$/";/'
+ check_LIBRARIES = libunittest.a
+ libunittest_a_SOURCES = $(wget_SOURCES) test.c build_info.c test.h
+@@ -1364,7 +1382,7 @@
+ 	$(MAKE) $(AM_MAKEFLAGS) all-am
+ 
+ .SUFFIXES:
+-.SUFFIXES: .c .o .obj
++.SUFFIXES: .c .cc .o .obj
+ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
+ 	@for dep in $?; do \
+ 	  case '$(am__configure_deps)' in \
+@@ -1463,7 +1481,7 @@
+ 
+ wget$(EXEEXT): $(wget_OBJECTS) $(wget_DEPENDENCIES) $(EXTRA_wget_DEPENDENCIES) 
+ 	@rm -f wget$(EXEEXT)
+-	$(AM_V_CCLD)$(LINK) $(wget_OBJECTS) $(wget_LDADD) $(LIBS)
++	$(AM_V_CXXLD)$(CXXLINK) $(wget_OBJECTS) $(wget_LDADD) $(LIBS)
+ 
+ mostlyclean-compile:
+ 	-rm -f *.$(OBJEXT)
+@@ -1519,6 +1537,7 @@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libunittest_a-res.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libunittest_a-retr.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libunittest_a-spider.Po@am__quote@
++@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libunittest_a-tbprogress.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libunittest_a-test.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libunittest_a-url.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libunittest_a-utils.Po@am__quote@
+@@ -1533,6 +1552,7 @@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/res.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/retr.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/spider.Po@am__quote@
++@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/tbprogress.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/url.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/utils.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/version.Po@am__quote@
+@@ -1986,6 +2006,34 @@
+ @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+ @am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libunittest_a_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o libunittest_a-version.obj `if test -f 'version.c'; then $(CYGPATH_W) 'version.c'; else $(CYGPATH_W) '$(srcdir)/version.c'; fi`
+ 
++.cc.o:
++@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
++@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
++@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
++@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
++@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXXCOMPILE) -c -o $@ $<
++
++.cc.obj:
++@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
++@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
++@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
++@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
++@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
++
++libunittest_a-tbprogress.o: tbprogress.cc
++@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libunittest_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT libunittest_a-tbprogress.o -MD -MP -MF $(DEPDIR)/libunittest_a-tbprogress.Tpo -c -o libunittest_a-tbprogress.o `test -f 'tbprogress.cc' || echo '$(srcdir)/'`tbprogress.cc
++@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libunittest_a-tbprogress.Tpo $(DEPDIR)/libunittest_a-tbprogress.Po
++@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='tbprogress.cc' object='libunittest_a-tbprogress.o' libtool=no @AMDEPBACKSLASH@
++@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
++@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libunittest_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o libunittest_a-tbprogress.o `test -f 'tbprogress.cc' || echo '$(srcdir)/'`tbprogress.cc
++
++libunittest_a-tbprogress.obj: tbprogress.cc
++@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libunittest_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT libunittest_a-tbprogress.obj -MD -MP -MF $(DEPDIR)/libunittest_a-tbprogress.Tpo -c -o libunittest_a-tbprogress.obj `if test -f 'tbprogress.cc'; then $(CYGPATH_W) 'tbprogress.cc'; else $(CYGPATH_W) '$(srcdir)/tbprogress.cc'; fi`
++@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libunittest_a-tbprogress.Tpo $(DEPDIR)/libunittest_a-tbprogress.Po
++@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='tbprogress.cc' object='libunittest_a-tbprogress.obj' libtool=no @AMDEPBACKSLASH@
++@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
++@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libunittest_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o libunittest_a-tbprogress.obj `if test -f 'tbprogress.cc'; then $(CYGPATH_W) 'tbprogress.cc'; else $(CYGPATH_W) '$(srcdir)/tbprogress.cc'; fi`
++
+ ID: $(am__tagged_files)
+ 	$(am__define_uniq_tagged_files); mkid -fID $$unique
+ tags: tags-am
+diff -Naur wget-1.16.1/src/mswindows.c wget-1.16.1-new/src/mswindows.c
+--- wget-1.16.1/src/mswindows.c	2014-12-04 09:55:49.000000000 +0100
++++ wget-1.16.1-new/src/mswindows.c	2014-12-17 18:31:26.210378416 +0100
+@@ -43,6 +43,7 @@
+ #include "utils.h"
+ #include "url.h"
+ #include "exits.h"
++#include "tbprogress.h"
+ 
+ #ifndef ES_SYSTEM_REQUIRED
+ #define ES_SYSTEM_REQUIRED  0x00000001
+@@ -89,6 +90,7 @@
+ static void
+ ws_cleanup (void)
+ {
++  SetTBProgress(-1);
+   xfree (exec_name);
+   WSACleanup ();
+ }
+@@ -402,6 +404,7 @@
+ 
+   sprintf (title_buf, "Wget [%d%%] %s", percentage, curr_url);
+   SetConsoleTitle (title_buf);
++  SetTBProgress((int)(percentage_float * 10.0));
+ }
+ 
+ /* Returns a pointer to the fully qualified name of the directory that
+diff -Naur wget-1.16.1/src/tbprogress.cc wget-1.16.1-new/src/tbprogress.cc
+--- wget-1.16.1/src/tbprogress.cc	1970-01-01 01:00:00.000000000 +0100
++++ wget-1.16.1-new/src/tbprogress.cc	2014-12-17 18:24:19.245007369 +0100
+@@ -0,0 +1,112 @@
++#ifndef _WIN32_WINNT
++#define _WIN32_WINNT 0x0500
++#endif
++
++#include <windows.h>
++#include <commctrl.h>
++#include <objbase.h>
++#include <shobjidl.h>
++#include "tbprogress.h"
++
++const GUID CLSID_TaskbarList = {0x56FDF344,0xFD6D,0x11d0,{0x95,0x8A,0x00,0x60,0x97,0xC9,0xA0,0x90}};
++const GUID IID_ITaskbarList1 = {0x56FDF342,0xFD6D,0x11d0,{0x95,0x8A,0x00,0x60,0x97,0xC9,0xA0,0x90}};
++const GUID IID_ITaskbarList3 = {0xea1afb91,0x9e28,0x4b86,{0x90,0xe9,0x9e,0x9f,0x8a,0x5e,0xef,0xaf}};
++
++#ifndef __ITaskbarList3_INTERFACE_DEFINED__
++enum	TBPFLAG {
++	TBPF_NOPROGRESS    = 0, // Normal state / no progress bar
++	TBPF_INDETERMINATE = 1, // Marquee style progress bar
++	TBPF_NORMAL        = 2, // Standard progress bar
++	TBPF_ERROR         = 4, // Red taskbar button to indicate an error occurred
++	TBPF_PAUSED        = 8  // Yellow taskbar button to indicate user attention
++};
++
++typedef void* LPTHUMBBUTTON;//dummy typedef!
++enum TBATFLAG {TBATF_DUMMY};
++
++class ITaskbarList3 : public IUnknown
++{
++public:
++	virtual STDMETHODIMP QueryInterface(REFIID riid, void **ppv);
++	virtual STDMETHODIMP_(ULONG) AddRef();
++	virtual STDMETHODIMP_(ULONG) Release();
++	//ITaskbarList(1)
++	virtual STDMETHODIMP HrInit();
++	virtual STDMETHODIMP AddTab(HWND hwnd);
++	virtual STDMETHODIMP DeleteTab(HWND hwnd);
++	virtual STDMETHODIMP ActivateTab(HWND hwnd);
++	virtual STDMETHODIMP SetActiveAlt(HWND hwnd);
++	//ITaskbarList2
++	virtual STDMETHODIMP MarkFullscreenWindow(HWND hwnd,BOOL fFullscreen);
++	//ITaskbarList3
++	virtual STDMETHODIMP SetProgressValue(HWND hwnd,ULONGLONG ullCompleted, ULONGLONG ullTotal);
++	virtual STDMETHODIMP SetProgressState(HWND hwnd,TBPFLAG tbpFlags);
++	virtual STDMETHODIMP RegisterTab(HWND hwndTab, HWND hwndMDI);
++	virtual STDMETHODIMP UnregisterTab(HWND hwndTab);
++	virtual STDMETHODIMP SetTabOrder(HWND hwndTab,HWND hwndInsertBefore);
++	virtual STDMETHODIMP SetTabActive(HWND hwndTab,HWND hwndMDI, TBATFLAG tbatFlags);
++	virtual STDMETHODIMP ThumbBarAddButtons(HWND hwnd,UINT cButtons, LPTHUMBBUTTON pButton);
++	virtual STDMETHODIMP ThumbBarUpdateButtons(HWND hwnd,UINT cButtons, LPTHUMBBUTTON pButton);
++	virtual STDMETHODIMP ThumbBarSetImageList(HWND hwnd,HIMAGELIST himl);
++	virtual STDMETHODIMP SetOverlayIcon(HWND hwnd,HICON hIcon, LPCWSTR pszDescription);
++	virtual STDMETHODIMP SetThumbnailTooltip(HWND hwnd,LPCWSTR pszTip);
++	virtual STDMETHODIMP SetThumbnailClip(HWND hwnd,RECT *prcClip);
++	//ITaskbarList4
++	//virtual STDMETHODIMP SetTabProperties(HWND hwndTab,STPFLAG stpFlags);
++};
++#endif
++
++ITaskbarList3 *g_pTL = NULL;
++HWND g_hwndConsole = NULL;
++int TB_status = 0;
++
++extern "C" void SetTBProgress(int permille)
++{
++    if (g_pTL == NULL && permille < 0) return;
++    if (TB_status != 0) return;
++    if (permille > 1000) permille = 1000;
++
++    if (g_pTL == NULL) {
++        HRESULT hr;
++
++        g_hwndConsole = GetConsoleWindow();
++        if (g_hwndConsole == NULL) {
++            TB_status = -1;
++            return;
++        }
++
++        hr = CoInitializeEx(NULL, COINIT_APARTMENTTHREADED);
++	    if (!SUCCEEDED(hr)) {
++            CoUninitialize();
++            TB_status = -1;
++            return;
++        }
++
++        CoCreateInstance(CLSID_TaskbarList, NULL, CLSCTX_INPROC_SERVER, IID_ITaskbarList3, (void**)&g_pTL);
++        if (g_pTL == NULL) {
++            CoUninitialize();
++            TB_status = -1;
++            return;
++        }
++
++        hr = g_pTL->HrInit();
++	    if (!SUCCEEDED(hr)) {
++            TB_status = -1;
++            g_pTL->Release();
++            g_pTL = NULL;
++            CoUninitialize();
++            return;
++        }
++
++        TB_status = 0;
++    }
++
++    if (permille >= 0) {
++        g_pTL->SetProgressValue(g_hwndConsole, permille, 1000);
++    } else {
++        g_pTL->SetProgressState(g_hwndConsole, TBPF_NOPROGRESS);
++        g_pTL->Release();
++        g_pTL=NULL;
++        CoUninitialize();
++    }
++}
+diff -Naur wget-1.16.1/src/tbprogress.h wget-1.16.1-new/src/tbprogress.h
+--- wget-1.16.1/src/tbprogress.h	1970-01-01 01:00:00.000000000 +0100
++++ wget-1.16.1-new/src/tbprogress.h	2014-12-17 18:24:19.245007369 +0100
+@@ -0,0 +1,14 @@
++#ifndef tbprogress_h
++#define tbprogress_h
++
++#ifdef __cplusplus
++extern "C" {
++#endif
++
++extern void SetTBProgress(int permille); // 0 - 1000
++
++#ifdef __cplusplus
++}
++#endif
++
++#endif
+diff -Naur wget-1.16.1/testenv/Makefile.in wget-1.16.1-new/testenv/Makefile.in
+--- wget-1.16.1/testenv/Makefile.in	2014-12-08 11:33:00.000000000 +0100
++++ wget-1.16.1-new/testenv/Makefile.in	2014-12-17 18:36:50.742958690 +0100
+@@ -460,6 +460,9 @@
+ CONFIG_INCLUDE = @CONFIG_INCLUDE@
+ CPP = @CPP@
+ CPPFLAGS = @CPPFLAGS@
++CXX = @CXX@
++CXXDEPMODE = @CXXDEPMODE@
++CXXFLAGS = @CXXFLAGS@
+ CYGPATH_W = @CYGPATH_W@
+ DEFS = @DEFS@
+ DEPDIR = @DEPDIR@
+@@ -1360,6 +1363,7 @@
+ abs_top_builddir = @abs_top_builddir@
+ abs_top_srcdir = @abs_top_srcdir@
+ ac_ct_CC = @ac_ct_CC@
++ac_ct_CXX = @ac_ct_CXX@
+ am__include = @am__include@
+ am__leading_dot = @am__leading_dot@
+ am__quote = @am__quote@
+diff -Naur wget-1.16.1/tests/Makefile.in wget-1.16.1-new/tests/Makefile.in
+--- wget-1.16.1/tests/Makefile.in	2014-12-08 11:33:00.000000000 +0100
++++ wget-1.16.1-new/tests/Makefile.in	2014-12-17 18:36:50.894955242 +0100
+@@ -489,6 +489,9 @@
+ CONFIG_INCLUDE = @CONFIG_INCLUDE@
+ CPP = @CPP@
+ CPPFLAGS = @CPPFLAGS@
++CXX = @CXX@
++CXXDEPMODE = @CXXDEPMODE@
++CXXFLAGS = @CXXFLAGS@
+ CYGPATH_W = @CYGPATH_W@
+ DEFS = @DEFS@
+ DEPDIR = @DEPDIR@
+@@ -1389,6 +1392,7 @@
+ abs_top_builddir = @abs_top_builddir@
+ abs_top_srcdir = @abs_top_srcdir@
+ ac_ct_CC = @ac_ct_CC@
++ac_ct_CXX = @ac_ct_CXX@
+ am__include = @am__include@
+ am__leading_dot = @am__leading_dot@
+ am__quote = @am__quote@
+diff -Naur wget-1.16.1/util/Makefile.in wget-1.16.1-new/util/Makefile.in
+--- wget-1.16.1/util/Makefile.in	2014-12-08 11:33:00.000000000 +0100
++++ wget-1.16.1-new/util/Makefile.in	2014-12-17 18:36:51.043951862 +0100
+@@ -263,6 +263,9 @@
+ CONFIG_INCLUDE = @CONFIG_INCLUDE@
+ CPP = @CPP@
+ CPPFLAGS = @CPPFLAGS@
++CXX = @CXX@
++CXXDEPMODE = @CXXDEPMODE@
++CXXFLAGS = @CXXFLAGS@
+ CYGPATH_W = @CYGPATH_W@
+ DEFS = @DEFS@
+ DEPDIR = @DEPDIR@
+@@ -1163,6 +1166,7 @@
+ abs_top_builddir = @abs_top_builddir@
+ abs_top_srcdir = @abs_top_srcdir@
+ ac_ct_CC = @ac_ct_CC@
++ac_ct_CXX = @ac_ct_CXX@
+ am__include = @am__include@
+ am__leading_dot = @am__leading_dot@
+ am__quote = @am__quote@

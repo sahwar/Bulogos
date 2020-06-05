@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>Mibbit Chat Client Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+html,body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: sans-serif;
+	text-align: center;
+	background: #aaaaaa;
+}
+
+.ctable {
+	width: 480px;
+	margin: auto;
+	border: 1px solid #446;
+	background: #5e96cf;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	padding: 8px;
+}
+
+.ctable td {
+	padding: 4px;
+}
+
+.ctable thead td {
+	background: #3e76af;
+	color: #eee;
+	font-weight: bold;
+}
+
+.help {
+	font-size: 13px;
+	color: #000;
+}
+
+.opt {
+	border-bottom: 1px solid #3e76af;
+	padding: 6px;
+	display: none;
+}
+
+.options {
+	font-size: 11px;
+	color: #222;
+}
+
+.optm0 {
+    font-size: 11px;
+    color: #cc8;
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.optm1 {
+    font-size: 11px;
+    color: #ff0;
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.help {
+	color: #eee;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+</style>
+
+<script>
+function init() {
+	var s = document.getElementById("ircserver")
+
+	ircnets.sort(function(a, b) {
+	        // Mibbit is a special case...
+	        if (a["name"]=="Mibbit") return -1;
+	        if (b["name"]=="Mibbit") return 1;
+	        if (a["name"].toLowerCase()<b["name"].toLowerCase()) return -1;
+	        if (a["name"].toLowerCase()>b["name"].toLowerCase()) return 1;
+	        return 0;
+	});
+
+	// Fill in server list...
+	for (var i=0;i<ircnets.length;i++) {
+	    var ir = ircnets[i];
+        var o = document.createElement("option");
+        o.value = ir["addr"];
+        o.appendChild(document.createTextNode(ir["name"] + (ir["webirc"] ? " ":" [Non-WebIRC]")));
+	    s.appendChild(o);
+	}
+
+}
+
+function dtoggle(m, d, fe) {
+	var c = document.getElementById(d);
+	m.className = (c.style.display=="block")?"optm0":"optm1"
+	c.style.display = (c.style.display=="block")?"none":"block";
+
+	if (d=="opt_server") {
+		var s = document.getElementById("ircserver")
+		s.disabled = (c.style.display=="block");
+	}
+	
+	if (c.style.display=="block") document.getElementById(fe).focus(); 
+	return false;
+}
+
+function goConnect() {
+	try {
+		var c_server = "";
+		if (document.getElementById("ircserver").disabled) {
+			c_server = document.getElementById("ircserver2").value;
+		} else {
+			c_server = document.getElementById("ircserver").value;
+		}
+		var c_pass = "";
+		var c_authtype = "";
+		//set c_pass and c_authtype only if opt_auth is currently displayed
+		if (document.getElementById("opt_auth").style.display=="block") {
+			c_pass = document.getElementById("ircpass").value;
+			c_authtype = document.getElementById("ircauth").value;
+		}
+
+		var c_charset = document.getElementById("irccharset").value;
+		var c_nick = document.getElementById("ircnick").value;
+		var c_channel = document.getElementById("ircchannel").value;
+		
+		if (c_server=="") { alert("You didn't specify a server!"); return false;};
+		if (c_nick=="") { alert("Please choose a valid nickname!"); return false;};
+		
+		// Now set up the cmd to send...
+		var cmd = {"cmd":"connect", "addr":c_server, "channels":c_channel, "nick":c_nick, "pass":c_pass, "charset":c_charset, "authmethod":c_authtype};
+		send_mibbit_cmd(cmd);
+	} catch(e) {}
+	return false;
+}
+
+</script>
+<script src="home_data/common.js"></script>
+<script src="home_data/json2.js"></script>
+<script src="home_data/ircnetworks.js"></script>
+
+</head><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div>
+<body onload="init()">
+
+<br>
+<br>
+
+<table class="ctable" cellspacing="0" cellpadding="0" border="0">
+	<thead>
+		<tr>
+			<td colspan="3">Welcome to Mibbit</td>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td width="40" valign="middle"><img src="home_data/infocircle30x.png" width="30" height="30"></td><td>
+Choose a Nickname and channel to start chatting.<br>
+Tip: Channels usually begin with #<br>
+If you don't know where you're going, try a search!<br>
+			</td>
+			<td width="40"></td>
+		</tr>
+	</tbody>
+</table>
+
+<br>
+<br>
+<form onsubmit="return goConnect()">
+	<div>
+		<table class="ctable" cellspacing="0" cellpadding="0" border="0">
+			<thead>
+			<tr>
+				<td>Connect: <select id="ircserver"><option value="irc.mibbit.net:+6697" selected="selected">Mibbit </option><option value="irc.after-all.org">After-All </option><option value="irc.Data.LT">Aitvaras [Non-WebIRC]</option><option value="irc.allnetwork.org">AllNetwork </option><option value="irc.anonnet.org">AnonNet </option><option value="pool.anope.org">Anope </option><option value="irc.AnthroChat.net">Anthrochat </option><option value="irc.austnet.org:6669">AustNET </option><option value="irc.axon.pw:+6697">Axon </option><option value="irc.badnik.net:+6697">Badnik </option><option value="irc.Barafranca.com:+6697">Barafranca </option><option value="irc.Bondage.international">Bondage International </option><option value="irc.brasirc.com.br">BrasIRC.com.br [Non-WebIRC]</option><option value="irc.browsingtheinternet.com">BrowsingTheNet </option><option value="45.80.149.68:+6697">BSDunix </option><option value="irc.canternet.org:+6697">Canternet </option><option value="irc.chat4all.net">Chat4all </option><option value="irc.chatbelgie.be:+6697">ChatBelgie.be </option><option value="irc.chatlounge.ch">Chatlounge </option><option value="irc.chatplezier.com:+6697">ChatPlezier </option><option value="irc.chattersworld.nl">ChattersWorld </option><option value="irc.coolsmile.net:+6697">Coolsmile.net </option><option value="irc.corrupt-net.org">Corrupt-net [Non-WebIRC]</option><option value="irc.dal.net:+6697">DALnet </option><option value="irc.darenet.org:+7070">DareNet </option><option value="mibbit.darkmyst.org">DarkMyst </option><option value="irc.epiknet.org:6662">EpiKnet </option><option value="irc.esper.net">Esper </option><option value="irc.euirc.net:6663">euIRCnet </option><option value="irc.EuropNet.org">EuropNet </option><option value="irc.evolu.net">Evolu.net [Non-WebIRC]</option><option value="irc.Foreverchat.net:+7029">Foreverchat.net </option><option value="irc.FreaxNET.de">FreaxNET [Non-WebIRC]</option><option value="irc.FreeUniBG.eu">FreeUniBG [Non-WebIRC]</option><option value="hivane.geeknode.org:+6697">GeekNode </option><option value="irc.GeekShed.net">GeekShed </option><option value="82.74.193.204">Global-Irc.Org [Non-WebIRC]</option><option value="irc.Globalgamers.net">GlobalGamers </option><option value="irc.hybridirc.com:+6697">HybridIRC </option><option value="irc.irc4fun.net">IRC4Fun </option><option value="irc.irchighway.net">IrcHighWay </option><option value="webirc.ircline.org">iRCLiNE </option><option value="open.ircnet.net">IRCNET [Non-WebIRC]</option><option value="irc.ircworld.org">IRCWorld IRC Network </option><option value="irc.irczone.net">IRCzone.net [Non-WebIRC]</option><option value="irc.KampungChat.org">KampungChat </option><option value="irc.koach.com">Koach </option><option value="irc.librairc.net">LibraIRC </option><option value="irc.link-net.org:+7000">LinkNet [Non-WebIRC]</option><option value="irc.luatic.net:7778">Luatic [Non-WebIRC]</option><option value="irc.Lunarnet.org">LunarNet </option><option value="irc.mindforge.org">MindForge </option><option value="irc.mixxnet.net">MIXXnet </option><option value="irc.netrusk.net">Netrusk [Non-WebIRC]</option><option value="irc.oltreirc.net">OltreIRC [Non-WebIRC]</option><option value="irc.optilan.eu">OptiLan [Non-WebIRC]</option><option value="irc.Otaku-IRC.fr">Otaku-IRC </option><option value="irc.ozinger.org">Ozinger [Non-WebIRC]</option><option value="irc.p2p-network.net">p2p-network [Non-WebIRC]</option><option value="irc.pirc.pl">PIRC.pl </option><option value="irc.privchat.net:+6697">Privchat </option><option value="irc.ptnet.org:+6697">PTNet.org </option><option value="irc.rippy.rip:+6697">RippyNet </option><option value="irc.rizon.net">Rizon </option><option value="irc.romaniachat.eu:+6697">RomaniaChat </option><option value="mibbit.ShadowFire.org">ShadowFire </option><option value="irc.skychatz.org:7000">Sky Chatz </option><option value="irc.slashnet.org">SlashNET </option><option value="irc.snoonet.org">Snoonet </option><option value="webirc.sorcery.net">Sorcery </option><option value="irc.svipchat.org:+6697">sVipCHAT </option><option value="irc.swiftirc.net">SwiftIRC [Non-WebIRC]</option><option value="EU.synirc.net:+7001">SynIRC </option><option value="irc.twistednet.org">TwistedNet.org </option><option value="irc.undernet.org">UnderNET [Non-WebIRC]</option><option value="irc.w3.org:6665">W3 [Non-WebIRC]</option><option value="Montreal.CA.WhatNET.Org">WhatNET </option><option value="irc.wixchat.org:7000">WixChat [Non-WebIRC]</option><option value="irc.xertion.org">Xertion </option><option value="irc.zenet.org">ZEnet [Non-WebIRC]</option></select> <span class="options"><span class="optm0" onclick="return dtoggle(this, 'opt_server', 'ircserver2')">Server</span> | <span class="optm0" onclick="return dtoggle(this, 'opt_auth', 'ircpass')">Auth</span> | <span class="optm0" onclick="return dtoggle(this, 'opt_charset', 'irccharset')">Charset</span></span></td>
+			</tr>
+			</thead>
+			<tbody>
+			
+			<tr>
+				<td>
+			<div id="opt_server" class="opt"><table width="100%"><tbody><tr><td width="50%" align="right">Server:</td><td align="left"><input type="text" id="ircserver2"></td></tr></tbody></table>
+			<div class="help">Default port is 6667. Specify SSL with a '+' before the port.<br>eg irc.mibbit.net:+6697</div>
+			</div>
+			<div id="opt_auth" class="opt"><table width="100%"><tbody><tr><td width="50%" align="right"><select id="ircauth">
+				<option value="nickserv" selected="selected">NickServ</option>
+				<option value="pass">Pass</option>
+				<option value="auth">Auth</option>
+				<option value="sasl-plain">SASL PLAIN</option>
+				<option value="sasl-dh-blowfish">SASL BLOWFISH</option>
+				</select></td><td align="left"><input type="password" id="ircpass"></td></tr></tbody></table>
+				<div class="help">Ensure you have a valid account on the irc network before using this!</div>
+			</div>
+			<div id="opt_charset" class="opt"><table width="100%"><tbody><tr><td width="50%" align="right">Charset:</td><td align="left"><select id="irccharset">
+<option value="UTF-8" selected="selected">UTF-8</option>
+<option value="Big5">Big5</option>
+<option value="ISO-8859-1">ISO-8859-1</option>
+<option value="ISO-8859-2">ISO-8859-2</option>
+<option value="ISO-8859-3">ISO-8859-3</option>
+<option value="ISO-8859-4">ISO-8859-4</option>
+<option value="ISO-8859-5">ISO-8859-5</option>
+<option value="ISO-8859-6">ISO-8859-6</option>
+<option value="ISO-8859-7">ISO-8859-7</option>
+<option value="ISO-8859-8">ISO-8859-8</option>
+<option value="ISO-8859-9">ISO-8859-9</option>
+<option value="ISO-8859-13">ISO-8859-13</option>
+<option value="ISO-8859-15">ISO-8859-15</option>
+<option value="windows-1250">windows-1250</option>
+<option value="windows-1251">windows-1251</option>
+<option value="windows-1252">windows-1252</option>
+<option value="windows-1253">windows-1253</option>
+<option value="windows-1254">windows-1254</option>
+<option value="windows-1255">windows-1255</option>
+<option value="windows-1256">windows-1256</option>
+<option value="windows-1257">windows-1257</option>
+<option value="windows-1258">windows-1258</option>				
+				</select></td></tr></tbody></table>
+			</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Nick: <input type="text" id="ircnick" size="16"> Channel: <input type="text" id="ircchannel" size="16"> <input type="submit" value="Connect">
+				<div class="help">You can specify multiple channels eg #foo,#bar</div>	
+				</td>
+			</tr>
+			</tbody>	 
+		</table>
+	</div>
+</form>
+
+<br><br>
+
+<form target="_new" action="//search.mibbit.com" method="get">
+	<div>
+		<table class="ctable" cellspacing="0" cellpadding="0" border="0">
+			<thead>
+			<tr>
+				<td>Search for channels</td>
+			</tr>
+			</thead>
+			<tbody>
+			
+			<tr>
+				<td>
+					<img src="home_data/searchcircle30x.png" valign="middle" width="30" height="30"> <input type="text" name="q" size="24"> <input type="submit" value="Search">
+				</td>
+			</tr>			
+			</tbody>	 
+		</table>
+	</div>
+</form>
+
+<br>
+<br>
+
+<table class="ctable" cellspacing="0" cellpadding="0" border="0">
+	<thead>
+		<tr>
+			<td colspan="3">Latest Updates</td>
+		</tr>
+	</thead>
+
+<tbody style="text-align:left">
+
+<tr style="text-align:center"><td><a href="https://mibbit.com/changelog.html#5004" target="_blank">v5004</a></td></tr>
+<tr><td><ul style="margin:0"><li>Improved parsing of server system messages.</li></ul></td></tr>
+
+<tr style="text-align:center"><td><a href="https://mibbit.com/changelog.html#5003" target="_blank">v5003</a></td></tr>
+<tr><td><ul style="margin:0"><li>Links to Spotify, YouTube and Twitter now embed inline on the chat window.</li></ul></td></tr>
+
+<tr style="text-align:center"><td><a href="https://mibbit.com/changelog.html#5002" target="_blank">v5002</a></td></tr>
+<tr><td><ul style="margin:0"><li>Added an emoji picker below the chatbox.</li></ul></td></tr>
+
+</tbody>
+</table>
+
+
+
+
+</body></html>

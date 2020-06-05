@@ -1,11 +1,13 @@
 <?php
+	### https://github.com/sahwar/Bulogos/blob/master/get_words_data_v5_01_dict_BG_talkoven.php
+	### 
 	### Encoding: UTF-8, Windows (\r\n = CRLF) newline ###
 	### Програмист: OmegaKO (Лазар Пендов) - Email: omegako@animerulezzz.org
 	### 			Jabber ID/XMPP/Google Talk: omegako@animerulezzz.org ###
 	### Скриптът е създаден по молба на SahWar за проекта Slovnik ###
 	### Лиценз: Ползвай както искаш. Всеки желаещ да ползва този скрипт и/или негови изменени версии носи пълната отговорност за това си желание и последствията от това.###
 	### Синтаксис: php get_words_data.php FILE_WITH_URLS OUTPUT_FILE
-	###
+	### 
 	### Описание:
 	### This PHP script was written in order to webscrape the dictionary databases
 	### of the website http://eurodict.com . Sadly, the website changed its HTML,

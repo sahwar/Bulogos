@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
+<meta content='width=1100' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var b=window,f="chrome",g="tick",k="jstiming";(function(){function d(a){this.t={};this.tick=function(a,d,c){var e=void 0!=c?c:(new Date).getTime();this.t[a]=[e,d];if(void 0==c)try{b.console.timeStamp("CSI/"+a)}catch(h){}};this[g]("start",null,a)}var a;b.performance&&(a=b.performance.timing);var n=a?new d(a.responseStart):new d;b.jstiming={Timer:d,load:n};if(a){var c=a.navigationStart,h=a.responseStart;0<c&&h>=c&&(b[k].srt=h-c)}if(a){var e=b[k].load;0<c&&h>=c&&(e[g]("_wtsrt",void 0,c),e[g]("wtsrt_","_wtsrt",h),e[g]("tbsd_","wtsrt_"))}try{a=null,
+b[f]&&b[f].csi&&(a=Math.floor(b[f].csi().pageT),e&&0<c&&(e[g]("_tbnd",void 0,b[f].csi().startE),e[g]("tbnd_","_tbnd",c))),null==a&&b.gtbExternal&&(a=b.gtbExternal.pageT()),null==a&&b.external&&(a=b.external.pageT,e&&0<c&&(e[g]("_tbnd",void 0,b.external.startE),e[g]("tbnd_","_tbnd",c))),a&&(b[k].pt=a)}catch(p){}})();b.tickAboveFold=function(d){var a=0;if(d.offsetParent){do a+=d.offsetTop;while(d=d.offsetParent)}d=a;750>=d&&b[k].load[g]("aft")};var l=!1;function m(){l||(l=!0,b[k].load[g]("firstScrollTime"))}b.addEventListener?b.addEventListener("scroll",m,!1):b.attachEvent("onscroll",m);
+ })();</script>
+<meta content='blogger' name='generator'/>
+<link href='http://blog.shlomoid.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Rational Relational - Atom" href="http://blog.shlomoid.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Rational Relational - RSS" href="http://blog.shlomoid.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Rational Relational - Atom" href="http://www.blogger.com/feeds/20434908/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Rational Relational - Atom" href="http://blog.shlomoid.com/feeds/7760900535982046194/comments/default" />
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/107775239-ieretrofit.js"></script>
+<![endif]-->
+<link href='https://plus.google.com/116089576530899793016' rel='publisher'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Rational Relational: A Free Text Editor for Very Large / Huge Files on Windows</title>
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/static/v1/widgets/3681447274-widget_css_2_bundle.css' />
+<link type='text/css' rel='stylesheet' href='//www.google.com/uds/css/gsearch.css' />
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=20434908&zx=50b82344-3448-4d01-8236-7b1b7f2e5818' />
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Simple
+Designer: Josh Peterson
+URL:      www.noaesthetic.com
+----------------------------------------------- */
+#navbar-iframe {
+display: none !important;
+}
+/* Variable definitions
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#66bbdd"/>
+<Group description="Page Text" selector=".content-inner">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#222222"/>
+</Group>
+<Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+<Variable name="body.background.color" description="Outer Background" type="color" default="#66bbdd"/>
+<Variable name="content.background.color" description="Main Background" type="color" default="#ffffff"/>
+<Variable name="header.background.color" description="Header Background" type="color" default="transparent"/>
+</Group>
+<Group description="Links" selector=".main-outer">
+<Variable name="link.color" description="Link Color" type="color" default="#2288bb"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#888888"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#33aaff"/>
+</Group>
+<Group description="Blog Title" selector=".header">
+<Variable name="header.font" description="Font" type="font"
+default="normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="header.text.color" description="Title Color" type="color" default="#3399bb" />
+<Variable name="description.text.color" description="Description Color" type="color"
+default="#777777" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-outer .PageList">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#999999"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#000000"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="#f5f5f5"/>
+<Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Post Title" selector=".post">
+<Variable name="post.title.font" description="Font" type="font"
+default="normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+</Group>
+<Group description="Post Footer" selector=".post-footer">
+<Variable name="post.footer.text.color" description="Text Color" type="color" default="#666666"/>
+<Variable name="post.footer.background.color" description="Background Color" type="color"
+default="#f9f9f9"/>
+<Variable name="post.footer.border.color" description="Shadow Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Gadgets" selector=".sidebar .widget">
+<Variable name="widget.title.font" description="Title Font" type="font"
+default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.title.text.color" description="Title Color" type="color" default="#000000"/>
+<Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#999999"/>
+</Group>
+<Group description="Images" selector=".main-inner">
+<Variable name="image.background.color" description="Background Color" type="color" default="#ffffff"/>
+<Variable name="image.border.color" description="Border Color" type="color" default="#eeeeee"/>
+<Variable name="image.text.color" description="Caption Text Color" type="color" default="#222222"/>
+</Group>
+<Group description="Accents" selector=".content-inner">
+<Variable name="body.rule.color" description="Separator Line Color" type="color" default="#eeeeee"/>
+</Group>
+<Variable name="body.background" description="Body Background" type="background"
+color="#66bbdd" default="$(color) none repeat scroll top left"/>
+<Variable name="body.background.override" description="Body Background Override" type="string" default=""/>
+<Variable name="body.background.gradient.cap" description="Body Gradient Cap" type="url"
+default="url(http://www.blogblog.com/1kt/simple/gradients_light.png)"/>
+<Variable name="body.background.gradient.tile" description="Body Gradient Tile" type="url"
+default="url(http://www.blogblog.com/1kt/simple/body_gradient_tile_light.png)"/>
+<Variable name="content.background.color.selector" description="Content Background Color Selector" type="string" default=".content-inner"/>
+<Variable name="content.padding" description="Content Padding" type="length" default="10px"/>
+<Variable name="content.shadow.spread" description="Content Shadow Spread" type="length" default="40px"/>
+<Variable name="content.shadow.spread.webkit" description="Content Shadow Spread (WebKit)" type="length" default="5px"/>
+<Variable name="content.shadow.spread.ie" description="Content Shadow Spread (IE)" type="length" default="10px"/>
+<Variable name="main.border.width" description="Main Border Width" type="length" default="0"/>
+<Variable name="header.background.gradient" description="Header Gradient" type="url" default="none"/>
+<Variable name="header.shadow.offset.left" description="Header Shadow Offset Left" type="length" default="-1px"/>
+<Variable name="header.shadow.offset.top" description="Header Shadow Offset Top" type="length" default="-1px"/>
+<Variable name="header.shadow.spread" description="Header Shadow Spread" type="length" default="1px"/>
+<Variable name="header.border.size" description="Header Border Size" type="length" default="1px"/>
+<Variable name="description.text.size" description="Description Text Size" type="string" default="140%"/>
+<Variable name="tabs.margin.top" description="Tabs Margin Top" type="length" default="0" />
+<Variable name="tabs.margin.side" description="Tabs Side Margin" type="length" default="30px" />
+<Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+default="url(http://www.blogblog.com/1kt/simple/gradients_light.png)"/>
+<Variable name="tabs.border.width" description="Tabs Border Width" type="length" default="1px"/>
+<Variable name="tabs.bevel.border.width" description="Tabs Bevel Border Width" type="length" default="1px"/>
+<Variable name="image.border.small.size" description="Image Border Small Size" type="length" default="2px"/>
+<Variable name="image.border.large.size" description="Image Border Large Size" type="length" default="5px"/>
+<Variable name="page.width.selector" description="Page Width Selector" type="string" default=".region-inner"/>
+<Variable name="page.width" description="Page Width" type="string" default="auto"/>
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+*/
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #222222;
+background: #66bbdd none repeat scroll top left;
+padding: 0 40px 40px 40px;
+}
+body.mobile {
+padding: 0 5px 5px;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+a:link {
+text-decoration:none;
+color: #2288bb;
+}
+a:visited {
+text-decoration:none;
+color: #888888;
+}
+a:hover {
+text-decoration:underline;
+color: #33aaff;
+}
+.body-fauxcolumn-outer .fauxcolumn-inner {
+background: transparent url(http://www.blogblog.com/1kt/simple/body_gradient_tile_light.png) repeat scroll top left;
+_background-image: none;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 400px;
+width: 100%;
+background: #66bbdd none repeat scroll top left;
+}
+.body-fauxcolumn-outer .cap-top .cap-left {
+width: 100%;
+background: transparent url(http://www.blogblog.com/1kt/simple/gradients_light.png) repeat-x scroll top left;
+_background-image: none;
+}
+.content-outer {
+-moz-box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 10px #333333;
+box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+margin-bottom: 1px;
+}
+.content-inner {
+padding: 10px;
+}
+.content-inner {
+background-color: #ffffff;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: transparent none repeat-x scroll 0 -400px;
+_background-image: none;
+}
+.Header h1 {
+font: normal normal 60px Impact, sans-serif;;
+color: #3399bb;
+text-shadow: -1px -1px 1px rgba(0, 0, 0, .2);
+}
+.Header h1 a {
+color: #3399bb;
+}
+.Header .description {
+font-size: 140%;
+color: #777777;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section:first-child {
+border-top: 1px solid #66bbdd;
+}
+.tabs-inner .section:first-child ul {
+margin-top: -1px;
+border-top: 1px solid #66bbdd;
+}
+.tabs-inner .widget ul {
+background: #f5f5f5 url(http://www.blogblog.com/1kt/simple/gradients_light.png) repeat-x scroll 0 -800px;
+_background-image: none;
+border-bottom: 1px solid #66bbdd;
+margin-top: 0;
+margin-left: -30px;
+margin-right: -30px;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .6em 1em;
+font: normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #999999;
+border-left: 1px solid #ffffff;
+border-right: 1px solid #66bbdd;
+}
+.tabs-inner .widget li:first-child a {
+border-left: none;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+color: #000000;
+background-color: #eeeeee;
+text-decoration: none;
+}
+/* Columns
+----------------------------------------------- */
+.main-outer {
+border-top: 0 solid #66bbdd;
+}
+.fauxcolumn-left-outer .fauxcolumn-inner {
+border-right: 1px solid #66bbdd;
+}
+.fauxcolumn-right-outer .fauxcolumn-inner {
+border-left: 1px solid #66bbdd;
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+margin: 0 0 1em 0;
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #000000;
+text-transform: uppercase;
+}
+/* Widgets
+----------------------------------------------- */
+.widget .zippy {
+color: #999999;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+}
+/* Posts
+----------------------------------------------- */
+.post {
+margin: 0 0 25px 0;
+}
+h3.post-title, .comments h4 {
+font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+margin: .75em 0 0;
+}
+.post-body {
+font-size: 110%;
+line-height: 1.4;
+position: relative;
+}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+padding: 2px;
+background: #ffffff;
+border: 1px solid #eeeeee;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+}
+.post-body img, .post-body .tr-caption-container {
+padding: 5px;
+}
+.post-body .tr-caption-container {
+color: #222222;
+}
+.post-body .tr-caption-container img {
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+.post-header {
+margin: 0 0 1.5em;
+line-height: 1.6;
+font-size: 90%;
+}
+.post-footer {
+margin: 20px -2px 0;
+padding: 5px 10px;
+color: #666666;
+background-color: #f9f9f9;
+border-bottom: 1px solid #eeeeee;
+line-height: 1.6;
+font-size: 90%;
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: 1px solid #66bbdd;
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+#comments .avatar-image-container img {
+border: 1px solid #eeeeee;
+}
+/* Accents
+---------------------------------------------- */
+.section-columns td.columns-cell {
+border-left: 1px solid #66bbdd;
+}
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 920px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 920px;
+max-width: 920px;
+_width: 920px;
+}
+.main-inner .columns {
+padding-left: 200px;
+padding-right: 0px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 200px;
+right: 0px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("200px") -
+parseInt("0px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 200px;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 0px;
+}
+.main-inner .column-left-outer {
+width: 200px;
+right: 100%;
+margin-left: -200px;
+}
+.main-inner .column-right-outer {
+width: 0px;
+margin-right: -0px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+--></style>
+<script type='text/javascript'>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3175484-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">var a="indexOf",b="&m=1",e="(^|&)m=",f="?",g="?m=1";function h(){var c=window.location.href,d=c.split(f);switch(d.length){case 1:return c+g;case 2:return 0<=d[1].search(e)?null:c+b;default:return null}}var k=navigator.userAgent;if(-1!=k[a]("Mobile")&&-1!=k[a]("WebKit")&&-1==k[a]("iPad")||-1!=k[a]("Opera Mini")||-1!=k[a]("IEMobile")){var l=h();l&&window.location.replace(l)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body class='loading'>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+        gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+          if (gapi.iframes && gapi.iframes.getContext) {
+            gapi.iframes.getContext().openChild({
+                url: 'https://www.blogger.com/navbar.g?targetBlogID\07520434908\46blogName\75Rational+Relational\46publishMode\75PUBLISH_MODE_HOSTED\46navbarType\75LIGHT\46layoutType\75LAYOUTS\46searchRoot\75http://blog.shlomoid.com/search\46blogLocale\75en\46v\0752\46homepageUrl\75http://blog.shlomoid.com/\46targetPostID\0757760900535982046194\46blogPostOrPageUrl\75http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html\46blogFollowUrl\75https://plus.google.com/116089576530899793016\46vt\0757997156509467235879',
+                where: document.getElementById("navbar-iframe-container"),
+                id: "navbar-iframe"
+            });
+          }
+        });
+      </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div class='body-fauxcolumns'>
+<div class='fauxcolumn-outer body-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content'>
+<div class='content-fauxcolumns'>
+<div class='fauxcolumn-outer content-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content-outer'>
+<div class='content-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left content-fauxborder-left'>
+<div class='fauxborder-right content-fauxborder-right'></div>
+<div class='content-inner'>
+<header>
+<div class='header-outer'>
+<div class='header-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left header-fauxborder-left'>
+<div class='fauxborder-right header-fauxborder-right'></div>
+<div class='region-inner header-inner'>
+<div class='header section' id='header'><div class='widget Header' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+<a href='http://blog.shlomoid.com/'>Rational Relational</a>
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class='header-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</header>
+<div class='tabs-outer'>
+<div class='tabs-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left tabs-fauxborder-left'>
+<div class='fauxborder-right tabs-fauxborder-right'></div>
+<div class='region-inner tabs-inner'>
+<div class='tabs section' id='crosscol'></div>
+<div class='tabs section' id='crosscol-overflow'></div>
+</div>
+</div>
+<div class='tabs-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='main-outer'>
+<div class='main-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left main-fauxborder-left'>
+<div class='fauxborder-right main-fauxborder-right'></div>
+<div class='region-inner main-inner'>
+<div class='columns fauxcolumns'>
+<div class='fauxcolumn-outer fauxcolumn-center-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-left-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-right-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class='columns-inner'>
+<div class='column-center-outer'>
+<div class='column-center-inner'>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!-- google_ad_section_start(name=default) -->
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>2009-08-12</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry'>
+<a name='7760900535982046194'></a>
+<h3 class='post-title entry-title'>
+<a href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html'>A Free Text Editor for Very Large / Huge Files on Windows</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content'>
+Every once in a while a programmer finds himself in need of a tool that allows him to edit very large text files. By large, I mean several gigabytes. For DBAs it is common, especially if you&#8217;re using MySQL dumps a lot. What do you do if you&#8217;re doing this on Windows?   <br />
+If you&#8217;re using <a href="http://notepad-plus.sourceforge.net/" target="_blank">Notepad++</a> or any other <a href="http://www.scintilla.org/" target="_blank">Scintilla</a> derivatives, you&#8217;re out of luck - those editors are not cut out for this kind of work. Using Visual Studio also won&#8217;t work. There are some partial solutions just for viewing, like <a href="http://www.swiftgear.com/ltfviewer/features.html" target="_blank">LTFViewer</a> &#8211; but it cannot handle large files without line breaks, something common in MySQL dumps. So what do you do?<br />
+The answer is simple and somewhat unexpected &#8211; use <a href="http://www.vim.org/" target="_blank">Vim</a> for Windows. It opens a file of any size effortlessly and almost instantly &#8211; then you can browse through the file like it was a small script - <i>it just works</i>. <br />
+Few things to notice:<br />
+For files with very long lines, like dumps, consider using &#8220;set nowrap&#8221;.<br />
+Another thing is the fact that Vim keeps a temporary copy of the file for backup when saving an edited file, so not only it takes a while to save since it writes the entire buffer to the disk, but you also need to delete the temp file afterwards. To disable this behavior, use &#8220;set nobackup&#8221;.
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1964808661'>
+<a href='http://www.blogger.com/post-edit.g?blogID=20434908&postID=7760900535982046194&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=20434908&postID=7760900535982046194&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=20434908&postID=7760900535982046194&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=20434908&postID=7760900535982046194&target=twitter' target='_blank' title='Share to Twitter'><span class='share-button-link-text'>Share to Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=20434908&postID=7760900535982046194&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='http://www.blogger.com/share-post.g?blogID=20434908&postID=7760900535982046194&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+Labels:
+<a href='http://blog.shlomoid.com/search/label/Linux' rel='tag'>Linux</a>,
+<a href='http://blog.shlomoid.com/search/label/MySQL' rel='tag'>MySQL</a>,
+<a href='http://blog.shlomoid.com/search/label/Windows' rel='tag'>Windows</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'></div>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4>10 comments:</h4>
+<div class='comments-content'>
+<script async='async' src='//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js' type='text/javascript'></script>
+<script type='text/javascript'>
+    (function() {
+      var items = [{'id': '3779444161309844249', 'body': 'Just one more reason why vi (and vim in specific) is still my favorite editor of all time.  I spend at least a few hours per day in vim and I wouldn\46#39;t trade it for anything in the world.  \74br /\76\74br /\76I do like notepad++ for quick editing on windows and for short files and scripts though.  I always have two or three notepad++ open for jotting down notes, and for using as a temporary clipboard repository.', 'timestamp': '1250109715487', 'permalink': 'http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment\0751250109715487#c3779444161309844249', 'author': {'name': 'swanhart', 'avatarUrl': 'http://img1.blogblog.com/img/openid16-rounded.gif', 'profileUrl': 'http://swanhart.livejournal.com/'}, 'displayTime': '8/12/09, 11:41 PM', 'deleteclass': 'item-control blog-admin pid-1174589535'}, {'id': '6637929005886480440', 'body': 'My MyQuery tool is currently using SCintilla. And I agree that what you say is an issue, and something that I wanted to adress in MyQuery. The Scintilla base to an extent limites what MyQuery can do, bt still, I do my own interpretation of scripts, so I have a few things I want to do eventually, beyond editing large files in Scintilla.\74br /\76One idea I have is to be able to run a script, statement by statement, bringing up each statement in Scintilla. Another is running statement by statement til we have an error, allow you to fix that that single statment using the Scintilla based editor, and then continue from there.', 'timestamp': '1250117766272', 'permalink': 'http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment\0751250117766272#c6637929005886480440', 'author': {'name': 'Karlsson', 'avatarUrl': 'http://3.bp.blogspot.com/_0K9KyrFQbOk/SavH8Oz5HGI/AAAAAAAAABA/XL7pI5nk4RU/S45/AndersKarlsson1.jpg', 'profileUrl': 'http://www.blogger.com/profile/04874338187076980133'}, 'displayTime': '8/13/09, 1:56 AM', 'deleteclass': 'item-control blog-admin pid-352861238'}, {'id': '81576542924739506', 'body': '@swanhart: Well, back then, they built things to last :P\74br /\76\74br /\76@Karlsson: Scintilla is a great editor, but not meant for such work. I would assume it\46#39;s because of the syntax parsing it does, etc.\74br /\76Other editors like SQLyog are using their built-in editors, btw. SQLyog manages to open large files, but doesn\46#39;t do that as gracefully as Vim though.', 'timestamp': '1250158574078', 'permalink': 'http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment\0751250158574078#c81576542924739506', 'author': {'name': 'Shlomo Priymak', 'avatarUrl': 'http://img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'http://www.blogger.com/profile/08509735030020026930'}, 'displayTime': '8/13/09, 1:16 PM', 'deleteclass': 'item-control blog-admin pid-1964808661'}, {'id': '2897223852333393542', 'body': 'No Vim isn\46#39;t good enough for this kind of work either. Maybe better than some, but still not ideal.\74br /\76\74br /\76\74br /\76If you just want to view the file ( often the case when its a large text file) just cat the file into less. \74br /\76\74br /\76Find the spot you want to edit, and write a quick script to make the edit. \74br /\76\74br /\76Or better yet, you could write a striped down editor that is specifically tailored to this problem, like I did :)', 'timestamp': '1250262511296', 'permalink': 'http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment\0751250262511296#c2897223852333393542', 'author': {'name': 'water outbreaks', 'avatarUrl': 'http://img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'http://www.blogger.com/profile/16957222317299096782'}, 'displayTime': '8/14/09, 6:08 PM', 'deleteclass': 'item-control blog-admin pid-1706898433'}, {'id': '2782488569812840630', 'body': '@water outbreaks\74br /\76I agree it\46#39;s not ideal (mostly since it rewrites the file), but it\46#39;s the best available for Windows. Of course I would use \46quot;less\46quot; or \46quot;cat\46quot; if it was Linux... \74br /\76I have a friend that says \46quot;Windows is for little girls\46quot;, maybe he\46#39;s right this time :)\74br /\76\74br /\76What\46#39;s that editor? Is it downloadable someplace?', 'timestamp': '1250282020057', 'permalink': 'http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment\0751250282020057#c2782488569812840630', 'author': {'name': 'Shlomo Priymak', 'avatarUrl': 'http://img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'http://www.blogger.com/profile/08509735030020026930'}, 'displayTime': '8/14/09, 11:33 PM', 'deleteclass': 'item-control blog-admin pid-1964808661'}, {'id': '4817935184868678788', 'body': 'On the other hand, this means using vi/vim, which in my book is marginally preferable to clawing your own eyes out. But what really amazes me is that the GNU head tool has no \46quot;skip n lines first\46quot; feature.', 'timestamp': '1250690617571', 'permalink': 'http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment\0751250690617571#c4817935184868678788', 'author': {'name': 'Tomer Gabel', 'avatarUrl': 'http://img1.blogblog.com/img/blank.gif', 'profileUrl': 'http://www.tomergabel.com'}, 'displayTime': '8/19/09, 5:03 PM', 'deleteclass': 'item-control blog-admin pid-1064613125'}, {'id': '2464136179432560519', 'body': 'It isn\46#39;t free (~$19.50), but I\46#39;ve used \74a href\75\42http://www.mwasoftware.co.uk/index.php?option\75com_content\46amp;task\75view\46amp;id\07518\46amp;Itemid\07531\42 rel\75\42nofollow\42\76j-write\74/a\76 to effortlessly open and edit files that were 7+GB in size. \74br /\76\74br /\76Another (open source) editor you might want to throw a very large file at is \74a href\75\42http://liquidninja.com/metapad/\42 rel\75\42nofollow\42\76metapad\74/a\76.', 'timestamp': '1260827651306', 'permalink': 'http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment\0751260827651306#c2464136179432560519', 'author': {'name': 'david and mary grace', 'avatarUrl': 'http://2.bp.blogspot.com/_OyJmg3gVk-E/ScKePd1oDFI/AAAAAAAAAIc/--bO7ydkOvY/S45/3336041651_60262ae689_b.jpg', 'profileUrl': 'http://www.blogger.com/profile/15275313590323415511'}, 'displayTime': '12/14/09, 11:54 PM', 'deleteclass': 'item-control blog-admin pid-1356634585'}, {'id': '5995759724254612480', 'parentId': '4817935184868678788', 'body': 'To skip say 500 lines down, try typing 500 followed by the down arrow key.', 'timestamp': '1352829192978', 'permalink': 'http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment\0751352829192978#c5995759724254612480', 'author': {'name': 'Roy Olsen', 'avatarUrl': 'http://img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'http://www.blogger.com/profile/03495640139959600216'}, 'displayTime': '11/13/12, 7:53 PM', 'deleteclass': 'item-control blog-admin pid-349279128'}, {'id': '3954624847480966935', 'body': 'Good discussion here:\74br /\76http://stackoverflow.com/questions/102829/best-free-text-editor-supporting-more-than-4gb-files', 'timestamp': '1358542480626', 'permalink': 'http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment\0751358542480626#c3954624847480966935', 'author': {'name': 'Anonymous', 'avatarUrl': 'http://img1.blogblog.com/img/blank.gif', 'profileUrl': ''}, 'displayTime': '1/18/13, 10:54 PM', 'deleteclass': 'item-control blog-admin pid-1835522437'}, {'id': '5134701236829761777', 'body': 'GigaEdit is also good and fast free text editor for big text file, it&#180;s portable, but without undo function', 'timestamp': '1377694053878', 'permalink': 'http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment\0751377694053878#c5134701236829761777', 'author': {'name': 'Anonymous', 'avatarUrl': 'http://img1.blogblog.com/img/blank.gif', 'profileUrl': ''}, 'displayTime': '8/28/13, 3:47 PM', 'deleteclass': 'item-control blog-admin pid-1444933438'}];
+      var msgs = {'loadMore': 'Load more...', 'loading': 'Loading...', 'loaded': 'No more!', 'addComment': 'Add comment', 'reply': 'Reply', 'delete': 'Delete'};
+      var config = {'blogId': '20434908', 'postId': '7760900535982046194', 'feed': 'http://blog.shlomoid.com/feeds/7760900535982046194/comments/default', 'authorName': 'Shlomo Priymak', 'authorUrl': 'http://www.blogger.com/profile/08509735030020026930', 'baseUri': 'http://www.blogger.com', 'maxThreadDepth': 2};
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        if (entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + entry.content.$t + '</span>';
+            }
+          }
+        }
+        return entry.content.$t;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/delete-comment.g?blogID='
+               + config.blogId + '&postID=' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+</script>
+<div id='comment-holder'>
+<div id='bc_0_11C' kind='c'><div id='bc_0_11CT'><div id='bc_0_10T' class='comment-thread' kind='r'  t='0' u='0'><ol id='bc_0_10TB'><li id='bc_0_0B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img1.blogblog.com/img/openid36-rounded.png'></img></div><div id='c3779444161309844249' class='comment-block'><div id='bc_0_0M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='http://swanhart.livejournal.com/'>swanhart</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment=1250109715487#c3779444161309844249'>8/12/09, 11:41 PM</a></span></div><p id='bc_0_0MC' class='comment-content'>Just one more reason why vi (and vim in specific) is still my favorite editor of all time.  I spend at least a few hours per day in vim and I wouldn&#39;t trade it for anything in the world.  <br /><br />I do like notepad++ for quick editing on windows and for short files and scripts though.  I always have two or three notepad++ open for jotting down notes, and for using as a temporary clipboard repository.</p><span id='bc_0_0MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1174589535'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=20434908&amp;postID=3779444161309844249'>Delete</a></span></span></div><div id='bc_0_0BR' class='comment-replies'></div><div id='bc_0_0B_box' class='comment-replybox-single'></div></li><li id='bc_0_1B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://3.bp.blogspot.com/_0K9KyrFQbOk/SavH8Oz5HGI/AAAAAAAAABA/XL7pI5nk4RU/S45/AndersKarlsson1.jpg'></img></div><div id='c6637929005886480440' class='comment-block'><div id='bc_0_1M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='http://www.blogger.com/profile/04874338187076980133'>Karlsson</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment=1250117766272#c6637929005886480440'>8/13/09, 1:56 AM</a></span></div><p id='bc_0_1MC' class='comment-content'>My MyQuery tool is currently using SCintilla. And I agree that what you say is an issue, and something that I wanted to adress in MyQuery. The Scintilla base to an extent limites what MyQuery can do, bt still, I do my own interpretation of scripts, so I have a few things I want to do eventually, beyond editing large files in Scintilla.<br />One idea I have is to be able to run a script, statement by statement, bringing up each statement in Scintilla. Another is running statement by statement til we have an error, allow you to fix that that single statment using the Scintilla based editor, and then continue from there.</p><span id='bc_0_1MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-352861238'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=20434908&amp;postID=6637929005886480440'>Delete</a></span></span></div><div id='bc_0_1BR' class='comment-replies'></div><div id='bc_0_1B_box' class='comment-replybox-single'></div></li><li id='bc_0_2B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img2.blogblog.com/img/b36-rounded.png'></img></div><div id='c81576542924739506' class='comment-block'><div id='bc_0_2M' class='comment-header' kind='m'><cite class='user blog-author'><a rel='nofollow' href='http://www.blogger.com/profile/08509735030020026930'>Shlomo Priymak</a></cite><span class='icon user blog-author'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment=1250158574078#c81576542924739506'>8/13/09, 1:16 PM</a></span></div><p id='bc_0_2MC' class='comment-content'>@swanhart: Well, back then, they built things to last :P<br /><br />@Karlsson: Scintilla is a great editor, but not meant for such work. I would assume it&#39;s because of the syntax parsing it does, etc.<br />Other editors like SQLyog are using their built-in editors, btw. SQLyog manages to open large files, but doesn&#39;t do that as gracefully as Vim though.</p><span id='bc_0_2MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1964808661'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=20434908&amp;postID=81576542924739506'>Delete</a></span></span></div><div id='bc_0_2BR' class='comment-replies'></div><div id='bc_0_2B_box' class='comment-replybox-single'></div></li><li id='bc_0_3B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img2.blogblog.com/img/b36-rounded.png'></img></div><div id='c2897223852333393542' class='comment-block'><div id='bc_0_3M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='http://www.blogger.com/profile/16957222317299096782'>water outbreaks</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment=1250262511296#c2897223852333393542'>8/14/09, 6:08 PM</a></span></div><p id='bc_0_3MC' class='comment-content'>No Vim isn&#39;t good enough for this kind of work either. Maybe better than some, but still not ideal.<br /><br /><br />If you just want to view the file ( often the case when its a large text file) just cat the file into less. <br /><br />Find the spot you want to edit, and write a quick script to make the edit. <br /><br />Or better yet, you could write a striped down editor that is specifically tailored to this problem, like I did :)</p><span id='bc_0_3MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1706898433'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=20434908&amp;postID=2897223852333393542'>Delete</a></span></span></div><div id='bc_0_3BR' class='comment-replies'></div><div id='bc_0_3B_box' class='comment-replybox-single'></div></li><li id='bc_0_4B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img2.blogblog.com/img/b36-rounded.png'></img></div><div id='c2782488569812840630' class='comment-block'><div id='bc_0_4M' class='comment-header' kind='m'><cite class='user blog-author'><a rel='nofollow' href='http://www.blogger.com/profile/08509735030020026930'>Shlomo Priymak</a></cite><span class='icon user blog-author'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment=1250282020057#c2782488569812840630'>8/14/09, 11:33 PM</a></span></div><p id='bc_0_4MC' class='comment-content'>@water outbreaks<br />I agree it&#39;s not ideal (mostly since it rewrites the file), but it&#39;s the best available for Windows. Of course I would use &quot;less&quot; or &quot;cat&quot; if it was Linux... <br />I have a friend that says &quot;Windows is for little girls&quot;, maybe he&#39;s right this time :)<br /><br />What&#39;s that editor? Is it downloadable someplace?</p><span id='bc_0_4MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1964808661'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=20434908&amp;postID=2782488569812840630'>Delete</a></span></span></div><div id='bc_0_4BR' class='comment-replies'></div><div id='bc_0_4B_box' class='comment-replybox-single'></div></li><li id='bc_0_6B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img1.blogblog.com/img/anon36.png'></img></div><div id='c4817935184868678788' class='comment-block'><div id='bc_0_6M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='http://www.tomergabel.com'>Tomer Gabel</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment=1250690617571#c4817935184868678788'>8/19/09, 5:03 PM</a></span></div><p id='bc_0_6MC' class='comment-content'>On the other hand, this means using vi/vim, which in my book is marginally preferable to clawing your own eyes out. But what really amazes me is that the GNU head tool has no &quot;skip n lines first&quot; feature.</p><span id='bc_0_6MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1064613125'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=20434908&amp;postID=4817935184868678788'>Delete</a></span></span></div><div id='bc_0_6BR' class='comment-replies'><span id='bc_0_6b+seedZbmD' kind='d'><div id='bc_0_5T' class='comment-thread inline-thread' kind='t'   t='0' u='0'><span id='bc_0_5TT' class='thread-toggle thread-expanded' kind='g'><span id='bc_0_5TA' class='thread-arrow'></span><span id='bc_0_5TN' class='thread-count'><span id='bc_0_5TNT' style='display: none;'></span><span id='bc_0_5TNU' style='display: none;'></span><a href='javascript:;' target='_self'>Replies</a><div id='bc_0_5TD' class='thread-dropContainer thread-expanded'><span class='thread-drop'></span></div></span></span><ol id='bc_0_5TC' class='thread-chrome thread-expanded'><div><li id='bc_0_5B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img2.blogblog.com/img/b36-rounded.png'></img></div><div id='c5995759724254612480' class='comment-block'><div id='bc_0_5M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='http://www.blogger.com/profile/03495640139959600216'>Roy Olsen</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment=1352829192978#c5995759724254612480'>11/13/12, 7:53 PM</a></span></div><p id='bc_0_5MC' class='comment-content'>To skip say 500 lines down, try typing 500 followed by the down arrow key.</p><span id='bc_0_5MN' class='comment-actions secondary-text' kind='m'><span class='item-control blog-admin pid-349279128'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=20434908&amp;postID=5995759724254612480'>Delete</a></span></span></div><div id='bc_0_5BR' class='comment-replies'></div><div id='bc_0_5B_box' class='comment-replybox-single'></div></li></div><div id='bc_0_5I' class='continue' kind='ci'><a href='javascript:;' target='_self'>Reply</a></div></ol><div id='bc_0_5T_box' class='comment-replybox-thread'></div></div></span></div><div id='bc_0_6B_box' class='comment-replybox-single'></div></li><li id='bc_0_7B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://2.bp.blogspot.com/_OyJmg3gVk-E/ScKePd1oDFI/AAAAAAAAAIc/--bO7ydkOvY/S45/3336041651_60262ae689_b.jpg'></img></div><div id='c2464136179432560519' class='comment-block'><div id='bc_0_7M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='http://www.blogger.com/profile/15275313590323415511'>david and mary grace</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment=1260827651306#c2464136179432560519'>12/14/09, 11:54 PM</a></span></div><p id='bc_0_7MC' class='comment-content'>It isn&#39;t free (~$19.50), but I&#39;ve used <a href="http://www.mwasoftware.co.uk/index.php?option=com_content&amp;task=view&amp;id=18&amp;Itemid=31" rel="nofollow">j-write</a> to effortlessly open and edit files that were 7+GB in size. <br /><br />Another (open source) editor you might want to throw a very large file at is <a href="http://liquidninja.com/metapad/" rel="nofollow">metapad</a>.</p><span id='bc_0_7MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1356634585'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=20434908&amp;postID=2464136179432560519'>Delete</a></span></span></div><div id='bc_0_7BR' class='comment-replies'></div><div id='bc_0_7B_box' class='comment-replybox-single'></div></li><li id='bc_0_8B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img1.blogblog.com/img/anon36.png'></img></div><div id='c3954624847480966935' class='comment-block'><div id='bc_0_8M' class='comment-header' kind='m'><cite class='user'>Anonymous</cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment=1358542480626#c3954624847480966935'>1/18/13, 10:54 PM</a></span></div><p id='bc_0_8MC' class='comment-content'>Good discussion here:<br />http://stackoverflow.com/questions/102829/best-free-text-editor-supporting-more-than-4gb-files</p><span id='bc_0_8MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1835522437'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=20434908&amp;postID=3954624847480966935'>Delete</a></span></span></div><div id='bc_0_8BR' class='comment-replies'></div><div id='bc_0_8B_box' class='comment-replybox-single'></div></li><li id='bc_0_9B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img1.blogblog.com/img/anon36.png'></img></div><div id='c5134701236829761777' class='comment-block'><div id='bc_0_9M' class='comment-header' kind='m'><cite class='user'>Anonymous</cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html?showComment=1377694053878#c5134701236829761777'>8/28/13, 3:47 PM</a></span></div><p id='bc_0_9MC' class='comment-content'>GigaEdit is also good and fast free text editor for big text file, it&#180;s portable, but without undo function</p><span id='bc_0_9MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1444933438'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=20434908&amp;postID=5134701236829761777'>Delete</a></span></span></div><div id='bc_0_9BR' class='comment-replies'></div><div id='bc_0_9B_box' class='comment-replybox-single'></div></li></ol><div id='bc_0_10I' class='continue' kind='ci'><a href='javascript:;' target='_self'>Add comment</a></div><div id='bc_0_10T_box' class='comment-replybox-thread'></div><div id='bc_0_10L' class='loadmore loaded' kind='rb'><a href='javascript:;' target='_self'>Load more...</a></div></div></div></div>
+</div>
+</div>
+<p class='comment-footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<p>
+</p>
+<a href='https://www.blogger.com/comment-iframe.g?blogID=20434908&postID=7760900535982046194' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/666035058-comment_from_post_iframe.js"></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://blog.shlomoid.com/2010/02/emulating-missing-rename-database.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://blog.shlomoid.com/2008/11/emulating-mysqls-groupconcat-function.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+</span>
+<a class='home-link' href='http://blog.shlomoid.com/'>Home</a>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='http://blog.shlomoid.com/feeds/7760900535982046194/comments/default' target='_blank' type='application/atom+xml'>Post Comments (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'en'};</script>
+</div></div>
+</div>
+</div>
+<div class='column-left-outer'>
+<div class='column-left-inner'>
+<aside>
+<div class='sidebar section' id='sidebar-left-1'><div class='widget Profile' id='Profile1'>
+<h2>About Me</h2>
+<div class='widget-content'>
+<a href='https://plus.google.com/116089576530899793016'><img alt='My Photo' class='profile-img' height='80' src='//lh6.googleusercontent.com/-MBtwyrFVHws/AAAAAAAAAAI/AAAAAAABZbA/oQZaeE98cKQ/s80-c/photo.jpg' width='80'/></a>
+<dl class='profile-datablock'>
+<dt class='profile-data'>
+<a class='profile-name-link g-profile' href='https://plus.google.com/116089576530899793016' rel='author' style='background-image: url(//www.google.com/images/icons/ui/gprofile_button-16.png);'>
+Shlomo Priymak
+</a>
+<br/>
+<div class='g-follow' data-annotation='bubble' data-height='20' data-href='https://plus.google.com/116089576530899793016'></div>
+</dt>
+</dl>
+<a class='profile-link' href='https://plus.google.com/116089576530899793016' rel='author'>View my complete profile</a>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=20434908&widgetType=Profile&widgetId=Profile1&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Profile1"));' target='configProfile1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML1'>
+<div class='widget-content'>
+<a href="http://www.linkedin.com/in/shlomoid"><img border="0" width="120" alt="View Shlomo Priymak's profile on LinkedIn" src="http://www.linkedin.com/img/webpromo/btn_viewmy_120x33.gif" height="33"/></a>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=20434908&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget CustomSearch' id='CustomSearch1'>
+<h2 class='title'>Search This Blog</h2>
+<div class='widget-content'>
+<div id='CustomSearch1_form'>
+<span class='cse-status'>Loading...</span>
+</div>
+</div>
+<style type='text/css'>
+      #uds-searchControl .gs-result .gs-title,
+      #uds-searchControl .gs-result .gs-title *,
+      #uds-searchControl .gsc-results .gsc-trailing-more-results,
+      #uds-searchControl .gsc-results .gsc-trailing-more-results * {
+        color:#2288bb;
+      }
+
+      #uds-searchControl .gs-result .gs-title a:visited,
+      #uds-searchControl .gs-result .gs-title a:visited * {
+        color:#888888;
+      }
+
+      #uds-searchControl .gs-relativePublishedDate,
+      #uds-searchControl .gs-publishedDate {
+        color: #777777;
+      }
+
+      #uds-searchControl .gs-result a.gs-visibleUrl,
+      #uds-searchControl .gs-result .gs-visibleUrl {
+        color: #2288bb;
+      }
+
+      #uds-searchControl .gsc-results {
+        border-color: #66bbdd;
+        background-color: #ffffff;
+      }
+
+      #uds-searchControl .gsc-tabhActive {
+        border-color: #66bbdd;
+        border-top-color: #66bbdd;
+        background-color: #ffffff;
+        color: #222222;
+      }
+
+      #uds-searchControl .gsc-tabhInactive {
+        border-color: #66bbdd;
+        background-color: transparent;
+        color: #2288bb;
+      }
+
+      #uds-searchClearResults {
+        border-color: #66bbdd;
+      }
+
+      #uds-searchClearResults:hover {
+        border-color: #66bbdd;
+      }
+
+      #uds-searchControl .gsc-cursor-page {
+        color: #2288bb;
+      }
+
+      #uds-searchControl .gsc-cursor-current-page {
+        color: #222222;
+      }
+    </style>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=20434908&widgetType=CustomSearch&widgetId=CustomSearch1&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("CustomSearch1"));' target='configCustomSearch1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/search?updated-min=2013-01-01T00:00:00%2B02:00&amp;updated-max=2014-01-01T00:00:00%2B02:00&amp;max-results=1'>2013</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2013_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/search?updated-min=2011-01-01T00:00:00%2B02:00&amp;updated-max=2012-01-01T00:00:00%2B02:00&amp;max-results=6'>2011</a>
+<span class='post-count' dir='ltr'>(6)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2011_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2011_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/search?updated-min=2010-01-01T00:00:00%2B02:00&amp;updated-max=2011-01-01T00:00:00%2B02:00&amp;max-results=5'>2010</a>
+<span class='post-count' dir='ltr'>(5)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2010_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2010_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2010_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/search?updated-min=2009-01-01T00:00:00%2B02:00&amp;updated-max=2010-01-01T00:00:00%2B02:00&amp;max-results=1'>2009</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2009_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html'>A Free Text Editor for Very Large / Huge Files on ...</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/search?updated-min=2008-01-01T00:00:00%2B02:00&amp;updated-max=2009-01-01T00:00:00%2B02:00&amp;max-results=24'>2008</a>
+<span class='post-count' dir='ltr'>(24)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2008_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2008_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2008_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2008_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2008_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2008_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2008_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2008_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2008_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/search?updated-min=2007-01-01T00:00:00%2B02:00&amp;updated-max=2008-01-01T00:00:00%2B02:00&amp;max-results=7'>2007</a>
+<span class='post-count' dir='ltr'>(7)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.shlomoid.com/2007_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=20434908&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Label' id='Label1'>
+<h2>Labels</h2>
+<div class='widget-content list-label-widget-content'>
+<ul>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/Chrome'>Chrome</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/Databases'>Databases</a>
+<span dir='ltr'>(10)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/Delver'>Delver</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/Facebook'>Facebook</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/Google'>Google</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/InnoDB'>InnoDB</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/Linux'>Linux</a>
+<span dir='ltr'>(5)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/Mac'>Mac</a>
+<span dir='ltr'>(4)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/Misc'>Misc</a>
+<span dir='ltr'>(7)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/MongoDB'>MongoDB</a>
+<span dir='ltr'>(3)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/MySQL'>MySQL</a>
+<span dir='ltr'>(26)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/MySQL%20Connector'>MySQL Connector</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/SQL%20Server'>SQL Server</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/Vista'>Vista</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://blog.shlomoid.com/search/label/Windows'>Windows</a>
+<span dir='ltr'>(3)</span>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=20434908&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Label1"));' target='configLabel1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Subscribe' id='Subscribe1'>
+<div style='white-space:nowrap'>
+<div class='widget-content'>
+<div class='subscribe-wrapper subscribe-type-POST'>
+<div class='subscribe expanded subscribe-type-POST' id='SW_READER_LIST_Subscribe1POST' style='display:none;'>
+<div class='top'>
+<span class='inner' onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<img class='subscribe-dropdown-arrow' src='http://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='http://img1.blogblog.com/img/icon_feed12.png'/>
+Posts
+</span>
+<div class='feed-reader-links'>
+<a class='feed-reader-link' href='http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fblog.shlomoid.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<img src='http://img1.blogblog.com/img/widgets/subscribe-netvibes.png'/>
+</a>
+<a class='feed-reader-link' href='http://add.my.yahoo.com/content?url=http%3A%2F%2Fblog.shlomoid.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<img src='http://img1.blogblog.com/img/widgets/subscribe-yahoo.png'/>
+</a>
+<a class='feed-reader-link' href='http://blog.shlomoid.com/feeds/posts/default' target='_blank'>
+<img align='absmiddle' class='feed-icon' src='http://img1.blogblog.com/img/icon_feed12.png'/>
+                    Atom
+                  </a>
+</div>
+</div>
+<div class='bottom'></div>
+</div>
+<div class='subscribe' id='SW_READER_LIST_CLOSED_Subscribe1POST' onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<div class='top'>
+<span class='inner'>
+<img class='subscribe-dropdown-arrow' src='http://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='http://img1.blogblog.com/img/icon_feed12.png'/>
+Posts
+</span>
+</span>
+</div>
+<div class='bottom'></div>
+</div>
+</div>
+<div class='subscribe-wrapper subscribe-type-PER_POST'>
+<div class='subscribe expanded subscribe-type-PER_POST' id='SW_READER_LIST_Subscribe1PER_POST' style='display:none;'>
+<div class='top'>
+<span class='inner' onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<img class='subscribe-dropdown-arrow' src='http://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='http://img1.blogblog.com/img/icon_feed12.png'/>
+Comments
+</span>
+<div class='feed-reader-links'>
+<a class='feed-reader-link' href='http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fblog.shlomoid.com%2Ffeeds%2F7760900535982046194%2Fcomments%2Fdefault' target='_blank'>
+<img src='http://img1.blogblog.com/img/widgets/subscribe-netvibes.png'/>
+</a>
+<a class='feed-reader-link' href='http://add.my.yahoo.com/content?url=http%3A%2F%2Fblog.shlomoid.com%2Ffeeds%2F7760900535982046194%2Fcomments%2Fdefault' target='_blank'>
+<img src='http://img1.blogblog.com/img/widgets/subscribe-yahoo.png'/>
+</a>
+<a class='feed-reader-link' href='http://blog.shlomoid.com/feeds/7760900535982046194/comments/default' target='_blank'>
+<img align='absmiddle' class='feed-icon' src='http://img1.blogblog.com/img/icon_feed12.png'/>
+                    Atom
+                  </a>
+</div>
+</div>
+<div class='bottom'></div>
+</div>
+<div class='subscribe' id='SW_READER_LIST_CLOSED_Subscribe1PER_POST' onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<div class='top'>
+<span class='inner'>
+<img class='subscribe-dropdown-arrow' src='http://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='http://img1.blogblog.com/img/icon_feed12.png'/>
+Comments
+</span>
+</span>
+</div>
+<div class='bottom'></div>
+</div>
+</div>
+<div style='clear:both'></div>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=20434908&widgetType=Subscribe&widgetId=Subscribe1&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Subscribe1"));' target='configSubscribe1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget PopularPosts' id='PopularPosts1'>
+<h2>Popular Posts</h2>
+<div class='widget-content popular-posts'>
+<ul>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://blog.shlomoid.com/2008/11/emulating-mysqls-groupconcat-function.html'>Emulating MySQL&#8217;s GROUP_CONCAT() Function in SQL Server 2005</a></div>
+<div class='item-snippet'>Sometimes, the small things make all the difference. Last month, a friend of mine that works at Intel asked me how to do something seeming e...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html'>A Free Text Editor for Very Large / Huge Files on Windows</a></div>
+<div class='item-snippet'>Every once in a while a programmer finds himself in need of a tool that allows him to edit very large text files. By large, I mean several g...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://blog.shlomoid.com/2008/06/how-to-truncate-all-or-some-of-tables.html'>How to Truncate All or Some of the Tables in a MySQL Database</a></div>
+<div class='item-snippet'>Truncating all tables in a database is a common problem which arises a lot during testing or debugging.  One of the most common answers to t...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://blog.shlomoid.com/2010/02/emulating-missing-rename-database.html'>Emulating The Missing RENAME DATABASE Command in MySQL</a></div>
+<div class='item-snippet'>I&#39;ll approach this topic from another direction. I had to perform a task which required moving tables between schemas on the same MySQL ...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://blog.shlomoid.com/2011/08/how-to-easily-see-whos-connected-to.html'>How to Easily See Who's Connected to Your MySQL Server</a></div>
+<div class='item-snippet'>I&#39;m posting this here since it has been useful for me, and the blog is a nice place to keep public notes.  If you have servers which hav...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://blog.shlomoid.com/2011/08/how-to-quickly-create-histogram-in.html'>How to Quickly Create a Histogram in MySQL</a></div>
+<div class='item-snippet'>This is a post about a super quick-and-dirty way to create a histogram in MySQL for numeric values.   There are multiple other ways to creat...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://blog.shlomoid.com/2011/08/how-to-move-mongodb-collection-between.html'>How to Move a MongoDB Collection Between Databases</a></div>
+<div class='item-snippet'>If you need to move a collection between two MongoDB databases, there is no need to dump and restore your data using&#160; mongodump / mongoresto...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://blog.shlomoid.com/2007/12/first-post.html'>First Post</a></div>
+<div class='item-snippet'>Well, I had to start a blog one day.  I&#39;m gonna try out some &quot;backup-posts&quot; at first, and see how it goes. You know, the kind ...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://blog.shlomoid.com/2011/08/how-to-fix-erroneously-named-mongodb.html'>How to Fix Erroneously Named MongoDB Collections</a></div>
+<div class='item-snippet'>In MongoDB, collections are not supposed to include certain characters&#160;like, for example, a hyphen &quot;-&quot; or a slash &quot;/&quot;. T...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://blog.shlomoid.com/2008/06/how-to-perform-connection-massacre.html'>How To Perform a Connection Massacre</a></div>
+<div class='item-snippet'>Occasionally, you find yourself in the need to kill problematic connections to the database. Usually if it&#39;s only one or two connections...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=20434908&widgetType=PopularPosts&widgetId=PopularPosts1&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("PopularPosts1"));' target='configPopularPosts1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div></div>
+</aside>
+</div>
+</div>
+<div class='column-right-outer'>
+<div class='column-right-inner'>
+<aside>
+</aside>
+</div>
+</div>
+</div>
+<div style='clear: both'></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class='main-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<footer>
+<div class='footer-outer'>
+<div class='footer-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left footer-fauxborder-left'>
+<div class='fauxborder-right footer-fauxborder-right'></div>
+<div class='region-inner footer-inner'>
+<div class='foot section' id='footer-1'></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='foot section' id='footer-2-1'></div>
+</td>
+<td class='columns-cell'>
+<div class='foot section' id='footer-2-2'></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class='foot section' id='footer-3'><div class='widget Attribution' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+Powered by <a href='http://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=20434908&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3' onclick='return _WidgetManager._PopupConfig(document.getElementById("Attribution1"));' target='configAttribution1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='footer-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class='content-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/849756096-widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="//www.google.com/jsapi"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV2";window['blogger_blog_id'] = '20434908';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d20434908','//blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html','20434908');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '20434908', 'bloggerUrl': 'http://www.blogger.com', 'title': 'Rational Relational', 'pageType': 'item', 'postId': '7760900535982046194', 'url': 'http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html', 'canonicalUrl': 'http://blog.shlomoid.com/2009/08/free-text-editor-for-very-large-huge.html', 'canonicalHomepageUrl': 'http://blog.shlomoid.com/', 'homepageUrl': 'http://blog.shlomoid.com/', 'blogspotFaviconUrl': 'http://blog.shlomoid.com/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'disableAdSenseWidget': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': 'A Free Text Editor for Very Large / Huge Files on Windows', 'pageTitle': 'Rational Relational: A Free Text Editor for Very Large / Huge Files on Windows', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Rational Relational - Atom\42 href\75\42http://blog.shlomoid.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Rational Relational - RSS\42 href\75\42http://blog.shlomoid.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Rational Relational - Atom\42 href\75\42http://www.blogger.com/feeds/20434908/posts/default\42 /\76\n\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Rational Relational - Atom\42 href\75\42http://blog.shlomoid.com/feeds/7760900535982046194/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'googleProfileUrl': 'https://plus.google.com/116089576530899793016', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var b\75window,f\75\42chrome\42,g\75\42tick\42,k\75\42jstiming\42;(function(){function d(a){this.t\75{};this.tick\75function(a,d,c){var e\75void 0!\75c?c:(new Date).getTime();this.t[a]\75[e,d];if(void 0\75\75c)try{b.console.timeStamp(\42CSI/\42+a)}catch(h){}};this[g](\42start\42,null,a)}var a;b.performance\46\46(a\75b.performance.timing);var n\75a?new d(a.responseStart):new d;b.jstiming\75{Timer:d,load:n};if(a){var c\75a.navigationStart,h\75a.responseStart;0\74c\46\46h\76\75c\46\46(b[k].srt\75h-c)}if(a){var e\75b[k].load;0\74c\46\46h\76\75c\46\46(e[g](\42_wtsrt\42,void 0,c),e[g](\42wtsrt_\42,\42_wtsrt\42,h),e[g](\42tbsd_\42,\42wtsrt_\42))}try{a\75null,\nb[f]\46\46b[f].csi\46\46(a\75Math.floor(b[f].csi().pageT),e\46\0460\74c\46\46(e[g](\42_tbnd\42,void 0,b[f].csi().startE),e[g](\42tbnd_\42,\42_tbnd\42,c))),null\75\75a\46\46b.gtbExternal\46\46(a\75b.gtbExternal.pageT()),null\75\75a\46\46b.external\46\46(a\75b.external.pageT,e\46\0460\74c\46\46(e[g](\42_tbnd\42,void 0,b.external.startE),e[g](\42tbnd_\42,\42_tbnd\42,c))),a\46\46(b[k].pt\75a)}catch(p){}})();b.tickAboveFold\75function(d){var a\0750;if(d.offsetParent){do a+\75d.offsetTop;while(d\75d.offsetParent)}d\75a;750\76\75d\46\46b[k].load[g](\42aft\42)};var l\75!1;function m(){l||(l\75!0,b[k].load[g](\42firstScrollTime\42))}b.addEventListener?b.addEventListener(\42scroll\42,m,!1):b.attachEvent(\42onscroll\42,m);\n })();\74/script\076', 'mobileHeadScript': '', 'ieCssRetrofitLinks': '\74!--[if IE]\76\74script type\75\42text/javascript\42 src\75\42https://www.blogger.com/static/v1/jsbin/107775239-ieretrofit.js\42\76\74/script\76\n\74![endif]--\076', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/cda3ddef07a85452', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sf': 'n', 'tf': ''}}, {'name': 'skin', 'data': {'vars': {'content_padding': '10px', 'image_border_small_size': '2px', 'body_background_gradient_cap': 'url(http://www.blogblog.com/1kt/simple/gradients_light.png)', 'tabs_selected_background_color': '#eeeeee', 'body_rule_color': '#66bbdd', 'header_shadow_spread': '1px', 'header_shadow_offset_left': '-1px', 'link_visited_color': '#888888', 'post_title_font': 'normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'tabs_text_color': '#999999', 'header_background_gradient': 'none', 'content_shadow_spread_webkit': '5px', 'header_shadow_offset_top': '-1px', 'widget_title_font': 'normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'keycolor': '#66bbdd', 'content_shadow_spread': '40px', 'image_background_color': '#ffffff', 'header_font': 'normal normal 60px Impact, sans-serif;', 'header_background_color': 'transparent', 'main_border_width': '0', 'image_text_color': '#222222', 'description_text_size': '140%', 'post_footer_background_color': '#f9f9f9', 'body_background_gradient_tile': 'url(http://www.blogblog.com/1kt/simple/body_gradient_tile_light.png)', 'page_width': 'auto', 'tabs_background_gradient': 'url(http://www.blogblog.com/1kt/simple/gradients_light.png)', 'tabs_background_color': '#f5f5f5', 'image_border_large_size': '5px', 'body_background_override': '', 'link_hover_color': '#33aaff', 'tabs_margin_side': '30px', 'description_text_color': '#777777', 'body_text_color': '#222222', 'endSide': 'right', 'page_width_selector': '.region-inner', 'post_footer_text_color': '#666666', 'startSide': 'left', 'tabs_font': 'normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'post_footer_border_color': '#eeeeee', 'body_font': 'normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'tabs_bevel_border_width': '1px', 'content_shadow_spread_ie': '10px', 'widget_title_text_color': '#000000', 'image_border_color': '#eeeeee', 'tabs_border_width': '1px', 'content_background_color': '#ffffff', 'link_color': '#2288bb', 'header_text_color': '#3399bb', 'tabs_margin_top': '0', 'header_border_size': '1px', 'tabs_selected_text_color': '#000000', 'content_background_color_selector': '.content-inner', 'body_background_color': '#66bbdd', 'widget_alternate_text_color': '#999999'}, 'override': ''}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1302948329-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/791027213-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar-left-1', null, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar-left-1', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_CustomSearchView', new _WidgetInfo('CustomSearch1', 'sidebar-left-1', null, document.getElementById('CustomSearch1'), {'title': 'Search This Blog', 'includeBlog': true, 'includePostLinks': true, 'includeWeb': true, 'linkLists': [], 'blogUrl': 'http://blog.shlomoid.com/', 'loadingMsg': 'Loading...', 'thisBlogMsg': 'This Blog', 'linkedFromHereMsg': 'Linked From Here', 'theWebMsg': 'The Web', 'backgroundColor': '#ffffff', 'textColor': '#222222', 'dateColor': '#777777', 'linkColor': '#2288bb', 'urlColor': '#2288bb', 'visitedLinkColor': '#888888', 'borderColor': '#66bbdd', 'activeBorderColor': '#66bbdd', 'cse_ua': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-left-1', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar-left-1', null, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_SubscribeView', new _WidgetInfo('Subscribe1', 'sidebar-left-1', null, document.getElementById('Subscribe1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'sidebar-left-1', null, document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', null, document.getElementById('Attribution1'), {'attribution': 'Powered by \74a href\75\47http://www.blogger.com\47 target\75\47_blank\47\76Blogger\74/a\76.'}, 'displayModeFull'));
+</script>
+</body>
+</html>

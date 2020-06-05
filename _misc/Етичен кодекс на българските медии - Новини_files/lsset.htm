@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>ls</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var lsdata = '-SREFRESH';
+			function convert(value) {
+				var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_.";
+				var eparams = [["rJ_BhEnjxJDTHh9jLcTtZducDANxcKXNpNkcxgqrDmb.67",1733185706],["twSMpDU5RTSeQgDRqH2Sa7svPSWhzc0bwa5mCvpdywr.47",2549245219],["rQQmH72iaiuZZnclYRo6DLuPT7ihjdVE1C2heI6n2dX.U7",1438982492],["rO8h9kojtOB9QJTsEaAh5ss5voJxYAE5PfAF6lev5Kv.p7",3569368239],["RyEhxJW2tNkTfIp5i3f3udttXN5xcsY_kY4PoQH.t8j.d7",1685532203],["EryGpuGCemxuJsKndm8sgquv._OhNrVX8XeeVvZFEH3.U7",850079112],["rD7clEpjhWXTQUbNUS.1Bglm3RueNAzrECwpOoDye4H.17",222552196],["QpXc8lGLhT9OVzDoioi_W.kCnviecfVuU2bIaXV_uDv.m7",3227550682],["QfaMTVD7ResUMRe5amdhatjyHsvO_cGJsxsYnaGm0Lf.j7",1007039632],["4qXc_2EohXXPx1Jr7gJjofjArHSei_ahcBz1poW5r3..V7",3963368730],["t1EmdjW4agQI34H2T29gX9ttr5xxcpT0PhYeumcBVDb.E7",1995442886],["3dSHwi0eHvYZqa6vlPR4NNkzvnzO_wDLoH.IJ8msOKH.07",32224384],["t6p2ETVsGi84UNiVnzz.PipcbjEJJ_Ezswu1eMpDpN7.R7",945179221],["rQrXEL1eX3Ez3sgD9JlBqeknnyjOw.V3gzuLxTViEM3.a7",79938808],["54QssqV0NQVJUMyGSLsz8TnxXN4J3sY_iVUfhkWQbyn.P7",879308685],["rQDWxrzRut3TNlz.wN7tnTi4n9hmG.VeVepOCbPWkEz.Q7",653141421],["3FKHUrnQH0a9uIfdrP7RFwjG3ZGeJAzPsH9Gw3GjYxn.a7",3454277967],["t1F2oTW4Gn8If3JUc6rIcSnPHnYJoMECFlAlwmVeSEn.j7",1192317970],["3cDRfS0dB.t_T0RGYc8YPwnAr3w5JpTk6V9rbY0udBX.N7",2508757241],["59DWX6TjumVOB1KZyFAY7Nuer8dxN5TGkVRrHa3G4B..e7",1324076823]];
+				var eparam = eparams[Math.floor(Math.random()*eparams.length)];
+				var seed = eparam[1];
+				var result = eparam[0];
+				if (typeof value != "string" || value.length==0 || value.charAt(0)=='-') {
+					return value;
+				} else {
+					for (var i=0; i<value.length; ++i) {
+						var ch = value.charAt(i);
+						var pos = chars.indexOf(ch);
+						if (ch=='|') {
+							return result + value.slice(i, value.length);
+						} else if (pos != -1) {
+							result = result + chars[(pos + Math.floor(seed / 67108864)) % chars.length];
+						} else {
+							result = result + ch;
+						}
+						seed = ((seed * 1664525) + 1013904223) % 4294967296;
+					}
+					return result;
+				}
+			}
+			function refresher() {
+				try {
+					localStorage.gstorage = lsdata;
+				} catch (e) {}
+			}
+			if (typeof window.postMessage != 'undefined') {
+				try {
+					if (!localStorage.gstorage || localStorage.gstorage.charAt(0)=='-') {
+						localStorage.gstorage = "QsaHIVFrH5pSdex9sd7gCiElpotV_qSnR4G5GtK_UZb.87/"+new String((new Date()).getTime())+"/";
+					}
+					lsdata = localStorage.gstorage;
+					if (lsdata.charAt(0)!='-') {
+						setInterval("refresher()",1000);
+					}
+					parent.postMessage("_xx_gemius_xx_/"+convert(lsdata),"*");
+				} catch (e) {
+					parent.postMessage("_xx_gemius_xx_/-SETERR","*");
+				}
+			}
+		</script>
+	
+
+</body><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div></html>

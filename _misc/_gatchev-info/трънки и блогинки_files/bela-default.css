@@ -1,0 +1,100 @@
+/* 
+    Document   : bela-default
+    Created on : Jun 16, 2013, 6:57:51 PM
+    Author     : Charles Tang
+    Description:
+        the default theme of the Better Extended Live Archive plugin
+*/
+/** global **/
+#bela-container {
+    width: 100%;
+    clear: both;
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 5px;
+    overflow: hidden;
+    padding-top: 5px;
+    position: relative;
+}
+
+#bela-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: disc inside none;
+}
+
+#bela-container ul li {
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 1px 8px;
+    text-align: left;
+}
+
+#bela-container ul li.active {
+    background: none repeat scroll 0 0 #FFF6BF;
+}
+
+#bela-container ul li:hover, div.bela-next-page:hover, div.bela-pre-page:hover {
+    background: none repeat scroll 0 0 #F3F3F3;
+}
+
+/** navi menu **/
+#bela-navi-menu {
+    border-bottom: 1px solid #CCCCCC;
+    height: 24px;
+}
+
+#bela-navi-menu li {
+    border-color: #CCCCCC #CCCCCC -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    display: inline;
+    margin-bottom: 0;
+    padding: 2px 10px !important;
+}
+
+#bela-navi-menu li:hover {
+    
+}
+
+/** loading **/
+.bela-loading {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/** content **/
+.bela-category, .bela-chrono-year, .bela-chrono-month, .bela-tag, .bela-post-list {
+    border-left: 1px solid #CCCCCC;
+    float: left;
+    font-weight: bold;
+}
+
+
+.bela-category {
+    width: 40%;
+}
+
+.bela-chrono-year, .bela-chrono-month {
+    width: 20%;
+}
+
+.tag-entry {
+    display: inline-block;
+    font-weight: normal;
+}
+
+.bela-post-list {
+    width: 59%;
+}
+
+ul.bela-orderby-tag {
+    width: 80%;
+}
+
+.bela-next-page, .bela-pre-page {
+    text-align: center;
+}

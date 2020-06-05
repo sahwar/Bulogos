@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Using Proxy Servers with cURL in PHP</title>
+  	<meta name="description" content="Tutorial on how to use proxy servers with cURL and PHP">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@Brugbart">
+        <meta name="twitter:title" content="Using Proxy Servers with cURL in PHP">
+        <meta name="twitter:description" content="Tutorial on how to use proxy servers with cURL and PHP">
+
+  	<link rel="stylesheet" type="text/css" href="/templates/doorkeeper/css/doorkeeper.css">
+  	<script type="text/javascript" src="/src/main.js"></script>
+  </head>
+
+  <body onload="sh_highlightDocument();">
+   <div id="notifications" class="WidthControl">
+  <div class="cbox" id="CookieConsent"><p>By using this site you agree to the use of cookies by Brugbart and our partners.</p><div><a href="/privacy" class="button">Learn more</a><button type="button" class="button" onClick="createCookie('consent_id', ' e75293746849d6c1532b516b9c11e521','365');deleteElement('CookieConsent');">Got it</button><div class="clear"></div></div></div></div>
+   <div id="basement" class="WidthControl">
+    <div id="site_header" class="cbox a">
+  	<header>
+  	  <div id="msg">
+  	    <p>A <a href="/">Home</a> for the experts...</p>
+  	  </div>
+   	  <div id="usr_box" class="a">
+        <form action="/" method="post" id="login_form">
+      <label>Username:</label><input type="text" name="Username" class="field">
+      <label>Password:</label><input type="password" name="Password" class="field">
+      </form>
+      <a href="#" class="button" onClick="form_submit('login_form')">Login</a>
+      <a href="/doorkeeper/new-user" class="button">Create user</a>
+  	  </div>
+  	  <div class="clear"></div>
+  	  <div id="little_things" class="a">
+  	   <div><a href="http://twitter.com/brugbart" class="twitter"></a></div>
+  	   <div><a href="http://facebook.com/brugbart" class="facebook"></a></div>
+  	   <div><a href="http://youtube.com/brugbart" class="youtube"></a></div>
+  	   <div><a href="/updates.rss" class="rss"></a></div>
+  	  </div>
+  	</header>
+  	</div>
+  	<div id="site_content" class="a">
+    <article id="section_0">
+      <div id="content_header">
+      <header>
+       <div class="laderboard_ad"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Brugbart Laderboard -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3786081941214691"
+     data-ad-slot="8518944859"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+  	   <h1 class="h1">Using Proxy Servers with cURL in PHP</h1>
+  	   <p>Tutorial on how to use proxy servers with cURL and PHP</p>
+  	   
+       <p id="datetime">Edited: <span class="fire">2013-04-27 09:49</span></p>
+       <div class="iron"><div class="right_iron"></div><div class="left_iron"></div></div>
+  	   
+  	  </header>
+  	  </div>
+      <p>Setting a proxy server to be used with cURL and PHP is relatively simple, it mostly depends on the server that you are using, and authentication method (if any). The HTTP authentication method is controlled with the <strong>CURLOPT_PROXYAUTH</strong> option, the default method is <em>CURLAUTH_BASIC</em> – if the proxy requires authentication, a username and password can be set in the <strong>[username]:[password]</strong> format, using the <strong>CURLOPT_PROXYUSERPWD</strong> option.</p>
+
+<p>For now we'll just focus on using a proxy that doesn't require any authentication. Setting a proxy server and a port number in PHP for cURL can be done using the <strong>CURLOPT_PROXY</strong> option, like shown in the below example:</p>
+
+<pre class="CodeC1 sh_php">
+curl_setopt($ch, CURLOPT_PROXY, '128.0.0.3:8080');
+</pre>
+<p>As shown in the above example, you can set the a proxy with the <strong>IP</strong>:<strong>PORT</strong> syntax in PHP using cURL. But if you prefer to keep the ip seperated from the port, you can also use the <strong>CURLOPT_PROXYPORT</strong> option, which would result in the below PHP code:</p>
+<pre class="CodeC1 sh_php">
+curl_setopt($ch, CURLOPT_PROXY, '128.0.0.3');
+curl_setopt($ch, CURLOPT_PROXYPORT, '8080');
+</pre>
+<p>After setting a proxy server, you will be able to perform the request using the <em>curl_exec</em> function. <strong>I.e.</strong></p>
+<pre class="CodeC1 sh_php">
+$ch = curl_init($url);
+$url = "http://brugbart.com/Examples/http-post.php";
+curl_setopt($ch, CURLOPT_PROXY, '128.0.0.3');
+curl_setopt($ch, CURLOPT_PROXYPORT, '8080');
+
+// Perform the request, and save content to $result
+$result = curl_exec($ch);
+echo $result;
+</pre>
+<section id="section_1"><h1 class="h2">Setting cURL Proxy Type</h1>
+<p>cURL supports two proxy types, the default is HTTP, and the other option is SOCKS5. You can set the proxy type using the <strong>CURLOPT_PROXYTYPE</strong> option. <strong>I.e.</strong></p>
+<pre class="CodeC1 sh_php">
+curl_setopt($ch, CURLOPT_PROXYTYPE, CURLPROXY_SOCKS5);
+</pre>
+<p>You really only need to set the type of the proxy, if you are not using a HTTP proxy.</p>
+</section><section id="section_2"><h1 class="h2">Setting Authentication Method</h1>
+<p>As mentioned in the beginning of the tutorial, setting the authentication method of a proxy server can be done using the <strong>CURLOPT_HTTPAUTH</strong> option. To make this work properly, we will also need to provide a username and password for the proxy server, this is all accomplished in the below script, in which we are just using a <em>BASIC</em> authentication method.</p>
+<pre class="CodeC1 sh_php">
+$ch = curl_init($url);
+$url = "http://brugbart.com/Examples/http-post.php";
+curl_setopt($ch, CURLOPT_PROXY, '128.0.0.3');
+curl_setopt($ch, CURLOPT_PROXYPORT, '8080');
+
+curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+
+// The username and password
+curl_setopt($ch, CURLOPT_PROXYUSERPWD, 'USERNAME:PASSWORD');
+
+// Perform the request, and save content to $result
+$result = curl_exec($ch);
+echo $result;
+</pre>
+<p>Other authentication methods include the following:</p>
+<ul>
+ <li>CURLAUTH_BASIC</li>
+ <li>CURLAUTH_DIGEST</li>
+ <li>CURLAUTH_GSSNEGOTIATE</li>
+ <li>CURLAUTH_NTLM</li>
+ <li>CURLAUTH_ANY</li>
+ <li>CURLAUTH_ANYSAFE</li>
+</ul>
+<p class="indent"><em>Note.</em>The vertical bar | (or) operator can be used to combine methods. If this is done, cURL will poll the server to see what methods it supports and pick the best.</p>
+</section><section id="section_3"><h1 class="h2">More cURL Tutorials</h1>
+<ol>
+ <li><a href="/curl-http-get-request">GET Requests</a></li>
+ <li><a href="/curl-http-post-requests">POST Requests</a></li>
+ <li><a href="/setting-request-headers-curl">Request Headers</a></li>
+</ol></section>
+	  <div class="x-large"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Brugbart Big Content -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-3786081941214691"
+     data-ad-slot="7960541655"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	  <div class="iron"><div class="right_iron"></div><div class="left_iron"></div></div>
+  	</article>
+  	</div>
+  	<div id="site_nav_1" class="nav a">
+  	  <div class="cbox">
+      <nav><ol><li><a href="http://brugbart.com/javascript">JavaScript</a></li><li><a href="http://brugbart.com/web-design">Webdesign</a></li><li><a href="http://brugbart.com/optimization">Optimization</a></li><li><a href="http://brugbart.com/seo">SEO</a></li><li><a href="http://brugbart.com/autoit">AutoIt</a></li><li><a href="http://brugbart.com/xml">XML</a></li><li><a href="http://brugbart.com/php">PHP</a></li><li><a href="http://brugbart.com/servers">Servers</a></li><li><a href="http://brugbart.com/mysql">MySQL</a></li></ol></nav>
+	  </div>
+	  <div class="cbox">
+      <nav><ol><li><a href="http://brugbart.com/privacy">Privacy Policy</a></li><li><a href="http://brugbart.com/about">About</a></li><li><a href="http://brugbart.com/contact">Contact</a></li><li><a href="http://brugbart.com/advertise">Advertise</a></li></ol></nav>
+	  </div>
+  	</div>
+  	<div id="site_nav_2" class="nav a">
+  	 
+      <div><div class="wide_ad"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300x600 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-3786081941214691"
+     data-ad-slot="9018472457"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div>
+  	</div>
+   </div>
+  </body>
+  
+</html>

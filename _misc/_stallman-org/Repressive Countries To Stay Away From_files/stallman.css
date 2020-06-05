@@ -1,0 +1,227 @@
+/*
+This file is released to the public domain.
+Richard Stallman - http://stallman.org
+*/
+
+body {
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 0px 20px 0px 20px;
+}
+
+body.dark {
+  color: #ddd;
+  background-color: #333;
+}
+
+a.glossary {
+    border: 1px solid red;
+    padding: 2px 2px;
+    display: inline-block;
+}
+
+a.dark {
+  color: #ff0;
+}
+
+a.dark:visited {
+  color: #aa0;
+}
+
+/* Need hover for accessibility */
+a:link:hover {
+    color: #9932CC;
+}
+
+/* Larger font for mobile devices */
+@media screen and (max-device-width: 480px) {
+       body {
+	    font-size: 175%;
+       }
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Header columns */
+
+.columnt1 {
+    width: 66%;
+    float: left;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.columnt1 a:link:hover, .columnt1 a:visited:hover {
+			    font-style: italic;
+			    text-shadow: 2px 2px 9px #f44;
+}
+
+.columnt2 {
+	  width: 33%;
+	  float: right;
+	  text-align: center;
+}
+
+.nobr {
+      white-space: nowrap;
+}
+
+/* urgent action items*/
+.column1 {
+  width: 31%;
+  float: left;
+}
+
+/* long term action items */
+.column2 {
+  width: 31%;
+  float: left;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  margin: 0px 10px 0px 10px;
+  padding: 0px 10px 0px 10px;
+}
+
+/* misc */
+.column3 {
+  width: 31%;
+  float: left;
+}
+
+/* rest */
+.rest {
+  width: 100%;
+  float: left;
+}
+
+:link { color: #1F00FF }
+:visited { color: #9900DD }
+div.c3 { margin-left: 2em }
+.c2 {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-style: italic;
+}
+h3.c1 {
+text-align: center;
+font-size: 30px;
+text-decoration: underline;
+}
+.titlelink { color: #000000 }
+.fullwide { /* width: 900px; */ width: 100%; }
+
+#comic-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 4px;
+}
+#comic {
+  position: absolute;
+  max-width: 245px;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #fff;
+}
+#comic-expand img {
+  display: none;
+}
+@media screen and (max-width: 845px) {
+  #comic { right: 0px; }
+  #comic:hover {
+    width: 245px;
+    padding: 0;
+    transition: width .4s ease-out, box-shadow 1s ease, transform .8s ease;
+  }
+  #comic-expand {
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 32px;
+    height: 250px;
+    top: 0;
+    border-right: 2px dashed gray;
+  }
+  #comic-expand img {
+    position: absolute;
+    display: block;
+    bottom: 70px;
+    width: 100%;
+  }
+}
+
+sub {
+  line-height: 0.25em;
+  font-size: 70%;
+  vertical-align: -.05em;
+}
+sup {
+  line-height: 0.25em;
+  font-size: 70%;
+  vertical-align: 0.7em;
+}
+.footnote {
+  font-size: 90%;
+  padding-left: 0.9em;
+  text-indent: -0.9em;
+}
+.footnote sup {
+  line-height: 0.25em;
+  font-size: 78%;
+  vertical-align: 0.4em;
+}
+
+.vol {
+     margin-left: 5%;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+div.comp {
+    margin: 0 auto;
+    width: 98%;
+}
+
+#talks {
+    width: 700px;
+    max-width: 100%;
+    margin: 4px auto;
+    background-color: #eee;
+    padding: 1px 8px 4px 8px;
+    border-radius: 8px;
+}
+
+#talks h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.talk {
+    white-space: pre;
+    border-radius: 4px;
+    background-color: #fff;
+    margin: 8px;
+    font-size: 12pt;
+    padding: 8px;
+}
+
+.talk b {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.talk p {
+    margin: 0;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.grey {
+    color: #555;
+    background-color: #f8f8f8;
+    font-size: 10pt;
+}

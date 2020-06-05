@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html class=" js " lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Server - OpenPGP</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="OpenPGP">
+<meta property="og:title" content="Server">
+
+
+  <link rel="canonical" href="https://www.openpgp.org/software/server/">
+  <meta property="og:url" content="https://www.openpgp.org/software/server/">
+
+
+
+  <meta property="og:description" content="Server software">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-05-23T15:39:42+00:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "OpenPGP",
+      "url" : "https://www.openpgp.org",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://www.openpgp.org/feed.xml" type="application/atom+xml" rel="alternate" title="OpenPGP Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="Server%20-%20OpenPGP_files/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head><div id="saka-gui-root" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1; pointer-events: none;"><div><div><style>
+@font-face {
+  font-family: Roboto; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+  font-style: normal; font-weight: normal; src: url(moz-extension://c902aece-7150-4b89-91ae-a32a5fcde038/Roboto-Regular.tff) format('tff');
+}
+.saka-hint-body {
+  all: initial;
+position: absolute;
+z-index: 2147483647;
+opacity: 1;
+font-family: Roboto, sans-serif;
+font-weight: 900;
+padding: 0.15rem 0.25rem;
+border: 0px solid;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+font-size: 12px;
+color: #3f51F5;
+background-color: #ffffff;
+border-color: #ffffff;
+box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+border-radius: 4px;
+transform: translate3d(0%, -50%, 0)
+}
+.saka-hint-normal-char {
+  
+}
+.saka-hint-active-char {
+  opacity: 0.5
+}</style><div style="position: absolute; left: 0px; top: 0px;"></div></div></div></div>
+
+  <body style="margin-bottom: 192px;">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button class="hidden" count="0"><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://www.openpgp.org/">OpenPGP</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://www.openpgp.org/about/">About OpenPGP</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://www.openpgp.org/software/">Software</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://www.openpgp.org/community/">Community/Consulting</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+
+<nav class="nav__list">
+  
+  <ul>
+    
+      <li>
+        
+          <span class="nav__sub-title">Software</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://www.openpgp.org/software/" class="">Email Encryption</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://www.openpgp.org/software/server/" class="active">Server Software</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://www.openpgp.org/software/developer/" class="">Developer Libraries/Tools</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://www.openpgp.org/software/misc/" class="">Misc Tools</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Server">
+    <meta itemprop="description" content="Server software">
+    <meta itemprop="datePublished" content="May 23, 2020">
+    <meta itemprop="dateModified" content="November 25, 2017">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Server
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#webmail-clients" id="markdown-toc-webmail-clients">Webmail Clients</a></li>
+  <li><a href="#keyservers" id="markdown-toc-keyservers">Keyservers</a></li>
+  <li><a href="#mailing-list-software" id="markdown-toc-mailing-list-software">Mailing List Software</a></li>
+  <li><a href="#password-managers" id="markdown-toc-password-managers">Password Managers</a></li>
+  <li><a href="#project-missing" id="markdown-toc-project-missing">Project Missing?</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<p>All applications on this page implement the OpenPGP standard.
+The authors of this webpage are not actively participating in the development of each of these third-party apps.
+No security audits have been done by us and, thus, we cannot provide any security guarantees.</p>
+
+<h2 id="webmail-clients">Webmail Clients</h2>
+
+<ul>
+  <li><a href="https://mailpile.is/">Mailpile</a></li>
+  <li><a href="https://pixelated-project.org/">Pixelated</a></li>
+  <li><a href="https://roundcube.net/">Roundcube</a></li>
+</ul>
+
+<h2 id="keyservers">Keyservers</h2>
+
+<ul>
+  <li><a href="https://hockeypuck.github.io/">Hockeypuck Keyserver</a> (in Go)</li>
+  <li><a href="https://keys.openpgp.org/">keys.openpgp.org</a> (in Rust)</li>
+  <li><a href="https://keys.mailvelope.com/">Mailvelope Keyserver</a> (in JS)</li>
+  <li><a href="https://leap.se/en/docs/design/nicknym">Nicknym</a>, from
+the <a href="https://leap.se/">LEAP</a> project</li>
+  <li><a href="http://nyms.io/">Nyms</a></li>
+  <li><a href="https://sks-keyservers.net/">SKS Keyserver</a> (in OCaml)</li>
+</ul>
+
+<h2 id="mailing-list-software">Mailing List Software</h2>
+
+<ul>
+  <li><a href="https://pypi.python.org/pypi/mailman-pgp">Mailman 3 PGP plugin</a></li>
+  <li><a href="https://schleuder.org/">Schleuder encrypted mailinglist</a></li>
+</ul>
+
+<h2 id="password-managers">Password Managers</h2>
+
+<ul>
+  <li><a href="https://www.passbolt.com/">Passbolt</a></li>
+</ul>
+
+<h2 id="project-missing">Project Missing?</h2>
+
+<p>If a project is missing and you would like it included, please open a pull request at <a href="https://github.com/OpenPGP/openpgp.org">github.com/OpenPGP/openpgp.org</a>.
+Please note that we only include published, working software, which implements the standard.
+The software is ordered alphabetically within the sections.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-11-25">November 25, 2017</time></p>
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="https://www.openpgp.org/software/" class="pagination--pager" title="Email Encryption
+">Previous</a>
+    
+    
+      <a href="https://www.openpgp.org/software/developer/" class="pagination--pager" title="Developer Libraries/Tools
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+    
+      <li><i class="fa fa-fw fa-github" aria-hidden="true"></i> This site is organized in the open on GitHub. <a href="https://github.com/OpenPGP/openpgp.org">Suggest changes.</a></li>
+    
+    
+    <li><a href="https://www.openpgp.org/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">Powered by <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="Server%20-%20OpenPGP_files/main.js"></script>
+
+
+
+
+
+  
+
+
+</body></html>

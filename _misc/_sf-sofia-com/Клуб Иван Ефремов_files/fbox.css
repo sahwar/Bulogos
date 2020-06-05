@@ -1,0 +1,118 @@
+/* images are blocky under internet explorer when downsized 
+I must apply a global rule, otherwise behavior is random 
+*/
+img{
+	-ms-interpolation-mode:bicubic;
+}
+
+span.frontbox {
+  display:none;
+}
+
+/* by default for all elements defined by the script :*/
+#fbox_bg, #fbox_progress, #fbox_fg, #fbox_content, #fbox_spacer, #fbox_bar, #fbox_title, #fbox_sys, #fbox_content_img, #fbox_content_iframe {
+   	margin:0px;
+  	padding:0px;
+    border-width:0px;   
+}
+
+/* for strict mode */
+#fbox_content_img, #fbox_content_iframe {
+  display:block;
+}
+
+/* now working with absolute positionned elements */
+
+#fbox_bg, #fbox_progress, #fbox_fg {
+   position: absolute;
+   top: 0px;
+   left: 0px;	 
+}
+
+#fbox_bg{
+	z-index:998;		
+	background-color: #000000;	
+}
+
+#fbox_progress {	
+	z-index:999;
+}
+
+#fbox_fg {
+	z-index:1000;
+	background-color:#999999;
+	padding:5px;	
+	border:solid #000000 1px;
+}
+
+/* non positionned elements */
+
+#fbox_fg_inner {
+   background-color:#FFFFFF;
+  
+}
+
+#fbox_content {
+ 	padding:3px;
+}
+
+#fbox_spacer {
+height:3px;
+overflow:hidden; 
+background-image:url(spacer.gif);
+font-size:8px; /* ie5 bug */
+}
+
+#fbox_bar td{
+	padding:3px 8px; /*v,h*/
+	color:black; 
+	font-size: 12px;
+	font-weight:normal;
+  line-height: 1.45;     
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#fbox_sys, #fbox_navig {
+white-space:nowrap;
+}
+
+#fbox_sys {
+ float:right;
+}
+
+#fbox_title {
+ float:left; 
+ background-color:whitesmoke;
+ text-align:justify;
+}
+
+a#fbox_resize_a:link, a#fbox_resize_a:hover, a#fbox_resize_a:visited {
+  text-decoration: none;
+  color:#999999;
+  font-weight: bold;  
+}
+
+a#fbox_close_a:link, a#fbox_close_a:hover, a#fbox_close_a:visited {
+  text-decoration: none;
+  color:#999999;
+  font-weight: bold;  
+}
+
+#fbox_navig {
+ margin-top:3px;
+ clear:left;
+ float:left; 
+}
+
+a#fbox_prev_a:link, a#fbox_prev_a:hover, a#fbox_prev_a:visited {
+  text-decoration: none;
+  color:#999999;
+  font-weight: bold;  
+}
+
+a#fbox_next_a:link, a#fbox_next_a:hover, a#fbox_next_a:visited {
+  text-decoration: none;
+  color:#999999;
+  font-weight: bold;  
+}
+

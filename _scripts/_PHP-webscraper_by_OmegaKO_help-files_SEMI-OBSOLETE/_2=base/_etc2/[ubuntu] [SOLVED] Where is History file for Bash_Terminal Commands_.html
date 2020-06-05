@@ -1,0 +1,3347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="http://ubuntuforums.org" />
+<base href="http://ubuntuforums.org/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin 4.2.2" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+	
+		<script type="text/javascript" src="http://yui.yahooapis.com/combo?2.9.0/build/yuiloader-dom-event/yuiloader-dom-event.js&amp;2.9.0/build/connection/connection-min.js"></script>
+	
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'http://yui.yahooapis.com/2.9.0/build';
+		var yuicombopath = 'http://yui.yahooapis.com/combo';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="http://yui.yahooapis.com/2.9.0/build/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=c8696bfb85e5eba13d82ad2812efe155&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/ubuntu-VB4/misc";
+	var IMGDIR_BUTTON = "images/ubuntu-VB4/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "http://ubuntuforums.org";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=791059";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+	var AJAXBASEURL = "http://ubuntuforums.org/";
+// -->
+</script>
+<script type="text/javascript" src="http://ubuntuforums.org/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="Ubuntu Forums RSS Feed" href="http://ubuntuforums.org/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="Ubuntu Forums - General Help - RSS Feed" href="http://ubuntuforums.org/external.php?type=RSS2&amp;forumids=331" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="css.php?styleid=117&amp;langid=3&amp;d=1421696694&amp;td=ltr&amp;sheet=bbcode.css,editor.css,popupmenu.css,reset-fonts.css,vbulletin.css,vbulletin-chrome.css,vbulletin-formcontrols.css," />
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="css.php?styleid=117&amp;langid=3&amp;d=1421696694&amp;td=ltr&amp;sheet=popupmenu-ie.css,vbulletin-ie.css,vbulletin-chrome-ie.css,vbulletin-formcontrols-ie.css,editor-ie.css" />
+	<![endif]-->
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic|Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
+	
+	<meta name="description" content="I use my up and down arrows a lot in the terminal, recalling previous commands so I don't have to type them, or find them in my text file of useful commands and copy/paste them. Obviously there is a history file somewhere, so can someone enlighten me as to where it is? I could then remove commands I'll never use again, and in theory should be able to create a backup with only my most-used commands and restore over the current one when need be. Cheers" />
+
+	<title>[ubuntu] [SOLVED] Where is History file for Bash/Terminal Commands?</title>
+	<link rel="canonical" href="showthread.php?t=791059&s=c8696bfb85e5eba13d82ad2812efe155" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="css.php?styleid=117&amp;langid=3&amp;d=1421696694&amp;td=ltr&amp;sheet=toolsmenu.css,postlist.css,showthread.css,postbit.css,options.css,attachment.css,poll.css,lightbox.css" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="css.php?styleid=117&amp;langid=3&amp;d=1421696694&amp;td=ltr&amp;sheet=toolsmenu-ie.css,postlist-ie.css,showthread-ie.css,postbit-ie.css,poll-ie.css" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="css.php?styleid=117&amp;langid=3&amp;d=1421696694&amp;td=ltr&amp;sheet=additional.css" />
+
+</head>
+
+<body>
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+<div id="header" class="floatcontainer doc_header">
+	<div><a name="top" href="index.php?s=c8696bfb85e5eba13d82ad2812efe155" class="logo-image"><img src="/images/ubuntu-VB4/ubuntulogo-o-small.png" alt="Ubuntu Forums" /></a></div>
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a rel="faq" href="faq.php?s=c8696bfb85e5eba13d82ad2812efe155">FAQ</a></li>
+                <li>
+                    <!-- OpenID Login Button -->
+<form class="logindetails" action="login.php" method="post">
+<input type="hidden" name="do" value="login" />
+<input type="hidden" name="openid" value="https://login.ubuntu.com" />
+<input type="submit" class="loginbutton" value="Login with SSO" /><br />
+</form>
+<!-- / OpenID Login Button -->
+                </li>
+
+				
+			</ul>
+		
+	</div>
+	<div class="ad_global_header">
+		
+		
+	</div>
+	<hr />
+</div>
+<div id="navbar" class="navbar">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=c8696bfb85e5eba13d82ad2812efe155">Forum</a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">Quick Links</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_mje2_914"><a target="_blank" href="search.php?do=process&type[]=1&replyless=1&replylimit=0">Unanswered Posts</a></li>
+								
+									<li id="link_mjm0_271"><a href="search.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=getnew&contenttype=vBForum_Post">New Posts</a></li>
+								
+									<li id="link_odiw_103"><a href="http://ubuntuforums.org/showgroups.php">View Forum Leaders</a></li>
+								
+									<li id="link_mdy0_388"><a href="http://ubuntuforums.org/faq.php">FAQ</a></li>
+								
+									<li id="link_nzqx_135"><a href="http://ubuntuforums.org/faq.php?faq=vb3_reading_posting#faq_vb3_contact_admin">Contact an Admin</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_mja2_174">
+							<a href="javascript://" class="popupctrl">Forum Community</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_mja2_178"><a target="_blank" href="https://wiki.ubuntu.com/ForumCouncil">Forum Council</a></li>
+								
+									<li id="link_mja2_759"><a target="_blank" href="https://wiki.ubuntu.com/ForumCouncilAgenda"><span> FC Agenda</span></a></li>
+								
+									<li id="link_mja2_602"><a target="_blank" href="https://wiki.ubuntu.com/ForumsGovernance">Forum Governance</a></li>
+								
+									<li id="link_ntk3_139"><a href="http://ubuntuforums.org/showgroups.php/">Forum Staff</a></li>
+								
+									<li id="link_mja2_802"><a href="http://ubuntuforums.org/misc.php?do=showrules">Ubuntu Forums Code of Conduct</a></li>
+								
+									<li id="link_mja2_447"><a target="_blank" href="http://webchat.freenode.net/?channels=ubuntuforums">Forum IRC Channel</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_mja2_686">
+							<a href="javascript://" class="popupctrl">Ubuntu Community</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_mja2_167"><a target="_blank" href="http://community.ubuntu.com/">Ubuntu</a></li>
+								
+									<li id="link_mja2_232"><a target="_blank" href="http://www.ubuntu.com/download/desktop">Get <b style="color: #dd4814">Ubuntu</b></a></li>
+								
+									<li id="link_mja2_426"><a target="_blank" href="http://www.kubuntu.org/getkubuntu">Get <b style="color:#10147e">Kubuntu</b></a></li>
+								
+									<li id="link_mja2_138"><a target="_blank" href="http://xubuntu.org/getxubuntu/">Get <b style="color: #04a">Xubuntu</b></a></li>
+								
+									<li id="link_mja2_351"><a target="_blank" href="https://help.ubuntu.com/community/Lubuntu/GetLubuntu">Get <b style="color: #033C71">Lubuntu</b></a></li>
+								
+									<li id="link_nzmw_867"><a target="_blank" href="http://ubuntustudio.org/download/">Get <b style="color:#116286">UbuntuStudio</b></a></li>
+								
+									<li id="link_nzmw_456"><a target="_blank" href="http://www.mythbuntu.org/download-type">Get <b style="color: #dd4814">Mythbuntu</b></a></li>
+								
+									<li id="link_nzmw_464"><a target="_blank" href="http://www.edubuntu.org/download">Get <b style="color: #a30b00">Edubuntu</b></a></li>
+								
+									<li id="link_nzmw_559"><a target="_blank" href="http://ubuntugnome.org/download/">Get <b style="color: #dd4814">Ubuntu-GNOME</b></a></li>
+								
+									<li id="link_nzmw_633"><a target="_blank" href="http://www.ubuntukylin.com/downloads/show.php?lang=en&id=122">Get <b style="color: #dd4814">UbuntuKylin</b></a></li>
+								
+									<li id="link_mja2_877"><a target="_blank" href="http://www.ubuntu.com/project/about-ubuntu/conduct">Ubuntu Code of Conduct</a></li>
+								
+									<li id="link_mja2_199"><a target="_blank" href="https://wiki.ubuntu.com/">Ubuntu Wiki</a></li>
+								
+									<li id="link_mja2_891"><a target="_blank" href="https://help.ubuntu.com/community/">Community Wiki</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_mja2_593">
+							<a href="javascript://" class="popupctrl">Other Support</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_mja2_994"><a target="_blank" href="https://answers.launchpad.net/">Launchpad Answers</a></li>
+								
+									<li id="link_mja2_430"><a target="_blank" href="http://webchat.freenode.net/?channels=ubuntu">Ubuntu IRC Support</a></li>
+								
+									<li id="link_mja2_646"><a target="_blank" href="http://askubuntu.com">AskUbuntu</a></li>
+								
+									<li id="link_mja2_817"><a target="_blank" href="https://help.ubuntu.com">Official Documentation</a></li>
+								
+									<li id="link_mja2_745"><a target="_blank" href="https://help.ubuntu.com/community">User Documentation</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_mtaz_185">
+							<a href="javascript://" class="popupctrl">Social Media</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_mtaz_522"><a target="_blank" href="https://www.facebook.com/ubuntu.forums.official">Facebook</a></li>
+								
+									<li id="link_mtaz_149"><a target="_blank" href="https://twitter.com/ubuntuforums">Twitter</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_ode5_930">
+							<a href="javascript://" class="popupctrl">Useful Links</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_ode5_240"><a target="_blank" href="http://distrowatch.com/table.php?distribution=ubuntu">Distrowatch</a></li>
+								
+									<li id="link_ode5_738"><a target="_blank" href="https://bugs.launchpad.net/ubuntu/">Bugs: Ubuntu</a></li>
+								
+									<li id="link_ode5_821"><a target="_blank" href="https://launchpad.net/ubuntu/+ppas">PPAs: Ubuntu</a></li>
+								
+									<li id="link_ode5_923"><a target="_blank" href="http://www.webupd8.org/">Web Upd8: Ubuntu</a></li>
+								
+									<li id="link_ode5_916"><a target="_blank" href="http://www.omgubuntu.co.uk/">OMG! Ubuntu</a></li>
+								
+									<li id="link_ode5_248"><a target="_blank" href="https://insights.ubuntu.com/">Ubuntu Insights</a></li>
+								
+									<li id="link_ode5_244"><a target="_blank" href="http://planet.ubuntu.com/">Planet Ubuntu</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+					
+				
+			</ul>
+		
+
+	
+		<li  id="vbtab_whatsnew">
+			<a class="navtab" href="activity.php?s=c8696bfb85e5eba13d82ad2812efe155">Activity Page</a>
+		</li>
+		
+		
+
+	
+		<li  id="tab_nti4_938">
+			<a target="_blank" class="navtab" href="http://ubuntuforums.org/showthread.php?t=2230004">Please read before SSO login</a>
+		</li>
+		
+		
+
+		
+	</ul>
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<span class="textboxcontainer"><span><input type="text" value="" name="query" class="textbox" tabindex="99"/></span></span>
+				<span class="buttoncontainer"><span><input type="image" class="searchbutton" src="images/ubuntu-VB4/buttons/search.png" name="submit" onclick="document.getElementById('navbar_search').submit;" tabindex="100"/></span></span>
+			</form>
+			<ul class="navbar_advanced_search">
+				<li><a href="search.php?s=c8696bfb85e5eba13d82ad2812efe155?search_type=1" accesskey="4">Advanced Search</a></li>
+				
+			</ul>
+		</div>
+	
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=c8696bfb85e5eba13d82ad2812efe155" accesskey="1"><img src="images/ubuntu-VB4/misc/navbit-home.png" alt="Home" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=c8696bfb85e5eba13d82ad2812efe155">Forum</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=130&amp;s=c8696bfb85e5eba13d82ad2812efe155">The Ubuntu Forum Community</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=327&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Official Flavours Support</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=331&amp;s=c8696bfb85e5eba13d82ad2812efe155">General Help</a></li>
+
+		
+	<li class="navbit lastnavbit"><span><span style="font-weight: bold; color: #980101;">[ubuntu]</span> [SOLVED] Where is History file for Bash/Terminal Commands?</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+
+
+
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				Results 1 to 10 of 10
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			Thread: <span class="threadtitle"><a href="showthread.php?t=791059&s=c8696bfb85e5eba13d82ad2812efe155" title="Reload this Page">[SOLVED] Where is History file for Bash/Terminal Commands?</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=&amp;xfbml=1"></script>
+
+<fb:like href="http://ubuntuforums.org/showthread.php?t=791059" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">Thread Tools</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;t=791059&amp;pp=10&amp;page=1" accesskey="3" rel="nofollow">Show Printable Version</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=addsubscription&amp;t=791059" rel="nofollow">Subscribe to this Thread&hellip;</a>
+						
+					</li>
+					
+
+						
+					
+				</ul>
+			</li>
+
+			
+
+			
+
+			
+
+			
+				<li class="popupmenu" id="displaymodes">
+					<h6><a class="popupctrl" href="javascript://">Display</a></h6>
+					<ul class="popupbody popuphover">
+						<li><label>Linear Mode</label></li>
+						<li><a href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;mode=hybrid"> Switch to Hybrid Mode</a></li>
+						<li><a href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4937841&amp;mode=threaded#post4937841"> Switch to Threaded Mode</a></li>
+					</ul>
+				</li>
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_4937841">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">May 12th, 2008</span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post4937841" href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4937841#post4937841" class="postcounter">#1</a><a id="postcount4937841" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo">
+			<div class="contact">
+				
+					<a class="postuseravatarlink" href="member.php?u=200910&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="OzzyFrank is offline">
+						
+							<img src="customavatars/avatar200910_2.gif" alt="OzzyFrank's Avatar" />
+						
+					</a>
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=200910&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="OzzyFrank is offline"><strong><span style="color: #000000;">OzzyFrank</span></strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=200910&amp;s=c8696bfb85e5eba13d82ad2812efe155" class="siteicon_profile">
+				View Profile
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=finduser&amp;userid=200910&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				View Forum Posts
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="private.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=newpm&amp;u=200910" class="siteicon_message" rel="nofollow">
+				Private Message
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		<li class="left">
+			<a href="http://ubuntugenius.wordpress.com/" class="siteicon_homepage">
+				Visit Homepage
+			</a>
+		</li>
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/ubuntu-VB4/statusicon/user-offline.png" alt="OzzyFrank is offline" border="0" />
+
+					
+					<span class="usertitle">
+						Grande Half-n-Half Cinnamon Ubuntu
+					</span>
+					
+						<span class="rank"><img src="images/rank_8.png" alt="" border="" /></span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>Join Date</dt> <dd>Nov 2006</dd>
+						<dt>Location</dt> <dd>Melbourne (Victoria, OZ)</dd>
+						
+						<!-- <dt>Beans</dt> <dd>914</dd>	 -->
+<dt>Beans</dt> <dd>914</dd>
+
+                                                 <dt>Distro</dt><dd>Ubuntu 13.10 Saucy Salamander</dd>
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			[SOLVED] Where is History file for Bash/Terminal Commands?
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_4937841">
+				<blockquote class="postcontent restore">
+					I use my up and down arrows a lot in the terminal, recalling previous commands so I don't have to type them, or find them in my text file of useful commands and copy/paste them. Obviously there is a history file somewhere, so can someone enlighten me as to where it is? I could then remove commands I'll never use again, and in theory should be able to create a backup with only my most-used commands and restore over the current one when need be. Cheers
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+			
+				
+			
+				
+			
+			
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_4937841" src="images/ubuntu-VB4/misc/progress.gif" alt="" />
+				
+				
+<!-- added advance reply -->
+                    
+                        <a class='quickreply' href="newreply.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4937841&amp;noquote=1" rel="nofollow"><img id="replyimg_4937841" src="clear.gif" alt="Advanced reply" /> Adv Reply</a>
+                        <span class="seperator">&nbsp;</span>
+                    
+<!-- end added advance reply -->
+<!-- the next id was qrwq_4937841 -->
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_4937853">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">May 12th, 2008</span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post4937853" href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4937853#post4937853" class="postcounter">#2</a><a id="postcount4937853" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo">
+			<div class="contact">
+				
+					<a class="postuseravatarlink" href="member.php?u=420496&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="amingv is offline">
+						
+							<img src="customavatars/avatar420496_12.gif" alt="amingv's Avatar" />
+						
+					</a>
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=420496&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="amingv is offline"><strong><span style="color: #000000;">amingv</span></strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=420496&amp;s=c8696bfb85e5eba13d82ad2812efe155" class="siteicon_profile">
+				View Profile
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=finduser&amp;userid=420496&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				View Forum Posts
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="private.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=newpm&amp;u=420496" class="siteicon_message" rel="nofollow">
+				Private Message
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/ubuntu-VB4/statusicon/user-offline.png" alt="amingv is offline" border="0" />
+
+					
+					<span class="usertitle">
+						Skinny Soy Caramel Ubuntu
+					</span>
+					
+						<span class="rank"><img src="images/rank_21.png" alt="" border="" /></span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>Join Date</dt> <dd>Nov 2007</dd>
+						
+						
+						<!-- <dt>Beans</dt> <dd>647</dd>	 -->
+<dt>Beans</dt><dd>Hidden!<dd>
+
+
+                                                 <dt>Distro</dt><dd>Kubuntu</dd>
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			Re: Where is History file for Bash/Terminal Commands?
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_4937853">
+				<blockquote class="postcontent restore">
+					~/.bash_history<br />
+Pretty straightforward <img src="http://ubuntuforums.org/images/smilies/icon_smile.gif" border="0" alt="" title="Smile" class="inlineimg" />.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+			
+				
+			
+			
+				<blockquote class="signature restore"><div class="signaturecontainer">Wish I could prove I love you, but does that mean I have to walk on water?<br />
+When we are older you'll understand it's enough when I say so, and maybe some things are that simple.</div></blockquote>
+			
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_4937853" src="images/ubuntu-VB4/misc/progress.gif" alt="" />
+				
+				
+<!-- added advance reply -->
+                    
+                        <a class='quickreply' href="newreply.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4937853&amp;noquote=1" rel="nofollow"><img id="replyimg_4937853" src="clear.gif" alt="Advanced reply" /> Adv Reply</a>
+                        <span class="seperator">&nbsp;</span>
+                    
+<!-- end added advance reply -->
+<!-- the next id was qrwq_4937853 -->
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_4937859">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">May 12th, 2008</span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post4937859" href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4937859#post4937859" class="postcounter">#3</a><a id="postcount4937859" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo">
+			<div class="contact">
+				
+					<a class="postuseravatarlink" href="member.php?u=558830&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="Monicker is offline">
+						
+							<img src="customavatars/avatar558830_6.gif" alt="Monicker's Avatar" />
+						
+					</a>
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=558830&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="Monicker is offline"><strong><span style="color: #000000;">Monicker</span></strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=558830&amp;s=c8696bfb85e5eba13d82ad2812efe155" class="siteicon_profile">
+				View Profile
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=finduser&amp;userid=558830&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				View Forum Posts
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="private.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=newpm&amp;u=558830" class="siteicon_message" rel="nofollow">
+				Private Message
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/ubuntu-VB4/statusicon/user-offline.png" alt="Monicker is offline" border="0" />
+
+					
+					<span class="usertitle">
+						Chocolate-Covered Ubuntu Beans
+					</span>
+					
+						<span class="rank"><img src="images/rank_20.png" alt="" border="" /></span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>Join Date</dt> <dd>Apr 2008</dd>
+						<dt>Location</dt> <dd>Phoenix, AZ</dd>
+						
+						<!-- <dt>Beans</dt> <dd>1,393</dd>	 -->
+<dt>Beans</dt> <dd>1,393</dd>
+
+                                                 <dt>Distro</dt><dd>Ubuntu 10.10 Maverick Meerkat</dd>
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			Re: Where is History file for Bash/Terminal Commands?
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_4937859">
+				<blockquote class="postcontent restore">
+					/home/username/.bash_history
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+			
+				
+			
+			
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_4937859" src="images/ubuntu-VB4/misc/progress.gif" alt="" />
+				
+				
+<!-- added advance reply -->
+                    
+                        <a class='quickreply' href="newreply.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4937859&amp;noquote=1" rel="nofollow"><img id="replyimg_4937859" src="clear.gif" alt="Advanced reply" /> Adv Reply</a>
+                        <span class="seperator">&nbsp;</span>
+                    
+<!-- end added advance reply -->
+<!-- the next id was qrwq_4937859 -->
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_4937935">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">May 12th, 2008</span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post4937935" href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4937935#post4937935" class="postcounter">#4</a><a id="postcount4937935" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo">
+			<div class="contact">
+				
+					<a class="postuseravatarlink" href="member.php?u=241895&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="tgalati4 is offline">
+						
+							<img src="customavatars/avatar241895_2.gif" alt="tgalati4's Avatar" />
+						
+					</a>
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=241895&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="tgalati4 is offline"><strong><span style="color: #000000;">tgalati4</span></strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=241895&amp;s=c8696bfb85e5eba13d82ad2812efe155" class="siteicon_profile">
+				View Profile
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=finduser&amp;userid=241895&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				View Forum Posts
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="private.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=newpm&amp;u=241895" class="siteicon_message" rel="nofollow">
+				Private Message
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/ubuntu-VB4/statusicon/user-offline.png" alt="tgalati4 is offline" border="0" />
+
+					
+					<span class="usertitle">
+						This space is currently for rent . .
+					</span>
+					
+						<span class="rank"><img src="images/rank_26.png" alt="" border="" /></span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>Join Date</dt> <dd>Feb 2007</dd>
+						<dt>Location</dt> <dd>West Hills  CA</dd>
+						
+						<!-- <dt>Beans</dt> <dd>9,775</dd>	 -->
+<dt>Beans</dt> <dd>9,775</dd>
+
+                                                 <dt>Distro</dt><dd>Ubuntu 14.04 Trusty Tahr</dd>
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			Re: Where is History file for Bash/Terminal Commands?
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_4937935">
+				<blockquote class="postcontent restore">
+					There is a utility (I can't remember it's exact name, but you can search in the forums for &quot;top ten&quot; commands) that sorts/counts your history file and prints out your top-ten list.  It's helpful to cut-and-paste this list over time to a stickie for reference.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+			
+				
+			
+			
+				<blockquote class="signature restore"><div class="signaturecontainer">-------------------------------------<br />
+Oooh Shiny: <a href="https://help.ubuntu.com/community/PopularPages" target="_blank"> PopularPages</a><br />
+<br />
+Unumquodque potest reparantur. Patientia sit virtus.</div></blockquote>
+			
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_4937935" src="images/ubuntu-VB4/misc/progress.gif" alt="" />
+				
+				
+<!-- added advance reply -->
+                    
+                        <a class='quickreply' href="newreply.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4937935&amp;noquote=1" rel="nofollow"><img id="replyimg_4937935" src="clear.gif" alt="Advanced reply" /> Adv Reply</a>
+                        <span class="seperator">&nbsp;</span>
+                    
+<!-- end added advance reply -->
+<!-- the next id was qrwq_4937935 -->
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_4938100">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">May 12th, 2008</span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post4938100" href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4938100#post4938100" class="postcounter">#5</a><a id="postcount4938100" name="5"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo">
+			<div class="contact">
+				
+					<a class="postuseravatarlink" href="member.php?u=200910&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="OzzyFrank is offline">
+						
+							<img src="customavatars/avatar200910_2.gif" alt="OzzyFrank's Avatar" />
+						
+					</a>
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=200910&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="OzzyFrank is offline"><strong><span style="color: #000000;">OzzyFrank</span></strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=200910&amp;s=c8696bfb85e5eba13d82ad2812efe155" class="siteicon_profile">
+				View Profile
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=finduser&amp;userid=200910&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				View Forum Posts
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="private.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=newpm&amp;u=200910" class="siteicon_message" rel="nofollow">
+				Private Message
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		<li class="left">
+			<a href="http://ubuntugenius.wordpress.com/" class="siteicon_homepage">
+				Visit Homepage
+			</a>
+		</li>
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/ubuntu-VB4/statusicon/user-offline.png" alt="OzzyFrank is offline" border="0" />
+
+					
+					<span class="usertitle">
+						Grande Half-n-Half Cinnamon Ubuntu
+					</span>
+					
+						<span class="rank"><img src="images/rank_8.png" alt="" border="" /></span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>Join Date</dt> <dd>Nov 2006</dd>
+						<dt>Location</dt> <dd>Melbourne (Victoria, OZ)</dd>
+						
+						<!-- <dt>Beans</dt> <dd>914</dd>	 -->
+<dt>Beans</dt> <dd>914</dd>
+
+                                                 <dt>Distro</dt><dd>Ubuntu 13.10 Saucy Salamander</dd>
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			Re: Where is History file for Bash/Terminal Commands?
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_4938100">
+				<blockquote class="postcontent restore">
+					Cool. Never noticed that hidden file before. Now I'll just have to figure out how to write a little script that will replace that with a backup copy. Cheers
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+			
+				
+			
+			
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_4938100" src="images/ubuntu-VB4/misc/progress.gif" alt="" />
+				
+				
+<!-- added advance reply -->
+                    
+                        <a class='quickreply' href="newreply.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4938100&amp;noquote=1" rel="nofollow"><img id="replyimg_4938100" src="clear.gif" alt="Advanced reply" /> Adv Reply</a>
+                        <span class="seperator">&nbsp;</span>
+                    
+<!-- end added advance reply -->
+<!-- the next id was qrwq_4938100 -->
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_4938113">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">May 12th, 2008</span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post4938113" href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4938113#post4938113" class="postcounter">#6</a><a id="postcount4938113" name="6"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo">
+			<div class="contact">
+				
+					<a class="postuseravatarlink" href="member.php?u=322576&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="jw5801 is offline">
+						
+							<img src="customavatars/avatar322576_2.gif" alt="jw5801's Avatar" />
+						
+					</a>
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=322576&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="jw5801 is offline"><strong><span style="color: #000000;">jw5801</span></strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=322576&amp;s=c8696bfb85e5eba13d82ad2812efe155" class="siteicon_profile">
+				View Profile
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=finduser&amp;userid=322576&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				View Forum Posts
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="private.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=newpm&amp;u=322576" class="siteicon_message" rel="nofollow">
+				Private Message
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/ubuntu-VB4/statusicon/user-offline.png" alt="jw5801 is offline" border="0" />
+
+					
+					<span class="usertitle">
+						May the Ubuntu Be With You!
+					</span>
+					
+						<span class="rank"><img src="images/rank_17.png" alt="" border="" /></span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>Join Date</dt> <dd>Jun 2007</dd>
+						<dt>Location</dt> <dd>Melbourne, Australia</dd>
+						
+						<!-- <dt>Beans</dt> <dd>1,171</dd>	 -->
+<dt>Beans</dt> <dd>1,171</dd>
+
+                                                 
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			Re: Where is History file for Bash/Terminal Commands?
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_4938113">
+				<blockquote class="postcontent restore">
+					Also, for a neat trick to search your bash history press ctrl+r then type the start of the command you're looking for.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+			
+				
+			
+			
+				<blockquote class="signature restore"><div class="signaturecontainer">|  <a href="http://ubuntuforums.org/showpost.php?p=5490091&amp;postcount=43" target="_blank"><font color="Green">How to use [CODE] tags</font></a>  |-| <a href="http://gparted.sourceforge.net/livecd.php" target="_blank"><font color="Orange">GParted LiveCD</font></a>  |-|  <a href="https://wiki.ubuntu.com/UnansweredPostsTeam/SolvedThreads" target="_blank"><font color="cyan">Mark threads as &quot;SOLVED&quot;</font></a>  |-|  <a href="http://ubuntuforums.org/showthread.php?t=760568" target="_blank"><font color="Red">Broadcom 4311 with ndiswrapper</font></a>  |</div></blockquote>
+			
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_4938113" src="images/ubuntu-VB4/misc/progress.gif" alt="" />
+				
+				
+<!-- added advance reply -->
+                    
+                        <a class='quickreply' href="newreply.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4938113&amp;noquote=1" rel="nofollow"><img id="replyimg_4938113" src="clear.gif" alt="Advanced reply" /> Adv Reply</a>
+                        <span class="seperator">&nbsp;</span>
+                    
+<!-- end added advance reply -->
+<!-- the next id was qrwq_4938113 -->
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_4938821">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">May 12th, 2008</span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post4938821" href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4938821#post4938821" class="postcounter">#7</a><a id="postcount4938821" name="7"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo">
+			<div class="contact">
+				
+					<a class="postuseravatarlink" href="member.php?u=207425&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="russo.mic is offline">
+						
+							<img src="customavatars/avatar207425_2.gif" alt="russo.mic's Avatar" />
+						
+					</a>
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=207425&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="russo.mic is offline"><strong><span style="color: #000000;">russo.mic</span></strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=207425&amp;s=c8696bfb85e5eba13d82ad2812efe155" class="siteicon_profile">
+				View Profile
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=finduser&amp;userid=207425&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				View Forum Posts
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="private.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=newpm&amp;u=207425" class="siteicon_message" rel="nofollow">
+				Private Message
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/ubuntu-VB4/statusicon/user-offline.png" alt="russo.mic is offline" border="0" />
+
+					
+					<span class="usertitle">
+						Quad Shot of Ubuntu
+					</span>
+					
+						<span class="rank"><img src="images/rank_5.png" alt="" border="" /></span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>Join Date</dt> <dd>Dec 2006</dd>
+						
+						
+						<!-- <dt>Beans</dt> <dd>485</dd>	 -->
+<dt>Beans</dt> <dd>485</dd>
+
+                                                 <dt>Distro</dt><dd>Hardy Heron (Ubuntu Development)</dd>
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			Re: [SOLVED] Where is History file for Bash/Terminal Commands?
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_4938821">
+				<blockquote class="postcontent restore">
+					Wow, what an awesome trick.  I'm very glad I stumbled onto this thread.<br />
+<br />
+Russo
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+			
+				
+			
+			
+				<blockquote class="signature restore"><div class="signaturecontainer">Macbook Pro C2D <br />
+Ubuntu 8.04</div></blockquote>
+			
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_4938821" src="images/ubuntu-VB4/misc/progress.gif" alt="" />
+				
+				
+<!-- added advance reply -->
+                    
+                        <a class='quickreply' href="newreply.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4938821&amp;noquote=1" rel="nofollow"><img id="replyimg_4938821" src="clear.gif" alt="Advanced reply" /> Adv Reply</a>
+                        <span class="seperator">&nbsp;</span>
+                    
+<!-- end added advance reply -->
+<!-- the next id was qrwq_4938821 -->
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_4939366">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">May 12th, 2008</span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post4939366" href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4939366#post4939366" class="postcounter">#8</a><a id="postcount4939366" name="8"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo">
+			<div class="contact">
+				
+					<a class="postuseravatarlink" href="member.php?u=322576&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="jw5801 is offline">
+						
+							<img src="customavatars/avatar322576_2.gif" alt="jw5801's Avatar" />
+						
+					</a>
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=322576&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="jw5801 is offline"><strong><span style="color: #000000;">jw5801</span></strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=322576&amp;s=c8696bfb85e5eba13d82ad2812efe155" class="siteicon_profile">
+				View Profile
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=finduser&amp;userid=322576&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				View Forum Posts
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="private.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=newpm&amp;u=322576" class="siteicon_message" rel="nofollow">
+				Private Message
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/ubuntu-VB4/statusicon/user-offline.png" alt="jw5801 is offline" border="0" />
+
+					
+					<span class="usertitle">
+						May the Ubuntu Be With You!
+					</span>
+					
+						<span class="rank"><img src="images/rank_17.png" alt="" border="" /></span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>Join Date</dt> <dd>Jun 2007</dd>
+						<dt>Location</dt> <dd>Melbourne, Australia</dd>
+						
+						<!-- <dt>Beans</dt> <dd>1,171</dd>	 -->
+<dt>Beans</dt> <dd>1,171</dd>
+
+                                                 
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			Re: [SOLVED] Where is History file for Bash/Terminal Commands?
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_4939366">
+				<blockquote class="postcontent restore">
+					There's a thread full of them!<br />
+<br />
+<a href="http://ubuntuforums.org/showthread.php?t=204382" target="_blank">http://ubuntuforums.org/showthread.php?t=204382</a>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+			
+				
+			
+			
+				<blockquote class="signature restore"><div class="signaturecontainer">|  <a href="http://ubuntuforums.org/showpost.php?p=5490091&amp;postcount=43" target="_blank"><font color="Green">How to use [CODE] tags</font></a>  |-| <a href="http://gparted.sourceforge.net/livecd.php" target="_blank"><font color="Orange">GParted LiveCD</font></a>  |-|  <a href="https://wiki.ubuntu.com/UnansweredPostsTeam/SolvedThreads" target="_blank"><font color="cyan">Mark threads as &quot;SOLVED&quot;</font></a>  |-|  <a href="http://ubuntuforums.org/showthread.php?t=760568" target="_blank"><font color="Red">Broadcom 4311 with ndiswrapper</font></a>  |</div></blockquote>
+			
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_4939366" src="images/ubuntu-VB4/misc/progress.gif" alt="" />
+				
+				
+<!-- added advance reply -->
+                    
+                        <a class='quickreply' href="newreply.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;p=4939366&amp;noquote=1" rel="nofollow"><img id="replyimg_4939366" src="clear.gif" alt="Advanced reply" /> Adv Reply</a>
+                        <span class="seperator">&nbsp;</span>
+                    
+<!-- end added advance reply -->
+<!-- the next id was qrwq_4939366 -->
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_9435314">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">June 9th, 2010</span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post9435314" href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;p=9435314#post9435314" class="postcounter">#9</a><a id="postcount9435314" name="9"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=875958&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="vlke is offline"><strong><span style="color: #000000;">vlke</span></strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=875958&amp;s=c8696bfb85e5eba13d82ad2812efe155" class="siteicon_profile">
+				View Profile
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=finduser&amp;userid=875958&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				View Forum Posts
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="private.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=newpm&amp;u=875958" class="siteicon_message" rel="nofollow">
+				Private Message
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/ubuntu-VB4/statusicon/user-offline.png" alt="vlke is offline" border="0" />
+
+					
+					<span class="usertitle">
+						Spilled the Beans
+					</span>
+					
+						<span class="rank"><img src="images/rank_1.png" alt="" border="" /></span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>Join Date</dt> <dd>Jul 2009</dd>
+						<dt>Location</dt> <dd>Columbus, OH</dd>
+						
+						<!-- <dt>Beans</dt> <dd>15</dd>	 -->
+<dt>Beans</dt> <dd>15</dd>
+
+                                                 <dt>Distro</dt><dd>Ubuntu 10.04 Lucid Lynx</dd>
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="http://ubuntuforums.org/images/icons/icon10.png" alt="Talking" /> Re: [SOLVED] Where is History file for Bash/Terminal Commands?
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_9435314">
+				<blockquote class="postcontent restore">
+					After I upgraded to new LTS I was getting worried I would have to search all forum again for &quot;tricks&quot; but now I just went into file from my previous LTS of Ubuntu and got all of commands ... VERY COOL ! I love Ubuntu more and more.<br />
+Thanks a bunch guys.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+			
+				
+			
+			
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_9435314" src="images/ubuntu-VB4/misc/progress.gif" alt="" />
+				
+				
+<!-- added advance reply -->
+                    
+                        <a class='quickreply' href="newreply.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;p=9435314&amp;noquote=1" rel="nofollow"><img id="replyimg_9435314" src="clear.gif" alt="Advanced reply" /> Adv Reply</a>
+                        <span class="seperator">&nbsp;</span>
+                    
+<!-- end added advance reply -->
+<!-- the next id was qrwq_9435314 -->
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_9439231">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">June 10th, 2010</span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post9439231" href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;p=9439231#post9439231" class="postcounter">#10</a><a id="postcount9439231" name="10"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo">
+			<div class="contact">
+				
+					<a class="postuseravatarlink" href="member.php?u=200910&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="OzzyFrank is offline">
+						
+							<img src="customavatars/avatar200910_2.gif" alt="OzzyFrank's Avatar" />
+						
+					</a>
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=200910&amp;s=c8696bfb85e5eba13d82ad2812efe155" title="OzzyFrank is offline"><strong><span style="color: #000000;">OzzyFrank</span></strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=200910&amp;s=c8696bfb85e5eba13d82ad2812efe155" class="siteicon_profile">
+				View Profile
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=finduser&amp;userid=200910&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				View Forum Posts
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="private.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=newpm&amp;u=200910" class="siteicon_message" rel="nofollow">
+				Private Message
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		<li class="left">
+			<a href="http://ubuntugenius.wordpress.com/" class="siteicon_homepage">
+				Visit Homepage
+			</a>
+		</li>
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/ubuntu-VB4/statusicon/user-offline.png" alt="OzzyFrank is offline" border="0" />
+
+					
+					<span class="usertitle">
+						Grande Half-n-Half Cinnamon Ubuntu
+					</span>
+					
+						<span class="rank"><img src="images/rank_8.png" alt="" border="" /></span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>Join Date</dt> <dd>Nov 2006</dd>
+						<dt>Location</dt> <dd>Melbourne (Victoria, OZ)</dd>
+						
+						<!-- <dt>Beans</dt> <dd>914</dd>	 -->
+<dt>Beans</dt> <dd>914</dd>
+
+                                                 <dt>Distro</dt><dd>Ubuntu 13.10 Saucy Salamander</dd>
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			Re: [SOLVED] Where is History file for Bash/Terminal Commands?
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_9439231">
+				<blockquote class="postcontent restore">
+					Don't forget you can make &quot;<b><font color="Purple">aliases</font></b>&quot; to save typing long and complicated commands:<br />
+<br />
+<a href="http://ubuntugenius.wordpress.com/2009/08/31/custom-terminal-shortcuts-via-bash-aliases/" target="_blank">http://ubuntugenius.wordpress.com/20...-bash-aliases/</a>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+			
+				
+			
+			
+				<blockquote class="signature restore"><div class="signaturecontainer"><b><font color="Green">Soylent Green</font></b> is <b><u>PEOPLE</u></b>!!!<br />
+<br />
+=D&gt; <b><font color="Indigo"><a href="http://ubuntugenius.wordpress.com/first-stop-for-newbies/" target="_blank">First Stop for Ubuntu Newbies</a></font></b></div></blockquote>
+			
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_9439231" src="images/ubuntu-VB4/misc/progress.gif" alt="" />
+				
+				
+<!-- added advance reply -->
+                    
+                        <a class='quickreply' href="newreply.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;p=9439231&amp;noquote=1" rel="nofollow"><img id="replyimg_9439231" src="clear.gif" alt="Advanced reply" /> Adv Reply</a>
+                        <span class="seperator">&nbsp;</span>
+                    
+<!-- end added advance reply -->
+<!-- the next id was qrwq_9439231 -->
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">Quick Navigation</span>
+		<a href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155" class="popupctrl"><span class="ctrlcontainer">General Help</span></a>
+		<a href="showthread.php?t=791059#top" class="textcontrol" onclick="document.location.hash='top';return false;">Top</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">Site Areas</li>
+		<li><a href="usercp.php?s=c8696bfb85e5eba13d82ad2812efe155">Settings</a></li>
+		<li><a href="private.php?s=c8696bfb85e5eba13d82ad2812efe155">Private Messages</a></li>
+		<li><a href="subscription.php?s=c8696bfb85e5eba13d82ad2812efe155">Subscriptions</a></li>
+		<li><a href="online.php?s=c8696bfb85e5eba13d82ad2812efe155">Who's Online</a></li>
+		<li><a href="search.php?s=c8696bfb85e5eba13d82ad2812efe155">Search Forums</a></li>
+		<li><a href="index.php?s=c8696bfb85e5eba13d82ad2812efe155">Forums Home</a></li>
+		
+			<li class="optionlabel">Forums</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=130&amp;s=c8696bfb85e5eba13d82ad2812efe155">The Ubuntu Forum Community</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=327&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Official Flavours Support</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=326&amp;s=c8696bfb85e5eba13d82ad2812efe155">New to Ubuntu</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=331&amp;s=c8696bfb85e5eba13d82ad2812efe155">General Help</a>
+					<ol class="d3">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=408&amp;s=c8696bfb85e5eba13d82ad2812efe155">Asus Ubuntu Support (CLOSED)</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=342&amp;s=c8696bfb85e5eba13d82ad2812efe155">Dell Ubuntu Support (CLOSED)</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=367&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu One (CLOSED)</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=333&amp;s=c8696bfb85e5eba13d82ad2812efe155">Installation &amp; Upgrades</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=332&amp;s=c8696bfb85e5eba13d82ad2812efe155">Hardware</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=329&amp;s=c8696bfb85e5eba13d82ad2812efe155">Desktop Environments</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=336&amp;s=c8696bfb85e5eba13d82ad2812efe155">Networking &amp; Wireless</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=334&amp;s=c8696bfb85e5eba13d82ad2812efe155">Multimedia Software</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=335&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Studio</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=301&amp;s=c8696bfb85e5eba13d82ad2812efe155">Mythbuntu</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=125&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Specialised Support</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=460&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Phone and Tablet</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=427&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Development Version</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=338&amp;s=c8696bfb85e5eba13d82ad2812efe155">Security</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=308&amp;s=c8696bfb85e5eba13d82ad2812efe155">Virtualisation</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=441&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Servers, Cloud and Juju</a>
+					<ol class="d3">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=339&amp;s=c8696bfb85e5eba13d82ad2812efe155">Server Platforms</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=392&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Cloud and Juju</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=93&amp;s=c8696bfb85e5eba13d82ad2812efe155">Gaming &amp; Leisure</a>
+					<ol class="d3">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=413&amp;s=c8696bfb85e5eba13d82ad2812efe155">Emulators</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=313&amp;s=c8696bfb85e5eba13d82ad2812efe155">Wine</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=310&amp;s=c8696bfb85e5eba13d82ad2812efe155">Development &amp; Programming</a>
+					<ol class="d3">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=44&amp;s=c8696bfb85e5eba13d82ad2812efe155">Packaging and Compiling Programs</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=201&amp;s=c8696bfb85e5eba13d82ad2812efe155">Development CD/DVD Image Testing</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=417&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Application Development</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=307&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Dev Link Forum</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=39&amp;s=c8696bfb85e5eba13d82ad2812efe155">Programming Talk</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=41&amp;s=c8696bfb85e5eba13d82ad2812efe155">Repositories &amp; Backports</a>
+					<ol class="d4">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=47&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Backports</a>
+					<ol class="d5">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=82&amp;s=c8696bfb85e5eba13d82ad2812efe155">Bug Reports / Support</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=341&amp;s=c8696bfb85e5eba13d82ad2812efe155">System76 Support</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=328&amp;s=c8696bfb85e5eba13d82ad2812efe155">Apple Hardware Users</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=175&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Community Discussions</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=434&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu, Linux and OS Chat</a>
+					<ol class="d3">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=302&amp;s=c8696bfb85e5eba13d82ad2812efe155">Recurring Discussions</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=270&amp;s=c8696bfb85e5eba13d82ad2812efe155">Full Circle Magazine</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=c8696bfb85e5eba13d82ad2812efe155">The Cafe</a>
+					<ol class="d3">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=298&amp;s=c8696bfb85e5eba13d82ad2812efe155">Cafe Games</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=38&amp;s=c8696bfb85e5eba13d82ad2812efe155">Market</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=426&amp;s=c8696bfb85e5eba13d82ad2812efe155">Mobile Technology Discussions</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=13&amp;s=c8696bfb85e5eba13d82ad2812efe155">Announcements &amp; News</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=243&amp;s=c8696bfb85e5eba13d82ad2812efe155">Weekly Newsletter</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=404&amp;s=c8696bfb85e5eba13d82ad2812efe155">Membership Applications</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=122&amp;s=c8696bfb85e5eba13d82ad2812efe155">The Fridge Discussions</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=357&amp;s=c8696bfb85e5eba13d82ad2812efe155">Forum Council Agenda</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=48&amp;s=c8696bfb85e5eba13d82ad2812efe155">Forum Feedback &amp; Help</a>
+					<ol class="d3">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=181&amp;s=c8696bfb85e5eba13d82ad2812efe155">Request a LoCo forum</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=123&amp;s=c8696bfb85e5eba13d82ad2812efe155">Resolution Centre</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=423&amp;s=c8696bfb85e5eba13d82ad2812efe155">Other Discussion and Support</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=446&amp;s=c8696bfb85e5eba13d82ad2812efe155">Other OS Support and Projects</a>
+					<ol class="d3">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=447&amp;s=c8696bfb85e5eba13d82ad2812efe155">Other Operating Systems</a>
+					<ol class="d4">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=452&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu/Debian BASED</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=161&amp;s=c8696bfb85e5eba13d82ad2812efe155">Debian</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=453&amp;s=c8696bfb85e5eba13d82ad2812efe155">MINT</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=321&amp;s=c8696bfb85e5eba13d82ad2812efe155">Arch and derivatives</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=162&amp;s=c8696bfb85e5eba13d82ad2812efe155">Fedora/RedHat and derivatives</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=344&amp;s=c8696bfb85e5eba13d82ad2812efe155">Mandriva/Mageia</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=163&amp;s=c8696bfb85e5eba13d82ad2812efe155">Slackware and derivatives</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=164&amp;s=c8696bfb85e5eba13d82ad2812efe155">openSUSE and SUSE Linux Enterprise</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=165&amp;s=c8696bfb85e5eba13d82ad2812efe155">Mac OSX</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=457&amp;s=c8696bfb85e5eba13d82ad2812efe155">PCLinuxOS</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=166&amp;s=c8696bfb85e5eba13d82ad2812efe155">Gentoo and derivatives</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=170&amp;s=c8696bfb85e5eba13d82ad2812efe155">Windows</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=171&amp;s=c8696bfb85e5eba13d82ad2812efe155">BSD</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=401&amp;s=c8696bfb85e5eba13d82ad2812efe155">Any Other OS</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=448&amp;s=c8696bfb85e5eba13d82ad2812efe155">Other Projects</a>
+					<ol class="d4">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=168&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Christian Edition</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=251&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntuzilla</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=391&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Translations</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=145&amp;s=c8696bfb85e5eba13d82ad2812efe155">Assistive Technology &amp; Accessibility</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=16&amp;s=c8696bfb85e5eba13d82ad2812efe155">Art &amp; Design</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=169&amp;s=c8696bfb85e5eba13d82ad2812efe155">Education &amp; Science</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=428&amp;s=c8696bfb85e5eba13d82ad2812efe155">Documentation and Community Wiki Discussions</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=100&amp;s=c8696bfb85e5eba13d82ad2812efe155">Tutorials</a>
+					<ol class="d3">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=255&amp;s=c8696bfb85e5eba13d82ad2812efe155">Outdated Tutorials &amp; Tips</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=76&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu Women</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=183&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ubuntu LoCo Team Forums</a>
+					<ol class="d3">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=245&amp;s=c8696bfb85e5eba13d82ad2812efe155">Americas LoCo Teams</a>
+					<ol class="d4">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=189&amp;s=c8696bfb85e5eba13d82ad2812efe155">Argentina Team</a>
+					<ol class="d5">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=349&amp;s=c8696bfb85e5eba13d82ad2812efe155">Software</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=350&amp;s=c8696bfb85e5eba13d82ad2812efe155">Hardware</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=351&amp;s=c8696bfb85e5eba13d82ad2812efe155">Comunidad</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=209&amp;s=c8696bfb85e5eba13d82ad2812efe155">Arizona Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=208&amp;s=c8696bfb85e5eba13d82ad2812efe155">Arkansas Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=445&amp;s=c8696bfb85e5eba13d82ad2812efe155">Brazil Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=188&amp;s=c8696bfb85e5eba13d82ad2812efe155">California Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=395&amp;s=c8696bfb85e5eba13d82ad2812efe155">Canada Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=397&amp;s=c8696bfb85e5eba13d82ad2812efe155">Centroamerica Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=362&amp;s=c8696bfb85e5eba13d82ad2812efe155">Chile Team</a>
+					<ol class="d5">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=363&amp;s=c8696bfb85e5eba13d82ad2812efe155">Comunidad</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=364&amp;s=c8696bfb85e5eba13d82ad2812efe155">Hardware</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=365&amp;s=c8696bfb85e5eba13d82ad2812efe155">Software</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=366&amp;s=c8696bfb85e5eba13d82ad2812efe155">Instalación y Actualización</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=197&amp;s=c8696bfb85e5eba13d82ad2812efe155">Colombia Team - Colombia</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=210&amp;s=c8696bfb85e5eba13d82ad2812efe155">Georgia Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=247&amp;s=c8696bfb85e5eba13d82ad2812efe155">Illinois Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=213&amp;s=c8696bfb85e5eba13d82ad2812efe155">Indiana - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=203&amp;s=c8696bfb85e5eba13d82ad2812efe155">Kentucky Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=292&amp;s=c8696bfb85e5eba13d82ad2812efe155">Maine Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=282&amp;s=c8696bfb85e5eba13d82ad2812efe155">Minnesota Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=276&amp;s=c8696bfb85e5eba13d82ad2812efe155">Mississippi Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=371&amp;s=c8696bfb85e5eba13d82ad2812efe155">Nebraska Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=187&amp;s=c8696bfb85e5eba13d82ad2812efe155">New Mexico Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=212&amp;s=c8696bfb85e5eba13d82ad2812efe155">New York - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=278&amp;s=c8696bfb85e5eba13d82ad2812efe155">North Carolina Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=191&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ohio Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=286&amp;s=c8696bfb85e5eba13d82ad2812efe155">Oklahoma Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=345&amp;s=c8696bfb85e5eba13d82ad2812efe155">Oregon Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=228&amp;s=c8696bfb85e5eba13d82ad2812efe155">Pennsylvania Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=393&amp;s=c8696bfb85e5eba13d82ad2812efe155">Peru Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=379&amp;s=c8696bfb85e5eba13d82ad2812efe155">Texas Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=414&amp;s=c8696bfb85e5eba13d82ad2812efe155">Uruguay Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=184&amp;s=c8696bfb85e5eba13d82ad2812efe155">Utah Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=236&amp;s=c8696bfb85e5eba13d82ad2812efe155">Virginia Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=312&amp;s=c8696bfb85e5eba13d82ad2812efe155">West Virginia Team - US</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=389&amp;s=c8696bfb85e5eba13d82ad2812efe155">Asia and Oceania LoCo Teams</a>
+					<ol class="d4">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=399&amp;s=c8696bfb85e5eba13d82ad2812efe155">Australia Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=409&amp;s=c8696bfb85e5eba13d82ad2812efe155">Bangladesh Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=382&amp;s=c8696bfb85e5eba13d82ad2812efe155">Hong Kong Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=431&amp;s=c8696bfb85e5eba13d82ad2812efe155">Myanmar Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=303&amp;s=c8696bfb85e5eba13d82ad2812efe155">Philippine Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=433&amp;s=c8696bfb85e5eba13d82ad2812efe155">Singapore Team</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=388&amp;s=c8696bfb85e5eba13d82ad2812efe155">Europe, Middle East, and African (EMEA) LoCo Teams</a>
+					<ol class="d4">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=372&amp;s=c8696bfb85e5eba13d82ad2812efe155">Albania Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=206&amp;s=c8696bfb85e5eba13d82ad2812efe155">Catalan Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=258&amp;s=c8696bfb85e5eba13d82ad2812efe155">Egypt Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=304&amp;s=c8696bfb85e5eba13d82ad2812efe155">Georgia Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=195&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ireland Team - Ireland</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=193&amp;s=c8696bfb85e5eba13d82ad2812efe155">Kenyan Team - Kenya</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=196&amp;s=c8696bfb85e5eba13d82ad2812efe155">Kurdish Team - Kurdistan</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=272&amp;s=c8696bfb85e5eba13d82ad2812efe155">Lebanon Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=390&amp;s=c8696bfb85e5eba13d82ad2812efe155">Morocco Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=264&amp;s=c8696bfb85e5eba13d82ad2812efe155">Saudi Arabia Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=261&amp;s=c8696bfb85e5eba13d82ad2812efe155">Sudan Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=227&amp;s=c8696bfb85e5eba13d82ad2812efe155">Tunisia Team</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=204&amp;s=c8696bfb85e5eba13d82ad2812efe155">Other Forums &amp; Teams</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=458&amp;s=c8696bfb85e5eba13d82ad2812efe155">LoCo Archive</a>
+					<ol class="d4">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=396&amp;s=c8696bfb85e5eba13d82ad2812efe155">Afghanistan Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=232&amp;s=c8696bfb85e5eba13d82ad2812efe155">Alabama Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=280&amp;s=c8696bfb85e5eba13d82ad2812efe155">Alaska Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=383&amp;s=c8696bfb85e5eba13d82ad2812efe155">Algerian Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=202&amp;s=c8696bfb85e5eba13d82ad2812efe155">Andhra Pradesh Team - India</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=400&amp;s=c8696bfb85e5eba13d82ad2812efe155">Austria Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=309&amp;s=c8696bfb85e5eba13d82ad2812efe155">Bangalore Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=373&amp;s=c8696bfb85e5eba13d82ad2812efe155">Bolivia Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=291&amp;s=c8696bfb85e5eba13d82ad2812efe155">Cameroon Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=207&amp;s=c8696bfb85e5eba13d82ad2812efe155">Colorado Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=248&amp;s=c8696bfb85e5eba13d82ad2812efe155">Connecticut Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=262&amp;s=c8696bfb85e5eba13d82ad2812efe155">Costa Rica Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=347&amp;s=c8696bfb85e5eba13d82ad2812efe155">Delhi Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=290&amp;s=c8696bfb85e5eba13d82ad2812efe155">Ecuador Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=374&amp;s=c8696bfb85e5eba13d82ad2812efe155">El Salvador Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=225&amp;s=c8696bfb85e5eba13d82ad2812efe155">Florida Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=356&amp;s=c8696bfb85e5eba13d82ad2812efe155">Galician LoCo Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=314&amp;s=c8696bfb85e5eba13d82ad2812efe155">Hawaii Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=369&amp;s=c8696bfb85e5eba13d82ad2812efe155">Honduras Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=398&amp;s=c8696bfb85e5eba13d82ad2812efe155">Idaho Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=381&amp;s=c8696bfb85e5eba13d82ad2812efe155">Iowa Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=320&amp;s=c8696bfb85e5eba13d82ad2812efe155">Jordan Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=275&amp;s=c8696bfb85e5eba13d82ad2812efe155">Kansas Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=378&amp;s=c8696bfb85e5eba13d82ad2812efe155">Libya Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=288&amp;s=c8696bfb85e5eba13d82ad2812efe155">Louisiana Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=224&amp;s=c8696bfb85e5eba13d82ad2812efe155">Maryland Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=260&amp;s=c8696bfb85e5eba13d82ad2812efe155">Massachusetts Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=271&amp;s=c8696bfb85e5eba13d82ad2812efe155">Michigan Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=277&amp;s=c8696bfb85e5eba13d82ad2812efe155">Missouri Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=229&amp;s=c8696bfb85e5eba13d82ad2812efe155">Montana Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=410&amp;s=c8696bfb85e5eba13d82ad2812efe155">Namibia Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=283&amp;s=c8696bfb85e5eba13d82ad2812efe155">Nevada Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=289&amp;s=c8696bfb85e5eba13d82ad2812efe155">New Hampshire Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=185&amp;s=c8696bfb85e5eba13d82ad2812efe155">New Jersey Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=190&amp;s=c8696bfb85e5eba13d82ad2812efe155">Northeastern Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=281&amp;s=c8696bfb85e5eba13d82ad2812efe155">Panama Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=273&amp;s=c8696bfb85e5eba13d82ad2812efe155">Paraguay Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=429&amp;s=c8696bfb85e5eba13d82ad2812efe155">Qatar Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=375&amp;s=c8696bfb85e5eba13d82ad2812efe155">Quebec Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=287&amp;s=c8696bfb85e5eba13d82ad2812efe155">Rhode Island Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=250&amp;s=c8696bfb85e5eba13d82ad2812efe155">Senegal Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=311&amp;s=c8696bfb85e5eba13d82ad2812efe155">South Carolina Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=285&amp;s=c8696bfb85e5eba13d82ad2812efe155">South Dakota Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=319&amp;s=c8696bfb85e5eba13d82ad2812efe155">Switzerland Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=186&amp;s=c8696bfb85e5eba13d82ad2812efe155">Tamil Team - India</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=259&amp;s=c8696bfb85e5eba13d82ad2812efe155">Tennessee Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=386&amp;s=c8696bfb85e5eba13d82ad2812efe155">Trinidad &amp; Tobago Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=384&amp;s=c8696bfb85e5eba13d82ad2812efe155">Uganda Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=274&amp;s=c8696bfb85e5eba13d82ad2812efe155">United Kingdom Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=284&amp;s=c8696bfb85e5eba13d82ad2812efe155">US LoCo Teams</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=300&amp;s=c8696bfb85e5eba13d82ad2812efe155">Venezuela Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=360&amp;s=c8696bfb85e5eba13d82ad2812efe155">Wales Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=252&amp;s=c8696bfb85e5eba13d82ad2812efe155">Washington DC Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=380&amp;s=c8696bfb85e5eba13d82ad2812efe155">Washington State Team - US</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=263&amp;s=c8696bfb85e5eba13d82ad2812efe155">Wisconsin Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=387&amp;s=c8696bfb85e5eba13d82ad2812efe155">Yemen Team</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=194&amp;s=c8696bfb85e5eba13d82ad2812efe155">Za Team - South Africa</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=299&amp;s=c8696bfb85e5eba13d82ad2812efe155">Zimbabwe Team</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			<strong>&laquo;</strong>
+			<a href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;goto=nextoldest" rel="nofollow">Previous Thread</a>
+			|
+			<a href="showthread.php?t=791059&amp;s=c8696bfb85e5eba13d82ad2812efe155&amp;goto=nextnewest" rel="nofollow">Next Thread</a>
+			<strong>&raquo;</strong>
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+	
+	
+	
+	
+	
+	
+	<div class="options_block_container">
+		
+		<div class="options_block2">
+			<h4 class="blockhead options_correct">Bookmarks</h4>
+			<div id="social_bookmarks_list" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				<h5 class="blocksubhead">Bookmarks</h5>
+				<ul class="icon_list"><li class="smallfont">
+	
+		<a href="http://digg.com/submit?phrase=2&amp;url=http%3A%2F%2Fubuntuforums.org%2Fshowthread.php%3Ft%3D791059&amp;title=%5BSOLVED%5D+Where+is+History+file+for+Bash%2FTerminal+Commands%3F" target="socialbookmark"><img src="images/ubuntu-VB4/misc/bookmarksite_digg.gif" alt="Submit to Digg" /></a>
+	
+	<a href="http://digg.com/submit?phrase=2&amp;url=http%3A%2F%2Fubuntuforums.org%2Fshowthread.php%3Ft%3D791059&amp;title=%5BSOLVED%5D+Where+is+History+file+for+Bash%2FTerminal+Commands%3F" target="socialbookmark">Digg</a>
+</li><li class="smallfont">
+	
+		<a href="http://del.icio.us/post?url=http%3A%2F%2Fubuntuforums.org%2Fshowthread.php%3Ft%3D791059&amp;title=%5BSOLVED%5D+Where+is+History+file+for+Bash%2FTerminal+Commands%3F" target="socialbookmark"><img src="images/ubuntu-VB4/misc/bookmarksite_delicious.gif" alt="Submit to del.icio.us" /></a>
+	
+	<a href="http://del.icio.us/post?url=http%3A%2F%2Fubuntuforums.org%2Fshowthread.php%3Ft%3D791059&amp;title=%5BSOLVED%5D+Where+is+History+file+for+Bash%2FTerminal+Commands%3F" target="socialbookmark">del.icio.us</a>
+</li><li class="smallfont">
+	
+		<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fubuntuforums.org%2Fshowthread.php%3Ft%3D791059&amp;title=%5BSOLVED%5D+Where+is+History+file+for+Bash%2FTerminal+Commands%3F" target="socialbookmark"><img src="images/ubuntu-VB4/misc/bookmarksite_stumbleupon.gif" alt="Submit to StumbleUpon" /></a>
+	
+	<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fubuntuforums.org%2Fshowthread.php%3Ft%3D791059&amp;title=%5BSOLVED%5D+Where+is+History+file+for+Bash%2FTerminal+Commands%3F" target="socialbookmark">StumbleUpon</a>
+</li><li class="smallfont">
+	
+		<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Fubuntuforums.org%2Fshowthread.php%3Ft%3D791059&amp;title=%5BSOLVED%5D+Where+is+History+file+for+Bash%2FTerminal+Commands%3F" target="socialbookmark"><img src="images/ubuntu-VB4/misc/bookmarksite_google.gif" alt="Submit to Google" /></a>
+	
+	<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Fubuntuforums.org%2Fshowthread.php%3Ft%3D791059&amp;title=%5BSOLVED%5D+Where+is+History+file+for+Bash%2FTerminal+Commands%3F" target="socialbookmark">Google</a>
+</li></ul>
+			</div>
+		</div>
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=791059#top"><img src="images/ubuntu-VB4/buttons/collapse_40b.png" alt="" /></a>
+				Posting Permissions
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li>You <strong>may not</strong> post new threads</li>
+		<li>You <strong>may not</strong> post replies</li>
+		<li>You <strong>may not</strong> post attachments</li>
+		<li>You <strong>may not</strong> edit your posts</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=bbcode" target="_blank">BB code</a> is <strong>On</strong></li>
+			<li><a href="misc.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=showsmilies" target="_blank">Smilies</a> are <strong>On</strong></li>
+			<li><a href="misc.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=bbcode#imgcode" target="_blank">[IMG]</a> code is <strong>On</strong></li>
+			<li><a href="misc.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> code is <strong>Off</strong></li>
+			<li>HTML code is <strong>Off</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=c8696bfb85e5eba13d82ad2812efe155&amp;do=showrules" target="_blank">Ubuntu Forums Code of Conduct</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="Quick Style Chooser"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;Standard Styles">
+									
+					
+	<option value="117" class="" selected="selected">-- Ubuntu vB4.x</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;Mobile Styles">
+					
+					
+	<option value="118" class="" >-- Ubuntu Mobile Style</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		
+		<li><a href="http://ubuntuforums.org">Ubuntu Forums</a></li>
+		
+		
+		<li><a href="archive/index.php?s=c8696bfb85e5eba13d82ad2812efe155">Archive</a></li>
+		
+		
+		
+		<li><a href="showthread.php?t=791059#top" onclick="document.location.hash='top'; return false;">Top</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">All times are GMT +1. The time now is <span class="time">09:21 AM</span>.</div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	vBulletin  ©2000 - 2015, Jelsoft Enterprises Ltd. Ubuntu Logo, Ubuntu and Canonical © Canonical Ltd. Tango Icons © Tango Desktop Project. 
+<br>
+User contributions on this site are licensed under the  <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International License</a>. For details and our forum data attribution, retention and privacy policy, see <a href="http://ubuntuforums.org/showthread.php?t=2231107">here</a> 
+
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+ 
+
+</div>
+</body>
+</html>
