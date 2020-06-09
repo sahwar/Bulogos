@@ -1,7 +1,16 @@
-Use the latest stable version of nomacs, XnView, IrfanView, Imagine image-viewer, Mirage image-viewer, GThumb, Ristretto, GPicView, KDE image-viewers, etc.
+Use the latest stable version of nomacs (see its metadata-editing/viewing menus - cite version used), XnView (see its metadata-editing/viewing menus), IrfanView (see its metadata-editing/viewing menus), Imagine image-viewer (see its metadata-editing/viewing menus), Mirage image-viewer, GThumb, Ristretto, GPicView, KDE image-viewers, etc.
 
 * EXIF metadata
-* MPE? metadata
+* MPE?/XMP metadata
 * XnView advanced extra metadata, filesystem extras?
+* https://www.photometadata.org/META-101-metadata-Q-and-A
+* http://owl.phy.queensu.ca/~phil/exiftool/
+* http://exif.regex.info/faq.html
+* https://en.wikipedia.org/w/index.php?title=Exif&oldid=954241137
+* https://en.wikipedia.org/w/index.php?title=Extensible_Metadata_Platform&oldid=956828256 (XMP)
+* 
+* https://wiki.openstreetmap.org/wiki/Photo_mapping
+* https://www.howtogeek.com/211427/how-to-see-exactly-where-a-photo-was-taken-and-keep-your-location-private/
+* https://play.google.com/store/apps/details?id=net.xnano.android.photoexifeditor&hl=en_US
 
 https://mobile.twitter.com/bozhobg/status/1267887490238685202
