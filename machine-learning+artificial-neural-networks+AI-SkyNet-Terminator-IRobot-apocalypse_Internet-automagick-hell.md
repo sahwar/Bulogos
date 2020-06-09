@@ -23,3 +23,11 @@ DeepNet, Google DeepDream & Google make-uploaded/url-pasted-images-to-transform-
 
 
 >>> NO to TOO MUCH of Elon Musk's Neuralink R&D due to heightened extinction-risk!!! OTHERWISE IF IT SORTA SUCCEEDS => high-tech dystopia
+
+The better alternative presented by me, ve4ernik, is this:
+
+wearable IoT/AR&VR micro-computer super-computers linked to bigger sturdy durable super-computers elsewhere...
+
+Examples:
+Google Lens, the wearable on-head visor-tech computer worn by the black character in the Westworld (season 3) TV series!!!; etc.
++ _NON-MANDATORY VOLUNTARY-ONLY_ in-brain/below-skin micro-chip hooked to the Internet via satellites, like in the transhumanist TV series Intelligence (2014) & Person of Interest (2011-)...
