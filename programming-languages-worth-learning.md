@@ -22,3 +22,33 @@
 https://jaxenter.com/c-programming-may-2020-171598.html
 
 https://jaxenter.com/wp-content/uploads/2020/05/tiobemay2020.png
+
+-----
+
+От Facebook:
+
+Ха, самата мисъл, че master/slave е расистко е индикация, че човекът, който я е произвел е расист. Такъв човек си мисли, че slave/роби са само не-белите хора. Ако погледнем хилядолетната история на човечеството, ще видим, че роби са били хора от всички раси, и съответно робовладелци са били хора от всички раси.
+
+Думите определят значението си от контекста, така че master/slave не са робовладелец и роб (два сървъра бази данни - единият робовладелец, другият роб, глупост е това).
+
+---
+
+~to add to Bulogos :
+ 
+"TOP 10 MOST DREADED PROGRAMMING LANGUAGE
+10. R
+9. Java
+8. C++
+7. Ruby
+6. PHP
+5. C
+4. Assembly
+3. Perl
+2. Objective-C
+1. VBA
+
+https://www.businessinsider.com/stack-overflow-developer-survey-10-most-dreaded-programming-languages-2020-5 "
+
+https://m.facebook.com/groups/367325240399070?view=permalink&id=957013574763564
+
+https://www.facebook.com/groups/programmer.nullposting/permalink/956122101519378/
