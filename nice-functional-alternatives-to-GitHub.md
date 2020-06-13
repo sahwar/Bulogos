@@ -10,7 +10,7 @@ A short list of nice functional alternatives to http://GitHub.com (AFTER Microso
 See also:
 http://alternativeto.net/ (search for 'git')
 http://listverse.co
-http://slant.com
+http://slant.co & http://slant.com - search for 'gitea'...
 google 'open-source version control system GUI UI WebUI CLI TUI'
 `hg` (?)
 Mercurial
