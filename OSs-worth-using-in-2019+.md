@@ -14,6 +14,12 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 `cmd.exe`, PowerShell / PowerShell Core (open-source), [ConEmu](https://conemu.github.io/), [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer), [Clink](http://mridgers.github.io/clink), [PSReadLine](https://github.com/lzybkr/PSReadLine), [PSGet](https://github.com/psget/psget), Chocolatey / NuGet / MS [OneGet](https://github.com/OneGet/oneget), [Process Hacker](http://processhacker.sourceforge.net/), [cmder](https://cmder.net/), [GitForWindows](https://gitforwindows.org/), [mintty](https://mintty.github.io/), [wsltty](https://github.com/mintty/wsltty), [NirSoft apps](http://www.nirsoft.net/) (especially NirCmd), [Windows utilities by Code.Kliu.org](http://code.kliu.org/) (like [elevate](http://code.kliu.org/misc/elevate/)), [Babun](https://github.com/babun/babun), plus Windows (x64) builds of `curl`, `wget`, `ffmpeg`/`libav`, etc.
 
 ### Viable Linux distros 2019 ###
+
+(2020 - new additions:
+* PsychOS - https://www.technewsworld.com/story/PsychOS-A-Crazy-Cool-Distro-That-Pushes-Linux-Limits-86708.html
+- https://psychoslinux.gitlab.io/index_mobile.html
+- https://theouterlinux.gitlab.io/Public/Videos/RetroGrab_mobile.html )
+
 > for more (GNU/)Linux distros, please see: https://distrowatch.com/ & https://en.wikipedia.org/wiki/List_of_Linux_distributions
 * [MX Linux](http://mxlinux.org/) 10/10 (9/10 for MX Linux v19 in comparison to v17 & v18; if its PDF manual gets fully git-translated into multiple languages & gets localized `man`-pages, it will be almost perfect!!!)
 * [AntiX](https://antixlinux.com/) 8/10
@@ -28,12 +34,12 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [Gentoo](https://www.gentoo.org/)
 * [OpenSUSE](https://www.opensuse.org/) (12.3 or later; OpenSUSE Tumbleweed)
 * [RHEL (RedHat Enterprise Linux)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) & [CentOS](https://www.centos.org/) (suitable for servers, Debian, Ubuntu, Arch Linux, and Gentoo - are the other Linux distros popular for servers); Oracle Linux... 10/10
-* [Void Linux](https://voidlinux.org/) 9/10 (with the XBPS package-system) 7.5/10
+* [Void Linux](https://voidlinux.org/) 9/10 (with the XBPS package-system) or 7.5/10
 * [Alpine Linux](https://www.alpinelinux.org/)
 * [GuixSD](https://www.gnu.org/software/guix/)
 * [NixOS](https://nixos.org/)
 * [Puppy Linux](http://puppylinux.org/main/Overview%20and%20Getting%20Started.htm) (especially the Ubuntu/Debian-based LTS builds!) 9/10
-* [ElementaryOS](https://elementary.io/bg/) 8/10
+* [ElementaryOS](https://elementary.io/bg/) 8/10 for GUI/UI&UX design and aesthetics and custom-made apps
 * [SliTaz GNU/Linux](http://www.slitaz.org/en/) 7.5/10
 * [CLIP OS](https://clip-os.org/en/) (by the ANSSI (National Cybersecurity Agency of France))
 * [Slax](https://www.slax.org/)
@@ -53,7 +59,7 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [ZorinOS](https://zorinos.com/)
 * ReactOS (NOT a (GNU/)Linux distro; it is an open-source reverse-engineered/remake (?) clone of Microsoft Windows NT/2K/XP and so it is compatible with most MS Windows apps made for MS Windows XP; maybe if you add Mono (an open-source clone of .NET framework for MS Windows 7+) to it, it may also run apps made for MS Windows 7/8/8.1/10 (UWP (Universal Windows(10) Platform)?...)
 * TempleOS - https://en.wikipedia.org/wiki/TempleOS
-* CollapseOS - https://collapseos.org/
+* CollapseOS - https://collapseos.org/ - a Linux distro for when civilization falls apart... a civilization reconstruction kit like http://rexresearch.com but as an OS
 * ferenOS Linux (an extremely well-polished (GNU/)Linux distro with a nice set of visual styles/themes mimicking other OSs!)
 * EasyOS (a very cool PuppyLinux fork based on Debian/Ubuntu; it's comparable to AntiX Linux & MX Linux 17+)
 * elementaryOS (a very nice Linux distro that tries to mimick MacOSX X/macOS's design aesthetics&usability)
