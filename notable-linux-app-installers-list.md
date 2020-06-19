@@ -63,6 +63,10 @@ https://helm.sh/docs/intro/install/
 https://helm.sh/
 https://cloud.google.com/sdk/
 https://kubernetes.io/docs/tasks/tools/install-kubectl/
+DockerHub
+http://pkgs.org
+http://repology.org
+
 ````
 * Install with Powershell from PSGallery
 If you are on MS Windows and using `Powershell Gallery` package manager, you can install and update `kubectl` with Powershell.
