@@ -1,0 +1,10 @@
+xrandr+arandr_computer-screen-display-settings-and-multihead-multiscreen-setups-under-linux-unix-like-OSs.txt
+
+
+$ xrandr
+
+$ arandr
+
++ DE (display environment) screen display settings...
+
+https://www.reddit.com/r/archlinux/comments/fx8hik/sorry_guys_how_can_i_display_to_an_external_4k/?utm_medium=android_app&utm_source=share
