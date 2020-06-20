@@ -16,7 +16,7 @@ https://www.facebook.com/groups/89717832488/permalink/10157818391107489/
 https://fossbytes.com/debian-gnu-linux-legacy-drivers-remove/
 But why?!?
 Just put those drivers in a package in the `non-free` or `contrib` repositories and add instructions on how to automagically include those by using a simple CLI commmandline switch at install time (which may require Internet access to download the drivers!).
-* Debian to remove its FTP servers - again, bad decision, I hope that they at least keep the HTTP(S) & torrent downloads, and introduce ADC/DC++ download mirrors:
+* Debian to remove its FTP servers - again, bad decision, I hope that they at least keep the HTTP(S) & torrent downloads, and introduce ADC/DC++&metalink download mirrors:
 https://www.theregister.co.uk/2017/04/27/debian_to_turn_off_ftp/
 * JSON NOT officially supporting comments so people are forced to use various hacks or mods of JSON...
 * ?
@@ -33,7 +33,9 @@ Windows10 sucks unless you are into AAA-gaming and want an improved/changed/reva
 and some newer hardware drivers; Only go for Windows10 Pro (x64), ditch/forget about Windows10 Home, and
 also, Windows10X is mostly crap (like Google ChromeOS netbooks but supporting Win32/WUP apps!) made just for the low-powered netbook devices...
 * Google Android M - it will only be usable after it is made into a lightweight clone of macOS and Ubuntu/Debian Linux, otherwise it is
-just a Google Android (based on&running a Linux kernel) with a Win98/XP/7/8.1/10 START menu and capable of running Google Android apps from Google Play storeb& from f-droid.org ...
+just a Google Android (based on&running a Linux kernel) with a Win98/XP/7/8.1/10 START menu and capable of running Google Android apps from Google Play store& from f-droid.org, with some support for desktop Linux apps ...
+* In 2020, the immensely popular Linux Mint distro supposedly dropped support for Ubuntu snappy snaps packages instead of just adding a simple CLI-app & GUI app to handle snap packages, and also such an app for AppImage packages and flatpak packages...
+* Microsoft NOT sending the full complete source-code of Windows 7 Pro/Ultimate x86+x86_64's + binary .iso's (all locales + all updates up to the last ESR releases pre-installed minus the Windows10-backported spyware KBs and the serial-key-checking KB updates) to the FSF as requested by RMS: https://www.kaldata.com/it-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8/fsf-%D0%B8%D0%B7%D0%BF%D1%80%D0%B0%D1%82%D0%B8-%D0%BD%D0%B0-microsoft-%D0%BF%D1%80%D0%B0%D0%B7%D0%B5%D0%BD-%D1%85%D0%B0%D1%80%D0%B4-%D0%B4%D0%B8%D1%81%D0%BA-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%B9%D1%82-329370.html?amp
 * Debian Linux & Arch Linux removing 32-bit builds upon which people with older hardware depended - sucks ass - they should just release 32-bit builds as unofficial forks of their main 64-bit amd64&ARM-v6+-x64 builds...
 * people NOT knowing about NTP online time-synchronization servers & about THAT freeware MS-Windows app that lets you modify the datetime stamps of files&folders... 😁😜👍
 * etc.
