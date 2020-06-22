@@ -1,0 +1,49 @@
+HOWTO_repair-restore-reinstall-GRUB2+-OS-multiloader_for_BIOS_UEFI_GPT_etc.txt
+
+* * *
+
+Quote from http://facebook.com :
+
+Saif Ul Islam
+https://howtoubuntu.org/how-to-repair-restore-reinstall-grub-2-with-a-ubuntu-live-cd
+
+Steven Broccolo
+The step after fsck is to mount drives in fstab. Boot from a Live USB and check fstab make sure all uuids are correct.
+
+Nuno Santos
+good point but it's not that, if the mount failed it would error out. but checking out fstab is a good idea
+
+* RIPLinux (RecoveryIsPossible) distro
+* SystemRescueCd
+* Kali Linux digital-forensics distro
+* http://gparted.org + diskpart + GNOME Disk Tool (GUI) + Windows7/8.1/10+ Disk Partition Editor (built-in GUI tool)
+
+------
+
+https://sourceforge.net/projects/rescatux/
+
+https://sourceforge.net/projects/grub2win/
+https://sourceforge.net/projects/grub2win/
+https://sourceforge.net/projects/supergrub2/
+
+https://books.google.bg/books?id=JXVaBgAAQBAJ&pg=PA723&lpg=PA723&dq=grub2+mbr+recovery+sourceforge&source=bl&ots=C9w-K9gH1R&sig=ACfU3U1WT522HG6mdS-7c-Q5JaRUabPz0g&hl=bg&sa=X&ved=2ahUKEwj1vMXcwZbqAhVKyoUKHZIiBoYQ6AEwDXoECAcQAQ
+
+https://en.m.wikipedia.org/wiki/GNU_GRUB
+Rescatux:
+https://sourceforge.net/projects/rescatux/
+https://sourceforge.net/projects/supergrub2/
+
+https://sourceforge.net/directory/?q=mbr%20repair%20tool
+https://sourceforge.net/projects/boot-repair/
+https://sourceforge.net/projects/boot-repair-cd/
+https://sourceforge.net/projects/gptfdisk/
+https://sourceforge.net/projects/aioboot/
+https://sourceforge.net/projects/quickbooks-repair/
+https://sourceforge.net/projects/uefi-fdisk/
+
+---
+https://sourceforge.net/projects/usbstickrepairtool/
+https://sourceforge.net/projects/dar/
+---
+https://sourceforge.net/projects/heidisql/
+https://sourceforge.net/projects/divfixppp/
