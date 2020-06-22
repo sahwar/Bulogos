@@ -1,0 +1,19 @@
+HOWTO_repair-restore-reinstall-GRUB2+-OS-multiloader_for_BIOS_UEFI_GPT_etc.txt
+
+* * *
+
+Quote from http://facebook.com :
+
+Saif Ul Islam
+https://howtoubuntu.org/how-to-repair-restore-reinstall-grub-2-with-a-ubuntu-live-cd
+
+Steven Broccolo
+The step after fsck is to mount drives in fstab. Boot from a Live USB and check fstab make sure all uuids are correct.
+
+Nuno Santos
+good point but it's not that, if the mount failed it would error out. but checking out fstab is a good idea
+
+* RIPLinux distro
+* SystemRescueCd
+* Kali Linux forensics distro
+* 
