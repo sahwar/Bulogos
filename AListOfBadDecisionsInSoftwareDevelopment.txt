@@ -1,43 +1,78 @@
 AListOfBadDecisionsInSoftwareDevelopment.txt
 https://github.com/sahwar/Bulogos/blob/master/AListOfBadDecisionsInSoftwareDevelopment.txt
 
+Списък с лоши решения при разработката на компютърни програми (софтуер)
+според sahwar (ve4ernik)
+
+
+
 * Mozilla Firefox v60+/v67+(?) will remove support for the FTP/FTPS/SFTP protocol?!? 😢🤮 But why? Even if it is an insecure protocol by contemporary (2020) standards, you can just still include FTP support in the browser BUT have a WARNING page about insecure protocol&a disclaimer of warranty if the user still wishes to open the FTP webpage. And also add a switch in Mozilla Firefox's `about:config` to even remove the warning pre-webpage for people who are okay with using a sorta insecure connection. Don't just remove support for FTP completely!!! I mean, a web-browser is about browsing HTTP/HTTPS & FTP/FTPS/SFTP webpages!!!
 
 https://www.theregister.co.uk/AMP/2020/03/20/firefox_deprecates_ftp/
 
-However, I mostly really love the new Firefox UI/GUI/UX, inspired by Google Chrome BUT still offering the most features and much more customization that that found in Google Chrome! Kudos (Congratulations) to the Firefox UI-revamp team!
-I also greatly enjoy the new multi-process Firefox having a task-manager for tabs&windows(&private such) like Google Chrome does!
+However, I mostly really love the new Firefox UI/GUI/UX, inspired by Google Chrome BUT still offering the most features and much more customization that that found in Google Chrome! Kudos (Congratulations) to the Firefox UI-revamp team (just DON'T overcrowd your customized Firefox UI with TOO MUCH buttons/icons/skins/plug-ins/add-ons/etc. because it then becomes a too-big RAM-eater/memory-hog... :/ Also, if you are using older less powerful hardware, please DON'T open more than 5-20 tabs in Firefox, or your web-browser will cause your OS & PC to halt or to freeze or to overheat-jam and reboot due to CPU-overheating-sensors shutting down your computer so as to avoid physical damages to your computer's hardware...))!
+I also greatly enjoy the new multi-process Firefox having a task-manager for tabs&windows(&private such) like Google Chrome does! ALSO, adding an option to search for tabs via regexp-based (including substring support!) searching for the title or URL/URI of the opened tab - is awesome and amazing, BUT it could be slightly updated/improved - by e.g. offering [X] tab-closing buttons to each individual tab in the Firefox v72.0.2 (my Mozilla Firefox setup as of 24-June-2020) dropdown-menu where you have a list of opened tabs in a list... and by supporting right-click on each of those individual tabs in that dropdown-list menu - which opens the same context-menu as when you right-click on a single tab ribbon-button to display tab-management options!!! We can even add a bit more such tab-handling options to the default Mozilla Firefox setup - without adding too much, since that is left to Firefox add-ons adding further features to Firefox - the basic feature which I would like to see added is a hotkey involving a numberical sequence to quickly jump to a numbered tab from the list of opened tabs (the number is changed if you close a tab between other tabs in the list of numbered tabs) - and also displaying that tab ordinal number in the dropdown menu with the list of tabs and when a user enables a setting in `about:config` to also show those tab ordinal numbers in the title button of the individual tab's ribbon button in the Firefox UI (for quick mnemonics and rote-memorization and quick psychology-based switching-to-said-tab)...
+
 I also greatly enjoy the availability of Firefox ESR (extended support release, like Ubuntu Linux's LTS (Long-term support) release - in contrast with rolling-release distros!).
-I also greatly enjoy stable x64 releases of Firefox (Quantum) and the cutting-edge 2 separate branches of Firefox (one for webdev professionals and th latest-git unstable edition for testing!)
+I also greatly enjoy stable x64 releases of Mozilla Firefox (Quantum) {but Mozilla should still offer x86/32-bit editions of Mozilla Firefox as well as make those useable/supported/runnable under (i.e. compatible with) x64-bit OSs like MS Windows7+/8.1/10 & Linux_x64, ARM_x64, etc.) and the cutting-edge 2 separate branches of Firefox (one for webdev professionals and th latest-git unstable edition for testing!)
 The only minus is that Firefox is a memory hog for too much RAM if you have more than 5 tabs simultaneously opened,
-and so users of older PCs are forced to use OLDER versions of Firefox or more lightweight web-browsers like uzbl or suckless.org's webkit-based browser or other browsers (e.g. inspired by the Vimperator add-on plus Firefox's v65+(?) new UI).
+and so users of older PCs are forced to use OLDER versions of Mozilla Firefox (WHICH IS WHY IT IS ESSENTIAL that Mozilla offers free downloads of ALL older versions of Mozilla Firefox PLUS their source-code!!!) or more lightweight web-browsers like uzbl or suckless.org's surf webkit-based web-browser or other browsers (e.g. inspired by the Vimperator add-on plus Mozilla Firefox's v65+(?) new UI).
+
 * Debian Linux will remove support for older drivers?!?
 https://www.facebook.com/groups/89717832488/permalink/10157818391107489/
 https://fossbytes.com/debian-gnu-linux-legacy-drivers-remove/
 But why?!?
 Just put those drivers in a package in the `non-free` or `contrib` repositories and add instructions on how to automagically include those by using a simple CLI commmandline switch at install time (which may require Internet access to download the drivers!).
+
 * Debian to remove its FTP servers - again, bad decision, I hope that they at least keep the HTTP(S) & torrent downloads, and introduce ADC/DC++&metalink download mirrors:
 https://www.theregister.co.uk/2017/04/27/debian_to_turn_off_ftp/
+
 * JSON NOT officially supporting comments so people are forced to use various hacks or mods of JSON...
+
 * ?
+
 * Google Chrome & Mozilla Firefox NOT natively supporting saving webpages as .WARC (latest stable git version), and as .mht (like IE10–11 did; + the Firefox add-on UnMHT), and as .MAFF (via the Firefox MAFF add-on).
 However, it is nice that Google Chrome (desktop&mobile) supports saving webpages as .mht (maybe???) and that Firefox mobile (for Google Android) supports printing webpages as PDF, like Google Chrome (desktop) does.
+
 * wget, wget2, curl, lftp, httpie, etc. should also support saving webpages as .WARC (latest stable-git), as .mht, and as .htm/.html+{webpage title, with all non-html external resources inside}_folder folder, and as .MAFF, and printing to PDF (with included PDF-attachment = the original webpage in the aforementioned web-archival DataHoarding long-term-storage file-format filetypes)...
+
 * Mozilla Firefox & Google Chrome NOT including a local .html (English+other locale language) of their help pages with the list of keyboard shortcuts, computer-mouse&mouse-gestures shortcuts, and list of about:{something} internal web-browser settings webpages... and also NOT including the Keyboard Shortcuts Editor by default inside the web-browser... and NOT including a DONATE button in the web-browser, and NOT shipping by default the Ctrl+Shift+D 'Save all opened tabs as {user-typed_datetime}' folder + export all saved bookmarks as .html/.commonmark/.json + Copy All Opened Tab URIs/URLs (&/titles) to clipboard/.txt/.json/.html/.commonmark - for both desktop&mobile web-browsers.
+
 * modern smartphones NOT having a replaceable (rechargable) battery & NOT supporting file-sharing/synching to USB-connected HDDs/SSDs/USB-flashsticks and NOT supporting USB3toSATA connection...
+
 * newer non-smartphone dumbphones/feature phones NOT supporting basic VoIP/video-conferencing/UTF-8+color-emoji live-messaging chatting&p2p-filesharing&access to remote FTP/WebDAV/HTTP/p2p servers, and NOT supporting voice-input, extensible speech-synthesis app, advanced multilingual updateable IME inputting (keyboard layouts, handwriting recognition, voice-input/speech-recognition/voice-control), and NOT supporting live webcast broadcasting, and USB&Bluetooth connections, and LAN-p2p-filesharing/chatting/videoconferencing-audio-VoIP, and NOT shipping by default with a basic HTML5 web-browser with synching options... AND NOT having dual-language GSM keyboard layouts on the physical keys of the featurephone, and NOT being mod-ready&modular... , etc.
+
 * Not necessarily a bad software decision, but just bad software:
 Windows 8 (before Windows 8.1 kinda fixed it),
 and Windows 10X ( https://www.theverge.com/platform/amp/2020/5/4/21246561/microsoft-windows-10x-single-screens-windows-usage-demand-coronavirus-pandemic ) :
 Windows10 sucks unless you are into AAA-gaming and want an improved/changed/revamped Windows Explorer and Task Manager,
 and some newer hardware drivers; Only go for Windows10 Pro (x64), ditch/forget about Windows10 Home, and
 also, Windows10X is mostly crap (like Google ChromeOS netbooks but supporting Win32/WUP apps!) made just for the low-powered netbook devices...
+
 * Google Android M - it will only be usable after it is made into a lightweight clone of macOS and Ubuntu/Debian Linux, otherwise it is
 just a Google Android (based on&running a Linux kernel) with a Win98/XP/7/8.1/10 START menu and capable of running Google Android apps from Google Play store& from f-droid.org, with some support for desktop Linux apps ...
+
 * In 2020, the immensely popular Linux Mint distro supposedly dropped support for Ubuntu snappy snaps packages instead of just adding a simple CLI-app & GUI app to handle snap packages, and also such an app for AppImage packages and flatpak packages...
+
 * Microsoft NOT sending the full complete source-code of Windows 7 Pro/Ultimate x86+x86_64's + binary .iso's (all locales + all updates up to the last ESR releases pre-installed minus the Windows10-backported spyware KBs and the serial-key-checking KB updates) to the FSF as requested by RMS: https://www.kaldata.com/it-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8/fsf-%D0%B8%D0%B7%D0%BF%D1%80%D0%B0%D1%82%D0%B8-%D0%BD%D0%B0-microsoft-%D0%BF%D1%80%D0%B0%D0%B7%D0%B5%D0%BD-%D1%85%D0%B0%D1%80%D0%B4-%D0%B4%D0%B8%D1%81%D0%BA-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%B9%D1%82-329370.html?amp
+
 * Debian Linux & Arch Linux removing 32-bit builds upon which people with older hardware depended - sucks ass - they should just release 32-bit builds as unofficial forks of their main 64-bit amd64&ARM-v6+-x64 builds...
+
 * people NOT knowing about NTP online time-synchronization servers & about THAT freeware MS-Windows app that lets you modify the datetime stamps of files&folders... 😁😜👍
+
+* the mostly-fuckup that is MS Windows10 (except for these great improvements: updated drivers, the feature to video-record playing a DirectX/Direct3D/OpenGL/SDL/etc. video-game/complex-app, and Windows10's WSLv2+ and some minor updates to the Windows Explorer file-manager (but in other areas, they really fucked up the Windows10 file-manager and removed some great options present in Windows XP SP3, in Windows7, and in Windows8.1 ... :( :/ ) and to the Windows taskbar&Start-menu and the usefulness of Windows10 Continuum and Large-DPI support, and semi-usefulness of the Cortana voice-control/speech-control A.I.; and to the Windows10 Windows Insider beta-testing programme (free testing of the latest development versions of Windows10 Pro x64 (all langpacks available)!!!)):
+
+- "Бившия пpoгpaмиcт и paзpaбoтчиĸ нa Місrоѕоft Джepи Бъpг (Јеrrу Веrg) oбяcни ĸaĸвa e тaзи пpичинa. Toй зaяви, чe пpeз пocлeднитe двe-тpи гoдини Місrоѕоft e пpoмeнил нaчинa нa тecтвaнe нa oпepaциoннaтa cиcтeмa. Πpeди няĸoлĸo гoдини в ĸopпopaциятa e имaлo гoлям oтдeл зa тecтвaнe нa Wіndоwѕ, в ĸoйтo ca paбoтили cпeциaлиcти нa щaт и нa зaплaтa. Cлeд тoвa пoчти вcичĸи xopa oт тoзи oтдeл ca били cъĸpaтeни, a тecтoвeтe нa нoвитe вepcии нa Wіndоwѕ ca пpexвъpлeни ĸъм шиpoĸaтa Wіndоwѕ oбщнocт, вĸлючвaщa (бeзплaтни) дoбpoвoлци, yчacтвaщи в пpoгpaмaтa Wіndоwѕ Іnѕіdеr."
+
+Вижте повече: https://www.kaldata.com/it-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8/%D1%83%D0%B2%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD-%D1%81%D0%BB%D1%83%D0%B6%D0%B8%D1%82%D0%B5%D0%BB-%D0%BD%D0%B0-microsoft-%D0%BE%D0%B1%D1%8F%D1%81%D0%BD%D0%B8-%D0%B7%D0%B0%D1%89%D0%BE-%D0%B2%D1%8A%D0%B2-wind-318859.html
+
+- https://www.kaldata.com/it-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8/%D1%83%D0%B2%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD-%D1%81%D0%BB%D1%83%D0%B6%D0%B8%D1%82%D0%B5%D0%BB-%D0%BD%D0%B0-microsoft-%D0%BE%D0%B1%D1%8F%D1%81%D0%BD%D0%B8-%D0%B7%D0%B0%D1%89%D0%BE-%D0%B2%D1%8A%D0%B2-wind-318859.html
+(these 2 points explain why Microsof Windows10 is such a mess and often fucks up your personal data and throws BSODs (Blue Screen of Death or Black Screen of Death with a diagnostics error-message...) AFTER every automatic update --- because they removed the better Windows Update options present in Windows7 and they removed Windows7's KB-updates manager present in Windows7 Pro/Ultimate... :/ Such a shame... If you ever buy an original Microsoft Windows10, ONLY buy the Windows10 Pro edition (x86/x64 integrated into 1 .ISO installation image, with ALL OS-wide localization langpacks available for download, or just the USA-English and/or Bulgarian-language versions!!!)
+
+* paint.net is great BUT it should really add a link on/to its official website ( http://getpaint.net ) to let you download the last version of paint.net that supports Microsoft Windows XP SP3, as well as a ChangeLog that offers you to download any older version of paint.net aside from reading the ChangeLog; and maybe also to add a download link of its last open-source version & its full complete source-code, and also to add a link to its http://crowdin.net app localization-subwebsite ; and possibly to add more donation buttons/options to its official website; and possibly to consider bundling its Manual in the app itself, as well as an option to localize/translate that Manual into another language and to download other versions of the Manual for a particular version of paint.net + for a particular other non-English-language translation ...
+
 * etc.
+
 * useful .bat scripts for MS-Windows cmd.exe and cmdlets for MS-Windows PowerShellCore, similar to Linux/*NIX shell-scripting (mainly for bash&zsh).
+
 * to add more later on...
