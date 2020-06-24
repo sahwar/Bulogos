@@ -71,6 +71,10 @@ just a Google Android (based on&running a Linux kernel) with a Win98/XP/7/8.1/10
 
 * paint.net is great BUT it should really add a link on/to its official website ( http://getpaint.net ) to let you download the last version of paint.net that supports Microsoft Windows XP SP3, as well as a ChangeLog that offers you to download any older version of paint.net aside from reading the ChangeLog; and maybe also to add a download link of its last open-source version & its full complete source-code, and also to add a link to its http://crowdin.net app localization-subwebsite ; and possibly to add more donation buttons/options to its official website; and possibly to consider bundling its Manual in the app itself, as well as an option to localize/translate that Manual into another language and to download other versions of the Manual for a particular version of paint.net + for a particular other non-English-language translation ...
 
+* macOS is mimicking DeepinLinux or it's an 'independent invention/discovery' of a similar GUI/UI/UX:
+https://itsfoss.com/macos-big-sur-deepin/
+(This could be considered a sorta good decision in software development since the GUI is sexy, BUT if macOS doesn't offer an option to switch to the older GUI looks, it is a big EPIC FAIL(URE) in terms of OS customization... 🙄 )
+
 * etc.
 
 * useful .bat scripts for MS-Windows cmd.exe and cmdlets for MS-Windows PowerShellCore, similar to Linux/*NIX shell-scripting (mainly for bash&zsh).
