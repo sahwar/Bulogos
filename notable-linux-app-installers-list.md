@@ -138,14 +138,14 @@ chmod +x ./kubectl`
 * https://sourceforge.net/directory/games/games/os:windows/os:modern_oses/os:mac/os:linux/os:os_emu_api/os:bsd/
 
 ### Windows (Microsoft Windows, XP & 7+) ###
-* installing from physical-media `.exe`/`.msi` installers
-* directly executing the app's `.exe` binary from its physical-media-copied OR Internet-downloaded archive (.zip, .7z, .tar.xz, .iso, etc.) unpacked into a new folder.
-* Downloading `.exe`/`.msi` installers (or source-code for local compiling) from https://sourceforge.net/ (BEWARE if adware is bundled!), https://www.fosshub.com/, https://osdn.net, https://github.com, GitLab (e.g. https://gitlab.com/florian0)...
+* installing from physical-media HDDs/SSDs/USB-flashsticks/CD&DVD&BluRay-discs: of `.exe`/`.msi` installers
+* directly executing the app's `.exe` runnable executable binary file from its physical-media-copied OR Internet-downloaded archive {for direct running of the app & easy uninstall by deleting the unpacked folder/directory} (.zip, .7z, .tar.xz, .iso, etc.) unpacked into a new folder.
+* Downloading `.exe`/`.msi` installers (or source-code for local compiling) from https://sourceforge.net/ (BEWARE if adware is bundled!), https://www.fosshub.com/, https://osdn.net, https://github.com, GitLab (e.g. https://gitlab.com/florian0)... and from Microsoft Windows10 AppStore/Windows Store (for Windows 8.1/10 WUP+Continuum apps for Microsoft Windows, etc.)
 _Software download-portals to get ONLY FREEWARE and open-source apps from, NOT other apps:_
 http://brothersoft.com/, https://www.kaldata.com/ (Bulgarian IT website), https://www.download.bg/ (Bulgarian IT website), https://www.softpedia.com/, https://bg.vessoft.com/ (IT downloads + some warez), https://www.techspot.com/downloads/, https://en.softonic.com/windows, https://filehippo.com/, http://www.oldapps.com/, https://www.old-games.com/, https://www.makeuseof.com/, https://www.howtogeek.com/, https://www.techspot.com/downloads/, http://www.tucows.com/downloads, https://download.cnet.com/windows/, https://www.techradar.com/, https://www.tomsguide.com/t/windows/... **http://caiman.us/**, **http://homeoftheunderdogs.net/** (https://twitter.com/HotU_net), http://www.homeoftheunderdogs.net/company.php?name=Freeware, http://www.abandonwarering.com/, http://www.aplaces.net/,* https://www.freewarefiles.com/Essential-Free-Software.html
 * https://www.freewarefiles.com/Top-100-Free-Downloads/
-* PortableApps.org portable apps for MS Windows
-* running a Linux app on MS Windows via a hypervisor/virtualization app like Oracle VirtualBox, Xen, QEMU, etc. OR via ssh/mosh or via visual remote-control via RDP (e.g. Remmina for Linux, VNC/RDP/NX/ssh-bosh/rsync+RAID/... (+screencasting & visual-drawing-board oekaki/oakeki-style & Japanese-style online imageboards...) app for MS Windows, mosh, etc.).
+* http://PortableApps.org portable apps for MS Windows
+* running a Linux app on MS Windows via a hypervisor/virtualization app like Oracle VirtualBox, Xen, QEMU, etc. OR via ssh/mosh or via visual remote-control via RDP (e.g. Remmina for Linux, VNC/RDP/NXv3+/ssh-bosh?/rsync+zync+RAID/... (+screencasting & visual-drawing-board oekaki/oakeki-style & Japanese-style online imageboards...) app for MS Windows, mosh, etc.).
 * running Linux apps via dualbooting & multibooting multiple OSs
 * apps for multiple computer keyboards, multiple computer mouses, multiple OS/system clipboards, multiple I/O for music/audio & graphics/displays/screens-monitors, multiple graphics-tablets, multiple audio/video-conferencing/Unicode-text/screensharing/filesharing/online-or-offline drawingboard-painters/
 * tmux ; urxvt ; multiplexer app for simultaneous running of several different OSs (or different OS states) as a stacked window manager, i.e. several different OSs on 1 screen divided visually into boxes/sections/minimized-resumed/running-virtual-sessions BUT also running a configurable background daemon that enables full-duplex filesharing/computer-mouse-cursor-sharing/swapping-from-one-screen-section (running one OS)-to-another-screen-section (running another OS!), shared/full-duplex multi-clipboard, and *UNIX-like piping&redirection of commmandline commands, computer-keyboard-sharing (cloning of click-behavior or keyboard-shortcut-switching-from-one-OS-to-another)!!!
@@ -186,14 +186,14 @@ https://proxybaylist.org/
 #### **Package managers for Windows:** ####
   * * [Chocolatey](https://chocolatey.org/) - CLI package manager for MS Windows; Chocolatey - Software Management Automation for MS Windows
   * * [NuGet](https://www.nuget.org) (package manager for .NET apps for MS Windows)
-  * * [PackageManagement/OneGet](https://github.com/OneGet/oneget) (Windows 10/Windows Server 2016's built-in package manager manager)
+  * * OneGet - [PackageManagement/OneGet](https://github.com/OneGet/oneget) (Windows 10/Windows Server 2016's built-in package manager manager)
   * * [Scoop](https://scoop.sh/), A command\-line installer (package manager) for MS Windows - https://github.com/lukesampson/scoop
   * * [PowerShellGallery](https://www.powershellgallery.com/)
   * * ~~[Homebrew](https://brew.sh/) users can use `brew install helm`.~~
   * * [GoFish](https://gofi.sh/) users can use `gofish install helm`.
   * * [Chocolatey](https://chocolatey.org/) users can use `choco install kubernetes-helm`.
   * * [Scoop](https://scoop.sh/) users can use `scoop install helm`.
-  * * Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/)
+  * * Python PIP (https://packaging.python.org/tutorials/installing-packages/, https://pypi.org/project/pip/) - pipy
   * * (putting statically-build CLI/GUI .exe's in the `cmd.exe` or `PowerShell` root directories - for easy running (with a warning label)...)
   * * PowerShell cmdlets & `cmd.exe` `.bat` (.BAT) cmdlets (WARNING!!! Be extra careful with these as some of these are used for computer viruses, trojans, worms, rootkits, etc.!)
   * * other external/3rd-party Windows GUI apps/package-managers for installing 3rd-party apps (application software)
