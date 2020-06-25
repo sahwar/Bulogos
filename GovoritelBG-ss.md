@@ -892,3 +892,22 @@ http://www.gatchev.info/blog/?page_id=409
 etc.
 
 ````
+
+````
+Mozilla Voice & http://tatoeba.org
+
+What is Common Voice project?
+
+
+Common Voice is Mozilla's initiative to help teach machines how real people speak.
+Voice is natural, voice is human. That’s why we’re excited about creating usable voice technology for our machines. But to create voice systems, developers need an extremely large amount of voice data.
+Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Common Voice, a project to help make voice recognition open and accessible to everyone.
+Now you can donate your voice to help us build an open-source voice database that anyone can use to make innovative apps for devices and the web. Read a sentence to help machines learn how real people speak. Check the work of other contributors to improve the quality. It’s that simple!
+
+
+You can find more details on the official website https://voice.mozilla.org/
+
++ the CommonVoice app:
+https://f-droid.org/en/packages/org.commonvoice.saverio/
+
+````
