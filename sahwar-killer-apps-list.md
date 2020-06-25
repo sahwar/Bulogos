@@ -1441,8 +1441,13 @@ https://www.digital.bg/kakvo-trqbva-da-znaem-za-populqrnite-video-formati-i-kode
 
 .avi, .mkv, .MP4 (MPEG-4 Version 2, reworked in 2003) (can contain H.263/H.264 за видео и AAC за аудио. Освен това поддържа канали със субтитри), .wmv, .Xvid (H.263/MPEG-4 Part 2), .x264 (H.264/MPEG-4 AVC), .x265 (H.265/MPEG-H HEVC)
 
-deprecated, obsolete
+deprecated, obsoletebtech
 
+---
+A list of some remote-control & remote-viewing software:
+x2go (NX 3 remote-control protocol for Linux), xrdp, Remmina, TeamViewer, Xpra, FreeNX, TigerVNC, AnyDesk, Desktopable ( https://desktopable.com/ ), Skype&qTox&Jitsi.im&etc. screensharing, etc.
+; ssh; mosh; etc.
+https://www.google.com/search?q=x2go&oq=x2go&aqs=chrome.0.0l5.2389j0j4&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8
 
 
 ---
