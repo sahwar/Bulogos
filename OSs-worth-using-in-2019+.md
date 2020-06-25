@@ -164,6 +164,42 @@ Etc.:
 * https://web.obarun.org/
 * http://sta.li/ (a static linux distribution based on the original pre-2010 plans of the suckless.org project, however since 2018 it became independent from suckless.org)
 
+------
+
+
+````
+https://flatpak.org/setup/
+
+Quick Setup
+Select your distro to get set up.
+
+Ubuntu
+Fedora
+Endless OS
+Chrome OS
+Red Hat Enterprise Linux
+Linux Mint
+openSUSE
+Arch
+Debian
+CentOS
+Gentoo
+Kubuntu
+Solus
+Alpine
+Mageia
+Pop!_OS
+elementary OS
+Raspbian
+Clear Linux
+Void Linux
+NixOS
+PureOS
+SulinOS
+Ataraxia Linux
+Zorin OS
+````
+
 Searching for **packages for (GNU/)Linux distros**:
 https://pkgs.org (!!!)
 https://packages.ubuntu.com/
