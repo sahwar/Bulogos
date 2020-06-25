@@ -1441,7 +1441,7 @@ https://www.digital.bg/kakvo-trqbva-da-znaem-za-populqrnite-video-formati-i-kode
 
 .avi, .mkv, .MP4 (MPEG-4 Version 2, reworked in 2003) (can contain H.263/H.264 за видео и AAC за аудио. Освен това поддържа канали със субтитри), .wmv, .Xvid (H.263/MPEG-4 Part 2), .x264 (H.264/MPEG-4 AVC), .x265 (H.265/MPEG-H HEVC)
 
-deprecated, obsoletebtech
+deprecated, obsolete(d) tech
 
 ---
 A list of some remote-control & remote-viewing software:
@@ -1462,9 +1462,9 @@ https://www.digital.bg/nay-dobrite-bezplatni-video-redaktori-za-android-article6
 
 всички обичайни опции за оптимизиране на цветовете (яркост, контраст, насищане и т.н.),
 
-slide transition effects = забавни преходи
+slide transition effects = забавни преходи за PowerPoint-оподобни слайдове
 
-картина в картината (PiP), PoP, PtP, 
+картина в картината (PiP), PoP (picture on/over/onto picture), PtP, 
 
 Можете дори да решите кога да се появява и да приложите преход, така че да се завърта, плъзга или избледнява на мястото си
 Filters&effects = филтри и ефекти
