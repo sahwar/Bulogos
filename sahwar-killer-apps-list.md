@@ -23,6 +23,8 @@ https://www.kaldata.com/%d1%81%d0%be%d1%84%d1%82%d1%83%d0%b5%d1%80/dspeech-26855
 * GPU Caps Viewer, Process Hacker 2, Sysinternals Process Explorer, Sysinternals ProcessMonitor (ProcMon), process manager from {guy with useful freeware&open-source MS Windows apps}, CPU-Z, GPU-Z, CPUCores, Graphics Gale (now freeware!), KDE Lokalize, Qt Linguist, KBabel/QtBabel?, **Weblate**, Translate Toolkit, Mozilla Pantoon (Mozilla Voice + LibriVox + tatoeba.org), WebRPC/WebRTC(!!!), WebVTT, https://mastodon.social/@ownclouders (Twitter clone), https://owncloud.com/ (DropBox clone), https://identi.ca/, http://pump.io/, SyncThing, FreeFileSync... , etc...
 * etc.
 
+* DxWnd (v?.??), dgVoodoo (v?.??), Wine, Wine-staging, PlayOnLinux, Lutris, Proton compatibility layer for Linux SteamOS, Transparent Windows (or equivalent software), Greenfish Subtitle Player & Greenfish Icon Editor, DOSbox, MAME & MAME GUI frontends, FreeDOS, GLUT library & FreeType library, ffmpeg/libav, VirtualBox + USBv2.0 add-on, QEMU; MSYS2, MSVC&VSCode editor, Mono project / .NET & C#, wxWidgets, GTK+ v2+/v3.??+, Qt v3+, FLTK, awesomewm, ratpoison, `net-tools`, `nmap`, `iptables`, `imagemagick` + `img2pdf` + `webkit2pdf` + `iconv` + http://2cyr.com + ???? (encoding character maps to Unicode conversion for the virtual CLI terminal and its shell, e.g. `bash`), `dd`, `icecat`, new forks of Mozilla Firefox & Chromium,n; FBReader, Calibre ebook viewer, AGS (Adventure Game Studio), Mesa3D, OpenGL v2+/v3+, DirectX 9/10/11/12+, SDLv2+, etc.
+
 medit text-editor (+ `sort | uniq` command): http://mooedit.sourceforge.net/
 Clipman
 Glipper/gclipper? (multi-clipboard manager)
