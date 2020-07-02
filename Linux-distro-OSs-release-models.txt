@@ -30,8 +30,15 @@ Quote:
 'Musix, a GNU+Linux distribution based on Knoppix, with special emphasis on audio production. __This is a “static” distro, normally run from a live CD. Since it will not receive security updates, it should be used offline.__Removed March 2019. Removed at the request of the maintainer, as they had stopped maintaining it.
 '
 
-4. ???
+4. A rolling release distro model (like Debian(?) and Arch Linux), including weird ones based on LTS editions of Ubuntu Linux:
+https://www.omgubuntu.co.uk/2020/06/ubuntu-rolling-release-rhino-tool
 
-5. ??????
+:(((
+I only support http://github.com despite Microsoft buying it...
+
+5. Microsoft Windows10 trying to take over Linux via Windows10 WSLv2:
+
+
+6. ??????
 
 ...
