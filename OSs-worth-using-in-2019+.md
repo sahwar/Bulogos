@@ -11,7 +11,7 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 **[ReactOS](http://reactos.org/)**, **[Wine](https://www.winehq.org/)/PlayOnLinux**, [Cygwin](http://www.cygwin.com/), [MinGW](http://www.mingw.org/), [MinGW-w64](https://mingw-w64.org/doku.php/start), NSYSv2, MSVC (which versions?), Linux Subsystem for Windows10 (WSLv2+), [Chocolatey](http://chocolatey.org/), [NuGet](http://nuget.org/), OneGet (Windows10), `cmd.exe`&`PowerShell`, [Win-Builds](http://win-builds.org/doku.php), [KDE apps for MS Windows](https://community.kde.org/Windows) [2](https://techbase.kde.org/Getting_Started/Build/Historic/KDE4_Windows), [BusyBox](https://busybox.net/), Heirloom toolkit, etc.
 
 #### Полезен софтуер за `cmd.exe`/PowerShell & Windows Explorer ####
-`cmd.exe`, PowerShell / PowerShell Core (open-source), [ConEmu](https://conemu.github.io/), [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer), [Clink](http://mridgers.github.io/clink), [PSReadLine](https://github.com/lzybkr/PSReadLine), [PSGet](https://github.com/psget/psget), Chocolatey / NuGet / MS [OneGet](https://github.com/OneGet/oneget), [Process Hacker](http://processhacker.sourceforge.net/), [cmder](https://cmder.net/), [GitForWindows](https://gitforwindows.org/), [mintty](https://mintty.github.io/), [wsltty](https://github.com/mintty/wsltty), [NirSoft apps](http://www.nirsoft.net/) (especially NirCmd), [Windows utilities by Code.Kliu.org](http://code.kliu.org/) (like [elevate](http://code.kliu.org/misc/elevate/)), [Babun](https://github.com/babun/babun), plus Windows (x64) builds of `curl`, `wget`, `ffmpeg`/`libav`, etc.
+`cmd.exe`, PowerShell / PowerShell Core (open-source), [ConEmu](https://conemu.github.io/), [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer), [Clink](http://mridgers.github.io/clink), [PSReadLine](https://github.com/lzybkr/PSReadLine), [PSGet](https://github.com/psget/psget), Chocolatey / NuGet / MS [OneGet](https://github.com/OneGet/oneget), [Process Hacker](http://processhacker.sourceforge.net/), [cmder](https://cmder.net/), [GitForWindows](https://gitforwindows.org/), [mintty](https://mintty.github.io/), [wsltty](https://github.com/mintty/wsltty), [NirSoft apps](http://www.nirsoft.net/) (especially NirCmd), [Windows utilities by Code.Kliu.org](http://code.kliu.org/) (like [elevate](http://code.kliu.org/misc/elevate/)), [Babun](https://github.com/babun/babun), plus Windows (x64) builds of `curl`, `wget`, `wget2`, `ffmpeg`/`libav`, etc.
 
 ### Viable Linux distros 2019 ###
 
@@ -19,6 +19,7 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * PsychOS - https://www.technewsworld.com/story/PsychOS-A-Crazy-Cool-Distro-That-Pushes-Linux-Limits-86708.html
 - https://psychoslinux.gitlab.io/index_mobile.html
 - https://theouterlinux.gitlab.io/Public/Videos/RetroGrab_mobile.html )
+- https://itsfoss.com/serpent-os-announcement/ - SolusOS Linux, SerpentOS Linux, etc.
 
 > for more (GNU/)Linux distros, please see: https://distrowatch.com/ & https://en.wikipedia.org/wiki/List_of_Linux_distributions
 * [MX Linux](http://mxlinux.org/) 10/10 (9/10 for MX Linux v19 in comparison to v17 & v18; if its PDF manual gets fully git-translated into multiple languages & gets localized `man`-pages, it will be almost perfect!!!)
@@ -59,7 +60,7 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * [ZorinOS](https://zorinos.com/)
 * ReactOS (NOT a (GNU/)Linux distro; it is an open-source reverse-engineered/remake (?) clone of Microsoft Windows NT/2K/XP and so it is compatible with most MS Windows apps made for MS Windows XP; maybe if you add Mono (an open-source clone of .NET framework for MS Windows 7+) to it, it may also run apps made for MS Windows 7/8/8.1/10 (UWP (Universal Windows(10) Platform)?...)
 * TempleOS - https://en.wikipedia.org/wiki/TempleOS
-* CollapseOS - https://collapseos.org/ - a Linux distro for when civilization falls apart... a civilization reconstruction kit like http://rexresearch.com but as an OS
+* CollapseOS - https://collapseos.org/ - a Linux distro for when civilization falls apart... a civilization reconstruction kit like http://rexresearch.com but as an OS ; Also see: ArchiveOS ; http://old-games.com & http://oldapps.net
 * ferenOS Linux (an extremely well-polished (GNU/)Linux distro with a nice set of visual styles/themes mimicking other OSs!)
 * EasyOS (a very cool PuppyLinux fork based on Debian/Ubuntu; it's comparable to AntiX Linux & MX Linux 17+)
 * elementaryOS (a very nice Linux distro that tries to mimick MacOSX X/macOS's design aesthetics&usability)
@@ -67,6 +68,7 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * LFS (Linux From Scratch)
 * MinimalLinux LiveISO (a Bulgarian (GNU/)Linux distro similar to TinyCore Linux, X86Free+, BusyBox, LFS (Linux from scratch), etc.)
 * SenlinOS Linux (a nice Chinese/PRC Linux distro with cool visual styles & a custom DE (desktop environment))
+
 * SliTaz Linux (a very cool small-to-medium-sized Linux distro aimed at repackaging it as custom do-it-yourself (DIY) Linux distro)
 * StotinkaOS - in http://archive.org
 * Medibuntu
@@ -76,7 +78,7 @@ _**Microsoft (MS) Windows**_ (XP SP3 (obsolete except for some compatibility wit
 * SerenityOS
 * Deepin Linux + Deepin DE (Deepin Desktop Environment)
 * PCLinuxOS
-* eZIX
+* eZIX OS - good ideas can be found therein
 * etc. ...
 * https://www.scientificlinux.org/
 * https://archiveos.org/foresight/
@@ -162,13 +164,14 @@ Etc.:
 * https://devuan.org/os/partners/devuan-distros
 * http://suckless.org/sucks/systemd/
 * https://web.obarun.org/
-* http://sta.li/ (a static linux distribution based on the original pre-2010 plans of the suckless.org project, however since 2018 it became independent from suckless.org)
+* http://sta.li/ (a static Linux distribution based on the original pre-2010 plans of the http://suckless.org project, however since 2018 it became independent from suckless.org)
 
 ------
 
 
 ````
 https://flatpak.org/setup/
+http://flathub.org
 
 Quick Setup
 Select your distro to get set up.
@@ -255,7 +258,7 @@ _You can use Windows Virtual PC (OR Oracle VirtualBox VM + VirtualBox USB2.0 add
 * **Wine emulation layer, Wine-staging, PlayOnLinux GUI**...
 * CheatBook Database app ( http://cheatbook.de/cheatbook-database-2019.htm , https://www.freewarefiles.com/CheatBook-Issue-10-2019-\_program_113238.html )
 * ROMs for MAME (to play video-games for old arcade video-game consoles): https://emulator.games/roms/mame/
-running Windows .exe/.msi files via Wine/Wine-staging/PlayOnLinux (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html , DxWnd, etc.)
+running Windows .exe/.msi files via Wine/Wine-staging/PlayOnLinux (useful: https://www.dedoimedo.com/computers/wine-apps-hd-display.html , DxWnd, dgVoodoo app, Proton layer for SteamOS Linux, etc.)
 * https://screenshots.debian.net/package/holotz-castle
 https://wiki.debian.org/Games/HolotzCastle
 https://blends.debian.org/games/tasks/finest
@@ -269,7 +272,7 @@ https://archive.is/fT0uf
 
 ## EXTRA2 - Good computers for FLOSS/FOSS users ##
 There appeared a number of new manufacturers&vendors of computers suitable for FLOSS users.
-Apart from buying&using older second-hand laptops (IBM/Lenovo ThinkPad's, HP EliteBook, Fujitsu LifeBook, etc. brands), I find these 2 companies to be selling great laptops: https://puri.sm/, https://system76.com/, https://www.pine64.org/?page_id=3707 (https://archive.fo/U1ths), 2nd-hand IBM/Lenovo ThinkPad's, 2nd-hand HP laptops (e.g. HP EliteBook's), 2nd-hand/new Dell XPS 13, https://www.maketecheasier.com/best-linux-laptops/ (information accurate as of February 2019).
+Apart from buying&using older second-hand laptops (IBM/Lenovo ThinkPad's, HP EliteBook, Fujitsu LifeBook, etc. brands), I find these 2 companies to be selling great laptops: https://puri.sm/, https://system76.com/, https://www.pine64.org/?page_id=3707 (https://archive.fo/U1ths), 2nd-hand IBM/Lenovo ThinkPad's, 2nd-hand HP laptops (e.g. HP EliteBook's), 2nd-hand/new Dell XPS 13+/16/17+, https://www.maketecheasier.com/best-linux-laptops/ (information accurate as of February 2019).
 
 If you want to go full-copyleft/free-software, see
 https://stallman.org/stallman-computing.html (https://archive.fo/aiMTs)
@@ -353,10 +356,10 @@ self-hosted instance(s) of **GitLab** OR **Gitea** OR **[Gogs]()** (e.g. https:/
 
 ## F(L)OSS chemistry software:
 OpenBabel (opens-source chemistry software package): http://openbabel.org/wiki/Main_Page
-
+open chemistry periodic table of chemical elements by Dmitry Mendeleev & IUPUC, et al.
 ## FOSS CAD:
 * OpenCAD
 
 ETC. ...
 (to be continued... in some other lifetime, hehe... Maybe.
-SEE YOU, SPACE COWBOY... AND THANKS FOR ALL THE FISH. Nah, keep breathing, soldier of fortune...)
+SEE YOU, SPACE COWBOY... AND THANKS FOR ALL THE FISH. Nah, keep breathing, soldier of fortune... and impregnate the woman before dying!)
