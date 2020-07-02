@@ -1,11 +1,25 @@
+# SecureMessagingApps
 
 http://securemessagingapps.com
 https://github.com/sahwar/Bulogos/blob/master/_cheatsheets/Digital%20Communications%20Protocols.pdf
 
-PDF viewers:
+qTox
+http://matrix.org
+Jitsi.im
+http://conversations.im
+http://xmpp.org/list-of-clients/
+http://pidgin.im
+open-source alternatives to Slack, etc.
 
+# PDF viewers:
+http://pdfreaders.org
+https://en.wikipedia.org/wiki/List_of_PDF_software#Viewers_4
+FoxitPDF Reader
+XpdfViewer
 
-Web-browsers:
+# Web-browsers:
 
 http://en.wikipedia.org/wiki/List_of_webbrowsers
 http://en.wikipedia.org/wiki/Comparison_of_webbrowsers
++ new open-source or closed-source forks of Mozilla Firefox (including older versions), Google Chrome / Chromium
++ http://suckless.org - surf + add-ons, + uzbl web-browser + Qt-based web-browsers, etc.
