@@ -1,9 +1,10 @@
-* p2p software: torrent client software + torrent trackers / magnet URIs, DC++/ADC hubs, IRC XDCC p2p-filesharing download hubs
+* p2p software: torrent client software (qbittorrent, Deluge, uTorrent, etc.) + torrent trackers / magnet URIs, DC++/ADC hubs, IRC XDCC p2p-filesharing download hubs
 * FilePizza (p2p-filesharing via a modern web-browser like Mozilla Firefox or Google Chrome / Chromium, Vivaldi, suckless.org surf , etc.)
 * SynchThing; OwnCloud
 * FTP server + username & password
 * Fram's F*EX & sexxx software:
 https://fex.rus.uni-stuttgart.de/
+http://fex.belwue.de/fex.html
 * qTox p2p filesharing
 * JitsiIM p2p filesharing
 * RicochetIM p2p filesharing
@@ -16,6 +17,9 @@ https://fex.rus.uni-stuttgart.de/
 * rsync, zsync, Zstandard(?!?); USBoverEthernet (?!?)
 * http://mediafire.com , http://imgur.com , http://imgflip.com , http://4chan.org , http://8chan.org 
 * http://youtube.com , http://vimeo.com , http://instagram.com , http://facebook.com , http://wordpress.com , http://blogspot.com , http://vidcloud.com (?)
+* http://fosstodon.org , http://twitter.com , http://identi.ca / GNU Social
+* http://matrix.org (?)
+
 * etc.
 * ??? Suggest more killer apps for adding to this list!!!
 
