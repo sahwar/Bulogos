@@ -1,0 +1,12 @@
+https://github.com/omaciel/pylyglot
+
+Not to be confused with the non-web-translation-system app of the same name:
+https://gitlab.com/lsrdg/pylyglot
+
+See also:
+* Weblate
+* Mozilla Pantoon & Mozilla Voice & http://tatoeba.org
+* SumatraPDF's web-translation system
+* http://transifex.com
+* http://crowdin.com
+* .po/.ts/.resx translated locale-strings files found on: http://launchpad.net + http://github.com + http://gitlab.org + self-hosted Gitea instances
