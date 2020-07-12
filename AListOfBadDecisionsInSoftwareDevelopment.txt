@@ -90,6 +90,9 @@ AppImage's, flatpak, and Ubuntu snap, and source-packages
 
 https://www.forbes.com/sites/jasonevangelho/2020/07/09/google-and-ubuntu-desktop-linux-flutter/amp/
 
+* Microsoft dropping support from PHP v8+ onwards = bad idea:
+https://laravel-news.com/microsoft-dropping-php-support
+
 * etc.
 
 * useful .bat scripts for MS-Windows cmd.exe and cmdlets for MS-Windows PowerShellCore, similar to Linux/*NIX shell-scripting (mainly for bash&zsh).
