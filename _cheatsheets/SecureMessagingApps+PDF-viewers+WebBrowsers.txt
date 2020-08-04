@@ -2,18 +2,27 @@
 
 http://securemessagingapps.com
 https://github.com/sahwar/Bulogos/blob/master/_cheatsheets/Digital%20Communications%20Protocols.pdf
+http://en.wikipedia.org/wiki/List_of_p2p_filesharing_protocols
+http://en.wikipedia.org/wiki/List_of_filesharing_protocols
 
-qTox
+qTox --- http://tox.im
 http://matrix.org
-Jitsi.im
-http://conversations.im
+Jitsi.im --- http://jitsi.org
+http://conversations.im (XMPP/Jabber chat client for Google Android)
 http://xmpp.org/list-of-clients/
 http://pidgin.im
-open-source alternatives to Slack, etc.
+open-source alternatives to Slack and http://discord.com on github, gitlab, self-hosted gitea instances, etc.
+RetroShare, OnionShare + Tor web-browser & RicochetIM
 
-# PDF viewers:
+# List of PDF viewers:
+Списък с най-добрите PDF четци за Линукс (Linux / GNU/Linux), Уиндоус (Microsoft Windows), macOS / MacOSX, Google Android, iOS, Nokia SymbianOS
+
+http://archive.is/7OPCT
+httpshttps://www.ubuntupit.com/linux-pdf-viewer-best-15-pdf-readers-reviewed-for-linux-users/
+
 http://pdfreaders.org
 https://en.wikipedia.org/wiki/List_of_PDF_software#Viewers_4
+SumatraPDF
 FoxitPDF Reader
 XpdfViewer
 
