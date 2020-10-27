@@ -73,6 +73,33 @@ https://www.theregister.co.uk/2017/04/27/debian_to_turn_off_ftp/
 * Google Chrome & Mozilla Firefox NOT natively supporting saving webpages as .WARC (latest stable git version), and as .mht (like IE10–11 did; + the Firefox add-on UnMHT), and as .MAFF (via the Firefox MAFF add-on).
 However, it is nice that Google Chrome (desktop&mobile) supports saving webpages as .mht (maybe???) and that Firefox mobile (for Google Android) supports printing webpages as PDF, like Google Chrome (desktop) does.
 
+>>> * Some VERY GOOD ideas for desktop & mobile-OS web-browsers:
+
+~to add to Mozilla Firefox --- to add to Bulogos :
+
+Save webpage as (for offline viewing; NOTE: all the below methods must show their add-on/feature version & git repository - for troubleshooting&diagnostics purposes!)
+
+> {title}_folder with webpage resources + .htm(l)
+> .mht (single file, openable by IE6+, Google Chrome, etc.)
+> Print as .PDF (CLI commands: ... ; adjustable CLI arguments!; PDF generator engine: ...) --- excluding interactive HTML content like forms, BUT includes video and audio and images hyperlinks with a preview and ifonline=yes video/audio multimedia player!
+> .MAFF (single file) - REQUIRES FREE ADD-ON, DOWNLOAD HERE
+> .WebArchive file (based on archive.org's webcrawler)
+> wget's (v?.??) full-page download command (adjustable CLI commands before download!):
+$ wget --all-resources ...
+> wget2's (v?.??) full-page download command (adjustable CLI commands before download!):
+$ wget2 ...
+> curl's (v?.??, build arguments: ... )
+
+Save webpage to Firefox Pocket
+Save webpage to external network device (via FTP, SFTP, FTPS, WebDAV, SMB/SAMBAv?.??, etc.; or to a free file-hosting service like Google Drive, Microsoft OneDrive, dropbox.com, etc.)...
+Copy all opened webpages URI/URL (adjustable) to .txt/.csv/.tsv file --- via Firefox's built-in function Settings > Homepage > Select all opened webpages as homepage, and just expand that feature a bit in the GUI!
+Take webpage screenshot = DONE (Firefox now has this feature built-in in 2 ways: a button&via the CLI!)
+Save session... Load session(s)...
+Export user profile...
+Clear ALL web-browser cache (with a warning!!!)
+
+Mobile & desktop web-browsers should also show an indicator about the total filesize of saved webpages (regardless of file format) in comparison to the total file space of the device's partition filesystem (or whereever partition/volume the web-browser is saving webpages for offline viewing!) for ease of use!!!
+
 * wget, wget2, curl, lftp, httpie, etc. should also support saving webpages as .WARC (latest stable-git), as .mht, and as .htm/.html+{webpage title, with all non-html external resources inside}_folder folder, and as .MAFF, and printing to PDF (with included PDF-attachment = the original webpage in the aforementioned web-archival DataHoarding long-term-storage file-format filetypes)...
 
 * Mozilla Firefox & Google Chrome NOT including a local .html (English+other locale language) of their help pages with the list of keyboard shortcuts, computer-mouse&mouse-gestures shortcuts, and list of about:{something} internal web-browser settings webpages... and also NOT including the Keyboard Shortcuts Editor by default inside the web-browser... and NOT including a DONATE button in the web-browser, and NOT shipping by default the Ctrl+Shift+D 'Save all opened tabs as {user-typed_datetime}' folder + export all saved bookmarks as .html/.commonmark/.json + Copy All Opened Tab URIs/URLs (&/titles) to clipboard/.txt/.json/.html/.commonmark - for both desktop&mobile web-browsers.
@@ -136,11 +163,47 @@ https://laravel-news.com/microsoft-dropping-php-support
 
 https://www.zdnet.com/google-amp/article/linux-team-approves-new-terminology-bans-terms-like-blacklist-and-slave/
 
-* the entire concept of SpaceX's/Elon Musk's 'Neuralink' computer—machine interface is misguided and represents a misunderstanding of how human consciousness really works as biopsycho-biophysical-biochemo---environmental natural transducer-transceiver:
+* the entire concept of SpaceX's/Elon Musk's 'Neuralink' computer—machine interface is misguided and represents a misunderstanding of how human consciousness really works as biopsycho-biophysical-biochemo---environmental natural transducer-transceiver (as explained by ve4ernik on http://sites.google.com/view/ve4ernik & http://instagram.com/ve4ernik & http://instagram.com/ve4ernik2 , etc.):
 https://www.news18.com/amp/news/buzz/great-and-terrifying-says-elon-musk-on-neuralink-brain-devices-ability-to-cure-depression-2711221.html
 
-* etc.
+---
+* Some NOT VERY GOOD decisions:
+--- https://www.theregister.com/2020/09/15/microsoft_submits_linux_kernel_patches/
+
+--- https://www.theregister.com/2020/08/18/paragon_tries_to_contribute_ntfs/
+
+--- https://www.theregister.com/2020/07/13/linux_adopts_inclusive_language/ (I tolerate this decision BUT if Linux gets too much political correctness and anti-hatespeech regulations, I will be majorly disappointed! 🙄😓 I like the combination of Linus' no-bullshit talking and practicality and the FSF's idealism&sense of duty to F(L)OSS, with the contributions by the community and investors/sponsors/money&hardware&etc. donators!
+
+https://www.theregister.com/2020/06/11/linux_comes_to_windows_update/
+(?)
+
+https://www.theregister.com/2020/07/13/rust_code_in_linux_kernel/
+
+;(
+
+--- Win10X without win32 apps:
+https://www.windowslatest.com/2020/10/26/microsoft-windows-10x-rtm-in-december/amp/
+;( Very bad for users of Win32 apps in Win10X!!!
+
+--- Microsoft takes down youtube-dl :
+https://www.engadget.com/amp/github-youtube-downloaders-riaa-223558038.html
+;( Very bad! I like youtube-dl BUT I also support YouTube's Premium paid feature!!!
+(Counter-)Response from the F(L)OSS people/circles:
+...
+
+--- изтриват на 05 ноември 2020 г. и професионалните умения и квалификации на Ned Dimov във Facebook и на Ivan Kurdov (facebook.com/iikurdov10 - I/me, ve4ernik) във Facebook ...
+
+https://www.theregister.com/2020/09/15/microsoft_submits_linux_kernel_patches/
+
+* Some good ideas:
+
+https://www.theregister.com/2020/09/28/eric_raymond_linux_beats_windows_prediction/
+
+https://www.theregister.com/AMP/2020/10/25/linux_5_10_rc1/
+---
 
 * useful .bat scripts for MS-Windows cmd.exe and cmdlets for MS-Windows PowerShellCore, similar to Linux/*NIX shell-scripting (mainly for bash&zsh).
+
+* etc.
 
 * to add more later on...
