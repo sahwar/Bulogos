@@ -16,7 +16,46 @@ I also greatly enjoy the new multi-process Firefox having a task-manager for tab
 I also greatly enjoy the availability of Firefox ESR (extended support release, like Ubuntu Linux's LTS (Long-term support) release - in contrast with rolling-release distros!).
 I also greatly enjoy stable x64 releases of Mozilla Firefox (Quantum) {but Mozilla should still offer x86/32-bit editions of Mozilla Firefox as well as make those useable/supported/runnable under (i.e. compatible with) x64-bit OSs like MS Windows7+/8.1/10 & Linux_x64, ARM_x64, etc.) and the cutting-edge 2 separate branches of Firefox (one for webdev professionals and th latest-git unstable edition for testing!)
 The only minus is that Firefox is a memory hog for too much RAM if you have more than 5 tabs simultaneously opened,
-and so users of older PCs are forced to use OLDER versions of Mozilla Firefox (WHICH IS WHY IT IS ESSENTIAL that Mozilla offers free downloads of ALL older versions of Mozilla Firefox PLUS their source-code!!!) or more lightweight web-browsers like uzbl or suckless.org's surf webkit-based web-browser or other browsers (e.g. inspired by the Vimperator add-on plus Mozilla Firefox's v65+(?) new UI).
+and so users of older PCs are forced to use OLDER versions of Mozilla Firefox (WHICH IS WHY IT IS ESSENTIAL that Mozilla offers free downloads of ALL older versions of Mozilla Firefox PLUS their source-code and langpacks&spellchecking dictionaries!!!) or more lightweight web-browsers like uzbl or suckless.org's surf webkit-based web-browser or other browsers (e.g. inspired by the Vimperator add-on plus Mozilla Firefox's v65+(?) new UI).
+I also really like the icons+text menus of the newer Firefox for desktop and for Google Android - better GUI/UI/UX!
+
+* It is a VERY BAD decision that so many IM-chat&VoIP-audiovideo-conferencing apps/platforms DO NOT offer a web-based (yet encrypted&with coockies/session management AND a checkbox/button to save chatlogs offline to your device AND to sync chatlogs across devices!):
+
+http://web.skype.com - very, very, very good move on Microsoft's part! I also like the availability of Skype Lite for Google Android, etc. OSs!
+http://web.viber.com (!!!) - we fucking need this ASAP! 🙄
+http://web.whatsapp.com - this DOES exist! (requires QRcode confirmation via your smartphone's WhatsApp app)
+http://messenger.com (+ Messenger App for desktop) --- the next version of Facebook.com's chat. As of October 2020, Facebook is merging FB Messenger with Instagram.com's private chats, which I personally find a bad move, including the lack of a good/any USEABLE web-based version of Instagram and the lack of chatlogs saving in Instagram's private chatlogs!
+
+We also NEED: 
+web.hangouts.google.com (available?)
+web.instagram.com (!!!)
+web.discord.com (available?)
+web.reddit.com
+web.old.reddit.com
+
+(
+web.teamviewer.com
+web.paypal.com
+web.ebay.com
+web.ebaykleinanzeigungen.com
+web.imgur.com (rather than just using the Imgur app for Google Android or iOS)
+)
+
+web.meet.google.com
+web.chat.google.com
+web.duo.google.com
+web.meet.jitsi.org
+
+web.xabber.org
+web.matrix.org/node=
+web.irc.freenode.net/chatroom=
+web.xabber.org
+
+web.yaxim.org xmpp
+web.atalk.org xmpp
+web.antox.org or web.tox.im
+
+http://linuxmint.com - supported by people from France!
 
 * Debian Linux will remove support for older drivers?!?
 https://www.facebook.com/groups/89717832488/permalink/10157818391107489/
