@@ -1,0 +1,16 @@
+https://github.com/sahwar/Bulogos/blob/master/HOWTO-which-version-of-Python-to-use-in-2020.txt
+
+Due to the fact that many Python PyPib(pip3) packages
+have NOT been ported to newer versions of Python, you may occassionally neeto
+have seperate folders where you have downloaded and installed different versions of the Python
+programming language - e.g v2.7+ and v3.x, etc.
+
+E.g. `https://github.com/josch/img2pdf' (& its self-hosted GitLab git repository)
+do NOT work with Python v3.9.
+
+So the current maximum recommended version of Python to use in 2020 is:
+
+Python v3.8
+(but in some cases, due to PIP3 packages NOT having been ported to newer versions of Python,
+you may need to have more folders with older versions of Python installed onto them, so as to use
+some Python scripts/apps that require an older version of Python and/or an older version of some Python PyPI pip3 packages...
