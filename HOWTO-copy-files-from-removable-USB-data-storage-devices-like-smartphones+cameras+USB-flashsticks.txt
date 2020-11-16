@@ -1,0 +1,16 @@
+HOWTO-copy-files-from-removable-USB-data-storage-devices-like-smartphones+cameras+USB-flashsticks.txt
+
+DO NOT _MOVE_ the files via Ctrl+X (Cut) but 
+use Ctrl+C (Copy) and Ctrl+V (Paste) to copy
+the files (especially if they are photos, videos,
+images, etc.), because there sometimes appears to happen
+disk-errors and I/O errors and data corruption, or loose USB cable,
+which causes data loss, data corruption, or hardware failures.
+
+This is why MS Windowd has the 'Safely remove USB removable media'
+feature for USB-connections despite USB being a hotpluggable remive-while-operating=okay
+technology, and why Linux possibly executes this automatically.
+
+After successful copying of the files, it is okay to do data-integrity verification via using hadh algorithms that have calculated tye SHA-1, SHA-256, SHA-512, SHA-1024, and RSA, etc. hash checksums of the original files
+and compare those en-masse (batch processing) with the copied files.
+This is also used by many Linux distros to verify the intrgrity of downloaded liveCD/DVD/USB-flashstick .ido images, .AppImage's, etc.
