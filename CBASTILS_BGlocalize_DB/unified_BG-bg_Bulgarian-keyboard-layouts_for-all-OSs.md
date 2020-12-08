@@ -4,6 +4,18 @@
 
 **Уеднаквен набор от кирилски клавиатурни подредби за българския език (за Microsoft (Windows XP SP3,) Windows7 SP1+, Win8, Win8.1, Win10+; Linux v(2.2+)/v3.4+/v4.2+/v5+; macOS 10.10+) — 32-bit (x86) & 64-bit (x86_64, amd64) :**
 
+_БЕЛЕЖКА:_ Този файл и списъкът му са в процес на разработка, редактиране и допълване...
+Моля, вижте секцията "Предложение за унифициран набор от уеднаквени клавиатурни подредби за поддръжка на българския език" по-надолу, както и дискусията по темата в имейл пощенския списък `lug-bg@linux-bulgaria.org` или имейл пощенския списък на `dict@ludost.net`:
+
+Linux Users Group - Bulgaria <lug-bg@linux-bulgaria.org>
+http://www.linux-bulgaria.org/webarchive/msg51780.html (архив на имейлите в пощенския списък)
+http://linux-bulgaria.org/mail_list.html (архив на имейлите в пощенския списък)
+`dict@ludost.net` (за записване/абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict )
+https://lists.ludost.net/pipermail/dict/
+https://ludost.net/ ...
+
+---
+
 ## MS Windows (WinXP SP3,) Win7 SP1+, Win8/8.1 и Win10+:
 
 ---------------------------------------------------------
