@@ -14,6 +14,15 @@ http://linux-bulgaria.org/mail_list.html (архив на имейлите в п
 https://lists.ludost.net/pipermail/dict/
 https://ludost.net/ ... ...
 
+Статия за клавиатурните подредби за българския език: https://bg.wikipedia.org/w/index.php?title=%D0%9A%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0_%D0%BF%D0%BE%D0%B4%D1%80%D0%B5%D0%B4%D0%B1%D0%B0&oldid=10577975
+Три статии за разлики в пунктуацията при езиците (такива разлика се наблюдават и при различните _style guides_ за модерния английски език!):
+https://en.wikipedia.org/w/index.php?title=Quotation_mark&oldid=993006737#Summary_table
+https://en.wikipedia.org/wiki/Quotation_marks_in_English
+https://www.thepunctuationguide.com/quotation-marks.html
+https://blog.apastyle.org/apastyle/2011/08/punctuating-around-quotation-marks.html
+https://www.englishclub.com/writing/punctuation-quotation-marks.htm
+https://jakubmarian.com/map-of-quotation-marks-in-european-languages/
+http://crudelisdiabolus.blogspot.com/2013/11/why-british-style-of-punctuation-around.html
 ---
 
 ## MS Windows (WinXP SP3,) Win7 SP1+, Win8/8.1 и Win10+:
