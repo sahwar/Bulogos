@@ -168,6 +168,7 @@ EN - Английски (САЩ) - English (GBoard - Google Android v10) - v?.??
 * https://github.com/simple-keyboard/simple-keyboard-layouts
 * https://github.com/grwlf/xkb-switch
 * https://github.com/sahwar?tab=repositories&q=keyboard+layout&type=&language=
+* https://github.com/google/extra-keyboards-for-chrome-os
 * ОЩЕ:
 * BG клавиатурни подредби от *BSD
 * BG клавиатурни подредби от macOS / Mac OS X
@@ -183,12 +184,15 @@ EN - Английски (САЩ) - English (GBoard - Google Android v10) - v?.??
 * GoogleTranslate handwriting-recognition (similar to GBoard for Google Android v8+?):
 https://www.google.com/intl/sa/inputtools/try/ ("Виртуалната клавиатура обхваща над 100 клавиатури за повече от 70 езика. Вижте този обучаващ видеоклип, за да разберете как да я използвате. Също така я изпробвайте онлайн.")
 
-https://www.x.org/releases/X11R7.5/doc/input/XKB-Config.html
-XKB configuration
-https://www.x.org/releases/current/doc/xorg-docs/input/XKB-Enhancing.html
-How to further enhance XKB configuration
+https://www.x.org/releases/X11R7.5/doc/input/XKB-Config.html - XKB configuration
+https://www.x.org/releases/current/doc/xorg-docs/input/XKB-Enhancing.html - How to further enhance XKB configuration
 
 Също полезни ресурси:
+
+https://www.babelstone.co.uk/Unicode/babelmap.html
+http://www.unicode.org/resources/online-tools.html
+https://home.unicode.org/
+https://www.ccli.gov.hk/tc/index/
 
 http://unicode.org
 http://unicode.org/CLDR/
@@ -222,6 +226,55 @@ https://phrase.com/lp/i18n-manager/
 https://localazy.com/?gclid=CjwKCAiAwrf-BRA9EiwAUWwKXq1Si0xK1CIKUcRckgNwinSgoDIP7OHZ3dlzkFxS7LfOfy8wia7i4hoCncAQAvD_BwE
 https://benjamins.com/catalog/ts.3.05lew
 https://poeditor.com/
+---
+https://www.babelstone.co.uk/Unicode/babelmap.html
+https://www.unicode.org/faq/font_keyboard.html
+
+http://www.unicode.org/resources/online-tools.html
+http://www.unicode.org/charts/
+
+http://www.unicode.org/resources/online-tools.html
+http://www.unicode.org/charts/
+
+https://www.unicode.org/faq/font_keyboard.html
+https://www.unicode.org/faq/utf_bom.html
+https://home.unicode.org/
+
+http://www.unicode.org/charts/charindex.html
+https://blogs.adobe.com/CCJKType/files/2016/11/top-ten-lists-2016.pdf
+https://www.unicode.org/iso15924/
+https://www.unicode.org/ivd/
+http://www.unicode.org/versions/Unicode13.0.0/
+http://www.unicode.org/charts/
+http://www.unicode.org/L2/
+https://www.ccli.gov.hk/tc/index/
+
+http://www.unicode.org/resources/online-tools.html
+
+https://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#date_format_patterns
+http://www.unicode.org/resources/
+https://home.unicode.org/basic-info/projects/
+http://cldr.unicode.org/
+
+http://cldr.unicode.org/index/keyboard-workgroup
+http://www.unicode.org/standard/standard.html
+http://www.unicode.org/versions/Unicode13.0.0/
+http://www.unicode.org/charts/unihan.html
+http://www.unicode.org/standard/supported.html
+
+http://www.unicode.org/Public/
+http://site.icu-project.org/
+
+http://unicode.org/main.html
+https://www.unicode.org/udhr/
+
+https://www.unicode.org/faq/font_keyboard.html
+
+http://www.unicode.org/resources/online-tools.html
+http://www.unicode.org/charts/
+
+https://jakubmarian.com/map-of-quotation-marks-in-european-languages/
+---
 
 r12a@w3.org.
 
@@ -239,15 +292,16 @@ IPA character map -
 Unicode tools online - 
 http://2cyr.com
 http://tools.chitanka.info/
-БАРБОРИНО.exe voice-control app for Bulgarian - for MS Windows 7+
+БАРБОРИНО.exe voice-control app for Bulgarian - for MS Windows 7+ - 
 Microsoft Cortana voice-controlled 'AI' assistant ...
 
-CLI speed-launchers:
+* CLI speed-launchers:
 Wox (MS Windows, . NET) + Search Everything ( voodtools.net )
 ULauncher (Linux) + FSearch (Linux) + fzf + ffind + locate + find + ls + (awk) + ... (google in GitHub.com)
 plotinus (Linux, GitHub.com)
 GNOME3 DE - Dash launcher ...
 (bash, zsh, ...)
+Google Android: Nova launcher (Google Play) + Gboard keyboard layouts + Swiftkey keyboard layouts ...
 
 Unicode:
 https://github.com/sahwar?tab=repositories&q=unicode&type=&language=
@@ -272,6 +326,7 @@ https://github.com/WillHayCode/unicode-flag-finder
 https://github.com/fmthoma/ascii-art-to-unicode
 https://github.com/huonw/unicode_names
 https://github.com/thekelvinliu/country-code-emoji
+
 https://github.com/westonruter/ipa-chart
 http://westonruter.github.io/ipa-chart/keyboard/
 http://westonruter.github.io/ipa-chart/
