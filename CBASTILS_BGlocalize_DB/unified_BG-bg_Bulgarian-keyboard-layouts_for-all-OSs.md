@@ -93,6 +93,8 @@ https://github.com/grwlf/xkb-switch
 
 https://github.com/sahwar/Bulogos/blob/master/CBASTILS_BGlocalize_DB/unified_BG-bg_Bulgarian-keyboard-layouts_for-all-OSs.md
 
+Предложение за унифициран набор от уеднаквени клавиатурни подредби за поддръжка на българския език и кирилицата в много на брой операционни системи:
+
 EN - Английски (Съединени щати) - САЩ
 EN - Английски (Съединени щати) - САЩ - международен
 
@@ -124,6 +126,8 @@ BG - Български (България) - Български (GBoard - Google
   BG - Български (България) - Български - Morse code Bulgarian - v?.??) (GBoard - Google Android v10) - v?.??
   Липсващи - за добавяне:
   BG - Български (България) - Български - Braille BG-Bulgarian-{standards-title?} (GBoard - Google Android v10) - v?.??
+    (!) BG - Български (България) - Български - БДС+QWERTY_mixed_ +Unicode-charmap+Unicode-decimal/hex-input-button + speech-recognition-input-button (different engines, versions, and langpacks menu, downnloadable updates & extensions) + (Bulgarian + shapecatcher.com / google-inputtools-online-) handwriting-recognition-button (different engines, versions, and langpacks menu, downnloadable updates & extensions) + speech-synthesis-button (different engines, versions, and langpacks menu, downnloadable updates & extensions) + OCR-button (different engines, versions, and langpacks menu, downnloadable updates & extensions) **(GBoard - Google Android v10) - v?.??**
+    (!) BG - Български (България) - Български - БДС+Dvorak_mixed_ +Unicode-charmap+Unicode-decimal/hex-input-button + speech-recognition-input-button (different engines, versions, and langpacks menu, downnloadable updates & extensions) + (Bulgarian + shapecatcher.com / google-inputtools-online-) handwriting-recognition-button (different engines, versions, and langpacks menu, downnloadable updates & extensions) + speech-synthesis-button (different engines, versions, and langpacks menu, downnloadable updates & extensions) + OCR-button (different engines, versions, and langpacks menu, downnloadable updates & extensions) **(GBoard - Google Android v10) - v?.??**
 
 EN - Английски (САЩ) - English (Google Android v4.4.2+) - v?.??
 EN - Английски (САЩ) - English (Google Android v5) - v?.??
@@ -350,7 +354,7 @@ http://www.skandissystems.com/en_us/translate.htm
 
 ---
 
-[SMS](https://en.wikipedia.org/wiki/SMS#Message_size)-и на (българска) кирилица (SMS charsets/encoding - GMS-7/ASCII или 16-bit UCS-2/'UTF-16'):
+## [SMS](https://en.wikipedia.org/wiki/SMS#Message_size)-и на (българска) кирилица (SMS charsets/encoding - GSM-7/GMS-7/ASCII или 16-bit UCS-2/'UTF-16'):
 
 **Накратко:** Изпращайте SMS-и _САМО_ с дължина от 160 (всъщност **153** при multi-part SMS) знака на 7-bit ASCII (GSM-7) латиница или до 70 (**всъщност 67 при multi-part non-ASCII SMS**; 16-bit UCS-2 (BMP (Basic Multilingual Plane)-only UTF-16), максимум до 140 байта/октета (1120 bits)) знака на кирилица и/или на друга не-ASCII писменост, включена в Unicode. БЕЛЕЖКА: Escape characters ``( | ^ € { } [ ] ~ )`` се смятат като 2 броя 7-bits според Extended GSM character set (т.е. едно SMS съобщение може да съдържа до 80 знака ``{``)!!! --- http://smscharactercounter.com/encoding
 
