@@ -85,6 +85,271 @@ http://5ko.free.fr/bg/winamp.html
 
 ---
 
+# Related resources
+
+````
+https://github.com/grwlf/xkb-switch
+
+
+https://github.com/sahwar/Bulogos/blob/master/CBASTILS_BGlocalize_DB/unified_BG-bg_Bulgarian-keyboard-layouts_for-all-OSs.md
+
+EN - Английски (Съединени щати) - САЩ
+EN - Английски (Съединени щати) - САЩ - международен
+
+BG - Български (България) - Български
+BG - Български (България) - Български (машинопис)
+BG - Български (България) - Български (традиционна фонетична)
+BG - Български (България) - Български (фонетична)
+BG - Български (България) - Български (латиница) *  
+BG - Български (България) - Bulgarian BDS (Extended) [bg_bds_ex] - v?.?? - http://sites.google.com/site/bglocalize
+BG - Български (България) - Bulgarian Phonetic Traditional (Extended) [bg_phon_ex] - v?.?? - http://sites.google.com/site/bglocalize
+BG - Български (България) - Български (Bulogos1) - v?.??
+BG - Български (България) - Български (Bulogos2) - v?.??
+BG - Български (България) - Български (Bulogos3) - v?.??
+BG - Български (България) - Български (Google Android v4.4.2+) - v?.??
+BG - Български (България) - Български (Google Android v5) - v?.??
+BG - Български (България) - Български (GBoard - Google Android v6) - v?.??
+BG - Български (България) - Български (GBoard - Google Android v7) - v?.??
+BG - Български (България) - Български (GBoard - Google Android v8) - v?.??
+BG - Български (България) - Български (GBoard - Google Android v9) - v?.??
+BG - Български (България) - Български (GBoard - Google Android v10) - v?.??
+  BG - Български (България) - Български - ЯВЕРТЪ (GBoard - Google Android v10) - v?.??
+  BG - Български (България) - Български - БДС (GBoard - Google Android v10) - v?.??
+  BG - Български (България) - Български - handwriting-recognition (GBoard - Google Android v10) - v?.??
+  Липсващи - за добавяне:
+  BG - Български (България) - Български - Български (машинопис) (GBoard - Google Android v10) - v?.??
+  BG - Български (България) - Български - Български (традиционна фонетична) (GBoard - Google Android v10) - v?.??
+  BG - Български (България) - Български - Български (фонетична) (GBoard - Google Android v10) - v?.??
+  BG - Български (България) - Bulgarian BDS (Extended) - v?.?? - http://sites.google.com/site/bglocalize
+  BG - Български (България) - Български - Morse code Bulgarian - v?.??) (GBoard - Google Android v10) - v?.??
+  Липсващи - за добавяне:
+  BG - Български (България) - Български - Braille BG-Bulgarian-{standards-title?} (GBoard - Google Android v10) - v?.??
+
+EN - Английски (САЩ) - English (Google Android v4.4.2+) - v?.??
+EN - Английски (САЩ) - English (Google Android v5) - v?.??
+EN - Английски (САЩ) - English (GBoard - Google Android v6) - v?.??
+EN - Английски (САЩ) - English (GBoard - Google Android v7) - v?.??
+EN - Английски (САЩ) - English (GBoard - Google Android v8) - v?.??
+EN - Английски (САЩ) - English (GBoard - Google Android v9) - v?.??
+EN - Английски (САЩ) - English (GBoard - Google Android v10) - v?.??
+  EN - Английски (САЩ) - English - QWERTY (GBoard - Google Android v10) - v?.??
+  EN - Английски (САЩ) - English - handwriting-recogniton (GBoard - Google Android v9) - v?.??
+  EN - Английски (САЩ) - English - QWERTZ (GBoard - Google Android v10) - v?.??
+  EN - Английски (САЩ) - English - AZERTY (GBoard - Google Android v10) - v?.??
+  EN - Английски (САЩ) - English - Dvorak (GBoard - Google Android v10) - v?.??
+  EN - Английски (САЩ) - English - Colemak (GBoard - Google Android v10) - v?.??
+  EN - Английски (САЩ) - English - PC (GBoard - Google Android v10) - v?.??
+  EN - Английски (САЩ) - English - Morse code (GBoard - Google Android v10) - v?.??
+  Липсващи - за добавяне:
+  EN - Английски (САЩ) - English - Braille USA-English-{standards-title?} (GBoard - Google Android v10) - v?.??
+  
+Липсващи, за допълване:
+* https://github.com/sahwar?tab=repositories&q=keyboard+layout&type=&language=
+* https://github.com/house-owl/Bulgarian-Phonetic-Dvorak
+* https://github.com/salifm/colemak-bg
+* https://github.com/dragunoff/keyboard-layouts
+* https://github.com/simple-keyboard/simple-keyboard-layouts
+* https://github.com/grwlf/xkb-switch
+* https://github.com/sahwar?tab=repositories&q=keyboard+layout&type=&language=
+* ОЩЕ:
+* BG клавиатурни подредби от *BSD
+* BG клавиатурни подредби от macOS / Mac OS X
+* BG клавиатурни подредби от HaikuOS
+* BG клавиатурни подредби от TempleOS
+* BG клавиатурни подредби от Jolla SailfishOS
+* BG клавиатурни подредби от SymbianOS v?.??
+* BG клавиатурни подредби от BlackBerryOS 10+
+* BG клавиатурни подредби от JavaME dumbphones/burner-phones
+* BG клавиатурни подредби от Samsung OSs
+* BG клавиатурни подредби от Huawei, Meizu, Lenovo, Lenovo Motorola, MIUI v?.??, ...
+* https://en.wikipedia.org/wiki/Template:Input_method
+* GoogleTranslate handwriting-recognition (similar to GBoard for Google Android v8+?):
+https://www.google.com/intl/sa/inputtools/try/ ("Виртуалната клавиатура обхваща над 100 клавиатури за повече от 70 езика. Вижте този обучаващ видеоклип, за да разберете как да я използвате. Също така я изпробвайте онлайн.")
+
+https://www.x.org/releases/X11R7.5/doc/input/XKB-Config.html
+XKB configuration
+https://www.x.org/releases/current/doc/xorg-docs/input/XKB-Enhancing.html
+How to further enhance XKB configuration
+
+Също полезни ресурси:
+
+http://unicode.org
+http://unicode.org/CLDR/
+http://unicode.org/tables/
+http://unicode.org/character-index/
+http://unicode.org - FTP files with source files
+http://www.unicode.org/resources/online-tools.html
+https://www.w3.org/International/tools
+http://r12a.github.io/apps/subtags/
+http://r12a.github.io/applist
+https://r12a.github.io/uniview/
+https://r12a.github.io/apps/listcharacters/
+https://r12a.github.io/app-listcharacters/
+https://r12a.github.io/pickers/
+https://r12a.github.io/app-subtags/
+https://r12a.github.io/uniview/
+https://r12a.github.io/app-conversion/
+https://r12a.github.io/app-analysestring/
+https://r12a.github.io/app-listcharacters/
+https://r12a.github.io/app-charuse/
+https://r12a.github.io/app-encodings/
+https://r12a.github.io/pickers/
+https://r12a.github.io/app-pinyin-phonetics/
+https://r12a.github.io/app-subtags/
+https://validator.w3.org/i18n-checker/
+https://lokalise.com/
+https://benjamins.com/catalog/ts.3.05lew
+https://benjamins.com/catalog/ts
+https://www.webnms.com/telecom/help/developer_guide/internationalization/i18ntool_for_internationalizarion.html
+https://phrase.com/lp/i18n-manager/
+https://localazy.com/?gclid=CjwKCAiAwrf-BRA9EiwAUWwKXq1Si0xK1CIKUcRckgNwinSgoDIP7OHZ3dlzkFxS7LfOfy8wia7i4hoCncAQAvD_BwE
+https://benjamins.com/catalog/ts.3.05lew
+https://poeditor.com/
+
+r12a@w3.org.
+
+В MS Windows 7 / 8.1 / 10 към EN и BG има и „клавиатурни подредби“, които реално са приложението за CJKV+GCL+Armen handwriting-recognition:
+* writing pad
+* draw anywhere
+* drawing pad
+
+http://mdbg.net - handwriting-recognition for CJKV
+http://josho.org - handwriting-recognition for CJKV
+http://shapecatcher.com
+BabelMap Online Unicode character map
+gucharmap / KCharSelect
+IPA character map - 
+Unicode tools online - 
+http://2cyr.com
+http://tools.chitanka.info/
+БАРБОРИНО.exe voice-control app for Bulgarian - for MS Windows 7+
+Microsoft Cortana voice-controlled 'AI' assistant ...
+
+CLI speed-launchers:
+Wox (MS Windows, . NET) + Search Everything ( voodtools.net )
+ULauncher (Linux) + FSearch (Linux) + fzf + ffind + locate + find + ls + (awk) + ... (google in GitHub.com)
+plotinus (Linux, GitHub.com)
+GNOME3 DE - Dash launcher ...
+(bash, zsh, ...)
+
+Unicode:
+https://github.com/sahwar?tab=repositories&q=unicode&type=&language=
+
+https://github.com/janlelis/uniscribe
+https://github.com/janlelis/unibits
+https://github.com/janlelis/unicopy
+https://github.com/garabik/unicode
+
+https://github.com/tonton-pixel/unicopedia-plus
+https://github.com/unicode-org/cldr
+https://github.com/KirillOsenkov/QuickInfo
+https://github.com/servo/unicode-bidi
+https://github.com/eosrei/twemoji-color-font
+https://github.com/LuminosoInsight/python-ftfy
+https://github.com/chowdhurya/rust-unidecode
+https://github.com/fcambus/ansiweather
+https://github.com/unicode-org/unilex
+https://github.com/earthlingsoft/UnicodeChecker-UTF8Unshredder
+https://github.com/Ryosuke839/UnicodePad
+https://github.com/WillHayCode/unicode-flag-finder
+https://github.com/fmthoma/ascii-art-to-unicode
+https://github.com/huonw/unicode_names
+https://github.com/thekelvinliu/country-code-emoji
+https://github.com/westonruter/ipa-chart
+http://westonruter.github.io/ipa-chart/keyboard/
+http://westonruter.github.io/ipa-chart/
+http://westonruter.github.io/ipa-chart/accessiblechart.html
+https://www.internationalphoneticassociation.org/sites/default/files/phonsymbol.pdf
+https://github.com/stv0g/unicode-emoji
+
+https://github.com/sahwar/handwriting-ocm
+https://github.com/pndurette/gTTS
+
+https://en.wikipedia.org/wiki/SAMPA
+https://en.wikipedia.org/wiki/X-SAMPA
+https://en.wikipedia.org/wiki/Z-SAMPA
+https://en.wikipedia.org/wiki/Extensions_to_the_International_Phonetic_Alphabet (extIPA)
+https://en.wikipedia.org/wiki/Template:IPA_navigation
+https://en.wikipedia.org/wiki/Voice_Quality_Symbols
+https://en.wikipedia.org/wiki/Sinological_extensions_to_the_International_Phonetic_Alphabet
+
+https://onlineunicodetools.com/
+https://www.textmagic.com/free-tools/unicode-detector
+https://www.branah.com/unicode-converter
+https://sahwar.wordpress.com/tag/online-unicode-tools/ (SORTA OUTDATED & INCOMPLETE)
+
+http://www.fileformat.info/tip/microsoft/enter_unicode.htm
+(Unicode Input Method Editor - LeftAlt Shift as the trigger key )
+
+http://www.fileformat.info/info/charset/codepage.htm
+https://docs.microsoft.com/en-us/archive/blogs/michkap/
+http://www.fileformat.info/info/unicode/font/fontlist.htm (requires Adobe Flash v9+; BUT Adobe Flash is obsolete as of 1 January 2021)
+
+https://textmechanic.com/
+http://regex101.com
+
+------
+https://www.google.com/intl/sa/inputtools/try/ ("Виртуалната клавиатура обхваща над 100 клавиатури за повече от 70 езика. Вижте този обучаващ видеоклип, за да разберете как да я използвате. Също така я изпробвайте онлайн.")
+https://github.com/google/google-input-tools
+https://www.google.com/inputtools/services/
+https://www.google.com/inputtools/services/features/handwriting.html
+https://www.google.com/inputtools/services/features/input-method.html
+https://www.google.com/inputtools/services/features/transliteration.html
+https://www.google.com/inputtools/services/features/virtual-keyboard.html
+https://github.com/sahwar?tab=repositories&q=google&type=&language=
+https://github.com/behdad/color-emoji
+"C:\Program Files (x86)\Freezerware\Digitizer\digitizer.exe"
+ASCIIGen2
+http://figlet.org
+unicode-screensaver
+
+https://chrome.google.com/webstore/detail/google-input-tools/mclkkofklkfljcocdinagocijmpgbhab?hl=bg
+https://www.google.com/search?q=add+a+google+translate+button+to+website&rlz=1C1AVFA_enBG871BG889&oq=add+a+google+transl&aqs=chrome.0.0i19j69i57j0i19i22i30l3j0i5i13i19i30.6695j0j4&sourceid=chrome&ie=UTF-8
+https://support.google.com/translate/thread/3100947?hl=en
+https://translate.google.com/intl/en/about/website/
+https://support.google.com/chrome/answer/173424?co=GENIE.Platform%3DDesktop&hl=en-GB&vid=0-627513458733-1545747226850
+https://en.wikipedia.org/w/index.php?title=Google_IME&oldid=981247075
+https://github.com/ChenYuHo/handwriting.js
+
+https://catonmat.net/online-unicode-tools
+
+https://onlineunicodetools.com/
+https://www.online-toolz.com/tools/text-unicode-entities-convertor.php
+https://www.google.com/search?q=online+unicode+tools&rlz=1C1AVFA_enBG871BG889&oq=online+unicode+tools&aqs=chrome..69i57j0i19i22i30.4389j0j4&sourceid=chrome&ie=UTF-8
+
+https://catonmat.net/online-unicode-tools
+https://developers.google.com/international
+https://github.com/googlefonts/noto-fonts
+
+http://fontstruct.com
+https://www.pentacom.jp/pentacom/bitfontmaker2/
+https://www.pentacom.jp/soft/ex/font/edit_canvas.html
+https://www.pentacom.jp/soft/ex/font/edit.html
+https://www.pentacom.jp/soft/ex/font/museum.cgi
+https://www.angelcode.com/products/bmfont/
+https://www.min.at/prinz/o/software/pixelfont/
+
+http://renderhjs.net/shoebox/
+
+http://www.iseasoft.com/bitfontcreator.html
+https://fontmeme.com/pixel-fonts/
+https://www.angelcode.com/tower/
+http://kvazars.com/littera/
+https://www.71squared.com/glyphdesigner
+
+https://github.com/libgdx/libgdx/wiki/Hiero ('Hiero is a bitmap font packing tool. It saves in the Angel Code font format, which can be used by BitmapFont in libGDX applications.')
+
+https://www.google.com/search?q=ttf2svg&rlz=1C1AVFA_enBG871BG889&oq=ttf2svg&aqs=chrome..69i57j0i19i30j0i5i19i30l3.12792j0j7&sourceid=chrome&ie=UTF-8
+https://xmlgraphics.apache.org/batik/tools/font-converter.html
+https://developer.aliyun.com/mirror/npm/package/ttf2svg
+https://manpages.debian.org/testing/libbatik-java/ttf2svg.1.en.html
+https://www.npmjs.com/package/ttf2svg
+https://github.com/qdsang/ttf2svg
+http://www.skandissystems.com/en_us/translate.htm
+````
+
+---
+
 [SMS](https://en.wikipedia.org/wiki/SMS#Message_size)-и на (българска) кирилица (SMS charsets/encoding - GMS-7/ASCII или 16-bit UCS-2/'UTF-16'):
 
 **Накратко:** Изпращайте SMS-и _САМО_ с дължина от 160 (всъщност **153** при multi-part SMS) знака на 7-bit ASCII (GSM-7) латиница или до 70 (**всъщност 67 при multi-part non-ASCII SMS**; 16-bit UCS-2 (BMP (Basic Multilingual Plane)-only UTF-16), максимум до 140 байта/октета (1120 bits)) знака на кирилица и/или на друга не-ASCII писменост, включена в Unicode. БЕЛЕЖКА: Escape characters ``( | ^ € { } [ ] ~ )`` се смятат като 2 броя 7-bits според Extended GSM character set (т.е. едно SMS съобщение може да съдържа до 80 знака ``{``)!!! --- http://smscharactercounter.com/encoding
