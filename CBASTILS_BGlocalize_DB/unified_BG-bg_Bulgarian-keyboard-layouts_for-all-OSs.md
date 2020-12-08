@@ -2,7 +2,7 @@
 
 ( `advanced national keyboard layout configuration & IME input-method software systems (e.g. SCM/SCIM on Linux, the input method for Japanese from Anthy OR Mozc, etc.; Google InputTools demo, etc.)` )
 
-**Уеднаквен набор от кирилски клавиатурни подредби за българския език (за Microsoft (Windows XP SP3,) Windows7 SP1+, Win8, Win8.1, Win10+; Linux v(2.2+)/v3.4+/v4.2+/v5+; macOS 10.10+) — 32-bit (x86) & 64-bit (x86_64, amd64) :**
+**Уеднаквен набор от кирилски клавиатурни подредби за българския език (за Microsoft (Windows XP SP3,) Windows7 SP1+, Win8, Win8.1, Win10+; Linux v(2.2+)/v3.4+/v4.2+/v5+; macOS 10.10+) — 32-bit (x86) & 64-bit (x86_64, amd64); ARMv? & ARM(v?)64 :**
 
 _БЕЛЕЖКА:_ Този файл и списъкът му са в процес на разработка, редактиране и допълване...
 Моля, вижте секцията "Предложение за унифициран набор от уеднаквени клавиатурни подредби за поддръжка на българския език" по-надолу, както и дискусията по темата в имейл пощенския списък `lug-bg@linux-bulgaria.org` или имейл пощенския списък на `dict@ludost.net`:
