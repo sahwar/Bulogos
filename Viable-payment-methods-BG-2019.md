@@ -124,9 +124,9 @@ _Recommended:_
 * http://puri.sm
 * http://system76.org
 * http://fsf.org/ryf/ = FSF RYF certified hardware list
-* SailfishOS + smartphones
-* CyanogenMod & its spiritual successor/fork
-* Google Android M / R, Google Fuchsia OS
+* http://jolla.org Jolla SailfishOS + their smartphones
+* CyanogenMod & its spiritual successor/fork called.... LineageOS(?)
+* Google Android M / R, Google Fuchsia OS ; Google Android v4.4.2-6/7/8/9/10+ (sadly, there exists some backwards-incompatibility and forwards-incompatibility, including among different smart-devices models and brands/vendors and model editions/versions...!)
 * ChromeOS (not my cup of tea...)
 
 _Also nice:_
