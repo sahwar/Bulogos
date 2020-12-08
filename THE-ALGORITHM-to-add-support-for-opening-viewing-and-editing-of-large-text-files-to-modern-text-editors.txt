@@ -1,0 +1,37 @@
+THE-ALGORITHM-to-add-support-for-opening-viewing-and-editing-of-large-text-files-to-modern-text-editors.txt
+
+BASIC IDEA:
+
+1. Open the big or huge text file and load a binary-atomic clean version of ALL of its encoded texts into RAM memory.
+2. If the RAM memory is too low to do 1., load only the first 60K filesize of the file WITHOUT modifying the rest of the file, but only show some visual marker and text warning after that limit is reached in the text editor's visual buffer window position.
+3. After 1. or 2., cache the previous file and the next file in the numbered-PID list of all files simultaneusly opened by the text editor app - in a similar way, or cache their full-sized binary-representation form.
+4. Only load and show the interactive/editable visual-buffer of the currently visible GUI window's visible printable&unprintable characters text-strings.
+5. Cache the previous 2-10 visual-buffer screens, relative to the current visible visual-buffer text on the GUI screen.
+6. On-the-fly securely no-buffer-overflows no-I/O-errors unload from RAM and load into RAM the next or previous visual-buffer visible-GUI-window-constraint's shown-text (minus the sliders that enable to scroll up/down the text-file's contents) as the user interacts with the current text file by moving the cursor and/or keyboard shifts up/down or top/bottom or to specific-portion of the entire file's visual-buffer of text.
+7. Maybe make a git version-controlled folder/directory of files to store clipboard buffer and another one to store undo/redo states of the currently opened file.
+8. Every X seconds, make a backup copy of all currently opened files (as if the user has these files as unsaved changes and then hits Ctrl+S to save them), BUT if the RAM
+or HDD/SSD/USB-flashstick memory reaches less than 1/3 of its memory, keep all other background-opened unfocused text-files outside of RAM memory and only keep the currently
+opened focused text-file into RAM memory, and load each other file only when the user moves from the currently opened focused text file onto another opened (or newly opened) text file.
+9. If the text-editor app starts using more than X amount of RAM for the currently opened focused text-file, immediately do a silent Ctrl+S saving of an extra backup of that file, linked with its folder of git-versioned undo/redo operations, or at least the last 50-100 undo and the last 50-100 redo operations...
+10. For the currently opened file, always make a shadow losslessly-compressed binary-representation index-file of that file and use that for regexp+substring+wildcards+globbing-supporting Search&Replace purposes within the text-editor.
+11. Offer a menu to select the search-algorithm to use on the cached index file, among several search-algorithms...
+12. In all cases, if the RAM or harddisk/disk memory exceeds a hardcoded-yet-user-configurable-limit-set-in-via-an-annotated-.ini/.vimrc-like-file (always making a non-editable copy of the default such file and only ever using the editable copy of it!), immediately Ctrl+S the file and wait 5-10 seconds to check if the app hangs, freezes or crashes or has bufffer overflow or I/O errors, and close, and restart the app from the last git-versioned state of the active focused last-opened file.
+13. Offer an accessibility feature whereby you have displayed next to the filenames of all opened tabs of opened text-files within the text-editor - a visual indicator in the form of {1/43, RAM: , filesize: , git-diff-initial-string} where '1/43' means the first opened file of a total of 43 opened files (the number changes if other files are closed or opened or move above or below or to the top or to the bottom - of the GUI/CLI filelist of opened tabs with text-files),
+and enable an easy-to-remember keyboard-shortcut to jump-open to a file based on its number in that list.
+14. Just like with 13., offer a
+15. Have a status-bar that provides detailed '$ man' or '$ info' interactive documentation about how to use the text-editor and how to view a new-GUI/CLI-window that lists all keyboard-shortcuts and what they do (explained in human terms), so as to avoid the 'How to exit vim???' fiasco scenario.
+16. All keyboard shortcuts of the app should be configurable with an uneditable default-kb-shortcuts.ini default file and its editable copy, and one should be able to set '$ alias' of all text-commands supported as features of the text-editor.
+17. The text-editor should have the option to load a regexp+substring seachbar that enables you to search through the text of the GUI menus of the text-editor app, to view the advanced hints explanations thereof, and to run the selected GUI meny-entry function for the currently opened active focused on-the-fly-loaded-into-RAM visual-text-buffer-screen...
+18. The text editor should have basic Session Manager support, Internet Updater support, and Plugins support - much like Notepad++'s.
+19. The editor must support all major text encodings, especially ASCII and UTF-8, UTF-16(BE/LE), UTF-32(BE/LE), and even ANSI.
+20. The text-editor should dump diagnostics info and offer a MozillaFirefox/GoogleChrome v55+-like bug-reporting GUI/CLI windows to send a bug report upon every app crah, etc.
+21. Optional: Support for basic batch operations on opening/closing/cloning/pinning/saving/saving+closing of individual opened-tabs files opened by the text-editor (like Mozilla Firefox v57+'s scrollable dropdown list of opened webpages, etc.)
+22. Optional but recommended: The text-editor must support syntax highlighting, on/off visual marks for whitespaces, tabs, and non-printable characters, and for missing-font-glyph Unicode characters.
+23. Optional: The text-editor may support plugging in a speech-synthesis app/engine to read-aloud the current active visual-buffer (and maybe to auto-scroll past it before reaching a set filesize-limit of the resulting on-the-fly-encoded audio-file) and to save the result to a .wav or .flac file...
+24. Optional: The text-editor may support plugging in some offline screen-reader app.
+25. Optional: The text-editor may support plugging in some online machine-translation services and using that on a selected text from the current active visual-buffer or the whole currently active focused file, auto-scrolling it to keep loading and unloading into RAM of the previous/next visual-buffer file-piece thus keeping the app responsive and sorta lightweight.
+26. The text-editor must list the relative/absolute number of total visual-buffer screens of the currently opened active focused text-file as well as the number of the visual-buffer file-piece within it, and offer you keyboard-shortcuts to jump to the file-pieces via that ordinal number...
+27. The text-editor must prevent I/O errors, buffer overflows, and data-corruption, where possible, and must enforce temporary freezes to unload some of the RAM while still shadow Ctrl+S saving the current undo/redo state of the currently opened file.
+28. The text-editor may optionally save the column+character-on-the-line last position of the last opened file for a new startup of the text-editor app...
+29. GUUIDs + checksums for each opened file.
+30. Auto-recovery healing of common text-encoding problems by first saving the original file and then opening the attempted auto-healed copy of it rather than modifying the original file... This may include use of 'iconv', 'lffp'(?), and even http://2cyr.com , etc.
