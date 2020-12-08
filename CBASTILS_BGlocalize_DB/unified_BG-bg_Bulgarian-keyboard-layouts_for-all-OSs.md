@@ -403,7 +403,12 @@ http://www.skandissystems.com/en_us/translate.htm
 
 ## Оригинална идея на ve4ernik за усъвършенстване на GSM клавиатурните подредби за English&Bulgarian локали ##
 * добавяне на знак и функция за отваряне на [latest] Unicode character-map-app (Java ME (?) / Nokia Symbian OS) към един от бутоните:
-(GIF снимки или скрийншоти/скрийншотове от физическата клавиатурна подредба на такива мобифони (мобилни устройства, съвременните: смартфони)...) + знак&функция за пунктуация + програмируем бутон с UTF-8 regexp-enabled Search... и drop-down меню със скролване надолу-нагоре... (scrolling=провлачване...)...
+(GIF снимки или скрийншоти/скрийншотове от физическата клавиатурна подредба на такива мобифони (мобилни устройства, съвременните: смартфони)...) + знак&функция за пунктуация + програмируем бутон с UTF-8 regexp-enabled Search... и drop-down меню със скролване надолу-нагоре... (scrolling=провлачване...)... плюс бутон за open-regexp-substring-aware searchbar / dropdown-menu-list to open/launch or kill background-opened (responsive or unresponsive) apps, with a statusbar of how much RAM and ROM memory they use and the total available RAM and ROM memory on the device... some JavaME dumbphones burner-phones may offer the Google Android feature to store&launch apps from an SDcard or even from a USB-OTG-connected USB-flashstick (some newer Google Android devices even offer this feature when connected to an external HDD or SSD!!!); some folks may even install http://busybox.org CLI apps or similar CLI-toolchains (like those hosted on GitHub.com) onto such JavaME dumbphones, etc.
+
+EXAMPLE PHOTO:
+
+http://i.imgur.com/ ...
+
 * ...
 
 ---
