@@ -418,6 +418,44 @@ https://manpages.debian.org/testing/libbatik-java/ttf2svg.1.en.html
 https://www.npmjs.com/package/ttf2svg
 https://github.com/qdsang/ttf2svg
 http://www.skandissystems.com/en_us/translate.htm
+
+-----------------------------------------------------
+
+online IPA character map pickers and IPA speech-synthesis apps
+
+http://westonruter.github.io/ipa-chart/
+http://westonruter.github.io/ipa-chart/keyboard/
+http://westonruter.github.io/ipa-chart/accessible-chart.html
+https://ipa.typeit.org/full/
+http://www.ipachart.com/
+https://commons.wikimedia.org/wiki/General_phonetics
+https://en.wikipedia.org/wiki/Help:IPA
+http://web.mit.edu/6.mitx/www/24.900%20IPA/IPAapp.html
+https://youtu.be/-e66ByetpDY?list=PLlmgeS8moU5ggCOvV3x8MHZy7vY-wucdU
+https://www.englishclub.com/pronunciation/phonemic-chart-ia.htm
+
+http://www.antimoon.com/how/pronunc-soundsipa.htm
+https://tophonetics.com/
+https://www.lexilogos.com/keyboard/ipa.htm
+http://www.i2speak.com/
+
+http://ipa-reader.xyz/
+https://easypronunciation.com/en/english-phonetic-transcription-converter
+https://english.stackexchange.com/questions/264239/is-there-any-online-tool-to-read-pronounce-ipa-and-apa-written-words
+http://tom.brondsted.dk/text2phoneme/
+https://myefe.com/transcription-pronunciation
+https://play.google.com/store/apps/details?id=com.edwardgreve.ipakeyboard&hl=en_US&gl=US
+
+http://www.internationalphoneticalphabet.org/ipa-sounds/ipa-chart-with-sounds/
+http://web.uvic.ca/ling/resources/ipa/charts/IPAlab/IPAlab.htm
+http://www.oxfordlearnersdictionaries.com/definition/english/interpret?q=interpret
+https://itinerarium.github.io/phoneme-synthesis/
+https://english.stackexchange.com/a/355123
+https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#phoneme
+https://developer.amazon.com/edw/home.html
+http://www.lfsag.unito.it/ipa/converter_en.html + MBROLA
+http://ssb22.user.srcf.net/gradint/lexconvert.html OR https://github.com/ssb22/lexconvert + http://espeak.sourceforge.net/
+
 ````
 
 ---
