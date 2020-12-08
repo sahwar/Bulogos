@@ -12,7 +12,7 @@ http://www.linux-bulgaria.org/webarchive/msg51780.html (архив на имей
 http://linux-bulgaria.org/mail_list.html (архив на имейлите в пощенския списък)
 `dict@ludost.net` (за записване/абониране към е-пощенския списък-дискусия: http://ludost.net/cgi-bin/mailman/listinfo/dict )
 https://lists.ludost.net/pipermail/dict/
-https://ludost.net/ ...
+https://ludost.net/ ... ...
 
 ---
 
