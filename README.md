@@ -125,6 +125,12 @@ _**My personal philosophical view** is that all works ever created can be parale
 
 🇧🇬 &#x1F1E7;&#x1F1EC; ...
 
+## The meaning of [your] life and the purpose of life
+Meaning: no meaning, just to live and be alive and to make babies, and to survive till you can/want
+
+Purpose: no purpose, just do want you want but don't physically hurt others too much (except sex&pregnancy) - https://xkcd.com/387/
+
+Work on yourself (body and consciousness and practical physical skills) and earn some resources, cash money, respect, and women, etc.
 ----
 
 :us: :gb:  This website is open-source. <a href="https://github.com/sahwar/Bulogos/edit/master/README.md">Propose edits to this webpage</a> ([GFM syntax](https://github.github.com/gfm/)).
