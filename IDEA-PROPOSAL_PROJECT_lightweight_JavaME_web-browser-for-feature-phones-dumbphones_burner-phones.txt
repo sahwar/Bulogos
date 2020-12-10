@@ -1,0 +1,48 @@
+IDEA:
+
+JavaME lightweight webkit2 web browser for dumbphones/burner phones/old mobile phones/feature phones
+Inspired by http://suckless.org surf web-browser and by uzbl and vimium, etc.
+The main killer feature is:
+zooming in/out the HTML5 webpage (all / or only text), and support fora mouse/touchpad-like cursor controlled by the feature phone's 4+1 arrow-keys buttons📱📞,
+plus support for whole-app GUI panning and webpage-canvas-area panning (moving around the zoomed in/out webpage)
+and support for SEVERAL quantization/pixel-art/resizing algorithms for the zooming in/out;
+Support for 2+scrollwheel+scrollwheel-click computer-mouse-emulated cursor buttons and 2-3 in-app programmable hardware / software buttons , etc. ...
+Support for:
+http, https, ftp, sftp, ftps, gopher, IRC-XDCC, magnet-links(/libtorrent, DC++/ADC?), WebRTC_via_webcam-streaming-to-animated-GIF_webchat+p2p-filesharing, etc. ...
+Maybe based on (a working subset of?) Brave-browser or WebKit, or Chromium_???, or on Firefox Servo web-browser engine
+
+
+( vnc/RDP/NX/TeamViewerWebUI and ssh&ftp for JavaME???)
+
+Author: https://github.com/sahwar/ - ve4ernik@gmail.com
+Latest version: Unreleased
+Homepage: N/A
+Development language: JavaME
+User interface: MIDP 2.0
+Screenshots: 1
+
+Platform:
+Requirements: It requires a device (feature phone/dumbphone/old mobile phone) capable of (i.e. which supports) JavaME MIDP 2.0, CLDC 1.1, and Bluetooth API (JSR-82), (optionally: WiFi...).
+
+
+======
+
+Some hints from other projects:
+
+https://github.com/nesciens/xmms2-wiki/wiki/Client%3AHarald
+
+Author: Daniel Svensson
+Latest version: Unreleased
+Homepage: N/A
+Development language: JavaME
+User interface: MIDP 2.0
+Screenshots: 1
+This client is aimed to improve the comfort of all the chillaxed people who get stuck all day long in their sofas listening to the most awesome music ever made without moving an inch. It requires a device capable of JavaME MIDP 2.0, CLDC 1.1 and Bluetooth API (JSR-82)
+
+Content is available under GNU Free Documentation License 1.2 unless otherwise noted.
+
+Privacy policy, About XMMS2, Disclaimers
+
+
+
+https://github.com/nesciens/xmms2-wiki/wiki/Client%3ARemuco
