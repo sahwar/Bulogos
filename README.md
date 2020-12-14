@@ -1,7 +1,7 @@
 # Bulogos
 > Permalink: https://github.com/sahwar/Bulogos/ 
 
-> Project founder & main contributor: https://sites.google.com/view/ve4ernik/ (= https://github.com/sahwar/ ) - `ve4ernik@gmail.com`
+> Project founder & main contributor: https://sites.google.com/view/ve4ernik/ (= https://github.com/sahwar/ ) - `ve4ernik@gmail.com` (alternative email if the inbox of the main email gets overfilled: `ikurdov10@gmail.com`)
 
 > Mostly made in Bulgaria by an outcast Bulgarian
 
@@ -100,28 +100,31 @@ git clone https://github.com/sahwar/Bulogos.git
 
 🇧🇬 &#x1F1E7;&#x1F1EC; Ако желаете да подкрепите работата ми по Bulogos, сте поканени да направите дарение, ако можете да си го позволите. Просто натиснете долния бутон. Ако искате, може алтернативно / също така да дарите към е-портфейлите ми за криптовалути или банковата ми сметка IBAN, изброени след това...
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ve4ernik) (`https://paypal.me/ve4ernik or PayPal.com: donate to ve4ernik@gmail.com )
+* **PayPal:** [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ve4ernik) ( https://paypal.me/ve4ernik or PayPal.com: donate to ve4ernik@gmail.com )
 
-* Bitcoin - BTC (can be converted to BCH (bitcoin cash))
+* Cryptocurrencies:
+* * Bitcoin - BTC (can be converted to BCH (bitcoin cash) and USD, and from USD to other currencies and back):
 `1HWdfnraLp2FknKfD5MRi4ZqmhMsgQ1onZ`
 
-* USDT - tetherUSD (USDt $1 = USD $1)
+* * USDT - tetherUSD (USDt $1 = USD ~$1):
 `0x344c7a88077F8373C6B556D67dBa93D73ae871B5`
 (preferred cryptocurrency)
 
 
 
 
-* zelcash (1 zelcash (ZEL) = USD ~$0.05)
+* * zelcash (1 zelcash (ZEL) = USD ~$0.05):
 `t1f4v4bsbuYFn5i4jXjhSx4515sJjwkGhuQ`
 (preferred micro-cash cryptocurrency)
+
+* **IBAN:** https://sites.google.com/view/ve4ernik/commercial-services?authuser=0#h.p_IkHqtE-7bwp9
 
 ## License / Лиценз
 
 * [LICENSE.txt](https://github.com/sahwar/Bulogos/blob/master/LICENSE.txt) + [CREDITS_FAIR-USE.txt](https://github.com/sahwar/Bulogos/blob/master/CREDITS_FAIR-USE.txt)
 
 ## Live webchat / Уеб-чат на живо
-* Maybe later... on an IRC server or via XMPP... (EEST/EET between XY:ZA o'clock & BC:DE o'clock?...)
+* Maybe later... on an IRC+IRC-XDCC web-server or via XMPP+JingleVoIP-XEPs or via tox.im hash-address or via JitsiMeet... (EEST/EET between XY:ZA o'clock & BC:DE o'clock?...)
 
 * XMPP server provided by a friend: http://jappix.animerulezzz.org (direct your chat messages at sahwar/sahwar3; Bulgarian and/or English ONLY!);
 Information about [XMPP](https://en.wikipedia.org/wiki/XMPP)/Jabber: http://xmpp.org (I recommend the following chat clients: PidginIM, http://jitsi.im , http://tox.im (qTox or uTox), http://matrix.org , or any good free XMPP client for Google Android devices).
@@ -140,11 +143,11 @@ _**My personal philosophical view** is that all works ever created can be parale
 🇧🇬 &#x1F1E7;&#x1F1EC; ...
 
 ## The meaning of [your] life and the purpose of life
-Meaning: no meaning, just to live and be alive and to make babies, and to survive till you can/want
+Meaning: no meaning but what you put into it, mainly just to live and be alive and to make babies, and to survive till you can/want and to do whatever you want (within some reasonable limits...).
 
 Purpose: no purpose, just do want you want but don't physically hurt others too much (except sex&pregnancy) - https://xkcd.com/387/
 
-Work on yourself (body and consciousness and practical physical skills) and earn some resources, cash money, respect, and women, etc.
+Work on yourself (body and consciousness and practical physical skills) and earn some resources, socialize, market yourself&develop basic business skills, earn cash money, respect, and get women, save some money, take care of own kids, practise hobbies, retire, etc.
 ----
 
 :us: :gb:  This website is open-source. <a href="https://github.com/sahwar/Bulogos/edit/master/README.md">Propose edits to this webpage</a> ([GFM syntax](https://github.github.com/gfm/)).
