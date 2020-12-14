@@ -1,7 +1,7 @@
 # Bulogos
 > Permalink: https://github.com/sahwar/Bulogos/ 
 
-> Project founder & main contributor: https://sites.google.com/view/ve4ernik/ (= https://github.com/sahwar/ ) - `ve4ernik@gmail.com` (alternative email if the inbox of the main email gets overfilled: `ikurdov10@gmail.com`)
+> Project founder & main contributor: https://sites.google.com/view/ve4ernik/ (= https://github.com/sahwar/ ) - `ve4ernik@gmail.com` (alternative email if the inbox of the main email gets filled&thus emails are auto-rejected: `ikurdov10@gmail.com`)
 
 > Mostly made in Bulgaria by an outcast Bulgarian
 
@@ -103,7 +103,7 @@ git clone https://github.com/sahwar/Bulogos.git
 * **PayPal:** [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ve4ernik) ( https://paypal.me/ve4ernik or PayPal.com: donate to ve4ernik@gmail.com )
 
 * Cryptocurrencies:
-* * Bitcoin - BTC (can be converted to BCH (bitcoin cash) and USD, and from USD to other currencies and back):
+* * **Bitcoin - BTC** (can be converted to BCH (bitcoin cash) and USD, and from USD to other currencies and back):
 `1HWdfnraLp2FknKfD5MRi4ZqmhMsgQ1onZ`
 
 * * USDT - tetherUSD (USDt $1 = USD ~$1):
@@ -117,7 +117,7 @@ git clone https://github.com/sahwar/Bulogos.git
 `t1f4v4bsbuYFn5i4jXjhSx4515sJjwkGhuQ`
 (preferred micro-cash cryptocurrency)
 
-* **IBAN:** https://sites.google.com/view/ve4ernik/commercial-services?authuser=0#h.p_IkHqtE-7bwp9
+* **IBAN:** see/copy the info on/from https://sites.google.com/view/ve4ernik/commercial-services?authuser=0#h.p_IkHqtE-7bwp9
 
 ## License / Лиценз
 
