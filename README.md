@@ -147,7 +147,8 @@ Meaning: no meaning but what you put into it, mainly just to live and be alive a
 
 Purpose: no purpose, just do want you want but don't physically hurt others too much (except sex&pregnancy) - https://xkcd.com/387/
 
-Work on yourself (body and consciousness and practical physical skills) and earn some resources, socialize, market yourself&develop basic business skills, earn cash money, respect, and get women, save some money, take care of own kids, practise hobbies, retire, etc.
+To sum up: Work on yourself (body and consciousness and practical physical skills) and earn some resources, socialize, market yourself&develop basic business skills, earn cash money, respect, and get women, save some money, take care of own kids, practise hobbies, retire, etc.
+
 ----
 
 :us: :gb:  This website is open-source. <a href="https://github.com/sahwar/Bulogos/edit/master/README.md">Propose edits to this webpage</a> ([GFM syntax](https://github.github.com/gfm/)).
