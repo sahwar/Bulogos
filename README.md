@@ -96,11 +96,25 @@ git clone https://github.com/sahwar/Bulogos.git
 🇧🇬 &#x1F1E7;&#x1F1EC;  Ако имате каквито и да е идеи, предложения или молби/заявки за сливане на Ваши промени чрез `git` ( `git merge` ) относно този проект, то тогава просто ми изпратете имейл (е-поща) с идеите си на [ve4ernik@gmail.com](mailto:ve4ernik@gmail.com).
 
 ## Donations / Дарения
-:us: :gb:  If you like to support my work on Bulogos, you are invited to make a donation if you can afford it. Just click the button below.
+:us: :gb:  If you like to support my work on Bulogos, you are invited to make a donation if you can afford it. Just click the button below. If you wish, you can also/alternatively donate to my cryptocurrency e-wallets, or to donate by (online/bank webapp/mobile e-banking app, or via in-person bank deposit to a human bank cashier at a bank - so-called bank wire transfer to my IBAN bank account, listed after that...
 
-🇧🇬 &#x1F1E7;&#x1F1EC; Ако желаете да подкрепите работата ми по Bulogos, сте поканени да направите дарение, ако можете да си го позволите. Просто натиснете долния бутон.
+🇧🇬 &#x1F1E7;&#x1F1EC; Ако желаете да подкрепите работата ми по Bulogos, сте поканени да направите дарение, ако можете да си го позволите. Просто натиснете долния бутон. Ако искате, може алтернативно / също така да дарите към е-портфейлите ми за криптовалути или банковата ми сметка IBAN, изброени след това...
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ve4ernik)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ve4ernik) (`https://paypal.me/ve4ernik or PayPal.com: donate to ve4ernik@gmail.com )
+
+* Bitcoin - BTC (can be converted to BCH (bitcoin cash))
+`1HWdfnraLp2FknKfD5MRi4ZqmhMsgQ1onZ`
+
+* USDT - tetherUSD (USDt $1 = USD $1)
+`0x344c7a88077F8373C6B556D67dBa93D73ae871B5`
+(preferred cryptocurrency)
+
+
+
+
+* zelcash (1 zelcash (ZEL) = USD ~$0.05)
+`t1f4v4bsbuYFn5i4jXjhSx4515sJjwkGhuQ`
+(preferred micro-cash cryptocurrency)
 
 ## License / Лиценз
 
