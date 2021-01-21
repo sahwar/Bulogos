@@ -55,7 +55,9 @@ http://www.zak-site.com/whatis.htm#greatest
 * [Night of the Hermit](http://www.acid-play.com/download/night-hermit)
 * OpenArena (open-source clone of Quake3 Arena), Redeclipse, Nexiuz, supertux2 (sidescrolling 2D platformer), Battle of Wesnoth, Chromium B.S.U., Project Starfighter ( https://sourceforge.net/projects/pr-starfighter/ ), [PowerManga (shoot'em'up)](http://linux.tlk.fr/games/Powermanga/), https://blends.debian.org/games/tasks/shootemup), etc. ...
 * https://en.wikipedia.org/wiki/DRL_(video_game)
-* ...
+* Spelunky & Spelunky2Spelunky2
+* Legion Saga 2 (RPGMaker2K/2K3 jRPG with decent storyline and okay gameplay)
+* Yahtzee's '7 Days a Stranger' and his other video games before Gamegate hit us all and made us sexualTheRedPill - http://escapistmagazine.com
 * etc.
 
 ## Non-freeware (commercial) video games that @sahwar enjoyed:
@@ -65,9 +67,9 @@ http://www.zak-site.com/whatis.htm#greatest
 * Worms World Party, Worms: Armageddon, Worms 3D, Worms 4
 * classic RPGs from https://gog.com
 * Serious Sam, Serious Sam 2, Serious Sam 3, etc.
-* Quake 3: Arena
+* Quake 3: Arena & similar open-source/free-software clones/forks
 * CS (Counter-Strike) v1.5/v1.6 & CS:G.O.
-* HL1 (Half-Life 1) Deathmatch multiplayer
+* HL1 (Half-Life 1) (& also HL2) Deathmatch multiplayer + GMod (Garry's Mod) + Portal&Portal2 & the freeware predecessor to Portal
 
 [BG-HALF-LIFE - Българският Half Life портал (BG-SMURFA-VRATSA-2 & BG-SMURFA-VRATSA-Bat-Man Vs Iron-Man servers) on BG-HALF-LIFE](http://smurfa.bulgarianforum.net/) - Присъединете се към нас в [Discord](https://discord.gg/kawPFxe) или в групата ни във ФБ [HL-BG Community](https://www.facebook.com/groups/427538864719610/); Skype: admina-76 ; [smurfa_vr](http://smurfa.bulgarianforum.net/u1)
 
