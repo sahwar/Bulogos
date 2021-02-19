@@ -77,6 +77,22 @@ http://hp.vector.co.jp/authors/VA033749/tips_azdw2/anim.html
 * [GIMP](https://www.gimp.org/) _(HIGHLY RECOMMENDED)_
 * [gnome-paint](https://launchpad.net/gnome-paint) [2](deadlink?)
 * [Goya (pixel-art editor)](https://github.com/jackschaedler/goya) ([online version](http://jackschaedler.github.io/goya/))
+````
+https://jackschaedler.github.io/goya/
+https://github.com/jackschaedler/goya
+https://github.com/sahwar/goya
+
+https://pixlr.com/x/
+https://pixlr.com/e/
+https://pixlr.com/editor/
+https://www.sumopaint.com/
+https://sumo.app/paint
+https://sumo.app/paint/en
+https://sumo.app/paint/flash
+https://sumo.app/paint/
+
+
+````
 * [gpaint](https://www.gnu.org/software/gpaint/)
 * [GraFX2](http://grafx2.chez.com/) [2](https://pulkomandy.tk/projects/GrafX2/downloads) _(HIGHLY RECOMMENDED)_
 * [GraphicsGale](https://graphicsgale.com/us/download.html) FREEWARE as of 2018! _(HIGHLY RECOMMENDED)_
