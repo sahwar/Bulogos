@@ -7,8 +7,23 @@ This list is particularly suitable for people who add graphics-editing art-softw
 
 _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE EVEN THOUGH IT **IS** AIMING AT BEING COMPREHENSIVE_
 
+* AROS DOSbox PPaint
+* Deluxe Paint for MS-DOS (use it via DOSbox or via FreeDOS)
+* degas elite
+* SpeedyPainter (MS Windows, Linux via Wine-staging?) - https://speedypainter.altervista.org/download/
+* TuxPaint (Linux/UNIX/*BSD) - http://tuxpaint.sourceforge.net ???
+* dpixel?
+* 
+* WonderBrush (BeOS/HaikuOS) v1.5.3 - WonderBrush is an editor for bitmap graphics. - https://www.be.wildman-productions.org/index.php?action=displaypage&pagename=appitem&appid=50 - ````Each layer can contain any number of Objects, which are created by WonderBrushs tools. Each object has a set of properties which define the unique appearance of the object on the layer. At any time, it is possible to reorder the layers, or the objects they contain. This could be called non-linear editing. It is also possible to change most of an objects properties later on. This could be called non-destructive editing, because adding another object (like a filter) does not actually destroy any pixel data.````
+* ArtPaint 2.1.2 (for HaikuOS 32-bit) [628.62 KB] -  - https://www.software.besly.de/index.php?system=haikupm
+* ink (for HaikuOS) [531.62 KB] - a painting application written in yab - https://www.software.besly.de/index.php?system=haiku64 - ink-0.2-1-x86_64.hpkg ; Ink-0.2-3-x86_64.hpkg
+* SpriteED SpriteEditor (for BeOS / HaikuOS x64) [11.5 KB] - https://www.software.besly.de/index.php?system=haiku64 - You can create sprites in 32x32 pixels or 64x64 pixels. - https://www.software.besly.de/images/spriteed.png
+* TuxPaint (for BeOS/HaikuOS) v0.9.19 - https://www.be.wildman-productions.org/index.php?action=displaypage&pagename=appitem&appid=46
 
-* [Adobe Photoshop](http://www.adobe.com/products/photoshop.html) [Adobe CreativeCloud](https://www.adobe.com/uk/creativecloud.html) (commercial, has a free trial version)
+
+
+* [Adobe Photoshop](http://www.adobe.com/products/photoshop.html) - [Adobe CreativeCloud](https://www.adobe.com/uk/creativecloud.html) (commercial, has a free trial version)
+* [Adobe Illustrator](http://www.adobe.com/products/illustrator.html) (commercial proprietary)
 * [Alchemy](http://al.chemy.org/) OPEN-SOURCE
 * [AliveColors](?) (commercial)
 * [Artipic](?) (commercial)
