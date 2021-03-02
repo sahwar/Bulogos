@@ -1266,6 +1266,45 @@ Nestopia (NES/SNES emulator app with OpenGL renderer), MeOCR (MS Windows), PDark
 MeOCR (MS Windows), OpenGL Extensions Viewer v5+ (MS Windows); NexusImage (freeware image viewer for MS Windows); NexusFont (freeware font-manager for MS Windows); NexusFile (freeware file-manager for MS Windows);
 ````
 
+A list of more unsorted apps:
+
+````
+* Open Camera (for Google Android) - feature-request idea by sahwar: interval between continuous shooting/video-recording sessions - [origin-point-planet-name/celestial-body:::datetime+calendarSystem+version-revision]yyyy:mm:dd:hh:mm:ss:ms; Start photoshooting at datetime for {duration}, then upload to {server} via {FTP/SFTP/FTPS / HTTP / HTTPS / rsync / dat-cp / hyper-cp / magic-wormhole / file.pizza protocol}
+* borderless gaming
+* AnyToTray
+* Transparent Windows v2.2
+* greenfish subtitle player
+* greenfish icon editor
+* Beneton GIF Animator
+* UnFREEz
+* DxWnd v?.?? & dgVoodoo2
+* GifCam / VClip - bahraniapps.com
+* ShareX & ffmpeg/libav
+* FRAPS
+* LICEcap
+* ScreenToGif
+* Byzanz screen2video
+* myDesktopRecord
+* simpleDesktopRecorder
+* ColorPic.exe / GPic / ZoomPic
+* magnifying-glass zoomer app for Linux - http://magnifier.sourceforge.net
+* http://pling.com - KDE ruler ; 
+* Ulauncher + Fsearch (Linux) (for MS Windows: Wox + Search Everything, + tuxi + Google Voice Assistant Desktop -  )
+* $ aws-cli
+* $ scrot
+* $ fileinfo
+* $ neofetch
+* $ xclip
+* $ clipboardsync / 1clipboard / ArsClip / XClip / ...
+* $ dat-cp, magic-wormhole, ipfs-wormhole?, hyper-wormhole, hyper-cp?
+* $ https://file.pizza / http://toffeeshare.com
+* ipfs, libp2p, ...
+* hyper-protocol.org , ipfs, http://secushare.org , mastodon & pleroma twitter clones & gopher & RSS/ATOM & bookmarklets & CSS/JS user-styles, etc.
+* .onion web-addresses + Tor browser + OnionShare&RicochetIM
+* MatterMost
+* Mumble
+````
+
 ````
 A list of lightweight web-browsers:
 
@@ -1274,10 +1313,15 @@ Palemoon
 latest Mozilla Firefox & Firefox-ESR !!! Mozilal Firefox (older versions, more lightweight, less latest tech support, still renders most HTML5+CSSv3+JavaScript-v6+ webpages mostly okay), Mozilla Firefox Developer Edition & Firefox unstable nightly builds, etc.
 Chromium + uBlock Origin !
 Yandex Browser
-Brave
+Brave Browser
+Avast Web-browser
 Falkon !!
 Qupzilla !!
-Opera
+Krusader?
+Konqueror?
+fwb???
+Opera & Opera Mini ; & Opera Mini v?.?? (for JavaME)
+Bolt web-browser (for JavaME)
 Vivaldi
 Epiphany
 Midori
@@ -1287,8 +1331,9 @@ SeaMonkey !
 Netrider
 suckless.org surf+dwm+panel+... !!
 uzbl.org - !!
-link2
+link2 / links2
 dillo
+UC web-browser
 kazahakse ?
 Chromium + Vimium extension/add-on !!
 https://otter-browser.org (fork of older release versions of the Opera web-browser) !!
@@ -1371,9 +1416,9 @@ https://github.com/TheAssassin/AppImageLauncher
 
 https://github.com/ktgw0316/LightZone (open-source alternarive to Adobe's DarkRoom for photography professionals)
 
-https://github.com/square/retrofit
+https://github.com/square/retrofit + libretro + RetroArch + EmulationStation + XMAME/MAME-GUI_x64 + DOSbox + FreeDOS + ScummVM + etc.
 
-http://www.chaos.org.uk/~pdh/software/intergif.htm
+http://www.chaos.org.uk/~pdh/software/intergif.htm & gifsicle & libimagequant (XnView)
 
 http://gitter.im (chat rooms for GitHub.com projects)
 
