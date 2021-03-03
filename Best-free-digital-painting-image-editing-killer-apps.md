@@ -7,19 +7,6 @@ This list is particularly suitable for people who add graphics-editing art-softw
 
 _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE EVEN THOUGH IT **IS** AIMING AT BEING COMPREHENSIVE_
 
-* AROS DOSbox PPaint
-* Deluxe Paint for MS-DOS (use it via DOSbox or via FreeDOS)
-* degas elite
-* SpeedyPainter (MS Windows, Linux via Wine-staging?) - https://speedypainter.altervista.org/download/
-* TuxPaint (Linux/UNIX/*BSD) - http://tuxpaint.sourceforge.net ???
-* dpixel?
-* 
-* WonderBrush (BeOS/HaikuOS) v1.5.3 - WonderBrush is an editor for bitmap graphics. - https://www.be.wildman-productions.org/index.php?action=displaypage&pagename=appitem&appid=50 - ````Each layer can contain any number of Objects, which are created by WonderBrushs tools. Each object has a set of properties which define the unique appearance of the object on the layer. At any time, it is possible to reorder the layers, or the objects they contain. This could be called non-linear editing. It is also possible to change most of an objects properties later on. This could be called non-destructive editing, because adding another object (like a filter) does not actually destroy any pixel data.````
-* ArtPaint 2.1.2 (for HaikuOS 32-bit) [628.62 KB] -  - https://www.software.besly.de/index.php?system=haikupm
-* ink (for HaikuOS) [531.62 KB] - a painting application written in yab - https://www.software.besly.de/index.php?system=haiku64 - ink-0.2-1-x86_64.hpkg ; Ink-0.2-3-x86_64.hpkg
-* SpriteED SpriteEditor (for BeOS / HaikuOS x64) [11.5 KB] - https://www.software.besly.de/index.php?system=haiku64 - You can create sprites in 32x32 pixels or 64x64 pixels. - https://www.software.besly.de/images/spriteed.png
-* TuxPaint (for BeOS/HaikuOS) v0.9.19 - https://www.be.wildman-productions.org/index.php?action=displaypage&pagename=appitem&appid=46
-
 
 
 * [Adobe Photoshop](http://www.adobe.com/products/photoshop.html) - [Adobe CreativeCloud](https://www.adobe.com/uk/creativecloud.html) (commercial, has a free trial version)
@@ -218,6 +205,82 @@ https://sumo.app/paint/
 #### TO ADD TO THE ABOVE LIST & THEN SORT IT AGAIN ####
 * see the invisible HTML-comment section hidden in the webpages' source-code below (e.g. just click the 'Raw' button on the GitHub page)...
 
+* AROS DOSbox PPaint
+* Deluxe Paint for MS-DOS (use it via DOSbox or via FreeDOS)
+* degas elite
+* SpeedyPainter (MS Windows, Linux via Wine-staging?) - https://speedypainter.altervista.org/download/ + [GPU Caps Viewer](http://www.ozone3d.net/gpu_caps_viewer/) (check to see if your PC supports OpenGL 3.0 - which is needed to run SpeedyPainter...) + [Wacom feel driver](http://us.wacom.com/en/feeldriver/) + https://www.xvid.com/ ('The video export dialog allows to choose among different video formats and codecs. I suggest to install the Xvid video codec in order to obtain a good compromise between video quality and the size of the resulting video file.') + Microsoft Visual C++ Redistributable for Visual Studio 2015: https://www.microsoft.com/en-us/download/details.aspx?id=48145 ; https://ko-fi.com/C0C6TGZC - donate to SpeedyPainter developer
+* TuxPaint (Linux/UNIX/*BSD) - http://tuxpaint.sourceforge.net ???
+* dpixel?
+* 
+* WonderBrush (BeOS/HaikuOS) v1.5.3 - WonderBrush is an editor for bitmap graphics. - https://www.be.wildman-productions.org/index.php?action=displaypage&pagename=appitem&appid=50 - ````Each layer can contain any number of Objects, which are created by WonderBrushs tools. Each object has a set of properties which define the unique appearance of the object on the layer. At any time, it is possible to reorder the layers, or the objects they contain. This could be called non-linear editing. It is also possible to change most of an objects properties later on. This could be called non-destructive editing, because adding another object (like a filter) does not actually destroy any pixel data.````
+* ArtPaint 2.1.2 (for HaikuOS 32-bit) [628.62 KB] -  - https://www.software.besly.de/index.php?system=haikupm
+* ink (for HaikuOS) [531.62 KB] - a painting application written in yab - https://www.software.besly.de/index.php?system=haiku64 - ink-0.2-1-x86_64.hpkg ; Ink-0.2-3-x86_64.hpkg
+* SpriteED SpriteEditor (for BeOS / HaikuOS x64) [11.5 KB] - https://www.software.besly.de/index.php?system=haiku64 - You can create sprites in 32x32 pixels or 64x64 pixels. - https://www.software.besly.de/images/spriteed.png
+* TuxPaint (for BeOS/HaikuOS) v0.9.19 - https://www.be.wildman-productions.org/index.php?action=displaypage&pagename=appitem&appid=46
+
+* borderless gaming
+* AnyToTray
+* Transparent Windows v2.2
+* greenfish subtitle player
+* greenfish icon editor
+* Beneton GIF Animator
+* UnFREEz (very basic GIF animator)
+* Microsoft GIF Animator (old but still usable; remember, the GIF file-format works best with up to 10fps max...)
+* http://sumopaint.com (click the '^' & select the 'Pixel' mode to toggle between the photoshop-like sumopaint web-app & its pixel-art-oriented version...; there's also an Adobe Flash version available...)
+* ShoeBox app (Adobe AIR) { ShoeBox app (Adobe AIR), SpriteCutter.jar, GifCam ( http://bahraniapps.com ), & iDraw3, JPixel, GraphicsGale, Auto Screenshot (github), ShareX, nomacs (Frameless mode FTW!)! Also: http://opengameart.org }
+* SpriteCutter.jar
+* GifCam ( http://bahraniapps.com ) & iDraw3
+* JPixel
+* GraphicsGale
+* Auto Screenshot (github)
+* ShareX
+* nomacs (Frameless mode FTW! - image viewer)!
+* http://opengameart.org
+
+* Check out these slick tools:
+* http://david.li/paint/
+* http://www.drpetter.se/project_cherrybrush.html
+* https://jackschaedler.github.io/goya/
+* https://libresprite.github.io/
+* https://graphicsgale.com/us/ (+localizations:
+Fluid Paint
+Fluid paint simulation
+LibreSprite
+LibreSprite is a free and open source program for creating and animating your sprites.
+Animation Graphic Editor - GraphicsGale
+Powerful tool for spriting and pixel art
+https://graphicsgale.com/us/lang.html )
+* iDraw3 v3.32 - https://www.rpgmaker.pl/?co=download&typ=programy&id=idraw  (tutorial: http://rpgmaker2000.narod.ru/idraw/idraw3.htm - https://archive.vn/B4VSx )
+* ShoeBox (AdobeAIR freeware): https://renderhjs.net/shoebox/
+GraphicsGale - Language
+Powerful tool for spriting and pixel art
+Twierdza RPG Maker
+Tworzenie gier (RPG, JRPG) przy pomocy programu RPG MAKER, jak i innych mu podobnym (Wolf RPG Editor). Zapomnij o programowaniu! Zapraszamy!
+* GraFX2 - http://grafx2.tk/
+* mtPaint - http://mtpaint.sourceforge.net/
+* LazPaint - http://lazpaint.sourceforge.net/
+* JPixel - http://emad.itch.io/
+LazPaint
+LazPaint is a graphic editor with many tools and filters, written in Lazarus (Free Pascal).
+
+http://lospec.com/
+Lospec - Free tools and resources for people making pixel art, voxe...
+Free online tools for people creating pixel art and other low-spec art.
+
+http://pixlr.com/
+Photo editor online - graphic design Pixlr.com
+Photo editor online - graphic design Pixlr.com
+Discover free and premium online photo editor and graphic design tools! Effects, filters, overlays, simple to expert tools.Open almost any image format like PSD (Photoshop), PXD, Jpeg, PNG (Transparent), webP, SVG and many more. You'll find a Pixlr image editor just for you!
+
+http://sumopaint.com/
+sumopaint.com
+Sumopaint - Online Image Editor
+The best photo editing and drawing tool online.
+
+These are all free pixel-art drawing/painting apps! Enjoy&share your works made with them! 
+
+
+* Google Picasa2+
 * [PhotoScape](http://photoscape.org/ps/main/index.php) (a FREEWARE photo-editing tool for Microsoft Windows NT/2000/XP/Vista/7/8/10; it even has a Bulgarian language pack: http://download.photoscape.org/translate/bg/lang_3_6.txt ) - http://photoscape.org/ps/main/help.php?id=translate ; http://photoscape.org/ps/main/help.php?id=anigif ; http://photoscape.org/ps/main/help.php?id=paintbrush
 * [Beneton Movie GIF](https://www.benetonsoftware.com/Beneton_Movie_GIF.php) (SLOW but nice GIF animator); alternatives: gifsicle, libgif, Beneton Movie GIF, GIMP + GIMP GAP plug-in, Microsoft GIF Animator, emad.itch.io JPixel (freeware), various other online tools
 * EZ Paint (MS Windows)
@@ -280,7 +343,7 @@ Markdown table with screenshots placed like this one:
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 -->
 
-<!--
+*******************************************************************
 
 Skencil, Pinta, TuxPaint, Karbon, VIPS, Blender3D, Digikam, KolourPaint, Inkscape, sK1, GPaint, CinePaint, LazPaint, RawTherapee, Darktable, Pinta, [Vectr](https://vectr.com/downloads/), [Fotoxx](https://kornelix.net/downloads/downloads.html), Pixelitor, 
 
@@ -634,7 +697,7 @@ Solarized dark             |  Solarized Ocean
 
 ## Table of Contents... ##
 
--->
+************************************************************************************************************************************************************
 
 ###  TO DO ###
 * Sort the list = DONE?
