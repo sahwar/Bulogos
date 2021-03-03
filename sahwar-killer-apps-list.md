@@ -1303,6 +1303,203 @@ A list of more unsorted apps:
 * .onion web-addresses + Tor browser + OnionShare&RicochetIM
 * MatterMost
 * Mumble
+
+------
+basicgames.org (FreeBASIC video-games) - OHRRPGCE rpgmaker engine
+
+http://pdfreaders.org - e.g. SumatraPDF, FoxitReader (freeware), Adobe Acrobat DC PDF-reader (freeware, has file-attaching feature via Tools->Comment/Annotate), qpdfview/qpdfviewer, XpdfReader, muPDF, KDE Okular, GNOME3/MATE PDF-reader (Evince / Astril), etc.
+
+`nano`, `ed`, `fled`(???), GitHub Atom, Adobe Brackets, Microsoft VSCode, etc.
+
+BabelMap, BabelMap online, gucharmap, KCharSelect; http://unicode.org/CHARTS/ & ftp://ftp.unicode.org/Public/UNIDATA/ & http://unicode.org/CLDR/ ; http://graphemi.ca
+* save your files as .txt or .html (Unicode UTF-8-noBOM/BOM)
+
+http://black-ship.net/~tukuyomi/stuff/public/diListen/
+https://www.blackbox.org/
+https://github.com/sahwar/Boxer - DOS emulator for macOS
+
+http://www.boxshots.org/
+MS Windows shells:
+xoblite - http://xoblite.net/
+bbLean - http://bb4win.sourceforge.net/bblean/
+bb4win - http://www.bb4win.org/ & http://blackbox4windows.com/index.php?/topic/621-xoblite-bb5-rc3-is-now-available-d/
+Linux/*NIX/macOS window managers (wm's):
+BlackBox - https://sourceforge.net/projects/blackboxwm/
+FluxBox - http://www.bb4win.org/
+...
+Styles:
+NC-17 - http://ratednc-17.com/
+Pitkon - http://pitkon.deviantart.com/
+(EnlightenmentDE)
+
+---
+CS 1.6
+Doom Legacy
+Lost in the Nightmare
+OpenArena
+ScummVM
+ZSNES
+TotalCommander x64
+FreeCommander
+DoubleCommander
+xplorer2
+xplorer++
+mc (MidnightCommander)
+GIMPv2.8+
+ImgBurn
+CDBurnerXP
+InfraRecorder
+ImageMaster
+UCuninstaller
+IrfanView
+MPC-HC x64
+SanityCheck
+TrueCrypt
+VirtualDVD
+VLC + skins
+BakaMPlayer + mpv.io
+Daum PotPlayer
+KMPlayer (older)
+KMPLayer x64 (newer, uglier GUI)
+SMPlayer + youtube-dl
+UMPlayer
+AIMP
+WinAmp
+QMMP
+Steam client
+Proxy Searcher
+Warzone 2100
+Oracle VM VirtualBox
+OpenVPN Connect
+LiveScribe Desktop
+foobar2000
+StylishCSS
+xcalc
+xmag
+xclock
+magnifier.sourceforge.net
+KRuler
+OnBoard virtual keyboard
+(virtual mouse via keyboard)
+tuxi - google
+AI assistant - google
+BALABOLKA
+БЪРБОРИНО / Google Voice Input
+$ neofetch
+$ screenfetch
+$ enlightenmentDE - fancy terminal emulator
+$ urxvt
+$ bash
+$ zsh
+$ ksh
+$ csh (abandoned?)
+xterm
+audacious
+fdm
+FlashGet
+tcl
+ocaml
+Rust
+Go-lang
+TypeScript
+RSSreader
+putty /telnet / bosh
+http://xoblite.net/plugins.html
+Roff
+GSLS
+JDK 14 - https://adoptopenjdk.net/
+Google Android SDK - https://developer.android.com/studio#downloads
+
+uGet
+xoblite - http://xoblite.net/docs/ & http://xoblite.net/docs/plugins/
+ - Node.js® based modular framework for I2C devices and sensors, and more.
+I2C
+libp2p
+hyper-protocol
+secushare.org
+https://github.com/xoblite/BreakoutGardener
+
+netflix.com
+https://www.spotify.com/
+hulu.com
+
+BBLC\BBLean
+Rainmeter OR bbinterface - But who needs Rainmeter when we have bbinterface? :)
+Beyond Linux From Scratch + urxvt
+bbLean
+http://rainmeterui.com/skin/e-tech/
+3DCC
+DevPro
+pygame + PyCharm
+Mindustry - mindustrygame.github.io - https://github.com/Anuken/Mindustry - A sandbox tower defense game
+llvm - llvm.org - C, C++, Objective-C, and Objective-C++
+
+License
+All code here available as Public Domain.
+
+https://www.unlicense.org/
+https://github.com/Wenzel/awesome-virtualization
+https://github.com/siemens/jailhouse
+
+https://github.com/microsoft/PowerToys
+https://github.com/react-cosmos/react-cosmos
+react.js
+electron.js
+jquery
+phantomJS
+BluetoothExtractor webscraper
+latex3/hyperref
+https://github.com/schellingb/ClangWasm
+https://github.com/Soldy/levelrunnerrc
+https://github.com/SinaKarvandi/Hypervisor-From-Scratch
+https://github.com/jakogut/tinyvm
+
+https://wiki.osdev.org/VMX#Peripheral_Emulation
+https://github.com/goupaz/pxeboot
+' the shape of things to come '
+https://github.com/goupaz/pxeboot
+Per pixel alpha transparency FTW, btw! :D 
+$ rootCommand: bsetroot -solid gray40 
+$ rootCommand: bsetroot -gradient gradientrectangle 
+http://www.customize.org/details/47056
+http://www.customize.org/details/45036
+http://www.customize.org/details/45238
+http://www.wincustomize.com/
+http://www.objectdock.com/
+XTerm
+uXTerm
+Chrome 80+
+Chromium 80+
+Firefox-ESR 68+
+Mirage image-viewer
+Waterfox v56.2.5
+GIMP
+Adobe Illustrator
+regedit.exe
+ResourceHacker
+MirandaIM
+ThunderbirdEmail
+mutt email , thunderbird email, evolution email, clawsmail email, alpine email, pine email, emacs email, fetchmail, sendmail, gnu mailman, etc.
+
+Joy2Key (JoyToKey) - sourceforge.net - key joypad remapper
+http://www.boxshots.org/chat/
+Skype, Skype Lite, older versions of Skype & Skype Lite for JavaME feature phones, and web.skype.com , & skyperious & Skype chatlogs extractor; & skype-protocol via PidginIM libpurple & skype-protocol extension/plugin/addon
+
+X Window Snapshot
+X Snap
+Qfractalnow
+https://github.com/lovasoa/bin2png - Embed binary data inside an HTML file in an efficient way. - www.npmjs.com/package/bin2png
+npm.js
+https://bundlephobia.com/result?p=png2bin
+https://app.netlify.com/sites/bin2png-example/deploys
+https://github.com/lovasoa/bin2png/actions
+The theme change menu is available with an ALT+ RIGHT CLICK on your desktop btw. --- http://www.boxshots.org/download/2346
+www-boxshots-org_style_2346_muse_by_thewayofzen
+http://reddit.com/r/desktops
+http://www.boxshots.org/screenies/5467.png
+
+bolt web-browser for JavaME feature phones + internet via Bluetooth connection to laptop/desktopPC with WiFi2bluetooth hotspot bridge, ...
+
 ````
 
 ````
