@@ -58,20 +58,22 @@ Wacom, XP-PEN, Huion, [Yiynova](http://www.yiynova.eu/) (https://www.google.com/
 https://github.com/DIGImend/uclogic-tools
 * Linux CLI за настройка на видимата област
 и на екрана за целите на рисуване с графичния таблет + за multihead/multimonitor setup:
-: `$ randr`, `$ xrandr` & Desktop environment -> Display Settings ; tiling-window-managers for Linux - list & tweaks & settings & supported features
-* http://reddit.com/r/stylus - вижте wiki-тата със списъци с модели графични таблети
+: `$ randr`, `$ xrandr` & & `xinerama` & & `xkb` & Desktop environment -> Display Settings ; tiling-window-managers for Linux - list & tweaks & settings & supported features
+* *http://reddit.com/r/stylus* - вижте wiki-тата със списъци с модели графични таблети
 * ... за прерисуване на очертания на изображение:
 whitescreen LED-light outline screens with supporting legs and a second screen below the outliner screen
+
 * безплатната програма за допълнително наглася(ва)не на нивата на чувствителност на графични таблети на/от Wacom:
  https://blackink.cz/tablet-pressure-curve-tool/
-
 Tablet Pressure Curve Tool (for Wacom tablets, 3rd-party app NOT AN IMAGE EDITOR, FREEWARE (useful for fine-tuning the pressure sensitivity of Wacom Tablets if the Wacom tablet-settings apps aren't enough for your needs)
-* wintab драйвера, вграден в Windows7 & по-новия различен драйвер за графични таблети в Windows10
+* wintab драйвера, вграден в Windows7 & по-новия различен драйвер за графични таблети в Windows10 & Wacom Feel driver - [Wacom feel driver](http://us.wacom.com/en/feeldriver/) + AutoHotKey & SharpKeys, ...
+
 * за хора с устройства с Google Android + лаптоп/настолен компютър с Linux:
 https://github.com/rfc2822/GfxTablet
 ('draw on your PC via your Google Android device')
 * https://github.com/flamestream/taction
-('A touch panel for Windows Tablet PC Artists')
+('A touch panel for Windows Tablet PC Artists') (!!!)
+
 * https://github.com/xournalpp/xournalpp
 ('Xournal++ is a handwriting notetaking software with PDF annotation support. Written in C++ with GTK3, supporting Linux (e.g. Ubuntu, Debian, Arch, SUSE), macOS and Windows 10. Supports pen input from devices such as Wacom Tablets.')
 * ArchLinux AUR & UbuntuForums & PuppyLinux forums - graphics tablets wiki pages & DIGImend & wacom drivers & randr/xrandr wiki help pages; AzPainter; ThinkPad X-models drawing tablers settings, etc.
