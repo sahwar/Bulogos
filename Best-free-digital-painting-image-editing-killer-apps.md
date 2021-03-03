@@ -280,6 +280,40 @@ The best photo editing and drawing tool online.
 These are all free pixel-art drawing/painting apps! Enjoy&share your works made with them! 
 
 
+
+solarus-games.org - Solarus RPG Maker
+FlareRPG
+pico-8
+gucharmap
+onboard virtual keyboard ; ...
+sourceforge.net - joypad remap app
+SharpKeys; OnBoard; ... AutoHotKey + desktopPC .txt - linux keyboard apps... mouse-gestures + ...etc.
+
+(pixman)
+(Plasma Mobile)
+PixelValue (SourceForge.net)
+ColorPic & pling.com color pickers & magnifier.sourceforge.net
+* [https://github.com/pixel32/Weekly_PixelartTutorials pixel32/Weekly_PixelartTutorials] - Collect any pixel art tutorials
+* [https://github.com/michaelrbk/pixelart-vectorizer michaelrbk/pixelart-vectorizer] - Convert pixel art to SVG vector image (C#).
+* [https://github.com/czycha/pxlsrt.js czycha/pxlsrt.js]
+* [https://github.com/czycha/pxlsrt czycha/pxlsrt]
+* [https://github.com/g-whiz/pxSort g-whiz/pxSort] - An Android application for creating "pixel sorting" glitch art.
+* [https://github.com/BrandonHilde/PixelArt BrandonHilde/PixelArt] - Software to convert images to pixel art (C#).
+* [https://github.com/BenEmdon/PixelArtMaker BenEmdon/PixelArtMaker] - A pixel art editor in a Swift Playground space_invader WWDC Scholarship Winner medal_sports (Swift).
+* [https://github.com/kushi34123616bd/PixelArtShader kushi34123616bd/PixelArtShader] - Render like PixelArts from 3D model (C++).
+* [https://github.com/panzi/blender-addon-import-pixelart panzi/blender-addon-import-pixelart] - Blender add-on that imports pixle art images as colored cubes (Python).
+* [https://github.com/abagames/PixelArtGen abagames/PixelArtGen] - A pixel art generator on a Unity custom inspector (C#).
+* [https://github.com/Sprytile/Sprytile Sprytile/Sprytile] - A Blender3D add-on for building tile based low-poly scenes with paint/map editor like tools (Python).
+* [https://github.com/yashkir/sdl_tiles yashkir/sdl_tiles] - Experiment in writing a game engine with a tiled map (C).
+* 
+* MORE1: ... https://github.com/sahwar?tab=repositories&q=pixel+art&type=&language=
+lopsec.com
+lospec.com
+* MORE2: ... https://github.com/sahwar?tab=repositories&q=sprite&type=&language=
+* MORE3: ... https://github.com/sahwar?tab=repositories&q=tile&type=&language=
+
+
+
 * Google Picasa2+
 * [PhotoScape](http://photoscape.org/ps/main/index.php) (a FREEWARE photo-editing tool for Microsoft Windows NT/2000/XP/Vista/7/8/10; it even has a Bulgarian language pack: http://download.photoscape.org/translate/bg/lang_3_6.txt ) - http://photoscape.org/ps/main/help.php?id=translate ; http://photoscape.org/ps/main/help.php?id=anigif ; http://photoscape.org/ps/main/help.php?id=paintbrush
 * [Beneton Movie GIF](https://www.benetonsoftware.com/Beneton_Movie_GIF.php) (SLOW but nice GIF animator); alternatives: gifsicle, libgif, Beneton Movie GIF, GIMP + GIMP GAP plug-in, Microsoft GIF Animator, emad.itch.io JPixel (freeware), various other online tools
