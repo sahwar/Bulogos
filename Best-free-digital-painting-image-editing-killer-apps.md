@@ -520,7 +520,7 @@ https://github.com/shawsourav/Paint-JS
 
 
 * https://github.com/sean-codes/pixeling
-
+* https://awesomeopensource.com/projects/pixel-art (!!!) - many apps are listed there!
 
 
 
