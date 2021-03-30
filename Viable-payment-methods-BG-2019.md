@@ -25,14 +25,19 @@
 * разнасяне, предлагане и лепене на листовки, плакати и пропагандни реклами и лозунги и т.н.
 * работа като продавач на щандове в базари, пазари и т.н.
 * работа като продавач-консултант и/или пазач в магазини, бензиностанции, заведения (барове, ресторанти, пъбове, fast food заведения, takeaway шведски маси и т.н.) и т.н.
+* гаражни разпродажби и улични сергии
+
+
 * и т.н. ... Възможностите и вариантите са почти безкрайни и може да се научите и от това, което правят другите...
 * измислете нещо творческо самите Вие...
 
 ### Classic (e-)banking ###
 * банков превод --- In-country & International bank transfer (IBAN & SWIFT/BIC) (check bank tariffs/costs/charges); 24/7 deposit-enabled bank ATMs (банкомати с опция за депозит на пари); + обслужване от служител касиер в банката на място...
-* банков чек (bank cheque)
+--- задължително си активирайте услугата за сигурни онлайн плащания към банката - VISA и MasterCard, НО _НЕ_ губете и не забравяйте паролите си за това, както и паролата си за онлайн банкиране от уебсайта на банката и паролата си за мобилното приложение на банката си; НИКОГА НЕ държете повече от 25-30% от парите си само в 1 банка или въобще само в банки...
+* IBAN & SWIFT/BIC ; SEPA ( S€PA ) - https://www.bnb.bg/PaymentSystem/PSSEPA/PSSEPAIntroduction/index.htm
+* банков чек (bank cheque) с QR/GUUID/bar-code и с подпис (евентуално и с печат) на банков служител ...
 * банкомати (ATMs): класически банкомати за теглене с дебитна или кредитна карта, двупосочни банкомати (с опция за депозит/внасяне на сума по сметка), с работно време и 24/7; купюр/купюра (номинална стойност, например банкнота от 5 лв. (5 BGN) или монета от 50 ст. (стотинки)): много банкомати имат ограничение в броя банкноти&монети, които можете да теглите или внасяте в рамките на 24 ч.; някои банкови термини: счетоводно салдо, налично салдо, баланс по сметката; шконто/акаунт/банкова сметка/"банков профил";
-> Речниккупю̀ра —съществително име, женски род (тип 41) ￼
+> Речник купю̀ра —съществително име, женски род (тип 41) ￼
 > Значение
 > мн. купю̀ри, ж. (или купюр (м. р.!)
 > 1. Спец. Класификация на пари или ценни книжа по номиналната им стойност. Купюри от 100 лева. 
@@ -40,7 +45,7 @@
 
 
 ### Online ###
-* **[PayPal.com](https://www.paypal.com/)** (works with linked debit cards and credit cards, and can even be linked to bank account in some selected countries)
+* **[PayPal.com](https://www.paypal.com/)** (works with linked debit cards and credit cards, and can even be linked to bank account in some selected countries) - Elon Musk was head of PayPal.com ...
 * http://venmo.com (собственост на _PayPal_)
 * **[TransferWise.com](https://transferwise.com/)**
 * _http://Revolut.com_
@@ -52,7 +57,7 @@
 * http://subscribestar.com
 * ***SALT.bountysource.com*** - https://salt.bountysource.com/ (for open-source software projects, etc.) = 
 https://salt.bountysource.com/ (SALT - A crowdfunding platform that helps developers earn a monthly salary from open-source software) (e.g. https://salt.bountysource.com/teams/neovim)
-* https://opencollective.com
+* *https://opencollective.com*
 * FSF GNU cash & cryptocurrencies ; etc.
 * http://cash.app (CashApp; MoneyApp); 
 * https://beerpay.io/ (e.g. https://beerpay.io/b3by/atom-clock?focus=wish )
@@ -61,7 +66,7 @@ https://salt.bountysource.com/ (SALT - A crowdfunding platform that helps develo
 * за покупки и продажби: http://ebay.com (и другите домейни на ebay... тарифи: 
 https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4364 ), http://olx.bg , http://bazar.bg , http://wish.com и т.н.
 * Income Ideas (free Google Android app) & Survival Manual app/guide for Google Android devices from Google Play : ' The app is based on the FM 3-05.70 Field Manual - but now it is a wiki (think of it as the Wikipedia of survival) ' ; 'https://imgflip.com/i/43cp3c
-
+* suspicious: Google GPay, AppplePay, AliPay (AliExpress.com, AliBaba.com, etc.)
 * **Western Union (? Sorta reliable, mixed reviews.)** - https://www.westernunion.com/bg/en/terms-conditions-bg.html
 * **MoneyGram (? Sorta reliable, mixed reviews. Seems a bit more reliable than Western Union (?))** - http://moneygram.bg/
 * bitcoin (BTC) & other cryptocurrencies (???) (e.g. Etherium ETH, Litecoin LTC, --- see blockchain.info & do your own websearching via google.com, etc. etc.) [I PERSONALLY **DO NOT** RECOMMEND CRYPTOCURRENCIES AS A VIABLE ALTERNATIVE TO REGULAR CURRENCIES DUE TO Ponzi-scheme-like CONCERNS OVER THE NATURE&AIMS OF CRYPTOCURRENCIES/binary-options/ForEx (like casino gambling & lottary tickets...), but if you can buy/sell physical goods&services with cryptocurrencies at your current country (or some other target countries), then go for it!]
@@ -72,7 +77,7 @@ https://www.blockchain.com/btc/address/
 * `bitcoin:{hash}` (+QR code), `bitcoincash:{hash}` (+QR code), & other cryptocurrencies (e.g. ETH (Ethereum), etc.)...
 
 ### Payment in cash ###
-* In-person p2p (peer-to-peer) paper-banknotes&coin cash-exchange
+* In-person p2p (peer-to-peer) paper-banknotes&_physical coin_ cash-money---exchange
 * Payment/Cash-on-delivery (наложен платеж) (geolocation-centric)
 * Legal, under-the-table, and 'illegal' money payment
 * Bidding in auctions or at physical bazaars/market-places (payment with money)
@@ -88,6 +93,7 @@ https://www.blockchain.com/btc/address/
 * ...
 
 ### Etc. ###
+* barter & bargaining ... tit-for-tat, etc.
 * Consignation
 * Re-selling (with an overprice percentage profit) of goods/services, or serving as proxy, or outsourcing (?)
 * Rebranding & re-selling
@@ -109,13 +115,15 @@ http://aliexpress.com , http://alibaba.com , techtablets.com , ...
 * http://bazar.bg
 * Facebook.com групи за продажби, размяна, подаръци/дарения
 * кампания в стила "Капачки за бъдеще" (за рециклиране на пластмаса с цел купуване на кувьози за бебета и друга медицинска апаратура)
+* плащане на каса и доставка с опция за преглед преди приемане - към Еконт (econt.bg), Speedy.bg, DHL, FedEx, USPS, bgpost.bg/bgposts.bg и с доверено лице като uber-driver / ride-sharing / частно лице извършва доставката с личния си автомобил срещу заплащане/услуга/процент/секс/бартер за физически стоки/свършване на работа/airbnb.com-подобно настаняване за определено време в дадено жилище/имот/и т.н. ...
 
 ### [Crowdfunding](https://www.crowdfunding.com/) (NOT so viable... Better for countries outside of Bulgaria... BUT community per-project crowdfunding campaigns ARE VIABLE in Bulgaria!!!) ###
 _([information in Bulgarian](https://www.crowdfunding.com/), [more information](https://www.fundable.com/learn/resources/guides/crowdfunding/what-is-crowdfunding))_
 * https://www.kickstarter.com/
 * https://www.indiegogo.com/
 * https://www.gofundme.com/
-
+* http://buymeacoffee.com
+* физическо присъствие и кутии с дарения и ходене по улиците да молиш - но САМО за НЕфалшиви хуманитарни кампании ...
 ### Extra \#1...
 
 **Cool hardware & software products**
@@ -128,6 +136,7 @@ _Recommended:_
 * CyanogenMod & its spiritual successor/fork called.... LineageOS(?)
 * Google Android M / R, Google Fuchsia OS ; Google Android v4.4.2-6/7/8/9/10+ (sadly, there exists some backwards-incompatibility and forwards-incompatibility, including among different smart-devices models and brands/vendors and model editions/versions...!)
 * ChromeOS (not my cup of tea...)
+* * Maemo* SymbianOS * BlackBerryOS 10 + GoogleAndroid GooglePlay-apps supporting framework ...
 
 _Also nice:_
 * http://droix.net
@@ -141,7 +150,7 @@ _Also nice:_
 * refurbished perfect-working 2nd-hand Lenovo ThinkPad's (from X60&P60 up, not ancient models... X200T, X201T, X220T, X220, X230, T400, ...)
 * Dell XPS13+ laptop
 * Microsoft Surface Pro 2+ & stylus
-* Xiaomi Mi6...
+* Xiaomi Mi6, Huawei, (WARNING: MAY CONTAIN PRC-CHINA SPYWARE FIRMWARE, HARDWARE, PRE-BOOT OS, OS binary-blobs)...
 * Wacom graphics tablets, Huion & M... graphics tablets (DIGImend package for (GNU/)Linux...)
 * shielded AC adapters & AC extender hubs with long cables
 * various AV&data&AC-power-to-DC-battery digital connector cables
