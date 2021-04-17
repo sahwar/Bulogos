@@ -74,7 +74,64 @@ http://cryptocompare.com/
 https://99bitcoins.com/ethereum/ethereum-mining/
 https://www.blockchain.com/btc/address/
 (NOTE: 'BTC' and other cryptocurrencies' shorthand codes conflict with some ISO currency codes and thus are not officially recognized by ISO/most bank institutions...)
-* `bitcoin:{hash}` (+QR code), `bitcoincash:{hash}` (+QR code), & other cryptocurrencies (e.g. ETH (Ethereum), etc.)...
+* `bitcoin:{hash}` (+QR code), `bitcoincash:{hash}` (+QR code), & other cryptocurrencies (e.g. ETH (Ethereum), USDT (Tether), litecoin, dogecoin, etc.)...
+
+More:
+* ko-fi.com
+
+* buymeacoffee.com
+
+*  patreon.com
+
+* liberapay.com
+
+* http://opencollective.com
+
+*  https://venmo.com/
+
+* https://global.alipay.com/platform/site/ihome
+
+* https://intl.alipay.com/
+
+* https://www.phyreapp.com/bg/nachalo?utm_source=google&utm_medium=search&utm_campaign=website_traffic_competitors_wallets&gclid=CjwKCAjwjuqDBhAGEiwAdX2cj3BSSPbVfUu696mFu7Fxdfq_0nobk0YsRygi2VNNp5cEtHQAkw_j2xoCBucQAvD_BwE
+
+* https://paysend.com/
+
+* https://www.curve.com/
+
+* https://www.travelsmart.bg/google-pay-%D0%B2-%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F/
+
+* GPay (GooglePay):
+
+* https://www.google.com/url?sa=t&source=web&rct=j&url=https://play.google.com/store/apps/details%3Fid%3Dcom.cc.grameenphone%26hl%3Dbg%26gl%3DUS%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dgpay&ved=2ahUKEwiPlaKWvYXwAhVOPewKHYi6CgcQFjAEegQIHRAC&usg=AOvVaw1zkeYvcdb8X5ZfDHWKvDRf&cshid=1618669356123
+
+* https://www.apple.com/bg/apple-pay/
+
+* https://www.bnb.bg/PaymentSystem/PSSEPA/PSSEPAIntroduction/index.htm
+* 
+* https://en.m.wikipedia.org/wiki/Single_Euro_Payments_Area
+
+* https://blog.icard.com/bg/kak-rabotyat-mezhdunarodnite-parichni-prevodi/
+
+* https://genome.eu/moneytransfers.html?utm_source=google&utm_medium=cpc&utm_campaign=eusepatransfer&utm_term=sepa%20eu&gclid=CjwKCAjwjuqDBhAGEiwAdX2cj6dUz95i4cu0UDS15p9LrAD-sMSIyInWFkNrKUQr4nRAD_UCa-hnWBoCPVcQAvD_BwE
+
+* https://paydo.com/iban?gclid=CjwKCAjwjuqDBhAGEiwAdX2cj3aOTCHD51fUiTaXd-Txw5mzXHQF1wibT9JnGNRHhf48kEuIlrZdTRoC5xYQAvD_BwE
+
+* https://www.daopay.com/sepa/?gclid=CjwKCAjwjuqDBhAGEiwAdX2cj95hwRp3QZgwrQJ-qksBA5_-KeJo7vcN8RU4mXGrZIRfOKmyYl4oQBoC9g8QAvD_BwE
+
+* https://www.paysera.bg/v2/bg-BG/paysera-digitalni-platejni-uslugi?gclid=CjwKCAjwjuqDBhAGEiwAdX2cj-_PqkGBbVaHXbrC6vaNNK5bGV4_4Yiibg7ehQ9UiXgcue2iu2vBthoC2loQAvD_BwE
+
+България:
+* https://www.easypay.bg/site/
+* https://www.epay.bg/v3main/front?p=fee_money
+
+* Western Union
+
+* MoneyGram
+
+* IBAN & SWIFT & BIC bank wire transfer
+
+
 
 ### Payment in cash ###
 * In-person p2p (peer-to-peer) paper-banknotes&_physical coin_ cash-money---exchange
@@ -116,6 +173,8 @@ http://aliexpress.com , http://alibaba.com , techtablets.com , ...
 * Facebook.com групи за продажби, размяна, подаръци/дарения
 * кампания в стила "Капачки за бъдеще" (за рециклиране на пластмаса с цел купуване на кувьози за бебета и друга медицинска апаратура)
 * плащане на каса и доставка с опция за преглед преди приемане - към Еконт (econt.bg), Speedy.bg, DHL, FedEx, USPS, bgpost.bg/bgposts.bg и с доверено лице като uber-driver / ride-sharing / частно лице извършва доставката с личния си автомобил срещу заплащане/услуга/процент/секс/бартер за физически стоки/свършване на работа/airbnb.com-подобно настаняване за определено време в дадено жилище/имот/и т.н. ...
+
+* ve4ernik's NEW GOLD STANDARD parallel-ly used alongside standard money currencies (from central banks) _physical-coins-only_ melt-your-own-metals-into-my-OPENSOURCE-DESIGN-COINS-ONLY PHYSICAL-COINS-ONLY currency + physical-notes geocache location to dig up & password/keylock to open up their container !!! hidden in plain sight & in abandoned locations, etc.!!! 😆👍 (cc) 2021 ve4ernik/sahwar
 
 ### [Crowdfunding](https://www.crowdfunding.com/) (NOT so viable... Better for countries outside of Bulgaria... BUT community per-project crowdfunding campaigns ARE VIABLE in Bulgaria!!!) ###
 _([information in Bulgarian](https://www.crowdfunding.com/), [more information](https://www.fundable.com/learn/resources/guides/crowdfunding/what-is-crowdfunding))_
