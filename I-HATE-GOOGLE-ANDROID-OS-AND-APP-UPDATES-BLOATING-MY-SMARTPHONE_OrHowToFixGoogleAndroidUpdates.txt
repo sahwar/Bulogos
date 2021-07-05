@@ -1,0 +1,37 @@
+I-HATE-GOOGLE-ANDROID-OS-AND-APP-UPDATES-BLOATING-MY-SMARTPHONE_OrHowToFixGoogleAndroidUpdates.txt
+
+Last modified: 05-July-2021
+
+#######
+
+Google Android OS & app updates kill your smartphone's remaining free disk space and are often buggy and you sometimes need to fallback to using an older version which is mostly backwards compatible with the newer version.
+
+Here is how to fix Google Android updates:
+
+1. Updates must be applied as .patch files on top of the original .apk file.
+Each .apk must must be structured like so:
+
+.apk
+/
+/{files of the original first version .apk of the app...}
+/{each-new-update}_{datetime-of-release}_{version-string}.patch
+/{same as the line above, for each new update/version}
+/applauncher.manifest # This file merely lists every version of the app, starting from the first version, one per line, with the last version having a special human+readable ASCII/UTF-8 JSON-like metacharacters 
+sequence which points to which .patch version is applied LAST and is the latest version which will be loaded when the user launches the app.
+DESPITE POTENTIAL MAJOR PERFORMANCE OVERHEADS, the app loading is
+done by loading the original first version of the files in the .apk (minus the above-explained .manifest file and minus any .patch files)
+and then applying each consecutive .patch file till the last one, after which the app is loaded to the user.
+The OS should provide an option to change which .patch version is being loaded last, thus effectively switching to another version of the app.
+The OS should also store .zip backups of the last 2 working versions of each app (in source-code&binary-executable-form), for easier fallback to the last 2 working versions of the app instead of using the OS's built-in feature to edit the .manifest file which sets which .patch version to load for the particular app.
+
+This should provide basic atomic-updates to the Google Android OS & especially app updates (which can't be mandatory & auto UNLESS the user has set that option in the Google Android OS settings!!!)
+NOTE: The OS must calculate the free filesize & total filesize of the OS filesystem and the filesize of every app and all updates eithin every app, and display that information to the user upon offering to download or post-foenload install each app update and each OS update.
+In case of lack of enough free space for an OS or app update, the user should be notified and the OS&hardware
+must provide the free 100%-working functionality to store new .patch updates into an inserted SD/SDHC/SDXC memory card (with some performance loss when loading an app from there!!!) AND also to even store .patch updates and OS updates and .apk files onto a USB flash stick memory card inserted via an OTG USB cable, or via EiFi Firect to HDDD/SSD of a another PC or via Bluetooth 
+to an HDD/SSD, or over the Internet to a remote web-server/PC via ssh / file.pizza / github.com/schollz/croc/Fram's f*exx&sexxx/RetroShare, etc. - if the user is on active WiFi connection to the Internet......
+
+Basic info about .patch update files:
+https://www.google.com/search?q=atomic+updates&oq=atomic+updates&aqs=chrome..69i57j0i19j0i19i22i30j0i10i19i22i30l2.8724j0j4&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8
+
+P.S. This .txt file is inspired by this tweet on twitter.com :
+https://mobile.twitter.com/boarken/status/1409455194572787714
