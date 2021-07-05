@@ -1,0 +1,7 @@
+HIBERNATION-ON-GNULINUX-IS-A-MUSTHAVE-OOTB-FEATURE-WHICH-MUST-BE-ROCKSOLID-RELIABLE.txt
+
+https://www.facebook.com/groups/linux.fans.group/permalink/5811462428895491/
+
+Ivan Kurdov
+Linux should just fix its HIBERNATION (SAVE-ALL-WORKING-STATE-APPS-TO-HDD/SSD & shutdown, and resume/unpause that state when you start your computer!) and make it stable as rock, forget about low-power suspending to RAM - that is useless, web-servers & data-webscrapers & scientific computation need to have PCs which work all the time 24/7/365-366, the rest of us superusers only need our PCs to be active when we use them... 🙄 
+---ve4ernik/sahwar P.S. Low-energy suspend to RAM while not shutting down IS _NOT_ so useful... Web-server hardware aim at 24/7/365-3666 uptime with only minor power outages or backup downtime and with hard disk replacements downtime... 
