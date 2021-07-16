@@ -7,7 +7,7 @@ This list is particularly suitable for people who add graphics-editing art-softw
 
 _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE EVEN THOUGH IT **IS** AIMING AT BEING COMPREHENSIVE_
 
-
+https://awesomeopensource.com/projects/pixel-art
 
 * [Adobe Photoshop](http://www.adobe.com/products/photoshop.html) - [Adobe CreativeCloud](https://www.adobe.com/uk/creativecloud.html) (commercial, has a free trial version)
 * [Adobe Illustrator](http://www.adobe.com/products/illustrator.html) (commercial proprietary)
