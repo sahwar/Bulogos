@@ -48,3 +48,419 @@ https://github.com/sahwar/Bulogos/master/Bulgarian-Braille-alphabet-v2-by-sahwar
 |-------|--------|--------------|-------------|----------------|-----------------------|-----------------|---------------|-----------------|---------|
 |       |        |              |             |                |                       |                 |               |                 |         |
 |-------|--------|--------------|-------------|----------------|-----------------------|-----------------|---------------|-----------------|---------|
+
+######################################################################################################################################################
+
+DRAFT #2 (also finish the LibreOffice .odt file with the final paper on Bulgarian Braille v2 :
+
+||| BULGARIANBRAILLEv1 ||| ⠀
+ а=⠁ |
+ б=⠃ |
+ в=⠺ |
+ г=⠛ |
+ д=⠙ |
+ е=⠑ |
+ ж=⠚ |
+ з=⠵ |
+ и=⠊ |
+ ѝ=⠯ |
+ й=⠽ |
+ к=⠅ |
+ л=⠇ |
+ м=⠍ |
+ н=⠝ |
+ о=⠕ |
+ п=⠏ |
+ р=⠗ |
+ с=⠎ |
+ т=⠞ |
+ у=⠥ |
+ ф=⠋ |
+ х=⠓ |
+ ц=⠉ |
+ ч=⠟ |
+ ш=⠱ |
+ щ=⠭ |
+ ъ=⠷ |
+ ь=⠾ |
+ ю=⠳ |
+ я=⠫ |
+ ,=⠂ |
+ .=⠲ |
+ ?=⠢ |
+ !=⠖ |
+ ;=⠆ |
+ :=⠒ |
+ „...“=⠦...⠴ |
+ (...)=⠶...⠶ (недоглеждане - прилича на „г“=⠛) |
+ [...]=⠇...⠸ |
+ {...}=⠆...⠰ |
+ преди число=⠼ |
+ след число=⠧ |
+ пред(и) главна буква=⠨ |
+ след главна буква=⠅ |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+
+||| BULGARIANBRAILLEv2.0.0.0.0;http://gitlab.org/sahwar/BulgarianBrailleV2 ||| 
+ а=⠁(/⡮/⣽) |
+ б=⠃ (/⣯/(⡯~f)) |
+ в=⠇ (/?) |
+ г=⠏ |
+ д=⠙(/⣵) |
+ е=⠢ (/⠦) |
+ ж=⠚ |
+ з=⠵ |
+ и=⠔ (/⠴) |
+ ѝ=⠣ |
+ й=⠜ |
+ к=⠅(/⠨) |
+ л=⠎ |
+ м=⠿ |
+ н=⠗ |
+ о=⠉ |
+ п=⠶ |
+ р=⠟ |
+ с=⠮ |
+ т=⠹ |
+ у=⠍ (⠩) [*конфликт с "!") |
+ ф=⠋ |
+ х=⠓ |
+ ц=⠾ |
+ ч=⠻ |
+ ш=⠱ |
+ щ=⠼ |
+ ъ=⠈ |
+ ь=⠷ |
+ ю=⠳ |
+ я=⠫ |
+ ,=⠔ (/⠴) |
+ .=⠠ |
+ ?=⠝ (/ ⡕ ⡵ ⡭ ⡽ ⢩ ⢭ ⢙ ; ⢙⡙ ?) |
+ !=⠍ (⠩) [⢚ ⢛ / ⡋ ⡍/⢩ ⡚] |
+ ;=⠬ |
+ :=⠨ (/⠅) |
+ "=⠛ |
+ '=⠘ |
+ ´=⠊ |
+ `=⠑ |
+ „“=X⠦⠴/⠴⠦/X⣎⣱/⣱⣎ |
+ «=X⠧/⣃/⣇ |
+ »=X⠼/⣘/⣸ |
+ {{{pˋ=⡌/ |
+ bˊ=⡘}}} |
+ (=⠆/⢎ |
+ )=⠰/⡱ |
+ [=⠯/⣏ |
+ ]=⠽/⣹ |
+ {=⠲ |
+ }=⠖ |
+ -=⠒ |
+ (em-dash)=⡏ |
+ (horizontal bar)=⡍ |
+ (figure dash)=⡉ |
+ {{{(en-dash)=}}} |
+ ~=⡜ |
+ @=⣝ |
+ %=⠞ |
+ *=⠥ |
+ #=⠄ (***) |
+ ^=⠢(⠦) (**) |
+ +=⠺ |
+ _=⠤ (underscore) |
+ /=⠌ |
+ \=⠡ |
+ =// |
+ $=⠂ (***) |
+ &=⠐ (***) |
+ ==⠭ |
+ <=⠪ |
+ >=⠕ |
+=⠸ (pipe character) |
+ SOS=⣫...... |
+ 0=⢇/⡎/⢏ |
+ 1=⢺ |
+ 2=⣕ |
+ 3=⣽ /⣙/ ⡵⢱ ; ⢵/⣵/⡵/⡗ |
+ 4=⢻ /⢳/⢓/⢧/⢓/⢛/⢚ |
+ 5=⣻ /⡫/(⢳) |
+ 6=⣮ |
+ 7=⡝ |
+ 8=⢣ (~=⡜) |
+ 9=⡻ |
+ √= ⢽/⢵/⡾ |
+ ѣ=⣯/⣭/(⣗?) |
+ ы=⣷ |
+ э=⡺ |
+ ё=⢍/⣍
+ ў=⡚/⢚/⣚/
+ є=⢗ |
+ ѧ= |
+ ѩ= |
+ ѫ= |
+ ѭ= |
+ ¨= |
+ ¯= |
+ ¸= |
+£= |
+¤= |
+¥= |
+§=⢷ |
+©= |
+«= |
+­= |
+®= |
+°= |
+±= |
+´= |
+·= |
+»= |
+×= |
+÷= |
+ʣ= |
+ʤ= |
+ʥ= |
+ʦ= |
+ʧ= |
+ʨ= |
+ʩ= |
+ʪ= |
+ʫ= |
+ʬ= |
+ʲ= |
+ʳ= |
+ʴ= |
+ʶ= |
+ʷ= |
+ʸ= |
+ʹ= |
+ʺ= |
+||| METACHARACTERS ||| 
+Мета-знаци и мета-знакови комбинации (със специално значение): |
+((( =⢈...⡁ |
+ =⢿...⡿ |
+ =⢸...⡇ |
+ =⣿⣿ ⢾⡷ ; ⢻⢷⣷⢏⣎⣱⡹ ⡟⣧⢻⡟ ; ⡪emojiASCIIcodeDescription⢕ ; ⣇⣸ ; ⣧⣼ ; 
+?=⠝ ⡪⢕ ⣼⣟ --- ⣵⢵⡻⡵ ; ⣼⣟ --- ⣵⢵⡻⡵ |
+⡊⢑   ⣊⣑   ⣋⣙   ⣣⣺   ⡎⢱   ⡏⢹   ⣟⣻   ⣇⣸ |
+⢺⡻ ,,, (⡽/⡙);  ⣺⣟⣯⡎⡏⣬⣭ ; ⡵⢯⢮⢫  ⣺⣵⣟⣯⡎⡏⣬⣭ ; ⢫  ; ⡞⡗; ⡝ ; ⡝⢇⡸⢅⢍⢑; ⡝ ; ⡽ ; ⣞⣜⣟⣯; ⢓; ⣯ ;  ⢯⡞⡟ ;  ; ⡣⡳; ⢣ ; ⢛ ; ⣙⣚⣘;⣓ ; ⢓ ; ⣙⣚⣜⣞ ; ⢝ ; ⢵/⡮⡯ ; ⡳ ; ⡞; ⣓ ; ⡜ ; ⡵⢱ ; ⢵/⣵/⡵/⣵/⡗ ))) | 
+
+ (пред Unicode UTF-8 hex код - за въвеждане на знак от Уникод чрез последователност от числа, представени или чрез един от стандартните 4 начина за представяне на числа, или като hex(adecimal) стойностите на първите 16 букви от тази втора версия на Брайловата азбука за българския език: А=0, Б=1, В=2, Г=3, Д=4, Е=5, Ж=6, З=7, И=8, Й=9, К=A (hex), Л=B (hex), М=С (hex), Н=D (hex), О=E (hex), П=F (hex); ... __&#FFFFFF(FFFFFF);__ )=⣿ |
+ (след Unicode UTF-8 hex код - за въвеждане на знак от Уникод чрез последователност от числа, представени или чрез един от стандартните 4 начина за представяне на числа, или като hex(adecimal) стойностите на първите 16 букви от тази втора версия на Брайловата азбука за българския език: А=0, Б=1, В=2, Г=3, Д=4, Е=5, Ж=6, З=7, И=8, Й=9, К=A (hex), Л=B (hex), М=С (hex), Н=D (hex), О=E (hex), П=F (hex); ... __&#FFFFFF(FFFFFF);__ )=⣿⣿ |
+знак за начало на превключване/смяна на Брайловата система=⢾...N number of Braille letters listing the name & version of the Braille system written in the latest USA ASCII standard Braille (?!?), as well as the URL/URI website with the git-version-control-system versioning files & explanations of that system in that .txt/.md/.html website-file |
+знак за начало на въвеждането на текст чрез новозададената Брайлова система=⢻ |
+... |
+знак за край на въвеждането на текст чрез новозададената Брайлова система=⡟ |
+знак за край на превключване/смяна на Брайловата система=⡷ |
+
+знак за превключване/смяна на бройната система=⣼ |
+знак за начало на въвеждането на текст/число чрез новозададената бройна система=⣼⣼.../ |
+знак за край на въвеждането на текст чрез новозададената Брайлова система=...⣧⣧/ |
+знак за край на превключване/смяна на бройната система=⣧ |
+пред(и) число= ⢈/⢹/⢿/ (X⢸) |
+след число= ⡁/⡏/⡿/ (X⡇) |
+пред(и) главна буква= ⢸//(X⢈)
+след главна буква= ⡇//(X⡁) |
+пред(и) емоджи=⡪...=(U+ Unicode emoji or which US-ASCII Braille English-language-emoji-description-codeword) |
+след емоджи=⢕...=(U+ Unicode emoji or which US-ASCII Braille English-language-emoji-description-codeword) |
+преди base64 binary encoded data (via which US-ASCII-Braille system ???)= ⣏/⡈ / ⣼⣧ |
+след base64 binary encoded data (via which US-ASCII-Braille system ???)= ⣹/⢁ / ⣼⣧ |
+пред(и) Морзов код (via which BG-Braille chars or which US-ASCII-Braille chars)=⢼⣉...(аб/ab)⣉⡧ |
+след Морзов код (via which BG-Braille chars or which US-ASCII-Braille chars)=⢼⣉...(аб/ab)⣉⡧ |
+binary-code start=⡈/⣼ |
+binary-code end=⢁/⣧ |
+⠧⠧⠧⠧=start / end of which US-ASCII Braille (?!?) |
+* получер/удебелен текст (bold): |
+* курсив/наклонен текст (italic): |
+* подчертан текст (underline(d)): |
+* зачертан (strikethrough): |
+* горен индекс (): |
+* долен индекс (): |  ||| 
+ [BRAILLECHAR] |
+ [[]] |
+ [[[]]] |
+ [[[[]]]] |
+ [[[[[]]]]] |
+ [[[[[[]]]]]] | |||
+ 
+ ---
+ 
+  !"#$%&'()*+,-./
+0123456789:;<=>?
+@
+[\]^_
+`
+{|}~
+£¤¥§¨©«­®¯
+°±´·¸»
+×ʲʹʺʻʼʽ
+ˆˇˈˉˊˋˌˎˏ
+̀́̂̃̄̅̆̇̈̊̋̌̌̍̎̏
+̑̒̓̔̕
+
+---
+2019-2021 was The Revelation as described in the Bible... ~ve4ernik2 ; 
+
+---
+⠀⠁⠂⠃⠄⠅⠆⠇⠈⠉⠊⠋⠌⠍⠎⠏
+⠐⠑⠒⠓⠔⠕⠖⠗⠘⠙⠚⠛⠜⠝⠞⠟
+⠠⠡⠢⠣⠤⠥⠦⠧⠨⠩⠪⠫⠬⠭⠮⠯
+⠰⠱⠲⠳⠴⠵⠶⠷⠸⠹⠺⠻⠼⠽⠾⠿
+⡀⡁⡂⡃⡄⡅⡆⡇⡈⡉⡊⡋⡌⡍⡎⡏
+⡐⡑⡒⡓⡔⡕⡖⡗⡘⡙⡚⡛⡜⡝⡞⡟
+⡠⡡⡢⡣⡤⡥⡦⡧⡨⡩⡪⡫⡬⡭⡮⡯  
+⡰⡱⡲⡳⡴⡵⡶⡷⡸⡹⡺⡻⡼⡽⡾⡿   
+⢀⢁⢂⢃⢄⢅⢆⢇⢈⢉⢊⢋⢌⢍⢎⢏   ⡸⡹  ; ⢝⢞ ; a= , b= , c= , d= , e= , f= , g= , h= , i= , j= , k= , l= , m= , n= , o= , p= , q= , r= ⢝⢞, s= , t=⢗ , u= , v= , w= , x= , y= , z= ; ⢻⡟ ;  я=⡳?
+⢐⢑⢒⢓⢔⢕⢖⢗⢘⢙⢚⢛⢜⢝⢞⢟
+⢠⢡⢢⢣⢤⢥⢦⢧⢨⢩⢪⢫⢬⢭⢮⢯
+⢰⢱⢲⢳⢴⢵⢶⢷⢸⢹⢺⢻⢼⢽⢾⢿
+⣀⣁⣂⣃⣄⣅⣆⣇⣈⣉⣊⣋⣌⣍⣎⣏
+⣐⣑⣒⣓⣔⣕⣖⣗⣘⣙⣚⣛⣜⣝⣞⣟
+⣠⣡⣢⣣⣤⣥⣦⣧⣨⣩⣪⣫⣬⣭⣮⣯
+⣰⣱⣲⣳⣴⣵⣶⣷⣸⣹⣺⣻⣼⣽⣾⣿ 
+798/3=266 Braille characters in Unicode (16x16=256; 16x17=272);
+(8x8/16x8 pixels, 16x16 for CJKVT - Asian languages...); 
+---
+ (U+0020 SPACE, dec32), ! (U+0021), "#$%&'()*+,-./0123456789:;<=>?@A...Z(=U+005A, dec90), [\]^_`a(=U+0061, dec97), z(=U+007A, dec122), {|}~ (=U+00A0 NO-BREAK SPACE [NBSP]), £ (=U+00A3), ¤(=U+00A4 CURRENCY SIGN, dec164), ¥§©«(=U+00AB, dec171), ­(=U+00AD SOFT HYPHEN [SHY] : discretionary hyphen, dec173), ®,°(=U+00B0 DEGREE SIGN), ±´(=U+00B4 ACUTE ACCENT, dec180), ·(=U+00B7 MIDDLE DOT : midpoint (in typography), Georgian comma, Greek middle dot (ano teleia), Decimal 183),»(=U+00BB RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK : right guillemet, Decimal 187), ×(=U+00D7 MULTIPLICATION SIGN : z notation Cartesian product, Decimal 215), ÷(=U+00F7 DIVISION SIGN : obelus, Decimal 247), ʣʤʥʦʧʨʩʪʫʬʲʳʴʶʷʸʹʺ
+ʻʼ
+а(=U+0430 CYRILLIC SMALL LETTER A,Decimal 1072), ы(=U+044B CYRILLIC SMALL LETTER YERU, Decimal 1099), э(=U+044D CYRILLIC SMALL LETTER E, Decimal 1101), ё(=U+0451 CYRILLIC SMALL LETTER IO, Decimal 1105), є(=U+0454 CYRILLIC SMALL LETTER UKRAINIAN IE : Old Cyrillic yest, Decimal 1108), і(=U+0456 CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I : Old Cyrillic i, Decimal 1110), ѝ(=U+045D CYRILLIC SMALL LETTER I WITH GRAVE, Decimal 1117), ў(=U+045E CYRILLIC SMALL LETTER SHORT U, Decimal 1118), ѣ(=U+0463 CYRILLIC SMALL LETTER YAT, Decimal 1123), ѧ(=U+0467 CYRILLIC SMALL LETTER LITTLE YUS, Decimal 1127), ѩ (=U+0469 CYRILLIC SMALL LETTER IOTIFIED LITTLE YUS, Decimal 1129), ѫ(=U+046B CYRILLIC SMALL LETTER BIG YUS, Decimal 1131), ѭ(=U+046D CYRILLIC SMALL LETTER IOTIFIED BIG YUS, Decimal 1133), ¨(=U+00A8 DIAERESIS, Decimal 168), ¯(=U+00AF MACRON : overline, APL overbar, Decimal 175), ¸(=U+00B8 CEDILLA, Decimal 184)
+---
+last unicode chars: U+10FFFD U+10FFFD <private-use-10FFFD> (decDecimal 1114109),
+􏿾(=U+10FFFE <noncharacter>,Decimal 1114110), 􏿿(=U+10FFFF <noncharacter>,Decimal 1114111), 𪘀(U+2FA1D CJK COMPATIBILITY IDEOGRAPH-2FA1D, Decimal 195101),󠀁(U+E0001 LANGUAGE TAG,Decimal 917505), 󠇯(=U+E01EF VARIATION SELECTOR-256 [VS256], Decimal 917999)
+---
+ !"#$%&'()*+,-./
+0123456789:;<=>?
+@
+[\]^_
+`
+{|}~
+£¤¥§¨©«­®¯
+°±´·¸»
+×ʲʹʺʻʼʽ
+ˆˇˈˉˊˋˌˎˏ
+̀́̂̃̄̅̆̇̈̊̋̌̌̍̎̏
+̑̒̓̔̕
+
+
