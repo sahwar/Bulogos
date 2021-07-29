@@ -2,7 +2,7 @@
 
 Оригинална идея за програма от типа гласов/речев(и) синтезатор, за компютърно произношение на текстове, написани на съвременния български език, с лиценз на свободен софтуер с отворен код (и с платена версия с малко добавки).
 
-Идея за `GovoritelBG-ss` (c) 2018-2019 sahwar (github.com/sahwar/, twitter.com/ve4ernik, Иван И. Курдов) <ve4ernik@gmail.com> и други.
+Идея за `GovoritelBG-ss` (c) 2018-2019 sahwar (github.com/sahwar/, twitter.com/ve4ernik, Иван И. Курдов) <ve4ernik@gmail.com> / ikurdov10@gmail.com и други.
 
 It is still rough around the edges as an idea but the core app idea&data-structures are here in this document (while also being in continous revision, further tweaking/details-finetuning & development).
 
@@ -860,7 +860,8 @@ http://bezmonitor.com/ - <bezmonitor@gmail.com> (Viktor) (useful information for
 * https://github.com/topic/tts
 
 https://gist.github.com/erogol/97516ad65b44dbddb8cd694953187c5b
-Hands-on example for TTS https://github.com/mozilla/TTS
+Hands-on example for TTS https://github.com/mozilla/TTS & https://github.com/common-voice/common-voice (TTS datasets of human-voices recordings...) & http://tatoeba.org & http://dumps.wikimedia.org & http://dicts.info & http://dict.cc & http://rechnik.info + http://bgjargon.com & http://urbandictionary.org & more... + "БЪРБОРИНО" + gespeaker+MBROLA-for-Bulgarian + toshko2 TTS app + CMU Sphinx/Festival ; + notepad++ speak/TTS+DSpellchecker plugin; + google chrome: bgspeech2
+
 This notebook trains Tacotron model on LJSpeech dataset.
 https://gist.github.com/sahwar/8eae919103915aed718d03af75b0d1e7
 
