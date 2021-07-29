@@ -1,3 +1,7 @@
+https://github.com/sahwar/Bulogos/master/HOWTO_send-and-receive-big-files-over-the-Internet.txt
+---
+Как да изпращате и получавате големи файлове онлайн по/през/чрез Интернет
+
 * p2p software: torrent client software (qbittorrent, Deluge, uTorrent, etc.) + torrent trackers / magnet URIs, DC++/ADC hubs, IRC XDCC p2p-filesharing download hubs
 * FilePizza [ https://github.com/kern/filepizza/issues/140 ] - https://file.pizza (p2p-filesharing via a modern web-browser like Mozilla Firefox or Google Chrome / Chromium, Vivaldi, suckless.org surf , etc.) - similar: http://toffeeshare.com , http://share.sh
 * rync, sftp (ssh file-transfer), SynchThing; OwnCloud; FreeCloud (Debian FreedomBox on top of ODroid / ARMv6-8+_x64 RaspberryPi / Olimex ARMx64 / OLPC / pinebook / etc. devices, etc.)
@@ -28,7 +32,8 @@ http://splitbrain.org/projects/filecroc
 * shared webhosting or self-hostef web-server with git (via GitLab CE, Gitea, etc.)
 * Ares Galaxy, EiskaltDC++, DC++ (DC++/ADC), AirDC++ + DC++/ADC web-hosted hubs + hub software
 * qbittorrent, libretorrent, deluge, transmission-torrent, etc. + open F(L)OSS .torrent & .magnet (DHT, uTP, etc. Torrent TEPs extensions) web-tracker
-* etc.
+* http://pidgin.im supports LAN filesharing via the Bonjour IM protocol ; also see: PidginIM's IRC-DCC p2p-filesharing
+* http://tox.im (qTox & Antox [Google Android OS]), http://matrix.org ; http://secushare.org & http://wiki.linktree.org & http://whonix.org (OnionShare + Tor web-browser); http://kernel.org & http://psyc.org & http://en.wikipedia.org/wiki/List_of_IRC_clients (there is at least 1 IRC client app for JavaME (J2ME) feature-phones which supports basic DCC file-transfers... you can test running it via J2ME Loader (a libre software freely available on http://github.com )...
 * ??? Suggest more killer apps for adding to this list!!!
 
 https://www.quora.com/q/thephilomatheanspace/If-you-can-give-me-only-one-secret-to-improve-myself-what-would-it-be?ch=10&share=36d72417&srid=dDGp
