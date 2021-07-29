@@ -1,25 +1,31 @@
 * p2p software: torrent client software (qbittorrent, Deluge, uTorrent, etc.) + torrent trackers / magnet URIs, DC++/ADC hubs, IRC XDCC p2p-filesharing download hubs
-* FilePizza (p2p-filesharing via a modern web-browser like Mozilla Firefox or Google Chrome / Chromium, Vivaldi, suckless.org surf , etc.)
-* SynchThing; OwnCloud
+* FilePizza - https://file.pizza (p2p-filesharing via a modern web-browser like Mozilla Firefox or Google Chrome / Chromium, Vivaldi, suckless.org surf , etc.) - similar: http://toffeeshare.com , http://share.sh
+* rync, sftp (ssh file-transfer), SynchThing; OwnCloud; FreeCloud (Debian FreedomBox on top of ODroid / ARMv6-8+_x64 RaspberryPi / Olimex ARMx64 devices, etc.)
 * FTP server + username & password
-* Fram's F*EX & sexxx software:
+* Fram's F*EX & sexxx & DOX * WOOS & xx software:
 https://fex.rus.uni-stuttgart.de/
 http://fex.belwue.de/fex.html
+http://github.com/schollz/croc
+http://splitbrain.org/projects/filecroc
+* wdt (github.com) & magic-wormhole & hyper-wormhole & dat-cp , etc.
+* IRC(v3+?)+DCC/XDCC/SDCC via self-webhosted HTML5-website served via an RSS webfeed (openable via a modern html5 web-browser) p2p filesharing...
 * qTox p2p filesharing
-* JitsiIM p2p filesharing
-* RicochetIM p2p filesharing
+* JitsiIM/JitsiMeet p2p filesharing
+* RicochetIM & RocketChat & BeeBEEP & Skype & Google Hangouts & PidginIM IRC-DCC p2p filesharing
 * http://conversations.im p2p-filesharing
 * Skype p2p filesharing
 * OnionShare + Tor web-browser + .onion hyperlinks/URIs/URLs, RetroShare
 * file split&merge into 5–20/25 MB parts and send each part as an email attachment
-* ssh ; sendfile ; XMPP + Jingle PEP for p2p-filesharing
+* ssh sftp ; sendfile (older brother of F*EX, DOX, WOOS, etc.) ; XMPP + Jingle-PEPs for http&etc. p2p-filesharing
 * Mozilla Send & Mozilla Sync
 * rsync, zsync, Zstandard(?!?); USBoverEthernet (?!?)
 * http://mediafire.com , http://imgur.com , http://imgflip.com , http://4chan.org , http://8chan.org 
-* http://youtube.com , http://vimeo.com , http://instagram.com , http://facebook.com , http://wordpress.com , http://blogspot.com , http://vidcloud.com (?)
-* http://fosstodon.org , http://twitter.com , http://identi.ca / GNU Social
+* http://youtube.com , http://vimeo.com , http://d.tube , http://dailymotion.com , http://instagram.com , http://facebook.com , http://wordpress.com , http://blogspot.com , http://vidcloud.com (?)
+* http://fosstodon.org , http://twitter.com , http://identi.ca / GNU Social ; http:// + gopher (CLI)
 * http://matrix.org (?)
 * shared webhosting or self-hostef web-server with git (via GitLab CE, Gitea, etc.)
+* Ares Galaxy, EiskaltDC++, DC++ (DC++/ADC), AirDC++ + DC++/ADC web-hosted hubs + hub software
+* qbittorrent, libretorrent, deluge, transmission-torrent, etc. + open F(L)OSS .torrent & .magnet (DHT, uTP, etc. Torrent TEPs extensions) web-tracker
 * etc.
 * ??? Suggest more killer apps for adding to this list!!!
 
