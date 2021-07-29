@@ -1,11 +1,17 @@
 ### 🎨 The Ultimate List of Digital Painting & Image Editing Apps ###
 (Върховният списък със софтуер за дигитално рисуване и редактиране на изображения)
 
-Ultimate list of image editing, graphics editing, digital drawing&painting software (the focus is on open-source/FOSS and freeware apps). These apps are for the modern desktop OS trinity: Microsoft Windows, GNU/Linux, Apple macOS. Most apps in the list are FOSS or freeware. The list aims at being highly inclusive while still focusing on recommending the best apps. Most of the digital painting apps in the list also support using a graphics tablet (e.g. Wacom tablets) aside from using a computer mouse and keyboard (check each app's features list or documentation for details).
+Ultimate list of image editing, graphics editing, digital drawing/sketching(/prototyping/GUI-wireframing)&painting software (the focus is on open-source/FOSS and freeware apps). These apps are for the modern desktop OS trinity: Microsoft Windows, GNU/Linux, Apple macOS. Most apps in the list are FOSS or freeware. The list aims at being highly inclusive while still focusing on recommending the best apps. Most of the digital painting apps in the list also support using a graphics tablet (e.g. Wacom tablets) aside from using a computer mouse and keyboard (check each app's features list or documentation for details).
 
 This list is particularly suitable for people who add graphics-editing art-software to their Linux distro (or who package art software for related repositories , i.e. compiled binary-from-source packages) and for people who use computers mostly for digital/mixed-media art production/editing.
 
 _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE EVEN THOUGH IT **IS** AIMING AT BEING COMPREHENSIVE_
+https://github.com/LazyZhu/wdt
+
+
+https://github.com/common-voice/common-voice
+
+VPN, proxy, tor .onion + onionshare ; https://github.com/Free-IPTV/Countries
 
 https://awesomeopensource.com/projects/pixel-art
 
@@ -72,6 +78,7 @@ http://hp.vector.co.jp/authors/VA033749/tips_azdw2/anim.html
 * [ExPhoto (sister project to Pixia)](http://www.ne.jp/asahi/mighty/knight/exphoto.html) _(RECOMMENDED)_
 * [EZ Paint (freeware alternative to MS Paint for WinXP, for Windows7+)](http://ezpaintsoftware.com/EZdownloads.html) _(HIGHLY RECOMMENDED)_
 * [FireAlpaca](https://firealpaca.com/) FREEWARE _(HIGHLY RECOMMENDED)_
+* FilterBox by PisteGamez.net --- http://filterbox.pistegamez.net 
 * [FlamePainter](https://www.escapemotions.com/products/flamepainter/) (commercial)
 * [GIMP Paint Studio](https://github.com/Draekko-RAND/gps-gimp-paint-studio)
 * [GimPhoto (GIMP with tweaked GUI)](http://www.gimphoto.com/) [2](https://sourceforge.net/projects/gimphoto/) FREEWARE
@@ -134,15 +141,17 @@ https://sumo.app/paint/
 * [openCanvas](http://www.portalgraphics.net/en/oc/) (commercial)
 * [OpenToonz + GTS (by anime-makers Studio Ghibli&DWANGO!)](https://opentoonz.github.io/e/) [2](https://github.com/opentoonz/dwango_opentoonz_plugins) [3](https://github.com/opentoonz/opentoonz) [4](https://github.com/opentoonz/GTS) _(HIGHLY RECOMMENDED)_
 * [Paint of Persia](https://dunin.itch.io/ptop) (a pixel-art rotoscoping tool useful for making pixel-art sprites&animations) _FREEWARE_ (Windows, macOS, Linux) _RECOMMENDED_
-* [paint.net (Windows7+ only)](https://www.getpaint.net/) FREEWARE (.NET - https://www.microsoft.com/en-us/download/details.aspx?id=36805 + https://www.microsoft.com/en-us/download/details.aspx?id=56115 ) _(HIGHLY RECOMMENDED)_
+* [paint.net (Windows7+ only)](https://www.getpaint.net/) FREEWARE (.NET - https://www.microsoft.com/en-us/download/details.aspx?id=36805 + https://www.microsoft.com/en-us/download/details.aspx?id=56115 ) + itch.io PDN animatio plugin + https://github.com/0xC0000054/PSFilterPdn _(HIGHLY RECOMMENDED)_
 * [Paintbrush (macOS)](https://sourceforge.net/projects/paintbrush/)
 * [PaintStar](https://sites.google.com/site/wangzhenzhou/home) FREEWARE _(RECOMMENDED)_
 * [Papagayo (lipsync)](https://en.wikipedia.org/wiki/Papagayo_(software)]
-* [Pencil2D](https://www.pencil2d.org/) [2](https://github.com/pencil2d/pencil) (2D hand-drawn animation editor) OPEN-SOURCE
+* [Pencil2D](https://www.pencil2d.org/) [2](https://github.com/pencil2d/pencil) (2D hand-drawn animation editor; see also: Synfig, OpenToonz, sk1, Skencil, Inkscape, etc.) OPEN-SOURCE
+* Perfect-freehand (similar to MyPaint/Krita/Medibang Paint Pro/PaintToolSAI (English)/AzPainter, qAquarelle, Drawpile, etc.): https://github.com/steveruizok/perfect-freehand ; live online version: https://perfect-freehand-example.vercel.app/
 * [Photivo](http://photivo.org/)
 * [Photo Flow](?) OPEN-SOURCE
 * [Photobie](http://www.tucows.com/preview/500316)
 * [PhotoFlare](http://photoflare.io/contributing/translations/) [2](https://github.com/PhotoFlare/photoflare) OPEN-SOURCE_(RECOMMENDED)_
+* PhotoFiltre
 * [PhotoScape](http://photoscape.org/ps/main/index.php) FREEWARE
 * [Phototonic (!)](https://www.linux-apps.com/p/1131097/) [2](https://github.com/pisilinux/playground)
 * [Phoxo](http://www.phoxo.com/en/) FREEWARE
@@ -229,29 +238,29 @@ https://sumo.app/paint/
 * http://sumopaint.com (click the '^' & select the 'Pixel' mode to toggle between the photoshop-like sumopaint web-app & its pixel-art-oriented version...; there's also an Adobe Flash version available...)
 * ShoeBox app (Adobe AIR) { ShoeBox app (Adobe AIR), SpriteCutter.jar, GifCam ( http://bahraniapps.com ), & iDraw3, JPixel, GraphicsGale, Auto Screenshot (github), ShareX, nomacs (Frameless mode FTW!)! Also: http://opengameart.org }
 * SpriteCutter.jar
-* GifCam ( http://bahraniapps.com ) & iDraw3
-* JPixel
+* GifCam ( http://bahraniapps.com ) + VClip & iDraw3
+* JPixel --- http://emad.itch.io
 * GraphicsGale
 * Auto Screenshot (github)
-* ShareX
-* nomacs (Frameless mode FTW! - image viewer)!
+* ShareX & ScreenToGif & FRAPS (Direct3D & DirectX9-12+ & xvid.org (or H.263, H.264/AVC/mp4ORmkv(mkvcleaver,mkvtoolnix,aegisub)-container, H.265/HEVC) video-codec!) + openScreenRecorder & freescreenrecord (OpenGL - experimental support!)
+* nomacs (Frameless mode FTW! - image viewer ; see also: GThumb, GPic, RR=RoboReader - frameless mode)!
 * http://opengameart.org
 
 * Check out these slick tools:
-* http://david.li/paint/
-* http://www.drpetter.se/project_cherrybrush.html
-* https://jackschaedler.github.io/goya/
+* http://david.li/paint/ - recommended! Also check out 'filterbox' and 'perferct-freehand' mentioned above!
+* http://www.drpetter.se/project_cherrybrush.html - recommended!
+* https://jackschaedler.github.io/goya/ - online pixel-art & GIF-animation drawing and editor
 * https://libresprite.github.io/
 * https://graphicsgale.com/us/ (+localizations:
 Fluid Paint
 Fluid paint simulation
 LibreSprite
-LibreSprite is a free and open source program for creating and animating your sprites.
+LibreSprite is a free and open source program for creating and animating your sprites. --- highly recommeded for pixel-art, a fork of a cheap commercial pixel-art editor
 Animation Graphic Editor - GraphicsGale
 Powerful tool for spriting and pixel art
 https://graphicsgale.com/us/lang.html )
 * iDraw3 v3.32 - https://www.rpgmaker.pl/?co=download&typ=programy&id=idraw  (tutorial: http://rpgmaker2000.narod.ru/idraw/idraw3.htm - https://archive.vn/B4VSx )
-* ShoeBox (AdobeAIR freeware): https://renderhjs.net/shoebox/
+* ShoeBox (AdobeAIR freeware): https://renderhjs.net/shoebox/ - highly recommended for pixel-art tilesets&tilemaps&pixmaps&charmaps&charsheets for rpgmaker2000/2003/XP/or newer - http://rpgmaker.org - http://rpgmaker.net - etc. E.g.: http://aldorlea.org & LaxiusPower1&2&3 from http://caiman.us or http://old-games.og --- + more... - checko out Google.com html5+jsV6+&cookies Doodle for 29-July-2021 - an OlympicGames2021 as an RPGMaker-like video-game ; 
 GraphicsGale - Language
 Powerful tool for spriting and pixel art
 Twierdza RPG Maker
@@ -263,7 +272,7 @@ Tworzenie gier (RPG, JRPG) przy pomocy programu RPG MAKER, jak i innych mu podob
 LazPaint
 LazPaint is a graphic editor with many tools and filters, written in Lazarus (Free Pascal).
 
-http://lospec.com/
+http://lospec.com/ + list of pixel-art apps + _list of color palettes_ (!!!)
 Lospec - Free tools and resources for people making pixel art, voxe...
 Free online tools for people creating pixel art and other low-spec art.
 
