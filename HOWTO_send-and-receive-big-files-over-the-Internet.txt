@@ -4,7 +4,7 @@ https://github.com/sahwar/Bulogos/master/HOWTO_send-and-receive-big-files-over-t
 
 * p2p software: torrent client software (qbittorrent, Deluge, uTorrent, etc.) + torrent trackers / magnet URIs, DC++/ADC hubs, IRC XDCC p2p-filesharing download hubs
 * FilePizza [ https://github.com/kern/filepizza/issues/140 ] - https://file.pizza (p2p-filesharing via a modern web-browser like Mozilla Firefox or Google Chrome / Chromium, Vivaldi, suckless.org surf , etc.) - similar: http://toffeeshare.com , http://share.sh
-* rync, sftp (ssh file-transfer), SynchThing; OwnCloud; FreeCloud (Debian FreedomBox on top of ODroid / ARMv6-8+_x64 RaspberryPi / Olimex ARMx64 / OLPC / pinebook / etc. devices, etc.)
+* rsync, sftp (ssh file-transfer), TigerVNC vnc file-transfer, TeamViewer (newer stable versions) file-transfer; SynchThing; OwnCloud; FreeCloud (Debian FreedomBox on top of ODroid / ARMv6-8+_x64 RaspberryPi / Olimex ARMx64 / OLPC / pinebook / etc. devices, etc.)
 * FTP server + username & password
 * Fram's F*EX & sexxx & DOX * WOOS & xx software:
 https://fex.rus.uni-stuttgart.de/
