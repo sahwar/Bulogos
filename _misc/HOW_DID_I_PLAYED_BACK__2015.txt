@@ -1,0 +1,34 @@
+[VIDEO]
+
+Media Player Classic - Home Cinema 32-bit Installer / http://mpc-hc.org/downloads/
+XySubFilter 32-bit Archive / http://code.google.com/p/xy-vsfilter/wiki/Downloads
+madVR / http://madshi.net/madVR.zip
+
+1.  Uninstall all codec packs, previous instances of the aforementioned, and the like, and delete their settings if prompted.
+2.  Reboot.
+3.  Install MPC-HC with default settings.
+4.  Install XySubFilter.
+5.  Extract "madVR.zip" into a new "madVR" directory in your "C:\Program Files (x86)" directory.
+6.  Right-click on the "madVR" directory, click on "Properties", go to the "Security" tab, click on "Edit", click on "Add...",
+    type your Windows user name, click on "OK", click on the left "Modify" checkbox, click on "OK", and then click on "OK".
+7.  Right-click on "install.bat" in the "madVR" directory you just populated, and then click on "Run as administrator".
+8.  Start MPC-HC, go to "View" -> "Options..." -> "Playback", and uncheck "Use the built-in subtitle renderer".
+9.  Go to "View" -> "Options..." -> "Playback" -> "Output" and select "madVR" under "DirectShow Video".
+10. Go to "View" -> "Options..." -> "Internal Filters", click on "Video decoder", and select "None" in the
+    "Hardware Decoder to use" dropdown menu in the "Hardware Acceleration" section. Click on "OK".
+11. Play a video file, go to "Play" -> "Filters", click on "madVR", and click on "Edit Settings".
+12. Go to "processing" -> "artifact removal" and check "reduce banding artifacts".
+13. Go to "scaling algorithms" and select "Jinc" and "activate anti-ringing filter" in the chroma and image upscaling submenus.
+14. Go to "rendering" -> "general settings" and check "use Direct3D 11 for presentation" and "use a separate device for presentation".
+15. Click on "OK", click on "OK", restart MPC-HC, and start watching some 10-bit H.264.
+
+
+
+[AUDIO]
+
+foobar2000 / http://www.foobar2000.org/
+
+1.  Install.
+2.  Add components as you see fit. The ones you need are almost always available on the official site
+    (Monkey's Audio for .ape, TAK decoder for .tak, and so on). http://true-audio.com/ has the TTA decoder component.
+3.  Search Hydrogenaudio / http://www.hydrogenaud.io/forums/index.php?showforum=33 for additional components.
