@@ -1,0 +1,101 @@
+24_feature-requests_on_howto-improve-Rakuten-Viber-IM+VoIP+filesharing-chat-app-for-smartphones+desktops-OSs.txt
+
+[I, ve4ernik/sahwar <ikurdov10@gmail.com>, wasn't paid a single USD-dollar to write all of these suggestions to improve the Rakuten Viber chat-app for desktop operating systems (e.g. Microsoft Windows 7/8/8.1/10/11) or for operating systems for other devices like Google Android OS. I composed all of this merely as a testament to my tastes in application-software QA (quality-assurance)... The team behind Viber is welcome to use these suggestions FOR FREE, without having to pay me anything for borrowing these ideas or implementing them in newer version of the Viber chat app for desktop, the Viber chat app for smartphones/smart-devices, and the possible future HTML5 Web/webapp version of the Viber app...]
+
+NOTE1: Where all feature-request ideas mentioned below concern individual chatlogs with individual contacts/users, the same also applies to adding the mentioned requested features to the conference chatlogs with multiple people).
+
+NOTE2: You are free to submit github.com git pull-requests for this .txt file or email me your edited version of this file...
+
+1. Settings -> Multimedia:
+add the following options there:
+Save multimedia:
+* forever
+* till I download/auto-download it, then only provide upload from contacts upon user request of individual already-received-but-then-deleted files still linked/mentioned in individual chatlogs with individual contacts/users (or conference chatlogs with multiple people).
+
+2. Settings -> Multimedia:
+add the following options there:
+Picture/Photo Quality:
+* ORIGINAL FILES [NO ADDITIONAL LOSSY COMPRESSION APPLIED VIA THE VIBER APP]
+
+3. Settings -> Multimedia:
+add the following options there:
+Export all multimedia from all chats as a datetime-stamped .zip file
+
+4. Settings -> Account:
+add the following options there:
+Sign up only with an email + backup email
+2FA - via telephone number /SMS/qr-code scan via mobile device
+
+5. Settings -> Looks:
+add the following options there:
+* IRC-style flat text messenges in all chatlogs
+* show inline multimedia hyperlinks as embedded&resizeable&fullscreen-capable multimedia players (if possible)
+* show inline received/sent&hyperlink images as embedded&resizeable&fullscreen-capable withing chats, with absolute direct hyperlinks shown underneath where applicable (if possible)
+
+6. Settings -> Chatlogs history: [NEW MENU!]
+add the following options there:
+Export all messeges from all chatlogs as individual .html files packed as a .zip compressed archive
+Import all messeges from all/specific chatlogs as individual .html files packed as a .zip compressed archive [in case you didn't sync chatlogs history via auto-sync over an active Internet connection, or if you have previously disabled Viber for Desktop & have reactivated it & want to manually sync via an offline .zip generated on Viber app for smartphone/smart-devices
+
+7. Clicking on the (i) button within individual chatlogs with a specific contact gives you a long list of menu items, which must have a visual side scrollbar added to it
+
+8. The same (i) menu from 7. should have these menu items added to it:
+* Export complete chatlog [with all backbuffer messages up to&including the 1st one+system messeges from Viber app] as datetime-stamped .html (html5, self-contained with base64-coded binary files, OR html5, plus "_files" sidecar folder with all binary&other files within, OR self-contained .mht/.mhtml, OR as self-contained WebArchive .warc file)
+* Export complete chatlog [with all backbuffer messages up to&including the 1st one+system messeges from Viber app] as datetime-stamped (>4GiB filesize-limit) .zip-compressed/.7z-compressed .html (html5, self-contained with base64-coded binary files, OR html5, plus "_files" sidecar folder with all binary&other files within, OR self-contained .mht/.mhtml, OR as self-contained WebArchive .warc file) [via github code - 7zip expanded with support for more, newer compression algorithms]
+Add link in (i)-button within individual chatlogs with a specific contact gives you a long list of menu items, to the options added via 6. mentioned above.
+
+9. The cog-wheel hamburger-menu in the upper right should have an added option to sync all chatlogs with Viber webservers, an a green/yellow/red visual indicator on top (with a onhover tooltip hint) should indicate that & clicking on it should refresh all chatlogs if an active Internet connection is present...
+
+10. Add hide/unhide buttons to both sidebars in Viber for Desktop app, and add a button to both such sidebars to move each one from right-to-left and/or from left-to-right (you can even have both sidebars on either side). Also add horizontal scrollbars to both sidebars.
+
+11. Add the feature to select multiple chat messages in individual chatlog with a specific user/contact & to Copy that (if IRC-style text messages is activated --- along with datetime-posted-/edited stamps), and add the feature to Select All & Copy all (if IRC-style text messages is activated --- along with datetime-posted-/edited stamps) to chat messages in individual chatlog with a specific user/contact.
+
+12. Add Settings -> Viber versions:
+add the following options there:
+* Preserve all downloaded Viber versions offline & see Disk cost to free/total filespace
+* Rollback Viber version to a previously installed older version [for compatibility with users/contacts using a specific older version]
+* Rollback Viber version to a previously installed newer version [for compatibility with users/contacts using a specific older version]
+* Update Viber version to the latest stable version [some compatibility with users/contacts using a specific older version MAY be affected...?!?]
+* Download a specific version of Viber [for a specific OS, hardware CPU architecture, x86/x64/ARMv?x86/ARMv?x64] from Viber download/update/all-versions web-servers &/or certified 3rd-party exact-copy mirrors (.torrent, .magnet, etc.)
+* Download/View-inline-as-html/txt-textarea-box the diffs/file VERSIONS-HISTORY.xml & ROADMAP.xml downloaded from viber.com - to view them...
+
+13. Allow basic CommonMark.org markup (bold/italic/underlined/strikethrough/etc.) in individual chatlog with a specific user/contact (hyperlinks are still converted to clickable links when posted as-is), but all that is converted to .html markup in case of export of individual/all chatlog/s...
+
+14. Adding 13. means to add 11. as 'Copy all [unformatted plaintext as-is seen] or as 'Copy all [formatted, commonmark markup]' (same for 'Paste').
+
+15. Viber for Desktop allows you to right-click & copy contact name/tel-number(/email) of the chat-buddy contact from the current chatlog, it should also allow you to rename said contact for IRC-style text-messages feature & to revert to original contact name/tel-number/name+tel-in-brackets/name+/or-email...
+
+16. The 3 on-hover buttons shown next to contacts in the contacts left sidebar should also be shown in the upper toolbar in individual chatlog with a specific user/contact and/or in the right (i)-button sidebar...
+
+17. Add option to switch language locale of the Viber app
+
+18. For users struggling with compatibility & app filesize, provide encrypted basic-but-still-with-all-important-functions-working RakutenViberWeb similar to html5+WebRTC webapp/html5-web-browser-tab https://web.skype.com ...
+
+19. Add Settings -> Other [IM&VoIP&webchat&p2p-filesharing] communication protocols
+add the following options there:
+* Enable basic IM&VoIP&p2p-filesharing&screensharing/screencasting support for communicating with contacts using other protocols/chat-clients - via libpurple&PidginIM protocol plugins [EXPERIMENTAL]
+[also supports importing/exporting chatlogs as .html from these]
+* Enable IRC(v3+?)-relay(s)/-bridge(s) & http/https/sockets/(x)dcc&sdcc&JingleXMPP-XEPs gateways/proxy-webservers - as a safemode fallback in case the above fail
+> via encrypted Viber web-servers (free service, throttling/bandwidth caps only for excessive per-hour file-transfers of binary files or screencasting/screensharing/VoIP-conference-calls-with/without-video longer than 60-180mins - 1min break imposed for anti-bottlenecking iinstead of data-bandwidth throttling...)
+> via free 3rd-party web-servers (free service, throttling/bandwidth caps only for excessive per-hour file-transfers of binary files or screencasting/screensharing/VoIP-conference-calls-with/without-video longer than 60-180mins - 1min break imposed for anti-bottlenecking iinstead of data-bandwidth throttling...): ... enter connection settings (preserved across app sessions)
+
+20. Add Settings -> File-transfers [NEW MENU!]
+add the following options there:
+* Use built-in Rakuten Viber file-transfers provided via Viber IM&VoIP protocol and encrypted file-hosting&file-transfer-relay wweb-servers, except when using other comunication protocols via Viber app
+* Always use ONLY p2p-file-transfers provided via unencrypted/encrypted 3rd-party IRC(v3+?)-DCC/XDCC/SDCC protocol web-servers and encrypted file-hosting&file-transfer-relay web-servers:  ... enter connection settings (preserved across app sessions)
+* Prefer Viber file-transfers but safemode fallback to p2p-file-transfers provided via 3rd-party IRC(v3+?)-DCC/XDCC/SDCC protocol and encrypted file-hosting&file-transfer-relay web-servers:  ... enter connection settings (preserved across app sessions)
+* Always use p2p-file-transfers provided via 3rd-party F*EX / https://file.pizza / http://toffeeshare.com / http://github.com/schollz/croco / http://secushare.org  + libp2p&WebTorrent protocol and encrypted file-hosting&file-transfer-relay web-servers, WARN for ACCEPT/DECLINE for fallback to Viber file-transfers if needed due to no connection from other web-servers/protocols:  ... enter connection settings (preserved across app sessions)
+
+21. Add Settings -> Preferences maintainence,
+add the following options there:
+* Export current Viber settings to .ini/.json+comments/.xml
+* Import&apply other Viber settings from offline .ini/.json+comments/.xml
+* Reset Viber settings to defaults, with auto-save of current Viber settings to .ini/.json+comments/.xml as a failsafe backup [WARNING; THIS MAY BREAK COMPATIBILITY WITH CONTACTS USING AN OLDER VERSION OF VIBER OR FOR CHATS WITH CONTACTS USING OTHER COMMUNICATIONS PROTOCOLS; NO CHATLOGS WILL BE DELETED _but_ FURTHER CHATTING MAY BE STOPPED!!!]
+
+22. Add options with 5-times PRE-WARNING to purge/delete all OFFLINE-STORED chatlogs or just all multimedia files from all chatlogs; these are still stored on Viber web-servers and via SETTINGS -> LIVE/EMAIL VIBER SUPPORT: Request purge/delete all OFFLINE-STORED chatlogs or just all multimedia files from all chatlogs FROM VIBER WEB-SERVERS - can be fully deleted.
+
+23. Add option in Viber -> Settings -> Contacts [NEW MENU!!!] - to Export/import all contacts+self-contact as .zip'ped .vCard/.icalc/etc. per-contact metainfo file (.xml-based)...
+
+24. Add splashscreen to Viber with version info, REQUEST LIVE/EMAIL SUPPORT FOR PROBLEMS (e.g. account hacked, etc.), and hyperlink to web.viber.com [for compatibility purposes or if no other way to connect to and chat via Viber is possible due to a variety of problems...)
+
+
