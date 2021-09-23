@@ -56,7 +56,7 @@ http://hp.vector.co.jp/authors/VA033749/tips_azdw2/anim.html
 * [Chasys Draw IES](http://www.jpchacha.com/chasysdraw/) FREEWARE _(HIGHLY RECOMMENDED)_
 * [ChibiPaint mod (oakaki)](https://github.com/thenickdude/chibipaint)
 * [ChibiPaint Oekaki](http://www.chibipaint.com/)
-* [ChickenPaint (HTML5 port of ChibiPaint oekaki web-image-board)](https://github.com/thenickdude/chickenpaint) [2](https://www.chickensmoothie.com/Forum/viewtopic.php?f=6&t=3014028) _(RECOMMENDED)_
+* [ChickenPaint (HTML5 port of ChibiPaint oekaki web-image-board)](https://github.com/thenickdude/chickenpaint) [2](https://www.chickensmoothie.com/Forum/viewtopic.php?f=6&t=3014028) --- https://github.com/thenickdude/chickenpaint _(RECOMMENDED)_
 * [CinePaint](http://www.cinepaint.org/more/) _(RECOMMENDED)_
 * [CLIP STUDIO PAINT](https://www.clipstudio.net/en) (successor to Manga Studio (Comic Studio)) (commercial)
 * [Corel Painter](https://www.painterartist.com/en/) (commercial)
@@ -104,7 +104,8 @@ https://sumo.app/paint/
 ````
 * [gpaint](https://www.gnu.org/software/gpaint/)
 * [GraFX2](http://grafx2.chez.com/) [2](https://pulkomandy.tk/projects/GrafX2/downloads) _(HIGHLY RECOMMENDED)_
-* [GraphicsGale](https://graphicsgale.com/us/download.html) FREEWARE as of 2018! _(HIGHLY RECOMMENDED)_
+* [GraphicsGale](https://graphicsgale.com) --- 
+https://graphicsgale.com/us/download.html) FREEWARE as of 2018! _(HIGHLY RECOMMENDED)_
 * [Greenfish Icon Editor](http://greenfishsoftware.org/gfie.php#apage) (FREEWARE) - https://greenfishsoftware.blogspot.com/2012/07/greenfish-icon-editor-pro.html - https://wiki.freepascal.org/File:GreenfishIconEditorProScreenshot.png)
 * [Harmony (by Ricardo Cabella)](http://mrdoob.com/projects/harmony/)
 * [HermiRES (Commodore64 painting app)](http://www.nightfallcrew.com/18/03/2014/hermires-v1-29-c64-hires-bitmap-editor/) [2](http://www.nightfallcrew.com/10/02/2013/hermires-v1-26-c64-hires-bitmap-editor/)
@@ -171,10 +172,11 @@ https://sumo.app/paint/
 * [PixieEngine (online)](https://pixieengine.com/)
 * [Pixie](http://pixieengine.com/)
 * [Pixilart (online)](https://www.pixilart.com/)
-* [Pixlr (online)](https://pixlr.com/editor/)) (online pixel-art editor)
+* [Pixlr.com (online)](https://pixlr.com/editor/)) (online pixel-art editor) + http://pixlr.com/x/
 * [Pixly (for Android)](http://pixly.meltinglogic.com/)
 * [Poxi (online flat pixel-art editor](https://github.com/maierfelix/poxi) _(RECOMMENDED)_
 * [Project Dogwaffle Free v1.2](?) {paid commercial Project Dogwaffle is now called [Howler11](https://www.thebest3d.com/howler/)} [3](https://www.thebest3d.com/dogwaffle/penny/index.html) _(RECOMMENDED)_
+* * pyqt, pyqx
 * [PyxelEdit (commercial, has a freeweare beta version)](http://pyxeledit.com/about.php) _(RECOMMENDED)_
 * [PyxleOS (!)](https://github.com/Dakkra/PyxleOS)
 * [QAquarelle](https://sourceforge.net/projects/qaquarelle/)
@@ -197,6 +199,7 @@ https://sumo.app/paint/
 * [Sprytile](https://github.com/Sprytile/Sprytile)
 * [SwankyPaint](http://dime.lo4d.net/dl/swpaint) (Linux, Raspberry Pi, Android, Windows & Mac) [2](http://store.steampowered.com/app/432030/Swanky_Paint/) [3](http://paint.wetgenes.com/welcome) [4](https://github.com/xriss/swankypaint) [5](http://paint.wetgenes.com/dumid?continue=http://paint.wetgenes.com/paint/draw) [6](https://store.steampowered.com/app/432030/Swanky_Paint/) _(HIGHLY RECOMMENDED)_
 * [Synfig Studio](https://www.synfig.org/) _(RECOMMENDED)_
+* SumoPaint --- http://sumopaint.com --- online Adobe Photoshop-like drawing tool, includes a pixel-art-oriented separate online image editor
 * [Tablet Pressure Curve Tool (for Wacom tablets, 3rd-party app](https://blackink.cz/tablet-pressure-curve-tool/) _NOT AN IMAGE EDITOR, FREEWARE_ (useful for fine-tuning the pressure sensitivity of Wacom Tablets if the Wacom tablet-settings apps aren't enough for your needs)
 * [Triangulart](https://maxwellito.github.io/triangulart/)
 * [Tupi](https://www.linux-apps.com/p/1131159/)
@@ -213,7 +216,7 @@ https://sumo.app/paint/
 
 #### TO ADD TO THE ABOVE LIST & THEN SORT IT AGAIN ####
 * see the invisible HTML-comment section hidden in the webpages' source-code below (e.g. just click the 'Raw' button on the GitHub page)...
-
+* http://imagemagick.org - tool for converting between different image filetypes/file-formats (see also: XnView, XnViewMP, IrfanView + add-ons pack & IrfanViewX64, Imagine image-viewer (Unicode), FreeStone Image viewer, RR (roboreader) image viewer, Nomacs image viewer (frameless mode!), ShareX+ffmpeg/libav, Auto Screenshot, bahraniapps.com GifCam & VClip, JDownloader2, FlashGet, FDM, curl_x64, wget, wget_x64, wget2, lftp, httpie, nomad.net fM, mukticommander, http://convertfiles.com , http://zamzar.com , http://vcloud.com (?!?)
 * AROS DOSbox PPaint
 * Deluxe Paint for MS-DOS (use it via DOSbox or via FreeDOS)
 * degas elite
@@ -227,6 +230,7 @@ https://sumo.app/paint/
 * SpriteED SpriteEditor (for BeOS / HaikuOS x64) [11.5 KB] - https://www.software.besly.de/index.php?system=haiku64 - You can create sprites in 32x32 pixels or 64x64 pixels. - https://www.software.besly.de/images/spriteed.png
 * TuxPaint (for BeOS/HaikuOS) v0.9.19 - https://www.be.wildman-productions.org/index.php?action=displaypage&pagename=appitem&appid=46
 
+* SharpKeys - for MS Windows - for keyboard key remapping in case of broken or stuck hardware keys
 * borderless gaming
 * AnyToTray
 * Transparent Windows v2.2
