@@ -1,6 +1,6 @@
 ## Viable offline & online [payment-methods](https://en.wikipedia.org/wiki/Payment#Methods) & payment systems 2019 (legal tender = exchange currency) ##
 
-> Жизнеспособни начини за печелене на пари; как да спечеля пари; работещи офлайн и онлайн методи за плащане (разплащане) и системи за разплащане към 2019 г. (legal tender = законово призната разменна валута; обменна валута...)
+> Жизнеспособни начини за печелене на пари; как да спечеля пари; работещи офлайн и онлайн методи за плащане (разплащане) и системи за разплащане с пари към 2019 г. (legal tender = законово призната разменна валута; обменна валута...)
 
 ### Ancient (_older than feudalism_) exchange methods ###
 * Physical resource(s)/energy/food&drink/sex/tech/information-data barter (or barter with additional money/etc. payment - „бартер (размяна) с доплащане“
@@ -48,9 +48,9 @@
 ### Online ###
 * **[PayPal.com](https://www.paypal.com/)** + https://paypal.me links linked to an email and to your bank debit-card(s)-or-credit-card(s) (works with linked debit cards and credit cards, and can even be linked to bank account in some selected countries) - Elon Musk was head of PayPal.com ...
 * http://venmo.com (собственост на _PayPal_ ? )
-* **[TransferWise.com](https://transferwise.com/)**
-* _http://Revolut.com_
-* (ApplePay, GooglePlay store & Google Pay, PRC-China AliPay, phyre, (Apple iTunes) gift cards from Amazon.com, etc.)
+* **[TransferWise.com](https://transferwise.com/)** - http://wise.com, 
+* _http://Revolut.com_ - Revolut...
+* (ApplePay, GooglePlay store & Google Pay, PRC-China AliPay, phyre, (Apple iTunes) gift cards from Amazon.com, etc.) ; Phyre, GooglePay, ApplePay, AliPay, A1 wallet, ...
 * **[Patreon.com](https://www.patreon.com/)**
 * **[LiberaPay.com](LiberaPay.com)** (e.g. https://liberapay.com/Lutris/ ) (плащане на пари за разработчици (програмисти) на свободен софтуер и софтуер с отворен код)
 * **[Flattr.com](https://flattr.com/)**
@@ -77,15 +77,16 @@ https://99bitcoins.com/ethereum/ethereum-mining/
 https://www.blockchain.com/btc/address/
 (NOTE: 'BTC' and other cryptocurrencies' shorthand codes conflict with some ISO currency codes and thus are not officially recognized by ISO/most bank institutions...)
 * `bitcoin:{hash}` (+QR code), `bitcoincash:{hash}` (+QR code), & other cryptocurrencies (e.g. ETH (Ethereum), USDT (Tether), litecoin, dogecoin, etc.)...
+* 
 
 More:
-* ko-fi.com
+* http://ko-fi.com
 
-* buymeacoffee.com
+* http://buymeacoffee.com
 
-*  patreon.com
+*  http://patreon.com
 
-* liberapay.com
+* http://liberapay.com
 
 * http://opencollective.com
 
@@ -126,10 +127,11 @@ More:
 България:
 * https://www.easypay.bg/site/
 * https://www.epay.bg/v3main/front?p=fee_money
+*
 
-* Western Union
+* Western Union - на физическо гише на място в техен офис в селище или онлайн през http://westernunion.bg
 
-* MoneyGram
+* MoneyGram - на физическо гише в техен офис или в офис на банка или онлайн през техния уебсайт: http://moneygram.bg
 
 * IBAN & SWIFT & BIC bank wire transfer
 
@@ -154,7 +156,7 @@ More:
 ### Etc. ###
 * barter & bargaining ... tit-for-tat, etc.
 * Consignation
-* Re-selling (with an overprice percentage profit) of goods/services, or serving as proxy, or outsourcing (?)
+* Re-selling (with an overprice percentage profit; see also the terms profit margins, ROI, NDA agreement, turnover / working(/circulating/floating) capital; etc. ) of goods/services, or serving as proxy, or outsourcing (?)
 * Rebranding & re-selling
 * Dropshipping (?)
 * Selling your items on Amazon.com sites, eBay.com sites (https://www.ebay.com/, https://www.ebay.co.uk/, https://www.ebay-kleinanzeigen.de/, https://www.ebaymainstreet.com/digital-density-europe/country.htm, https://www.amazon.co.uk/Ebay-Online-Shopping-Books/b?ie=UTF8&node=14288291, http://blog.linnworks.com/international-ebay-sites-list, https://tech-vise.com/how-to-easily-sell-on-ebay-usa-from-any-country-in-the-world/, https://www.ebaymainstreet.com/, https://www.ebay.com/gds/eu-european-country-list/10000000013891943/g.html, https://blog.edesk.com/resources/european-marketplaces-alternatives, **[ALL EBAY sites list](http://archive.is/5hZZi)**), Etsy.com ([alternatives](https://www.finder.com/sites-like-etsy), [alternatives2](https://www.shoplo.com/blog/sites-like-etsy/))
