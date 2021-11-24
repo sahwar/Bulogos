@@ -42,7 +42,7 @@ http://retropcmania.bg
 http://wacom.com
 * драйверите за Wacom за Linux kernel (ядрото Linux)
 https://linuxwacom.github.io/
-https://github.com/linuxwacom
+https://github.com/linuxwacom & google 'tablet pressure curve tool for wacom graphics tablets for MS Windows (free, it may work under Linux via wine/wine-staging (PlayOnLinux)...!)
 + вградените в Linux kernel драйвери за графични таблети Wacom
 * Linux: CLI настройки за графични таблети Wacom:
 [пример.png]
@@ -53,9 +53,13 @@ https://github.com/DIGImend/digimend-kernel-drivers
 https://github.com/DIGImend
 
 *Основните марки графични таблети на пазара през 2021 г.:*
-Wacom, XP-PEN, Huion, [Yiynova](http://www.yiynova.eu/) (https://www.google.com/search?q=yiynova&oq=yiynova), (Microsoft SurfacePro & pen, Microsoft Surface Pro 2017 tablet, ASUS VivoTab note 8 (with Wacom digitizer), Samsung, HP, Acer, ...), Parblo, Ugee, Monoprice, ... ---> http://reddit.com/graphicstablets/
+Wacom, XP-PEN, Huion, [Yiynova](http://www.yiynova.eu/) (https://www.google.com/search?q=yiynova&oq=yiynova), (Microsoft SurfacePro & pen, Microsoft Surface Pro 2017 tablet, ASUS VivoTab note 8 (with Wacom digitizer), Samsung, HP, Acer, ...), Parblo, Artisul, XENCELABS, Gaomon, Bosto, Ugee, Monoprice, UClogic, ... ---> http://reddit.com/graphicstablets/
 
-https://github.com/DIGImend/uclogic-tools
+* https://github.com/DIGImend/uclogic-tools
+* xp-pen Linux drivers from their official website ;
+
+
+
 * Linux CLI за настройка на видимата област
 и на екрана за целите на рисуване с графичния таблет + за multihead/multimonitor setup:
 : `$ randr`, `$ xrandr` & & `xinerama` & & `xkb` & Desktop environment -> Display Settings ; tiling-window-managers for Linux - list & tweaks & settings & supported features
@@ -73,6 +77,7 @@ https://github.com/rfc2822/GfxTablet
 ('draw on your PC via your Google Android device')
 * https://github.com/flamestream/taction
 ('A touch panel for Windows Tablet PC Artists') (!!!)
+* Tablet Pro app for virtual hotkeys for your LCD drawing/graphics tablet!
 
 * https://github.com/xournalpp/xournalpp
 ('Xournal++ is a handwriting notetaking software with PDF annotation support. Written in C++ with GTK3, supporting Linux (e.g. Ubuntu, Debian, Arch, SUSE), macOS and Windows 10. Supports pen input from devices such as Wacom Tablets.')
@@ -91,7 +96,168 @@ https://github.com/sahwar?q=tablet&tab=stars&q=tablet&q=graphics+tablet+OR+wacom
 https://github.com/sahwar/Bulogos/blob/master/Best-free-digital-painting-image-editing-killer-apps.md
 и чрез функцията Търсене.../Search... на уеб-браузъра си, прочетете и посетете всички хипервръзки след търсене за следния текст (копирайте следния текст и го поставете за търсене чрез функцията Търсене.../Search... на уеб-браузъра си):
 
+http://reddit.com/r/stylus - wiki with tables of lists of graphics tablets
 https://www.reddit.com/r/wacom/
 Там ще намерите и голям списък с програми за рисуване, някои от които работят и с графични таблети за рисуване
+...
 
-* 
+======
+
+Ти кои графични таблети препоръчваш?
+Вече дори втора употреба не-с-екран графични таблети от wacom, xp-pen, artisul, huion вършат добра работа, дори wacom dtz-430 a4 (wacom intuos3 a4!) и дори по-стари модели;  eInk и новия pentablet драйвер за win7+ доста променят нещата; 
+За графични таблети с екрани нещата са по-сложни, но нови или втора употреба wacom ux12, wacom cintiq 13/16, xp-pen 12/13.3 Pro (зидължително Pro вариантите с малко parallax!), huion kamvas 13/16, yiynova, lenovo x220T/x230t 2nd-hand и тези по-долу вършат отлична работа, НО само това да тренирате умения по рисуване и да сте търпеливи и да учите от pdf книги за манга художници мангака и от видеоклипове с уроци за рисуване - ще ви направи добри рисувачи/художници, иначе дори и с най-якия графичен таблет няма да имате голям успех, ако не сте добри в рисуването на ръка с молив или маслени четки, та трябва да тренирате и то редовно! 10000 часа, за да станете експерти в дадена област/умение/професия, най-вече актьорско майсторство при всички дейности на живо с живи хора!!!
+
+https://youtu.be/d3vIa8cBzwI
+
+* galaxy book flex / flex2
+* samsung galaxy book pro 360
+* lenovo c940 i9
+* samsung 360 15" 16gb i7 2in1 + Lamy EMR stylus + matte screen protector ; 
+
+* hp spectre x360 15"
+
+* tablet pro software (freeware) for virtual hotkeys
+* Acer D7 Azel 
+* notebook 9 pro 13"
+---
+https://youtube.com/shorts/MAOb7muuCGY?feature=share
+clip studio pro
+zbrush
+blender
+https://youtube.com/shorts/MAOb7muuCGY?feature=share
+
+======
+https://siliconbenders.com/
+======
+https://youtu.be/c7FRUTHvFX8
+
+> https://youtu.be/rVAyhjNt5a0
+
+https://youtu.be/d3vIa8cBzwI
+
+* list of wacom competitors
+https://youtu.be/d3vIa8cBzwI
+
+artisul d10 drivers for linux
+
+artisul d10 review
+---
+
+https://www.brad.site/mygear/
+
+* https://www.brad.site/reviews/drawing-software.html
+
+recreate yourself and start again at your life, forget the past even if it haunts you ...
+
+---
+COMICS
+VIDEOS
+REVIEWS
+MY COURSES
+
+~to add to Bulogos
+~to add to ve4ernik's podcast : 
+Drawing Software
+
+There is a lot of drawing software. The list here is only just scratching the surface. These are the apps that I like to use.
+
+￼
+
+Adobe Creative Cloud
+
+Creative Cloud includes a LOT. Photoshop, Illustrator, Animator, and much more beyond illustration and drawing. It's also widely considered the industry standard for graphics of all kinds. The catch? It costs and arm and a leg and it also has a much steeper learning curve if you're coming in cold.
+
+Price: $50 a monthLEARN MORE
+
+￼
+
+Clip Studio
+
+I've moved Clip Studio up this list because there is now an iPad app. The desktop app has been the favorite for many a illustrator for years and the iPad app is a a feature for feature replication of the desktop app. The one downside is that the iPad app has an $8.99 a month subscription attached to it. That's a little surprising since you can usually find the desktop app on sale for less than $50.
+
+Price: $50LEARN MORE
+
+￼
+
+Sketchable
+
+Sketchable is a Windows only drawing app and the reason I like it is because of its simplicity. It doesn't do as much as some of the other drawing and painting apps out there but it's so elegant in its simplicity. It's also super smooth, pinching to zoom in and out on a touch screen is great and it really feels like it's designed for tablet computers.
+
+table-price: Free with in app purchasesLEARN MORE
+
+￼
+
+Affinity Designer
+
+The more I use Affinity Designer the more I like it. It combines the vector tools of Adobe Illustrator with many of the painting features of Adobe Photoshop. It's a pro grade for a not so Pro table-pricetag.
+
+Price: $50LEARN MORE
+
+￼
+
+Procreate
+
+If you have an iPad you need Procreate. Don't let the low table-price fool you, this is an amazing little painting app. This is the app that made me love drawing on the iPad. So simple and elegant but also deep and powerful.
+
+Price: $10LEARN MORE
+
+￼
+
+Krita
+
+Krita has really grown on me and it's free. It's one of the most robust free drawing apps availible on Windows, Mac and Linux.
+
+Price: FreeLEARN MORE
+
+￼
+
+Autodesk Sketchbook
+
+Sketchbook isn't my favorite program to draw in but I like that it's cross platform. If I draw something on Android I can open it up on my Mac or iPad. The interface is also easy to understand and pick up.
+
+Price: FreeLEARN MORE
+
+￼
+
+Medibang Paint
+
+Medibang reminds me of Clip studio with less stuff. Considering it's free it's an impressively robust drawing and painting app.
+
+Price: FreeLEARN MORE
+
+Drawing Tablet Guides
+
+Trying to figure out what's out there? What's good, what's bad? Check out the categories below
+
+￼The Best Pen Tablets
+
+￼The Best Screen Based Tablets
+
+￼The Best Windows Tablets/Laptops
+
+￼iPads and Android Tablets
+
+￼Drawing Software
+
+Join The Club!
+
+Free drawing lessons delivered to your inbox ever other week!
+
+Email Address 
+
+hello, I'm the footer!
+
+======
+
+libp2p
+
+https://www.microsoft.com/bg-bg/p/sketchable/9wzdncrfjcjw?cid=SiliconBendersWebsiteTraffic&rtc=1&activetab=pivot:regionofsystemrequirementstab
+
+---
+
+
+
+======
+---
+
+* what-to-do-if-you-are-used-to-hardware-QWERTY-DVORAK-etc-keyboards-but-you-need-to-use-a-modern-GoogleAndroid-or-AppleiOS-smartphone-with-a-virtual-touchscreen-keyboard.txt
