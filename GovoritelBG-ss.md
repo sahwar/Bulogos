@@ -889,15 +889,37 @@ http://gatchev.info/articles/articles_bg.html
 http://www.gatchev.info/blog/
 http://www.gatchev.info/blog/?p=2302
 http://www.gatchev.info/blog/?page_id=409
+http://twenkid.com - toshko2
 
+
+
+
+
+
+
+
+
+За TTS не съм сигурен, че има хляб вече.
+
+Tosh (Арнаудов) от Пловдив правеше това:
+https://github.com/Twenkid/Toshko_2
+ 
+Има и един младеж, Радостин Чолаков, който е много активен по медиите:
+https://azbuki-ml.com/speech
 etc.
 
 ````
 
 ````
 Mozilla Voice & http://tatoeba.org
+https://github.com/common-voice/common-voice
 
+http://librivox.org
+http://bezmonitor.com
+https://github.com/common-voice/common-voice
 What is Common Voice project?
+http://azbuki-ml.com (!!!) - пробвайте демото
+http://www.numenta.org
 
 
 Common Voice is Mozilla's initiative to help teach machines how real people speak.
