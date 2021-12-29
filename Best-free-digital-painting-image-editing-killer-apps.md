@@ -851,6 +851,234 @@ downloadsquad.com
 fosshub.com
 
 ### TO DO (continued...)
+* Also add these:
+````
+
+---
+~to add to Bulogos :
+
+https://www.linuxhelp.com/how-to-install-rassam-paint-in-ubuntu
+https://github.com/benohb/rassam-paint/ ( http://freepascal.org + http://lazarus-project.org !!!)
+lazpaint.sourceforge.net
+mtpaint.sourceforge.net
+kolourpaint.org
+mq sprite = https://github.com/eigenbom/MQ-Sprite
+pyqx = https://github.com/MikiLoz92/pyqx
+http://emad.itch.io - JPixel
+Gnome3 Drawing app github
+greenfish icon editor
+sK1 & Inkscape - vector image editors...
+greenfish subtitle player & http://watchmovies.to + clone over at github.com
+https://github.com/benohb/green-recorder
+https://github.com/MikiLoz92/SDL2Me
+qmail, mutt email reader, alpine email reader, rssowl, AdiIRC, HydraIRC, toffeeshare.com, http://file.pizza, http://fex.belwue.de, http://github.com/schollz/croc/ & http://splitbrain.org/project/filecroc & http://drpetter.de - CherryBrush & ... & iDraw3 - http://rpgmaker.pl + http://rpgmaker.net - Tools - Other / Other engines... http://tokyotosho.info + http://
+https://extensions.gnome.org/extension/1683/draw-on-you-screen/
+https://github.com/ksnip/ksnip
+https://maoschanz.github.io/drawing/
+https://github.com/maoschanz/drawing (GNOME3)
+
+" Besides GNOME, the app is well integrated in traditional-looking desktops, as well as elementaryOS.
+
+It should also be compatible with the Pinephone and Librem 5 smartphones."
+https://github.com/maoschanz/drawing/blob/master/docs/screenshots/0.8/elementary_labels.png
+https://github.com/maoschanz/drawing/blob/master/docs/screenshots/0.6/librem_menu.png
+
+https://github.com/topics/drawing
+
+https://github.com/viliusle/miniPaint
+photopea.com
+sumopaint.com
+piskelapp.com
+mspaint.js - github.com
+https://github.com/pencil2d/pencil
+https://github.com/PintaProject/Pinta
+
+(!!!) https://github.com/LibreSprite/LibreSprite
+https://github.com/Leimi/drawingboard.js
+peer.js / peers.js - as used in Pixel.Tools - github.com
+goya pixel art editor - github.com
+https://github.com/Leimi/drawingboard.js
+https://feathericons.com/
+http://famfamfam.com (+ icon sets used in http://getpaint.net - paint.net (pdn) & in SMPlayer & in GIMP 2.10+)
+http://pentacom.jp - bitfont pixel font maker 2 & http://fontstruct.com + http://unifont.org (GNU Unifont pixel font with good support for Unicode) + http://openfontlibrary.org + http://fonts.google.com (+Google's Unicode font: ), code2000, + FontForge & bird font making software ; pdf2svg, pdf2png, pdf2psd, psd2png, png2psd, 
+presets , templates (шаблони, предефинирани модели); patterns/textures (десЕни/шарки)
+
+
+https://github.com/steveruizok/perfect-freehand
+"Draw perfect pressure-sensitive freehand lines. "
+https://perfect-freehand-example.vercel.app/
+https://pub.dev/packages/perfect_freehand
+https://www.figma.com/community/plugin/950892731860805817
+https://github.com/wonderunit/storyboarder
+stickfigure animator
+https://github.com/LibreCAD/LibreCAD
+https://github.com/nhn/tui.image-editor
+
+https://github.com/tldraw/tldraw
+https://github.com/tldraw/tldraw
+https://github.com/SixLabors/ImageSharp
+https://github.com/SixLabors/ImageSharp
+https://github.com/topics/animation
+
+https://github.com/aseprite/aseprite/issues/2006
+https://github.com/nbedos/termtosvg
+
+https://github.com/1j01/jspaint (mspaint.exe for WinXP rewritten-cloned in JavaScriptV6+ )
+Classic MS Paint, ＲＥＶＩＶＥＤ + ￼Extras
+
+javascript editor app drawing paint image html5 canvas online web-app retro remake ms-paint web-application image-editing image-editor image-manipulation painting mspaint jspaint 
+
+Updated 19 hours ago 
+
+JavaScript 
+
+https://github.com/szimek/signature_pad ( HTML5 canvas based smooth signature drawing - Signature Pad is a JavaScript library for drawing smooth signatures. It's HTML5 canvas based and uses variable width Bézier curve interpolation based on Smoother Signatures post by Square. It works in all modern desktop and mobile browsers and doesn't depend on any external libraries.
+https://developer.squareup.com/blog/smoother-signatures/
+
+)
+https://github.com/szimek/signature_pad
+https://github.com/evolus/pencil (GUI/UI prototyping, also see GladeInterfaceDesigner and gtk2/gtk3 Vala programming language & julia programming languager and haxe and dart programming languages)
+pencil2D
+Synfig2D
+OpenToonz
+ShareX
+http://bahraniapps.com - GifCam & VClip
+Prince of Persia rotoscopy app on http://itch.io
+
+http://softvisia.com
+http://softpedia.org
+http://oldapps.net (older versions of paint.net, WinAmp, etc.)
+http://old-games.org
+http://hotud.org (abandonware retrogaming video games and apps)
+
+https://github.com/maoschanz/drawing
+bootleg, warez software, paralegal software, beerware, donationware, etc.
+
+PWA app, UWP app for Windows10; .NETCore, http://mono-project.org ; 
+(NuGet, MyGet, chocolatey.org)
+https://github.com/evolus/pencil ( evolus / pencil 
+
+Code 
+
+Issues 
+
+Pull requests 
+
+The Pencil Project's unique mission is to build a free and opensource tool for making diagrams and GUI prototyping that everyone can use. 
+
+electron nodejs javascript drawing ui-design pencil prototyping sketching wireframe mockup )
+alpine linux
+solusOS Linux
+DeepinLinux
+Arch Linux
+PCLinuxOS Linux
+SteamOS Linux
+evolus / pencil 
+
+Code 
+
+Issues 
+
+Pull requests 
+
+The Pencil Project's unique mission is to build a free and opensource tool for making diagrams and GUI prototyping that everyone can use. 
+
+electron nodejs javascript drawing ui-design pencil prototyping sketching wireframe mockup 
+
+https://github.com/excalidraw/excalidraw
+
+http://xp-pen.com/en/ & http://artisul.com & http://huion.com & http://yiynova.com & etc. --- for their Linux drivers for their graphics tablets ; 
+
+https://circle.gnome.org/
+
+https://www.libhunt.com/posts/353077-native-wayland-image-viewer-editor
+https://www.libhunt.com/posts/404084-paint-should-be-open-source-like-calculator
+https://www.libhunt.com/posts/416081-lightweight-basic-image-editing-program
+https://www.libhunt.com/posts/418313-programs-that-are-most-similar-to-ms-paint
+https://www.libhunt.com/posts/428066-drawing-app-alternative
+
+
+https://kyrise.itch.io/
+---
+JPixel
+---
+
+https://github.com/swaywm/sway
+https://www.libhunt.com/posts/532860-how-do-you-disable-middle-click-paste-in-kde-wayland
+
+https://www.libhunt.com/posts/534886-linux-window-manager-ditches-the-most-epyc-of-all-command-line-options
+https://www.libhunt.com/posts/535531-sad-news-so-long-swaywm-time-to-go-for-a-new-wm
+
+https://www.libhunt.com/posts/142980-what-happened-to-gnome-drawing
+https://www.libhunt.com/posts/226920-release-of-drawing-0-8-0
+https://www.libhunt.com/posts/269629-i-made-a-to-do-list-for-when-i-switch-to-linux-so-i-know-what-i-m-doing-an-don-t-wander-around-aimlessly
+https://www.libhunt.com/posts/348477-how-can-i-run-ms-paint-in-linux
+https://repology.org/
+http://pkgs.org
+
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwil8qm66In1AhWBS_EDHdxwAicQFnoECA4QAQ&url=https%3A%2F%2Fawesomeopensource.com%2Fprojects%2Fgnome%2Fgnome3&usg=AOvVaw31DNM6z8zXEw_B38ZqwJDh
+
+idea for http://openarts.info (Bulgaria) - sahwar's interesting idea for an art installation: a big-enough cheap 8-bit-sRGB IPS LCD digital frame picture displayer running animated GIFs or .mp4's or running a live online collaboration drawing by using github.com - Pixel.Tools (using peer.js/peers.js)
+
+http://awesomeopensource.com (!!!)
+https://github.com/maoschanz
+https://github.com/MikiLoz92/pyqx
+https://github.com/topics/pixel-art
+https://github.com/topics/image-editor
+https://github.com/topics/drawing-app
+https://github.com/topics/painting
+https://github.com/topics/painting-app
+https://github.com/topics/sprites
+https://github.com/topics/gamedev
+ohrrpgce, wolfRPGeditor, rpgmaker, http://adventuregamestudio.co.uk ; cave story deluxe, solusRPG (rpgmaker-made), The Spirit Engine 1 & 2, laxius power 1 & 2 & 3 - aldorleagames.org & http://caiman
+us
+http://pcgamingwiki.net
+http://cheatbookdatabase.de
+http://gamehacker.com
+resource hacker + ResEd, HexEd, hexeditor, etc.
+http://indiegogo.com
+http://kickstarter.com
+http://godundme.com
+
+https://steamunlocked.net/the-solus-project-free-download/
+
+https://www.google.com/search?q=solus%20rpg%20download&ie=utf-8&oe=utf-8&client=firefox-b-m
+gunpla, cosplay, jrpg, maid cafe, tea party, bonsai, etc.
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwil8qm66In1AhWBS_EDHdxwAicQFnoECA4QAQ&url=https%3A%2F%2Fawesomeopensource.com%2Fprojects%2Fgnome%2Fgnome3&usg=AOvVaw31DNM6z8zXEw_B38ZqwJDh
+---
+What are some alternatives?
+
+When comparing drawing and sway you can also consider the following projects:
+
+i3 - A tiling window manager 
+
+wayfire - A modular and extensible wayland compositor 
+
+awesome-wayland - A curated list of Wayland code and resources. 
+
+wslg - Enabling the Windows Subsystem for Linux to include support for Wayland and X server related scenarios 
+
+xdg-desktop-portal-wlr - xdg-desktop-portal backend for wlroots 
+
+alacritty - A cross-platform, OpenGL terminal emulator. 
+
+gamescope - SteamOS session compositing window manager 
+
+wlroots-eglstreams - A modular Wayland compositor library with EGLStreams support 
+
+wayvnc - A VNC server for wlroots based Wayland compositors 
+
+dmenu-wayland - dmenu for wayland-compositors 
+
+qutebrowser - A keyboard-driven, vim-like browser based on PyQt5. 
+
+Waybar - Highly customizable Wayland bar for Sway and Wlroots based compositors. :v: :tada: 
+
+-
+primitives
+torus, vortex, toroidal, vertex, spline, Bezier curves, etc.
+
+````
 * Cleanup, remove/Merge duplicate entries, fix typos&formatting, and add missing hyperlinks
 * Add a new category for Google Android & Apple iOS apps
 * Maybe add a category for apps for exotic and niche OSs
