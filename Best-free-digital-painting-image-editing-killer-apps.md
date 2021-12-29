@@ -14,7 +14,8 @@ https://github.com/common-voice/common-voice
 VPN, proxy, tor .onion + onionshare ; https://github.com/Free-IPTV/Countries
 
 https://awesomeopensource.com/projects/pixel-art
-
++ page 130-131+ of https://issuu.com/animeinn/docs/anime_inn_007___96_
++ 
 * [Adobe Photoshop](http://www.adobe.com/products/photoshop.html) - [Adobe CreativeCloud](https://www.adobe.com/uk/creativecloud.html) (commercial, has a free trial version)
 * [Adobe Illustrator](http://www.adobe.com/products/illustrator.html) (commercial proprietary)
 * [Alchemy](http://al.chemy.org/) OPEN-SOURCE
