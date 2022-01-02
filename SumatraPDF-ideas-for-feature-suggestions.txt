@@ -1,0 +1,62 @@
+http://www.apptranslator.org/rss?app=SumatraPDF&lang=bg
+http://www.apptranslator.org/rss?app=SumatraPDF&lang=en
+https://www.apptranslator.org/app/SumatraPDF
+https://www.apptranslator.org/app/SumatraPDF/bg
+
+https://www.apptranslator.org/user/home_linux (?!? where is the credit for text strings translated by ve4ernik/sahwar???)
+
+https://github.com/sumatrapdfreader/sumatrapdf/issues/350#issuecomment-1003784811
+
+> I've enabled ctrl-d (when showing properties window) to show list of fonts. There wasn't much reason to keep it to debug builds only.
+
+I assume that bundling this commandline tool with future versions of SumatraPDF could make the functionality to show fonts metadata much easier and to output that to a simple textarea GUI window:
+https://unifont.org/fontaine
+Mozilla Firefox's `PDF.js` may also contain useful source-code for the output of metadata about fonts found in opened documents.
+
+Also, you may consider bundling *GNU Unifont* (the pixel font with above-average support for Unicode glyphs from the Basic Multilingual Plane (BMP), distributed as a big .png/.gif/.bmp file with a corresponding .txt listing the mapped Unicode glyphs' position in the image's dimensions) and *Google's Noto fonts* - _with SumatraPDF_ - so as to have more fallback options for missing glyphs and/or missing fonts when rendering/displaying .pdf documents and other filetypes which utilize many writing systems within their pages...
+
+Also, http://babelsoftware.co.uk 's BabelMap Unicode charmap and its WebUI online edition - are quite useful for users of MS Windows.
+
+As a side note, you may consider bundling a *pdf2svg* utility for individual pages or a span of many pages (added to the Save as... option) as well as a *2png* rasterization output option in the similar fashion.
+
+It is good to note that github.com's pdfranger & pdfarranger, and pdfsam are useful free tools to use with .pdf files.
+
+Some other useful Unicode-related resources (sorry in advance for the long list!):
+https://r12a.github.io/app-conversion/
+https://r12a.github.io/applist
+
+https://github.com/sahwar?tab=repositories&q=pdf&type=&language=&sort=
+https://github.com/sahwar?tab=repositories&q=glyph&type=&language=&sort=
+https://github.com/sahwar?tab=repositories&q=typography&type=&language=&sort=
+https://github.com/sahwar?tab=repositories&q=font&type=&language=&sort=
+https://github.com/sahwar?tab=repositories&q=unicode&type=&language=&sort=
+
+https://github.com/sahwar?tab=stars&q=pdf
+https://github.com/sahwar?tab=stars&q=glyph
+https://github.com/sahwar?tab=stars&q=typography
+https://github.com/sahwar?tab=stars&q=font
+https://github.com/sahwar?tab=stars&q=unicode
+
+P.S. As a quirky joke for the New Year 2022, you may try to make *a simple experimental/dev build of SumatraPDF which includes filetype conversion tools via a _Save a converted copy..._ command in the File menu*, i.e. bundles `pandoc` (with a simple commandline window for input and working `--help` subcommand mentioned after the version string and website URL/URI), `pdf2htmlEX`, and `img2pdf`, `iconv` (+BOM hack), `luit`, `http://2cyr.com`, etc. (all these tools are free)... 😅
+Just make sure to also add a warning window before conversion with a simple localizable textarea filled with a text which explains that distribution of such outputted derivative works is a grey legal area if the input documents are copyrighted or are a trade secret or corporate patent or whatnot, and to encourage users to check local laws about copyright and intellectual rights and distribution of copyrighted works, and in case of doubt, to only stick to personal use of the converted output files if they are worried about copyright legal problems for large-scale redistribution, etc. 🤔
+
+======
+
+https://r12a.github.io/app-conversion/
+https://r12a.github.io/applist
+
+https://r12a.github.io/scripts/apps/vowel_signs/
+
+https://github.com/sahwar?tab=repositories&q=pdf&type=&language=&sort=
+https://github.com/sahwar?tab=repositories&q=glyph&type=&language=&sort=
+https://github.com/sahwar?tab=repositories&q=typography&type=&language=&sort=
+https://github.com/sahwar?tab=repositories&q=font&type=&language=&sort=
+https://github.com/sahwar?tab=repositories&q=unicode&type=&language=&sort=
+
+https://github.com/sahwar?tab=stars&q=pdf
+https://github.com/sahwar?tab=stars&q=glyph
+https://github.com/sahwar?tab=stars&q=typography
+https://github.com/sahwar?tab=stars&q=font
+https://github.com/sahwar?tab=stars&q=unicode
+
+https://raw.githubusercontent.com/FontManager/font-manager/6b9b351538b5118d07f6d228f3b42c91183b8b73/fontmanager.py
