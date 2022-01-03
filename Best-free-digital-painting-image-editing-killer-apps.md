@@ -1079,6 +1079,207 @@ primitives
 torus, vortex, toroidal, vertex, spline, Bezier curves, etc.
 
 ````
+
+
+* ...
+````
+You may wish to add these apps to your list:
+
+* LazPaint: http://lazpaint.sourceforge.net
+* GraphicsGale (now freeware!) - can be run under Linux via Wine/Wine-staging!
+* iDraw3 - can be run under Linux via Wine/Wine-staging
+* azPainter & AzDrawing2, AzPainterB - as .AppImage files
+* LibreSprite
+* FireAlpaca, PaintStar, PictBear, Hornil StylePix, PixBuilder, SmoothDraw4, Medibang Paint Pro, JUMP PAINT, Pixiav4/v6, Mischief-free, Milton app, CherryBrush (http://drpetter.de), Chasys Draw IES Artist, SpeedyPainter, PaintToolSAI (most can be run under Linux via Wine/Wine-staging)
+* drawpile
+* qAquarelle
+* Pixelitor (Java-based)
+* Pixel.Tools ( https://github.com/prominentdetail/Pixel.Tools & https://prominentdetail.github.io/Pixel.Tools/ )
+& goya pixel app ( https://github.com/jackschaedler/goya & https://github.com/collections/pixel-art-tools )
+ --- search them on github.com
+
+https://github.com/Kerndog73/Animera (similar to LibreSprite)
+https://github.com/topics/pixel-art-maker
+
+OpenTTD
+About
+
+A cross-platform Qt tool for making pixel-art animations for games
+
+Topics
+
+application qt cplusplus cross-platform cpp pixel-art animation game-development qt5 free qt-gui pixel-editor pixel-animation pixel-art-maker
+
+https://github.com/CytopiaTeam/Cytopia = simcity2000 clone
+https://github.com/pixelartexchange/pixelart-howto
+! https://github.com/PixiEditor/PixiEditor (made with .NET 6; similar to LibreSprite/aseprite&PyxelEdit)
+https://github.com/fishfight/FishFight (2D pixelart game)
+https://github.com/cxong/cdogs-sdl (2D pixelart game)
+https://github.com/TeamHypersomnia/Hypersomnia (2D pixelart game: 'About - Multiplayer top-down shooter released as free software.')
+http://hotud.org
+http://old-games.org
+http://oldapps.net
+
+https://github.com/cmilr/Unity2D-Components
+
+https://github.com/lastguest/pixeler
+Render images in CLI with UTF-8 characters.
+https://github.com/dylanaraps/pxltrm
+https://github.com/pixijs/pixijs (html5canvas 2D pixelart gamedev library)
+
+https://lospec.com/palette-list
+
+https://1041uuu.tumblr.com/
+https://rx.cloudhead.io/
+https://pixenapp.com/
+https://0x72.itch.io/pixeldudesmaker
+
+https://www.lcdf.org/gifsicle/ = animatedGIF library
+https://www.lexaloffle.com/bbs/?tid=40058 = PICO-8's Wobblepaint = https://archive.is/bzhSU
+
+https://github.com/Siilwyn/awesome-pixel-art
+Related Topics
+
+pixel pixels sprite sprites spritesheet spritesheets
+
+https://en.wikipedia.org/wiki/Pixel_art
+About
+
+A cross-platform Qt tool for making pixel-art animations for games
+
+Topics
+
+application qt cplusplus cross-platform cpp pixel-art animation game-development qt5 free qt-gui pixel-editor pixel-animation pixel-art-maker
+
+https://github.com/Kerndog73/Animera
+About
+
+A Pixel Art Editor
+
+Topics
+
+editor pwa canvas pixel-art computer-graphics image-manipulation canvas-api pixel-editor pixel-art-maker
+
+https://github.com/reidrac/c64-pixel-tools
+https://github.com/google/pikov
+https://github.com/hugovk/pixel-tools/blob/master/image_packer.py
+https://github.com/schriftgestalt/PixelTool
+https://github.com/hugovk/pixel-tools/blob/master/factors.py
+https://github.com/hugovk/pixel-tools/blob/master/kaleidoscope.py
+https://github.com/hugovk/pixel-tools/blob/master/kaleidoscope.py
+https://github.com/dusk125/pixelutils
+https://github.com/TeamHypersomnia/rectpack2D
+
+https://github.com/rgab1508/PixelCraft
+https://rgab1508.github.io/PixelCraft
+http://pixelperfect-app.com/
+https://github.com/hugovk/pixel-tools
+
+https://www.usebox.net/jjm/night-knight/
+https://github.com/reidrac/msx-pixel-tools
+https://github.com/useless-tools/pixelate
+https://github.com/abreheret/PixelAnnotationTool
+https://github.com/rgab1508/PixelCraft
+
+https://github.com/TeamHypersomnia/rectpack2D
+
+web IRCv3+DCC send file/xget:
+http://mebbit.com
+https://web.libera.chat/#ranger
+https://web.libera.chat/gamja/
+https://github.com/ranger/ranger - linux file-manager:
+````
+Мнение: nnn file-manager, fzf + FSearch, https://github.com/ranger/ranger , sunflowerFM, SpaceFM, xfe ? 🤔
+````
+
+https://github.com/dusk125/pixelutils
+https://github.com/dusk125/pixelutils
+https://github.com/egonelbre/gophers
+https://github.com/faiface/pixel/wiki/Drawing-a-Sprite
+https://gist.github.com/dhondta/30abb35bb8ee86109d17437b11a1477a
+https://gist.github.com/dhondta/30abb35bb8ee86109d17437b11a1477a
+https://github.com/NoelShin/PixelPick
+https://www.google.com/search?q=pixel.tools+github&oq=pixel.tools+github&aqs=chrome..69i57.14752j0j4&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8#ip=1
+
+steganography, cryptography, secret language/dialect - argot
+
+````
+http://secushare.org + libp2p + hyper-protocol + wdt + toffeeshare.com + file.pizza + http://fex.belwue.de + http://github.com/schollz/croc + http://splitbrain.org/project/filecroc ; ircV3+dcc over RSS via SSL&https (web3.0=p2p decentralized distributed ad-hoc shared-economy Internet)
+http://reneefrench.blogspot.com/
+https://github.com/egonelbre/gophers
+$ gopher & pleroma/mastodon Twitter.com clones
+````
+http://mars.netanya.ac.il/~samy/tkpaint.html = https://archive.fo/NecKo
+https://github.com/prominentdetail/Pixel.Tools
+https://prominentdetail.github.io/Pixel.Tools/
+
+
+http://lazpaint.sourceforge.net
+http://mtpaint.sourceforge.net
+
+https://sites.google.com/site/wangzhenzhou/home
+
+https://www.portablefreeware.com/index.php?id=690
+
+https://sourceforge.net/projects/rassampaint/
+https://www.onworks.net/software/app-rassam-paint
+https://github.com/benohb/rassam-paint
+https://sourceforge.net/projects/rassampaint/
+dibuja paint = https://www.linux-apps.com/p/1129305/ (similar to rassam-paint and to LazPaint & KolourPaint & paint.js and mtPaint, gnome-paint, gpaint, xpaint, tuxpaint!)
+https://www.linux-apps.com/p/1129305/
+https://launchpad.net/dibuja/+download
+https://github.com/mrbitt/mrbit-overlay/blob/master/media-gfx/dibuja/dibuja-0.6.0.ebuild
+
+gpaint
+gnome-paint
+drawing gtk3/gnome3
+xpaint
+grafx2
+
+https://losst.ru/luchshie-analogi-paint-dlya-linux
+http://mars.netanya.ac.il/~samy/tkpaint.html
+Try “dibuja”
+https://launchpad.net/dibuja
+https://www.linux-apps.com/p/1129305/
+http://www.braindistrict.com/ - PaintSupreme for Ubuntu Linux ($19.99)
+cinepaint
+xournal
+Pixel (Adobe Photoshop clone): http://www.kanzelsberger.com/
+https://www.tuxarena.com/2014/11/rassam-paint-1-1-is-a-simple-painting-program-how-to-install-in-ubuntu-and-mint/
+http://gtk-apps.org/content/show.php/Rassam-paint?content=164061
+http://pulkomandy.tk/projects/GrafX2
+http://pinta-project.com/
+http://tuxpaint.org/
+http://sourceforge.net/projects/sf-xpaint/
+http://mars.netanya.ac.il/~samy/tkpaint.html
+http://www.gnu.org/software/gpaint/
+http://code.google.com/p/gnome-paint/
+http://mtpaint.sourceforge.net/
+http://mypaint.intilinux.com/
+http://kolourpaint.sourceforge.net/
+http://www.gimp.org/
+http://krita.org/
+http://store.steampowered.com/app/280680
+http://www.braindistrict.com/en/paintsupreme
+http://www.digikam.org/
+http://www.kornelix.com/fotoxx.html
+http://shutter-project.org/
+http://www.scribus.net/canvas/Scribus
+http://inkscape.org/
+
+
+hello.js - OAuth2 & OAuth1 via an OAuth1 proxy & REST APIs ...
+
+---
+
+
+steam gift card
+amazon.com gift card
+paypal money payout gift-package/earned package ; 
+ebay gift card
+coupon ; 
+---
+````
 * Cleanup, remove/Merge duplicate entries, fix typos&formatting, and add missing hyperlinks
 * Add a new category for Google Android & Apple iOS apps
 * Maybe add a category for apps for exotic and niche OSs
