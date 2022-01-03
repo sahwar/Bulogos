@@ -1280,6 +1280,503 @@ ebay gift card
 coupon ; 
 ---
 ````
+*
+````
+
+https://www.tabletsforartists.com/cube-i7-stylus-review/
+
+https://www.tabletsforartists.com/best-drawing-tablet-2019/
+
+https://www.tabletsforartists.com/best-drawing-tablet-2019/
+
+upport
+Acepen offers lifetime free technical support. They seem responsive to buyer questions. They offer a one-year guarantee of products and free lifetime technical support.
+
+Art program testing
+Windows: I tried out Photoshop, Sketchbook, Krita, Paint Tool SAI, and GIMP. Got a very small lag in Photoshop. The driver was pretty sensitive in Photoshop (going from thick to thin quickly).
+
+Like other tablets besides Wacom, you can use the Ace Pen with vector programs such as Inkscape and Illustrator but doesn’t give pressure sensitivity in Illustrator. You can use SAI vector layers with the Ace Pen  if you want pressure in vector drawing.
+
+Mac: Tested Photoshop, Sketchbook, Clip Studio Paint, Krita, Inkscape
+
+Note:  Sketchbook, GIMP, Inkscape, and Krita are all free and can be downloaded online.
+
+On the company’s site, they list compatibility with Photoshop, Illustrator, Fireworks, Flash, Comic Studio, SAI, Infinite Stratos, 3D MAX, MAYA, ZBrush, and more.
+
+Drawing on the Ace Pen 1060
+The size is enjoyable to draw on, big enough to not feel cramped.
+
+
+Comparing it to the Intuos Pro, which is far more expensive, you don’t get tilt, touch, wireless, or bundled software, or app-specific customization, or the ability to use different kinds of physical pens. So the Acepen is more comparable to the regular Intuos but has more pressure levels and may later get tilt.
+
+https://www.tabletsforartists.com/xp-pen-star-g960s-review/
+
+https://www.tabletsforartists.com/best-drawing-tablet-2019/
+
+https://www.tabletsforartists.com/huion610pro-v2-review/
+
+---
+
+Best overall art tablet 2019 – 2020: iPad Pro
+If I had to pick ONE, it would be the iPad Pro (read our review). I like the 12.9″ size. It combines portability, a powerful processor, and tilt and pressure sensitivity. With the Apple Pencil and robust drawing apps, the iPad Pro suitable for professional art. You can even use it as a Cintiq along with your Mac. And the new regular iPad also works with the Apple Pencil.
+
+---
+
+https://www.tabletsforartists.com/best-drawing-tablet-2019/
+
+https://www.tabletsforartists.com/2020-holiday-gift-guide-for-digital-artists/
+
+https://www.tabletsforartists.com/best-cheap-drawing-tablets/
+
+---
+
+https://www.escapemotions.com/products/rebelle/about?//products/rebelle/index.php
+
+---
+
+Great movies
+All you need is a library card or go to a participating college or university. Kanopy Films
+
+(A library card also often gets you free access to lynda.com & udemy.com courses!)
+
+Unlimited free video conferencing
+Jitsi Meet is a free, secure, open-source alternative to Zoom. You can have up to 75 people and there’s no time limit. So give your friends and family the gift of uninterrupted video calls.
+
+ 
+
+ 
+
+(Visited 363 times, 1 visits today)
+
+================================================================================
+
+
+
+---
+
+https://www.tabletsforartists.com/xp-pen-star-g960s-review/
+
+================================================================================
+
+https://www.tabletsforartists.com/xp-pen-star-g960s-review/
+
+================================================================================
+
+https://twitter.com/cataphractus/status/1466347391548809221
+
+================================================================================
+
+https://www.fosshub.com/File-Sharing.html
+
+https://www.fosshub.com/Atlantis-Word-Processor-Lite.html
+
+https://www.fosshub.com/Graphic-Apps.html
+
+https://www.fosshub.com/Vectr.html
+
+https://www.fosshub.com/PhotoFlow.html
+
+https://www.fosshub.com/PhotoFiltre.html
+
+https://www.fosshub.com/LibreCAD.html
+
+https://www.fosshub.com/Filmulator.html
+
+---
+
+https://www.fosshub.com/FotoSketcher.html
+
+https://www.fosshub.com/Claws-Mail.html
+
+https://www.fosshub.com/Backup-Tools.html
+
+================================================================================
+
+https://twitter.com/MnogoZle/status/1466820519051902985
+
+https://twitter.com/MnogoZle/status/1466772847792119811
+
+https://twitter.com/MnogoZle/status/1466681409771347972
+
+SokoLМуцуна на лъвv
+@MnogoZle
+·
+16 ч
+Щетите от антиваск ковид истерията ще са доста по-сериозни и ще се отразят тежко на задължителните детски ваксинации за хепатит коклюш дофтерия полио менингит и тн
+
+---
+
+https://twitter.com/MnogoZle/status/1466518396686716941
+
+======
+
+https://twitter.com/marhitektrix/status/1466685334201278466
+
+
+SokoLМуцуна на лъвv
+@MnogoZle
+·
+16 ч
+Щетите от антиваск ковид истерията ще са доста по-сериозни и ще се отразят тежко на задължителните детски ваксинации за хепатит коклюш дофтерия полио менингит и тн
+auspicious worthy
+@marhitektrix
+В отговор на 
+@MnogoZle
+Пожелавам ти 100 лайка, защото освен тях, нищо друго не печелиш, а и това няма да ти реши по-големия проблем, че живееш в капан, илюзия и средновековие...Истерия било? Не, тревога е.
+10:26 ч. пр.об. · 3.12.2021 г.·Twitter Web App
+auspicious worthy
+@marhitektrix
+·
+16 ч
+В отговор на 
+@marhitektrix
+ и 
+@MnogoZle
+Венци тъпото от Пловдив няма да ти помогне, когато осъзнаеш какво се случва - вие сте наивни, спрели, държите се като сектанти, а и не ви работят дългите светлини, защото сте елементарни.
+
+================================================================================
+
+https://twitter.com/marhitektrix/status/1466864486674055172
+
+auspicious worthy
+@marhitektrix
+·
+4 ч
+Nothing new under the sun, Peter! It's not about health, it's about control, terror and mental harassment. https://twitter.com/PeterSweden7/status/1466861457476407298 ~to add to ve4ernik's podcast ; ~to add to anti-COVID-19-programmed-hysteria ; 
+
+---
+
+auspicious worthy
+@marhitektrix
+·
+8 ч
+С други думи може да сте свързани с чип с Google или да сте изчели дузина влакови композиции с книги, не умеете ли да вадите правилните и логични изводи, сте кухи парчета...
+Покажи тази нишка
+auspicious worthy
+@marhitektrix
+·
+8 ч
+Интелигентността е потенциалната способност на даден съзнателен индивид да прави изводи от дадена информация. Знамето на Франция  При това степента на интелигентност не зависи от количеството информация, натрупана от индивида.
+
+
+auspicious worthy
+@marhitektrix
+·
+9 ч
+Интелигенцията на Туитър не искат да чуят истината. Цилиндър Те просто искат уверение, че това, в което вярват, е истина. Знамето на Франция Непоносима сган.
+auspicious worthy
+@marhitektrix
+·
+9 ч
+Най-ново академично изследване показва, че науката е фалшива новина и конспиративна теория. Знамето на Франция
+
+---
+
+
+auspicious worthy
+@marhitektrix
+·
+27.11
+Беева е великолепна! Цилиндър
+Цитиране на туита
+HyberNation
+@hbeeva
+ · 27.11
+След омикрон следва пи, а тогава нещата вече ще станат съвсем безкрайни и нерационални
+auspicious worthy
+@marhitektrix
+·
+27.11
+При огромна разлика в силата мненията стават заповеди. Знамето на Франция  Пуснете си NOVA да ви кажат умрелите! Важно е. Цилиндър И без това мислите с телевизора, както и с гъза си... Знамето на Франция Ще ви попилея! Заклевам се.
+auspicious worthy
+@marhitektrix
+·
+27.11
+Valle dei Templi Agrigento, Sicilia Знамето на Италия Паднало листо Magna Graecia Знамето на Гърция
+auspicious worthy
+@marhitektrix
+·
+27.11
+Третата доза служи за подсилване на първите две, казаха го сериозно. Знамето на Франция Толкова кретения не мога да понеса. Цилиндър Добро утро, адвентисти от седмия ден! - Sabrina F
+auspicious worthy
+@marhitektrix
+·
+26.11
+The Arts Club, Dover Street London Знамето на Великобритания
+auspicious worthy
+@marhitektrix
+·
+26.11
+Някъде достигнаха до 90% набодени със серума, но със South Africa започват от нулата, ахаха Знамето на Южна Африка Не мога повече.
+
+================================================================================
+
+https://twitter.com/marhitektrix/status/1464226930908143651
+
+================================================================================
+
+https://twitter.com/marhitektrix/status/1463513640846438403
+
+auspicious worthy
+@marhitektrix
+·
+24.11
+От ден първи на театъра разбрах, че имаме калпав сценарий, глупави играчи и фантастична измислица.Знамето на Франция
+
+https://twitter.com/marhitektrix/status/1463496826879983623
+
+
+auspicious worthy
+@marhitektrix
+·
+24.11
+Медиите, институциите, учените и лекарите, никога няма да си върнат доверието, защото тази измама ще ги преследва завинаги. Знамето на Франция
+
+================================================================================
+
+https://twitter.com/marhitektrix/status/1463385725404123138
+
+---
+https://twitter.com/marhitektrix/status/1463331599395835909
+
+
+auspicious worthy
+@marhitektrix
+·
+24.11
+Невъзпитаните и антимандатни хора са единствената земна съпротива между вас и пълната държавна собственост върху тялото ви и телата на вашите деца. Знамето на Франция Колко бустери са ви нужни, за да сте емоционално, физически и психически недееспособни и под пълния контрол на държавата.
+
+================================================================================
+
+https://twitter.com/marhitektrix/status/1463366849589039106
+
+
+auspicious worthy
+@marhitektrix
+За театър трябва намордник, каска, паспорт, тест за бременност и отстояние от седящите, но за НС, МС, другите циркаджии от държавната администрация и банките, не е необходимо абсолютно нищо! Знамето на Франция Но иначе пандемията е покъртителна и адски сериозна Цилиндър
+6:40 ч. пр.об. · 24.11.2021 г.·Twitter Web App
+
+================================================================================
+
+https://twitter.com/marhitektrix/status/1463366849589039106
+За театър трябва намордник, каска, паспорт, тест за бременност и отстояние от седящите, но за НС, МС, другите циркаджии от държавната администрация и банките, не е необходимо абсолютно нищо! Знамето на Франция Но иначе пандемията е покъртителна и адски сериозна Цилиндър
+
+================================================================================
+
+https://twitter.com/marhitektrix/status/1463366849589039106
+За театър трябва намордник, каска, паспорт, тест за бременност и отстояние от седящите, но за НС, МС, другите циркаджии от държавната администрация и банките, не е необходимо абсолютно нищо! Знамето на Франция Но иначе пандемията е покъртителна и адски сериозна Цилиндър
+
+================================================================================
+
+http://rgl.epfl.ch/software/Tekari
+
+http://rgl.epfl.ch/software/PBRT
+http://rgl.epfl.ch/software/PBRT
+3d photorealism ; 
+
+http://rgl.epfl.ch/publications
+glut & freetype ; 
+================================================================================
+
+https://github.com/jvalen/pixel-art-react
+
+https://github.com/mhagiwara/xfspell
+https://github.com/ianka/xfs_undelete
+
+https://github.com/search?q=paint.net+plugin
+
+https://github.com/search?q=paint.net+plugin
+
+---
+
+https://github.com/search?q=paint.net+plugin
+
+---
+
+
+
+---
+https://github.com/KellerMartins/PixelVoxels
+https://github.com/OpenHV/OpenHV
+
+https://github.com/privefl/pixelart
+https://github.com/ENDESGA/EDGITOR
+---
+
+https://github.com/giventofly/pixelit
+https://github.com/hundredrabbits/Noodle
+
+https://github.com/michaelrbk/pixelart-vectorizer
+
+!
+https://github.com/KellerMartins/PixelVoxels
+https://github.com/paladin-t/fantasy
+
+https://github.com/paladin-t/fantasy
+
+---
+which font is this?
+The image font used here is the GNU Unifont! Current version here is Unifont 9.0.02 .
+
+You can read more about in the website, which is mantained by the awesome Paul Hardy: http://unifoundry.com/unifont.html .
+
+unifont AUTHORS
+Roman Czyborra created the original GNU Unifont, including the .hex format. For greater detail, see the HISTORY in the GNU Unifont README.
+
+David Starner aggregated many glyphs contributed by others and incorporated these into pre-2004 Unifont releases.
+
+Qianqian Fang began his Wen Quan Yi font in 2004, by which time work on Unifont had stopped. Most of the almost 30,000 CJK ideographs in Unifont versions 5.1 and later were taken from Wen Quan Yi with permission of Qianqian Fang. The glyphs in "./font/plane00/wqy-cjk.hex" are for the most part Qianqian Fang's Unibit and Wen Quan Yi glyphs.
+
+Paul Hardy drew most of the newly-drawn glyphs added to the BMP from the Unifont 5.1 release to the present release. This includes the 11,172 glyphs in the Hangul Syllables block, plus approximately 10,000 additional glyphs scattered throughout the BMP.
+
+Andrew Miller drew the glyphs added to Unicode 6.3.0.
+
+For higher planes and the Private Use Area glyphs, see the unifont ChangeLog file.
+---
+
+> https://github.com/ericoporto/png-font
+
+https://github.com/ericoporto/png-font
+
+sketchfab.com
+
+https://github.com/ericoporto/png-font
+
+https://github.com/southdy/PIXELARTOR
+
+https://github.com/southdy/PIXELARTOR
+
+https://github.com/micooz/pixelart
+
+https://github.com/gvrocksnow/gvrocksnow-PixelArt-Upscaler
+
+https://github.com/el-falso/monaki-theme
+
+https://github.com/el-falso/monaki-theme
+
+https://github.com/michidk/Aseprite-DarkFlat-Theme
+
+https://github.com/michidk/Aseprite-DarkFlat-Theme
+
+https://ncine.github.io/
+! https://ncine.github.io/gallery/
+
+https://github.com/SpookyGhost2D/SpookyGhost
+
+https://github.com/SpookyGhost2D/SpookyGhost
+
+https://github.com/MeanLight-Studio/ScaleNX
+
+https://github.com/MeanLight-Studio/ScaleNX
+
+---
+
+https://github.com/lampysprites/pribambase
+https://github.com/pulkomandy/grafx2
+
+https://github.com/pulkomandy/grafx2
+
+https://github.com/VacaRoxa/CodenameLT
+
+http://www.mapeditor.org/
+---
+
+https://github.com/unitycoder/PixelArtTool
+https://astynax.me/pixcell-elm/
+
+https://github.com/astynax/pixcell-elm
+
+https://github.com/astynax/pixcell-elm
+
+https://github.com/behreajj/AsepriteAddons
+
+https://github.com/Relfos/PixelDotNet
+https://github.com/rivy/OpenPDN
+
+https://github.com/PsdPlugin/PsdPlugin
+
+---
+
+https://github.com/lithander/pixelpunch
+
+---
+https://github.com/search?p=14&q=pixelart&type=Repositories
+---
+https://github.com/hQrz/PixelArtist
+
+https://github.com/abc013/WarriorsSnuggery
+
+======
+
+https://github.com/abc013/WarriorsSnuggery
+
+http://www.realworldnlpbook.com/blog/unreasonable-effectiveness-of-transformer-spell-checker.html
+
+======
+
+pure evil: http://www.realworldnlpbook.com/blog/unreasonable-effectiveness-of-transformer-spell-checker.html
+
+---
+
+http://www.realworldnlpbook.com/blog/unreasonable-effectiveness-of-transformer-spell-checker.html
+
+======
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+http://www.mapeditor.org/
+---
+
+https://github.com/unitycoder/PixelArtTool
+https://astynax.me/pixcell-elm/
+https://github.com/astynax/pixcell-elm
+https://github.com/astynax/pixcell-elm
+https://github.com/behreajj/AsepriteAddons
+
+https://github.com/Relfos/PixelDotNet --- paint.net clone similar to Pinta
+https://github.com/rivy/OpenPDN --- paint.net clone similar to Pinta
+https://github.com/PsdPlugin/PsdPlugin
+https://github.com/lithander/pixelpunch
+---
+https://github.com/KellerMartins/PixelVoxels
+https://github.com/OpenHV/OpenHV
+
+https://github.com/privefl/pixelart
+https://github.com/ENDESGA/EDGITOR
+
+---
+
+>>> https://github.com/KellerMartins/PixelVoxels
+https://www.ebay-kleinanzeigen.de/s-artisul-d10/k0
+https://www.google.com/search?q=buy+artisul+d10+2nd+hand+EU&oq=buy+artisul+d10+2nd+hand+EU&aqs=chrome..69i57.35439j0j4&sourceid=chrome&ie=UTF-8
+
+---
+https://www.ebay-kleinanzeigen.de/s-tablet-wacom/k0
+https://www.tabletsforartists.com/tablet-monitors/page/2/
+https://www.tabletsforartists.com/tablet-monitors/page/2/
+
+---
+
+The company lists these programs as being compatible: Photoshop, SAI, Painter,  Illustrator, Clip Studio GIMP, Medibang, Krita, Fire Alpaca, Blender 3D, Paint X, FlipaClip, Autodesk Sketchbook, Zenbrush, Artrage, Microsoft Office.
+Windows: I tried out Photoshop, Sketchbook, Krita, Paint Tool SAI, and GIMP. Got a very small lag in Photoshop. The driver was pretty sensitive in Photoshop (going from thick to thin quickly).
+vector programs such as Inkscape and Illustrator but doesn’t give pressure sensitivity in Illustrator. You can use SAI vector layers with the Ace Pen if you want pressure in vector drawing.
+Mac: Tested Photoshop, Sketchbook, Clip Studio Paint, Krita, Inkscape
+Note:  Sketchbook, GIMP, Inkscape, and Krita are all free and can be downloaded online.
+
+On the company’s site, they list compatibility with Photoshop, Illustrator, Fireworks, Flash, Comic Studio, SAI, Infinite Stratos, 3D MAX, MAYA, ZBrush, and more.
+
+---
+
+The company lists these programs as being compatible: Photoshop, SAI, Painter,  Illustrator, Clip Studio GIMP, Medibang, Krita, Fire Alpaca, Blender 3D, Paint X, FlipaClip, Autodesk Sketchbook, Zenbrush, Artrage, Microsoft Office, Photoshop, Sketchbook, Krita, Paint Tool SAI, and GIMP. Got a very small lag in Photoshop. The driver was pretty sensitive in Photoshop (going from thick to thin quickly), vector programs such as Inkscape and Illustrator but doesn’t give pressure sensitivity in Illustrator. You can use SAI vector layers with the Ace Pen if you want pressure in vector drawing.
+Mac: Tested Photoshop, Sketchbook, Clip Studio Paint, Krita, Inkscape
+Sketchbook, GIMP, Inkscape, and Krita are all free and can be downloaded online; compatibility with Photoshop, Illustrator, Fireworks, Flash, Comic Studio, SAI, Infinite Stratos, 3D MAX, MAYA, ZBrush, and more.
+
+---
+
+Photoshop, SAI, Painter,  Illustrator, Clip Studio GIMP, Medibang, Krita, Fire Alpaca, Blender 3D, Paint X, FlipaClip, Autodesk Sketchbook, Zenbrush, Artrage, Microsoft Office, Photoshop, Sketchbook, Krita, Paint Tool SAI, and GIMP, vector programs such as Inkscape and Illustrator but doesn’t give pressure sensitivity in Illustrator (You can use SAI vector layers with the Ace Pen if you want pressure in vector drawing), Mac: Tested Photoshop, Sketchbook, Clip Studio Paint, Krita, Inkscape; Sketchbook, GIMP, Inkscape, and Krita (all free and can be downloaded online); compatibility with Photoshop, Illustrator, Fireworks, Flash, Comic Studio, SAI, Infinite Stratos, 3D MAX, MAYA, ZBrush, and more.
+
+---
+````
 * Cleanup, remove/Merge duplicate entries, fix typos&formatting, and add missing hyperlinks
 * Add a new category for Google Android & Apple iOS apps
 * Maybe add a category for apps for exotic and niche OSs
