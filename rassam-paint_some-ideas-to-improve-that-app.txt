@@ -1,0 +1,34 @@
+https://github.com/benohb/rassam-paint/issues/1
+Add some advanced features to rassam-paint: layers, custom brush loaded from an image file, advanced 256-color palettes, animation (via via gifsicle) #1
+
+ Open
+
+sahwar opened this issue now · 0 comments
+
+Comments
+
+￼
+
+ 
+
+sahwar commented now
+
+Hello.
+
+I understand that this project is mostly abandoned, but if you or anyone else wishes to add some advanced features to this app, here is a short list of the most sought-after advanced features to add:
+
+layers - you can adapt source code for that from http://lazpaint.sourceforge.net because it is also written in FreePascal/LazarusIDE
+
+custom brush loaded from an image file - you can adapt source code for that from http://mtpaint.sourceforge.net and LibreSprite's source code
+
+advanced 256-color palettes - you can copy the indexed-palette GUI window from this freeware app (you can run it under Linux via Wine/Wine-staging) - PaintStar: https://sites.google.com/site/wangzhenzhou/home ; you can add palette files from here: https://lospec.com/palette-list
+
+animation (via via gifsicle) - you can adapt source code from LibreSprite, goya pixel editor ( https://github.com/jackschaedler/goya ), and Pixel.Tools pixel-editor ( https://github.com/prominentdetail/Pixel.Tools ).
+
+Adding any more advanced features except for these 4 ones (except maybe a Scripts/Macros/Automation via GEGL and Lua and Python3 scripts), will overcomplicate your app... and GIMP, Krita, MyPaint, KolourPaint, Medibang Paint Pro, SpeedyPainter, FireAlpaca, etc. are already there for people who want even more advanced features from a drawing/painting/image-editing app for desktop OSs...
+
+Tools similar to your app rassam-paint:
+dibuja paint = https://www.linux-apps.com/p/1129305/ , paint.js, LazPaint, kolourpaint (KDE), xpaint, gnome-paint (unfinished), gpaint (unfinished), mtPaint, GraFX2, iDraw3 ( http://rpgmakermpl or http://rpgmaker.net - > tools), PaintStar, GraphicsGale (now fully freeware), JPixel ( http://emad.itch.io ), https://www.piskelapp.com/ , http://photopea.com, http://sumopaint.com , http://pyxeledit.org , etc.
+
+P.S. I have personally compiled a long list of drawing/painting/pixelart/image-editing apps:
+https://github.com/sahwar/Bulogos/blob/master/Best-free-digital-painting-image-editing-killer-apps.md .
