@@ -799,7 +799,7 @@ SpeechLab1 - freeware, freely given to blind people, see:
 
 https://www.slant.co/topics/9395/~open-source-speech-to-text-stt-engines
 
-#### 6.1 Post-2020 developments in Bulgarian-language speech-synthesis software #####
+#### 6.1. Post-2020 developments in Bulgarian-language speech-synthesis software #####
 
 1. Google Translate introduced initial support for basic Bulgarian-language speech-synthesis BUT, sadly, they probably didn't use any of the R&D by me ( github.com/sahwar/Bulogos/GovoritelBG-ss... or Toshko2 or gespeaker/MBROLA-Bulg-BG, etc. ... 
 Here's a demo(nstration):
