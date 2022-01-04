@@ -965,3 +965,12 @@ You can find more details on the official website https://voice.mozilla.org/
 https://f-droid.org/en/packages/org.commonvoice.saverio/
 
 ````
+
+### 9. Spellchecker software for the Bulgarian language
+* DSpellchecker plugin for Notepad++ (may also be adapted for use with NeoVim, Spacemacs, jEdit, notepad2 (notepa2-mod fork, not the original), notepad3, notepad2e, GitHub Atom text-editor , etc.
+* those F(L)OSS spellcheckers used in Mozilla Firefox, LibreOffice, Google Android OS, Google Chrome, etc:
+aspell, espell, hunspell (run via the Enchant spellchecking wrapper library!) - see: http://bgoffice.sourceforge.net
+* http://ibl.bas.bg - WinEst, MacEst - by BAS' IBL + ibl's freely-downloadable contemporary-Bulgarian-language dictionary datasets + OCR'd .pdf files of http://dv.government.bg and http://lex.bg .html/.pdf legal documents, etc. + webscraped versions of http://pcmania.bg , http://weblog.gatchev.info , & http://actualno.com & http://dnes.bg & paid-subscription libre contemporary Bulgarian-language citizen-journalism/gonze-journalism/underground-anonymous-activists' journalism websites...
+* idispellchecker + dictionary (you can use google.com to find older freeware versions of that software; newer versions are commercial paid but a free trial/demo version can also be downloaded) --- this is currently the best spellchecking app for Bulgarian, when used in combination with ОПРБЕ2012.pdf, ОПРБЕ2002.pdf, and http://kaksepishe.com & some further additions&corrections from (the yet-unfinished as of January 2022) Bulogos' BLSG style-guide and http://dictcorrect.com (but sahwar doesn't always agree with dictcorrect.com !) & with online Internet dictionary databases (http://onelook.com , http://bg.wiktionary.org , http://dicts.info/uddl/ , http://slovored.com , http://rechnik.info , http://bgjargon.com , etc.)
+* some other commercial Bulgarian-language spellchecking apps, etc. ...
+* etc.
