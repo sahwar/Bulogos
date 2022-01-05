@@ -28,6 +28,10 @@ It also hosts some of my (i.e. sahwar's) various experimental R&D research paper
 Помощ за GitHub и `git`...
 
 * [Help with using GIT commands](https://github.com/k88hudson/git-flight-rules)
+* *_mirror-synch github and gitlab:_*
+https://github.com/ubc/github2gitlab
+https://www.bing.com/search?q=synch+github+to+gitlab&cvid=46585215bcc242e3b016164c490deb77&aqs=edge..69i57.16462j0j4&FORM=ANAB01&PC=U531
+https://github.com/sahwar/Bulogos (<)---> https://gitlab.org/sahwar/Bulogos
 * [How to sync(hronize) this GitHub repo with the GitLab mirror repo](https://moox.io/blog/keep-in-sync-git-repos-on-github-gitlab-bitbucket/)
 * GitHub Desktop: https://itnext.io/how-to-use-github-desktop-with-gitlab-cd4d2de3d104 , https://community.reclaimhosting.com/t/using-github-desktop-with-gitlab/876
 * https://github.com/MoOx/git-init
