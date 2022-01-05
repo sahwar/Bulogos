@@ -9,7 +9,7 @@ Mostly made in [http://en.wikipedia.org/wiki/Bulgaria](Bulgaria) by an outcast B
 
 | Резервни копия на това хранище | , но другаде |
 | ------ | ------ |
-| [Mirror repository at _GitLab.com_ (always slighty not so up-to-date to this one)](https://gitlab.com/sahwar/Bulogos) (https://gitlab.com/sahwar/Bulogos.git) | [.ZIP backup of a recent version of this repository at _sahwar.animerulezzz.org_ (always slightly not so up-to-date to this one)](http://sahwar.animerulezzz.org/mirrors/Bulogos-master_[ISO8601-datetime-stamp].zip)
+| [Mirror repository at _GitLab.com_ (always slighty not so up-to-date to this one)](https://gitlab.com/sahwar/Bulogos) (https://gitlab.com/sahwar/Bulogos.git) | [.ZIP backup of a recent version of this repository at _sahwar.animerulezzz.org_ (always slightly not so up-to-date to this one)](http://sahwar.animerulezzz.org/mirrors/Bulogos-master_[ISO8601-datetime-stamp].zip) --- via https://github.com/ubc/github2gitlab
 
 ------
 
@@ -31,7 +31,7 @@ It also hosts some of my (i.e. sahwar's) various experimental R&D research paper
 * *_mirror-synch github and gitlab:_*
 https://github.com/ubc/github2gitlab
 https://www.bing.com/search?q=synch+github+to+gitlab&cvid=46585215bcc242e3b016164c490deb77&aqs=edge..69i57.16462j0j4&FORM=ANAB01&PC=U531
-https://github.com/sahwar/Bulogos (<)---> https://gitlab.org/sahwar/Bulogos
+https://github.com/sahwar/Bulogos (<)---> https://gitlab.com/sahwar/Bulogos
 * [How to sync(hronize) this GitHub repo with the GitLab mirror repo](https://moox.io/blog/keep-in-sync-git-repos-on-github-gitlab-bitbucket/)
 * GitHub Desktop: https://itnext.io/how-to-use-github-desktop-with-gitlab-cd4d2de3d104 , https://community.reclaimhosting.com/t/using-github-desktop-with-gitlab/876
 * https://github.com/MoOx/git-init
