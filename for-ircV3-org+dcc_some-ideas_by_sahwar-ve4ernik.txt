@@ -1,0 +1,156 @@
+for-ircV3-org+dcc_some-ideas_by_sahwar-ve4ernik.txt
+
+1. F(L)OSS irc+dcc apps for many hardware devices (x86, x86_64, ARMv5+, ARMv6+x64, ARMv7x64, even JavaME devices (wlirc2, virca, etc.) - desktop GUI apps (HydraIRC, AdiIRC; hexchat), CLI apps (weechat, gnutalk, etc.)
+
+2. full support for DCC/XDCC/SDCC, including via http/https relay bridges, and with/without polling & proxies; also over Bluetooth, WiFi, IrDA, etc.
+
+3. backup file-exchange methods via
+self-hosted ssh-sftp (see: midpssh for JavaME!) & self-hosted ftp/ftps/ftpes dumping auto-generated username&password in a xkcd.com-human-readable-passwords with pause/resume & percentage-downloaded & downloaded/total-filesize, & ETA passed/remaining time; etc.
+http://fex.belwue.de (&woos, and other fstools file-sharing apps, etc.)
+http://file.pizza
+http://toffeeshare.com
+hyper-wormhole
+magic-wormhole
+wdt (github)
+http://github.com/schollz/croc
+(see also: http://splitbrain.org/projects/filecroc for an HTML5-compatible WebUI for self-webhosted file-upload&-download space...)
+.torrent/WebTorrent+WebRTC/MSRS/vnc/drp  (+TEPs), .magnet, .metalink, .meta4
+other via URL or pluggable plugin files or installable plaintext scripts 
+in-app self-hosted DC++/ADC hub(s)&client-app - even with DC++/ADC IM-functionality
+etc.
+
+4. relay-bridges to/from XMPP/Jabber (see e.g. pidgin.im, gajim, conversations.im, schildichat, kopete, gnutalk (CLI), etc.), qTox/tox.im, gitter.im, slopi-communication, http://matrix.org (SchildiChat, Signal, etc.), SIP, PSYC2/secushare.org, Jitsi/JitsiMeet, discord.com bot, BeeBEEP, Skype, Rakuten Viber, Facebook WhatsApp&Messenger, TeamSpeak, WebRTC, etc.
+
+5. IRCv3+ should support chatlog-history saving both on client-side & server-side, with a bot command to reicover it or save it as a local file, viewable in any modern HTML5 web-browser (Mozilla Firefox, Google Chrome, MS Edge, qutebrowser, suckless.org/surf , uzbl.org, etc.)
+The WebUI should be similar to that of the web-archive page html pages of GNUmailman email archive maillists & regex-searchable:
+
+IRC chatlogging bot to save chatlog history as a file & web-host it on the Web as a GNU-mailman-like .html archive with datetime-stamping hyperlinks for every day/week/month/year
+the IRC-chathistory-logging bot should provide a list of bot commands for server-side IRC-admins&/or mods to censor-obfuscate messages with a base64 hash (recovering messages is possible via an irc-bot command which sends the uncensored messages with nearby-mesages chatlog as a plaintext file (or the same as a .zip file or .zip file with a password identical to your irc nickname-or-password?), and also irc bot commands for client-side user to do the same but ONLY for a selection of his own messages (datetime-stamp range-based), with similar options for messages recovery via server-side auto-generated emails as previously explained...
+All the IRC bot commands list must be shown by the irc server oand via a user command...
+PLUS in-app scrollback buffer of the chatlog-histry files, etc. + EXport/Import mising chatlog-history files...
+
+[DONE!!!]
+https://github.com/moritz/ilbot
+https://github.com/pdurbin/philbot (example: http://irclog.greptilian.com/ ); 
+
+http://www.jibble.org/pircbot.php/
+https://sourceforge.net/projects/ircbot/
+https://docs.raku.org/language/community = An IRC bot for getting interesting information about Unicode characters.
+https://en.wikipedia.org/wiki/IRC_bot
+http://irc.koha-community.org/
+https://wiki.sugarlabs.org/go/Service/meeting
+https://raku.org/community/irc/
+
+http://irclog.greptilian.com/sourcefu/2019-05-29
+https://en.wikipedia.org/wiki/Smallest_Federated_Wiki
+````
+All times shown according to UTC.
+
+Time	Nick	Message
+09:48	prologic_	https://writefreely.org/
+09:48		This looks really interesting. So much so I could probably get on board with this
+09:48		It has all the features I want: decentralized, federated, privacy focused
+09:49	pdurbin	Huh, a federated blog.
+09:50		reminds me a bit of https://en.wikipedia.org/wiki/Smallest_Federated_Wiki
+09:51	prologic_	yeah
+09:51		its intruging enough for me to spin this thing up
+09:51		and give it a serious go
+09:51		everything else I've found are either immature  or buggy
+09:51	pdurbin	and it's written in go, which is a win for us :)
+09:51	prologic_	this is well polished but still open source and you can run it yourself
+09:51		yeap
+09:51		the nice thing is they also have hosted versions too
+09:52		for the lazy and/or non-tech savvy
+09:52		$1/month is not a lot to ask
+09:52	pdurbin	nope
+09:54		I still haven't really committed to the fediverse. I created an account on the flagship Mastodon server about a year ago (while at LibrePlanet 2018) and I PM people on there sometimes but I haven't tooted yet. I'm trying to figure out how much I want to self-host. Right now I run some static sites, philbot, and weechat. Pretty light.
+09:57	prologic_	*nods*
+09:57		I'm going to give this a try and see how it goes
+09:57		I prefer to self-host everythiung and have prologic.shortcircuit.net.au
+09:57		but I write very little and find it tedious in between work and family life
+09:57		this Writefreely software may encourage me to write small tid bits more often
+09:58	pdurbin	Nice. I'd like to write more. Have you seen my latest sloppy writing effort? :)
+11:01	prologic_	pdurbin I have not  :/
+11:01		and that's what I think makes something like Writefreely so attractive
+11:02		I get to follow you :)
+11:02		Without all the crap that is Twitter or Facebook and supported by a BS business model of serving you ads, wher eyou have no control over your own data, etc, etc, et
+11:10	pdurbin	prologic: mostly I've just been hacking on a README. I'd love to hear what you think: https://github.com/good-labs/slopi-communication
+11:11	* prologic	reads
+11:14	prologic	hmm
+11:14		this is interesting stuff
+11:14		and totally makes sense -- for FOSS especially
+11:14	pdurbin	yeah, the focus is FOSS projects
+11:17	prologic	*nods*
+11:18	pdurbin	It's sort of the start of a bigger idea.
+11:18		Well, some related ideas.
+11:18		I'm thinking that open source projects should favor communicating in public.
+11:19		And they should either self host everything or do some "data liberation" of their messages on Google Groups or whatever else they use.
+11:20		And then they should consider indexing all that data into a project-specific search engine. Solr or ElasticSearch or whatever. And offer this search to their community.
+11:20		It wouldn't be hard to improve on the Gitter search experience. But first you need to liberate the data and index it.
+13:32	prologic	https://blog.mills.io/
+13:32		so far so good
+13:57	dotplus	oooh, writefreely looks very promising to me. I've brainstormed several ideas/writing prompts this year, but haven't gotten around to writing most of them up into full articles (even draft quality, let alone publishable). One of the reasons is that I want a) easy workflow, b) (reasonably) pleasant presentation, c) portability/trivial selfhosting.
+20:54	prologic	dotplus yeah me too
+20:54		And I think writegreely ticks all the boxes for me
+20:54		and you
+22:30	pdurbin	prologic: can I subscribe to your blog from mastodon?
+← Previous day | Channels | #sourcefu index | Today | Next day → | Search | Google Search | Plain-Text | plain, newest first | summary
+
+http://sourcefu.com
+
+Powered by philbot (a fork of ilbot). Questions? Comments? Please open an issue.
+http://irclog.greptilian.com/sourcefu/2019-05-29
+
+https://github.com/good-labs/slopi-communication
+Examples of SLOPI communication
+Examples of tools that support the SLOPI communication style include:
+
+mailing lists with public archives
+public forums
+public issue trackers
+Gitter
+IRC channels with public logs (#social from W3C, for example)
+Matrix rooms with public logs (many matrix-static examples)
+XMPP rooms with public logs (XFS, for example)
+Rocket.Chat rooms with public logs (Inkscape's #team_devel, for example)
+public roadmaps
+public kanban boards
+(As part of issue #2 we are gathering examples in the wild in a spreadsheet.)
+When not to be SLOPI
+While open source projects should endeavor to communicate in the SLOPI style whenever possible (as discussed in issue #12), this style is inappropriate for security, code of conduct violations, and telling co-workers on your floor that you brought in donuts.
+
+The SLOPI style can take some getting used to if you are new to open source culture. It's ok to be a little sloppy. Please don't worry if the message you send isn't perfect. The fact that you sent it in the open is appreciated. Open source is getting friendlier. A thick skin isn't as necessary as it was in the past.
+https://github.com/good-labs/slopi-communication
+
+https://en.wikipedia.org/wiki/Google_Data_Liberation_Front
+https://en.wikipedia.org/wiki/Google_Data_Liberation_Front#Google_Takeout
+https://en.wikipedia.org/wiki/Data_Transfer_Project
+http://blog.greptilian.com/2020/01/25/slopi-communication/
+http://socialwg.indiewebcamp.com/irc/social/today
+https://view.matrix.org/
+http://logs.xmpp.org/xsf/
+https://chat.inkscape.org/channel/team_devel
+SLOPI was well received when presented as one of many crazy ideas on June 21, 2019. A couple days later it was announced on Twitter.
+https://scholar.harvard.edu/pdurbin/blog/2019/jupyter-notebooks-and-crazy-ideas-for-dataverse
+
+GNU mailman:
+www.list.org
+https://gitlab.com/mailman
+https://gitlab.com/mailman/hyperkitty
+
+6. low-latency & support for SSL/https/letsencrypt.org , GNUTLS, SASL, 2FA, OMEMO, OTR, email account making&validation&username+email+password+chatlogs-history recovery via an irc-bot commands
+
+7. WebUI asynchroniously updated semi-live like IMs & support for emojis, image previews, & AdiIRC-like features, & playable embedded external videos from video-hosting websites
+
+8. listed commands to show the technical specifications of the irc server software & listed of installed features/extensions & installed IRC chat-bots - with all of their commands (and a short explanation of what the commands do plus short examples)
+
+9. IRC-chatbot command to dump datetime-stamp range number of the last irc messages to be sent an email to a user-specified email address;
+
+10. full support for UTF-8 Unicode & UTF-16BE/LE for ALL IRC (chat) messages & all irc-chatbot commands & DCC-related commands
+
+11. clickable hyperlinks (also via curl/wget/wget2/web-browser openable via 'Open with...') in-app for the IRC-client-app
+
+12. support for mirc colors & text-formatting (optional) & user avatars images (optional; 50x50px recommended: gif (incl. animated!), png, jpeg/jpg) --- e.g. via EnlightenmentDE's fancy terminal app for Linux(?!?) - or equivalent ; 
+
+13. ???
+
