@@ -1,4 +1,10 @@
-for-ircV3-org+dcc_some-ideas_by_sahwar-ve4ernik.txt
+https://github.com/sahwar/Bulogos/blob/master/for-ircV3-org%2Bdcc_some-ideas_by_sahwar-ve4ernik.txt
+
+See also:
+http://ircv3.net
+https://github.com/ircv3/ircv3-specifications
+
+
 
 0. server-side-set and/or enduser-set 'ensure all irc chat messages and/or dcc file transfers are sent as chunking octet/byte-boundaries-split chunked data pieces, for optimal data integrity, etc.' --- see also tcp/ip & udp, hyper-protocol.org , http://wiki.linktree.org, http://secushare.org , pleroma&mastodon twitter.com-clones, + why not an irc text command to use curl/wget/wget2 and also to interface with the older gopher and kermit and USENET and BBS, etc. protocols, etc.? 😏 ) 
 
