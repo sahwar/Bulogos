@@ -1,6 +1,9 @@
 for-ircV3-org+dcc_some-ideas_by_sahwar-ve4ernik.txt
 
-1. F(L)OSS irc+dcc apps for many hardware devices (x86, x86_64, ARMv5+, ARMv6+x64, ARMv7x64, even JavaME devices (wlirc2, virca, etc.) - desktop GUI apps (HydraIRC, AdiIRC; hexchat), CLI apps (weechat, gnutalk, etc.)
+0. server-side-set and/or enduser-set 'ensure all irc chat messages and/or dcc file transfers are sent as chunking octet/byte-boundaries-split chunked data pieces, for optimal data integrity, etc.' --- see also tcp/ip & udp, hyper-protocol.org , http://wiki.linktree.org, http://secushare.org , pleroma&mastodon twitter.com-clones, + why not an irc text command to use curl/wget/wget2 and also to interface with the older gopher and kermit and USENET and BBS, etc. protocols, etc.? 😏 ) 
+
+1. F(L)OSS irc+dcc apps for many hardware devices (x86, x86_64, ARMv5+, ARMv6+x64, ARMv7x64, even JavaME devices (wlirc2, virca, etc.) - desktop GUI apps (HydraIRC, AdiIRC; hexchat), CLI apps (weechat, gnuta
+for low latency & low lag, etc.?
 
 2. full support for DCC/XDCC/SDCC, including via http/https relay bridges, and with/without polling & proxies; also over Bluetooth, WiFi, IrDA, etc.
 
@@ -181,3 +184,4 @@ text chatlog messages (utf-8) | users list and status | private DM chat & its DC
 25. ... ??? npm-like extensibility via pluggable plaintext-based modules and a simple irc command to list these modules, their version, website/git, and author(s) names/nicknames & email contacts
 
 26. Something else??? Go wild, baby! 🤡😁😏😛😝😜🤪 Hit me up one more time! --- http://ircv3.org committee and contributors, do contribute, too!
+...
