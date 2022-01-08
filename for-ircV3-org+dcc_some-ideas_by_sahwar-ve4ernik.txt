@@ -152,5 +152,32 @@ https://gitlab.com/mailman/hyperkitty
 
 12. support for mirc colors & text-formatting (optional) & user avatars images (optional; 50x50px recommended: gif (incl. animated!), png, jpeg/jpg) --- e.g. via EnlightenmentDE's fancy terminal app for Linux(?!?) - or equivalent ; 
 
-13. ???
+13. a simple irc text command for 'get-chatlog/backbuffer' to pull the entire chatlog if stored on the server, within the filesystem free disk space and with a warning about the filesize, and if not enough free disk space => then do pull only the last ?KiB/MiB of the chatlog and print header and footer metainfo before&after it;
+also a subcommand to pull only a datetime-stamp range of the chatlog messages stored on the server or to pull the last ? number of chatlog messages stored on the server (all with filesize warning and calculation of how much free space is left/total filesystem disk space - as a warning or as a simple irc system chat message ; ... 
 
+14. irc command to pull/plug a plaintext i18n/t9n/l10n localized strings for the entire irc text-commands interface, with option to  let the enduser edit the said plaintext file(s) and save it (including export it as an external plaintext exported file with filesize warning) - especially in cases of missing localized/translated text strings... and an irc text command to list these installed locale files and load one of them (irc_tui_textstringslocale_en-US_utf-8.txt being the default one).
+
+15. irc text command to run/load/manipulate a hyperlinked file with the OS's default system for 'open with app/CLI command...'... 🤔
+
+16. irc text command to list utc and local datetime and a text calendar of the last x number of months, etc.
+
+17. open-source jappix-like ttp://mebbit.com-like & http://webchat.libera.chat-like html4 & html5+ online Internet WebUI for IRC
+
+18. irc text commands inspired by AdiIRC, HydraIRC, Hexchat, weechat, gnutalk, etc. - including 2-panel/3-panel/4-panel modes:
+text chatlog messages (utf-8) | users list and status | private DM chat & its DCC send file command(s) | DCC list of file transfers and related info
+
+19. irc text chat command to list the current irc server link, its irc software&irc bots&plugins (&their versions), and to display server-set constraints/limits, e.g. sex MAX_FILESIZE/TEXTCHARSSTRINGLENGTH_PER_IRC_CHATMESSAGE and other such useful info.
+
+20. irc text char command to upload a dcc transferred file to a free file storage online upload website (e.g. mediafire.com) or to send it to a user-specified email address, and if filesize=too-big, to send it as a 'split&merge into equal filesize' ? number of files (binary files are split ONLY at octet/byte boundaries to avoid data corruption and data loss! plaintext utf-8 files are split on newlines to avoid data corruption).
+
+21. irc polling and synching features and irc&dcc http/https tunnels, bridges, relays, erc. with irc text commands - taken from JavaME/j2me irc chat client apps, e.g. wlirc2, wlirc, virca, etc.
+
+22. avoidance of buffer overrruns and i/o errors in the codebase
+
+23. asynchronous IRCv3+ codebase?
+
+24. irc text chat command for setting the pixel font or ttf/otf font, including pulling from internet url or plugging from a png/gif file gnu-unifont.gif-like grid pixel font or ttf/otf font font file, with filesize warnings, and optional persistence over irc sessions, and a subcommand to display those set(tee :/) font setting
+
+25. ... ??? npm-like extensibility via pluggable plaintext-based modules and a simple irc command to list these modules, their version, website/git, and author(s) names/nicknames & email contacts
+
+26. Something else??? Go wild, baby! 🤡😁😏😛😝😜🤪 Hit me up one more time! --- http://ircv3.org committee and contributors, do contribute, too!
