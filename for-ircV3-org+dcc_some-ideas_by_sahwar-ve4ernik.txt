@@ -189,5 +189,7 @@ text chatlog messages (utf-8) | users list and status | private DM chat & its DC
 
 25. ... ??? npm-like extensibility via pluggable plaintext-based modules and a simple irc command to list these modules, their version, website/git, and author(s) names/nicknames & email contacts
 
-26. Something else??? Go wild, baby! 🤡😁😏😛😝😜🤪 Hit me up one more time! --- http://ircv3.org committee and contributors, do contribute, too!
+26. Irc text command to plug in a script file for enduser use client-side, e.g. curl, youtube-dl, .py, .pl, .lua, c., or a quoted CLI command, etc.
+
+27. Something else??? Go wild, baby! 🤡😁😏😛😝😜🤪 Hit me up one more time! --- http://ircv3.org committee and contributors, do contribute, too!
 ...
