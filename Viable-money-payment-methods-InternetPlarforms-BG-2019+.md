@@ -3,7 +3,7 @@
 > Жизнеспособни начини за печелене на пари; как да спечеля пари; работещи офлайн и онлайн методи за плащане (разплащане) и системи за разплащане с пари към 2019 г. (legal tender = законово призната разменна валута; обменна валута...)
 
 ### Ancient (_older than feudalism_) exchange methods ###
-* Physical resource(s)/energy/food&drink/sex/tech/information-data barter (or barter with additional money/etc. payment - „бартер (размяна) с доплащане“
+* Physical resource(s)/energy/food&drink/sex/tech/information-data barter (or barter with additional money/etc. payment - „бартер (размяна) с доплащане“; пари за услуга, бартер на стоки, услуга за пари, услуга за услуга, и т.н.
 * Legal, under-the-table, and 'illegal' payment via providing of services/physical goods/tech/manual (and etc.) help/information-data
 * Bidding in auctions or at local physical bazaars/market-places (for physical goods)
 * залепяне/очакване на надписи, че предлагате дадена платена услуга или че продавате дадени продукти, с вписан телефон, имейл, Viber, адрес, име/псевдоним/(реална/фалшива) фирма - като метод за контакти ((с)връзка); с опция да си откъснете част от хартията със съкратена тази информация
@@ -48,12 +48,18 @@
 ### Online ###
 * **[PayPal.com](https://www.paypal.com/)** + https://paypal.me links linked to an email and to your bank debit-card(s)-or-credit-card(s) (works with linked debit cards and credit cards, and can even be linked to bank account in some selected countries) - Elon Musk was head of PayPal.com ...
 * http://venmo.com (собственост на _PayPal_ ? )
-* **[TransferWise.com](https://transferwise.com/)** - http://wise.com, 
+* **[TransferWise.com](https://transferwise.com/)** - http://wise.com - offers IBAN debit cards in several currencies ; 
 * _http://Revolut.com_ - Revolut...
 * (ApplePay, GooglePlay store & Google Pay, PRC-China AliPay, phyre, (Apple iTunes) gift cards from Amazon.com, etc.) ; Phyre, GooglePay, ApplePay, AliPay, A1 wallet, ...
 * **[Patreon.com](https://www.patreon.com/)**
 * **[LiberaPay.com](LiberaPay.com)** (e.g. https://liberapay.com/Lutris/ ) (плащане на пари за разработчици (програмисти) на свободен софтуер и софтуер с отворен код)
+https://liberapay.com/about/faq#fees
+
+https://liberapay.com/about/global
+
+https://wiki.snowdrift.coop/market-research/other-crowdfunding
 * **[Flattr.com](https://flattr.com/)**
+
 * _https://stripe.com/_
 * http://subscribestar.com
 * ***SALT.bountysource.com*** - https://salt.bountysource.com/ (for open-source software projects, etc.) = 
@@ -61,7 +67,7 @@ https://salt.bountysource.com/ (SALT - A crowdfunding platform that helps develo
 * *https://opencollective.com*
 * * https://venmo.com/
 * FSF GNU cash & cryptocurrencies ; etc.
-* http://cash.app (CashApp; MoneyApp); 
+* http://cash.app (CashApp; MoneyApp) ???; 
 * https://beerpay.io/ (e.g. https://beerpay.io/b3by/atom-clock?focus=wish )
 * https://www.fiverr.com/ , http://freelancer.com , https://utip.io/ ( https://utip.io/abandonwarefrance )
 * https://info.tellonym.me/ , http://ko-fi.com , Instagram PrestaShop / other free mart/online-personal-website-shop software / crypto-paying websites ; и т.н.
@@ -167,7 +173,7 @@ http://etsy.com
 http://freelancer.com
 http://wework.com
 http://ebay.com , http://ebay.de , http://ebay.co.uk
-https://m.ebay-kleinanzeigen.de/einloggen
+https://m.ebay-kleinanzeigen.de/einloggen (!!!) (+google android app!)
 https://amazon.com , https://amazon.de , https://amazon.es , https://amazon.co.uk
 http://aliexpress.com , http://alibaba.com , techtablets.com , ...
 * Some Bulgarian ISPs employ this tactic:  https://en.m.wikipedia.org/wiki/Grace_period
