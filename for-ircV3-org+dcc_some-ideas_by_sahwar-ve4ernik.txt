@@ -28,7 +28,20 @@ other via URL or pluggable plugin files or installable plaintext scripts
 in-app self-hosted DC++/ADC hub(s)&client-app - even with DC++/ADC IM-functionality
 etc.
 
-4. relay-bridges to/from XMPP/Jabber (see e.g. pidgin.im, gajim, conversations.im, schildichat, kopete, gnutalk (CLI), etc.), qTox/tox.im, gitter.im, slopi-communication, http://matrix.org (SchildiChat, Signal, etc.), SIP, PSYC2/secushare.org, Jitsi/JitsiMeet, discord.com bot, BeeBEEP, Skype, Rakuten Viber, Facebook WhatsApp&Messenger, TeamSpeak, WebRTC, etc.
+4. relay-bridges to/from XMPP/Jabber (see e.g. pidgin.im, gajim, conversations.im, schildichat, kopete, gnutalk (CLI), etc.), qTox/tox.im, gitter.im, slopi-communication, http://matrix.org (SchildiChat, Signal, etc.), SIP, PSYC2/secushare.org, Jitsi/JitsiMeet, discord.com bot, BeeBEEP, Skype, Rakuten Viber, Facebook WhatsApp&Messenger, TeamSpeak, WebRTC, and
+
+https://github.com/sahwar/Bulogos/blob/master/_cheatsheets/Digital%20Communications%20Protocols.pdf
+( see also: remark42, isso comments2, etc. - embeddable comments systems , Joomla! comments plugin )
+https://about.psyc.eu/Pike
+https://about.psyc.eu/JsPSYC.html
+https://about.psyc.eu/Software
+
+https://about.psyc.eu/Software
+https://about.psyc.eu/PSYC2
+https://about.psyc.eu/Webchat
+https://about.psyc.eu/Webchat
+pleroma&mastodon twitter.com-clones, mattermost, 
+etc.
 
 5. IRCv3+ should support chatlog-history saving both on client-side & server-side, with a bot command to reicover it or save it as a local file, viewable in any modern HTML5 web-browser (Mozilla Firefox, Google Chrome, MS Edge, qutebrowser, suckless.org/surf , uzbl.org, etc.)
 The WebUI should be similar to that of the web-archive page html pages of GNUmailman email archive maillists & regex-searchable:
@@ -109,6 +122,9 @@ http://sourcefu.com
 
 Powered by philbot (a fork of ilbot). Questions? Comments? Please open an issue.
 http://irclog.greptilian.com/sourcefu/2019-05-29
+
+NOTE: The above example of an IRC chatlog presented as a webUI html4/html5 webpage webhosted somewhere - we should be able to use an IRC text command to pull the chatlog from the webserver's chatlogs database (i.e. synch the chatlog history (backbuffer in the terminology of adiirC irc chats) AND DISPLAY it in your IRC client-app above your current irc messages).
+---
 
 https://github.com/good-labs/slopi-communication
 Examples of SLOPI communication
