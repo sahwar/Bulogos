@@ -77,7 +77,8 @@ https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4364 ), 
 * suspicious: Google GPay, AppplePay, AliPay (AliExpress.com, AliBaba.com, etc.)
 * **Western Union (? Sorta reliable, mixed reviews.)** - https://www.westernunion.com/bg/en/terms-conditions-bg.html
 * **MoneyGram (? Sorta reliable, mixed reviews. Seems a bit more reliable than Western Union (?))** - http://moneygram.bg/
-* bitcoin (BTC) & other cryptocurrencies (???) (e.g. Etherium ETH, Litecoin LTC, --- see blockchain.info & do your own websearching via google.com, etc. etc.) [I PERSONALLY **DO NOT** RECOMMEND CRYPTOCURRENCIES AS A VIABLE ALTERNATIVE TO REGULAR CURRENCIES DUE TO Ponzi-scheme-like CONCERNS OVER THE NATURE&AIMS OF CRYPTOCURRENCIES/binary-options/ForEx (like casino gambling & lottary tickets...), but if you can buy/sell physical goods&services with cryptocurrencies at your current country (or some other target countries), then go for it!]
+* http://skrill.com
+* bitcoin (BTC) & other cryptocurrencies (???) (e.g. Etherium ETH, Litecoin LTC, USDcoin, etherUSD, dogecoin, etc. --- see blockchain.info & do your own websearching via google.com, etc. etc.) [I PERSONALLY **DO NOT** RECOMMEND CRYPTOCURRENCIES AS A VIABLE ALTERNATIVE TO REGULAR CURRENCIES DUE TO Ponzi-scheme-like CONCERNS OVER THE NATURE&AIMS OF CRYPTOCURRENCIES/binary-options/ForEx (like casino gambling & lottary tickets...), but if you can buy/sell physical goods&services with cryptocurrencies at your current country (or some other target countries), then go for it!]
 http://cryptocompare.com/
 https://99bitcoins.com/ethereum/ethereum-mining/
 https://www.blockchain.com/btc/address/
@@ -139,8 +140,9 @@ More:
 
 * MoneyGram - на физическо гише в техен офис или в офис на банка или онлайн през техния уебсайт: http://moneygram.bg
 
-* IBAN & SWIFT & BIC bank wire transfer
-
+* IBAN & SWIFT/BIC bank wire transfer + related bank-specific fees ; 
+* ваучери за храна на БГпощи и паричен превод чрез БГпощи (пенсионерите често си вземат пенсиите от близкия до тях местен клон на БГпощи - bgposts.bg & http://bgpost.bg )
+* парични плащания с налажен платеж към куриерски фирми Еконт, Спиди/speedy.bg, DHL, FedEx и т.н.
 
 
 ### Payment in cash ###
@@ -160,16 +162,18 @@ More:
 * ...
 
 ### Etc. ###
-* barter & bargaining ... tit-for-tat, etc.
-* Consignation
+* barter & bargaining ... & tit-for-tat, etc.
+* Consignation/консигнация
 * Re-selling (with an overprice percentage profit; see also the terms profit margins, ROI, NDA agreement, turnover / working(/circulating/floating) capital; etc. ) of goods/services, or serving as proxy, or outsourcing (?)
 * Rebranding & re-selling
 * Dropshipping (?)
-* Selling your items on Amazon.com sites, eBay.com sites (https://www.ebay.com/, https://www.ebay.co.uk/, https://www.ebay-kleinanzeigen.de/, https://www.ebaymainstreet.com/digital-density-europe/country.htm, https://www.amazon.co.uk/Ebay-Online-Shopping-Books/b?ie=UTF8&node=14288291, http://blog.linnworks.com/international-ebay-sites-list, https://tech-vise.com/how-to-easily-sell-on-ebay-usa-from-any-country-in-the-world/, https://www.ebaymainstreet.com/, https://www.ebay.com/gds/eu-european-country-list/10000000013891943/g.html, https://blog.edesk.com/resources/european-marketplaces-alternatives, **[ALL EBAY sites list](http://archive.is/5hZZi)**), Etsy.com ([alternatives](https://www.finder.com/sites-like-etsy), [alternatives2](https://www.shoplo.com/blog/sites-like-etsy/))
+* franchising - франчайзинг
+* Selling your items on Amazon.com sites, eBay.com sites (https://www.ebay.com/, https://www.ebay.co.uk/, https://www.ebay-kleinanzeigen.de/, https://www.ebaymainstreet.com/digital-density-europe/country.htm, craigslist.com , https://www.amazon.co.uk/Ebay-Online-Shopping-Books/b?ie=UTF8&node=14288291, http://blog.linnworks.com/international-ebay-sites-list, https://tech-vise.com/how-to-easily-sell-on-ebay-usa-from-any-country-in-the-world/, https://www.ebaymainstreet.com/, https://www.ebay.com/gds/eu-european-country-list/10000000013891943/g.html, https://blog.edesk.com/resources/european-marketplaces-alternatives, **[ALL EBAY sites list](http://archive.is/5hZZi)**), Etsy.com ([alternatives](https://www.finder.com/sites-like-etsy), [alternatives2](https://www.shoplo.com/blog/sites-like-etsy/))
 * [Freelancing online](https://www.quora.com/Which-are-the-best-websites-to-hire-freelancers) - freelancer.com, upwork.com
 * Продажба на handmade/craft изделия или на сувенири и стари луксозни продукти или на антики в Интернет, или платени freelancer услуги:
 http://fiverr.com
 http://etsy.com
+http://hulu.com
 http://freelancer.com
 http://wework.com
 http://ebay.com , http://ebay.de , http://ebay.co.uk
@@ -190,9 +194,9 @@ http://aliexpress.com , http://alibaba.com , techtablets.com , ...
 _([information in Bulgarian](https://www.crowdfunding.com/), [more information](https://www.fundable.com/learn/resources/guides/crowdfunding/what-is-crowdfunding))_
 * https://www.kickstarter.com/
 * https://www.indiegogo.com/
-* https://www.gofundme.com/
+* https://www.gofundme.com/ (problems making donation-pool campaigns if you are located in Bulgaria...)
 * http://buymeacoffee.com
-* физическо присъствие и кутии с дарения и ходене по улиците да молиш - но САМО за НЕфалшиви хуманитарни кампании ...
+* физическо присъствие и кутии с дарения и ходене по улиците да молиш и просиш - но САМО за НЕфалшиви хуманитарни кампании ...
 ### Extra \#1...
 
 **Cool hardware & software products**
@@ -206,6 +210,9 @@ _Recommended:_
 * Google Android M / R, Google Fuchsia OS ; Google Android v4.4.2-6/7/8/9/10+ (sadly, there exists some backwards-incompatibility and forwards-incompatibility, including among different smart-devices models and brands/vendors and model editions/versions...!)
 * ChromeOS (not my cup of tea...)
 * * Maemo* SymbianOS * BlackBerryOS 10 + GoogleAndroid GooglePlay-apps supporting framework ...
+* pandora box, phyre open hardware pc, OLPCv2+, 
+* Debian FreedomBox + olimex.org + pine minicomputers, etc.
+* etc. ... including contemporary clones of retrogaming consoles 
 
 _Also nice:_
 * http://droix.net
@@ -220,7 +227,7 @@ _Also nice:_
 * Dell XPS13+ laptop
 * Microsoft Surface Pro 2+ & stylus
 * Xiaomi Mi6, Huawei, (WARNING: MAY CONTAIN PRC-CHINA SPYWARE FIRMWARE, HARDWARE, PRE-BOOT OS, OS binary-blobs)...
-* Wacom graphics tablets, Huion & M... graphics tablets (DIGImend package for (GNU/)Linux...)
+* Wacom graphics tablets, Huion & Yyinova, XP-PEN, , artisul... graphics tablets (DIGImend package for (GNU/)Linux...)
 * shielded AC adapters & AC extender hubs with long cables
 * various AV&data&AC-power-to-DC-battery digital connector cables
 * etc. ...
@@ -229,7 +236,7 @@ _Also nice:_
 
 Some open online social-media platforms:
 - self-hosted Diaspora\*, e.g. https://framasphere.org/u/liberapay
-- self-hosted Mastodon (Twitter.com (microblogging) clone) instance, e.g. https://framapiaf.org/@Framasoft
+- self-hosted Mastodon (Twitter.com (microblogging) clone) instance, e.g. https://framapiaf.org/@Framasoft - or pleroma twitter clone instance
 - self-hosted XMPP server node - http://xmpp.org
 - Matrix protocol - http://matrix.org
 - p2p file-sharing protocols: DC++ & ADC (EiskaltDC++, DC++, LinuxDC++, etc.), WebRTC, p2p via HTTP (web-browser) file-sharing (e.g. FilePizza); OwnCloud, SyncThing, NextCloud, ProjectSend.org, mounting remote filesystems hosted on external HDDs/SSDs disks via sshfs + Linux FUSE, `f*ex` + `sexxx`, etc.
@@ -241,4 +248,4 @@ Some open online social-media platforms:
 - FreedomBox + syncloud.org
 - freedesktop.org/wiki/Software/HarfBuzz/ & Pango project & FreeType + color-computer-fonts file-specs; 
 - http://www.catb.org/~esr/netfreedom/
-- I2P, JSXC chat, Mumble audio-conferencing, gitweb/github.com/gitlab-instance/gitea version-controlled, wiki software (MediaWiki, MoinMoin, etc.), `pandoc`; https://freedombox.org/download/ irc://irc.debian.org/freedombox , https://salsa.debian.org/freedombox-team/plinth , https://wiki.debian.org/FreedomBox
+- I2P, JSXC chat, Mumble audio-conferencing, gitweb/github.com/gitlab-instance/gitea version-controlled, wiki software (MediaWiki, MoinMoin, pmwiki+pandoc, etc.), `pandoc`; https://freedombox.org/download/ irc://irc.debian.org/freedombox , https://salsa.debian.org/freedombox-team/plinth , https://wiki.debian.org/FreedomBox
