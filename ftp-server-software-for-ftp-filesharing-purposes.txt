@@ -1,0 +1,13 @@
+See 
+https://github.com/jedisct1/pure-ftpd/
+and
+curl.haxx.se 's ' ftpd.c ' file
+
+For an ftp client app, see the open-source FileZilla , winscp, Cygwin64's 'ftp' CLI app from Linux, etc.
+
+FileManager+ for Google Android, etc. file-managers for Google Android - support ftp filesharing between a Google Android smartphone and a desktop PC with the FileZilla ftp client app!
+The 'adb' CLI app for MS Windows and for Linux - can be used for file exchange between a Google Android smartphone and a PC running 'adb' in a terminal emulator (commandline shell interpreter)
+https://www.rfc-editor.org/rfc/rfc2640.txt
+utf-8 internationalized FTP protocol
+
+See also: ssh&OpenSSL, lftp, httpie, aria2c, awccg; JDownloader, youtube-dl, y-dl, WebArchive/WARC, etc.
