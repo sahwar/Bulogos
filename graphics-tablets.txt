@@ -260,4 +260,373 @@ https://www.microsoft.com/bg-bg/p/sketchable/9wzdncrfjcjw?cid=SiliconBendersWebs
 ======
 ---
 
+################################################
+https://github.com/sahwar/Bulogos/blob/master/graphics-tablets.txt
+
+
+Литературна компилация от полезна информация за графични таблети (таб
+
+графични таблети - графични таблети за дигитално (цифрово) рисуване, като активната площ за рисуване е или непрозрачна не-LCD-екран зона или (при по-яките модели) е LCD-екран
+
+марка&конкретен модел, година на производство, работоспособност/състояние (ново, използвано (работи добре), използвано (работи, но с някои проблеми/дефекти/ограничения), използвано (не работи), използвано (за продан/продажба на частите)...)
+
+чувствителност/прецизност:
+* брой нива на натиск/допир
+* (брой нива на) наклон (на писалката)
+* (брой нива на) завъртане (на писалката)
+* брой и тип и функции на писалката и на перата/върховете ѝ (например отделен eID за софтуерна персонализация на всяка и използване на няколко писалки (stylus) едновременно; "гума за триене" на обратната страна на писалката, с опция за софтуерна настройка/преконфигуриране в друг вид връх на писалката, с други софтуерни художествени четки вътре в компютърната програма за рисуване и редактиране на изображения и за ретуширане на снимки...)
+* touchscreen=graphics tablet drawing active/passive area VS. no touchscreen=separate computer display/monitor from the graphics tablet active/passive drawing area...
+* допълнителни бързи хардуерни бутони, които може да се настройват софтуерно каква функция да изпълняват (например като комбинация от клавиши на компютърната клавиатура или детен бутон на мишката или комбинации от бутоните на компютърната мишка/laptop touchpad/laptop pointing ThinkPad joystick controller)...
+* здравина&стил/красота/естетика на тялото на графичния таблет и здрава кутия/раница за гърба със защитно отделение за лаптопи, твърди дискове и т.н.
+* надраскване на площта на повърхността за рисуване на графичния таблет и опции за смяната на тази повърхност за рисуване и опции за защитата ѝ със защитно фолио или прозрачен пластмасов класьор (?!?)...
+* конкретни компютърни програми — софтуер за рисуване и редактиране на изображения
+* USB кабел за свързване (здравина, дебелина, USBv1/2/3+?, ел. захранващо USB; Lightning connector; DisplayPort/USB3+); дали USB кабелът е свързан неподвижно към таблета или може да се откача и от двата края
+* хардуерни светлинни&звукови показатели (индикатори) върху таблета и софтуерната им настройка
+* на коя OS (операционна система), нейна версия и с кои софтуерни драйвери може да се използва графичният таблет за рисуване (wacom драйвер за Linux (версия и т.н.), DIGImend драйвера за не-wacom графични таблети; допълнителен софтуер за настройка на wacom таблети; фабричен софтуер за настройка на Wacom таблети; wintab драйвера в MS Windows vs. (срещу) по-новия драйвер за графични таблети в Windows10...
+* и други...
+
+Аксесоари за графичния таблет:
+* различни видове писалки (stylus, мн. ч.: styli/styluses) и заместители на писалки и специални гумени/пластмасови чувствителни и остри (или не?) върхове/пера за писалки (nibs)
+
+Търсете за покупка от:
+
+http://amazon.com
+http://ebay.com
+*http://ebay-kleinanzeigen.de* - wacom , hp-pen, artisul, huion, asus vivotab (e.g. http://speedypainter.altavista.org ; mypaint (latest stable for Linux & all extra brush-packs loaded), krita, AzPainter, qAquarelle, DrawPile, MediBang Paint Pro, PaintToolSAI (English hack), GIMP2+/gimphoto, etc.)
+http://olx.bg
+http://bazar.bg
+http://retropcmania.bg
+(уебсайтовете на местни за България физически или само онлайн магазини за нова или втора употреба компютърна техника)
+
+Полезни програми за графични таблети:
+
+* официалните драйвери от OEM производителя,
+например драйверите на Wacom с прилежащите CLI & GUI програми:
+http://wacom.com
+* драйверите за Wacom за Linux kernel (ядрото Linux)
+https://linuxwacom.github.io/
+https://github.com/linuxwacom & google 'tablet pressure curve tool for wacom graphics tablets for MS Windows (free, it may work under Linux via wine/wine-staging (PlayOnLinux)...!)
++ вградените в Linux kernel драйвери за графични таблети Wacom
+* Linux: CLI настройки за графични таблети Wacom:
+[пример.png]
+* драйверите за не-Wacom модели графични таблети за Linux:
++ вградените в Linux kernel
++ http://digimend.github.io/
+https://github.com/DIGImend/digimend-kernel-drivers
+https://github.com/DIGImend
+
+*Основните марки графични таблети на пазара през 2021 г.:*
+Wacom, XP-PEN, Huion, [Yiynova](http://www.yiynova.eu/) (https://www.google.com/search?q=yiynova&oq=yiynova), (Microsoft SurfacePro & pen, Microsoft Surface Pro 2017 tablet, ASUS VivoTab note 8 (with Wacom digitizer), Samsung, HP, Acer, ...), Parblo, Artisul, XENCELABS, Gaomon, Bosto, Ugee, Monoprice, UClogic, ... ---> http://reddit.com/graphicstablets/
+
+* https://github.com/DIGImend/uclogic-tools
+* xp-pen Linux drivers from their official website ;
+
+
+
+* Linux CLI за настройка на видимата област
+и на екрана за целите на рисуване с графичния таблет + за multihead/multimonitor setup:
+: `$ randr`, `$ xrandr` & & `xinerama` & & `xkb` & Desktop environment -> Display Settings ; tiling-window-managers for Linux - list & tweaks & settings & supported features
+* *http://reddit.com/r/stylus* - вижте wiki-тата със списъци с модели графични таблети
+* ... за прерисуване на очертания на изображение:
+whitescreen LED-light outline screens with supporting legs and a second screen below the outliner screen
+
+* безплатната програма за допълнително наглася(ва)не на нивата на чувствителност на графични таблети на/от Wacom:
+ https://blackink.cz/tablet-pressure-curve-tool/
+Tablet Pressure Curve Tool (for Wacom tablets, 3rd-party app NOT AN IMAGE EDITOR, FREEWARE (useful for fine-tuning the pressure sensitivity of Wacom Tablets if the Wacom tablet-settings apps aren't enough for your needs)
+* wintab драйвера, вграден в Windows7 & по-новия различен драйвер за графични таблети в Windows10 & Wacom Feel driver - [Wacom feel driver](http://us.wacom.com/en/feeldriver/) + AutoHotKey & SharpKeys, ...
+
+* за хора с устройства с Google Android + лаптоп/настолен компютър с Linux:
+https://github.com/rfc2822/GfxTablet
+('draw on your PC via your Google Android device')
+* https://github.com/flamestream/taction
+('A touch panel for Windows Tablet PC Artists') (!!!)
+* Tablet Pro app for virtual hotkeys for your LCD drawing/graphics tablet!
+
+* https://github.com/xournalpp/xournalpp
+('Xournal++ is a handwriting notetaking software with PDF annotation support. Written in C++ with GTK3, supporting Linux (e.g. Ubuntu, Debian, Arch, SUSE), macOS and Windows 10. Supports pen input from devices such as Wacom Tablets.')
+* ArchLinux AUR & UbuntuForums & PuppyLinux forums - graphics tablets wiki pages & DIGImend & wacom drivers & randr/xrandr wiki help pages; AzPainter; ThinkPad X-models drawing tablers settings, etc.
+For more:
+https://github.com/sahwar?tab=stars&q=&q=tablet
+
+https://github.com/sahwar?q=tablet&tab=stars&q=tablet&q=graphics+tablet+OR+wacom
+
+* google-websearch for:
+"free app windows7 linux macOS Google Android for floating configurable panel with custom buttons to help with graphics tablets and to map specific keyboard-shortcuts & computer-mouse shortcuts for graphics-editing apps"
+
+## Програми за рисуване и списъци с технически спецификации на графични таблети:
+
+* Отворете следната Интернет е-препратка (хиперлинк, хипервръзка, URL/URI адрес):
+https://github.com/sahwar/Bulogos/blob/master/Best-free-digital-painting-image-editing-killer-apps.md
+и чрез функцията Търсене.../Search... на уеб-браузъра си, прочетете и посетете всички хипервръзки след търсене за следния текст (копирайте следния текст и го поставете за търсене чрез функцията Търсене.../Search... на уеб-браузъра си):
+
+http://reddit.com/r/stylus - wiki with tables of lists of graphics tablets
+https://www.reddit.com/r/wacom/
+Там ще намерите и голям списък с програми за рисуване, някои от които работят и с графични таблети за рисуване
+...
+
+======
+
+Ти кои графични таблети препоръчваш?
+Вече дори втора употреба не-с-екран графични таблети от wacom, xp-pen, artisul, huion вършат добра работа, дори wacom dtz-430 a4 (wacom intuos3 a4!) и дори по-стари модели;  eInk и новия pentablet драйвер за win7+ доста променят нещата; 
+За графични таблети с екрани нещата са по-сложни, но нови или работещи втора употреба wacom ux12, wacom one 13, wacom cintiq 13/16, xp-pen 12/13.3 Pro (зидължително Pro вариантите с малко parallax!), huion kamvas 13/16, yiynova, lenovo thinkpad x220T/x230t 2nd-hand, apple iPad Pro 14 + apple pen2 и тези по-долу вършат отлична работа, НО само това да тренирате умения по рисуване и да сте търпеливи и да учите от pdf книги за манга художници мангака и от видеоклипове с уроци за рисуване - ще ви направи добри рисувачи/художници, иначе дори и с най-якия графичен таблет няма да имате голям успех, ако не сте добри в рисуването на ръка с молив или маслени четки, та трябва да тренирате и то редовно! 10000 часа, за да станете експерти в дадена област/умение/професия, най-вече актьорско майсторство при всички дейности на живо с живи хора!!!
+
+https://youtu.be/d3vIa8cBzwI
+
+* galaxy book flex / flex2
+* samsung galaxy book pro 360
+* lenovo c940 i9
+* samsung 360 15" 16gb i7 2in1 + Lamy EMR stylus + matte screen protector ; 
+
+* hp spectre x360 15"
+
+* tablet pro software (freeware) for virtual hotkeys
+* Acer D7 Azel 
+* notebook 9 pro 13"
+---
+https://youtube.com/shorts/MAOb7muuCGY?feature=share
+clip studio pro
+zbrush
+blender
+https://youtube.com/shorts/MAOb7muuCGY?feature=share
+
+======
+https://siliconbenders.com/
+======
+https://youtu.be/c7FRUTHvFX8
+
+> https://youtu.be/rVAyhjNt5a0
+
+https://youtu.be/d3vIa8cBzwI
+
+* list of wacom competitors
+https://youtu.be/d3vIa8cBzwI
+
+artisul d10 drivers for linux
+
+artisul d10 review
+---
+
+https://www.brad.site/mygear/
+
+* https://www.brad.site/reviews/drawing-software.html
+
+recreate yourself and start again at your life, forget the past even if it haunts you ...
+
+---
+COMICS
+VIDEOS
+REVIEWS
+MY COURSES
+
+~to add to Bulogos
+~to add to ve4ernik's podcast : 
+Drawing Software
+
+There is a lot of drawing software. The list here is only just scratching the surface. These are the apps that I like to use.
+
+￼
+
+Adobe Creative Cloud
+
+Creative Cloud includes a LOT. Photoshop, Illustrator, Animator, and much more beyond illustration and drawing. It's also widely considered the industry standard for graphics of all kinds. The catch? It costs and arm and a leg and it also has a much steeper learning curve if you're coming in cold.
+
+Price: $50 a monthLEARN MORE
+
+￼
+
+Clip Studio
+
+I've moved Clip Studio up this list because there is now an iPad app. The desktop app has been the favorite for many a illustrator for years and the iPad app is a a feature for feature replication of the desktop app. The one downside is that the iPad app has an $8.99 a month subscription attached to it. That's a little surprising since you can usually find the desktop app on sale for less than $50.
+
+Price: $50LEARN MORE
+
+￼
+
+Sketchable
+
+Sketchable is a Windows only drawing app and the reason I like it is because of its simplicity. It doesn't do as much as some of the other drawing and painting apps out there but it's so elegant in its simplicity. It's also super smooth, pinching to zoom in and out on a touch screen is great and it really feels like it's designed for tablet computers.
+
+table-price: Free with in app purchasesLEARN MORE
+
+￼
+
+Affinity Designer
+
+The more I use Affinity Designer the more I like it. It combines the vector tools of Adobe Illustrator with many of the painting features of Adobe Photoshop. It's a pro grade for a not so Pro table-pricetag.
+
+Price: $50LEARN MORE
+
+￼
+
+Procreate
+
+If you have an iPad you need Procreate. Don't let the low table-price fool you, this is an amazing little painting app. This is the app that made me love drawing on the iPad. So simple and elegant but also deep and powerful.
+
+Price: $10LEARN MORE
+
+￼
+
+Krita
+
+Krita has really grown on me and it's free. It's one of the most robust free drawing apps availible on Windows, Mac and Linux.
+
+Price: FreeLEARN MORE
+
+￼
+
+Autodesk Sketchbook
+
+Sketchbook isn't my favorite program to draw in but I like that it's cross platform. If I draw something on Android I can open it up on my Mac or iPad. The interface is also easy to understand and pick up.
+
+Price: FreeLEARN MORE
+
+￼
+
+Medibang Paint
+
+Medibang reminds me of Clip studio with less stuff. Considering it's free it's an impressively robust drawing and painting app.
+
+Price: FreeLEARN MORE
+
+Drawing Tablet Guides
+
+Trying to figure out what's out there? What's good, what's bad? Check out the categories below
+
+￼The Best Pen Tablets
+
+￼The Best Screen Based Tablets
+
+￼The Best Windows Tablets/Laptops
+
+￼iPads and Android Tablets
+
+￼Drawing Software
+
+Join The Club!
+
+Free drawing lessons delivered to your inbox ever other week!
+
+Email Address 
+
+hello, I'm the footer!
+
+======
+
+libp2p
+
+https://www.microsoft.com/bg-bg/p/sketchable/9wzdncrfjcjw?cid=SiliconBendersWebsiteTraffic&rtc=1&activetab=pivot:regionofsystemrequirementstab
+
+---
+
+#######
+
+https://www.google.com/search?q=xp-pen+github&oq=xp-pen+git&ie=UTF-8
+
+---
+>>> digimend graphics-tablets drivers for Linux:
+http://digimend.github.io
+ https://aur.archlinux.org/packages?O=0&SeB=nd&K=wacom&outdated=&SB=n&SO=a&PP=50&submit=Go
+https://blackink.cz/tablet-pressure-curve-tool/
+by Karel Zídek
+https://archive.is/BHvGS
+https://us.wacom.com/en/feeldriver/
+https://us.wacom.com/en/feeldriver/
+https://www.wacom.com/en-th/overlays/feel-it-overlay
+---
+
+https://github.com/topics/xp-pen
+
+https://github.com/hawku/TabletDriver
+https://github.com/OpenTabletDriver/OpenTabletDriver
+opentabletdriver.net
+https://gist.github.com/rowantran/329000023ee4a64f908fb71fc044585f
+https://github.com/megamuteki/xppendriver
+https://githubhelp.com/topic/xp-pen
+https://www.xp-pen.com/topic/detail/id/85.html
+https://www.auslogics.com/en/articles/fix-xp-pen-not-working-with-a-pc/
+>>> Drivers: https://www.xp-pen.com/page/about
+
+AUR:
+https://aur.archlinux.org/packages?K=xp-pen&SB=p
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=nova&outdated=&SB=p&SO=a&PP=50&submit=Go
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=yiynova&outdated=&SB=p&SO=a&PP=50&submit=Go
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=xence&outdated=&SB=p&SO=a&PP=50&submit=Go
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=ipad&outdated=&SB=p&SO=a&PP=50&submit=Go
+https://aur.archlinux.org/packages/air-video-server
+https://aur.archlinux.org/packages/virtscreen ("Make your iPad/tablet/computer as a secondary monitor on Linux")
+
+======
+
+More non-LCD & LCD graphics tablets : 
+* asus:
+asus vivotab note 8 + its wacom asus stylus (also compatible with some wacom pen-styluses...)
+t200ta
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=asus&outdated=&SB=n&SO=a&PP=50&submit=Go
+https://aur.archlinux.org/packages/t200ta-wifi
+https://aur.archlinux.org/packages/t200ta-bluetooth
+
+* Apple, Inc.:
+apple ipod mini 6 & apple ipad pro 13-16+ (+apple pencil v1 / v2 + procreate app + autodesk sketchbook app + more...)
+
+* lenovo thinkpad:
+lenovo thinkpad x200t, x201t, _x220t_, _x230t_, ...
+
+* http://old.reddit.com/r/stylus
+
+
+======
+vjav.com
+
+http://nano-editor.org
+xemacs
+gnu emacs GUI
+vim.org GUI
+NeoVim
+SpaceMacs
+Vimacs / Vimemacs
+
+https://aur.archlinux.org/packages/ulipad-git & _PyEnchant_
+notepas
+notepadqq
+jEdit
+notepad-2mod & notepad2-mod (new github fork) & notepad3 & notepad++ (via WINE/wine-staging/PlayOnLinux)
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=medit&outdated=&SB=n&SO=a&PP=50&submit=Go
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=atom+editor&outdated=&SB=n&SO=a&PP=50&submit=Go
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=brackets+editor&outdated=&SB=n&SO=a&PP=50&submit=Go
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=jedit&outdated=&SB=n&SO=a&PP=50&submit=Go
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=geany&outdated=&SB=n&SO=a&PP=50&submit=Go
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=kedit&outdated=&SB=n&SO=a&PP=50&submit=Go
+boost.org
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=kedit&outdated=&SB=n&SO=a&PP=50&submit=Go
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=kedit&outdated=&SB=n&SO=a&PP=50&submit=Go
+
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=emmet&outdated=&SB=n&SO=a&PP=50&submit=Go
+emmet (Zen Coding) autocomplete via abbreviations-expansion
+http://caniuse.com
+http://regex101.org + notepad2-mod's & notepad2-mod (new fork)'s & notepad3's & jEdit's & pcre2's Search&Replace window-dialog GUI/UI UX&QA - to submit as a feature request for notepad++'s bug-tracker !!!
+http://mdn.mozilla.org
+http://whatwg.org
+http://w3.org
+http://ietf.org
+
+lessscss - css3 expansion :
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=scss&outdated=&SB=n&SO=a&PP=50&submit=Go
+
+https://aur.archlinux.org/packages/abuse
+
+
+---
+
+
+#######
+
+
+======
+---
+
+* what-to-do-if-you-are-used-to-hardware-QWERTY-DVORAK-etc-keyboards-but-you-need-to-use-a-modern-GoogleAndroid-or-AppleiOS-smartphone-with-a-virtual-touchscreen-keyboard.txt
+
+
+################################################
+
 * what-to-do-if-you-are-used-to-hardware-QWERTY-DVORAK-etc-keyboards-but-you-need-to-use-a-modern-GoogleAndroid-or-AppleiOS-smartphone-with-a-virtual-touchscreen-keyboard.txt
