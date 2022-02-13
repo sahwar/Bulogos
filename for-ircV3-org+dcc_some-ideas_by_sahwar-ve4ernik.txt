@@ -6,9 +6,9 @@ https://github.com/ircv3/ircv3-specifications
 
 
 
-0. server-side-set and/or enduser-set 'ensure all irc chat messages and/or dcc file transfers are sent as chunking octet/byte-boundaries-split chunked data pieces, for optimal data integrity, etc.' --- see also tcp/ip & udp, hyper-protocol.org , http://wiki.linktree.org, http://secushare.org , pleroma&mastodon twitter.com-clones, + why not an irc text command to use curl/wget/wget2 and also to interface with the older gopher and kermit and USENET and BBS, etc. protocols, etc.? 😏 ) 
+0. server-side-set and/or enduser-set 'ensure all irc chat messages and/or dcc file transfers are sent as chunking octet/byte-boundaries-split chunked data pieces, for optimal data integrity, etc.' --- see also tcp/ip & udp, hyper-protocol.org , http://wiki.linktree.org, http://secushare.org , pleroma&mastodon twitter.com-clones, + why not an irc text command to use curl/wget/wget2 and also to interface with the older gopher and kermit and USENET and BBS, etc. protocols plus hyper-protocol, WebFS, libp2p & secushare.org , RetroShare&Tor-webbrowser, NAS/USBoverEthernet, etc.? 😏 ) 
 
-1. F(L)OSS irc+dcc apps for many hardware devices (x86, x86_64, ARMv5+, ARMv6+x64, ARMv7x64, even JavaME devices (wlirc2, virca, etc.) - desktop GUI apps (HydraIRC, AdiIRC; hexchat), CLI apps (weechat, gnuta
+1. F(L)OSS irc+dcc apps for many hardware devices (x86, x86_64, ARMv5+, ARMv6+x64, ARMv7x64, even JavaME devices (wlirc2, virca, etc.) - desktop GUI apps (HydraIRC, AdiIRC; hexchat), CLI apps (weechat, gnutalk, irc.el), etc.
 for low latency & low lag, etc.?
 
 2. full support for DCC/XDCC/SDCC, including via http/https relay bridges, and with/without polling & proxies; also over Bluetooth, WiFi, IrDA, etc.
@@ -26,6 +26,8 @@ http://github.com/schollz/croc
 .torrent/WebTorrent+WebRTC/MSRS/vnc/drp  (+TEPs), .magnet, .metalink, .meta4
 other via URL or pluggable plugin files or installable plaintext scripts 
 in-app self-hosted DC++/ADC hub(s)&client-app - even with DC++/ADC IM-functionality
+jappix
+
 etc.
 
 4. relay-bridges to/from XMPP/Jabber (see e.g. pidgin.im, gajim, conversations.im, schildichat, kopete, gnutalk (CLI), etc.), qTox/tox.im, gitter.im, slopi-communication, http://matrix.org (SchildiChat, Signal, etc.), SIP, PSYC2/secushare.org, Jitsi/JitsiMeet, discord.com bot, BeeBEEP, Skype, Rakuten Viber, Facebook WhatsApp&Messenger, TeamSpeak, WebRTC, and
@@ -41,6 +43,8 @@ https://about.psyc.eu/PSYC2
 https://about.psyc.eu/Webchat
 https://about.psyc.eu/Webchat
 pleroma&mastodon twitter.com-clones, mattermost, 
+caniblink.com - BlinkPro VoIP SIP app, ekiga.org, dc++/adc hubs and client apps, etc. ; 
+
 etc.
 
 5. IRCv3+ should support chatlog-history saving both on client-side & server-side, with a bot command to reicover it or save it as a local file, viewable in any modern HTML5 web-browser (Mozilla Firefox, Google Chrome, MS Edge, qutebrowser, suckless.org/surf , uzbl.org, etc.)
@@ -54,6 +58,8 @@ PLUS in-app scrollback buffer of the chatlog-histry files, etc. + EXport/Import 
 [DONE!!!]
 https://github.com/moritz/ilbot
 https://github.com/pdurbin/philbot (example: http://irclog.greptilian.com/ ); 
+https://github.com/jbott-bot/jbott-irc2html
+
 
 http://www.jibble.org/pircbot.php/
 https://sourceforge.net/projects/ircbot/
