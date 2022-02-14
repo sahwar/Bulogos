@@ -107,7 +107,7 @@ https://sumo.app/paint/
 * [GraFX2](http://grafx2.chez.com/) [2](https://pulkomandy.tk/projects/GrafX2/downloads) _(HIGHLY RECOMMENDED)_
 * [GraphicsGale](https://graphicsgale.com) --- 
 https://graphicsgale.com/us/download.html) FREEWARE as of 2018! _(HIGHLY RECOMMENDED)_
-* [Greenfish Icon Editor](http://greenfishsoftware.org/gfie.php#apage) (FREEWARE) - https://greenfishsoftware.blogspot.com/2012/07/greenfish-icon-editor-pro.html - https://wiki.freepascal.org/File:GreenfishIconEditorProScreenshot.png)
+* [Greenfish Icon Editor](http://greenfishsoftware.org/gfie.php#apage) (FREEWARE) - https://greenfishsoftware.blogspot.com/2012/07/greenfish-icon-editor-pro.html - https://wiki.freepascal.org/File:GreenfishIconEditorProScreenshot.png) + greenfish subtitle player - overlay-translucent 
 * [Harmony (by Ricardo Cabella)](http://mrdoob.com/projects/harmony/)
 * [HermiRES (Commodore64 painting app)](http://www.nightfallcrew.com/18/03/2014/hermires-v1-29-c64-hires-bitmap-editor/) [2](http://www.nightfallcrew.com/10/02/2013/hermires-v1-26-c64-hires-bitmap-editor/)
 * [Hornil StylePix Free](http://hornil.com/products/stylepix/) FREEWARE _(RECOMMENDED)_
@@ -115,6 +115,7 @@ https://graphicsgale.com/us/download.html) FREEWARE as of 2018! _(HIGHLY RECOMME
 * [ImagePlay](https://github.com/cpvrlab/ImagePlay) OPEN-SOURCE
 * [Inkscape](https://inkscape.org/) (vector-images editor) OPEN-SOURCE _(HIGHLY RECOMMENDED)_
 * [iPaint (based on Paintbrush above, macOS)](https://sourceforge.net/projects/ipaint/) [2](http://ipaint.sourceforge.net/), [3](http://macfun.svn.beanstalkapp.com/ipaint/)
+* * JDraw - http://jdraw.sourceforge.net/index.php?page=6 - pixel-oeiented graphics editor
 * [JPixel (by emad.itch.io)](https://emad.itch.io/jpixel) _(HIGHLY RECOMMENDED)_ - 2D pixelart editor & animated-GIF editor, suitable for editing 2D gamedev jRPG-like sprites, tilesets, backgrounds, triangle-imposed vertices meshes, etc. + also see Croco3D/Crocodile3D 2D-to-3D pixelart voxel-gamedev editor + the latest AGS (Adventure Games Studio)&other free 2D/3D gamedev engines&IDEs..., etc.
 * [JS Paint (MS Paint for Windows98/XP remade using JavaScript!)](https://github.com/1j01/jspaint/) ([online](http://jspaint.app/))
 * [JugiPaint](http://jugipaint.com/) (commercial) _(RECOMMENDED)_
