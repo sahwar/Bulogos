@@ -1,0 +1,26 @@
+GNU-Unifont_Unicode-BMP_monospace-bitmap-pixel-font_useful-for-Bulgarian-BGBrailleV2-by-ve4ernik.txt
+
+...
+
+* GNU Unifont unicode-BMP pixel font (monospaced):
+http://unifoundry.com
+https://unifont.org/fontguide/
+https://unifont.org/new/
+https://unifont.org/fontaine
+https://unifont.org/vertical_layout
+
+* http://fontstruct.com/fontstructors/sahwar/
+* http://pentacom.jp - bitfontmaker2, bitfontmaker
+* fontforge app
+* birdfont app
+* http://seasoft.com/bitfontcreator - bitfontcreator pro
+* Bitmap Font Builder.exe (free!)
+* AHKv2 macro/automation-script & auto-screenshot the complete Unicode glyphs .pdf files from http://unicode.org and convert them to .png then convert them to .svg then convert them to .bdf (fontfonrge font format) then convert them to .ttf or .otf ...
+* ps2pdf
+* various pixel/bitmap fonts (usually 6x6 & 8x8 for European alphabet scripts (Greek, Cyrillic, Latin, Armenian; Etruscan alphabet, Wulfila Gothic alphabet, etc.) and 16x16 minimum for most Asian scripts (CJKVT, etc.)
+
+NOTE: You can use imagemagick and ffmpeg/libav to cut glyphs from pixel-font glyphs tables into individual .png files and then generate an animation video/animated .gif of nearly ALL Unicode characters (or just google for 'unicode screensaver' or use BabelMap or gucharmap or BabelMapOnline or graphemica.com or similar web-tools...)
+---
+❀ end ❀
+
+
