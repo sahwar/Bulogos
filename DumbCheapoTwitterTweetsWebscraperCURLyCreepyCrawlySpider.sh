@@ -1,7 +1,14 @@
 TODO: DumbCheapoTwitterTweetsWebscraperCURLyCreepyCrawlySpider-robots.txt+user-agentMasking=latestFirefoxGoogleChromeOrChromiumOrWget1/wget2.sh
 ...  
 Original idea by https://github.com/sahwar/Bulogos/
-21-February-2020, ve4ernik@gmail.com
+21-February-2020, ve4ernik@gmail.com , ve4ernik2@gmail.com
+To use with this tutorial:
+https://wertyusa1.blogspot.com/?m=0
+https://github.com/danilolc/pk2/issues/17
+gatchev.info/weblog/
+pcmania.bg
+constitution.government.bg
+https://github.com/ricardobranco777/xget , curl, wget2, wget, lftp, httpie, 
   
 
 simple Twitter.com webscraper based on:
@@ -24,11 +31,11 @@ simple Twitter.com webscraper based on:
  17. print exit and app-name+vsrsion+app-website-url string and license & print output file directory/path absolute-address to stdo and exit with success code 0.
 
  
-/with_replies
+/with_replies (!!!)
 /likes/
 /followed/
 /following/
-/images/ (shared media)
+/images/ (shared media: audio-tweets, images, animated GIFs, videos, retweet/tweet embeds, etc.)
 /lists/
 
 twitter-account self-description bio text
