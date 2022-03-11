@@ -1,0 +1,9 @@
+html2txt
+
+There are many html2txt parsers out there, including pandoc, xml/sgml-based, etc. (as well as reverse-function tools: pdf2htmlEX, img2pdf, WARC/WebArchive & archive.org / archive.is , etc.), but of the popular ones as of 11-March-2022, only the below tool has a very user-friendly function to also include all references and to numerically cite them (but maybe it should also support html2commonmark via pandoc, while retaining the extra functions of its html2txt tool? 🤔 ), which is extremely essential for a good Unicode/UTF-8-text-only representation of any .html/.xhtml/.xml webpage (though dynamic/DHTML/AJAX/async/client-side-webapps/online singlepage-apps - may not work correctly due to requiring user-action via a webbrowser or by a scriptable AHK2 or scriptable headless-webbrowser like PhantomJS, Mozilla SpiderMonkey&Rust-based-new-Firefox-Gecko-engine, etc.)!!!
+
+https://www.w3.org/services/html2txt
+(I wonder if they have that tools' source-code over at http://github.com or at non-Micro$oft http://gitlab.org or at some publicly-accessible gitea instance... hmmm... Mozilla Firefox and Google Chrome should support that html2txt tool by default as well as support a MS Edge/IE11-compatible .mht/.mhtml and also support WARC, and optional piping of saving of an individual webpage - to curl, wget, wget2, httpie, lftp, xget (github.com, NOT the irc dcc tool!...)
+
+EXAMPLE (the text is VERY POLITICALLY INCORRECT & may NOT be entirely true and may be deemed a personal speculation):
+https://www.w3.org/services/html2txt?url=https%3A%2F%2Fdumpor.com%2Fc%2F3966526655682751972
