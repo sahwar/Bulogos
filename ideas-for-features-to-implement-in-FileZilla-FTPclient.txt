@@ -12,6 +12,10 @@ LTC: ltc1qhsz5nxw6jw9rdtw9qssjeq2h8hqk2f85rdgpkr
 XMR: 42hKayRoEAw4D6G6t8mQHPJHQcXqofjFuVfavqKeNMNUZfeJLJAcNU19i1bGdDvcdN6romiSscWGWJCczFLe9RFhM3d1zpL
 ZEL: )
 
++ bundle support for git & svn for basic pull/download, diff, merge-with-conflict-resolving-and-diffs, and for basic-push/upload & git-stash: "Use Git or checkout with SVN using the web URL."
++ include optional addons to support: fossil version-control, bazaar version-control, gitea/gitlab.org/github.com, etc.
+
+(!!!)
 + Include support for:
 * bundle curl, wget, wget2, lftp, httpie, xget (github.com), youtube-dl, etc. - with filezilla ; 
 * irssiirc or mibbit.com or libera.chat - bundle basic support for IRCv3(+)-DCC/SDCC/XDCC (see AdiIRC, HydraIRC, and hexchat) & fetching RSS/ATOM webfeeds as local files
