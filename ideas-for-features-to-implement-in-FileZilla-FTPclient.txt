@@ -1,6 +1,18 @@
 ideas-for-features-to-implement-in-FileZillaFTP.txt : 
 
-Include support for:
++ add info in the 'About' window to donate to FileZilla if the use wants to:
+via http://donorbox.org
+Liberapay: https://liberapay.com/zedeus
+Patreon: https://patreon.com/nitter
+(
+cryptocurrencies are NOT a good currency, unlike private metal-coins-only currencies are, because they are NOT physical money and they are suspicious and require complex untrusted software and electricity and a computer with constant Internet connection...:
+BTC: bc1qp7q4qz0fgfvftm5hwz3vy284nue6jedt44kxya
+ETH: 0x66d84bc3fd031b62857ad18c62f1ba072b011925
+LTC: ltc1qhsz5nxw6jw9rdtw9qssjeq2h8hqk2f85rdgpkr
+XMR: 42hKayRoEAw4D6G6t8mQHPJHQcXqofjFuVfavqKeNMNUZfeJLJAcNU19i1bGdDvcdN6romiSscWGWJCczFLe9RFhM3d1zpL
+ZEL: )
+
++ Include support for:
 * bundle curl, wget, wget2, lftp, httpie, xget (github.com), youtube-dl, etc. - with filezilla ; 
 * irssiirc or mibbit.com or libera.chat - bundle basic support for IRCv3(+)-DCC/SDCC/XDCC (see AdiIRC, HydraIRC, and hexchat) & fetching RSS/ATOM webfeeds as local files
 * bundle integrated support for these protocols/webapps/CLI-tools within FileZilla as ways for p2p-filesharing:
