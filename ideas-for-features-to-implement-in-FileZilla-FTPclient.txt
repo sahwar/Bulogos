@@ -1,0 +1,32 @@
+ideas-for-features-to-implement-in-FileZillaFTP.txt : 
+
+Include support for:
+* bundle curl, wget, wget2, lftp, httpie, xget (github.com), youtube-dl, etc. - with filezilla ; 
+* irssiirc or mibbit.com or libera.chat - bundle basic support for IRCv3(+)-DCC/SDCC/XDCC (see AdiIRC, HydraIRC, and hexchat) & fetching RSS/ATOM webfeeds as local files
+* bundle integrated support for these protocols/webapps/CLI-tools within FileZilla as ways for p2p-filesharing:
+https://toffeeshare.com
+https://file.pizza
+http://fex.belwue.de + cygwin/cygwin64
+http://github.com/schollz/croc
+http://splitbrain.org/projects/filecroc
+
+Optional:
+
+mediafire.com
+drive.google.com
+soundcloud.com
+podbean.com
+locals.com - BetterBachelor on youtube.com ; rooshv.com ; 
+onedrive.com
+vcloud.com
+gfycat.com
+http://d.tube
+http://youtube.com
+
+======
+lightftpd + filezilla / ftp/ftpes/ftps/sftp-ssh ; 
+simpleftpd & filezilla
+ownCloud, NextCloud, SyncThing, Debian FreedomBox&PirateBox & Phyre DragonBox pandora open-hardware ; 
+lighttpd
+nginx
+apache-httpd
