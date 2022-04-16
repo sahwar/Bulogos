@@ -217,6 +217,26 @@ https://graphicsgale.com/us/download.html) FREEWARE as of 2018! _(HIGHLY RECOMME
 * [](?) (?)
 
 #### TO ADD TO THE ABOVE LIST & THEN SORT IT AGAIN ####
+* mqsprite
+pyqx
+https://www.pygame.org/project/5603/8120
+PxEditor 3.0.0
+https://www.pygame.org/project/3761/5864
+https://www.google.com/search?q=steamcommunity+drawing+apps&oq=steamcommunity+drawing+apps&aqs=chrome..69i57j0i546l3.13189j0j4&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8
+
+https://store.steampowered.com/app/1204050/Pixel_Studio__pixel_art_editor/
+libresprite
+https://store.steampowered.com/tags/bg/Design%20%26%20Illustration/8013/
+https://store.steampowered.com/tags/bg/Design%20%26%20Illustration/8013/#p=0&tab=TopSellers
+
+https://store.steampowered.com/software/
+https://store.steampowered.com/app/431730/Aseprite/?snr=1_1451_4__201
+https://store.steampowered.com/app/431730/Aseprite/?snr=1_1451_4__201
+https://store.steampowered.com/app/1204050/Pixel_Studio__pixel_art_editor/
+
+https://steamcommunity.com/games/1204050/announcements/detail/3190244891232309652
+http://emad.itch.io - other apps shown when downloading JPixel ; 
+
 * see the invisible HTML-comment section hidden in the webpages' source-code below (e.g. just click the 'Raw' button on the GitHub page)...
 * http://imagemagick.org - tool for converting between different image filetypes/file-formats (see also: XnView, XnViewMP, IrfanView + add-ons pack & IrfanViewX64, Imagine image-viewer (Unicode), FreeStone Image viewer, RR (roboreader) image viewer, Nomacs image viewer (frameless mode!), ShareX+ffmpeg/libav, Auto Screenshot, bahraniapps.com GifCam & VClip, JDownloader2, FlashGet, FDM, curl_x64, wget, wget_x64, wget2, lftp, httpie, nomad.net fM, mukticommander, http://convertfiles.com , http://zamzar.com , http://vcloud.com (?!?)
 * AROS DOSbox PPaint
