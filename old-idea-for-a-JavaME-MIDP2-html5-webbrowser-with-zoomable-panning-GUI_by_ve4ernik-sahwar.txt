@@ -44,6 +44,9 @@ The GUI/UI/TUI/CLI of this html5/css3/jsV6+/webRTC/libp2p/secushare.org/voip+vnc
 * basic support for getting webpages after they were put through a free machine-translation web-service (this is important!!!)
 * keyboard hotkeys and mouse gestures and keyboard-shortcuts&mouse-gestures - are NOT features which are much needed in a fucking MICRO web-browser!!! But people can code such extensions to the app, including an extended edition which runs on Google Android or iOS, or on DebianLinux_ARM64 or RISC-V-OS, etc. ...
 * You can always port such an app to TempleOS if you have a whole life to waste!!! 🤡🌍😂😅🤣
+* feature to save webpage as .WARC archive file, as utf8/original-encoding (libinconv) .txt, as a .mht/.mhtml, or as an .html-only file, or as an .html + corresponding {webpage-title}_folder folder-with-page-includes-files...
+* feature to set another user-agent string in the WebUI about:settings and to render webpage as if it was some other device with known verticalXhorizontal screen size, etc.
+* pre-caching, chunking-loading of webpages&files (see: interlaced .png and 480i&720i HD), and http relays , http-polling , etc.
 * PUT A BIG TEXT IN THE WEB-BROWSER'S WELCOME DIALOG WHICH SAYS THAT 'THE INTERNET IS NOT WHERE YOU GET REAL-LIFE HETERO SEX, PEOPLE, AND IT IS ALSO NOT SUITABLE FOR LONG-TERM DATA-STORAGE OR FOR LONG DAYING/FLIRTING SINCE LONG-DISTANCE RELATIONSHIPS NEVER WORK!!!'... 🙄 GET TOGETHER IN PERSON IRL FOR GENUINE RELATIONSHIPS!'...
 
 This idea could happen for real and be made to work on hardware-modded old JavaME feature phones running a minimal Linux distro! :) See: Phyra DragonBox & Pandora miniPC, OLPCv2+, FSF RYF hardware, and open-hardware projects, etc.
