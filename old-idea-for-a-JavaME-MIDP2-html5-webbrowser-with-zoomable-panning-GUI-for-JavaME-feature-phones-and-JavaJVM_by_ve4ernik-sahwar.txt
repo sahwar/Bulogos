@@ -1,0 +1,78 @@
+
+
+https://www.w3.org/services/html2txt
+https://github.com/ricardobranco777/xget
+
+pandoc.org
+txt2tags.org
+mediawiki.org
+
+axel
+https://github.com/ricardobranco777/xget
+https://github.com/ricardobranco777/xget
+
+~to add to ve4ernik's podcast : 
+~to add to Bulogos : 
+https://24ways.org/2005/swooshy-curly-quotes-without-images
+http://babelsoftware.co.uk/babelmap/ (babelmap Online)
+https://24ways.org/2005/swooshy-curly-quotes-without-images
+https://archive.ph/0xlTF
+http://nitter.net/
+
+https://bellard.org/
+https://bellard.org/quickjs/
+https://github.com/bellard/quickjs
+https://bellard.org/quickjs/
+https://bellard.org/projects.html
+
+https://bellard.org/tcc/
+http://cyclone.thelanguage.org/
+https://bellard.org/otcc/
+https://bellard.org/tcc/
+
+https://bellard.org/
+https://bellard.org/bpg/
+
+https://bellard.org/lte/
+fabrice@bellard.or
+https://bellard.org/
+
+ietf.org
+w3.org
+whatwg.org
+mdn.mozilla.org
+mozdev.org
+https://bellard.org/
+
+kozilla / filezilla
+mozilla
+
+mozilla.org/servo/
+webkit.org
+libwebkit
+blink-webrenderer
+geckocore_mozilla
+uzbl.org
+suckless.org/surf/ , qutebrowser, qupzilla , firefox & chrome/chromium & brave-browser & vivaldi/opera-old-webbrowser multi-rendererengine web-browser
+links2, elinks, lynx, 
+
+https://bellard.org/jslinux/
+https://bellard.org/quickjs/
+http://mattmahoney.net/dc/textdata.html
+References
+
+3. Shannon, Cluade E., “Prediction and Entropy of Printed English”, Bell Sys. Tech. J (3) p. 50-64, 1950.
+
+8. Cover, T. M., and R. C. King, “A Convergent Gambling Estimate of the Entropy of English”, IEEE Transactions on Information Theory (24)4 (July) pp. 413-421, 1978.
+
+20. Zipf, George Kingley, The Psycho-Biology of Language, an Introduction to Dynamic Philology, M.I.T. Press, 1935.
+
+Appendix A
+
+This Perl program filters Wikipedia text dumps to produce 27 character text (lowercase letters and spaces) as described in this article. To use:
+
+perl wikifil.pl enwik9 > text Then truncate the text to the desired length (e.g. 108 bytes).
+
+You can cut and paste the program below. (Note it contains URL encoding to display properly).
+
+#!/usr/bin/perl # Program to filter Wikipedia XML dumps to "clean" text consisting only of lowercase # letters (a-z, converted from A-Z), and spaces (never consecutive). # All other characters are converted to spaces. Only text which normally appears # in the web browser is displayed. Tables are removed. Image captions are # preserved. Links are converted to normal text. Digits are spelled out. # Written by Matt Mahoney, June 10, 2006. This program is released to the public domain.
