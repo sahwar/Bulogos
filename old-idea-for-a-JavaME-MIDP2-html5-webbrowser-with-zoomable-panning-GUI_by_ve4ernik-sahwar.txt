@@ -1,0 +1,125 @@
+old filename:
+old-idea-for-a-JavaME-MIDP2-html5-webbrowser-with-zoomable-panning-GUI-for-JavaME-feature-phones-and-JavaJVM_by_ve4ernik-sahwar.txt
+
+new filename:
+old-idea-for-a-JavaME-MIDP2-html5-webbrowser-with-zoomable-panning-GUI_by_ve4ernik-sahwar.txt
+
+* * *
+
+In 2019-2022, I had the idea to propose that we make an open-source html5 webbrowser for JavaME MIDP2 for feature phones and for running within a JavaJVM...
+
+I knew about the popular micro webbrowsers for JavaME feature phones: Opera Mini, and the Japan-made Bolt webbrowser, among other JavaME web-browsers, including maybe the recent JavaME edition of the Brave web-browser, and other such micro webbrowsers, most of which use WAP xHTML and http/https relays webhosted on webservers and enabling webpage-caching-like rendering of websites in a minimal way, similar to html2txt programs and similar to Fifefox's and google chrome's recent feature to render webpages with a simplified visual view (by applying predefined minimal .css to the opened .html webpage...).
+
+These technologies listed below may be useful if open-source developers decide to make such a modern html5 micro-webbrowser for JavaME MIDP2 - targeting feature phones running on JavaME MIDP2 and also targeting computers running a JavaJVM, etc.:
+
+https://www.w3.org/services/html2txt
+http://bellard.org/quickjs
+https://bellard.org/qemacs (the html2png part of that program)
+webkit & libwebkit2 ; Mozilla's Servo web-rendering engine & geckocore Gecko web-rendering engine
+ideas from http://uzbl.org web-webbrowser, and web-browsers like lynx, elinks, elinks2, suckless.org/surf , netsurf, etc.
+the html/xhtml/ftp/ftps/xml/css/.js/png/gif/jpeg/jpg/bmp/pdf/ico+other-filetypes file-downloading code from the CLI apps wget, wget2, curl, aria2c, lftp, httpie, axel, etc. - plus http://mebbit.com-like basic support for ircV3 WebUI & xdcc/dcc/sdcc & http://github.com/schollz/croc & https://toffeeshare.com & http://file.pizza & aria2c-torrent&dht&.magnet-code for p2p filesharing, etc.
+
+IMPORTANT:
+The GUI/UI/TUI/CLI of this html5/css3/jsV6+/webRTC/libp2p/secushare.org/voip+vnc+ekiga/linphone micro web-browser for JavaME should offer these special features for navigating within downloaded/loaded webpages and opened local files:
+* zooming in & out, and also panning (panning as in the GIMP and in GUI image-viewers when you can navigate in all 2D directions in a zoombed-in 2D raster image!)
+* open http/https/ftp/ftps webpages and files webhosted on such 
+* open local files from phone internal memory and/or from inserted&detected memory card(s)
+* connect to the Internet, including via Bluetooth and via USB/USB-compatible-cable and via WiFi&WiFi Direct&hotspot and via EthernetRJ45-cable->USB adapter and via IrDA infrared port/adapter, including via Internet-sharing tethering from another computer/device and from a WiFi-hotspot WiFi-router or 2G/3G/4G/4G cell-tower's wireless duplex signal...
+* compact code to fit into the maximum filesize for a .jar JavaME app and utilize all available mini-RAM of the feature phone or microcontroller or micro-PC/mini-PC/embedded-device
+* ability to run within a JavaJVM hosted on jslinux/jslinux and ability to run on a minimal Linux distro based on LFS or BLFS (Beyond Linux From Scratch) and ability to run on a minimal Google Android <>=4.4 OS & androidX86 OS, and ability to run in a GUI-wrapper running under a customized BusyBox CLI environment, possibly utilizing tcc from bellard.org , etc.
+* some programming code may be borrowed from AlbiteReader and from lightweight webbrowsers, and from lightweight image viewers, as well as from other free, libre, and open-source software...
+* the web-browser should have basic TUI/GUI/UI/CLI interface menus&buttons&a simple WebUI about:settings, and it should support running .js scripts/bookmarklets client-side (with a warning and auto-kill in case RAM and/or ROM-memory and/or memory-card space is filled or could be filled soon...), and it must support a short WebUI help file with hyperlinks
+* the micro web-browser must include a simple update from Internet system, to download another version of the web-browser or to revert to the previous version or to an earlier version (the .jar must create a file listing versions known to work without much problems on the current device), and such updates may also be installed via local files from bluetooth or from internal memory or from memory card, etc.
+* basic support for loading the text of the GUI/UI/CLI messages in another language - via loading a local-or-Internet .ini utf8 file - must be present...
+* GNU Unifont, Terminus font, etc. pixel fonts may be used in a compressed form, with the option to load another such font instead of those or alongside them...(?!?)
+* basic support for playing&plahback&seeking-within Internet-hosted videos can happen via a client-side code which on-the-fly downloads Xmin:Ysec of the video file (or a specific hard-coded limit listed in the bundled manual/instructions file) and converting it to an animated .gif or mpegts/mpeg-1 video, with a separate minified audio file bundled in the same webpage with the animated gif / mpegts/mpeg-1 video file, and basic GUI/TUI to load the previous or next or specific part-file chunk of the total size of the original video file on some Internet website or of a local video file.... this is a sort of a hack to enable loading and playing&playback of video files, but it should work within the constraints of (a hacked or modified) JavaME .jar app such as this micro html5 webbrowser.
+* openGL or bellard.org's micro GL - in the form of WebGL - is not a priority as a feature, but emscripten and llvm could be useful as well as bellard.org's tcc for C-to-JavaME code includes/hooks/embedding-of-one-programming-language-into-another-programming-language-written-sourcecode/app...
+* We may have to write a new OS for JavaME devices to make this project possible... BusyBox and LinuxFromScratch Linux & BLFS (Beyond Linux From Scratch), Clojure/ClojureScript/LISP - may be useful for this...
+* MIDletPascal IDE - seems useful to aid in the writing of this app but it seems abandoned and rather constrained in its support for Pascal programming-language within JavaME source-code... 🙄
+* basic support for saving files to internal memory, or to another computer via USB-cable or via bluetooth or IrDA infrared, or via WiFi-Direct filesharing - to external files, seems like a neat feature to have, especially saving Internet-downloaded webpages and files - to USB-OTG-connected USB-flashstick or hdd/ssd!!! And then filesharing p2p via ircV3+&xdcc via IrDA/bluetooth/WiFi-Direct/etc.
+* basic support for .rss/.atom webfeeds and pure-ftpd, and ssh/sftp - including via MIDPssh .jar app's source-code...
+* basic support for WebRTC, rtmp, rtsp/rtsm, Shouttcast/icecast & especially WebUI extension/addon which offers basic VoIP&IM-chats&p2p-filesharing & videocall (using the same code as the video file to animated gif chunking hack!)
+* the web-browser's website may offer a system to build customized editions of the app with proper labels in the filename and in the auto-generated bundled instructions file - which list what is different from the default version...
+* basic changelog.txt file (bundled out-of-the-box or hyperlinked in the bundled instructions file)
+* basic support for getting webpages after they were put through a free machine-translation web-service (this is important!!!)
+* keyboard hotkeys and mouse gestures and keyboard-shortcuts&mouse-gestures - are NOT features which are much needed in a fucking MICRO web-browser!!! But people can code such extensions to the app, including an extended edition which runs on Google Android or iOS, or on DebianLinux_ARM64 or RISC-V-OS, etc. ...
+* You can always port such an app to TempleOS if you have a whole life to waste!!! 🤡🌍😂😅🤣
+* PUT A BIG TEXT IN THE WEB-BROWSER'S WELCOME DIALOG WHICH SAYS THAT 'THE INTERNET IS NOT WHERE YOU GET REAL-LIFE HETERO SEX, PEOPLE, AND IT IS ALSO NOT SUITABLE FOR LONG-TERM DATA-STORAGE OR FOR LONG DAYING/FLIRTING SINCE LONG-DISTANCE RELATIONSHIPS NEVER WORK!!!'... 🙄 GET TOGETHER IN PERSON IRL FOR GENUINE RELATIONSHIPS!'...
+
+This idea could happen for real and be made to work on hardware-modded old JavaME feature phones running a minimal Linux distro! :) See: Phyra DragonBox & Pandora miniPC, OLPCv2+, FSF RYF hardware, and open-hardware projects, etc.
+
+
+FURTHER USRFUL INFO:
+
+https://github.com/ricardobranco777/xget
+aria2c, curl, wget, wget2
+pandoc.org
+
+
+Some further related software and information:
+txt2tags.org
+mediawiki.org
+
+axel
+https://github.com/ricardobranco777/xget
+https://github.com/ricardobranco777/xget
+
+
+
+https://bellard.org/
+https://bellard.org/quickjs/
+https://github.com/bellard/quickjs
+https://bellard.org/quickjs/
+https://bellard.org/projects.html
+
+https://bellard.org/tcc/
+http://cyclone.thelanguage.org/
+https://bellard.org/otcc/
+https://bellard.org/tcc/
+
+https://bellard.org/
+https://bellard.org/bpg/
+
+https://bellard.org/lte/
+fabrice@bellard.or
+https://bellard.org/
+
+ietf.org
+w3.org
+whatwg.org
+mdn.mozilla.org
+mozdev.org
+https://bellard.org/
+
+kozilla (a mocking nickname for ve4ernik/sahwar) & filezilla
+mozilla firefox's geckocore
+
+mozilla.org/servo/
+webkit.org
+libwebkit
+blink-webrenderer
+geckocore_mozilla
+uzbl.org
+suckless.org/surf/ , qutebrowser, qupzilla , firefox & chrome/chromium & brave-browser & vivaldi/opera-old-webbrowser multi-rendererengine web-browser
+links2, elinks, lynx, 
+
+https://bellard.org/jslinux/
+https://bellard.org/quickjs/
+http://mattmahoney.net/dc/textdata.html
+References
+
+3. Shannon, Cluade E., “Prediction and Entropy of Printed English”, Bell Sys. Tech. J (3) p. 50-64, 1950.
+
+8. Cover, T. M., and R. C. King, “A Convergent Gambling Estimate of the Entropy of English”, IEEE Transactions on Information Theory (24)4 (July) pp. 413-421, 1978.
+
+20. Zipf, George Kingley, The Psycho-Biology of Language, an Introduction to Dynamic Philology, M.I.T. Press, 1935.
+
+Appendix A
+
+This Perl program filters Wikipedia text dumps to produce 27 character text (lowercase letters and spaces) as described in this article. To use:
+
+perl wikifil.pl enwik9 > text Then truncate the text to the desired length (e.g. 108 bytes).
+
+You can cut and paste the program below. (Note it contains URL encoding to display properly).
+
+#!/usr/bin/perl # Program to filter Wikipedia XML dumps to "clean" text consisting only of lowercase # letters (a-z, converted from A-Z), and spaces (never consecutive). # All other characters are converted to spaces. Only text which normally appears # in the web browser is displayed. Tables are removed. Image captions are # preserved. Links are converted to normal text. Digits are spelled out. # Written by Matt Mahoney, June 10, 2006. This program is released to the public domain.
