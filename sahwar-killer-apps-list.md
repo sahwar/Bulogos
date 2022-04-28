@@ -1,5 +1,7 @@
 # A list of my favorite killer-apps for daily use (Software Tools of the Trade) (2019) #
 > by https://github.com/sahwar 
+> списък с полезни програми за Майкрософт Уиндоус, (ГНУ)Линукс дистрибуции, макОС (макинтошОС), БСД (BSD), Гугъл Андроид, айОС (iOS), и други --- повечето програми в този списък са свободен софтуер с отворен код и/или безплатни (freeware) ; 
+> Съставител: ve4ernik2@gmail.com
 > 
 > **NOTE:** A 'killer app' means a _very popular and/or very useful piece of computer (application) software, usually the best (or among the best) and/or only tool in its category (use case / functionality)_.
 
