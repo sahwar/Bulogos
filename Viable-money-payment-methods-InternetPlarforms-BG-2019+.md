@@ -66,6 +66,18 @@ https://wiki.snowdrift.coop/market-research/other-crowdfunding
 https://salt.bountysource.com/ (SALT - A crowdfunding platform that helps developers earn a monthly salary from open-source software) (e.g. https://salt.bountysource.com/teams/neovim)
 * *https://opencollective.com*
 * * https://venmo.com/
+* just paste receiver info you can use, for 
+* WesternUnion in USA, 
+* and for paypal.me/yournameornicknamehere 
+* and for 
+* MoneyGram and 
+* IBAN... 
+* there are many other ways to send and receive money online, but I ain't got the time to research them, though I know about 
+* revolut,
+*  wise.com, 
+* liberapay.com , opencollective.com , 
+* stripe.com
+* ... BITCOINcash
 * FSF GNU cash & cryptocurrencies ; etc.
 * http://cash.app (CashApp; MoneyApp) ???; 
 * https://beerpay.io/ (e.g. https://beerpay.io/b3by/atom-clock?focus=wish )
@@ -223,11 +235,11 @@ _Also nice:_
 * Samsung Galaxy Note 4+ + its Wacom stylus + GitHub.com package about Android+Linux digital drawing (search in github.com/sahwar's starred or cloned repositories...)
 * Samsung Galaxy S4+
 * Huawei P30 smartphone
-* refurbished perfect-working 2nd-hand Lenovo ThinkPad's (from X60&P60 up, not ancient models... X200T, X201T, X220T, X220, X230, T400, ...)
+* refurbished perfect-working 2nd-hand Lenovo ThinkPad's (from X60&P60 up, not ancient models... X200T, X201T, X220T, X220, thinkpad X230T, T400, T420, w520...)
 * Dell XPS13+ laptop
-* Microsoft Surface Pro 2+ & stylus
+* Microsoft Surface Pro 2+ & related stylus
 * Xiaomi Mi6, Huawei, (WARNING: MAY CONTAIN PRC-CHINA SPYWARE FIRMWARE, HARDWARE, PRE-BOOT OS, OS binary-blobs)...
-* Wacom graphics tablets, Huion & Yyinova, XP-PEN, , artisul... graphics tablets (DIGImend package for (GNU/)Linux...)
+* Wacom graphics tablets, Huion & Yyinova, XP-PEN, artisul... graphics tablets (DIGImend package for (GNU/)Linux...)
 * shielded AC adapters & AC extender hubs with long cables
 * various AV&data&AC-power-to-DC-battery digital connector cables
 * etc. ...
