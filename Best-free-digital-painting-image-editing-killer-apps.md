@@ -6,7 +6,7 @@ Ultimate list of image editing, graphics editing, digital drawing/sketching(/pro
 This list is particularly suitable for people who add graphics-editing art-software to their Linux distro (or who package art software for related repositories , i.e. compiled binary-from-source packages) and for people who use computers mostly for digital/mixed-media art production/editing.
 
 _THERE ARE STILL SOME APPS TO ADD TO THIS LIST SO DON'T CONSIDER IT TOO COMPLETE EVEN THOUGH IT **IS** AIMING AT BEING COMPREHENSIVE_
-https://github.com/LazyZhu/wdt
+https://github.com/LazyZhu/wdt - schollz/croc & toffeshare.com & https://file.pizza & http://fex.belwue.de + ircV3+-XDCC/DCC/SDCC
 
 
 https://github.com/common-voice/common-voice
@@ -141,6 +141,10 @@ https://graphicsgale.com/us/download.html) FREEWARE as of 2018! _(HIGHLY RECOMME
 * [mtPaint](http://mtpaint.sourceforge.net/) [2](http://sourceforge.net/projects/mtpaint/files/mtpaint/) _(RECOMMENDED)_
 * [MyBrushes (macOS)](?) (commercial)
 * [MyPaint](http://mypaint.org/) OPEN-SOURCE _(HIGHLY RECOMMENDED)_
+* https://github.com/jplloyd/jpl-mypaint-experimental
+https://github.com/mypaint/mypaint/releases/tag/v2.0.1
+https://github.com/jplloyd/jpl-mypaint-experimental
+https://github.com/jplloyd/jpl-mypaint-experimental/releases/tag/v1.2.1-legacy
 * [openCanvas](http://www.portalgraphics.net/en/oc/) (commercial)
 * [OpenToonz + GTS (by anime-makers Studio Ghibli&DWANGO!)](https://opentoonz.github.io/e/) [2](https://github.com/opentoonz/dwango_opentoonz_plugins) [3](https://github.com/opentoonz/opentoonz) [4](https://github.com/opentoonz/GTS) _(HIGHLY RECOMMENDED)_
 * [Paint of Persia](https://dunin.itch.io/ptop) (a pixel-art rotoscoping tool useful for making pixel-art sprites&animations) _FREEWARE_ (Windows, macOS, Linux) _RECOMMENDED_
