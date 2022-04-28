@@ -19,6 +19,82 @@ webkit & libwebkit2 ; Mozilla's Servo web-rendering engine & geckocore Gecko web
 ideas from http://uzbl.org web-webbrowser, and web-browsers like lynx, elinks, elinks2, suckless.org/surf , netsurf, etc.
 the html/xhtml/ftp/ftps/xml/css/.js/png/gif/jpeg/jpg/bmp/pdf/ico+other-filetypes file-downloading code from the CLI apps wget, wget2, curl, aria2c, lftp, httpie, axel, etc. - plus http://mebbit.com-like basic support for ircV3 WebUI & xdcc/dcc/sdcc & http://github.com/schollz/croc & https://toffeeshare.com & http://file.pizza & aria2c-torrent&dht&.magnet-code for p2p filesharing, etc.
 
+
+https://validator.w3.org/#validate_by_uri+with_options
+
+curl, wget, wget2, lftp, httpie, ... webcounter.net ; 
+https://www.w3.org/services/html2txt/http://videoc.free.fr/laxiuspower/walkthru/walkthru/
+
+https://www.w3.org/services/html2txt?url=http%3A%2F%2Fsites.google.com%2Fview%2Fve4ernik&noinlinerefs=on&nonums=on&endrefs=on&internalrefs=on
+https://www.w3.org/services/html2txt?url=http%3A%2F%2Frpgmaker2000.narod.ru%2Fidraw%2Fidraw3.htm&endrefs=on&internalrefs=on
+
+http://blog.ve4ernik.photo
+$Date: 2018/02/22 04:19:15 $
+libp2p, secushare.org , wiki.linktree.info
+
+html5.org
+https://validator.w3.org/
+https://validator.w3.org/unicorn/
+https://validator.w3.org/#validate_by_uri+with_options
+https://validator.w3.org/#validate_by_upload+with_options
+https://validator.w3.org/#validate_by_input+with_options
+
+---
+http://solhsa.com/textfx/index.html
+http://solhsa.com/files.html
+https://www.w3.org/services/html2txt
+````
+EXAMPLE:
+
+
+https://www.w3.org/services/html2txt
+
+
+html2txt
+URL: [_______...]
+http://rpgmaker2000.narod.ru/idraw/idraw3.htm
+
+ [_]	 don't include references inline with the text
+ [_]	 don't include numbers next to references
+ [_]	 include an extra list of references at the end
+ [_]	 don't skip document-internal references
+ 	 
+Gerald Oskoboiny
+gerald@w3.org
+Last updated: $Date: 2016/06/29 21:27:49 $ by $Author: gerald $
+````
+
+http://sol.gfxile.net/ft_prev5.zip
+http://solhsa.com/
+http://solhsa.com/ www.iki.fi/sol/
+http://solhsa.com/textfx/index.html
+
+
+http://solhsa.com/textfx/index.html - video2asciiart-colored - see also: figlet.org & ASCIIgen.NET
+http://solhsa.com/files.html
+http://solhsa.com/stuff.html
+
+video2asciiart-animation
+image2asciiart-colorUTF8
+http://solhsa.com/textfx/index.html
+http://solhsa.com/files.html
+https://www.w3.org/services/html2txt
+
+pandoc
+pdf2htmlEX
+img2pdf
+
+calibre-ebook , fbreader2
+chitanka.info/tools/
+sigil-ebook-editor
+scribus + nvu / html-editor GUI ; notepad++, notepad2-mod (+new fork), notepad3, NeoVim, SpaceMacs, bellard.org/qemacs/ = the html5png part of that software/app/program's source-code
+libquant
+gifsicle + gifdisassembler + gifoptimizer ; apng, mng , bng ; 
+waifu2x
+---
+
+-----------
+
 IMPORTANT:
 The GUI/UI/TUI/CLI of this html5/css3/jsV6+/webRTC/libp2p/secushare.org/voip+vnc+ekiga/linphone micro web-browser for JavaME should offer these special features for navigating within downloaded/loaded webpages and opened local files:
 * zooming in & out, and also panning (panning as in the GIMP and in GUI image-viewers when you can navigate in all 2D directions in a zoombed-in 2D raster image!)
@@ -109,6 +185,7 @@ links2, elinks, lynx,
 https://bellard.org/jslinux/
 https://bellard.org/quickjs/
 http://mattmahoney.net/dc/textdata.html
+
 References
 
 3. Shannon, Cluade E., “Prediction and Entropy of Printed English”, Bell Sys. Tech. J (3) p. 50-64, 1950.
