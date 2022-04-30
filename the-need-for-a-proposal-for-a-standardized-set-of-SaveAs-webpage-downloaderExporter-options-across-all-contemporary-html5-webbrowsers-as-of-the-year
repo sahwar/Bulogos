@@ -1,0 +1,36 @@
+the-need-for-a-proposal-for-a-standardized-set-of-SaveAs-webpage-downloaderExporter-options-across-all-contemporary-html5-webbrowsers-as-of-the-year-2019-2022+.txt
+Source:
+https://github.com/sahwar/Bulogos/
+
+
+
+(1) .txt (original encoding or converted to UTF-8 ; with/without http://w3.org/services/html2txt/ additional options (&additions to those...) activated for the conversion from html to txt!)
+(2) .html/.htm/.xhtml/.xml/.php/etc. ONLY
+(3) .html (complete = also known as "{original title}.html + {original title}_folder which includes all external resources hyperlinked within the html for inline display within the weblage)
+(4) .mht / .mhtml (MIME-encoded .html file similar to Mozilla's older .MAFF file-format and similar to the archive.org's .WARC file-format and github's WebArchive file-format!!!) - this is already used by Google Chrome / Chromium and MS Edge, so it should be standardized across the mainstream webbrowsers as a built-in library module - thus also shipped by default with newer versions of Firefox
+(5) .WARC (which version? git-snapshot hyperlink should be mentioned in the web-browser's bundled/built-in documentation, available as a .man page rendered as an .html webpage with images, tables, embedded videos {listed alongside their source URL or just as ther source URL!}), github.com's WebArchive repo, the best among the custom file-formats used by the most popular stable rock-solid webpage-archival extensions for Firefox&GoogleChrome, and maybe Mozilla's .MAFF ... 
+(6) wget / wget2 / curl / lftp / httpie / aria2c / axel --- the long arguments which download the full .html and all corresponding resources for that webpage's contents)
+(7) all mainstream webbrowsers SHOULD support CLI-based '$ {webbrowser-executable-here} {some of the web-browser's downloader-viewer CLI-arguments-here} {URL or urllist.csv/urllist.txt to download}' redirection-piping to CLI-based pandoc & to CLI-based webpage/file-downloader apps/scripts --- this ensures that one can download any webpage or web-file via the headless/GUI-less CLI command of the webbrowser and then optionally redirect/pipe it to be converted into another fileformat via pandoc or another CLI-based app/script, e.g. conversion to .md (CommonMark flavor or GHMD flavor) via pandoc ; related CLI apps to consider: img2pdf (python3-based), html2pdfEX, imagemagick, imageconvertall (github repository), gifsicle, doc2html, docx2html, rtf2html, UnTIDY, princeXML, xml/sgml engines, etc.
+(8) html(orAnyFileDownloadedOpenedByTheWebBrowser)2png (may be borrowed from webpage-to-fullsized-screenshot webbrowser extensions like the screenshot-functionality 3rd-party add-ons for Mozilla Firefox [or forks of that html5 webbrowser] OR FOR the Google Chrome (or Chromium) [or derivatives/forks thereof, i.e. of that html5 webbrowser] extensions, Apple Safari, IE11/ms-Edge, Opera/Vivaldi, Brave webbrowser, etc.
+(9) html2pdf (with options, including some novel ones borrowed from http://w3.org/services/html2txt ! ) via wkhtml2pdf / NovaPDF virtual-printer / pandoc / PrinceXML / Sigil ePub-ebook-editor epub2pdf [+optional feature to embed the original webpage as .WARC / .mht/.mhtml / (.html & _folder).zip as a PDF attachment with a datetime-stamp'd {datetime}{original-URL}{original html title}.fileextension filename [like LibreOffice can embed the original editable .odt file as an attachment to a converted odt2pdf pdf file, or like how Adobe Reader DC has the free but-sorta-deeply-hidden-in-the-GUI-menus functionality to insert a file as an attachment embedded in the .pdf file...]
+(10) See 'NOTE-03' below...
+
+NOTE-01: IT IS OF GREAT IMPORTANCE THAT THE WEB-BROWSER SHOWS THE FILESIZE OF SUCH SAVED FILES, THE TOTAL FILESIZE OF ALL SAVED FILES BY THE WEB-BROWSER, AND THE FREE-SPACE AND TOTAL-SPACE OF THE FILESYSTEM ON WHICH THE FILES ARE WRITTEN, SO THAT THE USER BE AWARE OF FILESIZE CLIMITS AND TRANSFER THE FILES TO ANOTHER HDD/SSD/USB-FLASHSTICK-VIA-OTG-CABLE - IF THE NEED ARIAES DUE TO FILLING UP OF THE INTERNAL MEMORY OF THE SMARTPHONE/SMART-DEVICE/DIGITAL-TABLET/DESKTOP-WEB-BROWSER'S LAPTOP/DESKTOP/MINIPC'S FILESYSTEM ON SOME VIRTUAL PARTITION/VOLUME OF SOME HDD/SSD/M.2 SSD/HYBRID-SHHD/USB-FLASH/ETC. THIS IS ALSO USEFUL SO THAT THE USER KNOWS THE FILESIZE OF THE SAVEAS-EXPORTED FILE(S-BUNDLE) FOR THE PURPOSES OF (P2P) FILESHARING AND ARCHIVAL/'LONG(ER)-TERM-STORAGE/DATAHOARDER PURPOSES!!!
+In case of filename renaming of such downloaded files (e.g. via a file-manager app!), this should be reflected in the web-browser's downloads-manager page/viewer/lister, unless the file has been moved to a different location within the filesystem - BUT that should still show the filesize of total free and total max filespace within the filesystem, etc.
+NOTE-02: The CLI-apps mentioned above in section (6) may wish to add the above SaveAs-Exporter downloader options to their app, maybe as as a plugin/library - potentially bundling it by default with newer versions of said CLI apps...
+ve4ernik/sahwar believes that these ~9 SaveAs-Exporter downloader options should be enough/sufficient for all or most contemporary mainstream web-browsers to support (by default out-of-the-box, or as a plugin/extension-addon/script/bookmarklet), maybe even CLI webbrowsers...
+NOTE-03: Google Chrome / Chromium, and Mozilla Firefox - both have 3rd-party extensions/addons and .js bookmarklets which enable you to submit a currently opened-downloaded webpage/web-file - to one of many  free web-archiving websites, e.g. archive.org , archive.is , google cache, etc. - along with a warning about possible rate limits for using that service per minute/hour, this functionality may be regarded/considered as section (10) of the above list, due to its potential usefulness... naturally, for as long as these free web-archiving websites are online and their data-storage webservers enable the viewing of such saved webpages or web-files...
+---
+Unrelated but useful partial list of web-browser web-renderer engines (search http://wikipedia.org for a more complete list!):
+
+* libwebkit
+* libwebkit2
+* PhantomJS (headless html5 webbrowser?) & related tools like npm.js, ElectronJS, Vue.js, qQuery.js, html5normalizer.css (from http://snipplr.com & http://commandlinefu.com ? )
+* libgeckocore (firefox's web-renderer?!? 🤔🙄 )
+* blink web-renderer engine of Google Chrome & Chromium (fork of apple safari's webkit2+)
+* Mozilla's experimental Servo (Rust-programming-language-based) html5 web-renderer engine & SpiderMonkey JavaScriptV6+-engine (see also http://bellard.org 's quickJS JavaScript-engine...)
+
+---
+Does the html5-capable webbrowser pass the Acid1/Acid2/Acid3 html5 webrendering test, the w3.org new webpage validator, and the Mozilla MozDev MDN.mozilla.org web-validator tool, and the WebRTC&WebStorage&etc. web-validator tests??? 🙄🤔
+
+#######
