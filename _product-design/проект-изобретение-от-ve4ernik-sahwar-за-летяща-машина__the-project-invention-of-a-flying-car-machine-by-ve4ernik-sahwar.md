@@ -8,6 +8,11 @@ DESCRIPTION: In the years 2019-2022+, ve4ernik-sahwar had the idea to make an in
  
  Recently, ve4ernik-sahwar saw an article inside an advertizing brochure for a local pharmacy shop, and the article featured a similar invention to that by ve4ernik-sahwar described above BUT the invention in the article was only a rubber sphere-ball transparent vehicle with the human operator inside of it like in a hamster's wheel-cage and is only for land use or for use on water (similar to a safety air-balloon-like vest for floating on water in case of emergencies)... You can see the 2 pages of that article hyperlinked below for reference (the photos of the article were shot by ve4ernik-sahwar on 30-April-2022):
  
+ https://drive.google.com/file/d/1i9-Z9liuRwx-NKj1nCo9eo08dOEVYvGt/view?usp=drivesdk
+ (full-resolution image, the Bulgarian-language text is readable in this version and not so readable in the version below...)
+ 
+ 
+ 
  https://i.ibb.co/2NRBJwN/zorb-transparenttranslucent-sphere-ball-human-vehicle-for-land-and-water.jpg
  
  <a href="https://ibb.co/m8d7pm8"><img src="https://i.ibb.co/2NRBJwN/zorb-transparenttranslucent-sphere-ball-human-vehicle-for-land-and-water.jpg" alt="zorb-transparenttranslucent-sphere-ball-human-vehicle-for-land-and-water" border="0"></a>
