@@ -1,4 +1,6 @@
 * https://github.com/sahwar/Bulogos/blob/master/ALL-DICTS_sorted.md
+* plaintext version (версия във вид на „суров текст (с кодировка: UTF-8)“: https://github.com/sahwar/Bulogos/raw/master/ALL-DICTS_sorted.md
+* 
 * 
 * 
 * # ALL DICTIONARIES - ВСИЧКИ РЕЧНИЦИ - ALL-DICT_sorted7.md
