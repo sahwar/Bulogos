@@ -33,7 +33,8 @@ http://addons.mozilla.org - the addons found when searching for 'Bulgarian' or '
 
 
 https://nitter.net/GeneralMelchett/status/1519962364614959104#m
-джиджавки (ГПИ), ГПИ контроли, джунджурии (ГПИ), „уиджети“ (ГПИ) = GUI widgets/controls - "копчета, щракалки, метърчета и други джиджавки на фацата"
+
+джиджавки (ГПИ), ГПИ контроли, джунджурии (ГПИ), „уиджети“ (ГПИ) = GUI widgets/controls: "копчета, щракалки, метърчета и други джиджавки на фацата"
 
 
 
