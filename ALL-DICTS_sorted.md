@@ -1245,7 +1245,15 @@ perapera.xpi - English-Japanese/-Chinese Dictionary pop-up applet add-on/extensi
 + http://babelstonesoftware.co.uk - online BabelMap full-Unicode character-map character search & find
 + http://graphemica.com - another online Internet Unicode character map
 + ...
-+ 
+
+https://github.com/sahwar?tab=repositories&q=dic&type=&language=&sort=
+FreeDict project & StarDict project
+http://dicts.info/uddl.php
+http://proz.com
+https://en.wikipedia.org/wiki/Japanese_dictionary
+http://facebook.com/groups/ - групи по лингвистика, езикознание, български език и т.н.
+http://kaksepishe.com + http://pavlinav.wordpress.com
+
 --------------------------------------------------------------------------------
 
 RANDOM CRAP:
