@@ -2,7 +2,7 @@
 * 
 * 
 * # ALL DICTIONARIES - ВСИЧКИ РЕЧНИЦИ - ALL-DICT_sorted7.md
-* # Възможно е на места да има дублиращи се редове, както и правописни грешки (typos) или вече неактивни хипервръзки. Ако желаете да предложите редакции, корекции или да добавим други речници към този файл, изпратете ми е-писмо до <ikurdov10@gmail.com> или <ve4ernik@gmail.com>, като споменете името на този файл.
+* # Възможно е на места да има дублиращи се редове, както и правописни грешки (typos) или вече неактивни хипервръзки. Ако желаете да предложите редакции, корекции или да добавим други речници към този файл, изпратете ми е-писмо до <ikurdov10@gmail.com> или <ve4ernik2@gmail.com>, като споменете името на този файл.
 * # ТЪРСЕНЕТО в речника е най-лесно с командата "Търсене в страницата..." в менюто "Редактиране" (Edit > Find on this page...) или като натиснете едновременно CТRL+F на клавиатурата и въведете думата или израза при съвременни настолни (desktop) уеб-браузъри. За съвременни уеб-браузъри за преносими (мобилни) устройства като смартфони/фаблети/таблети и др.: меню -> „Търсене в страницата“ (Find in page / Find... / Search in page... / Search...)
 * (... за допълване...)
 * (???) http://altmetrics.org/manifesto/
@@ -565,7 +565,7 @@
 * (EN-USA, ENGLISH-USA) http://commons.wikimedia.org/wiki/Category:English_pronunciation (Wikimedia Commons US English Pronunciations, 7192 words as of 26May2010)
 * (EN-USA, ENGLISH-USA) http://www.macmillandictionary.com (Macmillan English Dictionary Online (US), 55334 words as of 24Oct2010)
 * (EN-ZH, ZH-EN, ENGLISH, CHINESE) http://mdbg.com - online Mandarin Chinese dictionary, based on CCEDICT, with interactive 2D handwriting-character-recognition (SCIM-/ucm-like)
-* (ES*-EN) http://es.thefreedictionary.com/ (The Free Dictionary (ES), 49963 words as of 13Jan2009)
+* (ES*-EN) http://es.thefreedictionary.com/ (The Free Dictionary (ES), 49963 words as of 13Jan2009) (ONE OF THE BEST ONLINE DICTIONARIES FOR ENGLISH!)
 * (ES, EN, SPANISH, ENGLISH) http://www.rimar.io/ (Spanish rhyming dictionary)
 * (ES-EN, SPANISH-ENGLISH) http://www.collinslanguage.com/free-online-spanish-dictionary.aspx (Collins Pocket Spanish Dictionary (Spanish to English), 12245 words as of 7Aug2010)
 * (ES-EN, SPANISH-ENGLISH) https://www.spanishdict.com/dictionary (испанско-английски речник)
@@ -639,7 +639,7 @@
 * (VARIOUS) https://onelook.com/reverse-dictionary.shtml - OneLook Reverse Dictionary and Thesaurus
 * (VARIOUS) https://slovored.com/
 * (VARIOUS) https://tatoeba.org/ = отворена колекция от изречения и техните преводи на 348 езика ( https://tatoeba.org/eng/stats/sentences_by_language , https://tatoeba.org/eng/sentences/show_all_in/bul/none/none/indifferent , https://tatoeba.org/eng/downloads , https://tatoeba.org/eng/sentences_lists/index , https://github.com/Tatoeba/tatoeba2 , https://tatoeba.org/eng/audio/index )
-* (VARIOUS) https://tatoeba.org/eng/ (free sentence translations)
+* (VARIOUS) https://tatoeba.org/eng/ (free sentence translations) - see also http://librevox.org & http://commonvoice.mozilla.org & gespeaker+MBROLA TTS, etc.
 * (VARIOUS) https://wikidata.org
 * (VARIOUS) https://wikimedia.org
 * (VARIOUS) https://wiktionary.org
@@ -647,7 +647,7 @@
 * (VARIOUS) https://www.dict.cc, 
 * (VARIOUS) https://www.dict.com/
 * (VARIOUS) https://www.dicts.info
-* (VARIOUS) https://www.dicts.info/
+* (VARIOUS) https://www.dicts.info/uddl.php - download Wiktionary dictionary database dumps as a plaintext file!
 * (VARIOUS) https://www.linguee.com/
 * (VARIOUS) https://www.linguee.com/bulgarian-english/translation/
 * (VARIOUS) https://www.onelook.com/?w=entersearchhere&loc=revfp_legacy - OneLook Reverse Dictionary and Thesaurus v1
@@ -1184,6 +1184,68 @@ bitcoin:// (BTC)
 bitcash://
 mailto:usernameemailinboxname@example.com
 
+
+
+
+http://linguee.com
+https://en.bab.la/dictionary/english-polish/
+https://en.bab.la/dictionary/english-bulgarian/
+https://en.bab.la/dictionary/bulgarian-english/
+https://en.bab.la/translator/
+https://www.acronymfinder.com/
+https://www.google.com/search?q=%D1%80%D0%B5%D1%87%D0%BD%D0%B8%D0%BA&oq=%D1%80%D0%B5%D1%87%D0%BD%D0%B8%D0%BA&aqs=chrome..69i57j69i65l3.1593j0j9&sourceid=chrome&ie=UTF-8
+http://d.linux-bg.org/
+http://www.tldp.org/
+http://catb.org/~esr/jargon
+http://man.dice.de
+http://man7.cx
+http://acronyms.com
+http://abbreviations.com
+http://toelcp.org --- ??? The Internet Encyclopedia of Computing&Computers
+Речник на компютърните термини.exe
+http://slovored.com
+http://bgoffice.sourceforge.net
+https://www.pcgamingwiki.com/wiki/Glossary:Windowed#DxWnd
+
+https://kernelnewbies.org/KernelGlossary
+https://kernelnewbies.org/FAQ
+
+https://lkml.org/
+
+https://kernelnewbies.org/KernelGlossary
+
+https://lwn.net/Kernel/LDD3/
+
+https://lwn.net/Kernel/LDD3/
+http://foldoc.org/ = Free On-Line Dictionary Of Computing
+https://www.google.com/search?q=internet+encyclopedia+of+computing&oq=internet+encyclopedia+of+computing&aqs=chrome..69i57j33i160.20079j0j4&sourceid=chrome&ie=UTF-8
+https://www.google.com/search?q=free+online+dictionary+of+computing&sxsrf=ALiCzsan_d3TSJQA60yrjsOSfq7Q2z6cog%3A1651372871899&ei=R_NtYsLENvGGxc8PnIaWwA0&ved=0ahUKEwiChK-ro733AhVxQ_EDHRyDBdgQ4dUDCA4&uact=5&oq=free+online+dictionary+of+computing&gs_lcp=Cgdnd3Mtd2l6EANKBAhBGABKBAhGGABQAFjWI2CKJ2gAcAF4AIABjwmIAZAdkgEJMi0yLjYtMS4ymAEAoAEBwAEB&sclient=gws-wiz
+https://www.oxfordreference.com/view/10.1093/oi/authority.20110803095834413
+https://www.oxfordreference.com/view/10.1093/acref/9780199234004.001.0001/acref-9780199234004
+https://atecentral.net/r15625/free_online_dictionary_of_computing
+https://library.uncw.edu/guides/resources/foldoc_free_on_line_dictionary_of_computing
+https://library.lanl.gov/infores/keydesc/freeonline.htm
+https://library.lanl.gov/infores/keydesc/freeonline.htm
+https://library.uncw.edu/guides/resources/foldoc_free_on_line_dictionary_of_computing
+https://www.thefreedictionary.com/computing
+https://www.proquest.com/scholarly-journals/free-online-dictionary-computing-acronyms-jargon/docview/215218727/se-2
+https://www.google.com/search?q=free+online+dictionary+of+computing&sxsrf=ALiCzsan_d3TSJQA60yrjsOSfq7Q2z6cog%3A1651372871899&ei=R_NtYsLENvGGxc8PnIaWwA0&ved=0ahUKEwiChK-ro733AhVxQ_EDHRyDBdgQ4dUDCA4&uact=5&oq=free+online+dictionary+of+computing&gs_lcp=Cgdnd3Mtd2l6EANKBAhBGABKBAhGGABQAFjWI2CKJ2gAcAF4AIABjwmIAZAdkgEJMi0yLjYtMS4ymAEAoAEBwAEB&sclient=gws-wiz
+https://www.google.com/search?sxsrf=ALiCzsYSzgrSWjppXAgLfuAk09bSPDlbBQ:1651373030817&q=Acronym+Finder&si=AC1wQDDagiMg03ncxeOQZbwVe-CJxRCchC-jr2hCPTxjc9wbgHDcs068rRgU5kQZuoQ6vxjDaQeq8ZLTxTNv9ltV7Wa3o0o_LCTXVLCkvIcgIBrsf8ZsmkkB7tgLLuHcj30aMKiqX5RyENeEZVd0HgjzIIFU9tt_iwMsuzTMAh91_4q9nhVEwZB8Bnh3BIWtSIiNEckEyZDUo0sY5DRSsvzL4VF8WzJFuOFYUQkmP6I1DC0KekvWT1RjI5V2XV4TilKH0gzJngEgNPq9oHT7BPK3uoZnG2pG88IVbn5JGC9A5L29IK6pYuc%3D&sa=X&ved=2ahUKEwicwZL3o733AhVNSfEDHVzfBNMQxA16BAhAEAU&biw=1242&bih=577&dpr=1.1
+
+https://kernelnewbies.org/KernelGlossary
+http://foldoc.org/ = Free On-Line Dictionary Of Computing
+http://www.nist.gov/dads/ = Dictionary of Algorithms, Data Structures, and Problems
+http://www.memorymanagement.org/glossary/ = Memory Management Glossary
+http://www.jargon.org/ = Jargon File
+https://en.wikipedia.org/wiki/Japanese_dictionary
+http://tangorin.org - Japanese dictionary
+perapera.xpi - English-Japanese/-Chinese Dictionary pop-up applet add-on/extension for Mozilla Firefox - it could possibly be modified to support other languages...
+
++ http://inputtools.google.com ?
++ http://babelstonesoftware.co.uk - online BabelMap full-Unicode character-map character search & find
++ http://graphemica.com - another online Internet Unicode character map
++ ...
++ 
 --------------------------------------------------------------------------------
 
 RANDOM CRAP:
