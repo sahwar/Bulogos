@@ -1,0 +1,87 @@
+
+
+https://github.com/cboxdoerfer/fsearch#readme
+http://github.com/angrysearch/angrysearch
+https://launchpad.net/catfish-search
+
+$ find
+$ locate
+$ mlocate
+
+https://github.com/sahwar?tab=repositories&q=find&type=&language=&sort=
+https://github.com/sahwar?tab=repositories&q=search&type=&language=&sort=
+https://github.com/sahwar?tab=repositories&q=locate&type=&language=&sort=
+
+https://github.com/sahwar?tab=stars&q=find&tab=stars&type=&sort=&direction=
+https://github.com/sahwar?tab=stars&q=search&tab=stars&type=&sort=&direction=
+https://github.com/sahwar?tab=stars&q=locate&tab=stars&type=&sort=&direction=
+
+https://github.com/BurntSushi/ripgrep
+https://github.com/ggreer/the_silver_searcher
+https://github.com/k-takata/the_silver_searcher-win32
+https://github.com/Wilfred/ag.el
+https://github.com/emacsorphanage/helm-ag
+https://github.com/monochromegane/the_platinum_searcher
+https://github.com/bling/pt.el
+https://github.com/beyondgrep/ack3
+https://github.com/sharkdp/fd
+https://github.com/jaimebuelta/ffind
+https://github.com/phiresky/ripgrep-all
+https://github.com/nlamirault/ripgrep.el
+https://github.com/mptre/pick
+https://github.com/mozilla/dxr
+https://github.com/yatima1460/Drill
+https://github.com/ngirard/lolcate-rs ('Replaces locate / mlocate / updatedb')
+https://github.com/ehoppmann/mlocate-web
+https://github.com/bootzin/bloc
+https://github.com/xiaoyong/voodoo
+https://github.com/BitJam/Search-Bar ('Internet searches from CLI and from x clipboard' - see also http://fex.belwue.de - fstools - for further clipboard UNIX/Linux CLI utilities)
+
+
+https://github.com/shepmaster/jetscii
+https://github.com/KirillOsenkov/QuickInfo
+
+https://github.com/bevesce/unicode-symbols-search
+https://github.com/bevacqua/fuzzysearch
+https://github.com/lockys/AwesomeSearch
+https://github.com/cantino/mcfly
+https://github.com/amirgamil/apollo
+https://github.com/p-e-w/plotinus
+https://github.com/tmux-plugins/tmux-copycat
+https://github.com/MarioVilas/googlesearch
+https://github.com/lacygoill/vim-search
+https://github.com/omaciel/pipsearch
+
+https://github.com/kawabata/wdsgrep (grep for MS Windows Search)
+https://github.com/orzFly/Wox.Plugin.Switcheroo (for MS Windows)
+https://github.com/harshvsingh8/win-tools (for MS Windows)
+https://github.com/coppit/grepmail
+https://github.com/typie/typie
+https://github.com/bmh1980/gnome-shell-extension-searchbookmarks
+https://github.com/ForceUniverse/bountyhunter
+
+https://github.com/A/go-search-me
+
+https://github.com/google/vim-searchindex
+https://github.com/romainl/vim-cool
+https://github.com/osyo-manga/vim-anzu
+
+https://github.com/brpaz/ulauncher-file-search
+https://github.com/dahu/SearchParty
+https://github.com/awamper/wikipedia-search-provider
+
+---
+useful:
+Google search link fix
+
+Google search link fix is a Firefox, Chrome and Opera extension that prevents Google and Yandex search pages from modifying search result links when you click them. This is useful when copying links but it also helps privacy by preventing the search engines from recording your clicks. Detailed description
+https://github.com/palant/searchlinkfix
+https://pptr.dev/
+PhantomJS
+geckocore
+
+======
+https://github.com/soruly/trace.moe
+Anime Scene Search by Image (crazy shit! BEWARE! Dragons be here!)
+
+======
