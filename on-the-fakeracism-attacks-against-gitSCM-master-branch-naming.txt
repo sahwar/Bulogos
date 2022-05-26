@@ -1,0 +1,53 @@
+on-the-fakeracism-attacks-against-gitSCM-master-branch-naming.txt
+
+There is some dumb controversy in the USA about the gitSCM having 'master' as the default name of its main branch in any git repository.. these
+attacks stemmed from the hyperlefties and some anti-racism USA DemoNcrats rats, from anti-racism advocates, and from pro-racialmeltingpot-USA-style 
+USA globalist Jews, etc. ...
+
+Although I personally find these attacks quite stupid, and their allegations of much racism inside computer software - to be moronic - here is a possible
+solution to this titling/naming controversy, which is up for debate and I will NOT force this solution onto anyone, I am just sharing it as a possible
+way to alleviate this dumb 'Racist!' attack towards gitSCM software (despite I being racist and sexist and badmouthed-cynical hater-of-almost-all 
+myself! :))) ---sahwar):
+
+https://github.com/sahwar/Bulogos/tree/master
+
+can be renamed to
+
+https://github.com/sahwar/Bulogos/tree/main
+(my primary proposal)
+or
+https://github.com/sahwar/Bulogos/tree/primary
+or
+https://github.com/sahwar/Bulogos/tree/sourcebranch
+or
+https://github.com/sahwar/Bulogos/tree/originbranch
+or even
+https://github.com/sahwar/Bulogos/tree/bossbranch
+or
+https://github.com/sahwar/Bulogos/tree/chiefbranch
+
+(Furthermore, one of the above names can also be applied to
+https://github.com/sahwar/Bulogos/archive/refs/heads/master.zip
+https://github.com/sahwar/Bulogos/archive/refs/heads/{url_username_repositoryname}_main[branch_git].zip
+
+and any other branches may be categorized as 'secondary'/fork(ed)/'sidekick'/mod(ification) branches...)
+
+
+
+P.S. As for gitSCM - it is a very good version-control system, and there are Bazaar (used by launchpad.net and Ubuntu), fossil, CVS, SVN, and other
+VCSs, and there are also github.com & gitlab.org repository webhosting services and also Gitea and many other Git-related software and git extensions 
+and frontends, etc. ...
+
+I personally find gitSCM quite useful, but I have problems with long-filenames when uploading/pushing new files&edited files into a git repository,
+and I still can't manage to locate a good way to diff-merge files-in-remote/local-git-repository with their edited versions - in such a way so as to
+collate-merge some text files, because most diff (.diff & .patch) tools like kdiff3, Meld, WinMerge, even git's diff - are somewhat clumsy and basic
+users find it rather difficult just to locate differences, copy&paste text from one version into another version, and save the merged file and then
+git-push upload it and be done with it... And yes, characters-by-character (a more fine-grained approach than whole-line-by-whole-line text-comparison
+between 2 or more files) diff is what I am referring to here...
+The above also explains why I still have problem git-push uploading hundreds of edited versions of files for https://github.com/sahwar/Bulogos , due to
+long-filenames of bad-unallowed-characters-in-file-names and due to diff-collisions between remote files on github.com and my locally edited 'newer'
+versions of these files...
+
+
+
+26-May-2022
