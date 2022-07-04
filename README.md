@@ -3,7 +3,7 @@
 
 # Authors and contributors - Автори и допринесли за проекта
 Project founder & main contributor: https://sites.google.com/view/ve4ernik/ (= https://github.com/sahwar/ ) - 
-`ve4ernik@gmail.com` (alternative email if the inbox of the main email gets filled&thus emails are auto-rejected: `ikurdov10@gmail.com`)
+`ve4ernik2@gmail.com` (alternative email if the inbox of the main email gets filled&thus emails are auto-rejected/not-received: `ikurdov10@gmail.com`)
 
 Mostly made in [http://en.wikipedia.org/wiki/Bulgaria](Bulgaria) by an outcast Bulgarian
 
