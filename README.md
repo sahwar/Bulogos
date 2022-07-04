@@ -61,10 +61,12 @@ https://github.com/sahwar/Bulogos (<)---> https://gitlab.com/sahwar/Bulogos
 **https://github.com/sahwar/Bulogos/archive/master.zip**
 (OR right-click & `Save link as...` / `Save Target As` (ИЛИ щракване с десния бутон на мишката и `Запазване на връзката като...` / `Запис на препратката като...`, ...)
 
+***ВНИМАНИЕ: МОЖЕ ДА СЕ НАЛОЖИ ДА ПРОМЕНИТЕ ХИПЕРВРЪЗКАТА ЗА ИЗТЕГЛЯНЕ, СПОМЕНАТА ПО-НАДОЛУ В ПРИМЕРИТЕ, АКО ОТ github.com ПРОМЕНЯТ СИНТАКСИСА НА УЕБАДРЕСА ЗА ИЗТЕГЛЯНЕ НА .zip АРХИВА НА ДАДЕНО git-ХРАНИЛИЩЕ В github.com!!! Ще получите по-новия уебадрес по гореописания начин, но вместо Save link as..., изберете Copy link/address и сложете на мястото на уебадреса в долните примери...***
+
 * Изтегляне чрез [`wget`](https://www.gnu.org/software/wget/) ([`wget` за Microsoft Windows (пуска се чрез `cmd.exe` или PowerShell)](https://eternallybored.org/misc/wget/)):
 
 ````
-wget -nc -O Bulogos_master.zip https://github.com/sahwar/Bulogos/archive/master.zip
+wget -nc -O --no-check-certificate Bulogos_master.zip https://github.com/sahwar/Bulogos/archive/master.zip
 ````
 
 ------
@@ -79,7 +81,7 @@ wget2 -nc -O Bulogos_master.zip https://github.com/sahwar/Bulogos/archive/master
 * Изтегляне чрез [`curl`](http://curl.haxx.se/):
 
 ````
-curl -nc -LO https://github.com/sahwar/Bulogos/archive/master.zip
+curl -nc -LO -k https://github.com/sahwar/Bulogos/archive/master.zip
 ````
 
 ------
