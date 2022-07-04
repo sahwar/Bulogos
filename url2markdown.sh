@@ -18,7 +18,7 @@ function url2markdown()
         echo " The text below was not in the original source-code and"
         echo " was added as an extra tip by ve4ernik/sahwar <ve4ernik2@gmail.com>."
         echo ""
-        echo " NOTE: You can modify the source-code of this shell-script"
+        echo " NOTE1: You can modify the source-code of this shell-script"
         echo " to include additional options, e.g. convert to CommonMark"
         echo " instead of to convert to pure Markdown, or to convert"
         echo " the URL/URI to one of the other export formats supported"
@@ -54,6 +54,12 @@ function url2markdown()
         echo " basic translation before sending it over to http://proz.com professional translators & local translator freelancers, etc. ... "
         echo " Please note that you can also add '$ alias' additions/modifications of this file (with additional/changed parameters) " 
         echo " to be called via your CLI-terminal-app in your (GNU/)Linux OS under some easy-to-remember text-command alias-command-name via bash... "
+        echo " NOTE2: You can also run this bash-shellscript under MS Windows's cmd.exe / PowerShell / Windows10's WSLv2+ bash-terminal via http://cygwin.com/ if "
+        echo " you have downloaded the respective CLI-apps to be used via cygwin/cygwin64's bash in a terminal-emulator-app window... "
+        echo " But you may need to use delimiters such as '...' or "..." when running the script under MS Windows, etc. ... "
+        echo " The websites http://superuser.com , http://unix.stackexchage.com , and Debian/Ubuntu/Linux Mint/ArchLinux wiki, etc. & IRC channels about Linux used via "
+        echo " http://mibbit.com and http://libera.chat or via hexchat (Linux) or AdiIRC (MS Windows), or RevolutionIRC (Google Android), may be a good place to ask for help "
+        echo " with bash-shellscripting in case you get stuck and need some Linux-guru or superuser to aid you, etc. "
         return 1
     fi
 
