@@ -63,10 +63,10 @@ https://github.com/sahwar/Bulogos (<)---> https://gitlab.com/sahwar/Bulogos
 
 ***ВНИМАНИЕ: МОЖЕ ДА СЕ НАЛОЖИ ДА ПРОМЕНИТЕ ХИПЕРВРЪЗКАТА ЗА ИЗТЕГЛЯНЕ, СПОМЕНАТА ПО-НАДОЛУ В ПРИМЕРИТЕ, АКО ОТ github.com ПРОМЕНЯТ СИНТАКСИСА НА УЕБАДРЕСА ЗА ИЗТЕГЛЯНЕ НА .zip АРХИВА НА ДАДЕНО git-ХРАНИЛИЩЕ В github.com!!! Ще получите по-новия уебадрес по гореописания начин, но вместо Save link as..., изберете Copy link/address и сложете на мястото на уебадреса в долните примери...***
 
-***
+````
 https://github.com/sahwar/Bulogos/archive/refs/heads/master.zip
 git clone https://github.com/sahwar/Bulogos.git
-***
+````
 
 * Изтегляне чрез [`wget`](https://www.gnu.org/software/wget/) ([`wget` за Microsoft Windows (пуска се чрез `cmd.exe` или PowerShell)](https://eternallybored.org/misc/wget/)):
 
