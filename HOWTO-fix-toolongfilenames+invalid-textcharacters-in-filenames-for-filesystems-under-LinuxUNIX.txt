@@ -1,0 +1,35 @@
+HOWTO-fix-toolongfilenames+invalid-textcharacters-in-filenames-for-filesystems-under-LinuxUNIX.txt
+
+(Original longer filename:
+HOWTO-fix-toolongfilenames+invalid-textcharacters-in-filenames-for-filesystems-under-LinuxUNIX-via-readonly-regexp-based-bash-shellscripts.txt )
+
+
+
+We need to add a chapter to the http://opendesktop.org / https://freedesktop.org / X11&Wayland&etc. community-maintained&-contributed specifications about how to handle too long filenames & invalid text-characters in filenames&folder/dir-names for filesystems under Linux/UNIX - in case the end-user may need such a functionality built-in as a binary-program or as a human-readable bash-shellscript running for any and all files&folders in a given filesystem within any mounted harddisks, etc. Something a bit similar but implemented in a more retarded way - was present in some of the older versions of the Mozilla Firefox web-browser, etc.
+
+This is to done via an e.g. lazy-afterthought-but-still-well-working-without-causing-files-corruption-or-data-loss-or-I/O-errors-or-buffer-overflows-etc. hack software-program: via read-only regexp-based bash-shellscripts, which simply do a routine index-scanning of all the filenames and folder-names within any mounted filesystem on any local/fixed-internal or removable hardware/Internet-based HDD/SSD/hybrid-HDD-SSD/M.2 SSD/USB-flashstick harddisk's filesystems, and does simple regexp-based find&replace substitutions removing the invalid/disallowed characters from all filenames & folder-names within a given filesystem, e.g. removing invalid characters from NTFS filesystems which are often created under MS Windows OSs starting with WinXP (&newer versions of NTFS from newer versions of MS Windows...) or which are created under Linux/UNIX specifically for compatibility with MS-Windows data-file-storage virtual-partitions, e.g. in the case of dual-booting a Linux distro/distribution and a particular version&edition&x86-or-x64-or-ARM-or-ARM64-version MS Windows (or for multi-booting via YUMI, etc. 3rd-party software obtained from the Internet...).
+
+IMPORTANT NOTES on the implementation of the above idea:
+1. Too many writes on any harddisk causes hardware-wear and needs routine S.M.A.R.T.-attributes-checking via some software tool capable of displaying these firmware/hardware self-diagnostics values of the harddisk, so the regexp-based rewritings of filenames & folder-names need to have some .ini-like changeable values which set the cron-like intervals for the regexp-based name rewritings in order to minimize hardware-wear and not do millions of rewrites too often thus accelerating harddisk hardware failure and reducing that harddisk's lifespan... It is said that this affects SSDs and USB-flashsticks more than HDDs, but research must be done to cleverly take note of this particular potentially nasty aspect of running the below-explained hack and to edit the bash-shellscript in such a way so as to minimize this negative effect as much as possible...
+2. The bash-shellscript needs to copy-paste the names of changed filenames & folder-names into some human-readable changelog listing each successive name rewrite alongside the original name before it was rewritten (e.g. maybe in the form of 'original filename/foldername;modified filename/foldername;datetimestamp;findandreplaceregexprulesTableBeingUsed' .csv/.ini/.LongFilenamesNInvalidNameCharsSubst_IndexChangelog file, etc.)
+3. The bash-shellscript must include tables for substitution for as many filesystems as possible, and also list their filesystem restrictions citing official sources which list those, and it must write the
+4. In case the changelog files get too big in terms of filesize, the bash-shellscript must include changeable values (like in an .ini file) [with comments explaining them and explaining recommended default values] which set the max_allowed_filesize/lines value of the generated changelog files, after which the bash-shellscript either stops dumping values into the generated changelog files, and/or deletes those changelog files in order to save filespace on the given filesystem...
+5. There must also be an option to completely turn off the functioning of this bash-shellscript, in case the end-user wishes to do so for some reason or another, as well as an interactive mode ---  with simple yes/no, choose option, '--help' & '--version' & '--displaysource' for reading/editing-after-turningoff-the-readonly-attribute-and-then-turning-it-back-on --- and with the option to manually run the bash-script only once non-interactively, only dumping the results in the bash-changelog file (sdtin/sdtout?) terminal text...
+6. A possible expansion of the above idea may include writing a fork of that bash-script which is a .bat file for MS Windows' cmd.exe or its PowerShell or for Windows10's WSLv2+ bash-terminal... for running under MS Windows 7&up, etc.
+7. The bash-script MUST NOT include dangerous 'rm' (remove/delete) commands within it which can delete files and entire filesystems by accident, and it MUST include an interactive/non-interactive 'REDO last N number of regexp-based rewrites' based on its generated changelog files (those files listing the before-and-after filenames&folder-names which had too-long names and/or included invalid characters disallowed for that particular filesystem, etc.) - which obviously will NOT work in case the changelog files have exceeded the set max_filesize/number-of-lines value and/or in case these have been deleted by the bash-script or manually by the end-user...
+8. The bash-script and its related generated changelog files MUST be set with the 'hidden' flag for a Linux/UNIX filesystem and must normally be read-only unless the end-user changes that attribute value from on to off, and back again...
+9. The bash-shellscript is for both X11-based (GNU/)Linux distros as well as for Wayland-based ones and for any desktop-environment for (GNU/)Linux, etc. which is capable of read/write/execute (or just read&copy&name-edit) of a particular given filesystem...
+10. The bash-shellscript MUST be well self-documented via commented-out blocks of text or inline comments, etc.
+
+References:
+An example of invalid characters for filenames&folder-names under the NTFS filesystem is listed in this article on the English-language Wikipedia:
+
+http://en.wikipedia.org/wiki/NTFS
+Similar infoboxes and citations listing filesystem restrictions can also be found on Wikipedia and on official or archive.org-backup'd webpages - as an aid when constructing the regexp-based substitution tables for each filesystem for the bash-shellscript explained above...
+
+
+
+Last modified: 04-July-2022
+Written by: ve4ernik2@gmail.com
+Originally published on: https://github.com/sahwar/Bulogos/
+Feel free to use (but NO WARRANTY/GUARANTEE!!!), modify/edit, and submit github.com git-pull-requests for edits to this file...
