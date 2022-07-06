@@ -1,0 +1,13 @@
+linux-unix_alternative-to-the-FHS-linux-filesystem-organization_similar-to-ms_windows_gobolinux-org.txt
+
+
+
+https://gobolinux.org/at_a_glance.html
+https://archive.ph/jXp2j
+https://www.w3.org/services/html2txt?url=https%3A%2F%2Fgobolinux.org%2Fat_a_glance.html&endrefs=on&internalrefs=on
+
+This can also be achieved via simply making the dirs/folders and symlinking ALL the contents from the FHS into the 
+gobolinux-like alternative-FHS similar to the one of MS Windows... even via regexp substitutions, etc.
+
+
+
