@@ -1,13 +1,239 @@
 linux-unix_alternative-to-the-FHS-linux-filesystem-organization_similar-to-ms_windows_gobolinux-org.txt
 
+THIS FILE:
+https://github.com/sahwar/Bulogos/blob/master/linux-unix_alternative-to-the-FHS-linux-filesystem-organization_similar-to-microsoft-windows_gobolinux-org.txt
+
+
+
 
 
 https://gobolinux.org/at_a_glance.html
 https://archive.ph/jXp2j
 https://www.w3.org/services/html2txt?url=https%3A%2F%2Fgobolinux.org%2Fat_a_glance.html&endrefs=on&internalrefs=on
 
-This can also be achieved via simply making the dirs/folders and symlinking ALL the contents from the FHS into the 
-gobolinux-like alternative-FHS similar to the one of MS Windows... even via regexp substitutions, etc.
+````
+     *
+     * [1]Downloads
+      https://gobolinux.org/downloads.html
+
+     * [2]Docs
+      https://gobolinux.org/documentation.html
+
+     * [3]Community
+      https://gobolinux.org/community.html
+
+     * [4]Recipes
+      https://gobolinux.org/recipes.html
+
+     * [5]Screenshots
+
+      [5] https://gobolinux.org/screenshots.html
+
+GoboLinux at a glance
+
+What is GoboLinux?
+
+   GoboLinux is a modular Linux distribution: it organizes the
+   programs in your system in a new, logical way. Instead of
+   having parts of a program thrown at /usr/bin, other parts at
+   /etc and yet more parts thrown at
+   /usr/share/something/or/another, each program gets its own
+   directory tree, keeping them all neatly separated and allowing
+   you to see everything that's installed in the system and which
+   files belong to which programs in a simple and obvious way.
+
+   This is what you see in the root of a GoboLinux system:
+~] cd /
+/] ls
+Programs
+Users
+System
+Data
+Mount
+
+   /Programs is where all programs reside. No exceptions. You can
+   explore what is installed in the system by looking inside it:
+/] cd /Programs
+/Programs] ls
+
+AfterStep     E2FSProgs    Htop        NTP          Subversion
+ALSA-Driver   Ed           HTTPD       OpenOffice   Sudo
+ALSA-Lib      Eject        Hydrogen    OpenSSH      Swfdec
+ALSA-OSS      Elinks       IBM-Java2   OpenSSL      Synaptics
+ALSA-Utils    Ethereal     ID3Lib      Pango        SysFSUtils
+Ardour        Expat        IEEE80211   Patch        Sysklogd
+Audacity      File         IMLib2      Perl         TCL
+Aumix         Firefox      InetUtils   Pkgconfig    TeTeX
+Autoconf      Flac         Intltool    PodXTPro     Texinfo
+Automake      Flex         IpodSlave   Popt         TIFF
+Bash          Fontconfig   Iptables    PPP          TiMidity++
+
+...           ...          ...         ...          ...
+
+   Each program entry contains all files for that program, stored
+   in a versioned subdirectory.
+/Programs] find Bash
+Bash
+Bash/4.4
+Bash/4.4/bin
+Bash/4.4/bin/sh
+Bash/4.4/bin/bash
+Bash/4.4/bin/bashbug
+Bash/4.4/info
+Bash/4.4/info/bash.info
+Bash/4.4/man
+Bash/4.4/man/man1
+Bash/4.4/man/man1/bash.1
+...
+
+   Multiple versions of a program can be maintained
+   simultaneously, so you can alternate between them as you
+   desire, or even use both at the same time when necessary.
+/Programs] ls -l OpenOffice
+total 8
+drwxr-xr-x  9 root root 4096 2005-09-22 01:07 1.1.4
+drwxr-xr-x  3 root root 4096 2005-09-23 04:36 2.0
+lrwxrwxrwx  1 root root    5 2005-09-23 04:36 Current -> 2.0
+
+/Programs] ls -l GTK+
+total 12
+drwxr-xr-x  10 root root 4096 2005-10-02 01:39 1.2.10
+drwxr-xr-x   9 root root 4096 2005-08-21 05:48 2.6.7
+lrwxrwxrwx   1 root root    6 2005-10-02 01:39 Current -> 2.6.7
+drwxr-xr-x   4 root root 4096 2005-10-02 01:39 Settings
+
+How can this possibly work?
+
+   Just like we use the filesystem to store the programs in an
+   organized way, we also use it to index the files by category so
+   that the system can find a needed file without scanning
+   hundreds of program entries. In GoboLinux, this is done with a
+   series of directories containing symbolic links pointing to the
+   actual files. Notice also how this gives you a handy view of
+   "what package does file XYZ belong to".
+/System/Index/lib] ls -l | cut -b 49-
+...
+libgtk-1.2.so.0 -> /Programs/GTK+/1.2.10/lib/libgtk-1.2.so.0.9.1
+libgtk-1.2.so.0.9.1 -> /Programs/GTK+/1.2.10/lib/libgtk-1.2.so.0.9.1
+libgtk.a -> /Programs/GTK+/1.2.10/lib/libgtk.a
+libgtk.la -> /Programs/GTK+/1.2.10/lib/libgtk.la
+libgtk.so -> /Programs/GTK+/1.2.10/lib/libgtk-1.2.so.0.9.1
+libgtk-x11-2.0.la -> /Programs/GTK+/2.6.7/lib/libgtk-x11-2.0.la
+libgtk-x11-2.0.so -> /Programs/GTK+/2.6.7/lib/libgtk-x11-2.0.so.0.600.7
+libgtk-x11-2.0.so.0 -> /Programs/GTK+/2.6.7/lib/libgtk-x11-2.0.so.0.600.
+7
+libhfs.a -> /Programs/CDRTools/2.01/lib/libhfs.a
+libhistory.a -> /Programs/Readline/5.0/lib/libhistory.a
+libhistory.so -> /Programs/Readline/5.0/lib/libhistory.so.5.0
+libhistory.so.5 -> /Programs/Readline/5.0/lib/libhistory.so.5.0
+...
+
+   The system is then configured to use these indices when looking
+   for files:
+~] cat /etc/ld.so.conf
+/System/Index/lib
+
+~] echo $PATH
+/System/Index/bin
+
+...
+
+   You will find indices for all main categories of files in the
+   system: executables, libraries, headers, shared data files,
+   manuals, and so on. Indexing is recursive, so if a series of
+   programs share a directory definition to store a certain type
+   of file, they automatically get their own index too
+   (/System/Index/share/aclocal is an example).
+
+   Another important property of link-based indexing is that any
+   references to non-existing files automatically become broken
+   links, and therefore inactive. This makes it easy to spot and
+   fix problems and, most importantly, ensures that the the index
+   is always in sync with the actual functional state of the
+   system. Say goodbye to the old problem of having the package
+   manager complain that libXYZ is not installed even though you
+   can see that it is there. If it's live in the links index, it's
+   live in the system, and vice-versa.
+
+But what about Unix compatibility?
+
+   The GoboLinux system layout seems to be a major departure from
+   the Unix tradition. Does this mean all programs need to
+   adjusted so that they work with the new layout? Fortunately,
+   the answer is no. Through a mapping of traditional paths into
+   their GoboLinux counterparts, we transparently retain
+   compatibility with the Unix legacy.
+~] ls -l /dev/null | cut -b 45-
+/dev/null
+
+~] ls -l /bin/sh | cut -b 45-
+sh -> /Programs/Bash/4.4/bin/bash
+
+~] ls -l /usr/include/stdio.h | cut -b 45-
+stdio.h -> /Programs/Glibc/2.24/include/stdio.h
+
+   There is no rocket science to this: /bin is a link to
+   /System/Index/bin. And as a matter of fact, so is /usr/bin. And
+   /usr/sbin... all "binaries" directories map to the same place.
+   Amusingly, this makes us even more compatible than some more
+   standard-looking distributions. In GoboLinux, all standard
+   paths work for all files, while other distros may struggle with
+   incompatibilites such as scripts breaking when they refer to
+   /usr/bin/foo when the file is actually in /usr/local/bin/foo.
+
+   You may have noticed that the Unix paths did not show up in the
+   system root listing in the very first example. They are
+   actually there, but they are concealed from view using the
+   [6]GoboHide kernel extension. This is for aesthetic purposes
+   only and purely optional, though: GoboLinux does not require
+   modifications in the kernel or any other system components. But
+   our users seem to like it a lot. :-)
+
+      [6] https://gobolinux.org/doc/articles/gobohide.html
+
+More!
+
+   An online tour can only take you so far. There is no substitute
+   to giving it a try yourself: GoboLinux is conveniently
+   distributed as a Live CD, so you can explore the ins and outs
+   of the system running it straight from the disc, even before
+   installing it to your hard drive. [7]Download a disc image and
+   have fun -- if you're a newcomer, you'll probably find the more
+   organized structure to be more comfortable as well; if you're a
+   seasoned user, you'll certainly enjoy the finer control that a
+   more modular, transparent system will give you.
+
+      [7] https://gobolinux.org/downloads.html
+
+   © 2002-2022 GoboLinux.org.
+   [8]gobo AT gobolinux DOT org
+
+      [8] mailto:gobo AT gobolinux DOT org
+
+References
+
+   Visible links:
+   1. https://gobolinux.org/downloads.html
+   2. https://gobolinux.org/documentation.html
+   3. https://gobolinux.org/community.html
+   4. https://gobolinux.org/recipes.html
+   5. https://gobolinux.org/screenshots.html
+   6. https://gobolinux.org/doc/articles/gobohide.html
+   7. https://gobolinux.org/downloads.html
+   8. mailto:gobo AT gobolinux DOT org
+
+   Hidden links:
+  10. https://gobolinux.org/index.html#content
+  11. https://mastodon.online/@gobolinux
+````
+
+=======
+
+NOTE by sahwar/ve4ernik ( ve4ernik@gmail.com ):
+
+This can also probably be achieved via simply mkdir-making the dirs/folders and automagickally-symlinking ALL the contents from all dirs/folders of the FHS into the gobolinux-like alternative-FHS similar to the one of MS Windows... even via utf8 search&replace regexp substitutions, etc.
+
+
 
 
 
