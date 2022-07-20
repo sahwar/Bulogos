@@ -1,0 +1,42 @@
+https://mg.pov.lt/irclog2html = - converts IRC logs to colourful HTML 
+http://perkypants.org/projects/irclog2html/
+https://mg.pov.lt/blog/irc-logs.html
+
+https://github.com/mgedmin/irclog2html/
+https://github.com/mgedmin/irclog2html/issues
+
+https://github.com/mgedmin/irclog2html/archive/refs/heads/master.zip
+https://github.com/mgedmin/irclog2html/archive/refs/tags/2.17.3.zip
+(Required version of Python (add v3.8, v3.9, drop v3.5).) 
+
+---
+
+https://github.com/mgedmin/irclog2html [ https://mg.pov.lt/irclog2html ]
+
+https://github.com/sahwar?tab=repositories&q=irc&type=&language=&sort=
+https://github.com/sahwar?q=irc&tab=stars&type=&sort=&direction=
+
+https://github.com/pdurbin/philbot = 
+old school ilbot (IRC logging bot and web frontend) [ Forked from https://github.com/moritz/ilbot ] - one of the best irc2html chatlog-logging-bots
+https://github.com/bibanon/itabashi (Itabashi (板橋) is a bridging bot that syncs messages between a Discord and an IRC channel.)
+https://github.com/jbott-bot/jbott-irc2html
+https://github.com/moritz/ilbot = IRC logging bot and web frontend
+https://github.com/splitbrain/irclogger = A Perl/PHP tool to log an IRC channel and make it searchable on the Web
+
+https://github.com/thedjpetersen/subway (ABANDONED - A web based IRC client)
+https://github.com/kiwiirc/kiwiirc
+https://github.com/quassel/quassel
+https://github.com/matrix-org/matrix-appservice-irc
+https://github.com/hifi/heisenbridge
+https://github.com/SFTtech/sftmumblebot = Mumble/IRC text chat bridge microphone love_letter
+https://github.com/D3cryptor/waartaa = A modern web based communication service on top IRC.
+
+https://github.com/42wim/matterbridge [ bridge between mattermost, IRC, gitter, xmpp, slack, discord, telegram, rocketchat, twitch, ssh-chat, zulip, whatsapp, keybase, matrix, microsoft teams, nextcloud, mumble, vk and more with REST API… ]
+
+...
+...
+...
+...
+...
+...
+...
